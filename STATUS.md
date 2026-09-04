@@ -32,9 +32,12 @@
 
 ## High-Priority Threads
 - Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
-- **Kryptos K4 — composite hypotheses (transposition + Quagmire).** The single-stage
-  families are now eliminated from the public cribs; composites are untouched and the
-  crib machinery extends to them directly.
+- **Kryptos K4 — keyed transpositions, and lobbying for a third crib.** Single-stage
+  families and simple-transposition composites are both now exhausted from the public
+  cribs (no signal above chance across 12,901 hypotheses). Two live threads remain:
+  keyed columnar transposition (K3's own scheme, factorial search space), and the
+  fact that a ten-character third crib near position 44-47 would roughly double the
+  number of testable periods. The second is a lobbying problem, not a computing one.
 - Rohonc Codex script analysis
 - ~~Dorabella~~ — closed as blocked 2026-09-04. The constraint is archival, not
   cryptanalytic: a 300 dpi scan of the note (Elgar Birthplace Museum, Broadheath),

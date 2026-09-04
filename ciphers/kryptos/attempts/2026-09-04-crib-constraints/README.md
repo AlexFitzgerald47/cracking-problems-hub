@@ -16,9 +16,16 @@ much each answer is worth.
 - **The general periodic-polyalphabetic family is barely touched** — the cribs
   eliminate only 19 of 97 periods against 72.6 expected by chance. Worth knowing
   before anyone spends a month on that family believing the cribs constrain it.
-- **One lead, reported as not significant**: period 19 (and its multiple 38) is
-  the only period surviving a powered test. After correcting for the 13 powered
-  periods tested, p ≈ 0.18. Recorded as a target, not a finding.
+- **Composite schemes (transposition then polyalphabetic) show no signal above
+  chance** across 12,901 hypotheses — Vigenère and Beaufort survive at or below
+  the chance rate. The period-19 lead that looked interesting against the
+  identity transposition does not survive this and is withdrawn.
+- **The cribs' power has an exact structural source**: a period is testable iff
+  two crib positions differing by a multiple of it carry the same plaintext
+  letter. Verified with no overlap. This turns crib valuation into a count.
+- **A ten-character third crib would roughly double the testable periods** — and
+  it should be asked for near position 44–47. A crib abutting an existing one is
+  worth almost nothing.
 
 ## Method
 
@@ -40,6 +47,8 @@ src/k4.py                  loader; verifies the ciphertext against the published
 src/crib_constraints.py    general polyalphabetic + Vigenère + transposition tests
 src/beaufort.py            Beaufort shift test
 src/power_check.py         multiple-comparison and power accounting
+src/composite.py           transposition x periodic polyalphabetic composites
+src/crib_value.py          the exact power rule, and what another crib would buy
 results/                   raw JSON
 ```
 
@@ -51,4 +60,6 @@ cd src
 python crib_constraints.py   # ~3 min
 python beaufort.py           # ~2 min
 python power_check.py
+python composite.py          # ~1 min
+python crib_value.py         # ~2 min
 ```

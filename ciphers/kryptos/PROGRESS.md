@@ -4,6 +4,108 @@
 
 ---
 
+## 2026-09-04 (continued) – composites, and what a third crib is worth
+
+### What was attempted
+
+The two items this session's own handover put first: test composite
+transposition-plus-polyalphabetic schemes, and quantify what an additional crib
+would buy.
+
+### Results / findings
+
+**6. Composite transposition + periodic polyalphabetic: no signal above chance.**
+
+The polyalphabetic stage preserves position, so for `ct = T(m)` with
+`m = periodic_poly(pt)`, undoing a candidate T gives an intermediate text that
+aligns positionally with the plaintext — and the same crib tests apply at the
+same positions. Two useful consequences: the search is one permutation per
+candidate, and the null rates are unchanged (T is a permutation, so it preserves
+the letter multiset), so no new Monte Carlo is needed.
+
+133 transpositions (identity; columnar widths 2–48; rail fence 2–20 rails; each
+in both directions) × 97 periods = **12,901 hypotheses**:
+
+| family | tests with power | survived | expected by chance |
+|---|---|---|---|
+| general polyalphabetic | 1,729 | 35 | 26.9 |
+| Vigenère / variant | 6,517 | 13 | 15.8 |
+| Beaufort | 6,517 | 13 | 15.8 |
+
+Vigenère and Beaufort come in **at or below chance**. The general family shows a
+mild excess (35 against 26.9, z ≈ 1.6, p ≈ 0.06) that does not survive scrutiny.
+
+**This also demotes finding 5.** The period-19 lead was the only powered survivor
+when only the identity transposition was considered. Against 133 transpositions
+it is one of 35 survivors where 27 were expected. It is not a lead any more.
+
+**7. Where the cribs' power actually comes from — an exact rule.**
+
+The Monte Carlo power measurements turn out to have a clean structural
+explanation. A period *p* is testable **if and only if two crib positions
+differing by a multiple of *p* carry the same plaintext letter.** Verified
+across periods 1–26 with no overlap whatever:
+
+| | same-plaintext pairs in a class | measured null survival |
+|---|---|---|
+| periods 1, 2, 3, 4, 5, 9, 15, 17, 19 | ≥ 1 | 0.000 – 0.035 |
+| every other period | 0 | 0.167 – 0.956 |
+
+The reason is simple once seen: a violation needs either a collision (one
+plaintext letter going to two ciphertext letters — near-certain under the null
+wherever a same-letter pair exists) or a merge (two plaintext letters landing on
+one ciphertext letter — only about 1 in 26). So same-letter pairs supply
+essentially all the power, and everything else is noise.
+
+This replaces a simulation with a combinatorial count, which is what makes the
+next finding possible.
+
+**8. What a third crib would buy — and where to ask for it.**
+
+Current cribs give 13 powered periods, only 9 of them at or below 30. A
+hypothetical additional crib, letters drawn i.i.d. from English frequencies
+(mildly conservative — real English repeats letters slightly more at short range),
+averaged over placements:
+
+| extra crib length | powered periods | of which ≤ 30 |
+|---|---|---|
+| — (current) | 13 | 9 |
+| 5 | 22.6 | 16.1 |
+| 10 | 28.1 | 19.8 |
+| 15 | 32.2 | 22.3 |
+| 20 | 35.3 | 24.1 |
+| 30 | 40.0 | 26.8 |
+
+**A ten-character third crib would roughly double the number of testable
+periods.** Placement matters and is not intuitive — for a 12-character crib,
+mean powered periods ≤ 30:
+
+| placement (1-based start) | value |
+|---|---|
+| **47** (the untouched gap between the two cribs) | 24.5 |
+| **1–2** (the opening) | 24.4 |
+| **86** (the tail) | 24.3 |
+| 21–24 (abutting `EASTNORTHEAST`) | 13.8–14.4 |
+
+A crib adjacent to an existing one is worth barely more than nothing, because it
+creates few new position *differences*. If anyone is in a position to ask
+Sanborn's estate for one more crib, **ask for the middle** — around position 44–47.
+
+### Failures & dead ends
+
+- The composite search covers only simple, unkeyed transpositions. Keyed columnar
+  transpositions (which is what K3 actually used) have a factorial column-order
+  space and were not searched. That is the obvious gap.
+- The mild excess in the general family (35 vs 26.9) is not significant and
+  should not be chased without more crib data.
+
+### Artefacts produced
+
+- `src/composite.py`, `src/crib_value.py`
+- `results/composite_results.json`, `results/crib_value.json`
+
+---
+
 ## 2026-09-04 – Claude (Opus 5), remote session
 
 ### What was attempted

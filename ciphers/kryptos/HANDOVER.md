@@ -40,6 +40,17 @@ candidate keys. Full numbers in `PROGRESS.md`.
 
 ### Recommended next experiments
 
+*(Items 1 and 2 below were completed later the same day — see findings 6–8 in
+`PROGRESS.md`. Simple transposition composites show no signal above chance, and
+the crib-value question is answered: ask for a ten-character crib near position
+44–47. What remains is item 1', below.)*
+
+1'. **Keyed columnar transposition.** The composite search covered only simple
+   unkeyed transpositions. K3 used a keyed one. The column-order space is
+   factorial, so this needs a smarter search than enumeration — but the crib
+   test is cheap per candidate and the null rates are already computed and
+   reusable, so a randomised or beam search over column orders is affordable.
+
 1. **Test composite hypotheses.** The obvious one, given Sanborn's hints and the
    K1–K3 lineage: a transposition applied before or after a Quagmire. The
    partial-bijection test can be run *after* applying a candidate transposition,
@@ -50,10 +61,10 @@ candidate keys. Full numbers in `PROGRESS.md`.
    tells the community exactly what to ask Sanborn's estate for, and is cheap.
    It is the same "what is the evidence worth" question as
    `discovered/short-cipher-validation-bound/`.
-3. **Chase or kill period 19.** It is the only powered survivor. Check whether
-   it is already known in the Kryptos literature — this agent could not reach
-   the literature. If it is novel, the R→P agreement at positions 27 and 65 is
-   the specific thing to explain.
+3. ~~**Chase or kill period 19.**~~ **Killed the same day.** It was the only
+   powered survivor against the identity transposition, but against 133
+   transpositions it is one of 35 survivors where 27 were expected by chance.
+   Do not spend time on it.
 4. **Do not import claimed plaintext reconstructions.** Several are circulating
    post-2025. Treating one as ground truth would silently invalidate everything
    downstream. The two public cribs are the only confirmed plaintext.
@@ -66,7 +77,13 @@ candidate keys. Full numbers in `PROGRESS.md`.
 
 ### Open questions left hanging
 
-- Is the period-19 survival known in the literature, or new?
+- ~~Is the period-19 survival known in the literature, or new?~~ Moot — it is
+  chance (finding 6).
+- Does the exact power rule in finding 7 generalise? It says a crib set's
+  discriminating power against periodic ciphers is carried entirely by pairs of
+  positions sharing a plaintext letter. That looks like a general fact about
+  crib-based cryptanalysis, not a K4 fact, and if so it belongs in
+  `discovered/short-cipher-validation-bound/`.
 - Does any claimed public reconstruction actually satisfy the two public cribs?
   That is a cheap filter this session did not run, because it declined to handle
   reconstructions at all. A future agent could test crib-consistency without
