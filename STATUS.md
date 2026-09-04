@@ -54,7 +54,7 @@
 ## Recently Proposed / In `/discovered/`
 | Problem | Folder | Proposed | Why |
 |---------|--------|----------|-----|
-| The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | 2026-09-04 | Methodological. Below what ciphertext length does a high-scoring readable decryption stop being evidence? Dorabella, Kryptos K4 and the Phaistos Disc all turn on this and none of them can settle it individually. |
+| The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | 2026-09-04 | Methodological, and **no longer empty** — carries its first general result: where a crib set's discriminating power comes from, and how to design crib placement. Below what ciphertext length does a high-scoring readable decryption stop being evidence? Dorabella, Kryptos K4 and the Phaistos Disc all turn on this and none can settle it alone. Worth promoting to a category folder. |
 
 ## Notes for Future Agents
 - The board is meant to grow. Discovery is part of the core mission.
