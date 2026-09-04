@@ -1,0 +1,186 @@
+{
+ "seed": 20260907,
+ "restarts": 4000,
+ "claimed_key": "PSTYEHKWBARIGMXJFVOLDUNCZQ",
+ "claimed_plaintext": "pbsaftdalyrencemeetbbecoyouridedtdalwaseestunderethincollorisithischguisethnicabuitacoa",
+ "claimed_score": -4.742583111693744,
+ "n_distinct_optima_found": 3906,
+ "n_distinct_optima_at_or_above_claimed": 23,
+ "top_20": [
+  {
+   "score": -4.689147481986573,
+   "plaintext": "plsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "xlsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "glsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "jlsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.702367105398468,
+   "plaintext": "dwrontcomplaysagaatwwasupublecactcomforaartbycalatheysummulerethershiberathyesowbetosuo"
+  },
+  {
+   "score": -4.705767105477962,
+   "plaintext": "kmnoutsofclerdebeetmmediciplasestsofgoneentprselethardiffilanathandhypanethradompatodio"
+  },
+  {
+   "score": -4.71000782601196,
+   "plaintext": "gbroutcondmaysawaatbbasidilmecactconforaartlycamatheysinnimerethershplerathyesobletosio"
+  },
+  {
+   "score": -4.712799369421908,
+   "plaintext": "kgsaytdalfrencemeetggecofouridedtdalwaseestunderethincollorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.712799369421908,
+   "plaintext": "pgsaytdalfrencemeetggecofouridedtdalwaseestunderethincollorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.716839788570058,
+   "plaintext": "kwroutcondlaysagaatwwasidiblecactconforaartbycalatheysinnilerethershmberathyesowbetosio"
+  },
+  {
+   "score": -4.7196240445685484,
+   "plaintext": "kfroutconglaysawaatffasigiblecactcondoraartbycalatheysinnilerethershmberathyesofbetosio"
+  },
+  {
+   "score": -4.7256410202679495,
+   "plaintext": "bmnoutsofclardayaatmmadiciplesastsofwonaantprsalatherdiffilenethendhxpenathredompetodio"
+  },
+  {
+   "score": -4.7270131538284135,
+   "plaintext": "ygsaltdamfrenceweetggecofouridedtdambaseestunderethincommorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.729951374730412,
+   "plaintext": "mplicsdifyrenteveesppetoyouradedsdifwileelsundereshantofforalashalthqualeshnatipuasitoi"
+  },
+  {
+   "score": -4.730320336205299,
+   "plaintext": "gfrontcomdlaysawaatffasidiblecactcomporaartbycalatheysimmilerethershuberathyesofbetosio"
+  },
+  {
+   "score": -4.73210473029193,
+   "plaintext": "dwroutcomplaysagaatwwasipinlecactcomforaartnycalatheysimmilerethershknerathyesownetosio"
+  },
+  {
+   "score": -4.733347987506595,
+   "plaintext": "kmnowtsofclerdebeetmmediciplasestsofyoneentprselethardiffilanathandhupanethradompatodio"
+  },
+  {
+   "score": -4.734012490724711,
+   "plaintext": "gwrouncomplethebeenwwehipislacecncomforeernstcelendathimmilarandarhdysarendtahowsanohio"
+  },
+  {
+   "score": -4.734692875212951,
+   "plaintext": "kgrouncomplestebeenggethphilacecncomforeerniscelendasthmmhlarandartdyiarendsatogianotho"
+  },
+  {
+   "score": -4.736236187129938,
+   "plaintext": "bmnowtsofclerdeveetmmediciplasestsofyoneentprselethardiffilanathandhupanethradompatodio"
+  }
+ ],
+ "at_or_above_claimed": [
+  {
+   "score": -4.689147481986573,
+   "plaintext": "plsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "xlsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "glsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.689147481986573,
+   "plaintext": "jlsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.702367105398468,
+   "plaintext": "dwrontcomplaysagaatwwasupublecactcomforaartbycalatheysummulerethershiberathyesowbetosuo"
+  },
+  {
+   "score": -4.705767105477962,
+   "plaintext": "kmnoutsofclerdebeetmmediciplasestsofgoneentprselethardiffilanathandhypanethradompatodio"
+  },
+  {
+   "score": -4.71000782601196,
+   "plaintext": "gbroutcondmaysawaatbbasidilmecactconforaartlycamatheysinnimerethershplerathyesobletosio"
+  },
+  {
+   "score": -4.712799369421908,
+   "plaintext": "kgsaytdalfrencemeetggecofouridedtdalwaseestunderethincollorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.712799369421908,
+   "plaintext": "pgsaytdalfrencemeetggecofouridedtdalwaseestunderethincollorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.716839788570058,
+   "plaintext": "kwroutcondlaysagaatwwasidiblecactconforaartbycalatheysinnilerethershmberathyesowbetosio"
+  },
+  {
+   "score": -4.7196240445685484,
+   "plaintext": "kfroutconglaysawaatffasigiblecactcondoraartbycalatheysinnilerethershmberathyesofbetosio"
+  },
+  {
+   "score": -4.7256410202679495,
+   "plaintext": "bmnoutsofclardayaatmmadiciplesastsofwonaantprsalatherdiffilenethendhxpenathredompetodio"
+  },
+  {
+   "score": -4.7270131538284135,
+   "plaintext": "ygsaltdamfrenceweetggecofouridedtdambaseestunderethincommorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.729951374730412,
+   "plaintext": "mplicsdifyrenteveesppetoyouradedsdifwileelsundereshantofforalashalthqualeshnatipuasitoi"
+  },
+  {
+   "score": -4.730320336205299,
+   "plaintext": "gfrontcomdlaysawaatffasidiblecactcomporaartbycalatheysimmilerethershuberathyesofbetosio"
+  },
+  {
+   "score": -4.73210473029193,
+   "plaintext": "dwroutcomplaysagaatwwasipinlecactcomforaartnycalatheysimmilerethershknerathyesownetosio"
+  },
+  {
+   "score": -4.733347987506595,
+   "plaintext": "kmnowtsofclerdebeetmmediciplasestsofyoneentprselethardiffilanathandhupanethradompatodio"
+  },
+  {
+   "score": -4.734012490724711,
+   "plaintext": "gwrouncomplethebeenwwehipislacecncomforeernstcelendathimmilarandarhdysarendtahowsanohio"
+  },
+  {
+   "score": -4.734692875212951,
+   "plaintext": "kgrouncomplestebeenggethphilacecncomforeerniscelendasthmmhlarandartdyiarendsatogianotho"
+  },
+  {
+   "score": -4.736236187129938,
+   "plaintext": "bmnowtsofclerdeveetmmediciplasestsofyoneentprselethardiffilanathandhupanethradompatodio"
+  },
+  {
+   "score": -4.737061292035229,
+   "plaintext": "gclimsdifyrenteveesccetoyouradedsdifwileelsundereshantofforalashalthqualeshnaticuasitoi"
+  },
+  {
+   "score": -4.738297322245862,
+   "plaintext": "kmnoutsofclerdebeetmmediciplasestsofyoneentprselethardiffilanathandhxpanethradompatodio"
+  },
+  {
+   "score": -4.740476840010338,
+   "plaintext": "ksraltdamyvenceweetssecoyouvidedtdampareertundevethincommovirithirchquirethnicasuitacoa"
+  }
+ ],
+ "runtime_seconds": 59.37364840507507
+}

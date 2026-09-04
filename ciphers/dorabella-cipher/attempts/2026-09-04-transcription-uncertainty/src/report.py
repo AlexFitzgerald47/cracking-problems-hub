@@ -139,6 +139,49 @@ def main():
     w('')
     w('Dorabella best plaintext at %d restarts: `%s`\n' % (pw['restarts'], do['best_plaintext']))
 
+
+    w('## 8. Budget-matched comparison\n')
+    mt = load('matched_results.json')
+    w('Hill-climb scores rise with search budget, so every text below was given '
+      'the same budget of %d restarts (%d English controls, %d shuffles).\n'
+      % (mt['restarts'], mt['n_each'], mt['n_each']))
+    w('| population | mean | sd | key percentiles |')
+    w('|---|---|---|---|')
+    w('| genuine English (enciphered, known key) | %.4f | %.4f | 2.5%%: %.4f, 5%%: %.4f, min: %.4f |' % (
+        mt['english']['mean'], mt['english']['sd'], mt['english']['p2.5'],
+        mt['english']['p5'], mt['english']['min']))
+    w('| shuffles of Dorabella (noise floor) | %.4f | %.4f | 95%%: %.4f, max: %.4f |' % (
+        mt['shuffles']['mean'], mt['shuffles']['sd'], mt['shuffles']['p95'], mt['shuffles']['max']))
+    w('')
+    w('| reading | best score | above %% of English | p vs noise |')
+    w('|---|---|---|---|')
+    for lab, v in mt['readings'].items():
+        w('| %s | %.4f | %.1f%% | %.3f |' % (lab, v['score'], 100 * v['pct_english_below'],
+                                             v['p_value_vs_shuffles']))
+    w('')
+
+    w('## 9. Is the published claimed solution special?\n')
+    cl = load('claimed_results.json')
+    fam = load('claimed_families.json')
+    w('Search budget %d restarts on the Williams reading; %d distinct local optima explored.\n'
+      % (cl['restarts'], cl['n_distinct_optima_found']))
+    w('| quantity | value |')
+    w('|---|---|')
+    w('| published claimed key | `%s` |' % cl['claimed_key'])
+    w('| its plaintext | `%s` |' % cl['claimed_plaintext'])
+    w('| its score | %.4f |' % cl['claimed_score'])
+    w('| distinct optima scoring at or above it | %d |' % fam['n_optima_at_or_above_claimed'])
+    w('| **mutually different messages among those** (Hamming > %d of 87) | **%d** |'
+      % (fam['clustering_threshold_hamming'], fam['n_families']))
+    w('| median distance between those messages | %s of 87 characters |'
+      % fam['median_distance_between_families'])
+    w('')
+    w('| score | family size | representative plaintext |')
+    w('|---|---|---|')
+    for f in fam['families']:
+        w('| %.4f | %d | `%s` |' % (f['score'], f['n_members'], f['representative']))
+    w('')
+
     with open(OUT, 'w') as fh:
         fh.write('\n'.join(L) + '\n')
     print('wrote', OUT)
