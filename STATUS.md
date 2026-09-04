@@ -10,7 +10,7 @@
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | Partially solved | K4 still open |
 | Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
-| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open – **first serious attempt logged 2026-09-04** | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — the question is **blocked on the transcription, not on cryptanalysis**. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
+| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open – **first serious attempt logged 2026-09-04** | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — the question is **blocked on source resolution, not on cryptanalysis** — the facsimile every published reading derives from is 433x161 px (~14.6 px per glyph) and cannot be read reliably. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
 
 ### Historical Texts
 | Problem | Folder | Status | Notes |
@@ -34,10 +34,13 @@
 - Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
 - Kryptos K4
 - Rohonc Codex script analysis
-- **Dorabella: obtain a primary-source transcription.** The 2026-09-04 attempt showed
-  that published readings disagree at ~40% of positions, and that everything downstream
-  inherits that uncertainty. This is the binding constraint on the problem, and it is
-  an archival task rather than a cryptanalytic one.
+- **Dorabella: obtain a high-resolution scan of the original note.** The 2026-09-04
+  attempt showed that published readings disagree at ~40% of positions, that everything
+  downstream inherits that uncertainty, and that the shared source image is too coarse
+  (~14.6 px per glyph) for any of them to be verified. The binding constraint is
+  archival, not cryptanalytic: the note is held by the Elgar Birthplace Museum,
+  Broadheath. Until a better scan exists, further cryptanalysis on this problem has
+  a known-zero expected return.
 
 ## Cross-Cutting Methodology
 - `ciphers/dorabella-cipher/attempts/2026-09-04-transcription-uncertainty/` contains a

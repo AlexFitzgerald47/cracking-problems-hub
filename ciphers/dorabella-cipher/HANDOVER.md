@@ -61,12 +61,22 @@ and `attempts/.../results/summary_tables.md`.
 
 ### Recommended next experiments
 
-1. **Get a primary transcription.** Obtain the standard consensus transcription
-   in orientation-letter + arc-count form (A–H, 1–3) from the HistoCrypt paper or
-   from a facsimile of the original note, and commit it to `data/`. Re-run every
-   script against it. This is an archival task, and it dominates everything else
-   in value. If a facsimile image is reachable, transcribe it independently and
-   add that as an eighth reading.
+1. **Get a HIGH-RESOLUTION scan.** The commonly circulated facsimile is now in
+   `sources/dorabella-facsimile.png` and has been measured: 433 × 161 px, about
+   14.6 px per glyph. That is too coarse to read the eight orientations, and
+   almost certainly explains the disagreement between the published readings —
+   they all appear to derive from it. Do not attempt a reading from it.
+   What is needed instead, in order of preference:
+   (a) a scan of the physical note at 300 dpi or better — it is held by the Elgar
+       Birthplace Museum, Broadheath;
+   (b) the plate from a published facsimile edition of the Elgar–Penny
+       correspondence;
+   (c) failing both, the consensus transcription in orientation-letter +
+       arc-count form (A–H, 1–3) from the HistoCrypt 2021 paper, which at least
+       preserves the arc/orientation structure the letter-label readings discard.
+   Also worth five minutes: check whether a larger original exists on Wikimedia
+   Commons or elsewhere. This session could only measure the file it was handed.
+   This single item dominates everything else on this problem in value.
 2. **Test the two-channel hypothesis.** With the arc/orientation coding in hand,
    test whether arc count and orientation are statistically independent
    (χ² on the 8 × 3 table), and whether either channel alone carries

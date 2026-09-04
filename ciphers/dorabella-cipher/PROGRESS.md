@@ -2,6 +2,80 @@
 
 ---
 
+## 2026-09-04 (continued) – facsimile acquired and measured
+
+### What was attempted
+
+A facsimile of the original note was supplied and committed to
+`sources/dorabella-facsimile.png` (the Wikimedia Commons copy,
+`commons/7/73/Dorabella-cipher-image.png`; public domain — the note dates from
+1897 and Elgar died in 1934). The intention was to produce an eighth reading
+with known provenance, made blind to the existing claimed solutions, and so to
+break the transcription deadlock identified earlier today.
+
+### Results / findings
+
+**6. The facsimile everyone works from cannot settle the question. It is too
+coarse.**
+
+Measured (`src/facsimile.py`, results in `results/facsimile_results.json`):
+
+| quantity | value |
+|---|---|
+| image size | 433 × 161 px |
+| text bands recovered | 4 — three cipher lines plus the dated signature |
+| cipher line bands (rows) | 1–32, 37–60, 77–99 |
+| line spans | 420, 426, 424 px |
+| implied pitch at the claimed 29/31/27 glyphs | 14.5, 13.7, 15.7 px per glyph |
+| column-profile autocorrelation peak | lag 11–13 px, **r = 0.21–0.24** |
+| count implied by that peak | 38.2, 32.8, 35.3 glyphs |
+
+The line structure is solid: three cipher lines and a fourth band holding the
+signature and date are cleanly separable, corroborating the 3-line format and
+the 14 July 1897 dating.
+
+Glyph boundaries are not recoverable. At ~14.6 px per glyph the ink runs
+correspond to individual *arcs*, not to whole symbols, and arcs merge freely
+across symbol boundaries — projection segmentation returns 28/27/23 ink runs
+against 29/31/27 claimed glyphs, while width-based and valley-splitting
+estimates overshoot to 35–42. The autocorrelation of the column profile shows
+only a weak, broad periodicity that cannot discriminate 29 glyphs from 35 on a
+line.
+
+**No character-level transcription was attempted from this image, and none
+should be.** At this resolution the eight orientations are 45° apart across
+roughly fourteen pixels. Producing an 87-symbol reading from it would have meant
+inventing data and presenting it as a provenanced eighth witness — precisely the
+failure this attempt criticised in the existing compilation.
+
+**What this reframes.** The 36-of-87 instability found earlier is not
+carelessness by previous transcribers. Every published reading appears to derive
+from this same small image, and at 14.6 px per glyph, disagreement at roughly
+40% of positions is about what one should expect. The transcription problem is
+therefore not a reading problem to be solved by care or by cleverness. It is a
+*resolution* problem, and it is fixed by a better scan or not at all.
+
+### Failures & dead ends
+
+- The image could not be fetched from `upload.wikimedia.org` — blocked by this
+  environment's egress policy, as `en.wikipedia.org` was. It arrived only
+  because it was supplied directly. Committed to `sources/` so no future agent
+  is blocked the same way.
+- Projection segmentation, valley splitting and autocorrelation pitch estimation
+  were all tried and all failed to recover glyph boundaries. Recorded so nobody
+  repeats them on this image. They would likely work at 3–4× the resolution.
+- Whether 433 × 161 is the best available copy was **not** established — only
+  the file supplied could be measured. If a larger Commons original or another
+  scan exists, this whole finding may be moot, and checking is cheap.
+
+### Artefacts produced
+
+- `sources/dorabella-facsimile.png` — the facsimile, now permanently in the repo
+- `attempts/2026-09-04-transcription-uncertainty/src/facsimile.py`
+- `attempts/2026-09-04-transcription-uncertainty/results/facsimile_results.json`
+
+---
+
 ## 2026-09-04 – Claude (Opus 5), remote session
 
 ### What was attempted
