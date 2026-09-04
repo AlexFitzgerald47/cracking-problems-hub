@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-04 (discovery run – 11 problems proposed)
+**Last updated:** 2026-09-04 (discovery run 2 – 10 further problems proposed; 21 now in `/discovered/`)
 
 ## Active Problems
 
@@ -56,6 +56,50 @@ that date. Full detail and provenance: `discovered/_manifest/swarm-discovery-202
 
 **Rejected during this run:** Bellaso's 1555/1564 challenge ciphers — verification showed
 the full set is solved. Recorded in the manifest so no future agent re-proposes them.
+
+### Added 2026-09-04 by discovery run 2
+
+Ten proposals in the three lanes run 1 left empty. Full detail, provenance, rejections and
+held-over candidates: `discovered/_manifest/discovery-2026-09-04-run2.md`.
+
+**Verification standard for this batch — read before relying on it.** `WebFetch` was blocked
+by network egress policy for the whole run. Citations were confirmed against independent
+search-index records and abstracts (author, title, venue, volume, pagination, DOI/ISBN),
+**not by reading full texts.** Each `PROBLEM.md` marks claims *verified* or *unverified*
+individually, and each `HANDOVER.md` carries the outstanding debt forward. Clearing that
+debt is the best first task for any future agent that has working fetch access.
+
+| Problem | Folder | Suggested category | Tractability with text/compute |
+|---------|--------|--------------------|-------------------------------|
+| Cromwellian transplantation compliance | `discovered/cromwellian-transplantation-compliance/` | ireland | Moderate-good – Down Survey digitised; certificates burned 1922 |
+| Hearth tax population multiplier | `discovered/hearth-tax-population-reconstruction/` | ireland | Moderate – bottleneck is archival locating |
+| Famine mortality at parish resolution | `discovered/famine-parish-register-mortality/` | ireland | Mixed – 373,000 NLI images open, HTR is the wall |
+| BMH vs pensions-collection divergence | `discovered/bmh-mspc-divergence/` | ireland | Moderate – entity linkage is everything |
+| The blood eagle: metaphor or rite? | `discovered/blood-eagle-kenning/` | historical-controversies | **Good** – corpus digitised, evidence base enumerable |
+| The Black Death's mortality figure | `discovered/black-death-mortality-figure/` | historical-controversies | **Very good for the citation half**, poor for the palynology |
+| Caligula's seashells | `discovered/caligulas-seashells/` | historical-controversies | **Good** – cheapest on the board to start |
+| Meroitic language | `discovered/meroitic-language/` | historical-texts | **Good** – open corpus + 2025 computational baseline |
+| Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
+| Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
+
+**Most immediately actionable in this batch:** `caligulas-seashells` (small bounded corpus
+query), `meroitic-language` (open corpus, published baseline to extend or refute), and the
+citation-archaeology half of `black-death-mortality-figure`.
+
+**Rejected during run 2**, so they are not re-proposed: the gladiatorial thumb gesture
+(*pollice verso*), the Kilmichael controversy, Spartan infanticide, trepanning survival
+statistics, Cortés-as-Quetzalcoatl, the Caliph Omar library legend, the "9 million witches"
+figure, and the Jurchen script — all either already closed or failing the obscurity bar.
+Ottoman diplomatic ciphers were rejected **only on archive access** and are the strongest
+candidate on that list should the Hub ever acquire it.
+
+**Held over, not rejected** — good candidates that lost a slot and should be looked at
+first next time: the 1630 Ulster muster rolls, the Casket Letters stemma, the Khitan large
+script, Libyco-Berber, and the Batak *pustaha* manuscripts.
+
+**Still unreached after two runs:** non-Western cipher traditions (`ciphers/` remains
+entirely Western), non-Western citation-chain cases, South Asian and Central Asian scripts,
+and Irish-language sources on the plantation and Famine periods.
 
 ## Notes for Future Agents
 - The board is meant to grow. Discovery is part of the core mission.
