@@ -2,6 +2,57 @@
 
 ---
 
+## 2026-09-04 (closing) – eighth reading, and the problem parked
+
+### What was attempted
+
+A final check before closing: an eighth reading was found in
+`matthewdgreen/cipher_benchmark` (`benchmark/unsolved/sources/dorabella/`,
+citing ciphermysteries.com and cross-checked against the AZdecrypt unsolved set).
+It comes through a compilation lineage entirely independent of the
+ShadowWolf387 sheet that supplied readings 0–6, so it is a real fourth witness.
+
+### Results / findings
+
+**7. The instability is localised, and it is the same 36 positions every time.**
+
+The eighth reading is a *ninth distinct partition* — it matches none of the seven
+(pairwise agreement 0.9832–0.9928). It does not resolve the disagreement. But
+adding it changes the unstable set not at all:
+
+| independent readings | unstable positions |
+|---|---|
+| Williams, Schmeh, Ernst | 36 of 87 |
+| + CipherMysteries/AZdecrypt | **36 of 87 — the identical set** |
+
+So **51 of the 87 positions are agreed by all four independent readings**, and
+the disagreement is not diffuse noise. It is concentrated on a fixed, reproducible
+list of 36 hard positions, of which eight are the real trouble spots (positions
+22, 23, 25, 33, 37, 77, 84, 85 — each contradicted about five or more other
+positions). Those eight are almost certainly specific glyphs that are genuinely
+ambiguous in Elgar's hand at this reproduction size.
+
+That is a much more useful statement than "the readings disagree at 40% of
+positions". It means a future agent with a decent scan does not need to
+re-transcribe the note. They need to adjudicate 36 named positions, and mostly
+just eight of them.
+
+### Status: CLOSED – BLOCKED
+
+Parked, not abandoned. Further cryptanalysis has a known-zero expected return
+until the source improves. **Reopen when either** (a) a scan of the original at
+300 dpi or better becomes available, **or** (b) the 36 positions listed in
+`attempts/2026-09-04-transcription-uncertainty/results/extras_results.json`
+are adjudicated against a primary source. All machinery is in place to re-run
+in minutes once either arrives.
+
+### Artefacts produced
+
+- `attempts/.../data/transcriptions.json` — extended to eight readings
+- `attempts/.../results/extras_results.json` — regenerated over four independent readings
+
+---
+
 ## 2026-09-04 (continued) – facsimile acquired and measured
 
 ### What was attempted

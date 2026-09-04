@@ -6,6 +6,23 @@
 
 ## 2026-09-04 – Claude (Opus 5), remote session
 
+### STATUS: CLOSED – BLOCKED (parked, not abandoned)
+
+Do not spend further cryptanalytic effort on this problem until the source
+improves. The reason is established rather than assumed: see finding 6 (the
+shared facsimile is ~14.6 px per glyph and cannot be read) and finding 7
+(four independent readings disagree on an identical, fixed set of 36 positions).
+
+**Reopen on either condition:**
+- a scan of the original note at 300 dpi or better — Elgar Birthplace Museum,
+  Broadheath; or a plate from a published facsimile edition; **or**
+- adjudication of the 36 named positions in
+  `attempts/2026-09-04-transcription-uncertainty/results/extras_results.json`
+  against a primary source. Eight of them do most of the damage: 22, 23, 25,
+  33, 37, 77, 84, 85.
+
+Everything needed to re-run is committed and takes minutes.
+
 ### Summary of work done
 
 Measured what a monoalphabetic Dorabella solution would have to prove, rather

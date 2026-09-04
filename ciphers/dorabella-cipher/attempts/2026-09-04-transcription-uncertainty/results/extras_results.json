@@ -31,6 +31,10 @@
     "Robert S.": {
      "ic": 0.05854049719326383,
      "pct_english_below": 0.22525
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05880780539962577,
+     "pct_english_below": 0.2408
     }
    }
   },
@@ -65,6 +69,10 @@
     "Robert S.": {
      "ic": 0.053542455381287185,
      "pct_english_below": 0.07375
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05408328826392644,
+     "pct_english_below": 0.0887
     }
    }
   },
@@ -99,6 +107,10 @@
     "Robert S.": {
      "ic": 0.05582922824302135,
      "pct_english_below": 0.1476
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05665024630541872,
+     "pct_english_below": 0.17355
     }
    }
   },
@@ -133,6 +145,10 @@
     "Robert S.": {
      "ic": 0.058693244739756366,
      "pct_english_below": 0.27485
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.059800664451827246,
+     "pct_english_below": 0.31765
     }
    }
   },
@@ -165,6 +181,10 @@
      "pct_english_below": 0.1277
     },
     "Robert S.": {
+     "ic": 0.05322128851540616,
+     "pct_english_below": 0.1277
+    },
+    "CipherMysteries/AZdecrypt": {
      "ic": 0.05322128851540616,
      "pct_english_below": 0.1277
     }
@@ -201,6 +221,10 @@
     "Robert S.": {
      "ic": 0.05782312925170068,
      "pct_english_below": 0.26665
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05442176870748299,
+     "pct_english_below": 0.1714
     }
    }
   },
@@ -235,6 +259,10 @@
     "Robert S.": {
      "ic": 0.040160642570281124,
      "pct_english_below": 0.0095
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.04216867469879518,
+     "pct_english_below": 0.01675
     }
    }
   },
@@ -269,6 +297,10 @@
     "Robert S.": {
      "ic": 0.06744186046511629,
      "pct_english_below": 0.5847
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.06976744186046512,
+     "pct_english_below": 0.64605
     }
    }
   },
@@ -303,6 +335,10 @@
     "Robert S.": {
      "ic": 0.05555555555555555,
      "pct_english_below": 0.23915
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05291005291005291,
+     "pct_english_below": 0.1779
     }
    }
   },
@@ -337,6 +373,10 @@
     "Robert S.": {
      "ic": 0.0625,
      "pct_english_below": 0.43875
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.06547619047619048,
+     "pct_english_below": 0.51665
     }
    }
   }
@@ -345,7 +385,8 @@
  "independent_transcriptions": [
   "Williams",
   "Schmeh (MTC3)",
-  "Ernst"
+  "Ernst",
+  "CipherMysteries/AZdecrypt"
  ],
  "unstable_positions": [
   {
@@ -355,7 +396,8 @@
    "symbols": [
     "A",
     "A",
-    "B"
+    "B",
+    "K"
    ]
   },
   {
@@ -365,7 +407,8 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
@@ -375,7 +418,8 @@
    "symbols": [
     "Q",
     "E",
-    "A"
+    "A",
+    "C"
    ]
   },
   {
@@ -385,7 +429,8 @@
    "symbols": [
     "U",
     "G",
-    "T"
+    "T",
+    "B"
    ]
   },
   {
@@ -395,7 +440,8 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
@@ -405,37 +451,41 @@
    "symbols": [
     "D",
     "A",
-    "Y"
+    "Y",
+    "K"
    ]
   },
   {
    "position": 13,
    "line": 0,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "X",
     "L",
-    "D"
+    "D",
+    "E"
    ]
   },
   {
    "position": 22,
    "line": 0,
-   "conflicting_partners": 8,
+   "conflicting_partners": 9,
    "symbols": [
     "X",
     "N",
-    "D"
+    "D",
+    "E"
    ]
   },
   {
    "position": 23,
    "line": 0,
-   "conflicting_partners": 7,
+   "conflicting_partners": 8,
    "symbols": [
     "S",
     "G",
-    "X"
+    "X",
+    "G"
    ]
   },
   {
@@ -445,27 +495,30 @@
    "symbols": [
     "D",
     "O",
-    "Y"
+    "Y",
+    "O"
    ]
   },
   {
    "position": 25,
    "line": 0,
-   "conflicting_partners": 7,
+   "conflicting_partners": 8,
    "symbols": [
     "S",
     "G",
-    "X"
+    "X",
+    "G"
    ]
   },
   {
    "position": 26,
    "line": 0,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "V",
     "N",
-    "G"
+    "G",
+    "A"
    ]
   },
   {
@@ -475,7 +528,8 @@
    "symbols": [
     "U",
     "G",
-    "T"
+    "T",
+    "B"
    ]
   },
   {
@@ -485,17 +539,19 @@
    "symbols": [
     "U",
     "G",
-    "T"
+    "T",
+    "B"
    ]
   },
   {
    "position": 33,
    "line": 1,
-   "conflicting_partners": 6,
+   "conflicting_partners": 9,
    "symbols": [
     "U",
     "Q",
-    "T"
+    "T",
+    "G"
    ]
   },
   {
@@ -505,7 +561,8 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
@@ -515,17 +572,19 @@
    "symbols": [
     "J",
     "S",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
    "position": 43,
    "line": 1,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "V",
     "N",
-    "G"
+    "G",
+    "A"
    ]
   },
   {
@@ -535,7 +594,8 @@
    "symbols": [
     "U",
     "G",
-    "T"
+    "T",
+    "B"
    ]
   },
   {
@@ -545,17 +605,19 @@
    "symbols": [
     "F",
     "T",
-    "W"
+    "W",
+    "J"
    ]
   },
   {
    "position": 53,
    "line": 1,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "X",
     "L",
-    "D"
+    "D",
+    "E"
    ]
   },
   {
@@ -565,7 +627,8 @@
    "symbols": [
     "S",
     "Q",
-    "X"
+    "X",
+    "G"
    ]
   },
   {
@@ -575,7 +638,8 @@
    "symbols": [
     "S",
     "Q",
-    "X"
+    "X",
+    "G"
    ]
   },
   {
@@ -585,17 +649,19 @@
    "symbols": [
     "F",
     "U",
-    "U"
+    "U",
+    "J"
    ]
   },
   {
    "position": 66,
    "line": 2,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "X",
     "L",
-    "D"
+    "D",
+    "E"
    ]
   },
   {
@@ -605,7 +671,8 @@
    "symbols": [
     "F",
     "U",
-    "U"
+    "U",
+    "J"
    ]
   },
   {
@@ -615,17 +682,19 @@
    "symbols": [
     "M",
     "U",
-    "W"
+    "W",
+    "R"
    ]
   },
   {
    "position": 69,
    "line": 2,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "V",
     "N",
-    "G"
+    "G",
+    "A"
    ]
   },
   {
@@ -635,17 +704,19 @@
    "symbols": [
     "F",
     "U",
-    "W"
+    "W",
+    "J"
    ]
   },
   {
    "position": 77,
    "line": 2,
-   "conflicting_partners": 8,
+   "conflicting_partners": 9,
    "symbols": [
     "X",
     "N",
-    "D"
+    "D",
+    "A"
    ]
   },
   {
@@ -655,17 +726,19 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
    "position": 80,
    "line": 2,
-   "conflicting_partners": 2,
+   "conflicting_partners": 3,
    "symbols": [
     "V",
     "N",
-    "G"
+    "G",
+    "A"
    ]
   },
   {
@@ -675,27 +748,30 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   },
   {
    "position": 84,
    "line": 2,
-   "conflicting_partners": 2,
+   "conflicting_partners": 9,
    "symbols": [
     "X",
     "L",
-    "D"
+    "D",
+    "A"
    ]
   },
   {
    "position": 85,
    "line": 2,
-   "conflicting_partners": 5,
+   "conflicting_partners": 6,
    "symbols": [
     "S",
     "E",
-    "X"
+    "X",
+    "G"
    ]
   },
   {
@@ -705,7 +781,8 @@
    "symbols": [
     "J",
     "D",
-    "C"
+    "C",
+    "S"
    ]
   }
  ],

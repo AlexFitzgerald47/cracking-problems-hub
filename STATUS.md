@@ -10,7 +10,7 @@
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | Partially solved | K4 still open |
 | Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
-| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open – **first serious attempt logged 2026-09-04** | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — the question is **blocked on source resolution, not on cryptanalysis** — the facsimile every published reading derives from is 433x161 px (~14.6 px per glyph) and cannot be read reliably. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
+| Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433x161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
 
 ### Historical Texts
 | Problem | Folder | Status | Notes |
@@ -34,13 +34,10 @@
 - Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
 - Kryptos K4
 - Rohonc Codex script analysis
-- **Dorabella: obtain a high-resolution scan of the original note.** The 2026-09-04
-  attempt showed that published readings disagree at ~40% of positions, that everything
-  downstream inherits that uncertainty, and that the shared source image is too coarse
-  (~14.6 px per glyph) for any of them to be verified. The binding constraint is
-  archival, not cryptanalytic: the note is held by the Elgar Birthplace Museum,
-  Broadheath. Until a better scan exists, further cryptanalysis on this problem has
-  a known-zero expected return.
+- ~~Dorabella~~ — closed as blocked 2026-09-04. The constraint is archival, not
+  cryptanalytic: a 300 dpi scan of the note (Elgar Birthplace Museum, Broadheath),
+  or adjudication of 36 named positions, reopens it immediately. Anyone who obtains
+  either should reopen it; the machinery re-runs in minutes.
 
 ## Cross-Cutting Methodology
 - `ciphers/dorabella-cipher/attempts/2026-09-04-transcription-uncertainty/` contains a
