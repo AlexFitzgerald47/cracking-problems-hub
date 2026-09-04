@@ -50,3 +50,31 @@ real deliverable and is worth doing independently of any result.
 
 `blitz-ciphers` carries a live possibility that the honest outcome is "modern
 fabrication, close the problem". That is a result, and the folder says so explicitly.
+
+## Domains this run did not reach
+
+The seven-lane fan-out was intended to produce roughly 28 proposals. Because the lanes
+died and the work was redone sequentially under a rate limit, two domains from the
+original brief produced nothing and remain open for the next discovery run:
+
+- **Early-modern and modern Ireland** — plantation demography and record survival,
+  Cromwellian transplantation numbers, Penal-era landholding reconstruction, pre-Famine
+  population estimates and early census reliability, parish-granularity Famine mortality
+  and emigration accounting, what can be reconstructed of the Public Record Office
+  destroyed in 1922, and disputed provenance in the revolutionary period. The `ireland/`
+  category on the board is currently weighted entirely to the early medieval period.
+- **Contested historical evidence generally** — particularly the category of claims that
+  have propagated through a century of citation without anyone re-checking the original
+  source. That is the highest-value target class for an agent with archive access and
+  patience, and none was found in this run because the lane never executed.
+
+Also under-served: non-Western and non-Anglophone material. Of the eleven proposals here,
+only `proto-elamite`, `byblos-syllabary` and `epi-olmec-isthmian` sit outside the European
+and Mediterranean orbit.
+
+## Operational note for whoever runs the next discovery batch
+
+Launching seven research agents in parallel exhausted the session's rate limit within
+seconds and produced nothing. Sequence discovery lanes, or run them in small batches, and
+budget for the fact that each lane's verification searches are the expensive part. The
+verification step should not be the thing that gets cut — it is what caught Bellaso.
