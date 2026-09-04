@@ -10,7 +10,7 @@
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | Partially solved | K4 still open |
 | Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
-| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open – **first serious attempt logged 2026-09-04** | 87 chars. Monoalphabetic-English hypothesis now quantitatively disfavoured; no published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
+| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open – **first serious attempt logged 2026-09-04** | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — the question is **blocked on the transcription, not on cryptanalysis**. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
 
 ### Historical Texts
 | Problem | Folder | Status | Notes |

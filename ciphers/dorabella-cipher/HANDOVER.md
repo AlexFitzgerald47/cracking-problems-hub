@@ -35,6 +35,13 @@ and `attempts/.../results/summary_tables.md`.
 - **Count the competitors.** Thirteen mutually unrelated messages score at or
   above the best published monoalphabetic claim. Counting competing optima is a
   far better test of a claimed solution than looking at its score.
+- **Always test the boring explanation.** Under a budget-matched search Dorabella
+  falls cleanly between the English band and the noise floor, which looks like a
+  result. It is not: simulating transcription error at the rate the readings
+  themselves exhibit puts genuine English in the same place 12–32% of the time.
+  The apparent finding dissolves into the transcription problem. Any future
+  Dorabella statistic must be run against corrupted-English controls, not clean
+  ones.
 
 ### What failed and why
 
@@ -48,6 +55,9 @@ and `attempts/.../results/summary_tables.md`.
   structural hypothesis went untested.
 - No decipherment. None was attempted, and on this evidence none of the
   monoalphabetic class can be validated from 87 characters by fit alone.
+- The session's most attractive result — Dorabella sitting in a clean gap between
+  English and noise — did not survive its own confound test. Recorded as
+  finding 3b rather than quietly dropped.
 
 ### Recommended next experiments
 

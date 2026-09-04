@@ -18,6 +18,15 @@ Three questions:
    question that decides whether "my search found a readable high-scoring key"
    is evidence of anything.
 
+## Headline
+
+Dorabella fits English badly and beats the noise floor cleanly — but simulating
+transcription error at the rate the published readings themselves exhibit puts
+genuine English in exactly the same place 12–32% of the time. The monoalphabetic
+question is therefore **blocked on the transcription, not on the cryptanalysis**.
+Separately, 13 mutually unrelated messages score at or above the best published
+monoalphabetic claim, so that claim's score gives it no special standing.
+
 ## Layout
 
 ```
@@ -25,8 +34,12 @@ data/transcriptions.json   seven readings, with provenance and caveats
 src/lang.py                English reference model + its validation
 src/dorabella.py           canonicalisation, relabelling-invariant comparison, stats
 src/solver.py              quadgram hill climber
-src/experiments.py         descriptive statistics + solver calibration
-src/power.py               solver power / key-recovery measurement
+src/experiments.py         descriptive statistics + first (unmatched) solver pass
+src/power.py               solver power / key-recovery measurement on known keys
+src/matched.py             budget-matched comparison: cipher vs English vs noise
+src/claimed.py             scores the best published claim; enumerates rival optima
+src/families.py            clusters those optima into distinct messages
+src/corrupt.py             does transcription error alone explain the gap?
 src/extras.py              periodic IC; per-position transcription instability
 src/report.py              renders results/summary_tables.md
 results/                   raw JSON + rendered tables
@@ -40,6 +53,10 @@ cd src
 python experiments.py     # ~3 min
 python power.py           # ~15 min
 python extras.py          # ~2 min
+python matched.py         # ~23 min
+python claimed.py         # ~1 min
+python families.py
+python corrupt.py         # ~17 min
 python report.py
 ```
 

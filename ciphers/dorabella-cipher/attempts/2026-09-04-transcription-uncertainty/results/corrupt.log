@@ -1,0 +1,5 @@
+q=0.05  mean -4.4564  sd 0.1694  min -4.8562
+q=0.10  mean -4.6115  sd 0.1720  min -4.9038
+q=0.05: 11.7% of corrupted English scores at or below Dorabella (-4.7100)
+q=0.1: 31.7% of corrupted English scores at or below Dorabella (-4.7100)
+wrote /home/user/cracking-problems-hub/ciphers/dorabella-cipher/attempts/2026-09-04-transcription-uncertainty/src/../results/corrupt_results.json

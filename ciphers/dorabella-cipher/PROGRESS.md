@@ -68,13 +68,72 @@ period 8, gives 0.0674 against a null of 0.0646 ± 0.0136). The null's spread
 grows with period, so this test is close to powerless for periods above about 4
 — this is weak absence of evidence, not evidence of absence.
 
-**3. Under a budget-matched search, Dorabella fits English badly.**
+**3. Under a budget-matched search, Dorabella is neither English nor noise — it
+falls in the gap between them.**
 
-*(Numbers pending: the budget-matched run `src/matched.py` was still executing
-when this entry was first committed. It gives every text — Dorabella, 100
-genuine English controls and 100 shuffles of Dorabella — an identical budget of
-500 restarts, which is the only way these scores can legitimately be compared.
-This section is updated in a follow-up commit; see `results/matched_results.json`.)*
+Hill-climb scores rise with search budget, so every text was given an identical
+budget of 500 restarts: Dorabella, 100 genuine English texts enciphered with
+known random keys, and 100 shuffles of Dorabella itself (same symbol
+frequencies, all sequential structure destroyed — the noise floor).
+
+| population | mean | sd | extremes |
+|---|---|---|---|
+| genuine English, enciphered | −4.2371 | 0.1297 | worst of 100: −4.5337 |
+| shuffles of Dorabella (noise) | −4.9117 | 0.0602 | best of 100: −4.7481 |
+
+At this budget the two populations do not overlap at all: the worst English text
+scores −4.5337, the best shuffle −4.7481, leaving a clear gap between them.
+
+**Dorabella (Williams reading) scores −4.7100 — inside that gap.** It beats all
+100 shuffles, and is beaten by all 100 English texts. So there is genuine
+sequential structure in the cipher that an English quadgram model can exploit;
+there is markedly less of it than a monoalphabetic English cipher of the same
+length would show.
+
+And the conclusion depends on which reading you use:
+
+| reading | best score | above % of English | p vs noise |
+|---|---|---|---|
+| Roberts (decrypt) | −4.6626 | 0% | 0.00 |
+| Robert S. | −4.7058 | 0% | 0.00 |
+| Williams | −4.7100 | 0% | 0.00 |
+| Gaffney (decrypt) | −4.7264 | 0% | 0.00 |
+| Ernst | −4.7296 | 0% | 0.00 |
+| **Schmeh (MTC3)** | **−4.8387** | **0%** | **0.13** |
+
+On the Schmeh reading the cipher is not distinguishable from noise at all. Two
+transcriptions of the same 87 characters, and one supports "there is structure
+here" while the other does not. This is finding 1 turning into a practical
+problem rather than a bookkeeping one.
+
+**3b. That gap does *not* establish that Dorabella is un-English. Transcription
+error alone can account for it.**
+
+The obvious innocent explanation for finding 3 is that Dorabella *is* an English
+monoalphabetic cipher whose available readings are corrupted enough to drag its
+score down. Tested directly: take genuine English, encipher it with a known key,
+misread a fraction *q* of the ciphertext symbols, and re-run the same
+500-restart search.
+
+| corruption rate | mean score | sd | share scoring at or below Dorabella (−4.7100) |
+|---|---|---|---|
+| q = 5% | −4.4564 | 0.1694 | **11.7%** |
+| q = 10% | −4.6115 | 0.1720 | **31.7%** |
+
+The two closest distinct readings, Williams and Ernst, already differ at 2 of 87
+positions (≈2%); the spread across all three distinct readings is far wider than
+that. A 5–10% effective misreading rate is therefore entirely plausible — and at
+that rate, genuine English lands at or below Dorabella's score between one time
+in eight and one time in three.
+
+**So the honest verdict is not "Dorabella is not English." It is that the
+question cannot presently be answered, and the reason is transcription
+uncertainty rather than any deep property of the cipher.** Finding 1 is not
+bookkeeping; it is the binding constraint on the whole problem. Until someone
+produces a transcription that can be trusted to the character, no amount of
+cryptanalytic effort can distinguish "not a monoalphabetic English cipher" from
+"a monoalphabetic English cipher we have misread."
+
 
 **4. At 87 characters, the top-scoring key is frequently not the correct key.**
 
