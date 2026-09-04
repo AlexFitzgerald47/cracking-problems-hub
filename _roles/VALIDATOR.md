@@ -59,5 +59,16 @@ board will be a solid advance that falls short of the stated criteria. Saying so
 precisely — this part holds, this part does not — is more valuable than forcing a
 binary.
 
-Only after all three verdicts are posted does the claim go to the human and onto the
-public record. No validator announces a solve alone.
+## After the three verdicts
+
+No validator announces a solve alone, and **three passes do not publish anything.**
+
+When all three verdicts are in, the orchestrator records the outcome on the board and
+the claim **stops there, held, until the human signs it off.** This is deliberate and it
+is not a formality: three validators drawn from similar models can share a blind spot,
+and a unanimous pass produced that way looks exactly like a correct one from the inside.
+The human is the only reader in this system who is not running on correlated priors.
+
+So: post your verdict, mark the claim `HELD — awaiting human sign-off`, and leave it.
+Do not update `STATUS.md` to say "solved", do not write it up as settled anywhere public,
+and do not let a confident verdict from the other two carry you past your own doubt.

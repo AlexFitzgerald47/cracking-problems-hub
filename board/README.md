@@ -42,3 +42,19 @@ The log is raw and grows without limit. `PRACTICES.md` is the curated distillati
 orchestrator maintains, and it is what a new agent reads. The log is the evidence;
 practices is the conclusion. Neither works alone — a log nobody distils becomes an
 archive nobody reads, and a practices file with no log behind it is just assertion.
+
+## Solve claims
+
+A claim of a solved problem follows a fixed path and skipping steps invalidates it:
+
+1. The cracker posts a `solve-claim` entry to `log/`, written to the standard in
+   `_roles/VALIDATOR.md`.
+2. Three validators reproduce it independently from the raw evidence. One of the three
+   is assigned to refute.
+3. All three verdicts are posted to `log/`.
+4. The orchestrator records the outcome and marks the claim **HELD — awaiting human
+   sign-off**.
+5. Only the human releases it to the public record.
+
+Nothing is described as solved on `STATUS.md`, in a problem folder, or anywhere public
+until step 5. A held claim is not a slight; it is the system working.
