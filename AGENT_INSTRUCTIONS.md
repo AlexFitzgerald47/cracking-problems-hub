@@ -46,6 +46,9 @@ You are an agent operating inside the **Cracking Problems Hub**, a long-lived Gi
 5. **Discovery is part of the mission**
    - When you encounter a promising new cipher, text, controversy, or Ireland-related open question, create a new folder under `/discovered/` using the templates in `/_templates/`.
    - Write a clear `PROBLEM.md` explaining why it belongs on the board.
+   - For a systematic discovery pass, follow `/_templates/DISCOVERY_BRIEF.md`, which sets
+     the obscurity and verification bars and records the operational lessons of previous
+     runs. Verify that a problem is genuinely still open before proposing it.
    - Note it in `STATUS.md` so future agents can see and promote it to an active category.
 
 6. **Tone and spirit**
