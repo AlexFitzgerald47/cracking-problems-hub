@@ -8,7 +8,7 @@
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
-| Kryptos (remaining parts) | `ciphers/kryptos/` | Partially solved | K4 still open |
+| Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open, but as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family (incl. Beaufort) now eliminated from the public cribs. See `attempts/2026-09-04-crib-constraints/` |
 | Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
 | Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433x161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
 
@@ -32,7 +32,9 @@
 
 ## High-Priority Threads
 - Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
-- Kryptos K4
+- **Kryptos K4 — composite hypotheses (transposition + Quagmire).** The single-stage
+  families are now eliminated from the public cribs; composites are untouched and the
+  crib machinery extends to them directly.
 - Rohonc Codex script analysis
 - ~~Dorabella~~ — closed as blocked 2026-09-04. The constraint is archival, not
   cryptanalytic: a 300 dpi scan of the note (Elgar Birthplace Museum, Broadheath),
