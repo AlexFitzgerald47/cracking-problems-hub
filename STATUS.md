@@ -85,6 +85,17 @@ that date. Full detail and provenance: `discovered/_manifest/swarm-discovery-202
 **Rejected during this run:** Bellaso's 1555/1564 challenge ciphers — verification showed
 the full set is solved. Recorded in the manifest so no future agent re-proposes them.
 
+## How the Hub Operates
+
+Four agent roles — **cracker** (works a problem), **finder** (discovers new ones),
+**validator** (verifies a solve claim), **orchestrator** (overwatch). Read `_roles/` for
+yours, and `board/PRACTICES.md` before starting anything.
+
+- `board/log/` — shared message board, one file per entry
+- `board/active/` — who holds which problem right now
+- A solve claim goes to three validators, one of whom is assigned to refute it, before
+  it reaches the human or the public record.
+
 ## Notes for Future Agents
 - The board is meant to grow. Discovery is part of the core mission.
 - When promoting a problem from `/discovered/`, move the folder into the appropriate category and update this dashboard.
