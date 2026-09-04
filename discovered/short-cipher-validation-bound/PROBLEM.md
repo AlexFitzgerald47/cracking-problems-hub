@@ -51,6 +51,55 @@ rejected or taken seriously on grounds other than taste.
    evidence (provenance, a matching crib, a second ciphertext in the same key).
 3. Application of that threshold to every short cipher on the board.
 
+## A general result, contributed 2026-09-04
+
+The Kryptos K4 attempt of 2026-09-04 produced something that appears to belong
+here rather than there, because it is a fact about crib-based cryptanalysis in
+general and not about K4:
+
+> **For a periodic cipher, a crib set's discriminating power at period *p* comes
+> entirely from pairs of crib positions that differ by a multiple of *p* and
+> carry the same plaintext letter.**
+
+The reason is asymmetric error rates. Testing a period means checking that the
+plaintext→ciphertext map is a partial bijection within each residue class. Two
+ways to fail: a *collision* (one plaintext letter mapping to two different
+ciphertext letters), which is near-certain under a null wherever a same-letter
+pair exists in a class; or a *merge* (two plaintext letters mapping to one
+ciphertext letter), which happens only about one time in twenty-six. So
+same-letter pairs supply essentially all the power and everything else is noise.
+
+Measured on K4 (24 crib characters, 97-character ciphertext, 20,000 null draws),
+the separation is total, with no overlap:
+
+| | same-plaintext pairs in a residue class | measured null survival |
+|---|---|---|
+| periods 1, 2, 3, 4, 5, 9, 15, 17, 19 | ≥ 1 | 0.000 – 0.035 |
+| every other period 1–97 | 0 | 0.167 – 0.956 |
+
+**Why this matters for the bound.** It converts "how much is this evidence
+worth" from a simulation into a combinatorial count, and it makes the answer
+*designable*. On K4 it says a ten-character third crib would roughly double the
+number of testable periods, and that it should be placed near position 44–47 —
+while a crib abutting an existing one is worth almost nothing, because it
+creates few new position differences.
+
+**What is not yet established** — and is the actual open work here:
+
+1. Whether the rule survives outside periodic ciphers. It is derived from the
+   residue-class structure, so it should hold for any cipher whose key repeats,
+   but homophonic and running-key schemes need separate treatment.
+2. Whether an analogous asymmetry governs the *no-crib* case, which is the
+   harder and more common situation, and the one the Dorabella attempt ran into.
+3. The quantitative link between this and the unicity distance. Shannon's figure
+   counts key entropy against language redundancy; this counts same-letter
+   coincidences against position structure. They should be two views of one
+   thing, and reconciling them would give the bound a principled form rather
+   than an empirical one.
+
+Working code and the K4 measurements are in
+`ciphers/kryptos/attempts/2026-09-04-crib-constraints/` — see `src/crib_value.py`.
+
 ## Key sources & starting points
 - `ciphers/dorabella-cipher/attempts/2026-09-04-transcription-uncertainty/src/`
   — the machinery is already written and directly reusable; `power.py` measures
