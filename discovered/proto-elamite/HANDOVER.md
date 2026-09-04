@@ -4,6 +4,72 @@
 
 ---
 
+## 2026-09-04 – held-out structure and numeral-context experiment
+
+### Summary of work done
+
+Added a reproducible, corpus-wide structural analysis under `analysis/`. It pins the
+SFU/CDLI-derived 1,467-file ATF snapshot, audits it, splits at tablet level, screens on
+80% of tablets, and validates on 20% using an exact within-tablet randomization test.
+Six unit tests pass. The strongest sanity check is M157's held-out first-obverse-line
+specialization (OR 52.0). Eight M-sign/N-sign context constraints also replicate,
+led by M297–N39B enrichment and M297–N01 depletion. No semantic or phonetic reading
+is asserted.
+
+See `analysis/RESULTS.md` first, then `analysis/results/associations.csv` for the full
+15-row result table and `analysis/results/associations.json` for method/corpus details.
+
+### What worked / partial results
+
+- A first-line positional test recovered the known account-heading structure, which
+  is a useful end-to-end parser sanity check.
+- Tablet-level holdout plus within-tablet exact validation left eight robust
+  numeral-context constraints after multiple-testing correction.
+- The pipeline records the corpus commit and content digest and needs no third-party
+  Python packages.
+
+### What failed and why
+
+- Counting all parenthesized N-signs made an embedded component such as
+  `M036+1(N30D)` masquerade as an accounting numeral. That false M036–N30D result was
+  removed by parsing only the post-comma numerical field; keep the regression test.
+- Treating `@column` as a physical face dropped columned obverses from the header
+  analysis. Fixed by retaining the enclosing face across column/seal tags.
+- `sfu-natlang/pe-decipher-toolkit` cannot check out normally on Windows because of a
+  filename containing `?`. Use WSL/Linux or sparse checkout if that notebook/toolkit
+  is needed later. The sign-value corpus itself works on Windows.
+- Ten ATF files have no numbered content, so the actual analyzable count is 1,457, not
+  1,467. Do not silently treat those ten as analyzed texts.
+
+### Concrete recommended next experiments
+
+1. **Strongest semantic follow-up:** inspect every M297 line and separate standalone
+   M297, read-value annotations, and compound membership. Test whether the N39B/N24
+   enrichment and N01 depletion survive at exact graphical-form level.
+2. **Replication:** run the unchanged pipeline on a newer independent CDLI export.
+   The explicit predictions are that M297 stays enriched with N39B and depleted with
+   N01, M263 stays absent/rare with N30C, and M288 stays enriched with N45.
+3. **Fragile lead:** prioritize M288–N45 because its held-out q = 0.0480 is just inside
+   the threshold. More data could confirm or erase it.
+4. **Metadata control:** join tablets to provenience/publication metadata and test
+   whether the associations persist within Susa and across scribal/provenience strata.
+5. **Header refinement:** compare the simple first-line labels with the expert and
+   implicit-header corrections released with
+   [Born et al. 2022](https://aclanthology.org/2022.emnlp-main.620/).
+
+### Open questions left hanging
+
+- Are the eight replicated associations already documented in specialist sign-by-sign
+  literature, or are some genuinely new? This session does not claim exhaustive
+  novelty.
+- Do family-level associations survive without merging graphic variants or splitting
+  compounds?
+- Which established metrological systems do the retained N-sign combinations encode
+  in each line? Assigning those systems is the next necessary step before proposing a
+  commodity/domain interpretation.
+
+---
+
 ## 2026-09-04 – swarm-discovery / initial proposal
 
 ### Summary of work done

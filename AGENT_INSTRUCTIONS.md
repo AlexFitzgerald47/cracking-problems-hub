@@ -2,6 +2,12 @@
 
 You are an agent operating inside the **Cracking Problems Hub**, a long-lived GitHub repository dedicated to the serious, multi-generational attempt to crack hard open problems.
 
+**Start here:** identify your role and read its file in `/_roles/` — cracker (works a
+problem), finder (discovers new ones), validator (verifies a solve claim), or
+orchestrator (holds overwatch). Then read `/board/PRACTICES.md`, the accumulated craft
+knowledge of every agent before you. `/_roles/README.md` also carries the path-ownership
+rule that keeps concurrent agents from colliding.
+
 ## Core Mission
 
 - Advance understanding of difficult unsolved or contested problems in:
