@@ -128,3 +128,82 @@ The O'Malley collection description explicitly contains an **Inspection report f
 Collection/folder anchor: https://catalogue.nli.ie/Record/vtls000536116
 
 No solve claim is made. The session has now falsified both (a) reuse of the known May key and (b), within a 13,124-word screening corpus, the broader hypothesis that an arbitrary six-letter reset key directly encrypts a normal nine-letter English word fitting the sentence.
+
+## 2026-09-05 — continuation and correction
+
+### 11. Correction: the `SDRDPX` Vigenere material is not established as 1923
+
+Sections 4, 6, 7, 8 and 9 above incorrectly described the `SDRDPX ...` short-key list and `GVZKLG` control as a **1923 / May-1923** system. That chronology is withdrawn.
+
+What is actually supported by the sources seen this session is narrower:
+
+- Mahon/Gillogly and later cryptology exercises establish that this is **IRA material from the 1920s** and that Vigenere-family encryption was used to conceal short transposition-key words.
+- The UCD Moss Twomey finding aid and secondary cryptology discussion warn that some later IRA documents were deliberately back-dated, including 1926–27 material carrying apparent 1923–24 dates.
+- No primary or securely dated source seen so far ties the `SDRDPX ...` list or key `GVZKLG` specifically to May 1923.
+
+Therefore the reproducer remains a valid **later-IRA-system comparison only**. Its failure on `VORFYDCGT`, and the period-6 dictionary screen, do **not** currently constrain the actual October 1923 cipher family strongly. The earlier same-year inference should not be propagated.
+
+The superficially suggestive phase-offset output `KILKZTRAN` obtained when the later `GVZKLG` key is started at offset four is likewise downgraded to an ungrounded coincidence unless independent evidence connects that key/system to this traffic.
+
+### 12. `100` identified: Frank Thornton
+
+The highest-value contextual unknown in section 7 has been resolved.
+
+The Irish Military Archives' official Collins Papers page captions a surviving item as:
+
+`Communications between agent '100', F [Frank Thornton] and L [Liam Tobin], 13 July 1921.`
+
+A UCD historian independently explains the Collins intelligence-agent numbering system and states explicitly that **Frank Thornton was Agent 100**.
+
+This changes the target sentence materially:
+
+`Can any of [Frank Thornton's] methods be used now that no VORFYDCGT?`
+
+Important caution: Thornton supported the Treaty and served in the Free State Army during the Civil War. The 1923 anti-Treaty Director of Intelligence is therefore most plausibly invoking **Thornton's earlier Collins-era intelligence methods / institutional tradecraft**, unless evidence appears that the numeric alias `100` was reassigned after the split.
+
+Source anchors:
+- https://www.militaryarchives.ie/en/collections/online-collections/michael-collins-papers
+- UCD / Irish Independent historical article on the Collins Papers agent-number system (session web research; exact publication metadata to pin in a later source audit).
+
+### 13. What Thornton's documented methods were
+
+Thornton's own Bureau of Military History evidence and supporting accounts make one method especially relevant: **identify, cultivate and handle insiders inside government/police institutions**.
+
+Contemporary/reminiscence evidence describes Thornton and the GHQ Intelligence staff recruiting or turning policemen and other institutional insiders, and instructing intelligence personnel to develop sources inside enemy departments. Paired-source / cross-checking practices also appear in descriptions of his network.
+
+This sharply raises the probability that `100's methods` means **insider recruitment / handling**, not a cryptographic algorithm.
+
+A prison-specific precedent exists: Mountjoy warder **Patrick J. Berry** covertly assisted IRA prisoners and was later arrested on suspicion of supplying arms to them; other friendly warders are documented as carrying notes or facilitating prisoners. Thus the phrase can naturally describe using Thornton-style agent recruitment to restore a lost prisoner-contact channel.
+
+### 14. 1923 prison-communications context strengthens the insider/channel reading
+
+The June–July Carolan dispatches already show a sustained effort to rebuild secret communication with imprisoned anti-Treaty personnel. The collection-level description adds a physical concealment technique: thin dispatch flimsies could be rolled into **cigarettes with most tobacco removed** for smuggling.
+
+Immediately before the target memo, Mountjoy's communications environment changed abruptly:
+
+- the mass hunger strike began in mid-October 1923;
+- escape tunnels were discovered around 17–20 October;
+- prisoners were transferred between Mountjoy and Kilmainham;
+- an official finding aid records three prisoners escaping from an ambulance between Mountjoy and Kilmainham on 20 October;
+- the adjacent 23–25 October O'Malley folder discusses bringing **Sean Lemass to Mountjoy because he knows the prison better than 'McDowell'**.
+
+The timing makes `now that no VORFYDCGT` especially likely to refer to a lost **person, route, access mechanism, address, or communications channel** rather than a general abstract noun.
+
+### 15. Correct cipher-generation targets now identified
+
+Two same-era archival items are much more valuable than importing the later Twomey/Gillogly system:
+
+1. **20 Nov 1922:** an O'Malley-file `Copy letter to be coded, sent from Chief of Staff [Liam Lynch] to G.O.C. Cork`. If its encoded counterpart or associated instructions survive nearby, it could expose the actual Civil-War-era coding procedure.
+2. **14 Apr 1923, NLI MS 10,973/15/16:** Free State Intelligence recorded a `translation of a cypher message about the cessation of hostilities and the ending of the Civil War`, explicitly mentioning `Notes captured on Austin Stack`. This is direct evidence that a contemporary anti-Treaty cipher was being translated by April 1923 and is now the highest-value known-plaintext/system lead.
+
+The attack is switching to these contemporaneous items.
+
+### 16. Revised live hypotheses
+
+1. **Enciphered name/codeword for a lost prisoner-contact person or channel** — strongest overall because Thornton's `methods` are insider-recruitment methods and the memo is about prisoner contact.
+2. **Operational codeword whose referent was lost during the Mountjoy/Kilmainham disruption of 17–21 October** — strong contextual fit.
+3. **Contemporary 1922–23 anti-Treaty cipher applied to an ordinary term** — live, but the actual system must first be recovered from the Austin Stack translation / `to be coded` material.
+4. **Cigarette / physical concealment route** — specifically motivated by the secret-dispatch corpus, but grammar and exact referent remain weak.
+5. **Later 1920s Vigenere/transposition-key architecture** — downgraded; no secure chronological bridge to October 1923.
+
+No plaintext is yet certified. The largest real advance is contextual: `100` is now Frank Thornton, and his documented method strongly predicts the semantic class of the missing token.
