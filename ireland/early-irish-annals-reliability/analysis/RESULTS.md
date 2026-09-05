@@ -372,3 +372,40 @@ the one that bears on the annals rather than on geophysics.
 
 *(This closes item 5 of the handover. The handover has been amended in place
 rather than rewritten.)*
+
+---
+
+## 7. The record ends at 1133; the sky does not
+
+McCarthy & Breen's series of Irish astronomical records runs 442–1133, and §4
+noted that 1133 is also the last **central** solar eclipse visible from Ireland in
+this window. That looked like the sky explaining the terminus. The canon says
+otherwise once you drop from "central" to "unmissable":
+
+| Date (Julian) | Best Irish magnitude | |
+|---|---|---|
+| 1133-08-02 | **1.064** | central at Iona — the last central one |
+| 1140-03-20 | 0.977 | |
+| 1147-10-26 | 0.916 | |
+| 1180-01-28 | 0.945 | |
+| **1185-05-01** | **0.998** | as deep as the 664 eclipse, and 21 years after 1133 |
+| 1191-06-23 | 0.954 | |
+
+**Five eclipses of magnitude ≥0.90 over Ireland after 1133**, one of them at 0.998
+— a daylight event nobody standing outside could miss, and deeper than three of
+the six notices audited in §2. Against 32 such eclipses in the 733 years before
+1133, the post-1133 rate (5 in 76 years) is if anything slightly *higher*.
+
+So if the Irish astronomical record does stop at 1133, **the sky is not the
+reason**. That is a statement about the recording tradition — a change in what the
+annalists thought worth writing down, or in who was writing — and it is exactly
+the kind of claim the annals are usually asked about and rarely answered with
+independent evidence.
+
+**Two caveats, both load-bearing.** First, the 1133 terminus is taken from an
+abstract at search-level verification; it may be the scope of a study rather than
+the end of a tradition, and AU itself continues to 1540. Second, this is a
+prediction, not a result: it says *if* the record stops, look for a human cause.
+Checking it costs one grep of the annals for the years 1140, 1147, 1180, 1185 and
+1191. **1185-05-01 is the decisive one** — if a 0.998 eclipse over Ireland is
+absent from the annals, the tradition had stopped recording the sky.
