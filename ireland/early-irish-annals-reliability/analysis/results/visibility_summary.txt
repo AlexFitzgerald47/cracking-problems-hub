@@ -1,0 +1,58 @@
+solar eclipses AD 400-1209 anywhere on Earth: 1930
+
+== depth over Ireland (Armagh / Iona / Clonmacnoise / Bangor, greatest of the four, Sun above the horizon) ==
+  any partial phase at all                        367   (one every 2.2 years)
+  mag >= 0.25                                     268   (one every 3.0 years)
+  mag >= 0.50  (noticeable dimming)               171   (one every 4.7 years)
+  mag >= 0.80  (unmistakable)                      70   (one every 11.6 years)
+  mag >= 0.90  (dramatic; the ones a chronicler notices)   37   (one every 21.9 years)
+  mag >= 0.95                                      17   (one every 47.6 years)
+  central (total or annular)                        5   (one every 162.0 years)
+
+== per century: eclipses observable from Ireland ==
+  century   any    >=0.50  >=0.80  >=0.90  central
+    400s     43      22       9       3        0
+    500s     46      23       6       4        1
+    600s     50      22      10       7        1
+    700s     46      19       9       4        0
+    800s     43      25      11       5        2
+    900s     46      20       7       2        0
+   1000s     48      20       9       5        0
+   1100s     40      18       8       7        1
+   1200s      5       2       1       0        0
+
+== discriminating power: Ireland against the Mediterranean ==
+  deep (>=0.80) over Ireland:              70
+  deep (>=0.80) over the Mediterranean:    90
+  deep in both (the test is blind here):   28  = 40% of the Irish set
+  deep in Ireland, <0.40 in the Med:       11  <- diagnostic of observation
+  deep in the Med, <0.20 in Ireland:       17  <- diagnostic of borrowing
+
+  Of the 132 eclipses that were deep enough somewhere for a chronicler
+  on either side to notice, the test can decide 28 (11 + 17) and is blind
+  on the 28 that were large over Ireland *and* over the Mediterranean.
+  A notice of one of those decides nothing, whichever way it reads.
+
+== can the annals locate their own observatory? ==
+  The Chronicle of Ireland hypothesis has the common source kept at
+  Iona until the middle of the eighth century and in Ireland after it.
+  Iona and Clonmacnoise are 3 degrees of latitude apart, which is enough
+  to put one of them inside a penumbra and the other outside it. Where
+  that happens, a notice that reports depth *is* evidence of where it
+  was written.
+  |mag(Iona) - mag(Clonmacnoise)| >= 0.10, deeper site >= 0.50:   13 (10 favour Iona)
+  |mag(Iona) - mag(Clonmacnoise)| >= 0.15, deeper site >= 0.50:    9 (7 favour Iona)
+  |mag(Iona) - mag(Clonmacnoise)| >= 0.25, deeper site >= 0.50:    3 (2 favour Iona)
+  |mag(Iona) - mag(Clonmacnoise)| >= 0.40, deeper site >= 0.50:    1 (1 favour Iona)
+  central at Iona but NOT at Clonmacnoise:        2
+  central at Clonmacnoise but NOT at Iona:        1
+  (AU 885, 16 June 885, is one of the first group: 1.077 at Iona,
+   0.960 at Clonmacnoise, 0.972 at Armagh.)
+
+  VERDICT ON THIS TEST: weak. Over 810 years only 12 eclipses split the
+  two sites usefully, and the annals record a small fraction of eclipses
+  at all. Expect a handful of usable cases, not a distribution. Treat it
+  as corroboration for a hypothesis argued on other grounds, never as the
+  primary evidence.
+
+wrote prediction_irish.csv (11), prediction_borrowed.csv (17), ireland_deep_eclipses.csv (37), site_discriminating.csv (12)

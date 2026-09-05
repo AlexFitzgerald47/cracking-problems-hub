@@ -201,3 +201,40 @@ and can sit on opposite sides of a penumbral limit.
   running 442–1133 that includes comets, aurorae and a possible supernova as well
   as eclipses. This session could not reconstruct it. The engine is built to take
   it the moment someone can.
+
+### Addendum, same session — the canon completed, and two more results
+
+**AU 878's fifth element confirmed.** The notice ends "fifteen solar days having
+intervened", reporting a lunar eclipse a fortnight before the solar one.
+`analysis/lunar_eclipses.py` (umbral geometry, validated against published umbral
+magnitudes for 2018-07-27, 2019-01-21 and 2015-09-28 to ≤0.01, with a
+no-eclipse negative control) finds a **total lunar eclipse on 15 October 878**,
+umbral magnitude 1.054, greatest at 04:28 UT, with the eclipsed Moon **23° above
+the horizon over Ireland and the Sun 23° below it** — a fully dark sky. The
+interval between greatest-eclipse instants is 14.29 days, which is 15 days counted
+inclusively in the Roman manner. So AU 878 states five things and four are
+confirmed outright; the one that is off (luna 28 against a true lunar age of
+29.42 d) is the one that comes from a table rather than from the sky.
+
+**The canon.** 10,019 lunations scanned, **1,930 solar eclipses AD 400–1210**
+(2.38/year, the long-run rate). From Ireland: 367 with any partial phase, 70 at
+magnitude ≥0.80, 37 at ≥0.90, and **only 5 central eclipses in 810 years**. Three
+of the six records tested fall on those five. Per-century counts are flat, so
+nothing about the recording record can be attributed to a busier sky.
+
+**Power, stated before anyone runs the experiment.** Of the 132 eclipses deep
+enough for a chronicler on either side of Europe to notice, the
+Ireland-versus-Mediterranean test can decide **28** and is **blind on 28** that
+were large in both places. The decisive ones are written out as
+`analysis/results/prediction_irish.csv` (11) and `prediction_borrowed.csv` (17).
+
+**A negative result, reported as confidently as the positive ones.** The idea that
+the annals might locate their own scriptorium — Iona against Clonmacnoise, three
+degrees of latitude apart — is much weaker than it looks. In 810 years only 13
+eclipses split the two sites by ≥0.10 in magnitude with the deeper one above 0.50,
+only 3 by ≥0.25, and only 2 were central at Iona but not at Clonmacnoise. The
+annals record a small fraction of eclipses at all, so expect a handful of usable
+cases, never a distribution. **AU 885 happens to be one of the two**, which is why
+that notice carries weight the test as a whole does not. This corrects the
+optimism of item 4 in the handover written earlier in the same session; the
+handover has been amended rather than rewritten.

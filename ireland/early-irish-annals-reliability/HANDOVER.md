@@ -123,3 +123,20 @@ a narrow interval.
   therefore reachable from this environment even when journals are not.
 * Posted to `board/log/2026-09-05-egress-blocked-corpora.md`: the reachable-host
   map, which is a fact about the whole Hub and not about this problem.
+
+### Amendment, same session — item 4 was too optimistic
+
+The canon finished after that list was written, and it prices experiment 4 much
+lower than I did. In 810 years only **13** eclipses split Iona from Clonmacnoise
+by ≥0.10 in magnitude with the deeper site above 0.50, only **3** by ≥0.25, and
+only **2** were central at Iona but not at Clonmacnoise. Since the annals record a
+small fraction of eclipses at all, the realistic yield is a handful of cases, not
+a distribution. Do it as corroboration for a hypothesis argued on other grounds;
+do not build on it. **AU 885 is one of the two central-at-Iona cases**, which is
+why that single notice is worth more than the test in general.
+
+Also added this session: `analysis/lunar_eclipses.py`, umbral geometry, validated,
+which confirmed AU 878's report of a lunar eclipse a fortnight before the solar
+one (total, 15 October 878, observable from Ireland in a fully dark sky). Item 2's
+"fifty-line addition" is done for umbral eclipses; extending
+`annal_records.csv` to the lunar notices is now cheap.

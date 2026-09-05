@@ -102,11 +102,14 @@ def main():
           % len(only_ir))
     print("  deep in the Med, <0.20 in Ireland:     %4d  <- diagnostic of borrowing"
           % len(only_med))
-    print("\n  So the test has power on %d + %d = %d of the %d eclipses that any"
-          % (len(only_ir), len(only_med), len(only_ir) + len(only_med), n))
-    print("  chronicler on either side could have recorded, and no power on the"
-          " %d that were" % len(both))
-    print("  large in both places.  A record of one of *those* decides nothing.")
+    n_any = len(set(id(r) for r in deep_ir) | set(id(r) for r in deep_med))
+    print("\n  Of the %d eclipses that were deep enough somewhere for a chronicler"
+          % n_any)
+    print("  on either side to notice, the test can decide %d (%d + %d) and is blind"
+          % (len(only_ir) + len(only_med), len(only_ir), len(only_med)))
+    print("  on the %d that were large over Ireland *and* over the Mediterranean."
+          % len(both))
+    print("  A notice of one of those decides nothing, whichever way it reads.")
 
     print("\n== can the annals locate their own observatory? ==")
     print("  The Chronicle of Ireland hypothesis has the common source kept at")
@@ -115,21 +118,35 @@ def main():
     print("  to put one of them inside a penumbra and the other outside it. Where")
     print("  that happens, a notice that reports depth *is* evidence of where it")
     print("  was written.")
-    diag = [r for r in rows
-            if abs((r["Iona_mag_central"] or 0.0) - (r["Clonmacnoise_mag_central"] or 0.0)) >= 0.25
-            and max(r["Iona_mag_central"] or 0.0, r["Clonmacnoise_mag_central"] or 0.0) >= 0.5]
-    iona_side = [r for r in diag
-                 if (r["Iona_mag_central"] or 0.0) > (r["Clonmacnoise_mag_central"] or 0.0)]
-    print("  eclipses where |mag(Iona) - mag(Clonmacnoise)| >= 0.25 and one of them")
-    print("  was at least 0.50 deep:  %d  (%d favouring Iona, %d favouring Clonmacnoise)"
-          % (len(diag), len(iona_side), len(diag) - len(iona_side)))
-    print("  a further %d are central (total or annular) at Iona but not at Clonmacnoise,"
-          % sum(1 for r in diag if (r["Iona_mag_central"] or 0) >= 1.0
-                and (r["Clonmacnoise_mag_central"] or 0) < 1.0))
-    print("  and %d the other way round -- these are the sharpest of all, because"
-          % sum(1 for r in diag if (r["Clonmacnoise_mag_central"] or 0) >= 1.0
-                and (r["Iona_mag_central"] or 0) < 1.0))
-    print("  only a central eclipse brings out stars.")
+    def io(r):
+        return r["Iona_mag_central"] or 0.0
+
+    def cl(r):
+        return r["Clonmacnoise_mag_central"] or 0.0
+
+    for thr in (0.10, 0.15, 0.25, 0.40):
+        d = [r for r in rows if abs(io(r) - cl(r)) >= thr and max(io(r), cl(r)) >= 0.5]
+        print("  |mag(Iona) - mag(Clonmacnoise)| >= %.2f, deeper site >= 0.50:  %3d"
+              " (%d favour Iona)"
+              % (thr, len(d), sum(1 for r in d if io(r) > cl(r))))
+    # The sharpest split of all: central at one and not the other, because only
+    # a central eclipse brings out stars.  AU 885 is exactly this case.
+    c_iona = [r for r in rows if io(r) >= 1.0 > cl(r)]
+    c_clon = [r for r in rows if cl(r) >= 1.0 > io(r)]
+    print("  central at Iona but NOT at Clonmacnoise:      %3d" % len(c_iona))
+    print("  central at Clonmacnoise but NOT at Iona:      %3d" % len(c_clon))
+    print("  (AU 885, 16 June 885, is one of the first group: 1.077 at Iona,")
+    print("   0.960 at Clonmacnoise, 0.972 at Armagh.)")
+    diag = [r for r in rows if abs(io(r) - cl(r)) >= 0.15 and max(io(r), cl(r)) >= 0.5]
+    for r in c_iona + c_clon:
+        if r not in diag:
+            diag.append(r)
+    print("\n  VERDICT ON THIS TEST: weak. Over 810 years only %d eclipses split the"
+          % len(diag))
+    print("  two sites usefully, and the annals record a small fraction of eclipses")
+    print("  at all. Expect a handful of usable cases, not a distribution. Treat it")
+    print("  as corroboration for a hypothesis argued on other grounds, never as the")
+    print("  primary evidence.")
 
     cols = ["date_julian_cal", "year", "weekday", "gamma", "irish_mag_central",
             "Armagh_mag_central", "Armagh_ut_central", "Armagh_alt_central",
