@@ -21,9 +21,18 @@ This matters at exactly one place -- the boundary between "deep partial" and
 eclipses both stand on.
 
 **The fix.** Rather than re-run the 26-minute canon at a finer step, refine only
-where it can matter: any site whose grid magnitude is at least `THRESHOLD`, by
-golden-section search around the grid peak. Everything below that is already
-accurate to a few times 1e-4.
+where it can matter: any site whose grid magnitude is at least `THRESHOLD`.
+Everything below that is already accurate to a few times 1e-4.
+
+**Known inconsistency this leaves behind, stated rather than hidden.** Only the
+`*_mag_central` columns and `irish_mag_central` are refined. The
+`irish_mag_min_over_dt` / `irish_mag_max_over_dt` columns are left at their grid
+values, so after this pass they can sit a few times 1e-4 *below* the central
+column they bracket. They exist only to flag Delta-T sensitivity, and since the
+Stephenson spline pins Delta-T to 15-50 s in this window they carry almost no
+information any more -- the whole +/-300 s grid moves the magnitude less than the
+cusp error did. Do not read them as a bracket on the refined value. If a later
+session needs them properly, refine them the same way rather than trusting them.
 """
 
 import csv
