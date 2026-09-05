@@ -201,6 +201,28 @@ of the six records tested fall on them. That is worth stating precisely because 
 cuts both ways: the coincidence is striking, and it is also exactly what one would
 expect if chroniclers record the events that are impossible to miss.
 
+**And the five are these:**
+
+| Date (Julian) | Armagh | Iona | Rome | In the record? |
+|---|---|---|---|---|
+| 594-07-23 | **1.061** | 0.989 | 0.557 | AU 594, *mane tenebrosum* |
+| 664-05-01 | 0.994 | 0.986 | 0.739 | AU 664 / Bede III.27 (central at Bangor, 1.042) |
+| 878-10-29 | **1.025** | 0.995 | 0.891 | AU 878, the five-element notice |
+| 885-06-16 | 0.971 | **1.077** | 0.477 | AU 885, "stars were seen" |
+| 1133-08-02 | 0.963 | **1.064** | 0.880 | — |
+
+Four of the five are the notices tested above. **The fifth is 1133, and 1133 is
+the year in which McCarthy & Breen's series of Irish astronomical records ends.**
+
+That last point is not something the selection could have produced. The records
+here were chosen because they are the well-known ones, which biases hard towards
+deep eclipses and makes the four-of-five overlap much less impressive than it
+looks. But the terminal date of the published series was taken from an abstract,
+before the canon existed, and it lands exactly on the last central solar eclipse
+visible from Ireland in this window. If the Irish astronomical record begins and
+ends with the events that were impossible to miss, that is a statement about the
+recording tradition — and it is checkable by anyone who can open the annals.
+
 Per-century counts are in `results/visibility_summary.txt`; they are flat, at
 40–50 eclipses of any depth per century, so nothing in the recording record can be
 explained by the sky becoming busier.

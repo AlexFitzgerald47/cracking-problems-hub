@@ -238,3 +238,14 @@ cases, never a distribution. **AU 885 happens to be one of the two**, which is w
 that notice carries weight the test as a whole does not. This corrects the
 optimism of item 4 in the handover written earlier in the same session; the
 handover has been amended rather than rewritten.
+
+**One further observation, from the finished canon.** The five central solar
+eclipses visible from Ireland in AD 400–1210 are **594, 664, 878, 885 and 1133**.
+Four of the five are the notices tested in Result 2 — which proves less than it
+appears, because those notices were selected for being well known and that selects
+for deep eclipses. The fifth does not have that problem: **1133 is the terminal
+date of McCarthy & Breen's series of Irish astronomical records**, taken from an
+abstract before the canon existed, and it falls exactly on the last central
+eclipse over Ireland in the window. Offered as a lead for whoever has the text:
+the Irish astronomical record may begin and end with the events that could not be
+missed.
