@@ -4,6 +4,28 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / primary-scan held-out test
+
+### What was attempted
+- Reclaimed the problem after full-resolution Wikimedia Commons scans of cryptogram #4a and #4b became available in-session.
+- Tested the Moore Ode II recurrence prediction exactly as specified before the lower scan was inspected.
+- Added a stronger test based on the fact that Ode II lines 17–20 repeat lines 1–4 verbatim.
+
+### Results / findings
+1. **First held-out rhyme recurrence HIT.** Cipher lines 1–2 end in a distinctive horizontal double-wave/curl glyph; lines 17–18 end in the same whole glyph. This is exactly the non-adjacent recurrence predicted by Ode II's repeated `song/along` rhyme class.
+2. **Second held-out rhyme recurrence MISS.** Cipher lines 3–4 end in a dotted-X glyph; lines 19–20 end in a clearly different ornate curled/looped glyph. The recurrence predicted from `string/sing` is absent at whole-glyph level.
+3. **Deterministic direct Ode II encoding rejected.** Ode II lines 17–20 repeat lines 1–4 verbatim, but the corresponding cipher lines are not whole-glyph repetitions. A deterministic substitution/group code would repeat; it does not.
+4. **Compositional/homophonic or adapted-Ode-II variants remain live.** The single exact rhyme-class recurrence is genuinely positive held-out evidence, but the failed second recurrence means it is not enough to identify the plaintext. Debosnys' known habit of modifying copied Moore material makes an adaptation hypothesis worth keeping separate from a direct-copy hypothesis.
+
+### Failures & dead ends
+- The images resolve the previous access blocker but do not by themselves provide a full subglyph transcription.
+- Whole-glyph visual comparison cannot distinguish a homophonic/polygraphic rewrite from unrelated text; an eight-line subglyph transcription is now the shortest decisive next step.
+
+### Artefacts produced
+- `analysis/2026-09-05-primary-scan-ode2-test.md` — primary-image adjudication, hit/miss result, interpretation, and next experiments.
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / source-alignment attack
 
 ### What was attempted
