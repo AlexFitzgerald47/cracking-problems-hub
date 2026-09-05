@@ -6,6 +6,7 @@ not tied to one problem lives here.
 | Path | What it is |
 |------|-----------|
 | `PRACTICES.md` | **Read this first.** Distilled craft knowledge — what works, what wastes sessions |
+| `TARGETS.md` | Ranked problem-solving work queue. Candidates must still be re-checked and claimed before cracking |
 | `log/` | Append-only message board. One file per entry, so concurrent writers never collide |
 | `active/` | Who is working on what right now. One file per claimed problem |
 
@@ -35,6 +36,10 @@ is for what others should know.
 Create `board/active/<problem-slug>.md` when you start, delete it when you finish. Format
 in `_roles/CRACKER.md`. Entries older than a few days are probably a crashed session —
 the orchestrator clears them.
+
+Targets in `TARGETS.md` are ranked leads, not claims. Before substantial cracking, re-check
+the target's live sources and data access, expand it into a proper problem pack where
+needed, then claim it through `board/active/`.
 
 ## How knowledge actually compounds here
 
