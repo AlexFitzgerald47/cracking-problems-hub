@@ -387,3 +387,32 @@ overstate it; reporting nothing would leave the canon quietly wrong for the next
 agent. `analysis/results/eclipse_canon_pre_refinement.csv` is kept so the whole
 correction is auditable, and `validate_astro.py` now pins both failures with a
 regression check on 865-01-01 at Armagh.
+
+### The lunar canon, completed
+
+10,018 lunations scanned; **1,993 lunar eclipses AD 400–1210, 1,266 umbral, 710
+umbral visible from Ireland, 327 of those total.** Completeness checked as for the
+solar finder: 230 for 1901–2000 against a published 229.
+
+**The headline is an availability asymmetry.** A visible umbral lunar eclipse was
+**4.2× as common** as a solar eclipse of magnitude ≥0.50, and at the spectacular
+end the ratio is **65 to 1** — 327 total lunar eclipses against 5 central solar
+ones in 810 years. A lunar eclipse is visible from the whole night hemisphere,
+lasts hours, needs no accident of geography and can be looked at directly. The
+annalists had vastly more opportunity to record lunar eclipses than solar ones,
+and the comparison of recording rates is therefore a test of *motive* rather than
+of accuracy: portent-selection versus sky-logging. It needs only the text.
+
+**And the borrowing test is much stronger on lunar eclipses.** The solar version
+is blind on 40% of candidates and forces a judgement about how deep an eclipse
+must be before someone writes it down. Lunar eclipses are identical everywhere
+they can be seen, so depth carries nothing — but visibility does, and Ireland and
+Constantinople are 36° of longitude apart. Result: **197 decisive cases against
+the solar test's 28**, on a yes-or-no discriminator.
+`analysis/results/lunar_prediction_borrowed.csv` lists the 133 eclipses that were
+below the Irish horizon throughout; **any one of them appearing in the annals is a
+borrowing that cannot be explained away.**
+
+Honest nuance: proportionally the lunar test is *blinder* than the solar one (91%
+of the Irish set is shared with the Mediterranean, against 40% for solar), because
+the night hemisphere is large. It wins on absolute numbers, not on sample purity.

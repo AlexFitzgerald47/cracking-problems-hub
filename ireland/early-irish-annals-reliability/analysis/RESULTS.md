@@ -121,6 +121,15 @@ good readings is right, and is corrected here rather than quietly amended above.
 | AU 885 | 885-06-16 | **Iona** | **1.077** central | 0.477 | 0.357 |
 | Bede, 3 May 664 | 664-05-03 | — | **no eclipse** | 0.000 | 0.000 |
 
+*A note on which number is which, because two tables in this document use
+different conventions and a reader will otherwise trip on it.* The table above
+reports the deepest of **Armagh, Iona and Clonmacnoise** — the three sites
+`record_audit.py` examines — while §4 and §7 report `irish_mag_central` from the
+canon, which is the deepest of **four**, adding Bangor in Co. Down. That is why
+664 appears here as 0.996 (Armagh) and elsewhere as 1.042: the eclipse was central
+at Bangor. Both numbers are right; they answer different questions. Post-refinement
+the two pipelines agree to better than 0.001 on every site they share.
+
 **The hit rate is partly circular and is not offered as evidence.** These dates
 come from the standard modern identifications, which were themselves made by
 matching annal entries to computed eclipses. What the identification procedure did
@@ -415,3 +424,86 @@ prediction, not a result: it says *if* the record stops, look for a human cause.
 Checking it costs one grep of the annals for the years 1140, 1147, 1180, 1185 and
 1191. **1185-05-01 is the decisive one** — if a 0.998 eclipse over Ireland is
 absent from the annals, the tradition had stopped recording the sky.
+
+---
+
+## 8. The lunar canon, and an asymmetry the annals can be tested against
+
+`find_lunar_eclipses.py`, AD 400–1210: **10,018 lunations scanned, 1,993 lunar
+eclipses, 1,266 of them umbral.** Completeness checked the same way as the solar
+finder — **230 for 1901–2000 against a published 229**, the one difference a
+grazing case at penumbral magnitude 0.009, which is a threshold convention rather
+than a missed or invented eclipse. Files: `results/lunar_eclipse_canon.csv`,
+`observable_sky_events.csv`.
+
+### What was actually available to an Irish observer
+
+"Visible" here means the Moon above the horizon **and** the Sun below −6°, at some
+point between the umbral contacts — i.e. an eclipse someone could have watched,
+not merely one that happened.
+
+| | Count, AD 400–1210 | Rate |
+|---|---|---|
+| solar, magnitude ≥0.50 with the Sun up | 171 | one every 4.7 years |
+| solar, ≥0.90 | 37 | one every 22 years |
+| **solar, central** | **5** | one every 162 years |
+| **lunar, umbral phase visible** | **710** | one every 1.1 years |
+| **lunar, total and visible** | **327** | one every 2.5 years |
+
+**A visible umbral lunar eclipse was 4.2× as common as a solar eclipse of
+magnitude 0.50 or more. At the spectacular end the ratio is 65 to 1: 327 total
+lunar eclipses against 5 central solar ones.**
+
+That asymmetry is the point. A lunar eclipse is visible from the entire night
+hemisphere rather than a narrow track, lasts hours rather than minutes, needs no
+accident of geography, and can be looked at directly. **The annals had vastly more
+opportunity to record lunar eclipses than solar ones.**
+
+So the recording-rate comparison is sharp, and it needs only the text:
+
+* If the annals record **solar eclipses at anything like the rate they record
+  lunar ones**, the tradition was selecting for portent value, not logging the
+  sky — a total eclipse of the sun is an omen, and a lunar eclipse a fortnight
+  later is an event.
+* If the **rates track availability**, it was logging.
+
+This approaches McCarthy & Breen's argument that the motive was religious and
+eschatological from the opposite direction to theirs: they read it out of the
+records' content, this reads it out of what the records *omit* relative to what
+the sky supplied. Per-century counts are in `results/sky_availability.txt` and are
+flat, so nothing here can be attributed to the sky becoming busier or quieter.
+
+### The borrowing test works far better on lunar eclipses
+
+The solar version of the observed-vs-borrowed test (§4) is blind on 40% of its
+candidates, because a big eclipse over Ireland is often a fair-sized one over Rome
+too, and it forces a judgement about how deep an eclipse has to be before someone
+writes it down. Lunar eclipses fail differently and more usefully: the event is
+**identical everywhere it can be seen**, so depth carries no information at all —
+but *visibility* does, because it depends on whether the Moon is above your horizon
+at the time, and Ireland and Constantinople are 36° of longitude apart.
+
+`lunar_borrowing.py`, over the 1,266 umbral eclipses:
+
+| | Count |
+|---|---|
+| visible from Ireland | 703 |
+| visible from Rome or Constantinople | 772 |
+| visible from both — the test is blind here | 639 (91% of the Irish set) |
+| **Ireland only** → diagnostic of local observation | **64** |
+| **Mediterranean only** → diagnostic of borrowing | **133** |
+
+**197 decisive cases against the solar test's 28** — seven times the power, and on
+a cleaner discriminator: a yes-or-no about the horizon rather than a judgement
+about magnitude. Note the honest nuance: proportionally the lunar test is *blinder*
+(91% vs 40%), because the night hemisphere is large and Ireland and Rome usually
+share it. It wins on absolute numbers, not on cleanliness of the sample.
+
+`results/lunar_prediction_borrowed.csv` (133) is the strongest single artefact
+this session produced for a future agent. **Any one of those eclipses appearing in
+the Irish annals is a borrowing that cannot be explained away** — the Moon was
+below the Irish horizon throughout, in an annal whose other astronomy is
+demonstrably local. `lunar_prediction_irish.csv` (64) is the converse.
+
+AU 878 already records one solar and one lunar eclipse a fortnight apart, and gets
+both right.
