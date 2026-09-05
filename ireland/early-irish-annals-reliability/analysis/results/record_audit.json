@@ -1,0 +1,275 @@
+[
+ {
+  "id": "AU664",
+  "annal": "Annals of Ulster",
+  "date": "0664-05-01",
+  "delta_t_s": 4074.0,
+  "delta_t_sigma_s": 40.0,
+  "computed_weekday": "Wednesday",
+  "computed_feria": 4,
+  "sites": [
+   {
+    "site": "Armagh",
+    "peak_mag": 0.9964,
+    "first_lat": 15.842,
+    "first_hour": 9,
+    "max_lat": 16.919,
+    "max_hour": 10,
+    "last_lat": 17.925,
+    "last_hour": 11,
+    "lunar_age_days": 0.055
+   },
+   {
+    "site": "Iona",
+    "peak_mag": 0.9885,
+    "first_lat": 15.834,
+    "first_hour": 9,
+    "max_lat": 16.903,
+    "max_hour": 10,
+    "last_lat": 17.905,
+    "last_hour": 11,
+    "lunar_age_days": 0.054
+   },
+   {
+    "site": "Clonmacnoise",
+    "peak_mag": 0.9632,
+    "first_lat": 15.752,
+    "first_hour": 9,
+    "max_lat": 16.837,
+    "max_hour": 10,
+    "last_lat": 17.85,
+    "last_hour": 11,
+    "lunar_age_days": 0.056
+   }
+  ],
+  "eclipse_in_ireland": true,
+  "best_site": "Armagh",
+  "peak_mag_ireland": 0.9964,
+  "lunar_age_days": 0.055,
+  "claimed_hour": 9,
+  "hour_matches_phase": [
+   "first"
+  ],
+  "peak_mag_rome": 0.739,
+  "peak_mag_constantinople": 0.8481
+ },
+ {
+  "id": "BEDE664",
+  "annal": "Bede HE III.27",
+  "date": "0664-05-03",
+  "delta_t_s": 4074.0,
+  "delta_t_sigma_s": 40.0,
+  "computed_weekday": "Friday",
+  "computed_feria": 6,
+  "eclipse_in_ireland": false,
+  "peak_mag_rome": 0.0,
+  "peak_mag_constantinople": 0.0
+ },
+ {
+  "id": "AU594",
+  "annal": "Annals of Ulster",
+  "date": "0594-07-23",
+  "delta_t_s": 4707.0,
+  "delta_t_sigma_s": 40.0,
+  "computed_weekday": "Friday",
+  "computed_feria": 6,
+  "sites": [
+   {
+    "site": "Armagh",
+    "peak_mag": 1.061,
+    "first_lat": 4.799,
+    "first_hour": 1,
+    "max_lat": 5.713,
+    "max_hour": 2,
+    "last_lat": 6.627,
+    "last_hour": 3,
+    "lunar_age_days": 29.258
+   },
+   {
+    "site": "Iona",
+    "peak_mag": 0.9896,
+    "first_lat": 4.853,
+    "first_hour": 1,
+    "max_lat": 5.743,
+    "max_hour": 2,
+    "last_lat": 6.686,
+    "last_hour": 3,
+    "lunar_age_days": 29.259
+   },
+   {
+    "site": "Clonmacnoise",
+    "peak_mag": 1.0606,
+    "first_lat": 4.697,
+    "first_hour": 1,
+    "max_lat": 5.599,
+    "max_hour": 2,
+    "last_lat": 6.512,
+    "last_hour": 2,
+    "lunar_age_days": 29.257
+   }
+  ],
+  "eclipse_in_ireland": true,
+  "best_site": "Armagh",
+  "peak_mag_ireland": 1.061,
+  "lunar_age_days": 29.258,
+  "peak_mag_rome": 0.5568,
+  "peak_mag_constantinople": 0.4384
+ },
+ {
+  "id": "AU865",
+  "annal": "Annals of Ulster",
+  "date": "0865-01-01",
+  "delta_t_s": 2466.0,
+  "delta_t_sigma_s": 25.0,
+  "computed_weekday": "Monday",
+  "computed_feria": 2,
+  "sites": [
+   {
+    "site": "Armagh",
+    "peak_mag": 0.9994,
+    "first_lat": 12.161,
+    "first_hour": 7,
+    "max_lat": 13.465,
+    "max_hour": 9,
+    "last_lat": 14.709,
+    "last_hour": 11,
+    "lunar_age_days": 0.025
+   },
+   {
+    "site": "Iona",
+    "peak_mag": 0.9909,
+    "first_lat": 12.181,
+    "first_hour": 7,
+    "max_lat": 13.463,
+    "max_hour": 9,
+    "last_lat": 14.692,
+    "last_hour": 11,
+    "lunar_age_days": 0.024
+   },
+   {
+    "site": "Clonmacnoise",
+    "peak_mag": 0.9959,
+    "first_lat": 12.039,
+    "first_hour": 7,
+    "max_lat": 13.357,
+    "max_hour": 9,
+    "last_lat": 14.617,
+    "last_hour": 11,
+    "lunar_age_days": 0.024
+   }
+  ],
+  "eclipse_in_ireland": true,
+  "best_site": "Armagh",
+  "peak_mag_ireland": 0.9994,
+  "lunar_age_days": 0.025,
+  "peak_mag_rome": 0.6939,
+  "peak_mag_constantinople": 0.5129
+ },
+ {
+  "id": "AU878",
+  "annal": "Annals of Ulster",
+  "date": "0878-10-29",
+  "delta_t_s": 2376.0,
+  "delta_t_sigma_s": 25.0,
+  "computed_weekday": "Wednesday",
+  "computed_feria": 4,
+  "feria_ok": true,
+  "sites": [
+   {
+    "site": "Armagh",
+    "peak_mag": 1.0251,
+    "first_lat": 11.793,
+    "first_hour": 6,
+    "max_lat": 13.041,
+    "max_hour": 8,
+    "last_lat": 14.294,
+    "last_hour": 9,
+    "lunar_age_days": 29.421
+   },
+   {
+    "site": "Iona",
+    "peak_mag": 0.9953,
+    "first_lat": 11.811,
+    "first_hour": 6,
+    "max_lat": 13.054,
+    "max_hour": 8,
+    "last_lat": 14.274,
+    "last_hour": 10,
+    "lunar_age_days": 29.421
+   },
+   {
+    "site": "Clonmacnoise",
+    "peak_mag": 0.9962,
+    "first_lat": 11.676,
+    "first_hour": 6,
+    "max_lat": 12.95,
+    "max_hour": 8,
+    "last_lat": 14.201,
+    "last_hour": 9,
+    "lunar_age_days": 29.421
+   }
+  ],
+  "eclipse_in_ireland": true,
+  "best_site": "Armagh",
+  "peak_mag_ireland": 1.0251,
+  "lunar_age_days": 29.421,
+  "claimed_hour": 7,
+  "hour_matches_phase": [
+   "none"
+  ],
+  "claimed_luna": 28,
+  "luna_minus_true_age": -1.42,
+  "peak_mag_rome": 0.8907,
+  "peak_mag_constantinople": 0.8309
+ },
+ {
+  "id": "AU885",
+  "annal": "Annals of Ulster",
+  "date": "0885-06-16",
+  "delta_t_s": 2329.0,
+  "delta_t_sigma_s": 25.0,
+  "computed_weekday": "Wednesday",
+  "computed_feria": 4,
+  "sites": [
+   {
+    "site": "Armagh",
+    "peak_mag": 0.9716,
+    "first_lat": 8.28,
+    "first_hour": 4,
+    "max_lat": 9.352,
+    "max_hour": 5,
+    "last_lat": 10.493,
+    "last_hour": 5,
+    "lunar_age_days": 29.269
+   },
+   {
+    "site": "Iona",
+    "peak_mag": 1.0768,
+    "first_lat": 8.353,
+    "first_hour": 4,
+    "max_lat": 9.453,
+    "max_hour": 5,
+    "last_lat": 10.554,
+    "last_hour": 6,
+    "lunar_age_days": 29.273
+   },
+   {
+    "site": "Clonmacnoise",
+    "peak_mag": 0.9598,
+    "first_lat": 8.15,
+    "first_hour": 4,
+    "max_lat": 9.218,
+    "max_hour": 5,
+    "last_lat": 10.357,
+    "last_hour": 5,
+    "lunar_age_days": 29.267
+   }
+  ],
+  "eclipse_in_ireland": true,
+  "best_site": "Iona",
+  "peak_mag_ireland": 1.0768,
+  "lunar_age_days": 29.273,
+  "peak_mag_rome": 0.4773,
+  "peak_mag_constantinople": 0.3571
+ }
+]

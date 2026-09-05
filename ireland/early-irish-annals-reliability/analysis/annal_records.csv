@@ -1,0 +1,7 @@
+id,annal,annal_year,claimed_date_julian,claimed_weekday,claimed_luna,claimed_hour,quote,verification
+AU664,Annals of Ulster,664,0664-05-01,,,9,"Tenebrae in kalendis Maii in nona hora (darkness on the kalends of May at the ninth hour)",search-level; wording not yet checked against Mac Airt & Mac Niocaill
+BEDE664,Bede HE III.27,664,0664-05-03,,,10,"eclipsis solis facta est ... hora circiter decima diei (an eclipse of the sun ... about the tenth hour of the day); Bede dates it 3 May",search-level; wording not yet checked against a critical edition
+AU594,Annals of Ulster,594,0594-07-23,,,,"Defectio solis .i. mane tenebrosum (an eclipse of the sun, i.e. a dark morning)",search-level; date identification with 23 July 594 is the standard one
+AU865,Annals of Ulster,865,0865-01-01,,,,"An eclipse of the sun on the kalends of January",search-level; translation only
+AU878,Annals of Ulster,878,0878-10-29,4,28,7,"An eclipse of the sun on the fourth of the kalends of November, the twenty-eighth of the moon, on the fourth feria, about the seventh hour of the day",search-level; the four-part specification is the reason this record is the best test on the board
+AU885,Annals of Ulster,885,0885-06-16,,,,"An eclipse of the sun, and stars were seen in the sky",search-level; translation only
