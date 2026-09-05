@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / Folger exact-key falsification
+
+### What was attempted
+- Recovered the declassified NSA solution of Robert Folger's 1827 Masonic cipher and compared the actual recovered key and composition rules against Debosnys rather than relying on visual folklore.
+- Isolated the six-unit signature-like line at the bottom of cryptogram #2b and compared it with Sektu's published whole-glyph/subglyph transcription.
+- Re-evaluated whether Debosnys whitespace-bounded glyphs are likely letters, words, or phonetic/rhyme-bearing chunks.
+
+### Results / findings
+1. **Exact Folger key downgraded / effectively rejected.** The recovered Folger alphabet is dominated by a compact geometric stroke/corner/box inventory and does not yield a credible direct reading of Debosnys' recurring atoms or the signature-like six-unit line without arbitrary remapping.
+2. **Folger composition grammar remains highly relevant.** The NSA solution shows Folger building larger cipher-words from reusable elemental letter signs. That is independently consonant with Sektu's finding that 425 Debosnys whole-glyph types decompose into a smaller ordered subglyph inventory. The useful model is therefore `small atom inventory -> composite units`, not `copy Folger's key`.
+3. **Whole whitespace glyph = plaintext word is disfavoured for cryptogram #4.** Adjacent poetic lines repeatedly share identical terminal whole glyphs. Treating those as whole words would imply repeated identical end-words across many rhyming couplets; phonetic/syllabic/rhyme-bearing units are a better fit.
+4. **Signature-like six-unit line isolated as a future crib.** Sektu transcribed it `C2B2 XP NU ZOO OM2N SHI` and decomposed it approximately as `<C2 B2> <X DOT> <N U> <O Z O> <O2RNO> <CROSSB>`. An online claim that it reads `ULTIME` lacks a reproducible derivation and is not accepted.
+5. **Current target is a Debosnys-specific atomic grammar.** The search space has narrowed away from 425 independent symbols, stock pigpen, and an unchanged Folger alphabet toward a compositional system whose atoms may encode letters/phonemes/features and whose composite units may carry syllabic/rhyme or semantic information.
+
+### Failures & dead ends
+- No reproducible plaintext was recovered in this pass.
+- Applying the Folger key literally is not productive; future work should use Folger only as a structural analogue.
+- `H.D.D.L.M.F.` remains constrained but unsolved beyond Henry / Deletnack / Debosnys / 7-letter L / 7-letter M / 6-letter F.
+
+### Artefacts produced
+- `analysis/2026-09-05-folger-key-test.md` — NSA Folger mechanism, exact-key falsification, six-unit signature isolation, revised model ranking, and next attack.
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / new-page crib and Masonic-composite attack
 
 ### What was attempted
