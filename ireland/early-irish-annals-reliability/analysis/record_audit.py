@@ -39,7 +39,44 @@ def true_lunar_age(jd):
     return jd - t
 
 
+def audit_lunar(rec):
+    """Umbral circumstances and Irish observability for a lunar notice."""
+    from lunar_eclipses import (greatest_lunar_eclipse, refine_full_moon,
+                                umbral_circumstances)
+    from find_lunar_eclipses import _alt, MOON_HORIZON, SUN_DARK
+    y, m, d = [int(x) for x in rec["claimed_date_julian"].split("-")]
+    jd_noon = julian_day(y, m, d) + 0.5
+    dt = delta_t(y)
+    t, c = greatest_lunar_eclipse(refine_full_moon(jd_noon))
+    yy, mm, dd = calendar_date(t)
+    out = {"id": rec["id"], "annal": rec["annal"], "type": "lunar",
+           "date": rec["claimed_date_julian"],
+           "delta_t_s": round(dt, 0), "delta_t_sigma_s": round(delta_t_sigma(y), 0),
+           "computed_date": "%04d-%02d-%02d" % (yy, mm, int(math.floor(dd))),
+           "computed_weekday": WEEKDAY_NAMES[weekday(t)],
+           "umbral_mag": round(c["umbral_mag"], 4),
+           "penumbral_mag": round(c["penumbral_mag"], 4),
+           "kind": ("total" if c["umbral_mag"] >= 1.0 else
+                    "partial umbral" if c["umbral_mag"] > 0.0 else "penumbral")}
+    best = {"site": None, "moon_alt": -90.0, "sun_alt": None}
+    st = SkyState(t)
+    for name in ("Armagh", "Iona", "Clonmacnoise"):
+        site = SITES[name]
+        malt = _alt(st, site, dt, "moon")
+        salt = _alt(st, site, dt, "sun")
+        if malt > best["moon_alt"]:
+            best = {"site": name, "moon_alt": round(malt, 1),
+                    "sun_alt": round(salt, 1)}
+    out.update({"best_site": best["site"], "moon_alt_deg": best["moon_alt"],
+                "sun_alt_deg": best["sun_alt"],
+                "observable_from_ireland": (best["moon_alt"] > MOON_HORIZON
+                                            and best["sun_alt"] < SUN_DARK)})
+    return out
+
+
 def audit(rec, dt_offsets=(-120, 0, 120)):
+    if (rec.get("type") or "solar").strip() == "lunar":
+        return audit_lunar(rec)
     y, m, d = [int(x) for x in rec["claimed_date_julian"].split("-")]
     jd_noon = julian_day(y, m, d) + 0.5
     dt0 = delta_t(y)
@@ -117,6 +154,17 @@ def main():
     results = [audit(r) for r in recs]
     for r in results:
         print("=" * 72)
+        if r.get("type") == "lunar":
+            print("%s  (%s, annal date %s)  LUNAR" % (r["id"], r["annal"], r["date"]))
+            print("  Delta-T %.0f +/- %.0f s" % (r["delta_t_s"], r["delta_t_sigma_s"]))
+            print("  nearest full moon: %s (%s), %s, umbral magnitude %.4f"
+                  % (r["computed_date"], r["computed_weekday"], r["kind"],
+                     r["umbral_mag"]))
+            print("  at greatest, best Irish site %s: Moon %.1f deg up, Sun %.1f deg"
+                  % (r["best_site"], r["moon_alt_deg"], r["sun_alt_deg"]))
+            print("  observable from Ireland: %s"
+                  % ("YES" if r["observable_from_ireland"] else "NO"))
+            continue
         print("%s  (%s, annal date %s)" % (r["id"], r["annal"], r["date"]))
         print("  Delta-T %.0f +/- %.0f s" % (r["delta_t_s"], r["delta_t_sigma_s"]))
         print("  weekday computed: %s (feria %d)%s"

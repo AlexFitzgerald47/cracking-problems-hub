@@ -52,3 +52,9 @@ AU885  (Annals of Ulster, annal date 0885-06-16)
      Iona           mag 1.077  first h4 (8.35)  max h5 (9.45)  last h6 (10.55)
      Clonmacnoise   mag 0.960  first h4 (8.15)  max h5 (9.22)  last h5 (10.36)
   Mediterranean control: Rome 0.477, Constantinople 0.357
+========================================================================
+AU878L  (Annals of Ulster, annal date 0878-10-15)  LUNAR
+  Delta-T 2376 +/- 25 s
+  nearest full moon: 0878-10-15 (Wednesday), total, umbral magnitude 1.0539
+  at greatest, best Irish site Clonmacnoise: Moon 23.7 deg up, Sun -24.3 deg
+  observable from Ireland: YES

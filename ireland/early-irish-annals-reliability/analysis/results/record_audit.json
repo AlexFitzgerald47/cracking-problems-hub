@@ -273,5 +273,22 @@
   "lunar_age_days": 29.273,
   "peak_mag_rome": 0.4773,
   "peak_mag_constantinople": 0.3571
+ },
+ {
+  "id": "AU878L",
+  "annal": "Annals of Ulster",
+  "type": "lunar",
+  "date": "0878-10-15",
+  "delta_t_s": 2376.0,
+  "delta_t_sigma_s": 25.0,
+  "computed_date": "0878-10-15",
+  "computed_weekday": "Wednesday",
+  "umbral_mag": 1.0539,
+  "penumbral_mag": 2.1673,
+  "kind": "total",
+  "best_site": "Clonmacnoise",
+  "moon_alt_deg": 23.7,
+  "sun_alt_deg": -24.3,
+  "observable_from_ireland": true
  }
 ]
