@@ -4,6 +4,34 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / new-page crib and Masonic-composite attack
+
+### What was attempted
+- Inspected three newly supplied high-resolution primary scans and reconciled their filenames to the canonical Commons numbering: cryptograms #2a, #2b and #3.
+- Re-audited the conspicuous numeric token on #2a, the internal `H.D.D.L.M.F.` construction, the clasped-hands `L.M.F.` ending on #2b, and the four-line cipher block above the French plaintext poem on #3.
+- Compared the cipher's established compositional structure against a specific historical Masonic analogue, the 1827 Folger Manuscript, rather than generic pigpen.
+- Tested a new, falsifiable Fellow Craft / Seven Liberal Arts hypothesis against period Masonic monitorial material rather than modern symbolism lists.
+
+### Results / findings
+1. **Primary correction: `516` is actually `5/6`.** The high-resolution #2a scan resolves the token unambiguously as a five, diagonal slash, six. A 2015 Cipher Mysteries comment explicitly proposed integer `516` as a starting clue; that lead is now dead. A numbered wire-frame cube-like solid sits above the same region, but any relation between the cube and `5/6` remains unproved.
+2. **`H.D.D.L.M.F.` is confirmed as a real crib-like internal construction.** The short marks beneath the initials are consistent with the previously published counts `H[4] D[8] D[7] L[6] M[6] F[5]`: Henry (5), Deletnack (9), Debosnys (8), followed by unknown 7/7/6 words. Thus `LMF` is genuinely constrained to a 7/7/6 expansion if the same abbreviation rule continues. `MASONIC` (7) and `FELLOW` (6) fit M/F by length, but no defensible L-word has been established; this is a constraint, not a solution.
+3. **Masonic influence is now useful as a cipher-model class, not just iconography.** Bauer reports inverted square-and-compasses, Debosnys' reference to his son not being “initiated into the first degree,” and identifies the clasped-hands drawing as the Boaz / Entered Apprentice grip. NSA cryptanalyst and Masonic-cipher specialist Stephen Brent Morris independently judged the Debosnys script to look like a typical Masonic cipher.
+4. **The Folger Manuscript is a materially closer analogue than pigpen.** Its Masonic cipher replaces letters/common words with simple shapes and then nests/combines those shapes into larger hieroglyph-like forms, allowing multiple representations. That is structurally consonant with Sektu's independent decomposition of 425 Debosnys whole-glyph types into an ordered subglyph inventory. This does *not* imply an identical key; the composition grammar is what should be tested.
+5. **New Fellow Craft / Liberal-Arts hypothesis for #2a.** The page contains an unmistakable arithmetic object (`5/6`), a numbered geometric solid, a sun/astronomical motif, and a possible music/clef-like motif. A period-appropriate source, Albert Mackey's *Manual of the Lodge* (copyright entries 1868/1870), groups Arithmetic, Geometry, Music and Astronomy together in the Fellow Craft lecture as the quadrivium portion of the Seven Liberal Arts. This is suggestive because the broader Masonic evidence is independently established.
+6. **The Liberal-Arts reading is explicitly not accepted yet.** The motifs are not in canonical order and the music identification is ambiguous. It remains live only if a frozen segmentation finds credible Grammar/Rhetoric/Logic counterparts, a sequence matching a period Fellow Craft lecture, or deciphered adjacent text independently lands on the expected Masonic terms.
+7. **Canonical #3 clarified.** The supplied “2b1” image is Commons cryptogram #3: four cipher lines followed by a much longer French poem. It is valuable same-author language/style evidence but cannot be assumed to be a direct line-for-line crib. Sektu independently reported that this cipher block and the cipher poem appear to use the same system for different languages.
+
+### Failures & dead ends
+- The old integer-`516` line of attack is rejected; the primary scan shows `5/6`.
+- No exact `L.M.F.` expansion was recovered. Length-fitting Internet suggestions remain unevidenced.
+- No claim is made that the #2a pictograms literally encode the Seven Liberal Arts. The current evidence only promotes this to a testable hypothesis.
+- No direct crib was extracted from the French poem on cryptogram #3; the visible cipher block is far too short to be its full encoding.
+
+### Artefacts produced
+- `analysis/2026-09-05-new-pages-masonic-model.md` — canonical page mapping, `5/6` correction, `H.D.D.L.M.F.` constraint, Folger structural analogue, Fellow Craft hypothesis, falsifiers and next experiments.
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / primary-scan held-out test
 
 ### What was attempted
