@@ -1,0 +1,123 @@
+{
+ "seed": 20260925,
+ "block_words": 250,
+ "top_k_bigrams": 120,
+ "cell_blocks": {
+  "A/H1/Herbal": 30,
+  "A/H1/Pharma": 10,
+  "A/H3/Stars": 3,
+  "B/H2/Herbal": 9,
+  "B/H2/Biological": 25,
+  "B/H3/Herbal": 2,
+  "B/H3/Stars": 41,
+  "B/H5/Herbal": 2
+ },
+ "cell_words": {
+  "A/H1/Herbal": 7500,
+  "A/H1/Pharma": 2500,
+  "A/H3/Stars": 750,
+  "B/H2/Herbal": 2250,
+  "B/H2/Biological": 6250,
+  "B/H3/Herbal": 500,
+  "B/H3/Stars": 10250,
+  "B/H5/Herbal": 500
+ },
+ "comparisons": [
+  {
+   "kind": "language (section held, hand varies)",
+   "a": "A/H1/Herbal",
+   "b": "B/H2/Herbal",
+   "n_a": 30,
+   "n_b": 9,
+   "distance": 10.540894248640763,
+   "null_mean": 4.033509842067305,
+   "null_sd": 0.5843315687701095,
+   "p_value": 0.0,
+   "ratio_to_null": 2.6133304891697526
+  },
+  {
+   "kind": "LANGUAGE (hand and section held)",
+   "a": "A/H3/Stars",
+   "b": "B/H3/Stars",
+   "n_a": 3,
+   "n_b": 41,
+   "distance": 12.764326483592178,
+   "null_mean": 5.5342217269777425,
+   "null_sd": 0.8791110073874094,
+   "p_value": 0.0,
+   "ratio_to_null": 2.306435685684538
+  },
+  {
+   "kind": "hand only (language, section held)",
+   "a": "B/H2/Herbal",
+   "b": "B/H3/Herbal",
+   "n_a": 9,
+   "n_b": 2,
+   "distance": 7.726158508055841,
+   "null_mean": 6.763265311081568,
+   "null_sd": 0.9503241600417505,
+   "p_value": 0.1916,
+   "ratio_to_null": 1.142371051952757
+  },
+  {
+   "kind": "hand only (language, section held)",
+   "a": "B/H2/Herbal",
+   "b": "B/H5/Herbal",
+   "n_a": 9,
+   "n_b": 2,
+   "distance": 8.196711925616267,
+   "null_mean": 6.793733749332282,
+   "null_sd": 1.0656304911544947,
+   "p_value": 0.112,
+   "ratio_to_null": 1.2065106211178611
+  },
+  {
+   "kind": "hand only (language, section held)",
+   "a": "B/H3/Herbal",
+   "b": "B/H5/Herbal",
+   "n_a": 2,
+   "n_b": 2,
+   "distance": 11.542606331686814,
+   "null_mean": 9.092822459007904,
+   "null_sd": 1.7418991649158304,
+   "p_value": 0.3354,
+   "ratio_to_null": 1.2694195211358168
+  },
+  {
+   "kind": "section only (language, hand held)",
+   "a": "B/H2/Herbal",
+   "b": "B/H2/Biological",
+   "n_a": 9,
+   "n_b": 25,
+   "distance": 9.824217592696328,
+   "null_mean": 3.4732710546751346,
+   "null_sd": 0.5849242796279287,
+   "p_value": 0.0,
+   "ratio_to_null": 2.828520273265922
+  },
+  {
+   "kind": "section only (language, hand held)",
+   "a": "B/H3/Herbal",
+   "b": "B/H3/Stars",
+   "n_a": 2,
+   "n_b": 41,
+   "distance": 9.691590660927218,
+   "null_mean": 6.463196043132892,
+   "null_sd": 0.8957052940219221,
+   "p_value": 0.0022,
+   "ratio_to_null": 1.4995043622766908
+  },
+  {
+   "kind": "section only (language, hand held)",
+   "a": "A/H1/Herbal",
+   "b": "A/H1/Pharma",
+   "n_a": 30,
+   "n_b": 10,
+   "distance": 9.282503749513747,
+   "null_mean": 3.803198583831472,
+   "null_sd": 0.558000842175155,
+   "p_value": 0.0,
+   "ratio_to_null": 2.44070971970184
+  }
+ ]
+}
