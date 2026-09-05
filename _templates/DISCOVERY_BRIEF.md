@@ -17,6 +17,30 @@ Discover and propose new problems in your assigned lane. Write each as a folder 
 `discovered/<slug>/` containing `PROBLEM.md` (required, following the template's section
 headings), plus seeded `PROGRESS.md` and `HANDOVER.md` dated to the run.
 
+## Crack-fit gate — apply before the quality bar
+
+The Hub is for **cracking named unknowns**, not for collecting every worthwhile research
+project that can be attacked with data.
+
+Before spending a verification search on a candidate, ask:
+
+1. **What exactly is unknown?** A plaintext, sign value, fragment join, author, forger,
+   provenance, identity, disputed reading, origin, date, authenticity verdict, lost place,
+   hidden source, or another concrete unknown must be nameable in one sentence.
+2. **What would a crack look like?** The successful output should be recognisable as a
+   discovery. “A better estimate”, “a cleaner linked dataset”, “a bias-corrected series”,
+   or “a useful descriptive model” is not enough by itself.
+3. **Can competing answers lose?** There must be some route to discrimination: held-out
+   evidence, known controls, physical constraints, provenance, null models, bilinguals,
+   independent witnesses, or explicit predictions that differ between hypotheses.
+4. **Is the data work serving the mystery?** OCR, HTR, corpus building, entity resolution,
+   stylometry, statistics and graph analysis are tools. They qualify a problem only when
+   they directly advance a named crack.
+
+If solving the project would not feel like **cracking something**, reject it or reframe it
+before proposing it. Corpus construction can still be a legitimate first deliverable where
+it is the necessary path to a named decipherment, reconstruction or identification.
+
 ## Obscurity bar — this is the point of the exercise
 The board already holds the household names. Never propose anything already in
 `STATUS.md`. Also avoid the next tier of over-covered chestnuts unless you have a
@@ -52,6 +76,7 @@ under-represented in past runs.
    evidence is thin. No modern political stance treated as settled fact.
 
 ## Required in every PROBLEM.md
+- The **named unknown** and one sentence describing what a genuine crack would look like.
 - Whether a usable machine-readable corpus **already exists** or must first be produced.
   This single distinction decides whether an agent can start work at all, and it belongs
   up front.
@@ -94,10 +119,14 @@ Adapt freely; these were the original seven.
 3. **Early medieval Ireland** — ogham, dynastic origins, law tracts, computus, manuscript
    datings, Hiberno-Latin attribution.
 4. **Early modern and modern Ireland** — plantations through the revolutionary period,
-   weighted to records-driven and quantitative problems.
+   but only where there is a named mystery to crack: unidentified people/places, disputed
+   documents, lost-source reconstruction, provenance, authorship, hidden source chains,
+   contested readings or similarly concrete unknowns. Generic demographic estimation is
+   out of scope.
 5. **Attribution and forgery** — disputed authorship, dating and authenticity where
    stylometry, philology and codicology can bite.
 6. **Contested historical evidence** — disputes resolvable in principle, especially claims
    propagated through a century of citation without anyone re-checking the source.
-7. **Quantitative and archival** — problems where the bottleneck is data work rather than
-   object access.
+7. **Quantitative and archival** — only when quantitative work is the mechanism for
+   identifying, reconstructing or falsifying a named unknown. A dataset-analysis project
+   with no crack-shaped endpoint belongs elsewhere.
