@@ -108,6 +108,33 @@ def main():
     check("2016-04-07 no-eclipse elongation > 1.6 deg",
           1.0 if st.elongation() > 1.6 else 0.0, 1.0, 0.0)
 
+    print("\n== regression: the cusp, and the horizon constraint ==")
+    # Two bugs found on 2026-09-05, pinned so they cannot come back.
+    #
+    # (1) A near-central eclipse has a *cusp* in magnitude at maximum, not a
+    #     smooth peak, so a coarse time grid underestimates it. 865-01-01 at
+    #     Armagh reads 0.9951 on a 2-minute grid and 0.99941 on a 10-second one.
+    # (2) The fix for (1) optimised magnitude without the horizon constraint and
+    #     walked past sunset, reporting magnitudes nobody could have seen. Any
+    #     peak-finder here must keep the Sun above the horizon.
+    from astro import delta_t as _dtf
+    site865 = Site("Armagh", 54.3503, -6.6528)
+    dt865 = _dtf(865)
+    jd865 = julian_day(865, 1, 1) + 0.5
+    peak, peak_alt = -1.0, None
+    for i in range(-1800, 1801):          # +/-5 h at 10 s
+        jd = jd865 + i * (10.0 / 86400.0)
+        c = local_circumstances(SkyState(jd), site865, dt865)
+        if c["alt"] < -0.9:
+            continue
+        if c["mag"] > peak:
+            peak, peak_alt = c["mag"], c["alt"]
+    check("865-01-01 Armagh peak magnitude, Sun up", peak, 0.99941, 0.0005)
+    check("  and the Sun really is above the horizon", 1.0 if peak_alt > -0.9 else 0.0,
+          1.0, 0.0)
+    check("  it is NOT central (the AU 885 argument depends on this)",
+          1.0 if peak < 1.0 else 0.0, 1.0, 0.0)
+
     print("\n== Delta-T parabola ==")
     check("dT(1820)", delta_t_ms2004(1820), -20.0, 1e-9, "s")
     check("dT(2000)", delta_t_ms2004(2000), 83.68, 0.01, "s")
