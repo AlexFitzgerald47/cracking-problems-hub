@@ -1,73 +1,87 @@
 # Problem-Solving Target List
 
 **Owner:** Orchestrator  
-**Created:** 2026-09-05 repository clock  
-**Source run:** five finder lanes × 20 candidates = 100 screened; top 50 retained here.
+**Re-ranked:** 2026-09-05 repository clock  
+**Source pool:** the 100 candidates screened in the five-lane discovery run. The original finder manifests are preserved as the historical discovery record; their `SELECT`/`RESERVE` labels no longer define this queue.
 
-## What this file is
+## The crack test
 
-This is the Hub's ranked **work queue**, not a solved/open-status dashboard. `STATUS.md` remains the source of truth for active and promoted problems. A target can be claimed only after the cracker re-checks the live sources and, where needed, expands it into a full `PROBLEM.md`/`HANDOVER.md` pack. The ranking favours: meaningful payoff, remote corpus/data readiness, falsifiability, and a plausible first-session experiment.
+This Hub is not a general computational-history lab. A target belongs here only when a successful session could plausibly **crack a specific unknown**.
 
-**Scoring:** 20 = unusually strong combination of impact + data readiness + falsifiability + tractability. Scores are triage, not truth. Ties are ordered by lane/id.
+A target should answer **yes** to all of these:
+
+1. **Named unknown.** There is a concrete thing we do not know: plaintext, sign value, fragment join, author, forger, origin, reading, identity, date, provenance, authenticity, lost place, or comparable hidden fact.
+2. **Breakthrough-shaped output.** Success produces something recognisable as a discovery — not merely a cleaner dataset, a tighter confidence interval, or a more accurate historical aggregate.
+3. **Primary evidence is attackable.** A remote agent can reach enough of the object/corpus/source chain to do more than write a literature review.
+4. **The answer can lose.** Competing readings can be tested against held-out evidence, controls, physical constraints, provenance, a null model, or some other falsifier.
+5. **The method serves the mystery.** Entity resolution, OCR, stylometry, statistics, graph analysis and corpus building are welcome when they are tools used to crack the named unknown. They are not by themselves reasons to put a project on this board.
+
+A useful shorthand: **if solving it would not feel like cracking something, it is probably not a Hub target.**
 
 ## Ranked 50
 
-| Rank | ID | Target | Lane | Score | First experiment / success criterion |
+| Rank | ID | Target | Crack type | Crack score | First decisive move |
 |---:|---|---|---|---:|---|
-| 1 | C1 | Cairo Geniza automatic join discovery | C | 20 | Use 2025 MiDRASH automatic transcriptions plus image metadata to rank previously unknown joins; validate on known joins and expert-check top predictions. |
-| 2 | A1 | 1911→1926 Irish census person/household linkage | A | 19 | Link people and households across the 15-year revolutionary gap; measure migration, household breakup and linkage uncertainty. |
-| 3 | B1 | Independent test of the 2025 Teotihuacan writing-language hypothesis | B | 19 | Reproduce sign-to-language claims on held-out inscriptions and compare against alternative language/null assignments. |
-| 4 | C2 | Dunhuang real-fragment reassembly beyond synthetic patch pairs | C | 19 | Take the 2025 handwriting matcher from benchmark-style pairs to cross-collection retrieval of actual unmatched fragments. |
-| 5 | C3 | Oracle-bone fragment rejoining at archive scale | C | 19 | Benchmark modern rejoin models on known joins, then search unmatched fragments with provenance and break-edge controls. |
-| 6 | A2 | Tithe Applotment → Griffith’s Valuation landholding continuity | A | 18 | Resolve occupier/place entities across 1823–37 and 1847–64 to quantify persistence and turnover, with selection-bias controls. |
-| 7 | A3 | Irish Civil War fatality completeness by cross-source reconciliation | A | 18 | Estimate missingness/duplication across pension-derived maps, official rolls and named local lists; report capture-recapture sensitivity. |
-| 8 | B2 | Camunic language structure and classification | B | 18 | Exploit the open Thesaurus Inscriptionum Raeticarum/Camunic records for segmentation, formulae and relationship tests. |
-| 9 | B3 | Cretan Hieroglyphic vs Linear A: reproduce the 2026 same-language claim | B | 18 | Reimplement the published syllabotactic comparison with matched-size controls and alternative sign-value uncertainty. |
-| 10 | C4 | Oracle-bone undeciphered character candidate readings | C | 18 | Use open deciphered/undeciphered glyph datasets and evolutionary graphs to produce ranked readings with held-out historical-form tests. |
-| 11 | C5 | Dead Sea Scrolls scribal-hand network | C | 18 | Extend writer identification from demonstration scrolls to a corpus-wide graph; validate clusters against known multi-scribe manuscripts and 14C. |
-| 12 | C7 | Khipu non-numeric structural code | C | 18 | Use the Open Khipu Repository to test whether knot/color/cord structures carry recurring non-accounting categories beyond quantity. |
-| 13 | E1 | Domesday population multiplier: recover uncertainty instead of one number | E | 18 | Re-estimate population with explicit household-size, omission and urban assumptions; publish distributions rather than a point estimate. |
-| 14 | E2 | McEvedy–Jones historical population ‘clone’ audit | E | 18 | Trace modern datasets/results back to 1978 guesses and quantify how often cloned estimates masquerade as independent evidence. |
-| 15 | E5 | Jamaica slave registers: longitudinal person linkage, 1817–1832 | E | 18 | Use the Valuable Lives source series to link individuals across six censuses and measure births, deaths, transfers and family separation with match uncertainty. |
-| 16 | A4 | 1926 census Irish-language reporting shift | A | 17 | Link comparable 1911/1926 places and households to separate demographic change from changed self-reporting and enumeration. |
-| 17 | A5 | Registry of Deeds index completeness and bias | A | 17 | Measure which years, counties, grantor types and transaction classes are under-indexed in the volunteer corpus before using it historically. |
-| 18 | A6 | Dúchas Schools’ Collection: oral testimony vs copied-source detection | A | 17 | Detect copied books/newspapers and repeated school-template material so oral-tradition analyses are not driven by textual borrowing. |
-| 19 | B4 | Sidetic residual sign values and morphology | B | 17 | Audit the few unresolved/uncertain signs and repeated endings across the small bilingual-supported corpus. |
-| 20 | B5 | Eteocypriot language structure from a readable syllabary | B | 17 | Because the script values are known but the language is not, test segmentation, morphology and relationship hypotheses with explicit nulls. |
-| 21 | C6 | Dead Sea Scrolls fragment rejoining with script + material constraints | C | 17 | Combine handwriting, text continuation and physical edge evidence; require recovery of known joins before proposing new ones. |
-| 22 | C9 | P.Oxy. 90: writing exercise or cryptogram? | C | 17 | Formalise the British Library catalogue’s two live possibilities and compare symbol/sequence structure against writing-exercise and cipher null corpora. |
-| 23 | D2 | Saint Erkenwald and the Gawain/Pearl Poet: period-controlled stylometry | D | 17 | Test common authorship with the Hub’s newly learned period-confound controls and matched-genre calibration. |
-| 24 | D3 | Letter of Prester John: computational stemma and origin layers | D | 17 | Exploit ~200 manuscript witnesses and newer discoveries to infer textual strata before arguing for place/authorship of origin. |
-| 25 | E3 | SlaveVoyages missing-voyage estimator sensitivity | E | 17 | Reproduce regional/time estimates under alternate missingness models; identify cells where published totals are prior-driven. |
-| 26 | E4 | British slave-compensation wealth transmission via census/probate linkage | E | 17 | Link LBS beneficiaries into later census/probate records and quantify uncertainty in intergenerational transmission claims. |
-| 27 | E7 | Roman/Mediterranean shipwreck counts: correct discovery bias before economic inference | E | 17 | Model depth, coast, survey technology and publication-era detection effects in the OxREP wreck series before reading counts as trade volume. |
-| 28 | E10 | Cross-dataset slavery entity resolution | E | 17 | Link people/estates/voyages across SlaveVoyages, LBS and other open linked datasets; quantify duplicates and false merges before aggregate inference. |
-| 29 | A7 | Ogham inscription chronology and dialect clustering | A | 16 | Use readings, geography and 3D-recorded forms to test whether linguistic/formula clusters align with chronology or region. |
-| 30 | A8 | Lost Irish microtoponyms: historical-record recovery against Logainm | A | 16 | Recover place-names in tithe/valuation/census records absent or altered in the modern official gazetteer; validate by locality and map evidence. |
-| 31 | B6 | Complete/pressure-test the partial Unknown Kushan Script decipherment | B | 16 | Apply the 2023 sign values to inscriptions not used in derivation; score prediction failures and remaining graphemes. |
-| 32 | B8 | Southwest Paleohispanic/Tartessian sign-system ambiguity | B | 16 | Enumerate competing sign values/segmentation rules and test them on held-out formulae rather than choosing a reading by plausibility. |
-| 33 | C8 | Gāndhārī manuscript fragment/provenance joins | C | 16 | Use the digital corpus, orthography and scribal features to rank fragments likely from the same original manuscript or scribe. |
-| 34 | D1 | Secret Gospel of Mark / Letter to Theodore authenticity evidence audit | D | 16 | Re-score handwriting, source dependence and provenance claims from surviving photographs; explicitly model the hard limit that the manuscript is missing. |
-| 35 | D4 | Historia Augusta authorship/date with manuscript-confound controls | D | 16 | Revisit single-vs-multiple authorship stylometry while accounting for scribal mediation and the 2021 manuscript-tradition challenge. |
-| 36 | D5 | Mesha Stele line 31: image-based adjudication of btdwd | D | 16 | Blindly score letter traces across stone/squeeze imaging and test how much each proposed reading depends on ambiguous marks. |
-| 37 | D10 | Forging Antiquity database: detect recurring modern forger signatures | D | 16 | Cluster the 2026 open fake-papyri dataset by material, hand, provenance story and seller/source to identify testable forger/workshop families. |
-| 38 | E6 | Scottish witch-trial outcome missingness and prosecution network | E | 16 | Use the open Survey database to separate accused/tried/executed and model regional investigator/judge networks plus missing outcomes. |
-| 39 | E8 | Ancient coin-hoard discovery bias in Nomisma-linked datasets | E | 16 | Estimate geographic/period collection bias and uncertainty before using hoard counts to infer circulation or crisis. |
-| 40 | E9 | Old Bailey long-run violence rates: denominator and repeat-person audit | E | 16 | Entity-link defendants/victims and propagate population-estimate uncertainty into claimed homicide trends. |
-| 41 | A9 | Women’s occupational mobility, Ireland 1911→1926 | A | 15 | Link women across censuses and quantify occupation changes while controlling marriage-name changes and urban migration. |
-| 42 | A10 | Registry of Deeds land-transfer network, 1709–1832 | A | 15 | Reconstruct repeat parties and property chains to test whether surviving/indexed deeds distort apparent concentration and network centrality. |
-| 43 | B7 | North Picene: authenticity and linguistic signal audit | B | 15 | Separate the Novilara text’s authenticity question from decipherment; test whether sign/word patterns exceed matched pseudo-text controls. |
-| 44 | B9 | Wadi el-Hol early alphabetic sign-reading uncertainty | B | 15 | Build an image-to-sign concordance and quantify which historical conclusions depend on disputed glyph readings. |
-| 45 | B10 | Tyrsenian relationship: Etruscan–Raetic–Lemnian computational test | B | 15 | Test shared morphology/lexicon against length-, genre- and contact-aware null models. |
-| 46 | C10 | Silk Road Sanskrit manuscript fragment reassembly | C | 15 | Use digitised fragment imagery/transcriptions to cluster scribes/text continuations across dispersed collections. |
-| 47 | D6 | Artemidorus Papyrus authenticity: integrate ink, support and textual anomalies | D | 15 | Build an evidence ledger that distinguishes ancient support from ink/text claims; reproduce quantitative Raman/PCA evidence where data permit. |
-| 48 | D7 | Zinoviev Letter: source-network authorship attribution | D | 15 | Use known diplomatic/intelligence text corpora and provenance constraints to rank proposed forger circles without treating forgery itself as open. |
-| 49 | D8 | James Ossuary inscription authenticity | D | 14 | Separate ossuary age from inscription/patina questions; compare letter forms and surface evidence against securely provenanced controls. |
-| 50 | D9 | Jehoash Inscription authenticity | D | 14 | Reconcile philological, geological and provenance evidence with explicit competing predictions rather than a binary plausibility vote. |
+| 1 | C1 | Cairo Geniza automatic discovery of unknown fragment joins | Reconstruction | 20 | Recover known joins blindly, then rank genuinely unmatched fragments and require independent expert/physical-textual confirmation of any new join. |
+| 2 | C4 | Oracle-bone undeciphered character candidate readings | Decipherment | 19 | Generate readings from historical-form/evolutionary constraints and test them on inscriptions not used to derive the candidate value. |
+| 3 | C9 | P.Oxy. 90: writing exercise, cryptogram, or something else? | Decipherment / identification | 19 | Reconstruct the anomalous final lines from the best primary image/transcription and force competing cipher, shorthand, exercise and notation models to make different predictions. |
+| 4 | B1 | Independent test of the 2025 Teotihuacan writing-language hypothesis | Decipherment | 19 | Apply proposed sign/language values to held-out inscriptions and compare predictive performance against alternative language/null assignments. |
+| 5 | C3 | Oracle-bone fragment rejoining at archive scale | Reconstruction | 19 | Calibrate on known joins, then search unmatched pieces with break-edge, text, hand and provenance constraints. |
+| 6 | B6 | Complete or break the partial Unknown Kushan Script decipherment | Decipherment | 18 | Apply the 2023 values to inscriptions excluded from derivation; catalogue exact predictive successes, failures and unresolved graphemes. |
+| 7 | C7 | Khipu non-numeric structural code | Decipherment | 18 | Test whether repeated knot/color/cord structures predict recurring non-numeric categories across independent khipu groups better than matched nulls. |
+| 8 | C2 | Dunhuang real-fragment reassembly across dispersed collections | Reconstruction | 18 | Move beyond synthetic patch pairs: recover known real joins, then search unmatched fragments across collections. |
+| 9 | B3 | Cretan Hieroglyphic vs Linear A: is the claimed same-language signal real? | Decipherment / language | 18 | Reproduce the 2026 syllabotactic claim under matched corpus sizes and sign-value uncertainty, then test held-out sequences. |
+| 10 | B15 | Khitan Large Script unresolved readings | Decipherment | 18 | Establish a usable encoded corpus, then target repeated unknown characters in contexts constrained by known parallel formulae and names. |
+| 11 | C6 | Dead Sea Scrolls fragment rejoining with script + material constraints | Reconstruction | 18 | Require recovery of known joins using handwriting, text continuation and physical-edge evidence before proposing any new one. |
+| 12 | D5 | Mesha Stele line 31: what do the damaged traces actually read? | Reading | 18 | Blind-score competing readings across stone and squeeze imagery and identify which proposed letters survive image-independent adjudication. |
+| 13 | D13 | Casket Letters authenticity and textual stemma | Authentication / reconstruction | 18 | Resolve the surviving witness chain, build a stemma, and test which disputed features can or cannot descend from a single lost original. |
+| 14 | B2 | Camunic language structure and classification | Decipherment / language | 17 | Derive segmentation and morphology on one corpus partition and test whether proposed relationships predict forms in held-out inscriptions. |
+| 15 | B5 | Eteocypriot language structure from a readable syllabary | Language identification | 17 | Compete morphology/relationship hypotheses against held-out sequences using the known script values. |
+| 16 | D7 | Zinoviev Letter: who forged it? | Attribution | 17 | Compare linguistic, bureaucratic and network signatures against known diplomatic/intelligence corpora and proposed forger circles. |
+| 17 | D1 | Secret Gospel of Mark / Letter to Theodore authenticity | Authentication | 17 | Re-score handwriting, textual dependence and provenance claims from the surviving photographs, with explicit predictions for genuine vs modern composition. |
+| 18 | B8 | Southwest Paleohispanic / Tartessian sign-system ambiguity | Decipherment | 17 | Enumerate competing sign values and segmentation rules, then score them on held-out formulae instead of plausibility alone. |
+| 19 | C13 | Oxyrhynchus cross-collection fragment joins | Reconstruction | 17 | Establish bulk image/transcription access, recover known joins, then rank high-confidence cross-collection matches among unmatched fragments. |
+| 20 | C8 | Gāndhārī manuscript fragment and provenance joins | Reconstruction | 17 | Use orthography, hand, content and material/provenance features to predict same-manuscript fragments and validate against known groups. |
+| 21 | D2 | Saint Erkenwald and the Gawain/Pearl Poet | Attribution | 17 | Test common authorship with period- and genre-controlled stylometry calibrated on known medieval authorship cases. |
+| 22 | B14 | Libyco-Berber / Numidian language structure | Decipherment / language | 17 | Build the largest remotely defensible inscription subset and test repeated morphemes/relationships across regions rather than assuming a single reading tradition. |
+| 23 | B4 | Sidetic residual sign values and morphology | Decipherment | 17 | Use bilingual-supported values to constrain the unresolved signs and repeated endings; demand cross-inscription prediction. |
+| 24 | D3 | Letter of Prester John: where did the text originate? | Origin / textual reconstruction | 17 | Infer manuscript strata from the large witness tradition before testing competing geographic/authorship origin hypotheses. |
+| 25 | D4 | Historia Augusta authorship and date | Attribution / dating | 17 | Re-test single vs multiple authorship while controlling manuscript transmission, chronology and editorial contamination. |
+| 26 | C5 | Dead Sea Scrolls unidentified scribal hands | Attribution | 16 | Build a corpus-wide hand graph and test whether unknown fragments cluster with securely identified scribes beyond material/date constraints. |
+| 27 | D10 | Forging Antiquity: recurring modern forger/workshop signatures | Attribution | 16 | Cluster fake papyri by hand, material, provenance story and seller/source, then test whether proposed workshop groups predict unseen items. |
+| 28 | C10 | Silk Road Sanskrit manuscript fragment reassembly | Reconstruction | 16 | Recover known dispersed fragments from image/text features, then search unmatched material for cross-collection joins. |
+| 29 | C14 | Cairo Geniza unidentified scribal-hand clustering | Attribution | 16 | Validate hand clusters against known scribes/documents, then identify high-confidence unknown same-hand groups that cross current catalogue boundaries. |
+| 30 | C15 | Dunhuang cross-language scribe identification | Attribution | 16 | Test whether handwriting features identify the same scribe across scripts/languages on known cases before proposing unknown cross-language matches. |
+| 31 | B9 | Wadi el-Hol early alphabetic sign readings | Reading | 16 | Build an image-to-sign concordance and identify exactly which historical claims survive alternative readings of disputed glyphs. |
+| 32 | B7 | North Picene / Novilara: genuine language-bearing text or artefact? | Authentication / decipherment | 16 | Separate authenticity from translation and test whether sequence structure exceeds matched pseudo-inscription controls. |
+| 33 | B10 | Etruscan–Raetic–Lemnian relationship | Language relationship | 16 | Test shared morphology/lexicon against contact-, genre- and length-aware null models with held-out forms. |
+| 34 | D6 | Artemidorus Papyrus authenticity | Authentication | 16 | Force ink, support, textual and provenance evidence into competing genuine/modern predictions; reproduce quantitative scientific evidence where data allow. |
+| 35 | D8 | James Ossuary inscription authenticity | Authentication | 16 | Separate object age from inscription age and compare letter forms/patina claims against securely provenanced controls. |
+| 36 | D9 | Jehoash Inscription authenticity | Authentication | 16 | Reconcile philological, geological and provenance evidence using explicit predictions that differ under genuine vs modern origin. |
+| 37 | D14 | Marzeah Papyrus authenticity | Authentication | 16 | Confirm remote primary-image/data access, then compare script, material and provenance features with secure controls and known modern forgeries. |
+| 38 | D15 | Hazon Gabriel / Gabriel Revelation authenticity | Authentication | 16 | Separate stone age, ink behaviour, palaeography and textual claims; identify which observations discriminate ancient inscription from modern addition. |
+| 39 | D16 | Jerusalem Papyrus authenticity | Authentication | 16 | Audit provenance, palaeography and material evidence against securely provenanced Judaean Desert comparanda and explicit forgery predictions. |
+| 40 | B13 | Proto-Sinaitic disputed sign concordance | Reading / decipherment | 16 | Build an image-grounded sign concordance and test which phonetic assignments remain stable across independent inscriptions. |
+| 41 | B18 | Iberian language semantic inference | Decipherment / language | 15 | Target a small set of repeated formulae/lexemes with external anchors and require predictions in inscriptions withheld from inference. |
+| 42 | B19 | Lemnian segmentation and morphology | Decipherment / language | 15 | Compete segmentation/morphology analyses on held-out text while controlling the temptation to import Etruscan readings by resemblance. |
+| 43 | B16 | Carian residual reading audit | Decipherment | 15 | Identify genuinely unresolved signs/readings and test competing values only where bilingual/proper-name evidence can discriminate them. |
+| 44 | B11 | Issyk inscription | Decipherment | 15 | Establish a defensible glyph reading first, then test only hypotheses strong enough to beat the severe low-power bound of a very short text. |
+| 45 | C11 | Batak pustaha hidden source/formula alignment | Source identification | 15 | Align recurring esoteric formulae across digitised manuscripts to identify copied exemplars, shared source families or otherwise unknown textual relationships. |
+| 46 | C12 | Nsibidi sign corpus and unresolved sign concordance | Decipherment / reconstruction | 15 | Assemble dispersed primary attestations into a provenance-aware corpus, then test whether recurring signs have stable contextual functions across sources. |
+| 47 | A8 | Lost Irish microtoponyms: identify vanished places in historical records | Identification | 15 | Take historical place-names absent/altered in modern gazetteers and resolve them to physical localities using independent map, valuation and neighbouring-name evidence. |
+| 48 | A7 | Ogham inscription chronology and dialect clusters | Reading / dating | 15 | Test whether inscriptional formulae, linguistic features and 3D letter forms produce reproducible regional/chronological groups that resolve disputed datings/readings. |
+| 49 | A6 | Dúchas Schools’ Collection: identify hidden copied sources | Source attribution | 15 | For suspicious passages, identify the exact book/newspaper/template source and validate it by phrase-level and publication-date evidence. |
+| 50 | E18 | Domesday unidentified-place geolocation | Identification | 15 | Pick unresolved place entries and rank modern/historical locations using neighbouring estates, route/toponym evidence and geography; require independent historical-map confirmation. |
+
+## What was removed from the target queue
+
+The re-rank deliberately drops projects whose natural success state is primarily **measurement**, **data linkage**, **bias correction** or **better estimation** rather than discovery of a named unknown. Examples include census mobility, landholding continuity, population multipliers, wealth-transmission measurement, shipwreck/coin discovery-bias correction, generic slavery entity resolution and long-run rate reconstruction.
+
+Those are legitimate research projects. They are not what this repository is for unless they become a necessary sub-problem inside a specific crack.
 
 ## Lane key
 
-| Lane | Scope | Manifest |
+| Lane | Original discovery scope | Manifest |
 |---|---|---|
 | A | Ireland — newly opened and underused archives | `discovered/_manifest/five-lane-2026-09-05-a-ireland.md` |
 | B | Undeciphered scripts & epigraphy | `discovered/_manifest/five-lane-2026-09-05-b-scripts.md` |
@@ -75,22 +89,20 @@ This is the Hub's ranked **work queue**, not a solved/open-status dashboard. `ST
 | D | Attribution, forgery & contested readings | `discovered/_manifest/five-lane-2026-09-05-d-attribution.md` |
 | E | Quantitative history & citation-chain audits | `discovered/_manifest/five-lane-2026-09-05-e-quantitative.md` |
 
-## Promotion/claim protocol
+## Promotion / claim protocol
 
-1. Re-check the candidate is still open **today** against live sources.
-2. Confirm bulk/programmatic corpus access where the first experiment depends on it.
-3. Create/complete the target's problem pack under `discovered/<slug>/` before substantial cracking.
-4. Claim it through `board/active/<slug>.md`; do not edit another agent's files.
-5. Run the known-input/pipeline sanity check and a matched null before interpreting a positive result.
-6. A negative result is a valid outcome if it closes a method or establishes a power/access bound.
+1. Re-check that the **named unknown** is still genuinely open today.
+2. Confirm primary evidence and bulk/programmatic access where needed.
+3. State in one sentence what a crack would look like. If that sentence is merely “estimate X better”, reject or reframe the target.
+4. Create/complete the full problem pack under `discovered/<slug>/` before substantial work.
+5. Claim it through `board/active/<slug>.md`.
+6. Validate the input/pipeline on known cases before touching the disputed case.
+7. Use held-out evidence, matched nulls and/or explicit competing predictions wherever the evidence permits.
+8. Negative results remain valuable when they close a proposed decipherment, reading, attribution or method.
 
-## Deliberate exclusions
+## Boundary cases
 
-- Existing Hub problems/proposals were not allowed to occupy these 50 slots.
-- Household-name mystery listicles and the explicit exclusions in `DISCOVERY_BRIEF.md` were not used.
-- Access-gated candidates whose decisive evidence requires a private reading room/object were downgraded or excluded.
-- Several plausible but tiny single-inscription problems were kept as reserves because the Hub's own short-cipher/low-power work shows how easily plausible readings arise by chance.
-
-## Selection boundary
-
-Exactly 50 of the 100 screened candidates are marked `SELECT` in the five manifests. The remaining 50 are preserved as `RESERVE` so the next discovery run does not waste time rediscovering them and can promote them if corpus access or new evidence changes.
+- **Corpus building counts as progress, but not automatically as a target.** It belongs when the corpus is the necessary first move toward a named crack such as Khitan readings or Nsibidi sign functions.
+- **Historical quantification is allowed inside a crack.** For example, entity resolution may be exactly what a fragment-join, attribution or casualty-identification problem needs. The named unknown remains the target.
+- **Tiny inscriptions stay dangerous.** A mysterious five-line object may feel maximally crack-like while having almost no statistical power. Such targets sit low until independent constraints make a result falsifiable.
+- **A famous controversy can still fail the test.** If all remotely available evidence can only support another opinion, it is not a good Hub target.
