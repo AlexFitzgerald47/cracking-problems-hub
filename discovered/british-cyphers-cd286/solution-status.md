@@ -1,0 +1,21 @@
+# Solution-status ledger
+
+**Updated:** 2026-09-05  
+**Rule:** no ciphertext is treated as an unsolved Hub target until surviving keys/plaintexts and later published solutions have been checked.
+
+| Item | Date / ref | System status | Plaintext/key status | Current verdict | Next evidence |
+|---|---|---|---|---|---|
+| Kennedy collection, Group 2 item 1 | BMH current register **CD 286/2/1**; older Kerry/BMH references call collection **CD 280** | Mixed RIC + military telegrams | 3 typed copies of 16 telegrams; purported RIC key dated 31 May 1921 filed with them | **Control / classification set, not automatically unsolved.** Archive notes key apparently does not match the historically failed series. | Obtain scans; separate RIC from military messages; test supplied key only on correctly classified RIC traffic. |
+| Kennedy collection, Group 2 item 2 | CD 286/2/2 (or legacy CD 280/2/2) | Not yet classified message-by-message | 2 typed copies of 10 messages | **High-interest unresolved series.** Official register says BMH/NLI decoding attempts failed. | Obtain scans; classify cipher family; seek parallel traffic and date-specific keys. |
+| Kennedy collection, Group 2 item 3 | CD 286/2/3 (or legacy CD 280/2/3) | Not yet classified message-by-message | Similar telegrams; **some supplied with decoded versions** | **Best calibration set.** Contains known plaintext controls plus historically undecoded material. | Obtain scans; blind-reproduce supplied decodes before attacking undecoded messages. |
+| Mullingar RIC ciphertext, Castlepollard/Granard | Collins Papers refs reported as MA/CP/05/02/33-34 and 03/21 | Likely RIC police keyword system, exact date/key must be verified | Public photograph exists; historical reporting says initially “Greek to us”, later local codebreaking succeeded | **Use as pipeline/control evidence, not claim as unsolved.** | Acquire highest-quality Collins scan and associated correspondence; freeze exact transcription. |
+| Early RIC keyword cipher | Liam Archer WS 819 | **System recovered**: paired 13-letter alphabets, self-inverse substitution | Example key rows `SWITZERLANDBC` / `FGHJKMOPQUVXY` | **Implementable control system.** | Validate on a securely paired historical cipher/plaintext message. |
+| Later RIC double-key system | Liam Archer WS 819 | Two successive keyed transformations described | No exact test pair isolated yet | **Known family, implementation incomplete.** | Find example/key pair in Collins/BMH corpus. |
+| RIC/Auxiliary numerical figure cipher | Archer WS 819; Hynes WS 867; other BMH testimony | Homophonic two-digit figure system(s), multiple numbers per letter | Historical keys existed; no exact full table yet isolated in this session | **Promising reconstruction target.** | Search surviving key sheets/trial exhibits including MacSwiney material and Collins files. |
+| British military traffic | Hynes WS 867; other BMH testimony | **Playfair** explicitly identified for military traffic | Hynes says he never had military key; intended Playfair training never occurred | **Strong orphan-cipher seam.** | Identify Kennedy military messages and period unit/key context; recover known military Playfair controls. |
+| British/RIC two-word code | Eamon Broy WS 1280 | Daily word + weekly word plus separate operating instructions | Broy/Collins had two words but could not work system until instructions obtained | **Distinct system; do not conflate with RIC paired alphabet.** | Locate the instructions or surviving worked examples in Collins/BMH holdings. |
+| IRA `VORFYDCGT` | NLI Ernie O'Malley material, 25 Oct 1923 | Unknown | No published decode located in discovery pass | **Separate short-text target.** Possible cross-link to Collins agent “100”. | Reconstruct “100's methods” and surrounding memo chain before cryptanalysis. |
+
+## Catalogue warning: CD 280 vs CD 286
+
+Current Military Archives appendix labels the Tadhg Kennedy collection **C.D. 286**. A Kerry Library guide and an older BMH contributors index identify the same Kennedy cipher collection as **C.D. 280**, including matching Group 2 item descriptions. Treat this as an archive-reference discrepancy until clarified. Any reproduction request should cite **Tadhg Kennedy + Group 2 + both CD 280 and CD 286** rather than trusting one number alone.
