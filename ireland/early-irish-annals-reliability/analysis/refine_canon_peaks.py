@@ -42,24 +42,34 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CANON = os.path.join(HERE, "results", "eclipse_canon.csv")
 
 
-def refine(jd_guess, site, dt, half_min=2.5):
-    """Golden-section maximum of magnitude near jd_guess."""
-    a, b = jd_guess - half_min / 1440.0, jd_guess + half_min / 1440.0
-    gr = (math.sqrt(5.0) - 1.0) / 2.0
-    c, d = b - gr * (b - a), a + gr * (b - a)
-    fc = local_circumstances(SkyState(c), site, dt)["mag"]
-    fd = local_circumstances(SkyState(d), site, dt)["mag"]
-    for _ in range(34):
-        if fc > fd:
-            b, d, fd = d, c, fc
-            c = b - gr * (b - a)
-            fc = local_circumstances(SkyState(c), site, dt)["mag"]
-        else:
-            a, c, fc = c, d, fd
-            d = a + gr * (b - a)
-            fd = local_circumstances(SkyState(d), site, dt)["mag"]
-    t = 0.5 * (a + b)
-    return local_circumstances(SkyState(t), site, dt)
+MIN_SUN_ALT = -0.9   # the canon's definition of "as seen": Sun above the horizon
+
+
+def refine(jd_guess, site, dt, half_min=2.5, step_s=4.0):
+    """Best magnitude near jd_guess **with the Sun still up**.
+
+    A fine scan rather than a golden section, and that is deliberate. The first
+    version of this function used golden-section search on magnitude alone, and
+    it was wrong: for an eclipse still in progress at sunset the unconstrained
+    maximum lies *below the horizon*, so the search walked past sunset and
+    reported a magnitude nobody could have seen. Eight sites gained more than
+    0.01 that way, the worst 0.0735, and every one of them had the Sun below
+    -0.9 degrees at the "improved" instant. The original canon's altitude filter
+    was right and the fix broke it.
+
+    A 4-second scan bounds the residual cusp error at about 0.0005, well below
+    anything that matters, and cannot leave the visible window.
+    """
+    n = int(2 * half_min * 60 / step_s) + 1
+    best = None
+    for i in range(n):
+        t = jd_guess + (-half_min * 60 + i * step_s) / 86400.0
+        c = local_circumstances(SkyState(t), site, dt)
+        if c["alt"] < MIN_SUN_ALT:
+            continue
+        if best is None or c["mag"] > best["mag"]:
+            best = c
+    return best
 
 
 def main():
@@ -86,10 +96,16 @@ def main():
             best_t, best_m = None, -1.0
             for i in range(-120, 121):
                 t = jd + i * (2.0 / 1440.0)
-                m = local_circumstances(SkyState(t), site, dt_c)["mag"]
-                if m > best_m:
-                    best_t, best_m = t, m
+                c0 = local_circumstances(SkyState(t), site, dt_c)
+                if c0["alt"] < MIN_SUN_ALT:
+                    continue
+                if c0["mag"] > best_m:
+                    best_t, best_m = t, c0["mag"]
+            if best_t is None:
+                continue
             c = refine(best_t, site, dt_c)
+            if c is None:
+                continue
             new = c["mag"]
             if new > old + 1e-6:
                 touched += 1

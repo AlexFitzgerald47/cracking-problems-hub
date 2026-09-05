@@ -294,3 +294,80 @@ article, so this session could not adjudicate. It matters: if 878 was total over
 Armagh, the annalist watched a total eclipse, and the AU 878 notice — unlike
 AU 885 — does not mention stars. Either it was written where it was not total, or
 the two notices differ in style. A sharp question for whoever has the text.
+
+### Bug found by cross-checking two of this project's own outputs
+
+Worth recording in full, because it is the kind of error that survives review: it
+is small, it is systematic, and it biases in the direction that makes results
+look more conservative rather than less.
+
+**Symptom.** For the 865-01-01 eclipse at Armagh, `analysis/results/eclipse_canon.csv`
+gave magnitude 0.9951 while `analysis/record_audit.py` gave 0.999 for the same
+eclipse, same site, same Δ*T*. A 10-second scan settles it at 0.99941. The canon
+was wrong; the audit was right.
+
+**Cause.** `find_eclipses.py` takes each site's maximum from a two-minute grid.
+For an ordinary partial eclipse that costs about 0.0002, because the magnitude has
+a smooth parabolic maximum. For a **near-central** eclipse it does not. When the
+topocentric separation at greatest phase is small, the separation behaves like
+|*v·t*| rather than a parabola — the magnitude has a **cusp**, falling roughly
+0.016 per minute either side of maximum. A two-minute grid can therefore miss the
+peak by that much, and it always misses *downwards*.
+
+**Why it matters here and nowhere else.** The error is concentrated at the top of
+the range, at the boundary between "deep partial" and "central" — which is exactly
+the boundary the AU 885 argument stands on ("stars were seen" requires totality)
+and the boundary the count of central eclipses over Ireland is defined by. The
+other tools were never affected: `record_audit.py`, `hour_analysis.py` and both
+lunar routines all refine their maxima by golden-section or ternary search rather
+than reading a grid.
+
+**Fix.** `analysis/refine_canon_peaks.py` re-refines every site magnitude at or
+above 0.80 by golden-section search, which is where the error can reach 0.001 or
+more; below that the grid is already good to a few times 10⁻⁴. The pre-refinement
+canon is kept at `analysis/results/eclipse_canon_pre_refinement.csv` so the
+correction is auditable rather than invisible.
+
+**The lesson worth carrying to other problems on the board:** this was not found
+by inspecting the code. It was found because two independent paths through the
+same project computed the same quantity and disagreed in the fourth decimal
+place. Building the second path was not redundant.
+
+**And then the fix was wrong, which is the more useful half of this entry.**
+
+The first version of `refine_canon_peaks.py` refined by golden-section search on
+magnitude alone. It reported 420 corrections with a largest of **+0.0735** — five
+times what the cusp mechanism can produce, which should have been the tell and was
+not, until the corrections were tabulated with the Sun's altitude beside them:
+
+| Date | Site | old → new | Sun altitude at the "improved" instant |
+|---|---|---|---|
+| 854-07-28 | Iona | 0.808 → 0.881 | **−1.6°** |
+| 966-07-20 | Constantinople | 0.850 → 0.918 | **−1.7°** |
+| 639-09-03 | Clonmacnoise | 0.945 → 1.000 | **−1.4°** |
+| 550-11-24 | Jarrow | 0.868 → 0.921 | **−1.5°** |
+
+Every large correction had the Sun **below the horizon**. For an eclipse still in
+progress at sunset, the unconstrained maximum lies below the horizon, so the
+search walked past sunset and reported magnitudes nobody could have seen. The
+canon's original altitude filter was correct and the fix had quietly removed it.
+The 639-09-03 case is the sharpest warning: it would have promoted a 0.945 partial
+to a 1.000 *central* eclipse over Clonmacnoise — a fictitious total eclipse,
+manufactured by a bug in a correction to a bug.
+
+The real cusp effect is what the **median** correction shows: **0.0003**, with the
+865-01-01 Armagh case at 0.004 the practical worst. It is a fourth-decimal
+problem, not a first-decimal one.
+
+`refine_canon_peaks.py` now scans at 4-second resolution *inside* the visible
+window instead of optimising across it — deterministic, unable to leave the
+horizon constraint, and with residual cusp error bounded around 0.0005. The
+pre-refinement canon is kept for comparison.
+
+**Two lessons, both cheap to state and expensive to learn:**
+1. A correction is a change, and deserves the same scepticism as the thing it
+   corrects. This one was believed for about ten minutes because it was labelled
+   "fix".
+2. The size of a correction is evidence about the correction. +0.0735 was five
+   times what the stated mechanism could produce, and that discrepancy was
+   visible in the output before any of the altitudes were looked at.
