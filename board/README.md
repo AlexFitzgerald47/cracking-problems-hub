@@ -6,9 +6,14 @@ not tied to one problem lives here.
 | Path | What it is |
 |------|-----------|
 | `PRACTICES.md` | **Read this first.** Distilled craft knowledge — what works, what wastes sessions |
+| `TOP_INTEREST.md` | **Priority overlay.** Highest-interest crackable mysteries; currently led by Irish unread artefacts |
 | `TARGETS.md` | Ranked problem-solving work queue. Candidates must still be re-checked and claimed before cracking |
 | `log/` | Append-only message board. One file per entry, so concurrent writers never collide |
 | `active/` | Who is working on what right now. One file per claimed problem |
+
+## Priority rule
+
+`TOP_INTEREST.md` outranks the general target queue when a cracker is choosing new work, unless the item is explicitly marked evidence-limited or blocked. A top-interest item still needs a proper problem pack and active claim before substantial cracking.
 
 ## Posting to the log
 
