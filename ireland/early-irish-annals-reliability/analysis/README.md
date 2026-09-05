@@ -12,13 +12,19 @@ having, because it is the half nobody had done on this board.
 | File | What it does |
 |------|--------------|
 | `astro.py` | Calendar (Julian/Gregorian), Delta-T, Sun and Moon positions, topocentric eclipse geometry, magnitude, obscuration, gamma |
-| `validate_astro.py` | Pipeline checks. **Run this first.** Nothing below is trustworthy if it fails |
-| `count_check.py` | Completeness check on the eclipse finder against a published century count |
+| `validate_astro.py` | Pipeline checks against modern eclipses. **Run this first.** Nothing below is trustworthy if it fails |
+| `validate_historical.py` | Checks in the regime actually used: four attested medieval eclipses at Delta-T of 1,088–4,074 s. The modern checks cannot test the Delta-T model; these can |
+| `count_check.py` | Completeness check on the solar finder against a published century count |
 | `make_deltat_table.py` | Regenerates `results/delta_t_stephenson2016.csv` |
-| `find_eclipses.py` | Generates the canon: every solar eclipse AD 400–1210 with local circumstances at eight sites, over a grid of Delta-T |
+| `find_eclipses.py` | The solar canon: every solar eclipse AD 400–1210 with local circumstances at eight sites, over a grid of Delta-T |
+| `lunar_eclipses.py` | Umbral lunar geometry, validated against published umbral magnitudes; full-moon refinement |
+| `find_lunar_eclipses.py` | The lunar canon, with Irish observability (Moon up, Sun below −6°) |
+| `sky_availability.py` | Merges both canons into one dated list of everything an Irish observer could have seen |
+| `lunar_borrowing.py` | The observed-vs-borrowed test on lunar eclipses, where the discriminator is visibility rather than depth |
 | `hour_analysis.py` | Unequal ("canonical") hours: which hour of the day a given eclipse phase fell in, as a function of Delta-T |
-| `record_audit.py` | Audits each annalistic notice in `annal_records.csv` against the computed sky |
-| `visibility_analysis.py` | Denominator, discriminating power, and the two prediction lists |
+| `deltat_power.py` | Prices the "measure Delta-T from annalistic hours" experiment. **It fails**; see RESULTS.md §6 |
+| `record_audit.py` | Audits each notice in `annal_records.csv`, solar and lunar, against the computed sky |
+| `visibility_analysis.py` | Denominator, discriminating power, and the prediction lists |
 | `annal_records.csv` | The annalistic notices under test, **with their verification status** |
 
 ## Reproducing
@@ -27,11 +33,21 @@ having, because it is the half nobody had done on this board.
 python3 -m venv venv && ./venv/bin/pip install pymeeus
 ./venv/bin/python validate_astro.py       # must print "all checks passed"
 ./venv/bin/python count_check.py 1901 2001  # must give 228 at |gamma| < 1.5433
-./venv/bin/python find_eclipses.py 400 1210 # ~30 min
+./venv/bin/python find_eclipses.py 400 1210       # ~26 min
+./venv/bin/python find_lunar_eclipses.py 400 1210 # ~20 min
+./venv/bin/python validate_historical.py          # needs the solar canon
 ./venv/bin/python visibility_analysis.py
+./venv/bin/python sky_availability.py             # needs both canons
+./venv/bin/python lunar_borrowing.py              # needs the lunar canon
 ./venv/bin/python record_audit.py
 ./venv/bin/python hour_analysis.py
+./venv/bin/python deltat_power.py
 ```
+
+Completeness of both finders is checked against published century counts:
+**228 solar eclipses for 1901–2000** (exactly NASA's figure) and **230 lunar**
+against a published 229, the one difference being a grazing case at penumbral
+magnitude 0.009 — a threshold convention, not a missed or invented eclipse.
 
 `numpy` is needed only by `make_deltat_table.py`, and only if you want to
 regenerate the Delta-T table rather than use the one committed here.
