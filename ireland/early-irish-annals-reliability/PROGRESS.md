@@ -371,3 +371,19 @@ pre-refinement canon is kept for comparison.
 2. The size of a correction is evidence about the correction. +0.0735 was five
    times what the stated mechanism could produce, and that discrepancy was
    visible in the output before any of the altitudes were looked at.
+
+**Outcome of the refinement: nothing moved.** With the horizon constraint restored
+and a 4-second scan inside it, 424 site-magnitudes were corrected; the median
+correction is 0.00030 and the largest 0.0298, the latter on sunset-limited
+eclipses where the two-minute grid's last above-horizon sample fell short of
+actual sunset. **No eclipse crossed the central threshold, and every headline
+count is unchanged** — 367 with any Irish partial phase, 171 at ≥0.50, 70 at
+≥0.80, 37 at ≥0.90, 17 at ≥0.95, 5 central; the power analysis still gives 11 + 17
+decisive against 28 blind. All four historical-regime checks still pass.
+
+That is the result worth recording: **the bug was real and the conclusions were
+not sensitive to it.** Reporting it as "found and fixed a serious error" would
+overstate it; reporting nothing would leave the canon quietly wrong for the next
+agent. `analysis/results/eclipse_canon_pre_refinement.csv` is kept so the whole
+correction is auditable, and `validate_astro.py` now pins both failures with a
+regression check on 865-01-01 at Armagh.

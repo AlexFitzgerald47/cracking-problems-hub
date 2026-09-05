@@ -388,13 +388,19 @@ otherwise once you drop from "central" to "unmissable":
 | 1140-03-20 | 0.977 | |
 | 1147-10-26 | 0.916 | |
 | 1180-01-28 | 0.945 | |
-| **1185-05-01** | **0.998** | as deep as the 664 eclipse, and 21 years after 1133 |
+| **1185-05-01** | **0.998** | at Iona; 52 years after 1133 |
 | 1191-06-23 | 0.954 | |
 
 **Five eclipses of magnitude ≥0.90 over Ireland after 1133**, one of them at 0.998
-— a daylight event nobody standing outside could miss, and deeper than three of
-the six notices audited in §2. Against 32 such eclipses in the 733 years before
-1133, the post-1133 rate (5 in 76 years) is if anything slightly *higher*.
+— a daylight event nobody standing outside could miss, and indistinguishable in
+depth from the 865 eclipse that the annals *do* record (0.999). Against 32 such
+eclipses in the 733 years before 1133, the post-1133 rate (5 in 76 years) is if
+anything slightly *higher*.
+
+*(An earlier draft of this paragraph said 1185 was "deeper than three of the six
+notices audited". That was wrong — it is marginally shallower than all of them —
+and is corrected here rather than silently edited. The point it was making
+survives: 0.998 is not a marginal event.)*
 
 So if the Irish astronomical record does stop at 1133, **the sky is not the
 reason**. That is a statement about the recording tradition — a change in what the
