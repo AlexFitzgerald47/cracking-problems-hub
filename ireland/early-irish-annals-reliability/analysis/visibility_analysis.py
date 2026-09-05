@@ -108,6 +108,29 @@ def main():
           " %d that were" % len(both))
     print("  large in both places.  A record of one of *those* decides nothing.")
 
+    print("\n== can the annals locate their own observatory? ==")
+    print("  The Chronicle of Ireland hypothesis has the common source kept at")
+    print("  Iona until the middle of the eighth century and in Ireland after it.")
+    print("  Iona and Clonmacnoise are 3 degrees of latitude apart, which is enough")
+    print("  to put one of them inside a penumbra and the other outside it. Where")
+    print("  that happens, a notice that reports depth *is* evidence of where it")
+    print("  was written.")
+    diag = [r for r in rows
+            if abs((r["Iona_mag_central"] or 0.0) - (r["Clonmacnoise_mag_central"] or 0.0)) >= 0.25
+            and max(r["Iona_mag_central"] or 0.0, r["Clonmacnoise_mag_central"] or 0.0) >= 0.5]
+    iona_side = [r for r in diag
+                 if (r["Iona_mag_central"] or 0.0) > (r["Clonmacnoise_mag_central"] or 0.0)]
+    print("  eclipses where |mag(Iona) - mag(Clonmacnoise)| >= 0.25 and one of them")
+    print("  was at least 0.50 deep:  %d  (%d favouring Iona, %d favouring Clonmacnoise)"
+          % (len(diag), len(iona_side), len(diag) - len(iona_side)))
+    print("  a further %d are central (total or annular) at Iona but not at Clonmacnoise,"
+          % sum(1 for r in diag if (r["Iona_mag_central"] or 0) >= 1.0
+                and (r["Clonmacnoise_mag_central"] or 0) < 1.0))
+    print("  and %d the other way round -- these are the sharpest of all, because"
+          % sum(1 for r in diag if (r["Clonmacnoise_mag_central"] or 0) >= 1.0
+                and (r["Iona_mag_central"] or 0) < 1.0))
+    print("  only a central eclipse brings out stars.")
+
     cols = ["date_julian_cal", "year", "weekday", "gamma", "irish_mag_central",
             "Armagh_mag_central", "Armagh_ut_central", "Armagh_alt_central",
             "Iona_mag_central", "Clonmacnoise_mag_central",
@@ -121,10 +144,12 @@ def main():
     _write(os.path.join(HERE, "results", "ireland_deep_eclipses.csv"),
            sorted([r for r in rows if irish_mag(r) >= 0.90],
                   key=lambda r: r["jd_tt"]), cols)
+    _write(os.path.join(HERE, "results", "site_discriminating.csv"),
+           sorted(diag, key=lambda r: r["jd_tt"]), cols)
     print("\nwrote prediction_irish.csv (%d), prediction_borrowed.csv (%d), "
-          "ireland_deep_eclipses.csv (%d)"
+          "ireland_deep_eclipses.csv (%d), site_discriminating.csv (%d)"
           % (len(only_ir), len(only_med),
-             sum(1 for r in rows if irish_mag(r) >= 0.90)))
+             sum(1 for r in rows if irish_mag(r) >= 0.90), len(diag)))
 
 
 def _write(path, rows, cols):

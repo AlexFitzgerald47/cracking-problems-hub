@@ -50,6 +50,7 @@
   "hour_matches_phase": [
    "first"
   ],
+  "hour_within_eclipse": true,
   "peak_mag_rome": 0.739,
   "peak_mag_constantinople": 0.8481
  },
@@ -217,6 +218,7 @@
   "hour_matches_phase": [
    "none"
   ],
+  "hour_within_eclipse": true,
   "claimed_luna": 28,
   "luna_minus_true_age": -1.42,
   "peak_mag_rome": 0.8907,
