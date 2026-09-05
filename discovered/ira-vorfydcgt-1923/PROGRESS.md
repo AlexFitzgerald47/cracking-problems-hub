@@ -100,4 +100,31 @@ This is provisional and evidence-weighted, not a solution claim.
 4. **Mine the NLI 1923 prisoner-dispatch corpus for repeated codewords.** In particular trace the "existing code word" of 25 June and coded safe-address material of 19 July.
 5. **Exploit the adjacent Mountjoy material.** Test whether the missing semantic slot in `now that no ____` corresponds to a person, prison-access mechanism, address/channel, document, or liaison that disappears between the July and October traffic.
 
-No solve claim is made. The main advance is that the problem is now primary-source-pinned, sits inside a demonstrated 1923 IRA codeword/short-cipher ecosystem, and one concrete same-year key-reuse hypothesis has been falsified reproducibly.
+### 9. Six-letter-key architecture screened independently of the actual key
+
+The May 1923 example is more useful than a single known key: it demonstrates a **six-letter repeating Vigenere key reset at the start of each short item**. Under that architecture, even if the October key changed completely, positions 1/7, 2/8 and 3/9 of a nine-letter ciphertext impose exact equality constraints on the required keystream.
+
+`analysis/filter_period6_words.py` derives the key stream required for every alphabetic nine-letter CMUdict entry and retains only words compatible with an arbitrary repeated period-6 key.
+
+Corpus screened: **13,124** nine-letter entries.
+
+Only four survive:
+
+```
+bilzerian    key=UGGGUM
+embattled    key=RCQFFK
+embezzled    key=RCQBZE
+embroiled    key=RCQOKV
+```
+
+None is a natural ordinary-noun completion of `now that no ____`. Therefore, **if** the target is one ordinary nine-letter English word and **if** the same six-letter reset architecture was used, the hypothesis is strongly disfavoured by this screening corpus.
+
+This is not a universal elimination: CMUdict is not all English; codewords, names, abbreviations and non-English material remain outside the test. But it materially reduces the appeal of the most obvious same-architecture/direct-English reading.
+
+### 10. New archival target surfaced
+
+The O'Malley collection description explicitly contains an **Inspection report for Mountjoy Prison, 1 October 1923**, only 24 days before the target memo. Because the target memo concerns prisoner contact and the adjacent 23–25 October intelligence folder discusses bringing Sean Lemass into Mountjoy, this six-page report is now a high-value contextual document to obtain or inspect. It may reveal the physical/contact "methods" being discussed even if it contains no cipher itself.
+
+Collection/folder anchor: https://catalogue.nli.ie/Record/vtls000536116
+
+No solve claim is made. The session has now falsified both (a) reuse of the known May key and (b), within a 13,124-word screening corpus, the broader hypothesis that an arbitrary six-letter reset key directly encrypts a normal nine-letter English word fitting the sentence.
