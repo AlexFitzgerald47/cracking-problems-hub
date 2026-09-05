@@ -1,0 +1,462 @@
+{
+ "seed": 20260905,
+ "top_k_words": 500,
+ "n_plays": 312,
+ "n_authors": 27,
+ "plays_per_author": {
+  "D'Urfey, Thomas": 15,
+  "Nabbes, Thomas": 6,
+  "Heywood, Thomas": 20,
+  "Shirley, James": 31,
+  "Behn, Aphra": 11,
+  "Dryden, John": 13,
+  "Lee, Nathaniel": 11,
+  "Ravenscroft, Edward": 11,
+  "Chapman, George": 14,
+  "Banks, John": 6,
+  "Shadwell, Thomas": 14,
+  "Peele, George": 6,
+  "Crowne, John": 6,
+  "Brome, Richard": 15,
+  "Ford, John": 9,
+  "Dekker, Thomas": 10,
+  "Jonson, Ben": 19,
+  "Otway, Thomas": 7,
+  "Middleton, Thomas": 14,
+  "Massinger, Philip": 13,
+  "Settle, Elkanah": 11,
+  "Lyly, John": 8,
+  "Fletcher, John": 15,
+  "Greene, Robert": 6,
+  "Pix, Mary": 6,
+  "Marston, John": 9,
+  "Glapthorne, Henry": 6
+ },
+ "baseline": {
+  "accuracy": 0.8237179487179487,
+  "n_tested": 312,
+  "chance_uniform": 0.037037037037037035,
+  "chance_majority_class": 0.09935897435897435,
+  "label_permutation_null_mean": 0.03807692307692308,
+  "label_permutation_null_max": 0.0641025641025641,
+  "n_permutations": 25
+ },
+ "errors": [
+  {
+   "play": "crowne-sir-courtly-nice",
+   "true": "Crowne, John",
+   "pred": "Shadwell, Thomas",
+   "ok": false
+  },
+  {
+   "play": "dryden-albion-albanius",
+   "true": "Dryden, John",
+   "pred": "Banks, John",
+   "ok": false
+  },
+  {
+   "play": "heywood-the-wise-woman-of-hogsdon",
+   "true": "Heywood, Thomas",
+   "pred": "Middleton, Thomas",
+   "ok": false
+  },
+  {
+   "play": "dryden-the-assignation",
+   "true": "Dryden, John",
+   "pred": "Shadwell, Thomas",
+   "ok": false
+  },
+  {
+   "play": "middleton-anything-for-a-quiet-life",
+   "true": "Middleton, Thomas",
+   "pred": "Brome, Richard",
+   "ok": false
+  },
+  {
+   "play": "shirley-the-triumph-of-peace",
+   "true": "Shirley, James",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "middleton-the-mayor-of-quinborough",
+   "true": "Middleton, Thomas",
+   "pred": "Dryden, John",
+   "ok": false
+  },
+  {
+   "play": "otway-alcibiades",
+   "true": "Otway, Thomas",
+   "pred": "Settle, Elkanah",
+   "ok": false
+  },
+  {
+   "play": "ford-tis-pity-she-s-a-whore",
+   "true": "Ford, John",
+   "pred": "Heywood, Thomas",
+   "ok": false
+  },
+  {
+   "play": "d-urfey-the-injured-princess",
+   "true": "D'Urfey, Thomas",
+   "pred": "Otway, Thomas",
+   "ok": false
+  },
+  {
+   "play": "peele-the-old-wives-tale",
+   "true": "Peele, George",
+   "pred": "Greene, Robert",
+   "ok": false
+  },
+  {
+   "play": "otway-the-atheist",
+   "true": "Otway, Thomas",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "otway-don-carlos-prince-of-spain",
+   "true": "Otway, Thomas",
+   "pred": "Settle, Elkanah",
+   "ok": false
+  },
+  {
+   "play": "brome-the-northern-lass",
+   "true": "Brome, Richard",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "crowne-charles-viii-of-france",
+   "true": "Crowne, John",
+   "pred": "Settle, Elkanah",
+   "ok": false
+  },
+  {
+   "play": "lyly-the-woman-in-the-moon",
+   "true": "Lyly, John",
+   "pred": "Greene, Robert",
+   "ok": false
+  },
+  {
+   "play": "jonson-the-case-is-altered",
+   "true": "Jonson, Ben",
+   "pred": "Chapman, George",
+   "ok": false
+  },
+  {
+   "play": "middleton-the-family-of-love",
+   "true": "Middleton, Thomas",
+   "pred": "Chapman, George",
+   "ok": false
+  },
+  {
+   "play": "middleton-the-widow",
+   "true": "Middleton, Thomas",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "heywood-the-fair-maid-of-the-exchange",
+   "true": "Heywood, Thomas",
+   "pred": "Chapman, George",
+   "ok": false
+  },
+  {
+   "play": "pix-ibrahim-the-thirteenth-emperor-of-the-turks",
+   "true": "Pix, Mary",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "brome-the-lovesick-court",
+   "true": "Brome, Richard",
+   "pred": "Dryden, John",
+   "ok": false
+  },
+  {
+   "play": "chapman-may-day",
+   "true": "Chapman, George",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "greene-george-a-green-the-pinner-of-wakefield",
+   "true": "Greene, Robert",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "heywood-edward-the-fourth-1",
+   "true": "Heywood, Thomas",
+   "pred": "Greene, Robert",
+   "ok": false
+  },
+  {
+   "play": "glapthorne-wit-in-a-constable",
+   "true": "Glapthorne, Henry",
+   "pred": "Brome, Richard",
+   "ok": false
+  },
+  {
+   "play": "lee-the-princess-of-cleve",
+   "true": "Lee, Nathaniel",
+   "pred": "Dryden, John",
+   "ok": false
+  },
+  {
+   "play": "chapman-two-wise-men-and-all-the-rest-fools",
+   "true": "Chapman, George",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "shadwell-psyche",
+   "true": "Shadwell, Thomas",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "heywood-if-you-know-not-me-you-know-nobody-2",
+   "true": "Heywood, Thomas",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "marston-histriomastix",
+   "true": "Marston, John",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "dryden-oedipus",
+   "true": "Dryden, John",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "greene-selimus-1",
+   "true": "Greene, Robert",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "d-urfey-cinthia-and-endimion",
+   "true": "D'Urfey, Thomas",
+   "pred": "Otway, Thomas",
+   "ok": false
+  },
+  {
+   "play": "pix-the-beau-defeated",
+   "true": "Pix, Mary",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "fletcher-the-chances",
+   "true": "Fletcher, John",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "ravenscroft-titus-andronicus",
+   "true": "Ravenscroft, Edward",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "greene-orlando-furioso",
+   "true": "Greene, Robert",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "shadwell-the-royal-shepherdess",
+   "true": "Shadwell, Thomas",
+   "pred": "Behn, Aphra",
+   "ok": false
+  },
+  {
+   "play": "middleton-a-game-at-chess",
+   "true": "Middleton, Thomas",
+   "pred": "Chapman, George",
+   "ok": false
+  },
+  {
+   "play": "pix-the-false-friend",
+   "true": "Pix, Mary",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "greene-alphonsus-king-of-aragon",
+   "true": "Greene, Robert",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "dryden-an-evening-s-love",
+   "true": "Dryden, John",
+   "pred": "Shadwell, Thomas",
+   "ok": false
+  },
+  {
+   "play": "behn-abdelazer",
+   "true": "Behn, Aphra",
+   "pred": "Lee, Nathaniel",
+   "ok": false
+  },
+  {
+   "play": "greene-the-scottish-history-of-james-the-fourth",
+   "true": "Greene, Robert",
+   "pred": "Heywood, Thomas",
+   "ok": false
+  },
+  {
+   "play": "dryden-amphitryon",
+   "true": "Dryden, John",
+   "pred": "Behn, Aphra",
+   "ok": false
+  },
+  {
+   "play": "ravenscroft-the-italian-husband",
+   "true": "Ravenscroft, Edward",
+   "pred": "Dryden, John",
+   "ok": false
+  },
+  {
+   "play": "shirley-the-school-of-compliment",
+   "true": "Shirley, James",
+   "pred": "Jonson, Ben",
+   "ok": false
+  },
+  {
+   "play": "jonson-hymenaei",
+   "true": "Jonson, Ben",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "fletcher-the-faithful-shepherdess",
+   "true": "Fletcher, John",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "settle-the-world-in-the-moon",
+   "true": "Settle, Elkanah",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "ravenscroft-king-edgar-and-alfreda",
+   "true": "Ravenscroft, Edward",
+   "pred": "Dryden, John",
+   "ok": false
+  },
+  {
+   "play": "jonson-the-characters-of-two-royal-masques",
+   "true": "Jonson, Ben",
+   "pred": "Peele, George",
+   "ok": false
+  },
+  {
+   "play": "otway-the-soldier-s-fortune",
+   "true": "Otway, Thomas",
+   "pred": "D'Urfey, Thomas",
+   "ok": false
+  },
+  {
+   "play": "peele-clyomon-and-clamydes",
+   "true": "Peele, George",
+   "pred": "Greene, Robert",
+   "ok": false
+  }
+ ],
+ "training_size_curve": [
+  {
+   "train_plays_per_author": 1,
+   "accuracy_mean": 0.5434210526315789,
+   "accuracy_sd": 0.05869613187220639
+  },
+  {
+   "train_plays_per_author": 2,
+   "accuracy_mean": 0.684593023255814,
+   "accuracy_sd": 0.0478730925911383
+  },
+  {
+   "train_plays_per_author": 3,
+   "accuracy_mean": 0.7316017316017316,
+   "accuracy_sd": 0.04708192037272549
+  },
+  {
+   "train_plays_per_author": 4,
+   "accuracy_mean": 0.7879901960784315,
+   "accuracy_sd": 0.02590563209116796
+  },
+  {
+   "train_plays_per_author": 5,
+   "accuracy_mean": 0.798728813559322,
+   "accuracy_sd": 0.03223487975134379
+  },
+  {
+   "train_plays_per_author": 8,
+   "accuracy_mean": 0.8333333333333334,
+   "accuracy_sd": 0.01736259660647628
+  }
+ ],
+ "test_length_curve": [
+  {
+   "test_words": 500,
+   "accuracy": 0.22756410256410256
+  },
+  {
+   "test_words": 1000,
+   "accuracy": 0.46474358974358976
+  },
+  {
+   "test_words": 2000,
+   "accuracy": 0.6762820512820513
+  },
+  {
+   "test_words": 5000,
+   "accuracy": 0.7692307692307693
+  },
+  {
+   "test_words": 10000,
+   "accuracy": 0.8012820512820513
+  },
+  {
+   "test_words": 20000,
+   "accuracy": 0.8269230769230769
+  }
+ ],
+ "period_gap_curve": [
+  {
+   "exclude_training_within_years": 0,
+   "accuracy": 0.8173076923076923,
+   "n_tested": 312
+  },
+  {
+   "exclude_training_within_years": 5,
+   "accuracy": 0.6542372881355932,
+   "n_tested": 295
+  },
+  {
+   "exclude_training_within_years": 10,
+   "accuracy": 0.4745098039215686,
+   "n_tested": 255
+  },
+  {
+   "exclude_training_within_years": 20,
+   "accuracy": 0.4956521739130435,
+   "n_tested": 115
+  },
+  {
+   "exclude_training_within_years": 30,
+   "accuracy": 0.6444444444444445,
+   "n_tested": 45
+  }
+ ],
+ "runtime_seconds": 21.667789697647095
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "gap_years": 0,
+  "n_tested": 312,
+  "accuracy_with_gap": 0.8173076923076923,
+  "accuracy_same_plays_no_gap": 0.8237179487179487,
+  "drop": 0.0064102564102563875
+ },
+ {
+  "gap_years": 5,
+  "n_tested": 295,
+  "accuracy_with_gap": 0.6542372881355932,
+  "accuracy_same_plays_no_gap": 0.8338983050847457,
+  "drop": 0.17966101694915249
+ },
+ {
+  "gap_years": 10,
+  "n_tested": 255,
+  "accuracy_with_gap": 0.4745098039215686,
+  "accuracy_same_plays_no_gap": 0.8313725490196079,
+  "drop": 0.3568627450980393
+ },
+ {
+  "gap_years": 20,
+  "n_tested": 115,
+  "accuracy_with_gap": 0.4956521739130435,
+  "accuracy_same_plays_no_gap": 0.808695652173913,
+  "drop": 0.31304347826086953
+ },
+ {
+  "gap_years": 30,
+  "n_tested": 45,
+  "accuracy_with_gap": 0.6444444444444445,
+  "accuracy_same_plays_no_gap": 0.8,
+  "drop": 0.15555555555555556
+ }
+]
