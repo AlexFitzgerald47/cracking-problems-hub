@@ -14,21 +14,32 @@ Before building a modern classifier, does the famous Ellegård lexical signal su
 - Philip Francis, *Two speeches in the House of commons on the original East-India bill and on the amended bill* (1784), Internet Archive identifier `twospeechesinhou00franiala`. The scan metadata explicitly names Francis as author. This is the closest clean, substantial, machine-readable acknowledged Francis text located in this pass.
 - Philip Francis, *A letter missive ... to Lord Holland* (1816), Internet Archive identifier `lettermissivefro00fran`. Used only as a **temporal-drift check**, not as a same-period training document.
 
+### Rival micro-control
+- Edmund Burke, *Thoughts on the Cause of the Present Discontents* (1770), proofread Wikisource transcription of the 1770 J. Dodsley edition. This is unusually useful as a first control because it is contemporaneous political argumentative prose rather than a modern or cross-genre comparison.
+
 ### Excluded from gold standard
 - *A State of the British Authority in Bengal* (1780/1781): catalogue records describe these as anonymous and merely attributed/contributed to Francis. They are useful later as disputed/secondary tests, not clean training data.
 - Any corpus assembled by blindly taking every work on a Philip Francis author page. The Wikisource author listing includes *A Complete Collection of Junius's Letters* under Francis. Feeding that into a Francis training set would leak the target text into the candidate corpus and make any classifier result circular.
 
 ## Primary-evidence audit of Ellegård-style choices
 
-The historical benchmark most often quoted for Ellegård is that Junius used **among** 35 times and **amongst** zero times, while Francis used **among** 66 times and **amongst** once. I did not trust those counts as data; I tested the direction against independent primary OCR.
+The historical benchmark most often quoted for Ellegård is that Junius used **among** 35 times and **amongst** zero times, while Francis used **among** 66 times and **amongst** once. I did not trust those counts as data; I tested the direction against independent primary OCR and then added Burke as a same-era rival.
 
-| Feature | Junius collected OCR | Francis 1784 acknowledged text | Francis 1816 drift check | Interpretation |
-|---|---|---|---|---|
-| `among` / `amongst` | `among` repeatedly present; **no `amongst` hit** | `among` repeatedly present; **no `amongst` hit** | both forms present | The famous direction replicates in an independent clean Francis text. The 1816 exception shows chronology matters. |
-| `farther` / `further` | authorial `farther` present; an inspected `further` hit occurs inside quoted external material | Francis's own prose repeatedly uses `farther`; inspected `further` hit is in the quoted House order introducing the speech | not audited | **Quotation contamination is real and can directly corrupt a synonym-choice feature.** |
-| `until` / `till` | both occur | both occur | both occur | Not a clean binary discriminator; must be estimated as a proportion, as Ellegård did. |
-| `completely` / `entirely` | both occur | both occur; at least one `entirely` hit is in a quoted Richard Barwell minute | not audited | Again requires quote stripping and proportional treatment. |
-| `I do not mean to ...` | frequent authorial construction | frequent authorial construction | not audited | A plausible syntactic/style feature, but it is not evidence until compared with contemporaneous rivals. |
+| Feature | Junius collected OCR | Francis 1784 acknowledged text | Burke 1770 rival | Francis 1816 drift check | Interpretation |
+|---|---|---|---|---|---|
+| `among` / `amongst` | `among` repeatedly present; **no `amongst` hit** | `among` repeatedly present; **no `amongst` hit** | **both forms repeatedly present**, including clearly authorial `amongst` | both forms present | The famous Francis/Junius direction replicates and **does discriminate one serious same-era rival**. It is not merely generic eighteenth-century usage. |
+| `farther` / `further` | authorial `farther` present; an inspected `further` hit occurs inside quoted external material | Francis's own prose repeatedly uses `farther`; inspected `further` hit is in the quoted House order introducing the speech | both forms occur in clearly authorial prose | not audited | Francis/Junius resemblance exists, but Burke shows this is not a binary discriminator. Quotation contamination still matters. |
+| `until` / `till` | both occur | both occur | not audited | both occur | Not a clean binary discriminator; must be estimated as a proportion, as Ellegård did. |
+| `completely` / `entirely` | both occur | both occur; at least one `entirely` hit is in a quoted Richard Barwell minute | not audited | not audited | Again requires quote stripping and proportional treatment. |
+| `I do not mean to ...` | frequent authorial construction | frequent authorial construction | not audited | not audited | A plausible syntactic/style feature, but it is not evidence until compared with a larger contemporaneous rival set. |
+
+### First rival result
+
+Burke's 1770 pamphlet breaks the most useful micro-feature in the right direction: he uses `amongst` repeatedly in unmistakably authorial prose (for example “the temper of the people amongst whom he presides” and later “raise divisions amongst them”), while also using `among`. By contrast, the searchable Junius OCR and Francis 1784 OCR return no `amongst` hit.
+
+That makes the replicated `among` preference more interesting than a Francis/Junius coincidence alone: **one contemporary political-prose rival fails the same test.** This is still a one-feature, one-rival micro-control, not an attribution result.
+
+Burke also uses both `farther` and `further` authorially (“a farther aid”; “going further”), so that axis does not cleanly separate him. This is a useful negative control against over-reading one attractive synonym pair.
 
 ## The important finding: source segmentation is not optional
 
@@ -42,14 +53,15 @@ That is a concrete failure mode, not a theoretical warning.
 
 ### Established
 1. **A real Francis/Junius lexical resemblance survives direct primary-source inspection.** The `among` > `amongst` preference is present in Junius and independently in Francis's acknowledged 1784 prose.
-2. **The most obvious automated corpus construction is invalid.** Author-page aggregation can leak Junius into “Francis”; whole-book OCR can mix Francis with quoted speakers/documents; whole Junius editions mix Junius with opponents and quotations.
-3. **Chronology can move the features.** Francis uses `amongst` in the 1816 letter, so a model trained indiscriminately across his lifetime can dilute or distort his 1760s/1770s style.
-4. **At least one classic synonym axis (`farther`/`further`) is demonstrably sensitive to quotation contamination in the primary material.**
+2. **That resemblance survives a first same-era competitor check.** Burke's 1770 political pamphlet uses `amongst` repeatedly, unlike the two target/candidate texts inspected. This modestly increases the evidential value of the feature.
+3. **The most obvious automated corpus construction is invalid.** Author-page aggregation can leak Junius into “Francis”; whole-book OCR can mix Francis with quoted speakers/documents; whole Junius editions mix Junius with opponents and quotations.
+4. **Chronology can move the features.** Francis uses `amongst` in the 1816 letter, so a model trained indiscriminately across his lifetime can dilute or distort his 1760s/1770s style.
+5. **At least one classic synonym axis (`farther`/`further`) is demonstrably sensitive to quotation contamination in the primary material.** Burke's use of both forms also shows that this axis alone is weak.
 
 ### Not established
 - This is **not** a solve and is not a valid modern attribution yet.
 - I have not reproduced Ellegård's exact 458 lexical + 51 synonym-variable table.
-- No rival-author null has yet been run, so the Francis resemblance cannot yet be called unique.
+- One Burke control is not an open-set null; Francis's resemblance cannot yet be called unique among serious candidates.
 - OCR is visibly noisy (`long-s` -> `f`, broken hyphenation, etc.), so character n-grams should not be trusted until scans/transcriptions are normalized or source-matched.
 
 ## Prediction for the next falsifiable test
@@ -66,5 +78,6 @@ Build a source-segmented corpus containing only authorial prose, split by docume
 - Francis 1784 OCR: `https://archive.org/stream/twospeechesinhou00franiala/twospeechesinhou00franiala_djvu.txt`
 - Francis 1816 OCR: `https://archive.org/stream/lettermissivefro00fran/lettermissivefro00fran_djvu.txt`
 - Woodfall 1772 transcription index: `https://en.wikisource.org/wiki/Letters_of_Junius`
+- Burke 1770 proofread transcription: `https://en.wikisource.org/wiki/Thoughts_on_the_Cause_of_the_Present_Discontents`
 
-All claims above were checked against the displayed primary OCR or catalogue metadata in this session. Historical Ellegård totals are treated as a benchmark to reproduce, not as new evidence.
+All claims above were checked against the displayed primary OCR/transcription or catalogue metadata in this session. Historical Ellegård totals are treated as a benchmark to reproduce, not as new evidence.
