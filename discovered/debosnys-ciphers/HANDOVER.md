@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / source-alignment attack
+
+### Summary of work done
+This problem is no longer an untouched seed. The public scan set was located and the attack was redirected around a source-text hypothesis rather than blind language scoring. The key contextual chain is now: cryptogram #4 has 20 lines with couplet-like terminal repetition; the Greek text on the reverse is Thomas Moore's *An Ode by the Translator* from *Odes of Anacreon*; and independent source tracing shows Debosnys repeatedly copied/assembled material from Thomas Moore and other earlier authors.
+
+A targeted sieve of Moore's *Odes of Anacreon* found **Ode II** as a particularly strong direct-plaintext candidate: exactly 20 verse lines, ten rhyming couplets, from the same volume already implicated on the sheet. This is not a solve. It is useful because it makes a clean prediction that was not used to select the candidate: the rhyme classes of Ode-II lines 1–2 (`song/along`) and 3–4 (`string/sing`) recur in lines 17–18 and 19–20. If cryptogram terminal glyphs carry rhyme information, those same two cipher terminal classes should recur at those non-adjacent positions.
+
+The session also audited Sektu's published `N`-subglyph/French-nasalization comparison. The printed cipher histogram totals 19 lines despite the stated 20-line poem; because the 19 printed bins already sum to the stated 30 N glyphs, the missing line must be a zero-N line if the stated totals are correct. The corrected histogram is `0:3, 1:6, 2:9, 3:2`. Against Sektu's empirical Baudelaire distribution, the total count is mildly low (`P(sum_20 <= 30) = 0.034436`) while the collapsed histogram shape is not strongly exceptional (exact multinomial tail `p = 0.172057`). Treat `N = universal French nasalization mark` as weakened, not killed.
+
+### Recommended next experiments
+1. **Do this first:** obtain a trustworthy full-resolution view of cryptogram #4b or the original scan and freeze terminal glyph IDs for all 20 lines. Test the Ode-II held-out recurrence immediately: line-ending class 1/2 must recur at 17/18 and 3/4 at 19/20. If both fail, reject Ode II as direct line-preserving plaintext before spending compute on it.
+2. If Ode II survives, transcribe all 20 lines at two levels: (a) whitespace-bounded glyph IDs and (b) ordered subglyph sequences. Compare lines 1–4 with 17–20 for repeated subglyph n-grams predicted by the repeated Moore wording, and compare line-unit counts against reasonable phonetic encodings of Ode II.
+3. If Ode II fails, stay with the source-alignment strategy rather than returning immediately to blind substitution. Test the known historical English translations and plausible French translations of Moore's Greek *An Ode by the Translator*, because the reverse-side source and Debosnys' copying habit independently privilege that small source family.
+4. Re-run all `N`-marker statistics from the raw cipher transcription once available. The current correction is conditional on Sektu's printed totals being accurate; a raw transcription could show that one of those totals, rather than the histogram, is the typo.
+5. Only after source candidates fail should a broader French/Portuguese/Spanish language-model attack be resumed, and it should operate on subglyph/compositional representations rather than treating all 425 whitespace-bounded glyph forms as independent alphabet symbols.
+
+### Useful artefacts / sources
+- `analysis/2026-09-05-source-sieve.md`
+- `analysis/n_glyph_recheck.py`
+- Wikimedia Commons scan category: https://commons.wikimedia.org/wiki/Category:Henry_Debosnys
+- Sektu transcription revision: https://sektu.blogspot.com/2017/08/debosnys-cipher-transcription-revision.html
+- Sektu N-glyph comparison: https://sektu.blogspot.com/2017/08/another-note-on-n-glyphs.html
+- Moore corpus: https://www.gutenberg.org/cache/epub/8187/pg8187-images.html
+
+### Open questions left hanging
+- Does the non-adjacent terminal recurrence demanded by Ode II actually occur in #4?
+- Can Sektu's complete transcription be recovered from an archive, attachment, or source repository rather than redone manually?
+- Is #4 directly encoding a copied Moore poem, a translation of Moore, or merely using Moore as misdirection?
+- What exactly does the `N` subglyph encode, if anything linguistic?
+
+---
+
 ## 2026-09-04 – swarm-discovery / initial proposal
 
 ### Summary of work done
