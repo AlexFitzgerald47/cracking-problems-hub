@@ -4,6 +4,39 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / Folger key test and atomic-grammar narrowing
+
+### Summary of work done
+The vague Masonic/Folger lead was tested against the **actual declassified NSA solution of Robert Folger's 1827 cipher**. This materially sharpens the model.
+
+Folger really does use a small inventory of elemental signs that are combined/nested into larger cipher clusters, generally cipher-words. That architecture remains a strong historical analogue for Debosnys because Sektu independently decomposed Debosnys' 425 apparent whole-glyph types into a smaller ordered subglyph inventory.
+
+However, the **recovered Folger alphabet itself is a poor direct match**. Its compact angular/corner/box-heavy key does not give a credible straightforward reading of Debosnys' recurring atoms or the six-unit signature-like line. Treat `Debosnys uses Folger's exact key` as rejected unless a future exact crib unexpectedly revives it. Keep `Debosnys uses a Folger-like compositional architecture` live.
+
+A second useful narrowing comes from cryptogram #4. If each whitespace-bounded composite were a whole plaintext word, the repeated identical line-ending composites would imply many rhyming couplets end in the identical plaintext word twice. That is possible but awkward. A **phonetic/syllabic/rhyme-bearing composite unit** is therefore a better fit than a pure Folger-style word unit.
+
+The six-unit line at the bottom of cryptogram #2b was isolated as a high-value crib. Sektu gives `C2B2 XP NU ZOO OM2N SHI`, decomposed approximately as `<C2 B2> <X DOT> <N U> <O Z O> <O2RNO> <CROSSB>`. An old online assertion that these six units mean `ULTIME` has no reproducible derivation and should not be used as ground truth.
+
+The strongest literal crib remains `H.D.D.L.M.F.` = **Henry / Deletnack / Debosnys / [7-letter L] / [7-letter M] / [6-letter F]** under the omission-count interpretation.
+
+Full write-up: `analysis/2026-09-05-folger-key-test.md`.
+
+### Recommended next experiments
+1. Stop testing stock Masonic alphabets. Build a **Debosnys-specific atomic inventory** from repeated subglyphs across the six scans.
+2. Encode the six-unit signature-like line and the twenty cryptogram-#4 line endings first; they provide the best constrained data with the least transcription burden.
+3. Test whether identical rhyme-class endings share atomic suffix/prefix structure significantly more than unrelated endings. If yes, infer phonetic/rhyme-bearing values before attempting full plaintext.
+4. Jointly score candidate French phoneme/grapheme mappings and source-text alignments, requiring every inferred atomic value to generalize across pages.
+5. Continue the independent `L.M.F.` 7/7/6 historical search. Only use a completion as a cipher crib if external evidence supports the phrase.
+
+### Open questions left hanging
+- What is the minimal stable subglyph inventory across all six pages?
+- Are Debosnys composites phonetic chunks, syllables, morphemes, mixed semantic/phonetic units, or context-dependent combinations?
+- Can the repeated poem endings recover even one atomic sound value?
+- Does the signature-like six-unit line encode a name, closing formula, or something else?
+- What are the 7/7/6 words behind L.M.F.?
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / new primary pages and Masonic-composite model
 
 ### Summary of work done
