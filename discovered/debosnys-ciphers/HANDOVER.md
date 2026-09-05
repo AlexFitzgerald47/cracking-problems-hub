@@ -4,6 +4,37 @@
 
 ---
 
+## 2026-09-05 – GPT-5.6 Sol / new primary pages and Masonic-composite model
+
+### Summary of work done
+Three additional high-resolution scans were supplied and inspected directly. They correspond to Commons cryptograms #2a, #2b and #3. The strongest hard correction is on #2a: the conspicuous token previously discussed online as `516` is **unambiguously `5/6`** in the primary scan. Retire all integer-516 interpretations.
+
+The same scan sharply confirms `H.D.D.L.M.F.` with the runs of short omission marks underneath. The established reading `H[4] D[8] D[7] L[6] M[6] F[5]` therefore remains a genuine internal crib-like construction: **Henry / Deletnack / Debosnys / [7-letter L] / [7-letter M] / [6-letter F]**. `LMF` is constrained but not solved. Do not promote attractive length fits such as `MASONIC / FELLOW` without an independently justified L-word and semantic context.
+
+The main strategic advance is to sharpen the Masonic hypothesis from icon-spotting into a **specific cipher-model class**. Bauer's prior evidence (inverted square-and-compasses, “first degree” language, identification of the clasped-hands drawing as the Boaz / Entered Apprentice grip) and Stephen Brent Morris's judgement that the script looks like a typical Masonic cipher already made Masonic influence plausible. The 1827 **Folger Manuscript** is now the best concrete comparison object: it encodes letters/common words as simple shapes and then combines/nests them into larger hieroglyph-like word forms, producing multiple visual realizations. That architecture is conspicuously compatible with Sektu's independent result that Debosnys' 425 whole-glyph types decompose into an ordered subglyph inventory. This is a method-family lead, **not evidence that Folger's exact key was reused**.
+
+A new falsifiable content hypothesis also emerged on #2a. In close proximity the page contains `5/6` (arithmetic), a numbered cube-like solid (geometry), a sun (astronomy), and a possible clef/music-like sign. Albert Mackey's period-appropriate *Manual of the Lodge* (copyright 1868/1870) explicitly teaches **Arithmetic, Geometry, Music and Astronomy** together in the Fellow Craft degree as the quadrivium part of the Seven Liberal Arts. Because independent Masonic evidence already exists, this coincidence is worth testing. It is not yet accepted: the motifs are not in canonical order and the music identification is ambiguous.
+
+The supplied French-poem page is canonical cryptogram #3, not #2b: four cipher lines sit above a much longer French poem. Use the poem as same-author linguistic control, not as an assumed line-for-line crib. Sektu had independently concluded that this cipher block and the cipher poem likely use the same system for different languages.
+
+Full write-up: `analysis/2026-09-05-new-pages-masonic-model.md`.
+
+### Recommended next experiments
+1. **Folger first.** Recover the Folger Manuscript key and composition rules as completely as public sources permit. Test whether Debosnys shares the *composition grammar* (nesting/order/common-word signs) on known crib material such as `H.D.D.`. Reject exact-key identity quickly if the crib fails.
+2. **Freeze #2a anchors before interpretation expands.** Mark the exact positions of `5/6`, numbered cube, sun and the proposed music motif. Test whether remaining pictorial anchors yield Grammar/Rhetoric/Logic or otherwise align to a period Fellow Craft lecture. If not, downgrade the Seven-Arts hypothesis.
+3. **Attack `LMF` as 7/7/6.** Search the provenance chain of the papers, Debosnys' claimed identities/relationships, and Masonic vocabulary with the fixed lengths. Require external support; do not solve it by word-fitting alone.
+4. Search every cryptogram for other slash/fraction constructions. `5/6` is now a secure primary datum and may reveal a numerical sub-system if repeated.
+5. Continue the eight-line subglyph test on cryptogram #4 separately. The Masonic model and the Moore/source-alignment model can coexist until one makes a prediction the other cannot.
+
+### Open questions left hanging
+- Does Folger's composite cipher grammar reproduce any Debosnys crib behavior without arbitrary remapping?
+- Is the #2a quadrivium-looking cluster intentional Fellow Craft content or coincidence?
+- What are the 7/7/6 words behind LMF?
+- Is the numbered cube semantically tied to `5/6`, or are they independent pictograms?
+- Are the large pictograms semantic tokens, nulls/decorations, or rebus-style crib anchors inside the same script?
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / full-scan recurrence adjudication
 
 ### Summary of work done
