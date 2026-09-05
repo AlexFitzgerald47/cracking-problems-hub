@@ -1,16 +1,16 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-04 (Proto-Elamite first computational pass completed; discovery run 2 – 10 further problems proposed, 21 now in `/discovered/`)
+**Last updated:** 2026-09-04 (Proto-Elamite first computational pass completed; discovery run 2 – 10 further problems proposed, 21 now in `/discovered/`; four cipher problems worked — Dorabella closed as blocked, Kryptos K4 restated, Beale split, Voynich A/B confound resolved)
 
 ## Active Problems
 
 ### Ciphers
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
-| Kryptos (remaining parts) | `ciphers/kryptos/` | Partially solved | K4 still open |
-| Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
-| Dorabella Cipher | `ciphers/dorabella-cipher/` | Open | Short, elegant, unsolved |
+| Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – **first attempt logged 2026-09-04** | Currier A/B shown not to be a scribal artefact: it survives holding scribe and section constant (p < 0.0002). Section effects are as large as language effects, which argues against reading "language" literally. See `attempts/2026-09-04-hand-language-confound/` |
+| Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open, but as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family (incl. Beaufort) now eliminated from the public cribs; simple-transposition composites show no signal above chance. See `attempts/2026-09-04-crib-constraints/` |
+| Beale Ciphers | `ciphers/beale-ciphers/` | **Split 2026-09-04** – B1 effectively settled, B3 open | B1's alphabetical runs are not chance (p < 10⁻⁵ against a permutation null); it was built with the Declaration in hand. B3 shows no such structure (p = 0.85) and is the genuinely open one. See `attempts/2026-09-04-gillogly-null/` |
+| Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | Blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433×161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions. See `attempts/2026-09-04-transcription-uncertainty/` |
 
 ### Historical Texts
 | Problem | Folder | Status | Notes |
@@ -32,9 +32,21 @@
 
 ## High-Priority Threads
 - Proto-Elamite (held-out structure/context constraints now available; exact-form M297 audit next)
-- Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
-- Kryptos K4
+- **Voynich — are the A→B and Herbal→Biological axes parallel?** Section effects match
+  language effects in size. If the two directions are close to parallel, the "two languages"
+  framing is probably wrong and both are topic or register effects. A few lines on top of the
+  existing decomposition.
+- **Beale 3 — the genuinely open one.** The hoax evidence that settles B1 does not touch B3,
+  and B3 does not decode to English with the Declaration. Needs a systematic search over
+  candidate 19th-century key texts, with a null attached. Blocked first on a two-token
+  transcription discrepancy to be settled against the 1885 pamphlet.
+- **Kryptos K4 — keyed transpositions, and lobbying for a third crib.** Single-stage families
+  and simple-transposition composites are both exhausted from the public cribs (no signal
+  above chance across 12,901 hypotheses). A ten-character third crib near position 44–47 would
+  roughly double the number of testable periods; that is a lobbying problem, not a computing one.
 - Rohonc Codex script analysis
+- ~~Dorabella~~ — closed as blocked 2026-09-04; archival, not cryptanalytic. Reopens on a
+  300 dpi scan or adjudication of 36 named positions.
 
 ## Recent Work
 
@@ -63,6 +75,38 @@
   [`analysis/RESULTS.md`](discovered/proto-elamite/analysis/RESULTS.md) ·
   [`analysis/README.md`](discovered/proto-elamite/analysis/README.md)
 
+### Four cipher problems – 2026-09-04
+
+Worked in one session; every result carries a Monte Carlo null and reproducible code.
+Attempt folders sit under each problem's `attempts/`.
+
+- **Dorabella — closed as blocked.** Not a cryptanalysis problem. The facsimile every
+  published reading derives from is 433×161 px (~14.6 px per glyph) and cannot be read;
+  four independent readings disagree on an identical fixed set of 36 of 87 positions, of
+  which eight do most of the damage. Also established that at n=87 a wrong key outscores
+  the true key 46.7% of the time on known-key English, and that 13 mutually unrelated
+  messages beat the best published claim — so no monoalphabetic solution can be certified
+  by fit alone at this length.
+- **Kryptos K4 — restated and narrowed.** The board asked for the plaintext; it was
+  recovered from Sanborn's Smithsonian papers in 2025, confirmed, and sealed. The open
+  problem is the method. Pure transposition eliminated by a letter count; the Vigenère
+  family eliminated at every period the cribs can see; 12,901 transposition-composite
+  hypotheses show no signal above chance. Produced the crib-power rule now promoted to
+  `discovered/short-cipher-validation-bound/`.
+- **Beale — the problem splits.** B1's alphabetical runs are not chance (longest run 17
+  against a null of 3.87 ± 0.76, null max 10, p < 10⁻⁵); inside the runs the word numbers
+  jump across the whole Declaration, the signature of a searcher rather than a scanner.
+  B2, a genuine message on the same key, scores 3 — the control the argument always needed.
+  B3 shows nothing (p = 0.85) and is now the live thread.
+- **Voynich — Currier A/B is not a scribal artefact.** Hand 1 wrote 112 of the 114
+  Language A pages, so A/B is confounded with both scribe and section. Hand 3's Stars
+  pages break both confounds and the difference survives: 12.76 against a null of 5.53,
+  p < 0.0002. But section effects match language effects in size, which is the loose thread.
+- **Failures preserved:** the Dorabella log records a budget-matching error that made an
+  early comparison meaningless; the Kryptos log records a period-19 "lead" withdrawn once
+  133 transpositions were tested; the Voynich log keeps an uncontrolled first pass that
+  reached the opposite conclusion.
+
 ## Recently Proposed / In `/discovered/`
 
 Added 2026-09-04 by a discovery run. Each was web-verified as still genuinely open at
@@ -81,6 +125,7 @@ that date. Full detail and provenance: `discovered/_manifest/swarm-discovery-202
 | Byblos syllabary | `discovered/byblos-syllabary/` | historical-texts | Fair – audit, not decipherment |
 | Debosnys ciphers | `discovered/debosnys-ciphers/` | ciphers | Moderate – transcription needed first |
 | Blitz Ciphers | `discovered/blitz-ciphers/` | ciphers | Good for authenticity, poor for decryption |
+| The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | methodological | **Not empty** — carries its first general result: where a crib set's discriminating power comes from, and how to design crib placement. Below what length does a readable high-scoring decryption stop being evidence? Dorabella, Kryptos K4 and the Phaistos Disc all turn on it |
 
 **Rejected during this run:** Bellaso's 1555/1564 challenge ciphers — verification showed
 the full set is solved. Recorded in the manifest so no future agent re-proposes them.

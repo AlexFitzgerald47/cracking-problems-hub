@@ -1,0 +1,691 @@
+{
+ "seed": 20260911,
+ "n_null": 20000,
+ "rows": [
+  {
+   "period": 1,
+   "conflicts": 11,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 2,
+   "conflicts": 14,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 3,
+   "conflicts": 15,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 4,
+   "conflicts": 17,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 5,
+   "conflicts": 17,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 6,
+   "conflicts": 16,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 7,
+   "conflicts": 16,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 8,
+   "conflicts": 15,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 9,
+   "conflicts": 14,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 10,
+   "conflicts": 13,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 11,
+   "conflicts": 11,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 12,
+   "conflicts": 12,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 13,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 14,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 15,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 16,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 17,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 18,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 19,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 20,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 21,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 22,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 23,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 24,
+   "conflicts": 5,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 25,
+   "conflicts": 3,
+   "survives": false,
+   "null_rate": 0.0001
+  },
+  {
+   "period": 26,
+   "conflicts": 1,
+   "survives": false,
+   "null_rate": 0.03715
+  },
+  {
+   "period": 27,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 28,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 29,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 30,
+   "conflicts": 1,
+   "survives": false,
+   "null_rate": 0.0403
+  },
+  {
+   "period": 31,
+   "conflicts": 2,
+   "survives": false,
+   "null_rate": 0.0015
+  },
+  {
+   "period": 32,
+   "conflicts": 3,
+   "survives": false,
+   "null_rate": 0.0002
+  },
+  {
+   "period": 33,
+   "conflicts": 4,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 34,
+   "conflicts": 5,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 35,
+   "conflicts": 6,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 36,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 37,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 38,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 39,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 40,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 41,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 42,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 43,
+   "conflicts": 10,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 44,
+   "conflicts": 8,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 45,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 46,
+   "conflicts": 7,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 47,
+   "conflicts": 6,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 48,
+   "conflicts": 5,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 49,
+   "conflicts": 4,
+   "survives": false,
+   "null_rate": 0.0
+  },
+  {
+   "period": 50,
+   "conflicts": 3,
+   "survives": false,
+   "null_rate": 0.0001
+  },
+  {
+   "period": 51,
+   "conflicts": 2,
+   "survives": false,
+   "null_rate": 0.002
+  },
+  {
+   "period": 52,
+   "conflicts": 1,
+   "survives": false,
+   "null_rate": 0.03715
+  },
+  {
+   "period": 53,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 54,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 55,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 56,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 57,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 58,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 59,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 60,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 61,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 62,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 63,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 64,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 65,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 66,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 67,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 68,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 69,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 70,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 71,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 72,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 73,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 74,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 75,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 76,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 77,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 78,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 79,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 80,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 81,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 82,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 83,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 84,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 85,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 86,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 87,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 88,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 89,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 90,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 91,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 92,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 93,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 94,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 95,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 96,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  },
+  {
+   "period": 97,
+   "conflicts": 0,
+   "survives": true,
+   "null_rate": 1.0
+  }
+ ],
+ "surviving": [
+  27,
+  28,
+  29,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97
+ ],
+ "powered_periods": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52
+ ],
+ "powered_survivors": [],
+ "expected_powered_survivors_under_null": 0.11850000000000002
+}

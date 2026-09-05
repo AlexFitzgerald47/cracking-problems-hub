@@ -1,0 +1,790 @@
+{
+ "periodic_ic": {
+  "1": {
+   "english_null": {
+    "mean": 0.06352988505747127,
+    "sd": 0.006550356373824692,
+    "p2.5": 0.05239240844693932,
+    "p97.5": 0.07805399625768511
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.05854049719326383,
+     "pct_english_below": 0.22525
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.056669339748730285,
+     "pct_english_below": 0.1322
+    },
+    "Roberts": {
+     "ic": 0.06602512697139802,
+     "pct_english_below": 0.67125
+    },
+    "Gaffney": {
+     "ic": 0.057203956161454156,
+     "pct_english_below": 0.1581
+    },
+    "Ernst": {
+     "ic": 0.05800588078053996,
+     "pct_english_below": 0.19705
+    },
+    "Robert S.": {
+     "ic": 0.05854049719326383,
+     "pct_english_below": 0.22525
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05880780539962577,
+     "pct_english_below": 0.2408
+    }
+   }
+  },
+  "2": {
+   "english_null": {
+    "mean": 0.06373234180638183,
+    "sd": 0.007928460575799127,
+    "p2.5": 0.05029745808545159,
+    "p97.5": 0.08112493239588967
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.053542455381287185,
+     "pct_english_below": 0.07375
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.051379123850730124,
+     "pct_english_below": 0.03455
+    },
+    "Roberts": {
+     "ic": 0.05949161709031909,
+     "pct_english_below": 0.30125
+    },
+    "Gaffney": {
+     "ic": 0.05300162249864792,
+     "pct_english_below": 0.06195
+    },
+    "Ernst": {
+     "ic": 0.05462412114656571,
+     "pct_english_below": 0.1039
+    },
+    "Robert S.": {
+     "ic": 0.053542455381287185,
+     "pct_english_below": 0.07375
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05408328826392644,
+     "pct_english_below": 0.0887
+    }
+   }
+  },
+  "3": {
+   "english_null": {
+    "mean": 0.06484544334975369,
+    "sd": 0.009379341476827105,
+    "p2.5": 0.04926108374384237,
+    "p97.5": 0.08538587848932677
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.05582922824302135,
+     "pct_english_below": 0.1476
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05665024630541872,
+     "pct_english_below": 0.17355
+    },
+    "Roberts": {
+     "ic": 0.06239737274220033,
+     "pct_english_below": 0.4146
+    },
+    "Gaffney": {
+     "ic": 0.054187192118226604,
+     "pct_english_below": 0.1021
+    },
+    "Ernst": {
+     "ic": 0.05747126436781609,
+     "pct_english_below": 0.20235
+    },
+    "Robert S.": {
+     "ic": 0.05582922824302135,
+     "pct_english_below": 0.1476
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05665024630541872,
+     "pct_english_below": 0.17355
+    }
+   }
+  },
+  "4": {
+   "english_null": {
+    "mean": 0.06461993355481727,
+    "sd": 0.010196111093427771,
+    "p2.5": 0.047619047619047616,
+    "p97.5": 0.08748615725359911
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.058693244739756366,
+     "pct_english_below": 0.27485
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05537098560354374,
+     "pct_english_below": 0.1619
+    },
+    "Roberts": {
+     "ic": 0.059800664451827246,
+     "pct_english_below": 0.31765
+    },
+    "Gaffney": {
+     "ic": 0.05758582502768549,
+     "pct_english_below": 0.2347
+    },
+    "Ernst": {
+     "ic": 0.058693244739756366,
+     "pct_english_below": 0.27485
+    },
+    "Robert S.": {
+     "ic": 0.058693244739756366,
+     "pct_english_below": 0.27485
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.059800664451827246,
+     "pct_english_below": 0.31765
+    }
+   }
+  },
+  "5": {
+   "english_null": {
+    "mean": 0.06462254901960783,
+    "sd": 0.011079545814014359,
+    "p2.5": 0.046218487394957986,
+    "p97.5": 0.0896358543417367
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.05322128851540616,
+     "pct_english_below": 0.1277
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05182072829131653,
+     "pct_english_below": 0.0969
+    },
+    "Roberts": {
+     "ic": 0.05742296918767507,
+     "pct_english_below": 0.2451
+    },
+    "Gaffney": {
+     "ic": 0.05042016806722689,
+     "pct_english_below": 0.072
+    },
+    "Ernst": {
+     "ic": 0.05322128851540616,
+     "pct_english_below": 0.1277
+    },
+    "Robert S.": {
+     "ic": 0.05322128851540616,
+     "pct_english_below": 0.1277
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05322128851540616,
+     "pct_english_below": 0.1277
+    }
+   }
+  },
+  "6": {
+   "english_null": {
+    "mean": 0.06470093537414966,
+    "sd": 0.011959395206545473,
+    "p2.5": 0.04421768707482993,
+    "p97.5": 0.09013605442176871
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.05782312925170068,
+     "pct_english_below": 0.26665
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05612244897959184,
+     "pct_english_below": 0.21585
+    },
+    "Roberts": {
+     "ic": 0.05612244897959184,
+     "pct_english_below": 0.21585
+    },
+    "Gaffney": {
+     "ic": 0.05782312925170068,
+     "pct_english_below": 0.26665
+    },
+    "Ernst": {
+     "ic": 0.061224489795918366,
+     "pct_english_below": 0.38435
+    },
+    "Robert S.": {
+     "ic": 0.05782312925170068,
+     "pct_english_below": 0.26665
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05442176870748299,
+     "pct_english_below": 0.1714
+    }
+   }
+  },
+  "7": {
+   "english_null": {
+    "mean": 0.0646741967871486,
+    "sd": 0.012667751463947682,
+    "p2.5": 0.04216867469879518,
+    "p97.5": 0.09236947791164658
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.040160642570281124,
+     "pct_english_below": 0.0095
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.03815261044176707,
+     "pct_english_below": 0.00435
+    },
+    "Roberts": {
+     "ic": 0.05622489959839357,
+     "pct_english_below": 0.2351
+    },
+    "Gaffney": {
+     "ic": 0.03815261044176707,
+     "pct_english_below": 0.00435
+    },
+    "Ernst": {
+     "ic": 0.03815261044176707,
+     "pct_english_below": 0.00435
+    },
+    "Robert S.": {
+     "ic": 0.040160642570281124,
+     "pct_english_below": 0.0095
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.04216867469879518,
+     "pct_english_below": 0.01675
+    }
+   }
+  },
+  "8": {
+   "english_null": {
+    "mean": 0.0646493023255814,
+    "sd": 0.013577568686609927,
+    "p2.5": 0.04186046511627907,
+    "p97.5": 0.09302325581395349
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.06744186046511629,
+     "pct_english_below": 0.5847
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.06511627906976744,
+     "pct_english_below": 0.5148
+    },
+    "Roberts": {
+     "ic": 0.07441860465116279,
+     "pct_english_below": 0.7564
+    },
+    "Gaffney": {
+     "ic": 0.06744186046511629,
+     "pct_english_below": 0.5847
+    },
+    "Ernst": {
+     "ic": 0.06744186046511629,
+     "pct_english_below": 0.5847
+    },
+    "Robert S.": {
+     "ic": 0.06744186046511629,
+     "pct_english_below": 0.5847
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.06976744186046512,
+     "pct_english_below": 0.64605
+    }
+   }
+  },
+  "9": {
+   "english_null": {
+    "mean": 0.06475621693121693,
+    "sd": 0.014416701616486666,
+    "p2.5": 0.03968253968253968,
+    "p97.5": 0.09523809523809523
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.05555555555555555,
+     "pct_english_below": 0.23915
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05555555555555555,
+     "pct_english_below": 0.23915
+    },
+    "Roberts": {
+     "ic": 0.06084656084656084,
+     "pct_english_below": 0.3851
+    },
+    "Gaffney": {
+     "ic": 0.03968253968253968,
+     "pct_english_below": 0.017
+    },
+    "Ernst": {
+     "ic": 0.0582010582010582,
+     "pct_english_below": 0.3103
+    },
+    "Robert S.": {
+     "ic": 0.05555555555555555,
+     "pct_english_below": 0.23915
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.05291005291005291,
+     "pct_english_below": 0.1779
+    }
+   }
+  },
+  "10": {
+   "english_null": {
+    "mean": 0.06466696428571428,
+    "sd": 0.015226109918992415,
+    "p2.5": 0.03869047619047619,
+    "p97.5": 0.09821428571428571
+   },
+   "readings": {
+    "Williams": {
+     "ic": 0.0625,
+     "pct_english_below": 0.43875
+    },
+    "Schmeh (MTC3)": {
+     "ic": 0.05952380952380952,
+     "pct_english_below": 0.3557
+    },
+    "Roberts": {
+     "ic": 0.07142857142857142,
+     "pct_english_below": 0.66895
+    },
+    "Gaffney": {
+     "ic": 0.05952380952380952,
+     "pct_english_below": 0.3557
+    },
+    "Ernst": {
+     "ic": 0.0625,
+     "pct_english_below": 0.43875
+    },
+    "Robert S.": {
+     "ic": 0.0625,
+     "pct_english_below": 0.43875
+    },
+    "CipherMysteries/AZdecrypt": {
+     "ic": 0.06547619047619048,
+     "pct_english_below": 0.51665
+    }
+   }
+  }
+ },
+ "n_null": 20000,
+ "independent_transcriptions": [
+  "Williams",
+  "Schmeh (MTC3)",
+  "Ernst",
+  "CipherMysteries/AZdecrypt"
+ ],
+ "unstable_positions": [
+  {
+   "position": 0,
+   "line": 0,
+   "conflicting_partners": 1,
+   "symbols": [
+    "A",
+    "A",
+    "B",
+    "K"
+   ]
+  },
+  {
+   "position": 3,
+   "line": 0,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 4,
+   "line": 0,
+   "conflicting_partners": 1,
+   "symbols": [
+    "Q",
+    "E",
+    "A",
+    "C"
+   ]
+  },
+  {
+   "position": 6,
+   "line": 0,
+   "conflicting_partners": 3,
+   "symbols": [
+    "U",
+    "G",
+    "T",
+    "B"
+   ]
+  },
+  {
+   "position": 7,
+   "line": 0,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 9,
+   "line": 0,
+   "conflicting_partners": 2,
+   "symbols": [
+    "D",
+    "A",
+    "Y",
+    "K"
+   ]
+  },
+  {
+   "position": 13,
+   "line": 0,
+   "conflicting_partners": 3,
+   "symbols": [
+    "X",
+    "L",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "position": 22,
+   "line": 0,
+   "conflicting_partners": 9,
+   "symbols": [
+    "X",
+    "N",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "position": 23,
+   "line": 0,
+   "conflicting_partners": 8,
+   "symbols": [
+    "S",
+    "G",
+    "X",
+    "G"
+   ]
+  },
+  {
+   "position": 24,
+   "line": 0,
+   "conflicting_partners": 1,
+   "symbols": [
+    "D",
+    "O",
+    "Y",
+    "O"
+   ]
+  },
+  {
+   "position": 25,
+   "line": 0,
+   "conflicting_partners": 8,
+   "symbols": [
+    "S",
+    "G",
+    "X",
+    "G"
+   ]
+  },
+  {
+   "position": 26,
+   "line": 0,
+   "conflicting_partners": 3,
+   "symbols": [
+    "V",
+    "N",
+    "G",
+    "A"
+   ]
+  },
+  {
+   "position": 29,
+   "line": 1,
+   "conflicting_partners": 3,
+   "symbols": [
+    "U",
+    "G",
+    "T",
+    "B"
+   ]
+  },
+  {
+   "position": 31,
+   "line": 1,
+   "conflicting_partners": 3,
+   "symbols": [
+    "U",
+    "G",
+    "T",
+    "B"
+   ]
+  },
+  {
+   "position": 33,
+   "line": 1,
+   "conflicting_partners": 9,
+   "symbols": [
+    "U",
+    "Q",
+    "T",
+    "G"
+   ]
+  },
+  {
+   "position": 34,
+   "line": 1,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 37,
+   "line": 1,
+   "conflicting_partners": 6,
+   "symbols": [
+    "J",
+    "S",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 43,
+   "line": 1,
+   "conflicting_partners": 3,
+   "symbols": [
+    "V",
+    "N",
+    "G",
+    "A"
+   ]
+  },
+  {
+   "position": 45,
+   "line": 1,
+   "conflicting_partners": 3,
+   "symbols": [
+    "U",
+    "G",
+    "T",
+    "B"
+   ]
+  },
+  {
+   "position": 50,
+   "line": 1,
+   "conflicting_partners": 4,
+   "symbols": [
+    "F",
+    "T",
+    "W",
+    "J"
+   ]
+  },
+  {
+   "position": 53,
+   "line": 1,
+   "conflicting_partners": 3,
+   "symbols": [
+    "X",
+    "L",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "position": 54,
+   "line": 1,
+   "conflicting_partners": 4,
+   "symbols": [
+    "S",
+    "Q",
+    "X",
+    "G"
+   ]
+  },
+  {
+   "position": 57,
+   "line": 1,
+   "conflicting_partners": 4,
+   "symbols": [
+    "S",
+    "Q",
+    "X",
+    "G"
+   ]
+  },
+  {
+   "position": 63,
+   "line": 2,
+   "conflicting_partners": 3,
+   "symbols": [
+    "F",
+    "U",
+    "U",
+    "J"
+   ]
+  },
+  {
+   "position": 66,
+   "line": 2,
+   "conflicting_partners": 3,
+   "symbols": [
+    "X",
+    "L",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "position": 67,
+   "line": 2,
+   "conflicting_partners": 3,
+   "symbols": [
+    "F",
+    "U",
+    "U",
+    "J"
+   ]
+  },
+  {
+   "position": 68,
+   "line": 2,
+   "conflicting_partners": 4,
+   "symbols": [
+    "M",
+    "U",
+    "W",
+    "R"
+   ]
+  },
+  {
+   "position": 69,
+   "line": 2,
+   "conflicting_partners": 3,
+   "symbols": [
+    "V",
+    "N",
+    "G",
+    "A"
+   ]
+  },
+  {
+   "position": 74,
+   "line": 2,
+   "conflicting_partners": 4,
+   "symbols": [
+    "F",
+    "U",
+    "W",
+    "J"
+   ]
+  },
+  {
+   "position": 77,
+   "line": 2,
+   "conflicting_partners": 9,
+   "symbols": [
+    "X",
+    "N",
+    "D",
+    "A"
+   ]
+  },
+  {
+   "position": 78,
+   "line": 2,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 80,
+   "line": 2,
+   "conflicting_partners": 3,
+   "symbols": [
+    "V",
+    "N",
+    "G",
+    "A"
+   ]
+  },
+  {
+   "position": 83,
+   "line": 2,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  },
+  {
+   "position": 84,
+   "line": 2,
+   "conflicting_partners": 9,
+   "symbols": [
+    "X",
+    "L",
+    "D",
+    "A"
+   ]
+  },
+  {
+   "position": 85,
+   "line": 2,
+   "conflicting_partners": 6,
+   "symbols": [
+    "S",
+    "E",
+    "X",
+    "G"
+   ]
+  },
+  {
+   "position": 86,
+   "line": 2,
+   "conflicting_partners": 1,
+   "symbols": [
+    "J",
+    "D",
+    "C",
+    "S"
+   ]
+  }
+ ],
+ "n_unstable_positions": 36
+}

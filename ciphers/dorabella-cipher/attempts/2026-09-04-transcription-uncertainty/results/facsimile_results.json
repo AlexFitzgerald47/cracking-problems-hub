@@ -1,0 +1,79 @@
+{
+ "image": "dorabella-facsimile.png",
+ "width": 433,
+ "height": 161,
+ "ink_fraction": 0.049789852681709296,
+ "claimed_line_lengths": [
+  29,
+  31,
+  27
+ ],
+ "lines": [
+  {
+   "band": [
+    1,
+    32
+   ],
+   "span_px": 420,
+   "n_ink_runs": 28,
+   "ink_run_width_median": 8.0,
+   "ink_run_width_max": 31,
+   "claimed_glyphs": 29,
+   "implied_pitch_px": 14.482758620689655,
+   "autocorr_peak_lag_px": 11,
+   "autocorr_peak_r": 0.21001965176212903,
+   "count_implied_by_autocorr": 38.18181818181818
+  },
+  {
+   "band": [
+    37,
+    60
+   ],
+   "span_px": 426,
+   "n_ink_runs": 27,
+   "ink_run_width_median": 8.0,
+   "ink_run_width_max": 26,
+   "claimed_glyphs": 31,
+   "implied_pitch_px": 13.741935483870968,
+   "autocorr_peak_lag_px": 13,
+   "autocorr_peak_r": 0.23854916700744339,
+   "count_implied_by_autocorr": 32.76923076923077
+  },
+  {
+   "band": [
+    77,
+    99
+   ],
+   "span_px": 424,
+   "n_ink_runs": 23,
+   "ink_run_width_median": 13.0,
+   "ink_run_width_max": 40,
+   "claimed_glyphs": 27,
+   "implied_pitch_px": 15.703703703703704,
+   "autocorr_peak_lag_px": 12,
+   "autocorr_peak_r": 0.22606184123220413,
+   "count_implied_by_autocorr": 35.333333333333336
+  }
+ ],
+ "row_bands": [
+  {
+   "top": 1,
+   "bottom": 32
+  },
+  {
+   "top": 37,
+   "bottom": 60
+  },
+  {
+   "top": 77,
+   "bottom": 99
+  },
+  {
+   "top": 121,
+   "bottom": 158
+  }
+ ],
+ "n_row_bands": 4,
+ "mean_px_per_glyph": 14.642799269421443,
+ "conclusion": "Three cipher lines plus a fourth band (the dated signature) are cleanly recoverable. Glyph boundaries are not. At 14.6 px per glyph, ink runs correspond to individual arcs rather than to whole symbols, and arcs merge freely across symbol boundaries, so projection segmentation overcounts by 20-40%. The column-profile autocorrelation gives only a weak, broad periodicity (r = 0.21-0.24 at lags 11-13 px) that cannot discriminate 29 glyphs from 35 on a line. This image therefore cannot support an independent character-level reading, and no transcription derived from it can be verified against it."
+}

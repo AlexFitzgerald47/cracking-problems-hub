@@ -1,0 +1,9 @@
+{
+ "_note": "Kryptos K4 ciphertext and the two publicly released, Sanborn-confirmed cribs. Ciphertext taken from benchmark/unsolved/sources/kryptos/ in the public GitHub repository matthewdgreen/cipher_benchmark (retrieved 2026-09-04), which cross-checks it against the AZdecrypt and Zenith unsolved-cipher sets and cites cia.gov. Positions are 1-based inclusive.",
+ "_self_check": "The cribs are their own transcription check: if the ciphertext is correct, positions 64-74 must read NYPVTTMZFPK (Sanborn's 2010 BERLIN and 2014 CLOCK reveals) and positions 22-34 must read FLRVQQPRNGKSS (his 2020 EASTNORTHEAST reveal). Verified by src/k4.py at load time.",
+ "ciphertext": "OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR",
+ "cribs": [
+  {"plaintext": "EASTNORTHEAST", "start": 22, "end": 34, "released": "2020"},
+  {"plaintext": "BERLINCLOCK",   "start": 64, "end": 74, "released": "2010 (BERLIN) / 2014 (CLOCK)"}
+ ]
+}

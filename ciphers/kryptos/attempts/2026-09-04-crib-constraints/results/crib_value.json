@@ -1,0 +1,121 @@
+{
+ "seed": 20260915,
+ "n_draws": 4000,
+ "baseline_powered_periods": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  9,
+  15,
+  17,
+  19,
+  34,
+  38,
+  43,
+  45
+ ],
+ "baseline_count": 13,
+ "structural_rule": "a period p is testable iff two crib positions differing by a multiple of p carry the same plaintext letter",
+ "by_length": {
+  "5": {
+   "mean_powered_periods": 22.63075,
+   "mean_powered_periods_up_to_30": 16.13575,
+   "p10": 17.0,
+   "p90": 29.0
+  },
+  "10": {
+   "mean_powered_periods": 28.06075,
+   "mean_powered_periods_up_to_30": 19.82025,
+   "p10": 20.0,
+   "p90": 36.0
+  },
+  "15": {
+   "mean_powered_periods": 32.18625,
+   "mean_powered_periods_up_to_30": 22.29975,
+   "p10": 24.0,
+   "p90": 42.0
+  },
+  "20": {
+   "mean_powered_periods": 35.329,
+   "mean_powered_periods_up_to_30": 24.14,
+   "p10": 28.0,
+   "p90": 45.0
+  },
+  "25": {
+   "mean_powered_periods": 37.721,
+   "mean_powered_periods_up_to_30": 25.51075,
+   "p10": 30.0,
+   "p90": 48.0
+  },
+  "30": {
+   "mean_powered_periods": 40.02825,
+   "mean_powered_periods_up_to_30": 26.78975,
+   "p10": 33.0,
+   "p90": 50.0
+  },
+  "40": {
+   "mean_powered_periods": 44.357,
+   "mean_powered_periods_up_to_30": 28.65225,
+   "p10": 37.0,
+   "p90": 54.0
+  }
+ },
+ "best_placement": {
+  "crib_length": 12,
+  "metric": "mean powered periods <= 30",
+  "top": [
+   [
+    47,
+    24.466666666666665
+   ],
+   [
+    1,
+    24.453333333333333
+   ],
+   [
+    44,
+    24.413333333333334
+   ],
+   [
+    2,
+    24.373333333333335
+   ],
+   [
+    45,
+    24.34
+   ],
+   [
+    86,
+    24.316666666666666
+   ],
+   [
+    46,
+    24.3
+   ],
+   [
+    43,
+    24.276666666666667
+   ]
+  ],
+  "worst": [
+   [
+    21,
+    14.39
+   ],
+   [
+    24,
+    13.933333333333334
+   ],
+   [
+    23,
+    13.893333333333333
+   ],
+   [
+    22,
+    13.796666666666667
+   ]
+  ]
+ }
+}

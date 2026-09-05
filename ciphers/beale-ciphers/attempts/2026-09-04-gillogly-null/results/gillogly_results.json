@@ -1,0 +1,136 @@
+{
+ "seed": 20260904,
+ "n_null": 100000,
+ "validation": {
+  "cross_check": {
+   "B1": {
+    "same_length": true,
+    "n_differences": 0,
+    "differences": []
+   },
+   "B3": {
+    "same_length": true,
+    "n_differences": 2,
+    "differences": [
+     {
+      "index": 91,
+      "a": 154,
+      "b": 151
+     },
+     {
+      "index": 580,
+      "a": 73,
+      "b": 63
+     }
+    ]
+   }
+  },
+  "b2": {
+   "opening_matches": true,
+   "opening_length_checked": 113,
+   "decoded_opening": "ihavedepositedinthecountyofbedfordaboutfourmilesfrombufordsinanexcavationorvaultsixfeetbelowthesurfaceoftheground"
+  }
+ },
+ "ciphers": {
+  "B1": {
+   "n_tokens": 520,
+   "n_gaps": 11,
+   "decoded": "sbs?etfa?gcdottucwwtwtaaisdbtidtt?wtabaabadaaabbcdeffiflkigpeamnpwchoooallpmotamanhabbbccccddeaosdstontftatpocacbcddeletpftbthiffehuubtjtttihpaoaosataott?mnmptaaarbopjdtt??tsbcoidafacpnrbabcdefghiijklmmnohppowtaombblsoesaoosispctaolbtflhtoasgowtenklcassaastatolhtawgfeaafbacattwhbttaaoetsafaasbstciarcabtototldonhwtstehitoatstwttsofdastaahsiwcpcwtotlinieeittdattpiufaerfabptcttoidnattoatsti??atnatwnwttocwtotpatsotebttrmhbtogtwcdrolitiahlwaas?bostafaewcp?otowltowkctewtafoaawettttothrisjethacuao?poihrmsstrasnitpctiowftf",
+   "observed": {
+    "R1": 17,
+    "R2": 9
+   },
+   "null": {
+    "R1": {
+     "mean": 3.87198,
+     "sd": 0.7625461916283784,
+     "max": 10,
+     "p99.9": 7.0,
+     "p_value": 0.0,
+     "n_at_or_above": 0
+    },
+    "R2": {
+     "mean": 2.447,
+     "sd": 0.526073918321062,
+     "max": 6,
+     "p99.9": 4.0,
+     "p_value": 0.0,
+     "n_at_or_above": 0
+    }
+   },
+   "runs_R1_min8": [
+    {
+     "start": 43,
+     "length": 10,
+     "text": "aaabbcdeff"
+    },
+    {
+     "start": 83,
+     "length": 11,
+     "text": "abbbccccdde"
+    },
+    {
+     "start": 187,
+     "length": 17,
+     "text": "abcdefghiijklmmno"
+    }
+   ]
+  },
+  "B2": {
+   "n_tokens": 763,
+   "n_gaps": 0,
+   "decoded": "ihavedepositedinthecountyofbedfordaboutfourmilesfrombufordsinanexcavationorvaultsixfeetbelowthesurfaceofthegroundthefollowingarticlesbelongingjointlytothepartieswhosenamesaregiveninnumberthreeherewiththefirstdepositconsistcdoftenhundredandfourteenpoundsofgoldandthirtyeighthundredandtwelvepoundsofsilverdepositednoveighteennineteenthesecondwasmadedeceighteentwentyoneandconsistedofnineteenhundredandsevenpoundsofgoldandtwelvehundredandeightyeightofsilveralsojewelsobtainedinstlouisinexchangetosavetransportationandvaluedatthirteenrhousanddollarstheaboveissecurelypackedinironpotswithironcoversthevaultisroughlylinedwithstoneandthevesselsrestonsolidstoneandarecoveredwithotherspapernumberonedescribesthcexactlocalityofthevarltsothatnodifficultywillbehadinfindingit",
+   "observed": {
+    "R1": 3,
+    "R2": 3
+   },
+   "null": {
+    "R1": {
+     "mean": 3.80121,
+     "sd": 0.6900994843303266,
+     "max": 9,
+     "p99.9": 7.0,
+     "p_value": 0.99993,
+     "n_at_or_above": 99993
+    },
+    "R2": {
+     "mean": 2.69196,
+     "sd": 0.5233871394493539,
+     "max": 6,
+     "p99.9": 4.0,
+     "p_value": 0.66237,
+     "n_at_or_above": 66237
+    }
+   },
+   "runs_R1_min8": []
+  },
+  "B3": {
+   "n_tokens": 618,
+   "n_gaps": 0,
+   "decoded": "aichreiharhtosttdaadlataocttawtpaeewdttboafrmadhdnfoebotaabmpsotamaiatsboeiinrantaleehmtaogitseaasrwthoeabttreaaccttdcgaatrtwtpdiphbeofoaetobtdmmatwsaccstttebawasttaaanhrttjboltdcatsotnottncteanbtiofsatagiswrfathaoawtwptthattelisolswtcohattwoeeawpaolhfwraatawitaohocgdrtfemfbasaaatecoctaraenttarotmtboahftonaeattmtwbstuigsboawlhsgctdckpedbcscwtcgrocrtowmtsftbstmuetttotbedaeteatrtoadtttotstiwphtpootfwbrtndwwscjbwheragbtlgetutattrelbptatwrgawpmgsttgittwtdjftthctwtlcgertscctmttoroorpswdtbtloetaaittpdsattrctbitagqoaacbctdmtotttrbwstsoohstwthroecaeootewwafslwwecrcmitoowtrehosnewtnhrcsiitrflbcowntbotslttaaeattfobwhrgod",
+   "observed": {
+    "R1": 4,
+    "R2": 3
+   },
+   "null": {
+    "R1": {
+     "mean": 4.24018,
+     "sd": 0.8325145634792126,
+     "max": 11,
+     "p99.9": 8.0,
+     "p_value": 0.85264,
+     "n_at_or_above": 85264
+    },
+    "R2": {
+     "mean": 2.57825,
+     "sd": 0.5277117795702716,
+     "max": 6,
+     "p99.9": 4.0,
+     "p_value": 0.56164,
+     "n_at_or_above": 56164
+    }
+   },
+   "runs_R1_min8": []
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "_note": "Seven Dorabella readings, reproduced verbatim from the comparison sheet 'Transcripts.pdf' in the public GitHub repository ShadowWolf387/DorabellaCipher (retrieved 2026-09-04). Line breaks follow the three physical lines of the manuscript; the five-character grouping in the source is cosmetic and is stripped. Items marked kind='decrypt' were published as claimed plaintexts rather than as transcriptions; under a monoalphabetic assumption a decrypt carries exactly the same information as a transcription (the two differ only by a relabelling), so they are usable here, but their provenance is weaker: a decrypt may have been silently adjusted to fit the claimed reading. Reading 7 was added later on 2026-09-04 from an independent compilation; see its provenance field.",
+ "_provenance_warning": "This is a secondary compilation by a partisan of one particular claimed solution. Character-level fidelity to each original publication has NOT been independently verified against the primary sources (Sams 1970; Roberts; Gaffney; Schmeh/MTC3; Ernst). Egress restrictions in this session blocked access to those primaries. Treat the individual readings as approximately-attributed, and the aggregate disagreement statistics as a lower bound on true transcription uncertainty.",
+ "transcriptions": [
+  {
+   "id": 0,
+   "label": "Williams",
+   "kind": "transcription",
+   "lines": [
+    "AIBJQCUJTDKEWXENEECIIEXSDSVKL",
+    "UEUCUJTHJBEEBCVWUEKECFLWXSTTSKL",
+    "BLCFLBXFMVLBECFWLXJIVLCJXSJ"
+   ]
+  },
+  {
+   "id": 1,
+   "label": "Schmeh (MTC3)",
+   "kind": "transcription",
+   "lines": [
+    "ABCDEFGDHAIJKLJMJJFBBJNGOGNIP",
+    "GJGFQDHRSCJJCFNKGJIJFTPKLQHHQIP",
+    "CPFUPCLUUNPCJFUKPNDBNPFDLED"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Roberts",
+   "kind": "decrypt",
+   "lines": [
+    "PSNOWDROCPBEIGEWEEDSSETINITBU",
+    "REIDIOCYONEENDTIREBEDLUIGICCIBU",
+    "NUDLVNGLYTUNEDLIUTOSTUDOTWO"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Gaffney",
+   "kind": "decrypt",
+   "lines": [
+    "BLTACEIARWUNISNFNNELLHSYWYDUO",
+    "INIEYARQATNNTEDMINUNEHOMSYRRYUO",
+    "TOEHOTSHGDOTNEHMOSALDOEADYA"
+   ]
+  },
+  {
+   "id": 4,
+   "label": "ruudoleo",
+   "kind": "decrypt",
+   "lines": [
+    "LYMTCNATFKUQHDQQQNYYIEBKBEUZ",
+    "AQANATFOTMQQMNEHAQUQNIZHEBFFBUZ",
+    "MZNIZMDIREZMQNIHZETYEZNTECT"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Ernst",
+   "kind": "transcription",
+   "lines": [
+    "BPECAHTCKYFRQDRIRRHPPRDXYXGFS",
+    "TRTHTCKMCERREHGQTRFRHWSQDXKKXFS",
+    "ESHUSEDUWGSERHWQSDCPGSHCDXC"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Robert S.",
+   "kind": "transcription",
+   "lines": [
+    "BPECAHTCKYFRQDRIRRHPPRDXYXGFS",
+    "TRTHTCKLCERREHGQTRFRHUSQDXKKXFS",
+    "ESHUSEDUWGSERHUQSDCPGSHCDXC"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "CipherMysteries/AZdecrypt",
+   "kind": "transcription",
+   "lines": [
+    "KTMSCIBSFKUPHEPQPPITTPEGOGAUX",
+    "BPBIGSFNSMPPMIAHBPUPIJXHEGFFG",
+    "UXMXIJXMEJRAXMPIJHXASTAXISAGS"
+   ],
+   "provenance": "benchmark/unsolved/sources/dorabella/ in the public GitHub repository matthewdgreen/cipher_benchmark (retrieved 2026-09-04), which cites ciphermysteries.com and cross-checks against the AZdecrypt unsolved-cipher set. Independent of the ShadowWolf387 compilation that supplied readings 0-6. NOTE: this file's line breaks are 29/29/29, against the 29/31/27 of every other reading; that is very likely a reformatting artefact of the AZdecrypt letter-surrogate encoding rather than a claim about the manuscript, so the line breaks here are NOT evidence and only the 87-symbol sequence is used."
+  }
+ ]
+}

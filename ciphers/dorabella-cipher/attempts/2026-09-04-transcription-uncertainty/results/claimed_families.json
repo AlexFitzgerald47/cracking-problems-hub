@@ -1,0 +1,468 @@
+{
+ "clustering_threshold_hamming": 8,
+ "claimed_score": -4.742583111693744,
+ "claimed_plaintext": "pbsaftdalyrencemeetbbecoyouridedtdalwaseestunderethincollorisithischguisethnicabuitacoa",
+ "n_optima_at_or_above_claimed": 23,
+ "n_families": 13,
+ "families": [
+  {
+   "score": -4.689147481986573,
+   "n_members": 5,
+   "representative": "plsaftdamyrenceweetllecoyouridedtdambaseestunderethincommorisithischquisethnicaluitacoa"
+  },
+  {
+   "score": -4.702367105398468,
+   "n_members": 1,
+   "representative": "dwrontcomplaysagaatwwasupublecactcomforaartbycalatheysummulerethershiberathyesowbetosuo"
+  },
+  {
+   "score": -4.705767105477962,
+   "n_members": 4,
+   "representative": "kmnoutsofclerdebeetmmediciplasestsofgoneentprselethardiffilanathandhypanethradompatodio"
+  },
+  {
+   "score": -4.71000782601196,
+   "n_members": 1,
+   "representative": "gbroutcondmaysawaatbbasidilmecactconforaartlycamatheysinnimerethershplerathyesobletosio"
+  },
+  {
+   "score": -4.712799369421908,
+   "n_members": 2,
+   "representative": "kgsaytdalfrencemeetggecofouridedtdalwaseestunderethincollorisithischquisethnicaguitacoa"
+  },
+  {
+   "score": -4.716839788570058,
+   "n_members": 2,
+   "representative": "kwroutcondlaysagaatwwasidiblecactconforaartbycalatheysinnilerethershmberathyesowbetosio"
+  },
+  {
+   "score": -4.7256410202679495,
+   "n_members": 1,
+   "representative": "bmnoutsofclardayaatmmadiciplesastsofwonaantprsalatherdiffilenethendhxpenathredompetodio"
+  },
+  {
+   "score": -4.729951374730412,
+   "n_members": 2,
+   "representative": "mplicsdifyrenteveesppetoyouradedsdifwileelsundereshantofforalashalthqualeshnatipuasitoi"
+  },
+  {
+   "score": -4.730320336205299,
+   "n_members": 1,
+   "representative": "gfrontcomdlaysawaatffasidiblecactcomporaartbycalatheysimmilerethershuberathyesofbetosio"
+  },
+  {
+   "score": -4.73210473029193,
+   "n_members": 1,
+   "representative": "dwroutcomplaysagaatwwasipinlecactcomforaartnycalatheysimmilerethershknerathyesownetosio"
+  },
+  {
+   "score": -4.734012490724711,
+   "n_members": 1,
+   "representative": "gwrouncomplethebeenwwehipislacecncomforeernstcelendathimmilarandarhdysarendtahowsanohio"
+  },
+  {
+   "score": -4.734692875212951,
+   "n_members": 1,
+   "representative": "kgrouncomplestebeenggethphilacecncomforeerniscelendasthmmhlarandartdyiarendsatogianotho"
+  },
+  {
+   "score": -4.740476840010338,
+   "n_members": 1,
+   "representative": "ksraltdamyvenceweetssecoyouvidedtdampareertundevethincommovirithirchquirethnicasuitacoa"
+  }
+ ],
+ "family_distances": [
+  {
+   "a": 0,
+   "b": 1,
+   "hamming": 71
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "hamming": 64
+  },
+  {
+   "a": 0,
+   "b": 3,
+   "hamming": 74
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "hamming": 14
+  },
+  {
+   "a": 0,
+   "b": 5,
+   "hamming": 75
+  },
+  {
+   "a": 0,
+   "b": 6,
+   "hamming": 75
+  },
+  {
+   "a": 0,
+   "b": 7,
+   "hamming": 47
+  },
+  {
+   "a": 0,
+   "b": 8,
+   "hamming": 70
+  },
+  {
+   "a": 0,
+   "b": 9,
+   "hamming": 71
+  },
+  {
+   "a": 0,
+   "b": 10,
+   "hamming": 72
+  },
+  {
+   "a": 0,
+   "b": 11,
+   "hamming": 72
+  },
+  {
+   "a": 0,
+   "b": 12,
+   "hamming": 17
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "hamming": 64
+  },
+  {
+   "a": 1,
+   "b": 3,
+   "hamming": 27
+  },
+  {
+   "a": 1,
+   "b": 4,
+   "hamming": 75
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "hamming": 14
+  },
+  {
+   "a": 1,
+   "b": 6,
+   "hamming": 45
+  },
+  {
+   "a": 1,
+   "b": 7,
+   "hamming": 83
+  },
+  {
+   "a": 1,
+   "b": 8,
+   "hamming": 15
+  },
+  {
+   "a": 1,
+   "b": 9,
+   "hamming": 11
+  },
+  {
+   "a": 1,
+   "b": 10,
+   "hamming": 54
+  },
+  {
+   "a": 1,
+   "b": 11,
+   "hamming": 58
+  },
+  {
+   "a": 1,
+   "b": 12,
+   "hamming": 65
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "hamming": 62
+  },
+  {
+   "a": 2,
+   "b": 4,
+   "hamming": 63
+  },
+  {
+   "a": 2,
+   "b": 5,
+   "hamming": 57
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "hamming": 23
+  },
+  {
+   "a": 2,
+   "b": 7,
+   "hamming": 60
+  },
+  {
+   "a": 2,
+   "b": 8,
+   "hamming": 59
+  },
+  {
+   "a": 2,
+   "b": 9,
+   "hamming": 58
+  },
+  {
+   "a": 2,
+   "b": 10,
+   "hamming": 49
+  },
+  {
+   "a": 2,
+   "b": 11,
+   "hamming": 53
+  },
+  {
+   "a": 2,
+   "b": 12,
+   "hamming": 63
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "hamming": 75
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "hamming": 15
+  },
+  {
+   "a": 3,
+   "b": 6,
+   "hamming": 43
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "hamming": 83
+  },
+  {
+   "a": 3,
+   "b": 8,
+   "hamming": 19
+  },
+  {
+   "a": 3,
+   "b": 9,
+   "hamming": 21
+  },
+  {
+   "a": 3,
+   "b": 10,
+   "hamming": 61
+  },
+  {
+   "a": 3,
+   "b": 11,
+   "hamming": 67
+  },
+  {
+   "a": 3,
+   "b": 12,
+   "hamming": 68
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "hamming": 74
+  },
+  {
+   "a": 4,
+   "b": 6,
+   "hamming": 74
+  },
+  {
+   "a": 4,
+   "b": 7,
+   "hamming": 48
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "hamming": 75
+  },
+  {
+   "a": 4,
+   "b": 9,
+   "hamming": 75
+  },
+  {
+   "a": 4,
+   "b": 10,
+   "hamming": 76
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "hamming": 71
+  },
+  {
+   "a": 4,
+   "b": 12,
+   "hamming": 23
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "hamming": 39
+  },
+  {
+   "a": 5,
+   "b": 7,
+   "hamming": 83
+  },
+  {
+   "a": 5,
+   "b": 8,
+   "hamming": 13
+  },
+  {
+   "a": 5,
+   "b": 9,
+   "hamming": 12
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "hamming": 54
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "hamming": 62
+  },
+  {
+   "a": 5,
+   "b": 12,
+   "hamming": 68
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "hamming": 78
+  },
+  {
+   "a": 6,
+   "b": 8,
+   "hamming": 40
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "hamming": 39
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "hamming": 70
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "hamming": 75
+  },
+  {
+   "a": 6,
+   "b": 12,
+   "hamming": 75
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "hamming": 83
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "hamming": 83
+  },
+  {
+   "a": 7,
+   "b": 10,
+   "hamming": 68
+  },
+  {
+   "a": 7,
+   "b": 11,
+   "hamming": 62
+  },
+  {
+   "a": 7,
+   "b": 12,
+   "hamming": 51
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "hamming": 15
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "hamming": 55
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "hamming": 61
+  },
+  {
+   "a": 8,
+   "b": 12,
+   "hamming": 63
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "hamming": 48
+  },
+  {
+   "a": 9,
+   "b": 11,
+   "hamming": 57
+  },
+  {
+   "a": 9,
+   "b": 12,
+   "hamming": 65
+  },
+  {
+   "a": 10,
+   "b": 11,
+   "hamming": 24
+  },
+  {
+   "a": 10,
+   "b": 12,
+   "hamming": 66
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "hamming": 65
+  }
+ ],
+ "min_distance_between_families": 11,
+ "median_distance_between_families": 62
+}

@@ -2,6 +2,357 @@
 
 ---
 
+## 2026-09-04 (closing) – eighth reading, and the problem parked
+
+### What was attempted
+
+A final check before closing: an eighth reading was found in
+`matthewdgreen/cipher_benchmark` (`benchmark/unsolved/sources/dorabella/`,
+citing ciphermysteries.com and cross-checked against the AZdecrypt unsolved set).
+It comes through a compilation lineage entirely independent of the
+ShadowWolf387 sheet that supplied readings 0–6, so it is a real fourth witness.
+
+### Results / findings
+
+**7. The instability is localised, and it is the same 36 positions every time.**
+
+The eighth reading is a *ninth distinct partition* — it matches none of the seven
+(pairwise agreement 0.9832–0.9928). It does not resolve the disagreement. But
+adding it changes the unstable set not at all:
+
+| independent readings | unstable positions |
+|---|---|
+| Williams, Schmeh, Ernst | 36 of 87 |
+| + CipherMysteries/AZdecrypt | **36 of 87 — the identical set** |
+
+So **51 of the 87 positions are agreed by all four independent readings**, and
+the disagreement is not diffuse noise. It is concentrated on a fixed, reproducible
+list of 36 hard positions, of which eight are the real trouble spots (positions
+22, 23, 25, 33, 37, 77, 84, 85 — each contradicted about five or more other
+positions). Those eight are almost certainly specific glyphs that are genuinely
+ambiguous in Elgar's hand at this reproduction size.
+
+That is a much more useful statement than "the readings disagree at 40% of
+positions". It means a future agent with a decent scan does not need to
+re-transcribe the note. They need to adjudicate 36 named positions, and mostly
+just eight of them.
+
+### Status: CLOSED – BLOCKED
+
+Parked, not abandoned. Further cryptanalysis has a known-zero expected return
+until the source improves. **Reopen when either** (a) a scan of the original at
+300 dpi or better becomes available, **or** (b) the 36 positions listed in
+`attempts/2026-09-04-transcription-uncertainty/results/extras_results.json`
+are adjudicated against a primary source. All machinery is in place to re-run
+in minutes once either arrives.
+
+### Artefacts produced
+
+- `attempts/.../data/transcriptions.json` — extended to eight readings
+- `attempts/.../results/extras_results.json` — regenerated over four independent readings
+
+---
+
+## 2026-09-04 (continued) – facsimile acquired and measured
+
+### What was attempted
+
+A facsimile of the original note was supplied and committed to
+`sources/dorabella-facsimile.png` (the Wikimedia Commons copy,
+`commons/7/73/Dorabella-cipher-image.png`; public domain — the note dates from
+1897 and Elgar died in 1934). The intention was to produce an eighth reading
+with known provenance, made blind to the existing claimed solutions, and so to
+break the transcription deadlock identified earlier today.
+
+### Results / findings
+
+**6. The facsimile everyone works from cannot settle the question. It is too
+coarse.**
+
+Measured (`src/facsimile.py`, results in `results/facsimile_results.json`):
+
+| quantity | value |
+|---|---|
+| image size | 433 × 161 px |
+| text bands recovered | 4 — three cipher lines plus the dated signature |
+| cipher line bands (rows) | 1–32, 37–60, 77–99 |
+| line spans | 420, 426, 424 px |
+| implied pitch at the claimed 29/31/27 glyphs | 14.5, 13.7, 15.7 px per glyph |
+| column-profile autocorrelation peak | lag 11–13 px, **r = 0.21–0.24** |
+| count implied by that peak | 38.2, 32.8, 35.3 glyphs |
+
+The line structure is solid: three cipher lines and a fourth band holding the
+signature and date are cleanly separable, corroborating the 3-line format and
+the 14 July 1897 dating.
+
+Glyph boundaries are not recoverable. At ~14.6 px per glyph the ink runs
+correspond to individual *arcs*, not to whole symbols, and arcs merge freely
+across symbol boundaries — projection segmentation returns 28/27/23 ink runs
+against 29/31/27 claimed glyphs, while width-based and valley-splitting
+estimates overshoot to 35–42. The autocorrelation of the column profile shows
+only a weak, broad periodicity that cannot discriminate 29 glyphs from 35 on a
+line.
+
+**No character-level transcription was attempted from this image, and none
+should be.** At this resolution the eight orientations are 45° apart across
+roughly fourteen pixels. Producing an 87-symbol reading from it would have meant
+inventing data and presenting it as a provenanced eighth witness — precisely the
+failure this attempt criticised in the existing compilation.
+
+**What this reframes.** The 36-of-87 instability found earlier is not
+carelessness by previous transcribers. Every published reading appears to derive
+from this same small image, and at 14.6 px per glyph, disagreement at roughly
+40% of positions is about what one should expect. The transcription problem is
+therefore not a reading problem to be solved by care or by cleverness. It is a
+*resolution* problem, and it is fixed by a better scan or not at all.
+
+### Failures & dead ends
+
+- The image could not be fetched from `upload.wikimedia.org` — blocked by this
+  environment's egress policy, as `en.wikipedia.org` was. It arrived only
+  because it was supplied directly. Committed to `sources/` so no future agent
+  is blocked the same way.
+- Projection segmentation, valley splitting and autocorrelation pitch estimation
+  were all tried and all failed to recover glyph boundaries. Recorded so nobody
+  repeats them on this image. They would likely work at 3–4× the resolution.
+- Whether 433 × 161 is the best available copy was **not** established — only
+  the file supplied could be measured. If a larger Commons original or another
+  scan exists, this whole finding may be moot, and checking is cheap.
+
+### Artefacts produced
+
+- `sources/dorabella-facsimile.png` — the facsimile, now permanently in the repo
+- `attempts/2026-09-04-transcription-uncertainty/src/facsimile.py`
+- `attempts/2026-09-04-transcription-uncertainty/results/facsimile_results.json`
+
+---
+
+## 2026-09-04 – Claude (Opus 5), remote session
+
+### What was attempted
+
+Not a decipherment. The aim was to establish what a Dorabella decipherment of
+the monoalphabetic class would have to demonstrate, and whether that standard is
+reachable at 87 characters at all. Three questions:
+
+1. How much do the published readings of the ciphertext actually disagree?
+2. Do Dorabella's statistics distinguish it from English, as is often asserted?
+3. At n = 87, is the highest-scoring key the correct key?
+
+All figures below are reproducible from
+`attempts/2026-09-04-transcription-uncertainty/` with the recorded seeds.
+
+### Results / findings
+
+**1. There is no single Dorabella ciphertext, and the disagreement is large.**
+
+Seven published readings were compared. Because a monoalphabetic key is just a
+relabelling, the only meaningful content of a reading is its *partition* — which
+positions carry the same symbol — so all comparisons were made on the equality
+relation over the 3,741 position pairs, never on letter names. That also lets
+published *decrypts* be compared against transcriptions on equal terms.
+
+- The "Williams" and "Robert S." readings are **partition-identical**. They are
+  one reading, not two agreeing witnesses. The compilation they were drawn from
+  presents them as separate votes and concludes that four or more readings agree;
+  that count is inflated by at least one.
+- Only three of the seven are distinct readings of the *transcription* kind:
+  Williams, Schmeh (MTC3), Ernst.
+- Among those three, **36 of the 87 positions are unstable** — the readings
+  disagree about whether that position matches at least one other position.
+- Pairwise agreement runs from 0.9858 to 0.9984. That looks reassuring until it
+  is converted back: 1.4% of 3,741 pairs is 53 contradicted equalities.
+- A majority vote over the three does not even produce a coherent partition. The
+  majority equality relation is not transitive; forcing it into a partition
+  required 5 merges that a majority had voted against.
+
+**2. Dorabella's descriptive statistics do *not* mark it as un-English. The
+tests are simply powerless at this length.**
+
+Against 20,000 draws of 87 spaceless English characters:
+
+| statistic | Dorabella (Williams) | English null | percentile |
+|---|---|---|---|
+| index of coincidence | 0.0585 | 0.0637 ± 0.0066 | 0.22 |
+| distinct symbols | 20 | 20.22 ± 1.34 | 0.29 |
+| doubled letters | 4 | 2.81 ± 1.60 | 0.70 |
+| repeated bigram types | 16 | 13.77 ± 2.58 | 0.75 |
+| longest repeat | 4 | 3.34 ± 1.21 | 0.61 |
+
+Not one of these is even close to significant. The frequently repeated claim
+that Dorabella's letter statistics are un-English is not supported by these
+statistics at this length; the English null is far too wide for them to say
+anything. The one apparent exception, Roberts' reading at 17 distinct symbols
+(p = 0.004) with an IC of 0.0660, is an artefact of his key mapping several
+distinct cipher symbols onto the same plaintext letter. That inflates the IC
+towards English. It is a property of his key, not of the cipher.
+
+No short polyalphabetic period is detectable either: the periodic index of
+coincidence for periods 2–10 never rises above the English null (the best,
+period 8, gives 0.0674 against a null of 0.0646 ± 0.0136). The null's spread
+grows with period, so this test is close to powerless for periods above about 4
+— this is weak absence of evidence, not evidence of absence.
+
+**3. Under a budget-matched search, Dorabella is neither English nor noise — it
+falls in the gap between them.**
+
+Hill-climb scores rise with search budget, so every text was given an identical
+budget of 500 restarts: Dorabella, 100 genuine English texts enciphered with
+known random keys, and 100 shuffles of Dorabella itself (same symbol
+frequencies, all sequential structure destroyed — the noise floor).
+
+| population | mean | sd | extremes |
+|---|---|---|---|
+| genuine English, enciphered | −4.2371 | 0.1297 | worst of 100: −4.5337 |
+| shuffles of Dorabella (noise) | −4.9117 | 0.0602 | best of 100: −4.7481 |
+
+At this budget the two populations do not overlap at all: the worst English text
+scores −4.5337, the best shuffle −4.7481, leaving a clear gap between them.
+
+**Dorabella (Williams reading) scores −4.7100 — inside that gap.** It beats all
+100 shuffles, and is beaten by all 100 English texts. So there is genuine
+sequential structure in the cipher that an English quadgram model can exploit;
+there is markedly less of it than a monoalphabetic English cipher of the same
+length would show.
+
+And the conclusion depends on which reading you use:
+
+| reading | best score | above % of English | p vs noise |
+|---|---|---|---|
+| Roberts (decrypt) | −4.6626 | 0% | 0.00 |
+| Robert S. | −4.7058 | 0% | 0.00 |
+| Williams | −4.7100 | 0% | 0.00 |
+| Gaffney (decrypt) | −4.7264 | 0% | 0.00 |
+| Ernst | −4.7296 | 0% | 0.00 |
+| **Schmeh (MTC3)** | **−4.8387** | **0%** | **0.13** |
+
+On the Schmeh reading the cipher is not distinguishable from noise at all. Two
+transcriptions of the same 87 characters, and one supports "there is structure
+here" while the other does not. This is finding 1 turning into a practical
+problem rather than a bookkeeping one.
+
+**3b. That gap does *not* establish that Dorabella is un-English. Transcription
+error alone can account for it.**
+
+The obvious innocent explanation for finding 3 is that Dorabella *is* an English
+monoalphabetic cipher whose available readings are corrupted enough to drag its
+score down. Tested directly: take genuine English, encipher it with a known key,
+misread a fraction *q* of the ciphertext symbols, and re-run the same
+500-restart search.
+
+| corruption rate | mean score | sd | share scoring at or below Dorabella (−4.7100) |
+|---|---|---|---|
+| q = 5% | −4.4564 | 0.1694 | **11.7%** |
+| q = 10% | −4.6115 | 0.1720 | **31.7%** |
+
+The two closest distinct readings, Williams and Ernst, already differ at 2 of 87
+positions (≈2%); the spread across all three distinct readings is far wider than
+that. A 5–10% effective misreading rate is therefore entirely plausible — and at
+that rate, genuine English lands at or below Dorabella's score between one time
+in eight and one time in three.
+
+**So the honest verdict is not "Dorabella is not English." It is that the
+question cannot presently be answered, and the reason is transcription
+uncertainty rather than any deep property of the cipher.** Finding 1 is not
+bookkeeping; it is the binding constraint on the whole problem. Until someone
+produces a transcription that can be trusted to the character, no amount of
+cryptanalytic effort can distinguish "not a monoalphabetic English cipher" from
+"a monoalphabetic English cipher we have misread."
+
+
+**4. At 87 characters, the top-scoring key is frequently not the correct key.**
+
+150 genuine English texts of 87 characters were enciphered with a *known* random
+key and attacked with 200 restarts each — the question nobody asks of a claimed
+Dorabella solution, because for Dorabella the answer is unknowable:
+
+| quantity | value |
+|---|---|
+| exact key recovered | 36.7% |
+| median character accuracy of recovered plaintext | 98.9% |
+| runs recovering >90% of characters | 88.0% |
+| runs where a **wrong** key outscored the true key | **46.7%** |
+
+The method is not useless — on genuine English it usually lands within a few
+characters of the truth. But the exact top-scoring key is close to a coin flip.
+Any Dorabella argument of the form "this key scores highest, therefore it is the
+message" is resting on that coin flip.
+
+**5. The best published monoalphabetic claim is neither the best-scoring key nor
+a lonely one.**
+
+The claimed key from `ShadowWolf387/DorabellaCipher` (`PSTYEHKWBARIGMXJFVOLDUNCZQ`,
+verified here to reproduce that repository's published plaintext exactly from the
+Williams reading) scores −4.7426 per quadgram — around the 10th percentile of
+genuine English, which is a poor but not impossible fit. A 4,000-restart search
+on the same reading explored 3,906 distinct local optima and found:
+
+- **23 distinct keys scoring at or above the claim**, forming **13 mutually
+  different messages** (median pairwise Hamming distance 62 of 87 characters);
+- a top optimum at −4.6891 that beats the claim, and which is a near-variant of
+  it, differing only in the assignment of rare symbols. The claimed key is not
+  even optimal within its own family.
+
+That repository's stated evidence — that 1.5 million trials found nothing better
+— does not survive. This is not a refutation of the *reading* (the case for it
+rests on Elgar's idiosyncratic spelling, which is outside statistics), but it
+removes the statistical support offered for it. Thirteen unrelated messages clear
+the same bar, and each is exactly as "readable" once the same interpretive licence
+is applied.
+
+### Failures & dead ends
+
+- **No primary-source transcription was obtained.** This session's network egress
+  reached only GitHub and PyPI; Wikipedia, ciphermysteries.com, dcode, arXiv,
+  the HistoCrypt proceedings and CELT were all blocked. The seven readings come
+  from a secondary compilation assembled by a partisan of one claimed solution,
+  and their fidelity to the original publications is *not* independently verified.
+  Every number above inherits that weakness.
+- **The HistoCrypt 2021 paper *Experimental Analysis of the Dorabella Cipher with
+  Statistical Language Models* could not be read.** Findings 2 and 3 plausibly
+  overlap it. Nothing here should be claimed as novel until someone checks.
+- **The arc-count / orientation coding of each symbol could not be obtained**, so
+  the most interesting structural hypothesis — that the 3 arc counts and the 8
+  orientations are two separate channels (e.g. one carrying vowels) — is untested.
+- The English reference model had to be *generated* from a frequency-weighted
+  lexicon rather than drawn from a corpus. It validates well (IC 0.0646 against
+  the textbook 0.0667; RMS letter-frequency error 0.32 percentage points) but
+  under-represents H (5.03% against 6.09%), a web-versus-literary register effect.
+  Conclusions that turn on H should be treated with suspicion.
+- **A methodological error worth recording:** the first solver run used 40
+  restarts and reported Dorabella at −4.7970, apparently the best available. The
+  published claimed key scores −4.7426, and a 4,000-restart run reached −4.6891.
+  Search budget dominates these scores, and comparisons across different budgets
+  are meaningless. Finding 3 was re-run with every text on an identical budget
+  after this was noticed; the earlier unmatched numbers are retained in
+  `results/raw_results.json` for the record.
+
+### Artefacts produced
+
+`attempts/2026-09-04-transcription-uncertainty/` —
+
+- `data/transcriptions.json` — seven readings with provenance and caveats
+- `src/lang.py` — English reference model and its validation
+- `src/dorabella.py` — canonicalisation, relabelling-invariant comparison, statistics
+- `src/solver.py` — quadgram hill climber
+- `src/experiments.py`, `src/power.py`, `src/matched.py`, `src/claimed.py`,
+  `src/families.py`, `src/extras.py` — the experiments
+- `src/report.py` → `results/summary_tables.md` — every table in one place
+- `results/*.json` — raw output with seeds
+
+### References consulted
+
+- `ShadowWolf387/DorabellaCipher` (GitHub, public; retrieved 2026-09-04) —
+  `Transcripts.pdf`, `Dorabella-SolutionPt2.pdf`, `Texts/`. Source of the seven
+  readings and of the claimed key tested in finding 5.
+- Search-result summaries only (full text unreachable): HistoCrypt 2021,
+  *Experimental Analysis of the Dorabella Cipher with Statistical Language
+  Models*; ACL SMP 2021 / arXiv:2509.17950, *Dorabella Cipher as Musical
+  Inspiration*; Sams (1970), reported as the foundational frequency and contact
+  analysis. **None of these were read.**
+
+---
+
 ## 2026-09-03 – Initial seed
 
 Problem folder created.
