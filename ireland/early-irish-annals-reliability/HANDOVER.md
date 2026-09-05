@@ -140,3 +140,47 @@ which confirmed AU 878's report of a lunar eclipse a fortnight before the solar
 one (total, 15 October 878, observable from Ireland in a fully dark sky). Item 2's
 "fifty-line addition" is done for umbral eclipses; extending
 `annal_records.csv` to the lunar notices is now cheap.
+
+### Amendment 2, same session — item 5 is closed, do not run it
+
+`analysis/deltat_power.py` prices experiment 5 and it fails. The geometry is
+exact: raising Δ*T* by *d* seconds moves an eclipse *d* seconds earlier in local
+apparent time while the unequal-hour boundaries stay put, so **one correct hour
+statement constrains Δ*T* to an interval exactly one unequal hour wide** — a
+median 4,333 s at Armagh across the 37 plausibly-recorded eclipses, i.e. ±2,167 s
+against a published 1σ of 15–50 s. Monte Carlo over intersections: **about 139
+correct statements** would be needed to match the published precision, and the
+corpus holds roughly twenty, not all of which state an hour.
+
+The brittleness is worse than the imprecision. The arithmetic assumes you know
+which contact each notice describes, and Result 1 shows you often do not. **One
+misassigned phase in sixteen empties the intersection in 94% of draws** — and a
+narrow surviving interval from a corpus with a bad assignment looks like a better
+result, not a worse one. That is the failure mode that manufactures confident
+nonsense.
+
+Use the hour statements the other way round, as Result 1 does: fix Δ*T* from the
+published curve and let it tell you which contact a notice describes. Full
+numbers in `analysis/RESULTS.md` §6 and `analysis/results/deltat_power.txt`.
+
+### New in this session — the lunar canon, and the asymmetry test it enables
+
+`analysis/find_lunar_eclipses.py` builds the lunar-eclipse canon with Irish
+visibility (Moon above the horizon *and* Sun below −6°, between the umbral
+contacts). Completeness checked the same way as the solar finder: **230 lunar
+eclipses for 1901–2000 against a published 229**, the difference being a single
+grazing case at penumbral magnitude 0.009 — a threshold convention, not a missed
+or invented eclipse.
+
+**The experiment this opens, and which needs the text.** A lunar eclipse is a far
+more *available* event than a solar one: visible from the whole night hemisphere
+rather than a narrow track, lasting hours rather than minutes, needing no accident
+of geography. So compare the two recording rates directly. If the annals record
+solar eclipses at a much higher rate than lunar ones **despite lunar eclipses
+being commoner and easier to see**, the tradition was selecting for portent value
+rather than logging the sky — which bears directly on McCarthy & Breen's
+eschatological-motive argument, from the opposite direction to theirs. If the
+rates are similar, it was logging. Both denominators now exist:
+`analysis/results/eclipse_canon.csv` and `lunar_eclipse_canon.csv`.
+
+AU 878 already records one of each, a fortnight apart, and gets both right.
