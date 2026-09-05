@@ -9,7 +9,7 @@
 |---------|--------|--------|-------|
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – major unsolved | Highest-profile target |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open, but as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family (incl. Beaufort) now eliminated from the public cribs. See `attempts/2026-09-04-crib-constraints/` |
-| Beale Ciphers | `ciphers/beale-ciphers/` | Contested / partially solved | Cipher 2 claimed solved; 1 & 3 open |
+| Beale Ciphers | `ciphers/beale-ciphers/` | **Split 2026-09-04** – B1 effectively settled, B3 open | B1's alphabetical runs are not chance (p < 10⁻⁵ against a permutation null); it was built with the Declaration in hand. B3 shows no such structure (p = 0.85) and is the genuinely open one. See `attempts/2026-09-04-gillogly-null/` |
 | Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | 87 chars. The monoalphabetic-English fit is poor, but simulated transcription error alone accounts for the shortfall — blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433x161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions. No published claimed solution survives a budget-matched search. See `attempts/2026-09-04-transcription-uncertainty/` |
 
 ### Historical Texts
@@ -32,6 +32,11 @@
 
 ## High-Priority Threads
 - Voynich Manuscript (statistical, linguistic, and codicological approaches still fertile)
+- **Beale 3 — the genuinely open one.** The hoax evidence that settles B1 does not
+  touch B3, and B3 does not decode to English with the Declaration. Needs a
+  systematic search over candidate 19th-century key texts, with a null attached.
+  Blocked first on a two-token transcription discrepancy to be settled against
+  the 1885 pamphlet.
 - **Kryptos K4 — keyed transpositions, and lobbying for a third crib.** Single-stage
   families and simple-transposition composites are both now exhausted from the public
   cribs (no signal above chance across 12,901 hypotheses). Two live threads remain:
