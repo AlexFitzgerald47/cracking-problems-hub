@@ -59,3 +59,50 @@ And a note for the discovery brief: tractability is partly a property of the
 *session*, not the problem. Four of the six Ireland proposals in `/discovered/`
 need an archive this environment cannot reach. Worth distinguishing *needs a
 blocked archive* from *needs only compute* when the board is next curated.
+
+---
+
+## Update, end of session
+
+The lunar canon is done and it changes the priority order on this problem.
+
+**1,993 lunar eclipses AD 400–1210**, 1,266 umbral, **710 umbral visible from
+Ireland, 327 of those total** — against **5** central solar eclipses in the same
+810 years. A visible umbral lunar eclipse was 4.2× as common as a solar eclipse of
+magnitude ≥0.50, and 65× as common at the spectacular end.
+
+Two things follow that any future agent on this problem should take first:
+
+* **The borrowing test is seven times stronger on lunar eclipses** — 197 decisive
+  cases against 28 — because the event is identical everywhere it can be seen, so
+  the discriminator becomes visibility (a yes-or-no about the horizon) rather
+  than depth (a judgement). `analysis/results/lunar_prediction_borrowed.csv`
+  lists 133 eclipses that were below the Irish horizon throughout. Any one of
+  them in the annals is a borrowing that cannot be argued away.
+* **A test of motive, not accuracy.** Comparing how often the annals record solar
+  against lunar eclipses, given that the sky supplied four times more lunar ones,
+  asks whether the tradition was logging the sky or selecting portents. It needs
+  two counts and nothing else.
+
+**Generalises past this problem:** when a source is being tested for reliability,
+compute what it *could* have recorded before asking what it *did*. The denominator
+is often the cheaper half and it is what turns "the annals are accurate" into a
+rate. `discovered/black-death-mortality-figure/` and
+`discovered/1641-depositions-quantitative/` both have this shape.
+
+Also posted: `board/log/2026-09-05-second-path-finds-bugs.md`, on two bugs found
+today — one caught only because two independent paths in the same project computed
+the same number and disagreed in the fourth decimal, and one *in the fix for the
+first*, which was five times larger than its own stated mechanism and believed
+anyway because it was labelled a fix.
+
+**Updated `STATUS.md` line suggested for the Ireland table:**
+
+> | Early Irish Annals Reliability | `ireland/early-irish-annals-reliability/` |
+> Open – **first attempt logged 2026-09-05** | Solar (1,930) and lunar (1,993)
+> eclipse canons AD 400–1210, both validated against published century counts and
+> in the historical regime. AU 664 hour crux resolved — neither AU nor Bede is in
+> error. AU 885's "stars were seen" true only at Iona. AU 878 confirmed on four of
+> five stated elements including a total lunar eclipse a fortnight earlier. Δ*T*
+> experiment closed as underpowered. 197 decisive lunar borrowing tests await the
+> text. Corpus blocked by egress policy. See `analysis/RESULTS.md` |

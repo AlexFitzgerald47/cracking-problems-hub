@@ -184,3 +184,85 @@ rates are similar, it was logging. Both denominators now exist:
 `analysis/results/eclipse_canon.csv` and `lunar_eclipse_canon.csv`.
 
 AU 878 already records one of each, a fortnight apart, and gets both right.
+
+---
+
+## 2026-09-05 (end of session) — consolidated state of play
+
+Everything above is kept as written, including the two items this session
+amended. This section supersedes the *ordering* of the earlier list, not its
+content.
+
+### What exists now
+
+| Artefact | What it is |
+|---|---|
+| `analysis/results/eclipse_canon.csv` | 1,930 solar eclipses AD 400–1210, local circumstances at 8 sites, Δ*T* grid |
+| `analysis/results/lunar_eclipse_canon.csv` | 1,993 lunar eclipses, 1,266 umbral, with Irish observability |
+| `analysis/results/observable_sky_events.csv` | 881 events an Irish observer could actually have seen, one dated list |
+| `analysis/results/lunar_prediction_borrowed.csv` | **133 eclipses below the Irish horizon throughout** — the strongest test on the board |
+| `analysis/results/lunar_prediction_irish.csv` | 64 visible from Ireland and not the Mediterranean |
+| `analysis/results/prediction_borrowed.csv` / `prediction_irish.csv` | the solar equivalents, 17 and 11 |
+| `analysis/results/ireland_deep_eclipses.csv` | the 37 solar eclipses at Irish magnitude ≥0.90 |
+| `analysis/results/delta_t_stephenson2016.csv` | Δ*T* AD 300–1310 with 1σ |
+
+Both finders are checked against published century counts: **228 solar for
+1901–2000, exactly NASA's figure**, and **230 lunar against a published 229**. The
+engine is additionally checked in the historical regime — four attested medieval
+eclipses at Δ*T* 1,088–4,074 s, all passing (`validate_historical.py`).
+
+### Do these, in this order
+
+**1. Clear the verification debt.** Unchanged and still first.
+`analysis/annal_records.csv` holds seven notices whose wording is *search-level
+only*. Everything interesting in Results 1 and 2 rests on it.
+
+**2. Run the lunar borrowing test.** `lunar_prediction_borrowed.csv`, 133
+eclipses. Any one of them in the annals is a borrowing that cannot be argued away:
+the Moon was below the Irish horizon for the whole umbral phase. **197 decisive
+cases against the solar test's 28** — this is now the highest-yield thing on the
+problem, and it is a lookup, not an analysis.
+
+**3. Count solar against lunar notices — the motive test.** The sky supplied
+**710** visible umbral lunar eclipses and **171** solar eclipses of magnitude
+≥0.50; at the spectacular end, **327 total lunar against 5 central solar**. If the
+annals record solar at anything like the lunar rate, the tradition selected for
+portent value rather than logging the sky. This is a test of *why* the records
+exist, it approaches McCarthy & Breen's eschatological argument from the side they
+did not use, and it needs nothing but two counts.
+
+**4. Check the 1133 terminus.** Five eclipses at ≥0.90 over Ireland *after* 1133,
+including **1185-05-01 at 0.998**. If the record stops at 1133, the cause is
+human, not astronomical. One grep for 1140, 1147, 1180, 1185, 1191; **1185 is
+decisive**.
+
+**5. Extend `annal_records.csv` to the full 442–1133 corpus**, lunar notices
+included — `record_audit.py` now handles both.
+
+**6. Settle the 878 track.** This engine puts the central line over Ulster
+(Armagh 1.025, Bangor 1.025) against a popular account placing it in northern
+Scotland. Needs an authoritative path map, which this session could not reach. It
+matters: if 878 was total over Armagh, the annalist watched a total eclipse, and
+that notice — unlike AU 885 — does not mention stars.
+
+**7. Site discrimination — corroboration only.** Amendment 1 above prices it: 13
+usable eclipses in 810 years. AU 885 is one of them and is worth more than the
+test in general.
+
+**Do not run experiment 5** (Δ*T* from hour statements). Amendment 2 prices it and
+it fails by two orders of magnitude. RESULTS.md §6 has the arithmetic.
+
+### Traps, all paid for in this session
+
+* Use `astro.delta_t()`, never the 2004 parabola (wrong by 481 s at AD 1000).
+* The magnitude of a **central** eclipse is the ratio of apparent diameters.
+* **Peak-finding must keep the Sun above the horizon.** A refinement that
+  optimises magnitude alone walks past sunset and manufactures totality; it nearly
+  promoted a 0.945 partial to a 1.000 central eclipse over Clonmacnoise.
+  `validate_astro.py` pins this with a regression check.
+* Canon magnitudes come from a grid and near-central eclipses have a **cusp**, not
+  a peak. `refine_canon_peaks.py` corrects the columns that matter; the
+  `*_over_dt` columns are deliberately left un-refined and are documented as such.
+* Two tables in RESULTS.md use different site sets — §2 is best-of-three, §4/§7
+  best-of-four including Bangor. Both are right; check which you are quoting.
+* The five-of-five hit rate in Result 2 is partly circular.
