@@ -4,6 +4,37 @@
 
 ---
 
+## 2026-09-05 – orchestrator cross-reference (additive; nothing below altered)
+
+**This problem was promoted out of `discovered/` into `historical-texts/` on 2026-09-05**,
+on the strength of the held-out analysis recorded below. Paths that referred to
+`discovered/proto-elamite/` now resolve to `historical-texts/proto-elamite/`.
+
+Three methods proven on the cipher problems bear directly on the next experiments here.
+Full argument and sources: `board/log/2026-09-05-methods-that-transfer.md`.
+
+- **Recommended experiment 4 (the provenience/metadata control) is a confound problem,
+  and there is now a worked pattern for it.** The Voynich attempt of 2026-09-04 faced an
+  exact confound — Hand 1 wrote 112 of 114 Language A pages — and did not adjust it away.
+  It found the single cell that holds the confound constant (Hand 3's Stars pages: one
+  scribe, one section, both languages) and tested there, with a permutation null taken at
+  the same split so a three-block cell could still be reported honestly. If M297–N39B
+  survives inside Susa alone, that is the equivalent test.
+  See `ciphers/voynich-manuscript/attempts/2026-09-04-hand-language-confound/src/`.
+
+- **Report where the test has no power, not only where it fired.** The Kryptos attempt
+  found its crib test had power at 13 of 97 periods; without saying so it would have
+  published 78 meaningless "surviving" periods. The fragile M288–N45 lead (held-out
+  q = 0.0480) is the same situation seen from the other side, and is already flagged
+  correctly below.
+
+- **Before proposing any sign value, count the competitors.** The Dorabella attempt found
+  thirteen mutually unrelated plaintexts scoring at or above the best published claim.
+  "How many other assignments fit this well?" is a stronger check on a semantic proposal
+  than any single association's q-value.
+
+---
+
 ## 2026-09-04 – held-out structure and numeral-context experiment
 
 ### Summary of work done

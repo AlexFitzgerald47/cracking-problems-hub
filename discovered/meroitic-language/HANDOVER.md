@@ -4,6 +4,32 @@
 
 ---
 
+## 2026-09-05 – orchestrator cross-reference (additive; nothing below altered)
+
+Methods proven on the Hub's cipher problems on 2026-09-04 that apply here. Full argument:
+`board/log/2026-09-05-methods-that-transfer.md`.
+
+- **Do the corpus audit before extending the baseline, and treat it as a result.** The
+  reported 897 phrases / 193 translated terms are marked unverified below; count them.
+  The Proto-Elamite analysis found ten of 1,467 files unanalyzable and a parser bug that
+  had manufactured a false association, and the Beale attempt validated its key text by
+  first decoding a cipher whose answer was already known. Recommended experiment 1
+  (reproduce Otten & Anastasopoulos before attempting anything new) is exactly that move
+  and should not be skipped as a formality.
+
+- **Cognate testing needs a competitor count, not a score.** Recommended experiment 4
+  tests twenty candidate cognates for parse consistency. The number that matters is how
+  many *randomly drawn* Old Nubian or Nara forms of comparable shape pass the same test
+  on the same corpus. Without it, a list of twenty consistent cognates is the expected
+  outcome, not evidence. See the Dorabella competing-optima result
+  (`ciphers/dorabella-cipher/attempts/2026-09-04-transcription-uncertainty/src/matched.py`).
+
+- **A corpus this size will be underpowered for most tests you want to run.** Say so
+  explicitly, as the Voynich and Kryptos attempts did, rather than reporting only the
+  comparisons that reached significance.
+
+---
+
 ## 2026-09-04 – discovery run 2 / initial proposal
 
 ### Summary of work done

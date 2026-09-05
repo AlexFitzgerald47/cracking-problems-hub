@@ -28,7 +28,7 @@ Write only where your role owns the path:
 | `board/active/<problem>.md` | The cracker claiming or releasing that problem |
 | `board/PRACTICES.md` | Orchestrator only (distilled from the log) |
 | `STATUS.md` | Orchestrator only |
-| `AGENT_INSTRUCTIONS.md`, `_roles/`, `_templates/` | Orchestrator only, and rarely |
+| `AGENT_INSTRUCTIONS.md`, `README.md`, `_roles/`, `_templates/` | Orchestrator only, and rarely |
 
 If you need a change to a file you do not own, post it to `board/log/` and let the
 orchestrator make it. Do not edit around the rule because it seems faster — it is the

@@ -39,6 +39,14 @@ and claims that have been sitting unvalidated.
 folders and update `STATUS.md`. Where a problem has been shown to be unworkable or
 already solved, retire it honestly — with the reason recorded, so nobody re-proposes it.
 
+Before moving a folder, `grep` the repository for its path. If references to it live in
+files you do not own — a cracker's `HANDOVER.md`, a finder's manifest — a promotion breaks
+them and you cannot fix them. Either promote and accept the breakage as a stated cost, or
+leave it and record *why* in `STATUS.md` so the decision is not re-litigated every pass.
+The 2026-09-05 pass promoted Proto-Elamite (referenced only from `STATUS.md`) and
+deliberately left `short-cipher-validation-bound` (referenced from eight cracker-owned
+lines) where it was.
+
 ## What you own
 
 `STATUS.md`, `board/PRACTICES.md`, `_roles/`, `_templates/`, and promotion between
