@@ -249,3 +249,48 @@ abstract before the canon existed, and it falls exactly on the last central
 eclipse over Ireland in the window. Offered as a lead for whoever has the text:
 the Irish astronomical record may begin and end with the events that could not be
 missed.
+
+### Correction, same session — Result 1's second reading
+
+The completed canon showed that the 664 eclipse was **central at Jarrow (1.041)**
+and at Bangor (1.042); the track ran across Ulster and Northumbria. The first pass
+did not have that number and used it to argue, wrongly, that Bede's hour pointed
+away from Jarrow. It does not. Jarrow's **first contact falls in the tenth hour**
+at every Δ*T* tested, so "about the tenth hour" fits a Northumbrian observation of
+onset exactly as well as an Irish observation of maximum.
+
+Both readings survive; the astronomy cannot separate them, and `analysis/RESULTS.md`
+§1 now says so instead of asserting the first. What stands unchanged is the part
+that carries the weight: neither hour is an error, and the ninth hour cannot
+describe maximum anywhere in Ireland at any plausible Δ*T*.
+
+### New this session — historical-regime validation, closing a real gap
+
+`analysis/validate_astro.py` validates the ephemeris, the geometry and the
+magnitude convention against three modern eclipses. It cannot validate the Δ*T*
+**model**, because modern Δ*T* is measured rather than modelled — an error in the
+historical spline would leave those checks completely unmoved. Δ*T* is the
+dominant uncertainty in everything here: 300 s of it moves the shadow 125 km at
+Irish latitudes, the difference between a total and a deep partial eclipse at a
+given monastery.
+
+`analysis/validate_historical.py` closes that gap with four attested medieval
+eclipses whose *geography* is independently recorded, spanning Δ*T* from 1,088 to
+4,074 s. All four pass:
+
+| Eclipse | Δ*T* | Attested | Computed |
+|---|---|---|---|
+| 1133-08-02 | 1,110 s | total in Scotland | central at Iona (1.064) and Jarrow (1.065), not in the midlands |
+| 1140-03-20 | 1,088 s | total in the English Channel | nowhere central, deeper south than north |
+| 885-06-16 | 2,329 s | AU: stars were seen | central at Iona alone (1.077) |
+| 664-05-01 | 4,074 s | near-total across Ireland | ≥0.95 at every Irish site, central at Jarrow |
+
+**And one unresolved discrepancy, left standing rather than smoothed over.** For
+878-10-29 this engine puts the central line over Ulster — Armagh 1.025, Bangor
+1.025, against Iona 0.995 and Jarrow 0.989 — while a popular secondary account
+puts totality in central and northern Scotland, the opposite placement. The
+authoritative path maps are on blocked hosts and the secondary account is a news
+article, so this session could not adjudicate. It matters: if 878 was total over
+Armagh, the annalist watched a total eclipse, and the AU 878 notice — unlike
+AU 885 — does not mention stars. Either it was written where it was not total, or
+the two notices differ in style. A sharp question for whoever has the text.

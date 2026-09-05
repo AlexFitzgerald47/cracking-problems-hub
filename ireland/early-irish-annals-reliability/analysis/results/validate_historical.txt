@@ -1,0 +1,35 @@
+==========================================================================
+1133-08-02   Delta-T 1110.2 s
+  attested: Total in Scotland with about 4.5 minutes of totality; 'King Henry's eclipse', described across England. The Anglo-Saxon Chronicle reports stars visible at midday.
+  predicts: central at Iona and Jarrow; NOT central in the Irish midlands
+  computed: Iona 1.064  Armagh 0.963  Bangor 0.978  Clonmacnoise 0.925  Jarrow 1.065  Rome 0.880
+  RESULT:   OK
+==========================================================================
+1140-03-20   Delta-T 1087.8 s
+  attested: Total in the English Channel; the Anglo-Saxon Chronicle has candles lit to eat by, about noon.
+  predicts: no Irish or Northumbrian site central, and deeper in the south than the north (track passing south of Ireland)
+  computed: Iona 0.912  Armagh 0.958  Bangor 0.957  Clonmacnoise 0.977  Jarrow 0.970  Rome 0.652
+  RESULT:   OK
+==========================================================================
+0885-06-16   Delta-T 2328.8 s
+  attested: AU 885: an eclipse of the sun, and stars were seen in the sky. Stars require essentially totality.
+  predicts: central at Iona and nowhere else tested
+  computed: Iona 1.077  Armagh 0.971  Bangor 0.969  Clonmacnoise 0.959  Jarrow 0.945  Rome 0.477
+  RESULT:   OK
+==========================================================================
+0664-05-01   Delta-T 4074.3 s
+  attested: AU 664 and Bede HE III.27; near-total across Ireland, remembered vividly in Northumbria.
+  predicts: at least 0.95 at every Irish site, and central at Jarrow
+  computed: Iona 0.986  Armagh 0.994  Bangor 1.042  Clonmacnoise 0.962  Jarrow 1.041  Rome 0.739
+  RESULT:   OK
+==========================================================================
+
+== an unresolved discrepancy, recorded rather than smoothed over ==
+878-10-29. This engine puts the central line over Ulster: Armagh 1.025
+and Bangor 1.025 are central, while Iona (0.995) and Jarrow (0.989) are not.
+A popular secondary account says the eclipse was total in central and
+northern Scotland and merely deep in Ireland -- the opposite placement.
+This session could not adjudicate: the authoritative path maps are on
+hosts the egress policy blocks, and the secondary account is a news
+article, not a catalogue.
+

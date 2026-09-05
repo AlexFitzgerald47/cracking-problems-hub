@@ -80,10 +80,31 @@ ninth-hour/first-contact identification holds for Δ*T* ≥ 3834 s at Iona and
 **At Armagh it is marginal**, with the boundary at ~4060 s against 4074 ± 40 s.
 Iona and Clonmacnoise carry the result; Armagh alone would not.
 
-A lead, not a finding: Bede's "about the tenth hour" fits *Irish* maximum and not
-Jarrow's, where maximum fell in the eleventh hour. *Circiter* is doing real work
-in that sentence, so this is suggestive of an Irish or Ionan source behind Bede's
-hour and no more than that.
+### Correction to this section, made later in the same session
+
+The finished canon shows something the first pass did not have: **the 664 eclipse
+was *central* at Jarrow (1.041)**, Bede's own monastery, and at Bangor in Co. Down
+(1.042). The track ran across Ulster and Northumbria. That admits a second reading
+of the hour pair, and it is at least as good as the first:
+
+| | AU's ninth hour | Bede's tenth hour |
+|---|---|---|
+| **Reading (a)** | first contact, Ireland | maximum, Ireland |
+| **Reading (b)** | first contact, Ireland | **first contact, Jarrow** (hour 10, at every Δ*T* tested) |
+
+Reading (b) explains the one-hour difference purely by where the two observers
+stood, without requiring the sources to describe different phases of the eclipse.
+It is the more economical account, and Jarrow having seen totality makes a
+Northumbrian observation behind Bede's hour more likely, not less — which is the
+opposite of the lead offered in the first pass, when Jarrow's magnitude was not
+yet known.
+
+**The astronomy cannot choose between (a) and (b)** and this document should not
+pretend otherwise. What it does establish, on either reading, is the thing that
+matters: **neither hour is an error**, and the ninth hour cannot describe maximum
+anywhere in Ireland at any plausible Δ*T*. The earlier framing — "the annals record
+onset and Bede records maximum" — was too confident about which of two equally
+good readings is right, and is corrected here rather than quietly amended above.
 
 ---
 
