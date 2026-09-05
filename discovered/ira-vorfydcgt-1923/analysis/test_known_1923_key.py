@@ -1,7 +1,7 @@
 """Reproduce a documented 1923 IRA short-cipher control and test VORFYDCGT.
 
 The published Gillogly example gives the six-letter Vigenere key GVZKLG and
-shows SDRDPX -> MISTER.  This script first requires that control to reproduce,
+shows SDRDPX -> MISTER. This script first requires that control to reproduce,
 then applies exactly the same standard Vigenere convention, resetting the key
 at the start of the target token.
 """
@@ -30,10 +30,11 @@ control = vigenere_decrypt(KNOWN_CIPHERTEXT, KNOWN_KEY)
 assert control == KNOWN_PLAINTEXT, (control, KNOWN_PLAINTEXT)
 
 target_plaintext = vigenere_decrypt(TARGET, KNOWN_KEY)
+assert target_plaintext == "PTSVNXWLU"
 
 print(f"control: {KNOWN_CIPHERTEXT} --{KNOWN_KEY}--> {control}")
 print(f"target:  {TARGET} --{KNOWN_KEY}--> {target_plaintext}")
-print("same-key reuse supported:", target_plaintext.isalpha() and target_plaintext == "")
+print("Known-key reuse does not yield readable plaintext; this rejects only that exact key/reset hypothesis.")
 
 # A pure transposition cannot change the target's letter multiset.
 print("target sorted letters:", "".join(sorted(TARGET)))
