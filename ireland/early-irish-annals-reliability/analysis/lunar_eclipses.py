@@ -71,11 +71,45 @@ def greatest_lunar_eclipse(jd_full_guess, half_window_d=0.4):
     return t, umbral_circumstances(t)
 
 
+def _elong_minus_180(jd):
+    """Moon-Sun apparent elongation minus 180 deg, wrapped to (-180, 180]."""
+    from pymeeus.Epoch import Epoch
+    from pymeeus.Sun import Sun
+    from pymeeus.Moon import Moon
+    ep = Epoch(jd)
+    slon = float(Sun.apparent_geocentric_position(ep)[0])
+    mlon = float(Moon.apparent_ecliptical_pos(ep)[0])
+    d = (mlon - slon - 180.0) % 360.0
+    if d > 180.0:
+        d -= 360.0
+    return d
+
+
+def refine_full_moon(jd_guess):
+    """Secant iteration on elongation - 180 deg.
+
+    Needed because the true full moon wanders up to about 0.6 d either side of
+    the mean, which is wider than a sensible search window around a mean-based
+    estimate.  Estimating the full moon as "new moon plus half a synodic month"
+    and searching +/-0.4 d around it silently lost most of the lunar eclipses in
+    the first version of this canon -- 10 in the decade 1901-1910 where the
+    published count is far higher.  Recorded here rather than quietly fixed.
+    """
+    t0 = jd_guess
+    f0 = _elong_minus_180(t0)
+    t1 = t0 - f0 / 12.19  # deg/day mean elongation rate
+    for _ in range(6):
+        f1 = _elong_minus_180(t1)
+        if abs(f1) < 1e-6 or abs(f1 - f0) < 1e-12:
+            break
+        t2 = t1 - f1 * (t1 - t0) / (f1 - f0)
+        t0, f0, t1 = t1, f1, t2
+    return t1
+
+
 def full_moon_near(jd):
-    """Instant of the full moon nearest jd (half a synodic month from new)."""
-    nm = refine_new_moon(jd)
-    cands = [nm + SYNODIC / 2.0, nm - SYNODIC / 2.0]
-    return min(cands, key=lambda t: abs(t - jd))
+    """Instant of the full moon nearest jd."""
+    return refine_full_moon(jd)
 
 
 def validate():

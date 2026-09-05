@@ -284,3 +284,70 @@ at Clonmacnoise" cases, which is why that notice is worth more than the others.
 * **Δ*T*.** Only the AD 664 hour result is sensitive, and only at Armagh, where
   the boundary sits within 1σ of the published value. Everything else in this
   document is stable across ±300 s, which is ±7σ.
+
+---
+
+## 6. Experiment 5 is dead: the hour statements cannot measure Delta-T
+
+The handover written earlier in this session proposed running the AD 664 argument
+backwards — using annalistic hour statements as an independent Irish constraint on
+the Earth's rotation, since Stephenson's first-millennium curve rests on
+Babylonian, Chinese and Arab records and not on Irish ones. `deltat_power.py`
+prices that experiment before anyone spends a session on it. It does not survive.
+
+**The geometry is exact.** An eclipse happens at a fixed TT. A site's local
+apparent solar time at that instant is a function of UT = TT − Δ*T*, and LAT
+tracks UT one for one, so raising Δ*T* by *d* seconds moves the eclipse *d*
+seconds earlier in local apparent time. The unequal-hour boundaries are fixed by
+date and latitude and do not move with Δ*T* at all. **So one correct hour
+statement constrains Δ*T* to an interval exactly one unequal hour wide** — and
+nothing better is available from it.
+
+Measured on the real canon (the 37 eclipses at Irish magnitude ≥0.90, with the
+actual hour length at Armagh on each date):
+
+| | |
+|---|---|
+| shortest unequal hour | 2,203 s (37 min, midwinter) |
+| longest | 5,166 s (86 min, midsummer) |
+| median | 4,333 s (72 min) |
+| **one statement therefore gives** | **±2,167 s** |
+| published 1σ on Δ*T* here | 15–50 s |
+
+One statement is ~54× too coarse. Intersecting *N* independent correct
+statements (Monte Carlo, 20,000 draws each):
+
+| N | expected interval | half-width | vs published σ |
+|---|---|---|---|
+| 1 | 4,040 s | ±2,020 s | 50× worse |
+| 5 | 1,260 s | ±630 s | 16× worse |
+| 20 | 359 s | ±179 s | 4.5× worse |
+| 50 | 149 s | ±74 s | 1.9× worse |
+| 100 | 74 s | ±37 s | comparable |
+
+**Matching the published precision needs about 139 correct hour statements. The
+entire Irish astronomical corpus 442–1133 runs to roughly twenty records, and not
+all of them state an hour.** Two orders of magnitude short.
+
+**And the arithmetic above is the optimistic case**, because it assumes you know
+which contact each notice describes. Section 1 of this document shows you often
+do not: AU and Bede report the same eclipse one unequal hour apart precisely
+because one records onset and the other maximum. Misassign the phase for even one
+record and its interval is disjoint from the others:
+
+| Misassigned | Intersection empty in |
+|---|---|
+| 1 of 16 | **94% of draws** |
+| 2 of 17 | 99% of draws |
+
+So the method is not merely imprecise, it is brittle in the direction that
+produces confident nonsense — a narrow surviving interval from a corpus with one
+bad phase assignment would look like a *better* result, not a worse one.
+
+**Verdict: do not run experiment 5.** Run it backwards instead, as section 1
+does — fix Δ*T* from the published curve, and let it tell you which contact a
+notice describes. That is the question this data can actually answer, and it is
+the one that bears on the annals rather than on geophysics.
+
+*(This closes item 5 of the handover. The handover has been amended in place
+rather than rewritten.)*

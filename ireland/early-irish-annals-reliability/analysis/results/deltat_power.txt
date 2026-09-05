@@ -1,0 +1,43 @@
+Eclipses deep enough over Ireland to be plausibly recorded (magnitude >= 0.90): 37
+Unequal-hour length at Armagh on those dates:
+  shortest 2203 s (37 min, midwinter)   longest 5166 s (86 min, midsummer)
+  median   4333 s (72 min)
+
+A single correct hour statement therefore pins Delta-T to an interval
+one unequal hour wide: typically +/-2167 s.
+The published 1-sigma on Delta-T in this window is 15-50 s (Stephenson et al. 2016).
+  -> one statement is about 54x too coarse to be worth anything.
+
+Intersecting N independent correct statements:
+   N   expected interval   half-width   vs published sigma(40 s)
+    1       4040 s        +/-  2020 s       50.5x worse
+    2       2558 s        +/-  1279 s       32.0x worse
+    3       1895 s        +/-   947 s       23.7x worse
+    5       1260 s        +/-   630 s       15.7x worse
+   10        683 s        +/-   342 s        8.5x worse
+   20        359 s        +/-   179 s        4.5x worse
+   30        245 s        +/-   123 s        3.1x worse
+   50        149 s        +/-    74 s        1.9x worse
+  100         74 s        +/-    37 s        0.9x worse
+
+To match the published precision (interval <= 80 s, i.e. +/-40 s)
+you would need roughly **139** independent correct hour statements.
+The entire Irish astronomical corpus, 442-1133, contains of the order
+of twenty records, and only some of them state an hour at all.
+
+== the failure mode that actually kills it ==
+The arithmetic above assumes every statement is correct *and* that you
+know which contact it describes. Neither holds. AU 664 and Bede report
+the same eclipse one unequal hour apart because one records onset and
+the other maximum (see RESULTS.md section 1). Assign the phase wrongly
+for even one record and its interval is disjoint from the rest:
+   1 misassigned among 16: intersection is empty in 94% of draws
+   2 misassigned among 17: intersection is empty in 99% of draws
+
+VERDICT: experiment 5 is not worth a session as a Delta-T measurement.
+An hour statement is a ~3000 s constraint against a 40 s published
+error, the corpus is two orders of magnitude too small to close that,
+and a single phase misassignment empties the intersection. Use the
+hour statements the other way round, as RESULTS.md section 1 does:
+fix Delta-T from the published curve and let it tell you which contact
+a notice describes. That question the data can answer.
