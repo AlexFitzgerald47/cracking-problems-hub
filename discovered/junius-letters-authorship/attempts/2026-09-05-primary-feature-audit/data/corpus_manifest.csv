@@ -1,0 +1,6 @@
+id,author,year,title,ia_identifier,status,use,contamination_notes
+junius_1786,Junius,1786,The letters of Junius complete in one volume,lettersofjuniusc00juniiala,target,primary-audit,"Collected volume contains replies by other writers, quotations, editorial/index matter; authorial segmentation required"
+francis_1784,Philip Francis,1784,Two speeches in the House of Commons on the East-India bill,twospeechesinhou00franiala,gold,training/control,"Acknowledged Francis but embeds parliamentary orders, bill language, minutes and documentary quotations"
+francis_1816,Philip Francis,1816,A letter missive to Lord Holland,lettermissivefro00fran,gold,temporal-drift-only,"Acknowledged Francis; too late to use naively as same-period training data"
+francis_state_1780,Philip Francis?,1780,A state of the British authority in Bengal (Mahomed Reza Khan),,exclude-from-gold,possible-disputed-test,"Published anonymously; catalogued as attributed/contributed to Francis"
+francis_state_1781,Philip Francis?,1781,A state of the British authority in Bengal (Marhatta War),,exclude-from-gold,possible-disputed-test,"Published anonymously; catalogued as attributed/contributed to Francis"
