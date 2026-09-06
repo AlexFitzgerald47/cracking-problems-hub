@@ -1,0 +1,36 @@
+id	kind	observed_as	constraint_or_role	candidate_value	confidence	status	notes
+N	primitive/modifier	tilde-like top component	Cannot stand alone; only top of a glyph or directly below another N	consonant-onset OR suprasegmental feature; nasalization now weakened	high topology / low sound	live	Sektu 2017-08-07. Do not equate N.N with N+N by default.
+U	primitive	Sektu subglyph	Valid N-medial; occurs in signature-like <N U>	unknown	medium structure / none sound	live	Published decomposition only; no plaintext value assigned.
+X	primitive	X-shaped component	Valid N-medial/final; member of repeated X+DOT composite	unknown	high identity / none sound	live	Spatial/read order relative to DOT is unresolved.
+O	primitive	circle/O-like component	Most frequent published subglyph; valid N-medial/final	possibly French e	medium structural / low phonetic	live	Sektu reported favorable frequency comparison with French e; not a key assignment.
+Z	primitive	Sektu subglyph	Middle component in <O Z O>	unknown	medium identity / none sound	live	Known from published signature-like decomposition.
+C2	primitive	Sektu subglyph	First component in <C2 B2>	unknown	medium identity / none sound	live	Label retained exactly from published transcription.
+B2	primitive	Sektu subglyph	Second component in <C2 B2>	unknown	medium identity / none sound	live	Label retained exactly from published transcription.
+DOT	primitive/contextual	dot component	Occurs in X+DOT composite; dots also serve count/omission-like role beneath plaintext initials	unknown phonographic value; count function in initials context	high contextual / none sound	live	Treat DOT_PHON and DOT_COUNT as separate functions until proved identical.
+I	primitive	Sektu paired-form discussion	Single I exists; I.I may be separate codepoint	unknown	medium	live	Included because paired-form behavior is a key parsing ambiguity.
+O2RNO	complex published subglyph	<O2RNO>	A complete element in the six-unit signature-like line	unknown	medium	live	Do not decompose further without source inventory.
+CROSSB	complex published subglyph	<CROSSB>	Final element in the six-unit signature-like line	unknown	medium	live	Do not identify with generic plus/cross without image-level proof.
+NN_PAIR	paired-ligature candidate	N.N / stacked double-wave	N.N frequently occurs alone; primary poem endings 1,2,17,18 visually match this paired-wave class	independent rhyme-bearing unit; sound unknown	high structural	promoted	Parse as a first-class token before trying N+N. Exact match to Sektu's N.N still needs full-transcription verification.
+II_PAIR	paired-ligature candidate	I.I	Sektu explicitly proposed pair may differ from single I	independent code unit possible	medium	live	First-class-token branch in parser.
+OO_PAIR	paired-ligature candidate	O.O	Sektu explicitly proposed pair may differ from single O	independent code unit possible	medium	live	If independent, O=e frequency arguments must exclude OO_PAIR.
+C2_B2	composite control	<C2 B2>	Whitespace glyph 1 of Sektu signature-like line	unknown	medium	live	Control composite for crib tests.
+X_DOT	composite control	<X DOT> / dotted-X visual	Whitespace glyph 2 of signature-like line; same two primitive shapes occur at poem rhyme class B (lines 3-4)	reusable phonographic composite; sound unknown	high structural	promoted	Component multiset is stronger than read order; published/visual ordering must be reconciled.
+N_U	composite control	<N U>	Whitespace glyph 3 of signature-like line	unknown	medium	live	Conforms to published N-glyph grammar.
+O_Z_O	composite control	<O Z O>	Whitespace glyph 4 of signature-like line	unknown	medium	live	Repeated O supplies a hard self-consistency constraint for any linear mapping.
+O2RNO_UNIT	composite control	<O2RNO>	Whitespace glyph 5 of signature-like line	unknown	medium	live	Atomic at this transcription level.
+CROSSB_UNIT	composite control	<CROSSB>	Whitespace glyph 6 of signature-like line	unknown	medium	live	Atomic at this transcription level.
+O_CROSS	composite/rhyme control	O plus cross-like component	Poem lines 13-14 terminal class; reported elsewhere in reversed orientation	ordered two-part rhyme unit; values unknown	high structural / none sound	promoted	Reversibility implies spatial orientation may encode order. Bauer's ER/RE was only an example, not a solution.
+R_A_NN	rhyme class	poem lines 1,2,17,18	Only non-adjacent whole-terminal recurrence currently frozen	NN_PAIR; perhaps entire rhyme nucleus/coda	high	promoted	This is the strongest internal supervision signal.
+R_B_XDOT	rhyme class	poem lines 3-4	dotted-X terminal class; not repeated at 19-20	X_DOT component set; rhyme-bearing	medium-high	live	Direct Moore Ode-II string/sing recurrence fails at whole-glyph level.
+R_C	rhyme class	poem lines 5-6	adjacent repeated terminal whole glyph	unknown rhyme-bearing unit	high class / none value	live	Label only; decompose from scan next.
+R_D	rhyme class	poem lines 7-8	adjacent repeated terminal whole glyph	unknown rhyme-bearing unit	high class / none value	live	Label only; decompose from scan next.
+R_E	rhyme class	poem lines 9-10	adjacent repeated terminal whole glyph	unknown rhyme-bearing unit	high class / none value	live	Label only; decompose from scan next.
+R_F	rhyme class	poem lines 11-12	adjacent repeated terminal whole glyph	unknown rhyme-bearing unit	high class / none value	live	Label only; decompose from scan next.
+R_G_OCROSS	rhyme class	poem lines 13-14	O+cross terminal class	O_CROSS; rhyme-bearing	medium-high	live	Candidate ordered pair; exact component naming needs transcription.
+R_H	rhyme class	poem lines 15-16	adjacent repeated terminal whole glyph	unknown rhyme-bearing unit	high class / none value	live	Crosses scan boundary 4a/4b; useful control.
+R_I	rhyme class	poem lines 19-20	ornate curled/looped terminal class	unknown rhyme-bearing unit	high class / none value	live	Distinct from R_B at whole-glyph level.
+DOT_COUNT	contextual function	dots/short marks under H.D.D.L.M.F.	Counts are consistent with omitted-letter counts H[4] D[8] D[7] L[6] M[6] F[5]	omission/length metadata	medium-high	live	This function must not automatically be assigned to every DOT inside a composite.
+PICT_SUN	pictorial token	inline sun	Occurs in running cipher stream	logogram/determinative/null/phonetic rebus unknown	high identity / none function	live	Preserve as positional token; do not discard as decoration.
+PICT_BIRD	pictorial token	inline bird	Occurs in running cipher stream	logogram/determinative/null/phonetic rebus unknown	high identity / none function	live	Preserve as positional token.
+PICT_ANIMAL	pictorial token	inline horse/donkey-like animal	Occurs in running cipher stream	logogram/determinative/null/phonetic rebus unknown	medium identity / none function	live	Preserve as positional token.
+PICT_TREE_PLANT	pictorial token	inline tree/plant	Occurs in running cipher stream	logogram/determinative/null/phonetic rebus unknown	medium identity / none function	live	Preserve as positional token.
