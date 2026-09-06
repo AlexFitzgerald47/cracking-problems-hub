@@ -1,0 +1,139 @@
+{
+  "version": "2026-09-05-v1",
+  "scope": "Conservative atomic/component constraints frozen from published Sektu decompositions, primary poem scans, and already-audited Hub cribs. Unknown values remain null rather than guessed.",
+  "sources": {
+    "sektu_transcription_revision": "https://sektu.blogspot.com/2017/08/debosnys-cipher-transcription-revision.html",
+    "sektu_n_glyphs": "https://sektu.blogspot.com/2017/08/a-look-at-n-glyphs.html",
+    "sektu_n_frequency": "https://sektu.blogspot.com/2017/08/another-note-on-n-glyphs.html",
+    "commons_4a": "https://commons.wikimedia.org/wiki/File:Debosnys-Cryptogram-4a.png",
+    "commons_4b": "https://commons.wikimedia.org/wiki/File:Debosnys-Cryptogram-4b.png"
+  },
+  "signature_like_line": {
+    "location_note": "Sektu calls this a signature line; exact mapping to the Commons scan numbering should be reverified rather than assumed from older Hub prose.",
+    "whole_glyphs": ["C2B2", "XP", "NU", "ZOO", "OM2N", "SHI"],
+    "ordered_component_transcription": [
+      ["C2", "B2"],
+      ["X", "DOT"],
+      ["N", "U"],
+      ["O", "Z", "O"],
+      ["O2RNO"],
+      ["CROSSB"]
+    ],
+    "hard_equalities": [
+      "The O at component-stream position 7 is the same published subglyph as the O at position 9."
+    ],
+    "plaintext": null
+  },
+  "n_family": {
+    "single_N_can_stand_alone": false,
+    "single_N_positions": ["top_of_glyph", "directly_below_N"],
+    "NN_can_stand_alone": true,
+    "published_grammar": {
+      "n_glyph": "N n_tail",
+      "n_tail": "n_medial | n_medial n_final",
+      "n_medial": ["N", "U", "X", "O"],
+      "n_final": ["X", "O"]
+    },
+    "parser_branch": "Try NN_PAIR as an indivisible token before recursively parsing it as N+N.",
+    "single_N_candidate_values": ["syllable_initial_consonant", "suprasegmental_vocalic_feature"],
+    "single_N_nasalization_status": "weakened; not accepted as a universal marker"
+  },
+  "paired_forms": {
+    "NN_PAIR": {
+      "independent_codepoint_candidate": true,
+      "evidence": "Sektu explicitly notes N.N frequently occurs alone and may differ from N; primary poem rhyme class A visually matches a stacked double-wave form on lines 1,2,17,18.",
+      "confidence": "high structural, pending exact transcription lookup"
+    },
+    "II_PAIR": {
+      "independent_codepoint_candidate": true,
+      "confidence": "medium"
+    },
+    "OO_PAIR": {
+      "independent_codepoint_candidate": true,
+      "confidence": "medium"
+    }
+  },
+  "poem_rhyme_classes": {
+    "line_to_class": {
+      "1": "A", "2": "A",
+      "3": "B", "4": "B",
+      "5": "C", "6": "C",
+      "7": "D", "8": "D",
+      "9": "E", "10": "E",
+      "11": "F", "12": "F",
+      "13": "G", "14": "G",
+      "15": "H", "16": "H",
+      "17": "A", "18": "A",
+      "19": "I", "20": "I"
+    },
+    "class_components": {
+      "A": {
+        "token_candidate": "NN_PAIR",
+        "confidence": "high",
+        "function": "rhyme-bearing terminal unit"
+      },
+      "B": {
+        "component_multiset": ["X", "DOT"],
+        "order_status": "unresolved between visual orientation and published read order",
+        "confidence": "medium-high"
+      },
+      "C": {"components": null},
+      "D": {"components": null},
+      "E": {"components": null},
+      "F": {"components": null},
+      "G": {
+        "component_multiset": ["O", "CROSS_UNKNOWN"],
+        "order_status": "orientation-sensitive; reversed realization reported elsewhere",
+        "confidence": "medium-high"
+      },
+      "H": {"components": null},
+      "I": {"components": null, "whole_glyph_distinct_from_B": true}
+    },
+    "nonadjacent_recurrences": [
+      {"lines": [1, 2, 17, 18], "class": "A"}
+    ]
+  },
+  "contextual_functions": {
+    "DOT_COUNT": {
+      "context": "H.D.D.L.M.F. plaintext initials construction",
+      "counts": {"H": 4, "D1": 8, "D2": 7, "L": 6, "M": 6, "F": 5},
+      "interpretation": "first letter plus omitted-letter count",
+      "known_expansions": {"H": "Henry", "D1": "Deletnack", "D2": "Debosnys"},
+      "unknown_lengths": {"L": 7, "M": 7, "F": 6},
+      "warning": "Do not transfer this count function automatically to DOT inside X_DOT."
+    }
+  },
+  "provisional_value_candidates": {
+    "O": {
+      "value": "e",
+      "basis": "frequency analogy reported by Sektu",
+      "confidence": "low",
+      "must_generalize": true
+    },
+    "N": {
+      "value": null,
+      "rejected_as_fixed": ["universal French nasalization marker"],
+      "confidence": "no sound assignment"
+    },
+    "NN_PAIR": {
+      "value": null,
+      "function": "rhyme-bearing paired unit",
+      "confidence": "high function / no sound assignment"
+    }
+  },
+  "grammar_v0": [
+    "GLYPH := PAIR_ATOM | N_GLYPH | COMPOSITE | PICTORIAL",
+    "PAIR_ATOM := NN_PAIR | II_PAIR | OO_PAIR",
+    "N_GLYPH := N (N|U|X|O) [X|O]",
+    "COMPOSITE := ordered/spatial combination of reusable components",
+    "PICTORIAL := preserved token; semantic/logographic/rebus/null status unknown",
+    "WHITESPACE_BOUNDARY := observed glyph boundary, not assumed plaintext syllable or word boundary"
+  ],
+  "model_rejections_or_downgrades": [
+    "simple one-whitespace-glyph-per-letter substitution",
+    "exact Folger key",
+    "deterministic direct line-preserving Moore Ode II",
+    "universal N = every French nasalization",
+    "unqualified assumption that paired N.N/I.I/O.O are repetitions of their singles"
+  ]
+}
