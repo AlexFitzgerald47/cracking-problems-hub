@@ -1,0 +1,19 @@
+E9  leave-one-vita-out stability of the boundary location
+    (cut number = order of the LAST life on the earlier side)
+
+  all text: full-data peak after #18 (z +5.44)
+    peak after #18 alexander_severus          17/30 leave-one-out runs
+    peak after #20 gordiani_tres               7/30 leave-one-out runs
+    peak after #19 maximini_duo                6/30 leave-one-out runs
+    peak at or before #21 (the lacuna): 30/30
+    peak at or before #18: 17/30
+
+  narrative only: full-data peak after #18 (z +4.95)
+    peak after #20 gordiani_tres              16/30 leave-one-out runs
+    peak after #18 alexander_severus          10/30 leave-one-out runs
+    peak after #23 gallieni_duo                2/30 leave-one-out runs
+    peak after #17 heliogabalus                1/30 leave-one-out runs
+    peak after #19 maximini_duo                1/30 leave-one-out runs
+    peak at or before #21 (the lacuna): 28/30
+    peak at or before #18: 11/30
+
