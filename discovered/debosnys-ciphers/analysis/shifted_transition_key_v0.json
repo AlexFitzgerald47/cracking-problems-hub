@@ -1,0 +1,44 @@
+{
+  "version": "2026-09-06-transition-v0",
+  "status": "strongest working key conditional on the HENECOS signature crib and Sektu shifted-rhyme mechanism; not independently validated",
+  "idea": "Do not force every graphic atom to a letter/string. Treat one or more adjacent subglyphs as a codepoint for a shifted phonetic transition: rhyme(previous syllable)+onset(next syllable), with initial onset and final rhyme as boundary units.",
+  "natural_syllables": ["HE", "NE", "COS", "DE", "BOS", "NOS", "TYS_OR_TYA"],
+  "onsets": ["H", "N", "C", "D", "B", "N", "T"],
+  "rimes": ["E", "E", "OS", "E", "OS", "OS", "YS_OR_YA"],
+  "shifted_phonetic_units": ["H", "EN", "EC", "OSD", "EB", "OSN", "OST", "YS_OR_YA"],
+  "published_component_stream": ["C2", "B2", "X", "DOT", "N", "U", "O", "Z", "O", "O2RNO", "CROSSB"],
+  "provisional_transition_chunking": [
+    ["C2"],
+    ["B2"],
+    ["X"],
+    ["DOT", "N"],
+    ["U"],
+    ["O", "Z"],
+    ["O", "O2RNO"],
+    ["CROSSB"]
+  ],
+  "transition_codebook": [
+    {"cipher": ["C2"], "phonetic": "H", "role": "initial onset"},
+    {"cipher": ["B2"], "phonetic": "EN", "role": "rime E + next onset N"},
+    {"cipher": ["X"], "phonetic": "EC", "role": "rime E + next onset C"},
+    {"cipher": ["DOT", "N"], "phonetic": "OSD", "role": "rime OS + next onset D"},
+    {"cipher": ["U"], "phonetic": "EB", "role": "rime E + next onset B"},
+    {"cipher": ["O", "Z"], "phonetic": "OSN", "role": "rime OS + next onset N"},
+    {"cipher": ["O", "O2RNO"], "phonetic": "OST", "role": "rime OS + next onset T"},
+    {"cipher": ["CROSSB"], "phonetic": "YS_OR_YA", "role": "final rime"}
+  ],
+  "key_observation": "The repeated E-rime transitions EN, EC, EB each receive a single subglyph (B2, X, U), while the more complex OS+onset transitions OSD, OSN, OST are represented by two-subglyph chunks. This is exactly the sort of complex-group splitting Sektu independently proposed in 2017.",
+  "why_this_supersedes_forced_atom_maps": "It preserves the independently specified shifted-unit boundaries while avoiding arbitrary decisions such as O=O versus O=OS. Atomic splits inside OSD/OSN/OST remain secondary hypotheses to be learned from outward recurrences.",
+  "high_value_atomic_hypothesis": {
+    "N": "D onset",
+    "basis": "Sektu independently proposed N could be a syllable-initial consonant such as b or d; in transition chunk DOT+N=OSD, N occupies exactly the D-onset position.",
+    "consequence_if_true": "DOT contributes the preceding OS rime within this specific transition; whether DOT means OS context-independently remains unproved."
+  },
+  "terminal_rule": "At a true line/text boundary, the final code unit should encode only the last rime because no following onset exists. Test poem terminal classes under this rule; do not assume internal transition subglyph values transfer unchanged to terminal allographs.",
+  "falsifiers": [
+    "A secure plaintext for the six-glyph line inconsistent with HENECOS DEBOSNOSTYS/A.",
+    "An independently deciphered occurrence of B2, X, or U incompatible with EN, EC, or EB respectively under the same transition phase.",
+    "Systematic evidence that cipher whitespace boundaries are strict linguistic syllable/word boundaries rather than allowing transition chunks to cross them.",
+    "N occurrences that cannot plausibly occupy onset positions when the shifted transducer is applied."
+  ]
+}
