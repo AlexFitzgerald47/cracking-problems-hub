@@ -791,3 +791,61 @@ Finding pairs in the canon proves nothing whatever. The informative quantity is
 the *fraction* of available pairs the annals record, measured against the fraction
 of isolated eclipses they record. Both denominators are now on disk; only the
 numerators need the text.
+
+---
+
+## 12. How much of §2's circularity is real? Three of eight identifications were forced
+
+§2 warned that the audited notices land on real eclipses partly by construction.
+That warning is right but it is not the whole story, and this measures the part
+that is not circular.
+
+The question is not "does the notice match an eclipse?" but **"how many eclipses
+were available to match it with?"** If exactly one solar eclipse was visible from
+Ireland anywhere within three years of the annal-year, no scholar had a choice —
+the identification is *forced*, and the annal-year landing on it is then a fact
+about the annals rather than about the scholar.
+
+`identification_uniqueness.py`, threshold Irish magnitude ≥0.50, window ±3 annal
+years:
+
+| Record | Annal year | Candidates | Identified eclipse | Next best candidate |
+|---|---|---|---|---|
+| **AU 688** | 688 | **1 — FORCED** | 688-07-03 (0.744) | — |
+| **AU 753** | 753 | **1 — FORCED** | 753-01-09 (0.865) | — |
+| **AU 885** | 885 | **1 — FORCED** | 885-06-16 (1.077) | — |
+| AU 878 | 878 | 2 | 878-10-29 (1.025) | 875-01-11 (0.647) |
+| AU 764 | 764 | 2 | 764-06-04 (0.968) | 767-04-03 (0.511) |
+| AU 594 | 594 | 3 | 594-07-23 (1.061) | 596-01-05 (0.761) |
+| AU 664 | 664 | 3 | 664-05-01 (1.042) | 661-07-02 (0.963) |
+| AU 865 | 865 | 3 | 865-01-01 (0.999) | 863-08-18 (0.680) |
+
+**Three of eight are forced.** And in all five of the others, the identified
+eclipse is the deepest candidate by a wide margin — 1.042 against 0.963, 1.061
+against 0.761, 0.999 against 0.680, 1.025 against 0.647, 0.968 against 0.511. Only
+AU 664 has a serious rival (661-07-02 at 0.963), and that one is a **dawn eclipse
+at 6.5° altitude** while the 664 eclipse was near-total at 22° in the afternoon.
+
+### What this is worth, stated carefully
+
+For the three forced records, exactly one candidate existed in a seven-year window
+and the annal-year hits it exactly. If AU's year attribution at these points were
+displaced by a random amount within ±3 years, each exact hit has probability 1/7,
+and three of them 1/343.
+
+**That arithmetic is an illustration, not a p-value**, and the reason matters: the
+sample is conditioned on identifiability. A notice sitting at an annal-year with no
+nearby eclipse would never have entered the literature as an eclipse
+identification at all, so the set is selected in exactly the way that inflates this
+statistic. The honest statement is the qualitative one:
+
+> At AU 688, 753 and 885 there was no alternative eclipse to choose, and the annal
+> year is exactly right. That is a chronological anchor rather than a matching
+> exercise, and it is the strongest thing in this document about the *chronology*
+> — which is what the problem actually asks about.
+
+Making it non-circular needs the text and is one query: run the comparison the
+other way. Take the 37 eclipses at Irish magnitude ≥0.90 from the canon, and ask
+how many have a notice at the corresponding annal-year. That sample is selected by
+the *sky*, not by the literature, and it converts this from an illustration into a
+measurement.
