@@ -688,3 +688,73 @@ read as one of two live readings, not as established.
 442–1133 corpus plausibly contains them, and the same table computed over a dozen
 records would separate 43 minutes from 65 with something like confidence. That is
 a much better use of the hour data than trying to measure Δ*T* with it (§6).
+
+---
+
+## 11. Eclipse pairs: the sharpest cheap test left
+
+AU 878 records a lunar eclipse and then a solar eclipse fifteen days later, and
+says so — *"fifteen solar days having intervened"*. That clause is the most
+interesting six words in the audited set. Noticing that two eclipses a fortnight
+apart belong together requires either watching across a fortnight or knowing the
+theory that puts them there. A chronicle that records isolated eclipses is
+recording prodigies; one that records *both members of a pair and links them* is
+doing something closer to astronomy.
+
+`eclipse_pairs.py` finds every solar/lunar pair 12–18 days apart with both members
+visible from Ireland:
+
+| | |
+|---|---|
+| solar eclipses over Ireland at magnitude ≥0.50 | 171 |
+| umbral lunar eclipses visible from Ireland | 710 |
+| **pairs, both visible** | **93** (one every 8.7 years) |
+| **"strong" pairs — solar ≥0.80 *and* lunar total** | **7** (one every 116 years) |
+
+**The seven strong pairs in eight centuries:**
+
+| Lunar member | Solar member | Gap |
+|---|---|---|
+| 561-05-15 (total, 1.006) | 561-04-30 (0.853) | 14.7 d |
+| 807-02-26 (total, 1.037) | 807-02-11 (0.916) | 14.7 d |
+| 810-12-14 (total, 1.021) | 810-11-30 (0.876) | 14.3 d |
+| 854-08-12 (total, 1.143) | 854-07-28 (0.828) | 14.2 d |
+| **865-01-15 (total, 1.075)** | **865-01-01 (0.999)** | 14.2 d |
+| **878-10-15 (total, 1.054)** | **878-10-29 (1.025)** | 14.4 d |
+| 966-08-04 (total, 1.205) | 966-07-20 (0.832) | 14.4 d |
+
+**Two of the seven are years the annals already speak to.** AU 878 records both
+members and links them. **AU 865 records the solar member** — "an eclipse of the
+sun on the kalends of January", which is 865-01-01 exactly — and its partner, a
+*total* lunar eclipse on 15 January 865, sits fourteen days later.
+
+### The prediction, and it costs one lookup
+
+**Does AU record a lunar eclipse in January 865?**
+
+* If **yes**, then the one chronicle-linked pair becomes two, and the case that
+  someone was systematically watching rather than noting prodigies gets much
+  stronger — two pairs a decade apart is a habit, one is an anecdote.
+* If **no**, the asymmetry is itself informative: the annalist recorded the solar
+  member of a pair whose lunar member was total and unmissable, which points to
+  selection by portent value rather than sky-watching, and bears directly on §8's
+  availability argument.
+
+The other five pairs are the same test at lower prior: 561, 807, 810, 854, 966.
+**810 is worth a second look** for an unrelated reason — it is the year of Dúngal's
+letter to Charlemagne on the solar eclipses of 810, one of the few securely dated
+astronomical texts by a named Irish scholar. This canon finds only *one* solar
+eclipse visible from Europe that year (30 November, Irish 0.876, Rome 0.872,
+Constantinople 0.959); the other three were far southern (γ = −1.11, −1.40, +1.45)
+and touched no European sky. Whether that is a problem for the "double eclipse"
+tradition, or simply a misreading of it on this session's part, needs the letter
+itself — which is why it is filed as a lead and not a finding.
+
+### The base-rate warning, which decides how all of this reads
+
+**Pairs are not rare.** They are the normal structure of an eclipse season, and 93
+of them in 810 years is the expected consequence of the geometry, not a discovery.
+Finding pairs in the canon proves nothing whatever. The informative quantity is
+the *fraction* of available pairs the annals record, measured against the fraction
+of isolated eclipses they record. Both denominators are now on disk; only the
+numerators need the text.
