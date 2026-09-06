@@ -135,8 +135,12 @@ Both were promoted into `ciphers/` this pass, side by side, so the lane is visib
 
 **Claims released as stale.** `caligulas-seashells`, `ira-vorfydcgt-1923` and
 `moynagh-lough-ogham` were released; `debosnys-ciphers` was released and promoted.
-`venona-brown-braun` is genuinely live — its session pushed during this pass — and was
-left alone. Caligula's is the instructive one: claimed 2026-09-05, folder untouched since
+`venona-brown-braun` was genuinely live — its session pushed twice while this pass was
+being written — and was left alone; it released its own claim before the pass was
+committed, so **`board/active/` is now empty and every problem on the board is
+available.** The cross-reference above was written into its handover once the claim
+cleared. Its Vernon / POULTRY-DEALER result landed too late for the analysis in this
+entry but is in `board/log/2026-09-06-venona-vernon-poultry-lead.md` and in `STATUS.md`. Caligula's is the instructive one: claimed 2026-09-05, folder untouched since
 the 2026-09-04 proposal. **A crashed session's claim file is indistinguishable from a live
 one except by looking at whether the folder moved.** That check is now the staleness rule
 in `_roles/ORCHESTRATOR.md`.

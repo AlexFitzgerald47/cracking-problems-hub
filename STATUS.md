@@ -10,17 +10,15 @@ method transfers posted; target board re-ranked under the crack-fit test.
 
 ## Board State (orchestrator, 2026-09-06)
 
-**Currently claimed** — from `board/active/`:
-
-| Problem | Held by | Since | Intent |
-|---------|---------|-------|--------|
-| `historical-controversies/venona-brown-braun/` | cracker session (GPT-5.6 Sol, continuation 3) | 2026-09-06 | Identify POULTRY-DEALER via Wilfrid Vernon and use that network to constrain BROWN |
+**Nothing is claimed.** `board/active/` is empty for the first time since the four-role
+model was adopted — every problem on the board is available.
 
 **Four claims were cleared this pass.** `caligulas-seashells` (claimed 2026-09-05, folder
 untouched since the 2026-09-04 proposal — a crashed session), `ira-vorfydcgt-1923` and
 `moynagh-lough-ogham` (both worked to a written handover, claim never released), and
-`debosnys-ciphers` (last commit 11 hours before this pass, no release). All four are
-unclaimed and available. VENONA pushed during this pass and was left alone.
+`debosnys-ciphers` (last commit 11 hours before this pass, no release). `venona-brown-braun`
+was live during this pass and left alone; its session released the claim itself while the
+pass was being written.
 
 **Balance, corrected.** The 2026-09-05 warning that three of four domains had never been
 worked is now out of date — six new problems were opened and worked in 36 hours across
@@ -78,7 +76,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 ### Historical Controversies
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open – **claimed and active**; three sessions deep | Who is BROWN in the 1940 London GRU traffic? Role separation established: BROWN need not be the radio operator — the surrounding traffic assigns that to STANLEY. Candidates under test: Harry Fraser, George Barnard (BROWN side), Wilfrid Vernon (POULTRY-DEALER side), Donald Orr Sproule (Henry Hughes technical source). **No solve claim** — the load-bearing Fraser ↔ Henry Hughes bridge is recorded as MISSING. See `analysis/network-intersection-1940.md` |
+| VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open – **four sessions deep, now unclaimed**; the board's most advanced identity problem | Who is BROWN in the 1940 London GRU traffic? Role separation established: BROWN need not be the radio operator — the surrounding traffic assigns that to STANLEY. **Wilfrid Foulston Vernon is now the strongest POULTRY-DEALER candidate** (Osterley with Wintringham from July 1940, RAF/RAE-trained, documented pre-war GRU role via Weiss/Robinson); decisive test is TNA KV 2/992–996 for Jul–Oct 1940. BROWN candidates: Harry Fraser (Spanish/Springhall/wireless adjacency) and George Barnard (dated Ilford/Plessey/CPGB industrial-radio fit); Sproule remains the Henry Hughes technical-source pool, not BROWN. **No identification claim** — the load-bearing Fraser ↔ Henry Hughes bridge is recorded as MISSING. Best attacked as a small network reconstruction, not a surname search. **Caution: `HANDOVER.md` is a day behind the folder** — two 2026-09-06 sessions landed in `analysis/` and `board/log/` only. Read `analysis/` and `board/log/2026-09-06-venona-vernon-poultry-lead.md` before trusting the handover |
 | Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open – **never worked** | Evidence evaluation |
 
 ## High-Priority Threads
@@ -89,10 +87,13 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
   another stage. Two things are missing and both are cheap: how many atom-to-phoneme maps
   were consistent with the signature line *before* two branches survived, and whether the
   inherited subglyph decomposition reproduces against the primary scans.
-- **VENONA — find or kill the bridge.** Fraser ↔ Henry Hughes / Sproule is MISSING and the
-  case does not close without it. Highest-information records: Fraser's 1939 Register and
-  electoral addresses, the Tameside GB131.1103/207 oral history, Springhall's KV files, and
-  the 1939–40 directional-acoustics project roster.
+- **VENONA — test Vernon, then find or kill the bridge.** TNA KV 2/992–996 (Vernon, Jul–Oct
+  1940 contacts and surveillance) is now the single highest-information record on the
+  problem: identifying POULTRY-DEALER could collapse the BROWN candidate set outright.
+  Fraser ↔ Henry Hughes / Sproule is still MISSING and the case does not close without it.
+  Also: Fraser's 1939 Register and electoral addresses, the Tameside GB131.1103/207 oral
+  history, Springhall's KV files, and the 1939–40 directional-acoustics project roster.
+  **First job for the next session is a handover that catches up with the folder.**
 - **The 1920–23 Irish intelligence cipher lane.** One archival request unblocks two
   problems. See above.
 - **Ennis amber bead** — the cheapest unclaimed ogham target, with a method now proven
