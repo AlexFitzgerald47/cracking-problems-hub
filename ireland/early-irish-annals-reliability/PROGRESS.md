@@ -458,3 +458,42 @@ quietly fixed:
   stretches enormously at low altitude, so a site can be far from the centre line
   and still inside the shadow. The table now reports the computed totality
   alongside the distance, and they are labelled as different tests.
+
+### Totality over Ireland: the denominator was wrong by a factor of 3.6
+
+The canon's "five eclipses central over Ireland" meant *central at one of four
+monasteries*. The umbra is a band a few hundred kilometres wide and crosses
+Munster or Leinster without going near any of them. Tracing every central eclipse
+and testing the track against points spread over the island gives **18** — one
+every 45 years — plus 7 across Dál Riata. Full table with the Sun's altitude in
+`analysis/RESULTS.md` §14 and `analysis/results/totality_over_ireland.csv`.
+
+Two of the five already in the audited set vindicate the method: **AU 764's
+eclipse was total over Dublin and Leinster with the Sun 55° up**, while all four
+canon monasteries saw 0.91–0.97 — the magnitude table alone would never have
+called it central, and the notice reads *sol tenebrosus*. **AU 865 was total over
+Sligo**, likewise invisible to the four-site test (Armagh 0.995).
+
+**Thirteen totality tracks have no notice in this session's record set.** Three
+are the sharp ones, falling where the annals are dense and with the Sun high:
+**733-08-14 (29°), 1039-08-22 (46°), 1191-06-23 (55°)**. The last is totality
+across Louth and Meath on a June afternoon; an absence at 1191 bears directly on
+the §7 question of the record ending at 1133.
+
+`analysis/results/master_events.csv` merges every prediction set: **1,031 events,
+242 decisive, 789 blind (77%)**. The blind count is the reason the file exists.
+
+### Also closed in this block
+
+* **The borrowing tests are blind to Northumbria** (§13). Not one solar eclipse in
+  810 years was deep at Jarrow and shallow in Ireland; mean magnitude difference
+  0.053 against 0.392 for Ireland–Mediterranean. So "diagnostic of local
+  observation" means "not copied from the Mediterranean", which is weaker. Insular
+  transmission is a textual-criticism question and no astronomical test reaches it.
+* **Three of eight identifications are forced** (§12) — a chronological anchor
+  rather than a matching exercise — with the conditioning on identifiability
+  stated so the 1-in-343 arithmetic is not mistaken for a p-value.
+* **Three hour statements cannot fix the hour convention** (§10), which qualifies
+  §1 and is now cross-referenced from it.
+* **Seven strong eclipse pairs in 810 years** (§11), two of them years the annals
+  speak to, giving the January 865 lookup as the cheapest high-value test left.

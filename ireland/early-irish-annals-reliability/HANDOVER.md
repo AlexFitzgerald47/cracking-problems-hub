@@ -353,3 +353,21 @@ the letter. Filed as a lead, not a finding.
 * **An hour statement cannot locate an Irish scriptorium.** The whole island spans
   19.5 minutes of local time against an unequal hour of 37–86 minutes. Latitude,
   via the umbral track, is the only channel that carries site information.
+
+### Final state of this session
+
+`analysis/RESULTS.md` now runs to fourteen sections with a contents table; start
+there. The three things to do first, in order:
+
+1. **Clear the verification debt** on the ten notices in `annal_records.csv`.
+2. **Does AU record a lunar eclipse in January 865?** One lookup (§11).
+3. **Does AU record anything at 1191, 1039 or 733?** Three total eclipses over
+   Ireland with the Sun 29–55° up and no known notice (§14). 1191 is the sharpest —
+   totality across Louth and Meath on a June afternoon.
+
+Then the lunar borrowing list (133 unarguable cases), and the motive test.
+
+Two scope limits to carry forward, both established here rather than assumed:
+**no astronomical test can detect insular (Northumbrian) borrowing** (§13), and
+**77% of recordable events are diagnostically blind** (§14) — any hit rate that
+does not separate them measures the sky, not the annalists.
