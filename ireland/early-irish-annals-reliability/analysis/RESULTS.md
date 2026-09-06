@@ -171,6 +171,39 @@ Ireland than over Rome or Constantinople. A chronicle borrowing its eclipses fro
 Mediterranean sources has no mechanism for that, and the date-matching
 identification procedure does not select for it.
 
+### Addendum: the set expanded to ten notices, and the exception that appeared
+
+Three further notices were identified later in the session (AU 764, 753 and 688,
+all search-level and all marked as such in `annal_records.csv`), plus AU 878's
+lunar member. Every solar date lands on a real eclipse visible from Ireland:
+
+| Record | Deepest Irish site | Irish mag | Rome | Constantinople |
+|---|---|---|---|---|
+| AU 594 | Armagh | 1.061 | 0.557 | 0.438 |
+| AU 664 | Armagh | 0.996 | 0.739 | 0.848 |
+| AU 688 | Iona | 0.744 | 0.298 | 0.343 |
+| **AU 753** | Clonmacnoise | **0.865** | **0.911** | 0.790 |
+| AU 764 | Clonmacnoise | 0.968 | 0.635 | 0.681 |
+| AU 865 | Armagh | 0.999 | 0.694 | 0.513 |
+| AU 878 | Armagh | 1.025 | 0.891 | 0.831 |
+| AU 885 | Iona | 1.077 | 0.477 | 0.357 |
+| AU 878 (lunar) | Clonmacnoise | total, 1.054 | — | — |
+| Bede, 3 May 664 | — | **no eclipse** | 0.000 | 0.000 |
+
+**Eight of the nine solar notices are deeper over Ireland than over the
+Mediterranean. AU 753 is not** — Rome saw 0.911 against Ireland's 0.865, the only
+inversion in the set. That single row is worth more than the eight that agree,
+because it is the one a borrowing hypothesis would have predicted and the one this
+session did not go looking for. It does not overturn anything on its own: 753 is
+in the *blind* category of §4 (deep in both places, so a record of it decides
+nothing either way), and its wording was never recovered. But it belongs in the
+table rather than in a footnote, and any future count of "Irish-deeper" notices
+must include it.
+
+A sanity check that passed quietly: the true lunar age at every solar notice falls
+between 29.2 d and 0.06 d — i.e. within hours of conjunction, as it must. If any
+row had shown a lunar age near 15 the identification would have been wrong.
+
 ---
 
 ## 3. AU 878's fifth element: the lunar eclipse a fortnight before
