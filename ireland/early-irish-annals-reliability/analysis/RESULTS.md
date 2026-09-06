@@ -10,10 +10,31 @@ onset versus maximum — both correct — and shows that AU 885's "stars were se
 is true only at Iona.
 
 **What this is not.** It is not a reading of the annals. The corpus was
-unreachable from this session (see `../PROGRESS.md`); six notices were tested, at
-search-level verification, and their wording is not confirmed against a critical
-edition. Read the verification status in `annal_records.csv` before quoting
-anything here.
+unreachable from this session (see `../PROGRESS.md`); **ten** notices were tested,
+at search-level verification, and their wording is not confirmed against a
+critical edition. Read the verification status in `annal_records.csv` before
+quoting anything here.
+
+## Contents
+
+| § | Section | One line |
+|---|---|---|
+| 0 | The instrument | Validated to 0.0005 in magnitude, 228 solar eclipses for 1901–2000 exactly |
+| 1 | AD 664: the hour crux | Neither AU nor Bede is in error — **read §10 before quoting it** |
+| 2 | Ten notices audited | Every date lands on a real eclipse; one Mediterranean-deeper inversion |
+| 3 | AU 878's fifth element | A total lunar eclipse a fortnight before, confirmed |
+| 4 | The denominator | 1,930 solar eclipses; the test is blind on 28 of 132 candidates |
+| 5 | What would change these conclusions | The verification debt, mostly |
+| 6 | Δ*T* from hour statements | **Underpowered by two orders of magnitude — do not run it** |
+| 7 | The record ends at 1133 | The sky does not; five deep eclipses follow |
+| 8 | The lunar canon | 65:1 availability asymmetry; the borrowing test is 7× stronger |
+| 9 | Where the shadow fell | 878 totality passed 15 km from Armagh |
+| 10 | Which hour convention? | Three records cannot tell you; this qualifies §1 |
+| 11 | Eclipse pairs | Seven strong pairs in 810 years; the January 865 lookup |
+| 12 | Was the identification forced? | Three of eight were — chronological anchors |
+
+**If you have the annal text and one hour**, go to §11's January 865 question and
+§8's `lunar_prediction_borrowed.csv`. Those two return the most per minute.
 
 ---
 
