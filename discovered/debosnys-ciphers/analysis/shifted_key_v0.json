@@ -1,35 +1,13 @@
 {
   "version": "2026-09-06-v0",
-  "status": "aggressive working hypothesis; not a validated decryption key",
+  "status": "branch-specific exploratory atom split; superseded as the primary working representation by shifted_transition_key_v0.json",
+  "superseded_by": "analysis/shifted_transition_key_v0.json",
+  "reason_for_supersession": "The signature constrains shifted phonetic chunks more robustly than it constrains the internal split of those chunks into atom values. Keep Branch A only as an aggressive sub-hypothesis; do not present O=O, Z=SN, O2RNO=ST as established values.",
   "premise": "Temporarily accept the cross-page HENECOS DEBOSNOSTYS/A signature crib and Sektu's independently published shifted-rhyme/onset mechanism in order to generate outward predictions.",
-  "target_plaintext_variants": [
-    "HENECOSDEBOSNOSTYS",
-    "HENECOSDEBOSNOSTYA"
-  ],
-  "cipher_component_stream": [
-    "C2",
-    "B2",
-    "X",
-    "DOT",
-    "N",
-    "U",
-    "O",
-    "Z",
-    "O",
-    "O2RNO",
-    "CROSSB"
-  ],
-  "shifted_units": [
-    "H",
-    "EN",
-    "EC",
-    "OSD",
-    "EB",
-    "OSN",
-    "OST",
-    "YS_OR_YA"
-  ],
-  "shared_assignments": {
+  "target_plaintext_variants": ["HENECOSDEBOSNOSTYS", "HENECOSDEBOSNOSTYA"],
+  "cipher_component_stream": ["C2", "B2", "X", "DOT", "N", "U", "O", "Z", "O", "O2RNO", "CROSSB"],
+  "shifted_units": ["H", "EN", "EC", "OSD", "EB", "OSN", "OST", "YS_OR_YA"],
+  "shared_atom_assignments_under_the_strict_split": {
     "C2": "H",
     "B2": "EN",
     "X": "EC",
@@ -38,41 +16,22 @@
     "U": "EB",
     "CROSSB": "YS_OR_YA"
   },
-  "working_branch_A": {
-    "O": "O",
-    "Z": "SN",
-    "O2RNO": "ST"
-  },
-  "rejected_as_primary_branch_for_now": {
-    "branch_B": {
-      "O": "OS",
-      "Z": "N",
-      "O2RNO": "T"
-    },
-    "reason": "O is Sektu's most frequent subglyph. A globally frequent primitive emitting the two-character sequence OS is substantially less economical than O emitting a single high-frequency vowel-like O; Portuguese reference text has O about 10.8% versus OS bigram about 2.0%, and Spanish likewise has O far more frequent than OS. This is a prior/Occam discriminator, not a proof."
-  },
-  "derived_cross_boundary_units_under_A": [
-    {"unit": "OSD", "components": ["DOT", "N"], "interpretation": "rhyme(OS) of COS + onset(D) of DE"},
-    {"unit": "OSN", "components": ["O", "Z"], "interpretation": "rhyme(OS) of BOS + onset(N) of NOS"},
-    {"unit": "OST", "components": ["O", "O2RNO"], "interpretation": "rhyme(OS) of NOS + onset(T) of TYS/TYA"}
-  ],
-  "high_value_predictions": [
-    "At a true line boundary there is no following onset, so a terminal DOT should be capable of representing final rhyme /OS/ by itself.",
-    "If the poem lines 3-4 terminal dotted-X is exactly <X DOT>, its final DOT predicts a rhyme ending /OS/; X=EC may belong to preceding shifted material inside the same visual cluster.",
-    "N is provisionally onset D, but N.N must be parsed as an independent pair-codepoint before interpreting it as D+D; otherwise the recurrent poem-terminal N.N class becomes phonotactically implausible.",
-    "Exact NU elsewhere should contribute a boundary-crossing D+EB sequence under this model, not necessarily the standalone syllable DE.",
-    "O should recur at high frequency in contexts compatible with a vowel-like /o/ contribution if Branch A is right."
-  ],
-  "falsifiers": [
-    "An exact XP occurrence in independently recoverable plaintext whose terminal rhyme is incompatible with /OS/.",
-    "Repeated ordinary N atoms in positions that cannot function as syllable onsets under any reasonable boundary shift.",
-    "A corpus-wide O distribution incompatible with a frequent vowel-like contribution while favoring OS-like chunks.",
-    "A secure alternative plaintext for the six-glyph signature line that breaks the HENECOS alignment."
+  "working_branch_A_only": {"O": "O", "Z": "SN", "O2RNO": "ST"},
+  "alternative_branch_B": {"O": "OS", "Z": "N", "O2RNO": "T"},
+  "branch_note": "Branch A has a frequency/parsimony attraction because O is Sektu's most frequent subglyph and a single vowel-like O is cheaper than a globally fixed OS. Branch B preserves the OS+onset split more uniformly. Neither should be frozen until outward recurrences resolve the internal chunking.",
+  "robust_transition_chunks": [
+    {"cipher": ["C2"], "phonetic": "H"},
+    {"cipher": ["B2"], "phonetic": "EN"},
+    {"cipher": ["X"], "phonetic": "EC"},
+    {"cipher": ["DOT", "N"], "phonetic": "OSD"},
+    {"cipher": ["U"], "phonetic": "EB"},
+    {"cipher": ["O", "Z"], "phonetic": "OSN"},
+    {"cipher": ["O", "O2RNO"], "phonetic": "OST"},
+    {"cipher": ["CROSSB"], "phonetic": "YS_OR_YA"}
   ],
   "sources": {
     "sektu_transcription": "https://sektu.blogspot.com/2017/08/debosnys-cipher-transcription-revision.html",
     "sektu_shifted_phonetic_hypothesis": "https://sektu.blogspot.com/2017/06/first-hypothesis-for-debosnys-cipher.html",
-    "sektu_n_glyphs": "https://sektu.blogspot.com/2017/08/a-look-at-n-glyphs.html",
-    "portuguese_frequency_reference": "https://www.bibmath.net/crypto/index.php?action=affiche&quoi=chasseur%2Ffrequences_portugues"
+    "sektu_n_glyphs": "https://sektu.blogspot.com/2017/08/a-look-at-n-glyphs.html"
   }
 }
