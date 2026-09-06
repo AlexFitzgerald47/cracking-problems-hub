@@ -1,0 +1,54 @@
+{
+  "version": "2026-09-05-v2",
+  "status": "primary attack hypothesis; two surviving branches after independent constraints; not validator-ready",
+  "independent_inputs": [
+    "2015 plaintext observation: Hênecos, surname segmented DE BOS NOS TYA",
+    "Sektu 2017 shifted-phonetic hypothesis: rhyme of syllable + onset of next; complex groups may split across symbols",
+    "Sektu 2017 ordered signature subglyph stream: C2 B2 X DOT N U O Z O O2RNO CROSSB",
+    "Sektu 2017 N topology: N could be syllable-initial consonant such as b or d"
+  ],
+  "plaintext_target_conservative": "HENECOSDEBOSNOSTYA",
+  "primary_image_final_variant": "HENECOSDEBOSNOSTYS",
+  "syllables": ["HE", "NE", "COS", "DE", "BOS", "NOS", "TYA"],
+  "shifted_units": ["H", "EN", "EC", "OSD", "EB", "OSN", "OST", "YA"],
+  "search_reduction": {
+    "strict_atom_maps_max2_chars": 57,
+    "preserve_all_shifted_unit_boundaries": 4,
+    "plus_N_equals_D_onset_constraint": 2
+  },
+  "shared_assignments": {
+    "C2": "H",
+    "B2": "EN",
+    "X": "EC",
+    "DOT": "OS",
+    "N": "D",
+    "U": "EB",
+    "CROSSB": "YA"
+  },
+  "primary_image_final_variant_change": {
+    "CROSSB": "YS"
+  },
+  "branch_A": {
+    "O": "O",
+    "Z": "SN",
+    "O2RNO": "ST",
+    "flattened_atom_stream": ["H", "EN", "EC", "OS", "D", "EB", "O", "SN", "O", "ST", "YA"]
+  },
+  "branch_B": {
+    "O": "OS",
+    "Z": "N",
+    "O2RNO": "T",
+    "flattened_atom_stream": ["H", "EN", "EC", "OS", "D", "EB", "OS", "N", "OS", "T", "YA"]
+  },
+  "shared_high_value_prediction": {
+    "XP": "ECOS",
+    "NU": "DEB",
+    "note": "These are whitespace-glyph outputs under the shifted model, not normal syllables. If the exact XP/NU composites recur elsewhere, their atom-concatenated outputs should recur without remapping."
+  },
+  "falsifiers": [
+    "Exact recurrence of a shared component in independently readable plaintext requiring an incompatible value",
+    "Exact poem terminal XP identity plus independently recoverable rhyme incompatible with ECOS under the same phonetic convention",
+    "Evidence that the six-glyph signature-like line cannot encode the stylized Hênecos name family",
+    "Evidence that published component order is wrong for this line"
+  ]
+}
