@@ -266,3 +266,90 @@ it fails by two orders of magnitude. RESULTS.md §6 has the arithmetic.
 * Two tables in RESULTS.md use different site sets — §2 is best-of-three, §4/§7
   best-of-four including Bangor. Both are right; check which you are quoting.
 * The five-of-five hit rate in Result 2 is partly circular.
+
+---
+
+## 2026-09-06 — second working block, same session
+
+### Item 6 is done, and it should not have been parked
+
+"Settle the 878 track" was parked on the grounds that path maps are on blocked
+hosts. Wrong: the path can be computed. `analysis/shadow_path.py` intersects the
+shadow axis with the ellipsoid; validated at **0.2 km / 1.3 km / 13.1 km** against
+published points of greatest eclipse. **The 878 totality track passed 15 km from
+Armagh**; Iona was partial at 0.995. Details and the site implications in
+`analysis/RESULTS.md` §9.
+
+*The general lesson, which is why this is at the top: before parking something as
+archive-bound, check whether it is actually computable. Two of this problem's
+"blocked" items were not blocked at all.*
+
+### New artefacts
+
+| File | What |
+|---|---|
+| `results/totality_over_ireland.csv` | every eclipse whose umbral track crossed Ireland or Dál Riata, with the Sun's altitude and a conspicuousness band |
+| `results/eclipse_pairs.csv` | 93 solar/lunar pairs 12–18 days apart, both visible; 7 "strong" |
+| `results/master_events.csv` | all of the above merged, one row per event, with a `diagnostic` column |
+| `results/irish_tracks.txt` | central lines for the eclipses this problem turns on |
+
+`annal_records.csv` now holds **ten** notices (AU 594, 664, 688, 753, 764, 865,
+878 solar, 878 lunar, 885, Bede 664). The three added late are search-level from a
+single source each — verify before use, especially **AU 764**, which is the outlier
+in the hour-convention test.
+
+### Revised priority list
+
+**1. Clear the verification debt.** Still first, and now covers ten notices.
+
+**2. The January 865 lookup — one line of text, and the best return on the board.**
+AU records the solar eclipse of 1 Jan 865. Its *pair partner* is a **total lunar
+eclipse on 15 January 865**. Does AU record it? Yes makes two chronicle-linked
+pairs a decade apart, which is a habit; no is equally informative and supports
+selection by portent value. `analysis/RESULTS.md` §11.
+
+**3. The lunar borrowing list.** 133 eclipses below the Irish horizon throughout;
+any one in the annals is an unarguable borrowing. 197 decisive cases against the
+solar test's 28.
+
+**4. The motive test.** 710 visible umbral lunar eclipses against 171 solar at
+≥0.50; 327 total lunar against 5 central solar. Two counts settle whether the
+tradition logged the sky or selected portents.
+
+**5. Absence from the totality list.** A total eclipse over Ireland is the most
+recordable event there is, so an omission is evidence — *but only for the
+conspicuous ones*. `totality_over_ireland.csv` carries the Sun's altitude for
+exactly this reason: 661-07-02 crossed Clare and Limerick at **6.5° altitude at
+dawn**, and its omission would say more about haze than about the annalists.
+
+**6. The hour convention, with a dozen records rather than three.** §10 shows
+three statements cannot separate the unequal-interval, unequal-instant and
+equinoctial conventions — each of the three fits a *different* one almost
+perfectly, which is what chance does with three records and six combinations. A
+dozen would separate them. This is a far better use of the hour data than §6's
+Δ*T* idea.
+
+**7. Dúngal's letter to Charlemagne on the solar eclipses of 810.** A securely
+dated astronomical text by a named Irish scholar. This canon finds only **one**
+solar eclipse visible from Europe in 810 (30 November); the other three that year
+were far southern (γ = −1.11, −1.40, +1.45) and touched no European sky. Whether
+that troubles the "double eclipse" tradition or reflects a misreading here needs
+the letter. Filed as a lead, not a finding.
+
+### Additional traps found in this block
+
+* **`hour_analysis.analyse` used to locate the eclipse by a hardcoded offset from
+  noon.** It bracketed the afternoon eclipse of 664 and silently returned *no
+  sites at all* for the morning eclipse of 764 — answering "no eclipse" when it
+  meant "I looked in the wrong place". Fixed to find greatest eclipse itself, but
+  the class of bug is worth watching for elsewhere.
+* **Track sampling resolution is part of the measurement.** A 4-minute trace
+  quantises every distance by up to 120 km, because the shadow moves ~240 km
+  between samples. It put Jarrow 269 km from the 664 track where the true figure
+  is 186 km.
+* **Distance from the central line does not decide totality when the Sun is low.**
+  The umbra on the ground is an ellipse that stretches enormously at low altitude.
+  Report computed totality alongside distance; they are different tests.
+* **An hour statement cannot locate an Irish scriptorium.** The whole island spans
+  19.5 minutes of local time against an unequal hour of 37–86 minutes. Latitude,
+  via the umbral track, is the only channel that carries site information.
