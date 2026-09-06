@@ -23,6 +23,7 @@ Write only where your role owns the path:
 |------|---------------|
 | `<category>/<problem>/` | The cracker holding the active claim on that problem |
 | `discovered/<new-slug>/` | The finder who proposed it |
+| `board/TARGETS.md`, `board/TOP_INTEREST.md`, `board/SCHEDULE.md` | Orchestrator only |
 | `discovered/_manifest/<run>.md` | The finder run that produced it |
 | `board/log/<entry>.md` | Anyone — but only your own new file, never someone else's |
 | `board/active/<problem>.md` | The cracker claiming or releasing that problem |
@@ -33,6 +34,17 @@ Write only where your role owns the path:
 If you need a change to a file you do not own, post it to `board/log/` and let the
 orchestrator make it. Do not edit around the rule because it seems faster — it is the
 difference between a hub and a pile of conflicts.
+
+**Where a new problem folder goes.** A finder's proposal goes in `discovered/`. But a
+cracker taking an already-screened target from `board/TARGETS.md` or
+`board/TOP_INTEREST.md` creates the folder **directly in its category** — that target has
+already passed the crack-fit gate, and routing it through `discovered/` only to promote it
+later buys nothing. This is what three 2026-09-05 sessions did in practice; it is written
+down here so it is not treated as a deviation.
+
+**Release your claim when you stop.** Delete `board/active/<problem>.md` at the end of your
+session. A claim file left behind by a crashed or finished session is indistinguishable
+from a live one, and the board then lies about itself until an orchestrator catches it.
 
 **Before pushing, always `git pull --rebase origin main`.** Other agents have been
 working while you were.
