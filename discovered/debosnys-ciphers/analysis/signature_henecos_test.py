@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
-"""Test the Hênêcos / Debosnostya signature-crib hypothesis.
+"""Test the Hênêcos Debosnostys signature-crib hypothesis.
 
 Evidence used before this test:
 - Sektu independently labels the six-glyph sequence
     C2B2 XP NU ZOO OM2N SHI
   as a possible signature and gives the ordered subglyph decomposition.
-- A different Debosnys page ends in a visible handwritten signature beginning
-  Hênêcos Debo...
-- A 2015 observer, independently of this proposed cipher alignment, read that
-  surname as DE BOS NOS TYA.
+- The full-resolution primary scan of cryptogram #4b ends in a handwritten
+  signature that reads Hênêcos Debosnostys (accents normalized below).
+- A 2015 observer independently noticed the unusual extended surname and
+  segmented it approximately DE BOS NOS TYA; the primary scan adjudicates the
+  ending more cleanly as TYS.
 
 The high-risk hypothesis tested here is therefore the WHOLE-GLYPH alignment
 
     C2B2 | XP  | NU | ZOO | OM2N | SHI
-    HENE | COS | DE | BOS | NOS  | TYA
+    HENE | COS | DE | BOS | NOS  | TYS
 
-This script does *not* claim that each subglyph is a plaintext letter.  It
+This script does *not* claim that each subglyph is a plaintext letter. It
 measures whether the repeated-subglyph structure is unusually compatible with
 the candidate signature under a deliberately stricter atom->substring model.
 Failure of that strict model does not falsify the whole-glyph hypothesis;
@@ -29,11 +30,10 @@ from statistics import mean, median
 ATOMS = ["C2", "B2", "X", "DOT", "N", "U", "O", "Z", "O", "O2RNO", "CROSSB"]
 
 CANDIDATES = [
-    "HENECOSDEBOSNOSTYA",   # independent 2015 reading of the visible signature
-    "HENECOSDEBOSNOSTYS",   # final-letter ambiguity from the scan
+    "HENECOSDEBOSNOSTYS",   # primary-scan reading, accents removed
     "HENECOSDEBOSNYS",      # conventional shortened surname
-    "HENRYDEBOSNOSTYA",
-    "HENRICUSDEBOSNOSTYA",
+    "HENRYDEBOSNOSTYS",
+    "HENRICUSDEBOSNOSTYS",
 ]
 
 WHOLE_GLYPH_HYPOTHESIS = [
@@ -42,7 +42,7 @@ WHOLE_GLYPH_HYPOTHESIS = [
     ("NU", "DE"),
     ("ZOO", "BOS"),
     ("OM2N", "NOS"),
-    ("SHI", "TYA"),
+    ("SHI", "TYS"),
 ]
 
 
@@ -103,16 +103,16 @@ def main() -> None:
         print(f"{text:24s} {counts}")
     print()
     print("MATCHED-BUDGET PERMUTATION NULL (max_chunk=2)")
-    for text in CANDIDATES[:2]:
-        obs, mu, med, mx, p = permutation_null(text)
-        print(
-            f"{text:24s} observed={obs:3d} null_mean={mu:.3f} "
-            f"null_median={med:.1f} null_max={mx:3d} p={p:.6f}"
-        )
+    text = CANDIDATES[0]
+    obs, mu, med, mx, p = permutation_null(text)
+    print(
+        f"{text:24s} observed={obs:3d} null_mean={mu:.3f} "
+        f"null_median={med:.1f} null_max={mx:3d} p={p:.6f}"
+    )
     print()
     print("INTERPRETATION")
     print(
-        "- The extended HENECOS DEBOSNOSTYA/S spelling is much more compatible "
+        "- The primary-scan HENECOS DEBOSNOSTYS spelling is much more compatible "
         "with the repeated-atom pattern than HENECOS DEBOSNYS under the strict "
         "linear model."
     )
