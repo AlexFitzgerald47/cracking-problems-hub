@@ -1,0 +1,65 @@
+{
+  "version": "2026-09-05-v1",
+  "status": "candidate crib-derived key; not validated decryption",
+  "cipher_location": "six-glyph signature-like line identified independently by Sektu",
+  "cipher_whole_glyphs": ["C2B2", "XP", "NU", "ZOO", "OM2N", "SHI"],
+  "cipher_decomposition": [
+    ["C2", "B2"],
+    ["X", "DOT"],
+    ["N", "U"],
+    ["O", "Z", "O"],
+    ["O2RNO"],
+    ["CROSSB"]
+  ],
+  "crosspage_plaintext_anchor": {
+    "source": "plaintext stylized signature at foot of cryptogram #4b",
+    "primary_reading": "Hênecos Debosnostys",
+    "normalized": "HENECOSDEBOSNOSTYS",
+    "independent_2015_observation": "surname was parsed as DE BOS NOS TYA before Sektu published the 2017 decomposed cipher transcription",
+    "confidence": "high that Hênecos Debosnostys-family spelling is present; final -TYS versus older -TYA reading retained as palaeographic variant"
+  },
+  "whole_glyph_candidate_mapping": {
+    "C2B2": "HENE",
+    "XP": "COS",
+    "NU": "DE",
+    "ZOO": "BOS",
+    "OM2N": "NOS",
+    "SHI": "TYS"
+  },
+  "alternate_last_chunk": {"SHI": "TYA"},
+  "syllabic_leap": {
+    "plaintext_syllabification": ["HE", "NE", "COS", "DE", "BOS", "NOS", "TYS"],
+    "candidate_hierarchical_mapping": {
+      "C2": "HE",
+      "B2": "NE",
+      "<X DOT>": "COS",
+      "<N U>": "DE",
+      "<O Z O>": "BOS",
+      "<O2RNO>": "NOS",
+      "<CROSSB>": "TYS"
+    },
+    "why_it_matters": "The first whitespace glyph is the only place in this proposed alignment that bundles the two initial syllables HE+NE, and Sektu independently decomposes that glyph into exactly two ordered components C2+B2. This is a post-hoc but cross-source structural match, not proof.",
+    "confidence": "medium-high as attack hypothesis; low as fixed key until at least one mapping predicts another occurrence"
+  },
+  "first_component_value_hypotheses": {
+    "C2": {"value": "HE", "confidence": "medium, crib-dependent"},
+    "B2": {"value": "NE", "confidence": "medium, crib-dependent"},
+    "N_U": {"value": "DE", "confidence": "medium-high whole-composite, crib-dependent"},
+    "X_DOT": {"value": "COS", "confidence": "medium-high whole-composite, crib-dependent"},
+    "O_Z_O": {"value": "BOS", "confidence": "medium-high whole-composite, crib-dependent"},
+    "O2RNO": {"value": "NOS", "confidence": "medium-high whole-composite, crib-dependent"},
+    "CROSSB": {"value": "TYS", "alternate": "TYA", "confidence": "medium whole-composite, palaeographic ending uncertain"}
+  },
+  "minimal_separable_subhypotheses": {
+    "N": {"value": "D/onset-class", "basis": "<N U> -> DE plus Sektu's pre-existing observation that N can behave like a syllable-initial consonant", "confidence": "low-medium"},
+    "U": {"value": "E/nucleus-class", "basis": "<N U> -> DE under separability", "confidence": "low-medium"},
+    "X": {"value": "C-or-K/onset-class", "basis": "<X DOT> -> COS under onset+rime factorization", "confidence": "low"},
+    "DOT_in_X_DOT": {"value": "OS/rime-class", "basis": "<X DOT> -> COS under onset+rime factorization", "confidence": "low"}
+  },
+  "hard_warning": "Do not assign fixed literal values to O or Z from <O Z O> -> BOS. Identical O occurs in first and last component slots but BOS begins and ends differently, directly falsifying a context-free atom-to-substring reading under this crib. Position, orientation, feature-composition, or a non-literal operator is required.",
+  "heldout_predictions": [
+    "If the poem line-3/4 dotted-X terminal is the exact same XP/<X DOT> glyph rather than a lookalike, it should encode a rhyme-bearing chunk near COS /kos/ under this crib.",
+    "If NU recurs elsewhere as the same whole composite, a DE-/də/-like phonetic function should be detectable in any independently constrained plaintext.",
+    "If C2 and B2 occur separately in other glyphs, HE and NE should generalize without remapping."
+  ]
+}
