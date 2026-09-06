@@ -870,3 +870,59 @@ other way. Take the 37 eclipses at Irish magnitude ≥0.90 from the canon, and a
 how many have a notice at the corresponding annal-year. That sample is selected by
 the *sky*, not by the literature, and it converts this from an illustration into a
 measurement.
+
+---
+
+## 13. What the borrowing tests cannot see: Northumbria
+
+§4 and §8 test "observed in Ireland" against "copied from a Mediterranean
+chronicle". That is a real hypothesis — the literature has the Annals of Ulster
+taking material word for word from Marcellinus Comes — but it is not the only one,
+and it may not be the most likely. The obvious alternative source for an Irish
+chronicle in the seventh to ninth centuries is **insular**: Bede's *Chronica
+maiora*, Northumbrian annals, the traffic between Iona and Lindisfarne.
+
+The tests are blind to it, completely. Over AD 400–1210:
+
+| | |
+|---|---|
+| solar eclipses deep (≥0.80) over Ireland | 70 |
+| deep at Jarrow | 61 |
+| deep at both — no discrimination | 59 (**84%** of the Irish set) |
+| **deep at Jarrow, shallow (<0.40) in Ireland** | **0** |
+| deep in Ireland, shallow at Jarrow | 1 |
+| mean \|Irish − Jarrow\| magnitude difference | **0.053** |
+| mean \|Irish − Mediterranean\| difference, for scale | **0.392** |
+
+**Not one eclipse in eight centuries was large over Bede's monastery and
+invisible from Ireland.** The mean magnitude difference between Ireland and
+Northumbria is 0.053 — seven times smaller than the Ireland–Mediterranean
+difference, and below the level at which any annalistic description could
+discriminate. Ireland and Northumbria are 300 km apart and see essentially the
+same sky.
+
+The same limit applies to the lunar test in §8, and for the same reason: the two
+regions share a longitude band, so they share the night hemisphere almost
+perfectly.
+
+### What this means for the results above
+
+* **The tests are sound for what they test.** A Mediterranean source is a
+  documented hypothesis for AU, and `prediction_borrowed.csv` and
+  `lunar_prediction_borrowed.csv` are genuine discriminators against it.
+* **They say nothing about insular transmission**, and no astronomical test can.
+  If an Irish notice was copied from a Northumbrian one, the sky is identical and
+  the eclipse data is silent. That question belongs to textual criticism —
+  shared wording, shared errors, shared order — which is exactly the half of this
+  problem the egress policy blocked.
+* **So the phrase "diagnostic of local observation" in `master_events.csv` should
+  be read as "not copied from the Mediterranean"**, which is weaker. The column
+  header stays as it is because it is the standard framing, but this section is
+  the footnote it needs.
+
+The one place the astronomy *does* speak to insular transmission is §9's tracks,
+because totality is a narrow band where magnitude is a broad one: the 664 eclipse
+was total at Jarrow and Bangor but not at Armagh, and the 878 eclipse total at
+Armagh but not at Jarrow. A notice claiming totality can therefore be placed on one
+side of the Irish Sea or the other — but only when it claims totality, which of the
+ten notices audited only AU 885 clearly does.

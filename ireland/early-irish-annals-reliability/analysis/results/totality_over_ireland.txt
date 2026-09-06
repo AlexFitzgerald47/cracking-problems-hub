@@ -1,0 +1,30 @@
+solar eclipses AD 400-1209:                 1930
+  of which central somewhere on Earth:   1244
+  path of totality within 120 km of Ireland:      18  (one every 45 years)
+  path within 120 km of Iona / Dunadd / Islay:    7  (one every 116 years)
+  both:                                            5
+  Ireland but NOT Dal Riata:                       13
+  Dal Riata but NOT Ireland:                       2
+
+the eclipses whose totality reached Ireland:
+  0413-04-16  gamma +0.608  track at +51.24 N -9.23 E  (39 km)
+  0507-03-29  gamma +0.664  track at +51.59 N -9.56 E  (6 km)
+  0536-09-01  gamma +0.664  track at +55.00 N -7.19 E  (9 km)
+  0594-07-23  gamma +0.554  track at +54.51 N -6.63 E  (18 km)
+  0661-07-02  gamma +0.834  track at +52.79 N -8.69 E  (15 km)
+  0664-05-01  gamma +0.466  track at +55.25 N -6.99 E  (20 km)
+  0698-12-08  gamma +0.880  track at +54.39 N -8.14 E  (25 km)
+  0733-08-14  gamma +0.539  track at +51.71 N -9.43 E  (18 km)
+  0764-06-04  gamma +0.520  track at +53.33 N -6.28 E  (3 km)
+  0865-01-01  gamma +0.952  track at +54.07 N -8.14 E  (31 km)
+  0878-10-29  gamma +0.941  track at +54.46 N -6.53 E  (15 km)
+  0934-04-16  gamma +0.554  track at +52.21 N -6.87 E  (18 km)
+  1006-05-29  gamma +0.840  track at +53.47 N -10.41 E  (93 km)
+  1023-01-24  gamma +0.888  track at +51.83 N -6.17 E  (81 km)
+  1039-08-22  gamma +0.489  track at +51.21 N -9.89 E  (47 km)
+  1140-03-20  gamma +0.614  track at +51.04 N -9.10 E  (63 km)
+  1180-01-28  gamma +0.727  track at +52.66 N -7.37 E  (34 km)
+  1191-06-23  gamma +0.483  track at +54.05 N -6.47 E  (17 km)
+
+wrote /home/user/cracking-problems-hub/ireland/early-irish-annals-reliability/analysis/results/totality_over_ireland.csv (20 near-miss and hit rows)
+wall time 1441 s
