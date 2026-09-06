@@ -416,3 +416,45 @@ borrowing that cannot be explained away.**
 Honest nuance: proportionally the lunar test is *blinder* than the solar one (91%
 of the Irish set is shared with the Mediterranean, against 40% for solar), because
 the night hemisphere is large. It wins on absolute numbers, not on sample purity.
+
+### Handover item 6 settled by computing the track rather than looking it up
+
+The earlier entry parked the 878 discrepancy on the grounds that authoritative
+path maps are on blocked hosts. That was the wrong call and is corrected here:
+the path does not have to be looked up. `analysis/shadow_path.py` intersects the
+shadow axis with the Earth's ellipsoid and `analysis/irish_tracks.py` traces the
+central line on the ground.
+
+Validated against published points of greatest eclipse: **0.2 km** for 2017-08-21,
+**1.3 km** for 1999-08-11, 13.1 km for 2015-03-20. The last is the honest limit
+rather than a bug — at |γ| near 1 the axis meets the Earth so obliquely that
+arcseconds of lunar position become tens of kilometres on the ground.
+
+**Result: the 878 path of totality passed 15 km from Armagh.** Iona was partial at
+0.995 and Jarrow at 0.992. The secondary account placing totality in central and
+northern Scotland is wrong. 1133 (36 km from Jarrow, 54 km from Iona) and 1140
+(Wales, nowhere in Britain or Ireland central) come out where the medieval sources
+put them, which is what licenses trusting the ninth-century figure.
+
+**The tracks also change the site picture, in both directions.** AU 878 — the most
+technically detailed notice in the set — corresponds to an eclipse total *directly
+over Armagh*, which is where the later tradition is normally placed. But AU 885's
+"stars were seen" requires totality, and totality in 885 reached **only Iona and
+Dunadd**; Armagh saw 0.972. That is a century and a half after the common source
+is usually taken to have left Iona. Full discussion and the caveats in
+`analysis/RESULTS.md` §9, including the warning that the two Ireland-total eclipses
+are the *earlier* pair and the two Iona-total ones the *later* pair — the reverse
+of the naive expectation, and meaningless at n = 5.
+
+**Two errors of my own caught in the same pass**, both recorded rather than
+quietly fixed:
+
+* The first version of the track table sampled every 4 minutes. The shadow moves
+  about 240 km in that time, so every distance was quantised by up to 120 km — it
+  put Jarrow 269 km from the 664 track where the true figure is 186 km. Resolution
+  of a derived quantity is part of the measurement. Now sampled at 20 seconds.
+* "Distance from the central line" was being read as if it decided totality. It
+  does not when the Sun is low: the umbra on the ground is an ellipse that
+  stretches enormously at low altitude, so a site can be far from the centre line
+  and still inside the shadow. The table now reports the computed totality
+  alongside the distance, and they are labelled as different tests.

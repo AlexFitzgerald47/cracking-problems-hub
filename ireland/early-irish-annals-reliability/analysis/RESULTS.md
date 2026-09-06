@@ -507,3 +507,98 @@ demonstrably local. `lunar_prediction_irish.csv` (64) is the converse.
 
 AU 878 already records one solar and one lunar eclipse a fortnight apart, and gets
 both right.
+
+---
+
+## 9. Where the shadow actually fell — and what it says about who was watching
+
+Handover item 6 was "settle the 878 track", parked because the authoritative path
+maps sit on blocked hosts. That was the wrong call: **the path does not have to be
+looked up, it can be computed.** `shadow_path.py` intersects the shadow axis with
+the Earth's ellipsoid; `irish_tracks.py` traces the central line.
+
+**Validation** (`validate_shadow_path.py`), against published points of greatest
+eclipse, measuring geometry and timing separately:
+
+| Eclipse | γ | closest approach of the computed line |
+|---|---|---|
+| 2017-08-21 | 0.437 | **0.2 km** |
+| 1999-08-11 | 0.506 | **1.3 km** |
+| 2015-03-20 | 0.945 | 13.1 km |
+
+The 2015 figure is the honest limit, not a bug: at |γ| near 1 the axis meets the
+Earth very obliquely, so arcseconds of lunar position become tens of kilometres on
+the ground. Every question below is at the scale of hundreds of kilometres.
+
+*(The 1999 case also caught an error in this project's own constants. A naive test
+reported a half-degree miss; separating the two error sources showed the computed
+track passes 1.3 km from the published point 64 s later than the time recorded
+here — and the independent |γ| minimum agrees to within a second. The remembered
+time was wrong, not the track.)*
+
+### The tracks
+
+Distance is from the central line; "TOTAL/partial" is what the site actually saw,
+computed independently. The two are not the same test — at low Sun altitude the
+umbra on the ground is an ellipse that stretches enormously, so a site can be far
+from the centre line and still inside it.
+
+| Eclipse | Central line ran over | Total at | Partial at |
+|---|---|---|---|
+| **594-07-23** | Ulster and the midlands — 13 km from Bangor, 18 km from Armagh, 78 km from Clonmacnoise | Armagh, Bangor, Clonmacnoise, Jarrow, Dunadd | **Iona (0.989)** |
+| **664-05-01** | north Irish Sea — 40 km from Jarrow, 51 km from Bangor | Bangor, Jarrow | **Armagh (0.996)**, Iona, Clonmacnoise |
+| **878-10-29** | **15 km from Armagh** | Armagh, Bangor | Clonmacnoise, Iona, Jarrow (all 0.99+) |
+| **885-06-16** | 105 km from Iona, 158 km from Dunadd | **Iona, Dunadd only** | Armagh (0.972), Clonmacnoise (0.960) |
+| 1133-08-02 | 36 km from Jarrow, 54 km from Iona and Dunadd | Jarrow, Dunadd, Iona | Armagh (0.963), Clonmacnoise (0.925) |
+| 1140-03-20 | Wales; nowhere in Ireland or Britain central | — | all |
+
+### Item 6 is settled
+
+**The 878 path of totality passed 15 km from Armagh.** Iona was partial at 0.995,
+Jarrow at 0.992. The popular secondary account placing totality in central and
+northern Scotland is wrong; §2's magnitudes were right, and now they are backed by
+a track rather than by point values alone. 1133 and 1140 come out where the
+medieval sources put them, which is what licenses trusting the ninth-century
+result.
+
+### What this does to the "who was watching" question
+
+Two of the audited notices now carry a site implication, and **they point in
+opposite directions**:
+
+* **AU 878 fits Armagh.** The most technically detailed notice in the set — feria,
+  luna, hour, and a lunar eclipse a fortnight earlier — corresponds to an eclipse
+  that was **total directly over Armagh**. That is exactly where the later annalistic
+  tradition is normally placed.
+* **AU 885 fits Iona, and that is the awkward one.** "Stars were seen" requires
+  totality, and totality in 885 reached **only Iona and Dunadd** — Armagh saw
+  0.972, Clonmacnoise 0.960. But 885 is a century and a half *after* the point at
+  which the common source is usually taken to have moved from Iona to Ireland. If
+  that notice is an eyewitness record, either the Ionan chronicle was still
+  contributing in the 880s or AU drew on an Ionan source later than is usually
+  assumed.
+
+**And a warning against the obvious reading.** The two eclipses that were total
+over *Ireland* are 594 and 878; the two total over *Iona* are 885 and 1133 — the
+later pair. That is the reverse of the naive Iona-then-Ireland expectation, and
+with a sample of five it means nothing on its own. It is a reason to run this test
+properly on the full corpus rather than on the eclipses that happen to be famous,
+and a reminder that §4's verdict on site discrimination — corroboration only,
+never primary evidence — still holds.
+
+**Both points inherit the verification debt on the wording.** If AU 885 does not
+say stars were seen, the second bullet evaporates.
+
+### One thing the tracks make sharper, and it is a real puzzle
+
+If 878 was total over Armagh, an observer there watched the sun go out. The AU 878
+notice, as far as this session could establish it, gives feria, luna and hour —
+the apparatus of a computist — and **does not mention darkness or stars**, while
+AU 885, recording an eclipse that was merely 0.97 at Armagh, reportedly *does*.
+Three readings, and the text decides between them in an afternoon:
+
+1. the 878 notice was written where it was not total, by someone with good
+   calendrical data but no dramatic sight to report;
+2. the two notices come from different compilers with different habits;
+3. the 878 notice does mention darkness and this session's search-level text is
+   incomplete — the most likely explanation, and the cheapest to check.
