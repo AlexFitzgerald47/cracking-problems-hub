@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from astro import (SkyState, Site, local_circumstances, julian_day, DEG,
                    delta_t, delta_t_sigma, gmst_deg, _norm, _sub, _angle)
+from find_eclipses import refine_new_moon, greatest_eclipse
 
 SITES = {
     "Armagh": Site("Armagh", 54.3503, -6.6528),
@@ -122,14 +123,25 @@ def eclipse_phases(jd_center, site, delta_t_s, half_window_h=3.0):
 
 
 def analyse(year=664, month=5, day=1, dt_offsets=range(-600, 601, 20)):
+    """Canonical hours of each contact, for every site and every Delta-T offset.
+
+    The eclipse window is located by finding the actual instant of greatest
+    eclipse rather than assuming one. The first version of this function used a
+    hardcoded offset of +0.2 d from noon, which happened to bracket the
+    afternoon eclipse of 664 and silently returned *nothing at all* for a morning
+    one -- AU 764, at 10:52 UT, fell outside the window and the function reported
+    no sites rather than an error. A function that answers "no eclipse" when it
+    means "I looked in the wrong place" is worse than one that crashes.
+    """
     jd_noon = julian_day(year, month, day) + 0.5
     dt_c = delta_t(year)
+    jd_greatest = greatest_eclipse(refine_new_moon(jd_noon))[0]
     out = []
     for site_name, site in SITES.items():
         for off in dt_offsets:
             dt = dt_c + off
             sr, ss, _, _ = daylight_bounds(jd_noon, site, dt)
-            ph = eclipse_phases(jd_noon + 0.2, site, dt)
+            ph = eclipse_phases(jd_greatest, site, dt, half_window_h=4.0)
             if ph is None:
                 continue
             first, jmax, last, peak = ph

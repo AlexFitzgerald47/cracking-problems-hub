@@ -74,6 +74,13 @@ seen from Ireland.** Neither is an error and they are not in conflict. Maximum
 falls in the ninth hour at no Δ*T* within ±600 s of the published value, so the
 annalistic hour is only wrong if one insists it describes maximum.
 
+> **Read §10 before quoting this paragraph.** The reading above assumes the
+> unequal-*interval* hour convention. §10 adds a third hour statement (AU 764),
+> shows that three records cannot establish which convention the annalists used,
+> and identifies which part of this section survives all three: that maximum
+> falls in the ninth hour under *no* convention. The identification of AU's hour
+> with first contact specifically is one of two live readings, not a result.
+
 Robustness (`results/ad664_hour_analysis.csv`, Δ*T* scanned in 20 s steps): the
 ninth-hour/first-contact identification holds for Δ*T* ≥ 3834 s at Iona and
 ≥ 3894 s at Clonmacnoise — comfortably inside the published value ± several σ.
@@ -617,3 +624,67 @@ statement can distinguish any two Irish sites, however precise the record or the
 Latitude, not longitude, is what carries site information here — via which sites
 the umbral track crossed, as in the table above. That is the only channel that
 works, and §4 already prices it as corroboration rather than evidence.
+
+---
+
+## 10. Which hour convention? Three records cannot tell you — and that qualifies §1
+
+Adding AU 764 (*Sol tenebrosus in hora tertia diei*, 4 June 764 — a real eclipse,
+Irish magnitude 0.968, Rome 0.635) gives three annalistic hour statements, and
+three is enough to ask which hour convention the annalists were using. Irish
+computists knew more than one:
+
+* **unequal interval** — "hora N" is the Nth twelfth of daylight, a span of 37–86
+  minutes depending on the season. This is what §1 assumed.
+* **unequal instant** — "hora N" is the canonical hour itself, the moment
+  sunrise + N·h*, as terce, sext and none are points in the office rather than
+  spans.
+* **equinoctial** — "hora N" is N fixed hours after a 6 a.m. day-start, the
+  convention of the computistical tables rather than the sundial.
+
+Residuals at Armagh, in minutes, negative meaning the stated hour is early:
+
+| Record | interval (mid) vs first / max | instant vs first / max | equinoctial vs first / max |
+|---|---|---|---|
+| AU 664 *hora nona* | −38 / −103 | **+0** / −64 | −51 / −115 |
+| AU 764 *hora tertia* | −123 / −207 | −80 / −165 | **−5** / −90 |
+| AU 878 *hora septima* | +35 / −40 | +58 / −16 | +72 / **−2** |
+| **mean \|residual\|** | 65 / 117 | 46 / 82 | **43 / 69** |
+
+Equinoctial wins on the mean, but **not by enough to believe, and the per-record
+pattern is the giveaway**: 664 fits *instant-vs-first-contact* to the minute, 764
+fits *equinoctial-vs-first-contact* to five minutes, and 878 fits
+*equinoctial-vs-maximum* to two. Each record matches a *different* one of six
+combinations almost perfectly.
+
+With three records and six (convention × phase) combinations, that is what chance
+produces. It is the trap `board/PRACTICES.md` calls *count the competitors, do not
+score one*, and the honest reading of this table is that **three hour statements
+cannot determine the convention.** The best mean residual, 43 minutes, is not much
+better than a null in which the stated hour is placed at random within an hour of
+the truth.
+
+### What this does to §1
+
+§1 read AU 664's ninth hour as first contact. That reading **assumes the unequal
+interval convention**, and this section shows the assumption is not established.
+Under the equinoctial convention "hora nona" is 15:00 local apparent time, 51
+minutes *before* first contact — on which reading the annalistic hour is simply
+early rather than exactly right.
+
+**What survives every convention** is the load-bearing half, and it is worth
+stating plainly because it is what the section is actually for:
+
+> Maximum falls in the ninth hour under **none** of the three conventions —
+> interval puts maximum in hour 10, instant leaves it 64 minutes later, and
+> equinoctial 115 minutes later.
+
+So the AU and Bede statements still cannot both describe maximum, and AU's cannot
+describe maximum at all. That much is convention-independent, Δ*T*-independent and
+stands. The stronger claim in §1 — that AU's hour *is* first contact — should be
+read as one of two live readings, not as established.
+
+**What would settle it:** a dozen hour statements rather than three. The full
+442–1133 corpus plausibly contains them, and the same table computed over a dozen
+records would separate 43 minutes from 65 with something like confidence. That is
+a much better use of the hour data than trying to measure Δ*T* with it (§6).
