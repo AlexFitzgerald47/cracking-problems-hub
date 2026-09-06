@@ -32,6 +32,8 @@ quoting anything here.
 | 10 | Which hour convention? | Three records cannot tell you; this qualifies §1 |
 | 11 | Eclipse pairs | Seven strong pairs in 810 years; the January 865 lookup |
 | 12 | Was the identification forced? | Three of eight were — chronological anchors |
+| 13 | The Northumbrian blind spot | The borrowing tests cannot see insular transmission at all |
+| 14 | Totality over Ireland | **18, not 5** — and thirteen have no known notice |
 
 **If you have the annal text and one hour**, go to §11's January 865 question and
 §8's `lunar_prediction_borrowed.csv`. Those two return the most per minute.
@@ -926,3 +928,91 @@ was total at Jarrow and Bangor but not at Armagh, and the 878 eclipse total at
 Armagh but not at Jarrow. A notice claiming totality can therefore be placed on one
 side of the Irish Sea or the other — but only when it claims totality, which of the
 ten notices audited only AU 885 clearly does.
+
+---
+
+## 14. Totality over Ireland: eighteen, not five — and thirteen with no known notice
+
+The canon reported **5** eclipses "central over Ireland", meaning central at one of
+four monasteries. That was the wrong denominator. The umbra is a band a few
+hundred kilometres wide; it can cross Munster or Leinster without coming near
+Armagh, Iona, Clonmacnoise or Bangor.
+
+`totality_over_ireland.py` traced every eclipse with a central line and tested the
+track against points spread over the island. Of 1,930 solar eclipses AD 400–1210,
+**1,244 were central somewhere on Earth, and 18 put the path of totality within
+120 km of Ireland** — one every 45 years, and **3.6× the four-monastery count**.
+Seven more crossed Dál Riata.
+
+`annotate_totality.py` adds the Sun's altitude, because an omission from the
+annals means something different at 55° than at 4°:
+
+| Date | Track crossed | Sun | Conspicuous? | In the audited set? |
+|---|---|---|---|---|
+| 413-04-16 | 51.2 N, 9.2 W (west Cork) | 49° | high | — |
+| 507-03-29 | 51.6 N, 9.6 W | 42° | high | — |
+| **536-09-01** | 55.0 N, 7.2 W (Donegal) | 43° | high | — |
+| 594-07-23 | 54.5 N, 6.6 W (Armagh) | 14° | moderate | **AU 594** |
+| 661-07-02 | 52.8 N, 8.7 W (Clare) | 4° | low | — |
+| 664-05-01 | 55.3 N, 7.0 W (north Antrim) | 23° | moderate | **AU 664 / Bede** |
+| 698-12-08 | 54.4 N, 8.1 W (Sligo) | 9° | low | — |
+| **733-08-14** | 51.7 N, 9.4 W (west Cork) | 29° | high | — |
+| 764-06-04 | **53.3 N, 6.3 W (Dublin)** | 55° | high | **AU 764** |
+| 865-01-01 | 54.1 N, 8.1 W (Sligo) | 12° | low | **AU 865** |
+| 878-10-29 | 54.5 N, 6.5 W (Armagh) | 19° | moderate | **AU 878** |
+| 934-04-16 | 52.2 N, 6.9 W (Wexford) | 22° | moderate | — |
+| 1006-05-29 | 53.5 N, 10.4 W (off Connemara) | 1° | low | — |
+| 1023-01-24 | 51.8 N, 6.2 W | 20° | moderate | — |
+| **1039-08-22** | 51.2 N, 9.9 W (west Cork) | 46° | high | — |
+| 1140-03-20 | 51.0 N, 9.1 W | 35° | high | — |
+| 1180-01-28 | 52.7 N, 7.4 W (Tipperary) | 5° | low | — |
+| **1191-06-23** | **54.1 N, 6.5 W (Louth/Meath)** | **55°** | high | — |
+
+**Five of the eighteen are in the audited set. Thirteen are not.**
+
+Two of those five make the case for the track approach on their own. **AU 764's
+eclipse was total over Dublin and Leinster** with the Sun 55° up — while all four
+monasteries in the canon saw only 0.91–0.97, so the magnitude table alone would
+never have called it central. Its notice reads *sol tenebrosus*, a darkened sun.
+And **AU 865 was total over Sligo** at 12° altitude, again invisible to the
+four-site test (Armagh 0.995).
+
+### The prediction, and the three that carry it
+
+Thirteen totality tracks crossed Ireland with no notice in this session's
+(incomplete) record set. Six had the Sun high. Three of those six fall in periods
+where the annals are dense and continuous:
+
+> **733-08-14 (Sun 29°), 1039-08-22 (Sun 46°), 1191-06-23 (Sun 55°)**
+
+1191 is the sharpest: totality across Louth and Meath — the annalistic heartland —
+with the sun 55° up on a June afternoon. If AU has nothing at 1191, that is a
+substantial statement about the recording tradition, and it lands squarely on §7's
+question about the record ending at 1133.
+
+The other three high ones are weaker tests for stated reasons: **413 and 507**
+predate the annals' contemporary range and fall in retrospectively constructed
+material; **1140** is already known to Anglo-Saxon sources.
+
+**536-09-01 is filed as a curiosity, not a claim.** A total eclipse crossed
+Donegal with the sun 43° up in the year of the great dust veil — the event the
+Irish annals themselves register as a failure of bread. Whether any notice
+conflates or connects the two is a question for the text, and the coincidence of
+year proves nothing by itself.
+
+### The master table
+
+`master_table.py` merges everything into `results/master_events.csv` — **1,031
+events**, one row each, with a `diagnostic` column:
+
+| Diagnostic | All | Solar | Lunar |
+|---|---|---|---|
+| totality-in-ireland | 18 | 18 | 0 |
+| borrowed-if-recorded | 150 | 17 | 133 |
+| local-if-recorded | 74 | 10 | 64 |
+| **blind** | **789** | 143 | 646 |
+
+**242 of 1,031 events are decisive one way or another; 789 — 77% — are blind.**
+That last number is the reason the table exists. A study that counts hits without
+separating the blind majority will report a rate that measures the sky, not the
+annalists.

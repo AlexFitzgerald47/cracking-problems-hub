@@ -84,7 +84,7 @@ def main():
                     "diagnostic": "borrowed-if-recorded",
                     "why": "deep in the Mediterranean, effectively invisible from Ireland"})
 
-    out.sort(key=lambda r: (int(r["year"]), r["date_julian_cal"]))
+    out.sort(key=lambda r: (int(float(r["year"])), r["date_julian_cal"]))
     fields = ["date_julian_cal", "year", "weekday", "type", "kind", "magnitude",
               "best_site", "diagnostic", "why", "note"]
     path = os.path.join(RES, "master_events.csv")
