@@ -1,44 +1,59 @@
 {
-  "version": "2026-09-06-transition-v0",
+  "version": "2026-09-06-transition-v1",
   "status": "strongest working key conditional on the HENECOS signature crib and Sektu shifted-rhyme mechanism; not independently validated",
-  "idea": "Do not force every graphic atom to a letter/string. Treat one or more adjacent subglyphs as a codepoint for a shifted phonetic transition: rhyme(previous syllable)+onset(next syllable), with initial onset and final rhyme as boundary units.",
+  "idea": "Treat the cipher as a syllable-transition shorthand: initial onset, then rime(previous syllable)+onset(next syllable), then final rime. Common transitions may have dedicated one-sign codes; complex transitions may split as rime-sign + onset-sign.",
   "natural_syllables": ["HE", "NE", "COS", "DE", "BOS", "NOS", "TYS_OR_TYA"],
   "onsets": ["H", "N", "C", "D", "B", "N", "T"],
   "rimes": ["E", "E", "OS", "E", "OS", "OS", "YS_OR_YA"],
   "shifted_phonetic_units": ["H", "EN", "EC", "OSD", "EB", "OSN", "OST", "YS_OR_YA"],
   "published_component_stream": ["C2", "B2", "X", "DOT", "N", "U", "O", "Z", "O", "O2RNO", "CROSSB"],
-  "provisional_transition_chunking": [
-    ["C2"],
-    ["B2"],
-    ["X"],
-    ["DOT", "N"],
-    ["U"],
-    ["O", "Z"],
-    ["O", "O2RNO"],
-    ["CROSSB"]
+  "transition_chunking": [
+    ["C2"], ["B2"], ["X"], ["DOT", "N"], ["U"], ["O", "Z"], ["O", "O2RNO"], ["CROSSB"]
   ],
   "transition_codebook": [
     {"cipher": ["C2"], "phonetic": "H", "role": "initial onset"},
-    {"cipher": ["B2"], "phonetic": "EN", "role": "rime E + next onset N"},
-    {"cipher": ["X"], "phonetic": "EC", "role": "rime E + next onset C"},
-    {"cipher": ["DOT", "N"], "phonetic": "OSD", "role": "rime OS + next onset D"},
-    {"cipher": ["U"], "phonetic": "EB", "role": "rime E + next onset B"},
-    {"cipher": ["O", "Z"], "phonetic": "OSN", "role": "rime OS + next onset N"},
-    {"cipher": ["O", "O2RNO"], "phonetic": "OST", "role": "rime OS + next onset T"},
+    {"cipher": ["B2"], "phonetic": "EN", "role": "dedicated rime E + next onset N transition"},
+    {"cipher": ["X"], "phonetic": "EC", "role": "dedicated rime E + next onset C transition"},
+    {"cipher": ["DOT", "N"], "phonetic": "OSD", "role": "split rime OS + next onset D transition"},
+    {"cipher": ["U"], "phonetic": "EB", "role": "dedicated rime E + next onset B transition"},
+    {"cipher": ["O", "Z"], "phonetic": "OSN", "role": "split rime OS + next onset N transition"},
+    {"cipher": ["O", "O2RNO"], "phonetic": "OST", "role": "split rime OS + next onset T transition"},
     {"cipher": ["CROSSB"], "phonetic": "YS_OR_YA", "role": "final rime"}
   ],
-  "key_observation": "The repeated E-rime transitions EN, EC, EB each receive a single subglyph (B2, X, U), while the more complex OS+onset transitions OSD, OSN, OST are represented by two-subglyph chunks. This is exactly the sort of complex-group splitting Sektu independently proposed in 2017.",
-  "why_this_supersedes_forced_atom_maps": "It preserves the independently specified shifted-unit boundaries while avoiding arbitrary decisions such as O=O versus O=OS. Atomic splits inside OSD/OSN/OST remain secondary hypotheses to be learned from outward recurrences.",
-  "high_value_atomic_hypothesis": {
-    "N": "D onset",
-    "basis": "Sektu independently proposed N could be a syllable-initial consonant such as b or d; in transition chunk DOT+N=OSD, N occupies exactly the D-onset position.",
-    "consequence_if_true": "DOT contributes the preceding OS rime within this specific transition; whether DOT means OS context-independently remains unproved."
+  "rime_onset_factorization": {
+    "assumption": "When a complex shifted unit is represented by two subglyphs, the first encodes the rime constituent and the second the following onset constituent.",
+    "selected_atom_values": {
+      "DOT": "OS_RIME",
+      "O": "OS_RIME",
+      "N": "D_ONSET",
+      "Z": "N_ONSET",
+      "O2RNO": "T_ONSET"
+    },
+    "why_unique": [
+      "DOT|N = OS|D for OSD",
+      "O|Z = OS|N for OSN",
+      "O|O2RNO = OS|T for OST"
+    ],
+    "rejected_alternative": "The earlier Branch A (O=O, Z=SN, O2RNO=ST) spells the same flattened text but breaks the independently specified rime|onset constituent boundary in OSN and OST."
   },
-  "terminal_rule": "At a true line/text boundary, the final code unit should encode only the last rime because no following onset exists. Test poem terminal classes under this rule; do not assume internal transition subglyph values transfer unchanged to terminal allographs.",
+  "common_transition_codes": {
+    "B2": "EN",
+    "X": "EC",
+    "U": "EB"
+  },
+  "boundary_codes": {
+    "C2": "H_INITIAL_ONSET",
+    "CROSSB": "YS_OR_YA_FINAL_RIME",
+    "NN_PAIR": "UNKNOWN_INDEPENDENT_TERMINAL_RIME_CODE; DO_NOT PARSE AS N+N"
+  },
+  "strongest_outward_prediction": "If poem lines 3-4 end in the exact same X+DOT sequence, decode the two final transition units as EC | OS. The onset C at the right edge of EC combines with final rime OS, predicting final syllable COS /kos/ for both lines.",
+  "architectural_prediction": "The writing system is a hybrid shorthand: frequent rime+onset transitions can have dedicated signs (EN, EC, EB), while other transitions factor into rime-sign + onset-sign (OS+D/N/T), and a separate graphical packing layer ligatures these units into whitespace glyphs whose boundaries need not be linguistic.",
   "falsifiers": [
-    "A secure plaintext for the six-glyph line inconsistent with HENECOS DEBOSNOSTYS/A.",
-    "An independently deciphered occurrence of B2, X, or U incompatible with EN, EC, or EB respectively under the same transition phase.",
-    "Systematic evidence that cipher whitespace boundaries are strict linguistic syllable/word boundaries rather than allowing transition chunks to cross them.",
-    "N occurrences that cannot plausibly occupy onset positions when the shifted transducer is applied."
-  ]
+    "A secure plaintext for the six-glyph signature line inconsistent with HENECOS DEBOSNOSTYS/A.",
+    "An exact X+DOT poem terminal whose independently recovered final syllable is incompatible with /kos/.",
+    "An independently deciphered B2, X, or U occurrence incompatible with EN, EC, or EB in the same transition phase.",
+    "Ordinary N, Z, or O2RNO recurrences that cannot function as D-, N-, or T-onset pieces under the shifted transducer.",
+    "Evidence that N.N is compositionally just N+N rather than a distinct terminal codepoint."
+  ],
+  "reproducer": "analysis/transition_factorization_test.py"
 }
