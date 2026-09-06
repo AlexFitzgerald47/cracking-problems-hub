@@ -602,3 +602,18 @@ Three readings, and the text decides between them in an afternoon:
 2. the two notices come from different compilers with different habits;
 3. the 878 notice does mention darkness and this session's search-level text is
    incomplete — the most likely explanation, and the cheapest to check.
+
+### A closed avenue, so nobody spends a session on it
+
+It is natural to think an annalistic **hour** might locate the scriptorium, since
+local time varies with longitude. It cannot, and the arithmetic is one line.
+Irish and Ionan houses span **4.87° of longitude** — Skellig to Bangor — which is
+**19.5 minutes** of local apparent time; Armagh against Clonmacnoise is **5.3
+minutes**. An unequal hour on the relevant dates runs **37 to 86 minutes**. The
+entire island is under half of the shortest unequal hour in the year, so no hour
+statement can distinguish any two Irish sites, however precise the record or the
+Δ*T*.
+
+Latitude, not longitude, is what carries site information here — via which sites
+the umbral track crossed, as in the table above. That is the only channel that
+works, and §4 already prices it as corroboration rather than evidence.

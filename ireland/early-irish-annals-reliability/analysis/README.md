@@ -21,6 +21,11 @@ having, because it is the half nobody had done on this board.
 | `find_lunar_eclipses.py` | The lunar canon, with Irish observability (Moon up, Sun below −6°) |
 | `sky_availability.py` | Merges both canons into one dated list of everything an Irish observer could have seen |
 | `lunar_borrowing.py` | The observed-vs-borrowed test on lunar eclipses, where the discriminator is visibility rather than depth |
+| `shadow_path.py` | Line–ellipsoid intersection: where the shadow axis meets the ground |
+| `validate_shadow_path.py` | Checks the tracer against published points of greatest eclipse (0.2 km, 1.3 km, 13.1 km) |
+| `irish_tracks.py` | Central lines for the eclipses this problem turns on, with computed totality beside the distance |
+| `totality_over_ireland.py` | Every eclipse whose path of totality crossed Ireland or Dál Riata |
+| `refine_canon_peaks.py` | Corrects the near-central magnitudes the canon's time grid underestimates |
 | `hour_analysis.py` | Unequal ("canonical") hours: which hour of the day a given eclipse phase fell in, as a function of Delta-T |
 | `deltat_power.py` | Prices the "measure Delta-T from annalistic hours" experiment. **It fails**; see RESULTS.md §6 |
 | `record_audit.py` | Audits each notice in `annal_records.csv`, solar and lunar, against the computed sky |
