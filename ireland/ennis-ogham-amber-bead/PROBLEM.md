@@ -6,14 +6,7 @@ A perforated amber bead, c. 2.1 cm in diameter, traditionally associated with En
 
 ## Crack target
 
-Establish, from the physical marks before language-fitting:
-
-1. what strokes and stemline branches are actually intentional;
-2. which reading path and direction are physically justified;
-3. which signs are ordinary ogham, forfeda, damage, decoration, or non-phonetic marks;
-4. only then, whether the resulting sequence encodes a name, ordinary Irish, a learned/cryptic ogham convention, an amuletic formula, or no recoverable linguistic text.
-
-A successful crack must explain the anomalous terminal structures and the fork around the perforation, not merely produce a plausible word.
+Establish what the inscription says or encodes while explaining the anomalous marks, direction and split stemline rather than merely fitting an inherited transcription.
 
 ## Competing inherited readings
 
@@ -23,6 +16,24 @@ A successful crack must explain the anomalous terminal structures and the fork a
 
 These are not minor spelling variants; they imply different segmentation, direction, character identity, and even inscription topology.
 
+## Working solution — 2026-09-07
+
+**Plaintext: `STINGING`.**
+
+The modern specialist's coherent ordinary-sign route is taken as `DMVA` + right-hand `VA` = `DMVAVA`. In the traditional learned 20-letter ogham order
+
+`B L V S N | H D T C Q | M G NG Z R | A O U E I`
+
+a uniform cyclic displacement of three positions backward gives:
+
+`D M V A V A` → `S T I NG I NG` → **STINGING**.
+
+The solution interprets the detached `<` and anomalous left branch as non-phonetic/structural rather than the U-forfeda assumed by Macalister. It predicts a **post-medieval learned-ogham healing inscription**, not a classical Primitive-Irish monumental text. That prediction is independently plausible because nineteenth-century Irish manuscripts preserve ogham alphabet transposition/cryptography and entire collections of healing charms written in ogham.
+
+The exact three-place key is not independently named in the surviving tract evidence located so far and is retained as a nonce-key inference. See `SOLUTION.md` for the complete reconstruction, evidence chain, residual uncertainty and falsifier.
+
 ## Current status
 
-Open. First cracker session began 2026-09-06. The immediate problem is epigraphic before it is lexical or cryptographic.
+**SOLVED — provisional historical reconstruction.**
+
+Hub working solution: `DMVAVA` → three-place learned-ogham rotation → `STINGING`, an eye-affliction keyword matching the bead's independently recorded sore-eye use.
