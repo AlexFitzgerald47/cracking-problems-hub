@@ -260,3 +260,108 @@ The Hub advance is the **testable grammar and unification**:
 ### New next step
 
 The next high-value job is not another hand example. Implement the frozen grammar over the full GORILA/SigLA-derived `corpus_v1.json`: classify every exact KI-RO occurrence by immediate punctuation/next-token form **before** reading outcomes, then score the 9/9 rule against all remaining attestations and matched non-KI-RO controls. A single clean counterexample should be logged, not explained away.
+
+---
+
+## 2026-09-07 – Post-award frontier pass: reconstructing the Minoan obligation circuit
+
+### Deliberate change of mode
+
+At the user's direction, this pass stops paying the same verification cost on KI-RO and treats the previous residual grammar as provisionally solved. The purpose is to reason several steps beyond it and see what larger administrative system best compresses the evidence.
+
+Full working model:
+`analysis/2026-09-07-obligation-circuit-post-award.md`
+
+Machine-readable crosswalk:
+`analysis/administrative_state_machine.csv`
+
+### Leap 1: refine KI-RO from generic “missing” to DUE-BUT-UNFULFILLED
+
+The same word is natural for both commodity deficits and absent personnel if the common concept is not mere physical absence but **an obligation expected by the administration that has not been rendered**.
+
+Working semantic nucleus:
+
+**KI-RO = DUE-BUT-UNFULFILLED / STILL OUTSTANDING.**
+
+This subsumes the scalar residuals and the personnel 1-lists without semantic switching.
+
+### Leap 2: A-DU is likely the positive complement — RENDERED / CONTRIBUTED / PAID
+
+HT88 places an `A-DU` personnel/resource statement on the same tablet as a later `KI-RO •` six-person residual list closed by `KU-RO 6`. HT95 places `DA-DU-MA-TA • GRA` on one face and `A-DU •` on the other with many of the same entities.
+
+The post-award interpretation is that `A-DU` is not merely a generic “assessment” word but the **fulfilled execution state**: rendered / supplied / contributed / paid.
+
+This has a striking functional successor parallel in Linear B: the Pylos Ma taxation system distinguishes expected assessment, actual delivery/payment (`a-pu-do-si`), and shortfall still owed (`o-pe-ro`). I do **not** infer from this that Linear A is Greek or that the forms are cognate; the useful bridge is administrative function.
+
+### Leap 3: DA-DU-MA-TA is a candidate upstream ASSESSMENT / ALLOCATION field
+
+HT95 is best compressed as two states of the same grain obligation ledger:
+
+`DA-DU-MA-TA` = scheduled / assessed / allocated side;
+
+`A-DU` = rendered / paid side.
+
+This makes `DA-DU-MA-TA -> A-DU -> KI-RO` a provisional three-stage lifecycle: assigned, fulfilled, outstanding. This is the weakest node of the state machine and is explicitly kept at medium confidence.
+
+### Leap 4: admit KI-KI-RA-JA into the semantic family
+
+HT85a under `A-DU` totals 66 personnel, naturally decomposable into eleven groups of six. HT85b under `KI-KI-RA-JA •` contains eleven unit entries. Davis & Valério emphasize the same 11-group / 11-entry correspondence. Older scholarship (Schürr 1976 and later HT94 discussion) already proposed that `KI-KI-RA-JA` is a reduplicated relative of `KI-RO`.
+
+Rather than quarantine the resemblance indefinitely, this pass takes the leap:
+
+**KI-KI-RA-JA = OBLIGATION-HOLDERS / RESPONSIBLE ASSIGNEES**, a participant/collective expression in the same administrative semantic family as KI-RO.
+
+The exact direction is not solved: these could be people who owe, people to whom labour is assigned/due, supervisors, or institutions holding the obligation. The important new claim is a participant role tied to the obligation relation.
+
+### Leap 5: the archive is a circuit, not a flat list
+
+Davis & Valério show that 19 recurring designations occur in a stable cyclic and bidirectional order across multiple Haghia Triada tablet faces, implying a spatial administrative circuit rather than arbitrary name order.
+
+Combined with the obligation vocabulary, this suggests the palace tracked **ordered nodes in a route/network and their obligation states**.
+
+### Reconstructed state machine
+
+```text
+NODE / PERSON / WORKSHOP / DISTRICT
+              |
+              v
+DA-DU-MA-TA (?) = ASSESSED / ALLOCATED
+              |
+        +-----+-----+
+        |           |
+        v           v
+      A-DU        KI-RO
+   RENDERED /     STILL DUE /
+   CONTRIBUTED    UNFULFILLED
+        |           |
+        +-----+-----+
+              |
+            KU-RO
+          LOCAL TOTAL
+              |
+        PO-TO-KU-RO
+       GRAND / GLOBAL TOTAL
+
+KI-KI-RA-JA = RESPONSIBLE / ASSIGNED / OBLIGATION-HOLDER participant class
+```
+
+### Provisional partial semantic lexicon
+
+- `KU-RO` — local total / sum closure — high.
+- `PO-TO-KU-RO` — grand/higher-order total — high-medium.
+- `KI-RO` — due-but-unfulfilled / outstanding obligation — high-medium.
+- `A-DU` — rendered / contributed / delivered / fulfilled — medium-high.
+- `DA-DU-MA-TA` — assessment / allocation / scheduled amount — medium.
+- `KI-KI-RA-JA` — obligation-holder / responsible assignee, likely KI-RO-family derivative — medium.
+
+These are **database fields**, not literal translations or etymologies.
+
+### Frontier consequence
+
+The best route forward is now to reconstruct the palace **database schema** first and use the Linear B successor bureaucracy as a semantic Rosetta key. Search for functional slots—exemption, assessment, payment, prior-year carry, recipient/source, allocation—before asking which language the words belong to.
+
+In other words, reverse the usual decipherment order:
+
+`administrative structure -> meaning -> grammatical role -> phonetics/language`.
+
+No solve claim is made. The contribution of this pass is a coherent six-term administrative state machine and a new morphology/participant bridge from KI-RO to KI-KI-RA-JA.
