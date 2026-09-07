@@ -1,0 +1,12 @@
+tablet,document_role,linear_a_anchor,functional_reading,confidence,status
+HT2,forward aggregate account,A-KA-RU 20 = 17+3,declared aggregate preceding its components,high,new structural anchor
+HT28,balance ledger,U-MI-NA-SI,debts or future payments opposed to contributions,medium-high,established scholarship + integrated here
+HT85a,labor assessment / source register,A-DU ... VIR ... KU-RO 66,66 personnel sourced from circuit nodes 1-7,high structure / medium label,integrated solve
+HT85b,labor dispatch / responsibility register,KI-KI-RA-JA + eleven unit entries,11 six-person gangs assigned to receiving/responsible entries including circuit nodes 8-13,medium,post-award solve candidate
+HT87,ordinary roster,QI-TU-NE MA-KA-RI-TE ... DI-KI-SE 1,normal-state roster snapshot containing DI-KI-SE,medium-high,new cross-tablet interpretation
+HT88,exception roster,KI-RO + six names + KU-RO 6,six named missing/outstanding personnel in associated account,high functional,KI-RO grammar
+HT94,muster + exception roster,KA-PA personnel; KI-RO + five names + KU-RO 5,large workforce record with five named missing/outstanding members,high functional,scholarship + integrated solve
+HT97,forward aggregate account,KA-RU 82 followed by selected breakdown summing 82,declared aggregate preceding its components,medium-high,new structural anchor
+HT117,exception roster,MA-KA-RI-TE KI-RO; DI-KI-SE under QI-TU-NE,exception-state roster snapshot sharing person and institutional context with HT87,medium-high,new same-scribe status transition
+HT122,master labor liability register,KU-RO 31; KU-DA 1; KU-RO 65; PO-TO-KU-RO 97,personnel contributions by canonical entities with subtotals and grand total,high structure,integrated solve
+HT123+124,residual accounting,KI-RO fractional make-up,outstanding amount required to satisfy target account relation,high functional,prior Hub result
