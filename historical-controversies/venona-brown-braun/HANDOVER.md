@@ -4,6 +4,83 @@
 
 ---
 
+## 2026-09-06 – solve attempt: Meredith provisional identification
+
+### Current state
+
+The problem has advanced beyond the earlier Fraser-only model. The strongest current reconstruction is:
+
+> **BROWN/BRAUN = most likely Frederick William Meredith**  
+> **POULTRY-DEALER = most likely Wilfrid Foulston Vernon**  
+> **Henry Hughes source = likely Donald Orr Sproule or another member of the directional-acoustics production/design chain**  
+> **STANLEY = separate Canadian W/T technician**
+
+This is a **provisional identification**, not a literal archival covername mapping. No document has yet been located saying “BROWN = Meredith.”
+
+### Why Meredith moved to #1
+
+1. Meredith was a **proven pre-war GRU technical source**, not merely a Communist sympathizer.
+2. Vernon — now the strongest POULTRY-DEALER candidate because of his exact Wintringham/Osterley, Hounslow, CPGB and Soviet-intelligence fit — had a direct operational relationship with Meredith. Released-file reconstructions report that Vernon said **Meredith recruited him** into the Soviet espionage activity; Vernon later consulted Meredith before finalising his MI5 account.
+3. Meredith left the RAE in 1938 to become **Chief Designer / head of Physics and Instruments at Smiths Aircraft Instruments, Cricklewood**.
+4. Smiths had acquired a **controlling interest in Henry Hughes & Son in 1935** and its aircraft/marine organization operated with the Henry Hughes subsidiary. This is the first hard institutional bridge between a known GRU source and the exact company named in BROWN’s 4 Sep 1940 report.
+5. Meredith’s known intelligence activity was technical/military collection, matching the category of No. 976.
+6. The July/August “new flat” → “old flat” sequence is structurally compatible with an existing source given temporary operational accommodation. Meredith had a normal pre-war residence at **Old Brew House, St Albans** while working in Cricklewood; by May 1941 he was at Bishop’s Cleeve with Smiths’ wartime relocation. Exact Aug 1940 residence remains unresolved.
+7. A final direct search for published BROWN/BRAUN mappings produced **no competing identification and no contradiction**. Published material continues to place Meredith and Vernon together in the relevant pre-war GRU network but does not explicitly map Meredith to BROWN.
+
+### Why Vernon remains the best POULTRY-DEALER candidate
+
+- Proven pre-war Soviet/GRU source.
+- MI5 observed him lunching with Soviet Embassy second secretary Ivan Popov in Jan 1940.
+- Directly involved with **Tom Wintringham at Osterley Park in July 1940**; POULTRY-DEALER reports on Wintringham’s special Home Guard school on 14 Aug.
+- Osterley/Hounslow geography matches POULTRY-DEALER’s later reporting on Eastern Command’s Hounslow move.
+- Had real CPGB organizational connections, including a described role as a cipher/contact link between the RAE area and Party HQ.
+- Had direct operational history with Meredith.
+
+### OBSERVED / INFERRED / MISSING
+
+**OBSERVED**
+- BROWN is a trusted Soviet intermediary in Jul 1940; POULTRY assesses him as pro-Soviet but talkative in Aug; BROWN submits Henry Hughes production-line technical intelligence in Sep.
+- Meredith was a known GRU technical source and senior Smiths engineer from 1938.
+- Smiths controlled Henry Hughes and operated aviation/marine activities with the Hughes subsidiary.
+- Vernon and Meredith belonged to the same Soviet espionage network; Vernon later attributed his recruitment to Meredith.
+- Vernon was physically in the exact Wintringham/Osterley milieu reported by POULTRY-DEALER in Aug 1940.
+
+**INFERRED**
+- POULTRY-DEALER = Vernon.
+- BROWN = Meredith.
+- The Jul 1940 handling language reflects reconnection/transfer of an existing pre-war source into the London legal-residency network.
+- No. 976 flowed from a Henry Hughes insider/project worker through the Smiths technical structure to Meredith.
+
+**MISSING / proof debt**
+- Literal archival cross-reference BROWN/BRAUN ↔ Meredith.
+- Exact Meredith residence / operational flat in Jul–Aug 1940.
+- Direct Meredith ↔ Sproule/Henry Hughes sonar-project memo, meeting, committee, drawing circulation or personnel record.
+- Direct evidence Vernon and Meredith were in contact specifically in summer 1940.
+- Independent personality evidence matching POULTRY’s “talkative” description of BROWN.
+- Primary provenance for the later claim that Sproule was forced from Kelvin Hughes over alleged Russian-spy associations.
+
+### Candidate ranking after solve attempt
+
+1. **Frederick William Meredith — BROWN #1 by a substantial margin.** Only candidate with both a proven GRU role and a hard institutional route into the Smiths/Henry Hughes technical structure, plus a direct operational relationship with likely POULTRY-DEALER Vernon.
+2. **Harry Fraser — downgraded.** Strong CPGB/International Brigade/electronics network fit, but no proven GRU role and no Henry Hughes bridge.
+3. **George Alfred Barnard — downgraded.** Strong Plessey/CP/radio-production fit but no GRU/Hughes bridge.
+4. **Donald Orr Sproule — remains strongest technical-source candidate, not strongest BROWN candidate.**
+
+### Highest-value next archival tests
+
+1. **Meredith MI5 files:** KV 2/2199–2202 (and related records) — exact Jul–Sep 1940 address, contacts, Smiths assignments, Soviet handling.
+2. **Vernon MI5 files:** KV 2/992–996 — Jul–Oct 1940 surveillance/contact chronology and any Meredith link.
+3. **Smiths/Henry Hughes corporate/project files:** search 1939–40 aviation-and-marine committees, technical circulation lists, Admiralty liaison, Sproule/A. J. Hughes project rosters and horizontal/directional sonar documentation for Meredith.
+4. **Address test:** establish whether Meredith occupied temporary London accommodation in Jul–Aug 1940 and returned to St Albans or another earlier residence after 13 Aug.
+5. **Covername test:** search unpublished VENONA identification notes, MI5 cross-reference sheets, Robinson papers and Soviet archival literature for BROWN/BRAUN attached to Meredith.
+
+### Files produced this session
+
+- `analysis/frederick-meredith-brown-candidate.md` — full identification case, candidate comparison and falsifiers.
+- Existing Vernon dossier remains the basis for POULTRY-DEALER identification.
+
+---
+
 ## 2026-09-06 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator after this problem's claim was released. Nothing in the session
@@ -76,7 +153,7 @@ This is **not a solve claim**. The load-bearing Fraser ↔ Henry Hughes/project 
 - No direct Fraser ↔ Henry Hughes, Fraser ↔ Sproule, or Fraser ↔ GB908039A-project contact found.
 - No direct evidence yet that Fraser personally handled clandestine W/T, despite strong electronics and wireless-network adjacency.
 - No exact Aug 1940 Fraser residence found; the old-flat match remains a prediction.
-- No exact 1940 Ilford Communist Party “Area Secretary” identified. Ted Bramley is documented as an Ilford CP organiser before Spain, but that is too early to equate him with No. 876.
+- No exact 1940 Ilford Communist Party “Area Secretary” identified. Ted Bramley is documented as an Ilford CP organiser before Spain, but that is too early to equate him with the 1940 Area Secretary.
 - Sproule's later “Russian spies” allegation still lacks an independent documentary source and should be **downgraded to archival pointer only**.
 - Tameside's collection-level catalogue exposes item 207, but the direct item page errors and no audio/transcript was retrievable remotely this pass.
 
