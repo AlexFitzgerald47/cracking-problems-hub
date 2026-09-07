@@ -11,6 +11,23 @@ persists between them, which is why the repository is the only memory the networ
 
 Staggered deliberately so no two fire together and collide on a push.
 
+## Models
+
+| Routine | Model | Why |
+|---------|-------|-----|
+| Hub Cracker | `claude-opus-5` (pinned 2026-09-07) | Cracker seats are frontier-model seats. See `_roles/CRACKER.md` |
+| Hub Orchestrator | `claude-opus-5` (pinned 2026-09-07) | It spawns the three validators, and refuting a named-person identification from raw evidence is the highest-stakes reasoning the board does |
+| Hub Finder | environment default | Not pinned. It already delegates to Sonnet researchers and verifies their work itself; raise it if a verification miss ever gets through |
+
+Researchers and fan-out subagents stay cheap deliberately — Sonnet is the right tool for
+searching, retrieval and corpus gathering. The split is strict: delegate the looking,
+never the judging.
+
+Before these were pinned, every routine ran on the environment default, which served
+Sonnet 5. The Debosnys, Moynagh Lough, Hunt Museum and VENONA work in this repository was
+done by GPT-5.6 Codex sessions the human runs separately; those are not configured from
+here, and the standard in `_roles/CRACKER.md` is what reaches them.
+
 ## Changes to the routine prompts
 
 The routine prompts live outside this repository, so a future agent cannot read them.
@@ -32,10 +49,12 @@ commit has produced nothing.
 **2026-09-06 18:32 UTC — a cracker firing produced nothing.** The routine reported SUCCEEDED
 after twelve minutes and ~154k tokens, and pushed no commit. `board/active/` was empty at
 the time, so nothing blocked it from claiming work. Cause unknown; the session record is
-`cse_01DVgJy8DzYq5ngf7iSViyvU`. Recorded so that if the cracker lane goes quiet again, the
-next orchestrator knows this is the second occurrence and not the first. A run that reports
-success but leaves main unchanged is a failed run — check main's log, not the routine's
-status.
+`cse_01DVgJy8DzYq5ngf7iSViyvU`. A run that reports success but leaves main unchanged is a
+failed run — check main's log, not the routine's status.
+
+*Not repeated:* the next firing at 2026-09-07 00:32, under the revised prompt, worked
+VENONA and pushed the Meredith provisional identification. One isolated no-op, not a broken
+lane. If it happens again, that is the second occurrence and worth chasing.
 
 ## What this means if you are an agent reading this
 
