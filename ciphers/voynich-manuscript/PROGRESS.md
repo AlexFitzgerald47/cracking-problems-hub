@@ -4,6 +4,104 @@
 
 ---
 
+## 2026-09-06 – GPT-5.6 Sol, golden-cell audit
+
+### What was attempted
+
+The inherited highest-priority experiment was to compare the direction of the
+Currier A→B feature shift with section shifts such as Herbal→Biological. Before
+using that axis, this session audited the 2026-09-04 claim that
+`A/H3/Stars vs B/H3/Stars` was a clean language contrast with both hand and
+section held constant.
+
+Full write-up and audit code:
+`attempts/2026-09-06-golden-cell-audit/`.
+
+### Material correction
+
+**The claimed golden cell does not hold manuscript section/quire constant.**
+
+The IVTFF metadata definition says `$I` is **illustration type**, not physical
+section. `$I=S` means only “marginal stars.” `$Q` is the physical quire. `$H` is
+Lisa Fagin Davis's hand classification; `$C`, not `$H`, carries Currier's hand
+classification.
+
+The prior `decompose.py` grouped on `$I=S` and described the result as “section
+held.” Direct page audit shows:
+
+- the only two Currier-A / LFD-Hand-3 pages are **f58r and f58v**, the two sides
+  of one folio in **Quire 8**;
+- Quire 8 has no Currier-B running-text page by LFD Hand 3 (f65r/v are Hand 3
+  but Currier-language unclassified; the B pages in that quire are other hands);
+- the B / Hand-3 / marginal-star material is later material, especially the
+  **Quire 20 recipes section**.
+
+René Zandbergen's finer statistical taxonomy independently separates these
+regimes: group `R` is f58r/v, while groups `S` and `T` are two sets of Quire-20
+recipe bifolios.
+
+Therefore the reported distance 12.76 is a real descriptive difference between
+those groups but **cannot establish that Currier A/B survives physical
+section/quire control**. The board headline from 2026-09-04 should be treated as
+withdrawn pending a design that can identify language independently of physical
+manuscript zone.
+
+### Second statistical problem
+
+The inherited 250-word-block permutation treats three A blocks as replicates,
+but all three come from f58r/v — the two sides of a **single physical folio**.
+At the folio level the A side has n=1. Permuting blocks therefore does not supply
+independent manuscript replication, and the quoted `p < 0.0002` should not be
+read as a folio-level test of a general A/B effect.
+
+This does **not** show that Currier A/B is false. It shows that this experiment
+does not separate language from manuscript zone.
+
+### What survives
+
+- The global A/B ↔ LFD-hand confound remains real and important.
+- The existing block distances are reproducible descriptive statistics for ZL3b.
+- Illustration/content regimes have large textual differences.
+- f58 differs strongly from the later Hand-3 star/recipe material; the causal
+  interpretation was the failure, not the observed distance.
+
+### Consequence for the planned axis-parallelism test
+
+Do **not** define a “pure A→B axis” from f58 versus Quire 20 and compare it with
+Herbal→Biological. That axis mixes language, quire, genre/layout and possibly
+production phase.
+
+Recommended replacement designs:
+
+1. Search for genuinely same-hand, same-quire/bifolio A/B transitions; if there
+   is no overlap, report non-identifiability rather than a forced control.
+2. Fit a page/folio-level hierarchical model with language, quire,
+   illustration-type and hand effects, and inspect rank/overlap before reading a
+   language coefficient.
+3. Establish within-language section axes first, then test whether they
+   generalise across physical zones.
+4. Repeat surviving results under an independent transliteration (Takahashi).
+
+### Artefacts produced
+
+- `attempts/2026-09-06-golden-cell-audit/README.md`
+- `attempts/2026-09-06-golden-cell-audit/src/audit_golden_cell.py`
+
+### Primary/technical sources checked
+
+- René Zandbergen, IVTFF page-variable definitions:
+  https://www.voynich.nu/software/ivtt/IVTFF_format.pdf
+- Quire 8 page catalogue (f58r/v, f65r/v):
+  https://www.voynich.nu/q08/index.html
+- Quire 17 page catalogue (Hand-3 Currier-B herbal material):
+  https://www.voynich.nu/q17/index.html
+- Quire 20 page catalogue (recipes, Currier B, LFD Hand 3):
+  https://www.voynich.nu/q20/index.html
+- Zandbergen, Currier-language extension (`R` versus `S/T` groups):
+  https://www.voynich.nu/extra/rz_lang.html
+
+---
+
 ## 2026-09-04 – Claude (Opus 5), remote session
 
 ### What was attempted
