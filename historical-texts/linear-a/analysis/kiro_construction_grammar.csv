@@ -1,0 +1,13 @@
+record,form,clean_exact_kiro,token_after_kiro,construction,domain,observable,result,evidence_grade
+HT1,KI-RO,yes,numeral,scalar_residual,personnel_or_obligation,"QE-RA2-U • KI-RO 197; later named entries with integers","compatible; exact signs secure, semantic scope disputed",medium
+HT15,KI-RO,yes,numeral,scalar_residual,commodity,"*188 • KI-RO 400; preceding 684 + 570 = 1254","independent commentary calls 400 deficit/owed against expected 1254",high
+HT30,KI-RO,yes,divider,forward_residual_block,commodity,"KI-RO • followed by commodity quantities matching earlier commodity types","commentary contrasts earlier contributions/assessments with KI-RO deficits",high
+HT34,KI-RO,yes,numeral,scalar_residual,commodity,"100; 70; KI-RO 30","100 - 70 = 30 exactly",high
+HT37,KI-RO,yes,divider,forward_residual_block,personnel_probable,"KI-RO • followed by KA-KI 11; A 15; [JA/QE] 17","forward scope survives but tablet damaged",medium
+HT88,KI-RO,yes,divider,forward_residual_block,personnel,"KI-RO • six named 1-entries; KU-RO 6","residual/missing list cardinality closes exactly",high
+HT93b,KI-RO,no,damaged,indeterminate,mixed,"KI-RO[ on damaged reverse after account whose visible entries undershoot apparent total","compatible but excluded from construction test",low
+HT94b,KI-RO,yes,divider,forward_residual_block,personnel,"KI-RO • five named 1-entries; KU-RO 5","residual/missing list cardinality closes exactly",high
+HT117,KI-RO,yes,divider,forward_residual_block,personnel,"MA-KA-RI-TE • KI-RO •; then subheadings U-MI-NA-SI / SA-TA / QI-TU-NE and person 1-lists; first KU-RO 10","Davis-Valerio segmentation makes KI-RO part of main heading, not X-KI-RO-Y relation",high
+HT123+124,KI-RO,yes,numeral,scalar_residual,commodity_ratio,"row-level KI-RO fractions; DA-TU: OLIV 15, *308 4 1/4, KI-RO 3/4","4.25 + 0.75 = 5 = 15/3; KI-RO occupies make-up/residual field",high
+ARKH4,A-KI-RO,no,numeral,nearform_negative_control,unknown,"A-KI-RO 3 among ordinary numbered entries","not admitted to KI-RO family solely by spelling",control
+HT85b,KI-KI-RA-JA,no,divider,nearform_candidate,personnel_allocation,"KI-KI-RA-JA • followed by 11 one-entries; opposite side totals 66 = 11 groups of 6","structurally compatible with a derived heading but semantic identity with KI-RO remains unproved",control
