@@ -222,3 +222,77 @@ Weaken the unified KI-RO model if a clean record shows any of:
 - Not proof that `KI-KI-RA-JA` or `A-KI-RO` are morphological relatives.
 
 The contribution is the **two-construction grammar + cross-domain residual operator + held-out HT15 hit + status-switch controls**.
+
+---
+
+## 2026-09-07 – Handover after post-award obligation-circuit pass
+
+### New operating assumption
+
+The user explicitly requested fewer incremental tests and more post-award reasoning. This pass therefore **takes the KI-RO grammar as provisionally solved** and bridges outward. Do not restart with another KI-RO significance pass unless a new clean contradiction appears.
+
+Read first:
+`analysis/2026-09-07-obligation-circuit-post-award.md`
+
+Crosswalk:
+`analysis/administrative_state_machine.csv`
+
+### Frontier model now
+
+The best high-compression reconstruction is a Minoan **obligation lifecycle** operating over an ordered palace circuit of persons / groups / workshops / districts:
+
+```text
+DA-DU-MA-TA (?)  ->  A-DU  ->  KI-RO
+ASSESSED/ALLOCATED   RENDERED   STILL DUE
+                         |
+                       KU-RO
+                    LOCAL TOTAL
+                         |
+                   PO-TO-KU-RO
+                    GRAND TOTAL
+```
+
+with `KI-KI-RA-JA` provisionally admitted as a derived **obligation-holder / responsible-assignee participant class**.
+
+### Semantic advances
+
+1. **KI-RO:** refine `missing / deficit` to **DUE-BUT-UNFULFILLED**. This is the common semantic reason both absent workers and missing quantities appear under the same marker.
+2. **A-DU:** likely the positive complement: **RENDERED / CONTRIBUTED / PAID / FULFILLED**. HT88 places A-DU and KI-RO states on one tablet; HT95 places A-DU opposite an upstream grain schedule.
+3. **DA-DU-MA-TA:** candidate upstream **ASSESSMENT / ALLOCATION / SCHEDULED AMOUNT** field on HT95. Medium confidence only.
+4. **KI-KI-RA-JA:** HT85 has 66 workers = eleven six-person groups under A-DU and eleven unit entries under KI-KI-RA-JA. Older scholarship already relates the form to KI-RO. This pass takes the leap that it labels the **party attached to the obligation relation**. Direction—debtor, recipient, supervisor, assignee—remains open.
+5. **Circuit model:** Davis & Valério's stable cyclic/bidirectional order of 19 recurring designations implies an administrative route/network. The palace was likely tracking different obligation states over ordered nodes, not creating unrelated flat name lists.
+
+### Linear B bridge
+
+Use Linear B as a **semantic Rosetta key for bureaucratic functions**, not as proof Linear A is Greek.
+
+The later Pylos Ma system distinguishes:
+
+- assessment / expected contribution;
+- actual delivery/payment (`a-pu-do-si`);
+- outstanding shortfall (`o-pe-ro`).
+
+That is functionally the exact architecture now reconstructed for Linear A (`DA-DU-MA-TA? / A-DU / KI-RO`). Chiapello has proposed direct linguistic equations A-DU~a-pu-do-si and KI-RO~o-pe-ro, but this Hub pass explicitly does **not** adopt the Minoan-Greek conclusion. Functional continuity is enough to exploit.
+
+### What to attack next
+
+Do **not** spend the next session re-proving KU-RO or KI-RO.
+
+Push one level further into the state machine. Highest-value targets:
+
+1. Find the Linear A **exemption / non-liability** field by looking for blocks structurally parallel to Linear B `o-u-di-do-si`.
+2. Find **prior-period carry / arrears** language: terms attached to KI-RO residuals that distinguish current from inherited debt.
+3. Resolve `DA-DU-MA-TA` as assessment vs allocation vs distribution by following the repeated HT95 entities into other tablets.
+4. Attack the `KI-RO -> KI-KI-RA-JA` morphological bridge. Treat a participant derivation as the default working hypothesis and ask what ending/reduplication pattern would produce it.
+5. Use the fixed 19-node circuit as the scaffold: assign each repeated word a role/state across tablets, and read records as transitions in a database rather than isolated sentences.
+6. Only after functional fields are recovered should phonetics/language affiliation be brought back in.
+
+### What is still explicitly not claimed
+
+- Not a full Linear A decipherment.
+- Not proof Linear A is Greek.
+- Not proof A-DU and Linear B a-pu-do-si are cognate.
+- Not proof KI-RO and Linear B o-pe-ro are cognate.
+- Not a literal translation of KI-KI-RA-JA; its participant role is a post-award working leap.
+
+But the project now has something materially stronger than a one-word gloss: a **six-term partial semantic bookkeeping schema** and an explanatory model for how Haghia Triada's ordered administrative records were generated.
