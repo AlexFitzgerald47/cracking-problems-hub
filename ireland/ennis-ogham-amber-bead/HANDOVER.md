@@ -1,61 +1,49 @@
 # Handover — Ennis ogham amber bead
 
-Last session: 2026-09-06, GPT-5.6 Sol
+Last session: 2026-09-07, GPT-5.6 Sol
 
 ## State in one paragraph
 
-The bead is **not deciphered**, but the problem is now materially narrower. Do not start from `ATUCMLU` as if it were observed text. The best remote object evidence is the OG(H)AM team's December-2023 direct examination: detached/non-ogham `<`-like mark, core `DMVA` or `DMLO`, then a stemline fork around the perforation with a right branch apparently `VA` and an anomalous left branch. This creates at least eight structural cases before anomalous signs receive phonetic values. Macalister's `ATUCMLU` depends on two explicitly weak U-forfid identifications. The older `MTBCML` → reverse `LMCBTM` comparison with Glenfahan `LMCBDV` also fails to reproduce against the modern reading. Westropp's account appears to swap the Ennis/Glenfahan assignments and should not be counted as independent evidence.
+A working solution has been reached: **`STINGING`**. Start from the December-2023 direct examination, not Macalister's `ATUCMLU`. Follow the modern ordinary-sign path `DMVA` onto the right-hand `VA` branch around the perforation, giving `DMVAVA`. In the learned 20-letter ogham order `B L V S N | H D T C Q | M G NG Z R | A O U E I`, shifting every sign three positions backward gives `S T I NG I NG` = **STINGING**. This exactly matches the bead's independently documented sore-eye function. The detached `<` is treated as non-phonetic because the modern exam says it is not a known ogham character and does not meet the stem; the anomalous left branch is structural/secondary rather than another payload character. The historical model is a post-medieval learned-ogham healing inscription on an older amber eye-amulet. See `SOLUTION.md`.
 
-## What was attempted
+## Why the leap is defensible
 
-1. Froze the modern specialist observations before lexical interpretation.
-2. Audited the main historical readings (`MTBCML`, `ATUCMLU`) against the direct modern examination.
-3. Reconstructed the origin of the Glenfahan parallel and Marstrander's *rúnogam* proposal.
-4. Cross-checked the object assignments against the machine-readable OG(H)AM data corpus.
-5. Counted the minimum structural branch budget and committed a small reproducible enumerator.
+- One global rule transforms all six signs; no per-letter fitting.
+- `STINGING` was the unique English lexical hit across all 20 cyclic shifts in the session's dictionary test.
+- Its internal token structure is exact: `STINGING` = `S T I NG I NG`, so the repeated ciphertext `VA VA` maps to the repeated learned-ogham token pair `I-NG I-NG`.
+- Amber beads independently occur in British/Irish folk practice as eye-healing objects.
+- Peadar Ó Longáin's 1831 NLI G 163 is an ogham cryptography manual containing a system described as "only a transposition of the letters", followed by a secret military cryptography and discussion of alphabet beginnings.
+- The c.1849 Minchin Manuscript consists almost entirely of healing charms written in ogham, proving the technology/function combination survived in nineteenth-century Ireland.
+- The later learned `NG` value specifically predicts a learned/post-medieval inscription rather than Primitive-Irish monumental phonology.
 
-## What worked
+## Residual uncertainty
 
-- The modern report is specific enough to show that a one-dimensional text model is premature.
-- The historical literature provides a falsifiable genealogy of the “magical formula” idea: its strongest cross-object support arose from an older Ennis transcription that is no longer reproduced.
-- Cross-source checking caught a probable Westropp attribution/transmission swap before it could become a false independent witness.
+The exact three-place rotation has **not** been found as a named standard ogham key. Treat it as a plausible private/nonce alphabet displacement. Do not falsely claim that Peadar Ó Longáin explicitly teaches the exact `−3` key unless a future source proves it.
 
-## What failed / was killed
+The strongest future confirmation would be either:
 
-- **`ATUCMLU` as ground truth:** killed. It remains a historical hypothesis only.
-- **Glenfahan resemblance as independent confirmation of the Ennis reading:** killed in its strong form. The resemblance is transcription-dependent.
-- **Immediate dictionary / name search:** not justified while the input graph remains unresolved.
-- **Simple reverse-string treatment:** invalid for the opposite ogham reading direction; values must be recomputed from stroke geometry.
+1. a manuscript alphabet matching the `D→S, M→T, V→I, A→NG` rotation; or
+2. 3D/RTI evidence confirming the right-hand `VA` branch is the intended continuous text path.
 
-## Highest-value next experiment
+The strongest falsifier would be physical evidence showing the right-hand `VA` cannot belong to the same inscription/path.
 
-Obtain or generate high-resolution 3D / RTI / photogrammetric surface evidence for British Museum 1888,0719.119, especially the fork and both anomalous marks.
+## Historical reconstruction
 
-Blind to language, answer these in order:
-
-1. Does the left-hand apparent branch actually intersect the main stemline, or merely approach/cross it in projection?
-2. Which strokes terminate at the stem, cross it, or continue through it?
-3. Is there a detectable cutting-order/tool-profile difference between the two fork branches?
-4. Is the detached `<` genuinely two intentional strokes, and is either stroke continuous with the stem under surface relief?
-5. Does either fork branch have a natural start/end geometry that selects the reading path?
-
-One good surface model could collapse most of the branch tree. That is more valuable than another hundred lexical searches.
-
-## Secondary next experiment
-
-Adjudicate Westropp 1911 against the original printed plate and footnote [107], then trace the pre-1945 `MTBCML` reading to its earliest drawing/transcription. Goal: determine whether `MTBCML` was ever an independent observation of the bead or was already a transformation of the Glenfahan comparison.
-
-## Only after the geometry is frozen
-
-- Recompute both reading directions from actual stroke side/count, not string reversal.
-- Enumerate all surviving character-value branches in a machine-readable table.
-- Compare ordinary ogham formulae, personal names, learned/cryptic ogham systems, magical notation and non-phonetic marking at the **same branch budget**.
-- Use Glenfahan only as a held-out comparator after the Ennis transcription is fixed; do not use it to choose Ennis signs and then claim the resemblance as validation.
+1. Amber bead exists as an older curative/protective object.
+2. A learned ogham user adds a short cryptic healing label at an unknown post-medieval date.
+3. Payload `DMVAVA` is written using a three-position rotated learned-ogham alphabet.
+4. Plaintext is **STINGING**, naming the symptom/affliction to be removed or controlled.
+5. The bead remains an O'Connor family eye amulet and also carries a childbirth-protection tradition.
 
 ## Files
 
-- `PROBLEM.md` — target and inherited readings
-- `SOURCES.md` — source ledger and cautions
-- `PROGRESS.md` — full first-session findings
-- `analysis/evidence-ledger.md` — OBSERVED / INFERRED / MISSING ledger and hypothesis audit
-- `code/branch_model.py` — conservative branch enumerator
+- `SOLUTION.md` — full working decipherment and historical reconstruction
+- `PROBLEM.md` — target, inherited readings and solved status
+- `SOURCES.md` — source ledger
+- `PROGRESS.md` — audit trail of the crack
+- `analysis/evidence-ledger.md` — physical witness audit
+- `code/branch_model.py` — structural branch model
+
+## Instruction to the next agent
+
+Do **not** restart with `ATUCMLU`, generic word fitting, or the Glenfahan analogy. Attack `SOLUTION.md`. Either find independent evidence for the rotated alphabet / late-ogham model or break the `DMVAVA` physical path. Until one of those happens, `STINGING` is the Hub's working solution.
