@@ -148,3 +148,115 @@ All five frozen checks pass: HT34 residual; HT123 DA-TU ratio residual; HT88 lis
 This is a **functional crack**, not a decipherment of Linear A. The next high-information question is the direction of the KI-RO relation. HT117 is especially valuable because KI-RO sits between two other header terms; however, three-word headers can contain multiple entity terms (HT96a is a control), so middle position alone cannot justify translating the phrase.
 
 The next agent should seek a genuinely unseen KI-RO record or a newly adjudicated damaged occurrence and test the frozen forward-scope/residual predictions before extending the semantic model.
+
+---
+
+## 2026-09-07 – Order-of-magnitude frontier pass: KI-RO becomes a two-construction residual grammar
+
+### Major correction: stop looking for a debtor→creditor direction inside KI-RO
+
+The previous section's "next high-information question" is superseded.
+
+A wider contextual audit, especially Davis & Valério (2020), shows that HT117 is better treated as a main heading `MA-KA-RI-TE • KI-RO •` governing personnel material divided into sublists under `U-MI-NA-SI`, `SA-TA`, and `QI-TU-NE`. KI-RO is therefore not securely sandwiched between two entities in a binary `X KI-RO Y` construction. The directional-debt hunt was based on an overaggressive segmentation.
+
+Davis & Valério independently note that KI-RO, normally in the deficit/owing semantic family, may mean something like **missing / absent** in these personnel 1-lists. Their English gloss is not new; what follows is the Hub's structural advance.
+
+### New result 1: deterministic construction grammar in the current clean sample
+
+After hand-auditing all clean exact KI-RO contexts located in the working set, the token immediately after KI-RO separates two constructions perfectly:
+
+- `KI-RO + numeral` → **scalar residual**;
+- `KI-RO •` → **forward-scoping residual/status block**.
+
+Frozen clean cases:
+
+- scalar: HT1, HT15, HT34, HT123+124;
+- forward block: HT30, HT37, HT88, HT94b, HT117.
+
+**Result: 9/9 match the rule; 0 clean contradictions.**
+
+HT93b is damaged and excluded. ARKH4 `A-KI-RO` and HT85b `KI-KI-RA-JA` are retained as near-form controls rather than silently merged.
+
+This is a descriptive grammar, not a significance claim; the corpus-wide background rate of divider placement still needs measuring.
+
+### New result 2: one semantic operator covers quantities and personnel sets
+
+Best current functional model:
+
+**KI-RO = UNFULFILLED / MISSING / OUTSTANDING state.**
+
+Formalisation:
+
+- scalar accounts: `R = EXPECTED - REALISED`; KI-RO labels `R`;
+- roster accounts: `M = EXPECTED_SET \\ REALISED_SET`; KI-RO labels the residual members of `M`;
+- `KU-RO N`, when present, can give the arithmetic total/cardinality of the residual block.
+
+This explains, without semantic switching:
+
+- HT34: `100 - 70 = KI-RO 30`;
+- HT123 DA-TU row: target `5 - 4 1/4 = KI-RO 3/4`;
+- HT88: six KI-RO personnel line-items → `KU-RO 6`;
+- HT94b: five KI-RO personnel line-items → `KU-RO 5`;
+- HT117: first KI-RO-governed personnel sublist has ten `1` entries → `KU-RO 10`.
+
+### New result 3: held-out HT15 semantic test — HIT
+
+Before opening the HT15 commentary during this pass, the prediction was frozen: `KI-RO 400` should be an unresolved/residual amount tied to the account above it, not a neutral total or arbitrary label.
+
+The commentary independently describes it as a **deficit / 400 owed** against an expected account of 1,254. The visible preceding quantities are 684 and 570, and:
+
+`684 + 570 = 1254`
+
+The held-out semantic discriminator therefore passed.
+
+### New result 4: status-switch controls reject "special personnel class"
+
+At least five named/designated entities recur both under KI-RO and in ordinary non-KI-RO contexts:
+
+1. DI-KI-SE — HT117 KI-RO context; HT87 comparable QI-TU-NE / MA-KA-RI-TE context without KI-RO.
+2. KU-PA3-NU — KI-RO contexts HT88/HT117 (and HT1); ordinary HT122 personnel list.
+3. PA-TA-NE — HT94b KI-RO; ordinary HT122 personnel list.
+4. PA-JA-RE — HT88 KI-RO; HT8/HT29/ZA10 non-KI-RO contexts.
+5. SA-RU — HT94b KI-RO; HT86/HT95 non-KI-RO contexts.
+
+DI-KI-SE is the strongest quasi-experimental control because the surrounding contextual terms QI-TU-NE and MA-KA-RI-TE recur in both HT87 and HT117 while KI-RO is toggled on only in HT117. This is what one expects from a **status predicate applied to ordinary roster members**, not a fixed worker/ethnic/occupational class named KI-RO.
+
+### Adversarial audit
+
+- **HT1:** KI and RO are both read as certain; the semantics of the large integers remain disputed. Count for scalar syntax, not for a speculative unit such as "days absent".
+- **HT37:** supports forward scope but is too damaged for a fine semantic equation.
+- **HT93b:** damaged `KI-RO[`; compatible with an account gap but excluded from the 9-case rule.
+- **ARKH4 `A-KI-RO`:** near-form negative control; do not infer morphological identity from spelling alone.
+- **HT85b `KI-KI-RA-JA`:** structurally interesting candidate relative, with an 11-entry one-list and older proposals of relation to KI-RO, but not admitted to the solved grammar.
+
+No clean exact KI-RO occurrence inspected in this pass contradicts the unified model.
+
+### Reproducibility added
+
+- `analysis/2026-09-07-kiro-unified-residual-grammar.md`
+- `analysis/kiro_construction_grammar.csv`
+- `analysis/kiro_construction_grammar.py`
+
+Frozen assertions currently report:
+
+- construction grammar: **9/9**;
+- arithmetic/cardinality controls: **6/6 pass**;
+- status-switch controls: **5** independently recurring entities/designations.
+
+The earlier `analysis/2026-09-07-kiro-scope-residual.md` has a same-day erratum appended so the discarded HT117 binary-direction interpretation is not left silently in the record.
+
+### What is genuinely new versus scholarship
+
+Do **not** claim discovery of the words "deficit", "owing", "missing", or "absent" for KI-RO; those ideas are established in the literature.
+
+The Hub advance is the **testable grammar and unification**:
+
+1. punctuation/next-token form predicts scalar versus forward KI-RO construction;
+2. one unary residual-state operator works over both numeric quantities and personnel sets;
+3. arithmetic/cardinality checks instantiate the same semantics;
+4. a held-out tablet (HT15) passed the semantic prediction;
+5. recurring-person controls show KI-RO is a status applied to ordinary entities rather than a special personnel class.
+
+### New next step
+
+The next high-value job is not another hand example. Implement the frozen grammar over the full GORILA/SigLA-derived `corpus_v1.json`: classify every exact KI-RO occurrence by immediate punctuation/next-token form **before** reading outcomes, then score the 9/9 rule against all remaining attestations and matched non-KI-RO controls. A single clean counterexample should be logged, not explained away.
