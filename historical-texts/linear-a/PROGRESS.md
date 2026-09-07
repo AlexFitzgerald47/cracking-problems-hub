@@ -45,3 +45,106 @@ I inspected `kuro_test.py` rather than relying on the README. The implementation
 ### New crack direction
 
 The next useful experiment is no longer "try candidate languages." Build a **semantic-anchor graph** around KU-RO: enumerate every word/sign-group whose administrative position is predictably related to a KU-RO-closed section, then test each candidate relation on held-out tablets. The aim is to recover functions such as header, contributor/recipient, commodity classifier, subtotal, carry-forward, remainder, or allocation without assigning phonetic values. Only after those functions survive held-out arithmetic/positional tests should phonetic readings be introduced.
+
+---
+
+## 2026-09-07 – Frontier pass: KI-RO is a forward-scoping outstanding-residual marker
+
+### Correction to the previous entry
+
+The previous pass repeated the external project's `0 exact / 7 testable` KI-RO result as an evidential asymmetry. That was too strong. Direct inspection of the source code and the tablet structures shows that the comparison is **mis-oriented for KI-RO**.
+
+`kuro_test.py` is appropriate for KU-RO because it sums the numerical block **before** the target and compares it with the number after the target. It applies that same backwards-looking `cases()` routine to KI-RO. But several KI-RO occurrences demonstrably introduce the block that follows them. Therefore a failure to total the preceding block is expected and says little about KI-RO's semantics.
+
+Source code audited directly:
+https://github.com/ChristosTsirkas/corpus-validation-for-undeciphered-scripts-linear-a/blob/main/src/kuro_test.py
+
+This correction does **not** weaken the KU-RO summation result; it invalidates KI-RO as a same-orientation negative control.
+
+### Discovery set: two clean forward-scope cases
+
+**HT88:** `KI-RO •` is followed by six named entries, each `1`, and then `KU-RO 6`.
+
+**HT94b:** `KI-RO •` is followed by five named entries, each `1`, and then `KU-RO 5`.
+
+Those two tablets imply a structural distinction:
+
+- KI-RO opens/scopes a category of line-items;
+- KU-RO closes/sums that category.
+
+Sources:
+- https://github.com/mwenge/lineara.xyz/blob/master/commentary/HT88.html
+- https://github.com/mwenge/lineara.xyz/blob/master/commentary/HT94.html
+
+### Held-out prediction: HT117 — HIT
+
+Before opening HT117 in this pass, I stated the outward prediction: if the HT88/HT94 pattern is real, the long personnel tablet should preserve the same forward-scoping architecture and a later KU-RO should close the list.
+
+It does.
+
+HT117 begins:
+
+`MA-KA-RI-TE • KI-RO • U-MI-NA-SI •`
+
+It is followed by ten unit entries and then `KU-RO 10`.
+
+Source:
+https://github.com/mwenge/lineara.xyz/blob/master/commentary/HT117.html
+
+A recent UCLA/Cotsen publication independently describes the physical layout of HT117 as a three-word dot-separated opening header, followed by ten entries each marked `1`, then the two-sign word for total and `10`; this is therefore not an artefact of the transaction parser.
+
+This held-out hit is the strongest genuinely new work of the session. It does not prove a translation for the full three-word header, but it validates the scope model one tablet out.
+
+### Independent semantic discriminator: exact residual arithmetic
+
+The scope result says what KI-RO *does syntactically*. Two other tablets narrow what the account class means.
+
+**HT34:** an amount `100`, an amount `70` interpreted from the document structure as delivered/omitted, and `KI-RO 30` give the exact relation:
+
+`100 - 70 = 30 = KI-RO`
+
+Source:
+https://github.com/mwenge/lineara.xyz/blob/master/commentary/HT34.html
+
+**HT123+124a, DA-TU row:** OLIV `15`; *308 `4 E` = 4 1/4; KI-RO `J E` = 3/4. Therefore:
+
+`4 1/4 + 3/4 = 5 = 15 / 3`
+
+KI-RO is the positive make-up amount needed to complete the row's target ratio.
+
+Source:
+https://github.com/mwenge/lineara.xyz/blob/master/commentary/HT123%2B124.html
+
+### Result: narrow the functional gloss
+
+The corpus now discriminates among conventional gloss families more sharply:
+
+- **"subtraction operator"** is a poor structural model: KI-RO repeatedly heads lists rather than sitting between operands.
+- **neutral "total/balance"** is also poor: KU-RO is the closing summation operator in the same records.
+- **"outstanding balance / shortfall / amount due"** is the best current functional model. It naturally has two observed modes:
+  1. scalar residual: `KI-RO 30`;
+  2. forward-scoping status header: `KI-RO • [line items] ... KU-RO n`.
+
+The direction of obligation is **not** solved. `owed by`, `owed to`, `missing from`, and a generic `outstanding` remain live semantic branches. Do not infer a language or etymology from this result.
+
+### Additional corroboration
+
+- HT30: KI-RO opens a following commodity block; the source commentary treats the block as deficits.
+- HT37: despite damage, KI-RO precedes a fresh numerical sequence (KA-KI 11, A 15, final 17 entry).
+- HT93b: fragmentary KI-RO occurs at the start of the largely lost reverse; compatible but too damaged to count.
+
+### Reproducibility
+
+Added:
+
+- `analysis/2026-09-07-kiro-scope-residual.md` — evidence, competing models, chronology and falsifier.
+- `analysis/kiro_scope_ledger.csv` — hand-checked structural ledger.
+- `analysis/kiro_residual_checks.py` — five frozen arithmetic/scope checks.
+
+All five frozen checks pass: HT34 residual; HT123 DA-TU ratio residual; HT88 list total; HT94b list total; and the held-out HT117 list total.
+
+### What remains open
+
+This is a **functional crack**, not a decipherment of Linear A. The next high-information question is the direction of the KI-RO relation. HT117 is especially valuable because KI-RO sits between two other header terms; however, three-word headers can contain multiple entity terms (HT96a is a control), so middle position alone cannot justify translating the phrase.
+
+The next agent should seek a genuinely unseen KI-RO record or a newly adjudicated damaged occurrence and test the frozen forward-scope/residual predictions before extending the semantic model.
