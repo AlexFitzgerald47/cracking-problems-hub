@@ -87,10 +87,10 @@ Thus KI-RO is a positive *make-up/residual* amount needed to reach an account ta
 The internal evidence now distinguishes several glosses that are often treated as interchangeable.
 
 1. **`KI-RO = subtraction operator` — poor model.** A mathematical operator should not repeatedly act as the heading of a list of people or commodities. HT88, HT94b, HT30 and HT37 show that KI-RO can scope over records rather than sit between operands.
-2. **`KI-RO = neutral total/balance` — poor model.** KU-RO is the actual closing summation marker in the same tablets. HT34 and HT123 instead show KI-RO as the positive difference still needed to meet an amount/target.
+2. **neutral `total/balance` — poor model.** KU-RO is the actual closing summation marker in the same tablets. HT34 and HT123 instead show KI-RO as the positive difference still needed to meet an amount/target.
 3. **`KI-RO = outstanding balance / shortfall / amount due` — best current functional model.** It explains both syntactic modes: a scalar residual (`KI-RO 30`) and a heading for the detailed line-items making up that residual/status class (`KI-RO • NAME 1 ... KU-RO n`).
 
-The **direction of obligation** is still unresolved: the corpus here does not yet distinguish cleanly between “owed by”, “owed to”, “missing from”, and a more generic “outstanding”. Do not turn the functional result into a phonetic/language-family claim.
+The **direction of obligation** is still unresolved: the corpus here does not yet distinguish cleanly between `owed by`, `owed to`, `missing from`, and a more generic `outstanding`. Do not turn the functional result into a phonetic/language-family claim.
 
 ## Correction to the 2026 computational control
 
@@ -119,8 +119,24 @@ On a genuinely unseen or newly published KI-RO occurrence:
 - if KU-RO closes that block before the next ruling/header, predict that KU-RO will total those forward-scoped entries;
 - if KI-RO is quantified as a scalar in an account with an independently recoverable target and delivered amount, predict `target - delivered = KI-RO` (within documented damage/fraction uncertainty).
 
-A clean counterexample to these predictions would force the unified “outstanding residual/status” model to be weakened.
+A clean counterexample to these predictions would force the unified `outstanding residual/status` model to be weakened.
 
 ## Novelty caution
 
-The words “owed”, “deficit”, “balance”, “missing” and related interpretations have a long history in Linear A scholarship, so this is **not a claim to have coined the semantic family**. The advance made here is narrower and testable: (a) separating closing KU-RO from forward-scoping KI-RO, (b) obtaining a held-out hit on HT117 after forming the scope hypothesis on HT88/HT94, (c) unifying the scope pattern with exact residual arithmetic on HT34/HT123, and (d) identifying why the recent backwards-looking KI-RO computational control is mis-specified.
+The words `owed`, `deficit`, `balance`, `missing` and related interpretations have a long history in Linear A scholarship, so this is **not a claim to have coined the semantic family**. The advance made here is narrower and testable: (a) separating closing KU-RO from forward-scoping KI-RO, (b) obtaining a held-out hit on HT117 after forming the scope hypothesis on HT88/HT94, (c) unifying the scope pattern with exact residual arithmetic on HT34/HT123, and (d) identifying why the recent backwards-looking KI-RO computational control is mis-specified.
+
+---
+
+## Same-day erratum / supersession after wider contextual audit
+
+The HT117 discussion above is **partly superseded** by the later analysis in `analysis/2026-09-07-kiro-unified-residual-grammar.md`.
+
+Davis & Valério (2020) provide a stronger contextual segmentation than the binary-relational reading entertained above. Their analysis treats `MA-KA-RI-TE • KI-RO •` as the main heading over the personnel material, with following terms including `U-MI-NA-SI`, `SA-TA`, and `QI-TU-NE` functioning as subheadings for separate 1-lists. They also explicitly raise the possibility that KI-RO in these personnel records means something in the `missing / absent` family.
+
+Therefore:
+
+- retain the **held-out scope hit**: KI-RO is indeed in a heading whose effect extends forward over personnel entries, and KU-RO closes a unit list;
+- **withdraw the suggestion that HT117 is evidence for a binary `X KI-RO Y` debtor/creditor relation**;
+- supersede the next-step question `who owes whom?` with a stronger model test: whether KI-RO is a unary `UNFULFILLED / MISSING / OUTSTANDING` status that operates over both scalar quantities and sets of personnel.
+
+The wider audit found a deterministic two-construction grammar in the current clean sample — `KI-RO + numeral` for scalar residuals and `KI-RO •` for forward residual blocks — plus status-switch controls in which the same named entities recur both with and without KI-RO. See the newer analysis and executable ledger for the frozen result.
