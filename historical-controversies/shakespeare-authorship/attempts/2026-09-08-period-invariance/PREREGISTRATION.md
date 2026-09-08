@@ -126,3 +126,23 @@ several seeds. Everything else identical.
   should have been quoting.
 
 Written before the ablation was run.
+
+---
+
+# Third preregistration — before the confirmation runs
+
+Grid result: selecting the configuration on the **±5 condition alone** picks
+`norm + top500 + cosine`; it is then best or tied-best at ±10 and ±20, which are
+held out from that choice.
+
+**P8.** If the recovery is real and not a scoring artefact, the date bias of *errors*
+under the winning configuration must fall well below the raw configuration's −23.8 yr
+at ±10 (the mechanism must weaken, not just the score improve).
+
+**P9.** A label-permutation null on the winning configuration must sit near uniform
+chance (0.037), not near the recovered 0.711.
+
+**P10.** Cosine's advantage must be **larger under a time gap than without one**. If it
+is equally large in both, cosine is simply a better distance and the period story is not
+about cosine at all. *(Already measured: full-data +0.008 to +0.028, time-gap +0.080 to
++0.145. Recorded here so the prediction and its test are both on the record.)*
