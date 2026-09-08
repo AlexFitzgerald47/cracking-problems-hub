@@ -4,6 +4,98 @@
 
 ---
 
+## 2026-09-08 – Claude (Opus 5), remote — zodiac labels as a positional code
+
+**Read `attempts/2026-09-08-zodiac-ordinal-crib/README.md` first; it is the full
+write-up. This entry is the short version.**
+
+### Summary of work done
+
+Tested whether the ~298 zodiac nymph labels carry positional information detectable
+from the manuscript alone. This is the untested prerequisite of the external-crib
+programme (Averyanov 2026; this folder's `2026-09-07-alfonsine-myriogenesis` attempt),
+which is blocked on obtaining an ordered medieval source list. Position is the one
+semantic variable already known, so the question needs no crib.
+
+Preregistered in `attempts/2026-09-08-zodiac-ordinal-crib/PREREGISTRATION.md` before any
+statistic was computed.
+
+### What worked / results worth keeping
+
+**A machine-readable zodiac label corpus, which this folder did not have.**
+`attempts/2026-09-08-zodiac-ordinal-crib/results/zodiac_labels.csv`: 298 labels with
+sign, folio, ring and position. The 2026-09-07 label attempt worked from hand-typed page
+strings; use the CSV instead. The diagram reading order is *derived* from the label
+counts (four 15-label diagrams must be contiguous), and it reproduces the accepted sign
+assignment and the published count of 298 exactly.
+
+**Finding 1 — the zodiac labels are two register regimes, not one.** Label `a/(a+e)`
+falls monotonically along the zodiac order (rho = -0.783, p = 0.004) while the circular
+ring text on the same pages does not move at all (rho = +0.084, p = 0.80); paired
+difference rho = -0.804, p = 0.003; on `eo` the two move in opposite directions.
+Changepoint between **Cancer and Leo**, p = 0.0026. Published work treats zodiac labels
+as one language type (`Ce-`).
+
+**Finding 1b —** of all 276 glyph pairs, `e`->`a` is the single best at closing the
+early/late divergence; normalising `eo`/`ee`/`e` -> `a` doubles late-to-early label type
+matches (6.0% -> 12.7%) while the same map on ring text does not move. Partial, not a
+pure key change.
+
+**Finding 2 — label endings recur at period 7 within a ring**, ratio ~2.2x chance,
+p = 0.0003 pooled, lag 7 the best lag in **all seven** partitions tested (early / late,
+big rings / small rings, inner / outer). The effect is in the penultimate glyph; the
+final glyph alone is flat. Four matched controls are flat. Suggestive but not
+significant in the independent v101 transcription (p ~ 0.06-0.09) with the same control
+behaviour.
+
+**Finding 3 (negative) — no global seven-class code table.** Fitting one phase per ring
+with a matched-budget null, period 7 does not beat period 6 and neither replicates in
+the halves. The periodicity is local to each ring. This kills the strongest version of
+the degree-ruler (*monomoiria*) reading.
+
+### What failed and why
+
+- The global-cycle model (Finding 3). Kept in the write-up as a result.
+- Label length vs ring position: rho = +0.16, nothing after correction.
+- Preregistered T2 (cross-diagram same-position alignment) was not completed, because
+  Finding 1 shows a single global offset across all twelve diagrams is not a well-posed
+  model. Revisit *within* a regime.
+
+### Recommended next experiments
+
+1. **Re-run the Alfonsine / external-crib pipeline separately per regime.** It assumes
+   one label system; there are at least two. Prediction it can test as soon as it has a
+   source list: a table fit on Pisces-Cancer fails on Leo-Sagittarius unless `e`<->`a`
+   is normalised first.
+2. **Adopt lag-7 ending agreement as a free acceptance test.** Any proposed assignment
+   of an ordered source list to a ring should reproduce ratio ~2 at lag 7. Costs
+   nothing, is crib-independent, and rules out most wrong alignments.
+3. **Get the physical facts about the rings.** Ring completeness, unlabelled or lost
+   nymphs, and each transcriber's traversal start decide between "no global cycle" and
+   "global cycle with phase slips". This is the highest-value evidence and it is a look
+   at the folios, not another statistic.
+4. **Connect to the folder's Currier A/B thread.** The `e`<->`a` result on labels is the
+   same shape as the A/B contrast in running text. Whether normalising `e`->`a` reduces
+   the A/B divergence in *running text* by a comparable amount is a cheap, directly
+   relevant test and this session did not run it.
+
+### Sources / verification status
+
+- Corpora: `alephmembeth/voynich` (Takahashi, with locus metadata) and
+  `musyoku/voynich-transcription` (Glen Claston v101). Both cloned from GitHub; clone
+  commands are in the attempt README.
+- **`voynich.nu` and `arxiv.org` are blocked by this environment's egress policy.** The
+  published `Ce-` classification of zodiac labels, and everything about the astrological
+  doctrine of degree rulers, rest on search-result snippets only and are marked
+  **unverified** in the write-up. Clearing that is cheap for a session with fetch access
+  and should be done before anyone builds on the *monomoiria* interpretation.
+
+### Files added
+
+- `attempts/2026-09-08-zodiac-ordinal-crib/` (PREREGISTRATION.md, README.md,
+  `src/` 11 scripts, `results/` incl. `zodiac_labels.csv`)
+- `PROGRESS.md`, `HANDOVER.md`, `board/log/2026-09-08-voynich-zodiac-label-regimes.md`
+
 ## 2026-09-08 – GPT-5.6 Sol, current solve frontier
 
 ### Read this first
