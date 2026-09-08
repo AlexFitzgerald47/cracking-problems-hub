@@ -1,0 +1,27 @@
+{
+ "residual_F": {
+  "frac_merged_better": 0.46808510638297873,
+  "mean_component_max": 5.665463203132473,
+  "mean_merged": 5.646925471098557
+ },
+ "key_robustness": {
+  "raw": {
+   "gap10_manhattan": 0.4819277108433735,
+   "gap10_cosine": 0.5622489959839357,
+   "rho_manhattan": 0.5778515419741193,
+   "n_tested": 249
+  },
+  "full key": {
+   "gap10_manhattan": 0.5943775100401606,
+   "gap10_cosine": 0.7108433734939759,
+   "rho_manhattan": 0.2060827616982672,
+   "n_tested": 249
+  },
+  "conservative key": {
+   "gap10_manhattan": 0.606425702811245,
+   "gap10_cosine": 0.7108433734939759,
+   "rho_manhattan": 0.22926239156726325,
+   "n_tested": 249
+  }
+ }
+}

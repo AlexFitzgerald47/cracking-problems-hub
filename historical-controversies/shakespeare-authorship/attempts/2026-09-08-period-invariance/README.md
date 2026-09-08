@@ -131,6 +131,75 @@ measure — the Spearman correlation, over every fold, between the model's own d
 ranking of authors and those authors' date-proximity — which is the ρ quoted throughout.
 The original wording stands in `PREREGISTRATION.md`.
 
+## 5. What the mechanism actually is — three self-corrections
+
+The loose version of this finding is "spelling variants are a date stamp; delete them".
+Three tests run against that version, and it does not survive them intact.
+
+**(a) The variant features are not uniquely date-carrying.** Ridge regression from
+features to composition year, validated **leave-one-author-out** so no model can date a
+play by recognising who wrote it (year sd 34.1 yr; guessing the mean gives MAE 29.9 yr):
+
+| features | MAE | R² |
+|---|---|---|
+| all 500 raw | 12.8 yr | +0.780 |
+| the 98 variant-pair features alone | 13.3 yr | +0.747 |
+| **98 random raw features (mean of 10 draws)** | **13.0 yr** | **+0.755** |
+| 500 orthographically normalised | 14.0 yr | +0.748 |
+
+Ninety-eight spelling variants date an early modern play to within thirteen years — but
+so do ninety-eight features picked at random, and normalisation barely costs any of it.
+The whole high-frequency lexicon drifts. **P11 held and P12 failed, and the size-matched
+random control is what makes the pair readable.**
+
+**(b) Merging does not "repair" the feature in the naive sense either.** Across the 47
+merge groups, the merged feature is less date-loaded than its most date-loaded component
+in 94% of cases (mean R² on year 0.323 → 0.029) — but its raw author F *falls*, 12.70 →
+6.21. On that measure merging looks like it destroys author signal.
+
+**(c) It does not. Raw author F is confounded, and that is the whole finding.** Authors
+occupy narrow date windows, so a date-locked spelling scores as an excellent author
+discriminator for a reason that has nothing to do with the author. Computing author F on
+the **date residual** instead:
+
+| | mean author F |
+|---|---|
+| best component, raw (date-confounded) | 12.70 |
+| merged, raw (date-confounded) | 6.21 |
+| **best component, date-residualised** | **5.67** |
+| **merged, date-residualised** | **5.65** |
+
+Merged beats its best component in 47% of groups — a coin flip. **Merging removes the
+date loading (0.323 → 0.029) and leaves the genuine author signal untouched
+(5.67 → 5.65).** The apparent loss was entirely chronology wearing the author's clothes.
+
+So the precise statement is not "spelling is a date stamp". It is:
+
+> **A date-locked spelling variant is a near-perfect author discriminator inside its own
+> period and a poison pill outside it.** More than half of `downe`'s apparent authorial
+> power (F 25.2) is the fact that `downe` is a 1590s form and its author was a 1590s
+> writer. Contemporaneous attribution cashes that in for free — which is why the no-gap
+> benchmark barely notices normalisation (0.820 → 0.852). Cross-period attribution pays
+> it back with interest.
+
+That is why deleting the features (DROP, 0.562) does worse than merging them
+(NORM, 0.594): deletion throws away the residual 5.65 of real author signal along with
+the confound.
+
+**Robustness to the key's defects.** Inspection of the merge groups shows four wrong
+merges — `the`/`thee`/`th'`, `us`/`vs`/`use`, `ile`/`i'le`/`i'll`/`ill`, `done`/`don`.
+Refusing all four:
+
+| key | ±10 Manhattan | ±10 cosine | ρ |
+|---|---|---|---|
+| raw | 0.482 | 0.562 | +0.578 |
+| full key | 0.594 | **0.711** | +0.206 |
+| conservative key (4 merges refused) | **0.606** | **0.711** | +0.229 |
+
+The effect is not produced by the bad merges; the conservative key is slightly better
+under Manhattan and identical under cosine. A properly curated normaliser (VARD,
+MorphAdorner) should do better still, and that is the cheapest remaining improvement.
+
 ## What this means for the authorship question
 
 It **strengthens** the instrument and therefore cuts against the 2026-09-05 conclusion in
@@ -192,8 +261,12 @@ authorship.
 
 ## Limits
 
-- One corpus, one language, one period. The orthographic mechanism should hold anywhere
-  original-spelling text spans a spelling reform, but that is a prediction, not a result.
+- One corpus, one language, one period. The mechanism should hold anywhere original-
+  spelling text spans a spelling reform *and* authors' careers are shorter than the
+  reform, but that is a prediction, not a result.
+- The orthographic key is crude and hand-written. It contains four demonstrably wrong
+  merges; the result survives removing them, but a curated normaliser was not available
+  offline and would probably do better.
 - Genre is still uncontrolled, and on the 2026-09-05 evidence it may be as large as
   period was.
 - The winning configuration was selected on the ±5 condition and then reported at ±10 and

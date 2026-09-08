@@ -146,3 +146,21 @@ chance (0.037), not near the recovered 0.711.
 is equally large in both, cosine is simply a better distance and the period story is not
 about cosine at all. *(Already measured: full-data +0.008 to +0.028, time-gap +0.080 to
 +0.145. Recorded here so the prediction and its test are both on the record.)*
+
+---
+
+# Fourth preregistration — the dating test
+
+Everything so far measures attribution. If "date stamp" is literally true rather than a
+metaphor, the orthographic-variant features should **date a play on their own**, and
+normalisation should destroy that ability. Dating is evidence not used to derive any of
+the findings above.
+
+**P11.** Ridge regression from the *variant-pair features alone* (the raw features the
+orthographic key merges — 51 of 500) predicts composition year with a mean absolute
+error competitive with all 500 raw features, under **leave-one-author-out** validation
+(so the model cannot date a play by recognising its author).
+
+**P12.** The same regression on the **normalised** feature set is substantially worse at
+dating than the raw set. If normalisation does not cost dating accuracy, it is not
+removing a date stamp and the mechanism claimed here is wrong.

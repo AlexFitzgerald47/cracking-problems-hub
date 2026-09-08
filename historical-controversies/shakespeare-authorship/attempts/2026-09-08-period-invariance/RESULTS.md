@@ -200,3 +200,62 @@ the mechanism (−23.8 → −18.8 at ±10, and −23.9 → −13.7 at ±20, non
 winner comparison is not readable: 72 errors against 129 means the residual set is
 harder, and the statistic conditions on the outcome. Section 6 is the unconditioned
 replacement. Reported here rather than dropped.
+
+## 10. Dating (`results/dating.json`)
+
+Ridge regression (λ = 1) from features to composition year. Leave-one-author-out is the
+honest fold structure: authors cluster in time, so leave-one-play-out lets a model date
+a play by recognising its author. Year sd 34.1 yr; always guessing the mean gives
+MAE 29.9 yr.
+
+| features | MAE (author-out) | R² | MAE (play-out) | R² |
+|---|---|---|---|---|
+| raw, all 500 | 12.8 yr | +0.780 | 11.3 yr | +0.830 |
+| variant-pair features only (98) | 13.3 yr | +0.747 | 10.9 yr | +0.827 |
+| raw minus variant features (402) | 12.6 yr | +0.781 | 12.2 yr | +0.797 |
+| orthographically normalised, 500 | 14.0 yr | +0.748 | 11.2 yr | +0.829 |
+| **random 98 raw features (mean of 10)** | **13.0 yr** | **+0.755** | — | — |
+
+P11 held; **P12 failed**; and the random-98 control shows why the pair has to be read
+together. Variant features date a play well, but not distinctively so — the entire
+high-frequency lexicon drifts, and normalisation costs only 1.2 yr of dating accuracy.
+"Spelling is the date stamp" is therefore too narrow, and section 11 gives the version
+that survives.
+
+## 11. Merge groups: what merging does to a feature (`results/repair_test.json`, `results/mechanism.json`)
+
+47 merge groups covering 98 of the 500 raw features.
+
+| statistic | best component | merged |
+|---|---|---|
+| mean R²(year) | 0.323 | **0.029** |
+| mean author F, raw | 12.70 | 6.21 |
+| **mean author F, on the date residual** | **5.67** | **5.65** |
+| merged less date-loaded than best component | — | 94% of groups |
+| merged higher raw author F than best component | — | 11% of groups |
+| merged higher **residualised** author F | — | 47% of groups |
+
+Selected groups:
+
+| key | members | R²(year) best→merged | raw F best→merged |
+|---|---|---|---|
+| down | down / downe | 0.575 → 0.001 | 25.21 → 8.11 |
+| vs | us / vs / use ✗ | 0.443 → 0.002 | 17.66 → 4.51 |
+| ben | been / beene | 0.436 → 0.121 | 12.96 → 6.17 |
+| again | again / againe | 0.375 → 0.012 | 14.15 → 9.41 |
+| ever | ever / euer | 0.358 → 0.010 | 14.06 → 8.65 |
+| il | ile / i'le / i'll / ill ✗ | 0.311 → 0.047 | 10.46 → 4.56 |
+| do | do / doe | 0.281 → 0.014 | 11.22 → 8.69 |
+| be | be / bee | 0.219 → 0.014 | 9.25 → 10.20 |
+| th | the / thee / th' ✗ | 0.154 → 0.017 | 6.92 → 6.40 |
+| don | done / don ✗ | 0.044 → 0.047 | 4.29 → 1.42 |
+
+✗ marks a merge the inspection rejects as wrong.
+
+## 12. Robustness to the key's known defects (`results/mechanism.json`)
+
+| key | ±10 Manhattan | ±10 cosine | ρ |
+|---|---|---|---|
+| raw | 0.482 | 0.562 | +0.578 |
+| full key | 0.594 | 0.711 | +0.206 |
+| conservative key (the four ✗ merges refused) | **0.606** | **0.711** | +0.229 |
