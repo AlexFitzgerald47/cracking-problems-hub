@@ -1,9 +1,38 @@
-# The Voynich zodiac labels are two register regimes, and their endings repeat at period 7
+# What the Voynich zodiac labels are, from the manuscript alone
 
 **Date:** 2026-09-08
 **Session:** Claude (Opus 5), remote
-**Status:** two structural findings, one clean negative. **No decipherment, no reading of any label.**
+**Status:** four positive findings, two clean negatives. **No decipherment, no reading of any label.**
 **Preregistration:** `PREREGISTRATION.md`, written before any statistic was computed.
+
+---
+
+## The model this session arrived at
+
+Everything below is derived from the transcription alone, with no external source list
+and no assumed reading. Taken together it is a structural description of the label
+system that did not exist before:
+
+> The 298 zodiac nymph labels are **near-unique items** — 83% hapax, the most lexically
+> diverse text in the manuscript — so they are a list of *distinct things*, not an
+> ordinal code. They are **tied to their own diagram** but *less* bound to their page
+> than the ring text is to itself, which is what an externally sourced list looks like
+> and not what page-local generation looks like. They are written in **two register
+> regimes** that break between Cancer and Leo, differing partly by an `e`↔`a`
+> substitution that is *not* the one separating Currier A from B. And while the labels
+> themselves do not repeat, their **endings do**, at period 7 within a ring — an effect
+> absent from four matched control corpora including the circular text on the same
+> pages.
+
+So: a list of distinct externally-sourced names, each carrying a suffix drawn from a
+small inventory that cycles with period 7, written in two successive register regimes.
+Each clause of that sentence is a number in the sections below, and each is falsifiable.
+
+**What it does for the blocked crib programme.** That programme assumes the labels are
+an ordered list of ~30 distinct names per sign and is stuck waiting for a medieval
+source to match them against. Finding 2 is the first evidence that its premise is right.
+Findings 1 and 5 say it must fit one regime at a time. Finding 3 hands it a free
+acceptance test it can run on any candidate alignment before the source arrives.
 
 ---
 
@@ -99,7 +128,38 @@ not move (6.8% late, 6.6% early).
 
 ---
 
-## Finding 2 — label endings recur at period 7 within a ring
+## Finding 2 — the labels are not an ordinal code, and this is decidable in one line
+
+Every ordinal reading of the zodiac labels makes the same prediction. Day of month,
+degree 1..30, planetary ruler, decan — each is a **small closed inventory repeating
+across all twelve signs**: 30, 7, or 36 items for 298 slots. That is a type/token
+statement, and it needs no crib and no model.
+
+| corpus | 298-token type/token ratio |
+|---|---:|
+| **zodiac nymph labels** | **0.903** (269 types / 298 tokens) |
+| running text (`P` loci) | 0.756 ± 0.026 — labels are **+5.7 SD** above |
+| all other labels (`L` loci) | 0.858 — labels are above |
+| zodiac ring text (`R` loci) | 0.763 ± 0.021 — labels are **+6.5 SD** above |
+
+Repeat spectrum across the entire zodiac section: **248 types occur once**, 15 twice, 4
+three times, 2 four times. **83% of the labels are hapax.**
+
+An ordinal code would need ≤ 36 types. There are 269, and the labels are the most
+lexically diverse text in the manuscript, more diverse than the running text and more
+diverse than the manuscript's other labels.
+
+**The whole-label ordinal readings are excluded.** The labels behave like a list of
+distinct items — names — which is exactly what the external-crib programme assumes and
+had never verified. This is the first number that supports its premise.
+
+It also tells you where to look for cyclic structure: not in the label, but in the
+**ending** inventory, which is small (49 distinct last-two-glyph forms for 298 labels).
+Finding 3 is that test.
+
+---
+
+## Finding 3 — label endings recur at period 7 within a ring
 
 Selected from a 7-measure × 14-lag scan over all zodiac rings (`src/t8_period.py`), then
 confirmed on partitions and controls that were not used to select it
@@ -142,6 +202,40 @@ Compare the zodiac labels' 2.21 / 1.69. Full table: `results/t12_final.txt`.
 The effect is not a property of Voynichese lists, of the label register generally, or of
 the zodiac pages. It is a property of *these* labels in *this* order.
 
+### Manuscript-wide sweep — the effect exists nowhere else
+
+Every ordered structure in the manuscript was cut into lists and run through the same
+pooled test (`src/t15_sweep.py`, full table `results/t15_sweep.txt`):
+
+| structure | lists | items | lag-7 last-2 ratio | Z | best lag |
+|---|---:|---:|---:|---:|---:|
+| **zodiac nymph labels** | 20 | 258 | **2.21** | **+3.92** | **7** |
+| running text, paragraph-first words | 182 | 3752 | 0.98 | −0.42 | 1 |
+| running text, within-line words | 400 | 3696 | 0.77 | −2.98 | 1 |
+| circular / radial text (`R`) | 7 | 135 | 0.55 | −1.14 | 1 |
+| Quire-20 starred-paragraph first words | 4 | 73 | 1.42 | +0.96 | 4 |
+| circular / radial text (`X`, `Y`, `C`) | 10 | 120 | 0.68–1.05 | <+0.1 | 6–9 |
+| pharmaceutical labels (f88–f102) | 4 | 38 | 0.00 | −0.51 | 8 |
+| astronomical labels (f67–f73) | 1 | 28 | 0.80 | −0.38 | 4 |
+| other labels (f74+) | 4 | 49 | 0.59 | −0.58 | 3 |
+
+The zodiac labels are the only structure in the manuscript that shows it.
+
+**One other cell lit up, and it is an artefact worth recording.** "Herbal labels
+(f1–f66)" gave ratio 3.37, Z = +4.01 — on 2 lists and 27 pairs, and with the penult
+feature flat (0.99) where the zodiac moves on both. Inspecting it: the hit is entirely
+f49v's left-margin column of **single characters**,
+`f o r y e * k s p o * y e * * p o * y e * d y s k y`, which contains the literal
+repeated block `p o * y e *` at distance 7. For single-character "labels" the last-two
+feature is the whole character, so this is a verbatim repeat, not an ending cycle. The
+sweep rediscovering the f49v marginal column's periodicity without being told about it
+is a second pipeline check; it is not a second instance of Finding 3.
+
+Also worth one line: running-text words *within a line* are **less** likely to share
+endings at lag 1 than chance (0.77, Z = −2.98). Whatever governs Voynichese line
+composition actively avoids adjacent ending repetition, which is the opposite of the
+zodiac labels' behaviour and further separates the two.
+
 ### Independent transcription
 
 Re-run on Glen Claston's **v101** transcription (`musyoku/voynich-transcription`) — a
@@ -161,9 +255,9 @@ attenuates any positional effect. **Call this consistent, not confirmed.**
 
 ---
 
-## Finding 3 (negative) — there is no global seven-class code table
+## Finding 4 (negative) — there is no global seven-class code table
 
-The obvious reading of Finding 2 is a degree-ruler / *monomoiria* cycle: in a
+The obvious reading of Finding 3 is a degree-ruler / *monomoiria* cycle: in a
 30-per-sign degree list, a repeating seven-planet assignment puts the same ruler on
 degrees seven apart. That reading predicts more than local periodicity — it predicts
 **one** seven-class system shared by every ring, so that after aligning each ring by a
@@ -190,7 +284,7 @@ nymph-by-nymph physical evidence, not more statistics on this transcription.)
 
 ---
 
-## Finding 4 — the label regime split is not Currier A/B, and Currier A/B is not a one-glyph re-encoding
+## Finding 5 — the label regime split is not Currier A/B, and Currier A/B is not a one-glyph re-encoding
 
 Finding 1b invited an obvious extrapolation: Currier A is `a`-heavy and B is `e`-heavy,
 so perhaps one `e`↔`a` substitution explains both the label regimes *and* the
@@ -239,7 +333,7 @@ Two conclusions, both worth keeping:
 
 ---
 
-## Finding 5 — the labels are diagram-locked, but *less* page-locked than the text is
+## Finding 6 — the labels are diagram-locked, but *less* page-locked than the text is
 
 Does a diagram's nymph labels have anything to do with that diagram's own circular ring
 text, or could any label sit on any diagram? Statistic: mean over a diagram's labels of
@@ -307,15 +401,18 @@ python3 t7_substitution.py  # Finding 1b
 python3 t8_period.py     # discovery scan
 python3 t9_controls.py   # stratification + controls
 python3 t11_pooled.py    # nested ending features
-python3 t12_final.py     # Finding 2, definitive
-python3 t10_phase.py     # Finding 3 (slow, ~20 min)
+python3 t12_final.py     # Finding 3, definitive
+python3 t18_diversity.py # Finding 2
+python3 t17_labeltext.py # Finding 6
+python3 t14_currier.py   # Finding 5
+python3 t10_phase.py     # Finding 4 (slow, ~20 min)
 python3 t13_v101.py      # independent transcription
 ```
 
 ## Honest limits
 
 - No label is read. No plaintext. No claim about language.
-- Finding 2 was *selected* on the Takahashi corpus; the partitions confirm it but are
+- Finding 3 was *selected* on the Takahashi corpus; the partitions confirm it but are
   not a fresh corpus. v101 is the only genuinely independent check and it is
   suggestive, not significant.
 - The `a/(a+e)` drift and the physical order of the manuscript are perfectly

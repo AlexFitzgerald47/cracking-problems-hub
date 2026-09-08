@@ -11,7 +11,35 @@ import sys, os, json, collections
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import labels as L
-from t12_final import pooled
+
+NPERM = 8000
+
+
+def pooled(seqs, feat, maxlag=10, nperm=NPERM, seed=9):
+    """Vectorised pooled lag test: same statistic and null as t12_final.pooled,
+    but the permutations for each list are drawn as one (nperm, n) block."""
+    rng = np.random.default_rng(seed)
+    codes = {}
+    arrs = [np.array([codes.setdefault(feat(w), len(codes)) for w in s]) for s in seqs]
+    out = {}
+    for d in range(1, maxlag + 1):
+        usable = [s for s in arrs if len(s) - d >= 1]
+        if not usable:
+            continue
+        obs = sum(int(np.sum(s[:-d] == s[d:])) for s in usable)
+        tot = sum(len(s) - d for s in usable)
+        nulls = np.zeros(nperm, dtype=np.int64)
+        for s in usable:
+            n = len(s)
+            perm = s[np.argsort(rng.random((nperm, n)), axis=1)]
+            nulls += (perm[:, :-d] == perm[:, d:]).sum(axis=1)
+        mu, sd = nulls.mean(), nulls.std(ddof=1)
+        out[d] = {"obs": obs, "tot": tot, "null": float(mu),
+                  "ratio": obs / mu if mu else 0.0,
+                  "z": float((obs - mu) / sd) if sd else 0.0,
+                  "p": float((np.sum(nulls >= obs) + 1) / (nperm + 1))}
+    return out
+
 
 ZOD = L.ZODIAC_FOLIOS
 
@@ -83,7 +111,7 @@ def main():
         seqs = groups[gname]
         nit = sum(len(x) for x in seqs)
         for fn, ff in FE.items():
-            r = pooled(seqs, ff, maxlag=10, nperm=20000, seed=abs(hash(gname + fn)) % 9999)
+            r = pooled(seqs, ff, maxlag=10, seed=abs(hash(gname + fn)) % 9999)
             res[gname + "|" + fn] = r
             if 7 not in r:
                 continue
