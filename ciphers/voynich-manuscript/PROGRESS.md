@@ -106,6 +106,33 @@ one: a single skipped or damaged nymph breaks the phase from that point on while
 local period-7 similarity intact, and telling those apart needs the folios, not more
 statistics.
 
+
+### Finding 4 — the label split is not Currier A/B, and A/B is not a one-glyph re-encoding
+
+Finding 1b invited an extrapolation: Currier A is `a`-heavy and B is `e`-heavy, so
+perhaps one `e`<->`a` substitution explains both the label regimes and the manuscript's
+main register split. **It does not.** Running-text pages were assigned a Currier
+language from `OrcusLabs/voynich.science` `mappings_TTLI.json` (193 classified pages;
+pipeline check f1r -> A, f75r -> B, both correct), and the same 276-pair collapse scan
+was run with sample sizes matched and baselines taken by splitting each language's own
+pages in half.
+
+- raw A-vs-B glyph-bigram JSD = 0.0955; within-A baseline 0.0076, within-B 0.0050.
+  **The A/B difference is ~12x the within-language variation.**
+- the best single glyph merge of 276 closes only **35.7%** of that gap (`o`/`d`), and the
+  residual is still ~8x baseline.
+- **`e`/`a` ranks 254 of 276** and makes A/B slightly *worse* than raw.
+- all twelve zodiac diagram pages are **Currier-unclassified** in this dataset, so
+  Finding 1 sits on territory Currier's labels do not cover and cannot restate them.
+  (Other taxonomies do assign the zodiac pages a class; not reachable from this
+  environment, marked unverified.)
+
+Two keepers: the zodiac-label regime split is its own phenomenon, distinct from both the
+ring text on the same pages and from Currier A/B; and **Currier A/B is not a one-glyph
+re-encoding of a single system**, which is a direct quantitative answer to a question
+this folder has had open since 2026-09-04 and constrains the "A and B are one language
+differently written" family of proposals.
+
 ### What failed
 
 - No global cycle (above). Reported as a result, not buried.

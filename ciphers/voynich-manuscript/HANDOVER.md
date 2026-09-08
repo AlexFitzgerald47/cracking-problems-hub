@@ -48,6 +48,15 @@ final glyph alone is flat. Four matched controls are flat. Suggestive but not
 significant in the independent v101 transcription (p ~ 0.06-0.09) with the same control
 behaviour.
 
+**Finding 4 — the label split is not Currier A/B, and A/B is not a one-glyph
+re-encoding.** Same collapse scan on running text with pages labelled from
+`OrcusLabs/voynich.science` `mappings_TTLI.json`: raw A-vs-B glyph-bigram JSD 0.0955
+against within-language baselines of 0.0076 / 0.0050, so A/B is ~12x internal variation;
+the best single glyph merge of 276 closes only 35.7% of the gap, and `e`/`a` ranks
+**254 of 276**. All twelve zodiac pages are Currier-unclassified in that dataset. So the
+label regimes are their own phenomenon, and **A/B is not a one-glyph re-encoding** — a
+direct answer to a question open in this folder since 2026-09-04.
+
 **Finding 3 (negative) — no global seven-class code table.** Fitting one phase per ring
 with a matched-budget null, period 7 does not beat period 6 and neither replicates in
 the halves. The periodicity is local to each ring. This kills the strongest version of

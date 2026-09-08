@@ -60,6 +60,13 @@ round an edge, a cyclic ledger — needs this stated before the p-value.
 - **No global seven-class code table** (matched-budget phase fit): the cycle is local to
   each ring. Reported as a result — it kills the strongest degree-ruler reading.
 
+- **Currier A/B is not a one-glyph re-encoding.** Follow-up scan on running text: raw
+  A-vs-B glyph-bigram JSD 0.0955 against within-language baselines of 0.0076/0.0050
+  (~12x internal variation); the best single glyph merge of 276 closes only 35.7% of the
+  gap. The substitution that best explains the *label* split ranks 254 of 276 for A/B,
+  so the two splits are different phenomena. This answers a question open in
+  `ciphers/voynich-manuscript/` since 2026-09-04.
+
 No label is read. No plaintext. No language claim.
 
 ## Verification debt created

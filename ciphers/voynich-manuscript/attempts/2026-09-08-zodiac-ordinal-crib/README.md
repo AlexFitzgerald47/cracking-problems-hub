@@ -190,6 +190,55 @@ nymph-by-nymph physical evidence, not more statistics on this transcription.)
 
 ---
 
+## Finding 4 — the label regime split is not Currier A/B, and Currier A/B is not a one-glyph re-encoding
+
+Finding 1b invited an obvious extrapolation: Currier A is `a`-heavy and B is `e`-heavy,
+so perhaps one `e`↔`a` substitution explains both the label regimes *and* the
+manuscript's main register split — which would be a claim about the writing system
+rather than about two languages. **It does not.**
+
+Running-text pages were assigned a Currier language from
+`OrcusLabs/voynich.science` `mappings_TTLI.json` (193 classified pages; pipeline check:
+f1r → A, f75r → B, both correct). Same collapse-scan as Finding 1b, sample sizes
+matched by subsampling, baselines taken by splitting each language's own **pages** in
+half:
+
+| quantity | value |
+|---|---:|
+| raw A-vs-B glyph-bigram JSD | 0.0955 |
+| within-A baseline (random page halves) | 0.0076 |
+| within-B baseline | 0.0050 |
+| **excess over baseline** | **0.0892** |
+
+The A/B difference is roughly **12× the within-language variation**. The best single
+glyph merge of all 276 closes only 35.7% of that gap (`o`/`d`), and the residual is
+still ~8× baseline:
+
+| collapse | A-vs-B JSD | gap closed |
+|---|---:|---:|
+| `o`/`d` | 0.0637 | 35.7% |
+| `o`/`e` | 0.0678 | 31.0% |
+| `d`/`y` | 0.0727 | 25.5% |
+| `e`/`y` | 0.0754 | 22.5% |
+| **`e`/`a`** | **0.0962** | **worse than raw — rank 254 of 276** |
+
+Two conclusions, both worth keeping:
+
+1. **The zodiac-label regime split is a different phenomenon from Currier A/B.** The
+   substitution that best closes the label split is the 254th-best for A/B, i.e. it
+   makes A/B slightly *worse*. Independently, all twelve zodiac diagram pages are
+   **Currier-unclassified** in this dataset, so Finding 1 is on territory Currier's
+   labels do not cover at all and cannot be a restatement of them. (Other taxonomies do
+   assign the zodiac pages a class; that assignment was not reachable from this
+   environment and is **unverified**.)
+2. **Currier A/B is not a one-glyph re-encoding of a single system.** No single glyph
+   identification brings A and B within reach of their own internal variation. This is a
+   direct, quantitative answer to a question this folder has had open since 2026-09-04,
+   and it constrains the "A and B are one language differently written" family of
+   proposals.
+
+---
+
 ## What this changes for the next attempt
 
 1. **Fit any external crib on one regime at a time.** The `2026-09-07-alfonsine-myriogenesis`
