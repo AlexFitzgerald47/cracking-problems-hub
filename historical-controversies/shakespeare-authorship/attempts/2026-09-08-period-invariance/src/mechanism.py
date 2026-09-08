@@ -67,10 +67,7 @@ def main():
     print('  (raw, date-confounded F went 12.70 -> 6.21 — the opposite direction)')
 
     print('\nPART 2 — conservative key, four bad merges refused: %s' % sorted(BAD))
-    for name, keyfn in (('full key', ortho.key),
-                        ('conservative key', lambda w: (w if ortho.key(w) in BAD
-                                                        else ortho.key(w)))):
-        pass
+
     def conservative(w):
         k = ortho.key(w)
         return w if k in BAD else k
