@@ -1,0 +1,40 @@
+{
+ "gap_years": 10,
+ "date_bias": {
+  "raw+top500+manhattan (2026-09-05 config)": {
+   "n_errors": 129,
+   "date_bias_years": -23.822276438905288,
+   "ci95": [
+    -26.06836969468805,
+    -21.349918372047313
+   ],
+   "frac_date_proximate": 0.937984496124031
+  },
+  "norm+top500+manhattan": {
+   "n_errors": 101,
+   "date_bias_years": -18.7765935962996,
+   "ci95": [
+    -21.728432096138157,
+    -15.588806955141223
+   ],
+   "frac_date_proximate": 0.9108910891089109
+  },
+  "norm+top500+cosine (winner)": {
+   "n_errors": 72,
+   "date_bias_years": -26.387524566437072,
+   "ci95": [
+    -29.36663219333325,
+    -22.976162337053413
+   ],
+   "frac_date_proximate": 0.9722222222222222
+  }
+ },
+ "null": {
+  "winner_gap_accuracy": 0.7108433734939759,
+  "n_tested": 249,
+  "label_permutation_mean": 0.0357556270096463,
+  "label_permutation_max": 0.05466237942122187,
+  "uniform_chance": 0.037037037037037035,
+  "n_permutations": 25
+ }
+}

@@ -1,0 +1,68 @@
+corpus,seg_id,title,order,siglum,rubric,block,n_tokens,n_tokens_narrative,quoted_share
+HA,HA:hadrianus,De vita Hadriani,1,Spartianus,primary,pre,5128,5056,0.014
+HA,HA:aelius,Helius,2,Spartianus,secondary,pre,1440,1314,0.0875
+HA,HA:antoninus_pius,Antoninus Pius,3,Capitolinus,primary,pre,2244,2186,0.0258
+HA,HA:marcus,Marcus Antoninus Philosophus,4,Capitolinus,primary,pre,5501,5425,0.0138
+HA,HA:verus,Verus,5,Capitolinus,secondary,pre,2058,2053,0.0024
+HA,HA:avidius_cassius,Avidius Cassius,6,Gallicanus,secondary,pre,2608,1484,0.431
+HA,HA:commodus,Commodus Antoninus,7,Lampridius,primary,pre,3465,3024,0.1273
+HA,HA:pertinax,Helvius Pertinax,8,Capitolinus,primary,pre,2600,2540,0.0231
+HA,HA:didius_iulianus,Didius Julianus,9,Capitolinus,primary,pre,1590,1572,0.0113
+HA,HA:septimius_severus,Severus,10,Spartianus,primary,pre,4211,4134,0.0183
+HA,HA:pescennius_niger,Pescennius Niger,11,Spartianus,secondary,pre,2277,1945,0.1458
+HA,HA:clodius_albinus,Clodius Albinus,12,Capitolinus,secondary,pre,2703,1808,0.3311
+HA,HA:caracalla,Antoninus Caracallus,13,Spartianus,primary,pre,2042,2020,0.0108
+HA,HA:geta,Antoninus Geta,14,Spartianus,secondary,pre,1230,1162,0.0553
+HA,HA:macrinus,Opilius Macrinus,15,Capitolinus,primary,pre,2490,2248,0.0972
+HA,HA:diadumenianus,Diadumenus Antoninus,16,Lampridius,secondary,pre,1670,1228,0.2647
+HA,HA:heliogabalus,Antoninus Heliogabalus,17,Lampridius,primary,pre,5789,5715,0.0128
+HA,HA:alexander_severus,Alexander Severus,18,Lampridius,primary,pre,10693,9267,0.1334
+HA,HA:maximini_duo,Maximini Duo,19,Capitolinus,primary,pre,5424,4669,0.1392
+HA,HA:gordiani_tres,Gordiani Tres,20,Capitolinus,primary,pre,5556,4746,0.1458
+HA,HA:maximus_balbinus,Maximus et Balbinus,21,Capitolinus,primary,pre,3147,2491,0.2085
+HA,HA:valeriani_duo,Valeriani Duo,22,Pollio,primary,post,1018,474,0.5344
+HA,HA:gallieni_duo,Gallieni Duo,23,Pollio,primary,post,3674,3610,0.0174
+HA,HA:tyranni_triginta,Tyranni Triginta,24,Pollio,secondary,post,6589,5425,0.1767
+HA,HA:claudius,Divus Claudius,25,Pollio,primary,post,2968,1932,0.3491
+HA,HA:aurelianus,Divus Aurelianus,26,Vopiscus,primary,post,7817,5483,0.2986
+HA,HA:tacitus,Tacitus,27,Vopiscus,primary,post,3086,2062,0.3318
+HA,HA:probus,Probus,28,Vopiscus,primary,post,4123,2961,0.2818
+HA,HA:quadrigae_tyrannorum,"Firmus Saturninus, Proculus et Bonosus",29,Vopiscus,secondary,post,2315,1753,0.2428
+HA,HA:carus_carinus_numerianus,Carus et Carinus et Numerianus,30,Vopiscus,primary,post,2656,2334,0.1212
+NEPOS,NEPOS:miltiades,Miltiades,1,Nepos,primary,pre,1357,1357,0.0
+NEPOS,NEPOS:themistocles,Themistocles,2,Nepos,primary,pre,1716,1716,0.0
+NEPOS,NEPOS:aristides,Aristides,3,Nepos,primary,pre,347,347,0.0
+NEPOS,NEPOS:pausanias,Pausanias,4,Nepos,primary,pre,887,887,0.0
+NEPOS,NEPOS:cimon,Cimon,5,Nepos,primary,pre,543,543,0.0
+NEPOS,NEPOS:lysander,Lysander,6,Nepos,primary,pre,540,540,0.0
+NEPOS,NEPOS:alcibiades,Alcibiades,7,Nepos,primary,pre,2021,2021,0.0
+NEPOS,NEPOS:thrasybulus,Thrasybulus,8,Nepos,primary,pre,603,603,0.0
+NEPOS,NEPOS:conon,Conon,9,Nepos,primary,pre,740,740,0.0
+NEPOS,NEPOS:dion,Dion,10,Nepos,primary,pre,1484,1484,0.0
+NEPOS,NEPOS:iphicrates,Iphicrates,11,Nepos,primary,pre,411,411,0.0
+NEPOS,NEPOS:chabrias,Chabrias,12,Nepos,primary,pre,489,489,0.0
+NEPOS,NEPOS:timotheus,Timotheus,13,Nepos,primary,pre,657,657,0.0
+NEPOS,NEPOS:datames,Datames,14,Nepos,primary,post,1822,1822,0.0
+NEPOS,NEPOS:epaminondas,Epaminondas,15,Nepos,primary,post,1673,1673,0.0
+NEPOS,NEPOS:pelopidas,Pelopidas,16,Nepos,primary,post,714,714,0.0
+NEPOS,NEPOS:agesilaus,Agesilaus,17,Nepos,primary,post,1390,1390,0.0
+NEPOS,NEPOS:eumenes,Eumenes,18,Nepos,primary,post,2289,2289,0.0
+NEPOS,NEPOS:phocion,Phocion,19,Nepos,primary,post,542,542,0.0
+NEPOS,NEPOS:timoleon,Timoleon,20,Nepos,primary,post,828,828,0.0
+NEPOS,NEPOS:de_regibus,De Regibus,21,Nepos,primary,post,443,443,0.0
+NEPOS,NEPOS:hamilcar,Hamilcar,22,Nepos,primary,post,518,518,0.0
+NEPOS,NEPOS:hannibal,Hannibal,23,Nepos,primary,post,2079,2079,0.0
+NEPOS,NEPOS:cato,Cato,24,Nepos,primary,post,444,444,0.0
+NEPOS,NEPOS:atticus,Atticus,25,Nepos,primary,post,3596,3596,0.0
+SUET,SUET:iulius,Divus Julius,1,Suetonius,primary,pre,9675,9215,0.0475
+SUET,SUET:augustus,Divus Augustus,2,Suetonius,primary,pre,13836,13836,0.0
+SUET,SUET:tiberius,Tiberius,3,Suetonius,primary,pre,9286,9286,0.0
+SUET,SUET:caligula,C. Caligula,4,Suetonius,primary,pre,7754,7754,0.0
+SUET,SUET:claudius,Divus Claudius,5,Suetonius,primary,pre,6503,6503,0.0
+SUET,SUET:nero,Nero,6,Suetonius,primary,pre,7903,7903,0.0
+SUET,SUET:galba,Galba,7,Suetonius,primary,post,2856,2856,0.0
+SUET,SUET:otho,Otho,8,Suetonius,primary,post,1665,1665,0.0
+SUET,SUET:vitellius,Vitellius,9,Suetonius,primary,post,2407,2407,0.0
+SUET,SUET:vespasianus,Divus Vespasianus,10,Suetonius,primary,post,3199,3199,0.0
+SUET,SUET:titus,Divus Titus,11,Suetonius,primary,post,1488,1488,0.0
+SUET,SUET:domitianus,Domitianus,12,Suetonius,primary,post,3554,3554,0.0

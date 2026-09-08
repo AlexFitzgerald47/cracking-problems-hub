@@ -1,0 +1,76 @@
+E8  cut-point scan, 1000-token blocks, 200 MFW, 2000 permutations/cut
+
+  positive control: Suetonius (#1-12) then Nepos (#13-22)
+    after #3  sep -0.025  z -0.41
+    after #4  sep +0.113  z -0.06
+    after #5  sep +0.329  z +0.76  #####
+    after #6  sep +0.712  z +2.21  #############
+    after #7  sep +0.838  z +3.19  ###################
+    after #8  sep +0.899  z +4.40  ##########################
+    after #9  sep +1.049  z +6.11  #####################################
+    after #10 sep +1.325  z +7.50  #############################################
+    after #11 sep +1.432  z +9.85  ###########################################################
+    after #12 sep +1.826  z +11.35  ####################################################################  <- hypothesised boundary  <- strongest
+    after #13 sep +1.755  z +8.95  ######################################################
+    after #14 sep +1.684  z +8.25  ##################################################
+    after #15 sep +1.583  z +6.61  ########################################
+    after #16 sep +1.598  z +5.56  #################################
+    after #17 sep +1.495  z +4.14  #########################
+    after #18 sep +1.433  z +3.32  ####################
+    after #19 sep +1.358  z +2.53  ###############
+    strongest cut: after #12 (z +11.35)
+
+  Historia Augusta, all text
+    after #3  antoninus_pius             sep -0.486  z -2.19
+    after #4  marcus                     sep -0.375  z -2.06
+    after #5  verus                      sep -0.347  z -2.17
+    after #6  avidius_cassius            sep -0.346  z -2.43
+    after #7  commodus                   sep -0.283  z -2.32
+    after #8  pertinax                   sep -0.215  z -2.04
+    after #9  didius_iulianus            sep -0.196  z -2.08
+    after #10 septimius_severus          sep -0.110  z -1.55
+    after #11 pescennius_niger           sep -0.050  z -1.14
+    after #12 clodius_albinus            sep +0.004  z -0.58
+    after #13 caracalla                  sep +0.034  z -0.24
+    after #14 geta                       sep +0.073  z +0.44  ###
+    after #15 macrinus                   sep +0.079  z +0.57  ###
+    after #16 diadumenianus              sep +0.082  z +0.62  ####
+    after #17 heliogabalus               sep +0.252  z +3.27  ####################
+    after #18 alexander_severus          sep +0.462  z +5.62  ##################################  <- strongest
+    after #19 maximini_duo               sep +0.512  z +5.37  ################################
+    after #20 gordiani_tres              sep +0.581  z +5.60  ##################################
+    after #21 maximus_balbinus           sep +0.577  z +4.74  ############################  <- hypothesised boundary
+    after #22 valeriani_duo              sep +0.515  z +3.70  ######################
+    after #23 gallieni_duo               sep +0.550  z +3.55  #####################
+    after #24 tyranni_triginta           sep +0.590  z +3.50  #####################
+    after #25 claudius                   sep +0.576  z +2.95  ##################
+    after #26 aurelianus                 sep +0.623  z +2.90  #################
+    after #27 tacitus                    sep +0.417  z +1.62  ##########
+    strongest cut: after #18 (z +5.62)
+
+  Historia Augusta, narrative only (<q> cut)
+    after #3  antoninus_pius             sep -0.457  z -1.74
+    after #4  marcus                     sep -0.407  z -1.87
+    after #5  verus                      sep -0.392  z -2.00
+    after #6  avidius_cassius            sep -0.361  z -2.13
+    after #7  commodus                   sep -0.321  z -2.14
+    after #8  pertinax                   sep -0.261  z -1.99
+    after #9  didius_iulianus            sep -0.244  z -2.22
+    after #10 septimius_severus          sep -0.154  z -1.73
+    after #11 pescennius_niger           sep -0.139  z -1.95
+    after #12 clodius_albinus            sep -0.089  z -1.62
+    after #13 caracalla                  sep -0.043  z -1.32
+    after #14 geta                       sep +0.001  z -0.74
+    after #15 macrinus                   sep +0.025  z -0.29
+    after #16 diadumenianus              sep +0.036  z -0.12
+    after #17 heliogabalus               sep +0.212  z +2.17  #############
+    after #18 alexander_severus          sep +0.483  z +4.66  ############################  <- strongest
+    after #19 maximini_duo               sep +0.512  z +4.29  ##########################
+    after #20 gordiani_tres              sep +0.646  z +4.59  ############################
+    after #21 maximus_balbinus           sep +0.639  z +4.20  #########################  <- hypothesised boundary
+    after #23 gallieni_duo               sep +0.702  z +3.97  ########################
+    after #24 tyranni_triginta           sep +0.824  z +4.22  #########################
+    after #25 claudius                   sep +0.753  z +3.28  ####################
+    after #26 aurelianus                 sep +0.883  z +3.44  #####################
+    after #27 tacitus                    sep +0.673  z +2.17  #############
+    strongest cut: after #18 (z +4.66)

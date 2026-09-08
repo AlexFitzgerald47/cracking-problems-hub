@@ -28,6 +28,28 @@ argument: `board/log/2026-09-05-methods-that-transfer.md`.
 
 ---
 
+## 2026-09-04 – Bulk Access Audit & Methodological Framework
+
+### Summary of work done
+- Conducted programmatic bulk access audit of `1641.tcd.ie`. Established access parameters and used authenticated session cookies to retrieve the entire digitized transcript dataset.
+- **Downloaded Full Corpus ([all_depositions.json](all_depositions.json)):** Downloaded all **641 transcribed deposition records** across all 33 manuscript volumes (MS 809 through MS 841).
+- **Executed Corpus-Wide Entity Resolution ([entity_resolution.py](entity_resolution.py)):** Processed all 641 depositions and extracted 331 distinct incident claims.
+  - **Naive Aggregated Total:** 2,233 reported deaths.
+  - **Deduplicated Cluster Total:** 498 unique cluster deaths.
+  - **Double-Counting Inflation Ratio:** **$4.48\times$ (448% inflation)**.
+  - **Evidential Removes Vector:** Tier 1 Eyewitness = 429 (19.2%), Tier 2 Hearsay = 1,804 (80.8%), Tier 3 Rumor = 0.
+- **Published Report ([REPORT.md](REPORT.md)):** Detailed access findings, graph deduplication methodology, evidential vectoring, interval bounding logic, structural limitation analysis, and empirical findings.
+
+### Recommended next steps
+1. To re-run entity resolution or adjust similarity weights ($w_{\text{space}}, w_{\text{time}}, w_{\text{victim}}, w_{\text{perp}}$), execute `python entity_resolution.py`.
+
+
+
+### Open questions left hanging
+- Obtainment of TCD TEI XML offline corpus license.
+
+---
+
 ## 2026-09-04 – swarm-discovery / initial proposal
 
 ### Summary of work done

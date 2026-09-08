@@ -1,0 +1,134 @@
+date_julian_cal,year,kind,umbral_mag,visible_ireland,visible_mediterranean
+0402-06-01,402,partial umbral,0.8611,False,True
+0406-03-20,406,partial umbral,0.0811,False,True
+0411-05-23,411,partial umbral,0.5747,False,True
+0428-07-12,428,partial umbral,0.0121,False,True
+0431-11-05,431,partial umbral,0.4094,False,True
+0435-08-24,435,partial umbral,0.0886,False,True
+0437-07-03,437,total,1.2714,False,True
+0438-12-17,438,partial umbral,0.0841,False,True
+0445-08-03,445,total,1.4664,False,True
+0456-07-03,456,total,1.2675,False,True
+0459-10-27,459,total,1.7111,False,True
+0465-06-24,465,partial umbral,0.1709,False,True
+0475-07-04,475,partial umbral,0.0122,False,True
+0476-05-24,476,partial umbral,0.3,False,True
+0482-08-14,482,partial umbral,0.3763,False,True
+0484-06-24,484,total,1.35,False,True
+0487-04-23,487,partial umbral,0.4259,False,True
+0489-04-01,489,partial umbral,0.5266,False,True
+0489-09-25,489,partial umbral,0.3359,False,True
+0491-08-05,491,partial umbral,0.9138,False,True
+0493-01-18,493,partial umbral,0.1518,False,True
+0502-12-29,502,total,1.6522,False,True
+0510-08-05,510,total,1.6259,False,True
+0521-07-05,521,total,1.2241,False,True
+0524-05-03,524,total,1.6641,False,True
+0531-06-15,531,total,1.1824,False,True
+0532-06-03,532,total,1.0807,False,True
+0532-11-28,532,partial umbral,0.4272,False,True
+0536-09-15,536,partial umbral,0.6364,False,True
+0543-05-04,543,partial umbral,0.8771,False,True
+0545-09-06,545,partial umbral,0.6486,False,True
+0552-04-24,552,partial umbral,0.5333,False,True
+0553-10-07,553,total,1.7212,False,True
+0564-09-06,564,total,1.8845,False,True
+0571-04-25,571,total,1.7298,False,True
+0583-09-07,583,partial umbral,0.6071,False,True
+0595-12-22,595,partial umbral,0.6374,False,True
+0603-07-28,603,partial umbral,0.5719,False,True
+0611-03-04,611,total,1.8395,False,True
+0617-04-26,617,partial umbral,0.2659,False,True
+0637-10-09,637,partial umbral,0.7558,False,True
+0650-01-23,650,partial umbral,0.5767,False,True
+0658-02-23,658,total,1.857,False,True
+0665-04-05,665,total,1.5824,False,True
+0673-05-06,673,total,1.0986,False,True
+0680-12-11,680,partial umbral,0.8537,False,True
+0700-11-01,700,partial umbral,0.2535,False,True
+0708-12-02,708,total,1.6253,False,True
+0734-07-20,734,total,1.8404,False,True
+0735-07-09,735,partial umbral,0.4227,False,True
+0744-01-04,744,partial umbral,0.4129,False,True
+0745-06-18,745,total,1.7119,False,True
+0749-04-07,749,partial umbral,0.8914,False,True
+0751-08-11,751,partial umbral,0.364,False,True
+0759-03-18,759,total,1.4626,False,True
+0760-03-06,760,partial umbral,0.8643,False,True
+0782-06-29,782,partial umbral,0.6375,False,True
+0785-10-22,785,total,1.1936,False,True
+0788-08-21,788,total,1.4553,False,True
+0789-08-10,789,partial umbral,0.8429,False,True
+0791-06-20,791,partial umbral,0.7036,False,True
+0805-09-12,805,partial umbral,0.0662,False,True
+0810-06-20,810,total,1.8467,False,True
+0813-10-13,813,total,1.3036,False,True
+0829-06-20,829,partial umbral,0.5686,False,True
+0831-04-30,831,partial umbral,0.9647,False,True
+0836-07-31,836,total,1.0291,False,True
+0838-06-11,838,partial umbral,0.7356,False,True
+0845-07-22,845,partial umbral,0.3241,False,True
+0848-11-14,848,partial umbral,0.0406,False,True
+0864-07-22,864,total,1.5523,False,True
+0869-04-29,869,partial umbral,0.2472,False,True
+0875-06-22,875,total,1.8153,False,True
+0876-06-10,876,partial umbral,0.4395,False,True
+0883-07-23,883,partial umbral,0.95,False,True
+0886-05-21,886,total,1.7417,False,True
+0890-09-02,890,total,1.3362,False,True
+0899-08-24,899,partial umbral,0.0152,False,True
+0903-06-12,903,partial umbral,0.3454,False,True
+0909-09-02,909,partial umbral,0.1455,False,True
+0911-01-17,911,total,1.2121,False,True
+0916-04-20,916,partial umbral,0.2137,False,True
+0918-08-24,918,total,1.2222,False,True
+0923-06-01,923,partial umbral,0.6657,False,True
+0925-04-11,925,total,1.084,False,True
+0932-05-22,932,partial umbral,0.6943,False,True
+0937-08-24,937,total,1.2702,False,True
+0940-12-17,940,total,1.2316,False,True
+0951-05-23,951,total,1.8556,False,True
+0952-11-04,952,partial umbral,0.2268,False,True
+0956-02-28,956,partial umbral,0.0822,False,True
+0962-04-22,962,total,1.4726,False,True
+0963-04-11,963,partial umbral,0.0483,False,True
+0965-02-18,965,total,1.1252,False,True
+0970-05-23,970,partial umbral,0.5766,False,True
+0973-03-21,973,total,1.4415,False,True
+0979-05-14,979,partial umbral,0.7022,False,True
+0984-02-19,984,total,1.3889,False,True
+0991-09-26,991,total,1.4903,False,True
+0995-01-19,995,total,1.261,False,True
+1001-09-05,1001,partial umbral,0.8609,False,True
+1002-08-25,1002,total,1.4522,False,True
+1003-08-14,1003,partial umbral,0.1371,False,True
+1010-04-01,1010,partial umbral,0.3398,False,True
+1012-08-04,1012,partial umbral,0.9897,False,True
+1015-11-28,1015,partial umbral,0.8228,False,True
+1019-03-23,1019,partial umbral,0.932,False,True
+1034-11-28,1034,total,1.6517,False,True
+1038-03-23,1038,total,1.598,False,True
+1044-05-14,1044,partial umbral,0.3263,False,True
+1045-10-28,1045,total,1.6035,False,True
+1049-02-20,1049,total,1.369,False,True
+1050-02-09,1050,partial umbral,0.0089,False,True
+1051-06-26,1051,partial umbral,0.1121,False,True
+1066-09-06,1066,partial umbral,0.6976,False,True
+1088-07-06,1088,total,1.149,False,True
+1089-06-25,1089,total,1.1212,False,True
+1099-06-05,1099,total,1.366,False,True
+1116-12-21,1116,partial umbral,0.7945,False,True
+1120-10-08,1120,partial umbral,0.5205,False,True
+1131-03-15,1131,partial umbral,0.5671,False,True
+1133-08-17,1133,partial umbral,0.2397,False,True
+1139-10-09,1139,total,1.8227,False,True
+1145-06-06,1145,partial umbral,0.1418,False,True
+1155-06-16,1155,partial umbral,0.0595,False,True
+1158-10-09,1158,partial umbral,0.7229,False,True
+1164-11-30,1164,total,1.7139,False,True
+1175-05-07,1175,total,1.5954,False,True
+1183-06-07,1183,total,1.1447,False,True
+1186-04-05,1186,total,1.6776,False,True
+1190-07-18,1190,total,1.6526,False,True
+1192-05-28,1192,partial umbral,0.0979,False,True
+1209-07-18,1209,partial umbral,0.4476,False,True

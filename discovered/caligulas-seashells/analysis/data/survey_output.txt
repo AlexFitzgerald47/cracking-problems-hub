@@ -1,0 +1,112 @@
+
+======================================================================
+LATIN LIBRARY: 2141 texts, 95,898,696 chars
+======================================================================
+
+### concha (noun): 147 hits in 109 texts
+    WOODS FALSIFIER — windows containing ship vocabulary: 9
+      * pliny.nh1.txt | concharum
+        e. de pectunculis. qui volent extra aquam [46-48] de polypis [47] de navigatore polypo [49] de navigatore nauplio [50-52] crusta intecti [50] de locustis [51] cancrorum genera. de pinotere. de echinis. de cocleis. de pectinibus [52] concharum genera [53] quanta luxuriae materia mari sit [54-59] de m
+      * sannazaro1.txt | conchis
+        , quam latis caeli in regionibus olim tot divum celebrent voces. Proh gaudia terris quanta dabis! quantis hominum succurrere votis incipies!" Stupuit confestim exterrita Virgo, demisitque oculos, totosque expalluit artus. Non secus ac conchis si quando intenta legendis seu Micone parva, scopulis seu
+      * ovid/ovid.artis2.txt | conchae
+        mper dubias adiuvat aura rates; Quod iuvat, exiguum, plus est, quod laedat amantes; 515 Proponant animo multa ferenda suo. Quot lepores in Atho, quot apes pascuntur in Hybla, Caerula quot bacas Palladis arbor habet, Litore quot conchae, tot sunt in amore dolores; Quae patimur, multo spicula felle ma
+      * isidore/12.txt | Conchae
+        vis est ut lucernae addito Aethiopas videri ablato priori lumine quidam tradant. [47] Lulligo. Tradunt in Oceano Mauretaniae, non procul a Lixo flumine, tantam multitudinem lulliginum evolare ex aqua ut etiam naves demergere possint. [48] Conchae et cochleae hac ex causa vocatae, quia deficiente lun
+      * isidore/12.txt | concharum
+        l a Lixo flumine, tantam multitudinem lulliginum evolare ex aqua ut etiam naves demergere possint. [48] Conchae et cochleae hac ex causa vocatae, quia deficiente luna cavantur, id est evacuantur. Omnium enim clausorum maris animalium atque concharum incremento lunae membra turgescunt, defectu evacua
+      * cassiodorus/varia1.txt | conchae
+        lucidus situs tendi carbasa festinanter invitet et aeris sereni fides properantium nequeat vota terrere? [3] Aut forte incumbente austro remigiisque iuvantibus meatus navium echinais morsus inter undas liquidas alligavit: aut Indici maris conchae simili potentia labiis suis navium dorsa fixerunt: qu
+      * silius/silius14.txt | conchae
+        u diuersa ruebat classis et artabat lunato caerula gyro. 370 nec mora: terrificis saeuae stridoribus aeris, per uacuum late cantu resonante profundum, inc<r>epuere tubae, quis excitus aequore Triton expauit tortae certantia murmura conchae. uix meminere maris: tam uasto ad proelia nisu 375 incumbunt
+      * suetonius/suet.cal.txt | conchas
+        iva convivia, circum et theatra et amoenos secessus celebrarent. [46] Postremo quasi perpetraturus bellum, derecta acie in litore Oceani ac ballistis machinisque dispositis, nemine gnaro aut opinante quidnam coepturus esset, repente ut conchas legerent galeasque et sinus replerent imperavit, "spolia
+      * tertullian/tertullian.propheta.txt | conchis
+        , Dura nec antennae mutari libra volebat. Postremo ad dominum: Ne nos in mortis hiatum, Unam animam propter dederis, ne sanguine iusti Respersisse velis, si sic tua dextera ducit - Iamque illic imo exoriens de gurgite cetus Squamosum conchis, evolvens corporis agmen, Urgebat propius concusso marmore
+    concha windows with pearl/purple/luxury vocabulary: 48 / 147
+
+### umbilic*: 105 hits in 79 texts
+    RARITY TEST — windows in a marine/shore context: 14
+      * solinus4a.txt | umbilicis
+        orum nomen est), scientissimi lapidum plebi dederunt. Indici reges hoc genus gemmarum in longissimos cylindros amant fingere eosque perforatos elephantorum setis suspendunt ac monilia habent, vel plerumque ex utroque capite insertis aureis umbilicis incendunt ad nitellam pinguiorem, ut per industria
+      * solinus4.txt | umbilicos
+        m vitio illorum nomen est) scientissimi lapidum plebi dederunt. Indici reges hoc genus gemmas in longissimos cylindros amant fingere, eosque perforatos elephantorum setis suspendunt, ac monilia habent, aut ex utroque capite inserunt aureos umbilicos, ut marcentem faciem ad nitelam incendant pinguior
+      * histbrit.txt | umbilico
+        meris castellis ex lapidibus et latere fabricatis et in ea habitant quattuor gentes Scotti Picti Saxones atque Brittones. 8 Tres magnas insulas habet, quarum una vergit contra Armoriacas et vocatur insula Gueith: secunda sita est in umbilico maris inter Hiberniam et Brittanniam et vocatur nomen eius
+      * valmax8.txt | umbilicos
+        uinculo tum etiam omnium uirtutum inter se iunctum societate, ut actuosae uitae iter aequali gradu exequebantur, ita animi quoque remissioni<bus> communiter adquiescebant: constat namque eos Caietae et Laurenti uagos litoribus conchulas et umbilicos lectitasse, idque se P. Crassus ex socero suo Scae
+      * censorinus.txt | umbilicum
+        toici ferme universi; sunt qui aetherium calorem inesse arbitrentur, qui membra disponat, Anaxagoran secuti. Utcumque tamen formatus infans quem ad modum in matris utero alatur, duplex opinio est. Anaxagorae enim ceterisque conpluribus per umbilicum cibus administrari videtur; at Diogenes et Hippon
+      * poggio.txt | umbilico
+        oc monstrum quidam ad quaestum circumferebant, multique id vidisse affirmabant. 34. Aliud De Monstro Aliud insuper constat, allatam esse Ferrariam imaginem marini monstri nuper in litore Dalmatico inventi. Corpore erat humano umbilico tenus, deinceps piscis, ita ut inferior pars quae in piscem desin
+      * victor.caes.txt | umbilicosque
+        uin etiam sororum stupro ac matrimoniis illudens nobilibus deorum habita incedebat, cum Iovem se ob incestum, ex choro autem Bacchanali Liberum assereret. 11 Neque secus contractis ad unum legionibus spe in Germaniam transgrediendi conchas umbilicosque in ora maris Oceani legi iussit, 12 cum ipse nu
+      * solinus5.txt | umbilicis
+        rum nomen est), scientissimi lapidum plebi dederunt. 64 Indici reges hoc genus gemmas in longissimos cylindros amant fingere eosque perforatos elephantorum setis suspendunt ac monilia habent, uel plerumque ex utroque capite insertis aureis umbilicis incendunt ad nitellam pinguiorem, ut per industria
+      * ottofreising/2.txt | umbilicus
+        quibus postmodum possessa, quo censeatur vocabulo, paucis absolvam. Capitulum XIII. Haec Pyreneo seu Apennino, altissimis et scopulosissimis alpibus, in oblongum ductis, hinc inde septa, tamquam eorumdem vel potius eiusdem montis umbilicus, ut vere deliciarum hortus, a Tyrreno mari usque ad Adriatic
+      * livy/liv.26.txt | umbilico
+        situm dari, eo secum armatos quingentos duxit. medium ferme diei erat, et ad id, quod sua sponte cedente in mare aestu trahebatur aqua, acer etiam septentrio ortus inclinatum stagnum eodem quo aestus ferebat et adeo nudauerat uada ut alibi umbilico tenus aqua esset, alibi genua uix superaret. hoc cu
+      * williamtyre/8.txt | umbilico
+        se, quod ex ea homelia datur intelligi, qua dicitur: Familiare est Syris, et maxime Palestinae regioni, quae pars Syriae est, in qua Dominus corporaliter apparere dignatus est, ad omnem pene sermonem suum parabolas jungere. Sed et quasi in umbilico terrae promissionis eadem posita est regio, secundu
+      * pauldeacon/hist1.txt | umbilicum
+        ur, umbraeque versa vice contra meridiem videntur. 6. Nec satis procul ab hoc de quo praemisimus litore, contra occidentalem partem, qua sine fine Oceanum pelagus patet, profundissima aquarum illa vorago est, quam usitato nomine maris umbilicum vocamus. Quae bis in die fluctus absorbere et rursum ev
+      * cicero/oratore2.txt | umbilicos
+        uum Laelium semper fere cum Scipione solitum rusticari eosque incredibiliter repuerascere esse solitos, cum rus ex urbe tamquam e vinclis evolavissent. Non audeo dicere de talibus viris, sed tamen ita solet narrare Scaevola, conchas eos et umbilicos ad Caietam et ad Laurentum legere consuesse et ad
+      * caesar/bellafr.txt | umbilici
+        iquas bestias se recepit. [ 85 ] Interim Thapso qui erant praesidio, ex oppido eruptionem porta maritima faciunt, et sive ut suis subsidio occurrerent, sive ut oppido deserto fuga salutem sibi parerent, egrediuntur, atque ita per mare umbilici fine ingressi terram petebant. Qui a servitiis puerisque
+
+### musculus: 53 hits in 31 texts (sense classification is manual; see the analysis document)
+[('caesar/bc2.txt', 12), ('isidore/12.txt', 5), ('vegetius4.txt', 4), ('isidore/11.txt', 3), ('columella/columella.rr6.txt', 2), ('tertullian/tertullian.carne.txt', 2), ('sidonius1.txt', 1), ('vegetius2.txt', 1), ('solinus3.txt', 1), ('pliny.nh2.txt', 1)]
+
+======================================================================
+TESSERAE: 748 texts, 46,670,710 chars
+======================================================================
+
+### concha (noun): 143 hits in 71 texts
+    WOODS FALSIFIER — windows containing ship vocabulary: 9
+      * lucan.bellum_civile.part.6.tess | conchae
+        pasti serpente medulla: Non puppim retinens, Euro tendente rudentes, In mediis echeneis aquis, oculique draconum, Quaeque sonant feta tepefacta sub alite saxa: Non Arabum volucer serpens, innataque rubris Aequoribus custos pretiosae vipera conchae: Aut viventis adhuc Libyci membrana cerastae, Aut ci
+      * ovid.ars_amatoria.part.2.tess | conchae
+        reddunt, Nec semper dubias adiuvat aura rates; Quod iuvat, exiguum, plus est, quod laedat amantes; Proponant animo multa ferenda suo. Quot lepores in Atho, quot apes pascuntur in Hybla, Caerula quot bacas Palladis arbor habet, Litore quot conchae, tot sunt in amore dolores; Quae patimur, multo spicu
+      * pliny_the_elder.naturalis_historia.part.1.books_1-5.tess | concharum
+        de saepia. de lolligine. de pectunculis. qui volent extra aquam de polypis de navigatore polypo de navigatore nauplio crusta intecti de locustis cancrorum genera. de pino tere. de echinis. de coc leis. de pectinibus concharum genera quanta luxuriae materia mari sit de margaritis quomodo nascantur et
+      * pliny_the_elder.naturalis_historia.part.2.books_6-10.tess | concha
+        ad puerperium. in cibos tamen non admittitur. pedes eum habere arbitrantur, aristotelesit apposita pinnarum similitudine. mucianus muricem esse latiorem purpura, neque aspero neque rotundo ore neque in angulos prodeunte rostro, sed sicut concha utroque latere sese colligente. quibus inhaerentibus pl
+      * pliny_the_elder.naturalis_historia.part.2.books_6-10.tess | conchas
+        se latiorem purpura, neque aspero neque rotundo ore neque in angulos prodeunte rostro, sed sicut concha utroque latere sese colligente. quibus inhaerentibus plenam venti stetisse navem periandri portantem, ut castrarentur, nobiles pueros; conchas, quae id praestiterint, apud cnidiorum venerem coli.
+      * pliny_the_elder.naturalis_historia.part.2.books_6-10.tess | concham
+        eiusdem magnitudinis expulsas in litus illud idem auctor est. in nostro mari lolligines quinum cubitorum capiuntur, saepiae binum. neque his bimatu longior vita. navigeram similitudinem et aliam in propontide visam sibi prodidit mucianus: concham esse acatii modo carinatam, inflexa puppe, prora rost
+      * pliny_the_elder.naturalis_historia.part.2.books_6-10.tess | concharum
+        e praebentesque concavam sui partem et aurae opponentes per summa aequorum velificant. saliunt pectines et extra volitant seque et ipsi carinant. sed quid haec tam parva commemoro, cum populatio morum atque luxuria non aliunde maior quam e concharum genere proveniat iam quidem ex tota rerum natura d
+      * silius_italicus.punica.part.14.tess | conchae
+        li curuata sinu diuersa ruebat classis et artabat lunato caerula gyro. nec mora: terrificis saeuae stridoribus aeris, per uacuum late cantu resonante profundum, increpuere tubae, quis excitus aequore Triton expauit tortae certantia murmura conchae. uix meminere maris: tam uasto ad proelia nisu incum
+      * vergil.aeneid.part.10.tess | concha
+        os in se Mezentius armat, quos patre Benaco velatus harundine glauca Mincius infesta ducebat in aequora pinu. It gravis Aulestes centenaque arbore fluctum verberat adsurgens, spumant vada marmore verso. Hunc vehit immanis Triton et caerula concha exterrens freta, cui laterum tenus hispida nanti fron
+    concha windows with pearl/purple/luxury vocabulary: 56 / 143
+
+### umbilic*: 79 hits in 34 texts
+    RARITY TEST — windows in a marine/shore context: 10
+      * aurelius_victor.de_caesaribus.tess | umbilicosque
+        Quin etiam sororum stupro ac matrimoniis illudens nobilibus deorum habita incedebat, cum Iovem se ob incestum, ex choro autem Bacchanali Liberum assereret. Neque secus contractis ad unum legionibus spe in Germaniam transgrediendi conchas umbilicosque in ora maris Oceani legi iussit, cum ipse nunc fl
+      * celsus.de_medicina.part.2.tess | umbilicum
+        ebro spirare, a sexto die coepisse inhorrescere, pus expuere, vix excreare, dolorem habere continuum, difficulter morbum ferre, iactare bracchia et crura, sine voluntate lacrimare; habere umorem glutinosum dentibus inhaerentem, cutem circa umbilicum et pubem macram, praecordia inflammata, dolentia,
+      * cicero.de_oratore.part.2.tess | umbilicos
+        uum Laelium semper fere cum Scipione solitum rusticari eosque incredibiliter repuerascere esse solitos, cum rus ex urbe tamquam e vinclis evolavissent. Non audeo dicere de talibus viris, sed tamen ita solet narrare Scaevola, conchas eos et umbilicos ad Caietam et ad Laurentum legere consuesse et ad
+      * glass.washingtonii_vita.tess | umbilicum
+        Indorum, Eboraci Novi, ictum fuit. Pacem aliis cum Indis confirmare incassùm conatus est Washingtonius. Præsidem usus jam edocuit, spe omni pacem cum Indis confirmandi ademptâ, militum quod satis esset, in armis habere. Hanc, autem, rem ad umbilicum ducere difficillimum fuit. Indorum nationes hominu
+      * livy.ab_urbe_condita.part.2.books_21-30.tess | umbilico
+        itum dari, eo secum armatos quingentos duxit. medium ferme diei erat, et ad id, quod sua sponte cedente in mare aestu trahebatur aqua, acer etiam septentrio ortus inclinatum stagnum eodem quo aestus ferebat et adeo nudaverat vada, ut alibi umbilico tenus aqua esset, alibi genua vix superaret. hoc cu
+      * pliny_the_elder.naturalis_historia.part.2.books_6-10.tess | umbilicus
+        ora vocatur, alexandria, africae maritima, cyrenaica oppida omnia, thapsus, hadrumetum, clupea, carthago, vtica, uterque hippo, numidia, mauretania utraque, atlanticum mare, columnae herculis. in hoc caeli circumplexu aequinoctii die medio umbilicus, quem gnomonem vocant, vii pedes longus umbram non
+      * pliny_the_elder.naturalis_historia.part.3.books_11-15.tess | umbilico
+        anguinis. venae in praetenues postremo fimbrias supter totam cutem dispersae adeo in angustam suptilitatem tenuantur, ut penetrare sanguis non possit aliudve quam excitus umor ab illo, qui cacuminibus innumeris sudor appellatur. venarum in umbilico nodus ac coitus. sanguis quibus multus et pinguis,
+      * pliny_the_elder.naturalis_historia.part.7.books_31-37.tess | umbilico
+        ur et periclitari partu, si superferatur. mirum est et quod de torpedine invenio, si capiatur, cum luna in libra sit, triduoque adservetur sub diu, faciles partus facere postea, quotiens inferatur. adiuvare et pastinacae radius adalligatus umbilico existumatur, si viventi ablatus sit, ipsa in mare d
+      * pliny_the_elder.naturalis_historia.part.7.books_31-37.tess | umbilico
+        olla ex aqua inlitus lichenas in facie - lomento eo convenit ablui - , fistulas etiam sanat et quae vocantur haemorroides. quodsi tritus pumex adiciatur, putria ulcera et taetri odoris emendat, ex melle vero decoctum cum melanthio inlitum umbilico leniter solvit alvum. auro verrucas curari M. Varro
+      * valerius_maximus.facta_et_dicta_memorabilia.part.8.tess | umbilicos
+        s uinculo tum etiam omnium uirtutum inter se iunctum societate, ut actuosae uitae iter aequali gradu exequebantur, ita animi quoque remissionibus communiter adquiescebant: constat namque eos Caietae et Laurenti uagos litoribus conchulas et umbilicos lectitasse, idque se P. Crassus ex socero suo Scae
+
+### musculus: 68 hits in 26 texts (sense classification is manual; see the analysis document)
+[('caesar.de_bello_civili.part.2.tess', 12), ('celsus.de_medicina.part.8.tess', 12), ('celsus.de_medicina.part.5.tess', 8), ('pliny_the_elder.naturalis_historia.part.2.books_6-10.tess', 4), ('celsus.de_medicina.part.7.tess', 3), ('macrobius.saturnalia.part.7.tess', 3), ('polignac.antilucretius.tess', 3), ('ausonius.epistularum.tess', 2), ('columella.de_re_rustica.part.6.tess', 2), ('pliny_the_elder.naturalis_historia.part.4.books_16-20.tess', 2)]

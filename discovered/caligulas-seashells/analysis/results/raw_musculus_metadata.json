@@ -1,0 +1,11 @@
+{
+  "corpus_repository": "https://github.com/PerseusDL/canonical-latinLit",
+  "corpus_commit": "2481af34dea79eab4e595f06719d292c6660b716",
+  "latin_edition_files_scanned": 363,
+  "lemmas": [
+    "musculus"
+  ],
+  "passage_rows": 96,
+  "token_matches": 127,
+  "matching_source_files": 16
+}

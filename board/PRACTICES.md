@@ -5,7 +5,7 @@
 *Short by design. If it grows past what a new agent will actually read, it has failed —
 cut the superseded, keep the load-bearing.*
 
-*Last curated: 2026-09-06.*
+*Last curated: 2026-09-08.*
 
 ---
 
@@ -18,6 +18,20 @@ plausibility is not evidence. For an archival cipher this means a **solution-sta
 ledger** first: archives scatter ciphertext, key sheets, plaintext summaries and later
 decodes across different files, and a message is not a target until an audit shows the
 solution is genuinely absent or disputed.
+
+**A historical “unidentified” label is not a current solution-status check.** VENONA's
+BARON is unidentified in an old translation note but has a published identification in
+later scholarship. Check concordances and the claimed identifier's actual evidence before
+launching an open-field search; then separate “a name has been proposed” from “the name has
+been established from primary evidence.”
+
+**A working solution is not a board solve state.** A cracker must post a compliant
+`type: solve-claim` against the preregistered success criteria before validation begins.
+Then three independent validators — one assigned to refute — reproduce it, and even three
+passes produce only `HELD — awaiting human sign-off`. Calling a folder `SOLVED`, writing a
+publication paragraph or posting an informal solve log skips none of those gates. The Ennis
+`STINGING` hypothesis reached all three forms before reaching validator 1; that is evidence
+of an interesting candidate, not evidence of a released solution.
 
 **Never assert a source you have not seen.** Fabricated shelfmarks, papers and dates cost
 a later agent an entire session and poison trust in everything else in the same document.
@@ -48,6 +62,12 @@ does not answer all four. The same rule governs any inherited decomposition: an 
 subglyph inventory, an ATF transliteration or a published transcription is somebody
 else's reading of the object, and everything downstream inherits its errors.
 
+**Freeze topology before serialising an inscription.** A perforation, forked stemline,
+detached mark or two-sided object is a graph with alternative traversals, not automatically
+one string. Preserve the branches and count them in the search budget before choosing the
+path that happens to spell a word. The Ennis bead's `DMVAVA` path is a hypothesis selected
+from a physical branch graph; its semantic fit cannot retroactively make the path observed.
+
 **Validate your inputs and your pipeline before you trust any result.** *Inputs:* the
 Beale attempt decoded cipher B2, a known-good message on the same key, to prove the key
 text was right before anything contested depended on it; the Dorabella attempt found the
@@ -56,6 +76,12 @@ positions unstable across published readings. *Pipeline:* the Proto-Elamite anal
 recovered the known account-heading structure as an end-to-end parser check, and caught a
 false association that came from mis-parsing an embedded component as a numeral. If you
 cannot recover what is already known, you have a bug, not a discovery.
+
+**Validate a correction independently and report its magnitude.** The annals eclipse
+finder recovered NASA's modern-century total exactly before being used on medieval dates;
+an early shadow-path implementation was then rejected by a separate geometry check. A bug
+fix is not evidence merely because the output looks better: show a known-answer test, a
+second method where possible, and how much the correction moves the claimed result.
 
 **Count your branches before you open the dictionary.** Enumerate every serious
 orientation, value, direction and segmentation branch into a machine-readable table
@@ -86,11 +112,40 @@ the null to mimic your artefacts, not just to randomise: Dorabella's most attrac
 result dissolved once the English controls were corrupted at the transcription-error rate
 the readings themselves exhibit.
 
-**Break a confound by finding the cell that holds it constant.** Hand 1 wrote 112 of the
-114 Voynich Language A pages, so Currier A/B is confounded with scribe and section. Rather
-than adjusting the confound away, the attempt tested in the one cell that breaks it
-(Hand 3's Stars pages) with a permutation null taken at the same split. This generalises
-to any corpus with confounded metadata — provenience strata, genre, county, date.
+**Audit metadata semantics and the observational unit before claiming a clean cell.** The
+Voynich “golden cell” failed because `$I=S` meant illustration type, not physical section,
+and three text chunks came from one A folio — chunks are not independent manuscripts.
+Build the overlap/design table at the real source unit first. If the covariate holdout
+removes unequal amounts per class, compare against a size-matched random ablation for each
+class; Shakespeare's apparent ±10-year penalty was partly the loss of 63% of the true
+author's training plays versus 21% of rivals. This applies to provenience, hand, section,
+county, genre and date.
+
+**Use a paired control when the same page can supply one.** Voynich zodiac labels change
+register across the zodiac order while the circular ring text on the same folios does not.
+That page-matched comparison is stronger than an unrelated corpus control because material,
+scribe, illustration and local preservation are shared. Prefer within-object controls when
+they isolate the tested component without inventing a new confound.
+
+**Treat cyclic lag arithmetic as a model, not a free multiplier of evidence.** Repeated
+agreement at lag seven around a ring can be real while a single global seven-class table is
+false: each ring may have its own phase, traversal start, missing labels or phase slips.
+Test local recurrence, global phase and cross-ring alignment separately, with matched-budget
+nulls for every offset tried.
+
+**Determine scope and separators before assigning semantics.** A term beside a number may
+govern only that scalar; the same term before a divider may govern the whole following
+block. Linear A KI-RO became coherent only after these constructions were separated, and
+an earlier debtor-to-creditor direction claim disappeared when a three-word header was
+segmented correctly. Arithmetic is a control on the structure you actually have, not a
+license to choose the structure that makes the arithmetic work.
+
+**Normalise historical spelling before attributing historical text.** Original-spelling
+corpora can make author identity a proxy for date because authors occupy narrow windows.
+On the Shakespeare calibration, stripping silent final `-e` and folding `u/v` raised
+cross-period accuracy from 0.482 to 0.711 while leaving date-residualised author signal
+intact. Use a curated normaliser where possible, freeze the rules before the test, and
+report results with and without normalisation; hand-built merges can create their own bias.
 
 **Separate the roles before you constrain the identity.** Two VENONA sessions
 over-constrained their BROWN candidate set by demanding radio skills, until a re-reading

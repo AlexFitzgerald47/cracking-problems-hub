@@ -1,0 +1,88 @@
+========================================================================
+AU664  (Annals of Ulster, annal date 0664-05-01)
+  Delta-T 4074 +/- 40 s
+  weekday computed: Wednesday (feria 4)
+  deepest in Ireland: Armagh, magnitude 0.996, true lunar age 0.06 d
+     Armagh         mag 0.996  first h9 (15.84)  max h10 (16.92)  last h11 (17.93)
+     Iona           mag 0.989  first h9 (15.83)  max h10 (16.90)  last h11 (17.91)
+     Clonmacnoise   mag 0.963  first h9 (15.75)  max h10 (16.84)  last h11 (17.85)
+  claimed hour 9 matches phase: first ; within the eclipse: YES
+  Mediterranean control: Rome 0.739, Constantinople 0.848
+========================================================================
+BEDE664  (Bede HE III.27, annal date 0664-05-03)
+  Delta-T 4074 +/- 40 s
+  weekday computed: Friday (feria 6)
+  NO SOLAR ECLIPSE VISIBLE FROM IRELAND ON THIS DATE
+  Mediterranean control: Rome 0.000, Constantinople 0.000
+========================================================================
+AU594  (Annals of Ulster, annal date 0594-07-23)
+  Delta-T 4707 +/- 40 s
+  weekday computed: Friday (feria 6)
+  deepest in Ireland: Armagh, magnitude 1.061, true lunar age 29.26 d
+     Armagh         mag 1.061  first h1 (4.80)  max h2 (5.71)  last h3 (6.63)
+     Iona           mag 0.990  first h1 (4.85)  max h2 (5.74)  last h3 (6.69)
+     Clonmacnoise   mag 1.061  first h1 (4.70)  max h2 (5.60)  last h2 (6.51)
+  Mediterranean control: Rome 0.557, Constantinople 0.438
+========================================================================
+AU865  (Annals of Ulster, annal date 0865-01-01)
+  Delta-T 2466 +/- 25 s
+  weekday computed: Monday (feria 2)
+  deepest in Ireland: Armagh, magnitude 0.999, true lunar age 0.03 d
+     Armagh         mag 0.999  first h7 (12.16)  max h9 (13.46)  last h11 (14.71)
+     Iona           mag 0.991  first h7 (12.18)  max h9 (13.46)  last h11 (14.69)
+     Clonmacnoise   mag 0.996  first h7 (12.04)  max h9 (13.36)  last h11 (14.62)
+  Mediterranean control: Rome 0.694, Constantinople 0.513
+========================================================================
+AU878  (Annals of Ulster, annal date 0878-10-29)
+  Delta-T 2376 +/- 25 s
+  weekday computed: Wednesday (feria 4)  -- claimed feria ?: MATCH
+  deepest in Ireland: Armagh, magnitude 1.025, true lunar age 29.42 d
+     Armagh         mag 1.025  first h6 (11.79)  max h8 (13.04)  last h9 (14.29)
+     Iona           mag 0.995  first h6 (11.81)  max h8 (13.05)  last h10 (14.27)
+     Clonmacnoise   mag 0.996  first h6 (11.68)  max h8 (12.95)  last h9 (14.20)
+  claimed hour 7 matches phase: none ; within the eclipse: YES
+  claimed luna 28; true lunar age 29.42 d -> tabular moon runs -1.42 d
+  Mediterranean control: Rome 0.891, Constantinople 0.831
+========================================================================
+AU885  (Annals of Ulster, annal date 0885-06-16)
+  Delta-T 2329 +/- 25 s
+  weekday computed: Wednesday (feria 4)
+  deepest in Ireland: Iona, magnitude 1.077, true lunar age 29.27 d
+     Armagh         mag 0.972  first h4 (8.28)  max h5 (9.35)  last h5 (10.49)
+     Iona           mag 1.077  first h4 (8.35)  max h5 (9.45)  last h6 (10.55)
+     Clonmacnoise   mag 0.960  first h4 (8.15)  max h5 (9.22)  last h5 (10.36)
+  Mediterranean control: Rome 0.477, Constantinople 0.357
+========================================================================
+AU878L  (Annals of Ulster, annal date 0878-10-15)  LUNAR
+  Delta-T 2376 +/- 25 s
+  nearest full moon: 0878-10-15 (Wednesday), total, umbral magnitude 1.0539
+  at greatest, best Irish site Clonmacnoise: Moon 23.7 deg up, Sun -24.3 deg
+  observable from Ireland: YES
+========================================================================
+AU764  (Annals of Ulster, annal date 0764-06-04)
+  Delta-T 3227 +/- 30 s
+  weekday computed: Monday (feria 2)
+  deepest in Ireland: Clonmacnoise, magnitude 0.968, true lunar age 29.59 d
+     Armagh         mag 0.957  first h4 (9.08)  max h5 (10.49)  last h6 (11.99)
+     Iona           mag 0.908  first h5 (9.16)  max h5 (10.55)  last h7 (12.01)
+     Clonmacnoise   mag 0.968  first h4 (8.94)  max h5 (10.37)  last h6 (11.86)
+  claimed hour 3 matches phase: none ; within the eclipse: NO
+  Mediterranean control: Rome 0.635, Constantinople 0.681
+========================================================================
+AU753  (Annals of Ulster, annal date 0753-01-09)
+  Delta-T 3316 +/- 30 s
+  weekday computed: Tuesday (feria 3)
+  deepest in Ireland: Clonmacnoise, magnitude 0.865, true lunar age 29.82 d
+     Armagh         mag 0.856  first h2 (9.12)  max h4 (10.65)  last h7 (12.28)
+     Iona           mag 0.842  first h2 (9.19)  max h4 (10.71)  last h7 (12.29)
+     Clonmacnoise   mag 0.865  first h2 (8.98)  max h4 (10.51)  last h7 (12.15)
+  Mediterranean control: Rome 0.911, Constantinople 0.790
+========================================================================
+AU688  (Annals of Ulster, annal date 0688-07-03)
+  Delta-T 3864 +/- 40 s
+  weekday computed: Friday (feria 6)
+  deepest in Ireland: Iona, magnitude 0.744, true lunar age 29.41 d
+     Armagh         mag 0.694  first h3 (7.50)  max h4 (8.67)  last h5 (9.95)
+     Iona           mag 0.744  first h3 (7.55)  max h4 (8.74)  last h5 (10.02)
+     Clonmacnoise   mag 0.673  first h3 (7.38)  max h4 (8.54)  last h5 (9.80)
+  Mediterranean control: Rome 0.298, Constantinople 0.343

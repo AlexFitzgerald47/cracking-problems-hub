@@ -1,0 +1,30 @@
+{
+ "raw+manhattan (2026-09-05 config)": {
+  "mean_spearman_distance_vs_dateproximity": 0.5778515419741193,
+  "sd": 0.27381900384779706,
+  "se": 0.017352574299280433,
+  "frac_folds_top_ranked_author_is_date_nearest": 0.11244979919678715,
+  "n_folds": 249
+ },
+ "norm+manhattan": {
+  "mean_spearman_distance_vs_dateproximity": 0.2060827616982672,
+  "sd": 0.24044613707033313,
+  "se": 0.015237654800640276,
+  "frac_folds_top_ranked_author_is_date_nearest": 0.11244979919678715,
+  "n_folds": 249
+ },
+ "raw+cosine": {
+  "mean_spearman_distance_vs_dateproximity": 0.6692493516223218,
+  "sd": 0.2713239359820474,
+  "se": 0.017194455797957444,
+  "frac_folds_top_ranked_author_is_date_nearest": 0.1566265060240964,
+  "n_folds": 249
+ },
+ "norm+cosine (winner)": {
+  "mean_spearman_distance_vs_dateproximity": 0.4711386004523773,
+  "sd": 0.21049639523022673,
+  "se": 0.013339667030537973,
+  "frac_folds_top_ranked_author_is_date_nearest": 0.17269076305220885,
+  "n_folds": 249
+ }
+}

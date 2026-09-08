@@ -376,33 +376,33 @@
  "training_size_curve": [
   {
    "train_plays_per_author": 1,
-   "accuracy_mean": 0.5434210526315789,
-   "accuracy_sd": 0.05869613187220639
+   "accuracy_mean": 0.531578947368421,
+   "accuracy_sd": 0.049515082485760344
   },
   {
    "train_plays_per_author": 2,
-   "accuracy_mean": 0.684593023255814,
-   "accuracy_sd": 0.0478730925911383
+   "accuracy_mean": 0.685562015503876,
+   "accuracy_sd": 0.02918489568425805
   },
   {
    "train_plays_per_author": 3,
-   "accuracy_mean": 0.7316017316017316,
-   "accuracy_sd": 0.04708192037272549
+   "accuracy_mean": 0.7408008658008658,
+   "accuracy_sd": 0.029034081418123244
   },
   {
    "train_plays_per_author": 4,
-   "accuracy_mean": 0.7879901960784315,
-   "accuracy_sd": 0.02590563209116796
+   "accuracy_mean": 0.767156862745098,
+   "accuracy_sd": 0.026332767054570248
   },
   {
    "train_plays_per_author": 5,
-   "accuracy_mean": 0.798728813559322,
-   "accuracy_sd": 0.03223487975134379
+   "accuracy_mean": 0.7966101694915254,
+   "accuracy_sd": 0.04629420629443094
   },
   {
    "train_plays_per_author": 8,
-   "accuracy_mean": 0.8333333333333334,
-   "accuracy_sd": 0.01736259660647628
+   "accuracy_mean": 0.8243243243243243,
+   "accuracy_sd": 0.022586780919928245
   }
  ],
  "test_length_curve": [
@@ -458,5 +458,5 @@
    "n_tested": 45
   }
  ],
- "runtime_seconds": 21.667789697647095
+ "runtime_seconds": 22.367231607437134
 }

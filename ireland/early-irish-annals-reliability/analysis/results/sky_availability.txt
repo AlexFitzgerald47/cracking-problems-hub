@@ -1,0 +1,30 @@
+Observable astronomical events from Ireland, AD 400-1209
+Thresholds: solar magnitude >= 0.50 with the Sun up; lunar umbral phase with the
+Moon above the horizon and the Sun below -6 deg. Move them and the counts move.
+
+  solar, magnitude >= 0.50             171   (one every 4.7 years)
+    of which >= 0.90                    37
+    of which central                    5
+  lunar, umbral phase visible         710   (one every 1.1 years)
+    of which total                    327
+  TOTAL observable events             881   (one every 0.9 years)
+
+**A visible umbral lunar eclipse was 4.2x as common as a solar eclipse
+  of magnitude 0.50 or more.** That is the asymmetry the recording-rate
+  test turns on: the annals had far more opportunity to record lunar
+  eclipses than solar ones, so equal counts in the text would mean a
+  strong solar bias, not parity.
+
+per century (observable from Ireland):
+  century   solar>=0.50   solar>=0.90   lunar umbral   lunar total
+    400s           22             3             93            43
+    500s           23             4             89            35
+    600s           22             7             95            36
+    700s           19             4             87            39
+    800s           25             5             83            55
+    900s           20             2             79            44
+   1000s           20             5             86            37
+   1100s           18             7             87            32
+   1200s            2             0             11             6
+
+wrote /home/user/cracking-problems-hub/ireland/early-irish-annals-reliability/analysis/results/observable_sky_events.csv (881 rows)

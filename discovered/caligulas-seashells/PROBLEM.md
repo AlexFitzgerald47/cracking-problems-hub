@@ -79,3 +79,30 @@ strictly on *conchae* versus *musculi*.
 Second trap: confirmation bias toward the clever reading. Woods's thesis is satisfying and
 therefore dangerous. The lexical survey has to be run as a genuine test capable of returning
 "the literal reading is better supported" — and if it does, that is the finding.
+
+---
+
+## 2026-09-07 – dated correction note (appended; nothing above altered)
+
+Added by the first working session. The statement above is left intact as written; two
+things in it now need qualifying.
+
+**1. The attribution of the *musculi* thesis to Woods is doubtful.** This file says Woods
+(2000) argued the underlying order concerned *musculi*. Two independent search passes on
+2026-09-07 indicate Woods argued instead that `conchae` denotes **small boats**. Neither
+reading of Woods could be confirmed against the article, which was inaccessible
+(Cambridge Core proxy-blocked). Treat the attribution as **unresolved** until someone reads
+the eight pages. `analysis/2026-09-07-concha-umbilicus-survey.md` §3 tests both theses
+against the corpus, so no finding depends on which is his.
+
+**2. Success criterion 3 is met.** A peer-reviewed rebuttal of Woods exists:
+**S. J. V. Malloch, "Gaius on the Channel Coast," *Classical Quarterly* 51 (2001), 551–556.**
+Verified at metadata level only; its argument is unknown and must not be characterised.
+The framing note in "Known constraints" — that the objection to Woods was weakly sourced and
+the problem's framing might need adjusting — can be retired.
+
+**3. The success criteria should be widened.** Criterion 1 asks for a full inventory of
+military-technical `musculus`. That was delivered, and it turned out not to be where the
+problem lives. The decisive lexical evidence is in `concha` and, above all, in its partner
+noun `umbilicus`. Any future statement of this problem should make the survey lemma-agnostic
+rather than pre-committing to Woods's word.

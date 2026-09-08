@@ -1,0 +1,44 @@
+E4  best contiguous split in an ordered collection of lives
+    features: 200 MFW; null: 4000 random reorderings
+
+  full length
+    Historia Augusta           n=30  best split after #20  S=+0.373  null +0.414+/-0.266  z=-0.15  p=0.4986 <- lacuna falls after #21
+    Suetonius (one author)     n=12  best split after #7   S=+0.663  null +0.378+/-0.289  z=+0.98  p=0.1450
+    Nepos (one author)         n=25  best split after #20  S=+0.534  null +0.363+/-0.235  z=+0.73  p=0.2197
+
+  length-equalised at 1000 tokens per life
+    Historia Augusta           n=30  best split after #26  S=+0.864  null +0.332+/-0.202  z=+2.63  p=0.0120 <- lacuna falls after #21
+    Suetonius (one author)     n=12  best split after #5   S=+0.442  null +0.357+/-0.270  z=+0.32  p=0.3619
+    Nepos (one author)         n=10  best split after #7   S=+0.129  null +0.325+/-0.257  z=-0.76  p=0.7771
+
+  the lacuna split specifically (HA #1-21 vs #22-30), full length
+    separation +0.3301  z +1.74  p 0.0517
+    (for scale, two real authors of the same genre, Suetonius vs
+     Nepos, score +1.253 on this statistic -- see E3)
+
+  separation profile across every candidate cut (HA, full length):
+    after #3  +0.183 #######
+    after #4  -0.018
+    after #5  +0.063 ###
+    after #6  +0.024 #
+    after #7  +0.025 #
+    after #8  +0.106 ####
+    after #9  +0.171 #######
+    after #10 +0.153 ######
+    after #11 +0.169 #######
+    after #12 +0.176 #######
+    after #13 +0.219 #########
+    after #14 +0.327 #############
+    after #15 +0.294 ############
+    after #16 +0.245 ##########
+    after #17 +0.251 ##########
+    after #18 +0.282 ###########
+    after #19 +0.321 #############
+    after #20 +0.373 ###############
+    after #21 +0.330 #############  <- lacuna
+    after #22 -0.002
+    after #23 -0.011
+    after #24 +0.078 ###
+    after #25 +0.018 #
+    after #26 +0.179 #######
+    after #27 +0.066 ###

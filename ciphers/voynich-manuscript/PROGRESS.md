@@ -4,6 +4,170 @@
 
 ---
 
+## 2026-09-08 – Claude (Opus 5), remote — zodiac labels as a positional code
+
+### What was attempted
+
+The zodiac section carries ~298 labels attached to nymphs in rings around twelve
+medallions, ~30 per sign. Every attack on this section — including this folder's own
+`2026-09-07-alfonsine-myriogenesis` attempt — assumes those labels are an ordered list
+of ~30 items and tries to match it against an external medieval source, and all of them
+are blocked on obtaining that source. This session tested the untested prerequisite:
+**does the label sequence carry positional information detectable from the manuscript
+alone?** Position is the one semantic variable already known, so no crib is needed.
+
+Preregistered before any statistic:
+`attempts/2026-09-08-zodiac-ordinal-crib/PREREGISTRATION.md`.
+Full write-up, code and results: `attempts/2026-09-08-zodiac-ordinal-crib/`.
+
+### Corpus (new, reusable)
+
+`attempts/2026-09-08-zodiac-ordinal-crib/results/zodiac_labels.csv` — all 298 zodiac
+labels with sign, folio, ring and position in ring, from the Takahashi transcription.
+This folder had no machine-readable label corpus before; the 2026-09-07 label attempt
+worked from hand-typed page strings.
+
+The reading order of the twelve diagrams is **derived, not assumed**: four diagrams
+carry 15 labels and must be contiguous (the split Aries and Taurus halves) between
+Pisces (29) and Gemini (29), which forces the foldout verso panels to run
+outward-to-spine. The resulting order reproduces the accepted sign assignment and the
+published nymph count of 298 exactly — a pipeline check the parser was not told the
+answer to.
+
+### Finding 1 — the label register drifts along the zodiac; the text on the same pages does not
+
+Zandbergen classifies zodiac labels as a single language type (`Ce-`). They are not one
+type. Per diagram, in the derived order:
+
+- LABELS `a/(a+e)`: Spearman rho = **-0.783**, permutation p = **0.004** (0.88 at Pisces
+  down to 0.19 at Libra)
+- RING TEXT `a/(a+e)` on the same pages: rho = +0.084, p = 0.80 — nothing
+- paired label-minus-ring difference: rho = **-0.804**, p = **0.003**
+- on `eo`-rate the two move in *opposite* directions (labels +0.564, ring text -0.678)
+
+Changepoint scan over all eleven splits: the break is between **Cancer and Leo**
+(gap 0.550, max-over-splits permutation p = 0.0026); 148 labels before, 150 after.
+
+A scribal or temporal drift would move the ring text too. This moves only in the labels.
+
+**Caveat, stated plainly:** astronomical order and physical foliation order coincide, so
+this cannot separate "position in the zodiac" from "position in the quire". The
+ring-text control is what makes the result informative either way.
+
+### Finding 1b — the two regimes are partly one substitution
+
+Of all 276 glyph pairs, merging `e` into `a` is the single best at closing the
+early-vs-late bigram divergence (JSD 0.185 -> 0.145), though not to the within-regime
+baseline (0.110). Normalising `eo`/`ee`/`e` -> `a` doubles the rate at which a late
+label is exactly an early label type (6.0% -> 12.7%); the same map on ring text from the
+same pages does not move (6.8% / 6.6%).
+
+### Finding 2 — label endings recur at period 7 within a ring
+
+Selected from a 7-measure x 14-lag scan, then confirmed on partitions and controls not
+used to select it. The effect is in the last two glyphs and specifically the
+**penultimate** glyph; the final glyph alone shows nothing (ratio 1.04, Z = +0.36).
+
+| partition | lag-7 obs/pairs | null | ratio | Z | p | best lag |
+|---|---:|---:|---:|---:|---:|---:|
+| all zodiac rings (discovery) | 19/118 | 8.6 | 2.21 | +3.96 | 0.0003 | 7 |
+| early Pisces-Cancer | 11/46 | 4.7 | 2.32 | +3.25 | 0.003 | 7 |
+| late Leo-Sagittarius | 8/72 | 3.9 | 2.07 | +2.28 | 0.031 | 7 |
+| big rings n>=14 | 11/73 | 5.0 | 2.20 | +2.94 | 0.007 | 7 |
+| small rings n<14 | 8/45 | 3.6 | 2.21 | +2.61 | 0.017 | 7 |
+| inner rings | 12/78 | 6.0 | 1.99 | +2.73 | 0.010 | 7 |
+| outer rings | 7/40 | 2.6 | 2.70 | +3.00 | 0.009 | 7 |
+
+The ring-size split is the load-bearing control: in a ring of 10, lag 7 *is* cyclic
+distance 3, so the effect could have been short-range wrap-around. In the seven rings
+with n >= 14, where lag 7 is cyclic distance 7 and nothing smaller, it is undiminished.
+
+Four matched controls are flat at lag 7: herbal/pharmaceutical `L` labels (1.23),
+Quire-20 starred-paragraph first words (0.97), running text (0.86), zodiac ring text.
+So this is not a property of Voynichese lists, of labelese generally, or of these pages.
+
+Re-run on Glen Claston's **v101** transcription — an independent reading with a
+different alphabet and different word segmentation — lag 7 is again the highest lag >= 2
+(last2 ratio 1.55, p = 0.087; penult 1.29, p = 0.057) with the ring-text control flat.
+Consistent, not confirmed: v101 does not tag label rings, so they had to be matched by
+token count and several matches are off by 1-4 tokens.
+
+### Finding 3 (negative) — no global seven-class code table
+
+The natural reading of Finding 2 is a degree-ruler / *monomoiria* cycle, which predicts
+**one** seven-class system shared by all rings. Fitting one phase per ring by coordinate
+ascent, scoring cross-ring ending agreement, with the identical fit applied to permuted
+rings (matched search budget): period 7 gives Z = +2.05 on all rings but does not beat
+period 6 (Z = +2.32), and neither replicates in the halves (Z = +0.5 to +1.0).
+
+**The periodicity is local to each ring, not a manuscript-wide class system.** This
+kills the strongest version of the degree-ruler hypothesis. It does not kill a weaker
+one: a single skipped or damaged nymph breaks the phase from that point on while leaving
+local period-7 similarity intact, and telling those apart needs the folios, not more
+statistics.
+
+
+### Finding 4 — the label split is not Currier A/B, and A/B is not a one-glyph re-encoding
+
+Finding 1b invited an extrapolation: Currier A is `a`-heavy and B is `e`-heavy, so
+perhaps one `e`<->`a` substitution explains both the label regimes and the manuscript's
+main register split. **It does not.** Running-text pages were assigned a Currier
+language from `OrcusLabs/voynich.science` `mappings_TTLI.json` (193 classified pages;
+pipeline check f1r -> A, f75r -> B, both correct), and the same 276-pair collapse scan
+was run with sample sizes matched and baselines taken by splitting each language's own
+pages in half.
+
+- raw A-vs-B glyph-bigram JSD = 0.0955; within-A baseline 0.0076, within-B 0.0050.
+  **The A/B difference is ~12x the within-language variation.**
+- the best single glyph merge of 276 closes only **35.7%** of that gap (`o`/`d`), and the
+  residual is still ~8x baseline.
+- **`e`/`a` ranks 254 of 276** and makes A/B slightly *worse* than raw.
+- all twelve zodiac diagram pages are **Currier-unclassified** in this dataset, so
+  Finding 1 sits on territory Currier's labels do not cover and cannot restate them.
+  (Other taxonomies do assign the zodiac pages a class; not reachable from this
+  environment, marked unverified.)
+
+Two keepers: the zodiac-label regime split is its own phenomenon, distinct from both the
+ring text on the same pages and from Currier A/B; and **Currier A/B is not a one-glyph
+re-encoding of a single system**, which is a direct quantitative answer to a question
+this folder has had open since 2026-09-04 and constrains the "A and B are one language
+differently written" family of proposals.
+
+### What failed
+
+- No global cycle (above). Reported as a result, not buried.
+- Label length vs ring position: mean Spearman rho = +0.16 across 20 rings, 15 of 20
+  positive but nothing that survives honest correction. Recorded so nobody re-runs it.
+- Cross-diagram same-position alignment (preregistered as T2) was not run to completion:
+  Finding 1 shows the two halves are different registers, so a single global offset
+  across all twelve diagrams is not a well-posed model. Worth revisiting *within* a
+  regime.
+
+### What this changes for the next session
+
+1. **Fit any external crib on one regime at a time.** The Alfonsine pipeline assumes one
+   label system across all twelve signs; it is at least two. A table fit on
+   Pisces-Cancer should be expected to fail on Leo-Sagittarius unless the `e`<->`a`
+   normalisation is applied first. That is a falsifiable prediction it can test the
+   moment it has its source list.
+2. **Score any candidate reading on lag-7 ending agreement.** A correct assignment of an
+   ordered source list to a ring should reproduce ratio ~2 at lag 7. A free,
+   crib-independent acceptance test.
+3. **The highest-value new evidence is physical.** Whether each ring is a complete
+   30-item sequence, whether any nymph is unlabelled, and where each transcriber started
+   the traversal decide between "no global cycle" and "global cycle with phase slips".
+
+### Verification status
+
+`voynich.nu` and `arxiv.org` are both blocked by this environment's egress policy.
+Statements about the published classification of zodiac labels as language type `Ce-`,
+and everything about the astrological doctrine of degree rulers (*monomoiria*), rest on
+search-result snippets only and are marked **unverified**. Every number above is
+computed from transcriptions in the repository record and is reproducible from
+`attempts/2026-09-08-zodiac-ordinal-crib/src/`.
+
+---
+
 ## 2026-09-06 – GPT-5.6 Sol, golden-cell audit
 
 ### What was attempted

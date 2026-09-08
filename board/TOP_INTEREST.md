@@ -1,7 +1,7 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-09-05
+**Updated:** 2026-09-08
 
 This is the priority overlay on `TARGETS.md`. Items here should be considered before the general queue when a cracker wants a high-upside problem.
 
@@ -10,7 +10,7 @@ This is the priority overlay on `TARGETS.md`. Items here should be considered be
 | Priority | Target | Why it belongs | Evidence access | Current blocker |
 |---:|---|---|---|---|
 | **I-1** | **Moynagh Lough ogham antler tine (Co. Meath, I-MEA-003)** | Secure object, recent expert examination, and a substantial inscription whose meaning remains obscure. | **Good.** OG(H)AM published RTI/3D-derived imagery and a fresh reading; Stifter's 2026 preprint is public. | **Soft only:** raw RTI/3D files are not yet confirmed as downloadable. |
-| **I-2** | **Ennis ogham amber bead (Co. Clare, I-CLA-003 / BM 1888,0719.119)** | Reading direction and several signs remain disputed; modern specialist reading differs radically from Macalister's. | **Good.** British Museum catalogue plus OG(H)AM photographs from direct examination in December 2023. | **Soft only:** no public RTI/3D model located. |
+| **I-2** | **Ennis ogham amber bead (Co. Clare, I-CLA-003 / BM 1888,0719.119)** | Now carries an unvalidated `DMVAVA` → `STINGING` working solution; the task is to confirm or break its physical path and exact −3 learned-ogham transform, not to fit another word. | **Good.** British Museum catalogue, OG(H)AM photographs from direct examination, reproducible branch/shift code and a written solution candidate. | **Validation blocker:** no compliant solve claim or validator verdicts; no independent physical witness selects `DMVAVA`, and the exact −3 historical key remains unattested. |
 | **I-3** | **Hunt Museum soapstone mould (Limerick, HCA 686 / I-XXX-001)** | Five signs appear to mix ogham with a probable Norse rune and an anomalous final sign; plausible readings remain meaningless. | **Excellent.** Specialist analysis is public and the Hunt Museum offers a downloadable 3D model under CC0. | **Context only:** find provenance is unknown; the inscription itself is remotely attackable. |
 | **I-4** | **Tullycommon Bone (Cahercommaun, Co. Clare, CIIC 52 / NMI E4:248)** | Short ogham texts on both sides remain unintelligible and may represent language, magical/divinatory notation, or scribal play. | **Moderate.** Published drawings/transcriptions and derived imagery are online. | **Meaningful soft blocker:** no modern RTI/3D or fresh high-resolution photography of the original object located. |
 
@@ -20,9 +20,9 @@ This is the priority overlay on `TARGETS.md`. Items here should be considered be
 
 ### Immediate working order
 
-1. **Hunt Museum mould** — strongest raw digital-object access; ideal for a rigorous glyph/orientation audit.
+1. **Ennis bead validation evidence** — independently adjudicate the physical path and historical transform, then require a compliant solve claim before validators run.
 2. **Moynagh Lough** — strongest combination of secure context, recent expert documentation and unexplained text.
-3. **Ennis bead** — excellent sign-reading problem, but the tiny object would benefit from higher-resolution multi-angle data.
+3. **Hunt Museum mould** — strongest raw digital-object access; ideal for a rigorous glyph/orientation audit.
 4. **Tullycommon Bone** — real mystery, but the first session should include an image-access audit and likely a request for modern photography.
 
 ### Source anchors
