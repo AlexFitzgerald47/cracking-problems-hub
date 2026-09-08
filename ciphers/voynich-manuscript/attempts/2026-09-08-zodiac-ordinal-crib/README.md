@@ -239,6 +239,43 @@ Two conclusions, both worth keeping:
 
 ---
 
+## Finding 5 — the labels are diagram-locked, but *less* page-locked than the text is
+
+Does a diagram's nymph labels have anything to do with that diagram's own circular ring
+text, or could any label sit on any diagram? Statistic: mean over a diagram's labels of
+the best Levenshtein similarity to any word of a target diagram's ring text, giving a
+12 × 12 matrix (`results/t17_labeltext.json`). The permutation is over assignments of
+label sets to ring texts, so both row and column marginals are held fixed.
+
+| test | result |
+|---|---:|
+| mean self | 0.6515 |
+| mean other | 0.6318 |
+| permutation p, all 12 diagrams | 0.0032 |
+| **permutation p, stratified within the two regimes** | **0.000025** |
+| self beats the mean of its immediate neighbours | 10 of 12 (sign p = 0.019) |
+
+So the labels are tied to their own diagram. **But the size of that tie is the
+interesting part.** Repeating the comparison with target sets equalised by word count:
+
+| stream | lift of own-page over size-matched other-page |
+|---|---:|
+| one ring-text line vs the rest of its own page's ring text | **+0.0249** |
+| a diagram's labels vs its own page's ring text | **+0.0059** |
+
+**The label stream is roughly four times less page-locked than the text stream is to
+itself.** A page-local copy-and-mutate generator — the mechanism proposed for
+Voynichese word formation, and the one that would otherwise explain the diagram
+affinity away — predicts the opposite: labels drawn from the page's local pool would be
+*at least* as page-locked as the text. They are not.
+
+That is weak positive evidence for the premise the whole external-crib programme rests
+on: that the labels come from somewhere other than the page. It had never been checked.
+Treat it as a constraint, not a result: labels are short and few, the two streams have
+different length distributions, and best-match similarity is sensitive to both.
+
+---
+
 ## What this changes for the next attempt
 
 1. **Fit any external crib on one regime at a time.** The `2026-09-07-alfonsine-myriogenesis`
