@@ -1,0 +1,11 @@
+tablet,scribe,findspot,working_function,strong_anchors,new_inference,confidence
+HT85,9,Casa Room 7,personnel mobilisation / gang formation,A-DU; KU-RO 66,66 personnel = 11 standardized groups of 6; reverse encodes receiving/responsibility slots,medium-high
+HT87,9,Casa Room 7,ordinary personnel roster,QI-TU-NE; MA-KA-RI-TE; DI-KI-SE,ordinary-view control for HT117; account/unit/person fields,high
+HT94,9,Casa Room 7,muster/personnel exception record,KI-RO; KU-RO 5; PA-TA-NE,KI-RO marks unfulfilled/missing personnel from expected set,high
+HT112,9,Casa Room 7,fragmentary livestock/resource account,OVISf,extends Scribe-9 portfolio into dependent resources,low-medium
+HT117,9,Casa Room 9,large exception roster,MA-KA-RI-TE; KI-RO; U-MI-NA-SI; SA-TA; QI-TU-NE; KU-RO 10,query grammar = duty/account + status + subgroup + personnel; U-MI-NA-SI likely entity/unit,high for structure; medium for gloss
+HT119,9,Casa Room 9,personnel/resource ratio account,*327 34; VIR 68; KU-RO 160,exact 1:2 relation suggests fixed manpower ratio,medium
+HT122,9,Casa del Lebete,master personnel liability/control register,KU-RO 31; KU-DA 1; KU-RO 65; PO-TO-KU-RO 97; KU-PA3-NU; PA-TA-NE,master-register cross-links to KI-RO exception names; possible 65+1=66 bridge to HT85,high for hierarchy; low-medium for 66 bridge
+HT128,9,Casa del Lebete,census-linked grain/resource allocation,GRA variants,literature-compatible census-linked provisioning within same administrative portfolio,medium
+HT132,9,Casa del Lebete,person/resource responsibility record,QA-RE-TO; OVISf 27,individual responsibility for productive livestock/resource,medium
+HT135,9,Casa del Lebete,fragmentary account,,part of same Scribe-9 administrative cluster but too damaged for stronger function,low
