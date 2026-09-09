@@ -4,6 +4,99 @@
 
 ---
 
+## 2026-09-08 – GPT-5.6 Sol, semantic-crib falsification and zodiac pivot
+
+### What was attempted
+
+Pushed the 2026-09-07 duplicate-plant/pharmaceutical-label lead through held-out tests, then moved to the stronger closed-list zodiac route. The session also audited the pre-existing Alfonsine myriogenesis attempt and identified the earlier Tankalusha/Teucer 360-degree tradition as the best current external crib family.
+
+Full continuation handover:
+`attempts/2026-09-08-zodiac-ordered-crib-handover/README.md`.
+
+### Duplicate-plant result: discovery signal but held-out failure
+
+Three strict Herbal↔Pharma duplicate drawings were used as anchors:
+
+- f18v ↔ fragment 212, label `koldarod`
+- f23r ↔ fragment 213, label `odalydary`
+- f19r ↔ fragment 240, label `loralody`
+
+`koldarod`↔f18v had prior public notice in 2024. The two other labels produced a real discovery-set result: among seven strict duplicate Herbal pages, minimum single-word edit distance gave the correct `odalydary`→f23r and `loralody`→f19r assignment as the unique best of 42 possibilities (1/42 ≈ 0.0238). The distance matrix was checked in Takahashi and ZL3b.
+
+This **did not replicate**. On five independently catalogued f89v2 Herbal correspondences, including f48v↔fragment 54 (`chokam`) and f48r↔fragment 61 (`daseky`), the correct 5-way assignment ranked **117th of 120** under the same rule.
+
+Therefore the hypothesis `pharma label ≈ plant-name word recoverable from the corresponding Herbal prose` is rejected.
+
+### Other semantic branches falsified
+
+- Same-drawing Herbal prose is not reliably closest: f39r↔f95r2 ranked only 3rd of 8 local B/Hand-2 controls, with f39v scoring higher.
+- Pharma paragraph adjacent to a matching plant-fragment row does not reliably match the corresponding Herbal paragraph.
+- `dar = root/root-material` is falsified by leaf-only f102v2 label `olrodar`.
+- Label-block glyph composition does not generally match the adjacent pharma paragraph.
+
+### Pharma-label structure that survives
+
+Immediate label adjacency is essentially null against within-run shuffling (p ≈ 0.53), but labels grouped in the same local pharmaceutical block are modestly more similar than labels randomly reassigned between blocks on the same page. Pooled within-page permutation tests in this session were roughly:
+
+- normalized edit-distance cohesion p ≈ 0.002–0.003
+- character-set similarity p ≈ 0.0012
+- character-frequency similarity p ≈ 0.0036
+
+The effect is heterogeneous (strong on f99v/f100r, absent/reversed on some pages), so it is a structural clue, not a decoding.
+
+### Zodiac pivot
+
+The zodiac gives harder semantic ground truth than botany and closed ordered label sets. The repo already contained:
+`attempts/2026-09-07-alfonsine-myriogenesis/README.md`.
+
+That attempt proposes Alfonso X's *Libro de Astromagia* / myriogenesis as an external ordered crib: 30 degree entries per zodiac sign, each with an image and native/fate description. Voynich ZL3b supplies ordered zodiac labels for Taurus (f71v + f72r1), Gemini (f72r2), Cancer (f72r3), etc.
+
+A key correction: the user-uploaded Alfonso PDF is *Libros del saber de astronomía*, not the exact blocker source. The relevant source is the separate *Libro de Astromagia* (Vatican Reg. lat. 1283 and related witnesses). A machine-readable transcription is available through the Hispanic Seminary of Medieval Studies, with complete ordered Taurus/Gemini/Cancer degree material sufficient for a three-sign train/hold-out experiment.
+
+### Preregistered Alfonsine profile gate
+
+The earlier attempt froze five extraction rules before alignment:
+`NATIVE-FIRST-NOUN`, `NATIVE-FIRST-ADJ`, `NATIVE-DISTINCTIVE`, `FIGURE-FIRST-NOUN`, `FIGURE-DISTINCTIVE`.
+
+First-pass effective two-letter-siglum diversity for Taurus/Gemini/Cancer:
+
+| rule | Taurus | Gemini | Cancer | status |
+|---|---:|---:|---:|---|
+| FIGURE-FIRST-NOUN | 10 | 12 | 15 | reject; far too repetitive |
+| NATIVE-DISTINCTIVE | 24 | 21 | 26 | near profile, not yet rejected |
+| FIGURE-DISTINCTIVE | 21 | 27 | 24 | near profile, not yet rejected |
+| NATIVE-FIRST-ADJ* | 20 | 22 | 27 | near profile; needs stricter POS adjudication |
+
+`NATIVE-FIRST-NOUN` is not cleanly complete under a strict deterministic extraction because some clauses lack an obvious content noun.
+
+These are only profile-gate results, not cipher fits. Do not tune a sixth rule after seeing Voynich fit without charging the multiplicity budget.
+
+### Stronger source layer identified
+
+The Alfonsine material is downstream of an Arabic/Persian **Tankalusha / Tankalūshā / Teucer 360-degree tradition**: 12 signs × 30 degrees, each degree pairing an image with a fate/native prediction. This may preserve a source inventory that Alfonso translated or standardised away and is currently the strongest historical crib family to acquire in full ordered form.
+
+### Highest-value next experiment
+
+1. Obtain a complete ordered machine-readable Tankalusha/Teucer 360-degree corpus from a primary or scholarly edition.
+2. Obtain and inspect the actual 2026 public Voynich zodiac-label replication package; reproduce a published baseline/negative control before using it.
+3. Derive the five already-frozen source extraction rules deterministically.
+4. Fit orientation/offset/code parameters on **Taurus only**.
+5. Freeze them and predict **Gemini and Cancer** with no sign-specific rotation/reversal.
+6. Score against within-sign permutation nulls and full orientation/search multiplicity.
+7. Only if held-out prediction survives, propagate the recovered mapping into adjacent zodiac running text and test independent iconographic attributes.
+
+### Artefacts produced
+
+- `attempts/2026-09-08-zodiac-ordered-crib-handover/README.md`
+- previously committed `attempts/2026-09-07-duplicate-label-semantic-crib/src/label_assignment.py`
+- previously committed `attempts/2026-09-07-duplicate-label-semantic-crib/results/assignment_matrix.csv`
+
+### Status
+
+**No decipherment claim.** The plant-name semantic route is rejected. The zodiac/Tankalusha ordered-crib experiment is the strongest current solve path because it can make genuine held-out plaintext predictions.
+
+---
+
 ## 2026-09-06 – GPT-5.6 Sol, golden-cell audit
 
 ### What was attempted
