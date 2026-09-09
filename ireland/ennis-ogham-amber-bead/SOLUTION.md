@@ -1,12 +1,18 @@
-# Solution — Ennis ogham amber bead
+# Solution candidate — Ennis ogham amber bead
 
-**Status:** SOLVED — provisional historical reconstruction
+**Status:** LEADING WORKING SOLUTION — provisional historical reconstruction; physical loop traversal unresolved
 
 **Proposed plaintext:** `STINGING`
 
-**Observed payload:** `DMVAVA`
+**Proposed six-sign payload:** `DMVAVA`
 
 **Mechanism:** a uniform three-place cyclic displacement in the learned 20-letter ogham alphabet.
+
+## 2026-09-08 audit note
+
+The linguistic/cryptographic solution below remains the Hub's strongest candidate, but one physical claim from the initial reconstruction has been corrected. The inscription should be modelled as a **circular loop/cycle around the bead**, with an ambiguous closure/perforation region, rather than as a simple Y-fork where a right branch can automatically be selected. The live OG(H)AM EpiDoc transcription remains `?DMVA?VA`.
+
+OG(H)AM source history also confirms that **photogrammetry and RTI were captured on 5 December 2023**. Those surface data are now the decisive missing test. `DMVAVA` should therefore be described as the **leading traversal hypothesis across the six ordinary-looking signs**, not as a laboratory-established unique string.
 
 ## The crack
 
@@ -14,7 +20,7 @@ Use the traditional learned-ogham order:
 
 `B L V S N | H D T C Q | M G NG Z R | A O U E I`
 
-Take the six ordinary signs on the modern specialist's most coherent path: the clear `DMVA` run followed by the right-hand continuation `VA` around the perforation.
+Take the six ordinary-looking signs represented by the secure `DMVA` run plus the ordinary `VA` arc as the candidate payload `DMVAVA`.
 
 Decrypt each sign three places backward, cyclically:
 
@@ -33,17 +39,17 @@ Therefore:
 
 The tokenisation is itself informative: learned ogham has a single `NG` sign, so English **STINGING = STING + ING** occupies exactly six ogham characters. The repeated ciphertext pair `VA VA` maps exactly to the repeated plaintext pair `I-NG I-NG`.
 
-## Why this is the best reading
+## Why this remains the best candidate
 
-### 1. It starts from the best direct object examination
+### 1. It starts from the strongest modern sign evidence
 
-The December-2023 OG(H)AM examination does not reproduce Macalister's `ATUCMLU`. It identifies a detached `<`-like structure that is not a known ogham character, a relatively clear `DMVA` core, and a split near the perforation whose right-hand branch appears to contain `VA`.
+The December-2023 OG(H)AM examination does not reproduce Macalister's `ATUCMLU`. It identifies a detached `<`-like structure that is not a known ogham character, a relatively clear `DMVA` core, and further ordinary-looking `VA` signs in the ambiguous closure region.
 
-The solution therefore treats the detached `<` as non-phonetic and follows the branch containing ordinary readable signs:
+The current hypothesis therefore treats the detached `<` as non-phonetic and tests the six ordinary-looking signs as one payload:
 
 `DMVA` + `VA` = `DMVAVA`.
 
-The anomalous left branch is not required to carry another letter. The simplest physical explanation is that the stemline divided or was redirected around the perforation, with the right branch carrying the continuation and the left structure serving as a secondary groove, aborted continuation, delimiter-like feature, or carving artefact.
+What is **not yet proven** is the exact ordered traversal of the loop that joins these components. The anomalous nearby structure may be closure, correction, delimiter-like, aborted carving, or another sign.
 
 ### 2. One rule produces an exact English word
 
@@ -55,34 +61,34 @@ That statistic is supporting evidence, not a formal post-selection p-value.
 
 ### 3. The plaintext explains the bead's independently recorded function
 
-The bead was recorded in 1856 as an inherited amulet used specifically for **sore eyes**, as well as for safe childbirth. `STINGING` is a direct eye-symptom word. Nineteenth-century medical English demonstrably describes eye complaints as "stinging"; for example Timothy F. Allen's *Encyclopedia of Pure Materia Medica* (1874–79) records stinging in the eyes and frequent stinging of both eyes.
+The bead was recorded in 1856 as an inherited amulet used specifically for **sore eyes**, as well as for safe childbirth. `STINGING` is a direct eye-symptom word. Nineteenth-century medical English demonstrably describes eye complaints as "stinging".
 
-The semantic match was not used to manufacture individual letter substitutions: it emerges after applying one alphabet rotation to the modern six-sign path.
+The semantic match was not used to manufacture individual letter substitutions: it emerges after applying one alphabet rotation to the six-sign candidate payload.
 
 ### 4. Amber itself belongs to an eye-healing amulet tradition
 
-The function is not an isolated antiquarian anecdote. Irish and Scottish folklore records amber beads being rubbed on or used for diseased or failing eyes. This suggests the bead could have been an older eye-healing object before or independently of its inscription.
+Irish and Scottish folklore records amber beads being rubbed on or used for diseased or failing eyes. This suggests the bead could have been an older eye-healing object before or independently of its inscription.
 
-That resolves an apparent chronological problem: the **bead need not be the same age as the inscription**.
+The **bead need not be the same age as the inscription**.
 
-### 5. The cipher belongs to the correct historical technology
+### 5. The cipher belongs to a historically plausible technology class
 
-The proposed system should not be imagined as a modern Caesar cipher imposed on an ancient monument. Learned Irish ogham was explicitly treated as cryptographic technology for centuries.
+Learned Irish ogham was explicitly treated as cryptographic technology for centuries.
 
-Most importantly, National Library of Ireland MS G 163, copied by Peadar Ó Longáin in 1831, is a short manual devoted to ogham cryptographies. It includes:
+National Library of Ireland MS G 163, copied by Peadar Ó Longáin in 1831, includes:
 
 - a "Topsy Turvey Cryptography" described as **"only a transposition of the letters"**;
 - a "secret Military Cryptography" (*Ogam róinn na bhFíann*);
 - discussion of where Irish alphabets begin;
 - several other rearranged/substitution ogham systems.
 
-This does not prove that Ó Longáin's exact table was a minus-three rotation. It proves that **re-indexing/transposing the ogham alphabet was live Irish cryptographic practice in the relevant learned tradition**. A private three-place rotation is therefore a historically plausible nonce key rather than an alien decoding device.
+This does not prove an exact minus-three table. It independently establishes alphabet re-indexing/transposition as a live operation in the relevant learned-ogham tradition. A private three-place rotation is therefore plausible as a nonce key, though still unproven.
 
 ### 6. Ogham healing charms survived into the nineteenth century
 
-The Minchin Manuscript (NLS Advocates' MS 50.3.11), probably written in Kerry around 1849, consists of 66 pages of healing charms and prayers written almost entirely in ogham. Modern scholarship explicitly treats it as evidence for the transmission of ogham as both cryptography and healing technology into the nineteenth century.
+The Minchin Manuscript (NLS Advocates' MS 50.3.11), probably written in Kerry around 1849, consists of healing charms and prayers written almost entirely in ogham. Modern scholarship treats it as evidence for the transmission of ogham as both cryptography and healing technology into the nineteenth century.
 
-Thus all three components required by this reconstruction co-existed in Ireland:
+Thus the reconstruction combines three independently attested components:
 
 1. ogham as a cryptographic script;
 2. healing charms written in ogham;
@@ -90,43 +96,45 @@ Thus all three components required by this reconstruction co-existed in Ireland:
 
 ## Historical reconstruction
 
-The most economical narrative is:
+The current best narrative is:
 
 1. An amber bead, potentially already old, was kept as a curative/protective object.
-2. At some post-medieval date, a person familiar with learned ogham added a short cryptic label/charm.
-3. The main payload was `DMVAVA`.
+2. At some post-medieval date, a person familiar with learned ogham added a short cryptic label/charm around the bead.
+3. Six ordinary signs form the candidate payload `DMVAVA`; the precise loop traversal awaits surface verification.
 4. The writer used a rotated 20-letter learned-ogham alphabet with ciphertext three positions ahead of plaintext.
-5. The intended reading was **STINGING** — the symptom or affliction that the eye charm was meant to remove, absorb, or master.
+5. The intended reading was **STINGING** — the symptom or affliction that the eye charm was meant to remove, absorb or master.
 6. The object continued as an O'Connor family amulet and accumulated or retained a second childbirth-protection function.
-
-The inscription's irregular geometry is not an objection to a late learned-ogham context. Nineteenth-century manuscript ogham is known to contain scribal mistakes and non-monumental layouts; this is not the controlled lapidary formula of a classical Primitive-Irish memorial stone.
 
 ## What the solution rejects
 
 - **`ATUCMLU` as ground truth:** it depends on Macalister converting the two strangest structures into U-forfeda despite admitting little justification.
 - **`MTBCML` / Glenfahan identity:** the resemblance depends on an older transcription not reproduced by direct modern examination.
-- **a seven-character `?DMVA?VA` word:** this mistakenly serialises a physical fork and anomalous non-letter as ordinary text.
+- **a naive seven-character `?DMVA?VA` word:** this silently linearises anomalous loop geometry.
 - **an early-medieval phonological reading of `STINGING`:** the solution specifically uses the later learned value `NG` for nGétal and therefore predicts a learned/post-medieval inscription.
 
-## The remaining inferential leap
+## Two remaining inferential gaps
 
-The exact **three-place key** has not been identified by name in a surviving ogham tract. That is the principal unresolved historical detail.
+### A. Physical loop traversal
 
-It is not necessary to pretend otherwise. Cryptographic systems can use private or nonce keys, and the 1831 Irish evidence establishes the relevant operation class — alphabetic transposition/re-indexing — independently.
+The live OG(H)AM record remains `?DMVA?VA`. Macalister and OG(H)AM descriptions indicate a circular/looped stemline. The exact relation between `DMVA`, the ordinary `VA` arc and the anomalous closure structure must be tested from the known December-2023 photogrammetry/RTI.
 
-A future discovery of a historical three-place ogham alphabet would strongly confirm this reconstruction. Conversely, high-resolution surface evidence showing that the right-hand `VA` cannot be the intended continuation would reopen the problem.
+Strong confirmation would show that the ordinary `VA` arc is a continuous continuation of `DMVA` in a natural reading direction. A contrary surface result would reopen the decipherment.
+
+### B. Exact three-place key
+
+The exact **three-place key** has not been identified by name in a surviving ogham tract. Cryptographic systems can use private or nonce keys, and the 1831 evidence establishes the relevant operation class, but a historical alphabet table matching `D→S, M→T, V→I, A→NG` would be a major independent confirmation.
 
 ## Publication formulation
 
-> **The Ennis amber bead is best explained as a post-medieval learned-ogham eye charm. The six ordinary signs on its coherent stemline path read `DMVAVA`; applying a three-position reverse rotation in the traditional 20-letter ogham alphabet yields `S T I NG I NG`, or `STINGING`. The anomalous detached and left-branch marks are non-phonetic/structural rather than the U-forfeda assumed by Macalister. The reading fits the bead's independently recorded use for sore eyes and a documented Irish tradition in which ogham, cryptography and healing charms remained intertwined into the nineteenth century.**
+> **The leading explanation of the Ennis amber bead is a post-medieval learned-ogham eye charm. Six ordinary-looking signs can be read as the candidate payload `DMVAVA`; applying a three-position reverse rotation in the traditional 20-letter ogham alphabet yields `S T I NG I NG`, or `STINGING`. The reading fits the bead's independently recorded use for sore eyes and a documented Irish tradition in which ogham, cryptography and healing charms survived into the nineteenth century. The remaining decisive uncertainty is physical: the circular inscription's traversal through the ambiguous closure region must be verified against the photogrammetry and RTI captured by OG(H)AM in December 2023.**
 
-This is the Hub's working solution. It is a historical reconstruction with an explicit residual uncertainty about the nonce key, not a claim that every physical detail has been laboratory-verified.
+This is the Hub's leading working solution, not a claim that every physical detail or the exact nonce key has been independently proven.
 
 ## Key sources
 
-- OG(H)AM, "Og(h)am of the Month: January 2024" — direct December-2023 examination of the Ennis bead: https://ogham.glasgow.ac.uk/index.php/ogham-of-the-month/
+- OG(H)AM live EpiDoc I-CLA-003: https://github.com/lguariento/og-h-am/blob/main/XML/I-CLA/I-CLA-003.xml
+- OG(H)AM, "Og(h)am of the Month: January 2024" — direct December-2023 examination: https://ogham.glasgow.ac.uk/index.php/ogham-of-the-month/
 - NLI MS G 163 catalogue — Peadar Ó Longáin's 1831 ogham cryptography manual: https://www.celt.dias.ie/publications/online/nli/5/NLI163.html
-- OG(H)AM, "Ogam Script in Irish Medical Tradition" — Minchin Manuscript and nineteenth-century healing ogham: https://ogham.glasgow.ac.uk/index.php/2023/03/24/ogam-script-in-irish-medical-tradition/
+- OG(H)AM, "Ogam Script in Irish Medical Tradition" — Minchin Manuscript: https://ogham.glasgow.ac.uk/index.php/2023/03/24/ogam-script-in-irish-medical-tradition/
 - Hayden & Stifter, "Ogam, cryptography and healing charms in the nineteenth century" (2025): https://mural.maynoothuniversity.ie/id/eprint/19488/
 - National Museums Scotland, amber charms for eye conditions: https://www.nms.ac.uk/discover-catalogue/from-amulets-to-elf-bolts-10-scottish-charms
-- Wellcome Collection, Timothy F. Allen, *The Encyclopedia of Pure Materia Medica* (1874–79): https://wellcomecollection.org/works/bcw4ts9b
