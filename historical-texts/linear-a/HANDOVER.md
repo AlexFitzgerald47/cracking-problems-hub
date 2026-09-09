@@ -1,34 +1,25 @@
 # Handover Notes – Linear A
 
-**Current frontier:** 2026-09-07, GPT-5.6 Sol  
-**Historical detail:** preserved in `PROGRESS.md`, git history, and the dated `analysis/` files. This handover is intentionally current-state-first so the next cracker does not restart superseded work.
+**Current frontier:** 2026-09-08, GPT-5.6 Sol  
+**Status:** functional/historical solve candidate; not a phonetic decipherment or language-family solve.
 
 ## Read these first
 
-1. `analysis/2026-09-07-haghia-triada-labor-control-functional-solve.md`
-2. `analysis/haghia_triada_functional_decode.csv`
-3. `analysis/2026-09-07-kiro-unified-residual-grammar.md`
-4. `analysis/2026-09-07-obligation-circuit-post-award.md`
-5. `analysis/kiro_construction_grammar.py`
-6. `PROGRESS.md`
+1. `analysis/2026-09-08-scribe9-dossier-functional-reconstruction.md`
+2. `analysis/scribe9_dossier.csv`
+3. `analysis/2026-09-07-haghia-triada-labor-control-functional-solve.md`
+4. `analysis/haghia_triada_functional_decode.csv`
+5. `analysis/2026-09-07-kiro-unified-residual-grammar.md`
+6. `analysis/2026-09-07-obligation-circuit-post-award.md`
+7. `PROGRESS.md`
 
 ## Current solve candidate
 
-The best high-compression reading is no longer a one-word KI-RO result.
+The strongest current reading is:
 
-> **The Haghia Triada Linear A archive preserves an integrated labor-obligation control system.**
+> **A substantial Haghia Triada / Casa del Lebete Linear A dossier written by HT Scribe 9 records an integrated labor-liability administration linking accountable units, personnel assessments, standardized work groups, assignment, roster checking, KI-RO exception reporting, census-linked provisioning/resources, and hierarchical control totals.**
 
-The archive appears to combine:
-
-- a canonical 19-node circuit of accountable people / groups / workshops / institutions;
-- assessments or liabilities for labor and produce;
-- movement / assignment of manpower across sectors of that circuit;
-- named exception / absence rosters under KI-RO;
-- repeated roster snapshots in which the same named individual can change account state;
-- balance-ledger logic separating contributions from debt / future payment;
-- forward-declared aggregates, closing totals, and grand totals.
-
-This is a **functional/historical decipherment candidate**, not a phonetic decipherment or language-family identification.
+This is stronger than a one-word KI-RO result because the same hand, same institutional environment, repeated names and repeated header vocabulary form a coherent dossier.
 
 ## Strong anchors
 
@@ -48,177 +39,231 @@ Best functional nucleus:
 
 **DUE-BUT-UNFULFILLED / OUTSTANDING / MISSING.**
 
-Two constructions remain the best current grammar:
+Two constructions remain the best grammar:
 
 - `KI-RO + numeral` -> scalar residual;
 - `KI-RO •` -> forward-scoping outstanding / missing list.
 
-Personnel examples HT88, HT94 and HT117 behave as named exception rosters; scalar examples such as HT34 and HT123 behave as residual quantities.
-
-### U-MI-NA-SI
-
-Recent administrative synthesis treats HT28 as a balance ledger and notes U-MI-NA-SI as probable `debt / owes`. Use as a medium-confidence liability term, not a solved literal translation.
+For personnel records, the strongest interpretation is an expected labor/service obligation that failed to materialize at muster or reconciliation.
 
 ### A-DU
 
-Do **not** keep the earlier handover's confident `rendered / paid` gloss. Wider scholarship is divided, and a recent synthesis lists A-DU as **assessment**. For the labor-control model, treat it conservatively as an **assessment / account-state / transaction heading** until its exact polarity is resolved.
+Best current type, still provisional:
 
-### A-KA-RU / KA-RU
+**ASSESSED / ACTIVATED OBLIGATION / ACCOUNT-STATE HEADING.**
 
-New arithmetic anchor from this session:
+Reason: it occurs across manpower and grain/assessment records and behaves more like a generic administrative operator than a normal name/place. Do not force the exact polarity yet.
 
-- HT2: `A-KA-RU 20`, followed by `17 + 3`;
-- HT97: `KA-RU 82`, followed by a selected breakdown `33 + 25 + 6 + 4 + 4 + 5 + 2 + 3 = 82`.
+### MA-KA-RI-TE
 
-Best structural function:
+Best current type:
 
-**forward-declared aggregate / summary whose components follow.**
+**SERVICE / DUTY / INSTITUTIONAL ACCOUNT.**
 
-Do not yet claim literal `total` or morphological relation to KU-RO.
+This comes mainly from the HT87/HT117 pairing. Do not claim a literal lexical translation.
 
-## The main historical leap: a labor-control circuit
+### U-MI-NA-SI / SA-TA / QI-TU-NE
 
-Davis & Valério (2020) established that 19 Haghia Triada words occur in a fixed, cyclic, bidirectional order across 14 tablet faces. They infer a fixed spatial circuit of entities.
+Best current type:
 
-The Hub's post-award synthesis is to treat that sequence as a **master administrative index / route** rather than merely an ordered word list.
+**ACCOUNTABLE / SUPPLYING UNIT OR INSTITUTION.**
 
-The likely operating model is a recurring inspection / contribution / muster circuit through accountable local nodes.
+U-MI-NA-SI should no longer be treated confidently as a verb meaning `owes`. In HT117 it occupies the same subgroup-header slot as SA-TA and QI-TU-NE.
 
-## HT85 — dispatch sheet candidate
+## Main new result: the Scribe-9 dossier
 
-HT85a lists exactly circuit nodes 1–7 in canonical order and totals 66 personnel.
+Secure Scribe-9 tablets identified in the current dossier:
 
-The arithmetic gives **11 groups of 6**.
+### Casa Room 7
 
-HT85b contains eleven unit entries under KI-KI-RA-JA; securely identifiable circuit words then continue with nodes 8–13 in canonical order, plus KI-RE-TA2, QE-KA and subordinate functionaries.
+- HT85 — personnel mobilisation / gang formation;
+- HT87 — ordinary personnel roster;
+- HT94 — personnel account + KI-RO exception list;
+- HT112 — fragmentary livestock/resource account.
 
-Existing scholarship already noticed both the 11x6 structure and movement from circuit sector 1–7 to sector 8–13.
+### Casa Room 9
 
-The Hub leap is the functional translation:
+- HT117 — large KI-RO exception roster grouped by units;
+- HT119 — personnel/resource ratio account.
 
-> **HT85 is an 11-gang labor dispatch / reassignment manifest.**
+### Casa del Lebete
 
-Side a = source liability / manpower contribution.  
-Side b = receiving / supervising / accountable side for eleven six-person gangs.
+- HT122 — master personnel liability/control register;
+- HT128 — grain/resource allocation linked in prior scholarship to a census of people;
+- HT132 — person/resource responsibility, including 27 sheep with QA-RE-TO;
+- HT135 — fragmentary account.
 
-Treat KI-KI-RA-JA provisionally as **ASSIGNEES / RESPONSIBLE RECIPIENTS / ALLOCATION SIDE**. This is a functional role, not literal lexical decipherment.
+Treat findspots as administrative clustering, not proven chronology.
 
-## HT122 — master liability register candidate
+## HT87 -> HT117: strongest query-grammar result
 
-The source commentary already interprets HT122 as places/entities contributing groups of personnel.
+Both are Scribe 9.
 
-It uses the same canonical circuit vocabulary and hierarchical controls:
+HT87 begins:
+
+`QI-TU-NE • MA-KA-RI-TE •`
+
+followed by ordinary personnel, including DI-KI-SE.
+
+HT117 begins:
+
+`MA-KA-RI-TE • KI-RO • U-MI-NA-SI •`
+
+followed by ten one-unit personnel entries and `KU-RO 10`, then further personnel blocks under SA-TA and QI-TU-NE. DI-KI-SE occurs again in the QI-TU-NE block.
+
+Best functional reconstruction:
+
+```text
+HT87
+FILTER unit = QI-TU-NE
+FILTER duty/account = MA-KA-RI-TE
+SHOW ordinary roster
+
+HT117
+FILTER duty/account = MA-KA-RI-TE
+FILTER status = KI-RO
+GROUP BY accountable unit
+SHOW exceptions
+```
+
+This makes DI-KI-SE the strongest status-switch control in the dossier.
+
+## HT85 — dispatch / mobilisation sheet candidate
+
+HT85 totals exactly 66 personnel.
+
+`66 = 11 x 6`.
+
+Existing structural work identifies eleven receiving/responsibility entries on the reverse. Best functional reading:
+
+> **Eleven standardized six-person work gangs assembled from personnel supplied by several accountable source units and assigned onward.**
+
+Do not claim the exact source->destination mapping yet.
+
+## HT122 — master liability/control register candidate
+
+HT122 uses repeated personnel contributions and hierarchical totals:
 
 - first block -> KU-RO 31;
 - KU-DA 1;
 - second block -> KU-RO 65;
 - PO-TO-KU-RO 97.
 
-Functional reading:
+It also contains ordinary one-unit entries such as KU-PA3-NU and PA-TA-NE, both of which occur in KI-RO exception contexts elsewhere in the Scribe-9 dossier/wider personnel archive.
 
-**personnel-liability register over the master entity system, with subtotals and grand total.**
+Best functional reading:
 
-## HT87 -> HT117 — repeated status tracking
+**master personnel liability / contribution register over the same administrative population that appears in exception and mobilisation records.**
 
-Both tablets were written by Scribe 9.
+### Intriguing but unproven bridge
 
-HT87:
+HT85 total = 66.
 
-`QI-TU-NE • MA-KA-RI-TE •` -> ordinary personnel 1-list containing DI-KI-SE.
+HT122 contains `KU-RO 65` plus `KU-DA 1`.
 
-HT117:
+Because both are Scribe-9 manpower records, test whether `65 + 1 = 66` is a real cross-tablet reconciliation. Do **not** claim it until entity-level composition aligns.
 
-`MA-KA-RI-TE • KI-RO •` -> exception/outstanding roster with QI-TU-NE as a subgroup and DI-KI-SE again present.
+## HT119 — fixed manpower ratio clue
 
-Best new inference:
+HT119 records:
 
-> **the same clerk records the same roster member / designation in the same institutional environment under different account states.**
+`*327 34`
 
-That is evidence for repeated administrative snapshots rather than one static census.
+`VIR 68`
 
-## HT94 / HT88 / HT117 — muster exception reports
+an exact 1:2 relationship.
 
-- HT94: large personnel account plus KI-RO list of five named missing/outstanding members -> KU-RO 5.
-- HT88: associated personnel/resource account plus KI-RO list of six names -> KU-RO 6.
-- HT117: categorized KI-RO personnel list; first subgroup ten names -> KU-RO 10.
+The identity of *327 is unresolved. Preserve only the structural result: two men per counted unit in this line.
 
-The working historical reading is **muster / obligation rosters with named exception reporting**.
+Together with HT85's six-person groups, Scribe 9 repeatedly encodes fixed manpower ratios.
 
 ## Unified administrative architecture
 
 ```text
-MASTER ENTITY CIRCUIT
+ACCOUNTABLE LOCAL UNITS
         |
         v
-ASSESS / ASSIGN LIABILITY
+ASSESS / ACTIVATE LIABILITY (A-DU?)
         |
         v
-MOBILISE / DISPATCH LABOR OR GOODS
+MOBILISE PERSONNEL / GOODS
         |
         v
-RECEIVING / RESPONSIBLE PARTY
+FORM / ASSIGN WORK GROUPS
         |
         v
-ROSTER / CONTRIBUTION SNAPSHOT
+ORDINARY ROSTER / DUTY ACCOUNT
      /                 \
-FULFILLED            KI-RO
+REALISED             KI-RO
                      OUTSTANDING /
                      MISSING
                         |
                   NAMED EXCEPTIONS
                         |
-         KU-RO / PO-TO-KU-RO
-              CONTROL TOTALS
+              KU-RO / PO-TO-KU-RO
+                  CONTROL TOTALS
+                        |
+                 CENSUS-LINKED
+             PROVISIONING / RESOURCES
 ```
 
-The historical interpretation is a **labor levy + dispatch board + muster/absence report + reconciliation ledger**, not modern double-entry bookkeeping.
+## Why this matters
 
-## Why this may matter historically
+If the model survives adversarial testing, the archive shows Minoan administration doing more than inventory counting:
 
-If correct, these records show the Minoan administration doing more than counting goods:
+- maintaining stable accountable units;
+- levying personnel obligations;
+- pooling and redistributing labor;
+- organizing standardized gangs;
+- assigning duties/accounts;
+- checking named personnel against expected rosters;
+- flagging unfulfilled service under KI-RO;
+- linking people to food, livestock and productive resources;
+- using local and higher-order arithmetic controls.
 
-- maintaining a stable master index of accountable nodes;
-- mobilising labor from one part of the local circuit to another;
-- organising at least one dispatch into standard six-person gangs;
-- recording accountable receiving/supervisory units;
-- tracking named absences/outstanding workers;
-- revisiting the same roster members across different administrative states;
-- applying the same obligation logic to manpower and commodities;
-- using multiple levels of arithmetic control.
-
-That is a reconstructable **operating system of labor administration** despite the language remaining undeciphered.
+The recoverable object is therefore an **operating system of labor administration** despite the language remaining undeciphered.
 
 ## Do not regress to these old paths
 
 - Do not restart generic candidate-language dictionary fishing.
 - Do not spend another session proving KU-RO is a total.
 - Do not spend another session asking whether KI-RO can vaguely mean deficit.
-- Do not force A-DU = payment; the latest pass corrected that overreach.
-- Do not force KI-RI-TA2 to be a KI-RO inflection: HT114/HT121 make it look more like an account/entity/event heading and the evidence is ambiguous.
-- Do not claim MA-KA-RI-TE = `former year` from the old Akkadian proposal without independent structural support.
+- Do not force A-DU = payment.
+- Do not force U-MI-NA-SI = owes/debt; test its entity/header behavior first.
+- Do not force MA-KA-RI-TE = former year or a reason-for-absence without explaining the HT87/HT117 structural pair.
+- Do not trust the transaction parser's sender/recipient labels as deciphered semantics; they are heuristic assignments.
+- Do not infer chronological sequence from room findspots.
+- Do not claim `Linear A deciphered`.
 
-## Highest-value frontier push
+## Highest-value next experiments
 
-The next cracker should try to turn the labor-control solve candidate into **one explicit network reconstruction**:
+1. **Build the complete Scribe-9 relational table**: tablet, findspot, header fields, entities, quantities, resources, status terms, totals, repeated names and circuit positions.
+2. **Test the HT87/HT117 query grammar** on HT85, HT94, HT119 and HT122. Ask whether `account / status / unit / person` predicts unseen structures.
+3. **Resolve MA-KA-RI-TE** by enumerating every occurrence and classifying duty/account vs place/unit vs temporal vs explanatory uses.
+4. **Resolve U-MI-NA-SI** with the same held-out type test. A clean operator/verb use would falsify the current unit interpretation.
+5. **Resolve A-DU polarity** across HT85/HT88 and HT86/HT95 without importing candidate-language etymology.
+6. **Test HT85 66 vs HT122 65 + KU-DA 1** at the entity level.
+7. **Build the directed labor network**: source unit -> duty/account -> assigned personnel -> KI-RO exceptions. DI-KI-SE is the first anchor edge.
+8. Only after the functional graph stabilizes should phonetics/language-family hypotheses return as weak priors.
 
-1. Expand HT85's eleven six-person gangs into eleven source units.
-2. Treat the eleven HT85b unit entries as receiving/responsibility slots.
-3. Use circuit order, repeated names, subordinate PA/KA/DI functionaries and other tablets to infer the most likely source->destination gang mapping.
-4. Overlay HT88/HT94/HT117 KI-RO names onto the circuit and ordinary rosters to determine whether absences cluster by source, destination, supervisor, or work group.
-5. If the mapping coheres, produce a directed Haghia Triada labor network: **who supplied labor, who received it, which units were missing, and where totals reconcile.**
+## Falsifiers
 
-That would advance the result from a functional archive model to a reconstructable piece of Minoan social organization.
-
-## Files from the current frontier pass
-
-- `analysis/2026-09-07-haghia-triada-labor-control-functional-solve.md`
-- `analysis/haghia_triada_functional_decode.csv`
-- prior state-machine and KI-RO analyses listed at the top of this file.
+- U-MI-NA-SI behaving cleanly as an operator rather than an entity/header.
+- MA-KA-RI-TE failing in a held-out duty/account context.
+- A-DU requiring incompatible meanings across labor and assessment records.
+- The HT87/HT117 pairing disappearing once tablet segmentation is re-audited against facsimiles/GORILA.
+- The 66 vs 65+1 bridge failing entity-level reconciliation (expected possibility; this would only kill that sub-hypothesis).
 
 ## Claim discipline
 
-Call this a **functional solve candidate / historical reconstruction**, not `Linear A deciphered`.
+Use:
+
+> **functional solve candidate / historical reconstruction of a Scribe-9 labor-liability dossier**
+
+Do not use:
+
+> **Linear A deciphered**
 
 The claim worth specialist attention is narrower and stronger:
 
-> **A substantial Haghia Triada tablet cluster can be read as different views over one integrated labor-obligation control system, including a canonical entity circuit, personnel liability, gang dispatch, named exception reporting, repeated roster states, balance accounting, and hierarchical control totals.**
+> **A coherent Scribe-9 Haghia Triada/Casa del Lebete tablet cluster can be read as different administrative views over one labor-obligation system, including personnel liability, gang formation, duty/account assignment, named KI-RO exception reporting, repeated roster states, census-linked resources, and hierarchical control totals.**
