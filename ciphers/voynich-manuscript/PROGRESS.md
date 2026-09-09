@@ -62,7 +62,24 @@ baseline (0.110). Normalising `eo`/`ee`/`e` -> `a` doubles the rate at which a l
 label is exactly an early label type (6.0% -> 12.7%); the same map on ring text from the
 same pages does not move (6.8% / 6.6%).
 
-### Finding 2 — label endings recur at period 7 within a ring
+### Finding 2 — the labels are not an ordinal code at all
+
+Every ordinal reading — day of month, degree 1..30, planetary ruler, decan — predicts a
+small closed inventory (30, 7 or 36 items) repeating across the twelve signs. That is a
+type/token statement and needs no crib.
+
+- zodiac labels: **269 types / 298 tokens = 0.903**; 248 types are hapax (**83% of tokens**)
+- running text 298-token samples: 0.756 +- 0.026 -> labels are **+5.7 SD** above
+- zodiac ring text: 0.763 +- 0.021 -> labels are **+6.5 SD** above
+- all other labels (`L` loci): 0.858
+
+The zodiac labels are the most lexically diverse text in the manuscript. **The
+whole-label ordinal readings are excluded**, and the labels behave like a list of
+distinct names — the first number supporting the premise the external-crib programme
+rests on. It also relocates the search for cyclic structure to the ending inventory
+(49 distinct last-two forms), which is where Finding 3 finds it.
+
+### Finding 3 — label endings recur at period 7 within a ring
 
 Selected from a 7-measure x 14-lag scan, then confirmed on partitions and controls not
 used to select it. The effect is in the last two glyphs and specifically the
@@ -92,22 +109,61 @@ different alphabet and different word segmentation — lag 7 is again the highes
 Consistent, not confirmed: v101 does not tag label rings, so they had to be matched by
 token count and several matches are off by 1-4 tokens.
 
-### Finding 3 (negative) — no global seven-class code table
+### Manuscript-wide sweep — the period-7 cycle exists nowhere else
 
-The natural reading of Finding 2 is a degree-ruler / *monomoiria* cycle, which predicts
-**one** seven-class system shared by all rings. Fitting one phase per ring by coordinate
-ascent, scoring cross-ring ending agreement, with the identical fit applied to permuted
-rings (matched search budget): period 7 gives Z = +2.05 on all rings but does not beat
-period 6 (Z = +2.32), and neither replicates in the halves (Z = +0.5 to +1.0).
+Every ordered structure in the manuscript run through the same test: only the zodiac
+nymph labels show it (ratio 2.21, Z +3.92). Running text within-line (3696 items) and
+paragraph-initial (3752), circular/radial text of every locus type, Q20 star words,
+pharmaceutical, astronomical and other labels are all flat at lag 7, best lag 1, 3, 4,
+6, 8 or 9.
 
-**The periodicity is local to each ring, not a manuscript-wide class system.** This
-kills the strongest version of the degree-ruler hypothesis. It does not kill a weaker
-one: a single skipped or damaged nymph breaks the phase from that point on while leaving
-local period-7 similarity intact, and telling those apart needs the folios, not more
-statistics.
+One other cell lit up and is an artefact worth recording: "herbal labels (f1-f66)",
+ratio 3.37 on 2 lists and 27 pairs with the penult feature flat. It is entirely f49v's
+left-margin column of **single characters**, which contains the literal repeated block
+`p o * y e *` at distance 7. The sweep rediscovering that column's periodicity without
+being told about it is a second pipeline check, not a second instance of the finding.
 
+Also: running-text words within a line are **less** likely to share endings at lag 1
+than chance (0.77, Z = -2.95) — the opposite of the labels' behaviour.
 
-### Finding 4 — the label split is not Currier A/B, and A/B is not a one-glyph re-encoding
+### Finding 4 (bounded, NOT a clean negative) — a strong global seven-class code is excluded, a weak one is what the data look like
+
+The degree-ruler reading predicts one seven-class system shared by every ring. Fitted by
+coordinate ascent with one phase per ring, observed and every null replicate at the
+**same** restart budget (`t19_phase_calibrated.py`, superseding `t10_phase.py` whose
+null got a smaller budget): all rings, period 7 Z = +2.17 (p = 0.030), period 6
+Z = +2.47 (p = 0.018), periods 5/8/9/10 null; halves +0.66 and +1.03.
+
+That table is unreadable on its own, so the test was **calibrated by injecting a global
+cycle of known strength into within-ring permuted data** (`t16_power.py`). alpha is the
+fraction of labels whose ending is dictated by its class:
+
+| alpha | mean Z | power (Z>2) |
+|---:|---:|---:|
+| 0.00 (no structure) | +0.10 | 0.00 |
+| 0.10 | +0.35 | 0.00 |
+| 0.20 | +2.66 | 0.60 |
+| 0.30 | +8.29 | 1.00 |
+| 0.45 | +30.75 | 1.00 |
+
+The test is calibrated at alpha = 0, and the observed Z sits almost exactly on the
+alpha ~ 0.20 line. So:
+
+- **alpha >= 0.30 is excluded outright** — it would have given Z >= 4 in every one of 20
+  simulated corpora.
+- **alpha ~ 0.20 is exactly what the data look like**, and at that strength the test only
+  fires 60% of the time, which is why the halves fail individually.
+- **alpha <= 0.10 is invisible** and cannot be ruled out on this corpus.
+
+The global test also **cannot separate period 6 from period 7**; only the within-ring
+lag test can, and there 7 is the best lag in all seven partitions.
+
+**An earlier version of this entry called Finding 4 a clean negative ("no global
+cycle").** The injection curve shows that reading would have been wrong: on these
+numbers the data are consistent with a weak global cycle. This is
+`board/PRACTICES.md`'s "report where the null has no power" doing real work.
+
+### Finding 5 — the label split is not Currier A/B, and A/B is not a one-glyph re-encoding
 
 Finding 1b invited an extrapolation: Currier A is `a`-heavy and B is `e`-heavy, so
 perhaps one `e`<->`a` substitution explains both the label regimes and the manuscript's
@@ -132,6 +188,30 @@ ring text on the same pages and from Currier A/B; and **Currier A/B is not a one
 re-encoding of a single system**, which is a direct quantitative answer to a question
 this folder has had open since 2026-09-04 and constrains the "A and B are one language
 differently written" family of proposals.
+
+
+### Finding 6 — the labels are diagram-locked, but *less* page-locked than the text is
+
+Does a diagram's labels have anything to do with that diagram's own circular ring text?
+Statistic: mean over a diagram's labels of the best Levenshtein similarity to any word
+of a target diagram's ring text, giving a 12x12 matrix; the permutation is over
+assignments of label sets to ring texts, so row and column marginals are both fixed.
+
+- mean self 0.6515 vs mean other 0.6318
+- permutation p = 0.0032; **stratified within the two regimes p = 0.000025**
+- self beats the mean of its immediate neighbours in **10 of 12** (sign p = 0.019)
+
+The size of the tie is the interesting part. With target sets equalised by word count:
+
+- one ring-text line vs the rest of its own page's ring text: own-page lift **+0.0249**
+- a diagram's labels vs its own page's ring text: own-page lift **+0.0059**
+
+**The label stream is roughly four times less page-locked than the text stream is to
+itself.** A page-local copy-and-mutate generator — the mechanism proposed for Voynichese
+word formation, and the one that would otherwise explain the diagram affinity away —
+predicts the opposite. Weak positive evidence for the external-source premise the crib
+programme rests on, and it had never been checked. Treat as a constraint: labels are
+short and few, and best-match similarity is sensitive to length.
 
 ### What failed
 

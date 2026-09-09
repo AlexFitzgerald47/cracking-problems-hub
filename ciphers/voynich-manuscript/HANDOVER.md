@@ -41,26 +41,59 @@ early/late divergence; normalising `eo`/`ee`/`e` -> `a` doubles late-to-early la
 matches (6.0% -> 12.7%) while the same map on ring text does not move. Partial, not a
 pure key change.
 
-**Finding 2 — label endings recur at period 7 within a ring**, ratio ~2.2x chance,
+**Finding 2 — the labels are not an ordinal code.** Every ordinal reading (day of
+month, degree 1..30, planetary ruler, decan) predicts a small closed inventory repeating
+across the twelve signs. The zodiac labels are **269 types for 298 tokens (0.903), 83%
+hapax** — the most lexically diverse text in the manuscript, +5.7 SD above running text
+and +6.5 SD above the zodiac ring text on matched 298-token samples. Excluded. The labels
+behave like a list of distinct names, which is the first number supporting the premise the
+crib programme rests on, and it relocates the cyclic structure to the ending inventory
+(49 distinct last-two forms).
+
+**Finding 3 — label endings recur at period 7 within a ring**, ratio ~2.2x chance,
 p = 0.0003 pooled, lag 7 the best lag in **all seven** partitions tested (early / late,
 big rings / small rings, inner / outer). The effect is in the penultimate glyph; the
 final glyph alone is flat. Four matched controls are flat. Suggestive but not
 significant in the independent v101 transcription (p ~ 0.06-0.09) with the same control
 behaviour.
 
-**Finding 4 — the label split is not Currier A/B, and A/B is not a one-glyph
+**Finding 4 — a *strong* global seven-class code is excluded; a weak one is exactly
+what the data look like.** Fitted with one phase per ring, observed and every null at the
+**same** restart budget (`t19_phase_calibrated.py`, superseding `t10_phase.py`): all
+rings period 7 Z = +2.17 (p = 0.030), period 6 Z = +2.47, others null; halves +0.66 and
++1.03. That is unreadable alone, so the test was calibrated by injecting a global cycle
+of known strength alpha into within-ring permuted data (`t16_power.py`): alpha 0 -> Z
++0.10 (calibrated), 0.10 -> +0.35 (no power), 0.20 -> +2.66 (power 0.60), 0.30 -> +8.29
+(power 1.00). The observed Z sits on the alpha ~ 0.20 line. **alpha >= 0.30 excluded;
+alpha ~ 0.20 is what the data look like; alpha <= 0.10 invisible.** The global test
+cannot separate period 6 from 7 — only the within-ring lag test can.
+
+**Do not repeat the earlier framing of this as a clean negative ("no global cycle").**
+The injection curve shows that reading is wrong on these numbers.
+
+**Finding 5 — the label split is not Currier A/B, and A/B is not a one-glyph
 re-encoding.** Same collapse scan on running text with pages labelled from
 `OrcusLabs/voynich.science` `mappings_TTLI.json`: raw A-vs-B glyph-bigram JSD 0.0955
 against within-language baselines of 0.0076 / 0.0050, so A/B is ~12x internal variation;
 the best single glyph merge of 276 closes only 35.7% of the gap, and `e`/`a` ranks
-**254 of 276**. All twelve zodiac pages are Currier-unclassified in that dataset. So the
-label regimes are their own phenomenon, and **A/B is not a one-glyph re-encoding** — a
+**254 of 276**. All twelve zodiac pages are Currier-unclassified in that dataset. A
 direct answer to a question open in this folder since 2026-09-04.
 
-**Finding 3 (negative) — no global seven-class code table.** Fitting one phase per ring
-with a matched-budget null, period 7 does not beat period 6 and neither replicates in
-the halves. The periodicity is local to each ring. This kills the strongest version of
-the degree-ruler (*monomoiria*) reading.
+**Finding 6 — the labels are diagram-locked but less page-locked than the text is.**
+Labels sit closer to their own diagram's ring text than to any other's (permutation with
+marginals fixed p = 0.0032; stratified within regimes p = 2.5e-5; self beats immediate
+neighbours 10 of 12). But size-matched, the own-page lift is **+0.0059** for labels
+against **+0.0249** for ring-text lines against their own page — the label stream is ~4x
+less page-locked than the text stream is to itself, which is the opposite of what a
+page-local copy-and-mutate generator predicts. Weak positive evidence for external
+sourcing.
+
+**Manuscript-wide sweep.** The lag-7 cycle appears in the zodiac nymph labels and in no
+other ordered structure in the manuscript — running text within-line or paragraph-initial,
+circular/radial text of every locus type, Q20 star words, pharmaceutical, astronomical or
+other labels. The one other hit is f49v's single-character marginal column, where the
+feature is the whole character and the cause is a literal repeated block; the sweep
+rediscovering that column's periodicity unprompted is a second pipeline check.
 
 ### What failed and why
 
@@ -75,7 +108,11 @@ the degree-ruler (*monomoiria*) reading.
 1. **Re-run the Alfonsine / external-crib pipeline separately per regime.** It assumes
    one label system; there are at least two. Prediction it can test as soon as it has a
    source list: a table fit on Pisces-Cancer fails on Leo-Sagittarius unless `e`<->`a`
-   is normalised first.
+   is normalised first. Finding 2 says its core premise (an ordered list of distinct
+   names) is right; Finding 6 says the names probably do come from off the page.
+0. **Before anything else, read Finding 4's power curve.** Any further work on a global
+   cycle must be powered for alpha ~ 0.2, which this corpus is not. More statistics on
+   this transcription will not settle it; ring completeness and traversal starts will.
 2. **Adopt lag-7 ending agreement as a free acceptance test.** Any proposed assignment
    of an ordered source list to a ring should reproduce ratio ~2 at lag 7. Costs
    nothing, is crib-independent, and rules out most wrong alignments.

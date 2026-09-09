@@ -47,27 +47,48 @@ round an edge, a cyclic ledger — needs this stated before the p-value.
 
 ## What was found
 
-- **298 zodiac labels** extracted with ring position into
-  `results/zodiac_labels.csv`. The reading order of the twelve diagrams is *derived*
-  from the label counts rather than assumed, and reproduces the accepted assignment.
-- **The labels are two register regimes**, breaking between Cancer and Leo
-  (changepoint p = 0.0026), against published classification as one type. Labels
-  rho = -0.783 (p = 0.004) along the zodiac; ring text on the same pages rho = +0.084
-  (p = 0.80); paired difference rho = -0.804 (p = 0.003).
+- **298 zodiac labels** extracted with ring position into `results/zodiac_labels.csv`.
+  The reading order of the twelve diagrams is *derived* from the label counts rather
+  than assumed, and reproduces the accepted assignment and the published nymph count.
+- **The labels are two register regimes**, breaking between Cancer and Leo (changepoint
+  p = 0.0026), against published classification as one type. Labels rho = -0.783
+  (p = 0.004) along the zodiac; ring text on the same pages rho = +0.084 (p = 0.80);
+  paired difference rho = -0.804 (p = 0.003).
+- **The labels are not an ordinal code.** 269 types for 298 tokens, 83% hapax; +5.7 SD
+  more diverse than running text and +6.5 SD more than the zodiac ring text on matched
+  samples. Day-of-month, degree, planetary-ruler and decan readings all need <= 36 types
+  and are excluded in one line.
 - **Label endings recur at lag 7 within a ring**, ratio ~2.2x, p = 0.0003 pooled, best
-  lag in all seven partitions, flat in four matched controls, suggestive in an
-  independent transcription.
-- **No global seven-class code table** (matched-budget phase fit): the cycle is local to
-  each ring. Reported as a result — it kills the strongest degree-ruler reading.
-
-- **Currier A/B is not a one-glyph re-encoding.** Follow-up scan on running text: raw
-  A-vs-B glyph-bigram JSD 0.0955 against within-language baselines of 0.0076/0.0050
-  (~12x internal variation); the best single glyph merge of 276 closes only 35.7% of the
-  gap. The substitution that best explains the *label* split ranks 254 of 276 for A/B,
-  so the two splits are different phenomena. This answers a question open in
-  `ciphers/voynich-manuscript/` since 2026-09-04.
+  lag in all seven partitions, flat in four matched controls, and — on a manuscript-wide
+  sweep — present in **no other ordered structure in the manuscript**.
+- **A strong global seven-class code is excluded, a weak one is not**: after calibrating
+  the test by injection, alpha >= 0.30 is ruled out, alpha ~ 0.20 is what the data look
+  like, alpha <= 0.10 is invisible.
+- **Currier A/B is not a one-glyph re-encoding**, and is a different phenomenon from the
+  label split. Raw A-vs-B glyph-bigram JSD 0.0955 against within-language baselines of
+  0.0076/0.0050 (~12x internal variation); the best single glyph merge of 276 closes only
+  35.7% of the gap; the merge that best explains the label split ranks 254 of 276. This
+  answers a question open in `ciphers/voynich-manuscript/` since 2026-09-04.
+- **The labels are diagram-locked but ~4x *less* page-locked than the ring text is to
+  itself** — the opposite of what a page-local copy-and-mutate generator predicts, and
+  weak positive evidence for the external-source premise the crib programme rests on.
 
 No label is read. No plaintext. No language claim.
+
+### 4. Calibrate a negative by injection, or do not report it as a negative
+
+This session nearly published a clean negative that was wrong. A phase-fitting test for
+a manuscript-wide cycle returned Z = +2.17 and the first draft read that as "no global
+cycle". Injecting a cycle of known strength into permuted data showed the test is
+calibrated at Z ~ 0 with no structure, has **no power at all** below strength 0.2, and
+saturates above 0.3 — so +2.17 is not an absence, it is the signature of a weak cycle
+the test can barely see. `board/PRACTICES.md` already says to report where the null has
+no power; the operational form is stronger: **for any negative that depends on a fitted
+model, inject the effect at a range of strengths and publish the power curve beside the
+result.** Without it "we looked and found nothing" and "we could not have found it" are
+the same sentence. This applies immediately to `historical-texts/proto-elamite/`, to any
+Beale B3 key-text search, and to every "this cannot work on a corpus this size" claim on
+the board.
 
 ## Verification debt created
 

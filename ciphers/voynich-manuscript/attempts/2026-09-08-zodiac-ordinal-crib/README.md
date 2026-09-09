@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-08
 **Session:** Claude (Opus 5), remote
-**Status:** four positive findings, two clean negatives. **No decipherment, no reading of any label.**
+**Status:** five positive findings, one bounded negative, one clean negative. **No decipherment, no reading of any label.**
 **Preregistration:** `PREREGISTRATION.md`, written before any statistic was computed.
 
 ---
@@ -255,32 +255,60 @@ attenuates any positional effect. **Call this consistent, not confirmed.**
 
 ---
 
-## Finding 4 (negative) — there is no global seven-class code table
+## Finding 4 — a *strong* global seven-class code is excluded; a weak one is exactly what the data look like
 
 The obvious reading of Finding 3 is a degree-ruler / *monomoiria* cycle: in a
 30-per-sign degree list, a repeating seven-planet assignment puts the same ruler on
-degrees seven apart. That reading predicts more than local periodicity — it predicts
-**one** seven-class system shared by every ring, so that after aligning each ring by a
-phase, labels in the same class agree on their endings *across* rings.
+degrees seven apart. That predicts more than local periodicity — it predicts **one**
+seven-class system shared by every ring, so that after aligning each ring by a phase,
+labels in the same class agree on their endings *across* rings.
 
-Tested by fitting one phase per ring by coordinate ascent, scoring cross-ring agreement,
-with the identical fitting procedure applied to permuted rings (matched search budget):
+Fitted by coordinate ascent with one phase per ring, **with the observed fit and every
+null replicate given the same restart budget** (`src/t19_phase_calibrated.py`; this
+supersedes the numbers in `src/t10_phase.py`, whose null got a smaller budget):
 
-| set | period 6 | period 7 | period 8 |
-|---|---:|---:|---:|
-| all rings | Z = +2.32 | Z = +2.05 | Z = −0.18 |
-| early only | +0.48 | +0.54 | −0.11 |
-| late only | +0.98 | +1.03 | −0.10 |
+| set | period 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---:|---:|---:|---:|---:|---:|
+| all rings (Z) | +0.25 | **+2.47** | **+2.17** | −0.36 | −1.30 | −0.03 |
+| early only | +0.53 | +0.56 | +0.66 | −0.04 | −0.80 | +0.31 |
+| late only | −0.42 | +1.05 | +1.03 | −0.10 | +0.14 | +0.77 |
 
-Period 7 does not beat period 6, and neither replicates in the halves. **The periodicity
-is local to each ring; it is not a manuscript-wide class system.** Report this as a real
-result: it kills the strongest version of the degree-ruler hypothesis, and any future
-attempt to read the labels as a global cyclic code has to explain this table first.
+On its own that table is unreadable: is +2.17 a weak signal or no signal? So the test
+was calibrated by **injecting a global cycle of known strength into within-ring
+permuted data** and re-running it (`src/t16_power.py`). α is the fraction of labels
+whose ending is dictated by its class:
 
-(It does not kill a weaker version. A single skipped or damaged nymph inside a ring
-breaks the phase from that point on while leaving local period-7 similarity intact.
-Distinguishing "no global system" from "global system with phase slips" needs the
-nymph-by-nymph physical evidence, not more statistics on this transcription.)
+| α | mean Z | sd | power (Z > 2) |
+|---:|---:|---:|---:|
+| 0.00 (no structure) | **+0.10** | 0.98 | 0.00 |
+| 0.10 | +0.35 | 0.82 | 0.00 |
+| 0.20 | +2.66 | 1.65 | 0.60 |
+| 0.30 | +8.29 | 2.80 | 1.00 |
+| 0.45 | +30.75 | 6.51 | 1.00 |
+| 0.60 | +57.49 | 9.43 | 1.00 |
+
+The test is properly calibrated at α = 0, and the observed **Z = +2.17 sits almost
+exactly on the α ≈ 0.20 line**. So the honest conclusion is a bound, not an absence:
+
+- **α ≥ 0.30 is excluded outright.** A regular, manuscript-wide seven-class code in
+  which a third or more of labels carry the class ending would have produced Z ≥ 4 in
+  every one of 20 simulated corpora. It did not.
+- **α ≈ 0.20 is exactly what the data look like** — and at that strength this test only
+  detects it 60% of the time, which is why the halves (Z = +0.66, +1.03) fail
+  individually.
+- **α ≤ 0.10 is invisible** to this test and cannot be ruled out by any amount of
+  further analysis on this corpus.
+
+Two further limits worth stating. The global test **cannot separate period 6 from
+period 7** (+2.47 vs +2.17); only the within-ring lag test of Finding 3 can, and there
+period 7 is the best lag in all seven partitions while period 6 replicates in the early
+half only. And a single skipped or damaged nymph inside a ring breaks the phase from
+that point on while leaving local period-7 similarity intact, which would depress the
+global statistic without there being anything wrong with the cycle.
+
+**This is the practice from `board/PRACTICES.md` — run the null and report where it has
+no power — doing real work.** Without the injection curve this section would have read
+"no global cycle found", which on these numbers would have been wrong.
 
 ---
 
@@ -405,7 +433,9 @@ python3 t12_final.py     # Finding 3, definitive
 python3 t18_diversity.py # Finding 2
 python3 t17_labeltext.py # Finding 6
 python3 t14_currier.py   # Finding 5
-python3 t10_phase.py     # Finding 4 (slow, ~20 min)
+python3 t19_phase_calibrated.py # Finding 4, budget-matched
+python3 t16_power.py     # Finding 4 power curve
+python3 t15_sweep.py     # manuscript-wide sweep
 python3 t13_v101.py      # independent transcription
 ```
 
