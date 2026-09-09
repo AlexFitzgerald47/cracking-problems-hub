@@ -4,6 +4,198 @@
 
 ---
 
+## 2026-09-08 – GPT-5.6 Sol, current solve frontier
+
+### Read this first
+
+The current highest-value path is **not** global Currier A/B clustering and **not** pharmaceutical plant-name matching. It is an **ordered external zodiac crib** based on the medieval 360-degree myriogenesis tradition.
+
+Before doing new work, read:
+
+1. `attempts/2026-09-08-zodiac-ordered-crib-handover/README.md`
+2. `attempts/2026-09-07-alfonsine-myriogenesis/README.md`
+3. `attempts/2026-09-07-duplicate-label-semantic-crib/src/label_assignment.py`
+4. `attempts/2026-09-06-golden-cell-audit/README.md`
+5. this file and `PROGRESS.md`
+
+### Current objective
+
+Try to obtain the first defensible Voynich plaintext foothold by aligning an **independent, ordered medieval 30-degrees-per-sign source list** against the Voynich zodiac ring labels, fitting on one sign and predicting another without retuning.
+
+The best historical candidate family is now:
+
+**Tankalusha / Tankalūshā / Teucer 360-degree tradition → Alfonsine `Libro de Astromagia` → Voynich zodiac**.
+
+The source tradition has exactly the structure needed for a hard test: twelve signs × thirty degree entries, with an image and a fate/native concept for each degree.
+
+### Important correction about the Alfonso upload
+
+The user-uploaded Alfonso PDF is *Libros del saber de astronomía*. It is interesting but **not** the exact blocking source. The relevant Alfonsine text is the separate *Libro de Astromagia*, surviving in Vatican Reg. lat. 1283 and related witnesses.
+
+A machine-readable Reg. lat. 1283 transcription exists via the Hispanic Seminary of Medieval Studies and includes complete ordered **Taurus, Gemini and Cancer** material. Those signs overlap the Voynich zodiac and are enough for a real train/hold-out experiment.
+
+### Five extraction rules are already frozen
+
+Do not invent a sixth rule after inspecting Voynich fit unless the extra search is explicitly included in the null/multiplicity budget.
+
+Use:
+
+1. `NATIVE-FIRST-NOUN`
+2. `NATIVE-FIRST-ADJ`
+3. `NATIVE-DISTINCTIVE`
+4. `FIGURE-FIRST-NOUN`
+5. `FIGURE-DISTINCTIVE`
+
+First-pass profile gate from this session:
+
+| rule | Taurus | Gemini | Cancer | status |
+|---|---:|---:|---:|---|
+| FIGURE-FIRST-NOUN | 10 | 12 | 15 | **reject** |
+| NATIVE-DISTINCTIVE | 24 | 21 | 26 | carry forward |
+| FIGURE-DISTINCTIVE | 21 | 27 | 24 | carry forward |
+| NATIVE-FIRST-ADJ* | 20 | 22 | 27 | carry forward after stricter POS extraction |
+
+Target Voynich effective diversity is roughly 20–25 types per 30 labels under the current siglum model. These counts are only a prefilter, not evidence of a cipher fit.
+
+### Exact next experiment
+
+#### 1. Acquire source corpus
+
+Get a complete ordered machine-readable list for the **Tankalusha/Teucer 360-degree tradition**, ideally from a primary manuscript transcription or scholarly edition. Preserve:
+
+`sign, degree, original figure clause, original fate/native clause`.
+
+Do not substitute modern summaries.
+
+If full 360 access is difficult, begin with Taurus, Gemini and Cancer only, but preserve exact degree order.
+
+#### 2. Acquire the actual 2026 zodiac-label replication package
+
+A public 2026 package reportedly contains the normalized Voynich zodiac labels, sigla tests and external-crib pipeline. Do not rely on its descriptive webpage alone. Download/inspect the actual code and reproduce at least one published negative control before trusting the pipeline.
+
+#### 3. Build source sigla deterministically
+
+Run all five frozen extraction rules. Record ambiguities/missing extractions explicitly rather than hand-resolving them after seeing target fit.
+
+#### 4. Count alignment search budget
+
+Potential branches include:
+
+- clockwise / counter-clockwise
+- global starting-degree offset
+- ring split/orientation treatment
+- any normalization/code-table options already part of the published pipeline
+
+Count every branch before scoring.
+
+#### 5. Train / hold out
+
+Preferred design:
+
+- fit/select all alignment/code parameters on **Taurus only**;
+- freeze everything;
+- score **Gemini and Cancer** untouched;
+- no sign-specific rotations, reversals, substitutions or hand-picked source words.
+
+A genuine result should beat within-sign permutation nulls and survive full search multiplicity.
+
+#### 6. Independent side prediction
+
+Blind-code visible image attributes in the source and Voynich zodiac figures (sex, crown, object, clothing, etc.). Test iconographic agreement only after textual alignment is frozen.
+
+Do not use the famous Leo/Regulus/crowned-nymph resemblance as an alignment seed. It is only useful as a final held-out iconographic check.
+
+### What would justify saying “breakthrough”
+
+At minimum:
+
+- frozen historical source extraction rule;
+- one global orientation/offset model;
+- parameters fit on one sign;
+- significant held-out prediction on at least one other sign;
+- no sign-specific retuning;
+- replication under an independent transcription/normalization if feasible;
+- recovered mapping then predicts something in adjacent running text or another independent label set.
+
+Until then, do not call it decipherment.
+
+### Branches already tested and killed
+
+#### Pharma label ≈ Herbal plant-name word
+
+Discovery-set signal existed but failed held-out.
+
+Strict discovery anchors:
+- `koldarod` ↔ f18v
+- `odalydary` ↔ f23r
+- `loralody` ↔ f19r
+
+`odalydary`/`loralody` were the unique best two-label assignment among 42 possibilities in the discovery set, but on five independent f89v2 duplicate-plant correspondences the correct 5-way assignment ranked **117/120** under the same rule.
+
+**Do not reopen this by changing the metric post hoc.**
+
+#### Same-plant paragraphs should resemble each other
+
+Failed: same-drawing f39r↔f95r2 ranked only 3rd/8 against local B/Hand-2 controls.
+
+#### Pharma prose adjacent to a plant row describes that plant
+
+Failed under lexical/character similarity against corresponding Herbal pages.
+
+#### `dar = root`
+
+Failed: `olrodar` occurs among leaf-only f102v2 labels.
+
+#### Label-block morphology mirrors adjacent pharma prose
+
+Failed on several pages; correct block↔paragraph pairing is often the worse assignment.
+
+### Pharma result still worth keeping
+
+Labels inside the same local pharma block are more morphologically/glyph-inventory similar than labels randomly reassigned between blocks on the same page (pooled p around 0.001–0.003 depending on metric). Immediate adjacency itself is null (~0.53). This hints at local classification/production structure but has not been decoded.
+
+### Critical inherited correction: old “golden cell” withdrawn
+
+Do not use `A/H3/Stars vs B/H3/Stars` as a pure language contrast. The 2026-09-06 audit showed:
+
+- `$I=S` means illustration type “marginal stars,” not physical section;
+- A/H3 comes only from f58r/v, one folio in Quire 8;
+- B/H3 marginal-star material comes largely from later Quire 20;
+- the prior fixed-block permutation pseudo-replicated one A folio.
+
+The 12.76 distance is descriptive, not a clean causal language effect.
+
+### Useful Voynich files already identified
+
+ZL3b diplomatic extracts in `matthewdgreen/cipher_benchmark`:
+
+- Taurus: `voynich_f71v.zl3b.diplomatic.txt`, `voynich_f72r1.zl3b.diplomatic.txt`
+- Gemini: `voynich_f72r2.zl3b.diplomatic.txt`
+- Cancer: `voynich_f72r3.zl3b.diplomatic.txt`
+- Pharma structural work: f88r/v, f89r1/r2/v1/v2, f99r/v, f100r/v, f101r/v, f102r1/r2/v1/v2
+
+`@Lz` / `&Lz` lines encode zodiac labels with clock-position loci.
+
+### External modern repo useful as a control source
+
+`seeton/Voynich-public` contains reproducible code/results for label locality and other structural analyses. Use it to validate methods/negative controls, not as plaintext authority.
+
+### Recommended priority order
+
+1. **Tankalusha/Teucer ordered-degree corpus acquisition**
+2. reproduce the public zodiac-label pipeline
+3. Taurus fit → Gemini/Cancer blind prediction
+4. iconographic held-out check
+5. only after a surviving mapping: propagate into zodiac running text
+
+Do not spend the next session on another unconstrained global clustering exercise unless the ordered-crib route becomes source-blocked.
+
+### Session status
+
+**No solve claim.** The project is in a much better state because the attractive plant-label semantic path has been cleanly falsified and the next experiment can make genuine independent predictions.
+
+---
+
 ## 2026-09-06 – GPT-5.6 Sol, golden-cell audit
 
 ### Summary of work done
