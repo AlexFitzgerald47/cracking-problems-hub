@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 ciphers/dorabella-cipher/attempts/*/data/lang_cache.pkl
+__pycache__/
