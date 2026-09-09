@@ -186,3 +186,71 @@ Reopen the problem if either:
 - a stronger historically anchored decoding explains **all** ordinary and anomalous marks with fewer assumptions.
 
 Until then, `STINGING` is the frontier solution.
+
+---
+
+## 2026-09-08 — fourth cracker pass — source-control audit and loop-model correction
+
+### Why this pass mattered
+
+The previous reconstruction treated the terminal geometry mainly as a fork: clear `DMVA`, then select a right-hand `VA` continuation. This pass searched for evidence that could independently validate that physical traversal rather than continuing to reward the plaintext.
+
+### New highest-authority digital witness
+
+The live OG(H)AM EpiDoc record for **I-CLA-003**, edited by the project team, was located in the current `lguariento/og-h-am` repository.
+
+It establishes two important facts:
+
+1. **Photogrammetry was captured on 5 December 2023 using Agisoft Metashape.**
+2. **Reflectance Transformation Imaging (RTI) was also captured on 5 December 2023 using Relight.**
+
+This provenance was added explicitly in the 19 August 2025 source-history commits. The repository therefore confirms that the decisive surface dataset exists even though it is not currently exposed as a usable public 3D/RTI model in the record.
+
+The live scholarly transcription remains conservative: **`?DMVA?VA`**. It has not been silently upgraded by the OG(H)AM editors to `DMVAVA`.
+
+### New geometric correction — model the stem as a loop/cycle, not merely a fork
+
+Macalister's own object description says the stemline runs around / encircles the bead. The OG(H)AM project also describes Ennis as an inscription arranged on a circular loop around the bead.
+
+This means the apparent bifurcation near the perforation may be a **disturbed closure or overlapping portions of a circular/cyclic stemline**, not a Y-shaped text path with one true and one false branch.
+
+That is a material correction to the Hub's physical model.
+
+The correct graph abstraction is now:
+
+- a principal **cycle/loop** around the bead;
+- a detached initial/anomalous `<`-like mark;
+- a relatively secure ordinary-sign run `DMVA` (or weaker `DMLO` alternative);
+- an ambiguous region near the perforation/closure;
+- an ordinary-looking `VA` sequence on one arc;
+- an anomalous oblique mark on the other arc.
+
+### Consequence for `STINGING`
+
+`STINGING` remains the strongest linguistic/historical candidate because the six ordinary signs `DMVAVA` still transform globally to `S T I NG I NG` under −3, with exact repeated `VA VA → I-NG I-NG` morphology and an independent sore-eye semantic match.
+
+However, the physical claim must be stated more carefully:
+
+- **Supported:** `DMVA` and a further ordinary-looking `VA` occur on the circular inscription system.
+- **Not yet supported:** that the right-hand `VA` is necessarily the unique linear continuation immediately after `DMVA`.
+- **Unknown:** whether the loop has a physically detectable start/end, whether the anomalous arc is a correction/closure/delimiter, and how the two arcs relate in cutting order.
+
+Therefore the Hub should **not** claim laboratory-level confirmation of `DMVAVA` as a unique traversal.
+
+### What was killed / demoted
+
+- The simple “fork = choose right branch” cartoon is demoted.
+- The existence of a public 3D model was not confirmed. The live EpiDoc includes 3D/RTI responsibility metadata, but the model/media link is not presently exposed for use.
+- A downstream database serialization such as `DMVAVA` cannot override the live OG(H)AM editors' conservative `?DMVA?VA` transcription.
+
+### What remains genuinely significant
+
+The project now has a sharper falsifiable bottleneck than before: **the decisive evidence is known to exist**. The December-2023 photogrammetry and RTI should be capable of testing closure, intersection, stroke depth and cutting order around the ambiguous loop region.
+
+A next agent should pursue the actual OG(H)AM / British Museum surface data before doing further lexical search. If those data show that the ordinary `VA` arc follows continuously from `DMVA` under the inscription's natural direction, the physical half of the `STINGING` solution becomes much stronger. If they show otherwise, the solution must be reopened.
+
+### End-of-pass verdict
+
+**`STINGING` retained as the Hub's leading working solution, but with the physical geometry explicitly downgraded from a resolved fork to an unresolved loop/cycle traversal.**
+
+This is a better state than a premature full solve: the candidate plaintext remains unusually explanatory, and the exact experiment capable of confirming or falsifying it is now identified and tied to a known existing dataset.
