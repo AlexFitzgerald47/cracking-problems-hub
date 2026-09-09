@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-09-09 – GPT-5.6 Sol / partial-bigraph solve pass
+
+### What was attempted
+Continued past the chronology model and looked for the smallest externally grounded piece of the script that could actually be *solved* rather than merely surveyed. Located the live OCBI corpus in the public `elamicon/elamicon` source, reconstructed the three Amarna-family cylinder sequences exactly, read Mäder's 2021 external-value paper and Schmutz & Mäder's 2024 decipherment audit, and compared the cylinder against the OCBI's alternative variant-grouping syllabaries.
+
+### Results / findings
+1. **The Hub's data premise was stale.** A public machine-readable corpus exists. OCBI currently exposes 18 `BYBL` and 14 `BYBL?` witnesses, exact PUA transcriptions, directions and multiple alternative working syllabaries. `PROBLEM.md` has been corrected.
+2. **A real partial bigraph exists, conditional on the cylinder's script identification.** OCBI gives `BYBL ra = `, `rb var.3 = `, `rc var.3 = `. These align externally with Ankhesen(pa)amun, Meketaton and Meritaton in the copied Amarna family composition.
+3. **Externally grounded kernel:** `/ → me` (phonetic equality; allograph vs homophone still open), ` → pa`, terminal ` → Aton-related` (economically an ATON logo-phonogram), and ` → Amun-related compound`. Only `me` and `pa` are treated as comparatively clean phonetic anchors; the divine-name readings remain one model step more dependent on segmentation.
+4. **Bounded inventory solve:** the older/default OCBI groupings merge `` and ``. But both signs occur in the preferred four-sign Meketaton sequence, with `` occupying the externally expected Aton ending and `` internal to the `Meket-` portion. Under the bigraph model they should therefore not be normalized as one grapheme. The OCBI's own later working inventories (`Syl6`–`Syl8`) independently split them after `Syl2`–`Syl5` had merged them. The external name alignment supplies a non-circular reason to **promote that split**.
+5. **Stale public mapping exposed:** the OCBI source still contains `ATON ` in its small `syllableMap`, while GEAS's 2021 public statement gives ` ATON` and the raw daughter-name sequences place exact `` at both shared terminals. This is best explained as residue from the old merged variant group; analyses using the split inventory should use `` as the Aton candidate.
+6. **Published full decipherments are not live baselines.** Schmutz & Mäder (2024) already reject Woudhuizen/Best against the three external names and explicitly note that Mendenhall's values fail the same test. This is prior art, not a new Hub discovery, but it fulfills part of the Hub's original success criterion and prevents future duplicated effort.
+7. **No fake full solve claimed.** `` and `` are cylinder-only exact forms/digraphs in the current raw corpus; `me` and `pa` are sparse enough outside the seal that they do not justify free translation of the long texts.
+
+### Main leap
+Treat the Amarna cylinder not as a ready-made Rosetta Stone but as a **constraint generator**. It can already decide at least one grapheme-variant question (` != `) even though it cannot yet decode the corpus. This converts an argument about visual similarity into an externally falsifiable inventory decision.
+
+### Failures / rejected overclaims
+- Did **not** use the seal as a secure archaeological date for the whole Byblos system. Vita & Zamora correctly warn that its provenance and classification are weaker than the Dunand core.
+- Did **not** force `` and `` to be one grapheme merely because both read `me`; homophony remains possible.
+- Did **not** claim that exact `` must encode the entire string ATON rather than a shorter unit in the shared ending; `ATON` is the economical GEAS model, not a logically unique segmentation.
+- Did not redo the 2024 Woudhuizen/Best/Mendenhall exclusion and present it as new.
+
+### Artefacts produced
+- `PARTIAL_BIGRAPH_KERNEL.md` — frozen external sequences, confidence-graded anchors, prior-art boundary, OCBI variant-group audit, and the externally supported ``/`` split.
+- `PROBLEM.md` updated to reflect the live OCBI corpus, partial bigraph and revised success criteria.
+
+### Next falsifier
+Leave the cylinder out. Freeze only the four anchor constraints and the ` != ` split, then ask whether `me` and `pa` predict repeated structural behavior in the Dunand core without selecting a target language. Failure should downgrade the cylinder-to-core transfer; success would be the first bridge from the partial bigraph to actual decipherment.
+
+---
+
 ## 2026-09-08 – GPT-5.6 Sol / palimpsest chronology attack
 
 ### What was attempted
