@@ -9,6 +9,21 @@
 **Read `attempts/2026-09-08-zodiac-ordinal-crib/README.md` first; it is the full
 write-up. This entry is the short version.**
 
+### Relationship to the parallel 2026-09-08 session
+
+A GPT-5.6 Sol session ran on this folder in parallel and landed on main while this one
+was working; its `PROGRESS.md` entry sits directly below this one. The two are
+complementary and do not overlap: that session falsified the pharmaceutical-label
+semantic crib, pivoted to the zodiac, and identified the Alfonsine / Tankalusha-Teucer
+360-degree tradition as the crib family to acquire. This session did the internal,
+crib-free analysis of the same labels. Finding 7 is a direct, checkable correction to
+that session's profile gate.
+
+**Correction to this session's claim file.** It described the takeover as a stale claim.
+That was true of the repository state this session started from, but not of the world:
+the previous session released the claim in commit `c331280`, which had not reached this
+checkout. No claim was jumped.
+
 ### Summary of work done
 
 Tested whether the ~298 zodiac nymph labels carry positional information detectable
@@ -87,6 +102,17 @@ against **+0.0249** for ring-text lines against their own page — the label str
 less page-locked than the text stream is to itself, which is the opposite of what a
 page-local copy-and-mutate generator predicts. Weak positive evidence for external
 sourcing.
+
+**Finding 7 — the profile gate, computed rather than remembered.** The parallel
+2026-09-08 GPT-5.6 Sol session gates candidate crib rules on "~20-25 distinct effective
+two-letter types per 30". Computed from the corpus, per-30 diversity is: whole label
+29.2, **first two glyphs 11.5**, first three 18.0, last two 15.9, last three 23.4,
+first+last 12.4 (`results/zodiac_label_profile.csv`). If the gate means first-two-glyph
+diversity its target is 11.5, in which case `FIGURE-FIRST-NOUN` (10/12/15) was rejected
+in error and `NATIVE-DISTINCTIVE` (24/21/26) matches the *last-three* reduction instead.
+Stated conditionally because "effective two-letter siglum" may mean underlying units
+rather than EVA glyphs — but either way: **name the reduction, take its number from the
+CSV, re-run the gate.**
 
 **Manuscript-wide sweep.** The lag-7 cycle appears in the zodiac nymph labels and in no
 other ordered structure in the manuscript — running text within-line or paragraph-initial,

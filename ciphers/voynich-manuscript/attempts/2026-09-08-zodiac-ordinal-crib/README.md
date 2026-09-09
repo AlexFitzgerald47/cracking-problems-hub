@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-08
 **Session:** Claude (Opus 5), remote
-**Status:** five positive findings, one bounded negative, one clean negative. **No decipherment, no reading of any label.**
+**Status:** six positive findings, one bounded negative, one clean negative. **No decipherment, no reading of any label.**
 **Preregistration:** `PREREGISTRATION.md`, written before any statistic was computed.
 
 ---
@@ -395,6 +395,48 @@ That is weak positive evidence for the premise the whole external-crib programme
 on: that the labels come from somewhere other than the page. It had never been checked.
 Treat it as a constraint, not a result: labels are short and few, the two streams have
 different length distributions, and best-match similarity is sensitive to both.
+
+---
+
+
+## Finding 7 — the per-sign profile gate, computed rather than remembered
+
+The parallel 2026-09-08 GPT-5.6 Sol session (see its `PROGRESS.md` entry) preregistered
+a **profile gate** for candidate external crib lists: before any positional alignment, a
+rule's extracted sigla must land near the observed Voynich per-sign diversity, which it
+carried as "~20–25 distinct effective two-letter types per 30". On that target it
+rejected `FIGURE-FIRST-NOUN` (10 / 12 / 15 for Taurus / Gemini / Cancer) as "far too
+repetitive" and kept `NATIVE-DISTINCTIVE` (24 / 21 / 26) and `FIGURE-DISTINCTIVE`
+(21 / 27 / 24).
+
+Computed directly from the corpus (`src/t20_profile_gate.py`,
+`results/zodiac_label_profile.csv`), the observed diversity depends entirely on which
+reduction you take, and it varies by a factor of two:
+
+| reduction of the Voynich label | distinct types per 30 |
+|---|---:|
+| whole label | 29.2 |
+| **first two glyphs** | **11.5** |
+| first three glyphs | 18.0 |
+| last two glyphs | 15.9 |
+| last three glyphs | 23.4 |
+| first + last glyph | 12.4 |
+
+**If the gate is comparing against first-two-glyph diversity, its target is 11.5, not
+20–25** — in which case `FIGURE-FIRST-NOUN` at 10 / 12 / 15 is the *closest* of the five
+rules to the real profile and was rejected in error, while `NATIVE-DISTINCTIVE` at
+24 / 21 / 26 is roughly double the two-letter target and matches the *last-three-glyph*
+reduction instead.
+
+Stated conditionally on purpose: "effective two-letter siglum" may mean an abstraction
+of the label into two underlying units under a verbose-cipher reading, not the first two
+EVA glyphs, and this session cannot tell which was used. Either way the action is the
+same and it is cheap: **name the reduction, take its number from the table above or from
+the CSV, and re-run the gate.** A gate whose target is carried from memory can reject
+the right rule and keep the wrong ones, and on these numbers it may have done exactly
+that.
+
+Per-sign figures for all twelve signs are in `results/zodiac_label_profile.csv`.
 
 ---
 

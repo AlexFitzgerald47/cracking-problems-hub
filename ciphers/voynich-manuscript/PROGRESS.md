@@ -215,7 +215,8 @@ short and few, and best-match similarity is sensitive to length.
 
 ### What failed
 
-- No global cycle (above). Reported as a result, not buried.
+- A *strong* global cycle (alpha >= 0.3) is excluded; the first draft of Finding 4
+  called this 'no global cycle', which the injection curve shows was wrong.
 - Label length vs ring position: mean Spearman rho = +0.16 across 20 rings, 15 of 20
   positive but nothing that survives honest correction. Recorded so nobody re-runs it.
 - Cross-diagram same-position alignment (preregistered as T2) was not run to completion:
