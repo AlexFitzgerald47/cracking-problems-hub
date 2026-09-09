@@ -1,6 +1,6 @@
 # Evidence ledger — Ennis amber bead
 
-Session: 2026-09-06, GPT-5.6 Sol
+Last updated: 2026-09-08, GPT-5.6 Sol
 
 ## Witnesses kept separate
 
@@ -9,85 +9,110 @@ Session: 2026-09-06, GPT-5.6 Sol
 | 1856 *Proceedings and Papers* | contemporary woodcut derived from a lithograph | no interpretation attempted | earliest published object witness located; provenance and amulet tradition |
 | Westropp 1911 | secondary antiquarian account | Ennis `LMCBDV`; Fahan `LMCBTM` | **conflicted assignment**; likely swaps the two comparanda |
 | Arntz, *Das Ogom* | secondary epigraphic discussion | Ennis `MTBCML`; Glenfahan `LMCBDV` | preserves pre-1945 reading and Marstrander cryptic-ogham hypothesis |
-| Macalister 1945 CIIC 53 | corpus description | `ATUCMLU` in opposite direction | important inherited reading, but depends on two explicitly weak U-forfid identifications |
-| OG(H)AM Dec 2023 examination / Jan 2024 report | direct modern inspection and photographs | `?DMVA?VA`; core `DMVA` or `DMLO`; initial `<` is not known ogham; stemline appears to split | highest-weight remote evidence currently available |
+| Macalister 1945 CIIC 53 | corpus description | `ATUCMLU` in opposite direction; stemline described as encircling/running around bead | inherited reading weak at anomalous signs; useful independent witness that geometry is circular |
+| OG(H)AM Dec 2023 examination / Jan 2024 report | direct modern inspection and photographs | `?DMVA?VA`; core `DMVA` or `DMLO`; initial `<` not known ogham; ambiguous closure/split region | highest-weight published remote examination |
+| OG(H)AM live EpiDoc I-CLA-003 | current project source record | conservative `?DMVA?VA`; records 2023 photogrammetry + RTI capture | highest-weight current digital source-control witness |
 
 ## OBSERVED / INFERRED / MISSING
 
-### OBSERVED from the 2023 specialist examination
+### OBSERVED from the modern specialist record
 
 - Perforated amber object, about 2.1 cm diameter.
-- A cut stemline is present.
-- Before / at its commencement is a detached `<`-like shape that does not meet the stemline and does not match a known ogham character.
-- A relatively clear run can be read `DMVA`, with `DMLO` retained by the specialists as an alternative.
-- Near the perforation the stemline appears to split.
-- The right branch appears to carry `VA`; the final A is short and X-like.
-- A left branch of similar angle/length ends with an oblique stroke.
+- A cut stemline runs around the object and is best modelled geometrically as a **loop/cycle** rather than assumed to be a straight line.
+- A detached `<`-like shape does not meet the stemline and does not match a known ogham character.
+- A relatively clear run can be read `DMVA`, with `DMLO` retained as an alternative.
+- Near the perforation / closure region the stem geometry becomes ambiguous.
+- One arc appears to carry ordinary `VA`; the final A is short and X-like.
+- Another nearby arc/structure ends with an anomalous oblique stroke.
+- OG(H)AM captured **photogrammetry on 2023-12-05 using Agisoft Metashape**.
+- OG(H)AM captured **RTI on 2023-12-05 using Relight**.
+- The live OG(H)AM source record remains conservatively transcribed as `?DMVA?VA`.
 
 ### INFERRED, but not secure
 
-- The fork may have been made to avoid the perforation.
-- Some or all of the anomalous terminal marks may be phonetic characters.
-- One branch may be the intended continuation and the other secondary, decorative, corrective, or part of another sign.
+- The ambiguous region may reflect avoidance of the perforation.
+- The two apparent arcs may represent a disturbed or overlapping **loop closure**, not a true fork.
+- The ordinary-looking `VA` may be the intended continuation after `DMVA`, but that traversal has not been established from surface data.
+- The anomalous arc may be structural, corrective, delimiter-like, aborted, or phonetic.
+- The detached `<` may be non-phonetic.
 - The amuletic use recorded in the nineteenth century may preserve an older function of the object, but it does not date the inscription.
 
 ### MISSING
 
-- Raw photogrammetry / RTI / 3D surface data.
-- Tool-profile and intersection evidence showing the cutting order at the fork.
-- A physically justified rule for serialising both branches into one character sequence.
+- Public access to the raw photogrammetry / RTI / 3D surface products known to have been captured.
+- Tool-profile and intersection evidence showing cutting order at the ambiguous closure.
+- A physically justified start point and traversal direction for the loop.
 - Secure sign identities for the two anomalous structures.
 - A secure date for bead manufacture or inscription.
+- An independently attested historical alphabet table matching the proposed −3 rotation.
 
-## Structural branch budget before lexical search
+## Corrected structural model
 
-Using only alternatives explicitly retained by the modern examination:
+The first session treated the geometry as a branch budget. That was useful defensively, but the stronger current abstraction is a **cycle graph**.
 
-- clear-core reading: 2 (`DMVA`, `DMLO`)
-- fork exit: at least 2 (right `VA`, left anomalous exit)
-- reading direction: at least 2
+Minimal graph components:
 
-That is **at least 8 structural cases** before assigning a phonetic value to the detached `<` sign or the anomalous left-branch mark. This is a lower bound, not a complete character-value search.
+1. loop/circular stemline around bead;
+2. detached anomalous `<` mark;
+3. ordinary-sign run `DMVA` or weaker `DMLO`;
+4. ambiguous closure/perforation region;
+5. ordinary-looking `VA` on one arc;
+6. anomalous oblique structure on another arc.
 
-For the specialist's upward orientation alone, a conservative path model yields four physical serialisations before the detached sign is assigned a value:
+The key question is no longer simply “which fork branch do we choose?” It is:
 
-- `?DMVAVA` — core `DMVA`, take right `VA` branch
-- `?DMVA?` — core `DMVA`, take left anomalous branch
-- `?DMLOVA` — core `DMLO`, take right `VA` branch
-- `?DMLO?` — core `DMLO`, take left anomalous branch
+> **What is the natural ordered traversal of the circular inscription, and does surface evidence show that the `VA` arc is continuous with `DMVA` in that traversal?**
 
-The published shorthand `?DMVA?VA` is useful as a drawing-to-text aide, but because the source reports a fork, it must not be silently treated as a seven-character linear word without specifying how both branches are traversed.
+Do not reverse a serialized string mechanically. Direction must be recomputed from the actual side/count geometry of strokes around the loop.
 
 ## Historical hypothesis audit
 
 ### H1 — Macalister's `ATUCMLU`
 
-Fails as a frozen transcription. Two load-bearing `U` identifications are precisely the anomalous marks for which Macalister admitted there was little justification. The 2023 inspection instead describes one as detached/non-ogham and the other as part of a forked terminal structure. `ATUCMLU` remains a historical decoding branch, not observed ground truth.
+Fails as a frozen transcription. Two load-bearing `U` identifications are precisely the anomalous marks for which Macalister admitted little justification. The 2023 inspection instead describes one as detached/non-ogham and the other as part of an ambiguous terminal/closure structure. `ATUCMLU` remains a historical decoding branch, not observed ground truth.
 
 ### H2 — Ennis and Glenfahan carry the same cryptic/magical consonant skeleton
 
 Historically testable form: older Ennis `MTBCML`, reversed to `LMCBTM`, resembles Glenfahan `LMCBDV`; Marstrander therefore proposed the same *rúnogam* and vowel insertion.
 
-Result: **not reproduced against the best modern Ennis transcription**. The 2023 object examination yields a materially different sign sequence/topology. The resemblance was contingent on an older reading; it is not an independent semantic fact about the bead.
-
-This does not prove that the bead is non-magical. It removes the strongest epigraphic reason for claiming it shares the Glenfahan formula.
+Result: **not reproduced against the best modern Ennis transcription**. The modern examination yields a materially different sign sequence/topology. The resemblance was contingent on an older reading; it is not an independent semantic fact about the bead.
 
 ### H3 — Westropp provides independent support for Ennis=`LMCBDV`
 
-Rejected as currently stated. Westropp's account assigns `LMCBDV` to Ennis, whereas Arntz and Macalister's corpus tradition identify `LMCBDV` as Glenfahan; the machine-readable modern corpus likewise stores Glenfahan `LMCBDV` and Ennis `ATUCMLU`. The simplest explanation is an attribution/transmission swap in Westropp's account or its modern transcription. It must not be counted as an independent Ennis reading until the original plate/footnote is adjudicated.
+Rejected as currently stated. Westropp's account conflicts with Arntz, Macalister's corpus tradition and the machine-readable modern assignment of Glenfahan `LMCBDV`. Treat as a probable attribution/transmission swap until the original publication is adjudicated.
+
+### H4 — `DMVAVA` → `STINGING` by uniform −3 rotation
+
+**Status: strongest working solution, not physically closed.**
+
+Support:
+
+- six ordinary signs `D M V A V A` produce `S T I NG I NG` under one global −3 shift in the learned 20-letter ogham order;
+- repeated `VA VA` maps exactly to repeated `I-NG I-NG`;
+- `STINGING` was the unique English lexical hit among the 20 cyclic shifts tested;
+- the bead's sore-eye use is independently documented;
+- learned ogham alphabet transposition and healing-charms-in-ogham are historically attested in nineteenth-century Ireland.
+
+Residual problems:
+
+- live OG(H)AM transcription remains `?DMVA?VA`, not `DMVAVA`;
+- no source has yet supplied the exact −3 key as an attested named alphabet;
+- the loop traversal connecting `DMVA` to the ordinary `VA` arc is not yet proven from the captured surface data.
 
 ## Corpus sanity check
 
-The OG(H)AM data-v1 readings file contains:
+The OG(H)AM data-v1 readings file contains inherited Ennis `ATUCMLU` and Glenfahan `LMCBDV` (plus variant `LBMCBDV`). This validates that the famous inherited strings belong to different corpus objects. It is not linguistic evidence against the modern reading because data-v1 predates the December-2023 re-examination.
 
-- an Ennis inherited entry `ATUCMLU`;
-- Glenfahan `LMCBDV` (and a variant `LBMCBDV`);
-- no exact `DMVAVA` or `MTBCML` entry in the search performed this session.
+## Current frontier finding
 
-This validates that the two famous inherited strings are attached to different corpus objects. It is **not** a linguistic null for the new reading because data-v1 predates the December 2023 examination.
+The most important new fact is operational: **the decisive physical evidence is known to exist**. OG(H)AM's source history records both photogrammetry and RTI capture of I-CLA-003 on 5 December 2023.
 
-## Session finding
+The next serious agent should spend effort obtaining or locating those surface products, not performing more dictionary search. The intended test is to resolve:
 
-The primary bottleneck is no longer “what does `ATUCMLU` mean?” The load-bearing result is that **there is presently no justified single string to decipher**. The bead is a branched inscription with at least eight structural cases before the anomalous marks receive values. Two long-lived magical/cryptic interpretations depend on older, mutually inconsistent linearisations that the 2023 examination does not reproduce.
+- whether the apparent two-arc region is a loop closure, correction, overlap or true fork;
+- which strokes physically intersect / terminate;
+- cutting order;
+- whether `DMVA` and the ordinary `VA` arc form one continuous directed path;
+- whether the detached `<` and anomalous oblique structure belong to the same carving episode.
 
-This materially narrows the problem: further dictionary or cryptanalytic fitting to `ATUCMLU`, `LMCBTM`, or a naive `DMVAVA` should be paused until the fork and anomalous marks are resolved from surface data.
+If that evidence validates `DMVA → VA`, the physical half of `STINGING` becomes substantially stronger. If it does not, reopen the decipherment.
