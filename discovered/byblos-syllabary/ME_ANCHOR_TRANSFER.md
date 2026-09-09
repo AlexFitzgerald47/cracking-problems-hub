@@ -81,7 +81,50 @@ This ranking is structural only. It does not identify a language.
 
 ---
 
-## 4. What this supports — and what it does not
+## 4. A second external constraint reaches BYBL k: `ME–?–T(?)`
+
+There is one further step worth taking, but it must be labelled **conditional** rather than promoted as a sound-value solve.
+
+The preferred cylinder reading for Meketaton is:
+
+`   `
+
+Under the already-frozen external interpretation:
+
+- initial `` corresponds to `me`;
+- terminal `` is the Aton-related sign/logogram;
+- the residual middle material therefore represents the pre-Aton part of *Meket-*.
+
+The Egyptian name is conventionally transliterated `mk.t-ỉtn` / *Meket-Aten*. Whatever the exact vocalization, the segment immediately before the divine name is **t-bearing**. Thus the penultimate cylinder sign `` is constrained to a T-bearing phonetic function **if** the order-preserving name alignment and whole-ATON segmentation are correct.
+
+Now the useful OCBI fact: the current working syllabary groups `` with `` (``) as forms of one grapheme type. BYBL k's held-out cluster ends in exact ``:
+
+`  `
+
+So, conditional on the cylinder alignment **and** the OCBI ` ~ ` variant grouping, BYBL k V4 has a partial phonetic skeleton:
+
+> **`ME – ? – T(?)`**
+
+This is stronger than merely observing `ME-X-Z`: two constraints derived by different routes meet on a core inscription.
+
+### Why this is not circular proof
+
+It would be circular to use BYBL k itself to prove that `` is a T-sign and then claim BYBL k validates the T-sign. That is not what is being done.
+
+The dependency chain is explicit:
+
+1. external picture/name identification → Meketaton sequence;
+2. `ME` and `ATON` anchors → penultimate cylinder sign is T-bearing under order-preserving segmentation;
+3. pre-existing OCBI form grouping links `` to ``;
+4. only then is BYBL k inspected as held-out core material.
+
+The weak link is step 3: the OCBI grouping is syntax/shape based and not externally proven. Therefore `ME–?–T(?)` is a **conditional partial reading**, not a new definitive sound value.
+
+It is nevertheless a high-value target because a future independent confirmation that `` and `` are true allographs would instantly upgrade the BYBL k cluster.
+
+---
+
+## 5. What this supports — and what it does not
 
 ### Supported
 
@@ -89,19 +132,21 @@ This ranking is structural only. It does not identify a language.
 2. **The cylinder-to-core transfer is no longer completely untested.** The externally proposed `ME` sign predicts a repeated structural environment in material not used to derive the value.
 3. **`` is now a priority candidate word/morpheme/formula unit.** It appears intact on two different core inscriptions and `` is a close third member.
 4. **The local boundary signature is asymmetric:** neighbours outside the cluster vary maximally in this tiny sample while its first internal edge is fixed.
-5. **Do not propagate `me` indiscriminately to every form merged with `` in older OCBI syllabaries.** The exact form has a distinctive core distribution. Mirrored `` remains externally motivated on the cylinder, but broader allograph groups need their own distributional tests.
+5. **BYBL k has a conditional `ME–?–T(?)` skeleton** if the daughter-name segmentation and OCBI ` ~ ` grouping survive.
+6. **Do not propagate `me` indiscriminately to every form merged with `` in older OCBI syllabaries.** The exact form has a distinctive core distribution. Mirrored `` remains externally motivated on the cylinder, but broader allograph groups need their own distributional tests.
 
 ### Not supported
 
 - `` has **not** been given a phonetic value.
-- `` and `` have **not** been shown to be variants, case endings, or a paradigm.
+- `` and `` have **not** been shown to be case endings or a paradigm.
+- exact ` = t/ta/ti` has **not** been proven; only a conditional T-bearing class is proposed through its grouping with ``.
 - a word boundary has **not** been proved.
 - the sequence has **not** been translated.
 - three tokens are too few for a strong asymptotic significance claim, and the common follower was noticed after examining the contexts, so no post-hoc p-value is presented.
 
 ---
 
-## 5. The tempting leap: `melek` / "king" — rejected for now
+## 6. The tempting leap: `melek` / "king" — rejected for now
 
 A three-sign sequence beginning with externally proposed `ME`, recurring on inscriptions from Byblos, naturally tempts a Northwest-Semitic reader to see a reflex of *mlk* “king”. That would be a spectacular anchor if true.
 
@@ -110,7 +155,7 @@ I am **not promoting it**.
 Reasons:
 
 1. The historical Northwest-Semitic form is normally reconstructed with a consonantal skeleton *mlk* and forms such as *malku*; a surface `me-le-k` segmentation would import a later-looking vocalization without evidence.
-2. We have no external value for ``, `` or ``.
+2. We have no external value for `` or ``, and the conditional T-class at BYBL k points in a different direction from blindly forcing final K.
 3. Mäder's own methodological critique correctly warns that repeated sign patterns become fake paradigms very easily before word boundaries are known.
 4. The three core contexts do not yet carry externally identified royal names or titles that would independently predict “king”.
 
@@ -120,7 +165,7 @@ A future discovery of `` beside a securely identifiable royal name/titl
 
 ---
 
-## 6. Stronger interpretation of the result
+## 7. Stronger interpretation of the result
 
 The important advance is not the guessed language. It is the shape of the search space.
 
@@ -134,13 +179,13 @@ After this pass:
 
 `ME – X – {Y, Z}`
 
-with two independent objects sharing `ME – X – Y` exactly and all surrounding one-sign contexts changing.
+with two independent objects sharing `ME – X – Y` exactly and all surrounding one-sign contexts changing. One third member, BYBL k, can additionally be written conditionally as `ME–?–T(?)` through a pre-existing cylinder-derived grapheme-class relation.
 
 That is enough to justify treating `{,}` as a frontier target rather than searching the whole corpus blindly.
 
 ---
 
-## 7. Next kill test
+## 8. Next kill test
 
 Do not translate the sequence yet. Test its boundaries against the full OCBI n-gram/word-boundary machinery.
 
@@ -151,9 +196,9 @@ B. after `` — supporting an invariant two-sign stem/onset;
 C. inside `` — weakening the strongest observed unit;
 D. nowhere consistently — suggesting the recurrence is structural but not word-level.
 
-Only after one boundary model survives should language be spent on the unit.
+Then test the **T-class dependency** separately: inspect every clear core occurrence of exact `` and `` without assuming a language. If their positional/adjacency profiles are incompatible, reject the OCBI allograph merge and remove the `ME–?–T(?)` reading. If they behave compatibly, the cylinder supplies an external phonetic interpretation for that merged class.
 
-A second falsifier is the proposed `ME` allograph set. The exact `` form occurs once outside the cylinder, in BYBL f recto, but the following position is unreadable/uncertain. New or better imaging that resolves that follower is disproportionately valuable: if `` truly behaves as the same phonetic sign as ``, it should eventually participate in compatible structural environments rather than an unrelated distribution.
+A third falsifier is the proposed `ME` allograph set. The exact `` form occurs once outside the cylinder, in BYBL f recto, but the following position is unreadable/uncertain. New or better imaging that resolves that follower is disproportionately valuable: if `` truly behaves as the same phonetic sign as ``, it should eventually participate in compatible structural environments rather than an unrelated distribution.
 
 ---
 
@@ -165,4 +210,4 @@ A second falsifier is the proposed `ME` allograph set. The exact `` form occu
 
 ## Epistemic status
 
-**New structural finding; provisional support for transfer of an external phonetic anchor; candidate local boundary family; not a decipherment of the lexical sequence.**
+**New structural finding; provisional support for transfer of an external phonetic anchor; candidate local boundary family; one conditional two-anchor core skeleton (`ME–?–T(?)`); not a decipherment of the lexical sequence.**
