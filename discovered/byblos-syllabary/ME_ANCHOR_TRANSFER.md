@@ -55,26 +55,53 @@ It also answers one of the concerns in Mäder 2021 in a more useful way than raw
 
 ---
 
-## 3. What this supports — and what it does not
+## 3. A local boundary test already leans toward a unit
+
+The immediate neighbourhood gives one more language-free constraint.
+
+| witness | left neighbour | internal family | right neighbour |
+|---|---|---|---|
+| BYBL i | `` | `` | `` |
+| BYBL k | `` | `` | `` |
+| BYBL m | `` | `` | `` |
+
+The **three left neighbours are all different** and the **three right neighbours are all different**, while the first internal transition ` → ` is invariant and two of three preserve the whole `` trigraph.
+
+This is exactly the shape one wants from a candidate lexical/morphemic unit: low variation inside, high variation outside. With only three tokens it is not enough to declare a word boundary, but it makes boundary models *around* the cluster cheaper than models that split the invariant `` pair.
+
+A second useful fact is that the exact bigrams `` found here are not just the ordinary fate of every ``: the OCBI transcription has many other `` contexts. The concentration is conditional on the rare `` anchor.
+
+### Current boundary ranking
+
+1. **Best provisional model:** `| {,} |` — three-sign lexical/morphemic family.
+2. **Close alternative:** `|  | {,}...` — invariant two-sign stem/onset followed by variable material.
+3. **Weaker:** split between `` and ``; this spends the strongest held-out adjacency for no compensating evidence.
+
+This ranking is structural only. It does not identify a language.
+
+---
+
+## 4. What this supports — and what it does not
 
 ### Supported
 
 1. **Exact `` behaves as a coherent graphemic form in the core corpus.** Its three clear held-out uses all enter the same adjacency family.
 2. **The cylinder-to-core transfer is no longer completely untested.** The externally proposed `ME` sign predicts a repeated structural environment in material not used to derive the value.
 3. **`` is now a priority candidate word/morpheme/formula unit.** It appears intact on two different core inscriptions and `` is a close third member.
-4. **Do not propagate `me` indiscriminately to every form merged with `` in older OCBI syllabaries.** The exact form has a distinctive core distribution. Mirrored `` remains externally motivated on the cylinder, but broader allograph groups need their own distributional tests.
+4. **The local boundary signature is asymmetric:** neighbours outside the cluster vary maximally in this tiny sample while its first internal edge is fixed.
+5. **Do not propagate `me` indiscriminately to every form merged with `` in older OCBI syllabaries.** The exact form has a distinctive core distribution. Mirrored `` remains externally motivated on the cylinder, but broader allograph groups need their own distributional tests.
 
 ### Not supported
 
 - `` has **not** been given a phonetic value.
 - `` and `` have **not** been shown to be variants, case endings, or a paradigm.
-- the location of a word boundary has **not** been established.
+- a word boundary has **not** been proved.
 - the sequence has **not** been translated.
 - three tokens are too few for a strong asymptotic significance claim, and the common follower was noticed after examining the contexts, so no post-hoc p-value is presented.
 
 ---
 
-## 4. The tempting leap: `melek` / "king" — rejected for now
+## 5. The tempting leap: `melek` / "king" — rejected for now
 
 A three-sign sequence beginning with externally proposed `ME`, recurring on inscriptions from Byblos, naturally tempts a Northwest-Semitic reader to see a reflex of *mlk* “king”. That would be a spectacular anchor if true.
 
@@ -93,7 +120,7 @@ A future discovery of `` beside a securely identifiable royal name/titl
 
 ---
 
-## 5. Stronger interpretation of the result
+## 6. Stronger interpretation of the result
 
 The important advance is not the guessed language. It is the shape of the search space.
 
@@ -107,21 +134,21 @@ After this pass:
 
 `ME – X – {Y, Z}`
 
-with two independent objects sharing `ME – X – Y` exactly.
+with two independent objects sharing `ME – X – Y` exactly and all surrounding one-sign contexts changing.
 
 That is enough to justify treating `{,}` as a frontier target rather than searching the whole corpus blindly.
 
 ---
 
-## 6. Next kill test
+## 7. Next kill test
 
-Do not translate the sequence yet. Test its boundaries.
+Do not translate the sequence yet. Test its boundaries against the full OCBI n-gram/word-boundary machinery.
 
-For each occurrence, use the OCBI/word-boundary machinery and the surrounding repeated n-grams to ask whether boundaries repeatedly fall:
+For each occurrence, ask whether independent boundary scores repeatedly fall:
 
 A. before `` and after `/` — supporting a three-sign lexical unit;
-B. inside `...` — weakening the lexical-unit idea;
-C. after `` — suggesting `ME` itself is an independent morpheme/sign;
+B. after `` — supporting an invariant two-sign stem/onset;
+C. inside `` — weakening the strongest observed unit;
 D. nowhere consistently — suggesting the recurrence is structural but not word-level.
 
 Only after one boundary model survives should language be spent on the unit.
@@ -138,4 +165,4 @@ A second falsifier is the proposed `ME` allograph set. The exact `` form occu
 
 ## Epistemic status
 
-**New structural finding; provisional support for transfer of an external phonetic anchor; not a decipherment of the lexical sequence.**
+**New structural finding; provisional support for transfer of an external phonetic anchor; candidate local boundary family; not a decipherment of the lexical sequence.**
