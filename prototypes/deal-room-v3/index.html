@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"/>
+<meta name="theme-color" content="#17130f"/>
+<title>DEAL ROOM — Executive War Room</title>
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="ambient"></div><div class="toast" id="toast"></div>
+<div id="app">
+  <header class="topbar"><div class="brand"><span>◆</span> DEAL ROOM</div><div class="hud"><div class="pill">Rating <b id="rating">1,426</b></div><div class="pill">Streak <b id="streak">4</b></div><button class="sound" id="sound" aria-label="Toggle sound">♪</button></div></header>
+  <main class="room" id="room"><div class="edge"></div><section class="scene" id="scene">
+    <div class="stageTitle"><small>Executive War Room</small><b id="roomName">Deal #184</b></div>
+    <div class="clock"><div class="clockFace"><div class="dialRing" id="dialRing"></div><div class="needle" id="needle"></div><div class="clockText"><b id="pct">12%</b><span id="stage">Discovery</span></div></div><div class="clockLabel">deal progression</div></div>
+    <div class="ticker"><span>Intel opened <b id="intelCount">0/6</b></span><i class="dot"></i><span>Position <b id="positionState">Flexible</b></span></div>
+    <article class="dealfile" id="dealfile"><div class="binder"></div><div class="redstamp">Confidential</div><div class="dealKicker" id="category">Enterprise Software</div><div class="dealAmount" id="amount">$8.4M</div><div class="dealAsk" id="ask">Supplier asks <em>+14%</em></div><div class="dealContext" id="context">Renewal required before quarter end. The business says the platform is deeply embedded.</div><div class="dealMeta"><span id="meta1">Renewal</span><span id="meta2">Critical</span><span id="meta3">38 days</span></div></article>
+    <button class="object report" id="obj0" data-i="0" aria-label="Market report"><div class="reportPaper"><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="objLabel">Market report <span class="costTag">+16%</span></div></button>
+    <button class="object laptop" id="obj1" data-i="1" aria-label="Usage analytics"><div class="screen"><small>Usage console</small><div class="chartLine"><svg viewBox="0 0 100 50" preserveAspectRatio="none"><polyline fill="none" stroke="#7a9a82" stroke-width="2" points="0,39 15,31 28,35 43,19 57,25 71,17 84,21 100,9"/></svg></div></div><div class="lbase"></div><div class="objLabel">Usage analytics <span class="costTag">+12%</span></div></button>
+    <button class="object dossier" id="obj2" data-i="2" aria-label="Supplier dossier"><div class="folder"><b>Supplier<br/>Dossier</b><span class="conf">RESTRICTED</span></div><div class="objLabel">Supplier dossier <span class="costTag">+18%</span></div></button>
+    <button class="object bids" id="obj3" data-i="3" aria-label="Alternative bids"><div class="stack"><div class="bid"><strong>Bid C</strong></div><div class="bid"><strong>Bid B</strong></div><div class="bid"><strong>Bid A</strong></div></div><div class="objLabel">Alternative bids <span class="costTag">+25%</span></div></button>
+    <button class="object contract" id="obj4" data-i="4" aria-label="Contract"><div class="contractPaper"><h4>Master Agreement</h4><div class="lines"></div><div class="sig">Authorised signature</div></div><div class="objLabel">Contract <span class="costTag">+10%</span></div></button>
+    <button class="object phone" id="obj5" data-i="5" aria-label="Stakeholder"><div class="phoneBody"><div class="phoneScreen"><div class="bubble">Need this closed before Friday.</div><div class="bubble">Can we avoid disruption?</div></div></div><div class="objLabel">Stakeholder <span class="costTag">+14%</span></div></button>
+    <div class="actionZone"><button class="makeMove" id="makeMove">Make your move</button><span class="hint">Stop investigating whenever you’re ready.</span></div>
+  </section></main>
+</div>
+<div class="inspect" id="inspect"><article class="inspectCard paper" id="inspectCard"><div class="inspectTop"><div><small id="inspectType">Market Intelligence</small><h2 id="inspectTitle">Market Report</h2></div><button class="closeInspect" id="closeInspect">×</button></div><div class="intelSignal" id="intelSignal">−8% → −14%</div><div class="intelDetail" id="intelDetail">Comparable enterprise deals are landing well below your current commercial position.</div><div class="confidence"><span>Signal confidence</span><i></i><b id="confidence">High</b></div><div class="paid" id="paid">Cost +16%</div><button class="continueBtn" id="continueBtn">Return to table</button></article></div>
+<div class="decision" id="decision"><section class="decisionPad"><button class="decisionClose" id="decisionClose">×</button><h2>Make the call</h2><p>Choose the position you are willing to defend with the intelligence you have.</p><div class="positions" id="positions"></div><button class="lockBtn" id="lockBtn" disabled>Lock position</button></section></div>
+<div class="showdown" id="showdown"><article class="outcomeDoc"><div class="stampClosed">Closed</div><h2 id="outcome">−5.7%</h2><h3 id="valueCapture">$1.65M value captured</h3><div class="outcomeGrid"><div><small>Deal score</small><b id="score">87</b></div><div><small>Percentile</small><b id="percentile">82%</b></div><div><small>Intel efficiency</small><b id="efficiency">91</b></div><div><small>Timing</small><b id="timing">84</b></div></div><div class="lesson" id="lesson"></div><div class="compareRow"><span>You <b id="cmpYou">−5.7%</b></span><span>Average <b id="cmpAvg">+0.8%</b></span><span>Top 10% <b id="cmpTop">−8.9%</b></span></div><button class="nextBtn" id="nextBtn">Next deal</button></article></div>
+<script src="app.js?v=3"></script>
+</body>
+</html>
