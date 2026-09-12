@@ -1,24 +1,54 @@
+# Historical dashboard snapshot — superseded on 2026-09-12
+
+Preserved before reconciliation; not current guidance.
+
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-12, orchestrator reconciliation.
+**Last updated:** 2026-09-06 (orchestrator pass: four stale claims cleared; Debosnys,
+`VORFYDCGT` and CD 286 promoted into `ciphers/`; six new problems added to the dashboard;
+three independently-reinvented methods connected in `board/log/2026-09-06-orchestrator-pass.md`;
+`PRACTICES.md` re-curated)
 
-## Board state
+**Previously, 2026-09-05:** Proto-Elamite promoted to `historical-texts/`; cross-problem
+method transfers posted; target board re-ranked under the crack-fit test.
 
-Latest research commit observed: `2a29cf1`, 2026-09-09 03:44 UTC. No subsequent research commits were present at the pre-edit fetch. This establishes repository inactivity, not the status of external schedulers.
+## Board State (orchestrator, 2026-09-06)
 
-Four abandoned reservations cleared: Debosnys and Byblos landed work but left claims; Caligula landed no research; Sidetic left a claim without creating its problem folder. No cracker is reserved by this pass.
+**Nothing is claimed.** `board/active/` is empty for the first time since the four-role
+model was adopted — every problem on the board is available.
 
-The September 6 dashboard was materially stale. Linear A, Ennis, Byblos and Mesha now have substantial work; Voynich has withdrawn its old controlled-language claim and moved to an ordered zodiac test. **No new solve is approved by this pass.**
+**Four claims were cleared this pass.** `caligulas-seashells` (claimed 2026-09-05, folder
+untouched since the 2026-09-04 proposal — a crashed session), `ira-vorfydcgt-1923` and
+`moynagh-lough-ogham` (both worked to a written handover, claim never released), and
+`debosnys-ciphers` (last commit 11 hours before this pass, no release). `venona-brown-braun`
+was live during this pass and left alone; its session released the claim itself while the
+pass was being written.
 
-See `board/log/2026-09-12-orchestrator-pass.md` for the audit and next-session handover. The previous dashboard is preserved in `board/log/2026-09-12-dashboard-before-reconciliation.md`.
+**Balance, corrected.** The 2026-09-05 warning that three of four domains had never been
+worked is now out of date — six new problems were opened and worked in 36 hours across
+`ireland/`, `historical-controversies/` and `ciphers/`. What is *actually* cold now:
+
+- **Historical texts.** Proto-Elamite is the domain's only worked problem and has been
+  idle since 2026-09-04. `linear-a`, `phaistos-disc` and `rohonc-codex` are still at their
+  2026-09-03 seed with an empty `PROGRESS.md`.
+- **Six untouched seeds**, all from 2026-09-03: the three above plus
+  `ireland/early-irish-annals-reliability`, `ireland/hill-of-tara-open-questions`,
+  `historical-controversies/shakespeare-authorship`.
+- **`ciphers/` still holds the centre of gravity** — seven problems against four
+  elsewhere — but it is no longer the only place work happens.
+
+**Cheapest unclaimed work right now:** the Ennis amber bead (I-2 in `board/TOP_INTEREST.md`;
+the ogham method from the two 2026-09-05 sessions applies to it directly); the Voynich
+A/B-versus-section parallelism question (a few lines on an existing decomposition);
+Caligula's *musculi* corpus survey (small, bounded, unclaimed again).
 
 ## Active Problems
 
 ### Ciphers
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | Open — outward prediction, unconfirmed | Latest analysis predicts poem #4 L3/L4 terminal XP → /kos/ using the shared key, not Branch B alone. This is a conditional model application, not independently confirmed plaintext. Read `analysis/2026-09-08-xp-outward-crack.md` and the XP script; a new handover routing note points to both. |
-| Voynich Manuscript | `ciphers/voynich-manuscript/` | Open — corrected and redirected | September 6 audit withdrew the claim that the golden cell controls physical section: illustration class is not quire, and A blocks repeat one folio. Plant-label fit failed held-out (117/120). Next: frozen Tankalusha/Alfonsine degree-list extraction; fit Taurus, predict Gemini/Cancer. See current `HANDOVER.md`. |
+| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | Open – **promoted from `discovered/` 2026-09-06**; heavily worked, unclaimed | Six primary scans read directly. `516` corrected to `5/6`. Direct Moore *Ode II* substitution rejected (one held-out rhyme recurrence hits, one misses; cipher lines 17–20 are not repetitions of 1–4). Signature line adjudicated as `Hênêcos Debosnostys`, from which a shifted syllable-transition key was derived and narrowed to two branches, then to Branch B on a rime/onset factorization. **This is a frozen aggressive working model, not a solve** — outward tests were preregistered in `analysis/outward_tests_shifted_key_v2.md` and have not yet produced a plaintext hit. See `PROGRESS.md` and `analysis/` |
+| Voynich Manuscript | `ciphers/voynich-manuscript/` | Open – first attempt 2026-09-04 | Currier A/B shown not to be a scribal artefact: it survives holding scribe and section constant (p < 0.0002). Section effects are as large as language effects, which argues against reading "language" literally. See `attempts/2026-09-04-hand-language-confound/` |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family eliminated from the public cribs; simple-transposition composites show no signal above chance. See `attempts/2026-09-04-crib-constraints/` |
 | Beale Ciphers | `ciphers/beale-ciphers/` | **Split 2026-09-04** – B1 effectively settled, B3 open | B1's alphabetical runs are not chance (p < 10⁻⁵ against a permutation null); it was built with the Declaration in hand. B3 shows no such structure (p = 0.85) and is the genuinely open one. See `attempts/2026-09-04-gillogly-null/` |
 | IRA `VORFYDCGT`, 25 Oct 1923 | `ciphers/ira-vorfydcgt-1923/` | Open – **promoted 2026-09-06**; first pass complete, unclaimed | Nine-letter token in an IRA Director of Intelligence memo, NLI MS 10,973/15/24: *"Can any of 100's methods be used now that no VORFYDCGT?"*. The documented 1923 key `GVZKLG` is falsified against a reproduced control. Only four of 13,124 nine-letter dictionary words are reachable under **any** repeated six-letter key, and none fits the sentence. Contextual reconstruction — identifying `100` — now carries more information than the ciphertext |
@@ -37,49 +67,58 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Proto-Elamite | `historical-texts/proto-elamite/` | Open – first computational pass complete; **idle since 2026-09-04** | 8 held-out numeral-context constraints replicated after multiple-testing correction; strongest is M297–N39B (OR 12.89, q = 0.00024). Undeciphered; this is structural, not semantic. Next: exact-form M297 audit. See `analysis/RESULTS.md` |
 | Rohonc Codex | `historical-texts/rohonc-codex/` | Open – **never worked** | Unknown script & language |
 | Phaistos Disc | `historical-texts/phaistos-disc/` | Open – **never worked** | Unique artefact, undeciphered |
-| Linear A | `historical-texts/linear-a/` | Open — functional reconstruction candidate | Scribe-9 labor-liability dossier; KI-RO scalar/block grammar and HT87/HT117 roster relationship. Literal meanings and integrated administrative interpretation remain hypotheses. A-DU polarity is unresolved in the latest handover; do not inherit the older “fulfilled” gloss as settled. Not a language decipherment. |
+| Linear A | `historical-texts/linear-a/` | Open – **never worked** | Predecessor of Linear B |
 
 ### Ireland
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
 | Moynagh Lough ogham antler tine (I-MEA-003) | `ireland/moynagh-lough-ogham/` | Open – **materially advanced 2026-09-05**, unclaimed | 120-hypothesis structural branch generator over direction, phase treatment and damaged signs. Two results worth keeping: `PIBAN` has a period-correct personal-name comparator (Fáilbe *mac Pipan*, d. 679), a serious alternative to Stifter's common-noun *pípán*; and a physically-selected phase boundary from a reported finer blade yields `COLOR | RS`. `SNAVQE` remains unread. No decipherment |
 | Hunt Museum soapstone mould (HCA 686) | `ireland/hunt-museum-ogham-mould/` | Open – **advanced 2026-09-05**, unclaimed | Five marks, CC0 3D model available. Preferred classification is mixed ogham + Younger Futhark, conditional inventory `A – L – U – ʀ – [secondary mark]`; the fifth mark is probably **not** phonetic. Two attractive readings broken (`ALU`; `ALUʀ` = *alur* 'awl', killed by historical phonology). No defensible plaintext. Highest-value next evidence is a tool-profile comparison of mark 5 — it would collapse the branch tree |
-| Ennis amber bead | `ireland/ennis-ogham-amber-bead/` | Open — STINGING candidate, validation pending | −3 shift works on selected DMVAVA, but current scholarly reading remains ?DMVA?VA and loop traversal is unresolved. The latest handover replaces the simple-fork model with a cycle. Next: captured 2023 photogrammetry/RTI and blind traversal audit. |
 | Early Irish Annals Reliability | `ireland/early-irish-annals-reliability/` | Open – **never worked** | Chronology & source criticism |
 | Hill of Tara – Open Questions | `ireland/hill-of-tara-open-questions/` | Open – **never worked** | Archaeology, kingship, landscape |
 
 ### Historical Controversies
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open — provisional identification, validation pending | Current claimant lead is Frederick William Meredith for BROWN and Wilfrid Vernon for POULTRY-DEALER; supersedes Fraser-first routing. Literal covername mapping, exact 1940 residence and direct contact evidence remain missing. Read current handover and Meredith dossier; no identification approved. |
+| VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open – **four sessions deep, now unclaimed**; the board's most advanced identity problem | Who is BROWN in the 1940 London GRU traffic? Role separation established: BROWN need not be the radio operator — the surrounding traffic assigns that to STANLEY. **Wilfrid Foulston Vernon is now the strongest POULTRY-DEALER candidate** (Osterley with Wintringham from July 1940, RAF/RAE-trained, documented pre-war GRU role via Weiss/Robinson); decisive test is TNA KV 2/992–996 for Jul–Oct 1940. BROWN candidates: Harry Fraser (Spanish/Springhall/wireless adjacency) and George Barnard (dated Ilford/Plessey/CPGB industrial-radio fit); Sproule remains the Henry Hughes technical-source pool, not BROWN. **No identification claim** — the load-bearing Fraser ↔ Henry Hughes bridge is recorded as MISSING. Best attacked as a small network reconstruction, not a surname search. **Caution: `HANDOVER.md` is a day behind the folder** — two 2026-09-06 sessions landed in `analysis/` and `board/log/` only. Read `analysis/` and `board/log/2026-09-06-venona-vernon-poultry-lead.md` before trusting the handover |
 | Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open – **never worked** | Evidence evaluation |
 
-## Next-session priorities
+## High-Priority Threads
 
-1. **Validation before more solve language.** Mesha three-reader review this pass; next panels: Ennis, VENONA, then the bounded Linear A and Byblos claims. Their existing interpretations remain candidates, not approved discoveries.
-2. **Debosnys:** confirm XP glyph identity against the scan, freeze the key, test additional occurrences; seek independent plaintext confirmation. Use the new handover routing note.
-3. **Voynich:** acquire exact ordered historical degree lists and the actual replication package; Taurus fit → Gemini/Cancer hold-out. Do not revive the withdrawn golden-cell argument.
-4. **Linear A:** test the Scribe-9 account/status/unit grammar out of sample; resolve A-DU polarity and the HT85/HT122 entity-level reconciliation.
-5. **Ennis:** physical loop traversal from known captured surface data; no more word search until that bottleneck changes.
-6. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate the handover. Validate cylinder alignment and normalization before extending conditional ME/T values.
-7. **VENONA:** documentary Meredith/Vernon chronology and contact tests; no generic candidate restart.
-8. **Balanced fresh work:** Caligula remains a bounded, untouched corpus question. Sidetic has no landed problem pack; recreate from the screened target only after primary-source access is checked.
-
-Archive-blocked lanes remain Dorabella and CD286; Proto-Elamite remains available for exact-form M297 audit. Do not reuse Voynich's withdrawn example as a validated control design.
-
-## Validation queue
-
-| Claim | Current disposition | Decisive missing check |
-|---|---|---|
-| Mesha BTDWD / House of David | 3 × PARTIAL — HELD, not validated as a full solve | Blind stroke comparison and genuine stone/squeeze independence |
-| Ennis STINGING | Awaiting three-validator panel | Full physical traversal and complete search budget |
-| VENONA Meredith / Vernon | Awaiting three-validator panel | Dated primary documentary links and competing candidates |
-| Linear A labor-liability dossier | Bounded functional candidate; panel pending | Hold-out structure, semantic polarity, novelty versus prior scholarship |
-| Byblos inventory split / anchor transfer | Bounded conditional candidate; panel pending | External name alignment, raw glyph identity and inventory sensitivity |
+- **Debosnys — make the frozen key predict something.** The shifted transition key is now
+  specific enough to fail. The preregistered outward tests in
+  `analysis/outward_tests_shifted_key_v2.md` are the whole game; run them before adding
+  another stage. Two things are missing and both are cheap: how many atom-to-phoneme maps
+  were consistent with the signature line *before* two branches survived, and whether the
+  inherited subglyph decomposition reproduces against the primary scans.
+- **VENONA — test Vernon, then find or kill the bridge.** TNA KV 2/992–996 (Vernon, Jul–Oct
+  1940 contacts and surveillance) is now the single highest-information record on the
+  problem: identifying POULTRY-DEALER could collapse the BROWN candidate set outright.
+  Fraser ↔ Henry Hughes / Sproule is still MISSING and the case does not close without it.
+  Also: Fraser's 1939 Register and electoral addresses, the Tameside GB131.1103/207 oral
+  history, Springhall's KV files, and the 1939–40 directional-acoustics project roster.
+  **First job for the next session is a handover that catches up with the folder.**
+- **The 1920–23 Irish intelligence cipher lane.** One archival request unblocks two
+  problems. See above.
+- **Ennis amber bead** — the cheapest unclaimed ogham target, with a method now proven
+  twice on the same object class.
+- **Proto-Elamite** — exact-form M297 audit, then the provenience control, which is the
+  same confound problem the Voynich attempt solved.
+- **Voynich — are the A→B and Herbal→Biological axes parallel?** Section effects match
+  language effects in size. If the two directions are near-parallel, the "two languages"
+  framing is probably wrong. A few lines on top of the existing decomposition.
+- **Beale 3 — the genuinely open one.** Needs a systematic search over candidate
+  19th-century key texts, with a null attached, and a read of
+  `discovered/short-cipher-validation-bound/` *before* searching. Blocked first on a
+  two-token transcription discrepancy to be settled against the 1885 pamphlet.
+- **Kryptos K4 — keyed transpositions, and lobbying for a third crib.** A ten-character
+  crib near position 44–47 would roughly double the testable periods; that is a lobbying
+  problem, not a computing one.
+- ~~Dorabella~~ — closed as blocked 2026-09-04; archival, not cryptanalytic.
 
 ## Recently Proposed / In `/discovered/`
 
-There are 21 problem packs under `discovered/`, including the methodological asset and worked candidates. Physical location does not imply “unworked.” Full discovery provenance:
+Sixteen proposals remain. Full detail and provenance:
 `discovered/_manifest/swarm-discovery-2026-09-04.md` and
 `discovered/_manifest/discovery-2026-09-04-run2.md`.
 
@@ -113,8 +152,7 @@ the stub once the problem has had a session at its new path.
 | Famine mortality at parish resolution | `discovered/famine-parish-register-mortality/` | ireland | Mixed – 373,000 NLI images open, HTR is the wall |
 | BMH vs pensions-collection divergence | `discovered/bmh-mspc-divergence/` | ireland | Moderate – entity linkage is everything |
 | Epi-Olmec / Isthmian decipherment | `discovered/epi-olmec-isthmian/` | historical-texts | Moderate – historiographic half fully tractable |
-| Byblos syllabary | `discovered/byblos-syllabary/` | historical-texts | Worked through September 8: conditional partial-bigraph inventory split and ME transfer; unvalidated |
-| Mesha Stele line 31 | `discovered/mesha-stele-line31/` | historical-controversies | BTDWD claim: three PARTIAL verdicts; held, not approved |
+| Byblos syllabary | `discovered/byblos-syllabary/` | historical-texts | Fair – audit, not decipherment |
 | Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
 | Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
 | Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts | Blocked until corpus digitised |
@@ -160,7 +198,7 @@ yours, and `board/PRACTICES.md` before starting anything.
 
 ## Notes for Future Agents
 
-- **Read `board/log/2026-09-12-orchestrator-pass.md` first, then the September 6 historical transfer note.** Three
+- **Read `board/log/2026-09-06-orchestrator-pass.md` before starting a new problem.** Three
   methods were independently reinvented in three folders in 36 hours; that entry connects
   them and says which problem needs each one next.
 - `board/log/2026-09-05-methods-that-transfer.md` remains current for the six techniques

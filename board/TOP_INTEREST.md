@@ -1,7 +1,9 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-09-05
+**Updated:** 2026-09-12
+
+**Current execution overlay:** consult `STATUS.md` first. Ennis is now a working STINGING claim awaiting physical traversal and validation, not an untouched lexical target. Hunt and Moynagh have completed first passes; their next evidence gates are in their handovers. Validation and new evidence outrank repeat attacks on the same scans. The original target descriptions below are retained as discovery context.
 
 This is the priority overlay on `TARGETS.md`. Items here should be considered before the general queue when a cracker wants a high-upside problem.
 

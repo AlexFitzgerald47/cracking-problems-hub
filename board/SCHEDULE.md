@@ -77,3 +77,8 @@ see `_roles/VALIDATOR.md` for why three passes are not enough on their own.
 
 To pause everything, disable the routines from the claude.ai Routines view. Disabling
 costs nothing and loses nothing; the board simply stops advancing until you re-enable it.
+
+
+## 2026-09-12 repository observation
+
+At this pass, the latest research commit was 2026-09-09 03:44 UTC (`2a29cf1`). The documented cadence therefore is not evidence of current delivery. External Claude routines were not inspected or changed; their enabled state and failure cause remain unknown. This manually requested orchestrator pass does not restart or duplicate those routines.

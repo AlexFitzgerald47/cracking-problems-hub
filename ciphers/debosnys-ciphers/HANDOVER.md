@@ -1,5 +1,12 @@
 # Handover Notes – The Debosnys Ciphers
 
+## 2026-09-12 — orchestrator routing correction
+
+The latest landed work is `analysis/2026-09-08-xp-outward-crack.md` and `analysis/xp_outward_test.py`; both postdate the handover below. The claimant applies shared X=EC, DOT=OS to poem #4 L3/L4 and predicts /kos/. Both signature branches share these values. This is an outward prediction, not independently verified plaintext. Read those files before extending the key. The old claim was released after a fresh remote check showed no research commit after September 9 03:44 UTC.
+
+Cross-project transfer: Byblos `ME_ANCHOR_TRANSFER.md` also moves an external anchor onto a new occurrence. In both cases, keep visual identity, model output, structural recurrence and independently known phonetic truth as separate evidence levels. See `board/log/2026-09-12-orchestrator-pass.md`.
+
+
 *Update this file at the end of every serious working session. Keep the latest notes at the top.*
 
 ---

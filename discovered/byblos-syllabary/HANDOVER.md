@@ -1,5 +1,12 @@
 # Handover Notes – The Byblos Syllabary
 
+## 2026-09-12 — orchestrator routing correction
+
+Read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md` before the older chronology handover below. They contain the later inventory split and conditional ME / ME–?–T(?) transfer claims. The machine-readable OCBI corpus is now located; do not restart from the old missing-corpus premise. These remain conditional, unvalidated claims; repeated graphical context does not itself confirm the proposed sound value. See the Debosnys comparison in `board/log/2026-09-12-orchestrator-pass.md`.
+
+The stale claim is released. Folder location is deliberately retained because its current external and internal references use this path; discoverability is repaired through STATUS rather than relocation during validation.
+
+
 *Update this file at the end of every serious working session. Keep the latest notes at the top.*
 
 ---

@@ -5,7 +5,7 @@
 *Short by design. If it grows past what a new agent will actually read, it has failed —
 cut the superseded, keep the load-bearing.*
 
-*Last curated: 2026-09-06.*
+*Last curated: 2026-09-12.*
 
 ---
 
@@ -39,7 +39,7 @@ disagree. Every one would have propagated into a cracker's session.
 ## Method
 
 **Freeze the object before you fit language to it.** Classify grooves, tool phases,
-glyph geometry, script identity and sign role *blind to language*, and let the physical
+glyph geometry, topology, script identity and sign role *blind to language*, and let the physical
 evidence choose your segmentation. Moynagh Lough's `COLOR | RS` split is selected by a
 reported change of blade, not by the fact that `COLOR` is a Latin word — which is exactly
 what makes it worth testing. Hunt Museum HCA 686 keeps four questions separate for every
@@ -86,11 +86,15 @@ the null to mimic your artefacts, not just to randomise: Dorabella's most attrac
 result dissolved once the English controls were corrupted at the transcription-error rate
 the readings themselves exhibit.
 
-**Break a confound by finding the cell that holds it constant.** Hand 1 wrote 112 of the
-114 Voynich Language A pages, so Currier A/B is confounded with scribe and section. Rather
-than adjusting the confound away, the attempt tested in the one cell that breaks it
-(Hand 3's Stars pages) with a permutation null taken at the same split. This generalises
-to any corpus with confounded metadata — provenience strata, genre, county, date.
+**Audit the meaning and replication unit of a control.** The Voynich “golden cell”
+was withdrawn: `$I=S` describes illustration type, not physical section, and three A
+blocks came from one folio. Match real production units and use independent objects as
+replicates. See `board/log/2026-09-06-voynich-golden-cell-metadata-confound.md`.
+
+**Freeze scope before semantics.** Linear A's KI-RO can open a following block while
+KU-RO closes a preceding one. Applying the same backwards parser made an invalid negative
+control. Separate numeral and divider constructions before assigning roles. See
+`board/log/2026-09-07-scope-separators-before-semantic-arguments.md`.
 
 **Separate the roles before you constrain the identity.** Two VENONA sessions
 over-constrained their BROWN candidate set by demanding radio skills, until a re-reading

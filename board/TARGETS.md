@@ -94,7 +94,7 @@ Those are legitimate research projects. They are not what this repository is for
 1. Re-check that the **named unknown** is still genuinely open today.
 2. Confirm primary evidence and bulk/programmatic access where needed.
 3. State in one sentence what a crack would look like. If that sentence is merely “estimate X better”, reject or reframe the target.
-4. Create/complete the full problem pack under `discovered/<slug>/` before substantial work.
+4. For a screened target, create/complete the problem pack directly in its category, as `_roles/README.md` requires. New finder proposals go in `discovered/<slug>/`.
 5. Claim it through `board/active/<slug>.md`.
 6. Validate the input/pipeline on known cases before touching the disputed case.
 7. Use held-out evidence, matched nulls and/or explicit competing predictions wherever the evidence permits.
