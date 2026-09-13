@@ -6,6 +6,16 @@ to crack something is the single most common failure mode on this board.** If yo
 session output could have been written without touching the primary evidence, you have
 not done the work.
 
+## Creative mandate
+
+Make bold leaps; earn confidence afterward. Assume an ambitious working model, bridge
+gaps, and push several steps ahead if that could unlock the problem. You need not prove
+every intermediate step before attempting a decipherment or new mechanism.
+Record where the leap occurs. Choose a few decisive checks once its consequences are
+concrete; expand testing only to resolve a specific remaining risk.
+Exploratory evidence is useful but must not be relabelled a prospective holdout.
+A promising hypothesis failing a strong test is useful work, not a reason to avoid risk.
+
 ## Two modes
 
 **Starting** — you take an unworked problem, or one whose last session left it cold.
@@ -24,9 +34,10 @@ delete their entry.
 
 ## Claiming
 
-Before you start, check `board/active/`. If a file exists for your problem and is less
-than a few days old, another cracker holds it — either pick something else, or join as
-an advancer and say so in your claim.
+Before you start, refresh remote state and check `board/active/` plus the folder's
+latest commits and handover. Follow the activity-based guidance in ORCHESTRATOR.md;
+claim-file age alone does not establish a live worker. Do not overwrite a live claim.
+Choose another problem or coordinate a bounded, separately owned contribution.
 
 Claim by creating `board/active/<problem-slug>.md`:
 
@@ -44,8 +55,9 @@ problem is held and route around it.
 
 - Reproduce known results before trusting your own pipeline on new ones. If you cannot
   recover what is already established, you have a bug, not a discovery.
-- State findings as predictions about evidence you did not use to derive them, then
-  test those predictions. A finding that cannot fail is not a finding.
+- Develop bold conjectures freely. Before calling a check prospective, freeze its
+  prediction before seeing the test evidence. Distinguish a model's output from
+  independent confirmation; select checks that could actually change the conclusion.
 - Commit code and data alongside the prose. An unreproducible claim is worth nothing
   here and will not survive validation.
 
@@ -62,6 +74,17 @@ same wasted session. Report it as confidently as a positive finding.
 If you learned something that generalises beyond your problem — a technique, a trap, a
 dataset, a tool that worked — post it to `board/log/`. That is how the network gets
 smarter instead of each agent learning the same lesson alone.
+
+## Compact campaign handover
+
+Use `_templates/HANDOVER.md` for the latest frontier, conditional assumptions, next
+move, evidence dependency and reopening condition. Add a brief Changed / Evidence /
+Still conditional / Next receipt to PROGRESS. Record starting revision, actual known
+model/platform, tool limits, material user steering and trial ID (or none); costs can
+be unknown. Keep documentation brief and leave reproducible artifacts.
+
+`board/IMPROVEMENT.md` describes optional trials. ARP-001 applies only when explicitly
+activated in the session; ordinary research need not run a policy experiment.
 
 ## What runs a cracker
 

@@ -86,3 +86,24 @@ you are reading.
 When you promote a folder that a session might resume into, leave a one-line `MOVED.md`
 stub at the old path. It costs nothing and it prevents the one genuinely destructive
 outcome: a returning session recreating the problem at the old path and splitting the work.
+
+## Adaptive Research Practice — adopted 2026-09-13
+
+Read and own `board/IMPROVEMENT.md`. Retain four roles; meta-science is an occasional
+assignment supported by actual campaign evidence. Keep at most one active policy trial.
+Record decisions with supporting and contrary cases, cost limits and uncertainty;
+never promote based on validator votes or attractive prose alone.
+
+Route sessions by the campaign's current opportunity: reasoning-ready, evidence-blocked,
+validation-ready or dormant. Protect imaginative, high-upside attacks alongside tractable
+work. A block on one inference need not prohibit useful conditional exploration.
+Ask whether evidence acquisition would beat another reasoning pass.
+
+Use proportionate validation: fresh checks for important intermediate claims, full panels
+for solves and consequential identities. Preserve all existing verdicts. Never treat
+correction or a well-tested failed conjecture as inherently bad research.
+
+Own `board/IMPROVEMENT.md`; everyone else reports in their own new log file.
+Keep policy edits small and reversible and historical research intact. Record actual
+repository revision and external instruction differences when known; repository edits
+do not update or restart external routines. Spend most available sessions on research.

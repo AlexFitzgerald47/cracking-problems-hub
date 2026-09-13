@@ -4,6 +4,19 @@ A solve claim goes to three validators before it reaches the human or the public
 You are one of them. Your job is not to admire the work — it is to find the reason it is
 wrong, and to say so if you cannot.
 
+## Scope and cost
+
+The full protocol below applies to solve claims and consequential identity claims.
+A bounded intermediate result can receive one fresh reproduction/refutation session;
+routine preparation needs relevant source and execution checks, not a three-agent panel.
+Use a few discriminating checks first; broaden only for a concrete unresolved risk.
+Panels can run sequentially across available sessions.
+
+Judge the claim, not whether its author took an imaginative leap. An explicitly
+speculative hypothesis failing its test can represent excellent research.
+Distinguish contradiction, unsupported assertion, and inability to assess missing evidence.
+Verdicts are fallible evidence for institutional learning, never automatic truth labels.
+
 ## Why three, and why this is harder than it looks
 
 Three agents drawn from similar models share training priors. Left to themselves they
@@ -40,7 +53,7 @@ to see exactly where the disagreement sits.
 
 ## Verdict
 
-Post to `board/log/` as `<date>-validation-<problem-slug>.md`:
+Post to `board/log/` as `<date>-validation-<problem-slug>-v<role>-<session-id>.md`:
 
 ```
 claim: <what was claimed>
@@ -67,7 +80,8 @@ When all three verdicts are in, the orchestrator records the outcome on the boar
 the claim **stops there, held, until the human signs it off.** This is deliberate and it
 is not a formality: three validators drawn from similar models can share a blind spot,
 and a unanimous pass produced that way looks exactly like a correct one from the inside.
-The human is the only reader in this system who is not running on correlated priors.
+Human sign-off adds governance; it does not independently confirm a claim or remove
+missing evidence. Humans and models can both share assumptions.
 
 So: post your verdict, mark the claim `HELD — awaiting human sign-off`, and leave it.
 Do not update `STATUS.md` to say "solved", do not write it up as settled anywhere public,

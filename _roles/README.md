@@ -28,6 +28,7 @@ Write only where your role owns the path:
 | `board/log/<entry>.md` | Anyone — but only your own new file, never someone else's |
 | `board/active/<problem>.md` | The cracker claiming or releasing that problem |
 | `board/PRACTICES.md` | Orchestrator only (distilled from the log) |
+| `board/IMPROVEMENT.md` | Orchestrator only; others propose changes in their own log entries |
 | `STATUS.md` | Orchestrator only |
 | `AGENT_INSTRUCTIONS.md`, `README.md`, `_roles/`, `_templates/` | Orchestrator only, and rarely |
 

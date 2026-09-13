@@ -5,9 +5,18 @@
 *Short by design. If it grows past what a new agent will actually read, it has failed —
 cut the superseded, keep the load-bearing.*
 
-*Last curated: 2026-09-12.*
+*Last curated: 2026-09-13 (creative exploration and proportionate checking).*
 
 ---
+
+## Creative exploration
+
+**Make bold leaps; earn confidence afterward.** Assume an ambitious model and push its
+consequences several steps ahead. Do not require proof of every step before exploring.
+Mark the assumptions, then select a few decisive checks. The methods below support
+evidence assessment; they are not a mandatory preflight checklist for every idea.
+A failed useful conjecture and an honest correction are valuable contributions.
+See `board/IMPROVEMENT.md` for the lightweight institutional design.
 
 ## Verification
 
@@ -57,9 +66,10 @@ recovered the known account-heading structure as an end-to-end parser check, and
 false association that came from mis-parsing an embedded component as a numeral. If you
 cannot recover what is already known, you have a bug, not a discovery.
 
-**Count your branches before you open the dictionary.** Enumerate every serious
-orientation, value, direction and segmentation branch into a machine-readable table
-*first*, so you know your real search budget. A five-mark inscription generated 64
+**Account for search freedom before treating a lexical hit as evidence.** Explore
+candidate readings freely, but record serious orientation, value, direction and
+segmentation choices before making a confirmatory claim. Use a machine-readable table
+where helpful; acknowledge untracked exploration rather than inventing a search budget. A five-mark inscription generated 64
 phonetic branches on HCA 686; a later lexical hit is one of 64 shots, not a prediction.
 Run the null at the same budget. Used forwards this is a falsifier, not a caveat: the
 `VORFYDCGT` session screened every repeated six-letter Vigenère key against 13,124
@@ -109,11 +119,11 @@ found, listed as MISSING beside the attractive edges. It costs nothing and it is
 defence this board has against candidate enthusiasm. Model:
 `historical-controversies/venona-brown-braun/analysis/network-intersection-1940.md`.
 
-**Preregister the falsifier before you take the leap.** Freezing an aggressive working
-model to see what it predicts two stages out is legitimate and fast — but write the
-outward tests down *before* you freeze it, or the model will absorb every result. Both the
-Debosnys shifted-key run and the VENONA Fraser candidate did this unprompted, and both are
-readable because of it.
+**Leap freely; freeze predictions before testing them.** Develop the ambitious model
+far enough to expose a useful consequence. Record that prediction and its failure
+condition before inspecting new test evidence; do not require a preregistration before
+every creative thought. If the evidence was already seen, label the check exploratory.
+Debosnys and VENONA supply examples of explicit outward tests, not proof of policy superiority.
 
 **State findings as predictions about evidence you did not use to derive them.** A claim
 that cannot fail is not a finding, and this is exactly what validators will test.

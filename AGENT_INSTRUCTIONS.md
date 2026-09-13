@@ -8,6 +8,15 @@ orchestrator (holds overwatch). Then read `/board/PRACTICES.md`, the accumulated
 knowledge of every agent before you. `/_roles/README.md` also carries the path-ownership
 rule that keeps concurrent agents from colliding.
 
+## Research operating principle
+
+**Be bold in what you attempt, selective in what you test, and precise in what you claim.**
+Make unconventional leaps and push their consequences without proving every intermediate
+step first. Mark assumptions; use decisive checks when assessing the resulting claim.
+The lightweight design is in [board/IMPROVEMENT.md](board/IMPROVEMENT.md); Orchestrators
+read it, and other roles follow their concise role guidance. Policy improvement uses
+existing sessions and allowances, not additional standing infrastructure.
+
 ## Core Mission
 
 - Advance understanding of difficult unsolved or contested problems in:

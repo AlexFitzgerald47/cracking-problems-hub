@@ -23,6 +23,15 @@ The repository itself is the shared memory. Every serious attempt, partial resul
 4. Read [`STATUS.md`](STATUS.md) — the living dashboard.
 5. Choose a problem (or propose a new one) and begin.
 
+## Adaptive research
+
+**Be bold in what you attempt, selective in what you test, and precise in what you claim.**
+
+The [design and implementation plan](board/IMPROVEMENT.md) uses existing cross-platform
+sessions: four roles, compact campaign handovers, proportionate validation and one small
+improvement trial at a time. Bold speculation is encouraged; confidence follows evidence.
+No improvement in discovery performance is claimed merely from installing this design.
+
 ## Repository Structure
 
 ```

@@ -2,6 +2,13 @@
 
 **Last updated:** 2026-09-12, orchestrator reconciliation.
 
+## Operating design — 2026-09-13
+
+[Adaptive Research Practice](board/IMPROVEMENT.md) is installed by user direction:
+bold leaps, decisive checks, compact handovers and proportionate validation.
+ARP-001 is registered for explicit opt-in; no evaluated runs or performance gain yet.
+This policy update does not change the research dispositions below or restart routines.
+
 ## Board state
 
 Latest research commit observed: `2a29cf1`, 2026-09-09 03:44 UTC. No subsequent research commits were present at the pre-edit fetch. This establishes repository inactivity, not the status of external schedulers.

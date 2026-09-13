@@ -82,3 +82,12 @@ costs nothing and loses nothing; the board simply stops advancing until you re-e
 ## 2026-09-12 repository observation
 
 At this pass, the latest research commit was 2026-09-09 03:44 UTC (`2a29cf1`). The documented cadence therefore is not evidence of current delivery. External Claude routines were not inspected or changed; their enabled state and failure cause remain unknown. This manually requested orchestrator pass does not restart or duplicate those routines.
+
+## 2026-09-13 operating-design installation
+
+`board/IMPROVEMENT.md` and revised roles define the lightweight research design.
+No external routine configuration was inspected, changed or restarted by this installation.
+The cadence/model tables above remain historical configuration records, not confirmation
+of live execution. Read current repository instructions in each session; record material
+differences in delivered external prompts. ARP-001 requires explicit session activation.
+No new recurring meta-science task is created.
