@@ -1,3 +1,5 @@
+> **Correction later on 2026-09-17:** The Maltravers 1634–35 candidate was solved by Daniel Bourdeau, with notification to Cryptiana on 16 September 2026. Do not promote it as an open problem. See https://dbourdeau.github.io/cyphersolver/ormonde.html . The older notice below is superseded for this candidate.
+
 # 2026-09-17 — Irish cipher discovery candidate notice
 
 Three new finder packs were added under `discovered/`: `crelly-1648-coded-correspondence`, `ormonde-maltravers-1634-cipher`, and `ormond-anglesey-1663-cipher`. See `discovered/_manifest/irish-ciphers-2026-09-17.md` for source access limits and rejected already-solved Lauzun traffic.
