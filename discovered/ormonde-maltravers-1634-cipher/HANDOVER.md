@@ -1,3 +1,5 @@
+> **Latest correction, 2026-09-17:** CLOSED AS A MAIN CIPHER TARGET. Both letters have a published solution: https://dbourdeau.github.io/cyphersolver/ormonde.html . Do not request original scans to begin decipherment. The 1895 calendar and solution page suffice for a replication exercise; two nomenclator values (185 and 149) remain unidentified. The older conditional handover below is superseded.
+
 # Handover Notes
 
 ## Latest session – 2026-09-17
