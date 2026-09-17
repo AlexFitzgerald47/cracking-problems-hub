@@ -1,3 +1,5 @@
+> **Correction, 17 September 2026 — solved target.** Daniel Bourdeau published a reading of both Maltravers letters in September 2026. The alphabet, nulls, and principal nomenclator entries have been recovered; two code values in one clause remain uncertain. This is a historical solution and replication case, not an open decipherment target. No archival scan request is needed to reproduce the published reading: the 1895 calendar prints the figures. See https://dbourdeau.github.io/cyphersolver/ormonde.html and https://cryptiana.web.fc2.com/code/unsolved.htm . The provisional discovery assessment below is retained as an audit trail and superseded by this notice.
+
 # Ormonde–Maltravers cipher letters (1634–35)
 
 ## Statement
