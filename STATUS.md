@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-17, orchestrator pass (PR queue cleared, three promotions, Ennis panel run).
+**Last updated:** 2026-09-17, cracker session (Shakespeare register self-match test run; negative result).
 
 ## Operating design — 2026-09-13
 
@@ -81,7 +81,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
 | VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open — provisional identification, validation pending | Current claimant lead is Frederick William Meredith for BROWN and Wilfrid Vernon for POULTRY-DEALER; supersedes Fraser-first routing. Literal covername mapping, exact 1940 residence and direct contact evidence remain missing. Read current handover and Meredith dossier; no identification approved. |
-| Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open — **worked 2026-09-05; the dashboard was wrong until 2026-09-17**, unclaimed | Burrows's Delta calibrated on 312 single-author early modern plays: 0.824 leave-one-play-out across 27 dramatists, falling to 0.475 once the author's own work within ±10 years is withheld. About half the apparent authorial signal is chronological. Code and results in `attempts/2026-09-05-stylometry-calibration/`. **Next: the register self-match test** — plays against the candidates' non-dramatic prose and verse is the same gap that proved fatal on Junius; the Junius code transfers with a changed corpus loader. Do not restart this from scratch |
+| Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open — **register self-match test run and failed, 2026-09-17**; unclaimed | Two confounds now measured in this folder. Period carries ~half the authorial signal (0.824 → 0.475, 2026-09-05). **Register is larger than the signal**: same author across registers sits at Delta 470.5, different authors within one register at 447.9. Cross-register attribution collapses onto a sink — 59.4% of all non-dramatic chunks went to Lyly, 14 of 27 dramatists absorbed nothing, and on held-out civic pageants Middleton recovered 0 of his own 12, Heywood 0 of 8, Jonson 0 of 5. Both registers built from EEBO-TCP through one pipeline, so this is not an edition artefact; a same-play two-pipeline control sits at 5.3% of the between-author distance. **Do not run the Oxford/Bacon/Derby comparison** — it crosses exactly this gap. Next: regress period out and re-run, and subsample training sets to equal size before quoting the sink figures. See `attempts/2026-09-17-register-self-match/RESULTS.md` |
 | Letters of Junius — authorship | `historical-controversies/junius-letters-authorship/` | Open — **evidence-blocked, and the block is measured**; promoted out of `discovered/` 2026-09-17 | Corpus built and reproducible (Junius from two independent digitisations, 173 acknowledged Francis letters, 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 34/34. **The register gap exceeds the author signal**: same-author cross-register Delta 0.588 vs different-author same-register 0.471; cross-register attribution 0.108 against chance 0.125, within-register 0.848. Francis ranks 8th of 15 and **that ranking is evidence neither way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in the public polemical register 1769–1775 |
 | Mesha Stele line 31 (BTDWD) | `historical-controversies/mesha-stele-line31/` | **HELD — awaiting human sign-off**; promoted out of `discovered/` 2026-09-17 | Three validator verdicts returned 2026-09-12, all PARTIAL. Balak rejected as an epigraphic reading. Not approved as a solve and not to be published as one. Decisive missing check: blind stroke comparison with genuine stone/squeeze independence |
 
@@ -92,11 +92,14 @@ since 2026-09-08. The board is not short of work, it is short of sessions that f
 session that ends without a commit has produced nothing, and a claim left behind fences a
 problem off for days — that is exactly what happened to Debosnys between 09-14 and this pass.
 
-1. **Shakespeare register self-match test — the highest-value cheap session on the board.**
-   The corpus (312 single-author plays) and the code both already exist, and the Junius
-   session has just shown what the answer probably is. One distance computation decides
-   whether the entire stylometric side of the Oxford/Bacon/Derby debate is interpretable.
-   See the 2026-09-17 cross-reference at the top of that folder's `HANDOVER.md`.
+1. **Shakespeare register self-match test — DONE 2026-09-17, and the answer is no.**
+   The stylometric side of the Oxford/Bacon/Derby debate is **uninterpretable**, not
+   merely weak: the register gap it must cross is wider than the author signal, and
+   dramatists cannot recover their own out-of-register work. Two follow-ups are now the
+   cheap high-value items, both with the code already written — (a) regress period out
+   and re-run, which decides whether this folder's two measured confounds are one
+   effect or two, and (b) subsample every author's plays to equal size, which decides
+   how much of the sink is centroid noise. See that folder's `HANDOVER.md`.
 2. **Validation before more solve language.** Ennis panel ran this pass (see the queue
    below). **VENONA is next and is not to be deferred again** — it has been queued since
    2026-09-06 with zero verdicts. Then the bounded Linear A and Byblos claims.

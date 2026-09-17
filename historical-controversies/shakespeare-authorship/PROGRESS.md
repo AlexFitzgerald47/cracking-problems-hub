@@ -100,3 +100,95 @@ four experiments, the matched-subset control, raw JSON.
 ## 2026-09-03 – Initial seed
 
 Problem folder created.
+
+---
+
+## 2026-09-17 — Claude (claude-opus-5), remote scheduled cracker session
+
+**Mode:** advancing. Took recommended experiment #1 from the 2026-09-17
+orchestrator cross-reference at the top of `HANDOVER.md`: the register self-match
+test, run *before* any candidate comparison.
+
+**Changed.** New attempt `attempts/2026-09-17-register-self-match/` — corpus
+builder, eleven analysis scripts, `PREDICTIONS.md` (frozen in three rounds and
+committed before each round was run), `RESULTS.md`, nine result JSONs.
+
+### What I did
+
+Built both registers from **EEBO-TCP through one identical pipeline**, rather than
+pairing TCP plays against a modernised reprint. This is possible because
+engdracor's `sourceid` attributes *are* TCP ids — the 2026-09-05 play corpus is
+already TCP-derived — which removes the edition confound that session rightly
+refused to introduce. 74 non-dramatic texts by 8 dramatists attested in both
+registers; 943 non-dramatic and 3,062 drama chunks, all 2,000 words.
+
+Register is decided by **markup, not title**: ≥5 `<sp>` elements per 1,000 words is
+drama. The threshold sits in an empty gap (non-dramatic candidates top out at
+2.91/1k, next text 10.3/1k, 268 confirmed plays median 38/1k). Titles would have
+misclassified both ways.
+
+### What worked
+
+- **Reproduced the 2026-09-05 headline exactly**: 0.8237 leave-one-play-out against
+  the published 0.824, before touching anything new.
+- **P1 confirmed, and it is the headline.** Same author across registers is
+  *further apart* than different authors within one register: 470.52 vs 447.92.
+  The register gap exceeds the author signal — the Junius result of the same day,
+  reproduced on a different century, language stage and genre pair.
+- **The failure mode is collapse, not degradation.** 59.4% of non-dramatic chunks
+  attribute to Lyly on the 8-author panel; on the 27-author panel 14 authors absorb
+  nothing. Lyly's apparent perfect self-match is an artefact of being the sink.
+- **Held-out arm**: 19 civic pageants, set aside before any distance was computed.
+  Middleton recovered 0 of his own 12 chunks, Heywood 0 of 8, Jonson 0 of 5 —
+  dramatists with 14, 20 and 19 plays in the training set.
+
+### What failed, and why it is worth recording
+
+- **My proposed mechanism was wrong and I predicted from it in public first.**
+  Prose-ness looked like the obvious driver of the Lyly sink. P7–P11 were frozen on
+  that basis; four of five failed. Verse density does not predict absorption at all
+  (Spearman +0.039) and the two Restoration prose-comedy dramatists absorbed 0.0%.
+- **P12 failed and the failure is more damaging than the prediction.** Lyly takes
+  41% of non-dramatic chunks and **0%** of pageants; Peele takes 18.6% and 68.6%.
+  The sink is not stable, so the bias cannot be corrected for.
+- **A real pipeline bug, caught by the control rather than by reading the code.**
+  EEBO-TCP long-s (`ſ`), illegible markers (`•`, `〈〉`) and combining macrons were
+  fragmenting tokens — `ſhall` → `hall`, `muſt` → `mu` + `t`. The same-play
+  engdracor-vs-TCP control stood at mean Delta 70.1 (p90 245) before normalisation
+  and 23.9 (p90 37.0) after. Without that control the register result would have
+  been contaminated and would have looked fine.
+- Nine of eighteen frozen prediction clauses failed. The scorecard is in `RESULTS.md`.
+
+### Evidence
+
+`attempts/2026-09-17-register-self-match/results/*.json`, all regenerable from
+`src/` plus `fetch_tcp.py`. `data/chunks.json` is gitignored (64 MB) but
+`data/manifest.json` lists every TCP id kept and dropped with its reason.
+
+### Still conditional
+
+- **No mechanism is claimed** for the sink. Mean play year (−0.530), training-set
+  size (−0.438) and centroid L1 norm (+0.611) all correlate with absorption, they
+  are entangled with one another, and n = 27 authors cannot separate them.
+- The aggregate pageant recovery is **not** significant against a permutation null
+  (0.114 observed, null mean 0.028, p = 0.248, n = 35). The zero-recovery result is
+  what carries weight, and its honest bound is *below ~10%*, not *zero*: P(0 of 25
+  combined) = 0.072 if the true rate were 0.10, but 0.00075 if it were 0.25.
+
+### Correction to a delegated research claim
+
+A Sonnet researcher was used for literature retrieval only. Its most load-bearing
+claim — that Elliott and Valenza's Claremont Clinic flags genre-sensitivity in its
+own tests — was **re-checked directly against the primary page** before it entered
+the repository, and is confirmed: `grub.htm` marks tests `g` for genre sensitivity
+and states the Oxford comparison was matched for genre and spelling "but not for
+prosody or time of composition". Its other claims are marked verified/unverified in
+its own report and were **not** relied on. No number in `RESULTS.md` comes from the
+researcher.
+
+### Receipt
+
+Starting revision `c8c310d`. Model: claude-opus-5 (Claude Code, remote scheduled
+session). Tools: Bash, one Sonnet researcher lane for retrieval only. No user
+steering — automated firing of a stored prompt. Trial ID: none (ARP-001 not
+activated). Cost: unknown.

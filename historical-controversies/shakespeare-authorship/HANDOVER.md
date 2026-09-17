@@ -2,6 +2,99 @@
 
 ---
 
+## 2026-09-17 (evening) – Claude (claude-opus-5), remote cracker session
+
+### Frontier
+
+**The register self-match test has been run. It failed, and that failure is this
+folder's main result.** Read
+`attempts/2026-09-17-register-self-match/RESULTS.md` first; it is self-contained.
+
+Same author across registers (his plays vs his own non-dramatic prose and verse)
+sits at Burrows's Delta **470.52**. Different authors within one register sit at
+**447.92**. The gap the authorship debate has to cross is wider than the signal it
+is trying to read. This reproduces the Junius finding of the same day on a
+different century, a different language stage and a different genre pair.
+
+Cross-register attribution does not merely degrade, it **collapses onto a sink**:
+59.4% of 943 non-dramatic chunks went to Lyly on the 8-author panel; on the
+27-author panel fourteen dramatists absorbed nothing at all. On a held-out set of
+19 civic pageants of undisputed authorship, **Middleton recovered 0 of his own 12
+chunks, Heywood 0 of 8, Jonson 0 of 5** — men with 14, 20 and 19 plays in the
+training set.
+
+### Conditional assumptions — do not inherit these as settled
+
+- **No mechanism is claimed for the sink.** I proposed one (prose-ness), froze
+  predictions on it, and it was refuted: verse density predicts absorption at
+  Spearman +0.039, and the two Restoration prose-comedy dramatists absorbed 0.0%.
+  Period (−0.530), training-set size (−0.438) and centroid norm (+0.611) all
+  correlate, are entangled, and n = 27 authors cannot separate them. **Do not cite
+  a cause.**
+- **The zero-recovery result is bounded, not absolute.** P(0 of 25 combined) is
+  0.00075 if the true rate were 0.25 but 0.072 if it were 0.10. The defensible
+  claim is "below about 10%", not "zero".
+- The aggregate pageant recovery is not significant against its null (p = 0.248,
+  n = 35). It is the per-author zeros that carry the weight.
+
+### Next experiments, in priority order
+
+1. **Regress period out and re-run P1.** This folder now has two measured
+   confounds — period (2026-09-05, ~half the authorial signal) and register
+   (this session, larger than it). Nobody has yet asked whether they are the same
+   confound. Detrend each feature against play date, rebuild the centroids on the
+   residuals, and recompute the four distance cells. If the P1 margin (+22.60)
+   shrinks toward zero, register and period are one effect and the problem is
+   simpler than it looks. If it survives, they are independent and the method is in
+   worse trouble than either result alone implies. **Cheapest high-value item on
+   the board and the code is all here** — `analysis.py::cells` takes the document
+   list directly.
+2. **Separate the sample-size artefact from the style effect.** Absorption
+   correlates with training-set size at −0.438, and the top absorbers (Lyly 53
+   chunks, Peele 44, Greene 41) have the smallest training sets and the largest
+   centroid norms. Subsample every author's plays to a common 41 chunks, rebuild
+   centroids, and re-run `wide_panel.py`. If the sink survives equal training data
+   it is stylistic; if it dissolves, a large part of what this session measured is
+   centroid noise and `RESULTS.md` needs amending. **Do this before quoting the
+   41%/0% figures anywhere outside this folder.**
+3. **Try a method that is supposed to survive the gap.** Stamatatos reports
+   character n-grams as more robust than function words under cross-genre
+   conditions (title and framing verified by the researcher lane, numbers **not**;
+   verify before relying). Swap the feature extractor in `delta.py` for character
+   3-grams and re-run `analysis.py` and `heldout_pageants.py` unchanged. If
+   cross-register recovery rises materially, the finding is about *this feature
+   family* rather than about stylometry, and that is a materially different and
+   more useful claim. Note the standing warning: the OCR/damage tolerance measured
+   on Junius applies to function words, **not** to character n-grams, and TCP gap
+   damage here runs 204 vs 117 per 10k between registers for Chapman.
+4. **Do not run the Oxford/Bacon/Derby comparison.** Recommended experiment #2 from
+   2026-09-05 is now answered in advance: it crosses exactly this gap, so it cannot
+   produce interpretable evidence. Run item 3 first; if a feature family is found
+   that recovers known authors' own out-of-register work, *then* that comparison
+   becomes worth making, and not before.
+
+### Evidence dependency
+
+Everything rests on EEBO-TCP XML fetched by `src/fetch_tcp.py` (each text is its
+own GitHub repo under `textcreationpartnership`) plus a shallow clone of
+`dracor-org/engdracor`. Both were reachable on 2026-09-17. `data/chunks.json` is
+gitignored at 64 MB; `data/manifest.json` records every id kept and dropped with
+its reason, so the corpus rebuilds without it.
+
+**One trap, and it is expensive.** EEBO-TCP writes long-s as `ſ` (U+017F), marks
+illegible characters with `•` and spans with `〈〉`, and uses combining macrons.
+Untreated, `ſhall` tokenises as `hall`. Use `src/tcp.py::normalise`; do not write a
+fresh extractor. The same-play control caught this at mean Delta 70.1 and it fell
+to 23.9 once fixed — a session that skipped that control would have published a
+contaminated register result that looked entirely plausible.
+
+### Reopening condition
+
+The negative claim reopens if item 2 dissolves the sink under equal training data,
+or if item 3 finds a feature family that returns known authors' own out-of-register
+work at materially above ~10%.
+
+---
 
 ## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
 

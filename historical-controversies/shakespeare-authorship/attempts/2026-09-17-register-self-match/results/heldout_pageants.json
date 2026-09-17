@@ -1,0 +1,53 @@
+{
+ "n_chunks": 35,
+ "top_absorber": "Peele, George",
+ "spearman_profiles": 0.6003628325781655,
+ "authors_absorbing_zero": 21,
+ "own_pageant_recovery": {
+  "Middleton, Thomas": {
+   "n": 12,
+   "acc": 0.0
+  },
+  "Heywood, Thomas": {
+   "n": 8,
+   "acc": 0.0
+  },
+  "Dekker, Thomas": {
+   "n": 10,
+   "acc": 0.4
+  },
+  "Jonson, Ben": {
+   "n": 5,
+   "acc": 0.0
+  }
+ },
+ "pageant_share": {
+  "Banks, John": 0.0,
+  "Behn, Aphra": 0.0,
+  "Brome, Richard": 0.0,
+  "Chapman, George": 0.05714285714285714,
+  "Crowne, John": 0.0,
+  "D'Urfey, Thomas": 0.0,
+  "Dekker, Thomas": 0.11428571428571428,
+  "Dryden, John": 0.0,
+  "Fletcher, John": 0.0,
+  "Ford, John": 0.0,
+  "Glapthorne, Henry": 0.05714285714285714,
+  "Greene, Robert": 0.0,
+  "Heywood, Thomas": 0.0,
+  "Jonson, Ben": 0.0,
+  "Lee, Nathaniel": 0.0,
+  "Lyly, John": 0.0,
+  "Marston, John": 0.0,
+  "Massinger, Philip": 0.02857142857142857,
+  "Middleton, Thomas": 0.0,
+  "Nabbes, Thomas": 0.05714285714285714,
+  "Otway, Thomas": 0.0,
+  "Peele, George": 0.6857142857142857,
+  "Pix, Mary": 0.0,
+  "Ravenscroft, Edward": 0.0,
+  "Settle, Elkanah": 0.0,
+  "Shadwell, Thomas": 0.0,
+  "Shirley, James": 0.0
+ }
+}

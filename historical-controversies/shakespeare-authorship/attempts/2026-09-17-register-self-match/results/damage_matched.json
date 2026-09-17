@@ -1,0 +1,54 @@
+{
+ "all_eight": {
+  "cells": {
+   "same_author_same_register": {
+    "mean": 415.803726574246,
+    "median": 412.12836404449,
+    "n_docs": 1877
+   },
+   "same_author_cross_register": {
+    "mean": 470.51561759074764,
+    "median": 465.6087717099164,
+    "n_docs": 1885
+   },
+   "diff_author_same_register": {
+    "mean": 447.91646206934234,
+    "median": 442.55360112702766,
+    "n_docs": 1885
+   },
+   "diff_author_cross_register": {
+    "mean": 486.1966311773193,
+    "median": 481.9675697092684,
+    "n_docs": 1885
+   }
+  },
+  "p1_margin": 22.599155521405294,
+  "p1_holds": true
+ },
+ "damage_matched_three": {
+  "cells": {
+   "same_author_same_register": {
+    "mean": 429.88897927820534,
+    "median": 427.80653417293894,
+    "n_docs": 1007
+   },
+   "same_author_cross_register": {
+    "mean": 496.4238775059027,
+    "median": 497.6583918707261,
+    "n_docs": 1015
+   },
+   "diff_author_same_register": {
+    "mean": 472.98449065424956,
+    "median": 465.97097925395036,
+    "n_docs": 1015
+   },
+   "diff_author_cross_register": {
+    "mean": 508.5860241701619,
+    "median": 507.63085677841394,
+    "n_docs": 1015
+   }
+  },
+  "p1_margin": 23.439386851653126,
+  "p1_holds": true
+ }
+}

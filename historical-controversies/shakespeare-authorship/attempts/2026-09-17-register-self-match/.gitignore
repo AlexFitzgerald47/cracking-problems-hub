@@ -1,0 +1,4 @@
+# Regenerable from src/fetch_tcp.py + src/build_corpus.py; 64 MB of word lists.
+# data/manifest.json lists every TCP id kept and dropped, with the reason, so the
+# corpus is fully reconstructible without shipping the text.
+data/chunks.json
