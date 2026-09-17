@@ -67,3 +67,44 @@ derive it.
 P9 is the decisive one. A dramatist who died in 1606 and a dramatist born in
 1653 cannot both be stylistic neighbours of the same Elizabethan pamphlet for any
 reason connected to authorship.
+
+---
+
+# Frozen predictions, round 3 — does the bias transfer?
+
+Round 2 failed, and the failure is reported as a failure in `RESULTS.md`. Verse
+density does not predict absorption at all (Spearman +0.039), and Shadwell and
+D'Urfey — the two Restoration prose-comedy writers whose plays are physically the
+least verse-like after Lyly's — absorbed **0.0%** of the non-dramatic chunks. The
+prose-ness mechanism is dead.
+
+What survives is the observation itself: on the 27-author panel, 41.0% of
+non-dramatic chunks go to Lyly, 18.6% to Peele, 11.1% to Glapthorne and 11.0% to
+Chapman, against a chance rate of 3.7%; fourteen of the twenty-seven dramatists
+absorb nothing at all. Exploratory correlates of absorption are mean play year
+(−0.530), number of training chunks (−0.438) and centroid L1 norm (+0.611). Those
+three are entangled with one another and n = 27 authors cannot separate them, so
+no mechanism is claimed here.
+
+The round-3 prediction deliberately does **not** depend on which mechanism is
+right. It asks only whether the bias is a property of the play centroids rather
+than of the particular texts being attributed. If it is, then a completely
+different body of out-of-register text should be captured by the same authors in
+the same order.
+
+The held-out body is the **19 civic pageants, royal entries and Lord Mayor's
+Shows** excluded by `PAGEANTS` in `src/build_corpus.py`. They have been extracted,
+classified and set aside, and no distance or attribution has ever been computed on
+them.
+
+| # | Prediction | Fails if |
+|---|---|---|
+| **P12** | Lyly will again be the single largest absorber of pageant chunks on the 27-author panel. | Anyone else is top. |
+| **P13** | Spearman rank correlation between the per-author non-dramatic absorption profile and the per-author pageant absorption profile, across all 27 dramatists, will be **> +0.60**. | <= +0.60. |
+| **P14** | A majority of the 27 dramatists will absorb **zero** pageant chunks, as 14 of 27 did for the non-dramatic chunks. | Fewer than 14 authors absorb zero. |
+| **P15** | Middleton and Heywood — who between them wrote 12 of the 19 held-out pageants — will each be attributed **fewer than 25%** of their own pageant chunks. | Either is at or above 25%. |
+
+P15 is the one that matters for the authorship debate. These are civic pageants of
+known, undisputed authorship, by dramatists with 14 and 20 surviving plays
+respectively in the training set. If the method cannot return their own pageants
+to them, its verdict on a candidate with no surviving plays at all is not evidence.
