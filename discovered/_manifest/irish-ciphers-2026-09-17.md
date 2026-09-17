@@ -1,3 +1,5 @@
+> **Correction, 2026-09-17:** Remove `ormonde-maltravers-1634-cipher` from the proposed unsolved set. Daniel Bourdeau solved both letters, reported to Cryptiana 16 September 2026: https://dbourdeau.github.io/cyphersolver/ormonde.html . The proposal table below is retained as the initial search record and superseded for this row. A distinct Ormond–Arran 1678 passage is separately listed at https://cryptiana.web.fc2.com/code/unsolved.htm ; it is a future candidate pending a solution-status and original-source audit.
+
 # Irish-connected historical cipher discovery — 2026-09-17
 
 ## Scope and method
