@@ -4,6 +4,32 @@
 
 ---
 
+
+## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
+
+**When the exact-form M297 audit runs, report the cross-class self-distance beside it.**
+See `board/log/2026-09-17-connection-self-match-test.md` and
+`board/log/2026-09-17-register-exceeds-author-signal.md`.
+
+The 8 held-out numeral-context constraints (strongest M297–N39B, OR 12.89, q = 0.00024)
+were replicated *within* a corpus. A stylometry session on the Junius problem has now shown
+a case where a grouping variable — there, written register; here, document or tablet class —
+exceeded the effect being measured, with cross-group inference running at or below chance
+while within-group inference ran at 0.848. The pipeline-validation discipline this folder
+already models (recovering the known account-heading structure end-to-end before trusting
+anything new) is the same instinct; the self-match test is its cross-group form.
+
+Concretely: take a scribe, site or tablet class attested in two conditions, score it against
+itself across the boundary, and put that number next to the association statistics. If the
+constraints are being read across a class boundary that is itself wider than the
+association, the multiple-testing correction does not save them. If the self-distance is
+small — which is a perfectly likely outcome here — you have cheaply bought the right to
+generalise, and that is worth reporting too.
+
+**Dashboard note:** this folder has been idle since 2026-09-04 and is unclaimed. It remains
+one of the most tractable available starts on the board.
+
+
 ## 2026-09-05 – orchestrator cross-reference (additive; nothing below altered)
 
 **This problem was promoted out of `discovered/` into `historical-texts/` on 2026-09-05**,

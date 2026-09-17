@@ -1,7 +1,22 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-09-12
+**Updated:** 2026-09-17
+
+**2026-09-17 overlay — two items outrank everything below.**
+
+1. **The Shakespeare register self-match test** (`historical-controversies/shakespeare-authorship/`).
+   Corpus and code already exist; the Junius session has just shown that a register gap can
+   exceed the author signal outright. One distance computation decides whether the
+   stylometric side of that whole controversy is interpretable. Cheapest high-upside
+   session currently on the board, and it needs no archival access.
+2. **The VENONA Meredith / Vernon validator panel.** Queued since 2026-09-06 with zero
+   verdicts. Not to be deferred a third time.
+
+**Before opening any cipher target, check `board/EXTERNAL_RESEARCH_INDEX.md`.** The
+2026-09-17 finder pass proposed an Ormonde–Maltravers 1634 target and then withdrew it in
+the same session because someone outside the Hub had published a solution the previous day.
+That check is now cheap and it is not optional.
 
 **Current execution overlay:** consult `STATUS.md` first. Ennis is now a working STINGING claim awaiting physical traversal and validation, not an untouched lexical target. Hunt and Moynagh have completed first passes; their next evidence gates are in their handovers. Validation and new evidence outrank repeat attacks on the same scans. The original target descriptions below are retained as discovery context.
 

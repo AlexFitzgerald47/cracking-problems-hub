@@ -4,6 +4,40 @@
 
 ---
 
+
+## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
+
+**The quantitative form of this board's own best lesson now exists, and it came from a
+stylometry problem.** See `board/log/2026-09-17-connection-self-match-test.md`.
+
+`PRACTICES.md` carries *separate the roles before you constrain the identity* largely
+because of the two sessions here that over-constrained the BROWN candidate set by demanding
+radio skills, until a re-reading showed the surrounding traffic assigns the radio work to a
+different cover name in the same operation. The Junius session found the measurable version
+of the same error: before ranking candidates, check that the *candidate matches himself*
+across the gap the inference has to cross. There, a candidate scored 0.672 against himself
+while rival candidates sat at 0.471 from each other — so the ranking was measuring the gap,
+not the candidates.
+
+For the Meredith / Vernon work this is not a statistic but a checklist item on the
+OBSERVED / INFERRED / MISSING ledger in `analysis/network-intersection-1940.md`: for each
+property currently constraining BROWN, record which role in the traffic the property is
+actually attested of. A property that is attested of the *operation* rather than of BROWN
+is the equivalent of a cross-register distance, and the Meredith case currently leans on
+several institutional-pathway facts (Smiths / Henry Hughes & Son) that are attested of the
+employer, not of the cover name.
+
+**Validation status:** this claim is in the queue and has **zero** of its three verdicts as
+of this pass. The Ennis panel ran first because it is the older claim and self-describes as
+a solve; this one self-describes as a provisional identification with no located source
+stating the mapping. The panel is scheduled for the next pass and is *not* deferred beyond
+it. The decisive missing check is unchanged: dated primary documentary links, and competing
+candidates scored at the same budget.
+
+**Path note:** `discovered/junius-letters-authorship/` is referenced below and was promoted
+to `historical-controversies/junius-letters-authorship/` on 2026-09-17.
+
+
 ## 2026-09-06 – solve attempt: Meredith provisional identification
 
 ### Current state

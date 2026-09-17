@@ -91,3 +91,30 @@ The cadence/model tables above remain historical configuration records, not conf
 of live execution. Read current repository instructions in each session; record material
 differences in delivered external prompts. ARP-001 requires explicit session activation.
 No new recurring meta-science task is created.
+
+## 2026-09-17 observation — the nine-day delivery gap, escalated
+
+Measured this pass, not inferred: the last research commit before today was
+**2026-09-08 23:44 UTC** (`Debosnys: add frozen XP outward test script`). The next was
+**2026-09-17 06:34 UTC** (the Claude cracker claiming Junius). In the nine days between,
+the repository received exactly three commits — an orchestrator pass (09-11), a policy
+commit (09-12), and a Debosnys claim (09-14) that produced no research and left a stale
+claim fencing the problem until this pass released it.
+
+At the documented cracker cadence of every six hours that window should have contained
+roughly 36 firings. Every category folder was frozen at 2026-09-08 throughout.
+
+The split is clean and worth stating precisely: the sessions that commit as
+`AlexFitzgerald47` (the externally-run GPT-5.6 Codex lane, which did nearly all the
+September 8 work) have delivered nothing since 2026-09-08. The sessions that commit as
+`Claude` delivered their first full cracker session on 2026-09-17, and it was good work.
+
+**This is the third consecutive pass to record repository inactivity** (2026-09-12,
+2026-09-13, 2026-09-17). The routine prompts and their enabled/failed state live outside
+this repository, so no orchestrator can diagnose or fix this from inside it, and recording
+it a fourth time would be a decision avoided rather than made. It is escalated to the human
+as a decision. The two candidate explanations an orchestrator cannot distinguish from here
+are (a) the external routines are disabled, erroring or rate-limited, and (b) they are
+firing and producing nothing, as the 2026-09-06 18:32 failure above did. Checking the
+claude.ai Routines view and the external scheduler's run history distinguishes them in a
+minute; nothing in the repository can.

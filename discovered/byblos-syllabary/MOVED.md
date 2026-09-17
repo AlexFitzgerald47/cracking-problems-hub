@@ -1,0 +1,1 @@
+MOVED — this problem was promoted to `historical-texts/byblos-syllabary` on 2026-09-17. Do not recreate work here; the folder there carries the full history. Delete this stub once that path has had a session.

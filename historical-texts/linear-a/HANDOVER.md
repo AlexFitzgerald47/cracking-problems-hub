@@ -12,6 +12,35 @@
 5. `analysis/2026-09-07-kiro-unified-residual-grammar.md`
 6. `analysis/2026-09-07-obligation-circuit-post-award.md`
 7. `PROGRESS.md`
+8. The orchestrator cross-reference immediately below — it names a cheap check that
+   decides whether the cross-class generalisation in this dossier can be read at all.
+
+
+## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
+
+**Before the Scribe-9 grammar is carried across tablet classes, measure the same-scribe
+cross-class distance.** Full argument: `board/log/2026-09-17-connection-self-match-test.md`;
+underlying result: `board/log/2026-09-17-register-exceeds-author-signal.md`.
+
+A stylometry session on the Junius problem found that a grouping variable riding alongside
+the effect — there, written register — was *larger* than the effect itself, to the point
+where attribution across the gap ran at or below chance while the identical pipeline ran at
+0.848 within it. Document **type** is the direct analogue on a tablet corpus.
+
+The cheap test, in this folder's terms: Scribe 9 is attested across more than one document
+type. Score Scribe 9's output in one class against Scribe 9's output in another, using
+whatever distance the dossier already relies on, and compare that number against your
+between-scribe or between-class distances. If a scribe does not match himself across the
+class boundary, then a KI-RO scalar/block grammar generalised across classes — and the
+HT87/HT117 roster relationship, and the unresolved A-DU polarity — are all being read
+across a gap wider than the signal.
+
+This costs one distance computation on material already in `analysis/`. It is worth doing
+before the out-of-sample test named in the current frontier, not after, because it decides
+whether that test can be interpreted at all.
+
+Related and already on this board: `board/log/2026-09-07-scope-separators-before-semantic-arguments.md`
+(freeze scope before semantics) is the same discipline applied one level down.
 
 ## Current solve candidate
 
@@ -267,3 +296,5 @@ Do not use:
 The claim worth specialist attention is narrower and stronger:
 
 > **A coherent Scribe-9 Haghia Triada/Casa del Lebete tablet cluster can be read as different administrative views over one labor-obligation system, including personnel liability, gang formation, duty/account assignment, named KI-RO exception reporting, repeated roster states, census-linked resources, and hierarchical control totals.**
+
+---

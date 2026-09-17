@@ -5,7 +5,7 @@
 *Short by design. If it grows past what a new agent will actually read, it has failed —
 cut the superseded, keep the load-bearing.*
 
-*Last curated: 2026-09-13 (creative exploration and proportionate checking).*
+*Last curated: 2026-09-17 (the confound gap; OCR correction; two overlapping entries merged).*
 
 ---
 
@@ -83,11 +83,41 @@ candidate searched hard against a null searched cheaply measures the budget and 
 else. This error occurred inside the Dorabella session's own first run and was caught
 only because the budgets were written down.
 
+**The OCR warning is right for n-grams and overstated for function words.** Measured on
+the Junius corpus: same author across a proofread 1772 text and an 1813 OCR scan sits at
+Delta 0.773; same author same edition 0.770; *different* author same edition 0.835. The
+author effect is about twenty times the edition effect, and it holds across a
+two-hundred-fold spread in long-s damage. Report that damage rate — the fraction of
+tokens like `fhall`, `thefe`, `becaufe` is a five-line metric — but do not spend a
+session hand-correcting scans for a function-word method that tolerates them. Character
+n-grams remain exposed.
+
 **Count the competitors; do not score one.** Thirteen mutually unrelated plaintexts scored
 at or above the best published Dorabella claim, and at n = 87 with a *known* key the true
 key was top-scoring only 37% of the time. Kryptos found 35 powered survivors where 26.9
 were expected by chance. "How many other answers fit this well?" is a far stronger test of
 a claimed solution — cipher, attribution, sign value or cognate — than its own score.
+
+**Measure the confound gap before you rank candidates — and check the candidate matches
+himself across it.** Three problems have now found a grouping variable riding alongside
+the effect, and on Junius it was *larger* than the effect: same-author cross-register
+Burrows's Delta 0.588 against different-author same-register 0.471, with cross-register
+attribution running at 0.108 (chance 0.125) while same-register ran at 0.848. Philip
+Francis's own two registers sit 0.672 apart — Francis does not match Francis. A ranking
+that crosses a gap wider than the signal is measuring the gap, and no amount of method
+repairs it. The test costs one distance computation on data you already hold: take an
+author, scribe or find-spot attested in *both* conditions and score it against itself,
+**before** you interpret a ranking rather than after. The register analogue is document
+*type* on tablet corpora, period on a diachronic corpus, and hand or scribe on a
+manuscript. See `board/log/2026-09-17-register-exceeds-author-signal.md`; Voynich
+(section ≈ "language") and Shakespeare (period ≈ half the authorial signal) are the
+two earlier instances.
+
+**Run the negative control in the same cell as the positive one.** Philo Junius —
+Junius's own second signature — was placed with Junius 34/34, which felt conclusive
+until the negative controls showed the candidate set offered only one same-register
+class. A positive control passing in an easy cell tells you nothing about the cell the
+claim actually lives in.
 
 **Run a null model — and report where it has no power.** On small corpora, plausible
 results are the default outcome. The Kryptos crib test had power at only 13 of 97 periods,
@@ -119,14 +149,12 @@ found, listed as MISSING beside the attractive edges. It costs nothing and it is
 defence this board has against candidate enthusiasm. Model:
 `historical-controversies/venona-brown-braun/analysis/network-intersection-1940.md`.
 
-**Leap freely; freeze predictions before testing them.** Develop the ambitious model
-far enough to expose a useful consequence. Record that prediction and its failure
-condition before inspecting new test evidence; do not require a preregistration before
-every creative thought. If the evidence was already seen, label the check exploratory.
-Debosnys and VENONA supply examples of explicit outward tests, not proof of policy superiority.
-
-**State findings as predictions about evidence you did not use to derive them.** A claim
-that cannot fail is not a finding, and this is exactly what validators will test.
+**Leap freely; freeze predictions before testing them.** Develop the ambitious model far
+enough to expose a useful consequence, then record that prediction and its failure
+condition before inspecting new evidence — a claim that cannot fail is not a finding, and
+stating it against evidence you did not use to derive it is exactly what validators test.
+No preregistration is needed for a creative thought; if the evidence was already seen,
+label the check exploratory. Debosnys and VENONA supply worked outward tests.
 
 **Check the historical stage, not the modern headword.** An attractive `ALUʀ` → Icelandic
 *alur* 'awl' reading died because Old Norse is *alr*: the epenthetic vowel postdates the

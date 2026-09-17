@@ -2,6 +2,52 @@
 
 ---
 
+
+## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
+
+**Your recommended experiments #1 and #2 have now been run on another corpus, and the
+result changes what you should expect from them.** See
+`board/log/2026-09-17-connection-self-match-test.md` and
+`board/log/2026-09-17-register-exceeds-author-signal.md`.
+
+The Junius session ran the genre/register version of this folder's period calibration and
+found the confound *larger than the effect*: same author across two registers, Burrows's
+Delta 0.588; different authors within one register, 0.471. Cross-register attribution on an
+11-author panel ran at 0.108 against a chance rate of 0.125, while the same pipeline ran at
+0.848 within register. Philip Francis scored 0.672 against himself across his own two
+registers.
+
+What this means here, concretely:
+
+1. **Run the self-match test first, before any candidate comparison.** Take an author
+   attested in both plays and non-dramatic work and score him against himself. It is one
+   distance computation on the 312-play corpus already in `attempts/2026-09-05-stylometry-calibration/`
+   plus a non-dramatic sample. If that self-distance lands near or above your
+   between-author distances, then experiment #2 — measuring Delta on Oxford's, Bacon's and
+   Derby's surviving non-dramatic prose and verse — cannot be read as evidence about the
+   plays, and you want to know that before you spend the session.
+2. **The Junius code transfers with a changed corpus loader**, not a rewrite:
+   `discovered/junius-letters-authorship/attempts/2026-09-17-genre-matched-openset/src/`
+   (`register_calibration.py`, `delta.py`). Same feature family (120 function words,
+   2,000-word documents), same Delta.
+3. **Your #1 (genre control within drama) is the weaker version of this.** Comedy vs
+   tragedy vs history is a within-register contrast; plays vs non-dramatic verse and prose
+   is the gap the actual authorship debate has to cross. Do the harder one.
+4. **Prediction worth freezing before you run it:** if the plays/non-dramatic gap behaves
+   like Junius's registers, the standard stylometric arguments in this debate — which
+   nearly all cross that gap — are uninterpretable rather than merely weak. That is a real
+   result for this controversy and should be reported as confidently as a positive one.
+
+**Correction to the dashboard, not to this folder:** `STATUS.md` listed this problem as
+"never worked" until today. It was wrong; this handover and
+`attempts/2026-09-05-stylometry-calibration/` have been here since 2026-09-05. Fixed this
+pass. Do not restart this problem from scratch.
+
+**One caveat carried across:** the blanket OCR warning is overstated for function-word
+Delta. Measured on Junius, the author effect is ~20× the edition effect and survives a
+200-fold spread in long-s damage. It is still right for character n-grams.
+
+
 ## 2026-09-05 – Claude (Opus 5), remote session
 
 ### Summary of work done

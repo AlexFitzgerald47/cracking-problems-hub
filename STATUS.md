@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-12, orchestrator reconciliation.
+**Last updated:** 2026-09-17, orchestrator pass (PR queue cleared, three promotions, Ennis panel run).
 
 ## Operating design — 2026-09-13
 
@@ -11,20 +11,41 @@ This policy update does not change the research dispositions below or restart ro
 
 ## Board state
 
-Latest research commit observed: `2a29cf1`, 2026-09-09 03:44 UTC. No subsequent research commits were present at the pre-edit fetch. This establishes repository inactivity, not the status of external schedulers.
+**The delivery problem is now the board's biggest problem, and it is not a research problem.**
+Between 2026-09-08 23:44 UTC and 2026-09-17 06:34 UTC — nine days, roughly 36 scheduled
+cracker firings — the repository received **no research commits at all**. The only things
+landed in that window were one orchestrator pass (09-11), one policy commit (09-12), and a
+Debosnys claim on 09-14 that produced zero commits and then fenced the problem off for three
+days. Every problem folder in `ciphers/`, `historical-texts/`, `ireland/` and
+`historical-controversies/` was frozen at 2026-09-08 until this pass.
 
-Four abandoned reservations cleared: Debosnys and Byblos landed work but left claims; Caligula landed no research; Sidetic left a claim without creating its problem folder. No cracker is reserved by this pass.
+The lane that did nearly all the September 8 work — the externally-run GPT-5.6 Codex
+sessions, which commit as `AlexFitzgerald47` — has delivered nothing since. The Claude
+cracker lane delivered its first session on 2026-09-17 (Junius) and delivered it well.
+This has now been observed by three consecutive orchestrator passes (09-12, 09-13, 09-17)
+and **cannot be resolved from inside the repository**: the routine prompts and their
+enabled/failed state live outside it. It is escalated to the human as a decision, not
+recorded as deferred a fourth time. See `board/SCHEDULE.md`.
 
-The September 6 dashboard was materially stale. Linear A, Ennis, Byblos and Mesha now have substantial work; Voynich has withdrawn its old controlled-language claim and moved to an ordered zodiac test. **No new solve is approved by this pass.**
+Two open pull requests were cleared this pass, both merged: #7 (three Irish-connected
+cipher discovery packs, with the Maltravers target correctly self-closed as externally
+solved) and #8 (`board/EXTERNAL_RESEARCH_INDEX.md`, an external-scoop watchlist).
 
-See `board/log/2026-09-12-orchestrator-pass.md` for the audit and next-session handover. The previous dashboard is preserved in `board/log/2026-09-12-dashboard-before-reconciliation.md`.
+One stale claim cleared: **Debosnys** — claimed 2026-09-14, folder last touched 2026-09-11,
+no commits in the intervening three days. Crashed session; released.
+
+Three worked problems promoted out of `discovered/`, which the repository's own convention
+reserves for *unworked* finder proposals: **Junius** and **Mesha line 31** →
+`historical-controversies/`, **Byblos** → `historical-texts/`. Each leaves a `MOVED.md` stub.
+
+**No new solve is approved by this pass.** See `board/log/2026-09-17-orchestrator-pass.md`.
 
 ## Active Problems
 
 ### Ciphers
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | Open — outward prediction, unconfirmed | Latest analysis predicts poem #4 L3/L4 terminal XP → /kos/ using the shared key, not Branch B alone. This is a conditional model application, not independently confirmed plaintext. Read `analysis/2026-09-08-xp-outward-crack.md` and the XP script; a new handover routing note points to both. |
+| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | Open — outward prediction, unconfirmed | Latest analysis predicts poem #4 L3/L4 terminal XP → /kos/ using the shared key, not Branch B alone. This is a conditional model application, not independently confirmed plaintext. Read `analysis/2026-09-08-xp-outward-crack.md` and the XP script; a new handover routing note points to both. **Claim released 2026-09-17** — the 2026-09-14 session left a claim and no commits. Unclaimed and available |
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open — corrected and redirected | September 6 audit withdrew the claim that the golden cell controls physical section: illustration class is not quire, and A blocks repeat one folio. Plant-label fit failed held-out (117/120). Next: frozen Tankalusha/Alfonsine degree-list extraction; fit Taurus, predict Gemini/Cancer. See current `HANDOVER.md`. |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family eliminated from the public cribs; simple-transposition composites show no signal above chance. See `attempts/2026-09-04-crib-constraints/` |
 | Beale Ciphers | `ciphers/beale-ciphers/` | **Split 2026-09-04** – B1 effectively settled, B3 open | B1's alphabetical runs are not chance (p < 10⁻⁵ against a permutation null); it was built with the Declaration in hand. B3 shows no such structure (p = 0.85) and is the genuinely open one. See `attempts/2026-09-04-gillogly-null/` |
@@ -45,6 +66,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Rohonc Codex | `historical-texts/rohonc-codex/` | Open – **never worked** | Unknown script & language |
 | Phaistos Disc | `historical-texts/phaistos-disc/` | Open – **never worked** | Unique artefact, undeciphered |
 | Linear A | `historical-texts/linear-a/` | Open — functional reconstruction candidate | Scribe-9 labor-liability dossier; KI-RO scalar/block grammar and HT87/HT117 roster relationship. Literal meanings and integrated administrative interpretation remain hypotheses. A-DU polarity is unresolved in the latest handover; do not inherit the older “fulfilled” gloss as settled. Not a language decipherment. |
+| Byblos syllabary | `historical-texts/byblos-syllabary/` | Open — conditional partial results, **unvalidated**; promoted out of `discovered/` 2026-09-17 | Partial-bigraph inventory split and ME anchor transfer, worked through 2026-09-08. `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md` postdate the handover — read them first. Validate cylinder alignment and normalisation before extending conditional ME/T values. Panel pending |
 
 ### Ireland
 | Problem | Folder | Status | Notes |
@@ -59,22 +81,59 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
 | VENONA BROWN / BRAUN identity | `historical-controversies/venona-brown-braun/` | Open — provisional identification, validation pending | Current claimant lead is Frederick William Meredith for BROWN and Wilfrid Vernon for POULTRY-DEALER; supersedes Fraser-first routing. Literal covername mapping, exact 1940 residence and direct contact evidence remain missing. Read current handover and Meredith dossier; no identification approved. |
-| Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open – **never worked** | Evidence evaluation |
+| Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open — **worked 2026-09-05; the dashboard was wrong until 2026-09-17**, unclaimed | Burrows's Delta calibrated on 312 single-author early modern plays: 0.824 leave-one-play-out across 27 dramatists, falling to 0.475 once the author's own work within ±10 years is withheld. About half the apparent authorial signal is chronological. Code and results in `attempts/2026-09-05-stylometry-calibration/`. **Next: the register self-match test** — plays against the candidates' non-dramatic prose and verse is the same gap that proved fatal on Junius; the Junius code transfers with a changed corpus loader. Do not restart this from scratch |
+| Letters of Junius — authorship | `historical-controversies/junius-letters-authorship/` | Open — **evidence-blocked, and the block is measured**; promoted out of `discovered/` 2026-09-17 | Corpus built and reproducible (Junius from two independent digitisations, 173 acknowledged Francis letters, 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 34/34. **The register gap exceeds the author signal**: same-author cross-register Delta 0.588 vs different-author same-register 0.471; cross-register attribution 0.108 against chance 0.125, within-register 0.848. Francis ranks 8th of 15 and **that ranking is evidence neither way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in the public polemical register 1769–1775 |
+| Mesha Stele line 31 (BTDWD) | `historical-controversies/mesha-stele-line31/` | **HELD — awaiting human sign-off**; promoted out of `discovered/` 2026-09-17 | Three validator verdicts returned 2026-09-12, all PARTIAL. Balak rejected as an epigraphic reading. Not approved as a solve and not to be published as one. Decisive missing check: blind stroke comparison with genuine stone/squeeze independence |
 
 ## Next-session priorities
 
-1. **Validation before more solve language.** Mesha three-reader review this pass; next panels: Ennis, VENONA, then the bounded Linear A and Byblos claims. Their existing interpretations remain candidates, not approved discoveries.
-2. **Debosnys:** confirm XP glyph identity against the scan, freeze the key, test additional occurrences; seek independent plaintext confirmation. Use the new handover routing note.
-3. **Voynich:** acquire exact ordered historical degree lists and the actual replication package; Taurus fit → Gemini/Cancer hold-out. Do not revive the withdrawn golden-cell argument.
-4. **Linear A:** test the Scribe-9 account/status/unit grammar out of sample; resolve A-DU polarity and the HT85/HT122 entity-level reconciliation.
-5. **Ennis:** physical loop traversal from known captured surface data; no more word search until that bottleneck changes.
-6. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate the handover. Validate cylinder alignment and normalization before extending conditional ME/T values.
-7. **VENONA:** documentary Meredith/Vernon chronology and contact tests; no generic candidate restart.
-8. **Balanced fresh work:** Caligula remains a bounded, untouched corpus question. Sidetic has no landed problem pack; recreate from the screened target only after primary-source access is checked.
+**Read this first if you are a cracker:** every problem below except Junius has been idle
+since 2026-09-08. The board is not short of work, it is short of sessions that finish. A
+session that ends without a commit has produced nothing, and a claim left behind fences a
+problem off for days — that is exactly what happened to Debosnys between 09-14 and this pass.
 
-**Junius is now a specified-evidence lane, not an untouched one.** Do not restart it as a fresh stylometry pass; read its `HANDOVER.md` first. The general lesson — measure the confound gap and check the candidate matches himself across it before ranking candidates — is in `board/log/2026-09-17-register-exceeds-author-signal.md` and is proposed for `PRACTICES.md`.
+1. **Shakespeare register self-match test — the highest-value cheap session on the board.**
+   The corpus (312 single-author plays) and the code both already exist, and the Junius
+   session has just shown what the answer probably is. One distance computation decides
+   whether the entire stylometric side of the Oxford/Bacon/Derby debate is interpretable.
+   See the 2026-09-17 cross-reference at the top of that folder's `HANDOVER.md`.
+2. **Validation before more solve language.** Ennis panel ran this pass (see the queue
+   below). **VENONA is next and is not to be deferred again** — it has been queued since
+   2026-09-06 with zero verdicts. Then the bounded Linear A and Byblos claims.
+3. **Debosnys — unclaimed again.** Confirm XP glyph identity against the scan, freeze the
+   key, test additional occurrences; seek independent plaintext confirmation. Use the
+   handover routing note. Two consecutive sessions have now claimed this and produced
+   nothing; if you claim it, commit something or release it.
+4. **Linear A:** run the same-scribe cross-class self-match before the out-of-sample test,
+   then the Scribe-9 grammar out of sample; resolve A-DU polarity and the HT85/HT122
+   reconciliation. The cross-reference at the top of its `HANDOVER.md` says why the order
+   matters.
+5. **Voynich:** acquire exact ordered historical degree lists and the replication package;
+   Taurus fit → Gemini/Cancer hold-out. Do not revive the withdrawn golden-cell argument.
+6. **Ennis:** physical loop traversal from the captured 2023 photogrammetry/RTI. No more
+   word search until that bottleneck changes — the validator panel says the same thing.
+7. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate
+   the handover. Validate cylinder alignment and normalisation before extending conditional
+   ME/T values.
+8. **Proto-Elamite** is unclaimed, idle since 2026-09-04, and one of the most tractable
+   starts available: the exact-form M297 audit, reported alongside a cross-class
+   self-distance.
+9. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three new discovery
+   packs, but all three need a solution-status audit before a cracker session, not after.
+   The Maltravers pack in the same batch was withdrawn because someone else had already
+   solved it — check `board/EXTERNAL_RESEARCH_INDEX.md` before opening any cipher target.
+10. **Balanced fresh work:** Caligula remains a bounded, untouched corpus question. Sidetic
+    still has no landed problem pack.
 
-Archive-blocked lanes remain Dorabella and CD286; Proto-Elamite remains available for exact-form M297 audit. Do not reuse Voynich's withdrawn example as a validated control design.
+**Categories going cold.** `ireland/` has had no session since 2026-09-08 and holds five
+problems, three of them materially advanced and all five unclaimed — it is the coldest
+category relative to its depth. `ciphers/` is cold for a different reason: Dorabella and
+CD 286 are genuinely archive-blocked, so its idleness is partly real rather than neglect.
+`historical-controversies/` just gained three folders and is the best-stocked lane for a
+text-and-compute session with no archival dependency.
+
+Archive-blocked lanes remain Dorabella and CD 286. Do not reuse Voynich's withdrawn
+example as a validated control design.
 
 ## Validation queue
 
@@ -88,12 +147,15 @@ Archive-blocked lanes remain Dorabella and CD286; Proto-Elamite remains availabl
 
 ## Recently Proposed / In `/discovered/`
 
-There are 21 problem packs under `discovered/`, including the methodological asset and worked candidates. Physical location does not imply “unworked.” Full discovery provenance:
+There are 22 problem packs under `discovered/` after this pass's three promotions and three additions, including the methodological asset and worked candidates. Physical location does not imply “unworked.” Full discovery provenance:
 `discovered/_manifest/swarm-discovery-2026-09-04.md` and
 `discovered/_manifest/discovery-2026-09-04-run2.md`.
 
 **Promoted out so far:** Proto-Elamite → `historical-texts/` (2026-09-05); Debosnys,
-`VORFYDCGT` and CD 286 → `ciphers/` (2026-09-06). Each promoted folder leaves a one-line
+`VORFYDCGT` and CD 286 → `ciphers/` (2026-09-06); **Junius and Mesha line 31 →
+`historical-controversies/`, Byblos → `historical-texts/` (2026-09-17)** — all three had
+had full cracker sessions while sitting in a folder this repository defines as holding
+*unworked* proposals, which misled every agent that read the dashboard. Each promoted folder leaves a one-line
 `MOVED.md` stub behind so a resuming session cannot recreate it in the wrong place; delete
 the stub once the problem has had a session at its new path.
 
@@ -108,7 +170,6 @@ the stub once the problem has had a session at its new path.
 
 | Problem | Folder | Suggested category | Tractability with text/compute |
 |---------|--------|--------------------|-------------------------------|
-| Letters of Junius | `discovered/junius-letters-authorship/` | historical-controversies | **Worked 2026-09-17 — now evidence-blocked, and the block is measured.** Corpus built and reproducible (Junius from two independent digitisations; 173 acknowledged Francis letters; 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 34/34. **The register gap exceeds the author signal** — same-author cross-register Delta 0.588 vs different-author same-register 0.471; cross-register attribution runs at 0.108 against 0.848 within register. Francis ranks 8th of 15 and **that ranking is not evidence either way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in public polemical register 1769–1775 |
 | 1641 Depositions (quantitative) | `discovered/1641-depositions-quantitative/` | ireland | **Excellent** – 19,010 pages digitised; entity-resolution problem |
 | Thera eruption date | `discovered/thera-eruption-date/` | historical-controversies | **Very good** – published data, re-analysable; live as of 2025 |
 | Caligula's seashells | `discovered/caligulas-seashells/` | historical-controversies | **Good** – cheapest on the board to start |
@@ -122,12 +183,13 @@ the stub once the problem has had a session at its new path.
 | Famine mortality at parish resolution | `discovered/famine-parish-register-mortality/` | ireland | Mixed – 373,000 NLI images open, HTR is the wall |
 | BMH vs pensions-collection divergence | `discovered/bmh-mspc-divergence/` | ireland | Moderate – entity linkage is everything |
 | Epi-Olmec / Isthmian decipherment | `discovered/epi-olmec-isthmian/` | historical-texts | Moderate – historiographic half fully tractable |
-| Byblos syllabary | `discovered/byblos-syllabary/` | historical-texts | Worked through September 8: conditional partial-bigraph inventory split and ME transfer; unvalidated |
-| Mesha Stele line 31 | `discovered/mesha-stele-line31/` | historical-controversies | BTDWD claim: three PARTIAL verdicts; held, not approved |
 | Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
 | Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
 | Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts | Blocked until corpus digitised |
 | Blitz Ciphers | `discovered/blitz-ciphers/` | ciphers | Good for authenticity, poor for decryption |
+| Crelly 1648–49 coded correspondence | `discovered/crelly-1648-coded-correspondence/` | ciphers | **New 2026-09-17.** Casway's 1978 edition describes an undeciphered passage; exact letter, shelfmark, ciphertext length and modern solution status all unverified. Strongest of the three: a same-date Antrim letter gives a parallel account |
+| Ormond–Anglesey 1663–64 partial cipher | `discovered/ormond-anglesey-1663-cipher/` | ciphers | **New 2026-09-17.** Partial key known (E=13/14, THE=246). The volume-5 p.498 pointer is not yet proved to belong to this exchange — resolve that before any cracker session |
+| Ormonde–Maltravers 1634–35 cipher | `discovered/ormonde-maltravers-1634-cipher/` | **CLOSED — solved externally** | Daniel Bourdeau published a reading of both letters, reported to Cryptiana 2026-09-16. The finder pass caught this itself and withdrew the candidate. Folder retained as the audit trail. Only residual: nomenclator values 185 and 149 in one clause. **Do not re-propose** |
 | The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | methodological — stays put | Carries a general result on where a crib set's discriminating power comes from. Cited by five problems and by `PRACTICES.md` |
 
 **Verification standard for the run-2 batch — read before relying on it.** `WebFetch` was
