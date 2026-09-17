@@ -12,14 +12,14 @@
 Not "is unproven" — cannot be tested. Junius is anonymous political polemic; the only
 substantial body of Philip Francis's acknowledged prose is private family
 correspondence. On this corpus the gap between two registers of ONE author (median
-Delta 0.587, n=4) is larger than the gap between two authors in the SAME register
-(median 0.470, n=69). 86% of different-author same-register pairs are closer together
+Delta 0.588, n=4) is larger than the gap between two authors in the SAME register
+(median 0.471, n=69). 86% of different-author same-register pairs are closer together
 than the median same-author cross-register pair.
 
 This is a power failure of the evidence, not of the method. With register held
 constant the pipeline is accurate: Junius vs Draper leave-one-out **0.970**, Philo
-Junius placed with Junius **23/23**, 11-author same-register attribution **0.848**.
-The same 11 authors cross-register: **0.105**, at or below chance (0.125).
+Junius placed with Junius **34/34**, 11-author same-register attribution **0.848**.
+The same 11 authors cross-register: **0.108**, at or below chance (0.125).
 
 Do not inherit "Francis ranks 8th of 15" as a result against him. It is in
 `RESULTS.md` §4 so nobody re-derives it and over-reads it; it is a cross-register

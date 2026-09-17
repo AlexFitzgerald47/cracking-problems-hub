@@ -27,7 +27,7 @@ frozen out-of-sample prediction. Full write-up and code:
    collections print Junius, Philo Junius, Draper and John Horne in the same covers,
    genre, months and press. That is the only cell where everything but the author is
    constant. Junius vs Draper leave-one-out = **0.970**; Philo Junius placed with
-   Junius **23/23**; Draper's independent 1772 transcription placed with Draper 3/3.
+   Junius **34/34**; Draper's independent 1772 transcription placed with Draper 5/5.
    The pipeline has power.
 3. **The edition/OCR effect is small** — and I expected the opposite. Same author
    other edition 0.782 vs same author same edition 0.764; different author same
@@ -36,17 +36,17 @@ frozen out-of-sample prediction. Full write-up and code:
 
 ### What failed, and why it is the finding
 4. **The register gap exceeds the author gap, so the Junius/Francis comparison is
-   underpowered.** Same author different register: median Delta **0.587** (n=4).
-   Different author same register: median **0.470** (n=69). 86% of different-author
+   underpowered.** Same author different register: median Delta **0.588** (n=4).
+   Different author same register: median **0.471** (n=69). 86% of different-author
    same-register pairs are closer than the median same-author cross-register pair.
    Junius is polemic, Francis's attested prose is private correspondence; the
    comparison the attribution requires is exactly the one that cannot be made.
-   **Philip Francis's own two registers are 0.671 apart — further than Junius from 16
+   **Philip Francis's own two registers are 0.672 apart — further than Junius from 16
    of 19 cells. Francis does not match Francis.**
 5. **Frozen prediction, tested, upheld.** Predicted before running that cross-register
    attribution would fall to chance while same-register stayed high, failure condition
    stated. Same-register 11-way = **0.848** (chance 0.091); cross-register 8-way =
-   **0.105** (chance 0.125), at or below chance. Francis's private letters are
+   **0.108** (chance 0.125), at or below chance. Francis's private letters are
    attributed to **Burke 48 times** when only formal-prose candidates are offered,
    though Francis's own formal prose is in that candidate set.
 6. **Francis ranks 8th of 15 on cross-register Delta, in both digitisations
@@ -68,9 +68,11 @@ frozen out-of-sample prediction. Full write-up and code:
    target-leakage trap it identified is real and was respected here.
 
 ### Failures and limits
-- Wikimedia rate-limited the shared egress hard; the clean 1772 corpus was still
-  filling when this was written. Every conclusion was cross-checked on the complete
-  1813 OCR corpus and the two agree. The fetcher resumes from disk.
+- Wikimedia rate-limited the shared egress hard (roughly 90 minutes for 71 pages), but
+  the fetch completed with nothing missed: the clean 1772 corpus is 43 Junius letters /
+  76,887 words, Philo Junius 16/15,431, Draper 5/5,503, John Horne 3/4,930. Every
+  figure was computed on the complete corpus and cross-checked against the independent
+  1813 OCR; the two agree throughout. The fetcher resumes from disk if rerun.
 - `prop=extracts` returns empty on these Wikisource pages (it does not follow the
   ProofreadPage transclusion) and fails silently; ws-export timed out at 180s.
   Recorded in the fetcher's docstring so nobody loses the hour again.

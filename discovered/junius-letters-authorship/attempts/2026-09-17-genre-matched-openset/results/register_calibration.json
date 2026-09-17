@@ -1,15 +1,15 @@
 {
  "same_author_cross_register": {
   "n": 4,
-  "median": 0.5872288101169667,
-  "min": 0.3826102456889968,
-  "max": 0.6708335716840146
+  "median": 0.5883111996271748,
+  "min": 0.38342396192857336,
+  "max": 0.672383308634681
  },
  "diff_author_same_register": {
   "n": 69,
-  "median": 0.46981071003572517,
-  "min": 0.28052528278936784,
-  "max": 0.7242464289436324
+  "median": 0.4708020863886104,
+  "min": 0.29349347107886353,
+  "max": 0.7252798417903213
  },
  "verdict": "UNDERPOWERED: a cross-register comparison cannot separate author from register"
 }

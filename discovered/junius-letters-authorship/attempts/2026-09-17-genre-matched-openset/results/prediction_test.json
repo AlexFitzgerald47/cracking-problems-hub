@@ -1,7 +1,7 @@
 {
  "prediction": "cross-register attribution accuracy will be at or near chance, and far below the same-register figure",
  "cross_letters_vs_formal": {
-  "accuracy": 0.10526315789473684,
+  "accuracy": 0.10835913312693499,
   "n": 323,
   "chance": 0.125,
   "candidates": [

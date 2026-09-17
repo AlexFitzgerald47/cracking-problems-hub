@@ -15,8 +15,8 @@ register gap is larger than the gap between different authors.** Measured here:
 
 | quantity | median Delta | n |
 |---|---:|---:|
-| same author, different register | **0.587** | 4 |
-| different author, same register | **0.470** | 69 |
+| same author, different register | **0.588** | 4 |
+| different author, same register | **0.471** | 69 |
 
 86% of different-author same-register pairs are closer together than the median
 same-author cross-register pair. A cross-register comparison therefore cannot tell
@@ -29,15 +29,15 @@ pipeline is accurate:
 | test | result |
 |---|---|
 | Junius vs Draper, same volume, leave-one-out | **97/100 = 0.970** (chance 0.500) |
-| Philo Junius (Junius's own second signature) placed with Junius | **23/23 documents** |
-| Draper's independently transcribed 1772 text placed with Draper | **3/3 documents** |
+| Philo Junius (Junius's own second signature) placed with Junius | **34/34 documents** |
+| Draper's independently transcribed 1772 text placed with Draper | **5/5 documents** |
 | 11-author same-register leave-one-out | **0.848** (label-permutation null 0.089, p < 0.005) |
-| the same 11 authors, cross-register | **0.105** (chance 0.125) |
+| the same 11 authors, cross-register | **0.108** (chance 0.125) |
 
 The method works. The evidence does not support the comparison the attribution needs.
 
 **The sharpest single number:** Philip Francis's private letters and Philip Francis's
-1784 parliamentary speeches sit **0.671** apart — further apart than Junius sits from
+1784 parliamentary speeches sit **0.672** apart — further apart than Junius sits from
 sixteen of the nineteen author/register cells in the panel, Francis's own two cells
 included. On this measure Philip Francis does not match Philip Francis.
 
@@ -51,7 +51,8 @@ All primary text was fetched and byte-checked in this session; see `data/SOURCES
 for the full manifest with sizes and measured OCR damage rates.
 
 * **Junius, reference text.** The proofread Wikisource transcription of Woodfall's
-  1772 first edition, one file per letter. The Wikisource page header says
+  1772 first edition, all 71 pages, one file per letter — **43 Junius letters,
+  76,887 words**, plus Philo Junius (16), Draper (5) and John Horne (3). The Wikisource page header says
   `author = Junius` on every numbered letter and this is **wrong** — Letter II is
   signed WILLIAM DRAPER and Letters LI and LIII are signed JOHN HORNE. Authorship is
   taken from the signature at the foot of each letter, never from the edition's
@@ -129,12 +130,12 @@ I expected transcription differences to swamp everything. They do not:
 
 | comparison | mean Delta to the Junius-1813 centroid |
 |---|---:|
-| same author, same edition | 0.765 |
-| same author, **other** edition (1772 proofread vs 1813 OCR) | 0.777 |
-| **different** author, same edition (Draper) | 0.828 |
+| same author, same edition | 0.770 |
+| same author, **other** edition (1772 proofread vs 1813 OCR) | 0.773 |
+| **different** author, same edition (Draper) | 0.835 |
 
-The author effect (0.063) is about five times the edition effect (0.012), and
-Junius's 1772 text attributes to Junius 34/34 against 1813-OCR centroids. Function-word
+The author effect (0.065) is about twenty times the edition effect (0.003), and
+Junius's 1772 text attributes to Junius 76/76 against 1813-OCR centroids. Function-word
 Delta tolerates this level of OCR and edition variation. Cross-corpus comparison in
 this problem is legitimate **on that axis**. The long-s damage rate in `data/SOURCES.md`
 splits the corpus two-hundred-fold between eighteenth-century printings and later
@@ -147,12 +148,12 @@ a fourth:
 
 | author | registers | Delta |
 |---|---|---:|
-| Edmund Burke | private letters vs published prose | 0.382 |
+| Edmund Burke | private letters vs published prose | 0.383 |
 | David Hume | private letters vs published prose | 0.561 |
 | Samuel Johnson | private letters vs published prose | 0.613 |
-| **Philip Francis** | private letters vs 1784 speeches | **0.671** |
+| **Philip Francis** | private letters vs 1784 speeches | **0.672** |
 
-Median 0.587, against a different-author same-register median of 0.470.
+Median 0.588, against a different-author same-register median of 0.471.
 
 **Frozen prediction and test.** Before running it I predicted that if register
 dominates author, cross-register attribution would collapse to chance while
@@ -163,7 +164,7 @@ near the same-register figure would refute the session's conclusion. Result:
   95th percentile 0.111, p < 0.005 over 200 permutations; majority-class baseline
   0.129 — see `src/permutation_null.py`)
 * cross-register, private letters against formal-prose centroids, 8 candidates:
-  **0.105** (chance 0.125) — *at or below chance*
+  **0.108** (chance 0.125) — *at or below chance*
 * cross-register, the other direction, 11 candidates: 0.345
 
 Prediction upheld. The most telling single confusion: **Philip Francis's private
@@ -176,7 +177,7 @@ For completeness, with both digitisations of Junius agreeing almost exactly:
 
 * Author-pooled centroids, 15 candidates: **Francis ranks 8th** (1772 text) and
   **8th** (1813 text). Burke, Hume and Boyd are nearer.
-* Junius's median nearest-author Delta sits at the **39th–50th percentile of the
+* Junius's median nearest-author Delta sits at the **39th–48th percentile of the
   absent-author null** — the distribution produced by removing each known author from
   the candidate set and scoring their documents anyway. Junius looks like an author
   who is not in the panel. Given that the true writer need not survive in any
@@ -248,10 +249,14 @@ Requires `numpy`. Results land in `results/*.json`.
 
 ## Limits, stated plainly
 
-* The Wikisource fetch was rate-limited and was still running when this was written;
-  the clean 1772 corpus covers a subset of the 69 letters. Every conclusion was
-  checked against the complete 1813 OCR corpus and the two agree. `fetch_wikisource_text.py`
-  resumes from disk.
+* The Wikisource fetch completed: all 71 pages retrieved, none missed. The clean 1772
+  corpus is **43 Junius letters / 76,887 words**, plus Philo Junius 16/15,431, Draper
+  5/5,503 and John Horne 3/4,930. Four pages are excluded as unsigned (Letters LXIII,
+  LXIV, LXVI and the 1772 Preface — the Preface is almost certainly Junius's own but
+  carries no signature, and is left out conservatively; it is 4,112 words and is the
+  obvious first thing to add back if a later session wants them).
+  Every figure here was computed on the complete corpus and cross-checked against the
+  independent 1813 OCR; the two agree throughout.
 * Register calibration n = 4. Corroborated by the independent document-level test but
   thin.
 * Rival samples are machine-chunked from whole volumes with an apparatus filter, not

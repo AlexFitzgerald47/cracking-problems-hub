@@ -8,11 +8,11 @@
   "p_value": 0.0
  },
  "all registers pooled by author": {
-  "accuracy": 0.7714285714285715,
-  "majority": 0.20588235294117646,
+  "accuracy": 0.7699412258606213,
+  "majority": 0.20570948782535683,
   "n_classes": 17,
-  "perm_median": 0.04873949579831933,
-  "perm_p95": 0.06554621848739496,
+  "perm_median": 0.04869857262804366,
+  "perm_p95": 0.06633081444164568,
   "p_value": 0.0
  }
 }

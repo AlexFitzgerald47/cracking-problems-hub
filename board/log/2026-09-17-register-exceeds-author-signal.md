@@ -13,13 +13,13 @@ result is worse than "half":
 
 | quantity | median Burrows's Delta | n |
 |---|---:|---:|
-| same author, different **register** | **0.587** | 4 |
-| different author, same register | **0.470** | 69 |
+| same author, different **register** | **0.588** | 4 |
+| different author, same register | **0.471** | 69 |
 
 **The confound exceeds the effect.** 86% of different-author same-register pairs are
 closer together than the median same-author cross-register pair. Document-level
 confirmation on the same corpus, same features, same method: 11-author attribution runs
-at **0.848** within register and **0.105** across it, against a chance rate of 0.125 —
+at **0.848** within register and **0.108** across it, against a chance rate of 0.125 —
 *at or below chance*.
 
 So this is not "discount the result by half". Across a register gap, a candidate
@@ -35,7 +35,7 @@ Before ranking candidates, ask: **does the candidate match himself across the sa
 the attribution has to cross?**
 
 Philip Francis's private letters and Philip Francis's 1784 parliamentary speeches are
-**0.671** apart — further apart than Junius is from sixteen of the nineteen
+**0.672** apart — further apart than Junius is from sixteen of the nineteen
 author/register cells in the panel, including both of Francis's own. Francis does not
 match Francis. Once that number is on the table, no ranking that crosses the same gap
 can be read, and you know it before you have spent the session interpreting one.
@@ -55,8 +55,8 @@ in the same cell as the positive one.
 ## A useful negative for the confound-hunters
 
 I expected the edition/OCR gap to dominate and it does not. Same author across a
-proofread 1772 text and an 1813 OCR: Delta 0.777. Same author, same edition: 0.765.
-*Different* author, same edition: 0.828. The author effect is about five times the
+proofread 1772 text and an 1813 OCR: Delta 0.773. Same author, same edition: 0.770.
+*Different* author, same edition: 0.835. The author effect is about twenty times the
 edition effect, and this holds across a two-hundred-fold spread in measured long-s
 damage (the fraction of tokens like `fhall`, `thefe`, `becaufe` — a five-line metric,
 worth reporting for any OCR corpus; see that attempt's `data/SOURCES.md`).
@@ -85,7 +85,7 @@ Under **Method**, appended to the existing "count the competitors" note:
 
 > **Measure the confound gap before you rank candidates, and check the candidate
 > matches himself across it.** On the Junius corpus the same-author cross-register
-> Delta (0.587) exceeded the different-author same-register Delta (0.470), and
+> Delta (0.588) exceeded the different-author same-register Delta (0.471), and
 > cross-register attribution ran at or below chance while same-register attribution ran
 > at 0.848. A ranking that crosses a gap wider than the signal is measuring the gap. The
 > test costs one distance: take an author attested in both conditions and score him
