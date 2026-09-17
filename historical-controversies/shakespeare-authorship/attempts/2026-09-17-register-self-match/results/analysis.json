@@ -1,0 +1,298 @@
+{
+ "panel": [
+  "Chapman, George",
+  "Dekker, Thomas",
+  "Greene, Robert",
+  "Heywood, Thomas",
+  "Jonson, Ben",
+  "Lyly, John",
+  "Marston, John",
+  "Middleton, Thomas"
+ ],
+ "n_drama_chunks": 942,
+ "n_nondrama_chunks": 943,
+ "chance": 0.125,
+ "top_k": 500,
+ "primary_drama_scaled": {
+  "cells": {
+   "same_author_same_register": {
+    "mean": 415.803726574246,
+    "median": 412.12836404449,
+    "n_docs": 1877
+   },
+   "same_author_cross_register": {
+    "mean": 470.51561759074764,
+    "median": 465.6087717099164,
+    "n_docs": 1885
+   },
+   "diff_author_same_register": {
+    "mean": 447.91646206934234,
+    "median": 442.55360112702766,
+    "n_docs": 1885
+   },
+   "diff_author_cross_register": {
+    "mean": 486.1966311773193,
+    "median": 481.9675697092684,
+    "n_docs": 1885
+   }
+  },
+  "cross_register_attribution": {
+   "micro": 0.16861081654294804,
+   "macro": 0.33732026439198437,
+   "per_author": {
+    "Chapman, George": {
+     "n": 12,
+     "acc": 0.4166666666666667
+    },
+    "Dekker, Thomas": {
+     "n": 139,
+     "acc": 0.1223021582733813
+    },
+    "Greene, Robert": {
+     "n": 242,
+     "acc": 0.06198347107438017
+    },
+    "Heywood, Thomas": {
+     "n": 430,
+     "acc": 0.08372093023255814
+    },
+    "Jonson, Ben": {
+     "n": 8,
+     "acc": 0.125
+    },
+    "Lyly, John": {
+     "n": 77,
+     "acc": 1.0
+    },
+    "Marston, John": {
+     "n": 9,
+     "acc": 0.8888888888888888
+    },
+    "Middleton, Thomas": {
+     "n": 26,
+     "acc": 0.0
+    }
+   }
+  },
+  "reverse_attribution": {
+   "micro": 0.267515923566879,
+   "macro": 0.32593774205645826,
+   "per_author": {
+    "Chapman, George": {
+     "n": 134,
+     "acc": 0.3656716417910448
+    },
+    "Dekker, Thomas": {
+     "n": 95,
+     "acc": 0.3894736842105263
+    },
+    "Greene, Robert": {
+     "n": 41,
+     "acc": 0.14634146341463414
+    },
+    "Heywood, Thomas": {
+     "n": 187,
+     "acc": 0.0
+    },
+    "Jonson, Ben": {
+     "n": 233,
+     "acc": 0.2832618025751073
+    },
+    "Lyly, John": {
+     "n": 53,
+     "acc": 0.4716981132075472
+    },
+    "Marston, John": {
+     "n": 68,
+     "acc": 0.8823529411764706
+    },
+    "Middleton, Thomas": {
+     "n": 131,
+     "acc": 0.06870229007633588
+    }
+   }
+  },
+  "within_register_attribution": {
+   "micro": 0.6656050955414012,
+   "macro": 0.7171701724377624,
+   "per_author": {
+    "Chapman, George": {
+     "n": 134,
+     "acc": 0.8134328358208955
+    },
+    "Dekker, Thomas": {
+     "n": 95,
+     "acc": 0.6947368421052632
+    },
+    "Greene, Robert": {
+     "n": 41,
+     "acc": 0.926829268292683
+    },
+    "Heywood, Thomas": {
+     "n": 187,
+     "acc": 0.3155080213903743
+    },
+    "Jonson, Ben": {
+     "n": 233,
+     "acc": 0.8583690987124464
+    },
+    "Lyly, John": {
+     "n": 53,
+     "acc": 0.8867924528301887
+    },
+    "Marston, John": {
+     "n": 68,
+     "acc": 0.8676470588235294
+    },
+    "Middleton, Thomas": {
+     "n": 131,
+     "acc": 0.37404580152671757
+    }
+   }
+  }
+ },
+ "sensitivity_pooled_scaled": {
+  "cells": {
+   "same_author_same_register": {
+    "mean": 388.4203259097306,
+    "median": 385.42180735314656,
+    "n_docs": 1877
+   },
+   "same_author_cross_register": {
+    "mean": 439.3182157663971,
+    "median": 437.00715328972893,
+    "n_docs": 1885
+   },
+   "diff_author_same_register": {
+    "mean": 416.0786394419041,
+    "median": 416.89093542472307,
+    "n_docs": 1885
+   },
+   "diff_author_cross_register": {
+    "mean": 449.4727895896084,
+    "median": 445.56033750299247,
+    "n_docs": 1885
+   }
+  },
+  "cross_register_attribution": {
+   "micro": 0.12407211028632026,
+   "macro": 0.3010497665676799,
+   "per_author": {
+    "Chapman, George": {
+     "n": 12,
+     "acc": 0.4166666666666667
+    },
+    "Dekker, Thomas": {
+     "n": 139,
+     "acc": 0.04316546762589928
+    },
+    "Greene, Robert": {
+     "n": 242,
+     "acc": 0.024793388429752067
+    },
+    "Heywood, Thomas": {
+     "n": 430,
+     "acc": 0.03488372093023256
+    },
+    "Jonson, Ben": {
+     "n": 8,
+     "acc": 0.0
+    },
+    "Lyly, John": {
+     "n": 77,
+     "acc": 1.0
+    },
+    "Marston, John": {
+     "n": 9,
+     "acc": 0.8888888888888888
+    },
+    "Middleton, Thomas": {
+     "n": 26,
+     "acc": 0.0
+    }
+   }
+  },
+  "reverse_attribution": {
+   "micro": 0.2749469214437367,
+   "macro": 0.41143044613373125,
+   "per_author": {
+    "Chapman, George": {
+     "n": 134,
+     "acc": 0.30597014925373134
+    },
+    "Dekker, Thomas": {
+     "n": 95,
+     "acc": 0.6
+    },
+    "Greene, Robert": {
+     "n": 41,
+     "acc": 0.6829268292682927
+    },
+    "Heywood, Thomas": {
+     "n": 187,
+     "acc": 0.0213903743315508
+    },
+    "Jonson, Ben": {
+     "n": 233,
+     "acc": 0.15450643776824036
+    },
+    "Lyly, John": {
+     "n": 53,
+     "acc": 0.8490566037735849
+    },
+    "Marston, John": {
+     "n": 68,
+     "acc": 0.6470588235294118
+    },
+    "Middleton, Thomas": {
+     "n": 131,
+     "acc": 0.030534351145038167
+    }
+   }
+  },
+  "within_register_attribution": {
+   "micro": 0.6560509554140127,
+   "macro": 0.7057366275593727,
+   "per_author": {
+    "Chapman, George": {
+     "n": 134,
+     "acc": 0.8432835820895522
+    },
+    "Dekker, Thomas": {
+     "n": 95,
+     "acc": 0.6210526315789474
+    },
+    "Greene, Robert": {
+     "n": 41,
+     "acc": 0.926829268292683
+    },
+    "Heywood, Thomas": {
+     "n": 187,
+     "acc": 0.31016042780748665
+    },
+    "Jonson, Ben": {
+     "n": 233,
+     "acc": 0.8454935622317596
+    },
+    "Lyly, John": {
+     "n": 53,
+     "acc": 0.8867924528301887
+    },
+    "Marston, John": {
+     "n": 68,
+     "acc": 0.8382352941176471
+    },
+    "Middleton, Thomas": {
+     "n": 131,
+     "acc": 0.37404580152671757
+    }
+   }
+  }
+ },
+ "permutation_null_cross_register": {
+  "n": 200,
+  "mean_macro": 0.11905514137474746,
+  "p95": 0.2216046640189733,
+  "max": 0.31483312245072287
+ }
+}

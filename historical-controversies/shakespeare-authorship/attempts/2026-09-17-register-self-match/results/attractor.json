@@ -1,0 +1,82 @@
+{
+ "confusion": {
+  "Chapman, George": {
+   "Lyly, John": 2,
+   "Marston, John": 2,
+   "Greene, Robert": 3,
+   "Chapman, George": 5
+  },
+  "Dekker, Thomas": {
+   "Marston, John": 2,
+   "Dekker, Thomas": 17,
+   "Chapman, George": 44,
+   "Lyly, John": 52,
+   "Greene, Robert": 12,
+   "Jonson, Ben": 12
+  },
+  "Greene, Robert": {
+   "Lyly, John": 198,
+   "Greene, Robert": 15,
+   "Chapman, George": 27,
+   "Jonson, Ben": 2
+  },
+  "Heywood, Thomas": {
+   "Greene, Robert": 106,
+   "Lyly, John": 214,
+   "Heywood, Thomas": 36,
+   "Chapman, George": 68,
+   "Jonson, Ben": 6
+  },
+  "Jonson, Ben": {
+   "Chapman, George": 3,
+   "Greene, Robert": 2,
+   "Jonson, Ben": 1,
+   "Lyly, John": 2
+  },
+  "Lyly, John": {
+   "Lyly, John": 77
+  },
+  "Marston, John": {
+   "Marston, John": 8,
+   "Greene, Robert": 1
+  },
+  "Middleton, Thomas": {
+   "Marston, John": 1,
+   "Lyly, John": 15,
+   "Greene, Robert": 6,
+   "Chapman, George": 4
+  }
+ },
+ "nondrama_share": {
+  "Chapman, George": 0.16012725344644752,
+  "Dekker, Thomas": 0.018027571580063628,
+  "Greene, Robert": 0.1537645811240721,
+  "Heywood, Thomas": 0.03817603393425239,
+  "Jonson, Ben": 0.022269353128313893,
+  "Lyly, John": 0.5938494167550371,
+  "Marston, John": 0.013785790031813362,
+  "Middleton, Thomas": 0.0
+ },
+ "drama_share": {
+  "Chapman, George": 0.21125265392781317,
+  "Dekker, Thomas": 0.1029723991507431,
+  "Greene, Robert": 0.11464968152866242,
+  "Heywood, Thomas": 0.08598726114649681,
+  "Jonson, Ben": 0.26857749469214437,
+  "Lyly, John": 0.07006369426751592,
+  "Marston, John": 0.08917197452229299,
+  "Middleton, Thomas": 0.05732484076433121
+ },
+ "concentration_nondrama": 0.4044097884844402,
+ "concentration_drama": 0.16404992765088508,
+ "without_lyly": {
+  "Chapman, George": 0.5,
+  "Dekker, Thomas": 0.2158273381294964,
+  "Greene, Robert": 0.45454545454545453,
+  "Heywood, Thomas": 0.14651162790697675,
+  "Jonson, Ben": 0.125,
+  "Marston, John": 0.8888888888888888,
+  "Middleton, Thomas": 0.0
+ },
+ "without_lyly_macro": 0.3329676156386881
+}

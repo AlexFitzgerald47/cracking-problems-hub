@@ -1,0 +1,44 @@
+{
+ "n_plays": 265,
+ "mean": 23.877600565422156,
+ "median": 22.033798826734028,
+ "p90": 37.025165181403146,
+ "max": 123.0955543645444,
+ "worst": [
+  {
+   "play": "heywood-love-s-mistress",
+   "author": "Heywood, Thomas",
+   "n_words": 6952,
+   "len_ratio": 1.7793,
+   "dist": 123.0955543645444
+  },
+  {
+   "play": "behn-the-emperor-of-the-moon",
+   "author": "Behn, Aphra",
+   "n_words": 15557,
+   "len_ratio": 0.8641,
+   "dist": 68.59889227839447
+  },
+  {
+   "play": "shadwell-psyche",
+   "author": "Shadwell, Thomas",
+   "n_words": 15195,
+   "len_ratio": 0.8717,
+   "dist": 67.24993279917744
+  },
+  {
+   "play": "shirley-the-witty-fair-one",
+   "author": "Shirley, James",
+   "n_words": 16927,
+   "len_ratio": 0.891,
+   "dist": 57.96548346494935
+  },
+  {
+   "play": "peele-the-old-wives-tale",
+   "author": "Peele, George",
+   "n_words": 7747,
+   "len_ratio": 0.9463,
+   "dist": 49.94860320797028
+  }
+ ]
+}

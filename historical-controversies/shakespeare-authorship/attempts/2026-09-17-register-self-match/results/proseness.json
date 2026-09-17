@@ -1,0 +1,218 @@
+[
+ {
+  "author": "Lyly, John",
+  "verse_lines": 1297,
+  "prose_paras": 4434,
+  "words": 113396,
+  "verse_lines_per_1k": 11.44,
+  "prose_share_of_blocks": 0.7737
+ },
+ {
+  "author": "Shadwell, Thomas",
+  "verse_lines": 6465,
+  "prose_paras": 15076,
+  "words": 364193,
+  "verse_lines_per_1k": 17.75,
+  "prose_share_of_blocks": 0.6999
+ },
+ {
+  "author": "D'Urfey, Thomas",
+  "verse_lines": 8499,
+  "prose_paras": 13528,
+  "words": 448271,
+  "verse_lines_per_1k": 18.96,
+  "prose_share_of_blocks": 0.6142
+ },
+ {
+  "author": "Ravenscroft, Edward",
+  "verse_lines": 6840,
+  "prose_paras": 10932,
+  "words": 236681,
+  "verse_lines_per_1k": 28.9,
+  "prose_share_of_blocks": 0.6151
+ },
+ {
+  "author": "Pix, Mary",
+  "verse_lines": 4543,
+  "prose_paras": 3344,
+  "words": 105116,
+  "verse_lines_per_1k": 43.22,
+  "prose_share_of_blocks": 0.424
+ },
+ {
+  "author": "Behn, Aphra",
+  "verse_lines": 14134,
+  "prose_paras": 6606,
+  "words": 264002,
+  "verse_lines_per_1k": 53.54,
+  "prose_share_of_blocks": 0.3185
+ },
+ {
+  "author": "Middleton, Thomas",
+  "verse_lines": 16299,
+  "prose_paras": 9196,
+  "words": 279035,
+  "verse_lines_per_1k": 58.41,
+  "prose_share_of_blocks": 0.3607
+ },
+ {
+  "author": "Chapman, George",
+  "verse_lines": 18598,
+  "prose_paras": 6312,
+  "words": 281703,
+  "verse_lines_per_1k": 66.02,
+  "prose_share_of_blocks": 0.2534
+ },
+ {
+  "author": "Marston, John",
+  "verse_lines": 9941,
+  "prose_paras": 3658,
+  "words": 146496,
+  "verse_lines_per_1k": 67.86,
+  "prose_share_of_blocks": 0.269
+ },
+ {
+  "author": "Jonson, Ben",
+  "verse_lines": 33174,
+  "prose_paras": 11477,
+  "words": 482735,
+  "verse_lines_per_1k": 68.72,
+  "prose_share_of_blocks": 0.257
+ },
+ {
+  "author": "Brome, Richard",
+  "verse_lines": 25529,
+  "prose_paras": 9178,
+  "words": 360070,
+  "verse_lines_per_1k": 70.9,
+  "prose_share_of_blocks": 0.2644
+ },
+ {
+  "author": "Otway, Thomas",
+  "verse_lines": 11303,
+  "prose_paras": 2969,
+  "words": 153747,
+  "verse_lines_per_1k": 73.52,
+  "prose_share_of_blocks": 0.208
+ },
+ {
+  "author": "Dryden, John",
+  "verse_lines": 20181,
+  "prose_paras": 4818,
+  "words": 269797,
+  "verse_lines_per_1k": 74.8,
+  "prose_share_of_blocks": 0.1927
+ },
+ {
+  "author": "Dekker, Thomas",
+  "verse_lines": 16799,
+  "prose_paras": 2798,
+  "words": 199744,
+  "verse_lines_per_1k": 84.1,
+  "prose_share_of_blocks": 0.1428
+ },
+ {
+  "author": "Glapthorne, Henry",
+  "verse_lines": 8568,
+  "prose_paras": 1017,
+  "words": 93086,
+  "verse_lines_per_1k": 92.04,
+  "prose_share_of_blocks": 0.1061
+ },
+ {
+  "author": "Crowne, John",
+  "verse_lines": 11726,
+  "prose_paras": 1825,
+  "words": 126812,
+  "verse_lines_per_1k": 92.47,
+  "prose_share_of_blocks": 0.1347
+ },
+ {
+  "author": "Peele, George",
+  "verse_lines": 9108,
+  "prose_paras": 380,
+  "words": 92910,
+  "verse_lines_per_1k": 98.03,
+  "prose_share_of_blocks": 0.0401
+ },
+ {
+  "author": "Nabbes, Thomas",
+  "verse_lines": 9043,
+  "prose_paras": 1420,
+  "words": 87639,
+  "verse_lines_per_1k": 103.18,
+  "prose_share_of_blocks": 0.1357
+ },
+ {
+  "author": "Heywood, Thomas",
+  "verse_lines": 42366,
+  "prose_paras": 3499,
+  "words": 395312,
+  "verse_lines_per_1k": 107.17,
+  "prose_share_of_blocks": 0.0763
+ },
+ {
+  "author": "Greene, Robert",
+  "verse_lines": 9854,
+  "prose_paras": 427,
+  "words": 87732,
+  "verse_lines_per_1k": 112.32,
+  "prose_share_of_blocks": 0.0415
+ },
+ {
+  "author": "Settle, Elkanah",
+  "verse_lines": 24124,
+  "prose_paras": 1359,
+  "words": 207603,
+  "verse_lines_per_1k": 116.2,
+  "prose_share_of_blocks": 0.0533
+ },
+ {
+  "author": "Lee, Nathaniel",
+  "verse_lines": 25512,
+  "prose_paras": 595,
+  "words": 219447,
+  "verse_lines_per_1k": 116.26,
+  "prose_share_of_blocks": 0.0228
+ },
+ {
+  "author": "Ford, John",
+  "verse_lines": 19997,
+  "prose_paras": 1624,
+  "words": 171420,
+  "verse_lines_per_1k": 116.65,
+  "prose_share_of_blocks": 0.0751
+ },
+ {
+  "author": "Shirley, James",
+  "verse_lines": 62647,
+  "prose_paras": 6855,
+  "words": 535417,
+  "verse_lines_per_1k": 117.01,
+  "prose_share_of_blocks": 0.0986
+ },
+ {
+  "author": "Banks, John",
+  "verse_lines": 15304,
+  "prose_paras": 2,
+  "words": 124952,
+  "verse_lines_per_1k": 122.48,
+  "prose_share_of_blocks": 0.0001
+ },
+ {
+  "author": "Fletcher, John",
+  "verse_lines": 39908,
+  "prose_paras": 1672,
+  "words": 324976,
+  "verse_lines_per_1k": 122.8,
+  "prose_share_of_blocks": 0.0402
+ },
+ {
+  "author": "Massinger, Philip",
+  "verse_lines": 36641,
+  "prose_paras": 27,
+  "words": 259063,
+  "verse_lines_per_1k": 141.44,
+  "prose_share_of_blocks": 0.0007
+ }
+]

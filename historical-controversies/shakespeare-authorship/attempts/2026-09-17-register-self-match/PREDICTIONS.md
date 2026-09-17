@@ -35,3 +35,35 @@ All documents are 2,000-word chunks in both registers.
   `<gap>`; if that rate differs systematically by register it is a transcription
   confound riding alongside the register effect, and it must be reported the way
   the Junius session reported long-s damage.
+
+---
+
+# Frozen predictions, round 2 — the attractor
+
+Written after the 8-author panel was run and after `src/proseness.py` was run,
+and **before** the 27-author panel was attempted. The 19 dramatists outside the
+original panel have played no part in anything above.
+
+The 8-author result showed that 59.4% of all non-dramatic chunks were attributed
+to Lyly, against 7.0% of drama chunks, and that Lyly's apparently perfect
+cross-register self-match (1.000) is an artefact of his being that sink. The
+proposed mechanism is that Delta across the register gap is attributing by
+**register**, not by author: every author's prose lands on whichever dramatist's
+plays are physically most prose-like. Lyly's plays are mannered prose comedies
+and he is the least verse-heavy dramatist in the corpus by a wide margin
+(11.4 verse lines per 1,000 words; next is Shadwell at 17.8).
+
+If that mechanism is right, it makes predictions about 19 authors never used to
+derive it.
+
+| # | Prediction | Fails if |
+|---|---|---|
+| **P7** | When the panel is widened from 8 to all 27 dramatists, the sink absorbing the largest share of the 943 non-dramatic chunks will be one of the three lowest-verse-density authors — **Lyly, Shadwell or D'Urfey**. | The top absorber is any of the other 24. |
+| **P8** | Those three together will absorb a **majority (>50%)** of all 943 non-dramatic chunks, though 24 other dramatists are on offer. | They absorb 50% or less. |
+| **P9** | Shadwell and D'Urfey, who wrote in the 1670s–1690s, will between them absorb **more than 10%** of the non-dramatic chunks — nearly all of which were written 1580–1640, before either man was born. Period cannot explain this; only register can. | They absorb 10% or less. |
+| **P10** | Across all 27 dramatists, Spearman rank correlation between verse-line density and share of non-dramatic chunks absorbed will be **negative and below −0.45**. | Correlation is above −0.45. |
+| **P11** | Cross-register macro accuracy on the 27-author panel will fall **below** the 0.337 measured on the 8-author panel, and below 0.20. | Macro accuracy >= 0.20. |
+
+P9 is the decisive one. A dramatist who died in 1606 and a dramatist born in
+1653 cannot both be stylistic neighbours of the same Elizabethan pamphlet for any
+reason connected to authorship.
