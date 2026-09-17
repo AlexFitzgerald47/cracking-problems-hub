@@ -1,0 +1,547 @@
+{
+  "corpus": {
+    "file_count": 1467,
+    "sha256_lf": "8849716c6afbf963e5ee02535da013c87c931c61e88e2c05ced9cd58bf2b2dcf",
+    "eligible_lines": 4869,
+    "validation_lines": 1050
+  },
+  "test_a_face_blocked_null": {
+    "rows": [
+      {
+        "m_sign": "M297",
+        "n_sign": "N39B",
+        "direction": "enriched",
+        "a": 32,
+        "b": 23,
+        "c": 96,
+        "d": 899,
+        "odds_ratio": 12.89108146841583,
+        "p_tablet_blocked": 4.385332409747139e-06,
+        "p_face_blocked": 0.0014514192788974945,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 3.5082659277977114e-05,
+        "q_face_blocked": 0.005805677115589978
+      },
+      {
+        "m_sign": "M297",
+        "n_sign": "N24",
+        "direction": "enriched",
+        "a": 13,
+        "b": 42,
+        "c": 51,
+        "d": 944,
+        "odds_ratio": 5.825585379782981,
+        "p_tablet_blocked": 0.0003040266211652948,
+        "p_face_blocked": 0.02807348901098907,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.0008107376564407861,
+        "q_face_blocked": 0.03208398744113037
+      },
+      {
+        "m_sign": "M297",
+        "n_sign": "N01",
+        "direction": "depleted",
+        "a": 20,
+        "b": 35,
+        "c": 731,
+        "d": 264,
+        "odds_ratio": 0.20880305757992934,
+        "p_tablet_blocked": 0.00029696729663097155,
+        "p_face_blocked": 0.008390263361218767,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.0008107376564407861,
+        "q_face_blocked": 0.016780526722437534
+      },
+      {
+        "m_sign": "M263",
+        "n_sign": "N30C",
+        "direction": "depleted",
+        "a": 0,
+        "b": 46,
+        "c": 68,
+        "d": 936,
+        "odds_ratio": 0.14700572953457341,
+        "p_tablet_blocked": 0.0012307554600787746,
+        "p_face_blocked": 0.01900431225121644,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.002461510920157549,
+        "q_face_blocked": 0.02533908300162192
+      },
+      {
+        "m_sign": "M263",
+        "n_sign": "N01",
+        "direction": "enriched",
+        "a": 38,
+        "b": 8,
+        "c": 713,
+        "d": 291,
+        "odds_ratio": 1.8504884785028237,
+        "p_tablet_blocked": 0.0017497035543438712,
+        "p_face_blocked": 0.0002864567636070316,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.002799525686950194,
+        "q_face_blocked": 0.0022916541088562527
+      },
+      {
+        "m_sign": "M243",
+        "n_sign": "N39B",
+        "direction": "enriched",
+        "a": 8,
+        "b": 7,
+        "c": 120,
+        "d": 915,
+        "odds_ratio": 8.610511756569847,
+        "p_tablet_blocked": 0.002467279309384563,
+        "p_face_blocked": 0.0030637254901960554,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.0032897057458460837,
+        "q_face_blocked": 0.008169934640522814
+      },
+      {
+        "m_sign": "M106",
+        "n_sign": "N24",
+        "direction": "enriched",
+        "a": 3,
+        "b": 15,
+        "c": 61,
+        "d": 971,
+        "odds_ratio": 3.5670076055599265,
+        "p_tablet_blocked": 0.005059860725189959,
+        "p_face_blocked": 0.011684518013631568,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.005782697971645667,
+        "q_face_blocked": 0.01869522882181051
+      },
+      {
+        "m_sign": "M288",
+        "n_sign": "N45",
+        "direction": "enriched",
+        "a": 15,
+        "b": 103,
+        "c": 8,
+        "d": 924,
+        "odds_ratio": 16.288434214265415,
+        "p_tablet_blocked": 0.00711538461538455,
+        "p_face_blocked": 0.4699999999999988,
+        "tablet_blocks": 229,
+        "face_blocks": 290,
+        "q_tablet_blocked": 0.00711538461538455,
+        "q_face_blocked": 0.4699999999999988
+      }
+    ]
+  },
+  "test_a_within_face": {
+    "rows": [
+      {
+        "m_sign": "M297",
+        "n_sign": "N39B",
+        "direction": "enriched",
+        "obverse": {
+          "a": 26,
+          "b": 21,
+          "c": 82,
+          "d": 787,
+          "sign_lines": 47,
+          "odds_ratio": 11.765327695560254,
+          "p_blocked": 0.0025082853844711622
+        },
+        "reverse": {
+          "a": 6,
+          "b": 2,
+          "c": 14,
+          "d": 112,
+          "sign_lines": 8,
+          "odds_ratio": 20.17241379310345,
+          "p_blocked": 0.5000000000000002
+        }
+      },
+      {
+        "m_sign": "M297",
+        "n_sign": "N24",
+        "direction": "enriched",
+        "obverse": {
+          "a": 9,
+          "b": 38,
+          "c": 40,
+          "d": 829,
+          "sign_lines": 47,
+          "odds_ratio": 5.053872053872054,
+          "p_blocked": 0.02807348901098907
+        },
+        "reverse": {
+          "a": 4,
+          "b": 4,
+          "c": 11,
+          "d": 115,
+          "sign_lines": 8,
+          "odds_ratio": 10.043478260869565,
+          "p_blocked": 1.0
+        }
+      },
+      {
+        "m_sign": "M297",
+        "n_sign": "N01",
+        "direction": "depleted",
+        "obverse": {
+          "a": 17,
+          "b": 30,
+          "c": 622,
+          "d": 247,
+          "sign_lines": 47,
+          "odds_ratio": 0.22812561722299032,
+          "p_blocked": 0.013860060371141665
+        },
+        "reverse": {
+          "a": 3,
+          "b": 5,
+          "c": 109,
+          "d": 17,
+          "sign_lines": 8,
+          "odds_ratio": 0.10170195101701951,
+          "p_blocked": 0.5000000000000002
+        }
+      },
+      {
+        "m_sign": "M263",
+        "n_sign": "N30C",
+        "direction": "depleted",
+        "obverse": {
+          "a": 0,
+          "b": 45,
+          "c": 56,
+          "d": 815,
+          "sign_lines": 45,
+          "odds_ratio": 0.15861130020422057,
+          "p_blocked": 0.01900431225121644
+        },
+        "reverse": {
+          "a": 0,
+          "b": 1,
+          "c": 12,
+          "d": 121,
+          "sign_lines": 1,
+          "odds_ratio": 3.24,
+          "p_blocked": 1.0
+        }
+      },
+      {
+        "m_sign": "M263",
+        "n_sign": "N01",
+        "direction": "enriched",
+        "obverse": {
+          "a": 37,
+          "b": 8,
+          "c": 602,
+          "d": 269,
+          "sign_lines": 45,
+          "odds_ratio": 1.973395167195509,
+          "p_blocked": 0.0005290669585915756
+        },
+        "reverse": {
+          "a": 1,
+          "b": 0,
+          "c": 111,
+          "d": 22,
+          "sign_lines": 1,
+          "odds_ratio": 0.6053811659192825,
+          "p_blocked": 0.5000000000000002
+        }
+      },
+      {
+        "m_sign": "M243",
+        "n_sign": "N39B",
+        "direction": "enriched",
+        "obverse": {
+          "a": 7,
+          "b": 5,
+          "c": 101,
+          "d": 803,
+          "sign_lines": 12,
+          "odds_ratio": 10.794894760412001,
+          "p_blocked": 9.674922600619162e-05
+        },
+        "reverse": {
+          "a": 1,
+          "b": 2,
+          "c": 19,
+          "d": 112,
+          "sign_lines": 3,
+          "odds_ratio": 3.4615384615384617,
+          "p_blocked": 1.0
+        }
+      },
+      {
+        "m_sign": "M106",
+        "n_sign": "N24",
+        "direction": "enriched",
+        "obverse": {
+          "a": 2,
+          "b": 15,
+          "c": 47,
+          "d": 852,
+          "sign_lines": 17,
+          "odds_ratio": 2.8947368421052633,
+          "p_blocked": 0.03292909622023437
+        },
+        "reverse": {
+          "a": 1,
+          "b": 0,
+          "c": 14,
+          "d": 119,
+          "sign_lines": 1,
+          "odds_ratio": 24.724137931034484,
+          "p_blocked": 0.3333333333333331
+        }
+      },
+      {
+        "m_sign": "M288",
+        "n_sign": "N45",
+        "direction": "enriched",
+        "obverse": {
+          "a": 10,
+          "b": 86,
+          "c": 8,
+          "d": 812,
+          "sign_lines": 96,
+          "odds_ratio": 11.603196191771506,
+          "p_blocked": 0.4699999999999988
+        },
+        "reverse": {
+          "a": 5,
+          "b": 17,
+          "c": 0,
+          "d": 112,
+          "sign_lines": 22,
+          "odds_ratio": 70.71428571428571,
+          "p_blocked": 1.0
+        }
+      }
+    ]
+  },
+  "test_b_exact_form_m297": {
+    "form_line_counts": {
+      "M297": 175,
+      "M297~B": 62,
+      "M297~D": 10,
+      "M297~C": 3,
+      "M297~BC": 2
+    },
+    "targets": {
+      "N39B": {
+        "corpus_base_rate_excluding_family": 0.10526315789473684,
+        "per_form": {
+          "M297": {
+            "lines": 175,
+            "hits": 86,
+            "rate": 0.49142857142857144,
+            "odds_ratio_vs_rest": 8.207634052375019,
+            "p_vs_rest": 1.8585172130317572e-35
+          },
+          "M297~B": {
+            "lines": 62,
+            "hits": 39,
+            "rate": 0.6290322580645161,
+            "odds_ratio_vs_rest": 14.27427784216396,
+            "p_vs_rest": 1.2268361409273847e-22
+          }
+        },
+        "homogeneity_top_two_forms": {
+          "form_1": "M297",
+          "form_2": "M297~B",
+          "table": [
+            86,
+            89,
+            39,
+            23
+          ],
+          "odds_ratio": 0.574994696273248,
+          "p_two_sided": 0.07572707016345925
+        }
+      },
+      "N24": {
+        "corpus_base_rate_excluding_family": 0.050032488628979854,
+        "per_form": {
+          "M297": {
+            "lines": 175,
+            "hits": 31,
+            "rate": 0.17714285714285713,
+            "odds_ratio_vs_rest": 4.130568654853633,
+            "p_vs_rest": 2.8779208864846763e-09
+          },
+          "M297~B": {
+            "lines": 62,
+            "hits": 9,
+            "rate": 0.14516129032258066,
+            "odds_ratio_vs_rest": 3.3646272784158575,
+            "p_vs_rest": 0.0039500727743270935
+          }
+        },
+        "homogeneity_top_two_forms": {
+          "form_1": "M297",
+          "form_2": "M297~B",
+          "table": [
+            31,
+            144,
+            9,
+            53
+          ],
+          "odds_ratio": 1.227645237661628,
+          "p_two_sided": 0.6940509858648556
+        }
+      },
+      "N01": {
+        "corpus_base_rate_excluding_family": 0.751137102014295,
+        "per_form": {
+          "M297": {
+            "lines": 175,
+            "hits": 73,
+            "rate": 0.41714285714285715,
+            "odds_ratio_vs_rest": 0.23764613226354261,
+            "p_vs_rest": 5.507680147064692e-20
+          },
+          "M297~B": {
+            "lines": 62,
+            "hits": 33,
+            "rate": 0.532258064516129,
+            "odds_ratio_vs_rest": 0.3763483946315874,
+            "p_vs_rest": 0.0002978495005329717
+          }
+        },
+        "homogeneity_top_two_forms": {
+          "form_1": "M297",
+          "form_2": "M297~B",
+          "table": [
+            73,
+            102,
+            33,
+            29
+          ],
+          "odds_ratio": 0.6314524936294139,
+          "p_two_sided": 0.13770760591240924
+        }
+      }
+    }
+  },
+  "test_c_cross_face_self_match": {
+    "vocabulary": [
+      "N01",
+      "N14",
+      "N39B",
+      "N30C",
+      "N24",
+      "N34",
+      "N30D",
+      "N45",
+      "N08A",
+      "N23",
+      "N30C@b",
+      "N51",
+      "N01@b",
+      "N02",
+      "N39C"
+    ],
+    "min_lines_per_face": 20,
+    "signs_on_both_faces": [
+      "M036",
+      "M054",
+      "M218",
+      "M288",
+      "M297",
+      "M346",
+      "M367",
+      "M387",
+      "M388"
+    ],
+    "self_distance_across_faces": {
+      "M036": 0.050433988122430336,
+      "M054": 0.040072859744990884,
+      "M218": 0.014658303070320238,
+      "M288": 0.04206358825192907,
+      "M297": 0.07104166666666668,
+      "M346": 0.020938845822566752,
+      "M367": 0.017301587301587304,
+      "M387": 0.03246305418719211,
+      "M388": 0.031372549019607836
+    },
+    "self_distance_summary": {
+      "n": 9,
+      "mean": 0.03559404913192124,
+      "median": 0.03246305418719211
+    },
+    "cross_sign_distance_within_face": {
+      "obverse": {
+        "n_pairs": 36,
+        "mean": 0.04751603839480353,
+        "median": 0.0501686507936508
+      },
+      "reverse": {
+        "n_pairs": 36,
+        "mean": 0.08626588545393678,
+        "median": 0.08343434343434344
+      }
+    },
+    "face_permutation_null": {
+      "M036": {
+        "null_mean": 0.027064463009190996,
+        "null_p95": 0.0396326530612245,
+        "observed": 0.050433988122430336,
+        "p_right_tail": 0.004975124378109453
+      },
+      "M054": {
+        "null_mean": 0.02791347465332011,
+        "null_p95": 0.042222222222222223,
+        "observed": 0.040072859744990884,
+        "p_right_tail": 0.07960199004975124
+      },
+      "M218": {
+        "null_mean": 0.013371152783059443,
+        "null_p95": 0.021197838109602806,
+        "observed": 0.014658303070320238,
+        "p_right_tail": 0.32338308457711445
+      },
+      "M288": {
+        "null_mean": 0.019446924838338046,
+        "null_p95": 0.026476735956812984,
+        "observed": 0.04206358825192907,
+        "p_right_tail": 0.004975124378109453
+      },
+      "M297": {
+        "null_mean": 0.030241583420625554,
+        "null_p95": 0.043143766431437684,
+        "observed": 0.07104166666666668,
+        "p_right_tail": 0.004975124378109453
+      },
+      "M346": {
+        "null_mean": 0.014255829618330945,
+        "null_p95": 0.024324324324324322,
+        "observed": 0.020938845822566752,
+        "p_right_tail": 0.09950248756218906
+      },
+      "M367": {
+        "null_mean": 0.021830973614636897,
+        "null_p95": 0.03147193585337916,
+        "observed": 0.017301587301587304,
+        "p_right_tail": 0.7611940298507462
+      },
+      "M387": {
+        "null_mean": 0.022210333996888085,
+        "null_p95": 0.03267579484799257,
+        "observed": 0.03246305418719211,
+        "p_right_tail": 0.05472636815920398
+      },
+      "M388": {
+        "null_mean": 0.01953828572486696,
+        "null_p95": 0.028306878306878298,
+        "observed": 0.031372549019607836,
+        "p_right_tail": 0.029850746268656716
+      }
+    }
+  }
+}

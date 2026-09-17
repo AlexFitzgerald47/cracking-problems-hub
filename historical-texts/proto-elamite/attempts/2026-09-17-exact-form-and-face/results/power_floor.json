@@ -1,0 +1,170 @@
+{
+  "M297-N39B": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 4.385332409747139e-06,
+      "p_floor": 4.020383873714129e-13,
+      "observed_overlap": 32,
+      "max_possible_overlap": 37,
+      "informative_blocks": 20,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.0014514192788974945,
+      "p_floor": 1.2280445286981264e-09,
+      "observed_overlap": 32,
+      "max_possible_overlap": 37,
+      "informative_blocks": 16,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M297-N24": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 0.0003040266211652948,
+      "p_floor": 2.0121480082417665e-08,
+      "observed_overlap": 13,
+      "max_possible_overlap": 16,
+      "informative_blocks": 12,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.02807348901098907,
+      "p_floor": 0.00015453296703296697,
+      "observed_overlap": 13,
+      "max_possible_overlap": 15,
+      "informative_blocks": 7,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M297-N01": {
+    "direction": "depleted",
+    "tablet_blocked": {
+      "p": 0.00029696729663097155,
+      "p_floor": 1.687432181427635e-14,
+      "observed_overlap": 20,
+      "max_possible_overlap": 38,
+      "informative_blocks": 21,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.008390263361218767,
+      "p_floor": 8.246941279413535e-10,
+      "observed_overlap": 20,
+      "max_possible_overlap": 33,
+      "informative_blocks": 16,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M263-N30C": {
+    "direction": "depleted",
+    "tablet_blocked": {
+      "p": 0.0012307554600787746,
+      "p_floor": 0.0012307554600787746,
+      "observed_overlap": 0,
+      "max_possible_overlap": 9,
+      "informative_blocks": 6,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.01900431225121644,
+      "p_floor": 0.01900431225121644,
+      "observed_overlap": 0,
+      "max_possible_overlap": 8,
+      "informative_blocks": 5,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M263-N01": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 0.0017497035543438712,
+      "p_floor": 3.8793919117787735e-09,
+      "observed_overlap": 38,
+      "max_possible_overlap": 43,
+      "informative_blocks": 16,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.0002864567636070316,
+      "p_floor": 7.702891227842786e-07,
+      "observed_overlap": 38,
+      "max_possible_overlap": 40,
+      "informative_blocks": 12,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M243-N39B": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 0.002467279309384563,
+      "p_floor": 6.683375104427708e-05,
+      "observed_overlap": 8,
+      "max_possible_overlap": 9,
+      "informative_blocks": 5,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.0030637254901960554,
+      "p_floor": 4.837461300309583e-05,
+      "observed_overlap": 8,
+      "max_possible_overlap": 9,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M106-N24": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 0.005059860725189959,
+      "p_floor": 0.00012006449178417276,
+      "observed_overlap": 3,
+      "max_possible_overlap": 4,
+      "informative_blocks": 1,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.011684518013631568,
+      "p_floor": 0.00035407630344339274,
+      "observed_overlap": 3,
+      "max_possible_overlap": 4,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": true
+    }
+  },
+  "M288-N45": {
+    "direction": "enriched",
+    "tablet_blocked": {
+      "p": 0.00711538461538455,
+      "p_floor": 0.00032967032967032544,
+      "observed_overlap": 15,
+      "max_possible_overlap": 16,
+      "informative_blocks": 7,
+      "blocks": 229,
+      "has_power_at_05": true
+    },
+    "face_blocked": {
+      "p": 0.4699999999999988,
+      "p_floor": 0.1199999999999997,
+      "observed_overlap": 15,
+      "max_possible_overlap": 16,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": false
+    }
+  }
+}

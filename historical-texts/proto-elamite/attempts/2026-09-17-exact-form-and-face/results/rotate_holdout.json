@@ -1,0 +1,402 @@
+{
+  "M297-N39B": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.0014514192788974945,
+        "p_floor": 1.2280445286981264e-09,
+        "observed_overlap": 32,
+        "max_possible_overlap": 37,
+        "informative_blocks": 16,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 0.003211680053547365,
+        "p_floor": 9.482373940204817e-06,
+        "observed_overlap": 26,
+        "max_possible_overlap": 28,
+        "informative_blocks": 10,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 0.0017808919012404294,
+        "p_floor": 5.995138542068925e-11,
+        "observed_overlap": 26,
+        "max_possible_overlap": 32,
+        "informative_blocks": 12,
+        "blocks": 298,
+        "has_power_at_05": true
+      },
+      "bucket_3": {
+        "p": 0.02604436538344541,
+        "p_floor": 1.5204038192543742e-06,
+        "observed_overlap": 17,
+        "max_possible_overlap": 21,
+        "informative_blocks": 9,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 3.777254910264891e-05,
+        "p_floor": 5.383603267201142e-12,
+        "observed_overlap": 34,
+        "max_possible_overlap": 39,
+        "informative_blocks": 17,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M297-N24": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.02807348901098907,
+        "p_floor": 0.00015453296703296697,
+        "observed_overlap": 13,
+        "max_possible_overlap": 15,
+        "informative_blocks": 7,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 0.17813922356090017,
+        "p_floor": 0.002842481035252005,
+        "observed_overlap": 6,
+        "max_possible_overlap": 8,
+        "informative_blocks": 5,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 0.015481233454319988,
+        "p_floor": 4.896369835039226e-12,
+        "observed_overlap": 15,
+        "max_possible_overlap": 22,
+        "informative_blocks": 8,
+        "blocks": 298,
+        "has_power_at_05": true
+      },
+      "bucket_3": {
+        "p": 0.14501231527093417,
+        "p_floor": 0.0010262725779967051,
+        "observed_overlap": 4,
+        "max_possible_overlap": 6,
+        "informative_blocks": 4,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 0.9905367521367427,
+        "p_floor": 9.116809116809049e-06,
+        "observed_overlap": 6,
+        "max_possible_overlap": 15,
+        "informative_blocks": 10,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M297-N01": {
+    "direction": "depleted",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.008390263361218767,
+        "p_floor": 8.246941279413535e-10,
+        "observed_overlap": 20,
+        "max_possible_overlap": 33,
+        "informative_blocks": 16,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 0.2602804171230255,
+        "p_floor": 1.6398929049530654e-05,
+        "observed_overlap": 28,
+        "max_possible_overlap": 35,
+        "informative_blocks": 9,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 0.004397927744024,
+        "p_floor": 1.9321612470858086e-11,
+        "observed_overlap": 31,
+        "max_possible_overlap": 45,
+        "informative_blocks": 14,
+        "blocks": 298,
+        "has_power_at_05": true
+      },
+      "bucket_3": {
+        "p": 0.06576880305123127,
+        "p_floor": 8.688021824310696e-08,
+        "observed_overlap": 17,
+        "max_possible_overlap": 24,
+        "informative_blocks": 10,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 0.001413888780909186,
+        "p_floor": 2.073210236475536e-07,
+        "observed_overlap": 21,
+        "max_possible_overlap": 34,
+        "informative_blocks": 12,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M263-N30C": {
+    "direction": "depleted",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.01900431225121644,
+        "p_floor": 0.01900431225121644,
+        "observed_overlap": 0,
+        "max_possible_overlap": 8,
+        "informative_blocks": 5,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 0.0009191280538529251,
+        "p_floor": 0.0009191280538529251,
+        "observed_overlap": 0,
+        "max_possible_overlap": 15,
+        "informative_blocks": 7,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 0.2100840336134457,
+        "p_floor": 0.2100840336134457,
+        "observed_overlap": 0,
+        "max_possible_overlap": 3,
+        "informative_blocks": 3,
+        "blocks": 298,
+        "has_power_at_05": false
+      },
+      "bucket_3": {
+        "p": 0.005102040816326545,
+        "p_floor": 0.005102040816326545,
+        "observed_overlap": 0,
+        "max_possible_overlap": 8,
+        "informative_blocks": 7,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 0.01879720279720272,
+        "p_floor": 0.01879720279720272,
+        "observed_overlap": 0,
+        "max_possible_overlap": 7,
+        "informative_blocks": 5,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M263-N01": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.0002864567636070316,
+        "p_floor": 7.702891227842786e-07,
+        "observed_overlap": 38,
+        "max_possible_overlap": 40,
+        "informative_blocks": 12,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 4.0905127324065295e-09,
+        "p_floor": 6.426090696131466e-11,
+        "observed_overlap": 54,
+        "max_possible_overlap": 55,
+        "informative_blocks": 15,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 0.0015873015873015862,
+        "p_floor": 0.0015873015873015862,
+        "observed_overlap": 23,
+        "max_possible_overlap": 23,
+        "informative_blocks": 8,
+        "blocks": 298,
+        "has_power_at_05": true
+      },
+      "bucket_3": {
+        "p": 3.607503607503484e-06,
+        "p_floor": 3.607503607503484e-06,
+        "observed_overlap": 39,
+        "max_possible_overlap": 39,
+        "informative_blocks": 13,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 6.930846930846955e-05,
+        "p_floor": 1.6317016317016375e-06,
+        "observed_overlap": 22,
+        "max_possible_overlap": 23,
+        "informative_blocks": 7,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M243-N39B": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.0030637254901960554,
+        "p_floor": 4.837461300309583e-05,
+        "observed_overlap": 8,
+        "max_possible_overlap": 9,
+        "informative_blocks": 4,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "observed_overlap": 2,
+        "max_possible_overlap": 2,
+        "informative_blocks": 0,
+        "blocks": 280,
+        "has_power_at_05": false
+      },
+      "bucket_2": {
+        "p": 0.5000000000000002,
+        "p_floor": 0.5000000000000002,
+        "observed_overlap": 1,
+        "max_possible_overlap": 1,
+        "informative_blocks": 1,
+        "blocks": 298,
+        "has_power_at_05": false
+      },
+      "bucket_3": {
+        "p": 0.06250000000000012,
+        "p_floor": 0.06250000000000012,
+        "observed_overlap": 8,
+        "max_possible_overlap": 8,
+        "informative_blocks": 4,
+        "blocks": 276,
+        "has_power_at_05": false
+      },
+      "bucket_4": {
+        "p": 0.2735042735042738,
+        "p_floor": 0.004273504273504289,
+        "observed_overlap": 3,
+        "max_possible_overlap": 5,
+        "informative_blocks": 3,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  },
+  "M106-N24": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.011684518013631568,
+        "p_floor": 0.00035407630344339274,
+        "observed_overlap": 3,
+        "max_possible_overlap": 4,
+        "informative_blocks": 2,
+        "blocks": 290,
+        "has_power_at_05": true
+      },
+      "bucket_1": {
+        "p": 0.9999999999999256,
+        "p_floor": 0.16867469879517202,
+        "observed_overlap": 0,
+        "max_possible_overlap": 1,
+        "informative_blocks": 1,
+        "blocks": 280,
+        "has_power_at_05": false
+      },
+      "bucket_2": {
+        "p": 1.004328468895137e-06,
+        "p_floor": 2.601752419292096e-10,
+        "observed_overlap": 9,
+        "max_possible_overlap": 11,
+        "informative_blocks": 6,
+        "blocks": 298,
+        "has_power_at_05": true
+      },
+      "bucket_3": {
+        "p": 0.4166666666666589,
+        "p_floor": 0.04999999999999916,
+        "observed_overlap": 1,
+        "max_possible_overlap": 2,
+        "informative_blocks": 2,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 0.5000000000000002,
+        "p_floor": 0.5000000000000002,
+        "observed_overlap": 1,
+        "max_possible_overlap": 1,
+        "informative_blocks": 1,
+        "blocks": 282,
+        "has_power_at_05": false
+      }
+    }
+  },
+  "M288-N45": {
+    "direction": "enriched",
+    "buckets": {
+      "bucket_0": {
+        "p": 0.4699999999999988,
+        "p_floor": 0.1199999999999997,
+        "observed_overlap": 15,
+        "max_possible_overlap": 16,
+        "informative_blocks": 4,
+        "blocks": 290,
+        "has_power_at_05": false
+      },
+      "bucket_1": {
+        "p": 1.0,
+        "p_floor": 0.0033333333333333574,
+        "observed_overlap": 8,
+        "max_possible_overlap": 10,
+        "informative_blocks": 1,
+        "blocks": 280,
+        "has_power_at_05": true
+      },
+      "bucket_2": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "observed_overlap": 3,
+        "max_possible_overlap": 3,
+        "informative_blocks": 0,
+        "blocks": 298,
+        "has_power_at_05": false
+      },
+      "bucket_3": {
+        "p": 0.00044642857142857364,
+        "p_floor": 0.00044642857142857364,
+        "observed_overlap": 15,
+        "max_possible_overlap": 15,
+        "informative_blocks": 7,
+        "blocks": 276,
+        "has_power_at_05": true
+      },
+      "bucket_4": {
+        "p": 0.02499999999999998,
+        "p_floor": 0.02499999999999998,
+        "observed_overlap": 15,
+        "max_possible_overlap": 15,
+        "informative_blocks": 4,
+        "blocks": 282,
+        "has_power_at_05": true
+      }
+    }
+  }
+}

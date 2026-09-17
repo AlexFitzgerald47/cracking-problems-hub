@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-17, cracker session (Shakespeare register self-match test run; negative result).
+**Last updated:** 2026-09-17, cracker session (Proto-Elamite face-confound audit; constraint set re-tiered).
 
 ## Operating design — 2026-09-13
 
@@ -62,7 +62,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 ### Historical Texts
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Proto-Elamite | `historical-texts/proto-elamite/` | Open – first computational pass complete; **idle since 2026-09-04** | 8 held-out numeral-context constraints replicated after multiple-testing correction; strongest is M297–N39B (OR 12.89, q = 0.00024). Undeciphered; this is structural, not semantic. Next: exact-form M297 audit. See `analysis/RESULTS.md` |
+| Proto-Elamite | `historical-texts/proto-elamite/` | Open — **constraint set re-tiered and audited 2026-09-17**; unclaimed | The 2026-09-04 pipeline reproduces exactly. Seven of the eight numeral constraints survive a null blocking on `(tablet, face)`, not just tablet. Three are load-bearing (M297–N39B, M263–N01, M263–N30C: pass in every powered holdout bucket); the rest are power-limited leads. **M288–N45 is untestable, not refuted** — its face-blocked test has a p-value floor of 0.12 and cannot fire. The M297 family merge was audited and upheld (M297 vs M297~B homogeneous, p = 0.0757/0.6941/0.1377). Face gap is 0.41× the sign signal corpus-wide, but M297 is the most face-skewed sign in the corpus. Recommended experiments 1 and 4 are now closed out — read `HANDOVER.md` before redoing either. See `attempts/2026-09-17-exact-form-and-face/RESULTS.md` |
 | Rohonc Codex | `historical-texts/rohonc-codex/` | Open – **never worked** | Unknown script & language |
 | Phaistos Disc | `historical-texts/phaistos-disc/` | Open – **never worked** | Unique artefact, undeciphered |
 | Linear A | `historical-texts/linear-a/` | Open — functional reconstruction candidate | Scribe-9 labor-liability dossier; KI-RO scalar/block grammar and HT87/HT117 roster relationship. Literal meanings and integrated administrative interpretation remain hypotheses. A-DU polarity is unresolved in the latest handover; do not inherit the older “fulfilled” gloss as settled. Not a language decipherment. |
@@ -118,9 +118,11 @@ problem off for days — that is exactly what happened to Debosnys between 09-14
 7. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate
    the handover. Validate cylinder alignment and normalisation before extending conditional
    ME/T values.
-8. **Proto-Elamite** is unclaimed, idle since 2026-09-04, and one of the most tractable
-   starts available: the exact-form M297 audit, reported alongside a cross-class
-   self-distance.
+8. **Proto-Elamite — worked 2026-09-17; the exact-form audit and the cross-class
+   self-distance are both done.** The constraint set is now tiered by robustness and the
+   folder's cheapest decisive item is a *block-aware split* that would settle M288–N45
+   one way or the other. Two of the folder's five standing recommended experiments are
+   closed and should not be repeated — the handover says which and why. Still unclaimed.
 9. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three new discovery
    packs, but all three need a solution-status audit before a cracker session, not after.
    The Maltravers pack in the same batch was withdrawn because someone else had already

@@ -5,6 +5,102 @@
 ---
 
 
+## 2026-09-17 – cracker session: face confound, exact-form audit, per-sign self-match
+
+**Read `attempts/2026-09-17-exact-form-and-face/RESULTS.md` before anything else in this
+folder.** It supersedes nothing below but it re-tiers the eight constraints, answers two
+of the five recommended experiments, and explains why a third should not be run.
+
+### Frontier now
+
+The 2026-09-04 constraint set reproduces exactly and is **not one tier**. Under a null
+that blocks on `(tablet, face)` as well as tablet, and rotating the holdout across all
+five hash buckets:
+
+| tier | pairs | status |
+|---|---|---|
+| **Load-bearing** | M297–N39B, M263–N01, M263–N30C | pass the face-blocked test in every bucket where the test has power (5/5, 5/5, 4/4) |
+| **Leads** | M297–N01, M297–N24, M106–N24 | survive on the published holdout, power-limited elsewhere |
+| **Untestable at holdout scale** | M288–N45 | see below — *not* refuted |
+| **Barely testable** | M243–N39B | powered in only 2 of 5 buckets; direction flips in the bucket with zero informative blocks |
+
+The M297 family merge was audited and **upheld**: plain M297 and M297~B are homogeneous
+on all three targets (p = 0.0757 / 0.6941 / 0.1377) and carry every association in the
+same direction. The published M297 constraints are not an artefact of the merge.
+
+### Conditional assumptions
+
+- Everything remains **structural**. No sign has a semantic, phonetic or metrological
+  value, and nothing in this session moves toward one.
+- Holdout rotation measures stability and power, not novelty: buckets 1–4 were the
+  2026-09-04 training set and are in-sample for candidate selection.
+- Novelty against specialist sign-by-sign literature is still unestablished.
+
+### Two things a future session must not redo
+
+1. **Do not run recommended experiment 4 (provenience/metadata control) as written.**
+   The 2026-09-04 validation permutes the target *within tablet*, so site, period,
+   scribe, publication and tablet type are already controlled by the published design.
+   The corpus is 1,334/1,467 MDP (Susa), so the stratification also has little power to
+   offer. Face was the confound the design left open; it has now been tested.
+2. **Do not run recommended experiment 1 as written.** Of 370 M297 tokens, 363 (98.1%)
+   carry the `ri2<M297<…` annotation and only 5 (1.4%) are compound members, so two of
+   its three proposed classes do not exist in usable quantity. The graphical-form audit
+   that replaced it is done and reported.
+
+### Next experiments, in priority order
+
+1. **Settle M288–N45 with a block-aware split.** This is the cheapest decisive item on
+   the folder and the code is written. Its face-blocked test on bucket 0 has a **p-value
+   floor of 0.12** — it cannot return a significant answer whatever the data say, because
+   only 4 of 290 tablet-faces are informative. On the full corpus (16 informative blocks,
+   floor 0) it passes at p = 1.0×10⁻⁴, but that includes selection data. **Concretely:**
+   modify the tablet-level split so that validation is guaranteed ≥10 informative
+   `(tablet, face)` blocks for the pair under test, re-screen candidates on the
+   complement, and re-run. `power_floor.py` already computes the floor; the split
+   function is 12 lines in `analysis/structure_associations.py`. Expected outcome is a
+   genuine confirm-or-refute rather than a third "boundary q" note.
+2. **Run the per-sign self-match before ranking anything, not the corpus average.** The
+   corpus-wide face gap is 0.41× the between-sign signal (95% CI [0.191, 0.656],
+   P(ratio ≥ 1) = 0.0000) — comfortably safe. But exactly four of 25 signs exceed the
+   mean sign signal individually, and **three of them (M297 at 2.06×, M243, M288) carry
+   five of the eight constraints.** Any future ranking, clustering or sign-value proposal
+   must report the face effect of the specific signs it ranks. `matched_selfmatch.py`
+   does this; it takes 8 seconds.
+3. **Extend the exact-form audit to M263 and M288.** M297 was audited because it carries
+   the headline result; M263 now carries two of the three load-bearing constraints and
+   has not been checked for the same merge assumption. Same script, change the `family`
+   argument in `test_b`.
+4. **Replication on a newer CDLI export remains the strongest falsification test** and is
+   still unrun (2026-09-04's recommended experiment 2). The predictions are unchanged and
+   should now be stated per tier: the three load-bearing pairs must hold; the leads may
+   not. Note the digest caveat below when pinning the new snapshot.
+5. **Header refinement against Born et al. 2022** (2026-09-04's experiment 5) is still
+   untouched and is the only route in the folder toward document structure rather than
+   line-level association.
+
+### Evidence dependency
+
+Items 1–3 need nothing that is not already in the repository plus the pinned corpus.
+Item 4 needs a newer CDLI ATF export. Item 5 needs the Born et al. 2022 replication
+package. No archival access, no images, no paywalled material.
+
+### Trap for the next session — the corpus digest
+
+`analysis/results/associations.json` records the corpus digest as `ee4fa7ba…c083d6a`.
+That is the **CRLF** hash: the 2026-09-04 session ran on Windows. A Linux or macOS
+checkout of the identical pinned commit gives `8849716c…8bf2b2dcf`. Both are recorded in
+the new `RESULTS.md`. Do not read the mismatch as corpus drift and do not re-pin.
+
+### Reopening condition
+
+The three load-bearing constraints reopen if they fail to replicate, in direction, on an
+independent CDLI export — that is the falsification test they were published under.
+M288–N45 reopens immediately on item 1, which can be run today.
+
+---
+
+
 ## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
 
 **When the exact-form M297 audit runs, report the cross-class self-distance beside it.**
