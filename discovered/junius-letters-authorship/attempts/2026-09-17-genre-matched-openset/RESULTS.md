@@ -111,10 +111,17 @@ features are gradients, not binaries"; that caution needed to be applied to its 
 headline, and was not. Corrected forward, not deleted — the corpus trap that session
 identified is real and load-bearing, and its four other findings stand.
 
-Of the ten synonym variables tested, three survive a genre control with real
-discriminating power (`farther/further`, `till/until`, `on/upon`), and on all three
-Junius and Francis **disagree**. That is suggestive but it is not reported as a
-finding, because §3 shows the register gap can produce exactly that pattern.
+Six of the ten variables survive the genre control (`results/genre_effect.json`), but
+only three of those six actually spread the panel rather than recording a period norm:
+`farther/further`, `till/until` and `on/upon`. On all three Junius and Francis point
+opposite ways — Junius prefers *farther*, *until* and *upon* (0.80, 0.34, 0.39);
+Francis's letters prefer *further*, *till* and *on* (0.38, 0.85, 0.75).
+
+That is **not** reported as a finding, for two reasons. The counts are thin on two of
+the three: Junius's `till/until` rests on 29 joint occurrences and Francis's
+`farther/further` on 16. And §3 shows the register gap alone can produce exactly this
+pattern — `on/upon` in particular shifts by up to 0.35 between one author's two
+registers, which is most of the Junius–Francis difference on that variable.
 
 ### 2. The edition/OCR gap is small; this is a positive methodological result
 
