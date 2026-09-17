@@ -1,0 +1,18 @@
+{
+ "same-register (private letters, 11 authors)": {
+  "accuracy": 0.8480113636363636,
+  "majority": 0.12926136363636365,
+  "n_classes": 11,
+  "perm_median": 0.08948863636363637,
+  "perm_p95": 0.11079545454545454,
+  "p_value": 0.0
+ },
+ "all registers pooled by author": {
+  "accuracy": 0.7714285714285715,
+  "majority": 0.20588235294117646,
+  "n_classes": 17,
+  "perm_median": 0.04873949579831933,
+  "perm_p95": 0.06554621848739496,
+  "p_value": 0.0
+ }
+}

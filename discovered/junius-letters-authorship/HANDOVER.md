@@ -18,7 +18,7 @@ than the median same-author cross-register pair.
 
 This is a power failure of the evidence, not of the method. With register held
 constant the pipeline is accurate: Junius vs Draper leave-one-out **0.970**, Philo
-Junius placed with Junius **23/23**, 11-author same-register attribution **0.884**.
+Junius placed with Junius **23/23**, 11-author same-register attribution **0.848**.
 The same 11 authors cross-register: **0.105**, at or below chance (0.125).
 
 Do not inherit "Francis ranks 8th of 15" as a result against him. It is in

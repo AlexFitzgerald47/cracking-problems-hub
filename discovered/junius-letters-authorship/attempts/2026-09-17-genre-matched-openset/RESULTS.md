@@ -31,7 +31,7 @@ pipeline is accurate:
 | Junius vs Draper, same volume, leave-one-out | **97/100 = 0.970** (chance 0.500) |
 | Philo Junius (Junius's own second signature) placed with Junius | **23/23 documents** |
 | Draper's independently transcribed 1772 text placed with Draper | **3/3 documents** |
-| 11-author same-register leave-one-out | **0.884** (chance 0.091) |
+| 11-author same-register leave-one-out | **0.848** (label-permutation null 0.089, p < 0.005) |
 | the same 11 authors, cross-register | **0.105** (chance 0.125) |
 
 The method works. The evidence does not support the comparison the attribution needs.
@@ -159,7 +159,9 @@ dominates author, cross-register attribution would collapse to chance while
 same-register attribution stayed high, and set the failure condition that anything
 near the same-register figure would refute the session's conclusion. Result:
 
-* same-register, 11 candidates: **0.884** (chance 0.091)
+* same-register, 11 candidates: **0.848** (label-permutation null median 0.089,
+  95th percentile 0.111, p < 0.005 over 200 permutations; majority-class baseline
+  0.129 — see `src/permutation_null.py`)
 * cross-register, private letters against formal-prose centroids, 8 candidates:
   **0.105** (chance 0.125) — *at or below chance*
 * cross-register, the other direction, 11 candidates: 0.345
@@ -257,6 +259,15 @@ Requires `numpy`. Results land in `results/*.json`.
   would push rivals *away* from Junius, which biases in Francis's favour, not against.
 * Francis's letters in the exact Junius window (1768–1773) total only 10,131 words, so
   the Francis private-letter profile pools 1758–1814 and carries a chronology caveat.
+* **Self-audit, corrected before publication.** The same-register control in
+  `prediction_test.py` originally read 0.884 because the test document was inside its
+  own author's centroid while the cross-register conditions got no such help. Adding
+  leave-one-out to that control brings it to **0.848**, which now agrees exactly with
+  the independent `permutation_null.py` figure. The prediction is upheld either way,
+  but the 0.884 figure was rigged in the direction of the session's own conclusion and
+  should not be quoted from any earlier commit.
+* Baselines are reported against a label-permutation null rather than 1/n_classes,
+  because the classes are unbalanced (Burke 245 documents, Price 13).
 * `delta_genre.py`'s positive/negative control section is confounded — Junius is the
   only public-letter class in that candidate set, so "nearest is Junius" partly means
   "nearest same register". It is kept for the record; `matched_controls.py` is the

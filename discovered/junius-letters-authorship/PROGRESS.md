@@ -45,7 +45,7 @@ frozen out-of-sample prediction. Full write-up and code:
    of 19 cells. Francis does not match Francis.**
 5. **Frozen prediction, tested, upheld.** Predicted before running that cross-register
    attribution would fall to chance while same-register stayed high, failure condition
-   stated. Same-register 11-way = **0.884** (chance 0.091); cross-register 8-way =
+   stated. Same-register 11-way = **0.848** (chance 0.091); cross-register 8-way =
    **0.105** (chance 0.125), at or below chance. Francis's private letters are
    attributed to **Burke 48 times** when only formal-prose candidates are offered,
    though Francis's own formal prose is in that candidate set.

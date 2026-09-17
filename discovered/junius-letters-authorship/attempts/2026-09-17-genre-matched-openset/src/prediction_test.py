@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RES = os.path.join(HERE, "..", "results")
 
 PREDICTION = ("cross-register attribution accuracy will be at or near chance, and far "
-              "below the 0.848 same-register figure")
+              "below the same-register figure")
 
 
 def main():
@@ -61,10 +61,10 @@ def main():
         for i, d in enumerate(docs):
             if d["genre"] in train_genres and d["author"] not in ("Junius", "Philo_Junius"):
                 train[d["author"]].append(i)
-        cents = {a: np.mean(Z[v], 0) for a, v in train.items() if len(v) >= 8}
-        cand = sorted(cents)
+        train = {a: v for a, v in train.items() if len(v) >= 8}
+        cand = sorted(train)
         test = [i for i, d in enumerate(docs)
-                if d["genre"] in test_genres and d["author"] in cents
+                if d["genre"] in test_genres and d["author"] in train
                 and d["author"] not in ("Junius", "Philo_Junius")]
         if not test:
             print(f"{name}: no testable documents")
@@ -72,6 +72,15 @@ def main():
         ok = 0
         conf = Counter()
         for i in test:
+            # Leave-one-out even in the same-register control. Without this the test
+            # document sits inside its own author's centroid while the cross-register
+            # conditions get no such help, and the comparison is rigged in favour of
+            # the same-register number -- it read 0.884 before this was fixed.
+            cents = {}
+            for a, v in train.items():
+                vv = [x for x in v if x != i]
+                if vv:
+                    cents[a] = np.mean(Z[vv], 0)
             pred = min(cents, key=lambda a: float(np.abs(Z[i] - cents[a]).mean()))
             ok += pred == docs[i]["author"]
             if pred != docs[i]["author"]:

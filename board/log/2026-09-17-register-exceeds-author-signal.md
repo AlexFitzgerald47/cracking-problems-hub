@@ -19,7 +19,7 @@ result is worse than "half":
 **The confound exceeds the effect.** 86% of different-author same-register pairs are
 closer together than the median same-author cross-register pair. Document-level
 confirmation on the same corpus, same features, same method: 11-author attribution runs
-at **0.884** within register and **0.105** across it, against a chance rate of 0.125 —
+at **0.848** within register and **0.105** across it, against a chance rate of 0.125 —
 *at or below chance*.
 
 So this is not "discount the result by half". Across a register gap, a candidate
@@ -87,7 +87,7 @@ Under **Method**, appended to the existing "count the competitors" note:
 > matches himself across it.** On the Junius corpus the same-author cross-register
 > Delta (0.587) exceeded the different-author same-register Delta (0.470), and
 > cross-register attribution ran at or below chance while same-register attribution ran
-> at 0.884. A ranking that crosses a gap wider than the signal is measuring the gap. The
+> at 0.848. A ranking that crosses a gap wider than the signal is measuring the gap. The
 > test costs one distance: take an author attested in both conditions and score him
 > against himself.
 
