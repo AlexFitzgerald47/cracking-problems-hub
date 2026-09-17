@@ -87,7 +87,7 @@ frozen out-of-sample prediction. Full write-up and code:
 ### Artefacts
 `attempts/2026-09-17-genre-matched-openset/` — `RESULTS.md`, `data/SOURCES.md`
 (every source with byte size and measured OCR damage rate), `data/corpus/*.jsonl`,
-`src/` (11 scripts, all rerunnable), `results/*.json`.
+`src/` (17 scripts, all rerunnable), `results/*.json`.
 
 ---
 

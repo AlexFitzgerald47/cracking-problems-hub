@@ -107,7 +107,7 @@ particularly the target-leakage trap (a Philip Francis author listing includes
 
 `attempts/2026-09-17-genre-matched-openset/` — `RESULTS.md` (read this first),
 `data/SOURCES.md` (every source, byte size, measured OCR damage rate),
-`data/corpus/*.jsonl`, `src/` (11 rerunnable scripts), `results/*.json`.
+`data/corpus/*.jsonl`, `src/` (17 rerunnable scripts), `results/*.json`.
 
 ---
 

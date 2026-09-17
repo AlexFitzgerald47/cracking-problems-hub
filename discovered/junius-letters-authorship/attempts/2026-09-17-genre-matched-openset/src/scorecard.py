@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""The candidate scorecard: where does Philip Francis rank among period writers on
+"""
+SUPERSEDED, kept for the record. Its within-author calibration splits a single
+volume at random, which shares topic, date and edition between the halves and so
+understates within-author variation. calibration.py and then register_calibration.py
+replace it; register_calibration.py is the one the conclusion rests on.
+
+The candidate scorecard: where does Philip Francis rank among period writers on
 the synonym-choice variables, and is that rank distinguishable from chance?
 
 Three numbers decide whether a shared preference is evidence, and the traditional

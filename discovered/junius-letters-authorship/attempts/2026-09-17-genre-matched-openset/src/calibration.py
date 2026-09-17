@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""The number the whole argument turns on: how far apart are TWO GENUINELY DIFFERENT
+"""
+SUPERSEDED, kept for the record. Requiring every large sample to measure every
+variable collapsed the comparable variable set to ONE (on/upon), which is too fragile
+to carry a conclusion -- that collapse is itself the finding that pushed this study off
+binary synonym variables and onto function-word Delta. register_calibration.py is the
+replacement.
+
+The number the whole argument turns on: how far apart are TWO GENUINELY DIFFERENT
 samples of one author?
 
 scorecard.py's first calibration splits a single volume at random. That shares topic,

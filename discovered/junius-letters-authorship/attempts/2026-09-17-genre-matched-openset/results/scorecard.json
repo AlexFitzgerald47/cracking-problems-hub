@@ -9,10 +9,10 @@
  ],
  "junius": {
   "among/amongst": 1.0,
-  "farther/further": 0.8148148148148148,
-  "till/until": 0.3125,
-  "on/upon": 0.36336779911373707,
-  "among/amidst": 0.975,
+  "farther/further": 0.8387096774193549,
+  "till/until": 0.34146341463414637,
+  "on/upon": 0.35216819973718794,
+  "among/amidst": 0.9772727272727273,
   "doth/does": 0.0
  },
  "competitors": [
@@ -21,7 +21,7 @@
    "genre": "political_prose",
    "n_docs": 13,
    "n_tokens": 24964,
-   "distance": 0.1291,
+   "distance": 0.1321,
    "n_vars": 3
   },
   {
@@ -29,7 +29,7 @@
    "genre": "published_prose",
    "n_docs": 17,
    "n_tokens": 34018,
-   "distance": 0.1355,
+   "distance": 0.14,
    "n_vars": 3
   },
   {
@@ -37,7 +37,7 @@
    "genre": "private_letter",
    "n_docs": 74,
    "n_tokens": 144535,
-   "distance": 0.1595,
+   "distance": 0.1511,
    "n_vars": 5
   },
   {
@@ -45,7 +45,7 @@
    "genre": "private_letter",
    "n_docs": 51,
    "n_tokens": 99904,
-   "distance": 0.2056,
+   "distance": 0.2025,
    "n_vars": 5
   },
   {
@@ -53,7 +53,7 @@
    "genre": "private_letter",
    "n_docs": 71,
    "n_tokens": 138459,
-   "distance": 0.2126,
+   "distance": 0.2134,
    "n_vars": 6
   },
   {
@@ -61,31 +61,23 @@
    "genre": "private_letter",
    "n_docs": 80,
    "n_tokens": 154717,
-   "distance": 0.2347,
+   "distance": 0.2316,
    "n_vars": 5
-  },
-  {
-   "author": "Edmund_Burke",
-   "genre": "published_prose",
-   "n_docs": 174,
-   "n_tokens": 348808,
-   "distance": 0.2386,
-   "n_vars": 6
   },
   {
    "author": "Thomas_Gray",
    "genre": "private_letter",
    "n_docs": 45,
    "n_tokens": 88029,
-   "distance": 0.2387,
+   "distance": 0.2401,
    "n_vars": 6
   },
   {
-   "author": "Samuel_Johnson",
+   "author": "Edmund_Burke",
    "genre": "published_prose",
-   "n_docs": 156,
-   "n_tokens": 312534,
-   "distance": 0.2486,
+   "n_docs": 174,
+   "n_tokens": 348808,
+   "distance": 0.2497,
    "n_vars": 6
   },
   {
@@ -93,15 +85,23 @@
    "genre": "private_letter",
    "n_docs": 81,
    "n_tokens": 152568,
-   "distance": 0.2528,
+   "distance": 0.2497,
    "n_vars": 5
+  },
+  {
+   "author": "Samuel_Johnson",
+   "genre": "published_prose",
+   "n_docs": 156,
+   "n_tokens": 312534,
+   "distance": 0.25,
+   "n_vars": 6
   },
   {
    "author": "John_Wilkes",
    "genre": "political_prose",
    "n_docs": 33,
    "n_tokens": 69355,
-   "distance": 0.2602,
+   "distance": 0.2552,
    "n_vars": 4
   },
   {
@@ -109,7 +109,7 @@
    "genre": "political_prose",
    "n_docs": 51,
    "n_tokens": 96364,
-   "distance": 0.2748,
+   "distance": 0.2689,
    "n_vars": 3
   },
   {
@@ -117,7 +117,7 @@
    "genre": "private_letter",
    "n_docs": 77,
    "n_tokens": 149736,
-   "distance": 0.2912,
+   "distance": 0.2926,
    "n_vars": 6
   },
   {
@@ -125,7 +125,7 @@
    "genre": "private_letter",
    "n_docs": 91,
    "n_tokens": 171384,
-   "distance": 0.2996,
+   "distance": 0.301,
    "n_vars": 6
   },
   {
@@ -133,7 +133,7 @@
    "genre": "private_letter",
    "n_docs": 52,
    "n_tokens": 100029,
-   "distance": 0.3074,
+   "distance": 0.3015,
    "n_vars": 3
   },
   {
@@ -141,16 +141,11 @@
    "genre": "private_letter",
    "n_docs": 57,
    "n_tokens": 109861,
-   "distance": 0.4091,
+   "distance": 0.4046,
    "n_vars": 4
   }
  ],
  "within_author": [
-  {
-   "cell": "Lord_Chesterfield (private_letter)",
-   "distance": 0.0016,
-   "n_vars": 3
-  },
   {
    "cell": "Horace_Walpole (private_letter)",
    "distance": 0.0163,
@@ -160,6 +155,11 @@
    "cell": "Samuel_Johnson (published_prose)",
    "distance": 0.0174,
    "n_vars": 5
+  },
+  {
+   "cell": "Lord_Chesterfield (private_letter)",
+   "distance": 0.0216,
+   "n_vars": 3
   },
   {
    "cell": "Edmund_Burke (private_letter)",
@@ -178,7 +178,7 @@
   },
   {
    "cell": "Philip_Francis (private_letter)",
-   "distance": 0.0388,
+   "distance": 0.0424,
    "n_vars": 4
   },
   {

@@ -69,121 +69,121 @@
    "author": "Samuel_Johnson",
    "sample": "published_prose/gutenberg_43656",
    "tokens": 164317,
-   "distance": 0.0886
-  },
-  {
-   "author": "Samuel_Johnson",
-   "sample": "published_prose/gutenberg_11397",
-   "tokens": 148217,
-   "distance": 0.1011
+   "distance": 0.0998
   },
   {
    "author": "Lord_Chesterfield",
    "sample": "private_letter/letterstohisson01chesiala",
    "tokens": 144535,
-   "distance": 0.1146
+   "distance": 0.1035
+  },
+  {
+   "author": "Samuel_Johnson",
+   "sample": "published_prose/gutenberg_11397",
+   "tokens": 148217,
+   "distance": 0.1123
   },
   {
    "author": "Edmund_Burke",
    "sample": "published_prose/gutenberg_2173",
    "tokens": 44053,
-   "distance": 0.1625
+   "distance": 0.1737
   },
   {
    "author": "Laurence_Sterne",
    "sample": "private_letter/letterslaterevm00stergoog",
    "tokens": 49648,
-   "distance": 0.2616
+   "distance": 0.2728
   },
   {
    "author": "William_Cowper",
    "sample": "private_letter/letterswilliamc00cowpgoog",
    "tokens": 99904,
-   "distance": 0.2656
+   "distance": 0.2768
   },
   {
    "author": "Edmund_Burke",
    "sample": "published_prose/gutenberg_15043",
    "tokens": 146024,
-   "distance": 0.2716
+   "distance": 0.2828
   },
   {
    "author": "Philip_Francis",
    "sample": "private_letter/francisletters01franuoft",
    "tokens": 73696,
-   "distance": 0.2828
+   "distance": 0.294
   },
   {
    "author": "James_Boswell",
    "sample": "private_letter/lettersofjamesbo00boswuoft",
    "tokens": 100029,
-   "distance": 0.2902
+   "distance": 0.3014
   },
   {
    "author": "Edmund_Burke",
    "sample": "published_prose/gutenberg_15198",
    "tokens": 158731,
-   "distance": 0.3366
+   "distance": 0.3478
   },
   {
    "author": "Edmund_Burke",
    "sample": "private_letter/correspondencer01burkgoog",
    "tokens": 138459,
-   "distance": 0.3713
+   "distance": 0.3825
   },
   {
    "author": "Thomas_Gray",
    "sample": "private_letter/lettersofthomasg00gray",
    "tokens": 88029,
-   "distance": 0.3988
+   "distance": 0.41
   },
   {
    "author": "John_Wilkes",
    "sample": "political_prose/bim_eighteenth-century_english-liberty-being-a_wilkes-john_1769_1",
    "tokens": 69355,
-   "distance": 0.4228
+   "distance": 0.434
   },
   {
    "author": "Hugh_Boyd",
    "sample": "political_prose/miscellaneouswor01boydiala",
    "tokens": 96364,
-   "distance": 0.4323
+   "distance": 0.4435
   },
   {
    "author": "Thomas_Pownall",
    "sample": "political_prose/administrationb01wargoog",
    "tokens": 53968,
-   "distance": 0.4328
+   "distance": 0.444
   },
   {
    "author": "Samuel_Johnson",
    "sample": "private_letter/letterssamueljo00johngoog",
    "tokens": 152568,
-   "distance": 0.4422
+   "distance": 0.4534
   },
   {
    "author": "Philip_Francis",
    "sample": "private_letter/francisletters02franuoft",
    "tokens": 81021,
-   "distance": 0.4646
+   "distance": 0.4758
   },
   {
    "author": "Horace_Walpole",
    "sample": "private_letter/lettersofhoracew03walp",
    "tokens": 109861,
-   "distance": 0.4934
+   "distance": 0.5046
   },
   {
    "author": "David_Hume",
    "sample": "private_letter/lettersdavidhum00humegoog",
    "tokens": 171384,
-   "distance": 0.5169
+   "distance": 0.5281
   },
   {
    "author": "Edward_Gibbon",
    "sample": "private_letter/privatelettersof02gibb",
    "tokens": 149736,
-   "distance": 0.5613
+   "distance": 0.5725
   }
  ]
 }
