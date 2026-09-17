@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XXX
+ | previous   = [[../Letter XXIX|Letter XXIX]]
+ | next       = [[../Letter XXXI|Letter XXXI]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 2 (Woodfall, 1772).djvu" from=11 to=21 tosection="LETTER XXX." />
+{{smallrefs}}

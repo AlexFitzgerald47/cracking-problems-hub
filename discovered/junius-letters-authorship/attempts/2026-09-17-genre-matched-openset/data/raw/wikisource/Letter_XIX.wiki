@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XIX
+ | previous   = [[../Letter XVIII|Letter XVIII]]
+ | next       = [[../Letter XX|Letter XX]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=175 to=187 />
+{{smallrefs}}

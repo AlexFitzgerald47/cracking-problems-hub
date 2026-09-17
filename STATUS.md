@@ -72,6 +72,8 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 7. **VENONA:** documentary Meredith/Vernon chronology and contact tests; no generic candidate restart.
 8. **Balanced fresh work:** Caligula remains a bounded, untouched corpus question. Sidetic has no landed problem pack; recreate from the screened target only after primary-source access is checked.
 
+**Junius is now a specified-evidence lane, not an untouched one.** Do not restart it as a fresh stylometry pass; read its `HANDOVER.md` first. The general lesson — measure the confound gap and check the candidate matches himself across it before ranking candidates — is in `board/log/2026-09-17-register-exceeds-author-signal.md` and is proposed for `PRACTICES.md`.
+
 Archive-blocked lanes remain Dorabella and CD286; Proto-Elamite remains available for exact-form M297 audit. Do not reuse Voynich's withdrawn example as a validated control design.
 
 ## Validation queue
@@ -106,7 +108,7 @@ the stub once the problem has had a session at its new path.
 
 | Problem | Folder | Suggested category | Tractability with text/compute |
 |---------|--------|--------------------|-------------------------------|
-| Letters of Junius | `discovered/junius-letters-authorship/` | historical-controversies | **Very good** – corpus public; Ellegård (1962) never redone |
+| Letters of Junius | `discovered/junius-letters-authorship/` | historical-controversies | **Worked 2026-09-17 — now evidence-blocked, and the block is measured.** Corpus built and reproducible (Junius from two independent digitisations; 173 acknowledged Francis letters; 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 23/23. **The register gap exceeds the author signal** — same-author cross-register Delta 0.587 vs different-author same-register 0.470; cross-register attribution runs at 0.105 against 0.884 within register. Francis ranks 8th of 15 and **that ranking is not evidence either way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in public polemical register 1769–1775 |
 | 1641 Depositions (quantitative) | `discovered/1641-depositions-quantitative/` | ireland | **Excellent** – 19,010 pages digitised; entity-resolution problem |
 | Thera eruption date | `discovered/thera-eruption-date/` | historical-controversies | **Very good** – published data, re-analysable; live as of 2025 |
 | Caligula's seashells | `discovered/caligulas-seashells/` | historical-controversies | **Good** – cheapest on the board to start |

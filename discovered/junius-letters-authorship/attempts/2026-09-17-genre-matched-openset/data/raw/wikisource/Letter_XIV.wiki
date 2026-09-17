@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XIV
+ | previous   = [[../Letter XIII|Letter XIII]]
+ | next       = [[../Letter XV|Letter XV]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=137 to=143 tosection="LETTER XIV." />
+{{smallrefs}}

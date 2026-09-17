@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter V
+ | previous   = [[../Letter IV|Letter IV]]
+ | next       = [[../Letter VI|Letter VI]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=88 fromsection="LETTER V."  to=91 />
+{{smallrefs}}

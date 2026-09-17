@@ -1,0 +1,52 @@
+{
+ "among/amongst": {
+  "spread": 0.531,
+  "max_genre_shift": 0.208,
+  "verdict": "usable"
+ },
+ "farther/further": {
+  "spread": 0.535,
+  "max_genre_shift": 0.109,
+  "verdict": "usable"
+ },
+ "till/until": {
+  "spread": 0.659,
+  "max_genre_shift": 0.189,
+  "verdict": "usable"
+ },
+ "toward/towards": {
+  "spread": null,
+  "max_genre_shift": 0.22727272727272727,
+  "verdict": "untestable"
+ },
+ "while/whilst": {
+  "spread": 0.171,
+  "max_genre_shift": 0.512,
+  "verdict": "UNUSABLE - genre shift >= author spread"
+ },
+ "on/upon": {
+  "spread": 0.676,
+  "max_genre_shift": 0.348,
+  "verdict": "usable"
+ },
+ "among/amidst": {
+  "spread": 0.155,
+  "max_genre_shift": 0.067,
+  "verdict": "usable"
+ },
+ "betwixt/between": {
+  "spread": 0.043,
+  "max_genre_shift": 0.182,
+  "verdict": "UNUSABLE - genre shift >= author spread"
+ },
+ "hath/has": {
+  "spread": 0.025,
+  "max_genre_shift": 0.025,
+  "verdict": "UNUSABLE - genre shift >= author spread"
+ },
+ "doth/does": {
+  "spread": 0.074,
+  "max_genre_shift": 0.017,
+  "verdict": "usable"
+ }
+}

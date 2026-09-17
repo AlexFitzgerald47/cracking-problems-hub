@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XXVI
+ | previous   = [[../Letter XXV|Letter XXV]]
+ | next       = [[../Letter XXVII|Letter XXVII]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=231 fromsection="LETTER XXVI." to=238 tosection="LETTER XXVI." />
+{{smallrefs}}

@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XLV
+ | previous   = [[../Letter XLIV|Letter XLIV]]
+ | next       = [[../Letter XLVI|Letter XLVI]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 2 (Woodfall, 1772).djvu" from=178 to=179 />
+{{smallrefs}}

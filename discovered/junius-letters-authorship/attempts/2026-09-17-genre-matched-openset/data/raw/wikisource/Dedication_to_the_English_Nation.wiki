@@ -1,0 +1,14 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Dedication to the English Nation
+ | previous   = 
+ | next       = [[../Preface|Preface]]
+ | notes      = 
+}}
+
+<div style="margin-left:10%; margin-right:10%;">
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=15 to=24 />
+{{smallrefs}}
+</div>

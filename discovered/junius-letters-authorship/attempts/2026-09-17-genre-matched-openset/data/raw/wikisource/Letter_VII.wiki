@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter VII
+ | previous   = [[../Letter VI|Letter VI]]
+ | next       = [[../Letter VIII|Letter VIII]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=93 fromsection="LETTER VII." to=97 />
+{{smallrefs}}

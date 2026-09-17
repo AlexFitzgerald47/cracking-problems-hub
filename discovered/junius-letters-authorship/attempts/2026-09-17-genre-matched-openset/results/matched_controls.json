@@ -1,0 +1,38 @@
+{
+ "q1_accuracy": 0.97,
+ "q2_Philo Junius (1813)": {
+  "to_junius": 19,
+  "n": 19,
+  "mean_junius": 0.7916,
+  "mean_draper": 0.9243
+ },
+ "q2_Philo Junius (1772)": {
+  "to_junius": 4,
+  "n": 4,
+  "mean_junius": 0.7688,
+  "mean_draper": 0.8716
+ },
+ "q2_John Horne (1772)": {
+  "to_junius": 3,
+  "n": 4,
+  "mean_junius": 0.9522,
+  "mean_draper": 0.9898
+ },
+ "q2_Draper (1772)": {
+  "to_junius": 0,
+  "n": 3,
+  "mean_junius": 0.8718,
+  "mean_draper": 0.7717
+ },
+ "q3": {
+  "to_junius": 34,
+  "n": 34,
+  "mean_junius": 0.7768,
+  "mean_draper": 0.9037
+ },
+ "q3_gaps": {
+  "same_author_same_edition": 0.7647,
+  "same_author_other_edition": 0.7768,
+  "other_author_same_edition": 0.8279
+ }
+}

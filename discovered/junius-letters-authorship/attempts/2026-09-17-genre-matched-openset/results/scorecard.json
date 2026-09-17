@@ -1,0 +1,200 @@
+{
+ "variables": [
+  "among/amongst",
+  "farther/further",
+  "till/until",
+  "on/upon",
+  "among/amidst",
+  "doth/does"
+ ],
+ "junius": {
+  "among/amongst": 1.0,
+  "farther/further": 0.8148148148148148,
+  "till/until": 0.3125,
+  "on/upon": 0.36336779911373707,
+  "among/amidst": 0.975,
+  "doth/does": 0.0
+ },
+ "competitors": [
+  {
+   "author": "Richard_Price",
+   "genre": "political_prose",
+   "n_docs": 13,
+   "n_tokens": 24964,
+   "distance": 0.1291,
+   "n_vars": 3
+  },
+  {
+   "author": "David_Hume",
+   "genre": "published_prose",
+   "n_docs": 17,
+   "n_tokens": 34018,
+   "distance": 0.1355,
+   "n_vars": 3
+  },
+  {
+   "author": "Lord_Chesterfield",
+   "genre": "private_letter",
+   "n_docs": 74,
+   "n_tokens": 144535,
+   "distance": 0.1595,
+   "n_vars": 5
+  },
+  {
+   "author": "William_Cowper",
+   "genre": "private_letter",
+   "n_docs": 51,
+   "n_tokens": 99904,
+   "distance": 0.2056,
+   "n_vars": 5
+  },
+  {
+   "author": "Edmund_Burke",
+   "genre": "private_letter",
+   "n_docs": 71,
+   "n_tokens": 138459,
+   "distance": 0.2126,
+   "n_vars": 6
+  },
+  {
+   "author": "Philip_Francis",
+   "genre": "private_letter",
+   "n_docs": 80,
+   "n_tokens": 154717,
+   "distance": 0.2347,
+   "n_vars": 5
+  },
+  {
+   "author": "Edmund_Burke",
+   "genre": "published_prose",
+   "n_docs": 174,
+   "n_tokens": 348808,
+   "distance": 0.2386,
+   "n_vars": 6
+  },
+  {
+   "author": "Thomas_Gray",
+   "genre": "private_letter",
+   "n_docs": 45,
+   "n_tokens": 88029,
+   "distance": 0.2387,
+   "n_vars": 6
+  },
+  {
+   "author": "Samuel_Johnson",
+   "genre": "published_prose",
+   "n_docs": 156,
+   "n_tokens": 312534,
+   "distance": 0.2486,
+   "n_vars": 6
+  },
+  {
+   "author": "Samuel_Johnson",
+   "genre": "private_letter",
+   "n_docs": 81,
+   "n_tokens": 152568,
+   "distance": 0.2528,
+   "n_vars": 5
+  },
+  {
+   "author": "John_Wilkes",
+   "genre": "political_prose",
+   "n_docs": 33,
+   "n_tokens": 69355,
+   "distance": 0.2602,
+   "n_vars": 4
+  },
+  {
+   "author": "Hugh_Boyd",
+   "genre": "political_prose",
+   "n_docs": 51,
+   "n_tokens": 96364,
+   "distance": 0.2748,
+   "n_vars": 3
+  },
+  {
+   "author": "Edward_Gibbon",
+   "genre": "private_letter",
+   "n_docs": 77,
+   "n_tokens": 149736,
+   "distance": 0.2912,
+   "n_vars": 6
+  },
+  {
+   "author": "David_Hume",
+   "genre": "private_letter",
+   "n_docs": 91,
+   "n_tokens": 171384,
+   "distance": 0.2996,
+   "n_vars": 6
+  },
+  {
+   "author": "James_Boswell",
+   "genre": "private_letter",
+   "n_docs": 52,
+   "n_tokens": 100029,
+   "distance": 0.3074,
+   "n_vars": 3
+  },
+  {
+   "author": "Horace_Walpole",
+   "genre": "private_letter",
+   "n_docs": 57,
+   "n_tokens": 109861,
+   "distance": 0.4091,
+   "n_vars": 4
+  }
+ ],
+ "within_author": [
+  {
+   "cell": "Lord_Chesterfield (private_letter)",
+   "distance": 0.0016,
+   "n_vars": 3
+  },
+  {
+   "cell": "Horace_Walpole (private_letter)",
+   "distance": 0.0163,
+   "n_vars": 3
+  },
+  {
+   "cell": "Samuel_Johnson (published_prose)",
+   "distance": 0.0174,
+   "n_vars": 5
+  },
+  {
+   "cell": "Edmund_Burke (private_letter)",
+   "distance": 0.0221,
+   "n_vars": 3
+  },
+  {
+   "cell": "James_Boswell (private_letter)",
+   "distance": 0.026,
+   "n_vars": 3
+  },
+  {
+   "cell": "Samuel_Johnson (private_letter)",
+   "distance": 0.0345,
+   "n_vars": 5
+  },
+  {
+   "cell": "Philip_Francis (private_letter)",
+   "distance": 0.0388,
+   "n_vars": 4
+  },
+  {
+   "cell": "David_Hume (private_letter)",
+   "distance": 0.0459,
+   "n_vars": 5
+  },
+  {
+   "cell": "Edward_Gibbon (private_letter)",
+   "distance": 0.0528,
+   "n_vars": 3
+  },
+  {
+   "cell": "Edmund_Burke (published_prose)",
+   "distance": 0.0552,
+   "n_vars": 6
+  }
+ ]
+}

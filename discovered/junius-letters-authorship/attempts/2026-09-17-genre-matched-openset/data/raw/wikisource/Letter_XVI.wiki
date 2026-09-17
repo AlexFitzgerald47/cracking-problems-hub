@@ -1,0 +1,13 @@
+{{header
+ | title      = [[../]]
+ | author     = Junius
+ | translator = 
+ | section    = Letter XVI
+ | previous   = [[../Letter XV|Letter XV]]
+ | next       = [[../Letter XVII|Letter XVII]]
+ | notes      = 
+}}
+
+
+<pages index="Letters of Junius, volume 1 (Woodfall, 1772).djvu" from=153 fromsection="LETTER XVI." to=161 tosection="LETTER XVI." />
+{{smallrefs}}
