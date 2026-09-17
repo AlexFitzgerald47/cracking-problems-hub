@@ -1,3 +1,7 @@
+## 2026-09-17 – Solution-status correction
+
+Cryptiana now identifies this target as solved and records notification from Daniel Bourdeau on 16 September 2026. His published analysis decodes both 13 September 1634 and 22 January 1634/5 passages using the 59 printed figures and cross-checks contemporaneous Wentworth dispatches. Seven of nine nomenclator codes are fixed; values 185 and 149 in one clause remain unresolved. Source: https://dbourdeau.github.io/cyphersolver/ormonde.html . Withdraw as an open cracking candidate; retain for replication or for examination of those narrow residual uncertainties.
+
 # Progress Log
 
 ## 2026-09-17 – Finder discovery pass
