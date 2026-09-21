@@ -201,7 +201,11 @@ activated). Cost: unknown.
 session generated. Full write-up in
 `attempts/2026-09-21-period-detrend-and-equal-n/RESULTS.md`; reproduction record
 in `REPRODUCTION.md`; all predictions frozen in `PREDICTIONS.md` in five rounds,
-each committed ahead of its results.
+each written before the experiment it governs. Rounds 1-2 were also *committed*
+ahead of their results and are checkable in `git log` (`7c7730d`, `d668c26`);
+rounds 3-5 were committed together with their results, so for those the ordering
+rests on this session's word rather than on the repository. Flagged in
+`RESULTS.md` rather than presented as equivalent.
 
 **Claim.** `board/active/shakespeare-authorship.md` was held by a 2026-09-18
 session that produced no folder commit in three days. Taken as a crashed session

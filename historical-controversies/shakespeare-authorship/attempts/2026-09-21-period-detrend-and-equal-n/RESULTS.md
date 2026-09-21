@@ -140,8 +140,18 @@ years. Any claim that the corrected method "works" has to carry these two.
 
 ## Scorecard against the frozen predictions
 
-Predictions were frozen in five rounds, each committed before the corresponding
-results (`PREDICTIONS.md`, checkable in `git log`).
+Predictions were frozen in five rounds in `PREDICTIONS.md`, each round written
+before the experiment it governs was run.
+
+**How far that is externally checkable, exactly.** Rounds 1 and 2 (R0, A, B and the
+C block) were committed in their own commits ahead of their results — `7c7730d`
+carries the A/B freeze before any new distance was computed, and `d668c26` carries
+the C freeze alongside B's results and before C was run. Rounds 3, 4 and 5 (D, E
+and G) were **written before their experiments but committed in the same commit as
+their results**, so for those three the ordering rests on this session's word
+rather than on `git log`. They are flagged rather than quietly presented as
+equivalent. A later session repeating this should commit every freeze separately;
+it costs one command.
 
 | | prediction | outcome |
 |---|---|---|
