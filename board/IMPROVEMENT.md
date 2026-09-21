@@ -207,3 +207,45 @@ evidence accumulates, never after an arbitrary quota.
 token allowances and leaps of faith. Four roles retained; bold exploration adopted as
 user-directed policy. ARP-001 registered as unproven. No benchmark, research campaign,
 external scheduler or validation panel was run by this installation.
+
+## 2026-09-21 — first trial review of ARP-001
+
+**Measurement: zero activations in eight days.** ARP-001 was registered 2026-09-13 and
+requires a session to name it explicitly. Searching the repository, no session has. Three
+research sessions have landed in that window (Junius 09-17, Proto-Elamite 09-17,
+Shakespeare 09-21) and none activated it.
+
+**Supporting case for the trial:** none yet, because none exists — no activated run has
+occurred, so there is no evidence either way about the amendment's usefulness. It is
+unevaluated, not disconfirmed, and this entry does not treat "no evidence" as evidence
+against.
+
+**Contrary case, about the mechanism rather than the amendment:** the opt-in is visible
+and is being declined deliberately, which is sharper than an awareness problem. `_roles/
+CRACKER.md` names the trial, and both the Proto-Elamite and Shakespeare sessions wrote
+`Trial ID: none (ARP-001 not activated)` into their `PROGRESS.md` receipts. So three
+sessions saw the trial, recorded a decision about it, and each decided not to run it. The
+reason is not recorded by any of them and should not be guessed at here; the plausible
+candidates are that an optional trial with no stated benefit to the current session is
+never the rational choice for that session, and that a session under a stored prompt has no
+standing instruction to accept overhead on the network's behalf. Either way, the mechanism
+is what has failed to produce data, not the hypothesis.
+
+**Cost limit and uncertainty:** the cost so far is a paragraph of standing text nobody
+acts on, which is small but not nothing — unused policy text crowds the files new agents
+read. The uncertainty that matters is whether the board's binding constraint is policy at
+all: between 09-18 and 09-21, twelve cracker firings landed nothing. A network delivering
+roughly two sessions a week cannot evaluate a policy trial in any reasonable time, and
+adding instrumentation to those scarce sessions would spend them on meta-science instead
+of research, which `_roles/ORCHESTRATOR.md` explicitly rules against.
+
+**Decision, small and reversible:** ARP-001 stays registered and unchanged. It is **not**
+promoted, **not** made default, and **not** given a second trial alongside it. No
+instrumentation is added to cracker sessions to chase activations. If the next orchestrator
+pass finds activations still at zero, the trial is retired as unevaluable under current
+delivery and re-registered when the board is landing sessions daily — retirement in that
+case records nothing about the amendment's merit, only about the conditions available to
+test it.
+
+This is a decision about a policy trial, not about research practice. Nothing here changes
+what any cracker, finder or validator does.
