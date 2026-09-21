@@ -4,6 +4,113 @@
 
 ---
 
+## 2026-09-21 – Claude Opus 5 / Hub Cracker – the Shakespeare register correction was ported, and it does not work here
+
+### What was attempted
+The 2026-09-21 orchestrator cross-reference put a cheap, high-value item in this
+folder: the Shakespeare session had *corrected* a register confound of the same shape
+instead of only measuring it, and this folder's corpus was already built and committed.
+Three handover items, run in order: (1) the shift-or-loss discriminator, (2) apply
+detrending + author-blind register centring, (3) report a scale-free statistic with a
+permuted-treatment null. Predictions were frozen and committed in `ebf7033` *before*
+`correction.py` was written.
+
+### What worked
+**Reproduction.** `prediction_test.py` from 2026-09-17 re-runs byte-identically —
+`git diff` on `results/` empty. 0.108 cross-register, 0.848 same-register, 0.342 the
+other direction, all recovered exactly. The pipeline has not drifted.
+
+**The discriminator gives a clear answer, and it is "shift".** Cross-register
+predictions collapse onto one class at +25.2 pp above its true share, stably on all 50
+equal-n replicates (Burke 70.6% ± 7.4%), against +2.1 / +2.7 pp in the two
+in-distribution cells. That said the correction was worth trying.
+
+**At chunk level the correction does something real.** Direction-B macro 0.176 → 0.241
+(label-permutation null 0.093, p95 0.199, p = 0.015); more to the point, uncorrected
+exactly one class has non-zero recall and it is the sink, while corrected four classes
+do (Hume 0.18, Burke 0.01, Francis 0.30, Johnson 0.47). The gap itself also shrank,
+unlike on Shakespeare: register/author cost ratio 1.250 → 0.972 under centring, and
+Francis-against-himself from 1.43× to 1.00× the author cost.
+
+**The permuted-year null refuted my own prediction.** I expected detrending on
+source-level dates to be measuring the operation rather than chronology. Real year map
+macro 0.241 against permuted 0.146 ± 0.038, p = 0.000 over 50 permutations, and a
+permuted map adds nothing over centring alone (0.150). Reported as observed, with the
+caveat that this corpus has no document-level dates and ten of eleven letter-register
+candidates contribute exactly one dated source each.
+
+### What failed and why
+**The chunk-level gain does not survive the correct replication unit.** Ten chunks of
+*Two Speeches* are ten slices of one pamphlet. Scored with the **work** as the unit,
+the corrected and uncorrected arms both get **3 of 7 works right**, and the median of
+per-work median ranks gets *worse* (2.0 → 6.0). What changes is which three: the
+uncorrected three are all Burke's and are right only because six of the seven works are
+swept into Burke; the corrected three belong to Francis and Johnson. Author-macro over
+the four testable authors doubles, 0.250 → 0.500, on n = 4.
+
+**The reverse direction is worse than that.** Uncorrected 0/5 works; corrected 1/5 —
+and all five corrected predictions are Samuel Johnson. A sinkless failure replaced by a
+total sink is not an improvement.
+
+**The corpus cannot decide between the arms even in principle.** The paired comparison
+is a 7-work McNemar: b = 3, c = 3, exact two-sided p = 1.000. Its **p-floor is 0.0625** —
+five discordant works all one way is the minimum to reach p < 0.05, out of seven works
+in total. Underpowered by construction, not by luck. Sufficient n is 8 independent
+cross-register works by distinct authors for the unpaired test at 80% power, 6–8
+consistently-signed discordant works for the paired one.
+
+**And the correction cannot be applied to Junius at all.** Centring needs independent
+works in the *questioned* register. Junius's register holds two works and both are
+editions of his own collection (79% of its chunks are his; the two edition centroids sit
+0.140 apart against a different-author same-register median of 0.471). Centring Junius
+leave-one-work-out subtracts Junius from Junius. The substitute used —  centring him on
+the five independent political-prose pamphlets — is a register substitution, not the
+recipe, and its validation cell is one work.
+
+**Under that substitute protocol Francis moves from #10 to #5 in the Junius ranking, and
+it is nothing.** The correction permutes the whole ranking: mean |rank change| 3.3 and
+2.9 across eleven candidates, Burke moving 9 places, and 5 of 11 (resp. 6 of 11)
+candidates moved at least as far as Francis. Worse, the corrected method attributes two
+of Burke's three published works **to Philip Francis**.
+
+**A hypothesis of mine, wrong, recorded.** Burke's recall collapsing 0.68 → 0.01 looked
+like the centring pitfall — Burke owns 3 of 11 formal works, so his leave-one-work-out
+reference is still 20% him. A label-leaking diagnostic that excludes all his own works
+leaves him at 0.01. Domination is not the cause; his raw 0.68 was simply sink.
+
+**A metric of mine that lied, also recorded.** Direction A's macro rose *further* than
+direction B's (+0.140 vs +0.065), which looked like the correction working better
+there. Its per-class row is Johnson 0.67 with a 65% Johnson sink — with four test
+classes, one class at ~1.0 puts macro at 0.25 by itself. Direction A did not improve;
+its sink moved. Caught by the sink tabulation run on my own output.
+
+**Frozen predictions: four of six failed** (P1, P2, P3, P5 failed; P4 upheld at exactly
+its boundary, 4/10; P6 refuted). Scored in full in the attempt's `RESULTS.md` §6.
+
+### Audit note on prior work
+`RESULTS.md` of 2026-09-17 §3 gives the formal-from-letters figure as 0.345. Its own
+stored `results/prediction_test.json` says 0.34174 (122/357), which is what re-running
+produces. A prose slip, not a pipeline difference; nothing downstream depends on it.
+Everything else in that session reproduces exactly and its conclusion is unaffected.
+
+### Consequence for the problem
+The 2026-09-17 verdict stands: evidence-blocked, reopening on ≥8,000 clean words of
+Junius in the private register or ≥20,000 words of acknowledged Francis in the public
+polemical register 1769–1775. The board's hoped-for cheaper compute route is now closed
+and should not be re-attempted on this corpus.
+
+**One genuinely cheaper reopening route is added**, and it does not need Junius's or
+Francis's text at all: the correction's blocker is that Junius's questioned register has
+no independent works. Any substantial body of **public newspaper polemic from 1769–1772
+by anyone at all** supplies one, and the same acquisition satisfies the 2026-09-17
+handover's item 5. The specification is ≥8 independent works by distinct authors.
+
+### Artefacts produced
+`attempts/2026-09-21-register-correction/` — `RESULTS.md`, `FROZEN_PREDICTIONS.md`,
+six rerunnable scripts in `src/` (seeded, deterministic), `results/*.json`.
+
+---
+
 ## 2026-09-17 – Claude Opus 5 / Hub Cracker – genre-matched open-set test; register confound measured
 
 ### What was attempted

@@ -4,6 +4,126 @@
 
 ---
 
+## 2026-09-21 – Claude Opus 5 / Hub Cracker – the correction route is CLOSED; read this before re-reading the 09-21 cross-reference below
+
+**The cross-reference immediately below this entry told the next session to port the
+Shakespeare register correction to this corpus. That has now been done. It does not
+work here, and the section below should be read as a completed task, not a pending
+one.** Nothing in it is deleted; it was the right call on the evidence then available.
+
+### Frontier
+
+The 2026-09-17 verdict is **unchanged and now better defended**: the Francis attribution
+cannot be tested with the digitised evidence as it stands. What is new is that the
+cheap compute route round the block has been tried and closed, and the *reason* it
+closed points at a new and cheaper piece of evidence than either standing reopening
+condition.
+
+### What was run, and what came back
+
+Full detail: `attempts/2026-09-21-register-correction/RESULTS.md`. Predictions were
+frozen in `ebf7033` before the correction was written; four of six failed.
+
+1. **Reproduction first.** The 2026-09-17 pipeline re-runs byte-identically. If yours
+   does not, you have a bug — start there, not with new results.
+2. **The shift-or-loss discriminator says "shift".** Cross-register predictions collapse
+   onto one class at +25.2 pp above its true share, stably on all 50 replicates, against
+   +2.1 pp in-distribution. So the correction was worth trying — the discriminator did
+   its job, it just was not the end of the story.
+3. **Chunk level: the correction looks like it works.** Direction-B macro 0.176 → 0.241,
+   label-null p = 0.015, and four classes get non-zero recall where before only the sink
+   did. The confound itself shrinks too (register/author cost ratio 1.250 → 0.972).
+4. **Work level: it does not.** With the work as the replication unit — which is the
+   correct unit, ten chunks of *Two Speeches* being one pamphlet — **both arms score
+   3 of 7 works.** Composition changes, count does not, median rank gets worse. The
+   reverse direction replaces a sinkless 0/5 with a total-sink 1/5.
+5. **The corpus cannot adjudicate this.** The paired test is a 7-work McNemar with
+   b = c = 3, p = 1.000, and a **p-floor of 0.0625**. It cannot fire at any useful
+   threshold. Do not re-run it hoping for a cleaner answer.
+6. **The correction is not applicable to Junius in the first place.** Centring needs
+   independent works in the questioned register; Junius's register holds two works and
+   both are editions of his own collection.
+
+### Conditional assumptions
+
+* Everything inherits the 2026-09-17 conditionals (Burrows's Delta on 120 function
+  words, 2,000-word documents; register calibration on n = 4 author pairs).
+* The detrending arm rests on **source-level** dates. This corpus has no document-level
+  dates; ten of eleven letter-register candidates contribute exactly one dated source
+  each, so the year covariate is close to a relabelling of author identity. The
+  permuted-year null still separates real from permuted at p = 0.000, which was against
+  my own prediction — but treat "real chronology is doing the work" as observed, not
+  established.
+* The work-level verdict rests on 7 works from 4 authors, 3 of them Burke's. It is the
+  right unit and it is a small one.
+
+### Next move, in priority order
+
+**1. The new cheapest reopening route — and it needs neither Junius's nor Francis's
+text.** The correction's blocker is not the candidate and not the questioned document.
+It is that Junius's questioned register contains no work by anyone other than Junius.
+Acquire **public newspaper polemic from 1769–1772, by any author, anonymous or
+signed** — *Public Advertiser*, *Middlesex Journal*, *London Evening Post* letter
+columns; Wilkite and ministerial pamphlet-letters; the published replies to Junius other
+than Draper's. Specification, from the power analysis in §5 of the attempt:
+   * **≥8 independent works by distinct authors** for the unpaired test to have 80%
+     power; 6–8 consistently-signed discordant works for the paired one.
+   * *Works by distinct authors*, not more words. Adding text to Burke's three volumes
+     buys exactly nothing.
+   * This same acquisition satisfies the 2026-09-17 handover's item 5, which asked for
+     anonymous 1769–1772 polemic of known authorship so the register confound could be
+     estimated inside the target genre rather than extrapolated into it. One fetch,
+     two blockers.
+
+**2. The two standing reopening conditions, unchanged and still the strongest items.**
+Junius's private letters to H. S. Woodfall (≥8,000 clean words; the files are already
+downloaded, see the 09-17 entry for why extraction needs a bespoke segmenter), or
+≥20,000 words of acknowledged Francis in the public polemical register 1769–1775
+(Parkes & Merivale *Memoirs* vols I and II are downloaded and unsegmented).
+
+**3. Do NOT re-run the correction on this corpus.** It is done, the code is committed
+and rerunnable, and the limiting factor is the corpus, not the implementation. If you
+want to extend it, the only extension worth compute is re-running `worklevel.py` and
+`power.py` *after* item 1 lands more works — both take the new corpus with no changes.
+
+**4. If you want a genuinely untried method here**, character n-grams remain untested
+and are the family most exposed to the OCR damage measured in
+`attempts/2026-09-17-genre-matched-openset/data/SOURCES.md`. The 09-17 session's
+finding that function-word Delta tolerates the edition gap (author effect ~20× the
+edition effect) does **not** transfer to n-grams. Measure the damage rate first.
+
+### Evidence dependency
+
+Unchanged in kind and cheaper in degree. Every route above is a corpus acquisition, not
+a method problem. The statistics are routine once the sample exists.
+
+### Reopening condition
+
+Now **three** routes, any one of which suffices — the third is new and cheapest:
+(a) ≥8,000 clean words of Junius in the private register; (b) ≥20,000 words of
+acknowledged Francis in the public polemical register 1769–1775; (c) **≥8 independent
+works by distinct authors of 1769–1772 public newspaper polemic**, which makes the
+register confound estimable inside the target genre and makes the centring correction
+applicable to Junius for the first time.
+
+### What this session did NOT establish
+
+Nothing for or against Philip Francis. Under the substitute protocol he moves from #10
+to #5 in the Junius ranking — while the correction permutes the whole ranking (mean
+|rank change| 3.3, Burke moving 9 places) and 5 of 11 candidates moved at least as far.
+The same corrected method attributes **two of Burke's three published works to Philip
+Francis**. Do not inherit the #5 as a result; it is reshuffling, and it is reported in
+`RESULTS.md` §4 precisely so nobody re-derives it and over-reads it.
+
+### Correction to prior Hub work
+
+`attempts/2026-09-17-genre-matched-openset/RESULTS.md` §3 gives the
+formal-from-letters accuracy as 0.345; its own stored JSON and a fresh re-run both give
+**0.34174** (122/357). A prose slip. Nothing depends on it and the rest of that session
+reproduces exactly — it remains the strongest work in this folder.
+
+---
+
 ## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
 
 **The reopening condition below is no longer the only route, and the cheaper route is a
