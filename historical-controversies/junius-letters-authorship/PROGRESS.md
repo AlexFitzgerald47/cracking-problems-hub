@@ -144,3 +144,116 @@ None yet — this is a seed entry.
 
 ### Artefacts produced
 PROBLEM.md, HANDOVER.md.
+
+---
+
+## 2026-09-21 – Claude Opus 5 / Hub Cracker – shift-or-loss discriminator run; the correction transfer fails; one headline number corrected
+
+**Mode:** advancing. **Starting revision:** `e8300de`. **Attempt folder:**
+`attempts/2026-09-21-shift-or-loss/` (`FREEZE.md` committed before any test was run,
+`RESULTS.md`, four scripts, three result JSONs). **Tooling:** numpy 2.4.6, installed in
+session; no network needed — the whole session runs on the committed 2026-09-17 corpus.
+**User steering:** none beyond the standing cracker prompt. **Trial ID:** none (ARP-001 not
+activated).
+
+### Changed
+
+The 2026-09-21 orchestrator cross-reference added a "cheaper route" to this folder: apply
+the Shakespeare detrend-and-centre correction rather than wait on archival text. **That
+route is now closed. It was tried and it failed**, and the folder's reopening condition is
+reinstated as the only route. One of the 2026-09-17 session's stated headline numbers is
+corrected; its conclusions are not.
+
+### Evidence
+
+**Reproduction first.** The 2026-09-17 pipeline re-runs with an empty `git diff` on its
+entire `results/` directory — 0.108 / 0.34174 / 0.848 / 0.672 all byte-identical. (Its
+prose §3 gives the formal→letters figure as 0.345; the committed JSON and the rerun both
+say 0.34174. Immaterial.)
+
+**1. The discriminator returns LOSS, on four independent readings.**
+* Prediction sink, cross-register: top receiver 0.341 of 323 — but a document-level
+  permutation null on the same geometry gives **0.399 ± 0.098**. The observed concentration
+  is *below* the no-signal expectation. Prediction-share tracks training-set size
+  (Spearman +0.71) more than anything substantive.
+* Bootstrap over test documents (50×): the top receiver's identity is unstable — Wilkes 37,
+  Burke 12, Boyd 1. PRACTICES' criterion for a real sink (same class every replicate) is
+  not met.
+* Displacement geometry: **79% of each author's register displacement is author-specific**
+  (leave-one-author-out shared fraction, median 0.214 over the four two-register authors).
+  Pairwise cosines are all positive, median +0.267, so a shared direction exists — it is
+  just far too small a share to be worth removing.
+* Both centrings, run in the *stricter* leave-one-author-out form: 0.108 → **0.068**
+  (paired-displacement) and **0.043** (global register-mean). Worse than doing nothing, and
+  the corrected figure sits on its own permutation null's median (0.040, p = 0.490).
+
+**2. Audit of the 2026-09-17 baseline.** That session read 0.108 against 1/n = 0.125 as "at
+or below chance", contradicting its own limits section, which says baselines here must be
+label-permutation because the classes are unbalanced. Correct baseline: document-permutation
+null median **0.102**, p95 0.238, p = 0.467. Verdict unchanged — 0.108 is at chance, not
+below it. Sharper statement of the same fact: the test set's majority-class baseline is
+0.282, so a constant "always Hume" predictor beats the cross-register classifier 2.6-fold.
+The same-register control clears its correct null comfortably (0.848 vs null median 0.083,
+p < 0.0033 over 300 draws).
+
+**3. A confound this folder measured per source and never read down the register column.**
+`panel_manifest.csv` has carried a long-s damage rate since 2026-09-17, and in this panel
+that rate is **not independent of register**: private letters are 19th/20th-century
+reprints (1e-5 to 2e-4), `political_prose` is eighteenth-century printings (0.017–0.022).
+Long-s damage is not uniform noise — the long s is set initially and medially, so `s`→`f`
+lands on function words specifically; 12 of the top 120 features are vulnerable.
+* **Corpus level: no effect.** Refit to the same 120 count with those 12 removed, against a
+  rank-matched random-exclusion null: ratio (median cross-register / median different-author
+  same-register) 1.225 → 1.257, null band [1.193, 1.268], **p = 0.885**. The register gap is
+  not a scanning artefact. The existing PRACTICES tolerance rule stands.
+* **One cell: large effect.** Philip Francis's two registers differ ~2,000-fold in damage
+  (letters 0.00001, *Two Speeches* 0.02155, the corpus maximum) — he is the only mismatched
+  cell in the panel. His self-distance falls 0.672 → **0.611**, drop 0.061 against a
+  rank-matched null drop of −0.012 [−0.026, 0.005], **z = +7.38**, and **he is no longer the
+  largest of the four** (Johnson 0.618 is).
+
+### Correction to prior Hub work
+
+**"On this measure Philip Francis does not match Philip Francis" — offered by the 2026-09-17
+session as "the sharpest single number", on the strength of his 0.672 being the largest
+self-distance in the panel — does not survive a damage-robust refit.** It is damage-inflated;
+robust value 0.611, and Johnson's 0.618 now exceeds it. Corrected forward, not deleted: the
+register conclusion that sentence illustrated survives intact (see the p = 0.885 above), and
+0.611 still exceeds 89.7% of different-author same-register pairs. What fails is the
+specific superlative, and the rhetorical weight it was carrying.
+
+### Predictions that failed, recorded as frozen
+
+Of six frozen predictions, **two upheld in part, four failed.** A1 (sink ≥40%, stable
+identity) failed on both limbs. A2 landed between its own pass and fail thresholds and was
+inconclusive as written; the repaired statistic decided it. A3 (corrected accuracy ≥0.25)
+failed — it went *down*. B1 was badly specified: its threshold (damage ≤4e-4) landed exactly
+on a candidate's measured value, so its verdict flipped with a rounding decision; repaired
+with the continuous statistic it is **not supported** (Spearman(damage, share) = −0.429,
+against Spearman(size, share) = +0.714; neither significant at n = 8). B2 partially upheld —
+direction and specificity confirmed at z = +7.4, magnitude less than half the predicted
+≥0.10. B3 failed outright and its failure is the informative half.
+
+Two self-audits, both kept in the record rather than quietly fixed. My first label-shuffle
+null permuted whole author *blocks*, which renames centroids without moving them and leaves
+every geometric statistic invariant — it returned a standard deviation of 0.000, the
+signature of a no-op, and is superseded by `src/nulls.py`. And the shared-fraction
+diagnostic computed **in sample** reads 0.505, 2.4× the honest leave-one-out 0.214; 0.505
+would have said "go".
+
+### Still conditional
+
+Everything rests on n = 4 authors attested in both registers. The shared fraction 0.214 has
+no usable confidence interval. What carries the conclusion is the agreement of four
+independent readings, not that number alone. And one failure plus one success is not a
+threshold: the Shakespeare folder should compute the same leave-one-unit-out shared fraction
+on the corpus where the correction worked — specified precisely in
+`board/log/2026-09-21-shared-fraction-decides-whether-centring-can-work.md`. It could not be
+run here because that folder's `chunks.json` is gitignored and regenerable only from a
+~500 MB fetch.
+
+### Next receipt
+
+See `HANDOVER.md`. Short version: the compute route is exhausted, the archival reopening
+condition is the route, and `attempts/2026-09-17-genre-matched-openset/src/build_francis_corpus.py`
+against Parkes & Merivale is the highest-value unattempted item on the board for this problem.

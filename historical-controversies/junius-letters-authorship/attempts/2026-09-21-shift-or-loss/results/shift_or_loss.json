@@ -1,0 +1,107 @@
+{
+ "cross": {
+  "accuracy": 0.10835913312693499
+ },
+ "cross_sink": {
+  "n": 323,
+  "top": "John_Wilkes",
+  "top_frac": 0.34055727554179566,
+  "distribution": {
+   "John_Wilkes": 110,
+   "Edmund_Burke": 101,
+   "Hugh_Boyd": 83,
+   "Samuel_Johnson": 10,
+   "David_Hume": 9,
+   "Philip_Francis": 6,
+   "Thomas_Pownall": 4,
+   "Richard_Price": 0
+  }
+ },
+ "indist": {
+  "accuracy": 0.9085239085239085
+ },
+ "indist_sink": {
+  "n": 481,
+  "top": "Edmund_Burke",
+  "top_frac": 0.3492723492723493,
+  "distribution": {
+   "Edmund_Burke": 168,
+   "Samuel_Johnson": 147,
+   "John_Wilkes": 46,
+   "Hugh_Boyd": 41,
+   "Thomas_Pownall": 27,
+   "David_Hume": 24,
+   "Philip_Francis": 17,
+   "Richard_Price": 11
+  }
+ },
+ "label_shuffle": {
+  "mean_top_frac": 0.3405572755417956,
+  "sd_top_frac": 5.551115123125783e-17,
+  "top_identity": {
+   "Philip_Francis": 9,
+   "Edmund_Burke": 4,
+   "John_Wilkes": 7,
+   "David_Hume": 7,
+   "Samuel_Johnson": 7,
+   "Thomas_Pownall": 2,
+   "Hugh_Boyd": 8,
+   "Richard_Price": 6
+  }
+ },
+ "bootstrap_top": {
+  "Edmund_Burke": 12,
+  "John_Wilkes": 37,
+  "Hugh_Boyd": 1
+ },
+ "displacement_cosines": {
+  "David_Hume|Edmund_Burke": 0.46980863623816593,
+  "David_Hume|Philip_Francis": 0.15999713353214168,
+  "David_Hume|Samuel_Johnson": 0.5962843982899553,
+  "Edmund_Burke|Philip_Francis": 0.14255453345914407,
+  "Edmund_Burke|Samuel_Johnson": 0.2251140952125595,
+  "Philip_Francis|Samuel_Johnson": 0.3084028002303368
+ },
+ "displacement_median_cosine": 0.26675844772144813,
+ "corrected_paired": {
+  "accuracy": 0.06811145510835913
+ },
+ "corrected_paired_sink": {
+  "n": 323,
+  "top": "Edmund_Burke",
+  "top_frac": 0.4055727554179567,
+  "distribution": {
+   "Edmund_Burke": 131,
+   "Philip_Francis": 75,
+   "David_Hume": 54,
+   "Hugh_Boyd": 36,
+   "Samuel_Johnson": 17,
+   "Thomas_Pownall": 8,
+   "John_Wilkes": 2,
+   "Richard_Price": 0
+  }
+ },
+ "corrected_global": {
+  "accuracy": 0.043343653250773995
+ },
+ "corrected_global_sink": {
+  "n": 323,
+  "top": "Edmund_Burke",
+  "top_frac": 0.4520123839009288,
+  "distribution": {
+   "Edmund_Burke": 146,
+   "Hugh_Boyd": 106,
+   "Philip_Francis": 22,
+   "Samuel_Johnson": 22,
+   "John_Wilkes": 10,
+   "David_Hume": 9,
+   "Thomas_Pownall": 8,
+   "Richard_Price": 0
+  }
+ },
+ "null_corrected_global": {
+  "median": 0.04024767801857585,
+  "p95": 0.10557275541795655,
+  "p": 0.49
+ }
+}

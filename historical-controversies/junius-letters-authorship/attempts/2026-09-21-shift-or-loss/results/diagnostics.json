@@ -1,0 +1,66 @@
+{
+ "B1_repaired": {
+  "rows": [
+   {
+    "author": "Edmund_Burke",
+    "damage": 4.009550530274752e-05,
+    "share": 0.3126934984520124,
+    "n": 174
+   },
+   {
+    "author": "David_Hume",
+    "damage": 0.0001761190995133863,
+    "share": 0.02786377708978328,
+    "n": 17
+   },
+   {
+    "author": "Samuel_Johnson",
+    "damage": 0.00026896577036458795,
+    "share": 0.030959752321981424,
+    "n": 156
+   },
+   {
+    "author": "John_Wilkes",
+    "damage": 0.00040292564489592875,
+    "share": 0.34055727554179566,
+    "n": 33
+   },
+   {
+    "author": "Thomas_Pownall",
+    "damage": 0.017391471194540795,
+    "share": 0.01238390092879257,
+    "n": 27
+   },
+   {
+    "author": "Richard_Price",
+    "damage": 0.01749918803060991,
+    "share": 0.0,
+    "n": 13
+   },
+   {
+    "author": "Hugh_Boyd",
+    "damage": 0.019915208961170716,
+    "share": 0.25696594427244585,
+    "n": 51
+   },
+   {
+    "author": "Philip_Francis",
+    "damage": 0.02154597800023022,
+    "share": 0.018575851393188854,
+    "n": 10
+   }
+  ],
+  "spearman_damage": -0.42857142857142855,
+  "spearman_trainsize": 0.7142857142857143
+ },
+ "shared_fraction": {
+  "per_author": {
+   "David_Hume": 0.3018756369965971,
+   "Edmund_Burke": 0.12872316506228249,
+   "Philip_Francis": 0.07073288546028822,
+   "Samuel_Johnson": 0.29907656847906056
+  },
+  "median": 0.21389986677067152,
+  "common_energy_fraction": 0.5046968975206573
+ }
+}

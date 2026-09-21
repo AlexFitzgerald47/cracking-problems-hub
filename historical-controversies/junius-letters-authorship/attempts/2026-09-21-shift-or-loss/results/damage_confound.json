@@ -1,0 +1,128 @@
+{
+ "damage_by_cell": {
+  "Philip_Francis|political_prose": 0.02154597800023022,
+  "Hugh_Boyd|political_prose": 0.019915208961170716,
+  "Richard_Price|political_prose": 0.01749918803060991,
+  "Thomas_Pownall|political_prose": 0.017391471194540795,
+  "Laurence_Sterne|private_letter": 0.013870624570026507,
+  "John_Wilkes|political_prose": 0.00040292564489592875,
+  "Samuel_Johnson|published_prose": 0.00026896577036458795,
+  "James_Boswell|private_letter": 0.00020085956178139965,
+  "David_Hume|published_prose": 0.0001761190995133863,
+  "Edmund_Burke|private_letter": 0.00014448943723684447,
+  "David_Hume|private_letter": 0.00011180487146788309,
+  "William_Cowper|private_letter": 0.00010009264178258823,
+  "Junius|public_letter": 8.358699912276855e-05,
+  "Horace_Walpole|private_letter": 7.28726040688374e-05,
+  "Samuel_Johnson|private_letter": 7.171744081616665e-05,
+  "Edward_Gibbon|private_letter": 5.990088426901339e-05,
+  "Thomas_Gray|private_letter": 5.677813112750671e-05,
+  "Edmund_Burke|published_prose": 4.009550530274752e-05,
+  "Lord_Chesterfield|private_letter": 1.3867158061638544e-05,
+  "Philip_Francis|private_letter": 1.29168081475929e-05,
+  "Philo_Junius|public_letter": 0.0
+ },
+ "vulnerable_features": [
+  "so",
+  "some",
+  "such",
+  "should",
+  "most",
+  "those",
+  "must",
+  "shall",
+  "she",
+  "these",
+  "same",
+  "himself"
+ ],
+ "baseline": {
+  "self_distances": {
+   "David_Hume": 0.5629510875728431,
+   "Edmund_Burke": 0.38342396192857336,
+   "Philip_Francis": 0.672383308634681,
+   "Samuel_Johnson": 0.6136713116815067
+  },
+  "median_cross": 0.5883111996271748,
+  "median_same": 0.4801391206084965,
+  "ratio": 1.2252932001907868
+ },
+ "damage_robust": {
+  "self_distances": {
+   "David_Hume": 0.5346742060593376,
+   "Edmund_Burke": 0.3760878167127925,
+   "Philip_Francis": 0.6112509579649662,
+   "Samuel_Johnson": 0.6182525038031649
+  },
+  "median_cross": 0.5729625820121519,
+  "median_same": 0.45590872611945343,
+  "ratio": 1.2567484436830652
+ },
+ "null_ratio": {
+  "median": 1.2336256727701351,
+  "p05": 1.1928090396223328,
+  "p95": 1.2679885289370412
+ },
+ "self_distance_verdict": {
+  "Philip_Francis": {
+   "baseline": 0.672383308634681,
+   "robust": 0.6112509579649662,
+   "drop": 0.061132350669714786,
+   "null_drop_median": -0.011772826230754652,
+   "null_drop_p05": -0.02600341336141999,
+   "null_drop_p95": 0.005486876910610252,
+   "z": 7.37614926593903
+  },
+  "Samuel_Johnson": {
+   "baseline": 0.6136713116815067,
+   "robust": 0.6182525038031649,
+   "drop": -0.004581192121658195,
+   "null_drop_median": 0.011035280839102157,
+   "null_drop_p05": -0.007231974703573912,
+   "null_drop_p95": 0.03459280181210183,
+   "z": -1.2716231464122987
+  },
+  "David_Hume": {
+   "baseline": 0.5629510875728431,
+   "robust": 0.5346742060593376,
+   "drop": 0.028276881513505492,
+   "null_drop_median": 0.005039508693337635,
+   "null_drop_p05": -0.007144614901993707,
+   "null_drop_p95": 0.02449303432873107,
+   "z": 2.3190966426373896
+  },
+  "Edmund_Burke": {
+   "baseline": 0.38342396192857336,
+   "robust": 0.3760878167127925,
+   "drop": 0.007336145215780854,
+   "null_drop_median": -0.0020943482992569484,
+   "null_drop_p05": -0.009415205800292219,
+   "null_drop_p95": 0.007821798744322202,
+   "z": 1.7537802514905254
+  }
+ },
+ "ratio_p": 0.885,
+ "B1": {
+  "clean": [
+   "David_Hume",
+   "Edmund_Burke",
+   "Samuel_Johnson"
+  ],
+  "frac": 0.3715170278637771,
+  "candidate_frac": 0.375,
+  "damage": {
+   "John_Wilkes": 0.00040292564489592875,
+   "Richard_Price": 0.01749918803060991,
+   "Thomas_Pownall": 0.017391471194540795,
+   "Hugh_Boyd": 0.019915208961170716,
+   "Philip_Francis": 0.02154597800023022,
+   "Edmund_Burke": 4.009550530274752e-05,
+   "Samuel_Johnson": 0.00026896577036458795,
+   "David_Hume": 0.0001761190995133863
+  }
+ },
+ "B1_robust": {
+  "accuracy": 0.06501547987616099,
+  "clean_frac": 0.2260061919504644
+ }
+}
