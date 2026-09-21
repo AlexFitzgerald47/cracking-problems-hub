@@ -102,3 +102,54 @@ against the same full-training centroids and will be re-run under equal-N as B6.
 Middleton, Heywood and Jonson jointly recover **< 25%** of their own 25 pageant
 chunks (they recover 0 of 25 at full training; the power analysis bounds the true
 rate at about ≤10%, so 25% is a genuine risk line, not a safe one).
+
+---
+
+# Round-2 freeze — Experiment C, the sink mechanism and an attempted repair
+
+Written after Experiment B returned and **before any quantity in Experiment C was
+computed.** B is therefore exploratory evidence for C's hypothesis and C's tests
+are prospective with respect to the cosine alignments, the pageant direction and
+the register-centred attribution, none of which has been calculated. Committed in
+its own commit ahead of C's results.
+
+## Where B leaves the problem
+
+B refuted its own hypothesis. Equal training data changes nothing: Lyly's share of
+the 943 non-dramatic chunks is 41.5% ± 3.0% under 41-chunk centroids against 41.0%
+at full training, concentration is flat, and the trio's own-pageant recovery stays
+at 0.006 ± 0.014. Crucially, training size still predicts centroid L1 norm at
+−0.554 *after* every author is given 41 chunks, so the norm differences are not a
+1/n sampling artefact — they are a property of these authors.
+
+So the sink is real, stable and specific: Lyly takes ~41% in every one of 50
+subsamples, while under label-shuffling no author is favoured (Lyly 3.0%, near
+1/27 = 3.7%). Two prior candidate causes are now dead — prose-ness (2026-09-17)
+and training-set size (B).
+
+## The hypothesis
+
+Purely geometric. In drama-scaled z-space the drama cloud is centred near the
+origin. Non-dramatic chunks are displaced from it along a **common direction m**
+— the register displacement — because register moves function-word rates the same
+way for everybody. Under L1 nearest-centroid, a test point far out along m is
+captured by whichever author's centroid lies furthest along m. Absorption should
+therefore be predicted by the alignment of an author's centroid with m, and by
+nothing else.
+
+This also predicts *why the identity of the sink is not stable*: pageants are a
+different register with a different displacement direction, so a different author
+wins.
+
+| | prediction | falsifier |
+|---|---|---|
+| **C1** | Across the 27 authors, Pearson correlation between cos(centroid, m_nondrama) and non-dramatic absorption share is **> +0.70** | ≤ +0.70 ⇒ alignment is not the mechanism |
+| **C2** | The same alignment computed against the *pageant* displacement direction predicts pageant absorption at **> +0.70**, and Peele's pageant-direction alignment **exceeds Lyly's**, reproducing the observed switch of sink identity from a quantity computed without reference to the outcome | either clause fails ⇒ the mechanism does not explain the instability |
+| **C3** | *The repair.* Subtracting the test register's own mean from every test document before attribution (register-centring) drops Lyly's share **below 15%** | ≥ 15% ⇒ removing the common displacement does not break the sink |
+| **C4** | *The claim that matters.* Even with the sink broken, register-centred cross-register macro on the 8-author panel stays **below 0.50**, i.e. well short of the 0.717 within-register figure | ≥ 0.50 ⇒ a simple centring repairs cross-register attribution, the folder's negative claim reopens, and this is the most useful result in the folder |
+| **C5** | *Null.* Register-centred attribution is scored against 200 author-label permutations; the observed macro exceeds the null p95 | observed ≤ null p95 ⇒ whatever centring recovers is not authorship |
+
+C3 and C4 are deliberately set against each other. C3 says the sink is an artefact
+of a shared displacement and can be removed; C4 says removing it does not give the
+method back. If both hold, the folder's negative conclusion survives a genuine
+attempt to repair it, which is a far stronger position than never having tried.
