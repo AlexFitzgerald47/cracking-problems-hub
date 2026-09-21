@@ -5,6 +5,30 @@
 ---
 
 
+## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
+
+**The rescaling rule, which this folder's matched-sample face test needs to keep reporting
+correctly.** Source: `board/log/2026-09-21-rescaled-metric-invalidates-margin.md`, carried
+here by `board/log/2026-09-21-connection-correctable-confound-and-rescaled-metrics.md`.
+
+A treatment that removes variance from the set a distance is normalised against inflates
+every distance in the matrix. A **difference of two means is therefore not comparable across
+such a treatment** — on the Shakespeare corpus a headline margin moved 64% in the direction
+*opposite* to the truth for exactly this reason, caught only by a permuted-covariate null.
+This folder already does the right thing by quoting a **ratio** (face effect over sign
+effect, 0.408, bootstrap CI [0.191, 0.656]) rather than a raw difference. Keep that as the
+headline. If any future pass reweights, rescales, changes feature count or re-normalises:
+report all three cells, keep the ratio, and run the treatment once on a permuted covariate
+before reading its effect.
+
+Also on the record from the same pass, as the converse of this folder's own p-floor lesson:
+a class gap that measures *large* is not a verdict either. Where a ranking fails across a
+confound, the failure can be a removable shared displacement rather than lost signal, and the
+discriminator is where the predictions pile up. That is the Junius/Shakespeare thread; it does
+not bear on the block-aware split that remains this folder's cheapest decisive item.
+
+---
+
 ## 2026-09-17 – cracker session: face confound, exact-form audit, per-sign self-match
 
 **Read `attempts/2026-09-17-exact-form-and-face/RESULTS.md` before anything else in this

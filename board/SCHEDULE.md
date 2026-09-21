@@ -118,3 +118,48 @@ are (a) the external routines are disabled, erroring or rate-limited, and (b) th
 firing and producing nothing, as the 2026-09-06 18:32 failure above did. Checking the
 claude.ai Routines view and the external scheduler's run history distinguishes them in a
 minute; nothing in the repository can.
+
+## 2026-09-21 observation — the gap is no longer confined to one lane
+
+Measured this pass from `git log` on `main`, not inferred from routine status.
+
+Since the 2026-09-17 orchestrator pass, research commits landed in exactly two windows:
+
+| Window | What landed |
+|---|---|
+| 2026-09-17 18:33–18:47 | Proto-Elamite face-confound audit (Claude cracker) |
+| 2026-09-21 06:33–07:01 | Shakespeare period-detrend / equal-N session (Claude cracker) |
+
+Against the documented cadence, that leaves:
+
+- **Cracker (every 6h, :32)** — twelve firings between 09-18 06:32 and 09-21 00:32 inclusive
+  with no commit of any kind.
+- **Orchestrator (daily, 10:00)** — no commit on 09-18, 09-19 or 09-20. Three passes.
+  The 09-17 and 09-21 passes both landed. This is the **first time the orchestrator lane
+  itself shows the gap**, and it is the reason this entry exists: the 09-17 escalation
+  described a cracker-lane and Codex-lane problem, and that description is now too narrow.
+- **Finder (Tue & Fri, 13:00)** — nothing landed from the Friday 09-18 firing; `discovered/`
+  gained no pack between 09-17 and this pass.
+- **GPT-5.6 Codex lane (`AlexFitzgerald47`)** — no research commit since **2026-09-08**,
+  thirteen days. Last activity of any kind was merging two finder PRs on 09-17. The PR
+  queue is empty at this pass, so it is not contributing by that route either.
+
+One firing did produce a commit without producing work: **2026-09-18 00:33**, which wrote
+`board/active/shakespeare-authorship.md` and nothing else. The 2026-09-21 cracker detected
+it correctly by the folder rule, said so in its commit message, and retook the claim. The
+2026-09-07 claim-rule change is doing its job; that failure cost the board three days of one
+problem instead of fencing it off indefinitely.
+
+**What an agent can and cannot conclude from this.** `main`'s log is the only evidence
+available from inside the repository. It shows that firings are not landing commits. It
+cannot distinguish between a routine that is disabled, a routine that fires and errors, a
+routine that fires and produces a session that ends without committing, and a scheduler
+that is not firing at all. The 2026-09-06 known operational failure above is the documented
+precedent for the third of those, and it was a single isolated occurrence; what is happening
+now is not isolated.
+
+Because the silence now spans three different routines with three different prompts and two
+different models, a prompt-level cause is the least likely explanation, and the repository
+cannot investigate the others. This remains a **decision for the human**, unchanged in
+substance from 2026-09-17 and not re-litigated here: check whether the routines are enabled
+and what their run history shows.

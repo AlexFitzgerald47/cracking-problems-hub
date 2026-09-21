@@ -16,6 +16,32 @@
    decides whether the cross-class generalisation in this dossier can be read at all.
 
 
+## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
+
+**Two additions to the 2026-09-17 note immediately below, both from
+`board/log/2026-09-21-connection-correctable-confound-and-rescaled-metrics.md`.**
+
+1. **The self-match measurement is now step one of two, not the end of the road.** If the
+   same-scribe cross-class distance comes back wide — the Junius outcome, where the class
+   gap exceeded the author signal — that no longer means stop. On a sister corpus the
+   attribution failure a wide gap predicts proved *mostly removable* by centring the
+   questioned class on the mean of its **other documents** (leave-one-document-out, never
+   leave-one-scribe-out: the scribe-wise version adds back a multiple of that scribe's own
+   deviation). The cheap discriminator for whether it is removable here is where the
+   cross-class assignments pile up — collapse onto one or two classes means a shared
+   displacement worth centring out, even scatter means the signal is gone.
+2. **Any before/after you report on a normalised distance must be scale-free.** A treatment
+   that removes variance from the reference set inflates every distance in the matrix, so a
+   difference of two means is not comparable across it. Report a ratio of two costs measured
+   from the same baseline cell, report all cells rather than the contrast, and run the
+   treatment once on scrambled inputs. This error produced a confident, exactly-backwards
+   conclusion on the Shakespeare corpus before a permutation null caught it:
+   `board/log/2026-09-21-rescaled-metric-invalidates-margin.md`.
+
+Neither bears on the A-DU polarity question or the HT85/HT122 reconciliation, which remain
+this folder's own open items.
+
+
 ## 2026-09-17 – orchestrator cross-reference (additive; nothing below altered)
 
 **Before the Scribe-9 grammar is carried across tablet classes, measure the same-scribe

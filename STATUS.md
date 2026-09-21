@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-21, cracker session (Shakespeare: period and register shown independent; the cross-register confound substantially corrected; equal-N refutes the training-size explanation of the sink).
+**Last updated:** 2026-09-21, orchestrator pass (VENONA panel run after 15 days queued; three proposals promoted; the Shakespeare correction carried into four handovers; delivery gap re-measured).
 
 ## Operating design — 2026-09-13
 
@@ -11,34 +11,56 @@ This policy update does not change the research dispositions below or restart ro
 
 ## Board state
 
-**The delivery problem is now the board's biggest problem, and it is not a research problem.**
-Between 2026-09-08 23:44 UTC and 2026-09-17 06:34 UTC — nine days, roughly 36 scheduled
-cracker firings — the repository received **no research commits at all**. The only things
-landed in that window were one orchestrator pass (09-11), one policy commit (09-12), and a
-Debosnys claim on 09-14 that produced zero commits and then fenced the problem off for three
-days. Every problem folder in `ciphers/`, `historical-texts/`, `ireland/` and
-`historical-controversies/` was frozen at 2026-09-08 until this pass.
+**The delivery problem is still the board's biggest problem, it is not a research problem,
+and this pass has new data on it: the gap is no longer confined to the Codex lane.**
 
-The lane that did nearly all the September 8 work — the externally-run GPT-5.6 Codex
-sessions, which commit as `AlexFitzgerald47` — has delivered nothing since. The Claude
-cracker lane delivered its first session on 2026-09-17 (Junius) and delivered it well.
-This has now been observed by three consecutive orchestrator passes (09-12, 09-13, 09-17)
-and **cannot be resolved from inside the repository**: the routine prompts and their
-enabled/failed state live outside it. It is escalated to the human as a decision, not
-recorded as deferred a fourth time. See `board/SCHEDULE.md`.
+Since the last pass (2026-09-17 10:14 UTC) the repository received research commits in
+exactly two windows — the Proto-Elamite face-confound audit on 09-17 evening and the
+Shakespeare period-detrend session on 09-21 morning. Both were excellent. Between them,
+**twelve scheduled cracker firings at the documented six-hour cadence landed nothing**
+(09-18 06:32 through 09-21 00:32), the daily orchestrator routine landed nothing on 09-18,
+09-19 or 09-20, and the Friday 09-18 finder landed nothing. One cracker firing on 09-18
+00:33 wrote a claim file and no folder commit at all; the 09-21 session correctly detected
+it by the folder rule and retook the claim. That detection is the claim protocol working
+as designed and is the one piece of good news in this paragraph.
 
-Two open pull requests were cleared this pass, both merged: #7 (three Irish-connected
-cipher discovery packs, with the Maltravers target correctly self-closed as externally
-solved) and #8 (`board/EXTERNAL_RESEARCH_INDEX.md`, an external-scoop watchlist).
+The externally-run GPT-5.6 Codex lane (committing as `AlexFitzgerald47`) has landed **no
+research commit since 2026-09-08** — thirteen days. Its last activity of any kind was
+merging two finder PRs on 09-17, and the PR queue is empty this pass, so it is not
+contributing by that route either.
 
-One stale claim cleared: **Debosnys** — claimed 2026-09-14, folder last touched 2026-09-11,
-no commits in the intervening three days. Crashed session; released.
+This is the **fourth** consecutive pass to record the same thing, and it was escalated to
+the human as a decision on 2026-09-17. It is not re-litigated here; what is added is that
+the silence now covers all three routines rather than one lane, which points at the
+scheduler or the environment rather than at any single prompt. See `board/SCHEDULE.md`.
 
-Three worked problems promoted out of `discovered/`, which the repository's own convention
-reserves for *unworked* finder proposals: **Junius** and **Mesha line 31** →
-`historical-controversies/`, **Byblos** → `historical-texts/`. Each leaves a `MOVED.md` stub.
+**Claim hygiene is now good and should be left alone.** Every claim opened since 09-17 was
+released by its own session in the same commit that landed the work. `board/active/` is
+empty and correct at the time of this pass. No stale claim needed clearing — the first pass
+since 09-05 that can say so.
 
-**No new solve is approved by this pass.** See `board/log/2026-09-17-orchestrator-pass.md`.
+**PR queue: empty.** Nothing to review, nothing merged, nothing rejected.
+
+**Three proposals promoted out of `discovered/`** into the folders crackers actually read,
+each leaving a `MOVED.md` stub: **1641 Depositions → `ireland/`** (rated Excellent, and
+`ireland/` is the coldest category on the board), **Thera eruption date** and **Caligula's
+seashells → `historical-controversies/`**. All three are well-formed with pre-registered
+success criteria. Caligula in particular has been recorded as "cheapest start on the board,
+still untouched" by three consecutive passes; promoting it is that decision being made
+rather than noted a fourth time.
+
+**One connection carried, and it changes a folder's stated position.** The 2026-09-21
+Shakespeare session showed that a measured confound gap can be *corrected*, not just
+measured — and that the detrending which corrects it rescales the metric badly enough to
+invert a headline margin. It wrote both results to `board/log/` and updated `STATUS.md`,
+but the four other folders the results bear on had nothing in their `HANDOVER.md` files.
+Those cross-references are now written into Junius, Linear A, Voynich and Proto-Elamite.
+The Junius consequence is the large one: that folder declares itself evidence-blocked
+pending archival text, and the cheaper route is a compute session on the corpus it has
+already built and committed. See
+`board/log/2026-09-21-connection-correctable-confound-and-rescaled-metrics.md`.
+
+**No new solve is approved by this pass.** See `board/log/2026-09-21-orchestrator-pass.md`.
 
 ## Active Problems
 
@@ -76,6 +98,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Ennis amber bead | `ireland/ennis-ogham-amber-bead/` | Open — STINGING candidate, validation pending | −3 shift works on selected DMVAVA, but current scholarly reading remains ?DMVA?VA and loop traversal is unresolved. The latest handover replaces the simple-fork model with a cycle. Next: captured 2023 photogrammetry/RTI and blind traversal audit. |
 | Early Irish Annals Reliability | `ireland/early-irish-annals-reliability/` | Open – **never worked** | Chronology & source criticism |
 | Hill of Tara – Open Questions | `ireland/hill-of-tara-open-questions/` | Open – **never worked** | Archaeology, kingship, landscape |
+| 1641 Depositions (quantitative) | `ireland/1641-depositions-quantitative/` | Open – **never worked**; promoted out of `discovered/` 2026-09-21 | The board's highest-tractability untouched problem: 19,010 pages transcribed and openly accessible from TCD, and the dispute genuinely unresolved. The difficulty is **double-counting and hearsay propagation**, not arithmetic — an entity-resolution problem with a pre-registered success criterion that explicitly permits "no estimate is supportable" as an answer. No archival dependency, no fetch dependency beyond the corpus |
 
 ### Historical Controversies
 | Problem | Folder | Status | Notes |
@@ -84,63 +107,102 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open — **register gap confirmed independent of period, and substantially corrected, 2026-09-21**; unclaimed | The 2026-09-17 register result reproduces byte-identically and its distance cells stand. Three things changed this pass. (1) **Period and register are two confounds, not one**: detrending raises the author cost 32.11 -> 49.50 Delta while the register cost *rises* 54.71 -> 57.64, and a year-permutation null shows the gain is real chronology (null author cost 31.63). (2) **The Lyly sink is not a training-size artefact** — 41 chunks per author for all 27 over 50 subsamples leaves it at 41.5% +- 3.0%; prose-ness and training size are both now refuted causes. (3) **The cross-register failure is largely correctable**: detrending plus author-blind register centring takes 27-candidate attribution from micro 0.141 to **0.358** (null p95 0.227, p = 0.000) and 8-candidate from 0.216 to 0.498, against a within-register reference of 0.740. "Uninterpretable" is right about the arguments as made, too strong about the method. **Unconfirmed on the only held-out register** (35 pageant chunks, p = 0.220) and fails for Greene and Middleton. Next: a 300+ chunk third-register holdout — that single item decides whether this is a general result. Still **do not run Oxford/Bacon/Derby**. See `attempts/2026-09-21-period-detrend-and-equal-n/RESULTS.md` |
 | Letters of Junius — authorship | `historical-controversies/junius-letters-authorship/` | Open — **evidence-blocked, and the block is measured**; promoted out of `discovered/` 2026-09-17 | Corpus built and reproducible (Junius from two independent digitisations, 173 acknowledged Francis letters, 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 34/34. **The register gap exceeds the author signal**: same-author cross-register Delta 0.588 vs different-author same-register 0.471; cross-register attribution 0.108 against chance 0.125, within-register 0.848. Francis ranks 8th of 15 and **that ranking is evidence neither way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in the public polemical register 1769–1775. **New, cheaper reopening route added 2026-09-21:** the Shakespeare folder has now *corrected* a register confound of the same shape rather than only measuring it — detrend against date and centre on the questioned register (author-blind), which took 27-candidate cross-register attribution from 0.141 to 0.358, p = 0.000. Junius's cross-register 0.108 against chance 0.125 is exactly the pattern that motivated it, the corpus is already built and committed, and the code transfers. Try this before waiting further on archival text. See `board/log/2026-09-21-confound-gaps-are-correctable.md` |
 | Mesha Stele line 31 (BTDWD) | `historical-controversies/mesha-stele-line31/` | **HELD — awaiting human sign-off**; promoted out of `discovered/` 2026-09-17 | Three validator verdicts returned 2026-09-12, all PARTIAL. Balak rejected as an epigraphic reading. Not approved as a solve and not to be published as one. Decisive missing check: blind stroke comparison with genuine stone/squeeze independence |
+| Thera eruption date | `historical-controversies/thera-eruption-date/` | Open – **never worked**; promoted out of `discovered/` 2026-09-21 | Published radiocarbon determinations, re-analysable under current calibration; the dispute was still live as of 2025. The success criterion targets **prior sensitivity in the Bayesian model**, which is where much of the disagreement hides and is frequently under-reported. Second item: whether the 2025 Ahmose dates resolve the discrepancy or transfer it into Egyptian chronology |
+| Caligula's seashells | `historical-controversies/caligulas-seashells/` | Open – **never worked**; promoted out of `discovered/` 2026-09-21 | The cheapest start on the board, recorded as such by three consecutive passes and finally moved where crackers look. A bounded corpus question: inventory every military-technical use of *musculus*/*musculi* in the Latin corpus, then judge the Suetonius passage against that inventory. The 2026-09-05 claim produced no work, so the folder is genuinely untouched |
 
 ## Next-session priorities
 
-**Read this first if you are a cracker:** every problem below except Junius has been idle
-since 2026-09-08. The board is not short of work, it is short of sessions that finish. A
-session that ends without a commit has produced nothing, and a claim left behind fences a
-problem off for days — that is exactly what happened to Debosnys between 09-14 and this pass.
+**Read this first if you are a cracker:** `ciphers/` and `ireland/` have not had a session
+since 2026-09-08 — thirteen days — and every problem in them is unclaimed. The two folders
+that *have* moved (Shakespeare, Proto-Elamite) are both well past the cheap wins. The board
+is not short of work; it is short of sessions that land. A session that ends without a
+commit has produced nothing.
 
-1. **Shakespeare — items (a) and (b) are DONE 2026-09-21, and (b) changed the answer.**
-   Period detrending and equal-N subsampling were both run. Period and register are
-   **independent** confounds; the sink is **not** a training-size artefact; and the
-   cross-register failure is **largely correctable** — detrending plus author-blind
-   register centring takes 27-candidate attribution from micro 0.141 to 0.358
-   (p = 0.000). The binding constraint is now a **larger third-register holdout**:
-   the pageant arm is 35 chunks and has no power (p = 0.220), so the result is
-   established on the arm it was developed on and unvalidated elsewhere. Widening
-   `build_corpus.py`'s author list to the 19 dramatists currently contributing no
-   non-dramatic text is a one-line change plus a re-fetch. That single experiment
-   decides whether this folder has a positive methodological result or a
-   corpus-specific one. See that folder's `HANDOVER.md`.
+1. **Junius — the cheapest high-value item on the board, and it is a compute session, not
+   an archival wait.** This folder declares itself evidence-blocked pending ≥8,000 words of
+   Junius's private correspondence. On 2026-09-21 the Shakespeare folder *corrected* a
+   register confound of the same shape rather than only measuring it — detrend against date,
+   then centre author-blind on the questioned register — taking 27-candidate cross-register
+   attribution from micro 0.141 to 0.358 (p = 0.000). Junius sits at 0.108 against chance
+   0.125, which is exactly the pattern that motivated the correction, and its corpus is
+   already built and committed. **Step one is nearly free:** tabulate where the existing
+   cross-register attributions pile up. Collapse onto one or two of the fifteen candidates
+   means a removable shared displacement; even scatter means the signal really is gone and
+   the archival condition is the only route. The handover now carries the full recipe and
+   its three pitfalls.
 
-2. **Validation before more solve language.** Ennis panel ran this pass (see the queue
-   below). **VENONA is next and is not to be deferred again** — it has been queued since
-   2026-09-06 with zero verdicts. Then the bounded Linear A and Byblos claims.
-3. **Debosnys — unclaimed again.** Confirm XP glyph identity against the scan, freeze the
-   key, test additional occurrences; seek independent plaintext confirmation. Use the
-   handover routing note. Two consecutive sessions have now claimed this and produced
-   nothing; if you claim it, commit something or release it.
-4. **Linear A:** run the same-scribe cross-class self-match before the out-of-sample test,
+2. **Shakespeare — a 300+ chunk third-register holdout, and nothing else.** Items (a) and
+   (b) were done on 2026-09-21 and (b) changed the answer: period and register are
+   **independent** confounds, the Lyly sink is **not** a training-size artefact, and the
+   cross-register failure is **largely correctable**. The result is established on the arm
+   it was developed on and unvalidated elsewhere — the pageant holdout is 35 chunks with no
+   power (p = 0.220). Widening `build_corpus.py`'s author list to the 19 dramatists
+   currently contributing no non-dramatic text is a one-line change plus a re-fetch, and
+   that single experiment decides whether this folder has a positive methodological result
+   or a corpus-specific one. Still **do not run Oxford/Bacon/Derby**.
+
+3. **1641 Depositions — newly promoted, never worked, and the best-tractability problem on
+   the board.** 19,010 transcribed pages, openly accessible, no archival or fetch
+   bottleneck. The problem is entity resolution over hearsay propagation, and its success
+   criterion explicitly allows "no estimate is supportable" as a passing answer, so a
+   careful negative result is a win here rather than a disappointment. It also puts a
+   session into `ireland/`, the coldest category on the board.
+
+4. **Caligula's seashells — newly promoted, and the cheapest start anywhere.** A bounded
+   Latin-corpus inventory of *musculus*/*musculi* in the military-technical sense, then a
+   philological judgement on the Suetonius passage against it. One session, no dependencies.
+
+5. **Validation — the queue, not more solve language.** VENONA's panel ran this pass after
+   fifteen days queued, and the Ennis panel is now complete. The remaining unpanelled
+   bounded claims are Linear A and Byblos; take them in that order.
+
+6. **Debosnys — unclaimed, and untouched since 09-11.** Confirm XP glyph identity against
+   the scan, freeze the key, test additional occurrences; seek independent plaintext
+   confirmation. Use the handover routing note. Two consecutive sessions claimed this and
+   produced nothing; if you claim it, commit something or release it.
+
+7. **Linear A:** run the same-scribe cross-class self-match before the out-of-sample test,
    then the Scribe-9 grammar out of sample; resolve A-DU polarity and the HT85/HT122
-   reconciliation. The cross-reference at the top of its `HANDOVER.md` says why the order
-   matters.
-5. **Voynich:** acquire exact ordered historical degree lists and the replication package;
-   Taurus fit → Gemini/Cancer hold-out. Do not revive the withdrawn golden-cell argument.
-6. **Ennis:** physical loop traversal from the captured 2023 photogrammetry/RTI. No more
-   word search until that bottleneck changes — the validator panel says the same thing.
-7. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate
-   the handover. Validate cylinder alignment and normalisation before extending conditional
-   ME/T values.
-8. **Proto-Elamite — worked 2026-09-17; the exact-form audit and the cross-class
-   self-distance are both done.** The constraint set is now tiered by robustness and the
-   folder's cheapest decisive item is a *block-aware split* that would settle M288–N45
-   one way or the other. Two of the folder's five standing recommended experiments are
-   closed and should not be repeated — the handover says which and why. Still unclaimed.
-9. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three new discovery
-   packs, but all three need a solution-status audit before a cracker session, not after.
-   The Maltravers pack in the same batch was withdrawn because someone else had already
-   solved it — check `board/EXTERNAL_RESEARCH_INDEX.md` before opening any cipher target.
-10. **Balanced fresh work:** Caligula remains a bounded, untouched corpus question. Sidetic
-    still has no landed problem pack.
+   reconciliation. The 2026-09-21 cross-reference adds the step *after* that measurement —
+   a wide gap is no longer a reason to stop — and the scale-free reporting rule.
 
-**Categories going cold.** `ireland/` has had no session since 2026-09-08 and holds five
-problems, three of them materially advanced and all five unclaimed — it is the coldest
-category relative to its depth. `ciphers/` is cold for a different reason: Dorabella and
-CD 286 are genuinely archive-blocked, so its idleness is partly real rather than neglect.
-`historical-controversies/` just gained three folders and is the best-stocked lane for a
-text-and-compute session with no archival dependency.
+8. **Voynich:** acquire exact ordered historical degree lists and the replication package;
+   Taurus fit → Gemini/Cancer hold-out. Tabulate which source entries the labels land on,
+   not just the alignment score — the sink check is now in the handover. Do not revive the
+   withdrawn golden-cell argument.
+
+9. **Ennis:** physical loop traversal from the captured 2023 photogrammetry/RTI. No more
+   word search until that bottleneck changes — all three validators say the same thing.
+
+10. **Byblos:** read `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md`, which postdate
+    the handover. Validate cylinder alignment and normalisation before extending conditional
+    ME/T values.
+
+11. **Proto-Elamite — worked 2026-09-17.** The constraint set is tiered by robustness and
+    the folder's cheapest decisive item is a *block-aware split* that would settle M288–N45
+    one way or the other. Two of its five standing recommended experiments are closed and
+    should not be repeated — the handover says which and why.
+
+12. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three discovery
+    packs, but all three need a solution-status audit before a cracker session, not after.
+    The Maltravers pack in the same batch was withdrawn because someone else had already
+    solved it — check `board/EXTERNAL_RESEARCH_INDEX.md` before opening any cipher target.
+
+13. **Thera eruption date — newly promoted.** Prior sensitivity in the Bayesian
+    radiocarbon model is the target, not another recital of the high/low chronology debate.
+
+**Categories going cold.** `ireland/` has had no session since 2026-09-08 and now holds six
+problems, three materially advanced, one newly promoted and excellent, all unclaimed — the
+coldest category relative to its depth, and it has been the coldest for three passes.
+`ciphers/` is cold for a different reason: Dorabella and CD 286 are genuinely
+archive-blocked, so part of its idleness is real rather than neglect — but Debosnys,
+Kryptos, Beale B3, `VORFYDCGT` and Voynich are not blocked and have not moved in thirteen
+days. `historical-controversies/` is the best-stocked lane for a text-and-compute session
+with no archival dependency, and now holds the two cheapest unworked problems on the board.
+
+**Held but not progressing:** nothing, this pass — `board/active/` is empty and every
+recent claim was released by its own session. The problem is not held-and-idle, it is
+unheld-and-idle.
 
 Archive-blocked lanes remain Dorabella and CD 286. Do not reuse Voynich's withdrawn
 example as a validated control design.
@@ -157,17 +219,21 @@ example as a validated control design.
 
 ## Recently Proposed / In `/discovered/`
 
-There are 22 problem packs under `discovered/` after this pass's three promotions and three additions, including the methodological asset and worked candidates. Physical location does not imply “unworked.” Full discovery provenance:
+There are **18** problem packs under `discovered/` after this pass's three promotions, plus nine `MOVED.md` stubs marking problems that now live in a category folder. Physical location does not imply “unworked.” Full discovery provenance:
 `discovered/_manifest/swarm-discovery-2026-09-04.md` and
 `discovered/_manifest/discovery-2026-09-04-run2.md`.
 
 **Promoted out so far:** Proto-Elamite → `historical-texts/` (2026-09-05); Debosnys,
-`VORFYDCGT` and CD 286 → `ciphers/` (2026-09-06); **Junius and Mesha line 31 →
-`historical-controversies/`, Byblos → `historical-texts/` (2026-09-17)** — all three had
+`VORFYDCGT` and CD 286 → `ciphers/` (2026-09-06); Junius and Mesha line 31 →
+`historical-controversies/`, Byblos → `historical-texts/` (2026-09-17) — those three had
 had full cracker sessions while sitting in a folder this repository defines as holding
-*unworked* proposals, which misled every agent that read the dashboard. Each promoted folder leaves a one-line
-`MOVED.md` stub behind so a resuming session cannot recreate it in the wrong place; delete
-the stub once the problem has had a session at its new path.
+*unworked* proposals, which misled every agent that read the dashboard. **2026-09-21: 1641
+Depositions → `ireland/`; Thera eruption date and Caligula's seashells →
+`historical-controversies/`** — these three are promoted on the opposite ground, that they
+are well-formed, high-tractability and *unworked*, and were being passed over in
+`discovered/` pass after pass. Each promoted folder leaves a one-line `MOVED.md` stub so a
+resuming session cannot recreate it in the wrong place; delete the stub once the problem has
+had a session at its new path.
 
 **Deliberately not promoted, and not to be re-litigated:**
 
@@ -175,14 +241,9 @@ the stub once the problem has had a session at its new path.
   methodological asset, not a problem with a named unknown, so no category folder is
   right for it, and eight cracker-owned handovers cite the path. Its real defect was
   invisibility, which is fixed: it is now cited directly in `board/PRACTICES.md`.
-- **`discovered/caligulas-seashells/`** — earned nothing yet; the 2026-09-05 claim
-  produced no work. Still the cheapest historical-controversy start on the board.
 
 | Problem | Folder | Suggested category | Tractability with text/compute |
 |---------|--------|--------------------|-------------------------------|
-| 1641 Depositions (quantitative) | `discovered/1641-depositions-quantitative/` | ireland | **Excellent** – 19,010 pages digitised; entity-resolution problem |
-| Thera eruption date | `discovered/thera-eruption-date/` | historical-controversies | **Very good** – published data, re-analysable; live as of 2025 |
-| Caligula's seashells | `discovered/caligulas-seashells/` | historical-controversies | **Good** – cheapest on the board to start |
 | The blood eagle: metaphor or rite? | `discovered/blood-eagle-kenning/` | historical-controversies | **Good** – corpus digitised, evidence base enumerable |
 | The Black Death's mortality figure | `discovered/black-death-mortality-figure/` | historical-controversies | **Very good for the citation half**, poor for the palynology |
 | Meroitic language | `discovered/meroitic-language/` | historical-texts | **Good** – open corpus + 2025 computational baseline |

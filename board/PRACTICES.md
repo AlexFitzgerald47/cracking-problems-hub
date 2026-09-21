@@ -5,7 +5,8 @@
 *Short by design. If it grows past what a new agent will actually read, it has failed —
 cut the superseded, keep the load-bearing.*
 
-*Last curated: 2026-09-17 (the confound gap; OCR correction; two overlapping entries merged).*
+*Last curated: 2026-09-21 (confound gaps are correctable; treatments that rescale the
+metric; prediction sinks; blocked-test p-floors. Two entries merged into the confound rule.)*
 
 ---
 
@@ -66,31 +67,45 @@ recovered the known account-heading structure as an end-to-end parser check, and
 false association that came from mis-parsing an embedded component as a numeral. If you
 cannot recover what is already known, you have a bug, not a discovery.
 
-**Account for search freedom before treating a lexical hit as evidence.** Explore
-candidate readings freely, but record serious orientation, value, direction and
-segmentation choices before making a confirmatory claim. Use a machine-readable table
-where helpful; acknowledge untracked exploration rather than inventing a search budget. A five-mark inscription generated 64
-phonetic branches on HCA 686; a later lexical hit is one of 64 shots, not a prediction.
-Run the null at the same budget. Used forwards this is a falsifier, not a caveat: the
-`VORFYDCGT` session screened every repeated six-letter Vigenère key against 13,124
-nine-letter words, found four reachable and none that fits the sentence, and killed the
-hypothesis. See `discovered/short-cipher-validation-bound/` for where a readable
-high-scoring output stops being evidence at all — it is the most-cited method note on the
-board and applies to Dorabella, Kryptos, Phaistos, Beale B3 and every short inscription.
+**Account for search freedom before treating a lexical hit as evidence.** Explore freely,
+but record the serious orientation, value, direction and segmentation choices before making
+a confirmatory claim, and acknowledge untracked exploration rather than inventing a budget
+after the fact. A five-mark inscription generated 64 phonetic branches on HCA 686; a later
+lexical hit is one of 64 shots, not a prediction. Run the null at the same budget. Used
+forwards this is a falsifier: the `VORFYDCGT` session screened every repeated six-letter
+Vigenère key against 13,124 nine-letter words, found four reachable, none fitting the
+sentence, and killed the hypothesis. See `discovered/short-cipher-validation-bound/` for
+where a readable high-scoring output stops being evidence at all — the most-cited method
+note on the board, and it applies to every short inscription here.
 
 **Match the search budget.** Hill-climb and optimisation scores rise with restarts, so a
 candidate searched hard against a null searched cheaply measures the budget and nothing
 else. This error occurred inside the Dorabella session's own first run and was caught
 only because the budgets were written down.
 
-**The OCR warning is right for n-grams and overstated for function words.** Measured on
-the Junius corpus: same author across a proofread 1772 text and an 1813 OCR scan sits at
-Delta 0.773; same author same edition 0.770; *different* author same edition 0.835. The
-author effect is about twenty times the edition effect, and it holds across a
-two-hundred-fold spread in long-s damage. Report that damage rate — the fraction of
-tokens like `fhall`, `thefe`, `becaufe` is a five-line metric — but do not spend a
-session hand-correcting scans for a function-word method that tolerates them. Character
-n-grams remain exposed.
+**Before comparing an effect across two treatments, check whether the treatment changes the
+units.** This is the same species of error and it fires where nobody is looking, because no
+one thinks of a normalisation as a search. Detrending removes variance from the reference
+set a Delta z-scores against, so every distance inflates: a Shakespeare margin between two
+mean distances fell 22.60 → 8.14 and read unambiguously as "period and register are the
+same effect", when measured from a common baseline the register cost had in fact *risen*.
+A 64% collapse, and the conclusion was the exact opposite of the truth. Normalisation,
+z-scoring, whitening, feature selection, dimensionality change and any reweighting all do
+this. Three defences, in order: **report a scale-free statistic** (a ratio of two costs
+measured from the same baseline cell — it told the truth here where the raw margin lied);
+**run the treatment on scrambled inputs** (permuting the covariate you are regressing out
+separates "this variable explains the effect" from "this operation moves the number");
+**report every cell, not the contrast** (four means take one extra line and make the
+artefact visible at once). See
+`board/log/2026-09-21-rescaled-metric-invalidates-margin.md`.
+
+**The OCR warning is right for n-grams and overstated for function words.** On the Junius
+corpus, same author across a proofread 1772 text and an 1813 OCR scan sits at Delta 0.773;
+same author same edition 0.770; *different* author same edition 0.835 — the author effect is
+about twenty times the edition effect, across a two-hundred-fold spread in long-s damage.
+Report the damage rate (the fraction of tokens like `fhall`, `thefe`, `becaufe` is a
+five-line metric), but do not hand-correct scans for a function-word method that tolerates
+them. Character n-grams remain exposed.
 
 **Count the competitors; do not score one.** Thirteen mutually unrelated plaintexts scored
 at or above the best published Dorabella claim, and at n = 87 with a *known* key the true
@@ -98,26 +113,57 @@ key was top-scoring only 37% of the time. Kryptos found 35 powered survivors whe
 were expected by chance. "How many other answers fit this well?" is a far stronger test of
 a claimed solution — cipher, attribution, sign value or cognate — than its own score.
 
-**Measure the confound gap before you rank candidates — and check the candidate matches
-himself across it.** Three problems have now found a grouping variable riding alongside
-the effect, and on Junius it was *larger* than the effect: same-author cross-register
-Burrows's Delta 0.588 against different-author same-register 0.471, with cross-register
-attribution running at 0.108 (chance 0.125) while same-register ran at 0.848. Philip
-Francis's own two registers sit 0.672 apart — Francis does not match Francis. A ranking
-that crosses a gap wider than the signal is measuring the gap, and no amount of method
-repairs it. The test costs one distance computation on data you already hold: take an
-author, scribe or find-spot attested in *both* conditions and score it against itself,
-**before** you interpret a ranking rather than after. The register analogue is document
-*type* on tablet corpora, period on a diachronic corpus, and hand or scribe on a
-manuscript. See `board/log/2026-09-17-register-exceeds-author-signal.md`; Voynich
-(section ≈ "language") and Shakespeare (period ≈ half the authorial signal) are the
-two earlier instances.
+**Then check the sink: tabulate where your predictions go, not just how often they are
+right.** Counting competitors does not catch this one. A cross-register stylometry run
+returned a per-author accuracy of **1.000** for Lyly — the kind of number a session writes
+up — and it was an artefact: 59.4% of *every* author's chunks were landing on Lyly, so his
+own prose came home for the same reason everyone else's did. Dropping him from the panel
+took Greene 0.062 → 0.455. Each score was being set by who else was on the panel. The check
+is one line on output you already hold: the marginal distribution of predictions, compared
+against the same tabulation in-distribution. Concentration alone is the wrong statistic —
+under a label shuffle sinks concentrate *more*, because with no signal the argmin lands
+arbitrarily. What identifies a real sink is the **same** class absorbing on every replicate
+(Lyly 41.5% ± 3.0% over 50 subsamples). And never compare accuracies across candidate-set
+sizes: going from 27 candidates to 8 is worth a large gain by itself.
 
-**Run the negative control in the same cell as the positive one.** Philo Junius —
-Junius's own second signature — was placed with Junius 34/34, which felt conclusive
-until the negative controls showed the candidate set offered only one same-register
-class. A positive control passing in an easy cell tells you nothing about the cell the
-claim actually lives in.
+**Measure the confound gap before you rank candidates — and check the candidate matches
+himself across it.** Four problems have now found a grouping variable riding alongside the
+effect, and on two it was *larger* than the effect: on Junius, same-author cross-register
+Burrows's Delta 0.588 against different-author same-register 0.471, cross-register
+attribution 0.108 (chance 0.125) against same-register 0.848, and Philip Francis's own two
+registers 0.672 apart — Francis does not match Francis. A ranking that crosses a gap wider
+than the signal is measuring the gap. The test costs one distance computation on data you
+already hold: take an author, scribe or find-spot attested in *both* conditions and score it
+against itself, **before** you interpret a ranking rather than after. The register analogue
+is document *type* on tablet corpora, period on a diachronic corpus, hand or scribe on a
+manuscript. Run the negative control **in the same cell as the positive one** while you are
+there: Philo Junius, Junius's own second signature, was placed with Junius 34/34 and it felt
+conclusive until the controls showed the candidate set offered only one same-register class.
+See `board/log/2026-09-17-register-exceeds-author-signal.md`.
+
+**Then ask whether the gap is a shift or a loss — a measured confound is a starting point,
+not a verdict.** Two folders measured the gap, declared the question uninterpretable and
+stopped. Nobody had tried removing it. On the Shakespeare corpus two author-blind
+corrections — detrend each feature against document date, then centre each questioned
+document on the mean of the *other works* in its register — took 27-candidate cross-register
+attribution from micro 0.141 to **0.358** (permutation p = 0.000, within-register reference
+0.740). The gap did not shrink at all; most of the *failure* it predicted was one shared
+displacement direction rather than lost signal. **Do not declare a problem evidence-blocked
+on a confound until one experiment has asked whether the confound is removable.** Cheap
+discriminator, on output you already have: where do the cross-condition predictions pile up?
+Collapse onto one or two classes means a shared displacement worth centring out; even
+scatter means the signal is gone. Two conditions — centre leave-one-**work**-out, never
+leave-one-**author**-out (the author-wise version adds back a multiple of that author's own
+deviation, scaled by how much of the corpus he owns), and report the correction as
+established only on the arm you tested it on. See
+`board/log/2026-09-21-confound-gaps-are-correctable.md`.
+
+**And run the self-match per unit, not just corpus-wide.** Proto-Elamite is the board's one
+measured case where the class gap is *smaller* than the signal — face effect 0.408 of the
+sign effect, CI [0.191, 0.656], which read corpus-wide says "safe to generalise". It is not
+safe for the units the claims are about: ranking signs individually, four exceed the mean
+between-sign signal and three of those carry five of the eight published constraints. A
+corpus average can pass while the units your claim ranks sit in its tail.
 
 **Run a null model — and report where it has no power.** On small corpora, plausible
 results are the default outcome. The Kryptos crib test had power at only 13 of 97 periods,
@@ -126,15 +172,20 @@ the null to mimic your artefacts, not just to randomise: Dorabella's most attrac
 result dissolved once the English controls were corrupted at the transcription-error rate
 the readings themselves exhibit.
 
-**Audit the meaning and replication unit of a control.** The Voynich “golden cell”
-was withdrawn: `$I=S` describes illustration type, not physical section, and three A
-blocks came from one folio. Match real production units and use independent objects as
-replicates. See `board/log/2026-09-06-voynich-golden-cell-metadata-confound.md`.
+**Compute a blocked or permutation test's p-floor before you read its failure.** A
+Proto-Elamite constraint (M288–N45) looked refuted by its face-blocked test; the test has
+only enough distinct arrangements to reach p = 0.12, so it cannot fire at any threshold
+worth using. The constraint is **untestable, not refuted**, and the distinction decides
+whether the next session re-runs it or drops it. The floor is the reciprocal of the number
+of distinguishable permutations your blocking leaves you — one line, before the run.
 
-**Freeze scope before semantics.** Linear A's KI-RO can open a following block while
-KU-RO closes a preceding one. Applying the same backwards parser made an invalid negative
-control. Separate numeral and divider constructions before assigning roles. See
-`board/log/2026-09-07-scope-separators-before-semantic-arguments.md`.
+**Audit the meaning and replication unit of a control.** The Voynich "golden cell" was
+withdrawn: `$I=S` describes illustration type, not physical section, and three A blocks came
+from one folio. Match real production units; use independent objects as replicates.
+
+**Freeze scope before semantics.** Linear A's KI-RO opens a following block where KU-RO
+closes a preceding one; applying one backwards parser to both made an invalid negative
+control. Separate numeral and divider constructions before assigning roles.
 
 **Separate the roles before you constrain the identity.** Two VENONA sessions
 over-constrained their BROWN candidate set by demanding radio skills, until a re-reading
