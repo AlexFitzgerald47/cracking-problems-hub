@@ -1,0 +1,41 @@
+{
+ "uncorrected": {
+  "works_correct": 3,
+  "n_works": 7,
+  "author_macro": 0.25,
+  "detail": {
+   "David_Hume": "0/1",
+   "Edmund_Burke": "3/3",
+   "Philip_Francis": "0/1",
+   "Samuel_Johnson": "0/2"
+  }
+ },
+ "detrend + centre": {
+  "works_correct": 3,
+  "n_works": 7,
+  "author_macro": 0.5,
+  "detail": {
+   "David_Hume": "0/1",
+   "Edmund_Burke": "0/3",
+   "Philip_Francis": "1/1",
+   "Samuel_Johnson": "2/2"
+  }
+ },
+ "binomial_table": {
+  "0": 1.0,
+  "1": 0.48684188176929327,
+  "2": 0.1276311990077985,
+  "3": 0.0198679941793501,
+  "4": 0.0019074600412753607,
+  "5": 0.00011140662746788646,
+  "6": 3.6434226394380187e-06,
+  "7": 5.1315811823070687e-08
+ },
+ "mcnemar": {
+  "b": 3,
+  "c": 3,
+  "p": 1.0,
+  "floor_5": 0.0625
+ },
+ "n_needed_unpaired": 8
+}

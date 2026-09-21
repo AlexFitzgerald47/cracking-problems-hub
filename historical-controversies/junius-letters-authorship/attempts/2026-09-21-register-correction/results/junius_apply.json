@@ -1,0 +1,510 @@
+{
+ "uncorrected": {
+  "validation": {
+   "top1": 0,
+   "n": 10,
+   "median_rank": 8.0,
+   "n_cand": 11,
+   "binom_p": 1.0
+  },
+  "junius": {
+   "junius_1772_wikisource": {
+    "francis_rank": 10,
+    "ranking": [
+     [
+      "Edmund_Burke",
+      0.45787599762282355
+     ],
+     [
+      "David_Hume",
+      0.47613329500628626
+     ],
+     [
+      "Horace_Walpole",
+      0.5147138814965461
+     ],
+     [
+      "Edward_Gibbon",
+      0.5558425343212633
+     ],
+     [
+      "Samuel_Johnson",
+      0.5627604125019549
+     ],
+     [
+      "William_Cowper",
+      0.5633793075203241
+     ],
+     [
+      "Thomas_Gray",
+      0.5718566134779903
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6014669141973106
+     ],
+     [
+      "James_Boswell",
+      0.6021567282744037
+     ],
+     [
+      "Philip_Francis",
+      0.6068827374543617
+     ],
+     [
+      "Laurence_Sterne",
+      0.7351921064315917
+     ]
+    ],
+    "votes": {
+     "Thomas_Gray": 1,
+     "Edmund_Burke": 27,
+     "Horace_Walpole": 5,
+     "David_Hume": 5
+    }
+   },
+   "junius_1813_ocr": {
+    "francis_rank": 8,
+    "ranking": [
+     [
+      "Edmund_Burke",
+      0.36086199913480077
+     ],
+     [
+      "David_Hume",
+      0.38580068441685694
+     ],
+     [
+      "Horace_Walpole",
+      0.47210139670717705
+     ],
+     [
+      "Edward_Gibbon",
+      0.5016117465848935
+     ],
+     [
+      "Samuel_Johnson",
+      0.5166035710609862
+     ],
+     [
+      "William_Cowper",
+      0.5244961335986201
+     ],
+     [
+      "Thomas_Gray",
+      0.5314937242195259
+     ],
+     [
+      "Philip_Francis",
+      0.5480877694483328
+     ],
+     [
+      "James_Boswell",
+      0.5511788137515324
+     ],
+     [
+      "Lord_Chesterfield",
+      0.5929716146549247
+     ],
+     [
+      "Laurence_Sterne",
+      0.6906563535481561
+     ]
+    ],
+    "votes": {
+     "Edmund_Burke": 28,
+     "David_Hume": 15,
+     "Edward_Gibbon": 2,
+     "Horace_Walpole": 1,
+     "William_Cowper": 1
+    }
+   }
+  }
+ },
+ "corrected": {
+  "validation": {
+   "top1": 4,
+   "n": 10,
+   "median_rank": 2.0,
+   "n_cand": 11,
+   "binom_p": 0.009153746166103411
+  },
+  "junius": {
+   "junius_1772_wikisource": {
+    "francis_rank": 5,
+    "ranking": [
+     [
+      "William_Cowper",
+      0.4836793580305144
+     ],
+     [
+      "Horace_Walpole",
+      0.49327805806027814
+     ],
+     [
+      "Samuel_Johnson",
+      0.5066796190255572
+     ],
+     [
+      "James_Boswell",
+      0.5134032805108831
+     ],
+     [
+      "Philip_Francis",
+      0.5450338540609577
+     ],
+     [
+      "Edward_Gibbon",
+      0.5496978067683483
+     ],
+     [
+      "Thomas_Gray",
+      0.5795636789833991
+     ],
+     [
+      "David_Hume",
+      0.58484979043766
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6002539516099791
+     ],
+     [
+      "Edmund_Burke",
+      0.6344571925760533
+     ],
+     [
+      "Laurence_Sterne",
+      0.7706558183315316
+     ]
+    ],
+    "votes": {
+     "William_Cowper": 10,
+     "Horace_Walpole": 5,
+     "James_Boswell": 14,
+     "David_Hume": 2,
+     "Samuel_Johnson": 2,
+     "Edward_Gibbon": 3,
+     "Thomas_Gray": 1,
+     "Philip_Francis": 1
+    }
+   },
+   "junius_1813_ocr": {
+    "francis_rank": 6,
+    "ranking": [
+     [
+      "Samuel_Johnson",
+      0.4529129088029549
+     ],
+     [
+      "William_Cowper",
+      0.4560269641017945
+     ],
+     [
+      "James_Boswell",
+      0.4654297199540333
+     ],
+     [
+      "Horace_Walpole",
+      0.47195920654701456
+     ],
+     [
+      "Edward_Gibbon",
+      0.5092209625490537
+     ],
+     [
+      "Philip_Francis",
+      0.5107626742204069
+     ],
+     [
+      "David_Hume",
+      0.5250846536035189
+     ],
+     [
+      "Thomas_Gray",
+      0.5509927606470253
+     ],
+     [
+      "Edmund_Burke",
+      0.5979166940187081
+     ],
+     [
+      "Lord_Chesterfield",
+      0.604842320931148
+     ],
+     [
+      "Laurence_Sterne",
+      0.7194495735825481
+     ]
+    ],
+    "votes": {
+     "Horace_Walpole": 9,
+     "James_Boswell": 22,
+     "Edward_Gibbon": 3,
+     "William_Cowper": 7,
+     "Lord_Chesterfield": 2,
+     "David_Hume": 2,
+     "Samuel_Johnson": 2
+    }
+   }
+  }
+ },
+ "corrected_no_francis": {
+  "validation": {
+   "top1": 4,
+   "n": 10,
+   "median_rank": 2.0,
+   "n_cand": 11,
+   "binom_p": 0.009153746166103411
+  },
+  "junius": {
+   "junius_1772_wikisource": {
+    "francis_rank": 6,
+    "ranking": [
+     [
+      "William_Cowper",
+      0.4982515807734254
+     ],
+     [
+      "Horace_Walpole",
+      0.5164785436337807
+     ],
+     [
+      "Samuel_Johnson",
+      0.5178549726489449
+     ],
+     [
+      "James_Boswell",
+      0.5339696336676373
+     ],
+     [
+      "Edward_Gibbon",
+      0.5606675637693838
+     ],
+     [
+      "Philip_Francis",
+      0.5680178704217006
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6064906389274028
+     ],
+     [
+      "David_Hume",
+      0.6080660914359861
+     ],
+     [
+      "Thomas_Gray",
+      0.6095268201511335
+     ],
+     [
+      "Edmund_Burke",
+      0.6458380642769523
+     ],
+     [
+      "Laurence_Sterne",
+      0.791497733605249
+     ]
+    ],
+    "votes": {
+     "William_Cowper": 11,
+     "Horace_Walpole": 6,
+     "James_Boswell": 8,
+     "Lord_Chesterfield": 2,
+     "Samuel_Johnson": 4,
+     "David_Hume": 2,
+     "Edward_Gibbon": 3,
+     "Thomas_Gray": 1,
+     "Philip_Francis": 1
+    }
+   },
+   "junius_1813_ocr": {
+    "francis_rank": 6,
+    "ranking": [
+     [
+      "Samuel_Johnson",
+      0.45580040576057146
+     ],
+     [
+      "William_Cowper",
+      0.47276567924410506
+     ],
+     [
+      "James_Boswell",
+      0.48183245099887106
+     ],
+     [
+      "Horace_Walpole",
+      0.48517159723293113
+     ],
+     [
+      "Edward_Gibbon",
+      0.5187874804115573
+     ],
+     [
+      "Philip_Francis",
+      0.525064118399272
+     ],
+     [
+      "David_Hume",
+      0.5404855943978994
+     ],
+     [
+      "Thomas_Gray",
+      0.579914083405324
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6042478632341947
+     ],
+     [
+      "Edmund_Burke",
+      0.6106584441189159
+     ],
+     [
+      "Laurence_Sterne",
+      0.7381693255522028
+     ]
+    ],
+    "votes": {
+     "Horace_Walpole": 7,
+     "Samuel_Johnson": 5,
+     "James_Boswell": 20,
+     "Edward_Gibbon": 3,
+     "William_Cowper": 7,
+     "Philip_Francis": 1,
+     "Lord_Chesterfield": 2,
+     "David_Hume": 2
+    }
+   }
+  }
+ },
+ "centre_only": {
+  "validation": {
+   "top1": 2,
+   "n": 10,
+   "median_rank": 4.0,
+   "n_cand": 11,
+   "binom_p": 0.22891342114093655
+  },
+  "junius": {
+   "junius_1772_wikisource": {
+    "francis_rank": 5,
+    "ranking": [
+     [
+      "William_Cowper",
+      0.4638959574259428
+     ],
+     [
+      "Horace_Walpole",
+      0.4946161918168776
+     ],
+     [
+      "Samuel_Johnson",
+      0.512854335929796
+     ],
+     [
+      "James_Boswell",
+      0.5144682764729898
+     ],
+     [
+      "Philip_Francis",
+      0.5275418332349969
+     ],
+     [
+      "Edward_Gibbon",
+      0.5434694918962809
+     ],
+     [
+      "David_Hume",
+      0.5851138326665104
+     ],
+     [
+      "Thomas_Gray",
+      0.5981542574730263
+     ],
+     [
+      "Edmund_Burke",
+      0.6220489748635453
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6594720990867653
+     ],
+     [
+      "Laurence_Sterne",
+      0.7707328470486324
+     ]
+    ],
+    "votes": {
+     "William_Cowper": 19,
+     "Horace_Walpole": 5,
+     "James_Boswell": 6,
+     "David_Hume": 2,
+     "Samuel_Johnson": 1,
+     "Philip_Francis": 1,
+     "Edward_Gibbon": 3,
+     "Thomas_Gray": 1
+    }
+   },
+   "junius_1813_ocr": {
+    "francis_rank": 5,
+    "ranking": [
+     [
+      "William_Cowper",
+      0.4428255483175886
+     ],
+     [
+      "Samuel_Johnson",
+      0.46047559706640834
+     ],
+     [
+      "James_Boswell",
+      0.46864950366657243
+     ],
+     [
+      "Horace_Walpole",
+      0.4736660102897741
+     ],
+     [
+      "Philip_Francis",
+      0.48086073681958924
+     ],
+     [
+      "Edward_Gibbon",
+      0.5002600680280734
+     ],
+     [
+      "David_Hume",
+      0.5254854036050518
+     ],
+     [
+      "Thomas_Gray",
+      0.5745670806729468
+     ],
+     [
+      "Edmund_Burke",
+      0.5863813459447144
+     ],
+     [
+      "Lord_Chesterfield",
+      0.6727637534814745
+     ],
+     [
+      "Laurence_Sterne",
+      0.7230751752820953
+     ]
+    ],
+    "votes": {
+     "William_Cowper": 14,
+     "Horace_Walpole": 7,
+     "Philip_Francis": 3,
+     "James_Boswell": 16,
+     "Edward_Gibbon": 3,
+     "David_Hume": 2,
+     "Samuel_Johnson": 2
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "register_works": {
+  "letters": {
+   "Philip_Francis": 2,
+   "Lord_Chesterfield": 1,
+   "Horace_Walpole": 1,
+   "Thomas_Gray": 1,
+   "James_Boswell": 1,
+   "Laurence_Sterne": 1,
+   "Edward_Gibbon": 1,
+   "David_Hume": 1,
+   "Samuel_Johnson": 1,
+   "William_Cowper": 1,
+   "Edmund_Burke": 1
+  },
+  "formal": {
+   "John_Wilkes": 1,
+   "Richard_Price": 1,
+   "Thomas_Pownall": 1,
+   "Hugh_Boyd": 1,
+   "Philip_Francis": 1,
+   "Edmund_Burke": 3,
+   "Samuel_Johnson": 2,
+   "David_Hume": 1
+  },
+  "public_letter": {
+   "Philo_Junius": 2
+  }
+ }
+}

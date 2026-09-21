@@ -1,0 +1,316 @@
+{
+ "uncorrected": {
+  "correct": 3,
+  "n": 7,
+  "rows": [
+   {
+    "author": "David_Hume",
+    "source": "gutenberg_36120",
+    "n_chunks": 17,
+    "winner": "Edmund_Burke",
+    "correct": false,
+    "median_rank": 2.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15043",
+    "n_chunks": 73,
+    "winner": "Edmund_Burke",
+    "correct": true,
+    "median_rank": 1.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15198",
+    "n_chunks": 79,
+    "winner": "Edmund_Burke",
+    "correct": true,
+    "median_rank": 1.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_2173",
+    "n_chunks": 22,
+    "winner": "Edmund_Burke",
+    "correct": true,
+    "median_rank": 1.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "twospeechesinhou00franiala",
+    "n_chunks": 10,
+    "winner": "David_Hume",
+    "correct": false,
+    "median_rank": 8.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_11397",
+    "n_chunks": 74,
+    "winner": "Edmund_Burke",
+    "correct": false,
+    "median_rank": 5.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_43656",
+    "n_chunks": 82,
+    "winner": "Edmund_Burke",
+    "correct": false,
+    "median_rank": 7.0
+   }
+  ]
+ },
+ "centre only": {
+  "correct": 1,
+  "n": 7,
+  "rows": [
+   {
+    "author": "David_Hume",
+    "source": "gutenberg_36120",
+    "n_chunks": 17,
+    "winner": "William_Cowper",
+    "correct": false,
+    "median_rank": 5.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15043",
+    "n_chunks": 73,
+    "winner": "Thomas_Gray",
+    "correct": false,
+    "median_rank": 9.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15198",
+    "n_chunks": 79,
+    "winner": "Philip_Francis",
+    "correct": false,
+    "median_rank": 10.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_2173",
+    "n_chunks": 22,
+    "winner": "Thomas_Gray",
+    "correct": false,
+    "median_rank": 8.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "twospeechesinhou00franiala",
+    "n_chunks": 10,
+    "winner": "Samuel_Johnson",
+    "correct": false,
+    "median_rank": 5.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_11397",
+    "n_chunks": 74,
+    "winner": "Samuel_Johnson",
+    "correct": true,
+    "median_rank": 1.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_43656",
+    "n_chunks": 82,
+    "winner": "William_Cowper",
+    "correct": false,
+    "median_rank": 2.0
+   }
+  ]
+ },
+ "detrend + centre": {
+  "correct": 3,
+  "n": 7,
+  "rows": [
+   {
+    "author": "David_Hume",
+    "source": "gutenberg_36120",
+    "n_chunks": 17,
+    "winner": "William_Cowper",
+    "correct": false,
+    "median_rank": 6.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15043",
+    "n_chunks": 73,
+    "winner": "Thomas_Gray",
+    "correct": false,
+    "median_rank": 9.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_15198",
+    "n_chunks": 79,
+    "winner": "Philip_Francis",
+    "correct": false,
+    "median_rank": 10.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "gutenberg_2173",
+    "n_chunks": 22,
+    "winner": "Philip_Francis",
+    "correct": false,
+    "median_rank": 9.5
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "twospeechesinhou00franiala",
+    "n_chunks": 10,
+    "winner": "Philip_Francis",
+    "correct": true,
+    "median_rank": 2.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_11397",
+    "n_chunks": 74,
+    "winner": "Samuel_Johnson",
+    "correct": true,
+    "median_rank": 1.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "gutenberg_43656",
+    "n_chunks": 82,
+    "winner": "Samuel_Johnson",
+    "correct": true,
+    "median_rank": 2.0
+   }
+  ]
+ },
+ "uncorrected_reverse": {
+  "correct": 0,
+  "n": 5,
+  "rows": [
+   {
+    "author": "David_Hume",
+    "source": "lettersdavidhum00humegoog",
+    "n_chunks": 91,
+    "winner": "John_Wilkes",
+    "correct": false,
+    "median_rank": 5.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "correspondencer01burkgoog",
+    "n_chunks": 71,
+    "winner": "Hugh_Boyd",
+    "correct": false,
+    "median_rank": 2.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "francisletters01franuoft",
+    "n_chunks": 38,
+    "winner": "Edmund_Burke",
+    "correct": false,
+    "median_rank": 4.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "francisletters02franuoft",
+    "n_chunks": 42,
+    "winner": "Edmund_Burke",
+    "correct": false,
+    "median_rank": 5.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "letterssamueljo00johngoog",
+    "n_chunks": 81,
+    "winner": "Hugh_Boyd",
+    "correct": false,
+    "median_rank": 4.0
+   }
+  ]
+ },
+ "detrend + centre_reverse": {
+  "correct": 1,
+  "n": 5,
+  "rows": [
+   {
+    "author": "David_Hume",
+    "source": "lettersdavidhum00humegoog",
+    "n_chunks": 91,
+    "winner": "Samuel_Johnson",
+    "correct": false,
+    "median_rank": 3.0
+   },
+   {
+    "author": "Edmund_Burke",
+    "source": "correspondencer01burkgoog",
+    "n_chunks": 71,
+    "winner": "Samuel_Johnson",
+    "correct": false,
+    "median_rank": 3.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "francisletters01franuoft",
+    "n_chunks": 38,
+    "winner": "Samuel_Johnson",
+    "correct": false,
+    "median_rank": 3.0
+   },
+   {
+    "author": "Philip_Francis",
+    "source": "francisletters02franuoft",
+    "n_chunks": 42,
+    "winner": "Samuel_Johnson",
+    "correct": false,
+    "median_rank": 3.0
+   },
+   {
+    "author": "Samuel_Johnson",
+    "source": "letterssamueljo00johngoog",
+    "n_chunks": 81,
+    "winner": "Samuel_Johnson",
+    "correct": true,
+    "median_rank": 1.0
+   }
+  ]
+ },
+ "rank_move_junius_1772_wikisource": {
+  "mean_abs": 3.272727272727273,
+  "moves": {
+   "Edmund_Burke": 9,
+   "David_Hume": 6,
+   "Horace_Walpole": -1,
+   "Edward_Gibbon": 2,
+   "Samuel_Johnson": -2,
+   "William_Cowper": -5,
+   "Thomas_Gray": 0,
+   "Lord_Chesterfield": 1,
+   "James_Boswell": -5,
+   "Philip_Francis": -5,
+   "Laurence_Sterne": 0
+  },
+  "francis_move": -5,
+  "n_at_least_as_far": 5
+ },
+ "rank_move_junius_1813_ocr": {
+  "mean_abs": 2.909090909090909,
+  "moves": {
+   "Edmund_Burke": 8,
+   "David_Hume": 5,
+   "Horace_Walpole": 1,
+   "Edward_Gibbon": 1,
+   "Samuel_Johnson": -4,
+   "William_Cowper": -4,
+   "Thomas_Gray": 1,
+   "Philip_Francis": -2,
+   "James_Boswell": -6,
+   "Lord_Chesterfield": 0,
+   "Laurence_Sterne": 0
+  },
+  "francis_move": -2,
+  "n_at_least_as_far": 6
+ }
+}
