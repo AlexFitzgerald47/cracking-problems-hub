@@ -1,0 +1,130 @@
+{
+ "n_authors": 27,
+ "n_nondrama": 943,
+ "n_pageant": 35,
+ "drama_mean_L1": 6.460940532905094e-12,
+ "displacement_L1_nondrama": 246.34934223991706,
+ "displacement_L1_pageant": 276.10448744408063,
+ "cos_nondrama_pageant_directions": 0.6912538495161534,
+ "C1_corr_cos_vs_absorption_nondrama": 0.5538595783259119,
+ "C2_corr_cos_vs_absorption_pageant": 0.3727895246497324,
+ "C2_cos_pageant_peele": 0.41856158694531187,
+ "C2_cos_pageant_lyly": 0.2723335050095624,
+ "C2_cos_nondrama_peele": 0.3656447620507425,
+ "C2_cos_nondrama_lyly": 0.3765773269033409,
+ "corr_projection_vs_absorption_nondrama": 0.6424130530235115,
+ "register_centred": {
+  "nondrama": {
+   "share": {
+    "Banks, John": 0.003181336161187699,
+    "Behn, Aphra": 0.007423117709437964,
+    "Brome, Richard": 0.1325556733828208,
+    "Chapman, George": 0.0,
+    "Crowne, John": 0.024390243902439025,
+    "D'Urfey, Thomas": 0.003181336161187699,
+    "Dekker, Thomas": 0.03817603393425239,
+    "Dryden, John": 0.11346765641569459,
+    "Fletcher, John": 0.006362672322375398,
+    "Ford, John": 0.12195121951219512,
+    "Glapthorne, Henry": 0.02014846235418876,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.016967126193001062,
+    "Jonson, Ben": 0.0010604453870625664,
+    "Lee, Nathaniel": 0.012725344644750796,
+    "Lyly, John": 0.0021208907741251328,
+    "Marston, John": 0.003181336161187699,
+    "Massinger, Philip": 0.16542948038176034,
+    "Middleton, Thomas": 0.18451749734888653,
+    "Nabbes, Thomas": 0.0,
+    "Otway, Thomas": 0.005302226935312832,
+    "Peele, George": 0.0,
+    "Pix, Mary": 0.0010604453870625664,
+    "Ravenscroft, Edward": 0.06256627783669141,
+    "Settle, Elkanah": 0.0010604453870625664,
+    "Shadwell, Thomas": 0.003181336161187699,
+    "Shirley, James": 0.06998939554612937
+   },
+   "micro27": 0.060445387062566275,
+   "macro8": 0.07611010835872807,
+   "micro8": 0.060445387062566275,
+   "per_author8": {
+    "Chapman, George": 0.0,
+    "Dekker, Thomas": 0.2446043165467626,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.03488372093023256,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": 0.025974025974025976,
+    "Marston, John": 0.1111111111111111,
+    "Middleton, Thomas": 0.19230769230769232
+   },
+   "zeros": 4,
+   "hhi": 0.11862481712096387
+  },
+  "pageant": {
+   "share": {
+    "Banks, John": 0.0,
+    "Behn, Aphra": 0.0,
+    "Brome, Richard": 0.2571428571428571,
+    "Chapman, George": 0.0,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dekker, Thomas": 0.02857142857142857,
+    "Dryden, John": 0.08571428571428572,
+    "Fletcher, John": 0.0,
+    "Ford, John": 0.08571428571428572,
+    "Glapthorne, Henry": 0.02857142857142857,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.0,
+    "Jonson, Ben": 0.0,
+    "Lee, Nathaniel": 0.0,
+    "Lyly, John": 0.0,
+    "Marston, John": 0.0,
+    "Massinger, Philip": 0.08571428571428572,
+    "Middleton, Thomas": 0.34285714285714286,
+    "Nabbes, Thomas": 0.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 0.0,
+    "Pix, Mary": 0.0,
+    "Ravenscroft, Edward": 0.05714285714285714,
+    "Settle, Elkanah": 0.0,
+    "Shadwell, Thomas": 0.0,
+    "Shirley, James": 0.02857142857142857
+   },
+   "micro27": 0.2857142857142857,
+   "macro8": 0.2125,
+   "micro8": 0.2857142857142857,
+   "per_author8": {
+    "Chapman, George": null,
+    "Dekker, Thomas": 0.1,
+    "Greene, Robert": null,
+    "Heywood, Thomas": 0.0,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": null,
+    "Marston, John": null,
+    "Middleton, Thomas": 0.75
+   },
+   "zeros": 18,
+   "hhi": 0.21142857142857144
+  }
+ },
+ "uncentred_reference": {
+  "nondrama": {
+   "share_lyly": 0.41039236479321317,
+   "macro8": 0.344618935353351,
+   "micro8": 0.14103923647932132,
+   "hhi": 0.23243321049559798
+  },
+  "pageant": {
+   "share_peele": 0.6857142857142857,
+   "hhi": 0.4938775510204082
+  }
+ },
+ "C5_null": {
+  "n": 200,
+  "observed_macro": 0.2518217403982629,
+  "null_mean": 0.1303718998655445,
+  "p95": 0.19485575588376847,
+  "max": 0.27246705042650105,
+  "p_one_sided": 0.015
+ }
+}

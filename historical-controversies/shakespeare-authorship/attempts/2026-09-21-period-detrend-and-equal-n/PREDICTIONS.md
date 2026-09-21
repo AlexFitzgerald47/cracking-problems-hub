@@ -153,3 +153,116 @@ C3 and C4 are deliberately set against each other. C3 says the sink is an artefa
 of a shared displacement and can be removed; C4 says removing it does not give the
 method back. If both hold, the folder's negative conclusion survives a genuine
 attempt to repair it, which is a far stronger position than never having tried.
+
+---
+
+# Round-3 freeze — Experiment D, the two corrections together
+
+Written after A and C returned, before anything in D was computed.
+
+## Where A and C leave it
+
+A's year-permutation null is unambiguous. Detrending against the **true** dates
+raises the author cost A from 32.11 to 49.50, while detrending against **permuted**
+dates leaves it at 31.63 (p95 32.95). Real chronology was masking authorial signal
+and removing it helps: leave-one-work-out within-register macro 0.718 → 0.769
+(leakage-free), cross-register micro 0.169 → 0.356. But the register cost R does
+not fall — it rises, 54.71 → 57.64 — and year-matched pairing, which assumes no
+functional form, puts R/A at 1.80–2.17 against 1.70 untreated. **Period and
+register are two confounds, not one.**
+
+C showed the sink is a shared displacement direction and that subtracting it wipes
+the sink out (Lyly 41.0% → 0.2%) while *lowering* apparent accuracy, leaving a
+weak signal marginally above its null.
+
+Two things are now untested and one of them could hollow out A's result.
+
+| | prediction | falsifier |
+|---|---|---|
+| **D1** | Under linear detrending, Lyly's share of the 943 non-dramatic chunks on 27 centroids stays **above 20%** — i.e. detrending does *not* break the sink, so A's cross-register gain is a real gain and not the sink being redistributed | ≤ 20% ⇒ detrending works partly by breaking the sink, and A's cross-register numbers must be re-read as a sink effect |
+| **D2** | The two corrections combined (detrend, then register-centre) give an 8-author cross-register macro **below 0.50**, and below the detrended within-register figure of 0.769 | ≥ 0.50 ⇒ the pair of corrections substantially repairs cross-register attribution |
+| **D3** | The combined treatment's macro **exceeds** its own author-label permutation p95 | ≤ p95 ⇒ nothing survives that is distinguishable from chance |
+
+**Exploratory, labelled as such, no threshold.** C1 and C2 failed on the cosine
+statistic while C2's discriminating clause held. A post-hoc diagnostic — rank
+authors by the plain L1 distance from their centroid to the register's centre of
+mass, which is what `argmin` actually computes — is reported alongside, explicitly
+as a statistic chosen after seeing that cosine underperformed. It is a description
+of the sink, not a test of it.
+
+---
+
+# Round-4 freeze — Experiment E, does the repair leak?
+
+Written after D returned, before E was computed.
+
+D2 **failed**, which is the strongest result of the session: detrending and
+register-centring together take 8-author cross-register accuracy from micro 0.169
+(chance 0.125) to **micro 0.499, macro 0.553**, against a 200-permutation null of
+mean 0.134 / p95 0.273. That is a threefold gain on the arm this folder declared
+uninterpretable.
+
+**It is worth nothing until one thing is checked.** The centring subtracts the mean
+of the *pooled* non-dramatic corpus — which contains the very chunks being
+attributed. If most of that gain comes from each author's own chunks contributing
+to the mean that is subtracted from them, the method is transductive leakage and
+cannot be used on a real questioned document.
+
+The honest version: estimate the register displacement from **other authors only**.
+For every author a, centre a's non-dramatic chunks on the mean of the non-dramatic
+chunks of the other seven. This is exactly what a practitioner can do — hold a
+reference corpus of other writers in the questioned register — and it cannot see
+the questioned author at all.
+
+| | prediction | falsifier |
+|---|---|---|
+| **E1** | Leave-one-author-out centring keeps 8-author cross-register micro **above 0.40** (pooled centring 0.499; uncorrected 0.169) | ≤ 0.40 ⇒ a large part of D's gain is transductive and the honest figure is lower |
+| **E2** | It stays **above its own 200-permutation null p95** | ≤ p95 ⇒ nothing survives |
+| **E3** | It stays **below** the detrended within-register figure computed on the 8-author panel alone | ≥ ⇒ cross-register is as good as within-register, which would be extraordinary and almost certainly a bug |
+| **E4** | *Held-out arm.* On the 19 civic pageants set aside by the 2026-09-17 session, the combined correction with leave-one-author-out centring raises Middleton + Heywood + Jonson's joint recovery of their own 25 chunks **above 0.10**, the upper bound that session's power analysis placed on the uncorrected rate | ≤ 0.10 ⇒ the repair does not transfer to the third register and its scope is narrower than the non-dramatic arm suggests |
+
+**Known bug to fix before E is reported**, found while reading D's output: D's
+within-register line passed the 27-author document set with the 8-author label
+list, so its `micro` of 0.234 is diluted by nineteen authors who cannot be
+correct. The macro (0.791) is over the panel and is unaffected. E recomputes the
+within-register comparison on panel documents only.
+
+---
+
+# Round-5 freeze — Experiment G, the centring must be author-blind
+
+Written after F returned, before G was computed.
+
+E1 held and leave-one-author-out centring beat pooled centring (micro 0.577 against
+0.499 on the 8-author panel). Reading the algebra rather than the number explains
+why, and the explanation is a problem. Writing `m` for the pooled non-dramatic
+mean, `m_a` for author a's own mean and `n_a` for his chunk count out of N, the
+shift subtracted from a's chunks is
+
+    mean(others) = (N·m − n_a·m_a) / (N − n_a)
+
+so centring subtracts it and leaves
+
+    z − m + (n_a / (N − n_a)) · (m_a − m).
+
+The second term **adds back a multiple of the author's own deviation**, and the
+multiplier grows with how much of the questioned corpus he owns. That is not
+leakage of the training labels, but it does use knowledge of which test chunks
+share an author, and it amplifies by an amount set by corpus arithmetic rather
+than by style. Heywood owns 430 of 943 chunks and gets a multiplier of 0.84;
+Jonson owns 8 and gets 0.009. A method whose strength depends on that is not a
+method.
+
+The author-blind version subtracts, from each chunk, the mean of every
+non-dramatic chunk belonging to a **different work** — no author grouping used
+anywhere, and available to any practitioner holding a reference corpus in the
+questioned register. Leave-one-work-out, not leave-one-author-out.
+
+| | prediction | falsifier |
+|---|---|---|
+| **G1** | Author-blind leave-one-work-out centring keeps 27-author non-dramatic micro **above 0.30** (uncorrected 0.141; LOAO 0.399) | ≤ 0.30 ⇒ most of the gain needed author grouping, and the honest headline is much smaller |
+| **G2** | It stays **above its own 200-permutation null p95** | ≤ p95 ⇒ nothing survives that is distinguishable from chance |
+| **G3** | The gap between author-blind and leave-one-author-out centring is **smaller** than the gap between author-blind and uncorrected — i.e. most of the correction's value comes from removing the shared displacement, not from the amplification term | ⇒ the amplification, not the centring, was doing the work |
+
+Whichever way G falls, the **author-blind** figure, not the leave-one-author-out
+figure, is the one this session reports as its headline.

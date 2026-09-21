@@ -1,0 +1,331 @@
+{
+ "note": "both panel sizes; no comparison crosses panel size",
+ "8-author|nondrama": {
+  "uncorrected": {
+   "micro": 0.2163308589607635,
+   "macro": 0.3678995343990039,
+   "max_share": 0.545068928950159,
+   "top_absorber": "Lyly, John",
+   "per_author": {
+    "Chapman, George": 0.5,
+    "Dekker, Thomas": 0.2014388489208633,
+    "Greene, Robert": 0.0743801652892562,
+    "Heywood, Thomas": 0.15348837209302327,
+    "Jonson, Ben": 0.125,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   }
+  },
+  "detrended": {
+   "micro": 0.3244962884411453,
+   "macro": 0.45378567461233776,
+   "max_share": 0.3870625662778367,
+   "top_absorber": "Lyly, John",
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.381294964028777,
+    "Greene, Robert": 0.07851239669421488,
+    "Heywood, Thomas": 0.32325581395348835,
+    "Jonson, Ben": 0.375,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   }
+  },
+  "register-centred only": {
+   "micro": 0.17497348886532343,
+   "macro": 0.2530117186482211,
+   "max_share": 0.8165429480381761,
+   "top_absorber": "Middleton, Thomas",
+   "per_author": {
+    "Chapman, George": 0.16666666666666666,
+    "Dekker, Thomas": 0.2949640287769784,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.20930232558139536,
+    "Jonson, Ben": 0.125,
+    "Lyly, John": 0.12987012987012986,
+    "Marston, John": 0.4444444444444444,
+    "Middleton, Thomas": 0.6538461538461539
+   }
+  },
+  "detrended + pooled centring": {
+   "micro": 0.49946977730646874,
+   "macro": 0.5529308662240108,
+   "max_share": 0.3022269353128314,
+   "top_absorber": "Heywood, Thomas",
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7482014388489209,
+    "Greene, Robert": 0.09090909090909091,
+    "Heywood, Thomas": 0.6232558139534884,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.7142857142857143,
+    "Marston, John": 1.0,
+    "Middleton, Thomas": 0.038461538461538464
+   }
+  },
+  "detrended + LOAO centring": {
+   "micro": 0.5768822905620361,
+   "macro": 0.5795653267564058,
+   "max_share": 0.3711558854718982,
+   "top_absorber": "Heywood, Thomas",
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7913669064748201,
+    "Greene, Robert": 0.0743801652892562,
+    "Heywood, Thomas": 0.7837209302325582,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.7402597402597403,
+    "Marston, John": 1.0,
+    "Middleton, Thomas": 0.038461538461538464
+   },
+   "null": {
+    "mean": 0.12760869565217392,
+    "p95": 0.39490986214209955,
+    "p": 0.005
+   }
+  }
+ },
+ "8-author|pageant": {
+  "uncorrected": {
+   "micro": 0.3142857142857143,
+   "macro": 0.29375,
+   "max_share": 0.2857142857142857,
+   "top_absorber": "Greene, Robert",
+   "per_author": {
+    "Dekker, Thomas": 0.8,
+    "Heywood, Thomas": 0.375,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.12,
+   "trio_n": 25
+  },
+  "detrended": {
+   "micro": 0.4,
+   "macro": 0.38125,
+   "max_share": 0.34285714285714286,
+   "top_absorber": "Chapman, George",
+   "per_author": {
+    "Dekker, Thomas": 0.9,
+    "Heywood, Thomas": 0.625,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.2,
+   "trio_n": 25
+  },
+  "register-centred only": {
+   "micro": 0.42857142857142855,
+   "macro": 0.33125,
+   "max_share": 0.8571428571428571,
+   "top_absorber": "Middleton, Thomas",
+   "per_author": {
+    "Dekker, Thomas": 0.2,
+    "Heywood, Thomas": 0.125,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 1.0
+   },
+   "trio_recovery": 0.52,
+   "trio_n": 25
+  },
+  "detrended + pooled centring": {
+   "micro": 0.3142857142857143,
+   "macro": 0.2833333333333333,
+   "max_share": 0.42857142857142855,
+   "top_absorber": "Chapman, George",
+   "per_author": {
+    "Dekker, Thomas": 0.8,
+    "Heywood, Thomas": 0.25,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.08333333333333333
+   },
+   "trio_recovery": 0.12,
+   "trio_n": 25
+  },
+  "detrended + LOAO centring": {
+   "micro": 0.4,
+   "macro": 0.3833333333333333,
+   "max_share": 0.37142857142857144,
+   "top_absorber": "Chapman, George",
+   "per_author": {
+    "Dekker, Thomas": 1.0,
+    "Heywood, Thomas": 0.25,
+    "Jonson, Ben": 0.2,
+    "Middleton, Thomas": 0.08333333333333333
+   },
+   "trio_recovery": 0.16,
+   "trio_n": 25,
+   "null": {
+    "mean": 0.15514285714285714,
+    "p95": 0.42857142857142855,
+    "p": 0.17
+   }
+  }
+ },
+ "27-author|nondrama": {
+  "uncorrected": {
+   "micro": 0.14103923647932132,
+   "macro": 0.344618935353351,
+   "max_share": 0.41039236479321317,
+   "top_absorber": "Lyly, John",
+   "per_author": {
+    "Chapman, George": 0.5,
+    "Dekker, Thomas": 0.19424460431654678,
+    "Greene, Robert": 0.0371900826446281,
+    "Heywood, Thomas": 0.011627906976744186,
+    "Jonson, Ben": 0.125,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   }
+  },
+  "detrended": {
+   "micro": 0.16118769883351008,
+   "macro": 0.3433280494574166,
+   "max_share": 0.3149522799575822,
+   "top_absorber": "Lyly, John",
+   "per_author": {
+    "Chapman, George": 0.5,
+    "Dekker, Thomas": 0.2949640287769784,
+    "Greene, Robert": 0.0371900826446281,
+    "Heywood, Thomas": 0.02558139534883721,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   }
+  },
+  "register-centred only": {
+   "micro": 0.06256627783669141,
+   "macro": 0.07730008660868624,
+   "max_share": 0.1823966065747614,
+   "top_absorber": "Middleton, Thomas",
+   "per_author": {
+    "Chapman, George": 0.0,
+    "Dekker, Thomas": 0.2517985611510791,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.037209302325581395,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": 0.025974025974025976,
+    "Marston, John": 0.1111111111111111,
+    "Middleton, Thomas": 0.19230769230769232
+   }
+  },
+  "detrended + pooled centring": {
+   "micro": 0.3711558854718982,
+   "macro": 0.49189889253879815,
+   "max_share": 0.19088016967126192,
+   "top_absorber": "Heywood, Thomas",
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7194244604316546,
+    "Greene, Robert": 0.03305785123966942,
+    "Heywood, Thomas": 0.39767441860465114,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.6493506493506493,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.038461538461538464
+   }
+  },
+  "detrended + LOAO centring": {
+   "micro": 0.3987274655355249,
+   "macro": 0.5073738048304854,
+   "max_share": 0.2046659597030753,
+   "top_absorber": "Heywood, Thomas",
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7841726618705036,
+    "Greene, Robert": 0.028925619834710745,
+    "Heywood, Thomas": 0.43488372093023253,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.6753246753246753,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.038461538461538464
+   },
+   "null": {
+    "mean": 0.07480911983032873,
+    "p95": 0.2641039236479321,
+    "p": 0.0
+   }
+  }
+ },
+ "27-author|pageant": {
+  "uncorrected": {
+   "micro": 0.11428571428571428,
+   "macro": 0.1,
+   "max_share": 0.6857142857142857,
+   "top_absorber": "Peele, George",
+   "per_author": {
+    "Dekker, Thomas": 0.4,
+    "Heywood, Thomas": 0.0,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.0,
+   "trio_n": 25
+  },
+  "detrended": {
+   "micro": 0.14285714285714285,
+   "macro": 0.125,
+   "max_share": 0.22857142857142856,
+   "top_absorber": "Banks, John",
+   "per_author": {
+    "Dekker, Thomas": 0.5,
+    "Heywood, Thomas": 0.0,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.0,
+   "trio_n": 25
+  },
+  "register-centred only": {
+   "micro": 0.2857142857142857,
+   "macro": 0.2125,
+   "max_share": 0.34285714285714286,
+   "top_absorber": "Middleton, Thomas",
+   "per_author": {
+    "Dekker, Thomas": 0.1,
+    "Heywood, Thomas": 0.0,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.75
+   },
+   "trio_recovery": 0.36,
+   "trio_n": 25
+  },
+  "detrended + pooled centring": {
+   "micro": 0.2857142857142857,
+   "macro": 0.2625,
+   "max_share": 0.2571428571428571,
+   "top_absorber": "Dekker, Thomas",
+   "per_author": {
+    "Dekker, Thomas": 0.8,
+    "Heywood, Thomas": 0.25,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.08,
+   "trio_n": 25
+  },
+  "detrended + LOAO centring": {
+   "micro": 0.34285714285714286,
+   "macro": 0.3125,
+   "max_share": 0.2857142857142857,
+   "top_absorber": "Dekker, Thomas",
+   "per_author": {
+    "Dekker, Thomas": 1.0,
+    "Heywood, Thomas": 0.25,
+    "Jonson, Ben": 0.0,
+    "Middleton, Thomas": 0.0
+   },
+   "trio_recovery": 0.08,
+   "trio_n": 25,
+   "null": {
+    "mean": 0.14428571428571427,
+    "p95": 0.4,
+    "p": 0.22
+   }
+  }
+ }
+}

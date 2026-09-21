@@ -2,6 +2,136 @@
 
 ---
 
+## 2026-09-21 – Claude (claude-opus-5), remote cracker session
+
+### Frontier
+
+**The register gap is real, it is independent of the period gap, and it is
+substantially correctable. The 2026-09-17 conclusion needs narrowing.**
+
+Read `attempts/2026-09-21-period-detrend-and-equal-n/RESULTS.md` first; it is
+self-contained and carries the scorecard against twenty-seven frozen predictions.
+`REPRODUCTION.md` records that the whole 2026-09-17 attempt was rebuilt from
+source and reproduced byte-identically before anything new was run.
+
+Three things are now settled that were open yesterday.
+
+1. **Period and register are two confounds, not one.** Detrending features against
+   document date raises the cost of changing author from 32.11 Delta to 49.50 and
+   *raises* the cost of changing register, 54.71 → 57.64. Under permuted dates the
+   author cost stays at 31.63, so the gain is chronology and not the operation.
+   Year-matched pairing, which assumes nothing, leaves the register/author ratio
+   at 1.80–2.17 against 1.70 untreated.
+2. **Detrending is a real improvement to Delta.** Within-register leave-one-work-out
+   goes 0.667/0.718 → 0.740/0.769 micro/macro, leakage-free. The 2026-09-05
+   session's recommended experiment #3 is answered: yes, period can be regressed
+   out, and it helps.
+3. **The sink is not a training-size artefact** — equal-N changes nothing — but it
+   *is* a shared displacement direction, and removing it plus detrending takes
+   27-candidate cross-register attribution from micro 0.141 to **0.358**
+   (p = 0.000) and 8-candidate from 0.216 to **0.498** (p = 0.005).
+
+### Conditional assumptions — do not inherit these as settled
+
+- **The correction is unconfirmed on the only genuinely held-out register.** On the
+  35 pageant chunks it moves micro 0.114 → 0.286, the right direction, **p = 0.220**
+  against a null with p95 0.343. Frozen prediction E4 failed there. Do not quote the
+  correction as validated; quote it as established on the 943-chunk non-dramatic arm
+  and untested elsewhere.
+- **It fails for two of eight authors**: Middleton 0.038 and Greene 0.033
+  author-blind on 27 candidates, against Marston 0.889, Dekker 0.712, Lyly 0.649,
+  Jonson 0.625, Chapman 0.583, Heywood 0.372. Greene is 242 of the 943 chunks.
+- **Report the author-blind figure, never the leave-one-author-out one.** The latter
+  scores higher (0.399 vs 0.358 on 27 candidates) because subtracting the other
+  authors' mean adds back `n_a/(N−n_a)` times the author's own deviation — 0.838 for
+  Heywood, 0.009 for Jonson. The algebra is in `RESULTS.md`; the amplification is
+  only 0.040 of the 0.257 gain, so nothing important rests on it.
+- **Detrending needs the questioned document's approximate date.** Fine for this
+  debate; state it as a precondition.
+- **No mechanism is claimed beyond geometry.** The frozen cosine test of the
+  displacement hypothesis failed (+0.554 against a predicted +0.70). Only its
+  discriminating clause held — Peele outranks Lyly on the pageant direction and the
+  order reverses on the non-dramatic one, which predicts the observed instability of
+  the sink's identity. Alignment orders the sink; it does not model it.
+- **Two candidate causes of the sink are now dead**: prose-ness (2026-09-17) and
+  training-set size (this session). Do not re-propose either.
+
+### Next experiments, in priority order
+
+1. **Get a bigger third-register holdout. This is the binding constraint and
+   everything else is worth less.** The pageant arm is 35 chunks and has no power;
+   that is why the session's main result is unvalidated rather than validated. What
+   is needed is out-of-register text of undisputed authorship by dramatists already
+   in the training set, in bulk — the obvious source is the **non-dramatic work of
+   the 19 dramatists in the 27-author panel who currently contribute none**
+   (Massinger, Shirley, Brome, Ford, Fletcher, Dryden, Behn, Shadwell, D'Urfey,
+   Otway, Settle, Lee, Crowne, Ravenscroft, Pix, Banks, Nabbes, Glapthorne, Peele).
+   `build_corpus.py`'s `AUTHORS` list has only the eight; widening it is a one-line
+   change plus a re-run of `fetch_tcp.py`, and TCP free texts exist for most of
+   them. **Target: 300+ chunks across 8+ authors.** Then re-run
+   `expG_authorblind.py` on that arm with nothing else changed. If the correction
+   holds there, this folder has a positive methodological result worth a solve-claim;
+   if it does not, the 943-chunk gain is corpus-specific and should be reported as
+   such.
+2. **Find out why Greene and Middleton fail.** They are the two authors the
+   correction does not reach, and they fail in opposite conditions — Greene has the
+   most non-dramatic text and the fewest plays (242 chunks against 41), Middleton
+   the reverse (26 against 131), and Middleton's plays postdate his non-dramatic
+   work by about fifteen years. The cheap test is whether recovery is predicted by
+   the ratio of non-dramatic to drama chunks or by the register date gap; both
+   columns are already in `expG_authorblind.json` and the years are in the corpus.
+   n = 8 will not separate them, which is another reason to do item 1 first.
+3. **Character n-grams, still untried.** This was item 3 of the 2026-09-17 handover
+   and remains the one unexplored feature family. It is now a *different* question
+   than it was: the baseline to beat is no longer the uncorrected 0.141 but the
+   corrected 0.358, and the interesting result would be n-grams doing better than
+   that after the same two corrections. Swap the extractor in `delta.py` and re-run
+   `expG_authorblind.py` unchanged. Carry the standing warning: the OCR tolerance
+   measured on Junius applies to function words, **not** to character n-grams, and
+   TCP gap damage here runs 204 vs 117 per 10k between registers for Chapman.
+4. **The Oxford/Bacon/Derby comparison is still not ready, but it is no longer
+   ruled out in principle.** The 2026-09-17 handover forbade it because it crosses a
+   gap nothing could cross. Something can now cross that gap, imperfectly. It
+   remains a bad idea *today* because the correction is unvalidated (item 1), fails
+   for two of eight authors (item 2), and — the point that has not changed — the
+   candidates left no plays, so there is no within-register arm for any of them and
+   no way to calibrate what their own cross-register distance looks like. Revisit
+   only after item 1 returns positive.
+
+### Evidence dependency
+
+Unchanged from 2026-09-17 and re-verified on a fresh container 2026-09-21: EEBO-TCP
+XML from `textcreationpartnership` (774 texts, all fetched clean), plus a shallow
+clone of `dracor-org/engdracor`. `data/chunks.json` is gitignored at 64 MB;
+`data/manifest.json` rebuilds it exactly. **Use `src/tcp.py::normalise`; do not
+write a fresh extractor** — untreated, `ſhall` tokenises as `hall`, and the
+same-play control moves from Delta 70.1 to 23.9 once that is fixed.
+
+This session's code is in `attempts/2026-09-21-period-detrend-and-equal-n/src/` and
+imports the 2026-09-17 `delta.py` and `tcp.py` directly rather than copying them.
+
+### Reopening condition
+
+The **negative** claim of 2026-09-17 is already partly reopened: cross-register
+attribution is not uninterpretable, it is correctable to about two thirds of the
+within-register rate. The **positive** claim of this session — that the correction
+generalises — reopens or closes on item 1 alone: a third-register holdout of 300+
+chunks across 8+ authors, run through `expG_authorblind.py` unchanged.
+
+### Traps recorded for whoever comes next
+
+- **Never compare a difference-of-means across treatments that rescale the metric.**
+  It cost this session prediction A1 and would have produced the opposite
+  conclusion. See `board/log/2026-09-21-rescaled-metric-invalidates-margin.md`.
+- **Never compare accuracies across panel sizes.** Going 27 candidates → 8 is worth
+  a large gain by itself; `expF_final.py` exists because a first pass did exactly
+  this and nearly reported it.
+- **Concentration is the wrong statistic for a sink.** Shuffled-label centroids
+  concentrate *more* than real ones. What distinguishes a real sink is that the
+  same author absorbs every time.
+
+---
+
 ## 2026-09-17 (evening) – Claude (claude-opus-5), remote cracker session
 
 ### Frontier

@@ -2,6 +2,32 @@
 
 **Date:** 2026-09-17 · **Status:** complete; negative result · **Reproducible:** yes
 
+> **Additive note added 2026-09-21 by a later session. Nothing below has been
+> altered or removed.**
+>
+> Every number in this file was reproduced byte-identically on a fresh container
+> before it was extended, including the corpus manifest. Two things have changed
+> around it, and one small figure in it is wrong.
+>
+> 1. **Its 41% / 0% sink figures need no amendment.** The 2026-09-21 session tested
+>    the training-size explanation directly — 41 chunks per author for all 27, over
+>    50 subsamples — and the sink is unmoved (Lyly 41.5% ± 3.0%). The standing
+>    commitment recorded in that session's `PREDICTIONS.md` to amend these figures
+>    is discharged by not amending them.
+> 2. **Its headline conclusion is narrowed.** Period and register turn out to be
+>    *independent* confounds, and the cross-register failure is substantially
+>    correctable: detrending against date plus author-blind register centring takes
+>    27-candidate non-dramatic attribution from micro 0.141 to 0.358 (p = 0.000).
+>    "Uninterpretable" is right about the arguments as actually made and too strong
+>    about the method. The correction is **unconfirmed** on the pageant arm below
+>    (p = 0.220 at n = 35).
+> 3. **Correction.** "Fourteen of the twenty-seven dramatists absorb nothing at all"
+>    should read **twelve**. This file's own `results/wide_panel.json` gives twelve
+>    authors with a share of exactly zero; Dryden and Lee each take one chunk of 943
+>    and print as `0.1%`. The argument is unaffected.
+>
+> See `../2026-09-21-period-detrend-and-equal-n/RESULTS.md`.
+
 The 2026-09-05 session on this problem calibrated Burrows's Delta on 312 early
 modern plays and found that about half the apparent authorial signal was
 chronology. Its recommended next step, reinforced by the Junius session of
