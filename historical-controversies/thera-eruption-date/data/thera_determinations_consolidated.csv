@@ -1,0 +1,279 @@
+source,lab_id,site_or_object,context,material,c14bp,sd,orig_ref,relevance
+manning2022_S1A,DEM-94,"Trianda, Rhodes",LBIA/LMIA mature/destruction below Thera tephra,charcoal,3347,46,Manning 2022 ref 73,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-93,"Trianda, Rhodes",LBIA/LMIA mature/destruction below Thera tephra,charcoal,3358,48,Manning 2022 ref 73,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-10643,"Trianda, Rhodes",LMIA late below Thera tephra,Quercus sp. twig,3367,39,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-11884,"Trianda, Rhodes",LMIA late below Thera tephra,Quercus sp. twig,3344,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,GrA-30336,"Palaikastro promontory, Crete",Thera tsunami deposit,cattle bone,3310,35,"Manning 2022 ref 52,74",eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,GrA-30339,"Palaikastro promontory, Crete",Thera tsunami deposit,cattle bone,3390,35,"Manning 2022 ref 52,74",eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,GrA-28991,"Palaikastro, Crete",Drain deposit with stratified Thera tephra,Goat/sheep bone/jaw,3325,40,Manning 2022 ref 74,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,GrA-29041,"Palaikastro, Crete",Drain deposit with stratified Thera tephra,Goat/sheep bone/jaw,3345,40,Manning 2022 ref 74,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,GrA-29042,"Palaikastro, Crete",Drain deposit with stratified Thera tephra,Tooth animal,3385,40,Manning 2022 ref 74,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38858,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,Hordeum vulgare,3275,17,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38881,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,Bos taurus,3367,22,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38973,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,Ovis aries,3318,19,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38972,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,Sus scrofa,3316,20,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38857,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,Olea europaea,3312,17,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38950,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,charcoal,3384,22,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,D-AMS 019172,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,bone (unidentified),3372,27,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-38966,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,charcoal,3297,19,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,D-AMS 019173,"Çeşme-Bağlararası, Turkey",Thera tsunami deposit,charcoal,3291,30,Manning 2022 ref 45,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Lyon7920,"Letoon Sanctuary, Eşençay Delta",Organic layer associated/immediately below Thera tephra,Organic-rich debris layer,3295,30,Manning 2022 ref 54,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12301,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. Relative Years (RY)1000-1010,3439,30,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12302,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1000-1010,3386,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12303,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1010-1020,3467,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12407,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1010-1020,3385,34,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12304,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1020-1030,3404,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12305,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1020-1030,3459,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12306,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1030-1040,3416,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12307,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1030-1040,3425,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12308,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1040-1050,3361,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12309,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1040-1050,3397,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12310,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1050-1060,3345,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12311,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1050-1060,3397,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12312,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1060-1070,3388,30,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12313,"Miletos, Turkey",LMIA below Thera tephra,Quercus sp. RY1060-1070 (waney edge RY1072),3352,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-1311,"Akrotiri, Thera",M2/1N002 LCI VDL,charcoal,3307,24,Manning 2022 ref 78,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-1529,"Akrotiri, Thera",M44A/26V LCI Advanced? VDL,charcoal,3281,25,Manning 2022 ref 78,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-1607,"Akrotiri, Thera",M26/43N047 LCI Advanced VDL,charcoal,3228,30,Manning 2022 ref 78,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-1624,"Akrotiri, Thera",14/1BN005 LCI Advanced VDL,wood,3360,25,Manning 2022 ref 78,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,DEM-1615,"Akrotiri, Thera",M2/53AN003 LCI Advanced?,charcoal,3389,25,Manning 2022 ref 78,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1552,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3390,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1555,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3245,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1548,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3335,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1549,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3460,80,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1550,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus sp.,3395,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1553,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3340,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1554,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus cly.,3280,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1556,"Akrotiri, Thera",VDL W. House Rm 5,Hordeum sp.,3415,70,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-7092-6795,"Akrotiri, Thera",VDL W. House Rm 5,peas,3360,60,Manning 2022 ref 77,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,K-5352,"Akrotiri, Thera",VDL W. House Rm 3,pulses,3310,65,Manning 2022 ref 76,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,K-3228,"Akrotiri, Thera",VDL W. House Rm 5,pulses,3340,55,Manning 2022 ref 76,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,K-4255,"Akrotiri, Thera","VDL House 3, delta 1",Tamarix twig 10 growth rings,3380,60,Manning 2022 ref 76,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-11817,"Akrotiri, Thera",VDL M2/76 N003,? Lathyrus sp.,3348,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-11818,"Akrotiri, Thera",VDL M7/68A N004,Hordeum sp.,3367,33,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-11820,"Akrotiri, Thera",VDL M10/23A N012,Hordeum sp.,3400,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-11869,"Akrotiri, Thera",VDL M31/43 N047,Hordeum sp.,3336,34,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12170,"Akrotiri, Thera",VDL M2/76 N003,? Lathyrus sp.,3336,28,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12171,"Akrotiri, Thera",VDL M7/68A N004,Hordeum sp.,3372,28,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12172,"Akrotiri, Thera",VDL M31/43 N047,Hordeum sp.,3321,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-12175,"Akrotiri, Thera",VDL M10/23A N012,Hordeum sp.,3318,28,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-2756,"Akrotiri, Thera",VDL M31/43 N047,Hordeum sp.,3317,28,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-2757,"Akrotiri, Thera",VDL M2/76 N003,? Lathyrus sp.,3315,31,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-2758,"Akrotiri, Thera",VDL M7/68A N004,Hordeum sp.,3339,28,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-2757repeat,"Akrotiri, Thera",VDL M2/76 N003,? Lathyrus sp.,3390,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-2758repeat,"Akrotiri, Thera",VDL M7/68A N004,Hordeum sp.,3322,32,Manning 2022 ref 64,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-25176,"Akrotiri, Thera",VDL W. House Rm 5,insect chitin,3368,29,Manning 2022 ref 79,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-23599-24426,Thera,Eruption pumice,Olive branch inner segment ‘rings’ 1-13,3383,11,Manning 2022 ref 80,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-23587,Thera,Eruption pumice,Olive branch next segment ‘rings’ 14-37,3372,12,Manning 2022 ref 80,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-23589,Thera,Eruption pumice,Olive branch next segment ‘rings’ 38-59,3349,12,Manning 2022 ref 80,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-23588-24402,Thera,Eruption pumice,Olive branch outer segment ‘rings’ 60-72,3331,10,Manning 2022 ref 80,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5614,Thera,Pumice/pre-eruption,Olive branch ABA,3282,21,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5614HS,Thera,Pumice/pre-eruption,Olive branch HS (extracted humic acids),3359,33,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5615,Thera,Pumice/pre-eruption,Olive branch ABA,3280,24,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5615HS,Thera,Pumice/pre-eruption,Olive branch HS,3321,24,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5620,Thera,Pumice/pre-eruption,Olive branch ABA,3277,25,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5620HS,Thera,Pumice/pre-eruption,Olive branch HS,3345,24,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5610,Thera,Pumice/pre-eruption,Olive branch ABA,3399,25,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5610HS,Thera,Pumice/pre-eruption,Olive branch HS,3342,26,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5083,Thera,Pumice/pre-eruption,Olive branch ABA,3270,36,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5083HS,Thera,Pumice/pre-eruption,Olive branch HS,3326,77,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5082,Thera,Pumice/pre-eruption,Olive branch ABA,3332,38,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5082HS,Thera,Pumice/pre-eruption,Olive branch HS,3369,36,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5084,Thera,Pumice/pre-eruption,Olive root ABA,3354,32,Manning 2022 ref 82,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,VERA-5084HS,Thera,Pumice/pre-eruption,Olive root HS,3368,34,Manning 2022 ref 81,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,K-3227,"Athinios Quarry, Thera",Under pumice,charcoal,3400,70,Manning 2022 ref 75,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,K-5353,"Akrotiri, Thera",VDL Bronos 1a hearth,pulses,3430,90,Manning 2022 ref 76,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-2794,"Akrotiri, Thera",VDL W. House Rm 5,Soil? from jar,3180,50,Manning 2022 ref 87,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1890,"Akrotiri, Thera",LMIA structure B Rm  5,Charcoal (pine),3340,60,Manning 2022 ref 86,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,L-362,Phira Quarry,Below pumice,Charred wood,3370,100,Manning 2022 ref 83,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1401,Phira Quarry,Below pumice,Carbonized tree,3420,40,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1697,Boudouroglou mine,Below pumice,Carbonized beans,3070,60,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1885,"Akrotiri, Thera",Structure D,Charred seeds (legumes?),3250,50,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1888,"Akrotiri, Thera",Structure D,"Charcoal, shrubs?",3130,50,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1889,"Akrotiri, Thera",Structure D,"Charcoal, shrubs?",3300,50,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1892,"Akrotiri, Thera",Bronos Bridge Area 6,"Charcoal, shrubs?",3330,50,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1894,"Akrotiri, Thera",Structure Delta Rm 3,"Charcoal, shrubs?",3310,70,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-1895,"Akrotiri, Thera",Structure Beta,"Charcoal, shrubs?",3320,50,Manning 2022 ref 85,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-2559,"Akrotiri, Thera",VDL W. House Rm 5,grains,3370,70,Manning 2022 ref 86,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-2565,"Akrotiri, Thera",VDL W. House Rm 5,grains,3310,60,Manning 2022 ref 86,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,P-2791,"Akrotiri, Thera",VDL W. House Rm 5,Seeds and charred material,3340,60,Manning 2022 ref 87,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-6058-5519,"Akrotiri, Thera",VDL Akrotiri 6,grains,3490,80,Manning 2022 ref 77,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,Hd-6059-7967,"Akrotiri, Thera",VDL Akrotiri 6,grains,3140,70,Manning 2022 ref 77,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,ETH-3315,"Akrotiri, Thera",VDL,seed,3610,51,Manning 2022 ref 88,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,ETH-3323,"Akrotiri, Thera",VDL,seed,3437,54,Manning 2022 ref 88,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,ETH-3324,"Akrotiri, Thera",VDL,seed,3453,52,Manning 2022 ref 88,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1558,"Akrotiri, Thera",VDL stages (i)/(ii),legumes,3400,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1551,"Akrotiri, Thera",VDL stages (i)/(ii),Hordeum sp.,3465,65,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1557,"Akrotiri, Thera",VDL stages (i)/(ii),legumes,3240,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1687,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus sp. ‘residue’ fraction,3280,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1689,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus sp. ‘residue’ fraction,3270,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1691,"Akrotiri, Thera",VDL W. House Rm 5,Lathyrus sp. ‘residue’ fraction,3320,60,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1A,OxA-1692,"Akrotiri, Thera",VDL W. House Rm 5,Legumes ‘residue’ fraction,3325,90,Manning 2022 ref 68,eruption-related (Manning dataset a/b/c/d pool)
+manning2022_S1B,VERA-2678,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3724,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2680,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3722,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2681,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3739,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2679,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3761,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VRI-0395,"Kolonna, Aegina",Ceramic Phase E,charcoal,3670,90,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,HV-5841,"Kolonna, Aegina",Ceramic Phase E,charcoal,3625,65,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2682,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3712,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2683,"Kolonna, Aegina",Ceramic Phase E,Hordeum vulgare,3721,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,HV-5840,"Kolonna, Aegina",Ceramic Phase E,charcoal,3820,60,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4641,"Kolonna, Aegina",Ceramic Phase E,Bone Ovis/Capra,3759,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2688,"Kolonna, Aegina",Ceramic Phase E,Bone Ovis/Capra,3698,33,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2692,"Kolonna, Aegina",Ceramic Phase F,Bone (goat),3704,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4640,"Kolonna, Aegina",Ceramic Phase G,Bone Bos,3800,44,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4639,"Kolonna, Aegina",Ceramic Phase G,Bone Bos,3809,32,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4638,"Kolonna, Aegina",Ceramic Phase G,Bone Ovis/Capra,3646,32,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4281,"Kolonna, Aegina",Ceramic Phase G,Hordeum vulgare,3740,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4282,"Kolonna, Aegina",Ceramic Phase G,Hordeum vulgare,3711,34,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4283,"Kolonna, Aegina",Ceramic Phase G,Hordeum vulgare,3780,37,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4637,"Kolonna, Aegina",Ceramic Phase H,Bone Bos,3643,30,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4636,"Kolonna, Aegina",Ceramic Phase H,Bone Ovis/Capra,3628,30,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4280,"Kolonna, Aegina",Ceramic Phase H,Hordeum vulgare,3724,39,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4279,"Kolonna, Aegina",Ceramic Phase H,Hordeum vulgare,3718,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-2687,"Kolonna, Aegina",Ceramic Phase H,Bone Bos,3694,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4634,"Kolonna, Aegina",Ceramic Phase I,Bone Sus,3544,37,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4278,"Kolonna, Aegina",Ceramic Phase I,Cereal indeterminate,3522,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4038,"Kolonna, Aegina",Ceramic Phase I,Cereal indeterminate,3506,34,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4576,"Kolonna, Aegina",Ceramic Phase I,Bone Bos,3482,37,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4575,"Kolonna, Aegina",Ceramic Phase I,Bone Sus,3537,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4578,"Kolonna, Aegina",Ceramic Phase I,Bone Ovis/Capra,3501,39,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4579,"Kolonna, Aegina",Ceramic Phase I,Bone Ovis/Capra,3526,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4580,"Kolonna, Aegina",Ceramic Phase I,Bone Bos,3506,33,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4276,"Kolonna, Aegina",Ceramic Phase I,Cereal indeterminate,3506,37,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4275,"Kolonna, Aegina",Ceramic Phase I,Cereal indeterminate,3544,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4577,"Kolonna, Aegina",Ceramic Phase I,Bone Ovis/Capra,3458,39,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4571,"Kolonna, Aegina",Ceramic Phase J,Bone Ovis/Capra,3469,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4574,"Kolonna, Aegina",Ceramic Phase J,Bone Sus,3430,39,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4573,"Kolonna, Aegina",Ceramic Phase J,Bone Ovis/Capra,3485,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4572,"Kolonna, Aegina",Ceramic Phase J,Bone Ovis/Capra,3407,38,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4570,"Kolonna, Aegina",Ceramic Phase J,Bone Sus,3428,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4633,"Kolonna, Aegina",Ceramic Phase K,Bone Ovis/Capra,3333,29,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4632,"Kolonna, Aegina",Ceramic Phase K,Bone Ovis/Capra,3356,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4631,"Kolonna, Aegina",Ceramic Phase K,Bone Ovis/Capra,3349,36,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4630,"Kolonna, Aegina",Ceramic Phase L,Bone Ovis/Capra,3313,48,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4284,"Kolonna, Aegina",Ceramic Phase M,Hordeum vulgare,3044,35,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4582,"Kolonna, Aegina",Ceramic Phase M,Charred wood (twig),2986,33,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,VERA-4285,"Kolonna, Aegina",Ceramic Phase M,legumes,3040,37,Manning 2022 ref 89,Aegean sequence around the eruption
+manning2022_S1B,OxA-11251,"Kommos, Crete",Early LMIA K85A/62D/9:92,Quercus sp.,3505,40,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,VERA-2636,"Kommos, Crete",Early LMIA K85A/62D/9:92,Quercus sp.,3445,25,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-11253,"Kommos, Crete",Early LMIA K85A/62D/8:83,Quercus sp.,3397,38,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,VERA-2638,"Kommos, Crete",Early LMIA K85A/62D/8:83,Quercus sp.,3600,19,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-11883,"Kommos, Crete",Early LMIA Space 25B Tr.66B,Likely Cupressaceae,3485,33,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-11944,"Kommos, Crete",Early LMIA Space 25B Tr.66B,Likely Cupressaceae,3435,25,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-3429,"Kommos, Crete",Early LMIA Space 25B Tr.66B,Likely Cupressaceae,3350,70,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-11252,"Kommos, Crete",Early LMIA K85A/66B/4:22+23,Charred twig,3375,45,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,VERA-2637,"Kommos, Crete",Early LMIA K85A/66B/4:22+23,Charred twig,3390,20,"Manning 2022 ref 64,90",Aegean sequence around the eruption
+manning2022_S1B,OxA-20127,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Ovis/Capra metacarpus",3522,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-20128,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Ovis/Capra metacarpus",3479,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-20170,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Ovis/Capra R ulna",3360,29,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-22634,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Cervus (or Bos?) femur",3314,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-22635,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Equus asinus radius",3391,26,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA—X-2304-54,Lerna Shaft Grave 1,Mid-LHI,"Animal bone, Cervus tibia",3378,28,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-20126,Lerna Shaft Grave 2,Late LHI,"Animal bone, Bos MT",3356,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-20128,Lerna Shaft Grave 2,Late LHI,"Animal bone, Ovis/Capra metacarpus",3326,28,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-20169,Lerna Shaft Grave 2,Late LHI,"Animal bone, Ovis/Capra metacarpus",3393,31,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-22631,Lerna Shaft Grave 2,Late LHI,"Animal bone, Ovis/Capra metacarpus",3276,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-22632,Lerna Shaft Grave 2,Late LHI,"Animal bone, Sus Mc III",3313,27,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1B,OxA-22633,Lerna Shaft Grave 2,Late LHI,"Animal bone, Bos metacarpus",3275,26,Manning 2022 ref 91,Aegean sequence around the eruption
+manning2022_S1C,OxA-2517,"Chania, Crete","LMIB Destruction TR10, Rm E",Pisum sativum,3380,80,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2518,"Chania, Crete","LMIB Destruction TR17, 1984, Rm C",Vicia faba,3340,80,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2646,"Chania, Crete","LMIB Destruction TR17, 1984, Rm C",Hordeum sp.,3315,70,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2647,"Chania, Crete","LMIB Destruction TR24, 1989, L6, BA1",Charred indeterminate seed remains,3150,70,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10320,"Chania, Crete","LMIB Destruction TR17, 1984, Rm C",Vicia faba,3208,26,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10321,"Chania, Crete","LMIB Destruction TR17, 1984, Rm C",Hordeum sp.,3268,27,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10322,"Chania, Crete","LMIB Destruction TR10, Rm E",Pisum sativum,3338,26,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10323,"Chania, Crete","LMIB Destruction TR24, 1989, L6, BA1",Charred indeterminate seed remains,3253,25,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-3187,"Myrtos-Pyrgos, Crete","LMIB Destruction K5,2,1",Hordeum sp.,3230,70,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-3188,"Myrtos-Pyrgos, Crete","LMIB Destruction K5,2,4",Hordeum sp.,3200,70,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-3189,"Myrtos-Pyrgos, Crete","LMIB Destruction K5/K6,2,1",Vicia ervilia,3270,70,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-3225,"Myrtos-Pyrgos, Crete","LMIB Destruction K5/L6,2,2",Vicia ervilia,3160,80,"Manning 2022 ref 64,99",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10324,"Myrtos-Pyrgos, Crete","LMIB Destruction K5,2,1",Hordeum sp.,3270,26,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10325,"Myrtos-Pyrgos, Crete","LMIB Destruction K5/K6,2,1",Vicia ervilia,3228,26,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10326,"Myrtos-Pyrgos, Crete","LMIB Destruction K5/L6,2,2",Vicia ervilia,3227,25,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-10411,"Myrtos-Pyrgos, Crete","LMIB Destruction K5,2,4",Hordeum sp.,3150,40,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,Beta-85991,"Mochlos, Crete",LMIB Destruction B.kiln.2910,Olea europaea stone,3240,50,Manning 2022 ref 210,LMIB / LMII destructions on Crete
+manning2022_S1C,Beta-85992,"Mochlos, Crete",LMIB Destruction A.2.212,Olea europaea stone,3180,40,Manning 2022 ref 210,LMIB / LMII destructions on Crete
+manning2022_S1C,Beta-115890,"Mochlos, Crete",LMIB Destruction B.kiln.2801,Olea europaea stones,3170,60,Manning 2022 ref 210,LMIB / LMII destructions on Crete
+manning2022_S1C,Beta-129765,"Mochlos, Crete",LMIB Destruction B.9.1705,Olea europaea stone,3220,40,Manning 2022 ref 210,LMIB / LMII destructions on Crete
+manning2022_S1C,Beta-151768,"Mochlos, Crete",LMIB Destruction A.pit.2315N,Olea europaea stone,3270,40,Manning 2022 ref 210,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2096,"Knossos, Crete","LMII Destruction, MUMK",Hordeum sp.,3070,70,"Manning 2022 ref 64,68",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2097,"Knossos, Crete","LMII Destruction, MUMK",Hordeum sp.,3190,65,"Manning 2022 ref 64,68",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-2098,"Knossos, Crete","LMII Destruction, MUMK",Hordeum sp.,3220,65,"Manning 2022 ref 64,68",LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-11882,"Knossos, Crete","LMII Destruction, MUMK",Hordeum sp.,3156,33,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1C,OxA-11943,"Knossos, Crete","LMII Destruction, MUMK",Hordeum sp.,3148,23,Manning 2022 ref 64,LMIB / LMII destructions on Crete
+manning2022_S1D,OxA-10319,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 3-4",3424,38,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2747,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 3-4",3386,30,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10316,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 3-5",3342,38,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2744,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 3-5",3427,31,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10318,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 5-6",3355,40,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2746,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 5-6",3471,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10315,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 6-8bark",3446,39,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2743,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 6-8bark",3413,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10317,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 7-8bark",3440,35,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2745,"Akrotiri, Thera","M4N003 LCI, pre-VDL","Olea europaea, inner ‘rings’ 7-8bark",3386,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10314,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 1",3330,27,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2751,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 1",3325,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10313,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 2",3353,27,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2749,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 2",3335,33,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10312,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 3bark",3293,27,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2748,"Akrotiri, Thera","65/N001/I2 LCI, pre-VDL","Tamarix sp., ring 3bark",3319,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10730,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 1-10",3490,45,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-11948,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 1-10",3526,25,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2742,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 1-10",3476,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10729,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 11-20",3410,45,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-11946,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 11-20",3474,24,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2741,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 11-20",3485,28,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-10728,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 21-30bark",3455,45,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-11945,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 21-30bark",3473,24,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,VERA-2740,"Trianda, Rhodes",Late MBA/Early LMIA AE1024,"Quercus sp., rings 21-30bark",3481,32,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-11250,"Akrotiri, Thera",Late Middle Cycladic (LMC)/Earlier LCI,Wood charcoal,3550,45,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,Hd-22037,"Akrotiri, Thera",Late Middle Cycladic/Earlier LCI,Wood charcoal,3552,19,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,DEM-1458,"Akrotiri, Thera",Late Middle Cycladic,Wood charcoal,3375,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1528,"Akrotiri, Thera",Before LC? (so LMC),Wood charcoal,3462,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1531,"Akrotiri, Thera",Late Middle Cycladic,Wood charcoal,3441,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1623,"Akrotiri, Thera",Late Middle Cycladic,Wood charcoal,3499,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-89,"Trianda, Rhodes",Earlier LMIA,Wood charcoal,3517,83,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-859,"Trianda, Rhodes",Earlier LMIA,Wood charcoal,3568,44,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-1313,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M20/43N045,Wood charcoal,3396,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1314,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M18/43N045,Wood charcoal,3467,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1345,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M21/43N047,Wood charcoal,3441,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1455,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M22/53AN023,Wood charcoal,3508,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1456,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M18/53AN018,Wood charcoal,3456,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1457,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M15/53AN017,Wood charcoal,3436,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1609,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) M12/53AN016,Wood charcoal,3433,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1610,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL) I3/53AN015,Wood charcoal,3420,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-1646,"Akrotiri, Thera",LCI (pre-LCI Advanced/VDL)  I1/61N001 W.S.,Wood charcoal,3508,25,Manning 2022 ref 78,pre- or post-eruption context
+manning2022_S1D,DEM-828,"Trianda, Rhodes","Liamis property Room II, Layer ΣΤ’ Depth 3.59-3.66m Mature LBIA/LMIA",Wood charcoal,3407,25,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-830,"Trianda, Rhodes","Platsis property AE56, Western stone heap trench Layer V Depth 3.88-4.00m Mature LBIA/LMIA",Wood charcoal,3449,21,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-831,"Trianda, Rhodes","Platsis property AE27, Destruction layer northwards wall Nr 4 Depth 2.65-2.98m Mature LBIA/LMIA",Wood charcoal,3466,23,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,OxA-11894,"Miletos, Turkey",LMIA,"Animal bone, Ovis/Capra",3377,24,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,OxA-11951,"Miletos, Turkey",LMIA,"Animal bone, Ovis/Capra",3423,23,Manning 2022 ref 64,pre- or post-eruption context
+manning2022_S1D,DEM-90,"Trianda, Rhodes","Markos property AE273, Square AB1, Layer Δ’ Depth 2.46-2.68m LMIB",Wood charcoal,3258,54,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-91,"Trianda, Rhodes","Markos property AE273, Square AB1, Layer Δ’ Depth 2.46-2.68m, LMIB",Wood charcoal,3240,35,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-856,"Trianda, Rhodes","Liamis property AE224, Square Γ2, Layer E’, from pit Depth 3.10-3.30m, LMIB",Wood charcoal,3175,41,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-829,"Trianda, Rhodes","Liamis property Square Γ2, Layer ΣΤ’ Depth 2.77-2.93/3.03m, LMIB, LMIB",Wood charcoal,3171,33,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-857,"Trianda, Rhodes","Liamis property AE236, Square Γ2, Layer Ηæ, from pit Depth 3.84-4.00m, LMIB",Wood charcoal,3142,52,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,DEM-858,"Trianda, Rhodes","Liamis property AE329, Square B2, under the floor Depth 3.03-3.16m, LMIB",Wood charcoal,3138,50,Manning 2022 ref 73,pre- or post-eruption context
+manning2022_S1D,OxA-3674,"Kommos, Crete","LMII, Hillside 41A1/26","Animal bone, charred",3090,80,Manning 2022 ref 9,pre- or post-eruption context
+pearson2023_T1,AA111457,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-3 Inner,Olea europaea stem (inner),3314,23,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA110275,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-3 Outer,Olea europaea stem (outer),3297,23,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA110272,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-2 Inner,Olea europaea stem (inner),3361,21,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA110273,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-2 Outer,Olea europaea stem (outer),3341,23,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA110274,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-2 Bark,Olea europaea stem (bark),3301,23,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA111456,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-1 Inner,Olea europaea stem (inner),3398,21,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA110271,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 88-1 Outer,Olea europaea stem (outer),3320,22,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA111458,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 72-2 Inner,Olea europaea stem (inner),3358,23,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+pearson2023_T1,AA111459,"Therasia olive shrub, trench AB, Koimisis",carbonised below Minoan pumice; 72-2 Outer,Olea europaea stem (outer),3342,24,Pearson et al. 2023,eruption-killed shrub; outermost = eruption TPQ
+bruins2025_T4,GrA-64347,Ahmose Temple mudbrick (BM EA 32689),Ahmose (early 18th Dyn),pure straw,3230,60,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T4,GrA-59737,Ahmose Temple mudbrick (BM EA 32689),Ahmose (early 18th Dyn),straw & mud,3290,40,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T4,GrM-15973,Ahmose Temple mudbrick (BM EA 32689),Ahmose (early 18th Dyn),straw & mud,3285,45,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T4,GrM-15201,Ahmose Temple mudbrick (BM EA 32689),Ahmose (early 18th Dyn),straw & mud,3385,20,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T4,GrM-14176_14177,Ahmose Temple mudbrick (BM EA 32689),Ahmose (early 18th Dyn),straw & mud,3335,75,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T5,GrA-59770,Satdjehuty burial cloth (BM EA 37106),early 18th Dyn,linen,3310,25,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-31118,stick shabti Teti-sa-intef (UC 40178),17th Dyn (Petrie),wood (holocellulose),3295,28,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-12680,stick shabti Tet-sa (UC 40179),17th Dyn (Petrie),wood (holocellulose),3224,30,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-12683,stick shabti Teti-sa-intef (UC 40181),17th Dyn (Petrie),wood (holocellulose),3185,30,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-12684,stick shabti Teti-sa-intef (UC 40182),17th Dyn (Petrie),wood (holocellulose),3288,30,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-12685,stick shabti Teti-sa-intef (UC 40184),17th Dyn (Petrie),wood (holocellulose),3251,30,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison
+bruins2025_T6,GrM-31119,stick shabti Djehuty (UC 40196),17th Dyn (Petrie),wood (holocellulose),3300,30,Bruins & van der Plicht 2025,Egyptian 17th/early-18th Dynasty comparison

@@ -28,6 +28,7 @@ import numpy as np
 
 def _logsum(a, axis=None):
     m = np.max(a, axis=axis, keepdims=True)
+    m = np.where(np.isfinite(m), m, 0.0)       # all -inf slice -> keep -inf, no nan
     out = m + np.log(np.sum(np.exp(a - m), axis=axis, keepdims=True))
     return np.squeeze(out, axis=axis) if axis is not None else float(out)
 
