@@ -79,3 +79,32 @@ strictly on *conchae* versus *musculi*.
 Second trap: confirmation bias toward the clever reading. Woods's thesis is satisfying and
 therefore dangerous. The lexical survey has to be run as a genuine test capable of returning
 "the literal reading is better supported" — and if it does, that is the finding.
+
+---
+
+## Correction appended 2026-09-22 (nothing above altered)
+
+**The description of Woods's thesis above is wrong, and the error changes what the success
+criteria test.** Above, Woods (2000) is said to have argued that the order concerned
+*musculi* in the sense of "small siege-shelters or sapper huts". Woods's own footnotes say
+that reading is **Balsdon's (1934)**, reported by Woods, not his own:
+
+> fn15: "Balsdon (n. 12), 92 presents this as second possible interpretation of the seashell
+> incident, and manages to avoid committing himself to either interpretation."
+
+Woods's apparatus (fn16–20, in order: `OLD s.v. musculus` → `OLD s.v. concha` →
+`ThLL s.v. concha` → **`OED (2nd ed.) s.v. cockle`** → Casson on *small craft*; and fn27,
+Vespasian and Titus parading captured **ships** in triumph) points to a **boat** thesis: the
+"spoils of Ocean" were small vessels. The footnotes were read directly from the publisher's
+page on 2026-09-22; **the body of the article was not obtained**, so this is a reconstruction
+from the apparatus and should be confirmed by anyone with library access.
+
+Consequence for success criterion 1: an inventory of the *military-shelter* sense alone tests
+Balsdon, not Woods. The 2026-09-22 session therefore tested both readings. See
+`analysis/2026-09-22-musculus-corpus-inventory.md` §0.
+
+Also corrected: the claim above that Woods's reading "has been contested" via objections that
+*musculi* were minor works — that objection is to **Balsdon's** reading. The peer-reviewed
+engagement with Woods that success criterion 3 asks about is most likely **S. J. V. Malloch,
+"Gaius on the Channel Coast", *CQ* 51.2 (2001), 551–6** (the only CrossRef-registered
+citation of Woods 2000). It remains **unread** — criterion 3 is still open.
