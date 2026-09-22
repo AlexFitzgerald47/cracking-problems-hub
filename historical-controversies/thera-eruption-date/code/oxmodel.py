@@ -88,7 +88,15 @@ def _sample_grid(rng, logw):
 def run_phase(d, kind='tau', n_iter=60000, burn=6000, thin=5, seed=3,
               span_lo=None, span_hi=None):
     """
-    Gibbs sampler for one phase.
+    Gibbs sampler for one phase. KEPT AS A RECORD OF A TRAP -- DO NOT USE.
+
+    One-at-a-time updates cannot move 31 dates plus two boundaries between the
+    "spread out, boundary young" and "crammed, boundary old" configurations, so
+    this sampler sits in a local mode and returned an eruption boundary ~90
+    calendar years off while looking perfectly healthy. Use exact.py instead:
+    the within-phase dates are conditionally independent given the boundaries,
+    so the boundary posterior is a closed-form marginalisation.
+
       kind = 'tau'      : Tau_Boundary(start) .. Boundary(end)   [exponential]
              'uniform'  : Boundary .. Boundary                   [uniform phase]
              'zero'     : Zero_Boundary(start) .. Boundary(end)  [linear rise]

@@ -71,15 +71,6 @@ def miletos_felling(q=0.05):
     return np.exp(tot)
 
 
-def seq_marginal(D, idx, lo_par, hi_par):
-    """sum over ORDERED t_1<=...<=t_k in [lo_par,hi_par] of prod L_i(t_i),
-    divided by the number of ordered tuples (uniform ordered prior).
-    Returns array over hi_par index for every lo_par index? -- here we need it
-    only as a function of the END boundary, with the START boundary marginalised,
-    so it is computed by forward DP for each start."""
-    raise NotImplementedError
-
-
 def tau_phase_loglik(Lmix, taus, m):
     """log prod_i <L_i>_(tau,t_b) for a Tau_Boundary..Boundary phase."""
     n = Lmix.shape[0]
