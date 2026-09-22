@@ -1,0 +1,114 @@
+
+=== design b_akrotiri_vdl  (n=31 determinations, real 1-sigma errors, 400 replicates each)
+ true T | recovered median  | bias  | coverage of the nominal
+  (BCE) |   mean      sd    | (yr)  |  68.3%    95.4%
+   1680 |  1667.5    21.5   | -12.5 |  0.640    0.965
+   1670 |  1654.3    19.8   | -15.7 |  0.588    0.965
+   1660 |  1642.9    17.8   | -17.1 |  0.352    0.983
+   1650 |  1639.7    14.5   | -10.3 |  0.785    0.995
+   1640 |  1641.5    13.3   |  +1.5 |  0.853    0.993
+   1630 |  1639.3    10.6   |  +9.3 |  0.958    0.998
+   1620 |  1630.7    12.3   | +10.7 |  0.795    0.983
+   1610 |  1607.0    15.6   |  -3.0 |  0.787    0.955
+   1600 |  1580.6    21.2   | -19.4 |  0.632    0.917
+   1590 |  1559.8    18.6   | -30.2 |  0.388    0.945
+   1580 |  1554.0    14.2   | -26.0 |  0.450    0.993
+   1570 |  1553.4    12.9   | -16.6 |  0.777    0.985
+   1560 |  1556.0    11.5   |  -4.0 |  0.820    0.973
+   1550 |  1554.1    10.3   |  +4.1 |  0.838    0.983
+   1540 |  1553.1     9.1   | +13.1 |  0.902    1.000
+   1530 |  1541.7    14.3   | +11.7 |  0.710    0.953
+   1520 |  1523.9    13.6   |  +3.9 |  0.755    0.948
+   1510 |  1514.4     8.7   |  +4.4 |  0.802    0.985
+   1500 |  1503.2     8.3   |  +3.2 |  0.755    0.945
+   1490 |  1480.1    13.7   |  -9.9 |  0.680    0.930
+   1480 |  1460.5    15.0   | -19.5 |  0.475    0.930
+   1470 |  1457.8    12.0   | -12.2 |  0.745    0.978
+  nominal 68.3%: mean actual coverage 0.704 overall, 0.699 inside the 1610-1540 plateau, range [0.352, 0.958]
+  nominal 95.4%: mean actual coverage 0.968 overall, 0.969 inside the plateau, range [0.917, 1.000]
+
+  Bias-corrected inference. For each assumed true year, the sampling
+  distribution of the recovered posterior median is known from the
+  simulation; evaluating it at the value the REAL data gave turns the
+  observed median into a likelihood for T.
+  observed median for this design = 1592 BCE
+   T     relative support
+   1680   0.004  
+   1670   0.005  
+   1660   0.013 # <- in 95.4% support set
+   1650   0.012 # 
+   1640   0.007  
+   1630   0.000  
+   1620   0.014 # <- in 95.4% support set
+   1610   0.325 ###################### <- in 95.4% support set
+   1600   0.434 ############################## <- in 95.4% support set
+   1590   0.129 ######### <- in 95.4% support set
+   1580   0.024 ## <- in 95.4% support set
+   1570   0.006  
+   1560   0.024 ## <- in 95.4% support set
+   1550   0.002  
+   1540   0.002  
+   1530   0.000  
+   1520   0.000  
+   1510   0.000  
+   1500   0.000  
+   1490   0.000  
+   1480   0.000  
+   1470   0.000  
+
+=== design a_non_thera  (n=18 determinations, real 1-sigma errors, 400 replicates each)
+ true T | recovered median  | bias  | coverage of the nominal
+  (BCE) |   mean      sd    | (yr)  |  68.3%    95.4%
+   1680 |  1666.7    21.2   | -13.3 |  0.650    0.958
+   1670 |  1653.2    19.5   | -16.8 |  0.573    0.970
+   1660 |  1642.4    17.4   | -17.6 |  0.430    0.990
+   1650 |  1639.4    13.9   | -10.6 |  0.830    0.990
+   1640 |  1641.3    13.6   |  +1.3 |  0.838    0.993
+   1630 |  1640.6    11.2   | +10.6 |  0.935    0.998
+   1620 |  1630.6    11.8   | +10.6 |  0.765    0.990
+   1610 |  1605.9    17.3   |  -4.1 |  0.777    0.948
+   1600 |  1576.5    21.3   | -23.5 |  0.620    0.920
+   1590 |  1554.7    18.0   | -35.3 |  0.338    0.940
+   1580 |  1553.3    14.3   | -26.7 |  0.463    0.988
+   1570 |  1553.4    12.3   | -16.6 |  0.767    0.990
+   1560 |  1554.3    12.3   |  -5.7 |  0.802    0.970
+   1550 |  1554.9     8.4   |  +4.9 |  0.892    0.995
+   1540 |  1552.5    10.4   | +12.5 |  0.907    0.993
+   1530 |  1540.1    15.7   | +10.1 |  0.672    0.970
+   1520 |  1523.8    13.6   |  +3.8 |  0.772    0.965
+   1510 |  1514.6     8.8   |  +4.6 |  0.858    0.995
+   1500 |  1502.4     8.3   |  +2.4 |  0.792    0.968
+   1490 |  1477.3    14.9   | -12.7 |  0.685    0.932
+   1480 |  1459.6    14.1   | -20.4 |  0.480    0.973
+   1470 |  1457.2    12.0   | -12.8 |  0.710    0.993
+  nominal 68.3%: mean actual coverage 0.707 overall, 0.696 inside the 1610-1540 plateau, range [0.338, 0.935]
+  nominal 95.4%: mean actual coverage 0.974 overall, 0.968 inside the plateau, range [0.920, 0.998]
+
+  Bias-corrected inference. For each assumed true year, the sampling
+  distribution of the recovered posterior median is known from the
+  simulation; evaluating it at the value the REAL data gave turns the
+  observed median into a likelihood for T.
+  observed median for this design = 1575 BCE
+   T     relative support
+   1680   0.000  
+   1670   0.000  
+   1660   0.001  
+   1650   0.000  
+   1640   0.000  
+   1630   0.000  
+   1620   0.000  
+   1610   0.123 ########## <- in 95.4% support set
+   1600   0.376 ############################## <- in 95.4% support set
+   1590   0.209 ################# <- in 95.4% support set
+   1580   0.136 ########### <- in 95.4% support set
+   1570   0.076 ###### <- in 95.4% support set
+   1560   0.043 ### <- in 95.4% support set
+   1550   0.021 ## 
+   1540   0.010 # 
+   1530   0.003  
+   1520   0.001  
+   1510   0.000  
+   1500   0.000  
+   1490   0.000  
+   1480   0.000  
+   1470   0.000  
