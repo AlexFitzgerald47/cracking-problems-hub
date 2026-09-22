@@ -1,0 +1,1663 @@
+{
+ "forms": [
+  "musculus",
+  "musculi",
+  "musculo",
+  "musculum",
+  "muscule",
+  "musculorum",
+  "musculis",
+  "musculos"
+ ],
+ "corpus_stats": {
+  "latin_library": {
+   "files": 2141,
+   "tokens": 13353918
+  },
+  "perseus": {
+   "files": 364,
+   "tokens": 7926686
+  }
+ },
+ "n_hits": 182,
+ "hits": [
+  {
+   "corpus": "latin_library",
+   "file": "sidonius1.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 431,
+   "left": "brachia patulae manus recedente alvo pectus excedens aream dorsi humilior inter excrementa costarum spina discriminat tuberosum est utrumque",
+   "right": "prominentibus latus in succinctis regnat vigor ilibus corneum femur internodia poplitum bene mascula maximus in minime rugosis genibus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vegetius2.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 4696,
+   "left": "materies ac pali dedolantur atque serrantur habet praeterea artifices cum omnibus ferramentis qui ad obpugnandas hostium ciuitates testudines",
+   "right": "arietes uineas ut appellant turres etiam ambulatorias faciunt verum ne singula enumerando plura dicantur uniuersa quae in quocumque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus3.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 867,
+   "left": "frigoris truncos edunt lapides hauriunt gratissimas in cibatu habent palmas odorem muris vel maxime fugiunt pabula etiam qu",
+   "right": "contacta sunt recusant si quis casu cham leontem devoraverit vermem elephantis veneficum oleastro sumpto pesti medetur durissimum dorso"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh2.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 15852,
+   "left": "mari pisces in casinate fluvius appellatur scatebra frigidus abundantior aestate in eo ut in arcadia stymphali nascuntur aquatiles",
+   "right": "in dodone iovis fons cum sit gelidus et inmersas faces extinguat si extinctae admoveantur accendit idem meridie semper"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "newton.scholium.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 1225,
+   "left": "moventur vibrationibus scilicet hujus spiritus per solida nervorum capillamenta ab externis sensuum organis ad cerebrum a cerebro in",
+   "right": "propagatis sed h c paucis exponi non possunt neque adest sufficiens copia experimentorum quibus leges actionum hujus spiritus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "testamentum.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 187,
+   "left": "capitinas surdis auriculas causidicis et verbosis linguam buculariis intestina esiciariis femora mulieribus lumbulos pueris vesicam puellis caudam cinaedis",
+   "right": "cursoribus et venatoribus talos latronibus ungulas et nec nominando coco legato dimitto popiam et pistillum quae mecum attuleram"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sidonius5.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 2510,
+   "left": "quid voraginosum est ipse humo advecta scrobibus oppletis trepidus exaequat utpote beluam suam de valle tarnis ducaliter antecessurus",
+   "right": "similis inter saxosa vel brevia ballaenarum corpulentiam praegubernantibus at ille sic ira celer quod piger mole seu draco"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vegetius4.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 123,
+   "left": "machinarum quibus muri obpugnantur xiiii de ariete falce testudine xv de uineis de pluteis de aggere xvi de",
+   "right": "xvii de turribus ambulatoriis xviii quemadmodum ambulatoria turris possit incendi xviiii quemadmodum altitudo muris addatur xx quo pacto"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vegetius4.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1611,
+   "left": "audacia et iam non terrore sed uiribus et arte confligitur xiii admouentur enim testudines arietes falces uineae plutei",
+   "right": "turres de quibus singulis qualiter fabricentur quo etiam pacto proelientur uel repellantur edisseram xiiii de materia ac tabulatis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vegetius4.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 1858,
+   "left": "scalis ascendendi facilior praestetur occasio agger autem ex terra lignisque extollitur contra murum de quo tela iactantur xvi",
+   "right": "dicunt minores machinas quibus protecti bellatores sudatum auferunt ciuitatis fossatum etiam adportatis lapidibus lignis ac terra non solum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vegetius4.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1894,
+   "left": "solum conplent sed etiam solidant ut turres ambulatoriae sine inpedimento iungantur ad murum vocantur autem a marinis beluis",
+   "right": "nam quemadmodum illi cum minores sint tamen ballenis auxilium adminiculumque iugiter exhibent ita istae machinae breuiores uel deputatae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.ep3.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1838,
+   "left": "est enim nudum nec aut vitia si qua sunt celat aut laudes parum ostentat effingit senem stantem ossa",
+   "right": "nervi venae rugae etiam ut spirantis apparent rari et cedentes capilli lata frons contracta facies exile collum pendent"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus3a.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 1565,
+   "left": "truncos edunt lapides hauriunt gratissimas in cibatu habent palmas odorem muris vel maxime fugiunt pabula etiam quae a",
+   "right": "contacta sint recusant si quis casu chamaeleontem devoraverit vermem elephantis veneficum oleastro sumpto pesti medetur durissimum dorso tergus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "notitia2.txt",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 3682,
+   "left": "ripae legionis primae ioviae cohortis quintae pedaturae inferioris accisso praefectus ripae legionis primae ioviae cohortis et secundae herculiae",
+   "right": "scythicorum et classis inplateypegiis officium autem habet ita principem de eodem officio qui completa militia adorat protector numerarios"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.ep5.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 3300,
+   "left": "huic pleraque humilia et sordida et ex medio petita illi omnia recondita splendida excelsa conveniunt hanc saepius ossa",
+   "right": "nervi illam tori quidam et quasi iubae decent haec vel maxime vi amaritudine instantia illa tractu et suavitate"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 17876,
+   "left": "truncos edunt lapides hauriunt gratissimas in cibatu habent palmas odorem muris uel maxime fugiunt pabula etiam quae a",
+   "right": "contacta sint recusant si quis casu chamaeleontem deuorauerit uermem elephantis ueneficum oleastro sumpto pesti medetur durissimum dorso tergus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "fronto.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 3601,
+   "left": "miseras remisi tibi per victorinum nostrum atque ita remisi chartam diligenter lino transui et ita linum obsignavi ne",
+   "right": "iste aliquid aliqua rimari possit nam mihi ipse de tuis hexametris numquam quicquam impertivit ita est malus ac"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/19.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 303,
+   "left": "ne feriantur et conlidantur longae naves sunt quas dromones vocamus dictae eo quod longiores sint ceteris cuius contrarius",
+   "right": "curtum navigium dromo autem a decurrendo dictus cursum enim graeci dromon vocant classis dicta est a graeco vocabulo"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 1517,
+   "left": "corpus et solidum robori conveniens altitudo latus longum substrictus maxime et rotundi clunis pectus late patens corpus omne",
+   "right": "densitate nodosum pes siccus et cornu concavo solidatus pulchritudo ut sit exiguum caput et siccum pelle prope ossibus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 6557,
+   "left": "orbis quia rotundus est totusque in capite constat ut solea quod sit instar calciamentorum soleis a sexu ut",
+   "right": "quod sit ballenae masculus eius enim coitu concipere haec bellua perhibetur hinc et musculi coclearum quorum lacte concipiunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 6571,
+   "left": "soleis a sexu ut musculus quod sit ballenae masculus eius enim coitu concipere haec bellua perhibetur hinc et",
+   "right": "coclearum quorum lacte concipiunt ostreae ballenae autem sunt inmensae magnitudinis bestiae ab emittendo et fundendo aquas vocatae ceteris"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 7829,
+   "left": "testa quibus mollities interior carnis munitur graeci enim testam ostra vocant ostrea autem neutrum carnes eius feminino dicunt",
+   "right": "sunt ut praediximus cochleae a quorum lacte concipiunt ostreae et dicti musculi quasi masculi pelorides a peloro promontorio"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 7841,
+   "left": "autem neutrum carnes eius feminino dicunt musculi sunt ut praediximus cochleae a quorum lacte concipiunt ostreae et dicti",
+   "right": "quasi masculi pelorides a peloro promontorio siciliae ubi abundant cognominatae sunt virg aen ecce autem boreas angusta ab"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/11.txt",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 2086,
+   "left": "a fortitudine nominata baru enim graece grave et forte significatur in brachiis enim tori lacertorum sunt et insigne",
+   "right": "robur existit hi sunt tori id est musculi et dicti tori quod illic viscera torta videantur cubitum dictum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/11.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 2094,
+   "left": "forte significatur in brachiis enim tori lacertorum sunt et insigne musculorum robur existit hi sunt tori id est",
+   "right": "et dicti tori quod illic viscera torta videantur cubitum dictum quod ad cibos sumendos in ipso cubamus vlna"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/11.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 3718,
+   "left": "sunt ut cor in media totius corporis parte appellanturque a nomine similium animalium sub terra delitescentium nam inde",
+   "right": "a murium similitudine idem etiam et tori quod illic viscera torta videantur cor a graeca appellatione derivatum quod"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/18.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 2492,
+   "left": "mollitur duriora enim mollioribus facilius cedunt plutei sunt crates corio crudo intextae quae in opere faciendo hosti obiciuntur",
+   "right": "cuniculo similis fit quo murus perfoditur ex quo et appellatus quasi murusculus xii de clypeis clipeus est scutus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia7.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 3770,
+   "left": "personarum opinio superesset tamdiu et similitudinem vivae substantiae imago corporis custodiret conspiciet expressas in aere venas nisu quodam",
+   "right": "tumentes nervos quasi gradu tensos et sic hominem fusum in diversas similitudines ut credas potius esse generatum has"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucan/lucan9.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 4948,
+   "left": "sinu laxo nudum sine corpore uolnus membra natant sanie surae fluxere sine ullo tegmine poples erat femorum quoque",
+   "right": "omnis liquitur et nigra destillant inguina tabe dissiluit stringens uterum membrana fluuntque uiscera nec quantus toto de corpore"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "apuleius/apuleius2.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 3708,
+   "left": "sui fiducia mihi turbarit animum denique sic ad illam quin abis inquam inpurata bestia teque ad tui similes",
+   "right": "recondis antequam nostri vim praesentariam experiaris quin abis terga vortit et cubiculo protinus exterminatur nec mora cum me"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "apuleius/apuleius8.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 4130,
+   "left": "provolant diuque capite demisso cervices lubricis intorquentes motibus crinesque pendulos in circulum rotantes et nonnumquam morsibus suos incursantes",
+   "right": "ad postremum ancipiti ferro quod gerebant sua quisque brachia dissicant inter haec unus ex illis bacchatur effusius ac"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr6.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 1482,
+   "left": "est bubulci pinguem quam exilem bovem reddere habilis enim et modica corporatura pecoris operarii debet esse nervisque et",
+   "right": "robusta non adipibus obesa ut nec sui tergoris mole nec labore operis degravetur sed quoniam quae sequenda sunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr6.txt",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 7077,
+   "left": "brevibus auriculis et arrectis cervice molli lataque nec longa densa iuba et per dextram partem profusa lato et",
+   "right": "toris numeroso pectore grandibus armis et rectis lateribus inflexis spina duplici ventre substricto testibus paribus et exiguis latis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "descartes/des.med6.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 2887,
+   "left": "omni ex parte artificis voto satisfacit ita si considerem hominis corpus quatenus machinamentum quoddam est ex ossibus nervis",
+   "right": "venis sanguine pellibus ita aptum compositum ut etiamsi nulla in eo mens existeret eosdem tamen haberet omnes motus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "plautus/rudens.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 2225,
+   "left": "huc prodimus pabulatum pro exercitu gymnastico et palaestrico hoc habemus echinos lopadas ostreas balanos captamus conchas marinam urticam",
+   "right": "plagusias striatas post id piscatum hamatilem et saxatilem aggredimur cibum captamus e mari si eventus non evenit neque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/repub3.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 1525,
+   "left": "qui credo timentes hoc interdictum iustitiae ne quando existeret commenti sunt se de terra tamquam hos ex arvis",
+   "right": "extitisse ad haec illa dici solent primum ab iis qui minime sunt in disserendo mali qui in hac"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/divinatione2.txt",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 3212,
+   "left": "ut enim iam sit aliqua in natura rerum contagio quam esse concedo multa enim stoici conligunt nam et",
+   "right": "iecuscula bruma dicunt augeri et puleium aridum florescere brumali ipso die et inflatas rumpi vesiculas et semina malorum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 1249,
+   "left": "tormenta mittenda in struendo reliquerunt ubi ex ea turri quae circum essent opera tueri se posse confisi sunt",
+   "right": "pedes lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt cuius"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1268,
+   "left": "pedes lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt cuius",
+   "right": "haec erat forma duae primum trabes in solo aeque longae distantes inter se pedes iiii collocantur inque eis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1303,
+   "left": "inque eis columellae pedum in altitudinem v defiguntur has inter se capreolis molli fastigio coniungunt ubi tigna quae",
+   "right": "tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque laminis clavisque religant ad extremum musculi tectum trabesque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1319,
+   "left": "tigna quae musculi tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque laminis clavisque religant ad extremum",
+   "right": "tectum trabesque extremas quadratas regulas iiii patentes digitos defigunt quae lateres qui super musculo struantur contineant ita fastigato"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 1333,
+   "left": "clavisque religant ad extremum musculi tectum trabesque extremas quadratas regulas iiii patentes digitos defigunt quae lateres qui super",
+   "right": "struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque musculus ut ab"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 1349,
+   "left": "qui super musculo struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque",
+   "right": "ut ab igni qui ex muro iaceretur tutus esset contegitur super lateres coria inducuntur ne canalibus aqua immissa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 1418,
+   "left": "admovent ut aedificio iungatur quo malo perterriti subito oppidani saxa quam maxima possunt vectibus promovent praecipitataque muro in",
+   "right": "devolvunt ictum firmitas materiae sustinet et quicquid incidit fastigio musculi elabitur id ubi vident mutant consilium cupas taeda"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 1428,
+   "left": "quam maxima possunt vectibus promovent praecipitataque muro in musculum devolvunt ictum firmitas materiae sustinet et quicquid incidit fastigio",
+   "right": "elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in musculum devolvunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 1445,
+   "left": "fastigio musculi elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in",
+   "right": "devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 1459,
+   "left": "easque de muro in musculum devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub",
+   "right": "milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt musculus ex turri latericia a nostris telis tormentisque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 1470,
+   "left": "longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt",
+   "right": "ex turri latericia a nostris telis tormentisque defenditur hostes ex muro ac turibus submoventur non datur libera muri"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/bc2.txt",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 1818,
+   "left": "fit in hostes impetus sed de muro sagittis tormentisque fugientes persequi prohibentur illi sub murum se recipiunt ibique",
+   "right": "turrimque latericiam libere incendunt ita multorum mensium labor hostium perfidia et vi tempestatis puncto temporis interiit temptaverunt hoc"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/alex.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 57,
+   "left": "adduci iubet interim munitiones cotidie operibus augentur atque omnes oppidi partes quae minus esse firmae videntur testudinibus ac",
+   "right": "aptantur ex aedificiis autem per foramina in proxima aedificia arietes immittuntur quantumque aut ruinis deicitur aut per vim"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "caesar/gall7.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 10830,
+   "left": "reliquae copiae pro castris sese ostendere coeperunt vercingetorix ex arce alesiae suos conspicatus ex oppido egreditur crates longurios",
+   "right": "falces reliquaque quae eruptionis causa paraverat profert pugnatur uno tempore omnibus locis atque omnia temptantur quae minime visa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.carne.txt",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 1936,
+   "left": "credo nasci quam ex aliqua parte mentiri et quidem in semetipsum ut carnem gestaret sine ossibus duram sine",
+   "right": "solidam sine sanguine cruentam sine tunica vestitam sine fame esurientem sine dentibus edentem sine lingua loquentem ut phantasma"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.carne.txt",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 3928,
+   "left": "ceterum quid est sanguis quam rubens humor quid caro quam terra conversa in figuras suas considera singulas qualitates",
+   "right": "ut glebas ossa ut saxa etiam circum papillas calculos quosdam aspice nervorum tenaces conexus ut traduces radicum et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 7919,
+   "left": "sui fiducia mihi turbarit animum denique sic ad illam quin abis inquam impurata bestia teque ad tui similes",
+   "right": "recondis antequam nostri vim praesentariam experiaris quin abis terga vortit et cubiculo protinus exterminatur nec mora cum me"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 36545,
+   "left": "pervolant diuque capite demisso cervices lubricis intorquentes motibus crinesque pendulos in circulum rotantes et nonnunquam morsibus suos incursantes",
+   "right": "ad postremum ancipiti ferro quod gerebant sua quisque brachia dissicant inter haec unus ex illis bacchatur effusius ac"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0002/stoa0261.stoa0002.perseus-lat1.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 425,
+   "left": "bracchia patulae manus recedente alvo pectus excedens aream dorsi humilior inter excrementa costarum spina discriminat tuberosum est utrumque",
+   "right": "prominentibus latus in succinctis regnat vigor ilibus corneum femur internodia poplitum bene mascula maximus in minime rugosis genibus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0002/stoa0261.stoa0002.perseus-lat1.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 24346,
+   "left": "quid voraginosum est ipse humo advecta scrobibus oppletis trepidus exaequat utpote beluam suam de valle tarnis ducaliter antecessurus",
+   "right": "similis inter saxosa vel brevia ballaenarum corpulentiam praeguber nantibus at ille sic ira celer quod piger mole ceu"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa012/stoa0275.stoa012.opp-lat1.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 1916,
+   "left": "crede nasci quam ex aliqua parte mentiri et quidem in semetipsum ut carnem gestaret sine ossibus duram sine",
+   "right": "solidam sine sanguine cruentam sine tunica vestitam sine fame esurientem sine dentibus edentem sine lingua loquentem ut phantasma"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa012/stoa0275.stoa012.opp-lat1.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 3892,
+   "left": "fit ceterum quid est sanguis quam rubens humor quid caro quam terra in figura sua considera singulas qualitates",
+   "right": "ut glebas ossa ut saxa etiam circum papillas calculos quosdam aspice nervorum tenaces conexus ut traduces radicum et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi043/phi0474.phi043.perseus-lat2.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 16094,
+   "left": "qui credo timentes hoc interdictum iustitiae ne quando existeret commenti sunt se de terra tamquam hos ex arvis",
+   "right": "extitisse ad haec illa dici solent primum ab iis qui minime sunt in disserendo mali qui in ea"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi053/phi0474.phi053.perseus-lat3.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 16675,
+   "left": "ut enim iam sit aliqua in natura rerum contagio quam esse concedo multa enim stoici colligunt nam et",
+   "right": "iecuscula bruma dicuntur augeri et puleium aridum florescere brumali ipso die et inflatas rumpi vesiculas et semina malorum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi053/phi0474.phi053.perseus-lat4.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 16192,
+   "left": "ut enim iam sit aliqua in natura rerum cognatio quam esse concedo multa enim stoici colligunt nam et",
+   "right": "iecuscula bruma dicuntur augeri et puleium aridum florescere brumali ipso die et inflatas rumpi vesiculas et semina malorum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0119/phi017/phi0119.phi017.perseus-lat2.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 2137,
+   "left": "huc prodimus pabulatum pro exercitu gymnastico et palaestrico hoc habemus echinos lopadas ostreas balanos captamus conchas marinam urticam",
+   "right": "plagusias striatas post id piscatum hamatilem et saxatilem aggredimur cibum captamus e mari si eventus non evenit neque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0917/phi001/phi0917.phi001.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 47456,
+   "left": "laxo nudum est sine corpore vulnus membra natant sanie surae fluxere sine ullo tegmine poples erat femorum quoque",
+   "right": "omni liquitur et nigra distillant inguina tabe dissiluit stringens uterum membrana fluuntque viscera nec quantum toto de corpore"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 20936,
+   "left": "mitia ficus etiam arida sed magis viridis uvae recentes pingues minutae aves cochleae garum salsamentum ostrea pelorides echini",
+   "right": "et omnes fere conchulae maximeque jus earum saxatiles et omnes teneri pisces sepiarum atramentum si qua caro assumitur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 53421,
+   "left": "est quodcumque in alis vel feminibus vel inanibus locis vel in articulis vel inter digitos est item quodcumque",
+   "right": "aut nervum aut arteriam aut membranam aut os aut cartilaginem laesit aph vi coac tutissimum omnium quod in"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 54625,
+   "left": "patitur possunt ferro candenti aduri sed etiam satis multo sanguine effuso ex eo loco quo neque nervus neque",
+   "right": "est ut puta in fronte vel superiore capitis parte commodissimum tamen est cucurbitulam admovere a diversa parte ut"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 54676,
+   "left": "autem in ipso sanguinis cursu ea timeri potest ubi laesum est vel os vel nervus vel cartilago vel",
+   "right": "aut ubi parum sanguinis pro modo vulneris fluxit ergo quoties quid tale erit sanguinem mature supprimere non oportebit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 54730,
+   "left": "utique si corpus juvenile et robustum et exercitatum est multoque magis si id vulnus ebrietas praecessit quod si",
+   "right": "laesus videbitur praecidendus erit nam percussus mortiferus est praecisus sanitatem recipit sanguine autem vel suppresso si nimius erumpit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 55199,
+   "left": "solet etiam colliso corpore exigua parte findi cutis quod ubi incidit non alienum est scalpello latius aperire nisi",
+   "right": "nervique juxta sunt quos incidi non expedit ubi satis diductum est medicamentum imponendum est at si id quod"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 55230,
+   "left": "imponendum est at si id quod collisum est quamvis parum diductum est latius tamen aperiri propter nervos aut",
+   "right": "non licet adhibenda sunt ea quae humorem leniter extrahant praecipueque ex his id quod vocari proposui non alienum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 56983,
+   "left": "nondum plane tenet sed adhuc incipit curare non difficillimum est utique in corpore juvenili et magis etiam si",
+   "right": "integri sunt si nervi vel laesi non sunt vel leviter affecti sunt neque ullus magnus articulus nudatus est"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 61751,
+   "left": "si juvenile si firmum est inimica contraria his sunt itemque si fistula os vel cartilaginem vel nervum vel",
+   "right": "laesit si articulum occupavit si vel ad vesicam vel ad pulmonem vel ad vulvam vel ad grandes venas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 79017,
+   "left": "a cute et carne est ejiciendaque cum eo quod intus tenet si quando tamen ab inferiore parte tunicae",
+   "right": "inhaesit ne is laedatur superior pars illius decidenda alia inibi relinquenda est ubi tota exemta exempta est committendae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 82041,
+   "left": "et frontem rectis reperti sunt qui a vertice rectas eas lineas ad tempora deducerent cognitisque ex motu maxillarum",
+   "right": "initiis leviter super eos cutem inciderent diductisque per retusos hamos oris insererent linamenta ut neque inter se cutis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 82232,
+   "left": "sunt venas incidere et sanguinem mittere ubi satis fluxit tenuibus ferramentis adurere contra tempora quidem timide ne subjecti",
+   "right": "qui maxillas tenent sentiant inter frontem vero et verticem vehementer ut squama ab osse secedat efficacior tamen etiamnum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 94159,
+   "left": "capite os post aurem est qua capillus ut verisimile est ob id ipsum non gignitur sub iis quoque",
+   "right": "qui tempora connectunt os medium cf gal de ossibus et oribas coll med xxiv in exteriorem partem inclinatum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 94462,
+   "left": "alter processus infra latior vertice ipso tenuatur longiusque procedens sub osse jugali subit et super id temporum mussulis",
+   "right": "illigatur alter brevior et rotundior et in eo sinu qui juxta foramina auris est cardinis modo fit ibique"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 94972,
+   "left": "quoque in imo cartilaginosa posteriore parte velut innatant quoniam nisi in summo nulli ossi inhaerescunt ibi vero validis",
+   "right": "nervisque constricta sunt at a summa costa paulo interius quam ubi ea media est os excrescit acromion spinaque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 97569,
+   "left": "in aceto tincta cohibendus est occupandusque objectis linamentis et caput altius excitandum neque id ullum metum nisi inter",
+   "right": "qui tempora continent affert sed ibi quoque nihil tutius fit ib fine in omni vero fisso fractove osse"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 99135,
+   "left": "genus pessimum est quia neque facile committuntur quae nulli retuso innituntur et carnem vulnerant interdum nervum quoque aut",
+   "right": "quin etiam aliquando plura fragmenta fiunt sed in aliis quidem ossibus ex toto saepe fragmentum a fragmento recedit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 100593,
+   "left": "non adversa sed obliqua junguntur quod fit ubi loco suo non sunt membrum id altero brevius est et",
+   "right": "ejus tument ergo si hoc deprehensum est protinus id membrum oportet extendere nam nervi musculique intenti per ossa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 101801,
+   "left": "ad antiquos usus reducendum est gravius aliquanto est quum ossis fracturae carnis quoque vulnus accessit maximeque si id",
+   "right": "femoris aut humeri senserunt nam ct inflammationes multo graviores et promtiores promptiores cancros habent ac femur quidem si"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 101853,
+   "left": "conservatur quibus periculis etiam magis id expositum quod juxta ipsos articulos ictum est curiosius igitur agendum est et",
+   "right": "quidem per mediam plagam transversus praecidendus sanguis vero si parum fluxit mittendus corpus inedia extenuandum ac reliqua quidem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 103101,
+   "left": "quinque diebus abstinere bibere aquam calidam dum sitim finiat curiosiusque haec facere iis ossibus motis quae validis plenisque",
+   "right": "continentur si vero etiam febris accessit multo magis deinde ex die quinto fovere aqua calida remotaque lana ceratum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 103224,
+   "left": "artic at si utraque totum mentum in exteriorem partem promovetur inferioresque dentes longius quam superiores excedunt intentique super",
+   "right": "apparent primo quoque tempore homo in sedili collocandus est sic ut minister a posteriore parte caput ejus contineat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 104996,
+   "left": "illae deligantur qui ut in torcularibus conversi rumpere quoque sio si quis perseveraverit non solum extendere nervos et",
+   "right": "possunt collocandus autem homo super id scamnum cf hipp ed litte t iv p est aut pronus aut"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 105448,
+   "left": "fit hic quoque et ingens periculum est et eo gravius quo majus membrum est quove validioribus nervis aut",
+   "right": "continetur ideoque in humeris femoribusque metus mortis est ac si reposita ossa sunt spes nulla est non repositis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 20003,
+   "left": "mitia ficus etiam arida sed magis viridis uvae recentes pingues minutae aves cocleae garum salsamentum ostrea pelorides echini",
+   "right": "et omnes fere conchulae maximeque ius earum saxatiles et omnes teneri pisces sepiarum atramentum si qua caro adsumitur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 51443,
+   "left": "est quodcumque in alis vel feminibus vel inanibus locis vel in articulis vel inter digitos est item quodcumque",
+   "right": "aut nervum aut arteriam aut membranam aut os aut cartilaginem laesit tutissimum omnium quod in carne est et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 52635,
+   "left": "patitur possunt ferro candenti aduri sed etiam satis multo sanguine effuso ex eo loco quo neque nervus neque",
+   "right": "est ut puta in fronte vel superiore capitis parte commodissimum tamen est cucurbitulam admovere a diversa parte ut"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 52686,
+   "left": "autem in ipso sanguinis cursu ea timeri potest ubi laesum est vel os vel nervus vel cartilago vel",
+   "right": "aut ubi parum sanguinis pro modo vulneris fluxit ergo quotiens quid tale erit sanguinem mature subprimere non oportebit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 52740,
+   "left": "utique si corpus iuvenile et robustum et exercitatum est multoque magis si id vulnus ebrietas praecessit quod si",
+   "right": "laesus videbitur praecidendus erit nam percussus mortiferus est praecisus sanitatem recipiti sanguine autem vel subpresso si nimius erumpit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 53197,
+   "left": "solet etiam colliso corpore exigua parte findi cutis quod ubi incidit non alienum est scalpello latius aperire nisi",
+   "right": "nervique iuxta sunt quos incidi non expedit ubi satis diductum est medicamentum imponendum est at si id quod"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 53228,
+   "left": "imponendum est at si id quod collisum est quamvis parum diductum est latius tamen aperiri propter nervos aut",
+   "right": "non licet adhibenda sunt ea quae umorem leniter extrahant praecipueque ex his id quod rhypodes vocari proposui non"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 54973,
+   "left": "nondum plane tentet sed adhuc incipit curare non difficillimum est utique in corpore iuvenili et magis etiam si",
+   "right": "integri sunt si nervi vel laesi non sunt vel leviter adfecti sunt neque ullus magnus articulus nudatus est"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 59672,
+   "left": "si iuvenile si firmum est inimica contraria his sunt itemque si fistula os vel cartilaginem vel nervum vel",
+   "right": "laesit si articulum occupavit si vel ad vessicam vel ad pulmonem vel ad vulvam vel ad grandes venas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 76684,
+   "left": "a cute et carne est eiciendaque cum eo quod intus tenet si quando tamen ab inferiore parte tunicae",
+   "right": "inhaesit ne is laedatur superior pars illius decidenda at ima ibi relinquenda est ubi tota exempta est committendae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 79654,
+   "left": "et frontem rectis reperti sunt qui a capite recte eas lineas ad tempora deducerent cognitisque ex motu maxillarum",
+   "right": "initiis leviter super eos cutem inciderent diductisque per retusos hamos oris insererent linamenta ut neque inter se cutis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 79845,
+   "left": "sunt venae incidere et sanguinem mittere ubi satis fluxit tenuibus ferramentis adurere contra tempora quidem timide ne subiecti",
+   "right": "qui maxillas tenent sentiant inter frontem vero et verticem vehementer ut squama ab osse secedat efficacior tamen etiamnum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 91336,
+   "left": "in capite os post aurem est qua capillus ut verisimile est ob id ipsum non gignitur sub quoque",
+   "right": "qui tempora conectunt os medium in exteriorem partem inclinatum positum est at facies suturam habet maximam quae a"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 91631,
+   "left": "sunt alter processus infra latior vertice ipso tenuatur longiusque procedens sub osse iugali subit et super id temporum",
+   "right": "inligatur alter brevior et rotundior et in eo sinu qui iuxta foramina auris est cardinis modo fit ibique"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 92132,
+   "left": "in imo cartilaginosa posteriore parte velut innatant quoniam nisi vel in summo nulli ossi inhaerescunt ibi vero validis",
+   "right": "nervisque constricta sunt at a summa costa paulo interius quam ubi ea media est os excrescit ibi quidem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 94699,
+   "left": "aceto tincta cohibendus est occupandusque est obiectis linamentis et caput altius excitandum neque id ullum metum nisi inter",
+   "right": "qui tempora continent adfert sed ibi quoque nihil tutius fit in omni vero fisso fractove osse protinus antiquiores"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 96226,
+   "left": "genus pessimum est quia neque facile committuntur quae nulli retuso innituntur et carnem vulnerant interdum nervum quoque aut",
+   "right": "quin etiam aliquando plura fragmenta fiunt sed in aliis quidem ossibus ex toto saepe fragmentum a fragmento recedit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 97627,
+   "left": "adversa sed obliqua iunguntur quod fit ubi loco suo non sunt membrum id altero iam erit brevius et",
+   "right": "eius tument ergo si hoc deprensum est protinus id membrum oportet extendere nam nervi musculique intenti per ossa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 98815,
+   "left": "ad antiquos usus reducendum est gravius aliquanto est cum ossis fracturae carnis quoque vulnus accessit maxumeque si id",
+   "right": "femoris aut umeri senserunt nam et inflammationes multo graviores et promptiores cancros habent ac femur quidem si ossa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 98867,
+   "left": "conservatur quibus periculis etiam magis id expositum quod iuxta ipsos articulos ictum est curiosius igitur agendum est et",
+   "right": "quidem per mediam plagam transversus praecidendus sanguis vero si parum fluxit mittendus corpus inedia extenuandum ac reliqua quidem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 100115,
+   "left": "quinque diebus abstinere bibere aquam calidam dum sitim finiat curiosiusque haec facere in ossibus motis quae validis plenisque",
+   "right": "continentur si vero etiam febris accessit multo magis deinde ex die fovere aqua calida remotaque lana ceratum inponere"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 100227,
+   "left": "sunt at si utraque totum mentum in exteriorem partem promovetur inferioresque dentes longius quam superiores excedunt intentique super",
+   "right": "apparent primo quoque tempore autem homo in sedili conlocandus est sic ut minister a posteriore parte caput eius"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 101912,
+   "left": "habenae illae deligantur qui ut in torcularibus conversi rumpere quoque si quis perseveraverit non solum extendere nervos et",
+   "right": "possunt collocandus autem homo super id scamnum est aut pronus aut supinus aut in latus sic ut semper"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 102307,
+   "left": "exciderunt hic quoque et ingens periculum est et eo gravius quo maius membrum est quove validioribus nervis aut",
+   "right": "continetur ideoque in umeris femoribusque metus mortis est ac si reposita eis ossa sunt spes nulla est si"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 20100,
+   "left": "mitia ficus etiam arida sed magis uiridis uuae recentes pingues minutae aues cocleae garum salsamentum ostrea pelorides echini",
+   "right": "et omnes fere conchulae maximeque ius earum saxatiles et omnes teneri pisces sepiarum atramentum si qua caro adsumitur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 52528,
+   "left": "est quodcumque in alis uel feminibus uel inanibus locis uel in articulis uel inter digitos est item quodcumque",
+   "right": "aut neruum aut arteriam aut membranam aut os aut cartilaginem laesit tutissimum omnium quod in carne est et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 53725,
+   "left": "patitur possunt ferro candenti aduri sed etiam satis multo sanguine effuso ex eo loco quo neque neruus neque",
+   "right": "est ut puta in fronte uel superiore capitis parte commodissimum tamen est cucurbitulam admouere a diuersa parte ut"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 53776,
+   "left": "autem in ipso sanguinis cursu ea timeri potest ubi laesum est uel os uel neruus uel cartilago uel",
+   "right": "aut ubi parum sanguinis pro modo uulneris fluxit ergo quotiens quid tale erit sanguinem mature subprimere non oportebit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 53830,
+   "left": "utique si corpus iuuenile et robustum et exercitatum est multoque magis si id uulnus ebrietas praecessit quod si",
+   "right": "laesus uidebitur praecidendus erit nam percussus mortiferus est praecisus sanitatem recipit sanguine autem uel subpresso si nimius erumpit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 54303,
+   "left": "solet etiam colliso corpore exigua parte findi cutis quod ubi incidit non alienum est scalpello latius aperire nisi",
+   "right": "neruique iuxta sunt quos incidi non expedit vbi satis d i ductum est medicamentum imponendum est at si"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 54338,
+   "left": "at si id quod collisum est quamuis parum d i ductum est latius tamen aperiri propter neruos aut",
+   "right": "non licet adhibenda sunt ea quae umorem leniter extrahant praecipueque ex his id quod rhypodes uocari proposui non"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 56098,
+   "left": "nondum plane tenet sed adhuc incipit curare non difficillimum est utique in corpore iuuenili et magis etiam si",
+   "right": "integri sunt si nerui uel laesi non sunt uel leuiter adfecti sunt neque ullus magnus articulus nudatus est"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 60886,
+   "left": "si iuuenile si firmum est inimica contraria his sunt itemque si fistula os uel cartilaginem uel neruum uel",
+   "right": "laesit si articulum occupauit si uel ad uessicam uel ad pulmonem uel ad uuluam uel ad grandes uenas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 78173,
+   "left": "a cute et carne est eiciendaque cum eo quod intus tenet si quando tamen ab inferiore parte tunicae",
+   "right": "inhaesit ne is laedatur superior pars illius decidenda at im a ibi relinquenda est vbi tota exempta est"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 81212,
+   "left": "et frontem rectis reperti sunt qui a capite recte eas lineas ad tempora deducerent cognitisque ex motu maxillarum",
+   "right": "initiis leuiter super eos cutem inciderent di ductisque per retusos hamos oris insererent linamenta ut neque inter se"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 81407,
+   "left": "sunt uenae incidere et sanguinem mittere ubi satis fluxit tenuibus ferramentis adurere contra tempora quidem timide ne subiecti",
+   "right": "qui maxillas tenent sentiant inter frontem uero et uerticem uehementer ut squama ab osse secedat efficacior tamen etiamnum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 93202,
+   "left": "post aurem est qua capillus ut u erisimile est ob id ipsum non gignitur sub is quo que",
+   "right": "qui tempora conectunt os medium in exteriorem partem inclinatum positum est at facies suturam habet maximam quae a"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 93506,
+   "left": "processus in f ra latior uertice ipso tenuatur longiusque procedens sub osse iugali subit et super id temporum",
+   "right": "inligatur alter breuior et rotundior et in eo sinu qui iuxta foramina auris est cardinis modo fit ibique"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 94027,
+   "left": "cartilag in osa posteriore parte uelut innatant quoniam nisi uel in summo nulli ossi inhaerescunt ibi uero ualidis",
+   "right": "neruisque constricta sunt at a summa costa paulo interius quam ubi ea media est os excrescit ibi quidem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 96659,
+   "left": "aceto tincta cohibendus est occupandusque est obiectis linamentis et caput altius excitandum neque id ullum metum nisi inter",
+   "right": "qui tempora continent adfert sed ibi quoque nihil tutius fit in omni uero fisso fractoue osse protinus antiquiores"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 98222,
+   "left": "genus pessimum est quia neque facile committuntur quae nulli retuso innituntur et carnem uulnerant interdum neruum quoque aut",
+   "right": "quin etiam aliquando plura fragmenta fiunt sed in aliis quidem ossibus ex toto saepe fragmentum a fragmento recedit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 99665,
+   "left": "aduersa sed obliqua iunguntur quod fit ubi loco suo non sunt membrum id altero iam erit breuius et",
+   "right": "eius tument ergo si hoc depre n sum est protinus id membrum oportet extendere nam nerui musculique intenti"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 100924,
+   "left": "ad antiquos usus reducendum est grauius aliquanto est cum ossis fracturae carnis quoque uulnus accessit maxumeque si id",
+   "right": "femoris aut ume ri senserunt nam et inflammationes multo grauiores et promptiores cancr o s habent ac femur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 100981,
+   "left": "conseruatur quibus periculis etiam magis id expositum quod iuxta ipsos articulos ictum est curiosius igitur agendum est et",
+   "right": "quidem per mediam plagam transuersus praecidendus sanguis uero si parum fluxit mittendus corpus inedia extenuandum ac reliqua quidem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 102314,
+   "left": "quinque diebus abstinere bibere aquam calidam dum sitim finiat curiossiusque haec facere is ossibus motis quae ualidis plenisque",
+   "right": "continentur si uero etiam febris accessit multo magis deinde ex die quinto fouere aqua calida remotaque l ana"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 102434,
+   "left": "a t si utraque totum mentum in exteriorem partem promouetur inferioresque dentes longius quam superiores excedunt intentique super",
+   "right": "apparent primo quoque tempore autem homo in sedili conlocandus est sic ut minister a posteriore parte caput eius"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 104210,
+   "left": "habenae illae deligantur qui ut in torcularibus conuersi rumpere quoque si quis perseuerauerit non solum extendere neruos et",
+   "right": "possunt collocandus autem homo super id scamnum est aut pronus aut supinus aut in latus sic ut semper"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 104626,
+   "left": "exciderunt hic quoque et ingens periculum est et eo grauius quo maius membrum est quoue ualidioribus neruis aut",
+   "right": "continetur ideoque in umeris femoribusque metus mortis est ac si reposita e i s ossa sunt spes nulla"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 63484,
+   "left": "amarissima s qua et amarissima ar mutationem sa mutatione c cui sar commodo s commoda ar nervisque et",
+   "right": "robusta non adipibus obesa ut nec sui tergoris mole nec labore operis degravetur sed quoniam quae sequenda sunt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 70061,
+   "left": "brevibus auriculis et arrectis cervice molli lataque nec longa densa iuba et per dextram partem profusa lato et",
+   "right": "toris numeroso pectore grandibus armis et rectis lateribus inflexis spina duplici ventre substricto testibus paribus et exiguis latis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 71250,
+   "left": "arcadia cha ba fdra s diae rv j stymphali nascuntur enascuntur f r va j om r aquatiles",
+   "right": "mela ii sol augustin civ dei xxi isid or xiii herodot iv diodor xvii lucret vi mela i"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 223159,
+   "left": "sed amp alia quadam significatione ael vi extr plut sa a ael xi vi vh i ruinis inminentibus",
+   "right": "praemigrant praemigrant f e v praenegant ecant r r aranei cum telis primi cadunt auguria quidem artem artem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 257502,
+   "left": "fidem nili inundatio adfert omnia excedente miraculo excedentem miraculo la v f a va h quippe detegente eo",
+   "right": "reperiuntur inchoato opere genitalis aquae terraeque iam parte corporis viventes novissima effigie etiamn um etiamnu v m no"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 258257,
+   "left": "sunt praeter illa illos de r va d quorum diximus societatem societate ed d ate rv ballaena et",
+   "right": "quando quandoque f e va g praegravi praegraui e v uis fr a ues r superciliorum pondere obrutis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 279127,
+   "left": "feles quidem quo quoda f silentio quam levibus leuis f r vestigiis obrepunt avibus quam occulte speculatae in",
+   "right": "exiliunt excrementa sua effossa obruunt terra intellegentes odorem ilium indicem sui esse ar ix a a cic nd"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 298118,
+   "left": "eos dfe eos qui r v prominent masculis masculis de v li fr reflexi feminis recti atque proni",
+   "right": "musculus f r v masc r marinus qui ballaenam antecedit nullos habet habet f r v ent r"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 298119,
+   "left": "dfe eos qui r v prominent masculis masculis de v li fr reflexi feminis recti atque proni musculus",
+   "right": "f r v masc r marinus qui ballaenam antecedit nullos habet habet f r v ent r sed"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 496866,
+   "left": "sanguinis radicis decoctae sucum bibendum dedit et ipsam vulneribus cum melle et resina item contusis luxatis tumentibus et",
+   "right": "nervis articulis inposuit ut supra spasticis ut supra spasticis ll j et asmaticis asthm dal v dysintericis in"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 499226,
+   "left": "phthisim utilissime e utilissime e g mae v me rv semine seminae v fiunt ecligmata et ligmata v",
+   "right": "nervorum articulorum cervicium ceruitium e ceruicum d v a d icis v duritias cerebri membranas mitigat farina seminis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 500674,
+   "left": "h merulla f ferula dt v vulvis uuluis h cum gronovio uultuis vef uultui r t ramusculus v",
+   "right": "b del verc for tasse recte an uel illitu est utilis utilis v v utile r et et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculorum",
+   "norm_form": "musculorum",
+   "token_index": 618464,
+   "left": "e balsi r dicta est incipit a media hieme hieme media om r arescit aestate media cum prorepit",
+   "right": "aures imitatur foliis sed aliam docebimus esse quae iustius iustis e myosotis vocetur haec eadem erat quae hel"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 621557,
+   "left": "vd ngus r nctus t abigit et fumo si uratur atramentum librarium ex diluto eius temperatum litteras a",
+   "right": "musculis d b e diosc muscis r tf v tuetur capillum denigrat absinthii cinis unguento rosaceoque rosaceo s"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 621558,
+   "left": "ngus r nctus t abigit et fumo si uratur atramentum librarium ex diluto eius temperatum litteras a musculis",
+   "right": "d b e diosc muscis r tf v tuetur capillum denigrat absinthii cinis unguento rosaceoque rosaceo s cum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 735424,
+   "left": "v s priftes b coll ix tritones tritionef b nereides elephanti homines qui marini vocantur rotae orcae arietes",
+   "right": "et alii ali b d piscium forma arietes arietes ll v cfr ix et quadripedes birt an terreftres"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0045/stoa011/stoa0045.stoa011.perseus-lat2.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 3512,
+   "left": "cuius rei munus reciprocum quoniam in me colendo fastidisti inventa inter tineas epistula vetere quam de ostreis et",
+   "right": "adfectata obscuritate condideram quae adulescens temere fuderam iam senior retractavi set in eundem modum instaurata est satirica et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0045/stoa011/stoa0045.stoa011.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 3759,
+   "left": "aut septem geminis bis octo iunge aut ne sim tibi pluribus molestus triginta numero fuere cunctae iunctus limicolis",
+   "right": "ostreis primo conposuit fereula prandio gratus deliciis nobilium cibus et sumptu modicus pauperibus focis non hic navifrago quaeritur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi001/phi0448.phi001.perseus-lat2.xml",
+   "form": "musculos",
+   "norm_form": "musculos",
+   "token_index": 44173,
+   "left": "reliquae copiae pro castris sese ostendere coeperunt vercingetorix ex arce alesiae suos conspicatus ex oppido egreditur crates longurios",
+   "right": "falces reliquaque quae eruptionis causa paraverat profert pugnatur uno tempore omnibus locis atque omnia temptantur quae minime visa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12152,
+   "left": "tormenta mittenda in struendo reliquerunt ubi ex ea turri quae circum essent opera tueri se posse sunt confisi",
+   "right": "pedes lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt cuius"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12171,
+   "left": "pedes lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt cuius",
+   "right": "haec erat forma duae primum trabes in solo aeque longae distantes inter se pedes iiii collocantur inque eis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12206,
+   "left": "inque eis columellae pedum in altitudinem v defiguntur has inter se capreolis molli fastigio coniungunt ubi tigna quae",
+   "right": "tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque aminis clavisque religant lad extremum musculi tectum trabesque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12222,
+   "left": "tigna quae musculi tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque aminis clavisque religant lad extremum",
+   "right": "tectum trabesque extremas quadratas regulas iiii patentis digitos defigunt quae lateres qui super musculo struantur contineant ita fastigato"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 12236,
+   "left": "clavisque religant lad extremum musculi tectum trabesque extremas quadratas regulas iiii patentis digitos defigunt quae lateres qui super",
+   "right": "struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque musculus ut ab"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 12252,
+   "left": "qui super musculo struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque",
+   "right": "ut ab igni qui ex muro iaceretur tutus esset contegitur super lateres coria inducuntur ne canalibus aqua immissa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12321,
+   "left": "admovent ut aedificio iungatur quo malo perterriti subito oppidani saxa quam maxima possunt vectibus promovent praecipitataque muro in",
+   "right": "devolvunt ictum firmitas materiae sustinet et quidquid incidit fastigio musculi elabitur id ubi vident mutant consilium cupas taeda"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12331,
+   "left": "quam maxima possunt vectibus promovent praecipitataque muro in musculum devolvunt ictum firmitas materiae sustinet et quidquid incidit fastigio",
+   "right": "elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in musculum devolvunt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12348,
+   "left": "fastigio musculi elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in",
+   "right": "devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 12362,
+   "left": "easque de muro in musculum devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub",
+   "right": "milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt musculus ex turri latericia a nostris telis tormentisque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 12373,
+   "left": "longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt",
+   "right": "ex turri latericia a nostris telis tormentisque defenditur hostes ex muro ac turribus submoventur non datur libera muri"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat2.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12722,
+   "left": "in hostis impetus eorum sed de muro sagittis tormentisque fugientes persequi prohibentur illi sub murum se recipiunt ibique",
+   "right": "turrimque latericiam libere incendunt ita multorum mensum labor hostium perfidia et vi tempestatis puncto temporis interiit temptaverunt hoc"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12151,
+   "left": "tormenta mittenda in struendo reliquerunt ubi ex ea turri quae circum essent opera tueri se posse confisi sunt",
+   "right": "pedes lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt i"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12171,
+   "left": "lx longum ex materia bipedali quem a turri latericia ad hostium turrim murumque perducerent facere instituerunt i cuius",
+   "right": "haec erat forma duae primum trabes in solo aeque longae distantes inter se pedes mi collocantur inque cis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12206,
+   "left": "inque cis columellae pedum in altitudinem v defiguntur has inter se capreolis molli fastigio coniungitur ubi tigna quae",
+   "right": "tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque laminis clavisque religant ad extremum musculi tectum trabesque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12222,
+   "left": "tigna quae musculi tegendi causa ponant collocentur eo super tigna bipedalia iniciunt eaque laminis clavisque religant ad extremum",
+   "right": "tectum trabesque extremas quadratas regulas iiii patentes digitos defigunt quae lateres qui super musculo struantur contineant ita fastigato"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 12236,
+   "left": "clavisque religant ad extremum musculi tectum trabesque extremas quadratas regulas iiii patentes digitos defigunt quae lateres qui super",
+   "right": "struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque musculus ut ab"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 12252,
+   "left": "qui super musculo struantur contineant ita fastigato atque ordinatim structo ut trabes erant in capreolis collocatae lateribus lutoque",
+   "right": "ut ab igni qui ex muro iaceretur tutus esset contegitur super lateres coria inducuntur ne canalibus aqua immissa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12321,
+   "left": "admovent ut aedificio iungatur quo malo perterriti subito oppidani saxa quam maxima possunt vectibus promovent praecipitataque muro in",
+   "right": "devolvunt ictum firmitas materiae sustinet et quicquid incidit fastigio musculi elabitur id ubi vident mutant consilium cupas taeda"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 12331,
+   "left": "quam maxima possunt vectibus promovent praecipitataque muro in musculum devolvunt ictum firmitas materiae sustinet et quicquid incidit fastigio",
+   "right": "elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in musculum devolvunt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12348,
+   "left": "fastigio musculi elabitur id ubi vident mutant consilium cupas taeda ac pice refertas incendunt easque de muro in",
+   "right": "devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculo",
+   "norm_form": "musculo",
+   "token_index": 12362,
+   "left": "easque de muro in musculum devolvunt involutae labuntur delapsae ab lateribus longuriis furcisque ab opere removentur interim sub",
+   "right": "milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt musculus ex turri latericia a nostris telis tormentisque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculus",
+   "norm_form": "musculus",
+   "token_index": 12373,
+   "left": "longuriis furcisque ab opere removentur interim sub musculo milites vectibus infima saxa turris hostium quibus fundamenta continebantur convellunt",
+   "right": "ex turri latericia a nostris telis tormentisque defenditur hostes ex muro ac turribus submoventur non datur libera muri"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0448/phi002/phi0448.phi002.perseus-lat3.xml",
+   "form": "musculum",
+   "norm_form": "musculum",
+   "token_index": 12724,
+   "left": "in hostes impetus sed de muro sagittis tor mentisque fugientes persequi prohibentur illi sub murum se recipiunt ibique",
+   "right": "turrimque latericiam libere incendunt ita multorum mensium labor hostium perfidia et vi tempestatis puncto temporis interiit temptaverunt hoc"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0428/phi001/phi0428.phi001.perseus-lat1.xml",
+   "form": "musculis",
+   "norm_form": "musculis",
+   "token_index": 48,
+   "left": "adduci iubet interim munitiones cotidie operibus augentur atque omnes oppidi partes quae minus esse firmae videntur testudinibus ac",
+   "right": "aptantur ex aedificiis autem per foramina in proxima aedificia arietes immittuntur quantumque aut ruinis deicitur aut per vim"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1318/phi001/phi1318.phi001.perseus-lat1.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 14415,
+   "left": "est enim nudum nec aut vitia si qua sunt celat aut laudes parum ostentat effingit senem stantem ossa",
+   "right": "nervi venae rugae etiam ut spirantis apparent rari et cedentes capilli lata frons contracta facies exile collum pendent"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1318/phi001/phi1318.phi001.perseus-lat1.xml",
+   "form": "musculi",
+   "norm_form": "musculi",
+   "token_index": 28786,
+   "left": "huic pleraque humilia et sordida et ex medio petita illi omnia recondita splendida excelsa conveniunt hanc saepius ossa",
+   "right": "nervi illam tori quidam et quasi iubae decent haec vel maxime vi amaritudine instantia illa tractu et suavitate"
+  }
+ ]
+}

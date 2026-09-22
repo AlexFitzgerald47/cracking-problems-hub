@@ -1,0 +1,23 @@
+{
+ "total_attestations": 101,
+ "by_sense": {
+  "MOUSE": 15,
+  "ANAT": 44,
+  "MIL": 23,
+  "SHELL": 6,
+  "FISH": 6,
+  "NOISE": 3,
+  "POST": 2,
+  "NAV": 2
+ },
+ "by_sense_pct": {
+  "MOUSE": 14.9,
+  "ANAT": 43.6,
+  "MIL": 22.8,
+  "SHELL": 5.9,
+  "FISH": 5.9,
+  "NOISE": 3.0,
+  "POST": 2.0,
+  "NAV": 2.0
+ }
+}
