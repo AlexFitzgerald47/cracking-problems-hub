@@ -50,12 +50,10 @@ their successors are explicitly told not to rebuild.
 ## Validation
 
 **Two panels were incomplete and this page claimed one of them was finished.** The 09-21 pass
-recorded "the Ennis panel is now complete" — it had two verdicts. VENONA had one. VENONA was
-completed this pass under `_roles/VALIDATOR.md` with the refuter assigned explicitly. The
-Ennis refuter was commissioned in the same pass and was still running when this entry was
-written — its verdict will appear as
-`2026-09-23-validation-ennis-stinging-v3-refuter.md`, and **the Ennis panel is not closed
-until it does.**
+recorded "the Ennis panel is now complete" — it had two verdicts. VENONA had one. Both were
+completed this pass under `_roles/VALIDATOR.md`, refuter assigned explicitly in each case.
+Both returned **3 × PARTIAL**, and every verdict on this board is now PARTIAL — there is no
+PASS anywhere.
 
 **VENONA BROWN/BRAUN: 3 × PARTIAL. HELD — awaiting human sign-off.** Not published as a solve
 anywhere and `STATUS.md` is not updated to say solved. The panel's finding is sharper than
@@ -96,6 +94,43 @@ same two sources by near-identical routes, and validator 2 flags that this agree
 has caught it in their own panel. Recorded in `STATUS.md`: **agreement between validators
 drawn from similar models is evidence only to the extent their routes differed — record the
 route, not just the verdict.**
+
+**Ennis STINGING: 3 × PARTIAL, and the panel is worth more than its verdict.** Three things
+it produced that change what the folder should do next:
+
+1. **The headline null figure is wrong by more than an order of magnitude, and must stop
+   being quoted.** "0.406 %, about 1 in 246" is the most favourable of **four** values now in
+   the repo, and it does not reproduce — the committed script returns a different figure on a
+   current `cmudict`. It is also frozen-path, English-only, and conditional on the very
+   deletion at issue. By exact enumeration over all 64,000,000 six-sign sequences under the
+   12-reading cycle budget with an English ∪ Irish lexicon, the defensible figure is **7.2 %,
+   about one in fourteen** — and 31.5 % charged for the affine family.
+2. **The falsifier the board has been carrying as its cheap kill test is discharged, and it
+   resolved in the claim's favour.** The refuter fetched the live OG(H)AM EpiDoc record and
+   decomposed the editors' own ogham edition to code points: exactly one FEARN+AILM pair, so
+   "the ogham letters VA repeated" means "VA, repeated from DMVA", not `VAVA` on the branch.
+   `STATUS.md` had this as an open item. It is closed — stop carrying it.
+3. **New evidence against the historical bridge, out of the claim's own cited source.** The
+   refuter read all 45 pages of Hayden & Stifter 2025, which neither co-validator had gone
+   past the abstract of. The attested nineteenth-century ogham ciphers — *ogam craobh*, *ogam
+   coll*, *ogam consaine* — contain **no positional rotation**; the Minchin charms are plain
+   ogham with no superimposed cipher; and the eye-charms are Irish prayers under `ar x`
+   headings, a comparator predicting specifically *against* a bare English participle.
+   "Cryptic healing ogham" is the dossier's construction, not an attested genre.
+
+**And the cryptographic core survived the attack**, which under `_roles/VALIDATOR.md` is worth
+more than two agreements: expanded twelvefold to 480 cycle-model combinations across three
+lexicons, it still yields exactly one English word and zero Irish words. The refuter says so
+explicitly. This claim's problem has never been its arithmetic.
+
+**This panel is also the board's first documented case of *independent* convergence.** Its
+refuter read the other two verdicts only after running the code and building its own attack,
+and recorded that the three reached PARTIAL by three different routes — the criteria, the
+evidence chain, and an attempt to kill it. Set beside validator 2's catch on VENONA, where
+two validators reached the same correction by near-identical routes and the second flagged
+that it should *not* count as confirmation, the pair is the clearest evidence this board has
+that the three-validator design is doing the thing it was built to do. **Record the route,
+not just the verdict** — now in `STATUS.md`.
 
 ## Silos broken
 

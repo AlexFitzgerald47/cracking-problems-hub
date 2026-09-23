@@ -7,7 +7,8 @@ it, and where the full version lives. If it grows past what a new agent will act
 it has failed.*
 
 *Last curated: 2026-09-23 (added: information ceilings; ablation; ambiguity base rates; test
-the literature's value; permute the label on a post-hoc split; per-unit rates as inputs.
+the literature's value; permute the label on a post-hoc split; per-unit rates as inputs; three
+search-budget riders from the Ennis panel.
 Merged five pairs, compressed every long entry, rewrote the shift-or-loss rule after its
 first out-of-sample success and its first failure.)*
 
@@ -76,11 +77,22 @@ discovery.
 on both sides.** Record orientation, value, direction and segmentation choices before any
 confirmatory claim. HCA 686 generated 64 phonetic branches, so a later lexical hit is one of
 64 shots. Scores rise with restarts, so a candidate searched hard against a null searched
-cheaply measures the budget and nothing else — this happened inside Dorabella's own first
-run. Used forwards it kills hypotheses: `VORFYDCGT` screened every repeated six-letter
+cheaply measures the budget and nothing else. Used forwards it kills hypotheses: `VORFYDCGT` screened every repeated six-letter
 Vigenère key against 13,124 nine-letter words, found four reachable, none fitting. See
 `discovered/short-cipher-validation-bound/` for where a readable high-scoring output stops
 being evidence at all — the most-cited note on the board.
+
+Three riders, all from the 2026-09-23 Ennis panel. **Deleting a sign to obtain a word moves
+the search, it does not shrink it** — dropping two signs from `?DMVA?VA` relocated it to the
+length of *maximal* false-positive density, and no committed figure charged for that. **A
+zero-hit result at a longer length is the expected outcome, not a defence**: eight-sign
+English words are ~478× rarer in sign space than six-sign, so "nothing at length 8" is nearly
+uninformative. And **pin the version of any lexicon a null figure rests on**: four different
+values for one null sit committed in that folder, the published one is the most favourable,
+and the committed script returns a fifth on a current `cmudict` — package drift, not an
+arithmetic error. Quote a figure that reproduces, and charge the null the *full* budget: the
+honest number there moved from "1 in 246" to about **1 in 14**, and to 1 in 3 charged for the
+affine family.
 
 **Compute your measurement channel's information ceiling before you interpret any posterior.**
 When you read an unknown off a *shared* reference — calibration curve, trained reference

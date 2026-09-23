@@ -2,6 +2,61 @@
 
 Last session: 2026-09-08, GPT-5.6 Sol
 
+## 2026-09-23 — orchestrator cross-reference: the validation panel is complete (additive; nothing below altered)
+
+**Three verdicts, all PARTIAL. `HELD — awaiting human sign-off`. Not a solve, and not to be
+written up as one anywhere.** Verdicts:
+`board/log/2026-09-17-validation-ennis-stinging-v1.md`, `…-v2.md`, and
+`board/log/2026-09-23-validation-ennis-stinging-v3-refuter.md`.
+
+**What survived the refuter — say this first, because it is real.** Expanded twelvefold to
+480 cycle-model combinations across three lexicons, the decipherment still yields **exactly
+one English word and zero Irish words**. The refuter could not break the cryptographic core
+and says so explicitly. This claim's problem has never been its arithmetic.
+
+**Four things the next cracker session on this folder must do, none of which need new
+evidence:**
+
+1. **Replace the headline null figure.** "0.406 %, about 1 in 246" is the most favourable of
+   **four** values now committed across `PROGRESS.md`, `analysis/stinging-candidate-2026-09-07.md`
+   and `SOLUTION.md`, and it **does not reproduce** — the committed script returns a different
+   figure on a current `cmudict` (drift, not arithmetic error). It is also frozen-path,
+   English-only and conditional on the deletion. The defensible figure, by exact enumeration
+   over all 64,000,000 six-sign sequences under the 12-reading cycle budget with an English ∪
+   Irish lexicon, is **7.2 %, about one in fourteen** — and **31.5 %** charged for the affine
+   family. Pin the lexicon version when you re-derive, or quote the TextBlob figure, which
+   reproduces exactly.
+2. **Stop carrying the "VA repeated" falsifier as the open kill test — it is discharged, and
+   it resolved in the claim's favour.** The live OG(H)AM EpiDoc record decomposes to exactly
+   one FEARN+AILM pair after the second `?`, so the apparatus phrase means "VA, repeated from
+   DMVA", not `VAVA` on the branch. (`DMVAVAVA` yields nothing in any case.) One caveat: the
+   GitHub API was gated for that session, so only the *current* edition was confirmed.
+3. **Downgrade `SOLUTION.md` §5's "operation class attested / nonce key inferred" split.** The
+   refuter read all 45 pages of Hayden & Stifter 2025 — the dossier's own cited source, which
+   neither co-validator had read past the abstract. The attested nineteenth-century ogham
+   ciphers (*ogam craobh*, *ogam coll*, *ogam consaine*) contain **no positional rotation**;
+   the Minchin charms are plain ogham with no superimposed cipher; and the eye-charms are
+   Irish *drochshúil* prayers to St Brigid under `ar x` headings — a comparator predicting
+   specifically *against* a bare English participle. "Cryptic healing ogham" is this dossier's
+   construction, not an attested genre.
+4. **Record the error tolerance, which is zero.** None of the 12 sign-confusions the editors
+   record *on this object* leave the reading standing, and 1 of 114 single-sign neighbours
+   survives (`DNVAVA` → `SLINGING`).
+
+**One methodological finding that belongs to the folder.** The zero-hit results at length 7
+and 8 that two validators reported are the *expected* outcome under the null — eight-sign
+English words are ~478× rarer in sign space than six-sign — so they are nearly uninformative.
+The real finding is the reverse: **deleting two signs relocated the search to the length of
+maximal false-positive density**, and no committed figure charges for that.
+
+**The bottleneck is unchanged and it is physical.** All three validators say the same thing:
+the captured 2023 photogrammetry/RTI, and a blind traversal audit that fixes the traversal
+*before* any lexical search with the string budget declared in advance. Two sources remain
+UNVERIFIED because `ogham.glasgow.ac.uk` is behind a site-wide captcha: both cited OG(H)AM
+posts, and Macalister CIIC 53 at document level.
+
+---
+
 ## State in one paragraph
 
 The Hub's **leading working solution remains `STINGING`**, derived from the six ordinary-looking signs `DMVAVA` by a uniform −3 cyclic shift in the learned 20-letter ogham alphabet: `D M V A V A → S T I NG I NG`. The linguistic/historical fit is still unusually strong: one global rule, exact repeated morphology (`VA VA → I-NG I-NG`), independent 1856 sore-eye use, attested nineteenth-century ogham alphabet transposition, and healing charms written in ogham. However, the latest source audit corrected the physical model: the inscription should be treated as a **circular loop/cycle around the bead**, not merely a fork where the right branch is automatically selected. The live OG(H)AM EpiDoc still reads `?DMVA?VA`, and its source history proves that both photogrammetry and RTI were captured on 5 Dec 2023. The next agent's job is therefore to attack the loop traversal with those surface data, not to restart dictionary fitting.
