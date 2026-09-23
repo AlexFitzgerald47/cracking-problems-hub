@@ -1,0 +1,232 @@
+AI  spread= 7 score=0.32 AI455.2
+   AI455.2 (455): Here some place the birth of Saint Brigit [AU 452, 456].
+   AI448.1 (448): Kl. Repose of Saint Secundinus. [AU 47].
+
+AI  spread= 2 score=0.35 AI485.1
+   AI485.1 (485): Kl. The battle of Granard (Mac Erce victor), in which Finnchad, king of the Laigin, fell; and Cairpre [was] victor, as others say. [AU 485, 486]. The mortal wounding of Crimthann Ceinnselach, king of 
+   AI487.1 (487): Kl. Death of Crimthann Ceinnselach. [AU 483, 485].
+
+AI  spread= 7 score=1.00 AI597.2
+   AI597.2 (597): Repose of Gregory of Rome according to others. [AU 592].
+   AI604.1 (604): Kl. Repose of Gregory of Rome. [AU 606, 607].
+
+AI  spread=13 score=0.35 AI1193.2
+   AI1193.2 (1193): The castle of Brí Uis was built by the foreigners with the consent of Ua Briain, as some say, and to injure Desmumu therefrom.
+   AI1206.5 (1206): The castle of Corcach was built by the foreigners.
+
+AI  spread=42 score=0.54 AI1251.1
+   AI1251.1 (1251): Or here the same Fíngen was slain.
+   AI1209.6 (1209): {Fíngen, son of Fíngen Mac Carthaig, was slain by the foreigners of Corcach}.
+
+AT  spread=23 score=0.32 AT564.2
+   AT564.2 (564): The rest of Brenann of Biorra, as others say.
+   AT587.1 (587): The rest of bishop Aed son of Brecc and of Aed son of Brénann, king of Teffa, who offered Durrow to St Columcill.
+
+AT  spread=25 score=0.59 AT715.1
+   AT715.1 (715): Cellach Cualann king of Leinster dies, according to some.
+   AT690.8 (690): Ceallach Cualann son of Gerrthighe, king of Leinster, dies.
+
+AU  spread= 1 score=1.00 AU435.2
+   AU435.2 (435): Orosius, Prosper and Cyril flourished in the doctrine of Christ, according to some.
+   AU436.2 (436): Orosius, Prosper and Cyril flourished in Christ or in the doctrine of Christ, according to others.
+
+AU  spread= 1 score=0.86 AU436.1
+   AU436.1 (436): Or here, the death of Bresal.
+   AU435.1 (435): Death of Bresal, king of Laigin.
+
+AU  spread= 1 score=1.00 AU436.2
+   AU436.2 (436): Orosius, Prosper and Cyril flourished in Christ or in the doctrine of Christ, according to others.
+   AU435.2 (435): Orosius, Prosper and Cyril flourished in the doctrine of Christ, according to some.
+
+AU  spread= 1 score=0.72 AU436.3
+   AU436.3 (436): Or this year, Bresal died, according to others.
+   AU435.1 (435): Death of Bresal, king of Laigin.
+
+AU  spread=17 score=0.32 AU440.2  [PATRICIAN]
+   AU440.2 (440): Some books state that Maine son of Niall perished this year.
+   AU457.2 (457): Repose of the elder Patrick, as some books state.
+
+AU  spread=60 score=0.39 AU446.1
+   AU446.1 (446): The battle of Feimen in which Mac Cairthinn son of Caelub fell. Some say he was of the Cruithin.
+   AU506.1 (506): Repose of bishop Mac Cairthinn of Clochar.
+
+AU  spread=13 score=0.65 AU452.1
+   AU452.1 (452): Here some place the birth of St. Brigit.
+   AU439.2 (439): Or that on this Kalend, the birth of Brigit should be .
+
+AU  spread= 4 score=0.44 AU456.1
+   AU456.1 (456): Death of Énna son of Cathub, and the birth of St Brigit, as some say.
+   AU452.1 (452): Here some place the birth of St. Brigit.
+
+AU  spread=54 score=0.35 AU457.2  [PATRICIAN]
+   AU457.2 (457): Repose of the elder Patrick, as some books state.
+   AU511.1 (511): The second battle of Ard Corann, as some state.
+
+AU  spread= 2 score=0.57 AU467.2
+   AU467.2 (467): The Feast of Temair held by Ailill Molt son of Dath Í son of Fiachra son of Eochu Mugmedón. Thus I have found in the Book of Cuanu.
+   AU469.1 (469): Or, the Feast of Temair held by Ailill Molt this year, according to others.
+
+AU  spread= 8 score=0.90 AU468.2
+   AU468.2 (468): The battle of Duma Aichir, i.e. won against Ailill Molt, as I have found in the Book of Cuanu.
+   AU476.1 (476): The battle of Duma Aichir won against Ailill Molt by the Laigin.
+
+AU  spread= 1 score=0.87 AU469.1
+   AU469.1 (469): Or, the Feast of Temair held by Ailill Molt this year, according to others.
+   AU470.1 (470): The Feast of Temair held by Ailill Molt, as some say.
+
+AU  spread= 1 score=0.87 AU470.1
+   AU470.1 (470): The Feast of Temair held by Ailill Molt, as some say.
+   AU469.1 (469): Or, the Feast of Temair held by Ailill Molt this year, according to others.
+
+AU  spread=37 score=0.41 AU471.1
+   AU471.1 (471): The second prey of the Saxons from Ireland (as some state) was carried off this year, as Maucteus (Mochta) says. Thus I have found in the Book of Cuanu.
+   AU434.1 (434): The first prey by the Saxons from Ireland or in Ireland.
+
+AU  spread= 2 score=0.90 AU475.1
+   AU475.1 (475): The battle alias the mêlée of Brí Éile won by Ailill Molt over the Laigin. So I have found in the Book of Cuanu.
+   AU473.3 (473): The mêlée of Brí Éile won over the Laigin by Ailill Molt.
+
+AU  spread= 3 score=0.31 AU483.2
+   AU483.2 (483): Or, this year the battle of Ocha according to others, won by Muirchertach Mac Erca and by Fergus Cerball son of Conall of Cremthann, and by Fiachra Lon son of the king of Dál nAraide.
+   AU480.1 (480): Death of Conall of Cremthann, son of Niall.
+
+AU  spread=12 score=0.55 AU485.1
+   AU485.1 (485): The first battle of Granairet. Coirpre, son of Niall Naígiallach, was victor, and Finnchad fell; or, Mac Erca was victor, as others state.
+   AU497.4 (497): Or here, the second battle of Granairet, in which Fraech son of Finnchad, king of Laigin Desgabhair, fell. Eochu, son of Coirpre, was victor.
+
+AU  spread= 2 score=0.57 AU496.4
+   AU496.4 (496): Or here, the battle of Tailtiu.
+   AU494.1 (494): The battle of Tailtiu won over the Laigin by Cairpre son of Niall.
+
+AU  spread=12 score=0.55 AU497.4
+   AU497.4 (497): Or here, the second battle of Granairet, in which Fraech son of Finnchad, king of Laigin Desgabhair, fell. Eochu, son of Coirpre, was victor.
+   AU485.1 (485): The first battle of Granairet. Coirpre, son of Niall Naígiallach, was victor, and Finnchad fell; or, Mac Erca was victor, as others state.
+
+AU  spread= 2 score=0.68 AU499.4
+   AU499.4 (499): Or here, Mo-Chaí of Naendruim according to another book.)
+   AU497.2 (497): Mo-Chaí of Naendruim rested.
+
+AU  spread= 4 score=0.76 AU504.3
+   AU504.3 (504): Or here, the death of bishop Ibar.
+   AU500.2 (500): Repose of bishop Ibar on the 9th of the Kalends of May.
+
+AU  spread= 4 score=0.44 AU507.1
+   AU507.1 (507): The battle of Ard Corann, and the death of Lugaid son of Laegaire; and as some state, Domangart Mac Nissi of Réte retired into religion? in his 35th year.
+   AU511.1 (511): The second battle of Ard Corann, as some state.
+
+AU  spread=47 score=0.57 AU511.1
+   AU511.1 (511): The second battle of Ard Corann, as some state.
+   AU464.1 (464): The first battle of Ard Corann, won by the Laigin.
+
+AU  spread=28 score=0.59 AU512.4
+   AU512.4 (512): Or here, the death of Lugaid son of Laegaire, according to the Book of the Monks.
+   AU484.1 (484): Beginning of the reign of Lugaid son of Laegaire this year.
+
+AU  spread= 3 score=0.44 AU520.3
+   AU520.3 (520): Comgall of Bennchor was born according to some .
+   AU523.3 (523): Colum Cille was born.)
+
+AU  spread= 6 score=0.69 AU521.1
+   AU521.1 (521): Cainnech of Achad Bó was born this year according to some.
+   AU527.1 (527): Birth of Cainnech of Achad Bó.
+
+AU  spread=43 score=0.46 AU523.1
+   AU523.1 (523): (The battle of Dethna in Droma Breg, in which Ardgal, son of Conall of Cremthann son of Niall, fell, according to others.
+   AU480.1 (480): Death of Conall of Cremthann, son of Niall.
+
+AU  spread= 2 score=0.80 AU528.3
+   AU528.3 (528): Or here, the falling asleep of Brigit according to the Book of the Monks.
+   AU526.1 (526): The falling asleep of St Brigit in the 70th year of her age.
+
+AU  spread= 2 score=0.37 AU535.3
+   AU535.3 (535): The battle of Éblenn won by Muirchertach Mac Erca over the Laigin, as some say.
+   AU533.3 (533): The battle of Éblenn won by Muirchertach; and the battle of Mag Ailbe won against the Laigin, and the battle of Aidne against the Connachta, and the battle of Almuin, and the battle of Cenn Eich again
+
+AU  spread= 2 score=0.41 AU536.5
+   AU536.5 (536): Or here, the drowning of Muirchertach Mac Erca, according to others.
+   AU534.1 (534): The drowning of Muirchertach Mac Erca i.e. Muirchertach son of Muiredach son of Eógan son of Niall Naígiallach in a vat full of wine on the hilltop of Cleitech above Bóinn.
+
+AU  spread=11 score=0.43 AU537.3  [PATRICIAN]
+   AU537.3 (537): Or here, the falling asleep of St Mochta, disciple of Patrick.)
+   AU526.1 (526): The falling asleep of St Brigit in the 70th year of her age.
+
+AU  spread= 4 score=0.69 AU539.2
+   AU539.2 (539): The battle of Luachair. Tuathal Maelgarb son of Cormac Caech son of Cairpre son of Niall Naígiallach was victor as some state.
+   AU535.2 (535): The battle of Luachair Mór between the two estuaries, won by Tuathal Maelgarb son of Cormac Caech son of Cairpre son of Niall Naígiallach, over the Ciannacht.
+
+AU  spread= 3 score=0.81 AU545.2
+   AU545.2 (545): Death of Comgall son of Domangart, as some say.
+   AU542.1 (542): Death of Comgall son of Domangart.
+
+AU  spread=10 score=0.62 AU545.3
+   AU545.3 (545): Diarmait son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach began to reign, according to the book of Cuanu.
+   AU555.2 (555): Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+
+AU  spread= 5 score=1.00 AU545.4
+   AU545.4 (545): Or here, the birth of Gregory according to others.
+   AU540.1 (540): Birth of Gregory.
+
+AU  spread= 5 score=0.40 AU548.4
+   AU548.4 (548): Or here, the battle of Slicech).
+   AU543.2 (543): The battle of Slicech, in which Eógan Bél, king of Connacht, fell. Forgus and Domnall, two sons of Mac Erca, were victors, and Ainmire son of Sétna and Ninnid son of Sétna.
+
+AU  spread= 2 score=0.66 AU553.4
+   AU553.4 (553): Or here, the repose of Dáuíd; bishop of Ard Macha and legate.
+   AU551.1 (551): Repose of Dáuíd of Farannán, son of Guaire descendant of Farannán, bishop of Ard Macha and legate of all Ireland.
+
+AU  spread= 7 score=1.00 AU565.2
+   AU565.2 (565): Repose of Brénainn of Biror, as some say.
+   AU572.6 (572): Repose of Brénainn of Biror, as some say.)
+
+AU  spread= 7 score=1.00 AU572.6
+   AU572.6 (572): Repose of Brénainn of Biror, as some say.)
+   AU565.2 (565): Repose of Brénainn of Biror, as some say.
+
+AU  spread= 7 score=0.28 AU573.2
+   AU573.2 (573): (Or here, the battle of Gabair Liphe won over the Laigin.
+   AU566.1 (566): The battle of Gabair Liphi. Forgus and Domnall were victors.
+
+AU  spread= 7 score=0.70 AU577.6
+   AU577.6 (577): Or here, the killing of Fergus son of Néilline; and Aenu, abbot of Cluain Moccu Nóis, Íte of Cluain Credail, and Gildas died .
+   AU570.2 (570): Aenu, abbot of Cluain Moccu Nóis, and Ite of Cluain Credail, fell asleep.
+
+AU  spread= 6 score=0.91 AU587.3
+   AU587.3 (587): Or here the death of Baetán son of Cairell, king of Ulaid.
+   AU581.2 (581): The death of Baetán son of Cairell.
+
+AU  spread= 6 score=0.88 AU591.2
+   AU591.2 (591): Or here, the repose of Mac Nisi, abbot of Cluain Moccu Nóis.
+   AU585.1 (585): Repose of Mac Nisi, abbot of Cluain Moccu Nóis, in the 17th year of his abbacy? .
+
+AU  spread= 1 score=0.41 AU601.3
+   AU601.3 (601): Thus I have found in the book of Cuanu: The battle of Slemain and the battle of Cúil Caíl; and the repose of Comgall, and the death of Uatu son of Aed happened this year.
+   AU602.4 (602): Death of Uatu son of Aed.
+
+AU  spread=18 score=0.37 AU611.3
+   AU611.3 (611): Repose of Colmán of Lann Ela. Thus in the Book of Cuanu.
+   AU629.4 (629): Death of Echaid Buide son of Aedán, king of the Picts. Thus I have found in the Book of Cuanu.
+
+AU  spread= 4 score=0.54 AU622.5
+   AU622.5 (622): Repose of Caemgein of Glenn dá Locha according to some.
+   AU618.3 (618): Caemgein of Glenn Dá Locha, and bishop Comgall, and bishop Eógan of Ráithe Síthe, rested.
+
+AU  spread=18 score=0.37 AU629.4
+   AU629.4 (629): Death of Echaid Buide son of Aedán, king of the Picts. Thus I have found in the Book of Cuanu.
+   AU611.3 (611): Repose of Colmán of Lann Ela. Thus in the Book of Cuanu.
+
+AU  spread= 6 score=0.31 AU630.3
+   AU630.3 (630): Or thus it is related in the book of Dub dá Leithe: The battle of Leitheirbe between the descendants of Mac Erca and the descendants of Feradach, in which Mael Fithrich fell. Ernaine son of Fiachna, w
+   AU636.1 (636): The killing of Ernáine son of Fiach n a, who defeated Mael Fithrich son of Aed Allán alias Uairidnach in the battle of Leitheirbe; and the expulsion of Carthach from Raithen at Eastertide.
+
+AU  spread=11 score=0.37 AU643.5
+   AU643.5 (643): Cellach and Conall Cael i.e. two sons of Mael Cobo son of Aed son of Ainmire, begin to reign, as some state.
+   AU654.1 (654): The killing of Conall son of Mael Cobo i.e. by Diarmait son of Aed Sláine.
+
+AU  spread= 8 score=0.66 AU656.7
+   AU656.7 (656): Or here, the death of Fursu according to others.
+   AU648.1 (648): Fursu the devout died.
+
+CS  spread= 8 score=0.70 CS565.3
+   CS565.3 (565): Repose of Brénainn of Biror, as some say.
+   CS573.2 (573): Brénainn of Biror died.
+

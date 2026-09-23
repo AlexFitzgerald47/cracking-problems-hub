@@ -1,0 +1,54 @@
+# Collation of the Patrician dossier across the four CELT annalistic witnesses.
+# Success criterion 1 of ireland/patrician-chronology/PROBLEM.md.
+#
+# Every entry in AU / AT / CS / AI, 350-560, in which Patrick or Palladius is the
+# SUBJECT (not merely a person named in someone else's notice).  Entries where
+# Patrick appears only as a relative, patron or predecessor of the subject --
+# Secundinus CS446, Benignus AU467/CS465, Cianan CS486/AT488/AU489, Cormac
+# AU497/AT497/CS494, Erc CS511/AT513, Lugaid CS507 -- are listed separately at
+# the foot because an earlier cut of this analysis wrongly counted them as
+# Patrician obits.
+#
+# marked = carries an alternative-source marker (src/markers.py)
+# witness	year	id	marked	class	text
+CS	353	CS353.1	0	vita	In this year Patrick was born.
+CS	364	CS364.3	0	vita	Patrick is carried a captive into Hibernia.
+CS	369	CS369.1	0	vita	Patrick was released from captivity by an angel.
+CS	376	CS376.2	0	vita	Patrick went to Germanus.
+AU	431	AU431.1	0	palladius	Palladius, having been consecrated by Celestine, is sent to Ireland as first bishop to the Irish.
+AU	432	AU432.1	0	arrival	Patrick arrived in Ireland in the ninth year of Theodosius the Less.
+CS	432	CS432.2	0	arrival	Patrick, i.e. the Archbishop, comes to Hibernia, and begins to baptize the Scoti.
+CS	438	CS438.1	0	companions	Secundinus, Auxilius and Esserninus are sent to the Irish.
+AU	439	AU439.1	0	companions	Secundinus, Auxilius and Isserninus are sent to Ireland to assist Patrick.
+AI	439	AI439.1	0	companions	Secundinus, Auxilius, and Isserninus are sent to help Patrick.
+AU	441	AU441.2	0	mission	Bishop Patrick was approved in the Catholic faith.
+AI	441	AI441.1	0	mission	The approval of Saint Patrick in the Catholic Faith.
+AU	443	AU443.1	0	mission	Bishop Patrick flourishing in the fervour of the Faith.
+AI	443	AI443.1	0	mission	Patrick flourished in the doctrine of Christ.
+AU	457	AU457.2	1	obit	Repose of the elder Patrick, as some books state.
+CS	457	CS457.1	0	obit	Repose of Old Saint Patrick, Bishop, i.e. of the church of Glastonbury.
+AU	461	AU461.2	1	obit	Here some record the repose of Patrick.
+CS	489	CS489.1	1	obit	Patrick, Archbishop and Apostle of the Irish, in the 122nd year of his age, quievit, ut dicitur.
+AT	491	AT491.2	0	obit	Patrick archbishop and apostle of the Irish in the 120th year of his life rested.
+AU	492	AU492.1	0	obit	The Irish state here that Patrick the Archbishop died.
+AU	493	AU493.4	0	obit	Patrick, arch-apostle, rested in the 120th year of his age, in the 60th year after he came to Ireland.
+AI	496	AI496.1	0	obit	Repose of Patrick on the 16th of the Kalends of April in the 432nd year from the Passion.
+AU	553	AU553.3	1	relics	I have found this in the Book of Cuanu: the relics of Patrick were placed sixty years after his death in a shrine by Colum Cille.
+AU	571	AU571.1	0	epoch	From the death of Patrick 100 years.
+# --- not Patrician obits: Patrick named only in another person's notice ---
+CS	446	CS446.1	0	other	Death of Secundinus, whose mother was Patrick's sister.
+CS	465	CS465.1	0	other	Quies of Benignus, successor of Patrick.
+AU	467	AU467.1	0	other	Repose of bishop Benignus, successor of Patrick.
+CS	486	CS486.1	0	other	Quies of Cianan of Damhliag, on whom Patrick bestowed his Gospel.
+AT	488	AT488.1	0	other	The rest of Cianan of Duleek; Patrick gave him his gospels.
+AU	489	AU489.1	0	other	Repose of St Ciannan, to whom St Patrick presented the Gospel.
+CS	494	CS494.4	0	other	Bishop Cormac, comharb of Patrick, pausavit.
+AT	497	AT497.2	0	other	Bishop Cormac, a successor of Patrick, rested.
+AU	497	AU497.3	0	other	Repose of Cormac, bishop of Ard Macha, successor of Patrick.
+CS	507	CS507.1	0	other	Death of Lughaidh son of Laeghaire, struck by lightning for denying Patrick.
+CS	511	CS511.1	0	other	Quies of Erc bishop of Slane, of whom Patrick said...
+AT	513	AT513.1	0	other	The rest of Earc bishop of Slaine, of whom Patrick said...
+CS	532	CS532.2	0	other	Dormitatio of Mochta, disciple of Patrick.
+AT	533	AT533.2	0	other	The sleeping of Mochta, disciple of Patrick.
+AU	535	AU535.1	0	other	The falling asleep of Mochta, disciple of Patrick.
+AU	537	AU537.3	1	other	Or here, the falling asleep of St Mochta, disciple of Patrick.

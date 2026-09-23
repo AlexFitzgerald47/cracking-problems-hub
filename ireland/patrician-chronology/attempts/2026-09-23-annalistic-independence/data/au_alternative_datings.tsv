@@ -1,0 +1,56 @@
+# Hand-verified clusters of alternative datings in the Annals of Ulster, 430-660.
+#
+# A cluster is one event (or one person's obit) for which AU offers more than one
+# year.  Clusters were found two ways and pooled: (a) every entry carrying an
+# alternative-source marker (src/markers.py; all 87 corpus-wide hits hand-read,
+# precision 1.00) was paired with its counterpart, the automated pairing
+# hand-audited in results/spread_audit.txt, and (b) for every marked entry whose
+# automated partner was REJECTED, the witness was searched directly by name or
+# place so that no cluster is lost to the matcher's preference for short lags.
+# Search transcripts: results/partner_searches.txt.
+#
+# `years` lists every year AU assigns to the event.  `maxgap` is the largest gap
+# between consecutive variant years -- the statistic that distinguishes ordinary
+# annalistic scatter from two traditions merged.
+#
+# witness	event	years	span	maxgap
+AU	Orosius/Prosper/Cyril flourish	435,436	1	1
+AU	Death of Bresal king of Laigin	435,436	1	1
+AU	Birth of Brigit	439,452,456	17	13
+AU	Feast of Temair (Ailill Molt)	467,469,470	3	2
+AU	Battle of Duma Aichir	468,474,476	8	6
+AU	Melee of Bri Eile	473,475,478	5	3
+AU	Second battle of Granairet	493,495,497	4	2
+AU	Battle of Tailtiu	494,496	2	2
+AU	Repose of Mo-Chai of Naendruim	497,499	2	2
+AU	Death of bishop Ibar	500,501,504	4	3
+AU	Repose of Mac Nissi bishop of Condaire	507,514	7	7
+AU	Battle of Ard Corann / death of Lugaid son of Laegaire	507,508,512	5	4
+AU	Birth of Comgall of Bennchor	516,520	4	4
+AU	Battle of Dethna / fall of Ardgal	520,523	3	3
+AU	Birth of Cainnech of Achad Bo	521,527	6	6
+AU	Falling asleep of Brigit	526,528	2	2
+AU	Battle of Eblenn	533,535	2	2
+AU	Drowning of Muirchertach Mac Erca	534,536	2	2
+AU	Falling asleep of Mochta	535,537	2	2
+AU	Battle of Luachair	535,539	4	4
+AU	Death of Comgall son of Domangart	538,542,545	7	4
+AU	Birth of Gregory	540,545	5	5
+AU	Battle of Slicech	543,547,548	5	4
+AU	Death of Tuathal Maelgarb	544,549	5	5
+AU	Repose of David bishop of Ard Macha	551,553	2	2
+AU	Battle of Gabair Liphi	565,566,573	8	7
+AU	Repose of Brenainn of Biror	565,572	7	7
+AU	Death of Domnall son of Muirchertach Mac Erca	566,573	7	7
+AU	Repose of Aenu abbot of Cluain Moccu Nois	570,577	7	7
+AU	Repose of Brenainn of Cluain Ferta	577,583	6	6
+AU	Death of Baetan son of Cairell	581,587	6	6
+AU	Repose of Mac Nisi abbot of Cluain Moccu Nois	585,591	6	6
+AU	Repose of Colum Cille	595,601	6	6
+AU	Death of Uatu son of Aed	601,602	1	1
+AU	Repose of Caemgein of Glenn da Locha	618,622	4	4
+AU	Battle of Leitheirbe	630,636	6	6
+AU	Death of Fursu	648,649,656,661	13	7
+CS	Repose of Brenainn of Biror	565,573	8	8
+AI	Repose of Gregory of Rome	597,604	7	7
+AT	Death of Cellach Cualann king of Laigin	690,715	25	25

@@ -1,0 +1,457 @@
+AU 430-699, groups sharing >=2 name tokens with >=2 distinct years: 106
+
+### Conall+Cremthann  spread=184  years=[480, 555, 664]
+     480 AU480.1     Death of Conall of Cremthann, son of Niall.
+     555 AU555.2     Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+     664 AU664.4     Death of Cernach son of Diarmait son of Aed Sláine son of Diarmait Cerrbél son of Conall of Cremthann; and an earthquake in Britain; and Comgán moccu 
+
+### Cairpre+Crimthann  spread=151  years=[514, 665]
+     514 AU514.1     Cairpre Daim Airgit son of Eochu son of Crimthann son of Fiach son of Daig Duirn son of Reochad son of Colla Dá Crích, king of Airgialla, died .
+     665 AU665.4     Cú cen Máthair son of Cathal son of Aed son of Cairpre son of Crimthann, king of Mumu, dies.
+
+### Cille+Colum  spread=123  years=[519, 553, 574, 589, 595, 601, 642]
+     519 AU519.1     The birth of Colum Cille on the same day as Buite son of Bronach fell asleep.
+     553 AU553.3     I have found this in the Book of Cuanu: The relics of Patrick were placed sixty years after his death in a shrine by Colum Cille. Three splendid halid
+     574 AU574.2     Death in the sixteenth year of his reign of Conall son of Comgall who granted the island of Ia to Colum Cille.
+     589 AU589.2     Aed son of Brénainn—i.e. it is he who granted Dermag to Colum Cille—king of Tethba, died.
+     595 AU595.1     Repose of Colum Cille on the fifth of the Ides of June in the 76th year of his age.
+     601 AU601.4     Or this year, the repose of Colum Cille on Sunday night.
+     642 AU642.1     Death of Domnall son of Aed, king of Ireland, at the end of January. Afterwards Domnall Brec was slain at the end of the year, in December, in the bat
+
+### Diarmait+Mael  spread=121  years=[544, 665]
+     544 AU544.1     Tuathal Maelgarb was killed, i.e. in Grellach Allta by Mael Mórda, and Diarmait son of Cerball succeeded him.
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+
+### Cerrbél+Conall  spread=109  years=[555, 664]
+     555 AU555.2     Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+     664 AU664.4     Death of Cernach son of Diarmait son of Aed Sláine son of Diarmait Cerrbél son of Conall of Cremthann; and an earthquake in Britain; and Comgán moccu 
+
+### Ainmire+Domnall  spread=100  years=[566, 573, 642, 666]
+     566 AU566.2     Also the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.
+     573 AU573.3     Or in this year, the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.)
+     642 AU642.1     Death of Domnall son of Aed, king of Ireland, at the end of January. Afterwards Domnall Brec was slain at the end of the year, in December, in the bat
+     666 AU666.1     Death of Ailill Flann Esa, son of Domnall son of Aed son of Ainmire.
+
+### From+Patrick  spread=93  years=[571, 664]
+     571 AU571.1     From the death of Patrick 100 years.
+     664 AU664.6     In Mag Itha of Fotharta the plague first raged in Ireland. From the death of Patrick 203 years, and from the first mortality 112 years .
+
+### Dúin+Mael  spread=87  years=[611, 620, 662, 665, 666, 671, 676, 681, 689, 690, 698]
+     611 AU611.2     Death of Mael Dúin son of Ailéne, king of Mugdorna, and death of Eógan son of Eochu Laib.
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     662 AU662.1     Cuiméne the Tall rested in the 72nd year of his age, and Sarán grandson of Crítán, sages, fell asleep. The deaths of this year— Nothing is to be lamen
+     662 AU662.3     Mael Dúin son of Furudrán son of Bécce died.
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+     666 AU666.2     Mael Caích son of Scannal, of the Cruithin, and Mael Dúin son of Scannal, king of Cenél Cairpri, died.
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+     676 AU676.6     Congal son of Mael Dúin and the sons of Scannal and Aurthulae were killed.
+     681 AU681.2     The battle of Bla Sléibe afterwards at the beginning of winter, in which Mael Dúin son of Mael Fithrich was slain.
+     689 AU689.7     Death of Mael Dúin son of Conall Crannanma.
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+     698 AU698.5     Death of Forannán, abbot of Cell Dara, and of Mael Dúin son of Mongán.
+     698 AU698.6     Death of Muirgius son of Mael Dúin, king of Cenél Cairpri.
+
+### Colmán+Cuiméne  spread=79  years=[586, 665]
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     665 AU665.6     Colmán Cas, abbot of Cluain Moccu Nóis, Cuiméne abbot of Cluain Moccu Nóis, fell asleep.
+
+### Bresal+Bélach  spread=78  years=[527, 605]
+     527 AU527.2     Death of Illann son of Dúnlang son of Énnae Nia son of Bresal Bélach.
+     605 AU605.2     The slaying of Brandub, king of Laigin, by his own kindred in treachery. He was son of Eochu son of Muiredach son of Aed son of Feidlim son of Énna Ce
+
+### Cuiméne+Fergus  spread=76  years=[586, 662]
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     662 AU662.1     Cuiméne the Tall rested in the 72nd year of his age, and Sarán grandson of Crítán, sages, fell asleep. The deaths of this year— Nothing is to be lamen
+
+### Conall+Niall  spread=75  years=[480, 555]
+     480 AU480.1     Death of Conall of Cremthann, son of Niall.
+     555 AU555.2     Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+
+### Erca+Muirchertach  spread=70  years=[534, 536, 566, 573, 604]
+     534 AU534.1     The drowning of Muirchertach Mac Erca i.e. Muirchertach son of Muiredach son of Eógan son of Niall Naígiallach in a vat full of wine on the hilltop of
+     536 AU536.5     Or here, the drowning of Muirchertach Mac Erca, according to others.
+     566 AU566.2     Also the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.
+     573 AU573.3     Or in this year, the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.)
+     604 AU604.1     The slaying of Colmán Rímid son of Baetán Bríge son of Muirchertach Mac Erca by a man of his own kindred i.e. by one of his kindred called Lochán Dilm
+
+### Ailill+Dúin  spread=70  years=[620, 690]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+
+### Ailill+Mael  spread=70  years=[620, 622, 690]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     622 AU622.3     Death of Mael Mracho son of Rímid son of Colmán son of Cobthach, and of Ailill son of Cellach.
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+
+### Eógan+Niall  spread=69  years=[465, 534]
+     465 AU465.2     Eógan son of Niall died.
+     534 AU534.1     The drowning of Muirchertach Mac Erca i.e. Muirchertach son of Muiredach son of Eógan son of Niall Naígiallach in a vat full of wine on the hilltop of
+
+### Glenn+Locha  spread=69  years=[618, 622, 660, 687]
+     618 AU618.3     Caemgein of Glenn Dá Locha, and bishop Comgall, and bishop Eógan of Ráithe Síthe, rested.
+     622 AU622.5     Repose of Caemgein of Glenn dá Locha according to some.
+     660 AU660.1     Death of bishop Finnán son of Rímid; and Colmán of Glenn dá Locha rested, and Daniél, bishop of Cenn Garad.
+     687 AU687.2     Repose of Do-Chuma Conoc, abbot of Glenn dá Locha.
+
+### Peter+Pope  spread=65  years=[460, 525]
+     460 AU460.1     Pope Leo died. He held the see of Peter for 27 or 24 years, 1 month and 13 days, as Bede relates in his chronicle.
+     525 AU525.1     John, 51st Pope of the Roman Church, lived two years in the see of Peter. He came to Constantinople, and when on his return he had reached Ravenna, Th
+
+### Cerball+Conall  spread=65  years=[586, 651]
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+
+### Colmán+Conall  spread=63  years=[555, 586, 618]
+     555 AU555.2     Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     618 AU618.2     The slaying of Colgu son of Suibne and the death of Fiachra son of Conall and the slaying of Fergus son of Colmán Mór i.e. by Anfartach descendant of 
+
+### Patrick+Three  spread=61  years=[492, 553]
+     492 AU492.1     The Irish state here that Patrick the Archbishop died. Three score years (we deem it few) And an mystic nine, Patrick spent preaching in Ireland with 
+     553 AU553.3     I have found this in the Book of Cuanu: The relics of Patrick were placed sixty years after his death in a shrine by Colum Cille. Three splendid halid
+
+### Cenél+Mael  spread=61  years=[637, 666, 671, 698]
+     637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+     666 AU666.2     Mael Caích son of Scannal, of the Cruithin, and Mael Dúin son of Scannal, king of Cenél Cairpri, died.
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+     698 AU698.6     Death of Muirgius son of Mael Dúin, king of Cenél Cairpri.
+
+### Church+Peter  spread=60  years=[465, 525]
+     465 AU465.1     Hilarius, bishop of the Roman Church, died; he occupied the see of Peter for 6 years, 3 months and 10 days. Simplicius was consecrated, and he sat for
+     525 AU525.1     John, 51st Pope of the Roman Church, lived two years in the see of Peter. He came to Constantinople, and when on his return he had reached Ravenna, Th
+
+### Conall+Sláine  spread=60  years=[604, 651, 664]
+     604 AU604.3     The slaying of Aed Rón, king of Uí Failge, in Faithche Meic Meccnaen on the brink of Loch Semdid on the same day on which Áed Sláine was slain. Aed Gu
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+     664 AU664.4     Death of Cernach son of Diarmait son of Aed Sláine son of Diarmait Cerrbél son of Conall of Cremthann; and an earthquake in Britain; and Comgán moccu 
+
+### Bennchor+Mael  spread=59  years=[610, 669]
+     610 AU610.2     Death of Sillán moccu Minn, abbot of Bennchor, and the death of Aedán, anchorite of Bennchor, and the death of Mael Umai son of Baetán.
+     669 AU669.1     Death of Cuiméne the Fair, abbot of Í, and of Crítán, abbot of Bennchor, and of Mo-Chua son of Cust; and death of Mael Fothartaig son of Suibne, king 
+
+### Ailill+Baetán  spread=59  years=[620, 679]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     679 AU679.2     Cenn Faelad son of Ailill son of Baetán, the learned, rested.
+
+### Macha+Patrick  spread=56  years=[497, 553]
+     497 AU497.3     Repose of Cormac, bishop of Ard Macha, successor of Patrick.
+     553 AU553.3     I have found this in the Book of Cuanu: The relics of Patrick were placed sixty years after his death in a shrine by Colum Cille. Three splendid halid
+
+### Colmán+Rímid  spread=56  years=[604, 622, 660]
+     604 AU604.1     The slaying of Colmán Rímid son of Baetán Bríge son of Muirchertach Mac Erca by a man of his own kindred i.e. by one of his kindred called Lochán Dilm
+     622 AU622.3     Death of Mael Mracho son of Rímid son of Colmán son of Cobthach, and of Ailill son of Cellach.
+     660 AU660.1     Death of bishop Finnán son of Rímid; and Colmán of Glenn dá Locha rested, and Daniél, bishop of Cenn Garad.
+
+### Ainmire+Sétna  spread=54  years=[566, 573, 620]
+     566 AU566.2     Also the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.
+     573 AU573.3     Or in this year, the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.)
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+
+### Conall+Mael  spread=52  years=[637, 657, 689]
+     637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+     657 AU657.2     The battle of Deliu in which Mael Deith son of Conall was killed.
+     689 AU689.7     Death of Mael Dúin son of Conall Crannanma.
+
+### Domnall+Hoan  spread=52  years=[642, 694]
+     642 AU642.1     Death of Domnall son of Aed, king of Ireland, at the end of January. Afterwards Domnall Brec was slain at the end of the year, in December, in the bat
+     694 AU694.6     Domnall son of Hoan, king of Ail Cluaithe; dies.
+
+### Airgit+Daim  spread=51  years=[514, 565]
+     514 AU514.1     Cairpre Daim Airgit son of Eochu son of Crimthann son of Fiach son of Daig Duirn son of Reochad son of Colla Dá Crích, king of Airgialla, died .
+     565 AU565.3     The battle of Gabair Liphi, and the death of Daimíne Daim Airgit.
+
+### Cairpri+Cenél  spread=49  years=[649, 666, 671, 698]
+     649 AU649.3     Death of Aengus Bronbachall, king of Cenél Cairpri.
+     666 AU666.2     Mael Caích son of Scannal, of the Cruithin, and Mael Dúin son of Scannal, king of Cenél Cairpri, died.
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+     698 AU698.6     Death of Muirgius son of Mael Dúin, king of Cenél Cairpri.
+
+### Domangart+Gabrán  spread=48  years=[558, 560, 606]
+     558 AU558.2     The Feast of Temair held by Diarmait son of Cerball; and the flight before Máelchá's son; and the death of Gabrán son of Domangart.
+     560 AU560.1     The Feast of Temair held by Diarmait son of Cerball; and the death of Gabrán son of Domangart.
+     606 AU606.2     Death of Aedán son of Gabrán son of Domangart, king of Albu, and the slaying of the sons of Baetán i.e. son of Cairell.
+
+### Cellach+Mael  spread=48  years=[622, 658, 664, 670]
+     622 AU622.3     Death of Mael Mracho son of Rímid son of Colmán son of Cobthach, and of Ailill son of Cellach.
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+     664 AU664.7     Cellach son of Mael Coba dies here, according to another book.
+     670 AU670.3     Death of Blamac son of Mael Cobo, and the killing of Cuanu son of Cellach.
+
+### Brec+Domnall  spread=47  years=[642, 650, 686, 689]
+     642 AU642.1     Death of Domnall son of Aed, king of Ireland, at the end of January. Afterwards Domnall Brec was slain at the end of the year, in December, in the bat
+     650 AU650.3     Death of Cathusach son of Domnall Brec.
+     686 AU686.2     Talorgg, son of Acithaen, and Domnall Brec son of Eochu, died.
+     689 AU689.4     Death of Cathusach, grandson of Domnall Brec.
+
+### Ailill+Ainmire  spread=46  years=[620, 666]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     666 AU666.1     Death of Ailill Flann Esa, son of Domnall son of Aed son of Ainmire.
+
+### Sláine+When  spread=44  years=[651, 695]
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+
+### Dúin+Fergus  spread=42  years=[620, 662]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     662 AU662.1     Cuiméne the Tall rested in the 72nd year of his age, and Sarán grandson of Crítán, sages, fell asleep. The deaths of this year— Nothing is to be lamen
+
+### Failbe+Flann  spread=41  years=[637, 678]
+     637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+     678 AU678.1     Death of Colgu son of Failbe Flann, king of Mumu.
+
+### Brec+Cathusach  spread=39  years=[650, 689]
+     650 AU650.3     Death of Cathusach son of Domnall Brec.
+     689 AU689.4     Death of Cathusach, grandson of Domnall Brec.
+
+### Fiachra+Mael  spread=38  years=[620, 658]
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+
+### Cluaithe+Domnall  spread=36  years=[658, 694]
+     658 AU658.2     Death of Guret, king of Ail Cluaithe, and of Fergal son of Domnall.
+     694 AU694.6     Domnall son of Hoan, king of Ail Cluaithe; dies.
+
+### Dubthach+Macha  spread=35  years=[513, 548]
+     513 AU513.2     Dubthach from Druim Derb, bishop of Ard Macha, died.
+     548 AU548.1     Dubthach or Duach, of the seed of Colla Uais, abbot of Ard Macha, rested.
+
+### Cellach+Rónán  spread=35  years=[658, 693]
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+     693 AU693.3     Cellach son of Rónán Mór dies.
+
+### Baetán+Fergus  spread=34  years=[586, 620]
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+
+### Conall+When  spread=33  years=[618, 651]
+     618 AU618.2     The slaying of Colgu son of Suibne and the death of Fiachra son of Conall and the slaying of Fergus son of Colmán Mór i.e. by Anfartach descendant of 
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+
+### Cobo+Mael  spread=33  years=[637, 647, 654, 658, 670]
+     637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+     647 AU647.1     Mael Cobo son of Fiachna, king of Ulaid, was killed.
+     654 AU654.6     Death of Aed Rón son of Mael Cobo.
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+     670 AU670.3     Death of Blamac son of Mael Cobo, and the killing of Cuanu son of Cellach.
+
+### Cairpri+Dúin  spread=32  years=[666, 671, 698]
+     666 AU666.2     Mael Caích son of Scannal, of the Cruithin, and Mael Dúin son of Scannal, king of Cenél Cairpri, died.
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+     698 AU698.6     Death of Muirgius son of Mael Dúin, king of Cenél Cairpri.
+
+### Domnall+Flann  spread=29  years=[637, 666]
+     637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+     666 AU666.1     Death of Ailill Flann Esa, son of Domnall son of Aed son of Ainmire.
+
+### Cenn+Garad  spread=29  years=[660, 689]
+     660 AU660.1     Death of bishop Finnán son of Rímid; and Colmán of Glenn dá Locha rested, and Daniél, bishop of Cenn Garad.
+     689 AU689.1     Iolán, bishop of Cenn Garad, died.
+
+### Fothartaig+Mael  spread=28  years=[669, 673, 680, 697]
+     669 AU669.1     Death of Cuiméne the Fair, abbot of Í, and of Crítán, abbot of Bennchor, and of Mo-Chua son of Cust; and death of Mael Fothartaig son of Suibne, king 
+     673 AU673.3     The capture of Elén son of Corp, and of (?) Conamail son of Cano; and Cormac son of Mael Fothartaig, dies.
+     680 AU680.7     Death of Mael Fothartaig, bishop of Ard Sratha.
+     697 AU697.5     Mael Fothartaig son of Maeldub, king of Airgialla, dies.
+
+### Conaing+Imlech  spread=27  years=[661, 688]
+     661 AU661.1     Tóiméne son of Rónán, bishop of Ard Macha, and Conaing grandson of Dant, abbot of Imlech Ibair, and the sage Laidcnén son of Baeth Bannach, died.
+     688 AU688.4     The battle of Imlech Pich in which fell Dub da Inber, king of Ard Cianachta, and Uarchride, descendant of Oiséne; and Congalach son of Conaing escaped
+
+### Baetán+Cairell  spread=25  years=[581, 587, 606]
+     581 AU581.2     The death of Baetán son of Cairell.
+     587 AU587.3     Or here the death of Baetán son of Cairell, king of Ulaid.
+     606 AU606.2     Death of Aedán son of Gabrán son of Domangart, king of Albu, and the slaying of the sons of Baetán i.e. son of Cairell.
+
+### Dúnchad+Sláine  spread=24  years=[651, 659, 675]
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+     659 AU659.1     Dimma Dub, bishop of Condaire, and Cuiméne, bishop of Naendruim, and Dúnchad son of Aed Sláine died; and the killing of Orc Doith son of Sechnusach, a
+     675 AU675.1     The battle of Cenn Faelad son of Blamac son of Aed Sláine, in which Cenn Faelad was slain. Fínnechta son of Dúnchad was victor.
+
+### Dúin+Scannal  spread=24  years=[666, 676, 690]
+     666 AU666.2     Mael Caích son of Scannal, of the Cruithin, and Mael Dúin son of Scannal, king of Cenél Cairpri, died.
+     676 AU676.6     Congal son of Mael Dúin and the sons of Scannal and Aurthulae were killed.
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+
+### Dúnchad+Rónán  spread=23  years=[647, 670]
+     647 AU647.2     Dúnchad grandson of Rónán was killed.
+     670 AU670.6     Death of Dúnchad grandson of Rónán.
+
+### Naígiallach+Niall  spread=21  years=[534, 555]
+     534 AU534.1     The drowning of Muirchertach Mac Erca i.e. Muirchertach son of Muiredach son of Eógan son of Niall Naígiallach in a vat full of wine on the hilltop of
+     555 AU555.2     Colmán Mór son of Diarmait Derg son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach—whom Dub Sloit killed.
+
+### Fínnechta+Sláine  spread=20  years=[675, 695]
+     675 AU675.1     The battle of Cenn Faelad son of Blamac son of Aed Sláine, in which Cenn Faelad was slain. Fínnechta son of Dúnchad was victor.
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+
+### Baetán+Colmán  spread=18  years=[586, 604]
+     586 AU586.1     The killing of Baetán son of Ninnid son of Daui alias son of Fergus Cennfhata son of Conall of Gulbu, king of Temair, who reigned one year. Cuiméne So
+     604 AU604.1     The slaying of Colmán Rímid son of Baetán Bríge son of Muirchertach Mac Erca by a man of his own kindred i.e. by one of his kindred called Lochán Dilm
+
+### Cerball+Diarmait  spread=16  years=[544, 558, 560]
+     544 AU544.1     Tuathal Maelgarb was killed, i.e. in Grellach Allta by Mael Mórda, and Diarmait son of Cerball succeeded him.
+     558 AU558.2     The Feast of Temair held by Diarmait son of Cerball; and the flight before Máelchá's son; and the death of Gabrán son of Domangart.
+     560 AU560.1     The Feast of Temair held by Diarmait son of Cerball; and the death of Gabrán son of Domangart.
+
+### Conall+Suibne  spread=14  years=[604, 618]
+     604 AU604.3     The slaying of Aed Rón, king of Uí Failge, in Faithche Meic Meccnaen on the brink of Loch Semdid on the same day on which Áed Sláine was slain. Aed Gu
+     618 AU618.2     The slaying of Colgu son of Suibne and the death of Fiachra son of Conall and the slaying of Fergus son of Colmán Mór i.e. by Anfartach descendant of 
+
+### Congal+Dúin  spread=14  years=[676, 690]
+     676 AU676.6     Congal son of Mael Dúin and the sons of Scannal and Aurthulae were killed.
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+
+### Mael+Suibne  spread=13  years=[669, 682]
+     669 AU669.1     Death of Cuiméne the Fair, abbot of Í, and of Crítán, abbot of Bennchor, and of Mo-Chua son of Cust; and death of Mael Fothartaig son of Suibne, king 
+     682 AU682.3     Death of Suibne son of Mael Uma, superior of Corcach.
+
+### Cellach+Cobo  spread=12  years=[658, 670]
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+     670 AU670.3     Death of Blamac son of Mael Cobo, and the killing of Cuanu son of Cellach.
+
+### Congal+Guaire  spread=12  years=[685, 697]
+     685 AU685.3     Death of Congal son of Guaire, and death of Bresal son of Fergus, from disease.
+     697 AU697.8     Écomras son of Congal son of Guaire was killed.
+
+### Brénainn+Ferta  spread=11  years=[572, 577, 583]
+     572 AU572.2     Maenu, bishop of Cluain Ferta Brénainn, rested.
+     577 AU577.3     Repose of Brénainn of Cluain Ferta.
+     583 AU583.5     Or this year, the repose of Brénainn of Cluain Ferta.
+
+### Domnall+Eochu  spread=11  years=[686, 697]
+     686 AU686.2     Talorgg, son of Acithaen, and Domnall Brec son of Eochu, died.
+     697 AU697.4     Eochu grandson of Domnall was killed.
+
+### Ailill+Macha  spread=10  years=[526, 536]
+     526 AU526.2     Ailill of the Uí Bresail, bishop of Ard Macha, rested.
+     536 AU536.4     Ailill, bishop of Ard Macha, died. He also was of the Uí Breasail.
+
+### Baetán+Mael  spread=10  years=[610, 620]
+     610 AU610.2     Death of Sillán moccu Minn, abbot of Bennchor, and the death of Aedán, anchorite of Bennchor, and the death of Mael Umai son of Baetán.
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+
+### Blamac+Sláine  spread=10  years=[665, 675]
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+     675 AU675.1     The battle of Cenn Faelad son of Blamac son of Aed Sláine, in which Cenn Faelad was slain. Fínnechta son of Dúnchad was victor.
+
+### Cenn+Faelad  spread=10  years=[669, 675, 679]
+     669 AU669.1     Death of Cuiméne the Fair, abbot of Í, and of Crítán, abbot of Bennchor, and of Mo-Chua son of Cust; and death of Mael Fothartaig son of Suibne, king 
+     675 AU675.1     The battle of Cenn Faelad son of Blamac son of Aed Sláine, in which Cenn Faelad was slain. Fínnechta son of Dúnchad was victor.
+     679 AU679.2     Cenn Faelad son of Ailill son of Baetán, the learned, rested.
+
+### Bresal+Congal  spread=10  years=[685, 695]
+     685 AU685.3     Death of Congal son of Guaire, and death of Bresal son of Fergus, from disease.
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+
+### Conaing+Congalach  spread=8  years=[688, 695, 696]
+     688 AU688.4     The battle of Imlech Pich in which fell Dub da Inber, king of Ard Cianachta, and Uarchride, descendant of Oiséne; and Congalach son of Conaing escaped
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+     696 AU696.6     Congalach son of Conaing son of Congal son of Aed Sláine dies.
+
+### Comgall+Domangart  spread=7  years=[538, 542, 545]
+     538 AU538.3     Death of Comgall son of Domangart in the 35th year of his reign.
+     542 AU542.1     Death of Comgall son of Domangart.
+     545 AU545.2     Death of Comgall son of Domangart, as some say.
+
+### Biror+Brénainn  spread=7  years=[565, 572]
+     565 AU565.2     Repose of Brénainn of Biror, as some say.
+     572 AU572.6     Repose of Brénainn of Biror, as some say.)
+
+### Ainmire+Erca  spread=7  years=[566, 573]
+     566 AU566.2     Also the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.
+     573 AU573.3     Or in this year, the death of Domnall son of Muirchertach Mac Erca, to whom succeeded Ainmire son of Sétna.)
+
+### Aenu+Credail  spread=7  years=[570, 577]
+     570 AU570.2     Aenu, abbot of Cluain Moccu Nóis, and Ite of Cluain Credail, fell asleep.
+     577 AU577.6     Or here, the killing of Fergus son of Néilline; and Aenu, abbot of Cluain Moccu Nóis, Íte of Cluain Credail, and Gildas died .
+
+### Blathmac+Though  spread=7  years=[651, 658]
+     651 AU651.1     Repose of Aedán, bishop of the Saxons, and the killing of two sons of Blathmac son of Aed Sláine, i.e. Dúnchad and Conall. Blathmac son of Aed, the ki
+     658 AU658.1     Death of Cellach son of Mael Cobo and of Cellach son of Sárán or Rónán, and of Fiachra Telnán, and of Blathmac son of Rónán son of Colum. Not equally 
+
+### Crítán+Cuiméne  spread=7  years=[662, 669]
+     662 AU662.1     Cuiméne the Tall rested in the 72nd year of his age, and Sarán grandson of Crítán, sages, fell asleep. The deaths of this year— Nothing is to be lamen
+     669 AU669.1     Death of Cuiméne the Fair, abbot of Í, and of Crítán, abbot of Bennchor, and of Mo-Chua son of Cust; and death of Mael Fothartaig son of Suibne, king 
+
+### Biain+Druim  spread=6  years=[584, 590]
+     584 AU584.1     Repose of Fergus, bishop of Druim Lethglaise, who founded Cell Biain.
+     590 AU590.4     Or this year, the repose of Fergus, bishop of Druim Lethglaise, who founded Cell Biain.
+
+### Nisi+Nóis  spread=6  years=[585, 591]
+     585 AU585.1     Repose of Mac Nisi, abbot of Cluain Moccu Nóis, in the 17th year of his abbacy? .
+     591 AU591.2     Or here, the repose of Mac Nisi, abbot of Cluain Moccu Nóis.
+
+### Conchobair+Ultán  spread=6  years=[657, 663]
+     657 AU657.1     Death of Suibne moccu Urthrí abbot of Í, and of Ultán moccu Conchobair.
+     663 AU663.6     Ultán moccu Conchobair rested, according to another book.
+
+### Blamac+Dúin  spread=6  years=[665, 671]
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+
+### Blamac+Mael  spread=6  years=[665, 670, 671]
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+     670 AU670.3     Death of Blamac son of Mael Cobo, and the killing of Cuanu son of Cellach.
+     671 AU671.3     The killing of Sechnusach, son of Blamac, king of Temair, at the beginning of winter. Full of bridles, full of horse-switches Was the house in which S
+
+### Laegaire+Lugaid  spread=5  years=[507, 508, 512]
+     507 AU507.1     The battle of Ard Corann, and the death of Lugaid son of Laegaire; and as some state, Domangart Mac Nissi of Réte retired into religion? in his 35th y
+     508 AU508.1     And the death of Lugaid son of Laegaire, and the battle of Ard Corran.
+     512 AU512.4     Or here, the death of Lugaid son of Laegaire, according to the Book of the Monks.
+
+### Grellach+Mael  spread=5  years=[544, 549]
+     544 AU544.1     Tuathal Maelgarb was killed, i.e. in Grellach Allta by Mael Mórda, and Diarmait son of Cerball succeeded him.
+     549 AU549.4     Or, in this year Tuathal Maelgarb, king of Temair, perished in Grellach Eilte, being killed by Mael Mór, descendant of Mac Í. The latter was killed im
+
+### Conlaed+Eochu  spread=5  years=[553, 558]
+     553 AU553.1     Death of Eochu son of Conlaed i.e. king of Ulaid, in whom the Uí Echach Ulad originate ; and death of Béc son of Deiche.
+     558 AU558.4     (Death of Eochu son of Conlaed, king of Ulaid.
+
+### Ailill+Congal  spread=5  years=[690, 695]
+     690 AU690.1     Congal son of Mael Dúin son of Aed Bennán, king of Iarmumu, and Duinechaid son of Orc Doith, and Ailill son of Dúngal of Éilne son of Scannal, were ki
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+
+### Aedán+Baetán  spread=4  years=[606, 610]
+     606 AU606.2     Death of Aedán son of Gabrán son of Domangart, king of Albu, and the slaying of the sons of Baetán i.e. son of Cairell.
+     610 AU610.2     Death of Sillán moccu Minn, abbot of Bennchor, and the death of Aedán, anchorite of Bennchor, and the death of Mael Umai son of Baetán.
+
+### Caemgein+Glenn  spread=4  years=[618, 622]
+     618 AU618.3     Caemgein of Glenn Dá Locha, and bishop Comgall, and bishop Eógan of Ráithe Síthe, rested.
+     622 AU622.5     Repose of Caemgein of Glenn dá Locha according to some.
+
+### Aidne+Guaire  spread=3  years=[663, 666]
+     663 AU663.1     Repose of Ségán moccu Cuinn, abbot of Bennchor, and death of Guaire of Aidne.
+     666 AU666.6     Guaire of Aidne died, according to another book.
+
+### Cernach+Diarmait  spread=3  years=[664, 667]
+     664 AU664.4     Death of Cernach son of Diarmait son of Aed Sláine son of Diarmait Cerrbél son of Conall of Cremthann; and an earthquake in Britain; and Comgán moccu 
+     667 AU667.3     Cernach sotal son of Diarmait rested.
+
+### Blamac+Chonaill  spread=3  years=[665, 668]
+     665 AU665.1     The great mortality. Diarmait son of Aed Sláine and Blamac and Mael Bresail, sons of Mael Dúin, died i.e. of the buide Chonaill .
+     668 AU668.5     Diarmait and Blamac, two kings of Ireland, and Feichíne of Fobar, and many others died, i.e. of the buide Chonaill , according to another book.
+
+### Chonaill+Fobar  spread=3  years=[665, 668]
+     665 AU665.3     The falling asleep—from the same pestilence i.e. the buide Chonaill —of Féichéne of Fobar, and Ailerán the learned, and Crónán son of Silne.
+     668 AU668.5     Diarmait and Blamac, two kings of Ireland, and Feichíne of Fobar, and many others died, i.e. of the buide Chonaill , according to another book.
+
+### Cuilinn+Lusca  spread=2  years=[496, 498]
+     496 AU496.2     Repose of Mac Cuilinn, bishop of Lusca.
+     498 AU498.4     Repose of Cuinnid son of Cathmug, i.e. Mac Cuilinn, bishop of Lusca.
+
+### Dáuíd+Macha  spread=2  years=[551, 553]
+     551 AU551.1     Repose of Dáuíd of Farannán, son of Guaire descendant of Farannán, bishop of Ard Macha and legate of all Ireland.
+     553 AU553.4     Or here, the repose of Dáuíd; bishop of Ard Macha and legate.
+
+### Cerball+Domangart  spread=2  years=[558, 560]
+     558 AU558.2     The Feast of Temair held by Diarmait son of Cerball; and the flight before Máelchá's son; and the death of Gabrán son of Domangart.
+     560 AU560.1     The Feast of Temair held by Diarmait son of Cerball; and the death of Gabrán son of Domangart.
+
+### Fergus+Fiachra  spread=2  years=[618, 620]
+     618 AU618.2     The slaying of Colgu son of Suibne and the death of Fiachra son of Conall and the slaying of Fergus son of Colmán Mór i.e. by Anfartach descendant of 
+     620 AU620.1     The slaying in Mag Slécht in the territory of Connacht of the kindred of Baetán i.e. of Ailill son of Baetán and of Mael Dúin son of Fergus son of Bae
+
+### Ling+Luachair  spread=2  years=[695, 697]
+     695 AU695.1     Fínnechta, king of Temair, and Bresal his son, were killed in Grellach Dollaig by Aed son of Dlúthach son of Ailill son of Aed Sláine, and by Congalac
+     697 AU697.9     Mo-Ling of Luachair fell asleep.
+

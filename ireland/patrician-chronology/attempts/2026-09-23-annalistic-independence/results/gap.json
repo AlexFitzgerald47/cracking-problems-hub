@@ -1,0 +1,551 @@
+{
+ "clusters": [
+  {
+   "witness": "AU",
+   "event": "Orosius/Prosper/Cyril flourish",
+   "years": [
+    435,
+    436
+   ],
+   "span": 1,
+   "maxgap": 1,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Bresal king of Laigin",
+   "years": [
+    435,
+    436
+   ],
+   "span": 1,
+   "maxgap": 1,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Birth of Brigit",
+   "years": [
+    439,
+    452,
+    456
+   ],
+   "span": 17,
+   "maxgap": 13,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Feast of Temair (Ailill Molt)",
+   "years": [
+    467,
+    469,
+    470
+   ],
+   "span": 3,
+   "maxgap": 2,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Duma Aichir",
+   "years": [
+    468,
+    474,
+    476
+   ],
+   "span": 8,
+   "maxgap": 6,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Melee of Bri Eile",
+   "years": [
+    473,
+    475,
+    478
+   ],
+   "span": 5,
+   "maxgap": 3,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Second battle of Granairet",
+   "years": [
+    493,
+    495,
+    497
+   ],
+   "span": 4,
+   "maxgap": 2,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Tailtiu",
+   "years": [
+    494,
+    496
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Mo-Chai of Naendruim",
+   "years": [
+    497,
+    499
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of bishop Ibar",
+   "years": [
+    500,
+    501,
+    504
+   ],
+   "span": 4,
+   "maxgap": 3,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Mac Nissi bishop of Condaire",
+   "years": [
+    507,
+    514
+   ],
+   "span": 7,
+   "maxgap": 7,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Ard Corann / death of Lugaid son of Laegaire",
+   "years": [
+    507,
+    508,
+    512
+   ],
+   "span": 5,
+   "maxgap": 4,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Birth of Comgall of Bennchor",
+   "years": [
+    516,
+    520
+   ],
+   "span": 4,
+   "maxgap": 4,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Dethna / fall of Ardgal",
+   "years": [
+    520,
+    523
+   ],
+   "span": 3,
+   "maxgap": 3,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Birth of Cainnech of Achad Bo",
+   "years": [
+    521,
+    527
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Falling asleep of Brigit",
+   "years": [
+    526,
+    528
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Eblenn",
+   "years": [
+    533,
+    535
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Drowning of Muirchertach Mac Erca",
+   "years": [
+    534,
+    536
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Falling asleep of Mochta",
+   "years": [
+    535,
+    537
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Luachair",
+   "years": [
+    535,
+    539
+   ],
+   "span": 4,
+   "maxgap": 4,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Comgall son of Domangart",
+   "years": [
+    538,
+    542,
+    545
+   ],
+   "span": 7,
+   "maxgap": 4,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Birth of Gregory",
+   "years": [
+    540,
+    545
+   ],
+   "span": 5,
+   "maxgap": 5,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Slicech",
+   "years": [
+    543,
+    547,
+    548
+   ],
+   "span": 5,
+   "maxgap": 4,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Tuathal Maelgarb",
+   "years": [
+    544,
+    549
+   ],
+   "span": 5,
+   "maxgap": 5,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of David bishop of Ard Macha",
+   "years": [
+    551,
+    553
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Gabair Liphi",
+   "years": [
+    565,
+    566,
+    573
+   ],
+   "span": 8,
+   "maxgap": 7,
+   "n_years": 3
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Brenainn of Biror",
+   "years": [
+    565,
+    572
+   ],
+   "span": 7,
+   "maxgap": 7,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Domnall son of Muirchertach Mac Erca",
+   "years": [
+    566,
+    573
+   ],
+   "span": 7,
+   "maxgap": 7,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Aenu abbot of Cluain Moccu Nois",
+   "years": [
+    570,
+    577
+   ],
+   "span": 7,
+   "maxgap": 7,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Brenainn of Cluain Ferta",
+   "years": [
+    577,
+    583
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Baetan son of Cairell",
+   "years": [
+    581,
+    587
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Mac Nisi abbot of Cluain Moccu Nois",
+   "years": [
+    585,
+    591
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Colum Cille",
+   "years": [
+    595,
+    601
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Uatu son of Aed",
+   "years": [
+    601,
+    602
+   ],
+   "span": 1,
+   "maxgap": 1,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Repose of Caemgein of Glenn da Locha",
+   "years": [
+    618,
+    622
+   ],
+   "span": 4,
+   "maxgap": 4,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Battle of Leitheirbe",
+   "years": [
+    630,
+    636
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "n_years": 2
+  },
+  {
+   "witness": "AU",
+   "event": "Death of Fursu",
+   "years": [
+    648,
+    649,
+    656,
+    661
+   ],
+   "span": 13,
+   "maxgap": 7,
+   "n_years": 4
+  },
+  {
+   "witness": "CS",
+   "event": "Repose of Brenainn of Biror",
+   "years": [
+    565,
+    573
+   ],
+   "span": 8,
+   "maxgap": 8,
+   "n_years": 2
+  },
+  {
+   "witness": "AI",
+   "event": "Repose of Gregory of Rome",
+   "years": [
+    597,
+    604
+   ],
+   "span": 7,
+   "maxgap": 7,
+   "n_years": 2
+  },
+  {
+   "witness": "AT",
+   "event": "Death of Cellach Cualann king of Laigin",
+   "years": [
+    690,
+    715
+   ],
+   "span": 25,
+   "maxgap": 25,
+   "n_years": 2
+  }
+ ],
+ "spans": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  3,
+  3,
+  4,
+  4,
+  4,
+  4,
+  4,
+  5,
+  5,
+  5,
+  5,
+  5,
+  6,
+  6,
+  6,
+  6,
+  6,
+  6,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  8,
+  8,
+  8,
+  13,
+  17,
+  25
+ ],
+ "maxgaps": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  3,
+  3,
+  3,
+  4,
+  4,
+  4,
+  4,
+  4,
+  4,
+  5,
+  5,
+  6,
+  6,
+  6,
+  6,
+  6,
+  6,
+  6,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  7,
+  8,
+  13,
+  25
+ ],
+ "patrick_AU_years": [
+  457,
+  461,
+  492,
+  493
+ ],
+ "patrick_span": 36,
+ "patrick_maxgap": 31,
+ "n_clusters": 40,
+ "clusters_span_ge_patrick": 0,
+ "clusters_maxgap_ge_patrick": 0
+}

@@ -1,0 +1,38 @@
+--- AT /Ruadhan|Ruadan|Lothra/ 400-780
+    583 AT583.3     Ruadhan of Lothra rested according to others.
+    655 AT655.4     The death of Aithchen of Tír dá Glas and of Cailcene from Lothra.
+    710 AT710.4     Colman son of Sechnusach abbot of Lothra dies.
+    720 AT720.2     Sinach of Inis Clothrann went to sleep.
+--- AT /Cum[ée]ne|Cuimine/ 400-780
+    660 AT660.0     K. iiii. The rest of Cuméne the tall according to some.
+    667 AT667.1     The mortality in which four abbots of Bennchar passed away i.e. Berach, Cuimine, Colum, Mac Aodha.
+--- CS /Furse|Fursa|Fursu/ 400-780
+    627 CS627.3     The vision of Fursa was manifested.
+    649 CS649.3     Repose of Furse in Peronne in France , according to some.
+--- AI /Uchbad/ 400-780
+    738 AI738.2     The battle of 'Uchbad ' according to others.
+--- CS /Br[eé]nainn of Biror|Brenainn.*Biror/ 400-780
+    565 CS565.3     Repose of Brénainn of Biror, as some say.
+    573 CS573.2     Brénainn of Biror died.
+--- AI /Gregory/ 400-780
+    538 AI538.1     Kl. Birth of Gregory. [AU. 540, 545].
+    597 AI597.2     Repose of Gregory of Rome according to others. [AU 592].
+    604 AI604.1     Kl. Repose of Gregory of Rome. [AU 606, 607].
+--- AT /Cellach Cualann|Ceallach Cualann/ 400-780
+    690 AT690.8     Ceallach Cualann son of Gerrthighe, king of Leinster, dies.
+    704 AT704.5     A war on Cloneath, where the winner was Ceallach Cualann, in which fell Badbchad of Meath son of Diarmaid. Fogartach ua Cernaig fl
+    715 AT715.1     Cellach Cualann king of Leinster dies, according to some.
+    727 AT727.6     The battle of Inis Breguinn in which fell Etersceóil son of Ceallach Cualann and Congal son of Bran. Faolán was the victor.
+--- CS /Colum Cille/ 585-615
+    589 CS589.2     Repose of Aed son of Brénainn, king of Tethba. It is he that granted Dermag to Colum Cille.
+    595 CS595.1     Repose of Colum Cille on the eve of Pentecost, the fifth of the Ides of June, in the 36th year of his pilgrimage, in the 76th year
+--- CS /Brigit|Brighit/ 505-540
+   (none)
+--- AT /Brigit|Brighit/ 505-540
+    524 AT524.1     The falling asleep of saint Brigit in the eighty-eight year of her age, or the mere seventieth as other say.
+    525 AT525.2     The death of Illann son of Dúnlang, king of Leinster. The fierce battle of Luachair above, downwards. Brigit was seen, no empty vi
+    525 AT525.3     The battle of Luachair gained by Cairbre over the Uí Néill, whereof was said: The fierce battle of Luachair above, downwards. Brig
+--- AI /Brigit|Brighit/ 505-540
+    524 AI524.1     Kl. Repose of Saint Brigit [AU 524, 526, 528].
+--- CS /Connad Cerr|Conaing Cerr|Connad/ 400-780
+    630 CS630.3     The death of Connad Cerr, as some say, in the first year of his reign, in the battle of Fid Eoin.
