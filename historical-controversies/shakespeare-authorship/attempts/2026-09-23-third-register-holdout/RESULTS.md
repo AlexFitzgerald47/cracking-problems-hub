@@ -167,7 +167,7 @@ would have been.
 author, so the attribution rests on a title-page claim rather than on later
 inference — is 216 chunks and gives micro 0.185. That looks like a collapse. It
 is not: macro is 0.506 against the full arm's 0.537, essentially unchanged, and
-the micro drop is composition. The subset is 45% of the chunks and is dominated
+the micro drop is composition. The subset is 216 of 496 chunks (44%) and is dominated
 by the two authors the correction misses (Crowne 48 of his 51 chunks survive the
 filter, Settle 50 of 100), while Behn keeps only 62 of 171. **Micro accuracy is a
 statement about the mix as much as about the method**; the per-author figure is
