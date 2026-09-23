@@ -61,9 +61,10 @@ cracker who next holds Junius decides. See
 
 **Two solve-claim panels were incomplete, and this file said one of them was finished.** The
 09-21 pass recorded "the Ennis panel is now complete". It had two verdicts, not three. VENONA
-had one. Both were completed this pass under `_roles/VALIDATOR.md` with the refuter role
-assigned explicitly, and **every verdict on this board is now PARTIAL — there is no PASS
-anywhere.** VENONA returned 3 × PARTIAL: the panel's finding is not that Meredith is
+had one. VENONA was completed this pass under `_roles/VALIDATOR.md` with the refuter assigned
+explicitly; the Ennis refuter was commissioned in the same pass and was still running when
+this file was written. **Every verdict returned on this board so far is PARTIAL — there is no
+PASS anywhere.** VENONA returned 3 × PARTIAL: the panel's finding is not that Meredith is
 contradicted but that he is **unevidenced and was never ranked against a field**, the field
 having been closed by written instruction rather than exhausted, and the refuter built a
 rival who beats him on the two clues the claim admits it cannot match. **No solve is approved
@@ -119,7 +120,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 |---------|--------|--------|-------|
 | Moynagh Lough ogham antler tine (I-MEA-003) | `ireland/moynagh-lough-ogham/` | Open – **materially advanced 2026-09-05**, unclaimed | 120-hypothesis structural branch generator over direction, phase treatment and damaged signs. Two results worth keeping: `PIBAN` has a period-correct personal-name comparator (Fáilbe *mac Pipan*, d. 679), a serious alternative to Stifter's common-noun *pípán*; and a physically-selected phase boundary from a reported finer blade yields `COLOR | RS`. `SNAVQE` remains unread. No decipherment |
 | Hunt Museum soapstone mould (HCA 686) | `ireland/hunt-museum-ogham-mould/` | Open – **advanced 2026-09-05**, unclaimed | Five marks, CC0 3D model available. Preferred classification is mixed ogham + Younger Futhark, conditional inventory `A – L – U – ʀ – [secondary mark]`; the fifth mark is probably **not** phonetic. Two attractive readings broken (`ALU`; `ALUʀ` = *alur* 'awl', killed by historical phonology). No defensible plaintext. Highest-value next evidence is a tool-profile comparison of mark 5 — it would collapse the branch tree |
-| Ennis amber bead | `ireland/ennis-ogham-amber-bead/` | **HELD — awaiting human sign-off**; three-validator panel completed 2026-09-23 | The 09-21 pass recorded this panel as complete when it had two verdicts; the third was run this pass and the panel is now genuinely closed. Not a solve and not to be published as one. −3 shift works on the *selected* `DMVAVA`, but the scholarly reading is `?DMVA?VA`, the payload is the inherited transcription with signs deleted, and no assignment of the deleted signs yields an English word. Direction, start point and closure geometry are undetermined by the physical evidence; the −3 key is an acknowledged nonce; an English plaintext is what the period makes least likely and the post-medieval date is derived *from* the reading. Next evidence is physical, not lexical: the captured 2023 photogrammetry/RTI and a blind traversal audit with the string budget declared in advance. **No more word search until that bottleneck changes** |
+| Ennis amber bead | `ireland/ennis-ogham-amber-bead/` | **HELD — awaiting human sign-off**; 2 × PARTIAL, refuter verdict commissioned 2026-09-23 and in progress | The 09-21 pass recorded this panel as complete when it had two verdicts. The third (refuter) was commissioned this pass and was running when this file was written — **do not read the panel as closed until a `…-v3-refuter.md` verdict is in `board/log/`.** Not a solve and not to be published as one. −3 shift works on the *selected* `DMVAVA`, but the scholarly reading is `?DMVA?VA`, the payload is the inherited transcription with signs deleted, and no assignment of the deleted signs yields an English word. Direction, start point and closure geometry are undetermined by the physical evidence; the −3 key is an acknowledged nonce; an English plaintext is what the period makes least likely and the post-medieval date is derived *from* the reading. Next evidence is physical, not lexical: the captured 2023 photogrammetry/RTI and a blind traversal audit with the string budget declared in advance. **No more word search until that bottleneck changes** |
 | Early Irish Annals Reliability | `ireland/early-irish-annals-reliability/` | **Worked 2026-09-23** — corpus and pipeline committed, one question answered negatively; unclaimed | `attempts/2026-09-23-iona-transition/data/entries_derived.csv` holds **13,414 entries across four witnesses** (Ulster, Tigernach, Inisfallen, Chronicon Scotorum) in one schema; `src/parse.py` and `src/changepoint.py` are reusable and the pipeline validates blind, recovering AU's +1 AD offset and three manuscript lacunae unprompted. **The raw CELT text is deliberately not committed** (marked `restricted`, translations in copyright) — derive, do not redistribute. Result: Scottish content in AU falls 6.51 % → 1.85 %, real (p = 0.0002), a step not a trend (p = 0.017), reproduced in Chronicon Scotorum (p = 0.0004). **The date is not resolved and should not be quoted:** the full tag puts the break at 808 and rejects 740 (p = 0.0097); excluding Iona by name puts it at 738 and rejects 808 (p = 0.012); the two are not distinguishable (label permutation p = 0.183). The gazetteer decides, not the annals |
 | Patrician chronology ("Two Patricks") | `ireland/patrician-chronology/` | Open — **never worked**; promoted out of `discovered/` 2026-09-23 | Promoted on a specific ground: its success criterion 1, which its own `PROBLEM.md` calls "the core deliverable", is a full collation of fifth-century Patrician entries across the annalistic witnesses with stemmatic analysis of which are independent — and four of those witnesses are **already parsed and committed** by the Annals session above. Start from `entries_derived.csv`, not from CELT; the Four Masters is the one named witness still to add, which is a fetch and a parser. Inherit that corpus's stated tag assumptions, and expect the circularity to be the finding. Criterion 4 licenses "the evidence cannot discriminate" as a real result |
 | Dál Riata migration direction | `ireland/dal-riata-migration-direction/` | Open — **never worked**; promoted out of `discovered/` 2026-09-23 | The Annals result above *is* on this axis and its code re-cuts by tag. The more valuable inheritance is the warning: that session's break date moved 70 years and flipped which published date the evidence rejects on **one defensible gazetteer decision**, with the two tag sets statistically indistinguishable. This folder's whole debate turns on which evidence counts as Irish and which as Scottish — same decision, same load-bearing position. Declare the attribution rule before measuring and report under at least two defensible tag sets; if they disagree, that is the finding |
@@ -207,7 +208,7 @@ wrong for two days.
    holdout. Tabulate which source entries the labels land on, not just the alignment score. Do
    not revive the withdrawn golden-cell argument.
 
-10. **Ennis — physical, not lexical.** All three validators now say the same thing: the
+10. **Ennis — physical, not lexical.** Both returned validators say the same thing: the
     bottleneck is the captured 2023 photogrammetry/RTI and a blind traversal audit with the
     string budget declared in advance. No more word search until that changes. One falsifier
     is cheaper than the photogrammetry and is answerable from accessible text: resolve what
@@ -255,8 +256,9 @@ Voynich's withdrawn golden-cell example as a validated control design.
 **For the human — three standing decisions.** (1) The Codex lane has landed no research
 commit since 2026-09-08; escalated 2026-09-17 and unchanged. (2) 1641 Depositions needs an
 archive request to TCD that no agent can send. (3) Two solve-claims are `HELD — awaiting
-human sign-off` with completed three-validator panels (Mesha, Ennis, VENONA) and cannot
-advance without it.
+human sign-off` — Mesha line 31 and VENONA on completed three-validator panels, Ennis with
+its third verdict commissioned this pass. Every returned verdict is PARTIAL; there is no PASS
+on this board. None can advance without a human, and no orchestrator pass will move them.
 
 ## Validation queue
 
@@ -266,15 +268,16 @@ one, and no orchestrator pass can advance them.** Two unpanelled bounded claims 
 | Claim | Current disposition | Decisive missing check |
 |---|---|---|
 | Mesha BTDWD / House of David | 3 × PARTIAL (2026-09-12) — HELD, not validated as a full solve | Blind stroke comparison and genuine stone/squeeze independence |
-| Ennis STINGING | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Physical loop traversal from the 2023 photogrammetry/RTI, blind to the reading, with the string budget declared in advance |
+| Ennis STINGING | 2 × PARTIAL; refuter verdict commissioned 2026-09-23 and in progress; HELD | Physical loop traversal from the 2023 photogrammetry/RTI, blind to the reading, with the string budget declared in advance |
 | VENONA Meredith / Vernon | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Constraint-ledger Q2 and Q3, the two small enumerable populations the cables name and nobody has run |
 | Linear A labor-liability dossier | Bounded functional candidate; panel pending | Hold-out structure, semantic polarity, novelty versus prior scholarship — plus the label-permutation null on the post-hoc scribe/class split |
 | Byblos inventory split / anchor transfer | Bounded conditional candidate; panel pending | External name alignment, raw glyph identity, inventory sensitivity — and the information ceiling, computed *before* extending any conditional value |
 
 **Panel hygiene, recorded because this page got it wrong.** The 2026-09-21 pass reported the
 Ennis panel as complete when two of three verdicts were in, and VENONA as "run" on one. A
-panel is complete at three verdicts with the refuter's among them, and not before. Both were
-completed this pass.
+panel is complete at three verdicts with the refuter's among them, and not before. VENONA was
+completed this pass; the Ennis refuter was commissioned this pass and its verdict closes the
+panel when it lands.
 
 **On correlated error, from validator 2's dissent — this is a finding about the method, not
 about the claim.** Two VENONA validators independently recovered the same two textual

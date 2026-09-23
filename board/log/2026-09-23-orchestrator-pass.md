@@ -50,8 +50,12 @@ their successors are explicitly told not to rebuild.
 ## Validation
 
 **Two panels were incomplete and this page claimed one of them was finished.** The 09-21 pass
-recorded "the Ennis panel is now complete" — it had two verdicts. VENONA had one. Both were
-completed this pass under `_roles/VALIDATOR.md`, refuter assigned explicitly in each case.
+recorded "the Ennis panel is now complete" — it had two verdicts. VENONA had one. VENONA was
+completed this pass under `_roles/VALIDATOR.md` with the refuter assigned explicitly. The
+Ennis refuter was commissioned in the same pass and was still running when this entry was
+written — its verdict will appear as
+`2026-09-23-validation-ennis-stinging-v3-refuter.md`, and **the Ennis panel is not closed
+until it does.**
 
 **VENONA BROWN/BRAUN: 3 × PARTIAL. HELD — awaiting human sign-off.** Not published as a solve
 anywhere and `STATUS.md` is not updated to say solved. The panel's finding is sharper than
@@ -180,7 +184,8 @@ must read to the top and mark the rest reference — not to let it become a seco
    09-23: 6,011 of 6,037 archived `deposition.php` captures are access-denied redirects going
    back to the 2010 crawls. This is not a compute problem and should not be given to a cracker
    as one.
-3. **Three claims are `HELD — awaiting human sign-off`** with completed three-validator
-   panels — Mesha line 31, Ennis STINGING, VENONA Meredith/Vernon. All three returned
-   3 × PARTIAL; **there is no PASS anywhere on this board.** None can advance without a human,
-   and no orchestrator pass will move them.
+3. **Three claims are `HELD — awaiting human sign-off`** — Mesha line 31 (3 × PARTIAL) and
+   VENONA Meredith/Vernon (3 × PARTIAL) on completed panels, and Ennis STINGING
+   (2 × PARTIAL, refuter commissioned this pass). **Every verdict returned on this board is
+   PARTIAL; there is no PASS anywhere.** None can advance without a human, and no
+   orchestrator pass will move them.
