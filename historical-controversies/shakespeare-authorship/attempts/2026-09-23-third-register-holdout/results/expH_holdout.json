@@ -1,0 +1,594 @@
+{
+ "holdout": {
+  "n_chunks": 496,
+  "n_authors": 11,
+  "present": [
+   "Behn, Aphra",
+   "Crowne, John",
+   "D'Urfey, Thomas",
+   "Dryden, John",
+   "Ford, John",
+   "Glapthorne, Henry",
+   "Otway, Thomas",
+   "Peele, George",
+   "Settle, Elkanah",
+   "Shadwell, Thomas",
+   "Shirley, James"
+  ],
+  "chance": 0.037037037037037035,
+  "per_author_n": {
+   "Behn, Aphra": 171,
+   "Crowne, John": 51,
+   "D'Urfey, Thomas": 66,
+   "Dryden, John": 68,
+   "Ford, John": 9,
+   "Glapthorne, Henry": 7,
+   "Otway, Thomas": 4,
+   "Peele, George": 3,
+   "Settle, Elkanah": 100,
+   "Shadwell, Thomas": 4,
+   "Shirley, James": 13
+  },
+  "uncorrected": {
+   "micro": 0.13306451612903225,
+   "macro": 0.24687025049254155,
+   "max_share": 0.33064516129032256,
+   "top_absorber": "Banks, John",
+   "shares": {
+    "Banks, John": 0.33064516129032256,
+    "Dryden, John": 0.2903225806451613,
+    "Ravenscroft, Edward": 0.125,
+    "Glapthorne, Henry": 0.11088709677419355,
+    "Lee, Nathaniel": 0.04435483870967742,
+    "Settle, Elkanah": 0.03225806451612903
+   },
+   "per_author": {
+    "Behn, Aphra": 0.05263157894736842,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.6029411764705882,
+    "Ford, John": 0.0,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.06,
+    "Shadwell, Thomas": 0.0,
+    "Shirley, James": 0.0
+   },
+   "null": {
+    "mean": 0.04261290322580645,
+    "p95": 0.1310483870967742,
+    "p": 0.04095904095904096,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend only": {
+   "micro": 0.11693548387096774,
+   "macro": 0.24617224880382774,
+   "max_share": 0.38911290322580644,
+   "top_absorber": "Banks, John",
+   "shares": {
+    "Banks, John": 0.38911290322580644,
+    "Dryden, John": 0.1774193548387097,
+    "Chapman, George": 0.09879032258064516,
+    "Ravenscroft, Edward": 0.09879032258064516,
+    "Massinger, Philip": 0.07459677419354839,
+    "Lee, Nathaniel": 0.04032258064516129
+   },
+   "per_author": {
+    "Behn, Aphra": 0.04678362573099415,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.5,
+    "Ford, John": 0.1111111111111111,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.05,
+    "Shadwell, Thomas": 0.0,
+    "Shirley, James": 0.0
+   },
+   "null": {
+    "mean": 0.025524193548387097,
+    "p95": 0.0846774193548387,
+    "p": 0.000999000999000999,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "centre only": {
+   "micro": 0.10887096774193548,
+   "macro": 0.29867633226766355,
+   "max_share": 0.2923387096774194,
+   "top_absorber": "Brome, Richard",
+   "shares": {
+    "Brome, Richard": 0.2923387096774194,
+    "Massinger, Philip": 0.2318548387096774,
+    "Middleton, Thomas": 0.12298387096774194,
+    "Ford, John": 0.06854838709677419,
+    "Shirley, James": 0.05443548387096774,
+    "Behn, Aphra": 0.05040322580645161
+   },
+   "per_author": {
+    "Behn, Aphra": 0.14619883040935672,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.029411764705882353,
+    "Ford, John": 0.4444444444444444,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.05,
+    "Shadwell, Thomas": 0.0,
+    "Shirley, James": 0.6153846153846154
+   },
+   "null": {
+    "mean": 0.02453629032258064,
+    "p95": 0.06058467741935475,
+    "p": 0.000999000999000999,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre": {
+   "micro": 0.3649193548387097,
+   "macro": 0.5371562558840915,
+   "max_share": 0.17540322580645162,
+   "top_absorber": "D'Urfey, Thomas",
+   "shares": {
+    "D'Urfey, Thomas": 0.17540322580645162,
+    "Behn, Aphra": 0.17137096774193547,
+    "Ravenscroft, Edward": 0.1310483870967742,
+    "Shadwell, Thomas": 0.08266129032258064,
+    "Dryden, John": 0.07459677419354839,
+    "Otway, Thomas": 0.07459677419354839
+   },
+   "per_author": {
+    "Behn, Aphra": 0.49122807017543857,
+    "Crowne, John": 0.0196078431372549,
+    "D'Urfey, Thomas": 0.5454545454545454,
+    "Dryden, John": 0.35294117647058826,
+    "Ford, John": 0.3333333333333333,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.5,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.07,
+    "Shadwell, Thomas": 0.75,
+    "Shirley, James": 0.8461538461538461
+   },
+   "null": {
+    "mean": 0.060941532258064514,
+    "p95": 0.19768145161290313,
+    "p": 0.000999000999000999,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + global centre": {
+   "micro": 0.3467741935483871,
+   "macro": 0.5336224659725926,
+   "max_share": 0.1774193548387097,
+   "top_absorber": "D'Urfey, Thomas",
+   "shares": {
+    "D'Urfey, Thomas": 0.1774193548387097,
+    "Behn, Aphra": 0.15120967741935484,
+    "Ravenscroft, Edward": 0.1350806451612903,
+    "Dryden, John": 0.08669354838709678,
+    "Shadwell, Thomas": 0.08669354838709678,
+    "Otway, Thomas": 0.07661290322580645
+   },
+   "per_author": {
+    "Behn, Aphra": 0.4327485380116959,
+    "Crowne, John": 0.0392156862745098,
+    "D'Urfey, Thomas": 0.5454545454545454,
+    "Dryden, John": 0.35294117647058826,
+    "Ford, John": 0.3333333333333333,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.5,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.07,
+    "Shadwell, Thomas": 0.75,
+    "Shirley, James": 0.8461538461538461
+   },
+   "null": {
+    "mean": 0.061284274193548385,
+    "p95": 0.18346774193548387,
+    "p": 0.000999000999000999,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre (test dated at arm mean year)": {
+   "micro": 0.3548387096774194,
+   "macro": 0.48137045460715605,
+   "arm_mean_year": 1679.8729838709678
+  },
+  "detrend + centre (test years permuted)": {
+   "micro": 0.32439516129032253,
+   "macro": 0.4457915179388582,
+   "micro_sd": 0.013064453902679359,
+   "n_draws": 20,
+   "micro_min": 0.2963709677419355,
+   "micro_max": 0.3467741935483871
+  }
+ },
+ "holdout|named_on_title": {
+  "n_chunks": 216,
+  "n_authors": 9,
+  "present": [
+   "Behn, Aphra",
+   "Crowne, John",
+   "D'Urfey, Thomas",
+   "Dryden, John",
+   "Glapthorne, Henry",
+   "Otway, Thomas",
+   "Peele, George",
+   "Settle, Elkanah",
+   "Shirley, James"
+  ],
+  "chance": 0.037037037037037035,
+  "per_author_n": {
+   "Behn, Aphra": 62,
+   "Crowne, John": 48,
+   "D'Urfey, Thomas": 20,
+   "Dryden, John": 19,
+   "Glapthorne, Henry": 2,
+   "Otway, Thomas": 4,
+   "Peele, George": 3,
+   "Settle, Elkanah": 50,
+   "Shirley, James": 8
+  },
+  "uncorrected": {
+   "micro": 0.07407407407407407,
+   "macro": 0.2788681380871534,
+   "max_share": 0.4675925925925926,
+   "top_absorber": "Banks, John",
+   "shares": {
+    "Banks, John": 0.4675925925925926,
+    "Dryden, John": 0.23148148148148148,
+    "Glapthorne, Henry": 0.1388888888888889,
+    "Ravenscroft, Edward": 0.05092592592592592,
+    "Settle, Elkanah": 0.046296296296296294,
+    "Lee, Nathaniel": 0.018518518518518517
+   },
+   "per_author": {
+    "Behn, Aphra": 0.016129032258064516,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.47368421052631576,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.02,
+    "Shirley, James": 0.0
+   },
+   "null": {
+    "mean": 0.050060185185185194,
+    "p95": 0.12962962962962962,
+    "p": 0.2897102897102897,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend only": {
+   "micro": 0.06481481481481481,
+   "macro": 0.2671722316544048,
+   "max_share": 0.5509259259259259,
+   "top_absorber": "Banks, John",
+   "shares": {
+    "Banks, John": 0.5509259259259259,
+    "Dryden, John": 0.125,
+    "Massinger, Philip": 0.0787037037037037,
+    "Chapman, George": 0.07407407407407407,
+    "Glapthorne, Henry": 0.041666666666666664,
+    "Ravenscroft, Edward": 0.041666666666666664
+   },
+   "per_author": {
+    "Behn, Aphra": 0.016129032258064516,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.3684210526315789,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.0,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.02,
+    "Shirley, James": 0.0
+   },
+   "null": {
+    "mean": 0.02425,
+    "p95": 0.06018518518518518,
+    "p": 0.04695304695304695,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "centre only": {
+   "micro": 0.08333333333333333,
+   "macro": 0.3723354084135069,
+   "max_share": 0.28703703703703703,
+   "top_absorber": "Massinger, Philip",
+   "shares": {
+    "Massinger, Philip": 0.28703703703703703,
+    "Brome, Richard": 0.2777777777777778,
+    "Middleton, Thomas": 0.125,
+    "Shirley, James": 0.07407407407407407,
+    "Glapthorne, Henry": 0.06018518518518518,
+    "Ford, John": 0.05092592592592592
+   },
+   "per_author": {
+    "Behn, Aphra": 0.04838709677419355,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.0,
+    "Dryden, John": 0.05263157894736842,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.25,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.0,
+    "Shirley, James": 1.0
+   },
+   "null": {
+    "mean": 0.02369444444444444,
+    "p95": 0.05555555555555555,
+    "p": 0.001998001998001998,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre": {
+   "micro": 0.18518518518518517,
+   "macro": 0.5063006979815129,
+   "max_share": 0.2175925925925926,
+   "top_absorber": "D'Urfey, Thomas",
+   "shares": {
+    "D'Urfey, Thomas": 0.2175925925925926,
+    "Ravenscroft, Edward": 0.10648148148148148,
+    "Otway, Thomas": 0.09722222222222222,
+    "Massinger, Philip": 0.09259259259259259,
+    "Shadwell, Thomas": 0.0787037037037037,
+    "Behn, Aphra": 0.06944444444444445
+   },
+   "per_author": {
+    "Behn, Aphra": 0.1935483870967742,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.35,
+    "Dryden, John": 0.2631578947368421,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.75,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.0,
+    "Shirley, James": 1.0
+   },
+   "null": {
+    "mean": 0.05468055555555556,
+    "p95": 0.2037037037037037,
+    "p": 0.07392607392607392,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + global centre": {
+   "micro": 0.19907407407407407,
+   "macro": 0.5116770420675345,
+   "max_share": 0.2175925925925926,
+   "top_absorber": "D'Urfey, Thomas",
+   "shares": {
+    "D'Urfey, Thomas": 0.2175925925925926,
+    "Ravenscroft, Edward": 0.1111111111111111,
+    "Otway, Thomas": 0.10648148148148148,
+    "Behn, Aphra": 0.09259259259259259,
+    "Shadwell, Thomas": 0.0787037037037037,
+    "Chapman, George": 0.07407407407407407
+   },
+   "per_author": {
+    "Behn, Aphra": 0.24193548387096775,
+    "Crowne, John": 0.0,
+    "D'Urfey, Thomas": 0.35,
+    "Dryden, John": 0.2631578947368421,
+    "Glapthorne, Henry": 1.0,
+    "Otway, Thomas": 0.75,
+    "Peele, George": 1.0,
+    "Settle, Elkanah": 0.0,
+    "Shirley, James": 1.0
+   },
+   "null": {
+    "mean": 0.058759259259259254,
+    "p95": 0.20833333333333334,
+    "p": 0.06693306693306693,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre (test dated at arm mean year)": {
+   "micro": 0.23148148148148148,
+   "macro": 0.4387489781802176,
+   "arm_mean_year": 1677.148148148148
+  },
+  "detrend + centre (test years permuted)": {
+   "micro": 0.18194444444444444,
+   "macro": 0.3536596082500157,
+   "micro_sd": 0.012602460730385371,
+   "n_draws": 20,
+   "micro_min": 0.16203703703703703,
+   "micro_max": 0.20833333333333334
+  }
+ },
+ "original_arm_943": {
+  "n_chunks": 943,
+  "n_authors": 8,
+  "present": [
+   "Chapman, George",
+   "Dekker, Thomas",
+   "Greene, Robert",
+   "Heywood, Thomas",
+   "Jonson, Ben",
+   "Lyly, John",
+   "Marston, John",
+   "Middleton, Thomas"
+  ],
+  "chance": 0.037037037037037035,
+  "per_author_n": {
+   "Chapman, George": 12,
+   "Dekker, Thomas": 139,
+   "Greene, Robert": 242,
+   "Heywood, Thomas": 430,
+   "Jonson, Ben": 8,
+   "Lyly, John": 77,
+   "Marston, John": 9,
+   "Middleton, Thomas": 26
+  },
+  "uncorrected": {
+   "micro": 0.14103923647932132,
+   "macro": 0.344618935353351,
+   "max_share": 0.41039236479321317,
+   "top_absorber": "Lyly, John",
+   "shares": {
+    "Lyly, John": 0.41039236479321317,
+    "Peele, George": 0.18663838812301167,
+    "Glapthorne, Henry": 0.1102863202545069,
+    "Chapman, George": 0.10922587486744433,
+    "Banks, John": 0.03711558854718982,
+    "Greene, Robert": 0.033934252386002124
+   },
+   "per_author": {
+    "Chapman, George": 0.5,
+    "Dekker, Thomas": 0.19424460431654678,
+    "Greene, Robert": 0.0371900826446281,
+    "Heywood, Thomas": 0.011627906976744186,
+    "Jonson, Ben": 0.125,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   },
+   "null": {
+    "mean": 0.07452386002120891,
+    "p95": 0.22269353128313893,
+    "p": 0.11688311688311688,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend only": {
+   "micro": 0.16118769883351008,
+   "macro": 0.3433280494574166,
+   "max_share": 0.3149522799575822,
+   "top_absorber": "Lyly, John",
+   "shares": {
+    "Lyly, John": 0.3149522799575822,
+    "Peele, George": 0.11346765641569459,
+    "Banks, John": 0.11240721102863202,
+    "Chapman, George": 0.10816542948038176,
+    "Massinger, Philip": 0.10286320254506894,
+    "Glapthorne, Henry": 0.09013785790031813
+   },
+   "per_author": {
+    "Chapman, George": 0.5,
+    "Dekker, Thomas": 0.2949640287769784,
+    "Greene, Robert": 0.0371900826446281,
+    "Heywood, Thomas": 0.02558139534883721,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": 1.0,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.0
+   },
+   "null": {
+    "mean": 0.06414952279957582,
+    "p95": 0.23123011664899254,
+    "p": 0.10789210789210789,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "centre only": {
+   "micro": 0.06680805938494168,
+   "macro": 0.07979555625531867,
+   "max_share": 0.1855779427359491,
+   "top_absorber": "Middleton, Thomas",
+   "shares": {
+    "Middleton, Thomas": 0.1855779427359491,
+    "Massinger, Philip": 0.17179215270413573,
+    "Brome, Richard": 0.11983032873807,
+    "Ford, John": 0.11664899257688228,
+    "Dryden, John": 0.10498409331919406,
+    "Ravenscroft, Edward": 0.07104984093319194
+   },
+   "per_author": {
+    "Chapman, George": 0.0,
+    "Dekker, Thomas": 0.2517985611510791,
+    "Greene, Robert": 0.0,
+    "Heywood, Thomas": 0.044186046511627906,
+    "Jonson, Ben": 0.0,
+    "Lyly, John": 0.03896103896103896,
+    "Marston, John": 0.1111111111111111,
+    "Middleton, Thomas": 0.19230769230769232
+   },
+   "null": {
+    "mean": 0.032607635206786854,
+    "p95": 0.08589607635206786,
+    "p": 0.17082917082917082,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre": {
+   "micro": 0.3584305408271474,
+   "macro": 0.48780193754465395,
+   "max_share": 0.1792152704135737,
+   "top_absorber": "Heywood, Thomas",
+   "shares": {
+    "Heywood, Thomas": 0.1792152704135737,
+    "Dekker, Thomas": 0.11452810180275716,
+    "Lyly, John": 0.09544008483563096,
+    "Chapman, George": 0.088016967126193,
+    "Glapthorne, Henry": 0.07317073170731707,
+    "Otway, Thomas": 0.06680805938494168
+   },
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7122302158273381,
+    "Greene, Robert": 0.03305785123966942,
+    "Heywood, Thomas": 0.37209302325581395,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.6493506493506493,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.038461538461538464
+   },
+   "null": {
+    "mean": 0.07683669141039234,
+    "p95": 0.22799575821845175,
+    "p": 0.001998001998001998,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + global centre": {
+   "micro": 0.3711558854718982,
+   "macro": 0.49189889253879815,
+   "max_share": 0.19088016967126192,
+   "top_absorber": "Heywood, Thomas",
+   "shares": {
+    "Heywood, Thomas": 0.19088016967126192,
+    "Dekker, Thomas": 0.11558854718981973,
+    "Lyly, John": 0.09544008483563096,
+    "Chapman, George": 0.08907741251325557,
+    "Otway, Thomas": 0.06680805938494168,
+    "Middleton, Thomas": 0.061505832449628844
+   },
+   "per_author": {
+    "Chapman, George": 0.5833333333333334,
+    "Dekker, Thomas": 0.7194244604316546,
+    "Greene, Robert": 0.03305785123966942,
+    "Heywood, Thomas": 0.39767441860465114,
+    "Jonson, Ben": 0.625,
+    "Lyly, John": 0.6493506493506493,
+    "Marston, John": 0.8888888888888888,
+    "Middleton, Thomas": 0.038461538461538464
+   },
+   "null": {
+    "mean": 0.0782693531283139,
+    "p95": 0.23966065747614,
+    "p": 0.001998001998001998,
+    "n_distinct_perm_floor": 0.001
+   }
+  },
+  "detrend + centre (test dated at arm mean year)": {
+   "micro": 0.3616118769883351,
+   "macro": 0.4487351031011768,
+   "arm_mean_year": 1614.5164369034994
+  },
+  "detrend + centre (test years permuted)": {
+   "micro": 0.2741251325556734,
+   "macro": 0.37320221209414584,
+   "micro_sd": 0.006278159115849703,
+   "n_draws": 20,
+   "micro_min": 0.2608695652173913,
+   "micro_max": 0.2831389183457052
+  }
+ }
+}

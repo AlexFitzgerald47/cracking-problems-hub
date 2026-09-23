@@ -53,12 +53,18 @@ def treatments(X, years, dmask, idx, works, rng_years=None):
         'detrend only': (Zdet, Zdet[idx]),
         'centre only': (Zraw, low_centre(Zraw, idx, works)),
         'detrend + centre': (Zdet, low_centre(Zdet, idx, works)),
+        # Global centring uses the mean of the WHOLE questioned arm, so unlike
+        # leave-one-work-out it contains no term in the test chunk's own author.
+        # If the two agree, the LOWO gain is not the own-author amplification
+        # that the 2026-09-21 session measured for the leave-one-author-out
+        # variant, reappearing at work level.
+        'detrend + global centre': (Zdet, Zdet[idx] - Zdet[idx].mean(0)),
     }
 
 
-def run(docs_train, test, panel, rng, tag_prefix='', subset=None):
+def run(docs_train, test, panel, rng, vocab_docs=None, subset=None):
     allv = docs_train + test
-    vocab = D.vocabulary(docs_train)
+    vocab = D.vocabulary(vocab_docs if vocab_docs is not None else docs_train)
     X = D.vectors(allv, vocab)
     years = np.array([d['yr'] for d in allv], float)
     au = np.array([d['author'] for d in allv])
@@ -86,9 +92,10 @@ def run(docs_train, test, panel, rng, tag_prefix='', subset=None):
                'shares': {a: n / len(pred) for a, n in sh.most_common(6)},
                'per_author': s['per_author']}
         nl = []
-        for _ in range(N_NULL):
+        nrng = random.Random(SEED)           # per-treatment seed: the printed
+        for _ in range(N_NULL):              # p-values do not depend on run order
             p = present[:]
-            rng.shuffle(p)
+            nrng.shuffle(p)
             mp = dict(zip(present, p))
             fake = np.array([mp[owner[w]] for w in wk[idx]])
             nl.append(score(pred, fake, present)['micro'])
@@ -97,49 +104,108 @@ def run(docs_train, test, panel, rng, tag_prefix='', subset=None):
                        'p': float((np.sum(nl >= rec['micro']) + 1) / (len(nl) + 1)),
                        'n_distinct_perm_floor': 1.0 / max(1, len(nl))}
         out[tag] = rec
-    # permuted-year control on the published correction
-    yrs = years.copy()
-    perm = yrs[~dmask].copy()
-    rng.shuffle(perm)
-    yrs[~dmask] = perm
-    dperm = yrs.copy()
-    dperm[dmask] = years[dmask]
-    trp = treatments(X, years, dmask, idx, wk[idx], rng_years=dperm)
-    Z, T = trp['detrend + centre']
+    # How much date resolution does the detrend actually need? Give every test
+    # chunk the arm's MEAN year instead of its own: the arm's period offset from
+    # the drama training set is kept, all within-arm date variation is destroyed.
+    ym = years.copy()
+    ym[idx] = years[idx].mean()
+    trm = treatments(X, years, dmask, idx, wk[idx], rng_years=ym)
+    Z, T = trm['detrend + centre']
     cent = np.stack([Z[dmask & (au == a)].mean(0) for a in panel])
     s = score(attribute(T, cent, panel), au[idx], present)
-    out['detrend + centre (test years permuted)'] = {'micro': s['micro'], 'macro': s['macro']}
+    out['detrend + centre (test dated at arm mean year)'] = {
+        'micro': s['micro'], 'macro': s['macro'],
+        'arm_mean_year': float(years[idx].mean())}
+
+    # Permuted-year control on the published correction, averaged over 20 draws:
+    # a single permutation of 496 years is noisy enough to move the number by
+    # 0.02 between runs, which is the size of effect being discussed.
+    mics, macs = [], []
+    prng = random.Random(SEED + 1)
+    for _ in range(20):
+        yrs = years.copy()
+        perm = yrs[idx].copy()
+        prng.shuffle(perm)
+        yrs[idx] = perm
+        trp = treatments(X, years, dmask, idx, wk[idx], rng_years=yrs)
+        Z, T = trp['detrend + centre']
+        cent = np.stack([Z[dmask & (au == a)].mean(0) for a in panel])
+        s = score(attribute(T, cent, panel), au[idx], present)
+        mics.append(s['micro']); macs.append(s['macro'])
+    out['detrend + centre (test years permuted)'] = {
+        'micro': float(np.mean(mics)), 'macro': float(np.mean(macs)),
+        'micro_sd': float(np.std(mics)), 'n_draws': len(mics),
+        'micro_min': float(np.min(mics)), 'micro_max': float(np.max(mics))}
     return out
+
+
+def original_arm(docs, docs_full, panel, rng):
+    """The same four-way decomposition on the 943-chunk arm the correction was
+    developed on. expG reported only three rows and never separated the two
+    halves of the correction, so whether they are additive there is unknown."""
+    test = [d for d in docs if d['register'] == 'nondrama']
+    train = [d for d in docs if d['register'] == 'drama']
+    for d in test:
+        d = d
+    allv = train + [dict(d, register='nondrama_holdout') for d in test]
+    return run(allv[:len(train)], allv[len(train):], panel, rng, vocab_docs=docs_full)
 
 
 def main():
     rng = random.Random(SEED)
-    docs_full, _ = C.load()
+    docs_full, _ = C.load()                 # vocabulary set, exactly as expG
+    docs, dropped = C.load(require_year=True)   # analysis set, exactly as expG
+    print('training chunks %d (%d dropped for want of a year)' % (len(docs), dropped))
     test = load_holdout()
     panel = sorted(set(d['author'] for d in docs_full if d['register'] == 'drama'))
     os.makedirs(RESULTS, exist_ok=True)
     out = {}
     for name, sub in (('holdout', None), ('holdout|named_on_title', 'named_on_title')):
-        r = run(docs_full, test, panel, rng, subset=sub)
+        r = run(docs, test, panel, rng, vocab_docs=docs_full, subset=sub)
         out[name] = r
         print('\n=== %s: %d chunks, %d authors, %d-author panel (chance %.3f)'
               % (name, r['n_chunks'], r['n_authors'], len(panel), r['chance']))
         print('   %-34s %7s %7s %8s %-18s %7s' %
               ('treatment', 'micro', 'macro', 'maxshr', 'top absorber', 'null p'))
-        for tag in ('uncorrected', 'detrend only', 'centre only', 'detrend + centre'):
+        for tag in ('uncorrected', 'detrend only', 'centre only', 'detrend + centre',
+                    'detrend + global centre'):
             b = r[tag]
             print('   %-34s %7.3f %7.3f %7.1f%% %-18s %7.3f'
                   % (tag, b['micro'], b['macro'], 100 * b['max_share'],
                      b['top_absorber'][:18], b['null']['p']))
+        am = r['detrend + centre (test dated at arm mean year)']
+        print('   %-34s %7.3f %7.3f   (all test dates set to %.0f)'
+              % ('detrend + centre, one arm date', am['micro'], am['macro'],
+                 am['arm_mean_year']))
         pc = r['detrend + centre (test years permuted)']
-        print('   %-34s %7.3f %7.3f   (control)' % ('detrend + centre, years permuted',
-                                                    pc['micro'], pc['macro']))
+        print('   %-34s %7.3f %7.3f   (mean of %d draws, sd %.3f, range %.3f-%.3f)'
+              % ('detrend + centre, years permuted', pc['micro'], pc['macro'],
+                 pc['n_draws'], pc['micro_sd'], pc['micro_min'], pc['micro_max']))
         print('   per author, detrend + centre:')
         b = r['detrend + centre']
         for a in r['present']:
             print('      %-22s %.3f  (n=%d, uncorrected %.3f)'
                   % (a, b['per_author'][a], r['per_author_n'][a],
                      r['uncorrected']['per_author'][a]))
+    r = original_arm(docs, docs_full, panel, rng)
+    out['original_arm_943'] = r
+    print('\n=== original 943-chunk arm, same decomposition (audit of expG)')
+    print('   %-34s %7s %7s %8s %-18s %7s' %
+          ('treatment', 'micro', 'macro', 'maxshr', 'top absorber', 'null p'))
+    for tag in ('uncorrected', 'detrend only', 'centre only', 'detrend + centre',
+                'detrend + global centre'):
+        b = r[tag]
+        print('   %-34s %7.3f %7.3f %7.1f%% %-18s %7.3f'
+              % (tag, b['micro'], b['macro'], 100 * b['max_share'],
+                 b['top_absorber'][:18], b['null']['p']))
+    am = r['detrend + centre (test dated at arm mean year)']
+    print('   %-34s %7.3f %7.3f   (all test dates set to %.0f)'
+          % ('detrend + centre, one arm date', am['micro'], am['macro'],
+             am['arm_mean_year']))
+    pc = r['detrend + centre (test years permuted)']
+    print('   %-34s %7.3f %7.3f   (mean of %d draws, sd %.3f, range %.3f-%.3f)'
+          % ('detrend + centre, years permuted', pc['micro'], pc['macro'],
+             pc['n_draws'], pc['micro_sd'], pc['micro_min'], pc['micro_max']))
     json.dump(out, open(os.path.join(RESULTS, 'expH_holdout.json'), 'w'), indent=1)
 
 

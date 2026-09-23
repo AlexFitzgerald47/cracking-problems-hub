@@ -1,0 +1,194 @@
+{
+ "rows": [
+  {
+   "arm": "holdout",
+   "author": "Glapthorne, Henry",
+   "acc": 1.0,
+   "n_nd": 7,
+   "n_dr": 43,
+   "log_ratio": -1.8152899666382492,
+   "date_gap": 0.3986710963454243,
+   "acc_uncorrected": 1.0
+  },
+  {
+   "arm": "holdout",
+   "author": "Peele, George",
+   "acc": 1.0,
+   "n_nd": 3,
+   "n_dr": 44,
+   "log_ratio": -2.6855773452501515,
+   "date_gap": 2.0984848484849863,
+   "acc_uncorrected": 1.0
+  },
+  {
+   "arm": "original",
+   "author": "Marston, John",
+   "acc": 0.8888888888888888,
+   "n_nd": 9,
+   "n_dr": 68,
+   "log_ratio": -2.0222831278398874,
+   "date_gap": 4.970588235294144,
+   "acc_uncorrected": 0.8888888888888888
+  },
+  {
+   "arm": "holdout",
+   "author": "Shirley, James",
+   "acc": 0.8461538461538461,
+   "n_nd": 13,
+   "n_dr": 251,
+   "log_ratio": -2.960503581670247,
+   "date_gap": 11.880784554091179,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "holdout",
+   "author": "Shadwell, Thomas",
+   "acc": 0.75,
+   "n_nd": 4,
+   "n_dr": 175,
+   "log_ratio": -3.7784916128036232,
+   "date_gap": 4.435714285714312,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "original",
+   "author": "Dekker, Thomas",
+   "acc": 0.7122302158273381,
+   "n_nd": 139,
+   "n_dr": 95,
+   "log_ratio": 0.380597041530151,
+   "date_gap": 2.7079136690647374,
+   "acc_uncorrected": 0.19424460431654678
+  },
+  {
+   "arm": "original",
+   "author": "Lyly, John",
+   "acc": 0.6493506493506493,
+   "n_nd": 77,
+   "n_dr": 53,
+   "log_ratio": 0.37351350830156194,
+   "date_gap": 8.637098750306222,
+   "acc_uncorrected": 1.0
+  },
+  {
+   "arm": "original",
+   "author": "Jonson, Ben",
+   "acc": 0.625,
+   "n_nd": 8,
+   "n_dr": 233,
+   "log_ratio": -3.371596911885865,
+   "date_gap": 8.703862660944196,
+   "acc_uncorrected": 0.125
+  },
+  {
+   "arm": "original",
+   "author": "Chapman, George",
+   "acc": 0.5833333333333334,
+   "n_nd": 12,
+   "n_dr": 134,
+   "log_ratio": -2.412933150162911,
+   "date_gap": 1.5373134328358447,
+   "acc_uncorrected": 0.5
+  },
+  {
+   "arm": "holdout",
+   "author": "D'Urfey, Thomas",
+   "acc": 0.5454545454545454,
+   "n_nd": 66,
+   "n_dr": 218,
+   "log_ratio": -1.1948403207626634,
+   "date_gap": 3.951070336391467,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "holdout",
+   "author": "Otway, Thomas",
+   "acc": 0.5,
+   "n_nd": 4,
+   "n_dr": 73,
+   "log_ratio": -2.9041650800285006,
+   "date_gap": 3.0068493150683935,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "holdout",
+   "author": "Behn, Aphra",
+   "acc": 0.49122807017543857,
+   "n_nd": 171,
+   "n_dr": 127,
+   "log_ratio": 0.29747647004406863,
+   "date_gap": 5.248422894506575,
+   "acc_uncorrected": 0.05263157894736842
+  },
+  {
+   "arm": "original",
+   "author": "Heywood, Thomas",
+   "acc": 0.37209302325581395,
+   "n_nd": 430,
+   "n_dr": 187,
+   "log_ratio": 0.8326765918330215,
+   "date_gap": 24.677055092650335,
+   "acc_uncorrected": 0.011627906976744186
+  },
+  {
+   "arm": "holdout",
+   "author": "Dryden, John",
+   "acc": 0.35294117647058826,
+   "n_nd": 68,
+   "n_dr": 129,
+   "log_ratio": -0.6403046991855653,
+   "date_gap": 0.6768125854994196,
+   "acc_uncorrected": 0.6029411764705882
+  },
+  {
+   "arm": "holdout",
+   "author": "Ford, John",
+   "acc": 0.3333333333333333,
+   "n_nd": 9,
+   "n_dr": 81,
+   "log_ratio": -2.1972245773362196,
+   "date_gap": 16.703703703703695,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "holdout",
+   "author": "Settle, Elkanah",
+   "acc": 0.07,
+   "n_nd": 100,
+   "n_dr": 99,
+   "log_ratio": 0.010050335853501506,
+   "date_gap": 6.135555555555584,
+   "acc_uncorrected": 0.06
+  },
+  {
+   "arm": "original",
+   "author": "Middleton, Thomas",
+   "acc": 0.038461538461538464,
+   "n_nd": 26,
+   "n_dr": 131,
+   "log_ratio": -1.6171007851796695,
+   "date_gap": 11.39547856723425,
+   "acc_uncorrected": 0.0
+  },
+  {
+   "arm": "original",
+   "author": "Greene, Robert",
+   "acc": 0.03305785123966942,
+   "n_nd": 242,
+   "n_dr": 41,
+   "log_ratio": 1.7753656594523786,
+   "date_gap": 3.758314855875824,
+   "acc_uncorrected": 0.0371900826446281
+  },
+  {
+   "arm": "holdout",
+   "author": "Crowne, John",
+   "acc": 0.0196078431372549,
+   "n_nd": 51,
+   "n_dr": 60,
+   "log_ratio": -0.16251892949777494,
+   "date_gap": 12.511764705882342,
+   "acc_uncorrected": 0.0
+  }
+ ]
+}
