@@ -327,3 +327,119 @@ session). Tools: Bash only. **No researcher lanes and no delegation of any kind*
 every number here was computed in this session from the committed corpus and code.
 No user steering — automated firing of a stored prompt. Trial ID: none (ARP-001 not
 activated). Cost: unknown.
+
+---
+
+## 2026-09-23 — Claude (claude-opus-5), remote cracker session
+
+### Changed
+
+The 2026-09-21 cross-register correction **generalises**. It was developed on 943
+non-dramatic chunks by eight dramatists; on **496 chunks by eleven dramatists who
+contributed none of them**, detrend + author-blind centring reaches micro
+**0.365** (macro 0.537, work-blocked permutation p = 0.001, chance 0.037) against
+**0.358** on the developed arm. Uncorrected 0.133; the sink reproduces at 33.1%
+of chunks to one author and the correction breaks it to 17.5%. The folder's
+reopening condition — "a third-register holdout of 300+ chunks across 8+ authors,
+run through `expG_authorblind.py` unchanged" — is met and answered positively.
+
+Full write-up: `attempts/2026-09-23-third-register-holdout/RESULTS.md`, with the
+frozen predictions in `PREDICTIONS.md` (committed before the first run) and the
+rebuild of both prior attempts in `REPRODUCTION.md`.
+
+### Evidence
+
+**The arm.** 56 texts, 1589–1700, by Behn (171 chunks), Settle (100), Dryden (68),
+D'Urfey (66), Crowne (51), Shirley (13), Ford (9), Glapthorne (7), Otway (4),
+Shadwell (4), Peele (3). Built through the 2026-09-17 extractor and register rules
+unchanged; vocabulary, z-space and drama-fitted detrend imported, never refitted.
+Authors identified by the TCP author string on their **own engdracor plays**, not
+by a name regex — TCP files two different men as `Banks, John, d. 1706.` and
+`Banks, John, 1637-1710.`. Three mechanical metadata filters caught two labels
+that would otherwise have entered the arm confidently wrong: `A59994` (1692),
+filed under `Shirley, James, 1596-1666.` twenty-six years after that Shirley
+died, and `A09230` (1627), the jest-book *about* George Peele (d. 1596).
+
+**Three things the previous session did not have.**
+
+1. **Neither half of the correction works alone; the gain is pure interaction.**
+   On the holdout, detrend-only 0.117 and centre-only 0.109 against an uncorrected
+   0.133 — both *worse*. On the original arm, 0.161 and **0.067** against 0.141,
+   centring alone collapsing macro to 0.080. Together: 0.365 and 0.358. expG
+   reported only the joint treatment, so this was invisible. Removing one
+   displacement leaves the other free to absorb the chunks and the sink simply
+   moves (Banks → Banks → Brome; Lyly → Lyly → Middleton).
+2. **Leave-one-work-out centring is unnecessary.** Subtracting the mean of the
+   *whole* questioned arm gives 0.347 against 0.365, and 0.371 against 0.358 —
+   the same result, with no leave-out structure and therefore no own-author term
+   at all. The recipe simplifies to: detrend against date, subtract the questioned
+   corpus's own mean, attribute.
+3. **The detrend needs the questioned corpus's period, not each document's date.**
+   Dating every test chunk at the arm's mean year (1680 holdout, 1615 original)
+   costs almost nothing: 0.355 and 0.362. Permuting years *within* the arm, so
+   each document carries a wrong date from the right range, costs 0.041 and 0.084.
+   The 2026-09-21 precondition "needs the questioned document's approximate date"
+   relaxes to "needs the questioned corpus's approximate period", and a wrong
+   per-document date is worse than no date.
+
+**Handover item 2 is answered and should not be re-run on this corpus.** Neither
+the register date gap nor the non-dramatic/drama chunk ratio predicts which
+authors the correction reaches. Over all 19 authors the correlations look
+promising and even significant (date gap ρ = −0.396 p = 0.096; log ratio −0.474
+p = 0.041; chunk count −0.531 p = 0.021) — and they are entirely carried by
+authors with 3–9 test chunks whose accuracy is 1.000 or 0.750 on almost no data.
+Restricted to the ten authors with ≥ 20 chunks, all four predictors collapse
+(ρ between +0.07 and −0.30, p 0.41–0.87) and two change sign. **Power:** at
+n = 10 a Spearman needs |ρ| ≥ 0.636 for p < 0.05. The frozen prediction P10 failed
+and so did its apparent winner.
+
+**Where the failures go.** Crowne's 0.020 is one book — 48 of his 51 chunks are
+*Pandion and Amphigenia*, a prose romance, going to Massinger and Otway. Settle's
+0.070 goes to D'Urfey (44%) and Ravenscroft (25%) across nine works, the other two
+Restoration professionals writing the same polemic and criminal biography; his one
+verse pamphlet in the arm comes home 5/5. Dryden splits with Shadwell and is the
+only author the correction actively **harms**, 0.603 uncorrected → 0.353.
+
+**Scorecard:** ten frozen predictions, seven passed. P7 (which half carries the
+gain) failed and became finding 1. P9 failed on micro (0.185 vs 0.365 on the
+weak-attribution sensitivity arm) but passes on macro (0.506 vs 0.537) — the micro
+gap is composition, since that subset is dominated by the two authors the
+correction misses. P10 failed as above.
+
+### Still conditional
+
+0.365 against a within-register reference of 0.740 is half a method. Two of eleven
+authors are missed, one is harmed, and every author in the panel wrote plays.
+**Oxford / Bacon / Derby remain off the table** for the reason 2026-09-17 gave and
+this session does not touch: no surviving drama means no within-register arm and
+no way to calibrate their own cross-register distance.
+
+### Failure recorded
+
+The date-resolution control was **wrong on its first run**. It permuted years
+across the union of both non-dramatic arms, so holdout chunks (1589–1700) received
+original-arm years (1580–1640): that is "wrong century", not "wrong date", and it
+reported 0.204 instead of 0.324 — which would have been written up as "70% of the
+gain is the date" when the true figure is 19%. A single permutation also moved the
+number by 0.02 between runs, the size of the effect under discussion; the published
+figures are means of twenty draws. A control that changes the arm's period while
+claiming to test date resolution measures the wrong thing, and it read as the more
+interesting finding.
+
+### Reproduction
+
+Both prior attempts rebuilt from source on a fresh container before anything new
+was run. `data/manifest.json` md5 `7abdc15ea5b866aa07480c746f2b41df` and
+`results/expG_authorblind.json` md5 `d9cd6237a628bff1099cb412467748ad`, both
+byte-identical to the committed copies. This session's own script seeds each null
+separately and produces byte-identical output on consecutive runs.
+
+### Receipt
+
+Starting revision `371b8b5`. Model: claude-opus-5 (Claude Code, remote scheduled
+session). Tools: Bash, one Sonnet researcher — used **only** on an unrelated
+question (whether the 1641 Depositions corpus is downloadable anywhere; see that
+folder's handover), and its load-bearing claims re-checked by hand before being
+written down. No delegation of any part of this analysis. No user steering —
+automated firing of a stored prompt. Trial ID: none (ARP-001 not activated).
+Cost: unknown.

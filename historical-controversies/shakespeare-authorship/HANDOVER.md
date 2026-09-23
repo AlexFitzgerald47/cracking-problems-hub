@@ -2,6 +2,126 @@
 
 ---
 
+## 2026-09-23 – Claude (claude-opus-5), remote cracker session
+
+### Frontier
+
+**The 2026-09-21 correction generalises. The folder's reopening condition is met,
+and the recipe that comes out of this session is simpler and cheaper than the one
+that went in.**
+
+Read `attempts/2026-09-23-third-register-holdout/RESULTS.md` first; it is
+self-contained and carries the scorecard against ten frozen predictions.
+`REPRODUCTION.md` records that both prior attempts were rebuilt from source and
+reproduced byte-identically before anything new was run.
+
+On **496 non-dramatic chunks by eleven dramatists who contributed none** of the
+943 the correction was developed on, detrend + author-blind centring reaches
+micro **0.365** / macro 0.537 (work-blocked permutation p = 0.001, chance 0.037),
+against **0.358** on the developed arm. Uncorrected 0.133. The sink reproduces
+(33.1% to one author) and the correction breaks it (17.5%).
+
+**The recipe to carry forward is now:**
+
+> detrend every feature against document date, fitting the trend on the reference
+> (drama) set only; subtract the mean of the **whole questioned corpus** from each
+> questioned chunk; attribute to the nearest author centroid by L1.
+
+Three changes from what 2026-09-21 published, all established on both arms:
+
+1. **The two steps are inseparable.** Each alone is worthless or harmful —
+   detrend-only 0.117 and centre-only 0.109 against 0.133 on the holdout; 0.161
+   and **0.067** against 0.141 on the original, where centring alone takes macro
+   to 0.080. Never report, tune or drop one of them separately.
+2. **Leave-one-work-out is unnecessary.** Global centring on the arm's own mean
+   matches it (0.347 vs 0.365; 0.371 vs 0.358), with no leave-out structure and
+   no own-author term to argue about.
+3. **The date requirement is weaker than stated.** Dating every test chunk at the
+   arm's mean year costs 0.010 (holdout) and nothing (original). Per-document
+   dates add nothing; *wrong* per-document dates cost 0.041 and 0.084. What you
+   need is the questioned corpus's approximate period.
+
+### Conditional assumptions — do not inherit these as settled
+
+- **0.365 against a within-register reference of 0.740 is half a method.** It is
+  a real, replicated, out-of-sample correction and it is not attribution-grade.
+- **It still misses authors, and it can harm one.** Crowne 0.020 and Settle 0.070
+  on the holdout; Dryden goes 0.603 uncorrected → 0.353 corrected, the only author
+  it makes worse. The misses are legible, not random: Crowne's failure is one
+  prose romance, Settle's chunks go to D'Urfey and Ravenscroft, Dryden splits with
+  Shadwell. Genre inside a register is the next confound down.
+- **Nothing predicts which authors recover, and the question is now closed on this
+  corpus.** 2026-09-21's item 2 asked whether the register date gap or the
+  non-dramatic/drama ratio explains it. At n = 19 both look significant; restricted
+  to the ten authors with ≥ 20 test chunks — the only ones whose accuracy is
+  estimated at all — every predictor collapses and two change sign. At n = 10 a
+  Spearman needs |ρ| ≥ 0.636 for p < 0.05. **Do not re-run this on this corpus.**
+- **Micro accuracy is a statement about the mix.** The weak-attribution
+  sensitivity arm reads 0.185 against the full arm's 0.365 and looks like a
+  collapse; macro is 0.506 against 0.537, essentially unchanged. The subset is
+  dominated by the two authors the correction misses. Quote macro when the
+  composition changes.
+- **Every author in the panel wrote plays.** That is what makes the within-register
+  arm exist. Nothing here licenses a candidate who left none.
+
+### Next experiments, in priority order
+
+1. **Genre inside the register — now the binding constraint, and the arm for it
+   already exists.** The two failures are genre failures: 48 of Crowne's 51 chunks
+   are one heroic prose romance and land on Massinger and Otway; Settle's
+   controversial prose and criminal biography land on the two other Restoration
+   professionals writing the same thing. The test is cheap and uses committed data:
+   label the 130 non-dramatic texts in `data/manifest.json` and
+   `2026-09-23-third-register-holdout/data/holdout_manifest.json` by broad kind
+   (verse / prose fiction / polemic / criminal-biographical / didactic), then ask
+   whether corrected accuracy is predicted by whether an author's *plays* and his
+   non-dramatic texts share a kind. **Pre-register the labelling before computing
+   anything**, and pre-register the power: with ~19 authors and 5 classes this can
+   only detect a large effect, so state the detectable size first — the 2026-09-23
+   session found the n = 19 correlations were pure small-author artefact and that
+   trap is live here too.
+2. **Character n-grams, still untried.** Unchanged from 2026-09-21 except that the
+   baseline to beat is now 0.365 on the holdout as well as 0.358 on the original,
+   and the new recipe is one line (global centring). Swap the extractor in
+   `delta.py`, re-run `expH_holdout.py`. Standing warning: the Junius OCR tolerance
+   applies to function words, **not** to character n-grams.
+3. **A third *genuine* register, not a fourth author set.** What this session built
+   is out-of-sample in authors, not in register — it is still drama → non-drama.
+   The pageant arm remains 35 chunks with no power (p = 0.220). The cheapest real
+   extension is civic pageants and Lord Mayor's Shows by panel authors outside the
+   eight (Settle and Taubman wrote many; `PAGEANT_IDS` in `build_holdout.py` is
+   wired up and currently empty). Target 150+ chunks before it is worth running.
+4. **Oxford / Bacon / Derby: still no.** The 2026-09-17 reason is untouched by
+   anything here — no surviving drama, so no within-register arm, so no calibration
+   of their own cross-register distance. Revisit only if item 3 returns positive
+   *and* somebody finds a way to calibrate a candidate who left one register only.
+
+### Evidence dependency
+
+Unchanged and re-verified on a fresh container 2026-09-23: EEBO-TCP XML from
+`textcreationpartnership` (774 texts for the base corpus, 175 more for the
+holdout, all fetched clean), plus a shallow clone of `dracor-org/engdracor`.
+`data/chunks.json` is gitignored at 64 MB and rebuilds exactly from
+`data/manifest.json`; the holdout arm's `data/holdout_chunks.json` **is**
+committed (7.9 MB) because it is the holdout and should not be rebuildable into
+something else. **Use `src/tcp.py::normalise`; do not write a fresh extractor.**
+
+Identify authors by the TCP author string on their own engdracor plays
+(`src/author_map.py`), never by a surname regex, and keep the three metadata
+filters in `src/filters.py` — between them they caught a text filed under Shirley
+twenty-six years after he died and a jest-book *about* Peele filed as *by* him.
+
+### Reopening condition
+
+The positive claim — that the correction generalises — is now **established on two
+arms, nineteen authors and a century and a half**, with the recipe simplified and
+its date precondition relaxed. It reopens if item 1 shows the recovery is a genre
+effect rather than an author effect, which would mean the method works when the
+questioned text happens to resemble the reference genre and not otherwise. That is
+the live risk, and it is the one worth attacking next.
+
+---
+
 ## 2026-09-21 – Claude (claude-opus-5), remote cracker session
 
 ### Frontier
