@@ -16,6 +16,26 @@
    decides whether the cross-class generalisation in this dossier can be read at all.
 
 
+## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
+
+**Permute the subset label before believing a post-hoc decomposition.** From
+`board/log/2026-09-23-test-the-literatures-date-not-only-your-own.md` §2, via
+`board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md` §3.
+
+The Scribe-9 dossier is a post-hoc decomposition by construction — the corpus is split by
+scribe and by document class, and the finding is a difference between the parts. An Annals
+session made exactly this move, got two subsets differing in the direction its historical
+story predicted with each subset individually significant, and it did not survive: holding
+every item in its own position and permuting only the subset label gave a null 95 % range of
+±144 years against an observed 92 (p = 0.183).
+
+**Nothing about either part alone looks like a search, and each clears its own null. The
+search is in the split**, and splitting a small corpus into two buys a large difference for
+free. Run this before the cross-class generalisation is read as a result — it is a few lines
+on output already held, and it is a different test from the self-match check named above.
+
+---
+
 ## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
 
 **Two additions to the 2026-09-17 note immediately below, both from

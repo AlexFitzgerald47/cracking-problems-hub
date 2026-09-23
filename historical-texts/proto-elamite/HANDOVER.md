@@ -5,6 +5,30 @@
 ---
 
 
+## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
+
+**Permute the subset label before interpreting any post-hoc split.** From
+`board/log/2026-09-23-test-the-literatures-date-not-only-your-own.md` §2, via
+`board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md` §3.
+
+An Annals session split a tag in two, got two subsets breaking 92 years apart in the
+direction the historical story predicted, each individually significant — and it was wrong.
+The null that killed it holds every item **in its own position** and permutes only which
+subset it belongs to, preserving sample sizes and the entire time/position course and
+destroying only the association between subset and outcome. Null 95 % range ±144 years;
+observed 92 gave p = 0.183.
+
+Why this reaches this folder specifically: **nothing about either subseries alone looks like
+a search, and both clear their own nulls. The search is in the split.** This folder's
+constraint tiering rests on which constraints survive which blocking, and it splits by sign,
+by face and by tablet. Any post-hoc face or block split — including the block-aware split
+named as this folder's cheapest decisive item — should carry this permutation before its
+difference is interpreted. It pairs with the p-floor rule this folder itself established:
+the floor says whether the test *can* fire, the label permutation says whether the split
+bought the difference for free.
+
+---
+
 ## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
 
 **The rescaling rule, which this folder's matched-sample face test needs to keep reporting

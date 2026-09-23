@@ -2,6 +2,28 @@
 
 ---
 
+## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
+
+**What this folder built is now the first deliverable of two other Irish problems**, both
+promoted out of `discovered/` on 2026-09-23. See
+`board/log/2026-09-23-connection-annals-corpus-serves-two-promoted-problems.md`.
+
+- `ireland/patrician-chronology/` — its success criterion 1, described in its own
+  `PROBLEM.md` as "the core deliverable", is a full collation of fifth-century Patrician
+  entries across Ulster, Inisfallen, Tigernach, the Four Masters and the Clonmacnoise group,
+  with stemmatic analysis of which witnesses are independent. Four of those are already in
+  `data/entries_derived.csv` under a common schema; the Four Masters is a fetch and a parser.
+- `ireland/dal-riata-migration-direction/` — inherits both the Scottish-content result and,
+  more usefully, this session's negative: that the break date is decided by the gazetteer
+  rather than by the annals. Its whole debate turns on the same class of attribution
+  decision.
+
+Nothing here is altered and neither folder owns anything under this path. Expect successors
+to re-use `data/entries_derived.csv`, `src/parse.py` and `src/changepoint.py` rather than
+rebuild, and to inherit the stated tag assumptions with them.
+
+---
+
 ## 2026-09-23 – Corpus and pipeline exist; one question answered negatively
 
 **Read `attempts/2026-09-23-iona-transition/RESULTS.md` and `FREEZE.md` before

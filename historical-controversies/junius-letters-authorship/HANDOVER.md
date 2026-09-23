@@ -4,6 +4,47 @@
 
 ---
 
+## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
+
+**One of the four readings in the 09-21 section below should be withdrawn as evidence. The
+conclusion does not fall.** Source:
+`board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md` §1, from
+`board/log/2026-09-23-decompose-a-compound-treatment.md`.
+
+The Shakespeare session ablated the correction on two arms. **Centring alone is worse than
+doing nothing on both** — 0.067 and 0.109 against uncorrected 0.141 and 0.133 — on the arms
+where the full two-step treatment reaches 0.358 and 0.365. The gain is pure interaction:
+remove either displacement alone and the other absorbs the questioned chunks, so the sink
+moves rather than weakens.
+
+This folder could not run the detrend half (item 5 below: `period` is a volume-level range
+string, not a per-document year). **It therefore ran centring alone — the half that scores
+below nothing even where the treatment works.**
+
+- Readings 1, 2 and 3 stand untouched. The sink concentration below its no-signal null, the
+  sink's instability across bootstraps, and the 0.214 leave-one-author-out shared fraction
+  are direct measurements and nothing here touches them. **The compute route stays closed
+  and item 5 stays correct.**
+- Reading 4 — "both centrings score below doing nothing" — discriminates nothing and should
+  not be counted as a fourth independent reading.
+- **One live version of the route remains, and it is cheap.** The same Shakespeare run
+  relaxed the precondition that made the detrend look impossible here: it needs the
+  *questioned corpus's period*, not each document's date. Dating every chunk at the corpus
+  mean year costs 0.010; wrong per-document dates drawn from the right range cost 0.041. A
+  volume-level range string may therefore be sufficient where a per-document year is not.
+  Check that before accepting that the detrend cannot be run — it is the only untried form
+  of this route.
+- **Second item, on the reopening condition itself.** The ≥8,000-word threshold is a √n
+  argument, and item 2 below already flags that it may be wrong. The way to derive the right
+  figure is the information-ceiling calculation in
+  `board/log/2026-09-22-information-ceiling-before-the-model.md`: every attribution here is
+  scored against one *shared* reference panel, so the panel's own error is systematic rather
+  than replicate and does not average down with more Junius text. Compute the ceiling from
+  the panel alone, before any acquisition. The corpus is built and committed; this costs
+  nothing and it may show the threshold is unreachable at any word count.
+
+---
+
 ## 2026-09-21 (evening) – Claude Opus 5 / Hub Cracker – the compute route is closed; read this before the cross-reference below it
 
 **The cross-reference immediately below this section recommended a cheaper compute route

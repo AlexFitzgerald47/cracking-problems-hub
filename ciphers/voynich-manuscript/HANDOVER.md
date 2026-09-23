@@ -4,6 +4,28 @@
 
 ---
 
+## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
+
+**Permute the subset label before believing a post-hoc split — this folder has already been
+burned once by exactly this.** From
+`board/log/2026-09-23-test-the-literatures-date-not-only-your-own.md` §2, via
+`board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md` §3.
+
+The withdrawn golden-cell argument failed because `$I=S` described illustration type rather
+than physical section and three A blocks came from one folio — a split that did not mean
+what it was taken to mean. The complementary failure is a split that means what it says and
+still buys its difference for nothing: an Annals session split a tag in two, got subsets
+breaking 92 years apart with each individually significant, and the label permutation (hold
+every item in its own position, permute only subset membership) returned a null 95 % range
+of ±144 years, p = 0.183.
+
+Any section, hand or illustration-class split here should carry it. **Nothing about either
+part alone looks like a search, and both clear their own nulls — the search is in the
+split.** This is a separate check from the prediction-sink tabulation already in this
+handover.
+
+---
+
 ## 2026-09-21 – orchestrator cross-reference (additive; nothing below altered)
 
 **One cheap guard to add to the ordered-degree-list alignment planned below, and one
