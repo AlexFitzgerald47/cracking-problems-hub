@@ -1,0 +1,23 @@
+# Within-AFM duplicate datings, 430-760: the holdout comparison class.
+#
+# AFM has no alternative-source marker stratum to drive the procedure used on
+# the other four witnesses (that absence is the P1 result), so this class was
+# built by within-witness near-duplicate matching at cos >= 0.45 -- 95 candidate
+# pairs, every one read (results/afm_dupe_audit.txt).  Nine non-Patrician
+# clusters survive.  The 86 rejects are overwhelmingly successive office-holders
+# of one monastery and successive members of one lineage, which is the same
+# ~1/15 precision this matcher has within a witness anywhere.
+#
+# `cross` records what AU/AT/CS/AI do with the same event, checked by direct
+# search: it is how a genuine duplication is told from two people.
+#
+# event	years	span	maxgap	cross
+Feast of Teamhair by Oilioll Molt	463,465	2	2	AU 467,469,470
+Battle of Dumha Aichir	464,470	6	6	AU 468,474,476
+Ailill bishop of Ard Macha of the Ui Bresail	525,535	10	10	AU 526,536
+Feast of Teamhair by Diarmaid son of Cerball	552,554	2	2	AU 558,560
+Death of Ronan son of Colman king of Laigin	610,619,624	14	9	AT 613 CS 615 AU 624 AT 625
+Death of Blathmac son of Maelcobha king of Ulaid	656,666,669	13	10	CS 670
+Death of Bran Finn son of Maelochtraigh	666,669	3	3	-
+Death of Ceallach son of Raghallach king of Connacht	703,738	35	35	AU 705 AT 705 CS 705 (one date only)
+Death of Seachnasach son of Colgan	741,742	1	1	-

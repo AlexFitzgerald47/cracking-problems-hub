@@ -1,0 +1,380 @@
+gap=77 score=0.56
+   AFM665.2 (665): Baeithin, Abbot of Beannchair Bangor , died.
+   AFM742.4 (742): Saran, Abbot of Beannchair Bangor , died.
+
+gap=73 score=0.55
+   AFM618.2 (618): St. Sillan, Bishop and Abbot of Magh Bile Movilla , died on the 25th of August.
+   AFM691.3 (691): Huidhreini of Magh Bile Movilla , died.
+
+gap=72 score=0.56
+   AFM658.3 (658): Cummine, Bishop of Aendruim Nendrum, in Loch Cuan , died.
+   AFM730.4 (730): St. Oegheatchair, Bishop of Aendruim Nendrum , died.
+
+gap=70 score=0.47
+   AFM663.5 (663): Cearnach Sotal, son of Diarmaid, son of Aedh Slaine, died, together with the aforesaid persons, of a mortality which arose in Ireland, on the Calends of the August of this year, in Magh Itha, in Fotha
+   AFM733.6 (733): Cearnach, son of Foghartach, son of Niall, son of Cearnach Sotal, son of Diarmaid, son of Aedh Slaine, was slain.
+
+gap=62 score=0.54
+   AFM600.7 (600): Conall Cu, son of Aedh, son of Ainmire, died.
+   AFM662.7 (662): Conall and Colgu, two sons of Domhnall, son of Aedh, son of Ainmire, were slain by Ceirrceann.
+
+gap=60 score=0.47
+   AFM694.3 (694): Cummeni of Mughdhorna Cremorne died.
+   AFM754.7 (754): Reachtabhrat, son of Dunchu, lord of Mughdhorna Cremorne , died.
+
+gap=56 score=0.53
+   AFM692.2 (692): Cronan Beg, abbot of Cluain Mic Nois, died on the 6th of April.
+   AFM748.3 (748): St. Luicridh, Abbot of Cluain Mic Nois, died on the 29th of April.
+
+gap=50 score=0.49
+   AFM570.2 (570): St. Maeineann, Bishop of Cluain Fearta Breanainn Clonfert , died on the first of March.
+   AFM620.2 (620): Seanach Garbh, Abbot of Cluain Fearta Breanainn Clonfert , died.
+
+gap=50 score=0.69
+   AFM620.4 (620): Aedh son of Cumascach died.
+   AFM670.5 (670): Cumascach, son of Ronan, died.
+
+gap=50 score=0.50
+   AFM642.2 (642): St. Cronan Beg, Bishop of Aendruim, died on the 7th of January.
+   AFM692.2 (692): Cronan Beg, abbot of Cluain Mic Nois, died on the 6th of April.
+
+gap=50 score=0.51
+   AFM696.4 (696): Muirghius, son of Maelduin, Lord of Cinel Cairbre, died.
+   AFM746.8 (746): Muirghius son of Fearghus, Lord of the Deisi, [died].
+
+gap=48 score=0.52
+   AFM500.3 (500): Three hundred and four years was the length of his life.
+   AFM548.2 (548): St. Ciaran, son of the artificer, Abbot of Cluain Mic Nois, died on the ninth day of September. Thirty three years was the length of his life.
+
+gap=48 score=0.50
+   AFM652.2 (652): St. Colman, the bishop, son of Aiteldubh, Abbot of Cluain Iraird Clonard , died on the 8th of February.
+   AFM700.2 (700): Colman Ua hEirc, Abbot of Cluain Iraird Clonard , died.
+
+gap=48 score=0.61
+   AFM669.5 (669): Cuanna, son of Ceallach, died.
+   AFM717.2 (717): St. Cuanna, of Ros Eo, died on the 10th of April.
+
+gap=47 score=0.61
+   AFM691.3 (691): Huidhreini of Magh Bile Movilla , died.
+   AFM738.1 (738): Affiath, Abbot of Magh Bile Movilla , died.
+
+gap=46 score=0.56
+   AFM614.4 (614): Finghin, son of Fiachra, died.
+   AFM660.6 (660): Maenach, son of Finghin, King of Munster, died.
+
+gap=45 score=0.48
+   AFM467.2 (467): Benent, son of Sescnen, Bishop of Ard Macha Armagh , resigned his spirit.
+   AFM512.3 (512): Dubhthach, i.e. of Druim Dearbh, Bishop of Ard Macha Armagh , resigned his spirit.
+
+gap=45 score=0.56
+   AFM713.4 (713): Bishop Cillene, Abbot of Fearna Ferns , died.
+   AFM758.3 (758): Reoddaidhe, Abbot of Fearna Ferns , died.
+
+gap=43 score=0.75
+   AFM633.2 (633): Failbhe Flann, King of Munster, died.
+   AFM676.6 (676): Colgu, son of Failbhe Flann, King of Munster, died.
+
+gap=40 score=0.49
+   AFM434.2 (434): Loarn, son of Eochaidh Muinreamhar, was born.
+   AFM474.2 (474): Eirc, son of Eochaidh Muinreamhar, died.
+
+gap=40 score=0.52
+   AFM719.3 (719): Aelchu, of Mainistir Buite, died .
+   AFM759.4 (759): Cormac, son of Ailill, Abbot of Mainistir Buite Monasterboice , died.
+
+gap=39 score=0.64
+   AFM526.4 (526): Cairell, son of Muireadhach Muindearg, King of Ulidia, died.
+   AFM565.2 (565): Deman, son of Cairell, King of Ulidia, son of Muireadhach Muindearg, was killed by the shepherds of Boirenn.
+
+gap=39 score=0.46
+   AFM677.2 (677): St. Failbhe, Abbot of Ia Coluim Cille, died on the 22nd of March.
+   AFM716.2 (716): St. Dunchadh, son of Ceannfaeladh, Abbot of Ia Coluim Cille, died on the 25th of May.
+
+gap=37 score=0.54
+   AFM674.2 (674): St. Colman, Bishop of Inis Bo Finne, died on the 8th day of August.
+   AFM711.2 (711): Baetan, Bishop of Inis Bo Finne, died.
+
+gap=37 score=0.57
+   AFM676.4 (676): Maeldoghar, Bishop of Fearna Ferns ;
+   AFM713.4 (713): Bishop Cillene, Abbot of Fearna Ferns , died.
+
+gap=36 score=0.51
+   AFM695.3 (695): Maelfothartaigh, Lord of the Oirghialla, died.
+   AFM731.6 (731): Maelfothartaigh, son of Maeltuile, one of the Leinstermen,
+
+gap=35 score=0.52
+   AFM703.3 (703): Ceallach, son of Raghallach, King of Connaught, died, after having gone under the yoke of priesthood.
+   AFM738.6 (738): Ceallach, son of Raghallach, King of Connaught, died.
+
+gap=32 score=0.51
+   AFM726.2 (726): Aelchu, Abbot of Cluain Iraird Clonard ;
+   AFM758.1 (758): Beclaitnae, Abbot of Cluain Iraird Clonard , died.
+
+gap=30 score=0.45
+   AFM711.5 (711): Seachnasach, chief of Ui Maine, died .
+   AFM741.9 (741): and Seachnasach, son of Colgan, Lord of Ui Ceinnsealaigh, died.
+
+gap=28 score=0.85
+   AFM710.7 (710): Dluthach, son of Fithcheallach, was burned.
+   AFM738.7 (738): Dluthach, son of Fithcheallach, Lord of Ui Maine, died.
+
+gap=27 score=0.46
+   AFM646.3 (646): Maelcobha, son of Fiachna, son of Deman, King of Ulidia, was slain by Congal Ceannfoda, son of Dunchadha.
+   AFM673.3 (673): Congal Ceannfoda, son of Dunchadh, King of Ulidia, was slain by Beag Boirrche.
+
+gap=27 score=0.72
+   AFM660.5 (660): Maelduin, son of Aedh Beannan, died.
+   AFM687.4 (687): Congal, son of Maelduin, son of Aedh Beannan, King of West Munster, was slain.
+
+gap=26 score=0.54
+   AFM669.6 (669): Bran Finn, son of Maelfothartaigh, died.
+   AFM695.3 (695): Maelfothartaigh, Lord of the Oirghialla, died.
+
+gap=26 score=0.47
+   AFM700.2 (700): Colman Ua hEirc, Abbot of Cluain Iraird Clonard , died.
+   AFM726.2 (726): Aelchu, Abbot of Cluain Iraird Clonard ;
+
+gap=26 score=0.71
+   AFM709.2 (709): Ceannfaeladh, Abbot of Fobhar Fore , died.
+   AFM735.6 (735): Dubhdabhoireann, Abbot of Fobhar Fore , died.
+
+gap=24 score=0.51
+   AFM636.3 (636): The battle of Cathair Chinncon, in Munster, was gained by Aenghus Liath, over Maelduin, son of Aedh Beannan.
+   AFM660.5 (660): Maelduin, son of Aedh Beannan, died.
+
+gap=23 score=0.56
+   AFM503.2 (503): Eochaidh, son of Muireadhach Muindearg, King of Uladh, died.
+   AFM526.4 (526): Cairell, son of Muireadhach Muindearg, King of Ulidia, died.
+
+gap=23 score=0.54
+   AFM574.2 (574): The killing of Aedh, son of Eochaidh Tirmcharna, by the Ui Briuin.
+   AFM597.6 (597): Uata, son of Aedh, son of Eochaidh Tirmcharna, King of Connaught, died.
+
+gap=23 score=0.52
+   AFM622.6 (622): Mac Laisre, Bishop and Abbot of Ard Macha, died.
+   AFM645.2 (645): Mac Laisre, Abbot of Beannchair Bangor , died on the 16th of May.
+
+gap=23 score=0.57
+   AFM635.2 (635): Ailill, son of Aedh Roin; Congal, son of Dunchadh, died.
+   AFM658.6 (658): Ailill, son of Dunchadh, son of Aedh Slaine, died.
+
+gap=23 score=0.54
+   AFM704.5 (704): Conchubhar, son of Maelduin, chief of Cinel Cairbre died .
+   AFM727.4 (727): Conall, son of Conchubhar, died.
+
+gap=22 score=0.52
+   AFM587.3 (587): St. Seanach, Bishop of Cluain Iraird, died.
+   AFM609.3 (609): Seanach, Abbot of Ard Macha, died; he was of Cluain Ua nGrici.
+
+gap=22 score=0.49
+   AFM710.4 (710): A battle was fought between two parties of the race of Slaine, wherein Niall, son of Cearnach, was slain by Flann, son of Aedh, son of Dluthach.
+   AFM732.7 (732): A battle was fought between two parties of the race of Aedh Slaine, wherein Cathal, son of Aedh was slain, on the east side of Lic Ailbhe, by Conaing, son of Amhalgaidh.
+
+gap=22 score=0.64
+   AFM727.4 (727): Conall, son of Conchubhar, died.
+   AFM749.5 (749): Flann, son of Conchubhar, lord of Magh Ai, died.
+
+gap=22 score=0.59
+   AFM730.3 (730): St. Flann, son of Conaing, Abbot of Cill Mor Dithraibh, was slain.
+   AFM752.4 (752): Cill Mor Dithraibh was burned by the Ui Crumthainn.
+
+gap=21 score=0.61
+   AFM723.3 (723): St. Fachtna, son of Folachtan, Abbot of Cluain Fearta Brenainn Clonfert , died.
+   AFM744.7 (744): Cluain Fearta Brenainn Clonfert was burned.
+
+gap=20 score=0.51
+   AFM506.2 (506): Illann, son of Dunlaing, King of Leinster, died.
+   AFM526.5 (526): Oilill, son of Dunlaing, King of Leinster, died.
+
+gap=20 score=0.49
+   AFM645.2 (645): Mac Laisre, Abbot of Beannchair Bangor , died on the 16th of May.
+   AFM665.2 (665): Baeithin, Abbot of Beannchair Bangor , died.
+
+gap=20 score=0.50
+   AFM730.4 (730): St. Oegheatchair, Bishop of Aendruim Nendrum , died.
+   AFM750.4 (750): Sneithcheist, Abbot of Aendruim Nendrum, in Loch Cuan , died.
+
+gap=19 score=0.46
+   AFM624.6 (624): The battle of Ard Corainn was gained by Connadh Cerr, Lord of Dal Riada, where Fiachna, son of Deman, King of Ulidia, was slain.
+   AFM643.2 (643): Dunchadh, son of Fiachna, son of Deman, King of Ulidia, died.
+
+gap=19 score=0.46
+   AFM726.14 (726): Ceallach, daughter of Dunchadh, of the Ui Liathain, died.
+   AFM745.10 (745): Anmchaidh, chief of Ui Liathain, died.
+
+gap=18 score=0.57
+   AFM665.8 (665): Ceallach, son of Guaire, died.
+   AFM683.3 (683): Congal, son of Guaire, died.
+
+gap=18 score=0.50
+   AFM732.6 (732): Fiangalach, son of Murchadh, chief of Ui Mail, died .
+   AFM750.12 (750): Fiangalach, son of Anmchadh, died.
+
+gap=16 score=0.58
+   AFM721.5 (721): Feardachrich, son of Conghalach, died.
+   AFM737.4 (737): Feardachrich, Abbot of Imleach and of Leithghlinn, died.
+
+gap=15 score=0.51
+   AFM738.2 (738): Affrica, Abbess of Cill Dara Kildare , died
+   AFM753.5 (753): Martha, daughter of Dubhan, Abbess of Cill Dara Kildare , died.
+
+gap=14 score=0.54
+   AFM700.8 (700): Diucuill, Abbot of Cluain Eois Clones , died.
+   AFM714.2 (714): Cele Tighearnaigh, Abbot of Cluain Eois Clones , died.
+
+gap=13 score=0.58
+   AFM742.4 (742): Saran, Abbot of Beannchair Bangor , died.
+   AFM755.3 (755): Suairleach, Abbot of Beannchair Bangor , died.
+
+gap=12 score=0.53
+   AFM573.2 (573): Breanainn, son of Brian, chief of Teathbha Teffia , died.
+   AFM585.2 (585): Breanainn, Lord of Teathbha Teffia , died. It was he that had, some time before, granted Dearmhagh to God and to Colum Cille.
+
+gap=12 score=0.54
+   AFM738.7 (738): Dluthach, son of Fithcheallach, Lord of Ui Maine, died.
+   AFM750.9 (750): Inreachtach, son of Dluthach, lord of Ui Maine, died.
+
+gap=11 score=0.48
+   AFM606.6 (606): Colga Doilene, son of Fiachna, died.
+   AFM617.7 (617): Colga, son of Ceallach, died.
+
+gap=11 score=0.46
+   AFM736.2 (736): Connla, Lord of Teabhtha, died.
+   AFM747.12 (747): Conaing Ua Duibhduin, lord of Cairbre Teabhtha, died.
+
+gap=10 score=0.62
+   AFM525.3 (525): Ailill, Bishop of Armagh, who was of the Ui Breasail, died.
+   AFM535.4 (535): Oilill, Bishop of Armagh, died. He was also of the Ui Breasail.
+
+gap=10 score=1.00
+   AFM656.3 (656): Blathmac, son of Maelcobha, King of Ulidia, died.
+   AFM666.5 (666): Blathmac, son of Maelcobha, King of Ulidia, died.
+
+gap=10 score=0.56
+   AFM700.5 (700): Aedh, son of Dluthach, died.
+   AFM710.7 (710): Dluthach, son of Fithcheallach, was burned.
+
+gap=10 score=0.59
+   AFM732.4 (732): and Graiphnidh, Abbot of Imleach Fia, died.
+   AFM742.3 (742): Abel, Abbot of Imleach Fia, died.
+
+gap=10 score=0.62
+   AFM741.2 (741): Cormac, Bishop of Ath Truim Trim , died.
+   AFM751.3 (751): Baethallach, son of Colman Ua Suibhne, Abbot of Ath Truim Trim , died.
+
+gap= 9 score=0.64
+   AFM454.2 (454): The feast of Teamhair was celebrated by Laeghaire, son of Niall.
+   AFM463.2 (463): The feast of Teamhair was celebrated by Oilioll Molt this year.
+
+gap= 9 score=0.86
+   AFM610.4 (610): Ronan, son of Colman, King of Leinster, died.
+   AFM619.3 (619): Ronan, son of Colman, died.
+
+gap= 9 score=0.63
+   AFM735.3 (735): Maincheine, of Tuaim Greine, died.
+   AFM744.4 (744): Conall, Abbot of Tuaim Greine, died.
+
+gap= 8 score=0.49
+   AFM750.5 (750): Fidhmuine Ua Suanaigh, anchorite of Raithin, died.
+   AFM758.2 (758): Fidhairle Ua Suanaigh, Abbot of Raithin, died on the first of October.
+
+gap= 7 score=0.76
+   AFM719.4 (719): Indreachtach, son of Muireadhach, King of Connaught, died.
+   AFM726.9 (726): Muireadhach, son of Indreachtach, was slain; he was Bishop of Magh Eo.
+
+gap= 7 score=0.46
+   AFM747.9 (747): Flaithbheartach, son of Conall Meann, chief of Cinel Cairbre, died.
+   AFM754.2 (754): Eochaidh, son of Conall Meann, Abbot of Faebhran, died.
+
+gap= 6 score=0.96
+   AFM464.2 (464): The battle of Dumha Aichir was fought by the Leinstermen, against Oilioll Molt.
+   AFM470.2 (470): The battle of Dumha Aichir against Oilioll Molt, by the Leinstermen.
+
+gap= 6 score=0.51
+   AFM658.5 (658): Eochaidh, son of Blathmac son of Aedh Slaine, died.
+   AFM664.2 (664): After Diarmaid and Blathmac, the two sons of Aedh Slaine, had been eight years in the sovereignty of Ireland, they died of the same plague.
+
+gap= 6 score=0.68
+   AFM671.4 (671): Failbhe, Abbot of Ia Coluim Cille Iona , came to Ireland from Ia.
+   AFM677.2 (677): St. Failbhe, Abbot of Ia Coluim Cille, died on the 22nd of March.
+
+gap= 6 score=0.53
+   AFM726.6 (726): Timnen, of Cill Garadh in Scotland ;
+   AFM732.2 (732): Ronan, Abbot of Ceann Garadh in Scotland ;
+
+gap= 6 score=0.63
+   AFM752.3 (752): Siadhail, Abbot of Linn Duachail, died.
+   AFM758.4 (758): Anfadan, Abbot of Linn Duachail, died .
+
+gap= 5 score=1.00
+   AFM619.3 (619): Ronan, son of Colman, died.
+   AFM624.4 (624): Ronan, son of Colman, died.
+
+gap= 5 score=0.64
+   AFM626.4 (626): The battle of Leathairbhe between Maelfithrigh, chief of Cinel Mic Earca, and Ernaine, son of Fiachra, chief of Cinel Fearadhaigh, where Maelfithrigh, son of Aedh Uairidhnach, was slain.
+   AFM631.2 (631): Ernaine, son of Fiachna, chief of Cinel Fearadhaigh, was slain. It was by him Maelfithrigh, son of Aedh Uairidhnach, was slain in the battle of Letherbhe.
+
+gap= 5 score=0.47
+   AFM649.6 (649): Maeldoid, son of Suibhne, chief of Meath, died.
+   AFM654.5 (654): The battle of Delenn, in which Maeldoid, son of Conaing, was slain.
+
+gap= 4 score=0.53
+   AFM720.9 (720): and St. Colman Banban, scribe of Cill Dara Kildare , died.
+   AFM724.2 (724): Mac Onchon, scribe of Cill Dara Kildare ;
+
+gap= 4 score=0.53
+   AFM738.1 (738): Affiath, Abbot of Magh Bile Movilla , died.
+   AFM742.2 (742): St. Cuanan Glinne, Abbot of Magh Bile Movilla , died on the 3rd of April.
+
+gap= 3 score=0.47
+   AFM597.4 (597): The battle of Sleamhain, in Meath, was fought by Colman Rimidh against Conall Cu, son of Aedh, son of Ainmire; and Conall was defeated.
+   AFM600.7 (600): Conall Cu, son of Aedh, son of Ainmire, died.
+
+gap= 3 score=0.55
+   AFM643.2 (643): Dunchadh, son of Fiachna, son of Deman, King of Ulidia, died.
+   AFM646.3 (646): Maelcobha, son of Fiachna, son of Deman, King of Ulidia, was slain by Congal Ceannfoda, son of Dunchadha.
+
+gap= 3 score=0.83
+   AFM666.4 (666): Bran Finn, son of Maelochtraigh, chief of the Deisi of Munster, was slain.
+   AFM669.2 (669): Bran Finn, son of Maelochtraigh, chief of Deisi Mumhan died .
+
+gap= 3 score=0.48
+   AFM725.13 (725): Cobhlaith, daughter of Ceallach Cualann, died.
+   AFM728.6 (728): Caintighearna daughter of Ceallach Cualann died.
+
+gap= 3 score=0.52
+   AFM744.4 (744): Conall, Abbot of Tuaim Greine, died.
+   AFM747.7 (747): Reachtabhrat Ua Guaire, Abbot of Tuaim Greine Tomgraney ;
+
+gap= 3 score=0.66
+   AFM744.7 (744): Cluain Fearta Brenainn Clonfert was burned.
+   AFM747.5 (747): Fiachna Ua Maicniadh, Abbot of Cluain Fearta Brenainn Clonfert ;
+
+gap= 2 score=1.00
+   AFM463.2 (463): The feast of Teamhair was celebrated by Oilioll Molt this year.
+   AFM465.2 (465): The feast of Teamhair was celebrated by Oilioll Molt.
+
+gap= 2 score=0.62
+   AFM552.3 (552): The feast of Teamhair was made by the King of Ireland, Diarmaid, son of Fearghus Ceirbheoil.
+   AFM554.3 (554): The last feast of Teamhair was made by Diarmaid, King of Ireland.
+
+gap= 2 score=0.58
+   AFM712.3 (712): Fogartach Ua Cearnaigh was banished into Britain by Fearghal, King of Ireland.
+   AFM714.5 (714): Fogartach Ua Cearnaigh returned from his exile in Britain.
+
+gap= 1 score=0.53
+   AFM547.3 (547): The chief of Teathbha, Crimhthann, son of Brian, died.
+   AFM548.5 (548): St. Colum, son of Crimhthann, died.
+
+gap= 1 score=0.57
+   AFM727.2 (727): A battle was fought between Aedh, son of Fearghal, and the Cinel Conaill, at Magh Itha, where Conaing, son of Congal, son of Fearghus, and many others of the Cinel Eoghain, were slain.
+   AFM728.2 (728): A battle was fought in Magh Itha, between the sons of Loingseach, son of Aenghus, and the sons of Fearghal, son of Maelduin, where numbers of the Cinel Eoghain were slain.
+
+gap= 1 score=0.69
+   AFM741.9 (741): and Seachnasach, son of Colgan, Lord of Ui Ceinnsealaigh, died.
+   AFM742.14 (742): Seachnasach, son of Colgan, King of South Leinster, died.
+
+gap= 1 score=0.63
+   AFM753.2 (753): Muireadhach, son of Cormac Slaine, Abbot of Lughmhagh Louth , died.
+   AFM754.5 (754): Coissetach, Abbot of Lughmhagh Louth , died.
+

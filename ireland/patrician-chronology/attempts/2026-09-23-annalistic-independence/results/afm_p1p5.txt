@@ -1,0 +1,8 @@
+P5: AFM alone, 350-1199: n=7523 marked=13  fitted changepoint=663  LR=4.43
+    permutation null (1000 draws): max null LR=16.51  p=0.470
+    P5 RESULT: PASS (predicted 560-760)
+    but the changepoint is not significant (p=0.470), so the fit is noise:
+    P5 is recorded as VACUOUS -- AFM has too few markers to fit, which FREEZE.md
+    named as a failure condition.
+
+P1: early 4/932=0.00429  late 8/5040=0.00159  ratio 2.70  -> FAIL (predicted >=3)

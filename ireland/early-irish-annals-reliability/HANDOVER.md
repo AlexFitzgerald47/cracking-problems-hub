@@ -1,5 +1,46 @@
 # Handover Notes – Early Irish Annals Reliability
 
+*Update this file at the end of every serious working session. Keep the latest notes at the top.*
+
+---
+
+## 2026-09-23 (later) – cross-reference from `ireland/patrician-chronology/`, not a session on this folder
+
+A cracker session on the Patrician problem used this folder's corpus and parser.
+Two things it produced bear directly on the question here, and one of them is an
+independent measurement of the transition this folder exists to date.
+
+**Your parser reproduces exactly.** Re-run from a clean CELT fetch it returned
+`data/entries_derived.csv` **byte for byte**, sha1 entry digests included.
+
+**A new instrument for the transition date.** 87 entries across the four
+witnesses carry an alternative-source marker — "as some books state", "Or here",
+"I have found this in the Book of Cuanu" — i.e. the places where a compiler is
+visibly choosing between written sources rather than recording. All 87 hand-read,
+precision 1.00. The rate collapses at a fitted changepoint of **663**: 0.0302
+before, 0.00067 after. Existence by likelihood ratio against a permutation null
+holding each entry in its own year: **LR 205.4, max null LR 18.1 over 1000 draws**,
+p < 0.001. Location by year-level bootstrap: **95 % CI 596–666**. All four
+witnesses show the early/late contrast independently, so it is not one
+translator's habit.
+
+This is orthogonal to your Iona-transition gazetteer work and it does **not**
+depend on any tag set — which matters, because the finding you left behind was
+that one defensible gazetteer decision moved your fitted date by 70 years. A
+measurement that does not touch place-names at all is worth having beside it.
+Whether 663 and your fitted 808 / published 740 are compatible is an open
+question this session did not attempt; they are not measuring the same thing
+(source-arbitration vs. content shift) and should not be assumed to be.
+
+**And a caution for anyone refitting on a new witness.** The same changepoint
+fitted on the Annals of the Four Masters returns **663 — identical to the year —
+with p = 0.47.** It is noise. AFM has 13 markers in the window. See
+`board/log/2026-09-23-an-identical-fit-is-not-a-replication.md`.
+
+Full detail: `ireland/patrician-chronology/attempts/2026-09-23-annalistic-independence/RESULTS.md`.
+AFM is now parsed into your schema by `src/parse_afm.py` there (9,503 entries,
+AD 1–1372), which imports your parser rather than copying it.
+
 ---
 
 ## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)

@@ -1,0 +1,153 @@
+--- AT /Ruadhan|Ruadan|Lothra/ 400-780
+    583 AT583.3     Ruadhan of Lothra rested according to others.
+    655 AT655.4     The death of Aithchen of Tír dá Glas and of Cailcene from Lothra.
+    710 AT710.4     Colman son of Sechnusach abbot of Lothra dies.
+    720 AT720.2     Sinach of Inis Clothrann went to sleep.
+--- AT /Cum[ée]ne|Cuimine/ 400-780
+    660 AT660.0     K. iiii. The rest of Cuméne the tall according to some.
+    667 AT667.1     The mortality in which four abbots of Bennchar passed away i.e. Berach, Cuimine, Colum, Mac Aodha.
+--- CS /Furse|Fursa|Fursu/ 400-780
+    627 CS627.3     The vision of Fursa was manifested.
+    649 CS649.3     Repose of Furse in Peronne in France , according to some.
+--- AI /Uchbad/ 400-780
+    738 AI738.2     The battle of 'Uchbad ' according to others.
+--- CS /Br[eé]nainn of Biror|Brenainn.*Biror/ 400-780
+    565 CS565.3     Repose of Brénainn of Biror, as some say.
+    573 CS573.2     Brénainn of Biror died.
+--- AI /Gregory/ 400-780
+    538 AI538.1     Kl. Birth of Gregory. [AU. 540, 545].
+    597 AI597.2     Repose of Gregory of Rome according to others. [AU 592].
+    604 AI604.1     Kl. Repose of Gregory of Rome. [AU 606, 607].
+--- AT /Cellach Cualann|Ceallach Cualann/ 400-780
+    690 AT690.8     Ceallach Cualann son of Gerrthighe, king of Leinster, dies.
+    704 AT704.5     A war on Cloneath, where the winner was Ceallach Cualann, in which fell Badbchad of Meath son of Diarmaid. Fogartach ua Cernaig fl
+    715 AT715.1     Cellach Cualann king of Leinster dies, according to some.
+    727 AT727.6     The battle of Inis Breguinn in which fell Etersceóil son of Ceallach Cualann and Congal son of Bran. Faolán was the victor.
+--- CS /Colum Cille/ 585-615
+    589 CS589.2     Repose of Aed son of Brénainn, king of Tethba. It is he that granted Dermag to Colum Cille.
+    595 CS595.1     Repose of Colum Cille on the eve of Pentecost, the fifth of the Ides of June, in the 36th year of his pilgrimage, in the 76th year
+--- CS /Brigit|Brighit/ 505-540
+   (none)
+--- AT /Brigit|Brighit/ 505-540
+    524 AT524.1     The falling asleep of saint Brigit in the eighty-eight year of her age, or the mere seventieth as other say.
+    525 AT525.2     The death of Illann son of Dúnlang, king of Leinster. The fierce battle of Luachair above, downwards. Brigit was seen, no empty vi
+    525 AT525.3     The battle of Luachair gained by Cairbre over the Uí Néill, whereof was said: The fierce battle of Luachair above, downwards. Brig
+--- AI /Brigit|Brighit/ 505-540
+    524 AI524.1     Kl. Repose of Saint Brigit [AU 524, 526, 528].
+--- CS /Connad Cerr|Conaing Cerr|Connad/ 400-780
+    630 CS630.3     The death of Connad Cerr, as some say, in the first year of his reign, in the battle of Fid Eoin.
+
+
+===== direct partner searches in AU for every REJECTED automated pair =====
+--- AU /\bMaine\b/
+    440 AU440.2     Some books state that Maine son of Niall perished this year.
+    538 AU538.2     The battle of Claenloch, in which Maine son of Cerball fell.
+    604 AU604.4     Aed Buide, king of Cenél Maine, died .
+    627 AU627.2     The battle of Carn Feradaig in Cliú, in which Failbe the Red of Feimen was victor. Guaire of Aidne took flight. Conall son of Maeldub took flight, and
+    677 AU677.5     The encounter of Cúil Maine in which two sons of Mael Aichdin fell.
+    684 AU684.2     Death of Maine, abbot of Naendruim, and death of Der Forgaill.
+    691 AU691.4     Fidchellach son of Flann, king of Uí Maine, dies.
+    712 AU712.6     A battle between two descendants of Aed Sláine, in which Maine son of Niall was killed. Flann son of Aed son of Dlúthach was victor.
+    713 AU713.9     Sechnasach, king of Uí Maine, died.
+    722 AU722.8     The battle of Almain on the third of the Ides 11th of December, the sixth feria, in which fell Fergal son of Mael Dúin, son of Mael Fithrich son of Ae
+    743 AU743.5     A battle between Uí Maine and Uí Fhiachrach of Aidne.
+    750 AU750.5     Death of Cathal of Maenmag, king of Uí Maine.
+    755 AU755.5     Indrechtach son of Dlúthach, king of Uí Maine, Flaithnia son of Flann grandson of Congal, king of Uí Fhailgi, Fiangalach son of Anmchad son of Mael Cu
+--- AU /Cairthinn/
+    446 AU446.1     The battle of Feimen in which Mac Cairthinn son of Caelub fell. Some say he was of the Cruithin.
+    506 AU506.1     Repose of bishop Mac Cairthinn of Clochar.
+--- AU /prey.*Saxon/
+    434 AU434.1     The first prey by the Saxons from Ireland or in Ireland.
+    471 AU471.1     The second prey of the Saxons from Ireland (as some state) was carried off this year, as Maucteus (Mochta) says. Thus I have found in the Book of Cuan
+--- AU /\bOcha\b/
+    483 AU483.2     Or, this year the battle of Ocha according to others, won by Muirchertach Mac Erca and by Fergus Cerball son of Conall of Cremthann, and by Fiachra Lo
+--- AU /Granairet/
+    485 AU485.1     The first battle of Granairet. Coirpre, son of Niall Naígiallach, was victor, and Finnchad fell; or, Mac Erca was victor, as others state.
+    493 AU493.3     The second battle of Granairet.
+    495 AU495.1     The second battle of Granairet, in which fell Fraech son of Finnchad son of Gairchú son of Fothad son of Eochu Lámhdóid son of Mess Corb, king of Laig
+    497 AU497.4     Or here, the second battle of Granairet, in which Fraech son of Finnchad, king of Laigin Desgabhair, fell. Eochu, son of Coirpre, was victor.
+--- AU /Ard Corann|Ard Corran/
+    464 AU464.1     The first battle of Ard Corann, won by the Laigin.
+    507 AU507.1     The battle of Ard Corann, and the death of Lugaid son of Laegaire; and as some state, Domangart Mac Nissi of Réte retired into religion? in his 35th y
+    508 AU508.1     And the death of Lugaid son of Laegaire, and the battle of Ard Corran.
+    511 AU511.1     The second battle of Ard Corann, as some state.
+    627 AU627.1     The battle of Ard Corann in which fell Fiachna son of Demán: the Dál Riata were victors.
+--- AU /Comgall of Bennchor/
+    516 AU516.2     The birth of Comgall of Bennchor.
+    520 AU520.3     Comgall of Bennchor was born according to some .
+    602 AU602.1     Repose of Comgall of Bennchor.
+--- AU /Ardgal/
+    520 AU520.2     The battle of Detnae in Dromma Breg in which fell Ardgal son of Conall son of Niall. Colgu Moo Cluethi, king of Airthir, and Muirchertach Mac Erca wer
+    523 AU523.1     (The battle of Dethna in Droma Breg, in which Ardgal, son of Conall of Cremthann son of Niall, fell, according to others.
+--- AU /Mochta|Maucteus/
+    471 AU471.1     The second prey of the Saxons from Ireland (as some state) was carried off this year, as Maucteus (Mochta) says. Thus I have found in the Book of Cuan
+    535 AU535.1     The falling alseep of Mochta, disciple of Patrick, on the 13th of the Kalends of September. Thus he himself wrote in his epistle: Mauchteus, a sinner,
+    537 AU537.3     Or here, the falling asleep of St Mochta, disciple of Patrick.)
+--- AU /Lann Ela/
+    611 AU611.3     Repose of Colmán of Lann Ela. Thus in the Book of Cuanu.
+    740 AU740.8     The falling asleep of the holy Bran of Lann Ela.
+--- AU /Echaid Buide/
+    629 AU629.4     Death of Echaid Buide son of Aedán, king of the Picts. Thus I have found in the Book of Cuanu.
+--- AU /Conall Cael/
+    637 AU637.1     The battle of Mag Roth and the battle of Sailtír were fought on the same day. Conall Cael son of Mael Cobo of the Cenél nEógain, and adherent of Domna
+    643 AU643.5     Cellach and Conall Cael i.e. two sons of Mael Cobo son of Aed son of Ainmire, begin to reign, as some state.
+    643 AU643.7     Here it is uncertain who reigned after Domnall. Some historigraphers state that four kings, i.e. Cellach, Conall Cael, and two sons of Aed Sláine son 
+    650 AU650.2     The battle of Dún Cremthainn in which Aengus son of Domnall fell. The victors were the sons of Mael Coba, i.e. Cellach and Conall Cael.
+    681 AU681.3     The killing of Conall Cael son of Dúnchad in Cenn Tíre.
+--- AU /Tailtiu/
+    494 AU494.1     The battle of Tailtiu won over the Laigin by Cairpre son of Niall.
+    496 AU496.4     Or here, the battle of Tailtiu.
+    717 AU717.6     Disturbance of the fair of Tailtiu by Fogartach, in which Ruba's son and Dub Sléibe's son fell.
+    723 AU723.5     Sínach of Tailtiu dies.
+    733 AU733.7     The overthrow of Cathal by Domnall in Tailtiu, and the overthrow of Fallomun by Cathal in Tlachtga.
+--- AU /Slicech/
+    543 AU543.2     The battle of Slicech, in which Eógan Bél, king of Connacht, fell. Forgus and Domnall, two sons of Mac Erca, were victors, and Ainmire son of Sétna an
+    547 AU547.1     The battle of Slicech in which fell Eógan Bél, i.e. king of Connacht; and Domnall and Forgus, two sons of Muirchertach Mac Erca, and Ainmire son of Sé
+    548 AU548.4     Or here, the battle of Slicech).
+--- AU /Gabair Liph/
+    565 AU565.3     The battle of Gabair Liphi, and the death of Daimíne Daim Airgit.
+    566 AU566.1     The battle of Gabair Liphi. Forgus and Domnall were victors.
+    573 AU573.2     (Or here, the battle of Gabair Liphe won over the Laigin.
+--- AU /Éblenn/
+    533 AU533.3     The battle of Éblenn won by Muirchertach; and the battle of Mag Ailbe won against the Laigin, and the battle of Aidne against the Connachta, and the b
+    535 AU535.3     The battle of Éblenn won by Muirchertach Mac Erca over the Laigin, as some say.
+--- AU /Fursu|Fursa/
+    627 AU627.3     The vision which the religious bishop Fursa beheld.
+    648 AU648.1     Fursu the devout died.
+    649 AU649.5     Repose of Fursu in Peronne.
+    656 AU656.7     Or here, the death of Fursu according to others.
+    661 AU661.2     Fursa rested in Peronne.
+    751 AU751.8     Death of Fursa, abbot of Lecain Mide.
+    753 AU753.12    Death of Fursa of Es Mac nEirc.
+--- AU /Dáuíd/
+    551 AU551.1     Repose of Dáuíd of Farannán, son of Guaire descendant of Farannán, bishop of Ard Macha and legate of all Ireland.
+    553 AU553.4     Or here, the repose of Dáuíd; bishop of Ard Macha and legate.
+--- AU /Duma Aichir/
+    468 AU468.2     The battle of Duma Aichir, i.e. won against Ailill Molt, as I have found in the Book of Cuanu.
+    474 AU474.1     The battle of Duma Aichir won over Ailill Molt by the Laigin.
+    476 AU476.1     The battle of Duma Aichir won against Ailill Molt by the Laigin.
+--- AU /Brí Éile/
+    473 AU473.3     The mêlée of Brí Éile won over the Laigin by Ailill Molt.
+    475 AU475.1     The battle alias the mêlée of Brí Éile won by Ailill Molt over the Laigin. So I have found in the Book of Cuanu.
+    478 AU478.1     The battle of Brí Éile.
+--- AU /Lugaid son of Laegaire/
+    482 AU482.1     The battle of Ochae i.e. won by Lugaid son of Laegaire and by Muirchertach Mac Erca, in which Ailill Molt fell.
+    484 AU484.1     Beginning of the reign of Lugaid son of Laegaire this year.
+    507 AU507.1     The battle of Ard Corann, and the death of Lugaid son of Laegaire; and as some state, Domangart Mac Nissi of Réte retired into religion? in his 35th y
+    508 AU508.1     And the death of Lugaid son of Laegaire, and the battle of Ard Corran.
+    512 AU512.4     Or here, the death of Lugaid son of Laegaire, according to the Book of the Monks.
+--- AU /Ibar/
+    500 AU500.2     Repose of bishop Ibar on the 9th of the Kalends of May.
+    501 AU501.1     Muirchertach was victor; and the death of bishop Ibar on the 9th of the Kalends of May.
+    504 AU504.3     Or here, the death of bishop Ibar.
+--- AU /Cainnech of Achad/
+    521 AU521.1     Cainnech of Achad Bó was born this year according to some.
+    527 AU527.1     Birth of Cainnech of Achad Bó.
+    599 AU599.2     Repose of Cainnech of Achad Bó, as Cuanu states.
+--- AU /Brigit/
+    439 AU439.2     Or that on this Kalend, the birth of Brigit should be .
+    452 AU452.1     Here some place the birth of St. Brigit.
+    456 AU456.1     Death of Énna son of Cathub, and the birth of St Brigit, as some say.
+    524 AU524.2     Repose of St Brigit in the 70th year of her age.
+    526 AU526.1     The falling asleep of St Brigit in the 70th year of her age.
+    528 AU528.3     Or here, the falling asleep of Brigit according to the Book of the Monks.

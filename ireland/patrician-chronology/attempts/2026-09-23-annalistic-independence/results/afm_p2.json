@@ -1,0 +1,125 @@
+{
+ "clusters": [
+  {
+   "event": "Feast of Teamhair by Oilioll Molt",
+   "years": [
+    463,
+    465
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "cross": "AU 467,469,470"
+  },
+  {
+   "event": "Battle of Dumha Aichir",
+   "years": [
+    464,
+    470
+   ],
+   "span": 6,
+   "maxgap": 6,
+   "cross": "AU 468,474,476"
+  },
+  {
+   "event": "Ailill bishop of Ard Macha of the Ui Bresail",
+   "years": [
+    525,
+    535
+   ],
+   "span": 10,
+   "maxgap": 10,
+   "cross": "AU 526,536"
+  },
+  {
+   "event": "Feast of Teamhair by Diarmaid son of Cerball",
+   "years": [
+    552,
+    554
+   ],
+   "span": 2,
+   "maxgap": 2,
+   "cross": "AU 558,560"
+  },
+  {
+   "event": "Death of Ronan son of Colman king of Laigin",
+   "years": [
+    610,
+    619,
+    624
+   ],
+   "span": 14,
+   "maxgap": 9,
+   "cross": "AT 613 CS 615 AU 624 AT 625"
+  },
+  {
+   "event": "Death of Blathmac son of Maelcobha king of Ulaid",
+   "years": [
+    656,
+    666,
+    669
+   ],
+   "span": 13,
+   "maxgap": 10,
+   "cross": "CS 670"
+  },
+  {
+   "event": "Death of Bran Finn son of Maelochtraigh",
+   "years": [
+    666,
+    669
+   ],
+   "span": 3,
+   "maxgap": 3,
+   "cross": "-"
+  },
+  {
+   "event": "Death of Ceallach son of Raghallach king of Connacht",
+   "years": [
+    703,
+    738
+   ],
+   "span": 35,
+   "maxgap": 35,
+   "cross": "AU 705 AT 705 CS 705 (one date only)"
+  },
+  {
+   "event": "Death of Seachnasach son of Colgan",
+   "years": [
+    741,
+    742
+   ],
+   "span": 1,
+   "maxgap": 1,
+   "cross": "-"
+  }
+ ],
+ "maxgaps": [
+  1,
+  2,
+  2,
+  3,
+  6,
+  9,
+  10,
+  10,
+  35
+ ],
+ "afm_patrick": [
+  457,
+  493
+ ],
+ "afm_patrick_gap": 36,
+ "P2": "FAIL",
+ "refuters": [
+  {
+   "event": "Death of Ceallach son of Raghallach king of Connacht",
+   "years": [
+    703,
+    738
+   ],
+   "span": 35,
+   "maxgap": 35,
+   "cross": "AU 705 AT 705 CS 705 (one date only)"
+  }
+ ]
+}

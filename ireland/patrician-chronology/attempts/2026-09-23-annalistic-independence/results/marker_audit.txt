@@ -1,0 +1,274 @@
+Hand audit of every alternative-source marker hit in AU/AT/CS/AI.
+All 87 were read.  All 87 are genuine compiler's source-attribution or
+alternative-statement formulae: precision 1.00, 0 false positives.
+Entry text is quoted at <= 300 characters so the audit can be checked; the
+full text is not redistributed (CELT `restricted`).
+
+Three functional types are visible and are worth separating in later work:
+  A  alternative DATE      "Or here, ...", "Here some place/record ..."
+  B  source CITATION       "Thus I have found in the Book of Cuanu"
+  C  alternative FACT      "Some say he was of the Cruithin" (ethnicity, age, victor)
+Only type A is a dating disagreement.  This session's comparison class uses the
+pairs that turned out to be type A; the type is not machine-assigned.
+
+AU   435 AU435.2       [according to some]
+     Orosius, Prosper and Cyril flourished in the doctrine of Christ, according to some.
+
+AU   436 AU436.1       [Or here]
+     Or here, the death of Bresal.
+
+AU   436 AU436.2       [according to others]
+     Orosius, Prosper and Cyril flourished in Christ or in the doctrine of Christ, according to others.
+
+AU   436 AU436.3       [according to others]
+     Or this year, Bresal died, according to others.
+
+AU   440 AU440.2       [Some books]
+     Some books state that Maine son of Niall perished this year.
+
+CS   445 CS445.1       [Some say]
+     Battle of Feimin, in which fell the son of Cairthind, son of Colboth, son of Niall. Some say that he was of the Picts.
+
+AU   446 AU446.1       [Some say]
+     The battle of Feimen in which Mac Cairthinn son of Caelub fell. Some say he was of the Cruithin.
+
+AU   452 AU452.1       [Here some]
+     Here some place the birth of St. Brigit.
+
+AI   455 AI455.2       [Here some]
+     Here some place the birth of Saint Brigit [AU 452, 456].
+
+AU   456 AU456.1       [as some]
+     Death of Énna son of Cathub, and the birth of St Brigit, as some say.
+
+AU   457 AU457.2       [as some]
+     Repose of the elder Patrick, as some books state.
+
+AU   459 AU459.2       [according to others]
+     Or in this year the battle of Áth Dara occurred according to others.
+
+AU   461 AU461.2       [Here some]
+     Here some record the repose of Patrick.
+
+AU   467 AU467.2       [I have found]
+     The Feast of Temair held by Ailill Molt son of Dath Í son of Fiachra son of Eochu Mugmedón. Thus I have found in the Book of Cuanu.
+
+AU   468 AU468.2       [I have found]
+     The battle of Duma Aichir, i.e. won against Ailill Molt, as I have found in the Book of Cuanu.
+
+AU   469 AU469.1       [according to others]
+     Or, the Feast of Temair held by Ailill Molt this year, according to others.
+
+AU   470 AU470.1       [as some]
+     The Feast of Temair held by Ailill Molt, as some say.
+
+AU   471 AU471.1       [as some]
+     The second prey of the Saxons from Ireland (as some state) was carried off this year, as Maucteus (Mochta) says. Thus I have found in the Book of Cuanu.
+
+AU   475 AU475.1       [I have found]
+     The battle alias the mêlée of Brí Éile won by Ailill Molt over the Laigin. So I have found in the Book of Cuanu.
+
+AU   483 AU483.2       [according to others]
+     Or, this year the battle of Ocha according to others, won by Muirchertach Mac Erca and by Fergus Cerball son of Conall of Cremthann, and by Fiachra Lon son of the king of Dál nAraide.
+
+AI   485 AI485.1       [as others]
+     Kl. The battle of Granard (Mac Erce victor), in which Finnchad, king of the Laigin, fell; and Cairpre [was] victor, as others say. [AU 485, 486]. The mortal wounding of Crimthann Ceinnselach, king of Laigin, whom Echaid Glúinech slays. [AU 483, 485].
+
+AU   485 AU485.1       [as others]
+     The first battle of Granairet. Coirpre, son of Niall Naígiallach, was victor, and Finnchad fell; or, Mac Erca was victor, as others state.
+
+CS   489 CS489.1       [ut dicitur]
+     Patrick, Archbishop and Apostle of the Irish, in the 122nd year of his age, on the l6th of the Kalends of April, quievit, ut dicitur :— Since Christ was born, a joyful reckoning, Four hundred and fair ninety; Three exact years after that To the death of Patrick, Chief Apostle.
+
+AU   491 AU491.3       [Or here]
+     Or here, the battle of Cell L osnaidh according to others. Mac Erca was victor, and the king of Caisel defeated.
+
+AU   496 AU496.4       [Or here]
+     Or here, the battle of Tailtiu.
+
+AU   497 AU497.4       [Or here]
+     Or here, the second battle of Granairet, in which Fraech son of Finnchad, king of Laigin Desgabhair, fell. Eochu, son of Coirpre, was victor.
+
+AU   499 AU499.4       [Or here]
+     Or here, Mo-Chaí of Naendruim according to another book.)
+
+AU   504 AU504.3       [Or here]
+     Or here, the death of bishop Ibar.
+
+AU   507 AU507.1       [as some]
+     The battle of Ard Corann, and the death of Lugaid son of Laegaire; and as some state, Domangart Mac Nissi of Réte retired into religion? in his 35th year.
+
+AU   511 AU511.1       [as some]
+     The second battle of Ard Corann, as some state.
+
+AU   512 AU512.4       [Or here]
+     Or here, the death of Lugaid son of Laegaire, according to the Book of the Monks.
+
+AU   520 AU520.3       [according to some]
+     Comgall of Bennchor was born according to some .
+
+AU   521 AU521.1       [according to some]
+     Cainnech of Achad Bó was born this year according to some.
+
+AU   523 AU523.1       [according to others]
+     (The battle of Dethna in Droma Breg, in which Ardgal, son of Conall of Cremthann son of Niall, fell, according to others.
+
+CS   523 CS523.1       [as some]
+     Dormitatio of Saint Brigid, in the 87th year of her age, or 77th, as some assert.
+
+AT   524 AT524.1       [other say]
+     The falling asleep of saint Brigit in the eighty-eight year of her age, or the mere seventieth as other say.
+
+AU   528 AU528.3       [Or here]
+     Or here, the falling asleep of Brigit according to the Book of the Monks.
+
+AU   535 AU535.3       [as some]
+     The battle of Éblenn won by Muirchertach Mac Erca over the Laigin, as some say.
+
+AU   536 AU536.5       [Or here]
+     Or here, the drowning of Muirchertach Mac Erca, according to others.
+
+AU   537 AU537.3       [Or here]
+     Or here, the falling asleep of St Mochta, disciple of Patrick.)
+
+AU   539 AU539.2       [as some]
+     The battle of Luachair. Tuathal Maelgarb son of Cormac Caech son of Cairpre son of Niall Naígiallach was victor as some state.
+
+AU   545 AU545.2       [as some]
+     Death of Comgall son of Domangart, as some say.
+
+AU   545 AU545.3       [according to the book]
+     Diarmait son of Fergus Cerrbél son of Conall of Cremthann son of Niall Naígiallach began to reign, according to the book of Cuanu.
+
+AU   545 AU545.4       [Or here]
+     Or here, the birth of Gregory according to others.
+
+AU   548 AU548.4       [Or here]
+     Or here, the battle of Slicech).
+
+AU   553 AU553.3       [I have found]
+     I have found this in the Book of Cuanu: The relics of Patrick were placed sixty years after his death in a shrine by Colum Cille. Three splendid halidoms were found in the burial-place: his goblet, the Angel's Gospel, and the Bell of the Testament. This is how the angel distributed the halidoms: the
+
+AU   553 AU553.4       [Or here]
+     Or here, the repose of Dáuíd; bishop of Ard Macha and legate.
+
+AT   564 AT564.2       [as others]
+     The rest of Brenann of Biorra, as others say.
+
+AU   565 AU565.2       [as some]
+     Repose of Brénainn of Biror, as some say.
+
+CS   565 CS565.3       [as some]
+     Repose of Brénainn of Biror, as some say.
+
+AU   572 AU572.6       [as some]
+     Repose of Brénainn of Biror, as some say.)
+
+AU   573 AU573.2       [Or here]
+     (Or here, the battle of Gabair Liphe won over the Laigin.
+
+AU   576 AU576.5       [Or here]
+     Or here, the slaying of Ainmire son of Sétna. Of this was said: Feimen, when there was a king, Was no abode lacking in valour; Today its aspect is crimson In the hands of Ainmire son of Sétna.
+
+AU   577 AU577.6       [Or here]
+     Or here, the killing of Fergus son of Néilline; and Aenu, abbot of Cluain Moccu Nóis, Íte of Cluain Credail, and Gildas died .
+
+AT   582 AT582.9       [according to others]
+     Mosis of the sons of Eratannus according to others.
+
+AT   583 AT583.3       [according to others]
+     Ruadhan of Lothra rested according to others.
+
+AT   585 AT585.1       [as others]
+     The battle of Nelach Daethi in which fell Colmán Bec son of Diarmaid, as others say, caesis 5 thousand by the prophecy of Colum Cill. Aed son of Ainmire was the victor. Hence was said: The howling battle was gained over Colum as is related, ï¿½ by (Tír) Conaill and (Tír) Eogain. Daigh son of Carell 
+
+AU   587 AU587.3       [Or here]
+     Or here the death of Baetán son of Cairell, king of Ulaid.
+
+AU   591 AU591.2       [Or here]
+     Or here, the repose of Mac Nisi, abbot of Cluain Moccu Nóis.
+
+CS   595 CS595.1       [as is said]
+     Repose of Colum Cille on the eve of Pentecost, the fifth of the Ides of June, in the 36th year of his pilgrimage, in the 76th year of his age, as is said: Thirty years, without light, was Colum Cille in his Black Regles; He went to angels from his body After seven years and seventy.
+
+AI   597 AI597.2       [according to others]
+     Repose of Gregory of Rome according to others. [AU 592].
+
+AU   601 AU601.3       [I have found]
+     Thus I have found in the book of Cuanu: The battle of Slemain and the battle of Cúil Caíl; and the repose of Comgall, and the death of Uatu son of Aed happened this year.
+
+AU   603 AU603.3       [I have found]
+     Everything that has been set down under the following year I have found in the Book of Cuanu to have taken place in this.
+
+AU   607 AU607.1       [as others]
+     Or, as others state, Gregory here migrated to Christ, that is, in this year.
+
+AU   611 AU611.3       [in the Book of]
+     Repose of Colmán of Lann Ela. Thus in the Book of Cuanu.
+
+AU   622 AU622.5       [according to some]
+     Repose of Caemgein of Glenn dá Locha according to some.
+
+AU   629 AU629.4       [I have found]
+     Death of Echaid Buide son of Aedán, king of the Picts. Thus I have found in the Book of Cuanu.
+
+AU   630 AU630.3       [in the book of]
+     Or thus it is related in the book of Dub dá Leithe: The battle of Leitheirbe between the descendants of Mac Erca and the descendants of Feradach, in which Mael Fithrich fell. Ernaine son of Fiachna, was victor.
+
+CS   630 CS630.3       [as some]
+     The death of Connad Cerr, as some say, in the first year of his reign, in the battle of Fid Eoin.
+
+AT   633 AT633.1       [as others]
+     The death of Conaing Cerr as others say, in the first year of his rule, who was beaten in the battle of Fid Eoin.
+
+AU   643 AU643.5       [as some]
+     Cellach and Conall Cael i.e. two sons of Mael Cobo son of Aed son of Ainmire, begin to reign, as some state.
+
+CS   649 CS649.3       [according to some]
+     Repose of Furse in Peronne in France , according to some.
+
+AU   656 AU656.7       [Or here]
+     Or here, the death of Fursu according to others.
+
+AT   660 AT660.0       [according to some]
+     K. iiii. The rest of Cuméne the tall according to some.
+
+AT   661 AT661.4       [as others]
+     The battle of Ogaman at Cenn Corbadan in which fell Conaing son of Congalach son of Aodh Sláine and Ultan son of Ernine, king of Cianacht, and Ceannfaeladh son of Gerrtidhe, king of Ard Cianachta, in which war Blathmac son of Aodh Sláine was overcome by the friends of Diarmaid son of Aodh Sláine, wh
+
+CS   662 CS662.5       [as some]
+     The battle of Ogoman at Cenn Corbadan in which fell Conaing son of Congal son of Aed Sláine and Ultán son of Ernaine king of Ciannachta and Cenn Faelad son of Gerthide king of Ard Ciannachta. In this battle Blathmac son of Aed Sláine was defeated, by the associates of Diarmaid son of Aed Sláine, who
+
+AT   715 AT715.1       [according to some]
+     Cellach Cualann king of Leinster dies, according to some.
+
+AI   738 AI738.2       [according to others]
+     The battle of 'Uchbad ' according to others.
+
+CS   909 CS909.1       [ut dicitur]
+     Cerball son of Muircán, king of Laigin, dies of a sickness, ut dicitur Great grief that Lífe of firece valour Is without the pious, friendly Cerbhall— A generous, stayed, prolific man, To whom Temhair the splendid was obedient.
+
+AU   963 AU963.1       [in the Book of]
+     Domnall ua Néill brought ships from the Daball across Sliab Fuait to Loch Aininne, which had not been done since ancient times.—So in the Book of Dub dá Leithe.
+
+AU  1004 AU1004.5      [in the Book of]
+     The battle of Craeb Tulcha between the Ulaid and the Cenél Eógain, i.e. on Thursday the 18th of the Kalends, of October 14th Sept. , and the Ulaid were defeated; and therein fell Eochaid son of Ardgar, king of Ulaid, and his kinsman Dub Tuinne, and his two sons, Cú Duilig and Domnall; and there was 
+
+AU  1021 AU1021.3      [as is stated]
+     Aed ua Néill's son brought a raiding party over the Uí Dorthain who were in Mag Itechta, and they slew in Lethderg in the pursuit. And the best part of the Airgialla caught up with him from behind and came in front of him, or (as is stated in the Book of Dub dá Leithe) the Uí Méith and the Mugdorna 
+
+AI  1193 AI1193.2      [as some]
+     The castle of Brí Uis was built by the foreigners with the consent of Ua Briain, as some say, and to injure Desmumu therefrom.
+
+AI  1249 AI1249.4      [some say]
+     Fíngen, {son of Diarmait Mac Carthaig}, took prisoner Geoffrey de Cogan, and brought about his death in captivity. And it is not known how he died, but some say that a stone was put about his neck, for, according to them, that was the death he would have wished to inflict on Fíngen, viz., to send hi
+
+AI  1251 AI1251.1      [Or here]
+     Or here the same Fíngen was slain.
+
+AI  1253 AI1253.1      [According to some]
+     Domnall Cairprech ( i.e. Senior) Mac Carthaig was slain in Baile Uí Dúnadaig on the fourth of the Kalends of September [August 29]. by John, son of Thomas, and by his son Sir Maurice. According to some, he was slain at the instance of the daughter of Ó Briain, wife of Sefraid Ó Donnchada, he was tak
+
+AI  1305 AI1305.3      [some say]
+     Ruaidrí Buide Mac Mathgamna, and Tadc his kinsman, were slain in Dísert Muirthile by Tairdelbach Óc Ó Briain and by Donnchad, son of Muiris Ó Cennétig, and some say that it was Brian, son of Muiris, who betrayed them.
+
