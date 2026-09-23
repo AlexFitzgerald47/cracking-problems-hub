@@ -1,0 +1,101 @@
+{
+ "detection": [
+  {
+   "ratio": 1.0,
+   "expected_tagged": 218,
+   "crit": 9.548269394921135,
+   "power": 0.04,
+   "median_abs_error_yr": 73.5,
+   "p_within_20yr": 0.005
+  },
+  {
+   "ratio": 0.75,
+   "expected_tagged": 181,
+   "crit": 9.056706601292035,
+   "power": 0.27,
+   "median_abs_error_yr": 26.0,
+   "p_within_20yr": 0.12
+  },
+  {
+   "ratio": 0.5,
+   "expected_tagged": 145,
+   "crit": 8.984278829946561,
+   "power": 0.97,
+   "median_abs_error_yr": 6.0,
+   "p_within_20yr": 0.7775
+  },
+  {
+   "ratio": 0.35,
+   "expected_tagged": 122,
+   "crit": 9.638593333339713,
+   "power": 1.0,
+   "median_abs_error_yr": 3.0,
+   "p_within_20yr": 0.91
+  },
+  {
+   "ratio": 0.25,
+   "expected_tagged": 108,
+   "crit": 9.65357445107827,
+   "power": 1.0,
+   "median_abs_error_yr": 2.0,
+   "p_within_20yr": 0.9675
+  },
+  {
+   "ratio": 0.15,
+   "expected_tagged": 93,
+   "crit": 9.2636955448761,
+   "power": 1.0,
+   "median_abs_error_yr": 2.0,
+   "p_within_20yr": 0.9875
+  },
+  {
+   "ratio": 0.05,
+   "expected_tagged": 78,
+   "crit": 9.678686464306452,
+   "power": 1.0,
+   "median_abs_error_yr": 1.0,
+   "p_within_20yr": 0.9975
+  }
+ ],
+ "localisation": [
+  {
+   "corpus_multiple": 1,
+   "expected_tagged": 164,
+   "median_abs_error_yr": 6,
+   "p90_abs_error_yr": 44,
+   "p_within_20yr": 0.7833333333333333
+  },
+  {
+   "corpus_multiple": 2,
+   "expected_tagged": 328,
+   "median_abs_error_yr": 3,
+   "p90_abs_error_yr": 16,
+   "p_within_20yr": 0.9366666666666666
+  },
+  {
+   "corpus_multiple": 4,
+   "expected_tagged": 655,
+   "median_abs_error_yr": 1,
+   "p90_abs_error_yr": 7,
+   "p_within_20yr": 0.9833333333333333
+  },
+  {
+   "corpus_multiple": 8,
+   "expected_tagged": 1310,
+   "median_abs_error_yr": 1,
+   "p90_abs_error_yr": 3,
+   "p_within_20yr": 1.0
+  },
+  {
+   "corpus_multiple": 16,
+   "expected_tagged": 2621,
+   "median_abs_error_yr": 0,
+   "p90_abs_error_yr": 2,
+   "p_within_20yr": 1.0
+  }
+ ],
+ "au_year_profile": {
+  "n_years": 450,
+  "n_entries": 2730
+ }
+}

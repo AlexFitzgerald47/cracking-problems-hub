@@ -1,0 +1,406 @@
+{
+ "tagged": [
+  {
+   "id": "AU641.4",
+   "year": 641,
+   "text": "Shipwreck of a vessel of the community of Í."
+  },
+  {
+   "id": "AU701.8",
+   "year": 701,
+   "text": "The destruction Dún Ollaigh by Selbach."
+  },
+  {
+   "id": "AU733.2",
+   "year": 733,
+   "text": "Muiredach son of Ainfcellach assumed the kingship of Cenél Loairn."
+  },
+  {
+   "id": "AU734.5",
+   "year": 734,
+   "text": "Talorg son of Congus was held captive by his brother, handed over to the Picts, and drowned by them."
+  },
+  {
+   "id": "AU778.7",
+   "year": 778,
+   "text": "Niall Frosach son of Fergal in Í Choluim Chille, and Niall son of Conall Grant, king of southern Brega, and Tuathal son of Cremthann, king of Cuala, and Flannabra, king of Uí Máil, and Aed Finn son of Echaid, king of Dál Riata—all died."
+  },
+  {
+   "id": "AU876.1",
+   "year": 876,
+   "text": "Constantine son of Cinaed, king of the Picts, Cinaed abbot of Achad Bó Cainnig, Congalach son of Fínnechta, king of the Airgialla, and Fedach, superior of Dísert Diarmata, die."
+  },
+  {
+   "id": "AU629.4",
+   "year": 629,
+   "text": "Death of Echaid Buide son of Aedán, king of the Picts. Thus I have found in the Book of Cuanu."
+  },
+  {
+   "id": "AU678.3",
+   "year": 678,
+   "text": "Slaughter of the Cenél Loairn in Tíriu."
+  },
+  {
+   "id": "AU761.4",
+   "year": 761,
+   "text": "Death of Aengus son of Fergus, king of the Picts."
+  },
+  {
+   "id": "AU772.5",
+   "year": 772,
+   "text": "Death of Suibne, abbot of Í."
+  },
+  {
+   "id": "AU750.4",
+   "year": 750,
+   "text": "The battle of Catonic (?) between Picts and Britons, in which Talorgan, son of Forgus and brother of Aengus, fell."
+  },
+  {
+   "id": "AU717.5",
+   "year": 717,
+   "text": "An encounter between the Dál Riata and Britons at the rock called Minuirc, and the Britons were defeated."
+  },
+  {
+   "id": "AU825.17",
+   "year": 825,
+   "text": "The violent death of Blamac son of Flann at the hands of the heathens in Í Coluim Chille."
+  },
+  {
+   "id": "AU752.2",
+   "year": 752,
+   "text": "Cathal son of Forannán, abbot of Cell Dara, and Cuiméne grandson of Béc, a devout man of Eig, died."
+  },
+  {
+   "id": "AU749.7",
+   "year": 749,
+   "text": "Drowning of the community of Í."
+  },
+  {
+   "id": "AU802.5",
+   "year": 802,
+   "text": "Mac Oige of Aporcrosan, abbot of Bennchor, Muiredach son of Óchobor, abbot of Cluain Ferta Brénainn, Coscrach grandson of Fraech, abbot of Lugmad, Clemens of Tír dá Glas—all ended their lives happily and in peace."
+  },
+  {
+   "id": "AU820.3",
+   "year": 820,
+   "text": "Constantine son of Fergus, king of Fortriu, dies."
+  },
+  {
+   "id": "AU815.6",
+   "year": 815,
+   "text": "Mael Cánaig, anchorite of Lugmad, and Cellach son of Congal, abbot of Í, fell asleep."
+  },
+  {
+   "id": "AU729.3",
+   "year": 729,
+   "text": "The battle of Druim Derg Blathug in the territory of the Picts between Aengus and Drust, king of the Picts, and Drust fell."
+  },
+  {
+   "id": "AU807.3",
+   "year": 807,
+   "text": "The killing of Conall son of Tadc, by Conall son of Aedacán in Cenn Tíre."
+  },
+  {
+   "id": "AU849.7",
+   "year": 849,
+   "text": "Indrechtach, abbot of Í, came to Ireland with the halidoms of Colum Cille."
+  },
+  {
+   "id": "AU754.3",
+   "year": 754,
+   "text": "Sleibéne, abbot of Í, came to Ireland."
+  },
+  {
+   "id": "AU722.1",
+   "year": 722,
+   "text": "Mael Ruba died in Apor Crossan in the 80th year of his age."
+  },
+  {
+   "id": "AU681.3",
+   "year": 681,
+   "text": "The killing of Conall Cael son of Dúnchad in Cenn Tíre."
+  },
+  {
+   "id": "AU563.4",
+   "year": 563,
+   "text": "The voyage of Colum Cille to the island of Í in the 42nd year of his age."
+  },
+  {
+   "id": "AU767.5",
+   "year": 767,
+   "text": "Repose of Sléibéne of Í."
+  },
+  {
+   "id": "AU624.2",
+   "year": 624,
+   "text": "Births of Adamnán, abbot of Í."
+  },
+  {
+   "id": "AU631.1",
+   "year": 631,
+   "text": "The battle of Aille's son, and death of Cinaed son of Lugthréine, king of the Picts."
+  },
+  {
+   "id": "AU694.6",
+   "year": 694,
+   "text": "Domnall son of Hoan, king of Ail Cluaithe; dies."
+  },
+  {
+   "id": "AU629.1",
+   "year": 629,
+   "text": "The battle of Fid Eóin in which Mael Caích son of Scannal, king of the Cruithin, was victor. The Dál Riata fell. Connid Cerr, king of Dál Riatai, fell."
+  },
+  {
+   "id": "AU722.3",
+   "year": 722,
+   "text": "Mael Corgais from Druim Ing, and Bile son of Eilphín, king of Ail Cluaithe, die."
+  },
+  {
+   "id": "AU567.2",
+   "year": 567,
+   "text": "An expedition into Iardoman."
+  },
+  {
+   "id": "AU789.11",
+   "year": 789,
+   "text": "A battle between the Picts, in which Conall son of Tadc was defeated and escaped; and Constantín was victor."
+  },
+  {
+   "id": "AU829.3",
+   "year": 829,
+   "text": "Diarmait, abbot of Í, went to Scotland with the halidoms of Colum Cille."
+  },
+  {
+   "id": "AU987.3",
+   "year": 987,
+   "text": "A great slaughter of the Danes who plundered Í, and three score and three hundred of them were slain."
+  },
+  {
+   "id": "AU673.4",
+   "year": 673,
+   "text": "The voyage to Ireland of Failbe, abbot of Í."
+  },
+  {
+   "id": "AU716.4",
+   "year": 716,
+   "text": "The date of Easter is changed in the monastery of Í."
+  },
+  {
+   "id": "AU686.1",
+   "year": 686,
+   "text": "The battle of Dún Nechtain was fought on Saturday, May 20th, and Egfrid son of Oswy, king of the Saxons, who had completed the 15th year of his reign, was slain therein with a great body of his soldiers; and Tula ( ?) burned Aman (?) of Dún Ollaig."
+  },
+  {
+   "id": "AU710.1",
+   "year": 710,
+   "text": "Conamail son of Failbe, abbot of Í, rests."
+  },
+  {
+   "id": "AU710.4",
+   "year": 710,
+   "text": "A conflict among the Cenél Comgaill in which two sons of Nechtan son of Dar Garta were killed."
+  }
+ ],
+ "untagged": [
+  {
+   "id": "AU825.2",
+   "year": 825,
+   "text": "Diarmait grandson of Aed Róin, anchorite and teacher of religion for all Ireland, died; also Cuimnech, abbot of Finnglas."
+  },
+  {
+   "id": "AU902.2",
+   "year": 902,
+   "text": "The heathens were driven from Ireland, i.e. from the fortress of Áth Cliath, by Mael Finnia son of Flannacán with the men of Brega and by Cerball son of Muiricán, with the Laigin; and they abandoned a good number of their ships, and escaped half dead after they had been wounded and broken."
+  },
+  {
+   "id": "AU654.5",
+   "year": 654,
+   "text": "The battle of Ráith Ethairt in which Dúnchad son of Conaing fell."
+  },
+  {
+   "id": "AU808.2",
+   "year": 808,
+   "text": "Tomás, bishop, scribe and abbot of Linn Duachail, rested."
+  },
+  {
+   "id": "AU667.1",
+   "year": 667,
+   "text": "The plague still in Ireland."
+  },
+  {
+   "id": "AU933.4",
+   "year": 933,
+   "text": "Céilecán son of Gairbíth, chief of Int Airthir, died."
+  },
+  {
+   "id": "AU920.4",
+   "year": 920,
+   "text": "Scannal of Ros Cré, scribe of Cluain Moccu Nóis, rested."
+  },
+  {
+   "id": "AU780.14",
+   "year": 780,
+   "text": "Third enforcement of the law of Comán and Aedán begins."
+  },
+  {
+   "id": "AU779.7",
+   "year": 779,
+   "text": "The smallpox throughout Ireland."
+  },
+  {
+   "id": "AU867.3",
+   "year": 867,
+   "text": "Mael Tuile, abbot of Ára Airthir, rested."
+  },
+  {
+   "id": "AU707.3",
+   "year": 707,
+   "text": "Béc grandson of Dúnchad was killed."
+  },
+  {
+   "id": "AU948.4",
+   "year": 948,
+   "text": "Colmán son of Mael Pátraic, superior of Sláine, was taken prisoner by the foreigners , and died on their hands."
+  },
+  {
+   "id": "AU789.16",
+   "year": 789,
+   "text": "A battle i.e. of Druim Góise between the Connachta, in which Fogartach son of Cathal was defeated and escaped. A slaughter of the Luigne by the Uí Ailella in Achad Abla."
+  },
+  {
+   "id": "AU588.2",
+   "year": 588,
+   "text": "Repose of Senach, bishop of Cluain Iraird."
+  },
+  {
+   "id": "AU821.5",
+   "year": 821,
+   "text": "Conchobor son of Donnchad made an expedition to Ardachad of Sliab Fuait. Int Airthir was laid waste as far as Emain Macha."
+  },
+  {
+   "id": "AU818.8",
+   "year": 818,
+   "text": "Cellach son of Fogartach plundered a vessel (?) to the detriment of Conchobor son of Muiredach, viz. the son of the king of Laigin."
+  },
+  {
+   "id": "AU869.1",
+   "year": 869,
+   "text": "Martan, abbot of Cluain Moccu Nóis and Daiminis, a scribe, and Niallán, bishop of Sláine, fell asleep."
+  },
+  {
+   "id": "AU844.4",
+   "year": 844,
+   "text": "Cluain Ferta Brénainn was burned by heathens from Loch Rí."
+  },
+  {
+   "id": "AU668.2",
+   "year": 668,
+   "text": "The battle of Fertas between the Ulaid and the Cruithin, in which Cathusach son of Luirgéne fell."
+  },
+  {
+   "id": "AU834.5",
+   "year": 834,
+   "text": "Conchobor son of Ailill was killed by his kinsmen."
+  },
+  {
+   "id": "AU954.7",
+   "year": 954,
+   "text": "Niall ua Tolairg, Cellachán, king of Caisel, and Rechtabra, superior of Cell Achaid, died."
+  },
+  {
+   "id": "AU931.4",
+   "year": 931,
+   "text": "Der bhFáil, daughter of Mael Finnia son of Flannacán, queen of Temair, died."
+  },
+  {
+   "id": "AU889.4",
+   "year": 889,
+   "text": "The fair of Tailtiu was not held."
+  },
+  {
+   "id": "AU690.2",
+   "year": 690,
+   "text": "The burning of Ard Macha."
+  },
+  {
+   "id": "AU846.1",
+   "year": 846,
+   "text": "Cathal son of Ailill, king of Uí Maini, Ferdomnach, scholar and excellent scribe of Ard Macha, and Connmach the Great son of Coscrach, king of Uí Briúin, fell asleep."
+  },
+  {
+   "id": "AU895.5",
+   "year": 895,
+   "text": "A heavy snowfall and great scarcity."
+  },
+  {
+   "id": "AU967.1",
+   "year": 967,
+   "text": "Dub son of Mael Coluim, king of Scotland, was killed by the Scots themselves."
+  },
+  {
+   "id": "AU885.4",
+   "year": 885,
+   "text": "Mael Pátraic son of Mael Curarda, king of the Airgialla, was killed by his associates."
+  },
+  {
+   "id": "AU834.2",
+   "year": 834,
+   "text": "Eógan of Mainister, abbot of Ard Macha and Cluain Iraird, and Affraic, abbess of Cell Dara, fell asleep."
+  },
+  {
+   "id": "AU912.4",
+   "year": 912,
+   "text": "Muiredach son of Cormac, superior of Druim Inasclainn, and Gairbíth son of Mael Mórda, heir designate of Conaille, were done to death by fire in the refectory of Druim Inasclainn. (Muiredach, Why do you not lament him, friends? His death is good cause for a general mortality, It is as a cloud reachi"
+  },
+  {
+   "id": "AU766.5",
+   "year": 766,
+   "text": "Death of Cernach son of Cathal, and of Cernach son of Flann."
+  },
+  {
+   "id": "AU843.4",
+   "year": 843,
+   "text": "Cinaed son of Cú Raí, king of Cenél Laegaire, was killed by the Delbna."
+  },
+  {
+   "id": "AU938.7",
+   "year": 938,
+   "text": "Conchobor son of Mael Cian, king of Uí Fhailgi, was killed by the Laigin."
+  },
+  {
+   "id": "AU879.5",
+   "year": 879,
+   "text": "Aengus son of Cinaed, chief of the people of Ard Ciannachta, dies."
+  },
+  {
+   "id": "AU901.3",
+   "year": 901,
+   "text": "A change of kings in Caisel, i.e. Cormac son of Cuilennán succeeded Cenn Gécáin i.e. Finnguine."
+  },
+  {
+   "id": "AU906.4",
+   "year": 906,
+   "text": "Ciarmac, king of Uí Fhidgente, died ."
+  },
+  {
+   "id": "AU588.4",
+   "year": 588,
+   "text": "The conversion of Constantine to the Lord; and a great snowfall; and the slaying of Áed Dub son of Suibne, in a ship."
+  },
+  {
+   "id": "AU947.1",
+   "year": 947,
+   "text": "Ruaidrí ua Canannáin led an army to Sláine, and the foreigners and Irish, i.e. Congalach son of Mael Mithig and Amlaíb Cuaráin, came upon him, and the foreigners of Áth Cliath were defeated, and many of them killed and drowned."
+  },
+  {
+   "id": "AU750.6",
+   "year": 750,
+   "text": "Eó-inis is abandoned."
+  },
+  {
+   "id": "AU697.12",
+   "year": 697,
+   "text": "The killing of Cú Chobo."
+  }
+ ]
+}

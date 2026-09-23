@@ -1,0 +1,80 @@
+{
+ "AU_local_share_of_scottish": {
+  "cut": 806,
+  "stat": 6.551577879097437,
+  "left": {
+   "k": 45,
+   "n": 95,
+   "rate": 0.47368421052631576
+  },
+  "right": {
+   "k": 5,
+   "n": 25,
+   "rate": 0.2
+  },
+  "null": {
+   "observed": 6.551577879097437,
+   "p": 0.09718056388722256,
+   "n_perm": 5000,
+   "null_p95": 8.272485935463322,
+   "null_max": 18.310303110205524,
+   "null_median": 2.7317430060427057
+  },
+  "bootstrap_cut": {
+   "n": 2000,
+   "lo95": 668,
+   "hi95": 815,
+   "median": 782
+  }
+ },
+ "AU_local_support_interval": [
+  737,
+  806
+ ],
+ "out_of_sample": {
+  "CS": {
+   "pre": [
+    10,
+    25
+   ],
+   "post": [
+    2,
+    14
+   ],
+   "fisher_p_greater": 0.09334696209000992
+  },
+  "AI": {
+   "pre": [
+    0,
+    7
+   ],
+   "post": [
+    0,
+    6
+   ],
+   "fisher_p_greater": 1.0
+  },
+  "AT": {
+   "pre": [
+    7,
+    73
+   ],
+   "post": [
+    0,
+    0
+   ],
+   "fisher_p_greater": null
+  },
+  "CS_across_lacuna": {
+   "pre": [
+    10,
+    25
+   ],
+   "post": [
+    2,
+    14
+   ],
+   "fisher_p_greater": 0.09334696209000992
+  }
+ }
+}

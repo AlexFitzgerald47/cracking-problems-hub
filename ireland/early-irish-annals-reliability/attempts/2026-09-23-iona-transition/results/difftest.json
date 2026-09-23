@@ -1,0 +1,14 @@
+{
+ "n_scot": 120,
+ "n_territory": 76,
+ "n_iona": 44,
+ "cut_territory": 738,
+ "cut_iona": 830,
+ "observed_gap_years": 92,
+ "n_perm": 3000,
+ "p_two_sided": 0.18293902032655782,
+ "p_one_sided": 0.0943018993668777,
+ "null_gap_2.5": -144,
+ "null_gap_97.5": 144,
+ "null_gap_median": -5
+}
