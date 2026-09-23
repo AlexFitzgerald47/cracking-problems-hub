@@ -1,0 +1,15 @@
+# Blood-eagle prose accounts: feature matrix.
+# Every cell coded by this session from text I fetched and read myself (URLs in
+# analysis/2026-09-23-the-dossier-rests-on-a-hapax.md, sec. 4). Saxo's Latin is
+# from Holder's 1886 edition on archive.org; all Old Norse from heimskringla.no,
+# with Ragnars saga cross-checked against snerpa.is.
+# 1 = present, 0 = absent. "eagle_verb" is the verb governing the eagle.
+text	victim	date_approx	eagle_verb	compound_blodorn	eagle_on_back	ribs_from_spine	lungs_drawn_out	offering_to_odinn	salt	reddened_with_blood	quotes_sigvatr
+Saxo Gesta Danorum IX	Aella	c.1200	(periphrasis: plaga aquilam figurante)	0	1	0	0	0	1	0	0
+Ragnars saga lodbrokar ch.17	Aella	13c	marka	0	1	0	0	0	0	1	0
+Orkneyinga saga (Flateyjarbok)	Halfdan haleggr	c.1200-1230	rista	1	1	1	1	1	0	0	0
+Heimskringla Haralds saga ins harfagra 31	Halfdan haleggr	c.1230	reist	0	1	1	1	0	0	0	0
+Reginsmal st.26 (VERSE)	Lyngvi	CR ms c.1270	ristinn	0 (blodugr orn, two words)	1	0	0	0	0	0	0
+Ragnarssona thattr	Aella	c.1300	rista	0	1	1	1	0	0	0	1
+Norna-Gests thattr	Lyngvi	c.1300-1350	rista	1	1	1	1	0	0	0	0
+Orms thattr Storolfssonar	Brusi	14c	reist	1	1	1	1	0	0	0	0

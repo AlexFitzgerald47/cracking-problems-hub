@@ -5,6 +5,18 @@ Predictions frozen before any counting: `analysis/2026-09-23-PREREGISTERED.md`.
 Code: `analysis/code/`. Adjudication table: `analysis/data/beast_blade_adjudication.tsv`.
 Rebuild the corpus with `analysis/code/FETCH_CORPUS.sh`.
 
+
+> **PRIORITY NOTE, added after this file was written.** The *idea* tested here is not this
+> session's. **Bjarni Einarsson asserted it in 1986** — that `skera` of carrion beasts is
+> "inconceivable" in the old poetic language, and that `skera` and `bak` are "both unsuitable"
+> for a carrion bird (*Saga-Book* XXII:1, 79–82). Frank answered him in 1988 with three
+> counter-examples. What this session adds is the corpus-scale **measurement** that a
+> four-examples-against-three dispute cannot settle, plus the `bak` enumeration and the
+> Torf-Einarr control. See `2026-09-23-the-dossier-rests-on-a-hapax.md` §1b, and read that file
+> next — it also confirms from Frank's own words that her construal of `ara` is the dative of
+> agent, i.e. exactly the construal measured at 0/772 here, which was flagged as this file's
+> main open risk in §8.
+
 ---
 
 ## 0. What this session did, in one paragraph
