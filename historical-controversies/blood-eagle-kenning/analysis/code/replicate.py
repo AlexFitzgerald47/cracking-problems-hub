@@ -1,4 +1,4 @@
-import re, json, collections
+import os, re, json, collections
 src = open('foldlib.py').read()
 exec(src)
 def prep(t):
@@ -24,8 +24,8 @@ def run(tag, paths):
     print(f'{tag:10s} beast occurrences in ON verse = {len(rows):4d} | near BLADE verb = {nb:3d} | near FEED/COLOUR verb = {nf:3d}')
     return rows
 
-A = run('scan-A', ['/tmp/be/corpus/dennorskislandsk03finn.txt','/tmp/be/corpus/dennorskislandsk04finn.txt'])
-Brep = run('scan-B', ['/tmp/be/corpus/dennorskislandsk03finnu.txt','/tmp/be/corpus/dennorskislandsk04finnu.txt'])
+A = run('scan-A', [os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk03finn.txt',os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk04finn.txt'])
+Brep = run('scan-B', [os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk03finnu.txt',os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk04finnu.txt'])
 print()
 print('--- scan-B BLADE co-occurrences (independent replicate), for adjudication ---')
 for bn,w,bl,fd,ctx in Brep:

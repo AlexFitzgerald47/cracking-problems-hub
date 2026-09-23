@@ -1,9 +1,9 @@
-import re, csv
+import os, re, csv
 exec(open('foldlib.py').read())
 def prep(t): return re.sub(r'\b[pq9g0O]rn(a|ar|i|u|um|s)?\b', lambda m:'orn'+(m.group(1) or ''), t)
 DA=set('og er den det som til paa af han hans blev der ikke var sig kongen mod over efter fra alle sin sine jeg med de hvor'.split())
 def is_da(s): return len(set(s.split()) & DA) >= 4
-P='/tmp/be/corpus/dennorskislandsk0%sfinn.txt'
+P=os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk0%sfinn.txt'
 BEAST=r'\b(ari|ara|arnar|erni|ernir|arna|arnir|ornu|orn|ornum|orns|hrafn|hrafns|hrafni|hrafnar|hrafna|hrafnum|ulfr|ulfs|ulfi|ulfa|ulfar|ulfum|vargr|vargs|vargi|vargar|varga|freki|freka|geri|gera|ylgr|sargammr|hergamr|gamr|nagr|skari)\b'
 BLADE=r'\b(skera|skar|skaru|sker|skerr|skorinn|skorin|skorit|skorna|skornir|rista|reist|ristu|ristinn|ristit|ristin|hoggva|hjo|hjoggu|hogginn|kljufa|klauf|snida|sneid)\b'
 

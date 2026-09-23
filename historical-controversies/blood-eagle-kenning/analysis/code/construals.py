@@ -1,4 +1,4 @@
-import re, json, collections
+import os, re, json, collections
 exec(open('extract.py').read().split("CORP = ")[0])
 def prep(t):
     return re.sub(r'\b[pq9g0O]rn(a|ar|i|u|um|s)?\b', lambda m:'orn'+(m.group(1) or ''), t)

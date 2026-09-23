@@ -1,4 +1,4 @@
-import re, json, collections
+import os, re, json, collections
 exec(open('extract.py').read().split("CORP = ")[0])  # reuse fold(), loads B1,B2
 
 # ---- OCR-tolerant beast lexemes -------------------------------------------

@@ -1,10 +1,10 @@
-import re, sys, json, unicodedata, collections
+import os, re, sys, json, unicodedata, collections
 
 def load(p):
     return open(p, encoding='utf-8', errors='replace').read()
 
-B1 = load('/tmp/be/corpus/dennorskislandsk03finn.txt')
-B2 = load('/tmp/be/corpus/dennorskislandsk04finn.txt')
+B1 = load(os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk03finn.txt')
+B2 = load(os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk04finn.txt')
 
 # --- OCR folding for Old Norse search -------------------------------------
 THORN = ['|>','j>','{>','J3','f)','(>','i>','J>','£>',']>','>','J?','j?','|?']

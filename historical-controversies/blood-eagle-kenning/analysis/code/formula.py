@@ -1,7 +1,7 @@
-import re
+import os, re
 exec(open('foldlib.py').read())
 def prep(t): return re.sub(r'\b[pq9g0O]rn(a|ar|i|u|um|s)?\b', lambda m:'orn'+(m.group(1) or ''), t)
-P='/tmp/be/corpus/dennorskislandsk0%sfinn.txt'
+P=os.environ.get('SKJ','/tmp/be/corpus')+'/dennorskislandsk0%sfinn.txt'
 for tag,suf in [('A','finn'),('B','finnu')]:
     T=''.join(fold(prep(open((P%v).replace('finn',suf),encoding='utf-8',errors='replace').read())) for v in (3,4))
     # the CARRION formula: victim under the bird's talons/claws/feet
