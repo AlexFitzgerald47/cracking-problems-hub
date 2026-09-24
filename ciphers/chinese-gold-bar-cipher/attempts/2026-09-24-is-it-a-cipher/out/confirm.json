@@ -1,0 +1,68 @@
+{
+ "P_A": {
+  "chi2_inventory": 1.2509505703422048,
+  "chi2_instances": 13.822308690012967,
+  "n_instances": 771,
+  "confirmed": false
+ },
+ "P_B": {
+  "bar_cdf": [
+   0.3041466652127281,
+   0.25317469398346265,
+   0.0037941067884697697,
+   0.001891370657008287
+  ],
+  "inventory_cdf": 9.297912678598387e-13
+ },
+ "P_C": {
+  "max letter multiplicity/string": {
+   "observed": 5,
+   "p": 0.22518874056297186
+  },
+  "adjacent doubles": {
+   "observed": 7,
+   "p": 0.7211639418029099
+  },
+  "max single-string IC": {
+   "observed": 0.07114624505928854,
+   "p": 0.7033648317584121
+  },
+  "pooled IC": {
+   "observed": 0.03967900133749443,
+   "p": 0.23778811059447028
+  },
+  "periodic IC, period 2": {
+   "observed": 0.03878902554399243,
+   "p": 0.5339733013349333
+  },
+  "periodic IC, period 3": {
+   "observed": 0.046686746987951805,
+   "p": 0.13219339033048347
+  },
+  "periodic IC, period 4": {
+   "observed": 0.0407725321888412,
+   "p": 0.5516724163791811
+  },
+  "periodic IC, period 5": {
+   "observed": 0.0345821325648415,
+   "p": 1.0
+  },
+  "periodic IC, period 6": {
+   "observed": 0.03787878787878788,
+   "p": 0.887655617219139
+  },
+  "periodic IC, period 7": {
+   "observed": 0.041025641025641026,
+   "p": 0.7480625968701565
+  },
+  "periodic IC, period 8": {
+   "observed": 0.05925925925925926,
+   "p": 0.20298985050747462
+  }
+ },
+ "P_D": {
+  "observed": 0,
+  "p": 1.0
+ },
+ "P_E": "see stdout"
+}
