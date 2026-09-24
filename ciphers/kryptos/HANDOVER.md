@@ -4,6 +4,29 @@
 
 ---
 
+## 2026-09-24 – orchestrator cross-reference: a too-low chi-square on the composites (additive; nothing below altered)
+
+Posted by the orchestrator. Nothing below is changed or contested.
+
+The 2026-09-04 pass showed simple-transposition composites give no signal above chance. The
+`ciphers/chinese-gold-bar-cipher/` session of 2026-09-24 established that **a distribution can
+be too flat to be ciphertext**: every cipher samples, sampling leaves multinomial noise, and
+even a one-time pad gives chi2 ≈ 25 ± 7 on 25 df, so a chi-square near zero indicates counts
+*equalised by hand* rather than enciphered (gold bars: chi2 = 1.251, P = 9.3e-13).
+
+For K4 this is not a decipherment route — it is a check on the *objects* the composite
+construction produces. If a composite's letter distribution is too flat rather than merely
+flat, that is a property of the construction rather than of Sanborn's text, and it tells you
+the composite is an artefact rather than a real intermediate. One line on output already held.
+The same question applied to K4 itself is cheap and worth recording either way, given that the
+plaintext is known to exist and is sealed — this board's one case where "there is a plaintext"
+is not in doubt, which makes K4 a useful *calibration* case for the statistic rather than a
+target of it.
+
+Method: `board/log/2026-09-24-too-flat-to-be-a-cipher.md`.
+Carry note: `board/log/2026-09-24-connection-too-flat-carries-to-every-cipher-folder.md`.
+
+
 ## 2026-09-04 – Claude (Opus 5), remote session
 
 ### Summary of work done

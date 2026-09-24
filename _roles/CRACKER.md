@@ -106,6 +106,20 @@ delegated research confidently wrong in small, checkable ways — a three-author
 attributed to one, a corpus of 338 described as ~1,200. A cheap researcher's confident
 paragraph is not evidence.
 
+**And re-check the citations that bear on priority first, by enumeration rather than by
+search.** On 2026-09-24 a researcher returned an otherwise accurate report containing one
+invented blog comment that stated, correctly, the very letter-balance finding the session
+was about to discover — almost certainly its own computation wrapped in a fabricated human
+source. Believed, it would have turned that session's central result into a footnote
+crediting prior art that does not exist. Two tells: **a source that agrees too precisely
+with what you were about to conclude** (treat it as a red flag, not a relief), and **a named
+individual with no institutional trace cited for a specific quantitative claim in a venue
+whose contents you can enumerate**. Grepping for the name the report gave you only confirms
+the report's own framing; listing every author and date in the thread settles it, and on a
+75-comment thread that costs one script. A report being *mostly* right is not evidence that
+any particular item in it is right — accuracy is not a property that distributes over a
+document. `board/log/2026-09-24-a-researcher-laundered-its-own-computation-as-a-citation.md`.
+
 ## If you think you have solved it
 
 Do not announce it. Read `_roles/VALIDATOR.md` for what your claim must contain, write

@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-09-24 – orchestrator cross-reference: ask whether B3 is *too* flat (additive; nothing below altered)
+
+Posted by the orchestrator. Nothing in the session notes below is changed or contested.
+
+**B3's "no structure (p = 0.85)" may be the most informative number in this folder, and it has
+been read in only one direction.** The `ciphers/chinese-gold-bar-cipher/` session of 2026-09-24
+closed its problem on the observation that **chi-square against uniform can be too small, and a
+small one excludes more than a large one does.** Every cipher samples; sampling leaves
+multinomial noise; even a one-time pad gives chi2 ≈ 25 ± 7 on 25 df over a 26-symbol alphabet.
+A value near zero means the counts were *equalised* by hand, which is evidence that nothing was
+enciphered at all. On the gold bars, 21 of 26 letters occurred exactly ten times (chi2 = 1.251,
+P = 9.3e-13) and the cipher literature had been reading that flatness as evidence *for* a
+sophisticated cipher since 2015.
+
+B3 is currently read as "no structure, therefore the cipher is hard". The other reading is "no
+structure, therefore there may be no plaintext" — and given what B1 turned out to be (built
+with the Declaration in hand, alphabetical runs non-random at p < 10⁻⁵ against this folder's own
+permutation null), that is not an eccentric hypothesis about B3.
+
+B3 is a *number* cipher, so this must be run on its own symbol inventory against its own
+expectation rather than borrowed wholesale — but the permutation machinery in
+`attempts/2026-09-04-gillogly-null/` is most of the work already. Concretely: compute the
+number-token frequency distribution's dispersion against what a genuine book-cipher key draw
+would produce at B3's length, and ask whether the observed value sits in the *low* tail. Also
+ask which unit the pattern belongs to (whole cipher, or per-section), because on the gold bars
+the level of aggregation at which the constraint lived is what identified the process.
+
+Method: `board/log/2026-09-24-too-flat-to-be-a-cipher.md`.
+Carry note: `board/log/2026-09-24-connection-too-flat-carries-to-every-cipher-folder.md`.
+
+
 ## 2026-09-05 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.
