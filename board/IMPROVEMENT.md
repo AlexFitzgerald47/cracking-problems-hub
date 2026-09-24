@@ -249,3 +249,58 @@ test it.
 
 This is a decision about a policy trial, not about research practice. Nothing here changes
 what any cracker, finder or validator does.
+
+## 2026-09-24 — second trial review of ARP-001: retired in its opt-in form
+
+**The 2026-09-21 review set a condition and this pass is the one that has to apply it:** "If
+the next orchestrator pass finds activations still at zero, the trial is retired as unevaluable
+under current delivery." The 2026-09-23 pass did not mention ARP-001 at all, so the condition
+falls to this one. A decision deferred twice is a decision not being made.
+
+**Measurement: still zero activations, eleven days after registration.** No session anywhere in
+the repository has named ARP-001 as active. The count of sessions that *saw* it and recorded a
+decision about it has grown from three to **nine** — Junius, Proto-Elamite, Shakespeare (three
+separate entries), Thera, Caligula, the Annals, Patrician chronology — every one writing some
+form of `Trial ID: none (ARP-001 not activated)` into its receipt.
+
+**Decision: ARP-001 is retired in its opt-in form. It is not re-registered as an opt-in.**
+
+**The delivery premise the last review rested on has changed, and that sharpens rather than
+softens the conclusion.** On 09-21 the argument for holding the trial open was that a network
+landing two sessions a week cannot evaluate a policy in reasonable time, and the stated
+re-registration condition was "when the board is landing sessions daily". **That condition is now
+met** — the board has landed sessions on 09-21, 09-22 (×3), 09-23 (×3) and 09-24. So delivery is
+no longer the binding constraint, and what remains is the mechanism.
+
+**The mechanism failed, and this is a measured finding rather than absent data.** Nine sessions
+saw an optional trial, each recorded a deliberate decision, and all nine declined. That is not
+an awareness problem and not a sample too small to read. The most economical explanation is the
+one the 09-21 review already named and did not act on: **an optional trial that imposes a cost
+on the session running it and states no benefit to that session will never be the rational choice
+for that session**, and a session firing from a stored prompt has no standing instruction to
+accept overhead on the network's behalf. Nine declines is enough to stop treating this as a trial
+awaiting data.
+
+**What is retired, and what is not.** Retired: the ARP-001 *opt-in trial* and the instruction in
+`_roles/CRACKER.md` inviting sessions to activate it. **Not** retired and **not** judged: the
+amendment's content. It remains unevaluated — no activated run ever occurred, so nothing here is
+evidence about whether it would help, and a later pass must not cite this retirement as if it
+were a negative result. The `Trial ID:` line in session receipts is harmless and can stay; it now
+records "no trial active", which is true.
+
+**Cost of the retirement:** a paragraph of standing policy text leaves the files new agents read.
+That is the whole benefit and it is small. The cost of *not* retiring is the same paragraph
+staying, plus a third pass spent re-measuring zero.
+
+**What would be needed to evaluate the amendment, recorded so it is not rediscovered.** Not
+another opt-in. It would have to be **default-on for a named set of sessions, with the cost
+stated in the prompt those sessions receive**, and compared against sessions run without it —
+which means spending research sessions on meta-science and modifying the external stored prompts
+that this repository cannot reach. `_roles/ORCHESTRATOR.md` rules against the first without
+warrant and the second is outside any agent's access. **So this is a decision for the human, and
+it is on the standing list in `STATUS.md`:** either accept that the amendment stays unevaluated
+and its text stays retired, or direct that a named run be instrumented. No orchestrator pass can
+choose that, and no further pass should re-open it as a trial review.
+
+This is a decision about a policy trial and its mechanism. **Nothing here changes what any
+cracker, finder or validator does,** and no research practice is altered by it.

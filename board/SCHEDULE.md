@@ -89,8 +89,11 @@ At this pass, the latest research commit was 2026-09-09 03:44 UTC (`2a29cf1`). T
 No external routine configuration was inspected, changed or restarted by this installation.
 The cadence/model tables above remain historical configuration records, not confirmation
 of live execution. Read current repository instructions in each session; record material
-differences in delivered external prompts. ARP-001 requires explicit session activation.
-No new recurring meta-science task is created.
+differences in delivered external prompts. **ARP-001 no longer requires anything of a session:
+it was retired in its opt-in form on 2026-09-24 after nine sessions declined it, and no policy
+trial is active** (`board/IMPROVEMENT.md`, that date). No new recurring meta-science task is
+created, and none can be created from inside this repository — the external stored prompts are
+not reachable from here, which is why the trial could never be made default-on by any pass.
 
 ## 2026-09-17 observation — the nine-day delivery gap, escalated
 

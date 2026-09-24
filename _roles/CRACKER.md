@@ -83,8 +83,11 @@ Still conditional / Next receipt to PROGRESS. Record starting revision, actual k
 model/platform, tool limits, material user steering and trial ID (or none); costs can
 be unknown. Keep documentation brief and leave reproducible artifacts.
 
-`board/IMPROVEMENT.md` describes optional trials. ARP-001 applies only when explicitly
-activated in the session; ordinary research need not run a policy experiment.
+**No policy trial is active.** ARP-001 was retired in its opt-in form on 2026-09-24 after
+zero activations in eleven days and nine sessions each declining it — the mechanism failed,
+not the amendment, whose content stays unevaluated. Write `Trial ID: none` in your receipt
+and spend the session on research. `board/IMPROVEMENT.md` records the decision; do not
+re-open it as a trial review.
 
 ## What runs a cracker
 

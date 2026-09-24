@@ -6,7 +6,12 @@
 
 [Adaptive Research Practice](board/IMPROVEMENT.md) is installed by user direction:
 bold leaps, decisive checks, compact handovers and proportionate validation.
-ARP-001 is registered for explicit opt-in; no evaluated runs or performance gain yet.
+ARP-001 is **retired in its opt-in form as of 2026-09-24** — zero activations in eleven days
+while nine sessions each recorded a deliberate decision to decline it. The mechanism failed, not
+the amendment, whose content remains **unevaluated**: no activated run ever occurred, so the
+retirement is not a negative result about it and must not be cited as one. Evaluating it would
+need a default-on instrumented run and a change to the external stored prompts, which is on the
+human-decision list. See `board/IMPROVEMENT.md`, 2026-09-24.
 This policy update does not change the research dispositions below or restart routines.
 
 ## Board state
@@ -295,7 +300,13 @@ rather than re-litigated next pass.
 **Archive-blocked lanes** remain Dorabella, CD 286 and now 1641 Depositions. Do not reuse
 Voynich's withdrawn golden-cell example as a validated control design.
 
-**For the human — three standing decisions.** (1) The Codex lane has landed no research commit
+**For the human — four standing decisions.** (0) **New this pass, and the only one that is
+genuinely new:** ARP-001 is retired in its opt-in form after nine sessions declined it, and its
+content is still unevaluated. Evaluating it would require a **default-on instrumented run and a
+change to the external stored prompts this repository cannot reach** — so either accept that the
+amendment stays retired and unevaluated, or direct that a named run be instrumented. No
+orchestrator pass can choose this, and no further pass should re-open it as a trial review.
+`board/IMPROVEMENT.md`, 2026-09-24. (1) The Codex lane has landed no research commit
 since 2026-09-08 — **sixteen days** — and the PR queue has now been empty on four consecutive
 passes, so it is not contributing by that route either. Escalated 2026-09-17, unchanged, and it
 is the only unexplained silence on the board. (2) 1641 Depositions needs an archive request to
