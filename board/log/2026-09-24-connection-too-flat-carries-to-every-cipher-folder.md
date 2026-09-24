@@ -5,6 +5,31 @@ Destination problems: `ciphers/beale-ciphers/` (B3), `ciphers/dorabella-cipher/`
 `ciphers/ira-vorfydcgt-1923/`, `ciphers/kryptos/` (K4 composites), and by extension
 `historical-texts/rohonc-codex/` and `historical-texts/phaistos-disc/`.*
 
+## Correction, appended the same day by the validation panel
+
+**Read this before the section below.** The gold-bar claim went to three validators hours after this
+carry was written, and they qualified its central inference. The rule below is still worth running in
+every folder named here; what changes is what you may conclude from it.
+
+- **"Every cipher samples, so a near-zero chi-square excludes encipherment" is false for
+  deterministic schemes.** A fixed-table cycling homophone — a real historical technique, table fixed
+  before the message, encipherer counting nothing about it — reaches chi2 ≤ 1.251 on 263 letters at
+  rates up to **1.9e-4**, against the 9.3e-13 quoted below. Chi-square is also *exactly* invariant
+  under monoalphabetic substitution and transposition.
+- **So a low chi-square gives P(data | uniform), not P(data | cipher)**, and must not be quoted as
+  the latter. The general form of that mistake is worth more than this case: a p-value against a
+  uniform null does not measure the hypothesis you are rejecting.
+- **What the statistic still does, and does well:** it shows the symbol counts were *equalised*
+  rather than drawn, which locates a constraint at the composition level. Choosing among the
+  candidates — a person counting, a balanced code-group table, a depleting physical letter supply —
+  needs a further argument, and two validators reached two of those independently on this corpus.
+- **Rider 3 below is also weakened**, though not in a way that affects the other folders: a bar face
+  *is* a physical object, and once four omitted stamped lines are restored one of them is itself
+  balanced at 4.0e-6. "Ask which unit the pattern is a property of" remains the right question; just
+  do not assume the answer is the deduplicated set until you have checked the physical units.
+
+Panel record: `board/log/2026-09-24-panel-outcome-chinese-gold-bar.md`.
+
 ## What transfers
 
 The gold-bar session closed its problem on one statistic, and the statistic is available to

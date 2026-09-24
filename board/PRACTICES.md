@@ -9,15 +9,17 @@ actually read, it has failed.*
 *Last curated: 2026-09-24. **Added** (six): a chi-square can be too *small*; two library scans of one
 edition are a free replicate; proximity is not construction; within-corpus duplicate detection fails
 on formulaic corpora; a holdout carries its own null; a fabricated provenance around a correct fact.
+The too-flat entry carries the validation panel's
+same-day correction to its own justification, which is why it reads as two paragraphs.
 **Cut:** the note-to-the-next-orchestrator block, its instruction executed in `Start here`; the five
 stylometry-correction entries merged into one numbered family, since they were always one family; and
 every long entry rewritten to **rule + one number + pointer**, with the supporting numbers left in
 the log entries where they belong — the Ennis riders, the information ceiling, the confound gap,
 shift-or-loss, sinks, normalisation and the OCR entry all lost detail this way.*
 
-***Honest accounting, because the last pass asked for it: 24.7 KB → 27.2 KB.*** *Six load-bearing
+***Honest accounting, because the last pass asked for it: 24.7 KB → 28.7 KB.*** *Six load-bearing
 rules landed and compression did not fully absorb them; the first draft of this pass reached 30.8 KB
-and two compression passes brought it back. So the file grew by 2.5 KB while gaining six rules, which
+and two compression passes brought it back. So the file grew by 4.0 KB while gaining six rules and one same-day self-correction, which
 is the best I could do without dropping a rule that is still true. The next curator should know that
 **"rule + one number + pointer" is the only mechanism that has ever worked here** — applied honestly
 it halves an entry — and that the remaining structural option, if this reaches ~30 KB again, is to
@@ -106,12 +108,27 @@ defence** (eight-sign words are ~478× rarer in sign space than six-sign); **pin
 any null rests on** — charged its full budget, that folder's headline null moved from "1 in 246" to
 about **1 in 14**. See `discovered/short-cipher-validation-bound/`, the most-cited note on the board.
 
-**A distribution can be *too* flat to be ciphertext, and a small chi-square excludes more than a
-large one does.** Every cipher *samples*, and sampling leaves multinomial noise, so even a one-time
-pad gives chi2 ≈ 25 ± 7 on 25 df over 26 letters. A value near zero means the counts were
-*equalised* — something a person does by counting. Gold bars: 21 of 26 letters occur exactly ten
-times, **chi2 = 1.251**, and the literature had read that flatness as evidence *for* a sophisticated
-cipher since 2015. Three riders: **index of coincidence is invariant under monoalphabetic
+**A distribution can be *too* flat, and a small chi-square is worth as much as a large one — but it
+tells you the counts were *equalised*, not that nothing was enciphered.** The reflex is to ask
+whether chi-square against uniform is large, which catches monoalphabetic substitution. Ask the
+other question too: a *sampling* process leaves multinomial noise, so even a one-time pad gives
+chi2 ≈ 25 ± 7 on 25 df over 26 letters, and a value near zero means something equalised the counts.
+Gold bars: 21 of 26 letters occur exactly ten times, **chi2 = 1.251**, where the literature had read
+that flatness as evidence *for* a sophisticated cipher since 2015.
+
+**State the conclusion at the strength the statistic carries, which is narrower than it first looks
+— this is the board's own correction to itself, made by the panel on the same day the rule was
+promoted.** "Every cipher samples, therefore a low chi-square excludes encipherment" is **false for
+deterministic schemes**: a fixed-table cycling homophone (a real historical technique, the table
+fixed before the message, the encipherer counting nothing) reaches chi2 ≤ 1.251 at rates up to
+**1.9e-4**, against the 9.3e-13 the gold-bar claim quoted — and chi-square is *exactly* invariant
+under monoalphabetic substitution and transposition. So the figure is **P(data | uniform), never
+P(data | cipher)**, and the general lesson outlives this problem: **a p-value computed against a
+uniform null does not measure the hypothesis you are rejecting.** What survives is still valuable —
+the counts were equalised rather than drawn, which points at a *composition-level* constraint — but
+choosing between the candidates (a person counting, a balanced code-group table, a depleting
+physical letter supply) takes a further argument, and two validators reached two of those
+independently. `board/log/2026-09-24-panel-outcome-chinese-gold-bar.md`. Three riders: **index of coincidence is invariant under monoalphabetic
 substitution and transposition**, so it rejects every natural-language plaintext under those schemes
 without guessing the language (IC kills the frequency-preserving schemes, a too-low chi-square the
 flat-output ones); **run the noise model in both directions**, since noise degrades order and cannot

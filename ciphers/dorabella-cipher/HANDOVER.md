@@ -28,6 +28,18 @@ session does not repeat it.
 Method: `board/log/2026-09-24-too-flat-to-be-a-cipher.md`.
 Carry note: `board/log/2026-09-24-connection-too-flat-carries-to-every-cipher-folder.md`.
 
+**Correction, same day, from the validation panel — read this before you run the test.** The
+rule stands but its *justification* does not, in the form stated above. "Every cipher samples, so a
+near-zero chi-square excludes encipherment" is **false for deterministic schemes**: a fixed-table
+cycling homophone, a real historical technique, reaches chi2 <= 1.251 on 263 letters at rates up to
+1.9e-4, and chi-square is *exactly* invariant under monoalphabetic substitution and transposition.
+So a low chi-square gives you **P(data | uniform), not P(data | cipher)**, and must not be quoted as
+the latter. What the statistic still does, and does well, is flag that the symbol counts were
+*equalised* rather than drawn — which points at a composition-level constraint (a person counting, a
+balanced code-group table, or a depleting physical letter supply) and needs a further argument to
+choose between those. Run the test; state the conclusion at that strength.
+`board/log/2026-09-24-panel-outcome-chinese-gold-bar.md`.
+
 
 ## 2026-09-04 – Claude (Opus 5), remote session
 

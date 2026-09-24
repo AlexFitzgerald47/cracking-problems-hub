@@ -105,7 +105,7 @@ names by name.
 | Beale Ciphers | `ciphers/beale-ciphers/` | **Split 2026-09-04** – B1 effectively settled, B3 open | B1's alphabetical runs are not chance (p < 10⁻⁵ against a permutation null); it was built with the Declaration in hand. B3 shows no such structure (p = 0.85) and is the genuinely open one. See `attempts/2026-09-04-gillogly-null/` |
 | IRA `VORFYDCGT`, 25 Oct 1923 | `ciphers/ira-vorfydcgt-1923/` | Open – **promoted 2026-09-06**; first pass complete, unclaimed | Nine-letter token in an IRA Director of Intelligence memo, NLI MS 10,973/15/24: *"Can any of 100's methods be used now that no VORFYDCGT?"*. The documented 1923 key `GVZKLG` is falsified against a reproduced control. Only four of 13,124 nine-letter dictionary words are reachable under **any** repeated six-letter key, and none fits the sentence. Contextual reconstruction — identifying `100` — now carries more information than the ciphertext |
 | British RIC / military cyphers (Kennedy CD 286) | `ciphers/british-cyphers-cd286/` | Open – **promoted 2026-09-06**; archive-blocked, unclaimed | BMH Contemporary Documents Group 2, June–Sept 1920 RIC/military telegrams the Bureau and NLI could not decode in the 1950s. Working implementation of the documented RIC paired-alphabet keyword cipher with tests; message-family ledger in `solution-status.md`. **Blocked on scans**, not cryptanalysis. Catalogue discrepancy live: CD 286 (Military Archives) vs CD 280 (Kerry Library) |
-| Chinese gold bar cryptograms (1933) | `ciphers/chinese-gold-bar-cipher/` | **Worked 2026-09-24 — solve-claim posted, HELD pending three validators**; unclaimed | **Criterion 2 is met with margin and the claim is that there is no plaintext.** Across the complete 263-letter inventory **21 of 26 letters occur exactly ten times** (E=11, I=13, O=9, S=11, T=9); chi2 vs uniform = **1.251 on 25 df** against an expectation of 25, analytic P = **9.3e-13**. The set is not merely flat — the literature's unverified "very flat" claim, now confirmed as Pelling's and *superseded* — but **flatter than chance**, which no cipher can be: every cipher samples letters and even a one-time pad leaves chi2 ~= 25 +/- 7. Monoalphabetic substitution and transposition are excluded language-independently by IC (0.0397 vs 0.0606 English, 0.0739 romanized Chinese, both p = 0.0001; zero repeated trigrams where English predicts ~29). The balance holds **only on the deduplicated inventory** (per-bar subsets at CDF 0.30/0.25/0.0038/0.0019), which is not a physical object — so tooling explanations die structurally and the constraint sits at composition. Order structure is indistinguishable from a random deal of that pool on all eleven statistics. **Two stated limits:** the periodic tests are weak (period 5 separation only 1.9 s.e., a permanent bound at 263 letters), and one registered prediction (P-A) **failed** on the claimant's own design error. A deliberately flat homophonic cipher is recorded as the live steelman. Criterion 1 unmet and argued unreachable; criterion 3 materially advanced by an independent quantitative line. Next move is **image evidence, which this session did not touch at all**: 18 bar faces are public and only four are transcribed. See `attempts/2026-09-24-is-it-a-cipher/RESULTS.md` |
+| Chinese gold bar cryptograms (1933) | `ciphers/chinese-gold-bar-cipher/` | **Worked 2026-09-24 — solve-claim posted, HELD pending three validators**; unclaimed | **Criterion 2 is met with margin and the claim is that there is no plaintext.** Across the complete 263-letter inventory **21 of 26 letters occur exactly ten times** (E=11, I=13, O=9, S=11, T=9); chi2 vs uniform = **1.251 on 25 df** against an expectation of 25, analytic P = **9.3e-13**. The set is not merely flat — the literature's unverified "very flat" claim, now confirmed as Pelling's and *superseded* — but **flatter than chance**, which no cipher can be: every cipher samples letters and even a one-time pad leaves chi2 ~= 25 +/- 7. Monoalphabetic substitution and transposition are excluded language-independently by IC (0.0397 vs 0.0606 English, 0.0739 romanized Chinese, both p = 0.0001; zero repeated trigrams where English predicts ~29). The balance holds **only on the deduplicated inventory** (per-bar subsets at CDF 0.30/0.25/0.0038/0.0019), which is not a physical object — so tooling explanations die structurally and the constraint sits at composition. Order structure is indistinguishable from a random deal of that pool on all eleven statistics. **Two stated limits:** the periodic tests are weak (period 5 separation only 1.9 s.e., a permanent bound at 263 letters), and one registered prediction (P-A) **failed** on the claimant's own design error. A deliberately flat homophonic cipher is recorded as the live steelman. Criterion 1 unmet and argued unreachable; criterion 3 materially advanced by an independent quantitative line. **Panel completed 2026-09-24: 3 × PARTIAL, HELD — awaiting human sign-off. Not a solve and not to be published as one.** All three validators reproduced the pipeline and re-derived the corpus character-by-character from the live IACR page with no transcription error found; all three agree criterion 2 is met and that criteria 1 and 3 are not. **The refuter strengthened criterion 2** by running the polyalphabetic null the criterion names and this attempt omitted (Vigenère, periods 1–40, 4,000 replicates each, zero hits, min chi2 6.19). **Four corrections the folder must carry, the first two matters of fact.** (1) **The exact multinomial tail is disputed between validators and its *sign* is what is in dispute** — validators 1 and 2 each computed 1.7021e-12 (making the published 9.3e-13 ~1.83× optimistic), the refuter 8.28e-13 (making it ~11 % conservative). Quote no P-value until this is settled; the orchestrator is not adjudicating it. (2) **`data/instances.tsv` inherits an IACR arrangement diagram that omits at least four stamped lines**, verified from the photographs and the Cipher Foundation's independent transcription; restored, the per-bar figures become 9.5e-6 and 2.0e-7, and **bar face 5.1's complete physical text (249 letters) is itself balanced at P = 4.0e-6** — a bar face *is* a physical object, so pillar 3's "a deduplicated inventory is not a physical object, so only a person composing" does not stand as written. (3) **"Every cipher samples letters" is false**: the refuter built a fixed-table cycling homophone, deterministic and counting nothing about the message, reaching P(chi2 ≤ 1.251) of 2.0e-6 to 1.9e-4 — up to ~2.3e8 times likelier than 9.3e-13, which is P(data | uniform), used as if it were P(data | cipher). The claim's *direction* survives; its number and argument do not. (4) **Two validators, by different routes, found pillar 3 cannot discriminate the process it names** — a balanced code-group table (v1) and a depleting physical letter supply drawn once while the 16 strings were drafted (v2), each reproducing every signature, and under the latter the "no order structure" result *is* a positive prediction of the mechanical alternative. What survived a genuine attack: the deduplication (confirmed **not** post-hoc — IACR's own canonical list, registered pre-analysis), leave-one-out, five alternative transcriptions, direction-of-noise (94 % of 6,575 single substitutions raise chi2), the freeze sequencing, and the claim's own letter-level homophonic steelman, which v2 killed outright (~33 output letters needed, 26 exist). **Image evidence is the frontier and the panel proved it** rather than asserting it: the refuter's photograph work produced the omitted-lines error. 18 bar faces public, four transcribed. See `board/log/2026-09-24-panel-outcome-chinese-gold-bar.md` and `attempts/2026-09-24-is-it-a-cipher/RESULTS.md` |
 | Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | Blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433×161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions |
 
 **`ciphers/ira-vorfydcgt-1923/` and `ciphers/british-cyphers-cd286/` are one lane.** Same
@@ -194,14 +194,25 @@ wrong for two days.
    there is no second Patrick in the annals at all. That is the highest-upside cheap check on
    the Irish lane.
 
-4. **Thera — answered on its stated criterion; the next move is narrow and it is the only one
+4. **Chinese gold bars — six named fixes from the panel, two of them factual errors, and the
+   frontier is now the photographs.** The claim is HELD at 3 × PARTIAL and criterion 2 is met, so
+   this is not a re-run: it is a repair list, and its first item is **settling the exact
+   multinomial tail, on which the validators disagree about the sign of the correction**. Second is
+   rebuilding `data/instances.tsv` from the bar photographs rather than the IACR arrangement
+   diagram, which omits at least four stamped lines — with them restored, **a bar face is itself
+   letter-balanced at 4.0e-6**, which refutes the structural argument the claim used to retire the
+   tooling hypothesis. Then withdraw the "every cipher samples" inference and discriminate the two
+   composition-level alternatives two validators reached independently. Full list in that folder's
+   `HANDOVER.md`. Eighteen bar faces are public and four are transcribed.
+
+5. **Thera — answered on its stated criterion; the next move is narrow and it is the only one
    that matters.** Do not re-run the prior sensitivity, it is done. The single live question is
    whether an annually-resolved calibration curve has real structure in 1610–1540 BCE that
    IntCal20's smoothing averages out. If it does, the information bound lifts and the eruption
    year becomes recoverable; if not, the bound is permanent and the dispute stops being a
    radiocarbon question. Reopening condition is quantified: amplitude above ~40 ¹⁴C yr.
 
-5. **Shakespeare — genre inside the register, and nothing else.** The cross-register
+6. **Shakespeare — genre inside the register, and nothing else.** The cross-register
    correction is now validated out of sample (0.365 on 496 chunks by eleven dramatists who
    contributed none of the developed arm, against 0.358 on the developed arm), and the
    ablation closed the outstanding recipe questions. The two remaining failures are one prose
@@ -210,7 +221,7 @@ wrong for two days.
    are dropped the test has no power (n = 10 needs |ρ| ≥ 0.636). Still **do not run
    Oxford/Bacon/Derby**.
 
-6. **Junius — one cheap experiment, not a session's worth of work, and read the handover
+7. **Junius — one cheap experiment, not a session's worth of work, and read the handover
    before you touch it.** The compute route is closed on three independent readings. The only
    untried form: the detrend needs the corpus's *period*, not per-document dates, so the
    volume-level range string the panel already carries may be sufficient. Pair it with an
@@ -219,26 +230,26 @@ wrong for two days.
    across the register gap at any word count, that is a publishable negative and it retires
    the problem honestly.
 
-7. **Debosnys — unclaimed, untouched since 09-11, and the board's standing embarrassment.**
+8. **Debosnys — unclaimed, untouched since 09-11, and the board's standing embarrassment.**
    Confirm XP glyph identity against the scan, freeze the key, test additional occurrences.
    Two consecutive sessions claimed this and produced nothing. If you claim it, commit
    something or release it.
 
-8. **Linear A and Byblos — the two remaining unpanelled bounded claims**, in that order. Both
+9. **Linear A and Byblos — the two remaining unpanelled bounded claims**, in that order. Both
    carry new cross-references this pass: Linear A gets the label-permutation null for its
    post-hoc scribe/class decomposition, Byblos gets the information-ceiling calculation to run
    *before* extending any conditional ME/T value.
 
-9. **Proto-Elamite — the block-aware split that would settle M288–N45.** Two of its five
+10. **Proto-Elamite — the block-aware split that would settle M288–N45.** Two of its five
    standing recommended experiments are closed; the handover says which. New this pass: carry
    the label permutation before interpreting any post-hoc face or block split, paired with the
    p-floor rule this folder itself established.
 
-10. **Voynich:** acquire exact ordered historical degree lists; Taurus fit → Gemini/Cancer
+11. **Voynich:** acquire exact ordered historical degree lists; Taurus fit → Gemini/Cancer
    holdout. Tabulate which source entries the labels land on, not just the alignment score. Do
    not revive the withdrawn golden-cell argument.
 
-11. **Ennis — physical, not lexical, and three documentary corrections come first.** All
+12. **Ennis — physical, not lexical, and three documentary corrections come first.** All
     three validators agree the bottleneck is the captured 2023 photogrammetry/RTI and a blind
     traversal audit with the string budget declared in advance. **The "VA repeated" falsifier
     is now discharged** — it resolved in the claim's favour and is no longer the cheap kill
@@ -249,18 +260,18 @@ wrong for two days.
     the historical bridge. Those are edits to a cracker-owned folder, so they need a cracker
     session, not an orchestrator.
 
-12. **VENONA — two small enumerable populations, never run.** Constraint-ledger Q3 (the
+13. **VENONA — two small enumerable populations, never run.** Constraint-ledger Q3 (the
     Ilford/Hainault CPGB Area Secretary — one person) and Q2 (the 1939 Register roster for the
     Hughes works). The panel's finding is that the candidate field was closed by instruction
     rather than exhausted; these are how it gets reopened. Carry the two settled textual
     corrections into `PROBLEM.md` and `constraint-ledger.md` first.
 
-13. **1641 Depositions — do not take this as a compute session.** Measured 2026-09-23: 6,011
+14. **1641 Depositions — do not take this as a compute session.** Measured 2026-09-23: 6,011
     of 6,037 archived `deposition.php` captures are access-denied redirects back to the 2010
     crawls. The bottleneck is an archive request to TCD, **for a human to send**. It is on the
     human-decision list below.
 
-14. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three packs, but all
+15. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three packs, but all
     three need a solution-status audit *before* a cracker session. Check
     `board/EXTERNAL_RESEARCH_INDEX.md` before opening any cipher target — the Maltravers pack
     in the same batch was withdrawn because someone else had already solved it.
@@ -320,11 +331,13 @@ than on a session.
 
 ## Validation queue
 
-**Three claims are `HELD — awaiting human sign-off`. None is a solve, none is published as
-one, and no orchestrator pass can advance them.** Two unpanelled bounded claims remain.
+**Four claims are `HELD — awaiting human sign-off`. None is a solve, none is published as one,
+and no orchestrator pass can advance them.** Two unpanelled bounded claims remain, both waiting
+since 09-17. **Every verdict ever returned on this board is PARTIAL; there is no PASS anywhere.**
 
 | Claim | Current disposition | Decisive missing check |
 |---|---|---|
+| Chinese gold bar cryptograms | 3 × PARTIAL — panel **completed 2026-09-24**; HELD. Criterion 2 **met and strengthened** (the refuter ran the polyalphabetic null the criterion names and the claim omitted: Vigenère periods 1–40, zero hits, min chi2 6.19 vs observed 1.251), criteria 1 and 3 unmet, and the claim's *framing* — "not ciphertext, no plaintext to recover" — endorsed by nobody | **Settle the exact multinomial tail first: the validators disagree on its sign** (1 and 2 each got 1.7021e-12, making 9.3e-13 optimistic; the refuter got 8.28e-13, making it conservative). Then rebuild `instances.tsv` from the photographs — the IACR arrangement diagram omits ≥4 stamped lines, and with them restored **bar face 5.1's physical text is balanced at 4.0e-6**, which refutes pillar 3's premise. Then discriminate the two composition-level alternatives two validators reached independently (a balanced code-group table; a depleting letter supply) from deliberate counting |
 | Mesha BTDWD / House of David | 3 × PARTIAL (2026-09-12) — HELD, not validated as a full solve | Blind stroke comparison and genuine stone/squeeze independence |
 | Ennis STINGING | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Physical loop traversal from the 2023 photogrammetry/RTI, blind to the reading, with the string budget declared in advance |
 | VENONA Meredith / Vernon | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Constraint-ledger Q2 and Q3, the two small enumerable populations the cables name and nobody has run |

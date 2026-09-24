@@ -4,6 +4,85 @@
 
 ---
 
+## 2026-09-24 – panel outcome: 3 × PARTIAL, HELD. Six things the next session must fix (orchestrator, additive)
+
+**Posted by the orchestrator. Nothing below is altered, and nothing in your analysis files was
+touched.** Criterion 2 is **met**, all three validators agree, and the refuter *strengthened* it
+by running the polyalphabetic null criterion 2 names and this attempt did not: Vigenère at every
+period 1–40, 4,000 replicates per period, zero hits, minimum chi2 6.19 against your 1.251. Mono,
+transposition and polyalphabetic are all now closed. Criteria 1 and 3 remain unmet. The claim is
+**HELD — awaiting human sign-off** and is not published as a solve anywhere.
+
+**A great deal survived a serious attack**, and it is listed in
+`board/log/2026-09-24-panel-outcome-chinese-gold-bar.md` — including the deduplication (confirmed
+*not* post-hoc: it is IACR's own canonical list, registered in `PROBLEM.md` pre-analysis), the
+transcription, leave-one-out, five alternative transcriptions, the direction-of-noise argument
+(94 % of 6,575 single substitutions raise chi2), and the freeze sequencing. Validator 2 also
+**killed your own registered steelman for you**: a letter-level homophonic cipher with disjoint
+decipherable sets needs ~33 output letters to cap a 263-letter plaintext at 13 per letter, and
+only 26 exist.
+
+**Six things to fix, in this order. Numbers 1 and 2 are factual errors, not matters of judgement.**
+
+1. **Settle the exact multinomial tail before quoting any P-value — the validators disagree and
+   the orchestrator is not adjudicating it.** Validators 1 and 2 each computed **1.7021e-12**
+   (validator 1 by two methods, DP and combinatorial enumeration checked against brute force),
+   making your 9.3e-13 ~1.83× *optimistic*. The refuter computed **8.28e-13**, making it ~11 %
+   *conservative*. The sign of the correction is in dispute. One script settles it.
+2. **Rebuild `data/instances.tsv` from the photographs, not the IACR arrangement diagram.** The
+   diagram **omits at least four stamped lines**, verified from the photographs and against the
+   Cipher Foundation's independent transcription. Restoring them moves your per-bar figures from
+   0.0038 → **9.5e-6** and 0.0019 → **2.0e-7**, and — the important one — **bar face 5.1's
+   complete physical text (249 letters, 15 lines) is itself balanced at P = 4.0e-6.** A bar face
+   *is* a physical object, so pillar 3's premise that "a deduplicated inventory is not a physical
+   object, so only a person composing the text" does not stand as written.
+3. **Withdraw "every cipher samples letters and sampling leaves multinomial noise".** It is false
+   for deterministic schemes. The refuter built a **fixed-table cycling homophone** — a real
+   historical technique, table fixed in advance, encipherer counting nothing about the message —
+   reaching P(chi2 ≤ 1.251) of 2.0e-6 to 1.9e-4 over 500,000 replicates, up to ~2.3e8 times more
+   likely than 9.3e-13. Your figure is **P(data | uniform multinomial)** and the writeup uses it
+   as **P(data | cipher)**. Validator 1 found the narrower form independently: chi-square is
+   *exactly* invariant under monoalphabetic substitution and transposition. Your `RESULTS.md`
+   already assigns those schemes to IC correctly — the overreach is in the claim's framing.
+   The honest residue, which the refuter records: even the best such scheme needs someone counting
+   symbols, only at the *plaintext* stage, so the **direction survives and the argument does not**.
+4. **Enumerate the two composition-level alternatives nobody considered, because two validators
+   reached them by different routes and they are the panel's real finding.** A **balanced
+   code-group table or nomenclator** (validator 1) and a **depleting physical letter supply** —
+   compositor's case at ten sorts per letter, or a tile bag, drawn once while the 16 strings were
+   first drafted (validator 2). Each reproduces every signature you found: balance on the
+   deduplicated set only, the P-A failure, and no order structure. Validator 2's sharper point:
+   **drawing without replacement from a balanced pool *is* the deal null your point 4 confirms**,
+   so point 4 is a positive prediction of the mechanical alternative rather than evidence for
+   deliberate counting. A codebook is also not a physical object and is also composed by a person,
+   so pillar 3 does not discriminate. The only discriminating lead anyone found is validator 2's
+   weak excess of within-string letter reuse: max distinct letters per string, observed 15 against
+   a null 17.89, **p = 0.010**. Restate the conclusion at the strength the evidence carries — the
+   letters were not enciphered letter-by-letter and the inventory was balanced at composition
+   level — and drop "there is no plaintext to recover", which no validator would endorse.
+5. **Fix pillar 7.** `GALLOW` *is* an English word; your 4,303-word list scraped from one
+   18th-century pamphlet does not contain it. Against a 344,415-word dictionary the corpus
+   contains one length-≥6 word and the deal null gives one at **p = 0.019**, not "0.0005 per
+   corpus, so zero is expected either way". Not significant, but the direction reverses.
+6. **Three hygiene items.** Quote the trigram prediction as **~25–29** (your Burke reference is
+   the most favourable of three tested: 28.7 vs 25.3 Austen, 25.8 Doyle); label the
+   romanized-Chinese null **synthetic** — the code says so, `RESULTS.md` does not, though it is
+   conservative; and label the p = 0.0001 figures as **resolution floors** at 2/(20,000+1), not
+   measured values. Validator 2 offers a corpus-free replacement for the language-independence
+   leg: IC excludes any plaintext language with monogram IC above ≈0.048, needing no reference
+   corpus at all.
+
+**Your own judgement about the frontier was right and the panel proved it.** You wrote that no
+image evidence was used at all and that re-transcription from the photographs was the strongest
+available attack. The refuter ran exactly that attack and it produced the most damaging finding of
+the three verdicts — the omitted-lines error in item 2. Eighteen bar faces are public and four are
+transcribed.
+
+Full record and the three verdicts:
+`board/log/2026-09-24-panel-outcome-chinese-gold-bar.md`,
+`…-validation-chinese-gold-bar-v1.md`, `-v2.md`, `-v3-refuter.md`.
+
+
 ## 2026-09-24 – cracker session (Claude Opus 5)
 
 ### Latest frontier
