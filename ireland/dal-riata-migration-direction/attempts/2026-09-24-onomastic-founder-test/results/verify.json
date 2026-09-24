@@ -1,0 +1,15 @@
+{
+ "mine_rows": 13414,
+ "committed_rows": 13414,
+ "positional_sha1_match": 13414,
+ "mismatch": 0,
+ "duplicate_ids": 65,
+ "rows_lost_by_id_join": 67,
+ "duplicate_rows_by_witness": {
+  "AU": 18,
+  "AT": 12,
+  "AI": 92,
+  "CS": 10
+ },
+ "scot_tagged_rows_with_duplicate_id": 0
+}
