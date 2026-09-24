@@ -1,0 +1,29 @@
+named-author songs: 59   authors: 36
+authors with >=2 songs: 13
+   Pierce Egan            5 songs   1216 words   (train per test song: 824-1118)
+   G. Parker              4 songs   1023 words   (train per test song: 720-820)
+   A. Chevalier           3 songs    979 words   (train per test song: 536-726)
+   H. T. R.               2 songs    818 words   (train per test song: 370-448)
+   W. E. Henley           3 songs    796 words   (train per test song: 383-609)
+   Bon Gualtier           4 songs    791 words   (train per test song: 499-686)
+   G. R. Sims             3 songs    546 words   (train per test song: 288-446)
+   W. H. Ainsworth        2 songs    523 words   (train per test song: 232-291)
+   Leman Rede             2 songs    415 words   (train per test song: 198-217)
+   Thomas Dekker          2 songs    385 words   (train per test song: 120-265)
+   S. Rowlands            2 songs    366 words   (train per test song: 86-280)
+   J. Fletcher            2 songs    295 words   (train per test song: 116-179)
+   R. Brome               2 songs    181 words   (train per test song: 53-128)
+   TOTAL 8334 words in the testable set
+
+observed  cosine   MFW= 50:  11/36 = 0.306   (k=13 candidates, chance = 0.077)
+observed  cosine   MFW=100:  7/36 = 0.194   (k=13 candidates, chance = 0.077)
+observed  cosine   MFW=200:  9/36 = 0.250   (k=13 candidates, chance = 0.077)
+observed  burrows  MFW= 50:  9/36 = 0.250   (k=13 candidates, chance = 0.077)
+observed  burrows  MFW=100:  3/36 = 0.083   (k=13 candidates, chance = 0.077)
+observed  burrows  MFW=200:  7/36 = 0.194   (k=13 candidates, chance = 0.077)
+
+null model -- author labels permuted across the same songs, 1000 draws
+  observed              0.194
+  null mean +/- sd      0.066 +/- 0.047
+  null 95th percentile  0.139
+  p(null >= observed)   0.016
