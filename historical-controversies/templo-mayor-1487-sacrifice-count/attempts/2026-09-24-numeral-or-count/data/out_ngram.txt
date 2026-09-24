@@ -1,0 +1,22 @@
+duran: 219419 normalised tokens
+tezozomoc: 187708 normalised tokens
+mendieta: 245714 normalised tokens
+torquemada: 684968 normalised tokens
+ixtlilxochitl: 289573 normalised tokens
+anchor duran: FOUND at 146993
+anchor tezozomoc: FOUND at 114986
+anchor mendieta: FOUND at 68144
+anchor torquemada: FOUND at 280517
+anchor ixtlilxochitl: FOUND at 239640
+
+=== 5-gram overlap between dedication windows, vs null of random windows ===
+  duran          x ixtlilxochitl  obs=0.00042 (   1 shared 5-grams)  null mu=0.00016 sd=0.00037  z=   0.7  p=0.2027
+  duran          x mendieta       obs=0.00000 (   0 shared 5-grams)  null mu=0.00009 sd=0.00022  z=  -0.4  p=1.0000
+  duran          x tezozomoc      obs=0.00000 (   0 shared 5-grams)  null mu=0.00016 sd=0.00029  z=  -0.6  p=1.0000
+  duran          x torquemada     obs=0.00000 (   0 shared 5-grams)  null mu=0.00004 sd=0.00018  z=  -0.2  p=1.0000
+  ixtlilxochitl  x mendieta       obs=0.00042 (   1 shared 5-grams)  null mu=0.00008 sd=0.00021  z=   1.6  p=0.1262
+  ixtlilxochitl  x tezozomoc      obs=0.00042 (   1 shared 5-grams)  null mu=0.00004 sd=0.00015  z=   2.5  p=0.0831
+  ixtlilxochitl  x torquemada     obs=0.00000 (   0 shared 5-grams)  null mu=0.00004 sd=0.00013  z=  -0.3  p=1.0000
+  mendieta       x tezozomoc      obs=0.00000 (   0 shared 5-grams)  null mu=0.00004 sd=0.00015  z=  -0.3  p=1.0000
+  mendieta       x torquemada     obs=0.06594 ( 158 shared 5-grams)  null mu=0.00013 sd=0.00167  z=  39.4  p=0.0033   <<<
+  tezozomoc      x torquemada     obs=0.00000 (   0 shared 5-grams)  null mu=0.00002 sd=0.00010  z=  -0.2  p=1.0000

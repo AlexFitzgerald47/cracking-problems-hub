@@ -1,0 +1,54 @@
+
+ALL quantities >= 400
+work                                           n  %div400  %div1000 %VIG_not_DEC  %div8000
+duran                                        154    39.6%     72.7%      9.7%     12.3%
+duran_REPLICATE                              155    36.8%     67.7%     10.3%     11.0%
+ixtlilxochitl                                324    51.5%     71.9%      6.2%     14.2%
+ixtlilxochitl_REPLICATE                      322    59.9%     73.3%      7.1%     17.7%
+mendieta                                     141    51.1%     63.1%     19.1%      9.2%
+tezozomoc                                     82    63.4%     69.5%     14.6%     18.3%
+tezozomoc_1878_with_editor_notes             133    58.6%     69.2%     14.3%     21.1%
+torquemada                                  1160    27.1%     45.5%      4.5%      5.9%
+
+PERSON quantities >= 400
+work                                           n  %div400  %div1000 %VIG_not_DEC  %div8000
+duran                                         68    57.4%     69.1%      8.8%     20.6%
+duran_REPLICATE                               62    58.1%     67.7%     11.3%     22.6%
+ixtlilxochitl                                164    62.8%     82.9%      4.3%     20.1%
+ixtlilxochitl_REPLICATE                      170    74.1%     85.9%      4.1%     23.5%
+mendieta                                      61    54.1%     59.0%     19.7%     13.1%
+tezozomoc                                     40    70.0%     75.0%     10.0%     17.5%
+tezozomoc_1878_with_editor_notes              70    65.7%     71.4%     11.4%     20.0%
+torquemada                                   348    38.8%     61.2%      3.4%      8.6%
+
+PERSON quantities >= 2000
+work                                           n  %div400  %div1000 %VIG_not_DEC  %div8000
+duran                                         38    89.5%     86.8%      2.6%     36.8%
+duran_REPLICATE                               34    91.2%     85.3%      5.9%     41.2%
+ixtlilxochitl                                110    89.1%     95.5%      1.8%     30.0%
+ixtlilxochitl_REPLICATE                      135    89.6%     96.3%      1.5%     29.6%
+mendieta                                      31    71.0%     96.8%      3.2%     25.8%
+tezozomoc                                     30    80.0%     90.0%      0.0%     23.3%
+tezozomoc_1878_with_editor_notes              48    83.3%     85.4%      4.2%     29.2%
+torquemada                                   204    61.3%     71.1%      1.0%     14.7%
+
+ALL quantities >= 10000
+work                                           n  %div400  %div1000 %VIG_not_DEC  %div8000
+duran                                         36   100.0%     97.2%      2.8%     47.2%
+duran_REPLICATE                               35    94.3%     88.6%      5.7%     45.7%
+ixtlilxochitl                                115    95.7%     95.7%      2.6%     32.2%
+ixtlilxochitl_REPLICATE                      138    93.5%     95.7%      1.4%     34.8%
+mendieta                                      37    89.2%     94.6%      2.7%     35.1%
+tezozomoc                                     28    89.3%     89.3%      0.0%     32.1%
+tezozomoc_1878_with_editor_notes              48    91.7%     87.5%      6.2%     39.6%
+torquemada                                   312    63.1%     66.3%      0.3%     17.0%
+
+Distinct values >= 2000, person, per work:
+  duran                                      n= 18  VIGnotDEC= 1 [80400]
+  duran_REPLICATE                            n= 16  VIGnotDEC= 1 [80400]
+  ixtlilxochitl                              n= 29  VIGnotDEC= 2 [2800, 80400]
+  ixtlilxochitl_REPLICATE                    n= 34  VIGnotDEC= 2 [2800, 80400]
+  mendieta                                   n= 16  VIGnotDEC= 1 [80400]
+  tezozomoc                                  n= 17  VIGnotDEC= 0 []
+  tezozomoc_1878_with_editor_notes           n= 23  VIGnotDEC= 1 [80400]
+  torquemada                                 n= 85  VIGnotDEC= 2 [3200, 80400]

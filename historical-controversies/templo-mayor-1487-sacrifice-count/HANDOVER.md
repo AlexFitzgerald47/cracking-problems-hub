@@ -4,6 +4,79 @@
 
 ---
 
+## 2026-09-24 – worked. The number is a numeral; the frontier is Motolinía's *Carta al Emperador*
+
+**Read `attempts/2026-09-24-numeral-or-count/RESULTS.md` before anything else. Criterion 1 is
+delivered and criterion 2 is answered — do not re-locate the passages or re-run the filiation.**
+`data/attestations.tsv` has all 19 witness rows with verbatim quotes; `data/quantities.tsv` has
+3,116 machine-extracted quantities; `code/fetch_corpus.sh` rebuilds the 21-file corpus.
+
+### Latest frontier
+80,400 = **10 × 8,000 + 1 × 400** = *matlacxiquipilli ipan centzontli*, a vigesimal
+unit-expression attested in this chronicle family, copied thereafter as a bare token. Of the 19
+large person-quantities shared by three or more of the five chroniclers, **it is the only one
+that is not a plain decimal round number**. Tezozómoc — same lost *Crónica X* source as Durán,
+same four days, same length — **gives no total**; nor does Acosta. Ixtlilxóchitl is textually
+independent of everyone on both instruments and has the number anyway. Torquemada prints
+72,344 *and* 80,400 and notices the conflict. Mendieta dates it 1485 because he needs Cortés's
+birth year.
+
+### Conditional assumptions
+- The verdict is (b) *chronicler-side, as a notation artefact*. It does **not** assert nobody
+  ever estimated a multitude; it asserts the odd "400" is the system's smallest counter, not a
+  tally residue.
+- The transmission map holds **conditional on P3**: see below.
+
+### Next experiments, in order
+
+1. **Settle P3 — Motolinía's *Carta al Emperador* (1555). This is the highest-value check and
+   it is cheap.** Giuseppe Bellini's modern introduction to the Alianza *Historia de los indios*
+   quotes "ochenta mil y cuatrocientos hombres" and attributes it to Motolinía, for a ceremony
+   of "tres o cuatro días" under "el predecesor de Moctezuma". **It is not in the body of the
+   *Historia* or of the 1903 *Memoriales*** (both greppped, both in the corpus). If Motolinía
+   has it, Mendieta's arm descends from an eyewitness-generation Franciscan rather than from a
+   late providential frame, and the map in RESULTS §6 is wrong as drawn. The *Carta* is short
+   and printed in several collections; find any edition and grep it. **Do this first.**
+2. **Get an image of the Codex Telleriano-Remensis folio for 8 Acatl and count the glyphs
+   yourself.** Everything this session says about 20,000 comes through Orozco y Berra (1878)
+   and Ramírez (1867) reading the lámina, not through the lámina. The BnF has it digitised
+   (Mexicain 385). Two questions: how many bags and how many feathers are actually drawn, and
+   are the four nation-glyphs really Tzapoteca / Tlapaneca / Xiuhcoac / Ocelotla. If the
+   19th-century editors miscounted, the most suggestive fact in this folder moves.
+3. **Resolve the Tezozómoc 62,000 / 72,000 split.** The *same sentence* reads "sesenta y dos
+   mill" in the modern critical edition and "setenta y dos mil" in Orozco y Berra 1878, whose
+   figure sits one step from Torquemada's 72,344. A second passage reads 62,000 in both.
+   Either an OCR/print error or a harmonising emendation; needs the manuscript tradition
+   (Díaz Migoyo & Vázquez Chamorro's apparatus would say).
+4. **Trace Torquemada's 72,344 to its source.** It is the one figure in the corpus with the
+   arithmetic shape of a tally (not divisible by 400, or by 20) and this session did not find
+   where he got it. If it descends from a pictorial record read correctly, it is the most
+   informative number on the board here.
+5. **Do NOT re-run the vigesimal-breakdown null.** P5 was run and **failed** (P = 0.0146 against
+   an empirical null over 10⁶ draws). Ixtlilxóchitl's 2/3/2/3-xiquipilli itemisation is not
+   significant against how these chroniclers report numbers generally. The argument does not
+   need it and should not be rebuilt on it.
+6. **Do NOT use shared-*n*-gram filiation alone on this corpus.** It returns **zero** for the
+   Durán/Tezozómoc relationship, which is established. Use the rare-token content test
+   (`code/content_overlap.py`) as well, always. See the board log entry of this date.
+
+### Evidence dependency
+Everything here rests on OCR'd `_djvu.txt` of printed editions. Every figure was taken in two
+independent scans or editions and both agreed; the one place where a scan degraded the numeral
+(Durán's second mention, Getty scan: "quatrocicntos") is recorded. Nothing rests on a
+manuscript reading. Items 2 and 3 above are the points where that stops being good enough.
+
+### Reopening condition
+If Motolinía's *Carta* carries 80,400, reopen the transmission map. If the Telleriano folio
+does not read 2 xiquipilli + 10 tzontli, reopen §4 of RESULTS.
+
+### Not the target
+The "how many actually died" question is still unanswerable and still the time-waster this
+folder was warned about. The ~126-skeleton figure was **not** pursued this session and remains
+untraced to an INAH report; it is context, not refutation, and it is not needed for any claim
+made here.
+
+
 ## 2026-09-24 – promoted to `historical-controversies/`, with two methods already built for you
 
 **Promoted out of `discovered/` by the orchestrator pass of 2026-09-24, on the commitment the
