@@ -1,0 +1,181 @@
+{
+ "all three with attested text (oratory / sermons / verse)": {
+  "rows": [
+   {
+    "metric": "cosine",
+    "mfw": 50,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (oratory)": 1.1423,
+     "Burrowes (sermons)": 0.9884,
+     "Lysaght (verse)": 0.8673
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 100,
+    "winner": "Curran (oratory)",
+    "dists": {
+     "Curran (oratory)": 0.9202,
+     "Burrowes (sermons)": 1.1045,
+     "Lysaght (verse)": 0.9836
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 200,
+    "winner": "Curran (oratory)",
+    "dists": {
+     "Curran (oratory)": 0.9501,
+     "Burrowes (sermons)": 1.0637,
+     "Lysaght (verse)": 0.9906
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 300,
+    "winner": "Curran (oratory)",
+    "dists": {
+     "Curran (oratory)": 0.9851,
+     "Burrowes (sermons)": 0.9922,
+     "Lysaght (verse)": 1.0214
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 50,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (oratory)": 2.5374,
+     "Burrowes (sermons)": 2.575,
+     "Lysaght (verse)": 2.1377
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 100,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (oratory)": 2.2372,
+     "Burrowes (sermons)": 2.1439,
+     "Lysaght (verse)": 1.9183
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 200,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (oratory)": 2.0671,
+     "Burrowes (sermons)": 1.9491,
+     "Lysaght (verse)": 1.7624
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 300,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (oratory)": 2.1017,
+     "Burrowes (sermons)": 2.1198,
+     "Lysaght (verse)": 1.9173
+    }
+   }
+  ],
+  "winners": {
+   "Lysaght (verse)": 5,
+   "Curran (oratory)": 3
+  },
+  "n_distinct": 2
+ },
+ "verse only -- the one register-homogeneous comparison": {
+  "rows": [
+   {
+    "metric": "cosine",
+    "mfw": 50,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.2031,
+     "Lysaght (verse)": 0.7969
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 100,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.0837,
+     "Lysaght (verse)": 0.9161
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 200,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.3227,
+     "Lysaght (verse)": 0.6775
+    }
+   },
+   {
+    "metric": "cosine",
+    "mfw": 300,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.0317,
+     "Lysaght (verse)": 0.9675
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 50,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 0.9811,
+     "Lysaght (verse)": 0.7596
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 100,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.0045,
+     "Lysaght (verse)": 0.7971
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 200,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 1.1076,
+     "Lysaght (verse)": 0.4777
+    }
+   },
+   {
+    "metric": "burrows",
+    "mfw": 300,
+    "winner": "Lysaght (verse)",
+    "dists": {
+     "Curran (verse)": 0.7858,
+     "Lysaght (verse)": 0.7103
+    }
+   }
+  ],
+  "winners": {
+   "Lysaght (verse)": 8
+  },
+  "n_distinct": 1
+ },
+ "witness_cosine": {
+  "between_witness": 0.1663390500676306,
+  "nearest_candidate": 1.0863658273636865,
+  "nearest_name": "Lysaght (verse)"
+ },
+ "witness_burrows": {
+  "between_witness": 0.2899518026702078,
+  "nearest_candidate": 1.1145893345746551,
+  "nearest_name": "Lysaght (verse)"
+ }
+}

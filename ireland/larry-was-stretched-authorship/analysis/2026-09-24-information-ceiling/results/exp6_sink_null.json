@@ -1,0 +1,346 @@
+{
+ "tally": {
+  "Lysaght (verse)": 55,
+  "Curran (verse)": 1
+ },
+ "n": 56,
+ "lysaght_cell_rate": 0.9486607142857143,
+ "per_song": [
+  {
+   "title": "Rhymes of the Canting Crew",
+   "author": "R. Copland",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Beggar's Curse, The",
+   "author": "Thomas Dekker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Maunder's Wooing, The",
+   "author": "S. Rowlands",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 6
+  },
+  {
+   "title": "\"A Gage of Ben Rom-Bouse\"",
+   "author": "Middleton and Dekker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Bing Out, Bien Morts\"",
+   "author": "Thomas Dekker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Maunder's Initiation, The",
+   "author": "J. Fletcher",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 5
+  },
+  {
+   "title": "High Pad's Boast, The",
+   "author": "J. Fletcher",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Merry Beggars, The",
+   "author": "R. Brome",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 6
+  },
+  {
+   "title": "Frisky Moll's Song",
+   "author": "J. Harper",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Oath of the Canting Crew, The",
+   "author": "R. Goadby",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Slang Pastoral, A",
+   "author": "R. Tomlinson",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Ye Scamps, ye Pads, ye Divers\"",
+   "author": "Messink",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Sandman's Wedding, The",
+   "author": "G. Parker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Happy Pair, The",
+   "author": "G. Parker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Banter's Christening, The",
+   "author": "G. Parker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Masqueraders, The",
+   "author": "G. Parker",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "The Night before Larry was stretched",
+   "author": "W. Maher",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Milling Match, The",
+   "author": "T. Moore",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Ya-Hip, my Hearties!\"",
+   "author": "Gregson",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "True Bottom'd Boxer, The",
+   "author": "J. Jones",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Flashey Joe",
+   "author": "R. Morley",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "My mugging maid",
+   "author": "J. Bruton",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Poor Luddy",
+   "author": "T. Dibdin",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Pickpocket's Chaunt, The",
+   "author": "W. Maginn",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "On the Prigging Lay",
+   "author": "H. T. R.",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Lag's Lament, The",
+   "author": "H. T. R.",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Nix my Doll, Pals, Fake Away\"",
+   "author": "W. Harrison Ainsworth",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Game of High Toby, The",
+   "author": "W. H. Ainsworth",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Double Cross, The",
+   "author": "W. H. Ainsworth",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Thieves' Chaunt, The",
+   "author": "W. H. Smith",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Housebreaker's Song, The",
+   "author": "G. W. M. Reynolds",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "\"The Faking Boy to the Crap is Gone\"",
+   "author": "Bon Gualtier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Nutty Blowen, The",
+   "author": "Bon Gualtier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Faker's New Toast, The",
+   "author": "Bon Gualtier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "My Mother",
+   "author": "Bon Gualtier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "High Pad's Frolic, The",
+   "author": "Leman Rede",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Dashy Splashy . . . little Stringer, The",
+   "author": "Leman Rede",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Bould Yeoman, The",
+   "author": "Pierce Egan",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Bridle-cull and his little Pop-gun",
+   "author": "Pierce Egan",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Jack Flashman",
+   "author": "Pierce Egan",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "By-blow of the Jug, The",
+   "author": "Pierce Egan",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Leary Man, The",
+   "author": "Ducange Anglicus",
+   "majority_winner": "Curran (verse)",
+   "lysaght_cells": 4
+  },
+  {
+   "title": "\"A Hundred Stretches Hence\"",
+   "author": "G. W. Matsell",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Chickaleary Cove, The",
+   "author": "Vance",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "'Arry at a Political Picnic",
+   "author": "T. Milliken",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Rum Coves that Relieve Us\"",
+   "author": "H. Baumann",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Villon's Good Night",
+   "author": "W. E. Henley",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Villon's Straight Tip",
+   "author": "W. E. Henley",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 7
+  },
+  {
+   "title": "Culture in the Slums",
+   "author": "W. E. Henley",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Tottie",
+   "author": "G. R. Sims",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Plank-bed Ballad, A",
+   "author": "G. R. Sims",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Rondeau of the Knock, The",
+   "author": "G. R. Sims",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Rhyme of the Rusher",
+   "author": "Doss Chiderdoss",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "\"Wot Cher\"",
+   "author": "A. Chevalier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Our Little Nipper",
+   "author": "A. Chevalier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  },
+  {
+   "title": "Coster's Serenade, The",
+   "author": "A. Chevalier",
+   "majority_winner": "Lysaght (verse)",
+   "lysaght_cells": 8
+  }
+ ]
+}

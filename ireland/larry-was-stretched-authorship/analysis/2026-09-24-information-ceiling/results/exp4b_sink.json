@@ -1,0 +1,29 @@
+{
+ "per_song": {
+  "G. R. Sims|Tottie": 0.05,
+  "G. R. Sims|Plank-bed Ballad, A": 0.225,
+  "G. R. Sims|Rondeau of the Knock, The": 0.225,
+  "Pierce Egan|Bould Yeoman, The": 0.15,
+  "Pierce Egan|Bridle-cull and his little Pop-gun": 0.1,
+  "Pierce Egan|Jack Flashman": 0.175,
+  "Pierce Egan|Miss Dolly Trull": 0.2,
+  "Pierce Egan|By-blow of the Jug, The": 0.2,
+  "Thomas Dekker|Beggar's Curse, The": 0.425,
+  "Thomas Dekker|\"Bing Out, Bien Morts\"": 0.625,
+  "W. E. Henley|Villon's Good Night": 0.0,
+  "W. E. Henley|Villon's Straight Tip": 0.0,
+  "W. E. Henley|Culture in the Slums": 0.0,
+  "W. H. Ainsworth|Game of High Toby, The": 0.725,
+  "W. H. Ainsworth|Double Cross, The": 0.45
+ },
+ "majority_correct": 2,
+ "n_songs": 15,
+ "binom_p": 0.8328742325780487,
+ "sink": {
+  "W. H. Ainsworth": 258,
+  "Thomas Dekker": 156,
+  "Pierce Egan": 70,
+  "G. R. Sims": 103,
+  "W. E. Henley": 13
+ }
+}
