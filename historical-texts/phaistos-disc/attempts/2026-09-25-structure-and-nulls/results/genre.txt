@@ -57,7 +57,7 @@ a word, and counting them manufactures a confirmation of P1. Inspected by hand:
 VERDICT ON THE FROZEN PREDICTIONS
 ========================================================================
 
-P1  '>= 5%% of word tokens will be 1 syllabogram long' (failure if < 5%%)
+P1  '>= 5% of word tokens will be 1 syllabogram long' (failure if < 5%)
       LB: 0.31%  ->  FAIL
       LA: 53.86%  ->  PASS
       CY: 29.94%  ->  PASS
@@ -67,8 +67,8 @@ P2  'the Disc's mean will exceed the corpus mean by >= 1.0 signs' (failure if < 
       LA: gap +2.106  ->  PASS
       CY: gap +1.142  ->  PASS
 
-P3  '< 1%% of size-matched samples have zero 1-sign tokens, and < 1%% have
-     mean >= the Disc's' (failure if either rate >= 1%%)
+P3  '< 1% of size-matched samples have zero 1-sign tokens, and < 1% have
+     mean >= the Disc's' (failure if either rate >= 1%)
       LB: P(zero 1-sign)=0.8257, P(mean>=disc)=0.0000  ->  FAIL
       LA: P(zero 1-sign)=0.0000, P(mean>=disc)=0.0000  ->  PASS
       CY: P(zero 1-sign)=0.0000, P(mean>=disc)=0.0000  ->  PASS

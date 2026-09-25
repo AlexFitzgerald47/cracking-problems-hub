@@ -197,7 +197,7 @@ out.append("VERDICT ON THE FROZEN PREDICTIONS")
 out.append("=" * 72)
 lb = results.get("LB")
 out.append("")
-out.append("P1  '>= 5%% of word tokens will be 1 syllabogram long' (failure if < 5%%)")
+out.append("P1  '>= 5% of word tokens will be 1 syllabogram long' (failure if < 5%)")
 for k, v in results.items():
     out.append("      %s: %.2f%%  ->  %s" % (k, 100 * v["frac1"], "PASS" if v["frac1"] >= 0.05 else "FAIL"))
 out.append("")
@@ -206,8 +206,8 @@ for k, v in results.items():
     g = DISC_MEAN - v["mean"]
     out.append("      %s: gap %+.3f  ->  %s" % (k, g, "PASS" if g >= 1.0 else "FAIL"))
 out.append("")
-out.append("P3  '< 1%% of size-matched samples have zero 1-sign tokens, and < 1%% have")
-out.append("     mean >= the Disc's' (failure if either rate >= 1%%)")
+out.append("P3  '< 1% of size-matched samples have zero 1-sign tokens, and < 1% have")
+out.append("     mean >= the Disc's' (failure if either rate >= 1%)")
 for k, v in results.items():
     ok = v["p_zero1"] < 0.01 and v["p_mean"] < 0.01
     out.append("      %s: P(zero 1-sign)=%.4f, P(mean>=disc)=%.4f  ->  %s"
