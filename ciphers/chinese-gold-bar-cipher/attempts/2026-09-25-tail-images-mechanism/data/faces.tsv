@@ -1,0 +1,20 @@
+# Every image on https://www.iacr.org/misc/china/ , classified by what it shows.
+# 15 images, NOT 18 (the 2026-09-24 handover's "18 bar faces" is wrong: the
+# filenames run 5.1, 6.2, 7.1, 7.2, 8.2, 9.1, 9.2, 10.1, 10.2, 11.1, 11.2,
+# 12.1, 12.2, 13.1, 13.2 -- 5.2, 6.1 and 8.1 do not exist).
+image	content	latin_lines	note
+5.1	latin	15	full face; IACR transcribes 14 of the 15
+6.2	detail	0	close-up of the flag/compass emblem at the centre of face 11.1
+7.1	script	0	entirely the unidentified cursive script
+7.2	latin	13	full face; wholly absent from the IACR page
+8.2	script	0	entirely the unidentified cursive script
+9.1	latin	14	full face; IACR transcribes 11 of the 14
+9.2	script	0	entirely the unidentified cursive script
+10.1	script	0	entirely the unidentified cursive script
+10.2	latin	19	portrait shot of both ends of one bar (8 + 11); matches IACR
+11.1	latin	11	full face; wholly absent from the IACR page
+11.2	script	0	entirely the unidentified cursive script
+12.1	detail	0	close-up of face 5.1 (identical layout); best image of UGMNCBXCFLDEY
+12.2	detail	0	close-up of a script face
+13.1	latin	16	full face; wholly absent from the IACR page
+13.2	script	0	entirely the unidentified cursive script
