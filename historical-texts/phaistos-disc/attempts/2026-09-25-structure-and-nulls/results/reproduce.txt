@@ -1,0 +1,21 @@
+PASS  C1 tokens (legible)                              got=241
+PASS  C1 distinct signs                                got=45
+PASS  C2 words                                         got=61
+PASS  C2 side A words                                  got=31
+PASS  C2 side B words                                  got=30
+PASS  C2 min word length                               got=2
+PASS  C2 max word length                               got=7
+PASS  C3 hapax count                                   got=9
+PASS  C3 hapax set                                     got=[4, 5, 11, 15, 17, 30, 42, 43, 44]
+FAIL  C3 hapax locations                               got=['A5', 'B3', 'A13', 'B8', 'A24', 'B27', 'B9', 'B6', 'A7']  want=['A5', 'B3', 'A13', 'B8', 'A24', 'B27', 'B9', 'B4', 'A7']
+PASS  C4 doubleton count                               got=8
+PASS  C4 doubleton set                                 got=[3, 9, 14, 16, 20, 21, 28, 41]
+PASS  C4 side-A-only doubletons                        got=[3, 21, 28, 41]
+PASS  C4 side-B-only doubletons                        got=[9, 16, 20]
+PASS  C4 both-sides doubletons                         got=[14]
+
+14/15 published descriptive claims reproduced
+
+word-length distribution (n signs -> count): {2: 6, 3: 16, 4: 21, 5: 13, 6: 2, 7: 3}
+mean word length 3.967 signs
+top sign frequencies: [(2, 19), (7, 18), (12, 17), (27, 15), (18, 12), (1, 11), (29, 11), (35, 11), (23, 11), (25, 7), (13, 6), (24, 6)]

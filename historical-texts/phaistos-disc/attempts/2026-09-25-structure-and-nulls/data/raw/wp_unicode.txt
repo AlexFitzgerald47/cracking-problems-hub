@@ -1,0 +1,23 @@
+'''Side A''':
+:<span style="font-size:140%;">¦ 𐇑𐇛𐇜𐇐𐇡𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇧𐇷𐇛 | 𐇬𐇼𐇖𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇬𐇬𐇱 | 𐇑𐇛𐇓𐇷𐇰 | 𐇪𐇼𐇖𐇛 | 𐇪𐇻𐇗 | 𐇑𐇛𐇕𐇡⍰ | 𐇮𐇩𐇲 | 𐇑𐇛𐇸𐇢𐇲 | 𐇐𐇸𐇷𐇖 | 𐇑𐇛𐇯𐇦𐇵𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇶𐇚 | 𐇑𐇪𐇨𐇙𐇦𐇡 | 𐇫𐇐𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇑𐇛𐇮𐇩𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇑𐇛𐇪𐇪𐇲𐇴𐇤 | 𐇰𐇦 | 𐇑𐇛𐇮𐇩𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇑𐇪𐇨𐇙𐇦𐇡 | 𐇫𐇐𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇑𐇛𐇮𐇩𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇑𐇛𐇪𐇝𐇯𐇡𐇪 | 𐇕𐇡𐇠𐇢𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇮𐇩𐇛 | 𐇑𐇛𐇜𐇐 | 𐇦𐇢𐇲𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇙𐇒𐇵 | 𐇑𐇛𐇪𐇪𐇲𐇴𐇤 | 𐇜𐇐 | 𐇙𐇒𐇵 </span>
+
+'''Side B'''
+:<span style="font-size:140%;">¦ 𐇑𐇛𐇥𐇷𐇖 | 𐇪𐇼𐇖𐇲 | 𐇑𐇴𐇦𐇔𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇥𐇨𐇪 | 𐇰𐇧𐇣𐇛 | 𐇟𐇦𐇡𐇺𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇜𐇐𐇶𐇰 | 𐇞𐇖𐇜𐇐𐇡 | 𐇥𐇴𐇹𐇨 | 𐇖𐇧𐇷𐇲 | 𐇑𐇩𐇳𐇷 | 𐇪𐇨𐇵𐇐 | 𐇬𐇧𐇧𐇣𐇲 | 𐇟𐇝𐇡 | 𐇬𐇰𐇐 | 𐇕𐇲𐇯𐇶𐇰 | 𐇑𐇘𐇪𐇐 | 𐇬𐇳𐇖𐇗𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇬𐇗𐇜 | 𐇬𐇼𐇖𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇥𐇬𐇳𐇖𐇗𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇪𐇱𐇦𐇨 | 𐇖𐇡𐇲 | 𐇖𐇼𐇖𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇖𐇦𐇡𐇧 | 𐇥𐇬𐇳𐇖𐇗𐇽 </span><hr/>
+:<span style="font-size:140%;">| 𐇘𐇭𐇶𐇡𐇖 | 𐇑𐇕𐇲𐇦𐇖 | 𐇬𐇱𐇦𐇨 | 𐇼𐇖𐇽 </span><hr/>
+
