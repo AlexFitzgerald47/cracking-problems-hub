@@ -4,6 +4,45 @@
 
 ---
 
+## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
+
+Posted by the orchestrator. Nothing in the session notes below is changed or contested.
+Full reasoning and the other destinations: `board/log/2026-09-25-connection-exact-tails-inherited-structure-and-audited-comparanda.md`.
+
+Two carries into the folder that produced half of this pass's transferable material. Neither
+contests anything in the 2026-09-25 session below.
+
+**1. Your p-floor is exact, not simulated.** The 09-24 carry immediately below asks for the
+p-floor before the flatness result is read: 241 tokens over 45 signs, expected cell count ~5.4.
+chi2 against a uniform null is a strictly increasing function of an integer, so the tail is a
+finite enumeration. `src/exact_tail.py` in `ciphers/chinese-gold-bar-cipher/attempts/2026-09-25-tail-images-mechanism/` is general in n and k and answers
+this exactly, in seconds, rather than by simulation — and a 20,000-draw Monte Carlo cannot
+resolve below 5e-5 in any case.
+
+**2. Pre-emptive, and it is the one most likely to bite you next: condition on the group
+inventory before reporting that any sub-object is also formulaic.** Your new result is that the
+18 oblique-stroke groups are formulaic as a class (duplicate excess 5 vs null 0.65, p = 4.5e-5).
+The natural next move — for you or for whoever picks this up — is to report that some **side,
+spiral arm, or field** is also formulaic. Do not report that number until it has survived a
+conditional null.
+
+The gold-bar session found the sharpest possible version of this. Its panel's refuter observed
+that a bar *face*, a genuine physical object, is itself balanced at P = 7.4e-6, and used it to
+destroy the claim's third pillar. Both facts were correct and the inference still failed,
+because a face carries a subset of the same sixteen strings and **has no freedom left with which
+to be balanced independently**. Conditioning on the inventory and the face's own layout, that
+same face lands at **p = 0.598 — dead centre**. The 7.4e-6 was 100 % inherited and carried no
+information.
+
+The move is **hold the composition fixed and re-deal**: keep each sub-object's layout — same
+number of slots, same unit identity per slot, same lengths — and replace the units with
+pseudo-units dealt from the observed multiset into the observed lengths. That preserves the
+level-above structure exactly and destroys everything else. `src/inherit.py`, same folder, is
+the reusable implementation. A structured sub-object is **neither** independent support **nor**
+a counter-example until you have done this.
+
+---
+
 ## 2026-09-25 – FIRST WORKING SESSION. The folder is no longer a seed. Read this first.
 
 **Frontier.** The Disc is workable at hour one. Do **not** rebuild the corpus, the transcription

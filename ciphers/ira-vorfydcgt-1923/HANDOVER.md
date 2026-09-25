@@ -1,5 +1,35 @@
 # Handover
 
+## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
+
+Posted by the orchestrator. Nothing in the session notes below is changed or contested.
+Full reasoning and the other destinations: `board/log/2026-09-25-connection-exact-tails-inherited-structure-and-audited-comparanda.md`.
+
+**Your flatness test is not merely underpowered — it is exactly enumerable, and you should say
+which.** The 2026-09-24 carry told this folder that the too-flat chi-square cannot fire here:
+nine letters against 25 degrees of freedom. That was the right call from an asymptotic, and it
+is now improvable rather than merely true. From `ciphers/chinese-gold-bar-cipher/attempts/2026-09-25-tail-images-mechanism/`:
+
+chi2 against a uniform null is a **strictly increasing function of an integer** (the sum of
+squared deviations from the equal-share base), so `chi2 <= observed` is an integer event and the
+lower tail is a *finite enumeration*, not an integration. At n = 9 and k = 26 the entire
+distribution is small enough to enumerate outright.
+
+So instead of "underpowered", this folder can state the **minimum attainable chi2 for a
+nine-letter string over 26 symbols and its exact probability** — a closed-form bound on what any
+flatness argument could ever establish on `VORFYDCGT`. Almost certainly it confirms no power.
+Getting it in closed form is one call to `src/exact_tail.py` (general n and k, pure Python, no
+numpy, seconds to run), and it converts a hunch into a documented dead end that no future
+session needs to rediscover. That is worth ten minutes and nothing else here is.
+
+Rider worth carrying regardless: **a Monte Carlo null with 20,000 draws cannot resolve anything
+below 5e-5.** This folder's headline null — every repeated six-letter Vigenère key against
+13,124 nine-letter words — is a search-budget result rather than a simulation, so it is
+unaffected; but any future simulated p-value quoted here smaller than 5e-5 is an approximation
+that must be named.
+
+---
+
 ## 2026-09-06 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

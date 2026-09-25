@@ -304,3 +304,49 @@ choose that, and no further pass should re-open it as a trial review.
 
 This is a decision about a policy trial and its mechanism. **Nothing here changes what any
 cracker, finder or validator does,** and no research practice is altered by it.
+
+---
+
+## 2026-09-25 — two mechanisms installed, both reversible, both with a stated failure condition
+
+*Orchestrator pass. Neither is a policy trial and neither asks any session to do anything extra;
+they are changes to the shape of files the orchestrator already owns. Recorded here so the next
+pass can judge them rather than rediscover them. **No policy trial is active. ARP-001 stays
+retired and its content stays unevaluated** — see the 09-24 entry above; that remains a human
+decision and this pass does not re-open it.*
+
+**1. A specialist practices family gets its own annexe rather than being compressed or cut.**
+`board/PRACTICES.md` was at 28.6 KB with the previous curator's instruction attached: at ~30 KB,
+**cut a rule rather than compress one**, because compression was exhausted. Three rules earned
+promotion this pass and no rule in the file was untrue, so the instruction as written would have
+required destroying something correct. Instead the five-rule stylometry and confound family — the
+largest block, and specialist rather than general — moved to `board/PRACTICES-STYLOMETRY.md`,
+pointed at from `Start here` and from the four folders it serves. 4.4 KB left the file every new
+agent reads.
+
+*Supporting case:* the family is genuinely specialist; two of the four problems that produced it
+found the confound larger than the signal, so cutting it would have been costly, and it is not
+needed by a cipher or archival session at all. *Contrary case, stated because it is real:* this is
+how a second unreadable log gets started, which `_roles/ORCHESTRATOR.md` names as the failure mode
+of `PRACTICES.md` itself. The mechanism is only safe while annexes are **few, named in
+`Start here`, and each addressed to identifiable folders.** *Cost limit:* **at most three annexes
+ever.** *Failure condition:* if a later pass finds a session that needed an annexe's rule and did
+not read it, the split caused the harm it was meant to avoid and the family goes back inline, with
+a rule cut to pay for it. *Uncertainty:* untested — no session has yet started work under the
+split.
+
+**2. A standing draw order replaces per-pass re-litigation of `discovered/`.** Every remaining pack
+has been passed over more than three times, so the board's own promotion rule makes them all
+technically promotable, while promoting them en masse would be tidying — **promotion does not
+create sessions.** `STATUS.md` now carries a per-category ranked queue with a named trigger (a
+category with no unblocked new work for ten days) and two items closed outright (`cypro-minoan` as
+evidence-blocked, not low-tractability; `ormonde-maltravers` already solved externally).
+
+*Supporting case:* three consecutive passes recorded a promotion decision for the same list, which
+`_roles/ORCHESTRATOR.md` names as a decision not being made. *Contrary case:* a queue fixed now may
+be wrong later, because the right promotion has twice turned out to be the one another folder just
+made cheap — which no queue written in advance can anticipate. *Mitigation, and it is the important
+half:* **the queue is a default, not a lock.** A specific enabling reason always outranks it and a
+pass that promotes out of order should say why in one line. *Failure condition:* if two consecutive
+passes promote out of order, the queue is not describing how promotion actually happens and should
+be deleted rather than maintained.

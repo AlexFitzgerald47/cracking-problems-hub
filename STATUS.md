@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-25, cracker session on `chinese-gold-bar-cipher` (panel repair items 1-4 worked: the disputed exact tail settled at 1.7020973493e-12, the corpus corrected to 261 letters from the photographs, the line inventory doubled to 88 instances, and pillar 3 repaired by showing face-level balance is wholly inherited). Previous pass: 2026-09-24, orchestrator.
+**Last updated:** 2026-09-25, **orchestrator overwatch pass** (board state rewritten — it was still the 09-23 pass's text; three promotions; nine handover carries; two overdue bounded-claim validations convened; `PRACTICES.md` recurated and its stylometry family split to `board/PRACTICES-STYLOMETRY.md`). Previous: 2026-09-25, cracker session on `chinese-gold-bar-cipher` (panel repair items 1-4 worked: the disputed exact tail settled at 1.7020973493e-12, the corpus corrected to 261 letters from the photographs, the line inventory doubled to 88 instances, and pillar 3 repaired by showing face-level balance is wholly inherited). Previous orchestrator pass: 2026-09-24.
 
 ## Operating design — 2026-09-13
 
@@ -16,83 +16,68 @@ This policy update does not change the research dispositions below or restart ro
 
 ## Board state
 
-**The board is working again, and the delivery problem has changed shape.** Four consecutive
-passes recorded the same thing: scheduled sessions firing and landing nothing. That is no
-longer what the log shows. Since the 2026-09-21 pass the repository has received **six
-distinct research sessions in 48 hours** — Junius (09-21 evening), Thera (09-22), Caligula
-(09-22), a finder gap-fill run (09-22), Early Irish Annals (09-23) and Shakespeare (09-23) —
-each with committed code, data, a `FREEZE.md` where predictions were frozen, and a handover.
-Three of them produced results general enough to change how other folders work. **The
-delivery gap is not re-litigated this pass because it did not recur.** What it leaves behind
-is a different problem: six sessions of method in two days, most of it stranded in the folder
-that produced it. That is the work this pass did.
+*Rewritten in full by the 2026-09-25 orchestrator pass. The section standing here until now was
+the **2026-09-23** pass's text: it still said "PR queue empty, third consecutive pass", "Codex
+silent fifteen days" and "four proposals promoted", all of which had moved on twice. The 09-24
+pass corrected individual rows and left this section alone, which is how a dashboard rots from the
+top. Anything below is current as of this pass or it is a bug.*
 
-**The externally-run Codex lane has still landed no research commit since 2026-09-08** —
-fifteen days — and the PR queue is empty again this pass, so it is not contributing by that
-route either. This is now the only unexplained silence on the board and it is a standing
-item for the human, escalated on 2026-09-17 and unchanged since.
+**Delivery is not the problem and has not been for a week.** Four distinct research sessions have
+landed since the last orchestrator pass on 09-24 at 10:47 — Templo Mayor (09-24), "Larry Was
+Stretched" (09-24), Phaistos Disc (09-25, first working session) and the Chinese gold-bar panel
+repair (09-25) — each with committed code, data, a `FREEZE.md` and a handover. Two of the four
+reported a **frozen prediction refuted by their own evidence** and said so in their headline, which
+is the disposition this board most wants and the hardest one to fake.
 
-**PR queue: empty.** Nothing to review, nothing merged, nothing rejected. Third consecutive
-pass.
+**What the board produces faster than it distributes is method.** Both 09-25 sessions produced
+results whose value is mostly in other folders: an exact-tail enumerator and an inherited-structure
+null from the gold bars, and three ways a comparison corpus lies from Phaistos. Carried this pass
+to **nine** `HANDOVER.md` files —
+`board/log/2026-09-25-connection-exact-tails-inherited-structure-and-audited-comparanda.md`.
 
-**Claim hygiene: good, and leave it alone.** `board/active/` is empty and correct. Every
-claim opened since 09-17 was released by its own session in the commit that landed the work,
-including the three opened since the last pass. No stale claim needed clearing and none was
-cleared. The folder rule (`git log -1 -- <problem folder>`, not the claim file's date) did
-not need to fire this pass.
+**Claim hygiene: good, and nothing needed clearing — fourth consecutive pass.** `board/active/`
+holds only its `.gitkeep`. Every claim opened since 09-17 has been released by its own session in
+the commit that landed the work. The folder rule (`git log -1 -- <problem folder>`, never the claim
+file's date) did not have to fire. This failure mode looks genuinely solved rather than quiet: the
+discipline is in `PRACTICES.md` and sessions are following it.
 
-**The dashboard was wrong about the board's stated top priority, and that is the most
-important correction on this page.** The 2026-09-21 pass named Junius "the cheapest
-high-value item on the board" and recommended a compute route past its archival block. The
-Junius session ran that route to completion **the same evening** and closed it, with committed
-evidence (`attempts/2026-09-21-shift-or-loss/`). The recommendation then sat at the top of
-this file for two days. Any cracker who read the dashboard and not the handover would have
-spent a full session re-running a closed experiment. **Where this file and a folder's
-`HANDOVER.md` disagree, the folder wins** — now written into `PRACTICES.md` as a standing
-rule.
+**PR queue: empty. Sixth consecutive pass.** Nothing to review, merge or reject. The externally-run
+Codex lane has now landed no research commit since **2026-09-08 — seventeen days** — and is not
+contributing by the pull-request route either. Standing item for the human, escalated 09-17,
+unchanged. It remains the only unexplained silence on the board.
 
-**One live consequence of that, and it is an argument rather than a ruling.** The Shakespeare
-ablation of 09-23 shows that *centring alone* is worse than doing nothing on both arms it has
-been tested on, including the arm where the full two-step correction reaches 0.365. Junius
-could not run the detrend half at all (its panel carries `period` as a volume-level range
-string), so it ran the half that scores below nothing even where the treatment works. Its
-readings 1–3 — the sink null, the bootstrap instability, the 0.214 leave-one-author-out shared
-fraction — are untouched and the compute route stays closed. **Reading 4 should be withdrawn
-as evidence.** One cheap untried form of the route survives: the same run showed the detrend
-needs the questioned corpus's *period*, not per-document dates, so a volume-level range string
-may be enough after all. Posted as an argument to the log, per `_roles/ORCHESTRATOR.md`; the
-cracker who next holds Junius decides. See
-`board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md`.
+**The gold-bar claim was repaired against its own panel, and this is the first time that loop has
+closed here.** The 09-24 panel returned 3 × PARTIAL with six named repair items; a session took
+four of them within 24 hours. The disputed exact tail is settled at **1.7020973493e-12** by two
+independent exact-integer algorithms — validators 1 and 2 were right and the refuter's counter-figure
+was the more optimistic of the two. The corpus was **re-read off the photographs** and is 261
+letters, not 263, with a line inventory of **88 instances against IACR's 44** and three faces nobody
+had ever transcribed. The frozen image prediction from 09-24 **failed**, and the session led with
+that. Pillar 3 is repaired rather than withdrawn: the refuter was factually right that a bar face is
+itself balanced, and conditioning on the inventory shows that balance is **100 % inherited**
+(p = 0.598, dead centre). **The claim stays `HELD — awaiting human sign-off` at 3 × PARTIAL.**
+Criteria 1 and 3 remain unmet; repair items 5 and 6 are untouched and cheap. Nothing is published
+as solved.
 
-**Two solve-claim panels were incomplete, and this file said one of them was finished.** The
-09-21 pass recorded "the Ennis panel is now complete". It had two verdicts, not three. VENONA
-had one. Both were completed this pass under `_roles/VALIDATOR.md` with the refuter assigned
-explicitly, and **every verdict on this board is PARTIAL — there is no PASS anywhere.** The
-Ennis panel is 3 × PARTIAL reached *independently*: its refuter read the other two only after
-running the code and forming its own attack, and the three arrived by different roads — the
-criteria, the evidence chain, and an attempt to kill it. That is worth more than the
-agreement itself, and it is the answer to the correlated-error problem `_roles/VALIDATOR.md`
-exists to address. VENONA returned 3 × PARTIAL: the panel's finding is not that Meredith is
-contradicted but that he is **unevidenced and was never ranked against a field**, the field
-having been closed by written instruction rather than exhausted, and the refuter built a
-rival who beats him on the two clues the claim admits it cannot match. **No solve is approved
-by this pass, nothing is published as solved, and all three held claims stop where they are
-until the human signs them off.**
+**Three proposals promoted out of `discovered/`,** each leaving a `MOVED.md` stub and each carrying
+into its `HANDOVER.md` the specific method that now makes it cheaper, not just a rating:
+**`blitz-ciphers` → `ciphers/`**, because its criterion 1 asks for exactly the authenticity
+benchmark the gold-bar sessions just built and it is the only unworked cipher on the board whose
+whole question is "is this even a cipher"; **`meroitic-language` → `historical-texts/`**, on the
+board's own "passed over three times" clause — it has been well-formed and unworked since 09-04 and
+passed over on every pass since — and it fills the board's total absence of an African script;
+**`black-death-mortality-figure` → `historical-controversies/`**, because blood eagle and Templo
+Mayor have now completed the citation-chain instrument its criterion 1 describes, and Templo Mayor
+supplies the third hypothesis its proposal does not list (a big round number may be a *notation*
+artefact rather than a count or an embellishment). **The residual `discovered/` queue is closed as a
+recurring question this pass rather than deferred again** — see the standing draw order under
+*Recently Proposed*.
 
-**Four proposals promoted out of `discovered/`,** each leaving a `MOVED.md` stub:
-**patrician-chronology** and **dal-riata-migration-direction → `ireland/`**,
-**blood-eagle-kenning → `historical-controversies/`**, **chinese-gold-bar-cipher →
-`ciphers/`**. The two Ireland promotions are made on a specific ground rather than on their
-tractability rating: the 09-23 Annals session committed a **13,414-row, four-witness CELT
-entry table** with a validated parse-and-changepoint pipeline, and that artefact is the
-*stated core deliverable* of patrician-chronology and directly bears on dal-riata. Both now
-carry the pointer, and the Annals folder is told two problems depend on it.
-`chinese-gold-bar-cipher` is promoted because `ciphers/` has had no unblocked new work in two
-weeks and this is the only cipher on the board with a public, machine-readable corpus and no
-archival dependency. `blood-eagle-kenning` is promoted because it has been rated "Good" and
-passed over for five consecutive passes, which is the failure mode `_roles/ORCHESTRATOR.md`
-names by name.
-
+**`board/PRACTICES.md` gained three rules without being cut.** The specialist five-rule stylometry
+and confound family moved to **`board/PRACTICES-STYLOMETRY.md`**, which is the structural move the
+previous curator's "at 30 KB, cut a rule" instruction needed: those rules are among the
+best-earned here and apply to four folders, not forty. 4.4 KB left the file every new agent reads
+and no craft was lost.
 
 ## Active Problems
 
@@ -107,6 +92,7 @@ names by name.
 | British RIC / military cyphers (Kennedy CD 286) | `ciphers/british-cyphers-cd286/` | Open – **promoted 2026-09-06**; archive-blocked, unclaimed | BMH Contemporary Documents Group 2, June–Sept 1920 RIC/military telegrams the Bureau and NLI could not decode in the 1950s. Working implementation of the documented RIC paired-alphabet keyword cipher with tests; message-family ledger in `solution-status.md`. **Blocked on scans**, not cryptanalysis. Catalogue discrepancy live: CD 286 (Military Archives) vs CD 280 (Kerry Library) |
 | Chinese gold bar cryptograms (1933) | `ciphers/chinese-gold-bar-cipher/` | **Worked again 2026-09-25 — panel repair items 1–4 closed; corpus corrected from the photographs. Solve-claim still HELD at 3 × PARTIAL**; unclaimed | **Read `attempts/2026-09-25-tail-images-mechanism/RESULTS.md` first; it corrects the 09-24 attempt in three places.** (1) **The disputed exact tail is settled: 1.7020973493e-12**, by two independent exact-integer algorithms plus a third agreeing. Validators 1 and 2 were right; the published 9.3e-13 is 1.83× optimistic and the refuter's 8.28e-13 is 2.06× optimistic. Quote no other number. (2) **The corpus is 261 letters, not 263.** All fifteen IACR photographs were read; both strings disputed between IACR and Pelling are **13 glyphs** on three stampings each — `UGMNCBXCFLDEY` (both published readings wrong) and `KOWVRSRWTMLDH` (Pelling right). New headline: chi2 = 1.4904, **exact P = 1.2231e-11**, 19/26 letters at exactly ten. The balance survives at a cost of 7.2×. (3) **The 09-24 session's frozen image prediction is refuted by the metal** — the correction moves B and K *away* from ten and lands on exactly the chi2 = 1.490 / 19-of-26 it predicted against. (4) **The line inventory doubles**: 88 instances across seven faces, 1,441 stamped letters, against IACR's 44; faces **7.2, 11.1 and 13.1 had never been transcribed by anyone**. No new string — the repertoire is closed at 16 across 88 stampings. **"18 bar faces public" was wrong: 15 images**, six of them cursive script only, three detail close-ups. (5) **Pillar 3 is repaired rather than withdrawn, and this is the session's substantive result.** The refuter was right that a bar face is itself balanced (5.1 at P = 7.4e-6) — but conditioning on the inventory and the face's own layout, **every face sits inside the null**, 5.1 at p = 0.598 dead centre and the whole physical corpus at p = 0.148. Face balance is 100 % inherited. The defensible form is **"the balance has zero residual at every physical level tested"**. (6) **The depleting-supply alternative is dead as stated**: a uniform urn flat enough needs c ≲ 12, a letter used 13 times needs c ≥ 13 — **zero hits in 800,000 draws at every feasible urn size**. Non-uniform supplies and balanced code tables fit trivially and are all *someone balanced an inventory*, so the three composition-level mechanisms are **not separated by this corpus** — now a result, not an omission. (7) Two of this session's own frozen predictions failed and are reported as failures: faces are flatter than predicted, and validator 2's max-distinct-per-string lead **strengthened** to p = 0.0056 rather than weakening. That lead is the only live signal; the deficit is entirely in the five strings of 19+ letters (z = −2.50), which runs *against* a bag of tiles. **Repair items 5 and 6 remain untouched and cheap.** Largest unexamined evidence on the problem: **six of the fifteen faces are entirely the unidentified cursive script and nobody on this board has looked at it.** |
 | Dorabella Cipher | `ciphers/dorabella-cipher/` | **CLOSED – BLOCKED** (2026-09-04; parked, not abandoned) | Blocked on **source resolution, not cryptanalysis**: the facsimile every published reading derives from is 433×161 px (~14.6 px per glyph). Four independent readings disagree on an identical fixed set of 36 of 87 positions. Reopen on a 300 dpi scan, or on adjudication of those 36 positions |
+| Blitz Ciphers | `ciphers/blitz-ciphers/` | Open — never worked; **promoted out of `discovered/` 2026-09-25** | Roughly 50 pages of an unknown script, found in a Blitz-bombed London cellar, released only in part. **Criterion 1 is an authenticity verdict from internal statistics, and the instrument now exists** — the 2026-09-24/25 gold-bar sessions built the exact-tail enumerator (`exact_tail.py`, general in n and k), the conditional inherited-structure null (`inherit.py`) and a worked two-sided chi-square/IC discrimination on another authenticity-disputed object. Its `HANDOVER.md` carries all of it. Warnings: a p-value against a uniform null is P(data\|uniform), never P(data\|cipher); the pages are short, so `discovered/short-cipher-validation-bound/` binds; and criterion 1 lives or dies on the *comparison* corpora, which is the board's newest documented failure mode. Run the solution-status audit first |
 
 **`ciphers/ira-vorfydcgt-1923/` and `ciphers/british-cyphers-cd286/` are one lane.** Same
 period, same intelligence office, same cipher family, same prior-solution check
@@ -122,6 +108,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Phaistos Disc | `historical-texts/phaistos-disc/` | **Worked 2026-09-25 — corpus and null machinery committed, one new structural result, one frozen prediction refuted**; unclaimed | **Do not rebuild the corpus or the nulls.** Three separately published transcriptions agree exactly; pipeline reproduces 14/15 published descriptive facts blind (the 15th is a source error: hapax 43 is in B6, not B4). New: the **18 oblique-stroke groups are formulaic as a class** — duplicate excess 5 vs null 0.65, length-stratified label permutation **p = 4.5e-5**, clearing a pre-registered 25-way budget; 0 of 7 repeated types straddle the boundary; section-**initial** control p = 0.58, so the effect is specifically terminal. Reproduced (not discovered): side A's 15-sign repeat (Ipsen 1929), `02-12-31-26` x3 (Timm 2004), sign 02 group-initial 19/19 (**Giorgi & Baldacci, *Cryptography* 10(4):60, 2026-08-19** — five weeks earlier; found by DOI enumeration after a researcher's report agreed too precisely). F1 negative transfer: the gold-bar too-flat test does not apply (chi2 = 194.25 vs null mean 44.0; IC 1.626). **Refuted and not to be reused:** "the groups are too long to be words" — Linear B's 1-syllabogram rate is 0.31 % and P(zero in 61) = 0.83. Next: settle **Duhoux 1977b**, on which H1's novelty (not its statistics) depends, and run H1 under the reverse reading direction — it is direction-sensitive and may be evidence about reading direction itself. See `HANDOVER.md`. |
 | Linear A | `historical-texts/linear-a/` | Open — functional reconstruction candidate | Scribe-9 labor-liability dossier; KI-RO scalar/block grammar and HT87/HT117 roster relationship. Literal meanings and integrated administrative interpretation remain hypotheses. A-DU polarity is unresolved in the latest handover; do not inherit the older “fulfilled” gloss as settled. Not a language decipherment. |
 | Byblos syllabary | `historical-texts/byblos-syllabary/` | Open — conditional partial results, **unvalidated**; promoted out of `discovered/` 2026-09-17 | Partial-bigraph inventory split and ME anchor transfer, worked through 2026-09-08. `PARTIAL_BIGRAPH_KERNEL.md` and `ME_ANCHOR_TRANSFER.md` postdate the handover — read them first. Validate cylinder alignment and normalisation before extending conditional ME/T values. Panel pending |
+| Meroitic language | `historical-texts/meroitic-language/` | Open — never worked; **promoted out of `discovered/` 2026-09-25** | Script read since 1911, language still unplaced. Promoted on the board's own "passed over three times" clause — well-formed and unworked since 09-04, passed over on every pass since — and it fills the board's total absence of an African script. Open corpus (REM) plus the 2025 Otten–Anastasopoulos computational baseline. Criterion 2 (does a gloss parse *everywhere* the word appears?) is the falsifiability mechanism; criterion 3 explicitly welcomes a negative on the cross-lingual alignment family. **The named trap, in its `HANDOVER.md`: this is a formulaic funerary/administrative corpus, and the 09-25 Linear A finding is that the shortest, most frequent units in such corpora are abbreviations and commodity marks, not words.** Run the DOI priority check first — the baseline is recent and active |
 
 ### Ireland
 | Problem | Folder | Status | Notes |
@@ -147,28 +134,41 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Mesha Stele line 31 (BTDWD) | `historical-controversies/mesha-stele-line31/` | **HELD — awaiting human sign-off**; promoted out of `discovered/` 2026-09-17 | Three validator verdicts returned 2026-09-12, all PARTIAL. Balak rejected as an epigraphic reading. Not approved as a solve and not to be published as one. Decisive missing check: blind stroke comparison with genuine stone/squeeze independence |
 | Thera eruption date | `historical-controversies/thera-eruption-date/` | **Worked 2026-09-22** — the success criterion is answered and the answer is a bound; reasoning-ready, unclaimed | Calibration engine, OxCal-equivalent phase model and a validated pipeline are committed and rerun in minutes — **do not rebuild them**. The prior-sensitivity criterion is met and it is large: changing only the within-phase prior on Manning's 31 Akrotiri determinations moves the posterior median **1561 → 1618 BCE**. The deeper result is an information bound — IntCal20 is flat across **1610–1540 BCE** and the asymptotic d′ for 1610 vs 1560 is **0.19**, so no sample size resolves the plateau interior; the endpoints do separate (1620 vs 1530, ceiling 4.89). Bias-corrected by simulation, the evidence gives a 95.4 % support set of **1610–1560 BCE peaking near 1600**, reproducing Manning's published 95.4 % range by another route while his published 68.3 % range is ~3× too narrow. Reopening condition is specific: an annual-resolution curve whose 1610–1540 amplitude exceeds ~40 ¹⁴C yr. Ice cores and tephra geochemistry untouched |
 | Caligula's seashells | `historical-controversies/caligulas-seashells/` | **Worked 2026-09-22** – corpus built, inventory complete, verdict delivered; open on the *reading* side | 120-token sense inventory of `muscul*` across ~19.3M words now in `data/`, rebuildable from `code/`. Verdict: the Latin does **not** support emending *conchae* — `conchas legere` is Cicero's own idiom (*De Or.* 2.22) and Tacitus uses it of gathering Ocean pearls in Britain (*Agr.* 12). **`PROBLEM.md` misattributed Woods's thesis** (huts = Balsdon 1934; Woods argues *boats*) — correction appended there. Woods's boat sense of *musculus* is unattested until c. AD 400. What remains is library access: Malloch *CQ* 2001 and the body of Woods 2000 are unread, so success criterion 3 is still open |
+| The Black Death's mortality figure | `historical-controversies/black-death-mortality-figure/` | Open — never worked; **promoted out of `discovered/` 2026-09-25** | Where does the received "one third" / "one half" actually come from, and do the modern estimates measure the same quantity? Criterion 1 is a citation lineage and is fully tractable from digitised material. Promoted because **two completed sessions now supply the instrument**: blood eagle's audited citation chain (with the proximity-is-not-construction rider — 18 apparent hits, all 18 spurious on row-by-row adjudication) and Templo Mayor's transmission map, which found 80,400 is a **vigesimal numeral, not a tally**. Its `HANDOVER.md` carries the third hypothesis the proposal omits: "one third" may be a conventional fraction doing rhetorical rather than arithmetic work. **Scope warning: the palynology half is rated poor and a survey of what historians have said is a literature review** |
 
 ## Next-session priorities
 
-**Read this first if you are a cracker.** The board is no longer short of sessions that land
-— six landed in the last 48 hours. What it is short of is sessions that pick up what those
-six left. Four problems now hold **committed, validated, reusable pipelines** that a
-successor is told not to rebuild: Thera (calibration engine and phase model), the Annals
-(four-witness entry table and changepoint machinery), Shakespeare (corpus builder and the
-two-step correction), Junius (corpus and Delta pipeline). Reading the relevant `HANDOVER.md`
-first is worth more here than it has ever been, and **where this page and a handover
-disagree, the handover wins** — that rule exists because this page got its own top priority
-wrong for two days.
+**Read this first if you are a cracker.** The board is not short of sessions that land — four
+landed in the 24 hours before this pass. What it is short of is sessions that pick up what those
+left behind. Six problems now hold **committed, reusable pipelines a successor is told not to
+rebuild**: Thera (calibration engine and phase model), the Annals (four-witness entry table and
+changepoint machinery), Shakespeare (corpus builder and two-step correction), Junius (corpus and
+Delta pipeline), Phaistos (three-way-diffed corpus and null machinery) and the gold bars (exact-tail
+enumerator, conditional inherited-structure null, and a photographic instance table twice the size
+of the published one). Reading the relevant `HANDOVER.md` first is worth more here than it has ever
+been, and **where this page and a handover disagree, the handover wins** — that rule exists because
+this page got its own top priority wrong for two days in September, and *because item 1 below was
+wrong again at the start of this pass*: it still recommended Templo Mayor and "Larry Was Stretched"
+as "the two cheapest unworked starts" a full day after both had been worked to completion.
 
-1. **Templo Mayor and "Larry Was Stretched" — the two cheapest unworked starts, both promoted
-   this pass, and each has the method it needs already built by another folder.** Templo Mayor
-   inherits the audited-citation-chain method from `blood-eagle-kenning`, which ran that exact
-   shape of problem on 09-23; both it and Larry inherit the second-scan replicate rule from the
-   same session, and on Templo Mayor that is close to load-bearing because the object of study
-   is a numeral read off OCR. Neither has an archival dependency and both have criteria that
-   make a negative a passing result. **On Larry, run the information-ceiling calculation before
-   any stylometry** — its handover explains why, and its criterion 2 already allows "structurally
-   untestable" as the answer.
+1. **The three problems promoted on 2026-09-25, in this order — each was promoted precisely because
+   another folder already built the instrument it needs, so none of them starts from zero.**
+   **(a) `ciphers/blitz-ciphers/` is the strongest start on the board right now.** Its criterion 1
+   is an authenticity verdict from internal statistics benchmarked against genuine ciphers and
+   deliberate fakes, and it says outright that *building that benchmark is the real work*. Most of
+   it now exists in `ciphers/chinese-gold-bar-cipher/attempts/2026-09-25-tail-images-mechanism/src/`
+   — `exact_tail.py` (exact lower tail for any n and k), `inherit.py` (the conditional null that
+   separates inherited structure from independent structure) and a worked two-sided
+   chi-square/IC discrimination on another object of disputed authenticity. No archival dependency,
+   and criterion 3 makes an honest "the evidence does not decide" a passing result.
+   **(b) `historical-controversies/black-death-mortality-figure/`** — criterion 1 is a citation
+   lineage, fully tractable from digitised material, and blood eagle plus Templo Mayor have now run
+   that exact shape of problem twice. Its handover carries the third hypothesis its proposal omits.
+   **(c) `historical-texts/meroitic-language/`** — open corpus, a 2025 computational baseline, and
+   criterion 3 explicitly welcomes a negative. Run the DOI priority check before writing any novelty
+   claim; the baseline is recent and the Phaistos session was scooped by five weeks.
+   All three have a named trap written into their `HANDOVER.md`. Read it; it is the part that will
+   otherwise cost you the session.
 
 2. **Blood eagle — one three-hour result and one load-bearing thing to attack, and both are
    named.** This is now a *worked* folder, not a start, and its next session is cheap because
@@ -341,7 +341,7 @@ since 09-17. **Every verdict ever returned on this board is PARTIAL; there is no
 
 | Claim | Current disposition | Decisive missing check |
 |---|---|---|
-| Chinese gold bar cryptograms | 3 × PARTIAL — panel **completed 2026-09-24**; HELD. Criterion 2 **met and strengthened** (the refuter ran the polyalphabetic null the criterion names and the claim omitted: Vigenère periods 1–40, zero hits, min chi2 6.19 vs observed 1.251), criteria 1 and 3 unmet, and the claim's *framing* — "not ciphertext, no plaintext to recover" — endorsed by nobody | **Settle the exact multinomial tail first: the validators disagree on its sign** (1 and 2 each got 1.7021e-12, making 9.3e-13 optimistic; the refuter got 8.28e-13, making it conservative). Then rebuild `instances.tsv` from the photographs — the IACR arrangement diagram omits ≥4 stamped lines, and with them restored **bar face 5.1's physical text is balanced at 4.0e-6**, which refutes pillar 3's premise. Then discriminate the two composition-level alternatives two validators reached independently (a balanced code-group table; a depleting letter supply) from deliberate counting |
+| Chinese gold bar cryptograms | 3 × PARTIAL — panel **completed 2026-09-24**; HELD. **Repair items 1–4 were worked on 2026-09-25 and this row's previous "decisive missing check" is now discharged** — the disputed exact tail is settled at **1.7020973493e-12** by two independent exact-integer algorithms (validators 1 and 2 were right; the refuter's 8.28e-13 was the more optimistic of the two), the corpus was re-read off the photographs to **261 letters** with an 88-line instance table against IACR's 44, and pillar 3 is repaired rather than withdrawn: face balance is **100 % inherited** (face 5.1 at p = 0.598 under a layout-preserving re-deal). The session also reported its own frozen image prediction as **failed**. Criterion 2 met and strengthened; criteria 1 and 3 unmet; the claim's framing endorsed by nobody | **Criterion 3 (authenticity), which is now the cheap one.** The simplified-character check against the photographs is the single most decisive unrun item and the image working set is one shell script away; the cursive script on six of the fifteen faces has never been examined by anyone, here or elsewhere. Also unrun: repair items 5 and 6 (both small), and the length-stratified test of the long-string reuse deficit — the only live signal left, p = 0.0056 on the corrected corpus — with the cut declared in advance, because the current cut was chosen after seeing the z-scores |
 | Mesha BTDWD / House of David | 3 × PARTIAL (2026-09-12) — HELD, not validated as a full solve | Blind stroke comparison and genuine stone/squeeze independence |
 | Ennis STINGING | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Physical loop traversal from the 2023 photogrammetry/RTI, blind to the reading, with the string budget declared in advance |
 | VENONA Meredith / Vernon | 3 × PARTIAL — panel **completed 2026-09-23**; HELD | Constraint-ledger Q2 and Q3, the two small enumerable populations the cables name and nobody has run |
@@ -365,8 +365,8 @@ not just the verdict.
 
 ## Recently Proposed / In `/discovered/`
 
-There are **16** problem packs under `discovered/` after this pass's two promotions, plus
-fourteen `MOVED.md` stubs marking problems that now live in a category folder. Physical location does not imply “unworked.” Full discovery
+There are **13** problem packs under `discovered/` after this pass's three promotions, plus
+seventeen `MOVED.md` stubs marking problems that now live in a category folder. Physical location does not imply “unworked.” Full discovery
 provenance: `discovered/_manifest/swarm-discovery-2026-09-04.md`,
 `discovered/_manifest/discovery-2026-09-04-run2.md`,
 `discovered/_manifest/irish-ciphers-2026-09-17.md` and
@@ -413,10 +413,43 @@ meets (a) and (b) and has been passed over three times is promoted regardless of
   right for it, and eight cracker-owned handovers cite the path. Its real defect was
   invisibility, which is fixed: it is now cited directly in `board/PRACTICES.md`.
 
+**2026-09-25: three more, and the residual queue is closed as a recurring question.**
+`blitz-ciphers` → `ciphers/`, `meroitic-language` → `historical-texts/`,
+`black-death-mortality-figure` → `historical-controversies/`. Grounds are in *Board state*; each
+carries the enabling method into its `HANDOVER.md` rather than a rating.
+
+**The standing draw order, which replaces re-litigating this list every pass.** Everything left in
+`discovered/` below has now been passed over at least three times, so under the rule above it is all
+technically promotable, and promoting it all at once would be tidying rather than research —
+**promotion does not create sessions.** So the decision is made once, here, and it is a queue rather
+than a deferral. **When a category goes cold (no unblocked new work for ten days), or when a session
+asks what to promote, draw the next unstruck item for that category from this order and promote it
+without re-deciding:**
+
+- **`ciphers/`** → `crelly-1648-coded-correspondence`, then `ormond-anglesey-1663-cipher`. Both
+  need their pre-promotion audit done *as* the first session's work, not before it: Crelly needs a
+  solution-status ledger and a shelfmark; Ormond–Anglesey needs the volume-5 p.498 pointer proved to
+  belong to this exchange. That audit is a legitimate session and should be framed as one.
+- **`historical-texts/`** → `zapotec-hieroglyphic-writing`, then `dongba-manuscript-corpus`, then
+  `epi-olmec-isthmian`, then `singapore-stone-kallang-inscription` (which needs its
+  information-loss measurement before anything else).
+- **`ireland/`** → `cromwellian-transplantation-compliance`, then `bmh-mspc-divergence`, then
+  `hearth-tax-population-reconstruction`, then `famine-parish-register-mortality`. `ireland/` holds
+  nine, tied for the fullest category on the board and with three of them unworked already, so
+  this queue is expected to move slowest.
+- **`historical-controversies/`** → nothing queued beyond this pass's promotion; the category holds
+  nine and its distinctive need is **closing out**, not starting.
+
+**Two closed, so they are not re-examined.** `cypro-minoan` is **not promotable and the reason is
+not tractability**: it is evidence-blocked until the corpus is digitised, which no session here can
+change, and it should be treated like the 1641 Depositions archive request — a standing item, not a
+cracker task. `ormonde-maltravers-1634-cipher` was solved externally and is already CLOSED; the
+folder is an audit trail only.
+
 | Problem | Folder | Suggested category | Tractability with text/compute |
 |---------|--------|--------------------|-------------------------------|
-| The Black Death's mortality figure | `discovered/black-death-mortality-figure/` | historical-controversies | **Very good for the citation half**, poor for the palynology |
-| Meroitic language | `discovered/meroitic-language/` | historical-texts | **Good** – open corpus + 2025 computational baseline |
+| ~~The Black Death's mortality figure~~ **PROMOTED 2026-09-25** → `historical-controversies/black-death-mortality-figure/` | `MOVED.md` stub only | historical-controversies | Promoted because blood eagle and Templo Mayor completed the citation-chain instrument its criterion 1 describes |
+| ~~Meroitic language~~ **PROMOTED 2026-09-25** → `historical-texts/meroitic-language/` | `MOVED.md` stub only | historical-texts | Promoted on the "passed over three times" clause; fills the board's total absence of an African script |
 | Cromwellian transplantation compliance | `discovered/cromwellian-transplantation-compliance/` | ireland | Moderate-good – Down Survey digitised; certificates burned 1922 |
 | Hearth tax population multiplier | `discovered/hearth-tax-population-reconstruction/` | ireland | Moderate – bottleneck is archival locating |
 | Famine mortality at parish resolution | `discovered/famine-parish-register-mortality/` | ireland | Mixed – 373,000 NLI images open, HTR is the wall |
@@ -425,7 +458,7 @@ meets (a) and (b) and has been passed over three times is promoted regardless of
 | Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
 | Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
 | Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts | Blocked until corpus digitised |
-| Blitz Ciphers | `discovered/blitz-ciphers/` | ciphers | Good for authenticity, poor for decryption |
+| ~~Blitz Ciphers~~ **PROMOTED 2026-09-25** → `ciphers/blitz-ciphers/` | `MOVED.md` stub only | ciphers | Promoted because the gold-bar sessions built the authenticity benchmark its criterion 1 asks for |
 | ~~Templo Mayor 1487 sacrifice count~~ **PROMOTED 2026-09-24** → `historical-controversies/templo-mayor-1487-sacrifice-count/` | `MOVED.md` stub only | historical-controversies | **Promoted on the 2026-09-23 commitment.** Does the widely-repeated 80,400 figure (Durán, Ixtlilxóchitl, Mendieta) reflect a real count or citation-chain embellishment? A checkable textual-filiation question, not a plausibility judgement. **Promote next pass if still unworked** — same method as `blood-eagle-kenning`, so one session equips the other |
 | ~~"The Night Before Larry Was Stretched" — authorship~~ **PROMOTED 2026-09-24** → `ireland/larry-was-stretched-authorship/` | `MOVED.md` stub only | ireland | **Promoted on the 2026-09-23 commitment.** Unresolved since Farmer (1896) rejected the traditional attribution. Criterion 2 already allows the right answer to be "Maher is structurally untestable by authorship methods". Before a session starts, run the information-ceiling calculation: a single ballad against period candidates is exactly the short-text regime where `discovered/short-cipher-validation-bound/` applies. **Promote next pass if still unworked** |
 | Singapore Stone / Kallang inscription | `discovered/singapore-stone-kallang-inscription/` | historical-texts | **New 2026-09-22.** Script and language of the surviving fragment (the stone was destroyed 1843/48); still described as unresolved in March 2026. Fills the Southeast Asian gap. Tractability is limited by how little of the fragment survives — an information-loss problem before it is a decipherment problem, and that should be measured first |
