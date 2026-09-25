@@ -1,0 +1,78 @@
+==============================================================================
+A. CORPUS SHAPE vs PROBLEM.md's description
+==============================================================================
+  distinct objects marked BYBL : 22   BYBL? : 13   (PROBLEM.md says 18 / 14)
+  fragment ENTRIES (variants counted separately): 43
+
+==============================================================================
+B. INVENTORY SENSITIVITY: rerun the ME transfer under each OCBI inventory
+==============================================================================
+  For each inventory, map every off-cylinder token to its grapheme CLASS,
+  then ask the note's own question of the class containing E49A.
+
+  inv      |ME cls| tokens clear   follower  invariant?  followers
+  search   5       11     7       -         no        E402:3, E431:2, E482:1, E45A:1
+  syl1     5       11     7       -         no        E402:3, E431:2, E482:1, E45A:1
+  syl2     5       11     7       -         no        E402:3, E431:2, E482:1, E45A:1
+  syl3     5       11     7       -         no        E402:3, E431:2, E482:1, E45A:1
+  syl4     5       11     7       -         no        E402:3, E431:2, E482:1, E45A:1
+  syl5     7       17     12      -         no        E402:3, E431:2, E46D:1, E446:1, E41E:1, E43E:1, E482:1, E452:1, E45A:1
+  syl6     9       19     14      -         no        E402:3, E431:2, E46D:1, E446:1, E41E:1, E43E:1, E482:1, E46B:1, E4CF:1, E452:1, E45A:1
+  syl7     20      103    82      -         no        E41C:11, E421:5, E426:5, E420:3, E45F:3, E439:3, E415:3, E429:3, E402:3, E444:2, E464:2, E416:2, E431:2, E45E:1, E42A:1, E438:1, E4DF:1, E42C:1, E46D:1, E470:1, E467:1, E41F:1, E42E:1, E437:1, E419:1, E44A:1, E446:1, E424:1, E442:1, E43A:1, E41E:1, E427:1, E43E:1, E43D:1, E413:1, E482:1, E46B:1, E4CF:1, E41A:1, E498:1, E452:1, E45A:1, E42B:1, E451:1, E4E5:1, E46F:1, E474:1, E4C0:1
+  syl8     20      103    82      -         no        E41C:11, E421:5, E426:5, E420:3, E45F:3, E439:3, E415:3, E429:3, E402:3, E444:2, E464:2, E416:2, E431:2, E45E:1, E42A:1, E438:1, E4DF:1, E42C:1, E46D:1, E470:1, E467:1, E41F:1, E42E:1, E437:1, E419:1, E44A:1, E446:1, E424:1, E442:1, E43A:1, E41E:1, E427:1, E43E:1, E43D:1, E413:1, E482:1, E46B:1, E4CF:1, E41A:1, E498:1, E452:1, E45A:1, E42B:1, E451:1, E4E5:1, E46F:1, E474:1, E4C0:1
+  syl9     1       3      3       class     YES       E402:3
+
+  same, for the T-class bridge: is the BYBL k terminal E412 in the same class
+  as the cylinder's penultimate E491 under each inventory?
+    search   E412->grp 16     E491->grp 16     MERGED
+    syl1     E412->grp 16     E491->grp 16     MERGED
+    syl2     E412->grp 14     E491->grp 14     MERGED
+    syl3     E412->grp 10     E491->grp 10     MERGED
+    syl4     E412->grp 10     E491->grp 10     MERGED
+    syl5     E412->grp 9      E491->grp 9      MERGED
+    syl6     E412->grp 8      E491->grp 8      MERGED
+    syl7     E412->grp 8      E491->grp 8      MERGED
+    syl8     E412->grp 8      E491->grp 8      MERGED
+    syl9     E412->grp 67     E491->grp 62     SPLIT/absent
+
+==============================================================================
+C. INVENTORY CONSISTENCY AUDIT
+==============================================================================
+  inv      E416!=E4AF   E412~E491    ME alone   ME cls<=5  |ME class|
+  search   False        True         False      True       5
+  syl1     False        True         False      True       5
+  syl2     False        True         False      True       5
+  syl3     False        True         False      True       5
+  syl4     False        True         False      True       5
+  syl5     False        True         False      False      7
+  syl6     True         True         False      False      9
+  syl7     True         True         False      False      20
+  syl8     True         True         False      False      20
+  syl9     False        False        True       True       1
+
+  inventories satisfying BOTH (E416!=E4AF) and (E412~E491): ['syl6', 'syl7', 'syl8']
+  ...and ALSO keeping the ME class small (<=5 forms):       NONE
+
+==============================================================================
+D. RANDOMISATION NULL, BUDGET MATCHED ON BOTH SIDES
+==============================================================================
+  observed: 1 of 21 signs with exactly 3 off-cylinder tokens have a fully
+            invariant following sign.  (that one sign is E49A)
+  null (4000 shuffles of sign identities over the same positions):
+    P(at least one 3-token sign has an invariant follower) = 0.002
+    mean number of such signs per shuffle                  = 0.002
+    p (>= observed, family-wise over all signs)            = 0.002
+
+  single-sign null (E49A fixed externally, side and exactness chosen post hoc):
+    P(3 followers all identical) = 0.00027  (1 in 3653)
+    x2 for the free choice of side (left/right)  -> 1 in 1827
+
+==============================================================================
+E. ADJACENCY ROWS, EXACT, WITH MARKERS  (proximity is not construction)
+==============================================================================
+  i    line 9 : E45A? E413 E442 E402 E49A E402 E48F E40D? E439? E412? E411
+       left neighbour = E402   (ME_ANCHOR_TRANSFER table says: E442)
+  k    line 4 : E45A E497 E439 E49A E402 E412 E45A
+       left neighbour = E439   (ME_ANCHOR_TRANSFER table says: E439)
+  m    line 2 : FRAC WILD E410 E49A E402 E48F E46B FRAC
+       left neighbour = E410   (ME_ANCHOR_TRANSFER table says: E410)

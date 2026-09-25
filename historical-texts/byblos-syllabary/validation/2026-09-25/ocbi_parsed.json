@@ -1,0 +1,12516 @@
+{
+ "fragments": [
+  {
+   "id": "a",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4D8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E4DA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47F",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4DD",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D9",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E463",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E463",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "b",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E400",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E401",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E403",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E405",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E406",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E407",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E408",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E409",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E40A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E407",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E406",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E40D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "c",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E460",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E461",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E462",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E463",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E465",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E448",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E468",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E446",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E463",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E473",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E452",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E462",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E470",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E471",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E472",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E479",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E465",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E474",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E465",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E475",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E473",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E476",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E477",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E478",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E479",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E483",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E47A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E465",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "d",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E414",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E423",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E424",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E427",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E428",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E430",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E433",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E434",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E437",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E427",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E420",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E434",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43F",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E441",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E428",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E43C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E427",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E428",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E442",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E433",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E434",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E445",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E446",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E484",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E448",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E449",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E424",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E435",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E433",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E424",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E442",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E422",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E445",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E427",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E465",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E412",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E451",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E455",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E44E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E445",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E446",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E446",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E452",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E424",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E454",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E424",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E424",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E448",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E456",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E458",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E452",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E458",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E43A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E459",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E433",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E422",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "e",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E461",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E47F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E458",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E433",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "f (face a = verso)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E419",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E400",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E482",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "f (face b = recto)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "LTR",
+   "lines": [
+    [
+     {
+      "cp": "E486",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E462",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4B0",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E41D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E487",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4FA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4CF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E486",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E486",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "g",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E473",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E437",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E42A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E442",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E43D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E467",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E41B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "h",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E415",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E435",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "i",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E413",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E437",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E408",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E408",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E407",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E48D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E400",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E461",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E404",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E42F",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E495",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E495",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E469",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E404",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E452",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A9",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E492",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E464",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E48E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E425",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E452",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E404",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E45A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E442",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "j",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E462",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E491",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E473",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E462",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "k",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E434",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E493",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E406",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E400",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E494",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E496",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E466",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E497",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "l",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E488",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E420",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E403",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4E0",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E435",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E459",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E407",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4E0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E407",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43E",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E420",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E436",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E437",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E1",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E495",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E406",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45F",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E491",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E40C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E4E2",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4D9",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E436",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E4A1",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41D",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "m",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E421",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E498",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E48F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4A0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "n",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E45A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E437",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E46A",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E45F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E412",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E406",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E474",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E408",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "o (recto)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E42C",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E451",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E420",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42E",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E458",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44A",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4EB",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E451",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E425",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4F9",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41A",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E5",
+      "guess": true,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "o (verso) Var. 1",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E47D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E483",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E491",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "o (verso) Var. 2",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E468",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42B",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E44C",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E491",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E451",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E44C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4C0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E415",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E418",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E43B",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "p",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45E",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4A3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E444",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DB",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E41A",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4EB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "q",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4D1",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E413",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E402",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A2",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E453",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "ra",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4AC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41F",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E483",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rb (Var. 1)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4FF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rb (Var. 2)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4FF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rb (Var. 3)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E49A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E416",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E491",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rc (Var. 1)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4B0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AE",
+      "guess": true,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rc (Var. 2) ",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4B0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B1",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B2",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FD",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rc (Var. 3)",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4B0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E443",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rd",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "s",
+   "source": "BYBL",
+   "group": "BYBL",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4B4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E45C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42A",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "t",
+   "source": "BYBL",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E438",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46F",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "u",
+   "source": "BYBL",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E439",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E420",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E454",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ],
+    [
+     {
+      "cp": "E4E5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "v",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E44D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4A3",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "w",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4B8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E473",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B6",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E40E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B6",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B7",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4B9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E41B",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E473",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "x",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4C8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E410",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "y",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "TDR",
+   "lines": [
+    [
+     {
+      "cp": "E4C9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4CA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4CB",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E4CC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4CD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4CE",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4CF",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4D0",
+      "guess": false,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D1",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "z",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4BF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4C0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E481",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4C1",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E42C",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "a' (Var. 1)",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E436",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E2",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E4E8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E411",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4ED",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EB",
+      "guess": true,
+      "kind": "sign"
+     }
+    ],
+    [
+     {
+      "cp": "E4EB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EC",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4E8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4ED",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E4EB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EB",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E448",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F1",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E447",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F2",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EF",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4BD",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "a' (Var. 2)",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E426",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E43C",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E432",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E497",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "E431",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4C0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4D8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E474",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E447",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4D8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4C0",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4EE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ],
+    [
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E423",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E429",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E46D",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E42E",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "b'a",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4F8",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4FE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F4",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "b'b",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     },
+     {
+      "cp": "E4F5",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F9",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F8",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F7",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F6",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "b'c",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4F4",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "WILDCARD",
+      "guess": false,
+      "kind": "wildcard"
+     },
+     {
+      "cp": "E4FE",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "FRACTURE",
+      "guess": false,
+      "kind": "fracture"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "c'",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E437",
+      "guess": true,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4F3",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4DD",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E4AA",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E417",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "d'",
+   "source": "BYBL?",
+   "group": "BYBL?",
+   "dir": "RTL",
+   "lines": [
+    [
+     {
+      "cp": "E4B7",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E451",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E454",
+      "guess": false,
+      "kind": "sign"
+     },
+     {
+      "cp": "E419",
+      "guess": false,
+      "kind": "sign"
+     }
+    ]
+   ]
+  }
+ ],
+ "syllabaries": [
+  {
+   "id": "search",
+   "name": "Initial Syllabary",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452"
+    ],
+    [
+     "E4BB",
+     "E4EE",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E46F",
+     "E445",
+     "E4F4"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E48D"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E472",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E40A",
+     "E40B",
+     "E405"
+    ],
+    [
+     "E4CC",
+     "E40F",
+     "E457",
+     "E448",
+     "E466",
+     "E461",
+     "E473"
+    ],
+    [
+     "E4A1",
+     "E4ED"
+    ],
+    [
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487",
+     "E400"
+    ],
+    [
+     "E4A3",
+     "E43C"
+    ],
+    [
+     "E43B",
+     "E42E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E440",
+     "E42C",
+     "E441",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E45E",
+     "E4F3",
+     "E4AB"
+    ],
+    [
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA"
+    ],
+    [
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E4BD",
+     "E476"
+    ],
+    [
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D"
+    ],
+    [
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E44D",
+     "E49B"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E406"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431"
+    ],
+    [
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E45B",
+     "E414"
+    ],
+    [
+     "E438",
+     "E4A5",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ]
+   ]
+  },
+  {
+   "id": "syl1",
+   "name": "Syl1",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452"
+    ],
+    [
+     "E4BB",
+     "E4EE",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E46F",
+     "E445",
+     "E4F4"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E48D",
+     "E4FA"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E472",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E40A",
+     "E40B",
+     "E405"
+    ],
+    [
+     "E4CC",
+     "E40F",
+     "E457",
+     "E448",
+     "E466",
+     "E461",
+     "E473"
+    ],
+    [
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487",
+     "E400"
+    ],
+    [
+     "E4A3",
+     "E43C"
+    ],
+    [
+     "E43B",
+     "E42E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E440",
+     "E42C",
+     "E441",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E45E",
+     "E4F3",
+     "E4AB"
+    ],
+    [
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA"
+    ],
+    [
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E4BD",
+     "E476"
+    ],
+    [
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D"
+    ],
+    [
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E44D",
+     "E49B"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E406"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431"
+    ],
+    [
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E45B",
+     "E414"
+    ],
+    [
+     "E438",
+     "E4A5",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ]
+   ]
+  },
+  {
+   "id": "syl2",
+   "name": "Syl2",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E46F",
+     "E445",
+     "E4F4",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E48D",
+     "E4FA"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E472",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E40A",
+     "E40B",
+     "E405"
+    ],
+    [
+     "E4CC",
+     "E40F",
+     "E457",
+     "E448",
+     "E466",
+     "E461",
+     "E473"
+    ],
+    [
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487",
+     "E400"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E440",
+     "E42C",
+     "E441",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E45E",
+     "E4F3",
+     "E4AB",
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA"
+    ],
+    [
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9",
+     "E43D"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E406",
+     "E4BD",
+     "E476"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431"
+    ],
+    [
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E45B",
+     "E414"
+    ],
+    [
+     "E438",
+     "E4A5",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ]
+   ]
+  },
+  {
+   "id": "syl3",
+   "name": "Syl3",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E46F",
+     "E445",
+     "E4F4",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E48D",
+     "E4FA"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E472",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E4CC",
+     "E40F",
+     "E457",
+     "E448",
+     "E466",
+     "E461",
+     "E473"
+    ],
+    [
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487",
+     "E400"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460",
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E440",
+     "E42C",
+     "E441",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E45E",
+     "E4F3",
+     "E4AB",
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA",
+     "E40A",
+     "E40B",
+     "E405"
+    ],
+    [
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6",
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406"
+    ],
+    [
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC",
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E45B",
+     "E414"
+    ],
+    [
+     "E438",
+     "E4A5",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ]
+   ]
+  },
+  {
+   "id": "syl4",
+   "name": "Syl4",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452",
+     "E472"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E46F",
+     "E445",
+     "E4F4",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E48D",
+     "E4FA",
+     "E4CB"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E448",
+     "E466",
+     "E461",
+     "E473",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9"
+    ],
+    [
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487",
+     "E400"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460",
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E440",
+     "E42C",
+     "E441",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5",
+     "E45E",
+     "E4F3",
+     "E4AB",
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA"
+    ],
+    [
+     "E40A",
+     "E40B",
+     "E405",
+     "E4CC",
+     "E40F",
+     "E457"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6",
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462",
+     "E4C8",
+     "E413",
+     "E4E3"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F",
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406",
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC",
+     "E4A1",
+     "E4ED",
+     "E4FC",
+     "E414"
+    ],
+    [
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F",
+     "E45B"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E438",
+     "E4A5"
+    ]
+   ]
+  },
+  {
+   "id": "syl5",
+   "name": "Syl4",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452",
+     "E472"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E4F4"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E496",
+     "E408",
+     "E482",
+     "E4FA"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E448",
+     "E466",
+     "E461",
+     "E473",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E440",
+     "E42C",
+     "E441"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460",
+     "E4E1",
+     "E4F6"
+    ],
+    [
+     "E45E",
+     "E4F3",
+     "E4AB",
+     "E417"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5"
+    ],
+    [
+     "E40A",
+     "E48D",
+     "E4CB",
+     "E40B",
+     "E405",
+     "E4CC",
+     "E40F",
+     "E457"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9"
+    ],
+    [
+     "E416",
+     "E495",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499"
+    ],
+    [
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6",
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E4C0",
+     "E4AA",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F",
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406",
+     "E423",
+     "E44A",
+     "E4AD",
+     "E4C8",
+     "E413",
+     "E4E3"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC",
+     "E4A1",
+     "E4ED",
+     "E4FC",
+     "E414"
+    ],
+    [
+     "E400",
+     "E46F",
+     "E445",
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487"
+    ],
+    [
+     "E45B",
+     "E42D",
+     "E41E",
+     "E489",
+     "E428",
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E438",
+     "E4A5"
+    ]
+   ]
+  },
+  {
+   "id": "syl6",
+   "name": "Syl6",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4",
+     "E4D1",
+     "E4A0"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452",
+     "E472"
+    ],
+    [
+     "E446",
+     "E48A",
+     "E46D",
+     "E4F4",
+     "E40B",
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E408"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E4EF",
+     "E4E8",
+     "E4F2",
+     "E448",
+     "E466",
+     "E461",
+     "E473",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E440",
+     "E42C",
+     "E441",
+     "E4CC",
+     "E40F",
+     "E457",
+     "E496",
+     "E48D",
+     "E4CB"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478",
+     "E4BC",
+     "E4D9"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E45E",
+     "E4F3",
+     "E4AB"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5"
+    ],
+    [
+     "E40A",
+     "E405"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436",
+     "E409",
+     "E40D",
+     "E4CD"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E416",
+     "E495"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499",
+     "E4E1",
+     "E4F6",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F",
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7",
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6",
+     "E417"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406"
+    ],
+    [
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ],
+    [
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E482",
+     "E4FA",
+     "E400",
+     "E46F",
+     "E445",
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487"
+    ],
+    [
+     "E468",
+     "E4DA",
+     "E41F"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E438",
+     "E4A5",
+     "E41E",
+     "E489",
+     "E428",
+     "E45B",
+     "E42D",
+     "E414"
+    ]
+   ]
+  },
+  {
+   "id": "syl7",
+   "name": "Syl7",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4",
+     "E4D1",
+     "E4A0",
+     "E409",
+     "E40D",
+     "E4CD",
+     "E4BC",
+     "E4D9",
+     "E417",
+     "E45E",
+     "E4F3",
+     "E4AB"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452",
+     "E472"
+    ],
+    [
+     "E4F4",
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E408"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E448",
+     "E466",
+     "E461",
+     "E473",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E440",
+     "E42C",
+     "E441",
+     "E4CC",
+     "E40F",
+     "E457",
+     "E446",
+     "E48A",
+     "E46D",
+     "E40B",
+     "E496",
+     "E48D",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E416",
+     "E495",
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499",
+     "E4E1",
+     "E4F6",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F",
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E40A",
+     "E405",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7",
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ],
+    [
+     "E468",
+     "E4DA",
+     "E41F",
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E438",
+     "E4A5",
+     "E41E",
+     "E489",
+     "E428",
+     "E45B",
+     "E42D",
+     "E414",
+     "E482",
+     "E4FA",
+     "E400",
+     "E46F",
+     "E445",
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487"
+    ]
+   ]
+  },
+  {
+   "id": "syl8",
+   "name": "Syl8",
+   "groups": [
+    [
+     "E402",
+     "E41B",
+     "E404",
+     "E498",
+     "E488"
+    ],
+    [
+     "E4B9",
+     "E4B5",
+     "E453",
+     "E47A",
+     "E40E",
+     "E4BA",
+     "E47E",
+     "E4A4",
+     "E4D1",
+     "E4A0",
+     "E409",
+     "E40D",
+     "E4CD",
+     "E4BC",
+     "E4D9",
+     "E45E",
+     "E4F3",
+     "E4AB"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486",
+     "E452",
+     "E472"
+    ],
+    [
+     "E4F4",
+     "E4A1",
+     "E4ED",
+     "E4FC"
+    ],
+    [
+     "E447",
+     "E45C",
+     "E456",
+     "E46C",
+     "E48E",
+     "E497",
+     "E408"
+    ],
+    [
+     "E469",
+     "E4E2",
+     "E4D0",
+     "E451",
+     "E48B",
+     "E459",
+     "E427",
+     "E4B4",
+     "E448",
+     "E466",
+     "E461",
+     "E473",
+     "E493",
+     "E467",
+     "E425",
+     "E4F9",
+     "E440",
+     "E42C",
+     "E441",
+     "E4CC",
+     "E40F",
+     "E457",
+     "E446",
+     "E48A",
+     "E46D",
+     "E40B",
+     "E496",
+     "E48D",
+     "E4CB",
+     "E4EF",
+     "E4E8",
+     "E4F2"
+    ],
+    [
+     "E43B",
+     "E42E",
+     "E4A3",
+     "E43C",
+     "E4DB",
+     "E44E"
+    ],
+    [
+     "E429",
+     "E484",
+     "E421",
+     "E4B3",
+     "E4B7",
+     "E43F",
+     "E478"
+    ],
+    [
+     "E412",
+     "E433",
+     "E491",
+     "E40C",
+     "E460"
+    ],
+    [
+     "E464",
+     "E424",
+     "E434",
+     "E470",
+     "E4CE",
+     "E4CA",
+     "E492",
+     "E420",
+     "E4B8",
+     "E4E5"
+    ],
+    [
+     "E4E0",
+     "E4B6",
+     "E422",
+     "E4C1",
+     "E436"
+    ],
+    [
+     "E494",
+     "E430",
+     "E432",
+     "E474",
+     "E475",
+     "E4F1",
+     "E4BF"
+    ],
+    [
+     "E450",
+     "E455",
+     "E47B",
+     "E4C9",
+     "E4AE",
+     "E4AF",
+     "E4FD"
+    ],
+    [
+     "E416",
+     "E495",
+     "E423",
+     "E44A",
+     "E4AD"
+    ],
+    [
+     "E449",
+     "E4A9",
+     "E43A",
+     "E483",
+     "E499",
+     "E4E1",
+     "E4F6",
+     "E4C0",
+     "E4AA"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E4B2",
+     "E410",
+     "E437",
+     "E443",
+     "E4B1",
+     "E43D"
+    ],
+    [
+     "E4A7",
+     "E43E",
+     "E4E4",
+     "E407",
+     "E439",
+     "E44B",
+     "E4E7",
+     "E462",
+     "E417"
+    ],
+    [
+     "E463",
+     "E442",
+     "E4A2",
+     "E45D",
+     "E44D",
+     "E49B"
+    ],
+    [
+     "E419",
+     "E418",
+     "E465",
+     "E41A",
+     "E44F",
+     "E44C",
+     "E42F",
+     "E479",
+     "E454",
+     "E4DD",
+     "E4DE"
+    ],
+    [
+     "E411",
+     "E435",
+     "E4E9",
+     "E45A",
+     "E47C",
+     "E40A",
+     "E405",
+     "E401",
+     "E4EB",
+     "E4EC",
+     "E4F7",
+     "E42A",
+     "E46E",
+     "E48C",
+     "E415",
+     "E477",
+     "E4F0",
+     "E4A6"
+    ],
+    [
+     "E458",
+     "E4A8",
+     "E4BD",
+     "E476",
+     "E4BB",
+     "E4EE"
+    ],
+    [
+     "E480",
+     "E4F5",
+     "E4F8",
+     "E431",
+     "E406"
+    ],
+    [
+     "E4C8",
+     "E413",
+     "E4E3"
+    ],
+    [
+     "E468",
+     "E4DA",
+     "E41F",
+     "E4DF",
+     "E41C",
+     "E45F",
+     "E47F",
+     "E4EA",
+     "E481",
+     "E46A",
+     "E471",
+     "E48F",
+     "E485",
+     "E4AC"
+    ],
+    [
+     "E444",
+     "E42B",
+     "E4D8",
+     "E438",
+     "E4A5",
+     "E41E",
+     "E489",
+     "E428",
+     "E45B",
+     "E42D",
+     "E414",
+     "E482",
+     "E4FA",
+     "E400",
+     "E46F",
+     "E445",
+     "E49A",
+     "E47D",
+     "E4B0",
+     "E487"
+    ]
+   ]
+  },
+  {
+   "id": "syl9",
+   "name": "Syl9",
+   "groups": [
+    [
+     "E402",
+     "E404",
+     "E498"
+    ],
+    [
+     "E444",
+     "E4D8",
+     "E42B",
+     "E414"
+    ],
+    [
+     "E421",
+     "E4FB"
+    ],
+    [
+     "E45E",
+     "E4AB"
+    ],
+    [
+     "E447",
+     "E408",
+     "E46C",
+     "E45C",
+     "E456"
+    ],
+    [
+     "E43D"
+    ],
+    [
+     "E436",
+     "E409",
+     "E40D"
+    ],
+    [
+     "E42C"
+    ],
+    [
+     "E4B3"
+    ],
+    [
+     "E426",
+     "E403",
+     "E486"
+    ],
+    [
+     "E47F"
+    ],
+    [
+     "E45A"
+    ],
+    [
+     "E44F",
+     "E41A",
+     "E465"
+    ],
+    [
+     "E439",
+     "E407"
+    ],
+    [
+     "E435"
+    ],
+    [
+     "E438"
+    ],
+    [
+     "E4D9"
+    ],
+    [
+     "E410"
+    ],
+    [
+     "E42A",
+     "E46E"
+    ],
+    [
+     "E469",
+     "E4E2"
+    ],
+    [
+     "E4DA",
+     "E428",
+     "E468",
+     "E42D",
+     "E45B",
+     "E41E",
+     "E489"
+    ],
+    [
+     "E44E",
+     "E4DB"
+    ],
+    [
+     "E4DF",
+     "E4DC",
+     "E41C",
+     "E45F",
+     "E46A"
+    ],
+    [
+     "E43B"
+    ],
+    [
+     "E4DD"
+    ],
+    [
+     "E44D"
+    ],
+    [
+     "E443",
+     "E476"
+    ],
+    [
+     "E4DE"
+    ],
+    [
+     "E420"
+    ],
+    [
+     "E4E5"
+    ],
+    [
+     "E463",
+     "E442"
+    ],
+    [
+     "E411"
+    ],
+    [
+     "E452"
+    ],
+    [
+     "E467",
+     "E425"
+    ],
+    [
+     "E432",
+     "E430",
+     "E474",
+     "E475",
+     "E494"
+    ],
+    [
+     "E437"
+    ],
+    [
+     "E416",
+     "E495"
+    ],
+    [
+     "E473",
+     "E461",
+     "E466",
+     "E448"
+    ],
+    [
+     "E41F"
+    ],
+    [
+     "E415",
+     "E477"
+    ],
+    [
+     "E433",
+     "E460",
+     "E40C"
+    ],
+    [
+     "E429"
+    ],
+    [
+     "E462"
+    ],
+    [
+     "E464",
+     "E424",
+     "E470"
+    ],
+    [
+     "E418",
+     "E419"
+    ],
+    [
+     "E41D",
+     "E46B",
+     "E4CF"
+    ],
+    [
+     "E400",
+     "E445",
+     "E446",
+     "E46D",
+     "E48A",
+     "E46F"
+    ],
+    [
+     "E43E"
+    ],
+    [
+     "E453",
+     "E40E"
+    ],
+    [
+     "E48F",
+     "E471",
+     "E4AC",
+     "E481"
+    ],
+    [
+     "E42F"
+    ],
+    [
+     "E479",
+     "E454"
+    ],
+    [
+     "E478",
+     "E484",
+     "E43F"
+    ],
+    [
+     "E431"
+    ],
+    [
+     "E417"
+    ],
+    [
+     "E47A"
+    ],
+    [
+     "E483",
+     "E43A",
+     "E449",
+     "E499",
+     "E4A9"
+    ],
+    [
+     "E47B",
+     "E455",
+     "E450"
+    ],
+    [
+     "E422",
+     "E4E0",
+     "E4B6"
+    ],
+    [
+     "E44C"
+    ],
+    [
+     "E44A",
+     "E423"
+    ],
+    [
+     "E451"
+    ],
+    [
+     "E491"
+    ],
+    [
+     "E44B",
+     "E4E4"
+    ],
+    [
+     "E413"
+    ],
+    [
+     "E406",
+     "E458"
+    ],
+    [
+     "E42E"
+    ],
+    [
+     "E412"
+    ],
+    [
+     "E434",
+     "E492"
+    ],
+    [
+     "E43C"
+    ],
+    [
+     "E4ED"
+    ],
+    [
+     "E497",
+     "E48E"
+    ],
+    [
+     "E49B"
+    ],
+    [
+     "E401",
+     "E4EB"
+    ],
+    [
+     "E4D1"
+    ],
+    [
+     "E47C",
+     "E405"
+    ],
+    [
+     "E482",
+     "E4FA"
+    ],
+    [
+     "E40F"
+    ],
+    [
+     "E40A",
+     "E40B"
+    ],
+    [
+     "E427",
+     "E48B"
+    ],
+    [
+     "E4B7"
+    ],
+    [
+     "E4FC"
+    ],
+    [
+     "E41B"
+    ],
+    [
+     "E4A2"
+    ],
+    [
+     "E4A3"
+    ],
+    [
+     "E4BF",
+     "E48D"
+    ],
+    [
+     "E4E3"
+    ],
+    [
+     "E49A"
+    ],
+    [
+     "E459"
+    ],
+    [
+     "E488"
+    ],
+    [
+     "E441"
+    ],
+    [
+     "E472"
+    ],
+    [
+     "E487",
+     "E4B0"
+    ],
+    [
+     "E7E1",
+     "E47D"
+    ],
+    [
+     "E47E"
+    ],
+    [
+     "E48C"
+    ],
+    [
+     "E493"
+    ],
+    [
+     "E496"
+    ],
+    [
+     "E4C0"
+    ],
+    [
+     "E4A1"
+    ],
+    [
+     "E4A0"
+    ]
+   ]
+  }
+ ]
+}

@@ -188,3 +188,33 @@ content stays unevaluated; that is a human decision and this pass does not re-op
 mechanisms installed above are changes to the shape of files the orchestrator already owns, not
 trials, and neither asks any session to do anything extra. Both are recorded in
 `board/IMPROVEMENT.md` with supporting case, contrary case, cost limit and failure condition.
+
+## Balance — including one honest mark against the mechanism this pass leaned on
+
+- **Held but not progressing: nothing.** `board/active/` is empty and no folder is fenced off.
+- **Categories: `ciphers/` 9, `ireland/` 9, `historical-controversies/` 9, `historical-texts/` 6
+  after this pass's promotions. None is cold** — the most recent work in each is 09-25, 09-24,
+  09-24 and 09-25 respectively. This is the first pass in weeks with no cold category to argue
+  about, which is why every promotion here had to stand on a specific enabling reason rather than
+  on filling a gap.
+- **Unworked problems now sitting in category folders: six** — Blitz, Meroitic, Black Death (all
+  promoted today, so they have not yet been passed over), Rohonc, Hill of Tara, and **Dál Riata**.
+- **Dál Riata is the mark against the mechanism, and it should be recorded rather than explained
+  away.** The 09-23 pass promoted it on the strongest kind of ground this board recognises — the
+  Annals session had just committed a 13,414-row four-witness table that is close to its stated
+  core deliverable — and **two days and six cracker cycles later it has still never been worked.**
+  The same pass promoted the gold bars on a gap-filling ground and that produced the board's most
+  substantive session and panel within a day.
+
+  So the evidence on "promote where another folder has just made it cheap" is now **one striking
+  success and one nil return**, and the 09-24 pass's line that the mechanism "produced research
+  rather than only tidier folders" was drawn on the success alone. It is one data point either
+  way. What it argues for is not abandoning the mechanism but noticing its limit: **a promotion
+  changes where a problem sits, and nothing about what a cracker chooses when it arrives.** That is
+  exactly why the residual `discovered/` queue was closed as a draw order this pass rather than
+  discharged by promoting eleven more folders — promotion is not a delivery mechanism and this
+  board now has a measurement saying so.
+- **Validation remains the only thing that structurally falls behind**, and the reason is
+  unchanged: every cracker cycle lands work, and a panel runs only when an orchestrator pass
+  convenes one, because a validator is a different seat. This pass convened the two that had been
+  waiting since 09-17.

@@ -1,0 +1,106 @@
+witness A: 1721 documents;  witness B: 11 documents
+
+### C0  Scribe-9 set and findspots, straight from the corpus metadata
+  HT Scribe 9 faces : ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+  distinct tablets  : ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+  findspots         : {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+  scribe of HT88     : {'HT Scribe 7'}
+  scribe of HT95     : {''}
+  scribe of HT86     : {'HT Scribe 6'}
+  scribe of HT1      : {'HT Scribe 21'}
+  scribe of HT15     : {''}
+  scribe of HT34     : {''}
+  scribe of HT30     : {'HT Scribe 1'}
+  scribe of HT37     : {''}
+
+### C1  arithmetic audit of every total the dossier quotes
+     (a block is everything since the previous total marker on that face)
+  HT85a   KU-RO       sum of  7 preceding numerals =      66   stated = 66   OK
+  HT88    KU-RO       sum of  9 preceding numerals =      39   stated = 6   MISMATCH (+33)
+  HT94a   KU-RO       sum of  5 preceding numerals =     111   stated = 110   MISMATCH (+1)
+  HT94b   KU-RO       sum of  5 preceding numerals =       5   stated = 5   OK
+  HT117a  KU-RO       sum of 10 preceding numerals =      10   stated = 10   OK
+  HT119   KU-RO       sum of  9 preceding numerals =     159   stated = 160   MISMATCH (-1)
+  HT122a  KU-RO       sum of 16 preceding numerals =      22   stated = 31   MISMATCH (-9)
+  HT122b  KU-RO       sum of  5 preceding numerals =      15   stated = 65   MISMATCH (-50)
+  HT122b  PO-TO-KU-RO sum of  1 preceding numerals =      65   stated = 97   MISMATCH (-32)
+  HT97: absent
+  HT122 stated-subtotal hierarchy: 31 + KU-DA 1 + 65 = 97 = PO-TO-KU-RO 97   OK (this is arithmetic over stated totals only)
+
+### C2  HT85: is '66 = 11 gangs of six' anything more than 66 % 11 == 0 ?
+  HT85a contributor amounts (witness A): [12.0, 12.0, 6.0, 24.0, 5.0, 3.0, 4.0] sum 66.0
+  -> none of 5, 3, 4 is a multiple of 6; the 66 does not partition into sixes
+  HT85b entries, witness A (Douros/GORILA): 11
+  HT85b entries, witness B (SigLA)         : 8   sequences: ['ki-ki-ra-ja', 'ki-re-ta2', 'qe-ka', 'te-tu-[?]', 'me-za', 're-di-se', 'wa-du-ni-mi', 'ma-di', 'qa-A310-i']
+  every HT85b entry in witness A carries the numeral 1, not 6: ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+
+### C3  HT119: is '*327 34 : VIR 68 = 1:2' a statement or a coincidence?
+   *327 34 | VIR+[?] 68 | RI-MI-SI 13 | KO-JA 10 | KU-PA₃-NA-TU 7 | TI 7 | JA-*345 10 | *306-TU 2 | *327-JU 8 | KU-RO 160
+  list items: [34.0, 68.0, 13.0, 10.0, 7.0, 7.0, 10.0, 2.0, 8.0]  sum = 159.0  stated KU-RO = 160.0
+  exact 2:1 pairs anywhere in this 9-item list: [(34.0, 68.0)]
+
+### C4  competitor count: which words head a KU-RO-closed list of '<name> <numeral>' entries?
+    heading U-MI-NA-SI     on HT117a   over 10 entries
+    heading (no heading)   on HT85a    over 7 entries
+    heading (no heading)   on HT118    over 7 entries
+    heading KI-RO          on HT88     over 6 entries
+    heading KI-RO          on HT94b    over 5 entries
+    heading (no heading)   on HT102    over 4 entries
+    heading (no heading)   on HT122b   over 4 entries
+    heading (no heading)   on HT9b     over 3 entries
+    heading (no heading)   on HT13     over 3 entries
+    heading (no heading)   on HT122a   over 3 entries
+  distinct headings in that slot: 3 {'(no heading)': 7, 'KI-RO': 2, 'U-MI-NA-SI': 1}
+  -> KI-RO heads 2 of 10 such blocks
+
+### C5  background rate: does 'numeral after X vs divider after X' single KI-RO out?
+  HT word types with >=4 occurrences: 44
+  ... of those, how many show BOTH a numeral-following and a divider-following occurrence (i.e. would score a perfect 'two-construction grammar' by the same rule): 19
+    KI-RO        numeral-next   6  divider-next   6  other   4
+    KU-RO        numeral-next  29  divider-next   0  other   6
+    A-DU         numeral-next   0  divider-next   6  other   1
+    KA-PA        numeral-next   0  divider-next   1  other   5
+    SA-RA₂       numeral-next   1  divider-next   4  other  15
+    MA-KA-RI-TE  numeral-next   0  divider-next   2  other   0
+    U-MI-NA-SI   numeral-next   0  divider-next   2  other   0
+  full list of types showing both patterns (n>=4): ['E', 'I', 'KA', 'KI-RO', 'KU', 'KU-NI-SU', 'MI+JA+RU', 'NI', 'PA', 'PA₃', 'RE', 'SA-RA₂', 'SA-RO', 'SI', 'TA', 'TA-NA-TI', 'TE', 'TU', 'ZU']
+
+### C6  LABEL PERMUTATION on the post-hoc split (board attack (a))
+  Scribe-9 tablets in play: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+  OBSERVED cohesion (word types on >=2 of the 10 tablets) = 13
+           shared types = ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+  Scribe-9 word tokens = 115; HT tablet pool = 133 tablets, 902 word tokens
+  null (i)  10 random HT tablets      : mean 4.81  95% [1, 10]  p = 0.0045
+  null (ii) size-matched (+/-10%), n=5000 of 258705 tries: mean 8.71  95% [4, 15]  p = 0.1054
+  STRICT statistic (multi-sign names only, admin operators dropped): observed 9  ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE', 'QA-*310-I']
+    null  10 random HT tablets : mean 0.72 95% [0, 4]  p = 0.0007
+    null  size-matched (+/-10%), n=3260: mean 4.18 95% [0, 9]  p = 0.0555
+  null (iii) permute exception/ordinary label inside Scribe 9: observed 5 shared types ['DI-KI-SE', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'PA-TA-NE'], null mean 7.58, p = 0.7936
+
+### C7  the abbreviation trap
+  HT word tokens 1560, of which one-syllabogram 863 = 55.3%
+  top one-sign tokens: [('KA', 164), ('KU', 163), ('SI', 101), ('RO', 91), ('TE', 45), ('NI', 41), ('ZE', 41), ('I', 32), ('TA', 18), ('DI', 15), ('KI', 11), ('RE', 9)]
+  one-sign word tokens by support: {'Tablet': 261, 'Nodule': 590, 'Sealing': 2, 'Roundel': 4, 'Clay vessel': 1, 'Metal object': 5}
+  one-sign 'entities' inside the dossier's own personnel lists:
+    HT85b: ['PA', 'KA', 'DI']
+    HT122a: ['PA', 'DI', 'DU']
+    HT94a: ['TA', 'NI', 'NI', 'NI']
+    HT94b: ['RA']
+
+### C8  base rate of the HT85 move: does a KU-RO total on one face divide evenly by the entry count on the other face?
+  2/13 face pairs give an exact integer 'gang size' >= 2
+     ('HT11', 'b', 180.0, 4, 45)
+     ('HT85', 'a', 66.0, 11, 6)
+
+### C9  two independent editions of the same tablets (PRACTICES: scan twice)
+  HT 85a    A= 9 words  B= 9 words   only-A ['u-*325-za', 'ku-zu-ni']  only-B ['u-a325-za', 'ku-*79-ni']
+  HT 85b    A=12 words  B= 9 words   only-A ['pa', 'te-tu', 'ka', 'di', 'qa-*310-i']  only-B ['te-tu-', 'qa-a310-i']
+  HT 87     A= 8 words  B= 8 words   only-A ['a-ra', 'a-tu']  only-B ['qif-tu-ne', 'a-ra--a-tu']
+  HT 88     A=12 words  B=11 words   only-A ['ni']  only-B []
+  HT 94a    A= 8 words  B= 4 words   only-A ['ti+a', 'ta', 'ni', 'ni', 'ni']  only-B ['a318-a306']
+  HT 94b    A= 9 words  B= 9 words   only-A ['ra', 'de-me-te']  only-B ['ra--de-me-te', 'qif-tu']
+  HT 117a   A=20 words  B=20 words   only-A ['te-ja-re']  only-B ['te-pa3-re']
+  HT 117b   A= 2 words  B= 3 words   only-A []  only-B ['qif-tu-ne']
+  HT 119    A= 6 words  B= 7 words   only-A ['ti', 'ja-*345']  only-B ['ja-a345', 'a306-tu', 'a327-ju']
+  HT 122a   A=17 words  B=19 words   only-A ['qa-*310-i', 'pa-ta-ne']  only-B ['qa-a310-i', 'a324-di-ra', 'pa-ri-ne', 'a306-tu']
+  HT 122b   A= 7 words  B= 8 words   only-A ['di']  only-B ['a306-ki-ta2', '']

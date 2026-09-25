@@ -1,0 +1,105 @@
+==============================================================================
+0. INFORMATION CEILING  (shared reference = the OCBI sign inventory)
+==============================================================================
+
+ per-pair verdict of each of the 10 OCBI inventories (1=merged, 0=split, .=absent)
+  pair                                       search     syl1       syl2       syl3       syl4       syl5       syl6       syl7       syl8       syl9      
+  E416/E4AF  (the inventory SPLIT claim)     1          1          1          1          1          1          0          0          0          .         
+  E412/E491  (the ME-?-T(?) bridge)          1          1          1          1          1          1          1          1          1          0         
+  E49A/E4B0  (the ME allograph)              1          1          1          1          1          1          1          1          1          0         
+
+ d'_ceiling for 'is this pair one grapheme?', reference error estimated
+ from the reference's own realisations (mu(A)=1 truly-same, mu(B)=0 truly-different):
+   E416/E4AF  (the inventory SPLIT claim)     n= 9  p(merged)=0.667  sigma_ref=0.471  d'_ceiling=1.50
+   E412/E491  (the ME-?-T(?) bridge)          n=10  p(merged)=0.900  sigma_ref=0.300  d'_ceiling=2.36
+   E49A/E4B0  (the ME allograph)              n=10  p(merged)=0.900  sigma_ref=0.300  d'_ceiling=2.36
+
+ global reference error: of 27028 codepoint pairs seen in >=2 inventories,
+   1638 (6.1%) are classed BOTH ways by different OCBI inventories;
+   294 (1.09%) are unanimously one grapheme.
+   of the 1938 pairs merged by at least one inventory, only 300 (15.5%) are
+   merged by all of them -> the reference is unstable on 84.5% of its own merges.
+
+==============================================================================
+1. RAW GLYPH IDENTITY: every occurrence of the anchor signs, from source
+==============================================================================
+  ME  E49A   total   6  clear   6  | off-cylinder   3  off-cyl+clear   3
+        i                  line  9 pos  5 
+        k                  line  4 pos  4 
+        m                  line  2 pos  4 
+        rb (Var. 1)        line  1 pos  2 
+        rb (Var. 2)        line  1 pos  2 
+        rb (Var. 3)        line  1 pos  1 
+  ME' E4B0   total   4  clear   3  | off-cylinder   1  off-cyl+clear   0
+        f (face b = recto) line  1 pos  5 (GUESS)
+        rc (Var. 1)        line  1 pos  1 
+        rc (Var. 2)        line  1 pos  1 
+        rc (Var. 3)        line  1 pos  1 
+  PA  E44D   total  12  clear  11  | off-cylinder  11  off-cyl+clear  10
+        a                  line  6 pos  5 (GUESS)
+        a                  line  8 pos  7 
+        a                  line  9 pos  1 
+        b                  line  7 pos  4 
+        d                  line 28 pos  2 
+        d                  line 28 pos  9 
+        f (face b = recto) line  2 pos  3 
+        i                  line  5 pos 13 
+        i                  line  6 pos 11 
+        p                  line  2 pos 12 
+        ra                 line  1 pos  4 
+        v                  line  1 pos  1 
+  ATON E4AF  total   4  clear   4  | off-cylinder   0  off-cyl+clear   0
+        rb (Var. 1)        line  1 pos  4 
+        rb (Var. 2)        line  1 pos  4 
+        rb (Var. 3)        line  1 pos  4 
+        rc (Var. 3)        line  1 pos  4 
+  E416       total  18  clear  17  | off-cylinder  17  off-cyl+clear  16
+  E412       total  13  clear  11  | off-cylinder  13  off-cyl+clear  11
+  E491       total   5  clear   4  | off-cylinder   4  off-cyl+clear   3
+  E402       total  13  clear  13  | off-cylinder  13  off-cyl+clear  13
+  E48F       total   3  clear   3  | off-cylinder   3  off-cyl+clear   3
+
+  exact contexts of off-cylinder E49A, straight from the transcription:
+    i                  line 9 pos  5 : E413 E442 E402 E49A E402 E48F E40D?
+    k                  line 4 pos  4 : E45A E497 E439 E49A E402 E412 E45A
+    m                  line 2 pos  4 : FRACTURE WILDCARD E410 E49A E402 E48F E46B
+
+==============================================================================
+2. SEARCH FREEDOM / BUDGET-MATCHED NULL
+==============================================================================
+  off-cylinder sign tokens: 1343 ; distinct forms: 211
+  rank of E402 by frequency: 36 of 211   (count 13, 0.97% of tokens)
+  top 12 off-cylinder signs: E41C:43, E426:40, E439:35, E45A:34, E41F:32, E420:31, E415:31, E418:27, E421:26, E410:25, E431:25, E429:25
+  adjacent sign-sign pairs: 1103 ; P(right neighbour = E402) = 0.0109
+
+  observed: 3 off-cylinder E49A tokens, all with right neighbour E402.
+  naive p (i.i.d. right neighbour, no search correction) = 0.0109^3 = 1.288e-06
+  p(3 right neighbours all EQUAL, whichever sign) = sum p_i^3 = 0.0003  (1 in 3653)
+
+  budget-matched null -- same question asked of EVERY off-cylinder sign:
+   signs with exactly 2 off-cylinder tokens:  32 | invariant RIGHT nb:  0  invariant LEFT nb:  1  either side:  1 (3%)
+   signs with exactly 3 off-cylinder tokens:  21 | invariant RIGHT nb:  1  invariant LEFT nb:  0  either side:  1 (5%)
+      the 3-token signs with an invariant right neighbour: E49A
+      the 3-token signs with an invariant left  neighbour: 
+   signs with exactly 4 off-cylinder tokens:  14 | invariant RIGHT nb:  0  invariant LEFT nb:  0  either side:  0 (0%)
+
+  same budget for the TRIGRAPH claim (>=2 of the tokens share sign+2):
+   signs with >=2 full trigraph contexts: 115 ; of those, 40 (35%) repeat a trigraph
+   repeated-trigraph signs: E411, E412, E415, E416, E41B, E41C, E41E, E41F, E420, E421, E422, E426, E427, E429, E42A, E42B, E431, E434, E435, E438, E439, E43B, E43D, E43E, E443, E447, E44D, E452, E453, E45A, E45F, E464, E469, E46C, E498, E49A, E4D9, E4DD, E4E4, E4E5
+
+   distinct off-cylinder bigrams: 856 ; repeated at least twice: 144 (16.8%)
+   most repeated bigrams: E453E453:10, E439E435:8, E41FE422:8, E438E41C:7, E422E41E:7, E435E438:6, E439E439:6, E43BE4DD:5
+   the claimed one, E49A-E402: 3  |  E402-E48F: 2
+   right-neighbour distribution of E402 off-cylinder (n=13): {'E48F': 2, 'E453': 1, 'E466': 1, 'E407': 1, 'E418': 1, 'E48C': 1, 'E45E': 1, 'E413': 1, 'E49A': 1, 'E41C': 1, 'E412': 1, 'E4FC': 1}
+
+==============================================================================
+3. ROW-BY-ROW ADJUDICATION (proximity is not construction)
+==============================================================================
+   ra                 : E4AC E4AD E41F E44D E42A E483
+   rb (Var. 1)        : E4FF E49A E4AE E4AF
+   rb (Var. 2)        : E4FF E49A E4AE E4AF
+   rb (Var. 3)        : E49A E416 E491 E4AF
+   rc (Var. 1)        : E4B0 E42A E4AE E417 E4AE?
+   rc (Var. 2)        : E4B0 E4B1 E4B2 E4FD
+   rc (Var. 3)        : E4B0 E443 E429 E4AF
+   rd                 : E45C E4B3 E429

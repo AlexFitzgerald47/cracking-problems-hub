@@ -1,0 +1,55 @@
+==============================================================================
+F. IS E402 A SIGN OR A WORD DIVIDER?  (distributional test, name-free)
+==============================================================================
+  off-cylinder sign tokens: 1343 ; line-initial 178, line-final 178
+  P(a random sign token sits at a line edge) = 0.2651
+  E402   b I 7   kurzer Worttrenner oben            n=13 edge=0  P(0 edges | ordinary sign) = 0.0182
+  E404   b II 3   kurzer Worttrenner Mitte          n= 3 edge=0  P(0 edges | ordinary sign) = 0.3969
+  E498   l I 1   Strich                             n= 6 edge=0  P(0 edges | ordinary sign) = 0.1576
+  E41B   d II 1   Strich lang                       n=17 edge=6  
+  E49A   m II 3   das Z gerundet                    n= 3 edge=0  P(0 edges | ordinary sign) = 0.3969
+  E416   d I 7    offener Ring                      n=17 edge=3  
+  E412   d I 3    liegendes Kreuz                   n=13 edge=2  
+
+==============================================================================
+G. RE-READING THE THREE HELD-OUT LOCI WITH E402 AS A DIVIDER
+==============================================================================
+  BYBL i   line 9 : E45A? E413 E442 | E49A | E48F E40D? E439? E412? E411
+  BYBL k   line 4 : E45A E497 E439 E49A | E412 E45A
+  BYBL m   line 2 : [frac] [wild] E410 E49A | E48F E46B [frac]
+
+  Under the divider reading:
+    BYBL i IX : ... E442 | E49A | E48F E40D? ...   -> E49A is a ONE-SIGN word,
+                                                      flanked by dividers
+    BYBL k IV : E45A E497 E439 E49A | E412 E45A    -> E49A word-FINAL, E412 in
+                                                      the NEXT word
+    BYBL m II : [frac][x] E410 E49A | E48F E46B    -> E49A word-FINAL
+  The claimed three-sign unit E49A-E402-E48F does not exist; the invariant
+  'first internal transition' is the word boundary itself.
+
+==============================================================================
+H. IS 'ME IS ALWAYS FOLLOWED BY A DIVIDER' STILL SURPRISING?
+==============================================================================
+  whole off-cylinder corpus : 1103 adjacent pairs, 14 end in a divider -> p=0.0127
+    3 of 3 -> naive p = 2.045e-06
+  objects that use a divider at all: b, i, j, k, m, q
+  objects containing off-cylinder E49A: i, k, m  (all three are divider-using)
+  restricted to those 6 objects : 166 pairs, 14 end in a divider -> p=0.0843
+    3 of 3 -> p = 5.999e-04   (1 in 1667)
+  signs with >=3 tokens inside those 6 objects: 23 ; always divider-followed: ['E49A']
+
+==============================================================================
+I. THE CYLINDER VARIANT-READING BUDGET
+==============================================================================
+  rb (Var. 1)    E4FF( Götterzeichen auf Siegel) E49A( das Z gerundet) E4AE( Sonnenaufgang) E4AF( Sonnenaufgang / Rechts-Sc)
+  rb (Var. 2)    E4FF( Götterzeichen auf Siegel) E49A( das Z gerundet) E4AE( Sonnenaufgang) E4AF( Sonnenaufgang / Rechts-Sc)
+  rb (Var. 3)    E49A( das Z gerundet) E416(offener Ring) E491( Bett) E4AF( Sonnenaufgang / Rechts-Sc)
+  rc (Var. 1)    E4B0( Die Zwei gespiegelt) E42A(Joch) E4AE( Sonnenaufgang) E417(Galgen) E4AE( Sonnenaufgang)
+  rc (Var. 2)    E4B0( Die Zwei gespiegelt) E4B1( Fernseher) E4B2( Galgen mit doppeltem Dach) E4FD( flaches Boot)
+  rc (Var. 3)    E4B0( Die Zwei gespiegelt) E443(Türe mit Angeln) E429(Antenne) E4AF( Sonnenaufgang / Rechts-Sc)
+
+  of the 3 x 3 = 9 combinations of OCBI variant readings, the ones where
+  BOTH daughters start with a ME-family sign AND end with the same exact sign:
+    [('rb (Var. 3)', 'rc (Var. 3)')]
+  -> the two 'external constraints' 3 in PARTIAL_BIGRAPH_KERNEL section 2 select
+     1 of 9 variant-reading combinations, and that budget is never charged.
