@@ -1,0 +1,29 @@
+Phaistos Disc, H1: is the section-final slot formulaic?
+
+61 groups, 53 distinct; 7 group types occur more than once:
+   02-12-31-26              x3  [('A16', 'marked'), ('A19', 'marked'), ('A22', 'marked')]
+   29-45-07                 x2  [('A3', 'marked'), ('B20', 'marked')]
+   02-27-25-10-23-18        x2  [('A14', 'plain'), ('A20', 'plain')]
+   28-01                    x2  [('A15', 'marked'), ('A21', 'marked')]
+   02-12-27-27-35-37-21     x2  [('A17', 'plain'), ('A29', 'plain')]
+   10-03-38                 x2  [('A28', 'plain'), ('A31', 'plain')]
+   22-29-36-07-08           x2  [('B21', 'marked'), ('B26', 'marked')]
+
+marked set   : 18 tokens, 13 distinct, duplicate excess S = 5, redundancy 27.8%
+unmarked set : 43 tokens, 40 distinct, duplicate excess S = 3, redundancy 7.0%
+mean group length: marked 3.67, unmarked 4.09
+repeated group types straddling the marked/unmarked boundary: 0 of 7
+
+--- permutation tests (B = 200000) ---
+N1 free label permutation          : n_marked=18  observed S=5  null mean 0.728  null 95% max 2  p=0.000055
+N2 length-stratified permutation    : n_marked=18  observed S=5  null mean 0.650  null 95% max 2  p=0.000045
+N3 stratified, A24 crack removed   : n_marked=17  observed S=5  null mean 0.579  null 95% max 2  p=0.000040
+
+--- controls: the same statistic on other labels of the same size ---
+   side A (31 words)           : n_marked=31  observed S=6  null mean 3.671  null 95% max 5  p=0.035690
+   section-INITIAL words       : n_marked=18  observed S=1  null mean 0.755  null 95% max 2  p=0.575007
+
+--- verdict ---
+Failure condition from FREEZE.md: p > 0.01 under N2 means H1 not established.
+Search-budget threshold from FREEZE.md (25 combinations): p < 0.0004 to clear.
+VERDICT: H1 SURVIVES the budget-charged threshold (N2 p = 0.000045 < 0.0004)

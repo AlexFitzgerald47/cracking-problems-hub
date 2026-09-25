@@ -1,0 +1,21 @@
+Phaistos Disc, F1 flatness / IC test
+N = 241 legible sign tokens over K = 45 signs; expected count/cell = 5.356
+
+p-floor of this simulation (B = 200000 draws): p >= 5.00e-06; no smaller p is reportable
+chi-square asymptotics: expected/cell 5.36, marginal -> simulated null used, not analytic tail
+
+observed chi2 vs uniform      = 194.249  (df = 44)
+simulated uniform null: mean 44.00, 95% range [27.69, 64.29]
+  P(chi2 >= observed | uniform) = 0.00000
+  P(chi2 <= observed | uniform) = 1.00000
+
+observed IC (normalised, uniform = 1.0) = 1.6260
+null IC: mean 1.0000, 95% range [0.9321, 1.0845]
+
+most frequent signs: [(2, 19), (7, 18), (12, 17), (27, 15), (18, 12), (1, 11), (29, 11), (35, 11)]
+top sign 02 occurs 19 times against a uniform expectation of 5.36 (3.55x)
+hapaxes: 9; signs occurring <= 2 times: 17 of 45
+
+VERDICT: NOT too flat.
+Stated at the only strength this statistic carries: this is P(data | uniform),
+NOT P(data | cipher). It does not by itself identify the script or the language.

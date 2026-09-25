@@ -1,0 +1,20 @@
+Phaistos Disc: sign-level repetition, segmentation-independent
+
+side A: 123 sign positions, longest repeated substring = 15 signs; positions inside a repeated >=4-sign block = 53
+   M1 sign shuffle          P(longest >= 15) = 0.00005
+   M2 group-order shuffle   P(longest >= 15) = 0.00100   <- groups kept intact
+   M3 Markov-1 resample     P(longest >= 15) = 0.00250
+   (p-floor of this run: 5.00e-05)
+
+side B: 119 sign positions, longest repeated substring = 5 signs; positions inside a repeated >=4-sign block = 14
+   M1 sign shuffle          P(longest >= 5) = 0.00050
+   M2 group-order shuffle   P(longest >= 5) = 1.00000   <- groups kept intact
+   M3 Markov-1 resample     P(longest >= 5) = 0.84816
+   (p-floor of this run: 5.00e-05)
+
+Note on M2: shuffling group order cannot destroy a repeat that lies INSIDE one
+group, so where the longest repeat spans a group boundary M2 is the informative
+null and where it does not, M2 is expected to be uninformative by construction.
+
+side A longest repeat 02-27-25-10-23-18-28-01-02-12-31-26-02-12-27 at positions [50, 75]; crosses a group boundary: True
+side B longest repeat 22-29-36-07-08 at positions [79, 98]; crosses a group boundary: False
