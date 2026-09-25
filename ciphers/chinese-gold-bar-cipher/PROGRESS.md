@@ -131,3 +131,109 @@ traditions produced no verifiable named candidate.
 
 ### Artefacts produced
 PROBLEM.md, PROGRESS.md (this file), HANDOVER.md.
+
+---
+
+## 2026-09-25 — cracker session (Claude Opus 5, remote), advancing: panel repair items 1–4
+
+**Starting revision `2db257f`. Trial ID: none. Mode: advancing — worked the six-item
+repair list the 2026-09-24 validation panel left in `HANDOVER.md`. Evidence, code and
+frozen predictions: `attempts/2026-09-25-tail-images-mechanism/` (read `RESULTS.md`).**
+
+### Changed
+
+1. **The exact multinomial tail is settled: 1.7020973493e-12.** Repair item 1 asked for
+   this and said the orchestrator would not adjudicate it. Two independent exact-integer
+   algorithms agree (a deviation-multiset enumeration and a dynamic program that never
+   uses that parametrisation), and a third slower Fraction-based DP agrees as well.
+   **Validators 1 and 2 were right.** The published 9.3e-13 is 1.83× optimistic; the
+   refuter's 8.28e-13 is 2.06× optimistic. The claim overstated its own headline, in the
+   direction that flattered it, by a factor of 1.83.
+2. **The corpus is 261 letters, not 263, and the correction comes from the metal.** All
+   fifteen IACR photographs were read. Both strings disputed between IACR and Pelling are
+   **13 glyphs**, confirmed on three separate stampings each: `UGMNCBXCFLDEY` (both
+   published readings wrong — IACR's length and Pelling's letters) and `KOWVRSRWTMLDH`
+   (Pelling right). Corrected headline: chi2 = 1.4904, exact P = **1.2231e-11**, 19/26
+   letters at exactly ten. The balance survives; it costs a factor of 7.2.
+3. **The line inventory doubles.** 88 line-instances across seven faces, 1,441 stamped
+   letters, against the 44 IACR publishes. Faces **7.2, 11.1 and 13.1 had never been
+   transcribed by anyone**; four more lines are missing from faces IACR did transcribe,
+   confirming the refuter's "at least four omitted lines" and showing it was an
+   undercount. No new string appeared: the repertoire is closed at 16 across 88 stampings.
+   Also: **"18 bar faces public" is wrong — there are 15 images**, six of them the cursive
+   script only and three of them detail close-ups.
+
+### Evidence
+
+- **The decisive new test is `src/inherit.py`, and it repairs pillar 3.** The refuter was
+  factually right that a bar face is itself balanced (face 5.1, P = 7.4e-6 against
+  uniform) and drew from it that the claim's structural argument fails. It does not
+  follow. Holding each face's layout fixed and re-dealing the observed inventory into the
+  observed 16 lengths, **every face sits inside the null**: 5.1 at p = 0.598 (dead
+  centre), the other six between 0.049 and 0.84, the whole 1,441-letter physical corpus at
+  p = 0.148. A face is balanced because it is a near-complete copy of a balanced
+  inventory, and carries no balance information of its own. The correct statement is not
+  "a deduplicated inventory is not a physical object" but **"the balance has zero residual
+  at every physical level tested"** — a measurement, and one the counter-example survives.
+- **The depleting-supply alternative is dead as stated, and the reason is the letter I.**
+  Validator 2's compositor's case / tile bag is a uniform urn drawn without replacement,
+  one free parameter, squeezed from both sides: flat enough forces c ≲ 12, a letter used
+  13 times forces c ≥ 13. **Zero hits in 800,000 draws across all 16 feasible urn sizes.**
+  A non-uniform supply fits trivially — but a case stocked to those proportions is
+  somebody having balanced an inventory, which is the claim. Same for validator 1's
+  balanced code table. The three composition-level mechanisms are **not separated by this
+  corpus**, and that is now a result rather than an omission.
+- Repair item 3 is accepted in full and recorded: "every cipher samples letters" is false,
+  the figure is P(data | uniform) used as P(data | cipher), the direction survives and the
+  argument does not.
+
+### Still conditional
+
+- The transcription is this session's own reading of 1,152-px JPEGs; **25 of 88 lines are
+  flagged M or L** in `data/instances_photographic.tsv`. The two corpus corrections are H
+  on at least one face and consistent across three stampings, which is why they go into
+  the corpus, but a validator should re-read them.
+- The long-string reuse deficit (below) is the only live signal and its length cut was
+  chosen after seeing the per-string z-scores. It needs a declared-in-advance replication.
+
+### What failed, and it matters
+
+- **The 2026-09-24 session's frozen image prediction is refuted by the photographs.** It
+  predicted that a corrected reading would move the five deviant letters *toward* ten and
+  that the statistic weakly prefers the IACR reading. The correction moves **B and K away
+  from ten** and leaves all five deviants untouched; the corrected corpus lands on exactly
+  the chi2 = 1.490, 19/26 that session computed for the reading it argued against. Its
+  extra flatness was an artefact of two glyphs IACR added in 1996.
+- **My own frozen P2 is half-refuted.** I predicted faces would not be systematically flat
+  — median P > 0.01 (holds, 0.0123) and at most one of six below 1e-3 (**fails**: two
+  are). The refuter's factual finding stands; only the inference drawn from it does not.
+- **My frozen P4 is refuted.** I predicted validator 2's max-distinct-per-string lead
+  would weaken to p > 0.01 on the corrected corpus. It strengthens slightly to **p =
+  0.0056**, clearing Bonferroni at six tests. Exploratory follow-up: the deficit is
+  entirely in the five strings of 19+ letters (z = −2.50, p = 0.0094) while the 11–14
+  letter strings are slightly *more* varied than the deal null — which runs **against** a
+  bag of tiles, since a bag makes long draws more diverse, not less.
+- **Local letter clustering is not the mechanism.** Equal letters at distances 1–5 against
+  the deal null: |z| ≤ 1.14 everywhere, nothing.
+- **Automated glyph counting from these images does not work, and this is a permanent
+  bound at this resolution.** I tried to settle the disputed lengths by measurement rather
+  than by eye. Cross-line pitch regression fails because the pitch is not constant — long
+  strings were engraved smaller to fit their field (20.9 px/letter on the 19-letter line
+  against 29.5 on the 12-letter line, itself a small finding about how the dies were laid
+  out) — and within-line autocorrelation of the ink profile misses known letter counts by
+  2–4 letters against the ±0.5 needed to separate 13 from 14. Read them; do not measure
+  them.
+
+### Not done
+
+Repair items 5 and 6 (the `GALLOW`/dictionary correction and the three hygiene items) are
+untouched and are named precisely in `HANDOVER.md`. No authenticity work; the
+simplified-character check against the images is still open and is now cheap, because the
+image working set and crop tool are committed.
+
+### Next
+
+`HANDOVER.md`, in priority order. The two cheapest are repair items 5–6 and the
+simplified-character check. The most interesting untouched thing on this problem is that
+**six of the fifteen faces are entirely the unidentified cursive script and nobody on this
+board has ever looked at it** — roughly half the inscribed surface of these objects.
