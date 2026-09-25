@@ -1,0 +1,80 @@
+Phaistos Disc: P1-P3, group length against real syllabic corpora
+
+Disc: 61 groups, mean 3.967 signs, distribution {2: 6, 3: 16, 4: 21, 5: 13, 6: 2, 7: 3}
+
+LB Linear B (Mycenaean Greek, administrative)
+   7701 usable syllabic word tokens; distribution {1: 24, 2: 1792, 3: 3062, 4: 1982, 5: 701, 6: 106, 7: 32, 8: 2}
+   mean length 3.260 signs (Disc 3.967, gap +0.708)
+   one-sign tokens: 24 = 0.31%
+   size-matched draws of 61 tokens:
+      P(zero one-sign tokens) = 0.8257
+      P(mean >= 3.967)          = 0.0000
+
+LA Linear A (unknown language, administrative)
+   2044 usable syllabic word tokens; distribution {1: 1101, 2: 427, 3: 303, 4: 148, 5: 47, 6: 12, 7: 6}
+   mean length 1.862 signs (Disc 3.967, gap +2.106)
+   one-sign tokens: 1101 = 53.86%
+   size-matched draws of 61 tokens:
+      P(zero one-sign tokens) = 0.0000
+      P(mean >= 3.967)          = 0.0000
+
+CY Cypriot syllabary (Greek, dedications/prose)
+   344 usable syllabic word tokens; distribution {1: 103, 2: 87, 3: 47, 4: 29, 5: 46, 6: 23, 7: 6, 8: 2, 12: 1}
+   mean length 2.826 signs (Disc 3.967, gap +1.142)
+   one-sign tokens: 103 = 29.94%
+   size-matched draws of 61 tokens:
+      P(zero one-sign tokens) = 0.0000
+      P(mean >= 3.967)          = 0.0000
+
+------------------------------------------------------------------------
+DISTRIBUTIONAL TEST: is the Disc's length profile drawn from each corpus?
+Two-sample Monte Carlo on the summed |observed - expected| over length bins,
+plus a two-sided Mann-Whitney-style rank test, 20000 draws of 61 tokens.
+   LB: L1 distance 33.3, p = 0.00010  -> Disc is NOT a sample from this corpus
+   LA: L1 distance 79.2, p = 0.00005  -> Disc is NOT a sample from this corpus
+   CY: L1 distance 60.4, p = 0.00005  -> Disc is NOT a sample from this corpus
+
+------------------------------------------------------------------------
+ADJUDICATION OF THE ONE-SIGN TOKENS -- read this before believing any P1 rate.
+A one-sign 'word' in an administrative syllabary is usually an ABBREVIATION, not
+a word, and counting them manufactures a confirmation of P1. Inspected by hand:
+
+  LA  1,101 one-sign tokens, dominated by KU (170), KA (169), SI (118), RO (95),
+      NI (76), TE (58), ZE (47).  These are the standard Linear A single-syllabogram
+      transaction terms and commodity designators -- NI is the conventional sign for
+      figs.  They are not words.  Because Linear A is undeciphered I cannot separate
+      abbreviation from word on any principled basis, so LA IS DISQUALIFIED as a
+      comparison for P1/P3, and its apparent PASS must NOT be counted.
+
+  CY  Latin editorial words (linea, vacat, evanidus, illegibilis) leaked into the
+      first run and are now excluded.  The remainder -- to (32), a, o, ti, u -- are
+      genuine Greek function words spelled syllabically, and DO count.
+
+  LB  24 one-sign tokens out of 7,701.  Some of these are probably abbreviations
+      too, which would push the rate even lower.  The direction is against P1.
+
+========================================================================
+VERDICT ON THE FROZEN PREDICTIONS
+========================================================================
+
+P1  '>= 5%% of word tokens will be 1 syllabogram long' (failure if < 5%%)
+      LB: 0.31%  ->  FAIL
+      LA: 53.86%  ->  PASS
+      CY: 29.94%  ->  PASS
+
+P2  'the Disc's mean will exceed the corpus mean by >= 1.0 signs' (failure if < 1.0)
+      LB: gap +0.708  ->  FAIL
+      LA: gap +2.106  ->  PASS
+      CY: gap +1.142  ->  PASS
+
+P3  '< 1%% of size-matched samples have zero 1-sign tokens, and < 1%% have
+     mean >= the Disc's' (failure if either rate >= 1%%)
+      LB: P(zero 1-sign)=0.8257, P(mean>=disc)=0.0000  ->  FAIL
+      LA: P(zero 1-sign)=0.0000, P(mean>=disc)=0.0000  ->  PASS
+      CY: P(zero 1-sign)=0.0000, P(mean>=disc)=0.0000  ->  PASS
+
+NOTE ON CORPUS SELECTION.  P1-P3 were frozen naming 'Linear B and/or Linear A',
+the two Aegean syllabic corpora.  Those are the pre-registered tests and they
+stand or fall on LB and LA.  CY (Cypriot) was added AFTER seeing LB and LA and is
+therefore POST-HOC and exploratory; it is reported for what it suggests, not as a
+confirmed prediction.

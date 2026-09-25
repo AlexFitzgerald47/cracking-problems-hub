@@ -1,0 +1,17 @@
+{
+ "budget": 90,
+ "threshold": 0.00011111111111111112,
+ "hits": [
+  {
+   "sign": 2,
+   "n": 19,
+   "init": 19,
+   "fin": 0,
+   "p_init_ge": 4.9999750001249995e-06,
+   "p_init_le": 1.0,
+   "p_fin_ge": 1.0,
+   "verdict": "INITIAL-RESTRICTED"
+  }
+ ],
+ "pair_02_12": 13
+}

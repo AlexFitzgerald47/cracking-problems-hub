@@ -1,0 +1,42 @@
+Phaistos Disc: positional grammar of the signary
+
+241 legible tokens in 61 groups (242 slots incl. the illegible one).
+Marginal P(a token is group-initial) = 61/242 = 0.2521
+Null: permute tokens across slots, group lengths fixed. B = 200000, p-floor 5.00e-06
+Search budget charged: 45 signs x 2 positions = 90 tests, threshold 1.11e-04
+
+sign  total  init  final  med   P(init>=obs)  P(init<=obs)  P(final>=obs)   verdict
+  02     19    19     0     0     0.000005     1.000000     1.000000   INITIAL-RESTRICTED
+  07     18     4     8     6     0.713261     0.505652     0.052260   
+  12     17     0     4    13     1.000000     0.006070     0.662402   
+  27     15     5     2     8     0.315978     0.855106     0.929400   
+  18     12     0     5     7     1.000000     0.027465     0.156219   
+  01     11     1     7     3     0.962295     0.186454     0.006595   
+  29     11     8     0     3     0.000945     0.999905     1.000000   
+  35     11     0     7     4     1.000000     0.037360     0.006455   
+  23     11     1     1     9     0.962535     0.187539     0.962685   
+  25      7     0     3     4     1.000000     0.127939     0.246054   
+  13      6     2     1     3     0.468868     0.831181     0.828606   
+  24      6     1     1     4     0.827386     0.530292     0.828116   
+  40      6     0     1     5     1.000000     0.172509     0.829106   
+  45      6     1     0     5     0.828371     0.529422     1.000000   
+  33      6     2     3     1     0.470923     0.830001     0.171139   
+  26      6     0     3     3     1.000000     0.170559     0.170469   
+  08      5     0     4     1     1.000000     0.230679     0.014895   
+  31      5     2     0     3     0.372033     0.896596     1.000000   
+  22      5     4     0     1     0.015290     0.998960     1.000000   
+  06      4     2     0     2     0.265714     0.949300     1.000000   
+  38      4     0     3     1     1.000000     0.309853     0.049915   
+  39      4     1     0     3     0.690417     0.734761     1.000000   
+  10      4     2     0     2     0.264364     0.949185     1.000000   
+  37      4     0     0     4     1.000000     0.310158     1.000000   
+  36      4     0     0     4     1.000000     0.308848     1.000000   
+
+--- signs clearing the budget-charged threshold 1.11e-04 ---
+  sign 02: 19 occurrences, 19 initial, 0 final -> INITIAL-RESTRICTED
+
+--- the 02 / 12 pair ---
+sign 02 occurs 19 times, group-initial 19/19; sign 12 occurs 17 times, group-initial 0/17
+the bigram 02-12 occurs 13 times; it is group-initial in all of them: True
+P(02-12 bigram count >= 13 | slot permutation) = 0.000005
+analytic sanity check: P(one sign strictly initial in all 19 occurrences) = 0.2521^19 = 4.254e-12
