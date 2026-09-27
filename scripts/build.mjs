@@ -342,6 +342,7 @@ async function main() {
     dispatches: extra.dispatches,
     activeClaims: extra.activeClaims,
     routines: extra.routines,
+    roleProfiles: extra.roleProfiles,
     pulse: extra.pulse,
     lastByRole: extra.lastByRole,
   };
