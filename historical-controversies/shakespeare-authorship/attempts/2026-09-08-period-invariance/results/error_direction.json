@@ -1,0 +1,102 @@
+{
+ "RAW": [
+  {
+   "gap_years": 0,
+   "n_errors": 58,
+   "n_correct": 253,
+   "date_bias_errors_years": -33.47931521902956,
+   "date_bias_errors_ci95": [
+    -37.36699601083528,
+    -29.26773318148016
+   ],
+   "date_bias_correct_years": -32.372668750500566,
+   "frac_errors_more_date_proximate": 0.9655172413793104
+  },
+  {
+   "gap_years": 5,
+   "n_errors": 96,
+   "n_correct": 193,
+   "date_bias_errors_years": -28.35337353110093,
+   "date_bias_errors_ci95": [
+    -31.248746149086678,
+    -25.106763665493137
+   ],
+   "date_bias_correct_years": -29.030648575568993,
+   "frac_errors_more_date_proximate": 0.9479166666666666
+  },
+  {
+   "gap_years": 10,
+   "n_errors": 129,
+   "n_correct": 120,
+   "date_bias_errors_years": -23.822276438905288,
+   "date_bias_errors_ci95": [
+    -26.06836969468805,
+    -21.349918372047313
+   ],
+   "date_bias_correct_years": -25.376998300040327,
+   "frac_errors_more_date_proximate": 0.937984496124031
+  },
+  {
+   "gap_years": 20,
+   "n_errors": 53,
+   "n_correct": 56,
+   "date_bias_errors_years": -23.929329520641975,
+   "date_bias_errors_ci95": [
+    -26.467007433130615,
+    -21.19317220131886
+   ],
+   "date_bias_correct_years": -20.393462544601075,
+   "frac_errors_more_date_proximate": 0.9622641509433962
+  }
+ ],
+ "NORM": [
+  {
+   "gap_years": 0,
+   "n_errors": 50,
+   "n_correct": 261,
+   "date_bias_errors_years": -34.791134904287276,
+   "date_bias_errors_ci95": [
+    -38.70042688415577,
+    -30.01727530138872
+   ],
+   "date_bias_correct_years": -31.953979789255094,
+   "frac_errors_more_date_proximate": 0.98
+  },
+  {
+   "gap_years": 5,
+   "n_errors": 75,
+   "n_correct": 214,
+   "date_bias_errors_years": -26.724222721827257,
+   "date_bias_errors_ci95": [
+    -29.60099560163413,
+    -23.61987227604141
+   ],
+   "date_bias_correct_years": -28.615051344231738,
+   "frac_errors_more_date_proximate": 0.9866666666666667
+  },
+  {
+   "gap_years": 10,
+   "n_errors": 101,
+   "n_correct": 148,
+   "date_bias_errors_years": -18.7765935962996,
+   "date_bias_errors_ci95": [
+    -21.728432096138157,
+    -15.588806955141223
+   ],
+   "date_bias_correct_years": -24.313298204319214,
+   "frac_errors_more_date_proximate": 0.9108910891089109
+  },
+  {
+   "gap_years": 20,
+   "n_errors": 54,
+   "n_correct": 55,
+   "date_bias_errors_years": -13.707223445110467,
+   "date_bias_errors_ci95": [
+    -17.618996738501775,
+    -9.66159847373078
+   ],
+   "date_bias_correct_years": -16.180741452163865,
+   "frac_errors_more_date_proximate": 0.7962962962962963
+  }
+ ]
+}

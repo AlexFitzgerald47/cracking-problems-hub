@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+Recovered `attempts/2026-09-08-period-invariance/` from the unmerged
+`origin/claude/frontier-problem-solving-b1gbnm` branch. It is a precursor to the later
+main-branch work; do not treat it as replacing the 2026-09-23 and 2026-09-25 findings.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

@@ -1,0 +1,23 @@
+E3  six-siglum test on the Historia Augusta (30 vitae, 200 MFW)
+    sigla: Capitolinus(10), Gallicanus(1), Lampridius(4), Pollio(4), Spartianus(6), Vopiscus(5)
+    separation (between - within, /sd) : +0.2412
+    permutation null                   : -0.0007 +/- 0.1556
+    z                                  : +1.55
+    p (one-sided, 20000 permutations)     : 0.0648
+
+    per-siglum (own vitae vs the rest):
+      Capitolinus  n=10  sep -0.0259  z -0.11  p 0.518
+      Gallicanus   n=1  (single vita, no within-group distance)
+      Lampridius   n= 4  sep -0.2022  z -0.59  p 0.698
+      Pollio       n= 4  sep +0.2553  z +0.75  p 0.230
+      Spartianus   n= 6  sep +0.3022  z +1.09  p 0.144
+      Vopiscus     n= 5  sep +0.0175  z +0.06  p 0.446
+
+    ruler -- two genuinely different authors, same genre:
+      Suetonius (12 lives) vs Nepos (14 lives): sep +1.2533  z +13.92  p 0.0000
+      HA six-siglum separation as a fraction of that: 19.2%
+
+    confound check -- distance in the collection's order:
+      mean order-gap, same siglum      : 6.5
+      mean order-gap, different siglum : 11.2
+      corr(order gap, Delta distance)  : +0.138

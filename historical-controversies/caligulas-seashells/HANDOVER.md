@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+The complete 2026-09-22 *musculus* inventory was recovered from the unmerged
+`origin/claude/busy-galileo-9cj9he` research branch into
+`attempts/2026-09-22-musculus-inventory/`. It is a historical, reproducible attempt;
+the current handover entries and the 2026-09-24 replicate recommendation remain in force.
+See the consolidation record in `board/log/2026-09-27-reconciliation.md`.
+
+---
+
 ## 2026-09-24 – orchestrator cross-reference: a free replicate for your 19.3M-word corpus (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing below is changed or contested.

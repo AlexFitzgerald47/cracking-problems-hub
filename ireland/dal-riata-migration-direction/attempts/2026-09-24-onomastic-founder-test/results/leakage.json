@@ -1,0 +1,171 @@
+{
+ "window": [
+  550,
+  900
+ ],
+ "permissive_pool": {
+  "entries": 5422,
+  "tokens": 9517
+ },
+ "marked_pool": {
+  "entries": 1852,
+  "tokens": 4702
+ },
+ "tokens_discarded_by_marking": 4815,
+ "leak_tokens": 34,
+ "leak_by_name": {
+  "bruide": 9,
+  "brude": 1,
+  "tolarg": 8,
+  "drust": 2,
+  "bile": 4,
+  "maelcu": 5,
+  "alpin": 4,
+  "eilpin": 1
+ },
+ "leak_entries": 25,
+ "examples": [
+  {
+   "id": "AU641.2",
+   "names": [
+    "bruide"
+   ],
+   "text": "Death of Bruide son of Foth."
+  },
+  {
+   "id": "AU693.1",
+   "names": [
+    "bile",
+    "bruide"
+   ],
+   "text": "Bruide son of Bile, king of Foirtriu, dies, and Alphin son of Nechtan."
+  },
+  {
+   "id": "AU703.5",
+   "names": [
+    "maelcu"
+   ],
+   "text": "Fergus\u00e1n son of Maelch\u00fa dies."
+  },
+  {
+   "id": "AU706.2",
+   "names": [
+    "bruide"
+   ],
+   "text": "Bruide son of Derile dies."
+  },
+  {
+   "id": "AU713.7",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Tolarg son of Drostan is held captive by his brother, king Nechtan."
+  },
+  {
+   "id": "AU722.3",
+   "names": [
+    "bile"
+   ],
+   "text": "Mael Corgais from Druim Ing, and Bile son of Eilph\u00edn, king of Ail Cluaithe, die."
+  },
+  {
+   "id": "AU725.3",
+   "names": [
+    "drust"
+   ],
+   "text": "Simul son of Drust is imprisoned."
+  },
+  {
+   "id": "AU763.10",
+   "names": [
+    "bruide"
+   ],
+   "text": "Bruide, king of Foirtriu, dies."
+  },
+  {
+   "id": "AU780.5",
+   "names": [
+    "eilpin"
+   ],
+   "text": "Eilp\u00edn, king of the Saxons, dies."
+  },
+  {
+   "id": "AU887.2",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Tigernach son of Tolarg, heir designate of southern Brega, was killed by his associates."
+  },
+  {
+   "id": "AU888.8",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Tolarg son of Cellach, one of two kings of southern Brega, ended his life as an old man."
+  },
+  {
+   "id": "AU895.3",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Cellach son of Flannac\u00e1n, heir designate of all Brega, was deceitfully killed by Fogartach son of Tolarg. (There is no king's son (the pillar of kingship) Like "
+  },
+  {
+   "id": "AT642.2",
+   "names": [
+    "brude"
+   ],
+   "text": "The death of Brude son of Foth ."
+  },
+  {
+   "id": "AT686.5",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Tolarg son of Aithican died."
+  },
+  {
+   "id": "AT706.2",
+   "names": [
+    "bruide"
+   ],
+   "text": "Bruide son of Derile died."
+  },
+  {
+   "id": "AT713.8",
+   "names": [
+    "tolarg"
+   ],
+   "text": "Tolarg son of Drostan is tied to his brother Nechtan the king"
+  },
+  {
+   "id": "AT722.3",
+   "names": [
+    "bile"
+   ],
+   "text": "Bile son of Elphin king of Ail Cluaithe died."
+  },
+  {
+   "id": "AT725.3",
+   "names": [
+    "drust"
+   ],
+   "text": "Simal son of Drust is constrained."
+  },
+  {
+   "id": "AI584.1",
+   "names": [
+    "bruide",
+    "maelcu"
+   ],
+   "text": "Kl. Death of Bruide, son of Maelch\u00fa. [AU 584]."
+  },
+  {
+   "id": "AI858.3",
+   "names": [
+    "alpin"
+   ],
+   "text": "Cinaed son of Alp\u00edn, king of Alba, died."
+  }
+ ]
+}

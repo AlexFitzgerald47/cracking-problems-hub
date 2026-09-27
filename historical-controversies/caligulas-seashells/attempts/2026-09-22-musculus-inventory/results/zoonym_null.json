@@ -1,0 +1,223 @@
+[
+ {
+  "device": "vinea",
+  "ordinary_sense": "vineyard",
+  "total_attestations": 853,
+  "in_military_context": 376,
+  "pct_military": 44.1,
+  "examples": [
+   [
+    "sidonius1.txt",
+    "te proscindas aut prati floreas opes panda curuus falce populeris aut uineam palmite grauem cernuus rastris fossor inuertas  tunc tibi est summa u"
+   ],
+   [
+    "vegetius2.txt",
+    "tis  qui ad obpugnandas hostium ciuitates testudines musculos arietes uineas  ut appellant  turres etiam ambulatorias faciunt  uerum ne singula en"
+   ]
+  ]
+ },
+ {
+  "device": "aries",
+  "ordinary_sense": "ram (male sheep)",
+  "total_attestations": 638,
+  "in_military_context": 322,
+  "pct_military": 50.5,
+  "examples": [
+   [
+    "appvergcomp.txt",
+    "templa tabella    ornabo  et puris serta feram manibus   corniger hos aries humilis et maxima taurus    uictima sacratos sparget honore focos   m"
+   ],
+   [
+    "vegetius2.txt",
+    "iuntur fossae  contexitur uallum aquaeductus  item ligna uel stramina arietes onagri ballistae ceteraque genera tormentorum ne deessent aliquando  "
+   ]
+  ]
+ },
+ {
+  "device": "lupus",
+  "ordinary_sense": "wolf",
+  "total_attestations": 765,
+  "in_military_context": 143,
+  "pct_military": 18.7,
+  "examples": [
+   [
+    "ein.txt",
+    "on sustinens  transmisso amne garonna et aedificato castro frontiaco  lupo wasconum duci per legatos mandat  ut perfugam reddat  quod ni festina"
+   ],
+   [
+    "ein.txt",
+    "am reddat  quod ni festinato faciat  bello se eum expostulaturum  sed lupus saniori usus consilio non solum hunoldum reddidit  sed etiam se ipsum"
+   ]
+  ]
+ },
+ {
+  "device": "testudo",
+  "ordinary_sense": "tortoise",
+  "total_attestations": 200,
+  "in_military_context": 101,
+  "pct_military": 50.5,
+  "examples": [
+   [
+    "solinus4a.txt",
+    " tantum requirantur  maria quoque piscationibus inquietant marinasque testudines capere gaudent  quarum tanta est magnitudo  ut superficies earum domu"
+   ],
+   [
+    "vegetius2.txt",
+    "tifices cum omnibus ferramentis  qui ad obpugnandas hostium ciuitates testudines musculos arietes uineas  ut appellant  turres etiam ambulatorias faci"
+   ]
+  ]
+ },
+ {
+  "device": "aper",
+  "ordinary_sense": "boar",
+  "total_attestations": 430,
+  "in_military_context": 85,
+  "pct_military": 19.8,
+  "examples": [
+   [
+    "prop2.txt",
+    "  qui niueum quondam percussit adonem   uenantem idalio uertice durus aper   illis formosum iacuisse paludibus  illuc   diceris effusa tu  uenus"
+   ],
+   [
+    "varro.rr3.txt",
+    "quam  neque enim erat magnum id saeptum  quod nunc  ut habeant multos apros ac capreas  complura iugera maceriis concludunt  non tu  inquit mihi "
+   ]
+  ]
+ },
+ {
+  "device": "corvus",
+  "ordinary_sense": "raven",
+  "total_attestations": 324,
+  "in_military_context": 77,
+  "pct_military": 23.8,
+  "examples": [
+   [
+    "ampelius.txt",
+    "circumdedit  ualerius coruinus  qui  a gallo prouocatus cum pugnaret  coruus galeam eius insedit et hostem perturbauit  scipio aemilianus cum esse"
+   ],
+   [
+    "piccolomini.ep4.txt",
+    "m prestant impedimentum ad eterne uite consecutionem  rarusque est et coruo rarior albo  qui et fortunam simul et iter in celum sequi ualeat  sed"
+   ]
+  ]
+ },
+ {
+  "device": "cuniculus",
+  "ordinary_sense": "rabbit",
+  "total_attestations": 126,
+  "in_military_context": 76,
+  "pct_military": 60.3,
+  "examples": [
+   [
+    "vegetius2.txt",
+    "t etiam cunicularios haberent  qui ad morem bessorum ducto sub terris cuniculo murisque intra fundamenta perfossis inprouisi emergerent ad urbes hos"
+   ],
+   [
+    "pliny.nh2.txt",
+    "t  quod in totis notatur oppidis  minus quatiuntur crebris ad eluuiem cuniculis cauata  multoque sunt tutiora in isdem illis quae pendent  sicuti nea"
+   ]
+  ]
+ },
+ {
+  "device": "falx",
+  "ordinary_sense": "sickle / pruning hook",
+  "total_attestations": 259,
+  "in_military_context": 68,
+  "pct_military": 26.3,
+  "examples": [
+   [
+    "sidonius1.txt",
+    " campum stiua tremente proscindas aut prati floreas opes panda curuus falce populeris aut uineam palmite grauem cernuus rastris fossor inuertas  "
+   ],
+   [
+    "appvergcomp.txt",
+    "nscendat habendi   aduersum saeuis ultro caput hostibus offert   illi falce deus colitur non arte politus   ille colit lucos  illi panchaia tura "
+   ]
+  ]
+ },
+ {
+  "device": "scorpio",
+  "ordinary_sense": "scorpion",
+  "total_attestations": 135,
+  "in_military_context": 38,
+  "pct_military": 28.1,
+  "examples": [
+   [
+    "vitruvius9.txt",
+    "ueniens ad puncta librae aequinoctialis rursus reddit horas       per scorpionis uero spatia et sagittarii procliuius deprimens se foramen rediensque "
+   ],
+   [
+    "vitruvius1.txt",
+    "  aurelio et p  minidio et cn  cornelio ad apparationem balistarum et scorpionem reliquorumque tormentorum refectionem fui praesto et cum eis commoda "
+   ]
+  ]
+ },
+ {
+  "device": "musculus",
+  "ordinary_sense": "mussel / little mouse / muscle",
+  "total_attestations": 53,
+  "in_military_context": 30,
+  "pct_military": 56.6,
+  "examples": [
+   [
+    "vegetius2.txt",
+    " omnibus ferramentis  qui ad obpugnandas hostium ciuitates testudines musculos arietes uineas  ut appellant  turres etiam ambulatorias faciunt  ueru"
+   ],
+   [
+    "solinus3.txt",
+    "atu habent palmas  odorem muris uel maxime fugiunt  pabula etiam  qu  musculis contacta sunt  recusant  si quis casu cham leontem deuorauerit  uerme"
+   ]
+  ]
+ },
+ {
+  "device": "grus",
+  "ordinary_sense": "crane (bird)",
+  "total_attestations": 76,
+  "in_military_context": 28,
+  "pct_military": 36.8,
+  "examples": [
+   [
+    "rutilius.txt",
+    "credere maluerim pygmaeae damna cohortis   et coniuratos in sua bella grues   haud procul hinc petitur signatus ab hercule portus    uergentem se"
+   ],
+   [
+    "pliny.nh1.txt",
+    " de commageno       chenalopeces  chenerotes  tetraones  otides       grues       de ciconiis          de palmipede reliquo genere       de olori"
+   ]
+  ]
+ },
+ {
+  "device": "delphinus",
+  "ordinary_sense": "dolphin",
+  "total_attestations": 85,
+  "in_military_context": 26,
+  "pct_military": 30.6,
+  "examples": [
+   [
+    "pliny.ep9.txt",
+    "   hoc certamine puer quidam audentior ceteris in ulteriora tendebat  delphinus occurrit  et nunc praecedere puerum nunc sequi nunc circumire  postre"
+   ],
+   [
+    "pliny.ep9.txt",
+    "t si quid est mari simile  natant pueri  inter hos ille  sed cautius  delphinus rursus ad tempus  rursus ad puerum  fugit ille cum ceteris  delphinus"
+   ]
+  ]
+ },
+ {
+  "device": "onager",
+  "ordinary_sense": "wild ass",
+  "total_attestations": 57,
+  "in_military_context": 24,
+  "pct_military": 42.1,
+  "examples": [
+   [
+    "vegetius2.txt",
+    "ossae  contexitur uallum aquaeductus  item ligna uel stramina arietes onagri ballistae ceteraque genera tormentorum ne deessent aliquando  procura"
+   ],
+   [
+    "vegetius2.txt",
+    "m legione quinquaginta quinque carroballistae esse solent  item decem onagri  hoc est singuli per singulas cohortes  in carpentis bubus portantur "
+   ]
+  ]
+ }
+]

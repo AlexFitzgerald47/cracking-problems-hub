@@ -1,0 +1,530 @@
+{
+ "summary": {
+  "frac_less_date_loaded": 0.9361702127659575,
+  "frac_more_author_discriminating": 0.10638297872340426,
+  "frac_both": 0.10638297872340426
+ },
+ "groups": [
+  {
+   "key": "again",
+   "members": [
+    "again",
+    "againe"
+   ],
+   "merged_r2_date": 0.012063031560936244,
+   "merged_F_author": 9.41447262993315,
+   "component_r2_date_max": 0.375147015970416,
+   "component_F_author_max": 14.151341411846547
+  },
+  {
+   "key": "be",
+   "members": [
+    "be",
+    "bee"
+   ],
+   "merged_r2_date": 0.013548772249580954,
+   "merged_F_author": 10.203827768539192,
+   "component_r2_date_max": 0.21880465536716343,
+   "component_F_author_max": 9.249485980659925
+  },
+  {
+   "key": "ben",
+   "members": [
+    "been",
+    "beene"
+   ],
+   "merged_r2_date": 0.12100286306318919,
+   "merged_F_author": 6.1650301719173255,
+   "component_r2_date_max": 0.43567030643032223,
+   "component_F_author_max": 12.962867299122788
+  },
+  {
+   "key": "di",
+   "members": [
+    "dye",
+    "die"
+   ],
+   "merged_r2_date": 0.01592745444398147,
+   "merged_F_author": 7.636338762644153,
+   "component_r2_date_max": 0.06626783963113392,
+   "component_F_author_max": 4.94390388254509
+  },
+  {
+   "key": "do",
+   "members": [
+    "do",
+    "doe"
+   ],
+   "merged_r2_date": 0.014411967267053849,
+   "merged_F_author": 8.692086007933122,
+   "component_r2_date_max": 0.28062745320633853,
+   "component_F_author_max": 11.220694262070914
+  },
+  {
+   "key": "don",
+   "members": [
+    "done",
+    "don"
+   ],
+   "merged_r2_date": 0.0473133788092589,
+   "merged_F_author": 1.4153797177098564,
+   "component_r2_date_max": 0.04359761203985635,
+   "component_F_author_max": 4.290348572141285
+  },
+  {
+   "key": "down",
+   "members": [
+    "down",
+    "downe"
+   ],
+   "merged_r2_date": 0.0009058370658308057,
+   "merged_F_author": 8.108056450747375,
+   "component_r2_date_max": 0.5747359323118548,
+   "component_F_author_max": 25.20771544182391
+  },
+  {
+   "key": "er",
+   "members": [
+    "ere",
+    "e're"
+   ],
+   "merged_r2_date": 0.0001542350749882404,
+   "merged_F_author": 4.789569777382803,
+   "component_r2_date_max": 0.23874402263922512,
+   "component_F_author_max": 9.114104341596754
+  },
+  {
+   "key": "ever",
+   "members": [
+    "ever",
+    "euer"
+   ],
+   "merged_r2_date": 0.009962301471092228,
+   "merged_F_author": 8.648681812811235,
+   "component_r2_date_max": 0.3575904531602271,
+   "component_F_author_max": 14.057513409799594
+  },
+  {
+   "key": "fair",
+   "members": [
+    "faire",
+    "fair"
+   ],
+   "merged_r2_date": 0.05879573867858068,
+   "merged_F_author": 6.217777515678072,
+   "component_r2_date_max": 0.4122905863114391,
+   "component_F_author_max": 13.873606695480195
+  },
+  {
+   "key": "fear",
+   "members": [
+    "fear",
+    "feare"
+   ],
+   "merged_r2_date": 0.009226551453270337,
+   "merged_F_author": 3.1457027430614333,
+   "component_r2_date_max": 0.4642048001385115,
+   "component_F_author_max": 13.759639200236911
+  },
+  {
+   "key": "find",
+   "members": [
+    "find",
+    "finde"
+   ],
+   "merged_r2_date": 0.11304862948636396,
+   "merged_F_author": 7.6550790287408095,
+   "component_r2_date_max": 0.35488437984319654,
+   "component_F_author_max": 9.109679479532042
+  },
+  {
+   "key": "giv",
+   "members": [
+    "give",
+    "giue"
+   ],
+   "merged_r2_date": 0.006138698826186451,
+   "merged_F_author": 2.593515714904244,
+   "component_r2_date_max": 0.45489757492291527,
+   "component_F_author_max": 16.26006867789298
+  },
+  {
+   "key": "go",
+   "members": [
+    "go",
+    "goe"
+   ],
+   "merged_r2_date": 0.01008892868970146,
+   "merged_F_author": 7.442619948464964,
+   "component_r2_date_max": 0.45701410469299797,
+   "component_F_author_max": 13.267732921118586
+  },
+  {
+   "key": "god",
+   "members": [
+    "good",
+    "god"
+   ],
+   "merged_r2_date": 0.2188437282333312,
+   "merged_F_author": 7.818114114239496,
+   "component_r2_date_max": 0.16697060117262408,
+   "component_F_author_max": 9.209199522394558
+  },
+  {
+   "key": "hav",
+   "members": [
+    "have",
+    "haue"
+   ],
+   "merged_r2_date": 0.011290987504662287,
+   "merged_F_author": 8.441956079521832,
+   "component_r2_date_max": 0.49688698361385764,
+   "component_F_author_max": 21.853460372798132
+  },
+  {
+   "key": "he",
+   "members": [
+    "he",
+    "hee"
+   ],
+   "merged_r2_date": 0.04709456614631735,
+   "merged_F_author": 6.859239718564974,
+   "component_r2_date_max": 0.19255575489525079,
+   "component_F_author_max": 6.13359361963801
+  },
+  {
+   "key": "hear",
+   "members": [
+    "hear",
+    "heare"
+   ],
+   "merged_r2_date": 0.06209757234361024,
+   "merged_F_author": 3.4676452932411332,
+   "component_r2_date_max": 0.6340545748424682,
+   "component_F_author_max": 24.090062008655273
+  },
+  {
+   "key": "heaven",
+   "members": [
+    "heaven",
+    "heauen"
+   ],
+   "merged_r2_date": 0.0014544558978253352,
+   "merged_F_author": 4.003736959477123,
+   "component_r2_date_max": 0.3062715750486261,
+   "component_F_author_max": 15.037997536865134
+  },
+  {
+   "key": "her",
+   "members": [
+    "her",
+    "here"
+   ],
+   "merged_r2_date": 0.038121647439947726,
+   "merged_F_author": 3.26421250931528,
+   "component_r2_date_max": 0.024387807361699987,
+   "component_F_author_max": 8.984515672485632
+  },
+  {
+   "key": "il",
+   "members": [
+    "ile",
+    "i'le",
+    "i'll",
+    "ill"
+   ],
+   "merged_r2_date": 0.0465521063965052,
+   "merged_F_author": 4.55896106039097,
+   "component_r2_date_max": 0.31090642896629184,
+   "component_F_author_max": 10.458081489449533
+  },
+  {
+   "key": "kep",
+   "members": [
+    "keep",
+    "keepe"
+   ],
+   "merged_r2_date": 0.05698750549538267,
+   "merged_F_author": 5.082277407035901,
+   "component_r2_date_max": 0.42819086852456,
+   "component_F_author_max": 11.524132931396135
+  },
+  {
+   "key": "leav",
+   "members": [
+    "leave",
+    "leaue"
+   ],
+   "merged_r2_date": 0.002250637714310555,
+   "merged_F_author": 3.3122365428466205,
+   "component_r2_date_max": 0.4254492298615483,
+   "component_F_author_max": 14.442449921790026
+  },
+  {
+   "key": "liv",
+   "members": [
+    "live",
+    "liue"
+   ],
+   "merged_r2_date": 0.00020259110112141876,
+   "merged_F_author": 4.510726231129959,
+   "component_r2_date_max": 0.39069570226668326,
+   "component_F_author_max": 13.664493848156797
+  },
+  {
+   "key": "lok",
+   "members": [
+    "look",
+    "looke"
+   ],
+   "merged_r2_date": 0.0017845806320764268,
+   "merged_F_author": 5.470606773579884,
+   "component_r2_date_max": 0.4328931351497237,
+   "component_F_author_max": 12.985453372670147
+  },
+  {
+   "key": "lov",
+   "members": [
+    "love",
+    "loue"
+   ],
+   "merged_r2_date": 0.0014173053861125107,
+   "merged_F_author": 5.392541205889916,
+   "component_r2_date_max": 0.3965728267672797,
+   "component_F_author_max": 15.781875553573597
+  },
+  {
+   "key": "mad",
+   "members": [
+    "made",
+    "mad"
+   ],
+   "merged_r2_date": 3.901116872384591e-05,
+   "merged_F_author": 2.969496393776885,
+   "component_r2_date_max": 0.008727694801001218,
+   "component_F_author_max": 3.876716501277407
+  },
+  {
+   "key": "me",
+   "members": [
+    "me",
+    "mee"
+   ],
+   "merged_r2_date": 0.040387127872209216,
+   "merged_F_author": 4.988042400197704,
+   "component_r2_date_max": 0.14065569178737136,
+   "component_F_author_max": 6.354645338469983
+  },
+  {
+   "key": "mean",
+   "members": [
+    "mean",
+    "meane"
+   ],
+   "merged_r2_date": 0.0002872325012390764,
+   "merged_F_author": 3.0199618760035714,
+   "component_r2_date_max": 0.4485694764201462,
+   "component_F_author_max": 14.219429166949963
+  },
+  {
+   "key": "never",
+   "members": [
+    "never",
+    "neuer"
+   ],
+   "merged_r2_date": 0.003121261173522516,
+   "merged_F_author": 5.745507347586307,
+   "component_r2_date_max": 0.4567065985136758,
+   "component_F_author_max": 17.847639353431262
+  },
+  {
+   "key": "of",
+   "members": [
+    "of",
+    "off"
+   ],
+   "merged_r2_date": 0.015051852148624256,
+   "merged_F_author": 6.902413282013947,
+   "component_r2_date_max": 0.05163688368380148,
+   "component_F_author_max": 7.95406538877641
+  },
+  {
+   "key": "on",
+   "members": [
+    "on",
+    "one"
+   ],
+   "merged_r2_date": 0.020173854840102368,
+   "merged_F_author": 6.109702341063507,
+   "component_r2_date_max": 0.02738210028316157,
+   "component_F_author_max": 9.012677086101494
+  },
+  {
+   "key": "own",
+   "members": [
+    "own",
+    "owne"
+   ],
+   "merged_r2_date": 0.008386298270827375,
+   "merged_F_author": 8.411047076709616,
+   "component_r2_date_max": 0.4012409093729994,
+   "component_F_author_max": 13.485464773387966
+  },
+  {
+   "key": "por",
+   "members": [
+    "poore",
+    "poor"
+   ],
+   "merged_r2_date": 0.004809907117787948,
+   "merged_F_author": 3.3047056696281514,
+   "component_r2_date_max": 0.4844058892173495,
+   "component_F_author_max": 12.446328739878238
+  },
+  {
+   "key": "self",
+   "members": [
+    "selfe",
+    "self"
+   ],
+   "merged_r2_date": 0.01628089207755201,
+   "merged_F_author": 5.555399089575199,
+   "component_r2_date_max": 0.5333146330461069,
+   "component_F_author_max": 17.397996477669825
+  },
+  {
+   "key": "sh",
+   "members": [
+    "she",
+    "shee"
+   ],
+   "merged_r2_date": 0.001557783648570621,
+   "merged_F_author": 2.665676548395155,
+   "component_r2_date_max": 0.13928774760995843,
+   "component_F_author_max": 4.162586646393009
+  },
+  {
+   "key": "son",
+   "members": [
+    "son",
+    "sonne"
+   ],
+   "merged_r2_date": 0.0011807952964721924,
+   "merged_F_author": 2.392414247770248,
+   "component_r2_date_max": 0.22066420993356484,
+   "component_F_author_max": 6.173584071454984
+  },
+  {
+   "key": "sovl",
+   "members": [
+    "soul",
+    "soule"
+   ],
+   "merged_r2_date": 0.040104187918414635,
+   "merged_F_author": 9.616942538451964,
+   "component_r2_date_max": 0.35645034840554723,
+   "component_F_author_max": 21.52715404087609
+  },
+  {
+   "key": "speak",
+   "members": [
+    "speak",
+    "speake"
+   ],
+   "merged_r2_date": 0.004680441505832467,
+   "merged_F_author": 4.415303476308963,
+   "component_r2_date_max": 0.47758047588795494,
+   "component_F_author_max": 16.833793301407923
+  },
+  {
+   "key": "th",
+   "members": [
+    "the",
+    "thee",
+    "th'"
+   ],
+   "merged_r2_date": 0.016940689481968252,
+   "merged_F_author": 6.397105466418199,
+   "component_r2_date_max": 0.15350908769624605,
+   "component_F_author_max": 6.923429641219679
+  },
+  {
+   "key": "think",
+   "members": [
+    "think",
+    "thinke"
+   ],
+   "merged_r2_date": 0.017231572048438837,
+   "merged_F_author": 6.101352697874396,
+   "component_r2_date_max": 0.4774928948291264,
+   "component_F_author_max": 16.725000192054956
+  },
+  {
+   "key": "tis",
+   "members": [
+    "'tis",
+    "tis"
+   ],
+   "merged_r2_date": 0.14619617106402816,
+   "merged_F_author": 20.81190868739313,
+   "component_r2_date_max": 0.37446309845564185,
+   "component_F_author_max": 12.46249114559989
+  },
+  {
+   "key": "to",
+   "members": [
+    "to",
+    "too"
+   ],
+   "merged_r2_date": 0.027441793241358647,
+   "merged_F_author": 9.550769902888328,
+   "component_r2_date_max": 0.07758825658437829,
+   "component_F_author_max": 15.041470529610752
+  },
+  {
+   "key": "vp",
+   "members": [
+    "up",
+    "vp"
+   ],
+   "merged_r2_date": 0.030984525449116562,
+   "merged_F_author": 8.365156811820096,
+   "component_r2_date_max": 0.40224768703834235,
+   "component_F_author_max": 18.242660750241818
+  },
+  {
+   "key": "vpon",
+   "members": [
+    "upon",
+    "vpon"
+   ],
+   "merged_r2_date": 0.00038936680075940533,
+   "merged_F_author": 11.38914436203266,
+   "component_r2_date_max": 0.42441662700778526,
+   "component_F_author_max": 18.56568300836653
+  },
+  {
+   "key": "vs",
+   "members": [
+    "us",
+    "vs",
+    "use"
+   ],
+   "merged_r2_date": 0.0021813682532693113,
+   "merged_F_author": 4.511722698716125,
+   "component_r2_date_max": 0.44286394180393074,
+   "component_F_author_max": 17.661810104117375
+  },
+  {
+   "key": "we",
+   "members": [
+    "we",
+    "wee"
+   ],
+   "merged_r2_date": 0.05313482283997284,
+   "merged_F_author": 4.468679252824572,
+   "component_r2_date_max": 0.13201753424606044,
+   "component_F_author_max": 4.267850126870992
+  }
+ ]
+}

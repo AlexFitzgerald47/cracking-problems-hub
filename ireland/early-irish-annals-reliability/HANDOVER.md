@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+Recovered the older offline eclipse-analysis engine plus its bootstrap and source records
+from `origin/claude/irish-problems-progress-o6q34y`. The package lives in `analysis/` and
+is retained for reproducibility; it does not supersede the current 2026-09-23 Iona-transition
+attempt or this folder's later cautions about witness dependence.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

@@ -1,0 +1,21 @@
+annotated 20 rows
+
+totality over Ireland, with how conspicuous it was:
+  0413-04-16  track +51.24 N -9.23 E  Sun  49.1 deg  high
+  0507-03-29  track +51.59 N -9.56 E  Sun  41.5 deg  high
+  0536-09-01  track +55.00 N -7.19 E  Sun  42.7 deg  high
+  0594-07-23  track +54.51 N -6.63 E  Sun  13.5 deg  moderate
+  0661-07-02  track +52.79 N -8.69 E  Sun   4.3 deg  low (near the horizon)
+  0664-05-01  track +55.25 N -6.99 E  Sun  22.7 deg  moderate
+  0698-12-08  track +54.39 N -8.14 E  Sun   8.6 deg  low (near the horizon)
+  0733-08-14  track +51.71 N -9.43 E  Sun  28.8 deg  high
+  0764-06-04  track +53.33 N -6.28 E  Sun  55.3 deg  high
+  0865-01-01  track +54.07 N -8.14 E  Sun  11.6 deg  low (near the horizon)
+  0878-10-29  track +54.46 N -6.53 E  Sun  19.3 deg  moderate
+  0934-04-16  track +52.21 N -6.87 E  Sun  21.9 deg  moderate
+  1006-05-29  track +53.47 N -10.41 E  Sun   1.4 deg  low (near the horizon)
+  1023-01-24  track +51.83 N -6.17 E  Sun  20.4 deg  moderate
+  1039-08-22  track +51.21 N -9.89 E  Sun  45.9 deg  high
+  1140-03-20  track +51.04 N -9.10 E  Sun  35.2 deg  high
+  1180-01-28  track +52.66 N -7.37 E  Sun   4.5 deg  low (near the horizon)
+  1191-06-23  track +54.05 N -6.47 E  Sun  55.2 deg  high

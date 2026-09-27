@@ -1,0 +1,10 @@
+master_events.csv: 1031 rows
+
+  diagnostic                 all    solar   lunar
+  totality-in-ireland         18       18       0
+  borrowed-if-recorded       150       17     133
+  local-if-recorded           74       10      64
+  blind                      789      143     646
+
+  decisive one way or another: 242 of 1031 (23%)
+  blind: 789 (77%) -- a record of any of these settles nothing

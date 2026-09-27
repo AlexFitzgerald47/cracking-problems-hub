@@ -1,0 +1,23 @@
+group                              feat    lag7 obs /pairs    null  ratio       Z        p   best lag
+ZODIAC all (discovery set)         last2         19    118     8.6   2.21   +3.96  0.00030          7
+ZODIAC all (discovery set)         penult        28    118    16.5   1.69   +3.45  0.00100          7
+ZODIAC early Psc-Cnc               last2         11     46     4.7   2.32   +3.25  0.00312          7
+ZODIAC early Psc-Cnc               penult        15     46     9.9   1.51   +2.14  0.03122          6
+ZODIAC late Leo-Sgr                last2          8     72     3.9   2.07   +2.28  0.03110          7
+ZODIAC late Leo-Sgr                penult        13     72     6.6   1.98   +2.74  0.00967          7
+ZODIAC big rings n>=14             last2         11     73     5.0   2.20   +2.94  0.00687          7
+ZODIAC big rings n>=14             penult        15     73     8.5   1.77   +2.59  0.01207          7
+ZODIAC small rings n<14            last2          8     45     3.6   2.21   +2.61  0.01680          7
+ZODIAC small rings n<14            penult        13     45     8.0   1.62   +2.32  0.02275          7
+ZODIAC inner rings S<=1            last2         12     78     6.0   1.99   +2.73  0.01045          7
+ZODIAC inner rings S<=1            penult        16     78    10.6   1.50   +2.05  0.03607          6
+ZODIAC outer rings S>=2            last2          7     40     2.6   2.70   +3.00  0.00890          7
+ZODIAC outer rings S>=2            penult        12     40     5.9   2.05   +3.01  0.00557          7
+CONTROL herbal/pharma L-labels     last2          9    118     7.3   1.23   +0.68  0.30622          5
+CONTROL herbal/pharma L-labels     penult        18    118    21.7   0.83   -1.12  0.90318          5
+CONTROL Q20 star-para 1st words    last2          2     27     2.1   0.97   -0.04  0.63088          4
+CONTROL Q20 star-para 1st words    penult         2     27     3.1   0.64   -0.71  0.84780          4
+CONTROL running text (P loci)      last2         10    118    11.6   0.86   -0.55  0.76271          8
+CONTROL running text (P loci)      penult        22    118    19.7   1.12   +0.63  0.30387          3
+CONTROL zodiac RING TEXT           last2         14    118    11.3   1.24   +0.90  0.22574          5
+CONTROL zodiac RING TEXT           penult        23    118    22.0   1.04   +0.25  0.44036          5

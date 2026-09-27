@@ -1,0 +1,25 @@
+E5  pre/post split on 1000-token blocks, text-level permutation null
+
+  50 MFW
+    Historia Augusta       blocks= 95 (21| 9 texts)  sep +0.2177  null +0.040+/-0.105  z +1.69  p 0.0470 <- at the lacuna
+    Suetonius              blocks= 63 ( 6| 6 texts)  sep -0.4396  null -0.043+/-0.075  z -5.26  p 1.0000 <- at Galba
+    Nepos                  blocks= 15 ( 4| 6 texts)  sep -0.5187  null +0.056+/-0.244  z -2.36  p 0.9894 <- at midpoint
+    Suetonius vs Nepos     blocks= 78              sep +1.8874  null +0.082+/-0.151  z +11.92  p 0.0002  <- two real authors
+
+  100 MFW
+    Historia Augusta       blocks= 95 (21| 9 texts)  sep +0.4307  null +0.044+/-0.100  z +3.86  p 0.0006 <- at the lacuna
+    Suetonius              blocks= 63 ( 6| 6 texts)  sep -0.3709  null -0.026+/-0.078  z -4.39  p 1.0000 <- at Galba
+    Nepos                  blocks= 15 ( 4| 6 texts)  sep -0.4335  null +0.026+/-0.262  z -1.76  p 0.9476 <- at midpoint
+    Suetonius vs Nepos     blocks= 78              sep +1.8953  null +0.092+/-0.160  z +11.25  p 0.0002  <- two real authors
+
+  200 MFW
+    Historia Augusta       blocks= 95 (21| 9 texts)  sep +0.5766  null +0.041+/-0.111  z +4.84  p 0.0002 <- at the lacuna
+    Suetonius              blocks= 63 ( 6| 6 texts)  sep -0.2154  null -0.016+/-0.088  z -2.26  p 0.9816 <- at Galba
+    Nepos                  blocks= 15 ( 4| 6 texts)  sep -0.4156  null +0.067+/-0.221  z -2.18  p 0.9778 <- at midpoint
+    Suetonius vs Nepos     blocks= 78              sep +1.8260  null +0.091+/-0.150  z +11.56  p 0.0002  <- two real authors
+
+  400 MFW
+    Historia Augusta       blocks= 95 (21| 9 texts)  sep +0.5380  null +0.031+/-0.124  z +4.10  p 0.0004 <- at the lacuna
+    Suetonius              blocks= 63 ( 6| 6 texts)  sep -0.2773  null -0.030+/-0.102  z -2.42  p 0.9910 <- at Galba
+    Nepos                  blocks= 15 ( 4| 6 texts)  sep -0.1794  null +0.151+/-0.207  z -1.60  p 0.9632 <- at midpoint
+    Suetonius vs Nepos     blocks= 78              sep +1.8047  null +0.089+/-0.152  z +11.29  p 0.0002  <- two real authors

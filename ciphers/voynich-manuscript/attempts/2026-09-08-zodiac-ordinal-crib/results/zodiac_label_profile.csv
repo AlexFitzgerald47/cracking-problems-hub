@@ -1,0 +1,13 @@
+sign,folio,n,distinct_full,distinct_first2,distinct_first3,distinct_last2,distinct_last3,distinct_first1last1
+Pisces,f70v2,29,29,7,14,14,24,12
+Aries-1,f70v1,15,15,4,10,9,15,6
+Aries-2,f71r,15,15,3,6,8,13,6
+Taurus-1,f71v,15,15,7,10,8,11,7
+Taurus-2,f72r1,15,15,8,11,10,13,8
+Gemini,f72r2,29,27,7,12,8,20,8
+Cancer,f72r3,30,30,13,24,15,22,11
+Leo,f72v3,30,30,14,22,19,25,15
+Virgo,f72v2,30,30,14,17,20,25,14
+Libra,f72v1,30,30,11,18,16,21,10
+Scorpio,f73r,30,29,11,19,16,27,13
+Sagittarius,f73v,30,27,14,17,18,22,15

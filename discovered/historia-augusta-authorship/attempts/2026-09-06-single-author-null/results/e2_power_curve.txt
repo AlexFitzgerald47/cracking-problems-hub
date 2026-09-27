@@ -1,0 +1,25 @@
+E2  nearest-neighbour Delta attribution of known Latin authors
+    features: 200 MFW culled from the control pool
+
+    chunk   | chunk-LOO (same work allowed) | work-LOO (same work held out)
+    tokens  |      n       acc      null |      n       acc      null
+    1000    |    231     0.991     0.266 |    176     0.960     0.266
+    1500    |    149     0.993     0.275 |    113     1.000     0.275
+    2000    |    103     1.000     0.285 |     76     1.000     0.286
+    3000    |     64     1.000     0.301 |     47     1.000     0.310
+    5000    |     33     1.000     0.350 |     23     1.000     0.350
+    authors (each with >=2 separate works): Caesar, Sallust, Tacitus, Nepos, Suetonius
+
+    genre- and period-matched pair, work-LOO:
+    tokens       n       acc      null
+    1000        93     1.000     0.563
+    1500        58     1.000     0.593
+    2000        35     1.000     0.644
+    3000        20     1.000     0.807
+    5000         7     1.000     1.000
+    (Suetonius vs Nepos: both collections of short lives, but two
+     centuries apart, so this is still an upper bound on what Delta
+     could do between two contemporaries inside one collection.)
+
+    HA vita lengths: median 2835, quartiles 2252/4898, range 1018-10693
+    vitae under 3,000 tokens: 16 of 30
