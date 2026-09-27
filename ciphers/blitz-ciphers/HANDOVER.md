@@ -4,6 +4,152 @@
 
 ---
 
+## 2026-09-27 – first substantive session: a measured structure deficit, replicated on a holdout
+
+Full write-up, code and data: `attempts/2026-09-27-authenticity-internal-nulls/RESULTS.md`.
+
+### Compact frontier for the next session
+
+- **State:** reasoning-ready for one specific test (the pairing test, below); **evidence-blocked**
+  on everything else, and the block is now precisely named.
+- **Established.** Against a within-line unigram-shuffle null, Blitz pages 7–8 carry real
+  sub-unigram structure (p7 bigram-IC z = **+5.84**, n = 470, p = 5e-5; pooled **+6.81**, n = 629)
+  but **far less than genuine substitution ciphertext of the same length**: **0 of 402**
+  length-matched Copiale and Borg blocks at n = 470 fall as low, **0 of 302** at n = 629, and the
+  test has **power 1.000** at that length. **Replicated on a frozen holdout** — Pelling's original
+  2011-key transcription of *other* pages, z = **+4.94**, again 0/402 — with the holdout's known
+  glyph-merge bias pushing the other way.
+- **Conditional.** The innocent explanation is priced, not excluded: ~**14–25 % of glyphs
+  mistranscribed** (random-substitution model), or the alphabet **doubled throughout**
+  (over-split model; no partial rate reaches the Blitz value). Pelling states he deliberately
+  over-split. Four non-hoax cipher explanations also survive: heavy nulls, polyalphabetic /
+  cycling homophones, a non-prose plaintext (list, table, numbers), and plain mistranscription.
+- **Unresolved / exploratory.** Pages 7 and 8 do not share a symbol distribution (chi² homogeneity
+  z = **+8.29**, 0 of 540 genuine comparisons as high) — but Pelling records at least two hands in
+  the corpus, so this may be scribes rather than systems.
+- **Promising next move:** the **pairing test** (experiment 1 below). It is the falsifiable
+  consequence of the only surviving innocent explanation, it needs no new evidence, and either
+  outcome is publishable here.
+- **Decisive uncertainty:** whether Pelling's transcription is right. **There is exactly one
+  transcription of these pages in existence** and it has never been independently replicated.
+- **Missing evidence and reopening condition:** an independent second transcription of the eight
+  released images (all URLs in `attempts/.../RESULTS.md` §1 and in the 2026-09-27 PROGRESS entry).
+  That single artefact would settle the fork. Materials analysis would settle the whole problem and
+  remains unattempted.
+- **Assumptions carried by downstream claims:** every number depends on Pelling's glyph decisions.
+
+### Session provenance
+
+Starting revision `accc499`. Role cracker; Claude Opus 5 on Claude Code (cloud). Tool limits:
+`github.com` HTML and the GitHub API are blocked from this environment (403) while
+`raw.githubusercontent.com`, `ciphermysteries.com` and `cipherfoundation.org` are not — the
+comparanda were fetched manifest-first, then raw. No material user steering. Trial ID: none.
+Cost/elapsed: unknown.
+
+### Evidence receipt
+
+- **Changed.** First analysis of any kind in this folder. Added a frozen design, a frozen holdout
+  prediction, the primary and holdout transcriptions, an audited 195,000-token genuine comparandum
+  corpus, eight scripts and all outputs.
+- **Evidence.** Blitz p7 +5.84 / pooled +6.81 / holdout +4.94 bigram-IC z against genuine
+  length-matched floors of +6.42 (copiale@470), +7.33 (borg@470), +10.73 (copiale@629),
+  +8.02 (borg@629); power 1.000 at n ≥ 470; ε ≈ 0.14–0.25 or φ = 1.0 to explain innocently.
+- **Still conditional.** Single-transcription dependence; five live explanations, only one of
+  which is fabrication.
+- **Next.** The pairing test, then an independent re-transcription.
+
+### What worked
+
+1. **The within-line shuffle null.** Holding each line's multiset fixed sidesteps the whole
+   argument about whether the Blitz frequency distribution is odd. Recommended for any unknown
+   script here.
+2. **Length-matched calibration instead of raw z.** A shuffle z grows with n, so "z = +5.8" alone
+   is meaningless. Cutting Copiale and Borg into non-overlapping blocks of *exactly* the target's
+   token count turns it into a percentile and, at the same cost, produces the power curve.
+3. **`cipher_benchmark` as a comparandum source.** 101 Copiale pages + 397 Borg pages with global
+   symbol maps, both solved and verified, one `curl` each. `src/fetch_comparanda.sh` rebuilds it.
+   Reusable by every cipher folder on this board.
+4. **Auditing the inherited transcription first.** The benchmark copy that the previous handover
+   routed this session to is byte-identical to Pelling's blog text — a mirror, not a second
+   reading. Ten minutes, and it changed how every result had to be stated.
+
+### What failed and why
+
+- **Frozen prediction 3a was refuted with its direction backwards.** I predicted monoalphabetic
+  Latin (Borg) would show an *excess* of adjacent identical symbols; it shows z = **-47** over the
+  whole document. Natural languages avoid adjacent identical letters far below the rate Σpᵢ²
+  implied by their own frequencies, so a doublet **deficit is a natural-language signature**. Do
+  not reach for "hand-faked sequences avoid repeats" as a hoax detector on ciphertext.
+- **The doublet anomaly did not replicate.** Pages 7–8 look un-deficient (p7 z = -0.42, 0/151
+  copiale@470) but the holdout is at -2.53, squarely inside the genuine range. Dropped.
+- **Page 8 alone decides nothing.** At 159 tokens the bigram test has power 0.885–0.982 but its
+  genuine reference spans z = -0.8 to +18, so Blitz p8's +2.42 is unremarkable. Do not run a
+  single-page test on a page this short.
+- **Borg cannot supply (470, 159) page pairs** — its pages are ~300 tokens. The length-matched
+  homogeneity reference is Copiale only; Borg was run at (250, 159) as a second, non-matched check.
+
+### Recommended next experiments
+
+1. **The pairing test — do it first; it is cheap, decisive and needs no new evidence.** The only
+   surviving innocent explanation with a falsifiable consequence is wholesale over-splitting: the
+   over-split model reaches the Blitz value *only* at φ = 1.0, which doubles the alphabet. So if
+   over-splitting is the answer, page 7's **53 codes are a doubled rendering of ~26 true glyphs**
+   and must pair into 26 contextually indistinguishable pairs. Test: cluster codes by left/right
+   context vectors over the pooled 629 tokens, and ask whether a 26-cluster solution fits
+   materially better than it does for a *genuinely* over-split Copiale block (φ = 1.0, where the
+   true pairing is known and recoverable) and than for an *un*-split one. **Budget the search
+   freedom before you start** — 53 codes admit astronomically many pairings, so the statistic must
+   be calibrated on the two known-answer controls, not read off Blitz alone.
+   `discovered/short-cipher-validation-bound/` applies.
+2. **An independent second transcription of pages 7 and 8.** The single highest-value artefact
+   this problem can acquire, and the one thing that resolves the fork. The images are public:
+   `ciphermysteries.com/wp-content/uploads/sites/6/2013/12/15491625601_57c6aec33d_o.jpg` (page 7,
+   read it rotated 180°) and `.../15494781095_c5394506f1_o.jpg` (page 8), with clean-named mirrors
+   at `cipherfoundation.org/wp-content/uploads/sites/4/2015/08/blitz-ciphers-page-{7,8}.jpg`. Do it
+   with a documented, versioned sign inventory and explicit ambiguity branching, **blind to
+   Pelling's codes**, then re-run `src/test23_structure.py`. If the deficit survives a second
+   reading, explanation (1) in RESULTS §7 dies and the problem narrows to nulls / polyalphabetic /
+   non-prose / fabrication.
+3. **The nulls hypothesis, tested rather than asserted.** Pelling's 2013 post is about null
+   detection here. Insert random nulls into Copiale at rate ν and find the ν that reproduces
+   z ≈ +6; then check whether that ν is consistent with the observed type/token ratio and with
+   Pelling's contact tables. This is the same pricing exercise as §6 and the machinery is written.
+4. **Transcribe the remaining six released pages.** Everything above rests on ~1,100 tokens. Pages
+   1–6 include the geometric-diagram and table pages, which will *not* be prose and should be
+   analysed separately, but even 2,000 more tokens would let the @629 test run several times over.
+5. **Do not** attack decryption. The authenticity question is not settled and the corpus is far
+   below any threshold at which a decipherment claim could be validated.
+
+### New leads discovered
+
+- **The key-order paragraph.** Paragraph 3 of the 2011-key transcription reads `ABCDEFGHIJKL…`
+  then `PQR…STUVWXYZ` then `…a b c d…`: its glyph sequence *is* the order of Pelling's key. Either
+  it is the document's own glyph table (Tim T's "matrix page", and Pelling built his key by reading
+  it off in order) or it is an artifact. Either way it must be excluded from every structural
+  statistic, and if it is the table page it is a codicological fact worth chasing: **a cipher
+  document that contains its own alphabet in canonical order**.
+- **Two hands.** Pelling records "a larger, bolder presentation hand and a small, finer annotation
+  hand". Holdout paragraphs P10–P11 have mean line length 25–28 against 6–19 for the rest and a
+  different character mix — very likely the annotation hand. Future work should block on hand.
+- **AZdecrypt's bundled Blitz files are not currently reachable**: `zodiackillersite.com` serves a
+  15-byte stub, and `sites.google.com/site/largeprimenumbers/` is behind a Google login. The
+  `doranchak/azdecrypt` README and Readme.txt contain no occurrence of "blitz". If a future session
+  needs them, that is the access problem to solve.
+
+### Open questions
+
+Is page 8 the same system as page 7, or a different hand, or a different kind of page? Is the
+plaintext prose at all? Has anyone ever attempted a second transcription? Would the owner permit
+paper/ink dating — the one test that ends the argument?
+
+### Files added
+
+`attempts/2026-09-27-authenticity-internal-nulls/` — `FREEZE.md`, `FREEZE_HOLDOUT.md`,
+`RESULTS.md`, `data/` (p7, p8, holdout, comparanda digests), `src/` (8 scripts + fetch), `out/`
+(6 JSON result files).
+
+---
+
 ## 2026-09-27 – public page 7/8 transcriptions located (additive)
 
 Before creating a new sign inventory, audit the existing records in
