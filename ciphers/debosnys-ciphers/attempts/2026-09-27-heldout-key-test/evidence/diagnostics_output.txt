@@ -1,0 +1,45 @@
+== within-glyph vs across-whitespace, S1, TCURL=NU ==
+  S1 within: pairs=107 violations= 1 null median= 28.0 q05= 5 p=0.0140
+     commonest pairs: [(('X', 'DOT'), 20), (('O', 'Z'), 10), (('Z', 'DOT'), 10), (('N', 'O'), 10), (('N', 'U'), 10), (('Z', 'O'), 10), (('N', 'X'), 5), (('B2', 'X'), 5)]
+  S1 across: pairs= 47 violations= 6 null median= 12.0 q05= 1 p=0.2643
+     commonest pairs: [(('DOT', 'X'), 7), (('O', 'N'), 7), (('DOT', 'N'), 6), (('X', 'N'), 5), (('O', 'X'), 5), (('X', 'X'), 3), (('DOT', 'O'), 3), (('O', 'O'), 2)]
+== within-glyph vs across-whitespace, S2, TCURL=NU ==
+  S2 within: pairs=107 violations= 3 null median= 28.0 q05= 5 p=0.0348
+     commonest pairs: [(('DOT', 'X'), 20), (('O', 'Z'), 10), (('Z', 'DOT'), 10), (('N', 'O'), 10), (('N', 'U'), 10), (('Z', 'O'), 10), (('N', 'X'), 5), (('B2', 'X'), 5)]
+  S2 across: pairs= 45 violations= 4 null median= 11.0 q05= 2 p=0.1552
+     commonest pairs: [(('X', 'N'), 8), (('O', 'N'), 7), (('X', 'DOT'), 6), (('DOT', 'N'), 4), (('O', 'O'), 2), (('DOT', 'DOT'), 2), (('O', 'B2'), 2), (('O', 'X'), 2)]
+
+== every violation, S1 primary ==
+  L 1 across X->N  = EC|D
+  L 5 across X->N  = EC|D
+  L 9 across X->N  = EC|D
+  L10 across X->N  = EC|D
+  L10 across X->C2  = EC|H
+  L15 within N->Z  = D|N
+  L15 across X->N  = EC|D
+
+== every violation, S2 ==
+  L 1 across DOT->N  = EC|D
+  L 5 across DOT->N  = EC|D
+  L 6 across DOT->N  = EC|D
+  L11 within DOT->Z  = EC|N
+  L11 within DOT->Z  = EC|N
+  L15 within N->Z  = D|N
+  L16 across DOT->N  = EC|D
+
+== glyph-position profile of each key sign (S1) ==
+  C2      type=O  {'first': 4}
+  B2      type=RO {'first': 8, 'last': 7, 'mid': 2}
+  X       type=RO {'last': 18, 'alone': 3, 'first': 26, 'mid': 2}
+  DOT     type=R  {'last': 34, 'first': 2, 'mid': 4}
+  N       type=O  {'first': 31}
+  U       type=RO {'last': 11, 'first': 2}
+  O       type=R  {'first': 24, 'last': 44, 'mid': 12}
+  Z       type=O  {'mid': 26}
+  O2RNO   type=O  {}
+  CROSSB  type=R  {'alone': 2}
+== T4 on pairs NOT already present in the fitted signature line (exploratory) ==
+ [V1_all_dots]  S1: all=162 inherited=71 new=91 violations(new)=7 null median=25.0 q05=5 p=0.1024
+ [V2_eye]  S1: all=154 inherited=65 new=89 violations(new)=7 null median=24.0 q05=4 p=0.1090
+ [V1_all_dots]  S2: all=162 inherited=67 new=95 violations(new)=7 null median=26.0 q05=5 p=0.0983
+ [V2_eye]  S2: all=152 inherited=62 new=90 violations(new)=7 null median=25.0 q05=5 p=0.0983

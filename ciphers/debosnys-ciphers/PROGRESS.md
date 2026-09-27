@@ -4,6 +4,197 @@
 
 ---
 
+## 2026-09-27 (later) – Claude Code cloud session / evidence-acquisition plan, parked
+
+**What was attempted:** established where the missing evidence lives, and wrote it up as a work
+order (`evidence-acquisition.md`). Nothing was sent or requested; the user asked for it to be
+held for a future session.
+
+**Findings, verified from sources cited in the work order:**
+
+- **The originals** are at the Brewster Memorial Library of the Essex County Historical Society
+  (Adirondack History Museum, Elizabethtown NY). They came via the granddaughter of the visitor
+  Debosnys entrusted them to, with more material acquired as late as 1991.
+- **No inventory of those holdings is published.** Whether unpublished cipher pages exist is
+  unknown, and it is the highest-value question to put to the museum.
+- **Matthew Brown's 2021 plagiarism study lists the concrete sources of Debosnys's clear
+  writings:**
+  - Moore;
+  - Stoddart;
+  - Chivers;
+  - Colesworthy;
+  - Fordyce;
+  - Virgil and the Vulgate;
+  - *Peterson's Magazine* 1879;
+  - the NYT of February 1882;
+  - Julian Hawthorne's "A Rebel" (July 1882).
+
+  That is his jail reading list, and the shelf to sweep for the cipher poem's copied source.
+  Several of these (*Peterson's*, Chivers, Colesworthy, 1882–83 newspaper verse) have never
+  been searched against the poem.
+- **The two local 1882–83 papers are digitized** on NYS Historic Newspapers. The portal blocked
+  automated search from this environment.
+
+**Receipt.**
+- **Changed:** work order added; state set to evidence-blocked and parked.
+- **Evidence:** `evidence-acquisition.md`.
+- **Next:** with the user's go-ahead, send the museum request. Independently of that, a
+  session may run the frozen source sweep.
+
+---
+
+## 2026-09-27 – Claude Code cloud session / held-out test: the shared signature key is retired
+
+### What was attempted
+
+1. Stated the key under test before any data was opened (entry below). Reproduced
+   57 → 4 → 2 → Branch B and XP → /kos/ exactly.
+2. Audited `dbourdeau/cyphersolver` `targets/debosnys/` @ `648309e` as a claim source.
+   - Licence and provenance first.
+   - Then this session's derivation line, which cyphersolver never transcribed.
+   - Glyph identities in held-out passages only after the freeze.
+3. Froze predictions in `attempts/2026-09-27-heldout-key-test/FREEZE.md` (commit `fa52442`)
+   before opening any held-out transcription list or scan region.
+4. Checked all 20 poem lines against the scans, token by token, and ran the frozen tests T1–T8.
+   The branches were S1/S2 (dot order) × three dot/tick variants × `TCURL` opaque or `<N U>` ×
+   Romance or Greek × punctuation. The null was exact over all 4,200 typings, with a matched
+   best-of-2 budget.
+
+### Results / findings (failures first)
+
+1. **T1 failed under both conventions.**
+   - The signature's third glyph `NU` (the key's D+EB) is the poem's `TCURL`: NCC rank-sum
+     p = 0.0027 on a blot-free crop. The instrument was validated (within-class mean rank
+     5.3/24) and passed specificity controls. The first, blot-contaminated run gave
+     p = 0.49–0.70 and is reported.
+   - `TCURL` ends lines 1, 2, 17 and 18, so under the key they end on a dangling onset
+     (*-deb*).
+   - The 09-06 "N.N codepoint" exemption contradicts the fit. As a rescue it makes things
+     worse: `DOT = OSD`, and lines 3–4 then dangle as well.
+2. **T5 failed: Branch B is falsified.**
+   - It implies ≥ 15.8% of syllables rime in /os/. The pinned ceiling is 4.3% (Camões); the
+     excess is 3.7-fold.
+   - The only rescue declares the circle inside `%` a different sign from Sektu's N-glyph
+     circle. That contradicts the transcription the key was fitted to, and it still only
+     reaches the ceiling.
+3. **My own frozen premise for T7 was wrong.** French does rhyme on /-kɔs/ (*Écosse/précoce*).
+   T7 did not fire.
+4. **T2 passed**, at visual-identity level only. Lines 3–4 end in X with a round dot, the
+   geometry of the signature's mark.
+5. **T4 passed its frozen threshold, but the pass is inherited.**
+   - Frozen result: p = 0.030 primary; 0.018–0.050 across variants; 0.029–0.045 best-of-2.
+   - Exploratory: within-glyph p = 0.014, about half of it recurrences of the fitted
+     composites. Across whitespace, the model's distinctive claim, p = 0.26 (S1) and 0.16
+     (S2). Conditioned on the fit (pairs absent from the signature), p ≈ 0.10.
+6. **T8 found no signal.** Decoded runs are `OSNOS`-type repeats: 11 lexicon hits against a
+   null median of 6, p = 0.15. No plaintext; no solve-claim.
+7. **The derivation's DOT is not separately visible on the only scan.** Without it the fit has
+   no solution. Its position matches a poem `XD` dot, so it is probably real. Read top-first,
+   the dot gives `DOT = EC`, `X = OS`.
+8. **cyphersolver.**
+   - Images: byte-identical to the public-domain Commons scans; all 149 crops placed.
+   - The poem transcription is accurate at glyph level.
+   - Its "identical in 9 of 10 couplets" is **8 of 10**: line 10's ♀ carries a dot.
+   - `XD` merges dots and ticks.
+   - 180 of N9's 268 codes are undefined.
+   - `516` versus the Hub's `5/6`: neither reading is unambiguous. The Hub's 09-05
+     "unambiguously 5/6" overstated the scan.
+
+### Failures and dead ends
+
+- The first identity run failed because the crop included the background blot. It is kept
+  in the record.
+- A regenerated dot/tick measurement briefly picked a stray pixel over the dot. The fix
+  (pick by ink mass) is committed. The numbers match the ones the variant used.
+- **Corrected forward:** the 09-06 and 09-08 notes treated N=D and Branch B as independent
+  confirmations. They are one rule applied twice. The 09-08 Moore-remainder rejection rested
+  on this key and now carries no weight.
+
+### Artefacts produced
+
+`attempts/2026-09-27-heldout-key-test/`: `FREEZE.md`, `RESULTS.md`, `src/` (frozen rules,
+scan-verified poem, tests, diagnostics, identity instrument, frequency ceilings), `evidence/`
+(comparison sheets, run outputs).
+
+### Receipt
+
+- Starting revision: `c6b6027`. Platform: Claude Code cloud session. Trial ID: none.
+  Cost: unknown.
+- **Changed:** key retired. **Evidence:** RESULTS.md.
+- **Still conditional:** the crib itself; the language.
+- **Next:** freeze the whole-glyph reading against its frequency ceilings, since
+  `XP=COS` already looks 30× too common; seek a better scan of #2b.
+
+---
+
+## 2026-09-27 – Claude Code cloud session / pre-data statement of the key under test
+
+*Written and committed before this session opened any cipher image, crop or transcription. Its
+purpose is to fix, in this file, exactly what is about to be tested. No new evidence is in it.*
+
+**Gap closed first.** This log stopped at 2026-09-05. The 09-06 transition-key work
+(`analysis/2026-09-06-*.md`) and the 09-08 outward application
+(`analysis/2026-09-08-xp-outward-crack.md`, `analysis/xp_outward_test.py`) never reached it.
+They are summarised here.
+
+**The key.** Derived from one object: the six-glyph line Sektu (2017) calls signature-like,
+`C2B2 XP NU ZOO OM2N SHI`, decomposed as `<C2 B2> <X DOT> <N U> <O Z O> <O2RNO> <CROSSB>`,
+read against the plaintext signature `Hênêcos Debosnostys` at the foot of #4b.
+Syllabified `HE|NE|COS|DE|BOS|NOS|TYS` and re-cut by Sektu's rime-of-one + onset-of-next rule
+into eight shifted units `H|EN|EC|OSD|EB|OSN|OST|YS`, it gives:
+
+| sign | value | type in the transition model | branch |
+|---|---|---|---|
+| `C2` | H | initial onset | shared |
+| `B2` | EN | rime E + onset N | shared |
+| `X` | EC | rime E + onset C | shared |
+| `DOT` | OS | rime | shared |
+| `N` | D | onset | shared |
+| `U` | EB | rime E + onset B | shared |
+| `CROSSB` | YS (TYA reading: YA) | final rime | shared |
+| `O` | O / **OS** | nucleus / **rime** | A / **B** |
+| `Z` | SN / **N** | coda+onset / **onset** | A / **B** |
+| `O2RNO` | ST / **T** | coda+onset / **onset** | A / **B** |
+
+Branch A was preferred on 09-06 by a letter-frequency prior (O is Sektu's most frequent
+subglyph); the same day Branch B replaced it because only B splits all three `OS+onset` units
+at the rime|onset boundary. B is the current working branch; the 09-08 note correctly says its
+own prediction does not depend on the choice.
+
+**The /kos/ prediction (09-08).** Poem #4 lines 3 and 4 end in a dotted-X glyph, read as the
+same `<X DOT>` as the signature's `XP`. Under the key `X|DOT = EC|OS`; at a line end there is
+no following onset, so the last syllable is `C + OS` = **/kos/** for both lines. It has been
+used once, conditionally, to reject the direct "uncopied remainder of Moore's Greek ode"
+alignment (Moore's lines 23–24 or 24–25 do not end in /kos/).
+
+**Status of that prediction, stated plainly before testing.** It has not been tested. Both
+lines end in the same glyph, and identical glyphs trivially decode identically, so the
+recurrence the prediction describes is not evidence for the key. It becomes a test only
+against an independently known plaintext, or where *different* glyphs share key signs. The
+Moore rejection is an inference *from* the key, not support *for* it.
+
+**Reproduced this session** (`signature_shifted_phonetic_model.py`,
+`transition_factorization_test.py`, `xp_outward_test.py`): 57 strict maps → 4
+boundary-aligned → 2 with `N=D` → Branch B under rime|onset factorisation, and `XP → COS`.
+All exact.
+
+**One structural observation from the reproduction, derivation-internal only.** The four
+aligned maps are not four independent survivors. They are two binary choices: how `OSD` splits
+across `DOT|N` (`O|SD` or `OS|D`), and how `OSN`/`OST` split after the repeated `O` (`O|SN`,
+`O|ST` or `OS|N`, `OS|T`). "`N=D`" picks `OS|D` in the first choice. "Branch B" picks `OS|N`,
+`OS|T` in the second. **Both are the same rime|onset rule applied twice.** So the N-topology
+"convergence" and the Branch-B selection are one assumption, not two confirmations. The
+content of the fit is that the 11 components line up one-to-one with the 8 shifted units,
+with each of the three three-letter `OS+onset` units taking two components. No null for that
+alignment step exists yet. The 09-05 nulls (p ≈ 0.0015–0.007) priced only the raw 57-map
+count.
+
+**What follows this entry:** an audit of `dbourdeau/cyphersolver` `targets/debosnys/` as a
+claim source; then `FREEZE.md`, written before any passage not used to derive the key is
+inspected; then the held-out test.
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / cross-page signature + shifted-phonetic breakthrough
 
 ### What was attempted
