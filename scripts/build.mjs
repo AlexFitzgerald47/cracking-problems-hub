@@ -85,14 +85,13 @@ async function gitLastSubject(rel) {
 const HELD_PARTIAL = new Set([
   'ennis-ogham-amber-bead',
   'mesha-stele-line31',
-  'venona-baron',
+  'venona-brown-braun',
   'chinese-gold-bar-cipher',
 ]);
 
 // Externally solved / withdrawn (not a live target any more).
 const WITHDRAWN = new Set([
   'ormonde-maltravers-1634-cipher',
-  'blitz-ciphers',
 ]);
 
 // Crack-progress heuristic: 0-100. Purely from file signals + git activity.
