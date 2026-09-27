@@ -4,6 +4,74 @@
 
 ---
 
+## 2026-09-27 – Claude Code cloud session / pre-data statement of the key under test
+
+*Written and committed before this session opened any cipher image, crop or transcription. Its
+purpose is to fix, in this file, exactly what is about to be tested. No new evidence is in it.*
+
+**Gap closed first.** This log stopped at 2026-09-05. The 09-06 transition-key work
+(`analysis/2026-09-06-*.md`) and the 09-08 outward application
+(`analysis/2026-09-08-xp-outward-crack.md`, `analysis/xp_outward_test.py`) never reached it.
+They are summarised here.
+
+**The key.** Derived from one object: the six-glyph line Sektu (2017) calls signature-like,
+`C2B2 XP NU ZOO OM2N SHI`, decomposed as `<C2 B2> <X DOT> <N U> <O Z O> <O2RNO> <CROSSB>`,
+read against the plaintext signature `Hênêcos Debosnostys` at the foot of #4b.
+Syllabified `HE|NE|COS|DE|BOS|NOS|TYS` and re-cut by Sektu's rime-of-one + onset-of-next rule
+into eight shifted units `H|EN|EC|OSD|EB|OSN|OST|YS`, it gives:
+
+| sign | value | type in the transition model | branch |
+|---|---|---|---|
+| `C2` | H | initial onset | shared |
+| `B2` | EN | rime E + onset N | shared |
+| `X` | EC | rime E + onset C | shared |
+| `DOT` | OS | rime | shared |
+| `N` | D | onset | shared |
+| `U` | EB | rime E + onset B | shared |
+| `CROSSB` | YS (TYA reading: YA) | final rime | shared |
+| `O` | O / **OS** | nucleus / **rime** | A / **B** |
+| `Z` | SN / **N** | coda+onset / **onset** | A / **B** |
+| `O2RNO` | ST / **T** | coda+onset / **onset** | A / **B** |
+
+Branch A was preferred on 09-06 by a letter-frequency prior (O is Sektu's most frequent
+subglyph); the same day Branch B replaced it because only B splits all three `OS+onset` units
+at the rime|onset boundary. B is the current working branch; the 09-08 note correctly says its
+own prediction does not depend on the choice.
+
+**The /kos/ prediction (09-08).** Poem #4 lines 3 and 4 end in a dotted-X glyph, read as the
+same `<X DOT>` as the signature's `XP`. Under the key `X|DOT = EC|OS`; at a line end there is
+no following onset, so the last syllable is `C + OS` = **/kos/** for both lines. It has been
+used once, conditionally, to reject the direct "uncopied remainder of Moore's Greek ode"
+alignment (Moore's lines 23–24 or 24–25 do not end in /kos/).
+
+**Status of that prediction, stated plainly before testing.** It has not been tested. Both
+lines end in the same glyph, and identical glyphs trivially decode identically, so the
+recurrence the prediction describes is not evidence for the key. It becomes a test only
+against an independently known plaintext, or where *different* glyphs share key signs. The
+Moore rejection is an inference *from* the key, not support *for* it.
+
+**Reproduced this session** (`signature_shifted_phonetic_model.py`,
+`transition_factorization_test.py`, `xp_outward_test.py`): 57 strict maps → 4
+boundary-aligned → 2 with `N=D` → Branch B under rime|onset factorisation, and `XP → COS`.
+All exact.
+
+**One structural observation from the reproduction, derivation-internal only.** The four
+aligned maps are not four independent survivors. They are two binary choices: how `OSD` splits
+across `DOT|N` (`O|SD` or `OS|D`), and how `OSN`/`OST` split after the repeated `O` (`O|SN`,
+`O|ST` or `OS|N`, `OS|T`). "`N=D`" picks `OS|D` in the first choice. "Branch B" picks `OS|N`,
+`OS|T` in the second. **Both are the same rime|onset rule applied twice.** So the N-topology
+"convergence" and the Branch-B selection are one assumption, not two confirmations. The
+content of the fit is that the 11 components line up one-to-one with the 8 shifted units,
+with each of the three three-letter `OS+onset` units taking two components. No null for that
+alignment step exists yet. The 09-05 nulls (p ≈ 0.0015–0.007) priced only the raw 57-map
+count.
+
+**What follows this entry:** an audit of `dbourdeau/cyphersolver` `targets/debosnys/` as a
+claim source; then `FREEZE.md`, written before any passage not used to derive the key is
+inspected; then the held-out test.
+
+---
+
 ## 2026-09-05 – GPT-5.6 Sol / cross-page signature + shifted-phonetic breakthrough
 
 ### What was attempted
