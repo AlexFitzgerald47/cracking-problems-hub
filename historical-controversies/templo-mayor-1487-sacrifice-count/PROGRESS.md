@@ -4,6 +4,86 @@
 
 ---
 
+## 2026-09-27 – second working session (cracker): Motolinía has it; verdict corrected; closed
+
+### What was attempted
+The handover's next experiments, in the user's order:
+
+1. Motolinía's *Carta al Emperador*.
+2. The Tezozómoc 62,000/72,000 split.
+3. Torquemada's 72,344.
+4. The Telleriano-Remensis 8 Acatl folio.
+
+Predictions for all four were frozen and pushed (`8742b52`) before any new source was opened.
+Everything is in `attempts/2026-09-27-carta-and-variants/`.
+
+### Results / findings
+1. **The *Carta* has 80,400.** Icazbalceta, *Colección* I (1858) p. 254, two scans agreeing, page
+   image read: "ochenta mill i quatrocientos hombres". It is set in one temple over three or four
+   days, with the captives brought "por quatro calles en quatro ileras … al sacrificadero". It is
+   dated Tlaxcala, 2 January 1555. **P3 (2026-09-24) failed; the reopening condition fired.**
+2. **The four-rows staging is event-specific and borrowed.** It occurs once in Durán (the 1487
+   dedication, out of at least eleven captive-row episodes) and never elsewhere in Motolinía. It is
+   also in Tezozómoc (no number) and in Torquemada cap. 63 (72,344). Across the narrative family
+   the staging is constant and the number varies.
+3. **Tezozómoc's 72,000 is an 1878-edition error.** The Kraus MS 117 fol. [97v] (1997 ed., page
+   image), Ternaux-Compans 1853 and Kingsborough 1848 read 62,000. Orozco y Berra's page reads
+   *setenta*. He declares he did not alter the text, attaches no note, and leaves the parallel
+   62,000 untouched.
+4. **Torquemada's 72,344 is untraced.** No source is named and there is no marginal note (page
+   image). The figure is absent from the other 29 texts searched, is not derivable from any attested
+   figure by the frozen operations, and is tally-shaped (9·8000 + 17·20 + 4). His cap. 63 carries the
+   family staging. Content test: z = 2.045 against Durán, z = 0.31 against Tezozómoc.
+5. **Telleriano fol. 39r = 2 xiquipilli + 10 tzontli = 20,000**, on the BnF original and the 1899
+   facsimile alike. **Its Spanish gloss says *quatro mil*** (4,000): the ten tzontli, without the
+   bags. **Vaticanus A = 2 + 9 = 19,600.** The victims' name glyphs are zapote tree, paint vessel,
+   turquoise serpent and jaguar head.
+6. **New witness: Chimalpahin** (Siméon 1889 pp. 157–159, page image). The four-nation itemisation
+   appears in Nahuatl numerals: 2, 3, 2 and 3 xiquipilli, and on the last *ipan centzontli ipan
+   matlacpohualli* (24,600). The sum, 80,600, is Siméon's.
+7. **Verdict corrected.** 80,400 is **(a) as to transmission**: a Nahua figure relayed to the
+   chroniclers. It is **(c) as to whether it was ever a count**: the native record gives 80,400 or
+   80,600 against 20,000, 19,600 and 4,000. The "(b), chronicler-side" label is refuted. **Closed**,
+   because the correction rests entirely on text read this session.
+
+### Failures & dead ends
+- **Prior claims corrected, stated plainly:**
+  - P3 was wrong.
+  - "(b), chronicler-side" was wrong.
+  - "The odd 400 is the system's smallest counter" is false: the system has pohualli and units, and
+    Chimalpahin's version of this count uses pohualli.
+  - "It does not travel with the prose" is wrong for the Carta–Durán pair.
+- **This session's failed predictions:** F1.5, F2.4, F3.4 (narrowly) and F4.2; see
+  `data/predictions_graded.tsv`.
+- **Not reached:** an independent edition of the *Carta* (García Pimentel 1903; the UPSA PDF failed
+  with TLS, then 503); INAH *Anales* (403 at origin); web.archive.org (connection reset). Gallica
+  returned 403 and was worked around through its archive.org mirror.
+- **Reproducibility defects in the 2026-09-24 corpus script, found here:**
+  - `fetch_corpus.sh` saves a 146-byte 404 page for `motolinia_historia.txt`, because archive.org
+    stores that filename in NFD. It was recovered by metadata-resolved download, and its sha256
+    matches the manifest.
+  - `sahagun.txt` has no fetch line, and its source item was not identified.
+
+### Receipt
+**Changed:** verdict (b) → (a)/(c); transmission map redrawn; Tezozómoc variant resolved;
+pictorial counts verified; Chimalpahin added.
+**Evidence:** seven page images (listed in HANDOVER); `data/` tables; `code/` scripts, all of which
+rebuild from `code/fetch_and_crop.py`.
+**Still conditional:** the *Carta*'s single edition; Chimalpahin's independence of Ixtlilxóchitl.
+**Next:** none required. Optional items are listed in HANDOVER.
+Starting revision `c6b6027`; configured model `claude-opus-5-5`; Trial ID: none.
+
+### Artefacts produced
+`attempts/2026-09-27-carta-and-variants/`:
+- `FREEZE.md`, `RESULTS.md`;
+- `code/`: `fetch_and_crop.py`, `content_overlap_torq63.py`, `arith_check.py`;
+- `data/`: six tables plus two run outputs and a sources manifest;
+- `images/`: nine public-domain crops.
+
+The 2026-09-24 `RESULTS.md` carries a dated correction banner; its text is unaltered.
+
+---
+
 ## 2026-09-24 – first working session (cracker, Claude Opus 5): the number is a numeral
 
 ### What was attempted

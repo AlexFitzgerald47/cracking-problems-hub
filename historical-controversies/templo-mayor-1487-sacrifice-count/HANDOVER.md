@@ -4,6 +4,87 @@
 
 ---
 
+## 2026-09-27 – CLOSED on a corrected verdict. Motolinía has 80,400; the (b) label is refuted
+
+**Read `attempts/2026-09-27-carta-and-variants/RESULTS.md` first.** It opens with six failures. Two
+of them belong to the 2026-09-24 session: its P3, and its "smallest counter" argument.
+
+### Compact frontier for the next session
+
+- **State: closed** (dormant). Criterion 3 is answered on a corrected verdict:
+  **(a) as to transmission, (c) as to whether 80,400 was ever a count.**
+- **Established, all from page images or two agreeing scans:**
+  - Motolinía's *Carta al Emperador* (Tlaxcala, 2 January 1555; Icazbalceta 1858 p. 254) has
+    "ochenta mill i quatrocientos hombres", inside the staging Durán translates: four rows along four
+    streets to the sacrificial stone. This is now the earliest attestation.
+  - Within that narrative family **the staging is stable and the number is not**: 80,400 / 80,400 /
+    none (Tezozómoc) / 72,344 (Torquemada).
+  - Tezozómoc's 72,000 is an error of the **1878 edition alone**. The Kraus manuscript, Ternaux 1853
+    and Kingsborough 1848 all read 62,000.
+  - Telleriano-Remensis fol. 39r = 2 xiquipilli + 10 tzontli = **20,000**, but its Spanish gloss
+    says **4,000**. Vaticanus A = **19,600**.
+  - Chimalpahin gives Ixtlilxóchitl's four-nation itemisation **in Nahuatl numerals**, with a 20s
+    tail. The sum is **80,600** (Siméon 1889's sum, not ours).
+- **Unresolved**, all inside the (c) half and unable to move the (a) half:
+  - the source of Torquemada's 72,344, which is tally-shaped and unique in 30 texts;
+  - which way the tail moved between Chimalpahin and Ixtlilxóchitl (24,600 vs 24,400);
+  - Motolinía's own source.
+- **Decisive uncertainty:** only a Spanish-side origin for the *Carta*'s figure would push the verdict
+  back towards (b). None is known.
+- **Reopening condition:** (i) a pre-1555 Spanish-side source for 80,400, or proof that Motolinía took
+  it from one; (ii) an independent edition of the *Carta* (García Pimentel 1903, pp. 403–423; or the
+  AGI original) reading anything other than 80,400.
+- **Assumptions carried:** the *Carta* text rests on one edition in two scans, printed from the Muñoz
+  copy. The Telleriano name-glyph *readings* are Orozco y Berra's; I checked only the sign identities.
+
+### Session provenance
+
+Starting revision: `c6b6027`. Claim `59256bd`, FREEZE `8742b52`.
+Platform/model actually known: remote Claude Code session, configured model `claude-opus-5-5` (the
+serving model was not independently verified).
+Tool/source limits: Gallica 403 (worked around through its archive.org mirror); INAH *Anales* 403 at
+origin; web.archive.org unreachable; UPSA PDF failed (TLS, then 503).
+Material user steering: the user fixed the item order (Carta → Tezozómoc → Torquemada → Telleriano),
+asked for predictions on items 1–3 to be frozen before looking, for failures to lead, and for a final
+disposition in one session. Trial: none.
+Cost: unknown; about one hour wall-clock (17:22–18:20 UTC).
+
+### Evidence receipt (also in PROGRESS)
+
+**Changed:** verdict (b) → (a) as to transmission, (c) as to count; map redrawn; the Tezozómoc
+variant resolved; the pictorial counts verified; Chimalpahin added. The "smallest counter" argument is
+withdrawn.
+**Evidence:** page images of Icazbalceta p. 254, Orozco y Berra p. 517, the 1997 edition p. 304,
+Torquemada 1723 p. 186, Telleriano fol. 39r (original and 1899 facsimile), Vaticanus A 1487 and
+Siméon p. 159. The content test is in `data/out_content_torq63.txt`; the bounded arithmetic in
+`data/out_arith_check.txt`.
+**Still conditional:** the *Carta*'s single edition; Chimalpahin's independence of Ixtlilxóchitl.
+**Next:** nothing is required. Optional work is listed below.
+
+### Optional next experiments (the problem is closed; none of these can move the (a) half)
+
+1. **Chimalpahin vs Ixtlilxóchitl.** Which way did the tail move? A modern edition of the
+   *Relaciones* (Tena's, *unverified citation*) and the *Codex Chimalpahin* (Anderson & Schroeder
+   1997, *unverified citation*; said to include copies of Ixtlilxóchitl) should show whether
+   Chimalpahin's itemisation is a back-translation. If it is, the itemised strand is one witness, not
+   two.
+2. **Torquemada's 72,344.** Check the source-analysis tables for lib. II cap. 63 in the UNAM edition
+   of the *Monarquía Indiana* (León-Portilla et al., *unverified citation*). If it turns out to be a
+   pictorial count read correctly, it is the most informative number here.
+3. **An independent text of the *Carta*.** Expected reading: 80,400.
+4. **Do NOT:**
+   - re-run the vigesimal-breakdown null (still failed, still unnecessary);
+   - rebuild the "smallest counter" argument (the system has 20s and units, and Chimalpahin's version
+     uses them);
+   - propose a 20,000 → 80,400 misreading chain. The glossator's 4,000 over this very cell shows how
+     easily such readings are produced.
+5. **Carry `code/fetch_and_crop.py`'s name resolution into any archive.org fetch script.** The
+   2026-09-24 `fetch_corpus.sh` silently loses `motolinia_historia.txt` to an NFD filename.
+   `sahagun.txt` is in the old manifest with no fetch line and its source item was not identified. No
+   claim rests on it.
+
+---
+
 ## 2026-09-24 – worked. The number is a numeral; the frontier is Motolinía's *Carta al Emperador*
 
 **Read `attempts/2026-09-24-numeral-or-count/RESULTS.md` before anything else. Criterion 1 is
