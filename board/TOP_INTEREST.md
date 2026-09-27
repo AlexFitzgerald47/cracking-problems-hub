@@ -1,7 +1,32 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-09-17
+**Updated:** 2026-09-27
+
+## 2026-09-27 execution overlay
+
+This overlay supersedes the 2026-09-17 overlay below. It does not erase that historical routing
+decision; it records that both of its top items were completed.
+
+1. **Close and validate before expanding.** Convene the Linear A labor-liability panel, then the
+   Byblos inventory/anchor panel. The four completed panels remain HELD at 3 × PARTIAL pending
+   human sign-off; no fifth cracker pass substitutes for the missing physical/documentary checks.
+2. **Cheapest high-value closures:** check Motolinía's 1555 *Carta al Emperador* for Templo Mayor;
+   obtain/read Woods 2000 and Malloch 2001 for Caligula; independently audit the blood-eagle
+   35-row blade table and Frank's remaining two instrumental-dative comparanda. These can change
+   dispositions without rebuilding a corpus.
+3. **Best new cracker start:** Blitz Ciphers authenticity, using the already-committed gold-bar
+   exact-tail and inherited-structure instruments. Next: Black Death citation lineage, then
+   Meroitic, matching `STATUS.md`'s 2026-09-25 promotion order.
+4. **Best Irish reasoning-ready continuation:** Patrician chronology's Passion-era lead. Ennis is
+   physical-evidence-ready only when the 2023 photogrammetry/RTI can be obtained; do not send
+   another lexical search at it.
+5. **Do not spend a session rebuilding** Thera, Annals, Shakespeare, Junius, Phaistos or gold-bar
+   pipelines. Their next moves are named, narrow tests in the current handovers.
+
+---
+
+## Superseded 2026-09-17 overlay
 
 **2026-09-17 overlay — two items outrank everything below.**
 
