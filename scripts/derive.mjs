@@ -114,12 +114,15 @@ function roleOf(subject, files) {
 function readGitLog(ROOT, days) {
   try {
     const out = execSync(
-      `git log --since=${days}.days.ago --name-only --no-renames --pretty=format:%x1e%H%x1f%cI%x1f%s`,
+      `git log --since=${days}.days.ago --name-only --no-renames --pretty=format:'%x1e%H%x1f%cI%x1f%s%x1f%an%x1f%(trailers:key=Co-Authored-By,valueonly,separator=;)'`,
       { encoding: 'utf8', cwd: ROOT, maxBuffer: 64 * 1024 * 1024 });
     return out.split('\x1e').filter(Boolean).map(block => {
       const [head, ...rest] = block.split('\n');
-      const [sha, date, subject] = head.split('\x1f');
-      return { sha, date, subject, files: rest.map(s => s.trim()).filter(Boolean) };
+      const [sha, date, subject, author = '', coauth = ''] = head.split('\x1f');
+      // A Claude author or co-author trailer marks a routine session; anything
+      // else was run outside the routines (the Codex lane, or the human).
+      const unit = /claude/i.test(author + ' ' + coauth) ? 'claude' : 'irregular';
+      return { sha, date, subject, unit, files: rest.map(s => s.trim()).filter(Boolean) };
     });
   } catch { return []; }
 }
@@ -203,6 +206,27 @@ export const ROUTINES = [
   { key: 'finder', label: 'Finder', cadence: 'Tue & Fri 13:00 UTC', rule: { hours: [13], minute: 0, weekdays: [2, 5] } },
 ];
 
+// Each role's standing orders, quoted from its own file, and its pinned model
+// from board/SCHEDULE.md. Nothing here is written by the site.
+async function readRoleProfiles(ROOT) {
+  const out = {};
+  const sched = await fs.readFile(path.join(ROOT, 'board/SCHEDULE.md'), 'utf8').catch(() => '');
+  const models = {};
+  for (const cells of tableRows(sectionOf(sched, 'Models'))) {
+    const m = cells[0].match(/Hub (\w+)/);
+    if (m) models[m[1].toLowerCase()] = stripMd(cells[1]);
+  }
+  for (const key of ['cracker', 'validator', 'orchestrator', 'finder']) {
+    const md = await fs.readFile(path.join(ROOT, `_roles/${key.toUpperCase()}.md`), 'utf8').catch(() => '');
+    const para = md.split(/\n\s*\n/).map(x => x.trim()).find(x => x && !x.startsWith('#')) || '';
+    const flat = stripMd(para.replace(/\s+/g, ' '));
+    const sentences = flat.match(/[^.!?]+[.!?]+/g) || [flat];
+    const two = sentences.slice(0, 2).join(' ').replace(/\s+/g, ' ').trim();
+    out[key] = { creed: two.length > 170 ? sentences[0].replace(/\s+/g, ' ').trim() : two, model: models[key] || null, file: `_roles/${key.toUpperCase()}.md` };
+  }
+  return out;
+}
+
 export async function derive({ ROOT, statusText, problems, activity, domains }) {
   const history = historyInfo(ROOT);
   const log = readGitLog(ROOT, 120);
@@ -229,7 +253,8 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
   for (const c of log) {
     const age = now - new Date(c.date).getTime();
     const slugs = new Set(c.files.map(f => f.match(PROBLEM_PATH)).filter(Boolean).map(m => `${m[1]}/${m[2]}`));
-    for (const s of slugs) (touches[s] ||= []).push({ date: c.date, age });
+    const role = roleOf(c.subject, c.files);
+    for (const s of slugs) (touches[s] ||= []).push({ date: c.date, age, role, unit: c.unit });
   }
 
   for (const p of problems) {
@@ -240,7 +265,15 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     p.statusRow = row ? { status: row.status, notes: row.notes, suggestedDomain: row.suggestedDomain } : null;
     p.claim = claim ? { claim: claim.claim, disposition: claim.disposition, missingCheck: claim.missingCheck, since: claim.since } : null;
     p.stage = stageOf(p, row, claim);
-    p.commitDates90d = (touches[p.slug] || []).filter(t => t.age < 90 * DAY).map(t => t.date);
+    const t = touches[p.slug] || [];
+    p.commitDates90d = t.filter(x => x.age < 90 * DAY).map(x => x.date);
+    p.firstTouch = t.length ? t[t.length - 1].date : null;
+    p.roleTouches = {};
+    for (const x of t) {
+      const k = x.unit === 'irregular' && x.role !== 'merge' && x.role !== 'infra' ? 'irregular' : x.role;
+      if (k === 'merge' || k === 'infra' || k === 'other') continue;
+      p.roleTouches[k] = (p.roleTouches[k] || 0) + 1;
+    }
   }
 
   for (const a of activity) {
@@ -250,6 +283,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     a.role = roleOf(a.subject, files);
     a.problems = [...new Set(files.map(f => f.match(PROBLEM_PATH)).filter(Boolean).map(m => `${m[1]}/${m[2]}`))].slice(0, 6);
     a.fileCount = files.length;
+    a.unit = c?.unit || null;
   }
 
   // Board-wide daily pulse by role. Window: repo lifetime, clamped to 14–90 days.
@@ -258,7 +292,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
   const start = new Date(now - (spanDays - 1) * DAY); start.setUTCHours(0, 0, 0, 0);
   const pulse = Array.from({ length: spanDays }, (_, i) => ({
     date: new Date(start.getTime() + i * DAY).toISOString().slice(0, 10),
-    orchestrator: 0, validator: 0, cracker: 0, finder: 0, other: 0,
+    orchestrator: 0, validator: 0, cracker: 0, finder: 0, other: 0, irregular: 0,
   }));
   const pulseIdx = Object.fromEntries(pulse.map((d, i) => [d.date, i]));
   for (const c of log) {
@@ -267,12 +301,17 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     const i = pulseIdx[new Date(c.date).toISOString().slice(0, 10)];
     if (i === undefined) continue;
     pulse[i][role === 'other' ? 'other' : role] += 1;
+    if (c.unit === 'irregular') pulse[i].irregular += 1;
   }
 
   const lastByRole = {};
+  const problemsOf = c => [...new Set(c.files.map(f => f.match(PROBLEM_PATH)).filter(Boolean).map(m => `${m[1]}/${m[2]}`))].slice(0, 4);
   for (const c of log) {
     const r = roleOf(c.subject, c.files);
-    if (!lastByRole[r]) lastByRole[r] = { date: c.date, subject: c.subject.slice(0, 140), sha: c.sha };
+    if (!lastByRole[r]) lastByRole[r] = { date: c.date, subject: c.subject.slice(0, 140), sha: c.sha, problems: problemsOf(c) };
+    if (c.unit === 'irregular' && !['merge', 'infra', 'other'].includes(r) && !lastByRole.irregular) {
+      lastByRole.irregular = { date: c.date, subject: c.subject.slice(0, 140), sha: c.sha, problems: problemsOf(c) };
+    }
   }
 
   const live = problems.filter(p => !p.isStub);
@@ -296,6 +335,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     dispatches: await readDispatches(ROOT, problems.filter(p => !p.isStub).map(p => p.slug), addedAt),
     activeClaims: await readActiveClaims(ROOT),
     routines: ROUTINES,
+    roleProfiles: await readRoleProfiles(ROOT),
     pulse,
     lastByRole,
     totalsExtra: { live: live.length, stubs: problems.length - live.length, byStage, research7d },
