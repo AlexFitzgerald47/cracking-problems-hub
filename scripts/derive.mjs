@@ -99,6 +99,8 @@ function roleOf(subject, files) {
   const s = subject.toLowerCase();
   if (/^merge /.test(s)) return 'merge';
   if (files.length && files.every(f => INFRA.test(f))) return 'infra';
+  // Squash-merged human PRs ("… (#13)") are not a routine firing.
+  if (/\(#\d+\)\s*$/.test(subject)) return 'other';
   if (/orchestrator|reconcil|^status:/.test(s)) return 'orchestrator';
   if (/validator|\bpanel\b|verdict/.test(s)) return 'validator';
   if (/finder|discovery|^propos/.test(s)) return 'finder';

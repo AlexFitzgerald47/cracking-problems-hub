@@ -3,135 +3,125 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Cracking Problems Hub — Situation Room</title>
-<meta name="description" content="Live situation room for the Cracking Problems Hub: every problem, claim, panel and commit, read from the repository on each deploy." />
-<meta name="theme-color" content="#091016" />
+<title>Cracking Problems Hub — The Scope</title>
+<meta name="description" content="Forty-eight unsolved historical problems, one scope. Every blip is a problem; the centre is PASS, and it is empty." />
+<meta name="theme-color" content="#070c11" />
 <meta name="color-scheme" content="dark" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Ogham&family=Noto+Sans+Runic&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 <a class="skip" href="#board">Skip to the board</a>
 
 <header class="mast">
-  <div class="wrap mast-row">
-    <a class="mast-brand" href="#top" aria-label="Cracking Problems Hub, top of page">
-      <span class="mast-mark" aria-hidden="true"></span>
-      <span class="mast-name">Cracking Problems Hub</span>
-      <span class="mast-sub">Situation room</span>
+  <div class="mast-row">
+    <a class="brand" href="#top" aria-label="Cracking Problems Hub, top">
+      <svg class="brand-mark" viewBox="0 0 16 28" aria-hidden="true"><path d="M8 1v26M3 7h10M3 12h10M3 17h10M8 22h6"/></svg>
+      <span class="brand-name">Cracking Problems Hub</span>
     </a>
     <nav class="mast-nav" aria-label="Sections">
       <a href="#claims">Claims</a>
-      <a href="#pipeline">Pipeline</a>
       <a href="#board">Board</a>
       <a href="#tempo">Tempo</a>
-      <a href="#dispatches">Dispatches</a>
+      <a href="#wire">Wire</a>
     </nav>
+    <button type="button" class="jump" id="jump-open" aria-keyshortcuts="Control+K Meta+K">
+      <span>Jump to a problem</span><kbd>⌘K</kbd>
+    </button>
     <div class="mast-meta mono">
-      <span class="mast-clock" id="clock" aria-label="Current time, UTC">--:--:-- UTC</span>
-      <span class="mast-next" id="mast-next"></span>
-      <a class="mast-head" id="mast-head" href="#" target="_blank" rel="noopener"></a>
+      <span id="mast-next"></span>
+      <span class="clock" id="clock">--:--:--</span>
     </div>
+  </div>
+  <div class="ticker" aria-label="Latest commits">
+    <div class="ticker-track" id="ticker"></div>
   </div>
 </header>
 
 <main id="top">
-  <section class="wrap sitrep" aria-labelledby="bluf">
-    <p class="kicker mono" id="sitrep-kicker">Situation report</p>
-    <h1 id="bluf" class="bluf"></h1>
-    <p class="bluf-sub" id="bluf-sub"></p>
-    <div class="kpis" id="kpis"></div>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="kicker mono" id="kicker"></p>
+      <h1 class="bluf" id="bluf"></h1>
+      <p class="bluf-sub" id="bluf-sub"></p>
+      <div class="kpis" id="kpis"></div>
+    </div>
+    <figure class="scope-fig">
+      <div class="scope" id="scope" data-size="hero"></div>
+      <figcaption class="scope-cap" id="scope-cap"></figcaption>
+    </figure>
   </section>
 
-  <section id="claims" class="wrap sec" aria-labelledby="claims-h">
+  <section id="claims" class="sec wrap" aria-labelledby="claims-h">
     <header class="sec-head">
-      <span class="sec-no mono">01</span>
-      <div>
-        <h2 id="claims-h">Closest to cracked</h2>
-        <p class="sec-lede">Solve-claims that survived a three-validator panel without passing it. Each is held for human sign-off; each names the one check that would move it.</p>
-      </div>
+      <span class="sec-no mono">I</span>
+      <h2 id="claims-h" data-scramble>Closest to cracked</h2>
+      <p class="sec-lede">Four solve-claims went before a three-validator panel. None was refuted, none passed. Each now waits on a human and on one named check.</p>
     </header>
-    <div class="held-grid" id="held-grid"></div>
+    <div class="cases" id="cases"></div>
     <div class="panel-queue" id="panel-queue"></div>
   </section>
 
-  <section id="pipeline" class="wrap sec" aria-labelledby="pipeline-h">
+  <section id="board" class="sec wrap" aria-labelledby="board-h">
     <header class="sec-head">
-      <span class="sec-no mono">02</span>
-      <div>
-        <h2 id="pipeline-h">The pipeline</h2>
-        <p class="sec-lede">Every live problem, one mark each, placed at its furthest stage. The right-hand end is the only part that counts, and it is empty.</p>
-      </div>
+      <span class="sec-no mono">II</span>
+      <h2 id="board-h" data-scramble>The board</h2>
+      <p class="sec-lede">Every live problem, its status quoted verbatim from <code>STATUS.md</code>, and a tick for every day a session touched it. Hover a row to find it on the scope.</p>
     </header>
-    <div class="ladder" id="ladder" role="list"></div>
-    <p class="fine" id="ladder-note"></p>
-  </section>
-
-  <section id="board" class="wrap sec" aria-labelledby="board-h">
-    <header class="sec-head">
-      <span class="sec-no mono">03</span>
-      <div>
-        <h2 id="board-h">The board</h2>
-        <p class="sec-lede">Status text is quoted from <code>STATUS.md</code>, not paraphrased. Activity is every commit touching the folder since the board began, one tick per day.</p>
+    <div class="board-layout">
+      <div class="board-main">
+        <div class="controls" role="search">
+          <label class="search">
+            <span class="sr">Filter the board</span>
+            <input id="search" type="search" placeholder="Filter by name, folder or status" autocomplete="off" spellcheck="false" />
+          </label>
+          <div class="seg" id="domain-seg" role="group" aria-label="Domain"></div>
+        </div>
+        <div class="stage-filter" id="stage-filter" role="group" aria-label="Stage"></div>
+        <div class="board-table" id="board-table"></div>
       </div>
-    </header>
-    <div class="controls" role="search">
-      <label class="search">
-        <span class="sr">Search problems</span>
-        <input id="search" type="search" placeholder="Search problems, folders, status" autocomplete="off" spellcheck="false" />
-        <kbd aria-hidden="true">/</kbd>
-      </label>
-      <div class="seg" id="domain-seg" role="group" aria-label="Domain"></div>
-      <div class="seg" id="sort-seg" role="group" aria-label="Sort">
-        <button type="button" data-sort="board" aria-pressed="true">By stage</button>
-        <button type="button" data-sort="recent" aria-pressed="false">Recent</button>
-        <button type="button" data-sort="active" aria-pressed="false">Most active</button>
-      </div>
-    </div>
-    <div class="stage-filter" id="stage-filter" role="group" aria-label="Stage"></div>
-    <p class="result-count mono" id="result-count" aria-live="polite"></p>
-    <div class="board-table" id="board-table"></div>
-  </section>
-
-  <section id="tempo" class="wrap sec" aria-labelledby="tempo-h">
-    <header class="sec-head">
-      <span class="sec-no mono">04</span>
-      <div>
-        <h2 id="tempo-h">Tempo</h2>
-        <p class="sec-lede">Commits per day across the whole board, by the seat that made them. Merges and site infrastructure are excluded.</p>
-      </div>
-    </header>
-    <div class="tempo">
-      <figure class="pulse-fig">
-        <div class="legend" id="pulse-legend"></div>
-        <div class="pulse" id="pulse"></div>
-        <figcaption class="fine" id="pulse-cap"></figcaption>
-      </figure>
-      <aside class="routines" aria-labelledby="routines-h">
-        <h3 id="routines-h" class="label">Standing routines</h3>
-        <ol id="routines"></ol>
-        <p class="fine">Cadence per <code>board/SCHEDULE.md</code>. A firing that lands no commit is a failed firing.</p>
+      <aside class="board-side" aria-label="Scope, linked to the board">
+        <div class="scope mini" id="scope-mini" data-size="mini"></div>
+        <p class="fine" id="mini-cap"></p>
       </aside>
     </div>
   </section>
 
-  <section id="dispatches" class="wrap sec" aria-labelledby="dispatches-h">
+  <section id="tempo" class="sec wrap" aria-labelledby="tempo-h">
     <header class="sec-head">
-      <span class="sec-no mono">05</span>
-      <div>
-        <h2 id="dispatches-h">Dispatches</h2>
-        <p class="sec-lede">What the sessions wrote to each other in <code>board/log/</code>, and the raw commit wire beside it.</p>
-      </div>
+      <span class="sec-no mono">III</span>
+      <h2 id="tempo-h" data-scramble>Tempo</h2>
+      <p class="sec-lede">Nobody supervises these sessions in real time. This is the record of who fired and when: one lane per seat, one mark per day, sized by commits.</p>
     </header>
-    <div class="dispatch-grid">
-      <ol class="dispatches" id="dispatch-list"></ol>
-      <div class="wire-col">
-        <h3 class="label">Commit wire</h3>
-        <ol class="wire mono" id="wire"></ol>
+    <div class="tempo">
+      <figure class="lanes-fig">
+        <div class="lanes" id="lanes"></div>
+        <figcaption class="fine" id="lanes-cap"></figcaption>
+      </figure>
+      <aside class="routines">
+        <h3 class="label">Standing routines</h3>
+        <ol id="routines"></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section id="wire" class="sec wrap" aria-labelledby="wire-h">
+    <header class="sec-head">
+      <span class="sec-no mono">IV</span>
+      <h2 id="wire-h" data-scramble>The wire</h2>
+      <p class="sec-lede">What the sessions wrote to each other in <code>board/log/</code>, set as they would be printed.</p>
+    </header>
+    <div class="broadsheet" id="broadsheet"></div>
+    <div class="wire-row">
+      <div>
+        <h3 class="label">Commit log</h3>
+        <ol class="log mono" id="log"></ol>
+      </div>
+      <div>
         <h3 class="label">Pull requests</h3>
-        <div class="prs" id="prs"></div>
+        <div id="prs"></div>
       </div>
     </div>
   </section>
@@ -146,7 +136,16 @@
 
 <div class="scrim" id="scrim" hidden></div>
 <aside class="dossier" id="dossier" role="dialog" aria-modal="true" aria-labelledby="dossier-title" hidden></aside>
-<div class="tip mono" id="tip" role="tooltip" hidden></div>
+
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Jump to a problem" hidden>
+  <div class="palette-box">
+    <input id="palette-input" type="text" placeholder="Jump to a problem…" autocomplete="off" spellcheck="false" aria-controls="palette-list" />
+    <ol id="palette-list" role="listbox"></ol>
+    <p class="palette-foot mono"><span>↑↓ move</span><span>↵ open</span><span>esc close</span></p>
+  </div>
+</div>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
 
 <!--DATA-->
 <script src="/app.js" type="module"></script>
