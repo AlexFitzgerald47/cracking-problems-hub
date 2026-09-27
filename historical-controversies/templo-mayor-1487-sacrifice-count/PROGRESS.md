@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-27 (end of session) – closed by the owner
+
+The human owner closed the project as low priority. HANDOVER now carries a candid novelty assessment:
+most results restate 19th-century scholarship; the chief correction was to this folder's own earlier
+verdict; the possibly new points are unverified against the literature. There is no active claim.
+Trial ID: none.
+
+---
+
 ## 2026-09-27 – second working session (cracker): Motolinía has it; verdict corrected; closed
 
 ### What was attempted

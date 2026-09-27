@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-09-27 (end of session) – FINAL: closed by the human owner; low priority; do not reopen by default
+
+**Owner's decision:** close the project. The remaining questions are not worth further sessions.
+
+**Candid novelty assessment, for whoever reads this next:**
+- This was never a live scholarly debate. Specialists have treated 80,400 as unreliable since at
+  least Ramírez and Orozco y Berra (1867–78), who already set it against the Telleriano's 20,000,
+  the Vaticanus A's 19,600, the glossator's 4,000 and Torquemada's 72,344.
+- Most "findings" in this folder were already in print: the *Carta*'s 80,400 (quoted by Bellini),
+  Chimalpahin's 80,600 (Siméon 1889) and the Telleriano count and gloss (*Anales del Museo* 1877).
+- The main correction was to this folder's own 2026-09-24 verdict.
+- Possibly new, but **no literature check has been done**: that the 72,000 in Tezozómoc is an error of
+  the 1878 edition alone; and the staging-is-stable, number-is-not observation.
+
+**Do not reopen** unless a pre-1555 Spanish-side source for 80,400 turns up. Orchestrator: treat this
+as closed/dormant and do not route crackers here. A literature/novelty check against Dodds Pennock
+(2012) would be needed before anything here is cited as original.
+
+---
+
 ## 2026-09-27 – CLOSED on a corrected verdict. Motolinía has 80,400; the (b) label is refuted
 
 **Read `attempts/2026-09-27-carta-and-variants/RESULTS.md` first.** It opens with six failures. Two
