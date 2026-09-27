@@ -6,6 +6,7 @@ import { execSync } from 'node:child_process';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { derive } from './derive.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -84,14 +85,13 @@ async function gitLastSubject(rel) {
 const HELD_PARTIAL = new Set([
   'ennis-ogham-amber-bead',
   'mesha-stele-line31',
-  'venona-baron',
+  'venona-brown-braun',
   'chinese-gold-bar-cipher',
 ]);
 
 // Externally solved / withdrawn (not a live target any more).
 const WITHDRAWN = new Set([
   'ormonde-maltravers-1634-cipher',
-  'blitz-ciphers',
 ]);
 
 // Crack-progress heuristic: 0-100. Purely from file signals + git activity.
@@ -322,6 +322,9 @@ async function main() {
     proposed: problems.filter(p => p.state === 'proposed').length,
   };
 
+  const extra = await derive({ ROOT, statusText, problems, activity, domains: DOMAINS });
+  Object.assign(totals, extra.totalsExtra);
+
   const data = {
     generatedAt: new Date().toISOString(),
     repo: { owner: OWNER, name: REPO, branch, headSha, url: `https://github.com/${OWNER}/${REPO}` },
@@ -333,6 +336,14 @@ async function main() {
     totals,
     statusHead: statusText.split('\n').slice(0, 40).join('\n'),
     targetsHead: targetsText.split('\n').slice(0, 12).join('\n'),
+    history: extra.history,
+    statusUpdated: extra.statusUpdated,
+    validationQueue: extra.validationQueue,
+    dispatches: extra.dispatches,
+    activeClaims: extra.activeClaims,
+    routines: extra.routines,
+    pulse: extra.pulse,
+    lastByRole: extra.lastByRole,
   };
 
   await copyStatic();
