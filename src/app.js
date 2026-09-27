@@ -305,7 +305,7 @@ function buildScope(host, { mini = false } = {}) {
     svg('circle', { r: size * 1.9, class: 'halo' }, g);
     svg('circle', { r: size, class: 'core' }, g);
     if (!mini && FLAGS[p.slug].length) svg('circle', { cx: size * 0.8, cy: -size * 0.8, r: 4.5, class: 'flag-dot' }, g);
-    svg('circle', { r: Math.max(size * 2.2, 16), class: 'hit' }, g);
+    svg('circle', { r: Math.max(size * 2.2, mini ? 16 : 26), class: 'hit' }, g);
     const idle = ageDays(p.lastTouch);
     const expected = !['backlog', 'withdrawn'].includes(st);
     return { g, deg, x, y, size, p, idle,
@@ -563,6 +563,7 @@ function marks(p, cls = '') {
     ? `<span class="marks ${cls}">${keys.map(k => `<span class="mark" data-role="${k}" title="${esc(UNIT[k].name)}: ${t[k]} commit${t[k] === 1 ? '' : 's'}">${sigil(k)}<span class="mono">${t[k]}</span></span>`).join('')}</span>`
     : `<span class="marks ${cls} none">No unit has worked this file</span>`;
 }
+const badge = p => { const s = stageOf(p); return `<span class="badge s-${s}">${esc(STAGES[s].label)}</span>`; };
 const stampEl = (p, cls = '') => { const s = stageOf(p); return `<span class="rubber s-${s} ${cls}">${esc(STAGES[s].stamp)}</span>`; };
 const chips = slugs => (slugs || []).filter(s => BY[s]).map(s => `<button type="button" class="pchip" data-slug="${esc(s)}">${esc(nameOf(BY[s]).replace(/\s*\(.*?\)\s*$/, ''))}</button>`).join('');
 
@@ -597,6 +598,58 @@ function paintPriority() {
         <h4>${esc(nameOf(p))}</h4>
         <p class="typed">${md(p.claim?.missingCheck || '')}</p>
       </article>`).join('')}</div>` : '';
+}
+
+// ---- The draw: coverage debt by sector stream ----------------------------
+// Advisory. Debt is days since a session last touched the file, weighted by
+// how close the file stands to cracked, so a stalled held claim outranks an
+// idle backlog proposal. STATUS.md and board/TOP_INTEREST.md outrank this.
+const WEIGHT = { held: 2.0, panel: 1.8, working: 1.4, unworked: 1.2, blocked: 0.5 };
+// The next move: the handover's own, or for a held claim the panel's decisive check.
+const nextOf = p => p.nextMove ? { text: p.nextMove.text, src: 'per HANDOVER.md' } : p.claim ? { text: p.claim.missingCheck.replace(/\*\*|`/g, ''), src: 'decisive missing check, per STATUS.md' } : null;
+const debtOf = p => (WEIGHT[stageOf(p)] ? Math.max(0, ageDays(p.lastTouch)) * WEIGHT[stageOf(p)] : 0);
+const STREAM = { 'ciphers': 'A', 'historical-texts': 'B', 'historical-controversies': 'C', 'ireland': 'D' };
+
+function paintDraw() {
+  const ranked = LIVE.filter(p => WEIGHT[stageOf(p)] && p.domain !== 'discovered').map(p => ({ p, debt: debtOf(p) }));
+  const max = Math.max(1, ...ranked.map(x => x.debt));
+  $('#draw-lede').innerHTML = `Where the next session should go, if coverage were the only rule. One stream per drawer; each file ranked by <b>coverage debt</b>: days since a session touched it, weighted by how close it stands to cracked.`;
+  $('#streams').innerHTML = SECTORS.map(sec => {
+    const list = ranked.filter(x => x.p.domain === sec.key).sort((a, b) => b.debt - a.debt);
+    // A blocked file cannot move without an archive or a human, so it never leads a stream.
+    const lead = list.find(x => stageOf(x.p) !== 'blocked');
+    const rest = list.filter(x => x !== lead).slice(0, 4);
+    const cold = list.filter(x => ageDays(x.p.lastTouch) > 14).length;
+    return `
+    <article class="stream">
+      <header class="st-head"><span class="mono">Stream ${STREAM[sec.key]}</span><h3>${esc(sec.label)}</h3><span class="mono dim">${list.length} files${cold ? ` · <b class="cold">${cold} cold</b>` : ''}</span></header>
+      ${lead ? `
+      <div class="st-lead" data-slug="${esc(lead.p.slug)}" tabindex="0" role="button">
+        <p class="label">Next in stream</p>
+        <h4>${esc(nameOf(lead.p))}</h4>
+        <p class="st-meta">${badge(lead.p)}<span class="mono">${esc(CASE[lead.p.slug])} · idle ${Math.floor(ageDays(lead.p.lastTouch))}d · debt ${lead.debt.toFixed(0)}</span></p>
+        <div class="debt"><i style="width:${(lead.debt / max * 100).toFixed(1)}%"></i></div>
+        ${nextOf(lead.p) ? `<p class="st-next"><span class="label">Next move, ${esc(nextOf(lead.p).src)}</span>${esc(nextOf(lead.p).text)}</p>` : '<p class="st-next dim">No next move written in the handover. Whoever takes this should write one.</p>'}
+      </div>` : '<p class="empty">Nothing in this stream.</p>'}
+      <ol class="st-rest" start="2">${rest.map(x => `
+        <li data-slug="${esc(x.p.slug)}" tabindex="0" role="button">
+          <span class="st-name">${esc(nameOf(x.p).replace(/\s*\(.*?\)\s*$/, ''))}</span>
+          <span class="badge s-${stageOf(x.p)}"></span>
+          <span class="debt sm"><i style="width:${(x.debt / max * 100).toFixed(1)}%"></i></span>
+          <span class="mono dim">${Math.floor(ageDays(x.p.lastTouch))}d</span>
+        </li>`).join('')}</ol>
+    </article>`;
+  }).join('');
+  $('#draw-note').innerHTML = `Weights: held ×2.0, panel pending ×1.8, in work ×1.4, unworked ×1.2, blocked ×0.5 (a blocked file cannot move without an archive or a human). Backlog proposals are not ranked. Advisory only: <code>STATUS.md</code> and <code>board/TOP_INTEREST.md</code> set the real draw order.`;
+}
+
+function paintKey() {
+  const stages = ['held', 'panel', 'working', 'blocked', 'unworked', 'backlog'];
+  const units = ['cracker', 'validator', 'finder', 'irregular'];
+  $('#scope-key').innerHTML = `
+    <span class="k-group">${stages.map(k => `<span class="k s-${k}"><i></i>${esc(STAGES[k].label)}</span>`).join('')}</span>
+    <span class="k-group">${units.map(k => `<span class="k" data-role="${k}"><svg viewBox="-10 -12 20 22" aria-hidden="true"><path d="M0 -10L7.5 7L0 3.5L-7.5 7Z"/></svg>${esc(UNIT[k].name)}</span>`).join('')}
+    <span class="k"><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="4.5" class="flag-dot"/></svg>Flagged</span></span>`;
 }
 
 // ---- II. The Unit ---------------------------------------------------------
@@ -751,6 +804,7 @@ function openFile(slug) {
         </dl>
         ${FLAGS[slug]?.length ? `<section class="ds-flags"><h3 class="typed">Flagged</h3><ul>${FLAGS[slug].map(f => `<li class="typed">${esc(f)}</li>`).join('')}</ul></section>` : ''}
         ${p.statusRow?.status ? `<section><h3 class="typed">Status, per STATUS.md</h3><p class="ds-status">${md(p.statusRow.status)}</p></section>` : ''}
+        ${p.nextMove ? `<section class="ds-next"><h3 class="typed">Next move, per HANDOVER.md</h3><p class="typed"><mark>${esc(p.nextMove.text)}</mark></p><p class="typed ds-src">From “${esc(p.nextMove.heading)}” · <a href="${blob(p.slug + '/HANDOVER.md')}" target="_blank" rel="noopener">HANDOVER.md</a></p></section>` : ''}
         ${p.claim ? `<section class="ds-claim">
           <h3 class="typed">Validation queue — ${esc(p.claim.claim)}</h3>
           ${st === 'held' ? `<div class="pf-stamps sm">${['Validator', 'Validator', 'Refuter'].map((w, j) => `<span class="rubber partial" style="--t:${[-5, 3, -2][j]}deg">Partial<i>${w}</i></span>`).join('')}</div>` : ''}
@@ -871,6 +925,8 @@ paintHero();
 HERO = buildScope($('#scope'));
 wireScope();
 paintPriority();
+paintDraw();
+paintKey();
 paintUnits();
 paintControls();
 buildScope($('#scope-mini'), { mini: true });

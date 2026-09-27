@@ -501,3 +501,45 @@ mark { background: linear-gradient(transparent 12%, rgba(240, 214, 90, .62) 12%,
 .conn button:hover { border-color: var(--type-2); background: rgba(255, 255, 255, .6); }
 .conn .mono { font-size: 10.5px; color: #b24d17; }
 .conn .w { font-size: 11px; color: var(--type-3); }
+
+/* ---- The draw ------------------------------------------------------------ */
+
+.streams { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.stream { background: var(--ink-2); padding: 20px 20px 16px; display: flex; flex-direction: column; gap: 14px; }
+.st-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-2); }
+.st-head .mono:first-child { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+.st-head h3 { margin: 0; font: 400 22px var(--serif); flex: 1 0 100%; order: 2; }
+.st-head .dim { order: 3; font-size: 11px; }
+.st-head .cold { color: var(--blue); font-weight: 500; }
+.st-lead { cursor: pointer; padding: 14px; margin: 0 -14px; border-radius: 4px; transition: background .15s; }
+.st-lead:hover, .st-lead:focus-visible { background: var(--ink-3); }
+.st-lead h4 { margin: 4px 0 8px; font: 400 24px/1.1 var(--serif); letter-spacing: -.015em; }
+.st-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 10px; }
+.st-meta .mono { font-size: 11px; color: var(--dim); }
+.debt { height: 4px; background: var(--rule-2); border-radius: 2px; overflow: hidden; }
+.debt i { display: block; height: 100%; background: linear-gradient(90deg, var(--blue), var(--orange)); }
+.debt.sm { height: 3px; }
+.st-next { margin: 14px 0 0; font: 400 14.5px/1.5 var(--serif); color: var(--paper-2); }
+.st-next .label { display: block; margin-bottom: 4px; }
+.st-rest { list-style: none; margin: auto 0 0; padding: 0; border-top: 1px solid var(--rule-2); counter-reset: st 1; }
+.st-rest li { counter-increment: st; display: grid; grid-template-columns: 18px minmax(0, 1fr) 10px 54px 30px; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--rule-2); cursor: pointer; font-size: 13.5px; }
+.st-rest li::before { content: counter(st); font: 11px var(--mono); color: var(--dim); }
+.st-rest li:hover .st-name { color: var(--paper); text-decoration: underline; }
+.st-name { color: var(--paper-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.st-rest .badge { gap: 0; }
+.st-rest .mono { font-size: 11px; text-align: right; }
+.draw-note { max-width: 90ch; }
+
+.scope-key { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin: 14px auto 0; max-width: 760px; }
+.k-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; }
+.k { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--muted); }
+.k > i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.k svg { width: 12px; height: 12px; overflow: visible; }
+.k[data-role] path { fill: var(--c); }
+
+.ds-next { padding: 14px 16px; border: 1.5px dashed var(--type-3); }
+.ds-next p { margin: 0; font-size: 14.5px; }
+.ds-src { margin-top: 8px !important; font-size: 11.5px !important; color: var(--type-3); }
+
+@media (max-width: 1280px) { .streams { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .streams { grid-template-columns: minmax(0, 1fr); } }

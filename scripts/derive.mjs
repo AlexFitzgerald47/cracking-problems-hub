@@ -215,6 +215,36 @@ async function readConnections(ROOT, slugs) {
   return out;
 }
 
+// The next move, as the last session left it in HANDOVER.md: the first item
+// under the first "next experiment / next move" heading. Handovers keep the
+// newest notes at the top, so the first match is the current one.
+const NEXT_HEAD = /^(#{2,4})\s+(.*\b(next (experiments?|move|tests?|task|order)|do this next|best next|highest-value next|exact next|next archival)\b.*)$/im;
+async function readNextMove(ROOT, slug) {
+  const md = await fs.readFile(path.join(ROOT, slug, 'HANDOVER.md'), 'utf8').catch(() => null);
+  if (!md) return null;
+  const m = NEXT_HEAD.exec(md);
+  if (!m) return null;
+  // Read to the next heading of the same or higher level; a sub-heading
+  // ("### A. Obtain the mesh") can itself be the first step.
+  const level = m[1].length;
+  const after = md.slice(m.index + m[0].length).split(new RegExp(`^#{1,${level}}\\s`, 'm'))[0];
+  const blocks = after.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean)
+    .map(b => /^#{2,6}\s/.test(b) ? b.replace(/^#+\s+/, '').replace(/^[A-Z0-9][.)]\s+/, '') : b);
+  // A numbered step or a prose paragraph, never a lead-in ("In order:") and
+  // only a bullet if nothing better exists (bullets are often metadata).
+  const item = blocks.find(b => /^\d+[.)]\s/.test(b) || (!/^([-*]\s|[|>`(])/.test(b) && !/^[*_]+\(/.test(b) && !(b.length < 140 && /:\s*$/.test(b))))
+    || blocks[0];
+  if (!item) return null;
+  const first = item.split(/\n(?=\s*(\d+[.)]|[-*])\s)/)[0];
+  let text = stripMd(first.replace(/^(\d+[.)]|[-*])\s+/, '').replace(/\s+/g, ' ')).replace(/^\d+'?[.)]\s+/, '');
+  if (text.length > 300) {
+    const cut = text.slice(0, 300);
+    const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('; '));
+    text = (stop > 120 ? cut.slice(0, stop + 1) : cut.replace(/\s+\S*$/, '')) + (stop > 120 ? '' : '…');
+  }
+  return { text, heading: stripMd(m[2]).replace(/[:.]$/, '') };
+}
+
 async function readActiveClaims(ROOT) {
   const dir = path.join(ROOT, 'board/active');
   let names = [];
@@ -297,6 +327,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     const t = touches[p.slug] || [];
     p.commitDates90d = t.filter(x => x.age < 90 * DAY).map(x => x.date);
     p.firstTouch = t.length ? t[t.length - 1].date : null;
+    p.nextMove = p.isStub ? null : await readNextMove(ROOT, p.slug);
     p.roleTouches = {};
     for (const x of t) {
       const k = x.unit === 'irregular' && x.role !== 'merge' && x.role !== 'infra' ? 'irregular' : x.role;

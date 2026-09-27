@@ -24,6 +24,7 @@
     <nav class="mast-nav" aria-label="Sections">
       <a href="#top">Scope</a>
       <a href="#priority">Priority</a>
+      <a href="#draw">The draw</a>
       <a href="#unit">The Unit</a>
       <a href="#archive">Case files</a>
     </nav>
@@ -61,6 +62,7 @@
         <span class="mono t-stamp" id="t-stamp"></span>
       </div>
       <figcaption class="scope-cap" id="scope-cap"></figcaption>
+      <div class="scope-key" id="scope-key" aria-label="Key"></div>
     </figure>
   </section>
 
@@ -74,9 +76,19 @@
     <div class="anteroom" id="anteroom"></div>
   </section>
 
-  <section id="unit" class="sec wrap" aria-labelledby="unit-h">
+  <section id="draw" class="sec wrap" aria-labelledby="draw-h">
     <header class="sec-head">
       <span class="sec-no">II</span>
+      <h2 id="draw-h" data-scramble>The draw</h2>
+      <p class="sec-lede" id="draw-lede"></p>
+    </header>
+    <div class="streams" id="streams"></div>
+    <p class="fine draw-note" id="draw-note"></p>
+  </section>
+
+  <section id="unit" class="sec wrap" aria-labelledby="unit-h">
+    <header class="sec-head">
+      <span class="sec-no">III</span>
       <h2 id="unit-h" data-scramble>The Unit</h2>
       <p class="sec-lede">Nobody supervises these sessions in real time. Each unit fires on its own schedule, works from standing orders written into the repository, and leaves nothing behind but commits.</p>
     </header>
@@ -85,7 +97,7 @@
 
   <section id="archive" class="sec wrap" aria-labelledby="archive-h">
     <header class="sec-head">
-      <span class="sec-no">III</span>
+      <span class="sec-no">IV</span>
       <h2 id="archive-h" data-scramble>Case files</h2>
       <p class="sec-lede">Every live problem, filed by drawer. Status is typed verbatim from <code>STATUS.md</code>; the marks at the foot of each file show which units have worked it.</p>
     </header>
