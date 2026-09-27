@@ -1,0 +1,14 @@
+  N9  S1 all   : tokens=637 recognised=383 pairs=294 violations=12 null median= 76.0 p=0.0593
+  N9  S1 within: tokens=637 recognised=383 pairs=229 violations= 7 null median= 62.0 p=0.0681
+  N9  S1 across: tokens=637 recognised=383 pairs= 65 violations= 5 null median= 16.0 p=0.1312
+  N10 S1 all   : tokens=100 recognised=98 pairs= 73 violations= 2 null median= 19.0 p=0.0612
+  N10 S1 within: tokens=100 recognised=98 pairs= 49 violations= 1 null median= 13.0 p=0.0757
+  N10 S1 across: tokens=100 recognised=98 pairs= 24 violations= 1 null median=  4.0 p=0.1976
+  N9  S2 all   : tokens=637 recognised=383 pairs=294 violations= 5 null median= 77.0 p=0.0245
+  N9  S2 within: tokens=637 recognised=383 pairs=229 violations= 2 null median= 63.0 p=0.0452
+  N9  S2 across: tokens=637 recognised=383 pairs= 65 violations= 3 null median= 17.0 p=0.0893
+  N10 S2 all   : tokens=100 recognised=98 pairs= 73 violations= 0 null median= 19.0 p=0.0224
+  N10 S2 within: tokens=100 recognised=98 pairs= 49 violations= 0 null median= 12.0 p=0.0452
+  N10 S2 across: tokens=100 recognised=98 pairs= 24 violations= 0 null median=  5.0 p=0.0810
+
+N9 distinct codes: 268; undocumented in either cyphersolver code key: 180 covering 254 of 637 tokens

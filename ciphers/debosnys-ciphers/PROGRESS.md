@@ -4,6 +4,90 @@
 
 ---
 
+## 2026-09-27 – Claude Code cloud session / held-out test: the shared signature key is retired
+
+### What was attempted
+
+1. Stated the key under test before any data was opened (entry below). Reproduced
+   57 → 4 → 2 → Branch B and XP → /kos/ exactly.
+2. Audited `dbourdeau/cyphersolver` `targets/debosnys/` @ `648309e` as a claim source.
+   - Licence and provenance first.
+   - Then this session's derivation line, which cyphersolver never transcribed.
+   - Glyph identities in held-out passages only after the freeze.
+3. Froze predictions in `attempts/2026-09-27-heldout-key-test/FREEZE.md` (commit `fa52442`)
+   before opening any held-out transcription list or scan region.
+4. Checked all 20 poem lines against the scans, token by token, and ran the frozen tests T1–T8.
+   The branches were S1/S2 (dot order) × three dot/tick variants × `TCURL` opaque or `<N U>` ×
+   Romance or Greek × punctuation. The null was exact over all 4,200 typings, with a matched
+   best-of-2 budget.
+
+### Results / findings (failures first)
+
+1. **T1 failed under both conventions.**
+   - The signature's third glyph `NU` (the key's D+EB) is the poem's `TCURL`: NCC rank-sum
+     p = 0.0027 on a blot-free crop. The instrument was validated (within-class mean rank
+     5.3/24) and passed specificity controls. The first, blot-contaminated run gave
+     p = 0.49–0.70 and is reported.
+   - `TCURL` ends lines 1, 2, 17 and 18, so under the key they end on a dangling onset
+     (*-deb*).
+   - The 09-06 "N.N codepoint" exemption contradicts the fit. As a rescue it makes things
+     worse: `DOT = OSD`, and lines 3–4 then dangle as well.
+2. **T5 failed: Branch B is falsified.**
+   - It implies ≥ 15.8% of syllables rime in /os/. The pinned ceiling is 4.3% (Camões); the
+     excess is 3.7-fold.
+   - The only rescue declares the circle inside `%` a different sign from Sektu's N-glyph
+     circle. That contradicts the transcription the key was fitted to, and it still only
+     reaches the ceiling.
+3. **My own frozen premise for T7 was wrong.** French does rhyme on /-kɔs/ (*Écosse/précoce*).
+   T7 did not fire.
+4. **T2 passed**, at visual-identity level only. Lines 3–4 end in X with a round dot, the
+   geometry of the signature's mark.
+5. **T4 passed its frozen threshold, but the pass is inherited.**
+   - Frozen result: p = 0.030 primary; 0.018–0.050 across variants; 0.029–0.045 best-of-2.
+   - Exploratory: within-glyph p = 0.014, about half of it recurrences of the fitted
+     composites. Across whitespace, the model's distinctive claim, p = 0.26 (S1) and 0.16
+     (S2). Conditioned on the fit (pairs absent from the signature), p ≈ 0.10.
+6. **T8 found no signal.** Decoded runs are `OSNOS`-type repeats: 11 lexicon hits against a
+   null median of 6, p = 0.15. No plaintext; no solve-claim.
+7. **The derivation's DOT is not separately visible on the only scan.** Without it the fit has
+   no solution. Its position matches a poem `XD` dot, so it is probably real. Read top-first,
+   the dot gives `DOT = EC`, `X = OS`.
+8. **cyphersolver.**
+   - Images: byte-identical to the public-domain Commons scans; all 149 crops placed.
+   - The poem transcription is accurate at glyph level.
+   - Its "identical in 9 of 10 couplets" is **8 of 10**: line 10's ♀ carries a dot.
+   - `XD` merges dots and ticks.
+   - 180 of N9's 268 codes are undefined.
+   - `516` versus the Hub's `5/6`: neither reading is unambiguous. The Hub's 09-05
+     "unambiguously 5/6" overstated the scan.
+
+### Failures and dead ends
+
+- The first identity run failed because the crop included the background blot. It is kept
+  in the record.
+- A regenerated dot/tick measurement briefly picked a stray pixel over the dot. The fix
+  (pick by ink mass) is committed. The numbers match the ones the variant used.
+- **Corrected forward:** the 09-06 and 09-08 notes treated N=D and Branch B as independent
+  confirmations. They are one rule applied twice. The 09-08 Moore-remainder rejection rested
+  on this key and now carries no weight.
+
+### Artefacts produced
+
+`attempts/2026-09-27-heldout-key-test/`: `FREEZE.md`, `RESULTS.md`, `src/` (frozen rules,
+scan-verified poem, tests, diagnostics, identity instrument, frequency ceilings), `evidence/`
+(comparison sheets, run outputs).
+
+### Receipt
+
+- Starting revision: `c6b6027`. Platform: Claude Code cloud session. Trial ID: none.
+  Cost: unknown.
+- **Changed:** key retired. **Evidence:** RESULTS.md.
+- **Still conditional:** the crib itself; the language.
+- **Next:** freeze the whole-glyph reading against its frequency ceilings, since
+  `XP=COS` already looks 30× too common; seek a better scan of #2b.
+
+---
+
 ## 2026-09-27 – Claude Code cloud session / pre-data statement of the key under test
 
 *Written and committed before this session opened any cipher image, crop or transcription. Its

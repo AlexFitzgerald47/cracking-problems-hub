@@ -1,5 +1,84 @@
 # Handover Notes – The Debosnys Ciphers
 
+## 2026-09-27 – Claude Code cloud session: the shared signature key is retired
+
+**Read first:** `attempts/2026-09-27-heldout-key-test/RESULTS.md` (verdict and evidence),
+then `FREEZE.md` in the same folder (what was predicted before the data was opened).
+
+### Compact frontier for the next session
+
+- **State:** reasoning-ready. The atom-level transition key (`X=EC`, `DOT=OS`, `N=D`, `B2=EN`,
+  `U=EB`, `C2=H`, `CROSSB=YS`; Branch A or B) is **retired** by two frozen falsifiers.
+  - **T1:** the signature's third glyph `NU` = `<N U>` = D+EB is the poem's `TCURL` (NCC
+    rank-sum p = 0.0027, with a validated instrument and specificity controls). It ends lines
+    1, 2, 17 and 18 on a dangling onset, i.e. a *-deb* rhyme.
+  - **T5:** Branch B needs /os/ in ≥ 15.8% of syllables. The ceiling across seven pinned
+    corpora is 4.3%.
+  - Do not extend the key. Do not re-invoke the 09-06 "N.N is an independent codepoint"
+    exemption. It contradicts the fit, and as a rescue it makes things worse: `DOT = OSD`, and
+    lines 3–4 then dangle as well.
+- **Established:**
+  - Visual identities across the two transcription systems: Sektu's signature glyphs
+    `C2B2` = cyphersolver `CC_EQ`, `NU` = `TCURL`, `ZOO` = `SL(o,o)`, `CROSSB` = `PM`.
+  - The poem's AABB couplets: terminals identical in **8** of 10, not 9. Line 10's ♀ carries
+    a dot; couplet 7 is `OX`/`OPLUS`.
+  - Glyph-internal order: tops behave onset-like and bottoms rime-like (within-glyph p = 0.014).
+    That is Sektu's 2017 observation, now measured. It is a structural fact, not a key.
+- **Still conditional:** whether the signature line encodes *Hênêcos Debosnostys* at all.
+  Under a whole-glyph reading, a six-glyph line maps onto any six-chunk segmentation, so the
+  crib alone carries almost no evidence.
+- **Promising next move (bold, conditional, untested — freeze it first):**
+  - The untested **whole-glyph** reading of the same crib (`analysis/signature_candidate_key_v1.json`:
+    `NU=DE`, `XP=COS`, `ZOO=BOS`, `C2B2=HENE`, `SHI=TYS`) survives today's T1, because *DE*
+    is a legal line ending.
+  - Its `TCURL`=*de* at 3.6% of poem glyphs matches /de/ at 2.9–3.9% of syllables in es, pt
+    and fr. That is worth freezing.
+  - But its `XP`=*COS* makes the commonest glyph (9.0%; ≥ 6.8% counting only round-dotted X)
+    the syllable /kos/, which is at most **0.22%** of syllables in any pinned corpus
+    (`evidence/cos_syllable_ceiling.txt`). That is a 30-fold excess. Either the dotted X is
+    not a syllable sign (a word divider, a determinative, or a dot that is its own sign), or
+    the reading dies on frequency before any lexicon is opened.
+  - Any next derivation should run a **frequency-ceiling check on every common sign** before
+    it is frozen. That one check would have killed Branch B on 09-06.
+- **Decisive uncertainty:** the resolution of the signature line. Its X-dot sits in a blot.
+  Its third glyph matches `TCURL` at p = 0.0027, but only after excluding the blot.
+- **Missing evidence and reopening condition:** a higher-resolution image of #2b's signature
+  line and portrait area (Essex County Historical Society / Adirondack History Museum
+  originals). The key would reopen only if the third glyph is shown to differ from the poem's
+  `TCURL`, and even then T5 still stands against Branch B.
+- **Assumptions carried by downstream claims:** the 09-08 rejection of the Moore
+  Greek-remainder alignment was derived *from* this key. With the key retired, that
+  rejection has no support. The remainder hypothesis returns to its pre-09-08 status:
+  untested at the value level.
+
+### Session provenance
+
+Starting revision: `c6b6027` (main). Platform: Claude Code cloud session; the model is the
+one recorded in session metadata. Tools: Commons API, Gutenberg, cyphersolver via
+anonymous git read. Tool limits: none that blocked the work. Material user steering: the
+prompt fixed the order: summarise, audit cyphersolver, FREEZE, test, retire or extend. The
+cyphersolver glyph-identity audit was split around the freeze so that no held-out passage was
+seen first (disclosed in FREEZE §0). Trial: none. Cost: unknown.
+
+### Evidence receipt
+
+- **Changed:** the key is retired; T2 passed (visual identity only); T4 passed at its frozen
+  threshold on inherited within-glyph pairs, and is at chance across whitespace.
+- **Evidence:** `attempts/2026-09-27-heldout-key-test/{FREEZE,RESULTS}.md`, `src/`,
+  `evidence/`.
+- **Still conditional:** the signature crib itself; the language.
+- **Next:** freeze and test the whole-glyph reading against its frequency ceilings; obtain a
+  better scan of #2b.
+
+### cyphersolver audit, one line
+
+The images are the public-domain Commons scans, byte for byte. The poem transcription is
+accurate at glyph level. Component-level disagreements are recorded and resolved by scan in
+`src/poem_scan_verified.py`. 180 of N9's 268 codes are undefined. The Hub's "5/6"
+and cyphersolver's "516" are both unproven. Full ledger in RESULTS.md.
+
+---
+
 ## 2026-09-27 – external-overlap alert (additive)
 
 `dbourdeau/cyphersolver` now exposes a large Debosnys working directory with page crops,

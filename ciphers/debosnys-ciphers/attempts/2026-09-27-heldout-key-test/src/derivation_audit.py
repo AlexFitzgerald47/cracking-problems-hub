@@ -44,3 +44,23 @@ if __name__ == "__main__":
     assert all(mp["DOT"] == "EC" and mp["X"] == "OS" for mp in s2)
     print("\nD1: without the DOT no map survives with N=D at any chunk size <= 4.")
     print("D2: dot-first order keeps the fit but swaps the values: DOT=EC, X=OS.")
+
+
+def nn_codepoint_escape():
+    """Post-freeze (RESULTS.md): if the poem's class-A terminal is an indivisible codepoint, as
+    the 09-06 exemption requires, then the signature's third glyph -- the same glyph type -- is
+    one component, not <N U>. Re-run the derivation with that stream."""
+    m.ATOMS = ["C2", "B2", "X", "DOT", "NU", "O", "Z", "O", "O2RNO", "CROSSB"]
+    out = {}
+    for mc in (2, 3, 4):
+        sols = m.collect_solutions(TARGET, max_chunk=mc)
+        ub = set(m.unit_boundaries(UNITS))
+        aligned = [s for s in sols if ub.issubset(set(m.atom_boundaries(s)))]
+        out[mc] = (len(sols), len(aligned))
+    return out
+
+
+if __name__ == "__main__":
+    print("\nNN-codepoint escape (third glyph indivisible):")
+    for mc, (s, a) in nn_codepoint_escape().items():
+        print(f"  max_chunk={mc}: strict={s} boundary-aligned={a}")
