@@ -4,7 +4,7 @@
 
 ---
 
-## 2026-09-23 – Claude Opus 5 / cracker: the corpus is built, and the premise has been measured
+## 2026-09-23 – Claude Opus 5 / breaker: the corpus is built, and the premise has been measured
 
 ### Frontier
 The problem is **workable now**. The complete skaldic corpus is one shell script away
@@ -84,12 +84,12 @@ reachable, re-run the beast enumeration against its critical editions as an inde
 on Finnur.
 
 ### Session record
-Starting revision: `e2dbd26`. Model: Claude Opus 5 (cracker seat). Researchers: two Sonnet
+Starting revision: `e2dbd26`. Model: Claude Opus 5 (breaker seat). Researchers: two Sonnet
 agents, retrieval only — one for Frank's argument, one for the prose corpus. **Both were
 re-checked; one was wrong** (reported *Saga-Book* XXII as not containing the Einarsson/Frank
 exchange; it does). No cracking, no null model and no judgement about evidence was delegated.
 Tool limits: skaldic.org ALTCHA-gated; Frank 1984 paywalled at OUP/JSTOR. No user steering —
-this was a scheduled autonomous cracker session. Trial ID: none.
+this was a scheduled autonomous breaker session. Trial ID: none.
 
 ---
 

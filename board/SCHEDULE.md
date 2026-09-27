@@ -6,7 +6,7 @@ persists between them, which is why the repository is the only memory the networ
 | Routine | Cadence (UTC) | Role |
 |---------|---------------|------|
 | Hub Orchestrator | daily, 10:00 | Overwatch pass; runs validation when a solve claim is waiting |
-| Hub Cracker | every 6h, :32 | Picks an unclaimed problem (or advances a held one) and works it |
+| Hub Breaker | every 6h, :32 | Picks an unclaimed problem (or advances a held one) and works it |
 | Hub Finder | Tue & Fri, 13:00 | Brings back 4 new verified problems |
 
 Staggered deliberately so no two fire together and collide on a push.
@@ -15,7 +15,7 @@ Staggered deliberately so no two fire together and collide on a push.
 
 | Routine | Model | Why |
 |---------|-------|-----|
-| Hub Cracker | `claude-opus-5` (pinned 2026-09-07) | Cracker seats are frontier-model seats. See `_roles/CRACKER.md` |
+| Hub Breaker | `claude-opus-5` (pinned 2026-09-07) | Breaker seats are frontier-model seats. See `_roles/BREAKER.md` |
 | Hub Orchestrator | `claude-opus-5` (pinned 2026-09-07) | It spawns the three validators, and refuting a named-person identification from raw evidence is the highest-stakes reasoning the board does |
 | Hub Finder | environment default | Not pinned. It already delegates to Sonnet researchers and verifies their work itself; raise it if a verification miss ever gets through |
 
@@ -26,27 +26,43 @@ never the judging.
 Before these were pinned, every routine ran on the environment default, which served
 Sonnet 5. The Debosnys, Moynagh Lough, Hunt Museum and VENONA work in this repository was
 done by GPT-5.6 Codex sessions the human runs separately; those are not configured from
-here, and the standard in `_roles/CRACKER.md` is what reaches them.
+here, and the standard in `_roles/BREAKER.md` is what reaches them.
 
 ## Changes to the routine prompts
 
 The routine prompts live outside this repository, so a future agent cannot read them.
 Record changes here or they are lost.
 
-**2026-09-07 — the three-day claim rule was removed from the cracker and orchestrator
+**2026-09-27 — the draw; the cracker becomes the Breaker.** By the owner's direction all
+three prompts were updated in the same change that landed the framework
+(`board/log/2026-09-27-the-draw.md`):
+
+- **Hub Breaker** (renamed from *Hub Cracker*): reads `_roles/BREAKER.md`; instead of
+  "pick your problem yourself" it runs `npm run draw`, reads `board/streams/<stream>.md`
+  and the pick's `HANDOVER.md`, and takes the pick unless it is unworkable this session
+  (then the next file in the same stream, with the reason in `PROGRESS.md`).
+  `discovered/` packs are claimable in place. It may not release a claim without a
+  `### Recommended next experiments` section whose first item is a concrete move.
+- **Hub Orchestrator**: promotion is filing, not a gate; each pass runs the draw, explains
+  every `PICK-UP` in `STATUS.md`, repairs every `NO NEXT MOVE`, convenes the panels the draw
+  lists as owed to Overwatch, and keeps `board/streams/` current.
+- **Hub Finder**: packs go live the moment they land, so each must carry a suggested
+  category and a startable next move.
+
+**2026-09-07 — the three-day claim rule was removed from the breaker and orchestrator
 prompts.** Both previously said a claim was live until it was ~3 days old. Sessions here
 last minutes to a couple of hours, so that rule let a *crashed* session fence off a problem
 for three days — which is exactly what happened to Caligula's Seashells on 2026-09-05, and
-crackers were correctly obeying an instruction that made it worse. Both prompts now judge a
-claim by `git log -1 -- <problem folder>`: dead after two cracker cycles (12h), crashed if
+breakers were correctly obeying an instruction that made it worse. Both prompts now judge a
+claim by `git log -1 -- <problem folder>`: dead after two breaker cycles (12h), crashed if
 the folder never moved at all, live only if committed to within the last cycle. This
-matches the rule in `_roles/ORCHESTRATOR.md`. The cracker prompt also now says explicitly
+matches the rule in `_roles/ORCHESTRATOR.md`. The breaker prompt also now says explicitly
 that `HANDOVER.md` is not covered by analysis files, and that a session ending without a
 commit has produced nothing.
 
 ## Known operational failures
 
-**2026-09-06 18:32 UTC — a cracker firing produced nothing.** The routine reported SUCCEEDED
+**2026-09-06 18:32 UTC — a breaker firing produced nothing.** The routine reported SUCCEEDED
 after twelve minutes and ~154k tokens, and pushed no commit. `board/active/` was empty at
 the time, so nothing blocked it from claiming work. Cause unknown; the session record is
 `cse_01DVgJy8DzYq5ngf7iSViyvU`. A run that reports success but leaves main unchanged is a
@@ -99,18 +115,18 @@ not reachable from here, which is why the trial could never be made default-on b
 
 Measured this pass, not inferred: the last research commit before today was
 **2026-09-08 23:44 UTC** (`Debosnys: add frozen XP outward test script`). The next was
-**2026-09-17 06:34 UTC** (the Claude cracker claiming Junius). In the nine days between,
+**2026-09-17 06:34 UTC** (the Claude breaker claiming Junius). In the nine days between,
 the repository received exactly three commits — an orchestrator pass (09-11), a policy
 commit (09-12), and a Debosnys claim (09-14) that produced no research and left a stale
 claim fencing the problem until this pass released it.
 
-At the documented cracker cadence of every six hours that window should have contained
+At the documented breaker cadence of every six hours that window should have contained
 roughly 36 firings. Every category folder was frozen at 2026-09-08 throughout.
 
 The split is clean and worth stating precisely: the sessions that commit as
 `AlexFitzgerald47` (the externally-run GPT-5.6 Codex lane, which did nearly all the
 September 8 work) have delivered nothing since 2026-09-08. The sessions that commit as
-`Claude` delivered their first full cracker session on 2026-09-17, and it was good work.
+`Claude` delivered their first full breaker session on 2026-09-17, and it was good work.
 
 **This is the third consecutive pass to record repository inactivity** (2026-09-12,
 2026-09-13, 2026-09-17). The routine prompts and their enabled/failed state live outside
@@ -130,17 +146,17 @@ Since the 2026-09-17 orchestrator pass, research commits landed in exactly two w
 
 | Window | What landed |
 |---|---|
-| 2026-09-17 18:33–18:47 | Proto-Elamite face-confound audit (Claude cracker) |
-| 2026-09-21 06:33–07:01 | Shakespeare period-detrend / equal-N session (Claude cracker) |
+| 2026-09-17 18:33–18:47 | Proto-Elamite face-confound audit (Claude breaker) |
+| 2026-09-21 06:33–07:01 | Shakespeare period-detrend / equal-N session (Claude breaker) |
 
 Against the documented cadence, that leaves:
 
-- **Cracker (every 6h, :32)** — twelve firings between 09-18 06:32 and 09-21 00:32 inclusive
+- **Breaker (every 6h, :32)** — twelve firings between 09-18 06:32 and 09-21 00:32 inclusive
   with no commit of any kind.
 - **Orchestrator (daily, 10:00)** — no commit on 09-18, 09-19 or 09-20. Three passes.
   The 09-17 and 09-21 passes both landed. This is the **first time the orchestrator lane
   itself shows the gap**, and it is the reason this entry exists: the 09-17 escalation
-  described a cracker-lane and Codex-lane problem, and that description is now too narrow.
+  described a breaker-lane and Codex-lane problem, and that description is now too narrow.
 - **Finder (Tue & Fri, 13:00)** — nothing landed from the Friday 09-18 firing; `discovered/`
   gained no pack between 09-17 and this pass.
 - **GPT-5.6 Codex lane (`AlexFitzgerald47`)** — no research commit since **2026-09-08**,
@@ -148,7 +164,7 @@ Against the documented cadence, that leaves:
   queue is empty at this pass, so it is not contributing by that route either.
 
 One firing did produce a commit without producing work: **2026-09-18 00:33**, which wrote
-`board/active/shakespeare-authorship.md` and nothing else. The 2026-09-21 cracker detected
+`board/active/shakespeare-authorship.md` and nothing else. The 2026-09-21 breaker detected
 it correctly by the folder rule, said so in its commit message, and retook the claim. The
 2026-09-07 claim-rule change is doing its job; that failure cost the board three days of one
 problem instead of fencing it off indefinitely.

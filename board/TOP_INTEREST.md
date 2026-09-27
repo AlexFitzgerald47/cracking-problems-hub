@@ -10,12 +10,12 @@ decision; it records that both of its top items were completed.
 
 1. **Close and validate before expanding.** Convene the Linear A labor-liability panel, then the
    Byblos inventory/anchor panel. The four completed panels remain HELD at 3 × PARTIAL pending
-   human sign-off; no fifth cracker pass substitutes for the missing physical/documentary checks.
+   human sign-off; no fifth breaker pass substitutes for the missing physical/documentary checks.
 2. **Cheapest high-value closures:** check Motolinía's 1555 *Carta al Emperador* for Templo Mayor;
    obtain/read Woods 2000 and Malloch 2001 for Caligula; independently audit the blood-eagle
    35-row blade table and Frank's remaining two instrumental-dative comparanda. These can change
    dispositions without rebuilding a corpus.
-3. **Best new cracker start:** Blitz Ciphers authenticity, using the already-committed gold-bar
+3. **Best new breaker start:** Blitz Ciphers authenticity, using the already-committed gold-bar
    exact-tail and inherited-structure instruments. Next: Black Death citation lineage, then
    Meroitic, matching `STATUS.md`'s 2026-09-25 promotion order.
 4. **Best Irish reasoning-ready continuation:** Patrician chronology's Passion-era lead. Ennis is
@@ -45,7 +45,7 @@ That check is now cheap and it is not optional.
 
 **Current execution overlay:** consult `STATUS.md` first. Ennis is now a working STINGING claim awaiting physical traversal and validation, not an untouched lexical target. Hunt and Moynagh have completed first passes; their next evidence gates are in their handovers. Validation and new evidence outrank repeat attacks on the same scans. The original target descriptions below are retained as discovery context.
 
-This is the priority overlay on `TARGETS.md`. Items here should be considered before the general queue when a cracker wants a high-upside problem.
+This is the priority overlay on `TARGETS.md`. Items here should be considered before the general queue when a breaker wants a high-upside problem.
 
 ## Irish unread artefacts
 
@@ -78,7 +78,7 @@ This is the priority overlay on `TARGETS.md`. Items here should be considered be
 - R. A. S. Macalister, *Corpus Inscriptionum Insularum Celticarum* (1945), CIIC 52; later specialist discussion of Tullycommon among portable ogham objects.
 - Rathcroghan Visitor Centre and modern descriptions of the second Oweynagat inscription for the evidence-limited watchlist.
 
-### Cracker rule for this cluster
+### Breaker rule for this cluster
 
 Before claiming one, freeze the exact glyph transcription from the best available imagery and branch every ambiguous stroke rather than silently choosing a reading. The first experiment must compete ordinary Irish/ogham, personal-name formulae, scribal exercise, cryptic/learned ogham, magical notation, and non-Irish/script-switching explanations where the object warrants them.
 
@@ -110,6 +110,6 @@ These are the highest-interest intelligence-code seams located so far. Do not co
 - Hugh Mahon & James J. Gillogly, *Decoding the IRA*; use as the mandatory prior-solution check before claiming any 1920s/30s IRA ciphertext.
 - GCHQ, *Pigeon takes secret message to grave*: official discussion of the WWII carrier-pigeon ciphertext and why submitted solutions have not been accepted.
 
-### Cracker rule for this cluster
+### Breaker rule for this cluster
 
 For each intelligence cipher, first build a **solution-status ledger**: exact ciphertext, date, sender/recipient if known, archive reference, known codebook/key material, known plaintext fragments, prior published attacks, and whether a solution already exists elsewhere in the archive. Do not spend compute on a ciphertext until that ledger is complete. Short messages should be attacked through network, chronology, codebook, vocabulary, unit and parallel-traffic context before brute-force language scoring.

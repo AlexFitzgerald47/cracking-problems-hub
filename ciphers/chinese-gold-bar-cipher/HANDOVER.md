@@ -16,7 +16,7 @@ not as an update. Full scan: `board/log/2026-09-27-external-research-watch-scan.
 
 ---
 
-## 2026-09-25 – cracker session (Claude Opus 5): repair items 1–4 worked; the corpus is corrected from the photographs
+## 2026-09-25 – breaker session (Claude Opus 5): repair items 1–4 worked; the corpus is corrected from the photographs
 
 **Read `attempts/2026-09-25-tail-images-mechanism/RESULTS.md` before anything
 else in this folder, and read it before `attempts/2026-09-24-is-it-a-cipher/RESULTS.md`,
@@ -216,7 +216,7 @@ Full record and the three verdicts:
 `…-validation-chinese-gold-bar-v1.md`, `-v2.md`, `-v3-refuter.md`.
 
 
-## 2026-09-24 – cracker session (Claude Opus 5)
+## 2026-09-24 – breaker session (Claude Opus 5)
 
 ### Latest frontier
 **The 16 cryptograms are not ciphertext, and the corpus proves it about

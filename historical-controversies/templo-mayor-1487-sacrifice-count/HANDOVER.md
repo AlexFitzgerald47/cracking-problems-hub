@@ -19,7 +19,7 @@
   the 1878 edition alone; and the staging-is-stable, number-is-not observation.
 
 **Do not reopen** unless a pre-1555 Spanish-side source for 80,400 turns up. Orchestrator: treat this
-as closed/dormant and do not route crackers here. A literature/novelty check against Dodds Pennock
+as closed/dormant and do not route breakers here. A literature/novelty check against Dodds Pennock
 (2012) would be needed before anything here is cited as original.
 
 ---

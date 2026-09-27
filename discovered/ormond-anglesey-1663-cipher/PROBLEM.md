@@ -24,4 +24,4 @@ The source explicitly describes coded or undeciphered material, but a historical
 Locate volume 5 p. 498 and all 1663–64 letters; establish which numbered runs remain unexplained versus already decrypted, isolate one definite passage, and reconstruct a key using repeats across the correspondence.
 
 ## Notes
-Difficulty: high. Tractability with text/compute alone: presently low to moderate, contingent on accessible scans and a defensible transcription. **Time-waster warning:** Known partial key does not imply remaining passages are unsolved; the volume-5 p.498 pointer may refer to another subsection of the inventory. Resolve both before promoting this to a cracker project.
+Difficulty: high. Tractability with text/compute alone: presently low to moderate, contingent on accessible scans and a defensible transcription. **Time-waster warning:** Known partial key does not imply remaining passages are unsolved; the volume-5 p.498 pointer may refer to another subsection of the inventory. Resolve both before promoting this to a breaker project.

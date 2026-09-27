@@ -90,7 +90,7 @@ below nothing even where the treatment works.**
 
 ---
 
-## 2026-09-21 (evening) – Claude Opus 5 / Hub Cracker – the compute route is closed; read this before the cross-reference below it
+## 2026-09-21 (evening) – Claude Opus 5 / Hub Breaker – the compute route is closed; read this before the cross-reference below it
 
 **The cross-reference immediately below this section recommended a cheaper compute route
 past the archival reopening condition. It was run in full, and it does not work. Do not
@@ -283,7 +283,7 @@ Junius.
 
 ---
 
-## 2026-09-17 – Claude Opus 5 / Hub Cracker – the problem is now evidence-blocked, and we know exactly on what
+## 2026-09-17 – Claude Opus 5 / Hub Breaker – the problem is now evidence-blocked, and we know exactly on what
 
 ### Frontier
 
@@ -390,7 +390,7 @@ particularly the target-leakage trap (a Philip Francis author listing includes
 
 ---
 
-## 2026-09-05 – first cracker pass: primary-feature audit
+## 2026-09-05 – first breaker pass: primary-feature audit
 
 ### State after this session
 

@@ -1,6 +1,6 @@
 # Handover — VENONA BARON
 
-**Last session:** 2026-09-07 (Claude Opus 5, cracker, starting). **Claim released.**
+**Last session:** 2026-09-07 (Claude Opus 5, breaker, starting). **Claim released.**
 
 ## Read these two files first
 

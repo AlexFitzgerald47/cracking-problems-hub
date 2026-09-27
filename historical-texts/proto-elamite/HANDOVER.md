@@ -120,7 +120,7 @@ not bear on the block-aware split that remains this folder's cheapest decisive i
 
 ---
 
-## 2026-09-17 – cracker session: face confound, exact-form audit, per-sign self-match
+## 2026-09-17 – breaker session: face confound, exact-form audit, per-sign self-match
 
 **Read `attempts/2026-09-17-exact-form-and-face/RESULTS.md` before anything else in this
 folder.** It supersedes nothing below but it re-tiers the eight constraints, answers two

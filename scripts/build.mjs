@@ -221,7 +221,7 @@ async function collectProblems(statusText) {
   return out;
 }
 
-// Recent orchestrator/cracker/finder commits by parsing subjects
+// Recent orchestrator/breaker/finder commits by parsing subjects
 async function collectActivity() {
   try {
     const out = sh(`git log --since=60.days.ago --pretty=format:%cI%x1f%h%x1f%s --no-renames`);
@@ -230,7 +230,7 @@ async function collectActivity() {
       let kind = 'commit';
       const s = subject.toLowerCase();
       if (s.startsWith('orchestrator')) kind = 'orchestrator';
-      else if (s.startsWith('cracker') || / crack | claim /.test(' ' + s + ' ')) kind = 'cracker';
+      else if (s.startsWith('breaker') || s.startsWith('cracker') || / crack | claim /.test(' ' + s + ' ')) kind = 'breaker';
       else if (s.startsWith('finder') || / discovery /.test(' ' + s + ' ')) kind = 'finder';
       else if (s.startsWith('merge')) kind = 'merge';
       return { date, sha, subject, kind };
@@ -285,7 +285,7 @@ async function fetchGithubBranches() {
 
 async function copyStatic() {
   await fs.mkdir(DIST, { recursive: true });
-  for (const f of ['style.css', 'app.js']) {
+  for (const f of ['style.css', 'app.js', 'framework.html', 'framework.css', 'framework.js']) {
     await fs.copyFile(path.join(SRC, f), path.join(DIST, f));
   }
 }
@@ -299,13 +299,40 @@ async function buildHtml(data) {
   await fs.writeFile(path.join(DIST, 'index.html'), injected);
 }
 
+// `npm run draw`: the draw as text, for sessions that read the repo, not the site.
+function printDraw(data) {
+  const d = data.draw, by = Object.fromEntries(data.problems.map(p => [p.slug, p]));
+  const out = [];
+  out.push(`THE DRAW  ${data.generatedAt.slice(0, 16).replace('T', ' ')}Z`);
+  out.push('');
+  if (d.rotation.last) out.push(`Last Breaker session: stream ${d.rotation.last.stream} (${d.rotation.last.slug}), ${d.rotation.last.date.slice(0, 16)}.`);
+  out.push(`Rotation: this session takes stream ${d.pick?.stream || d.rotation.next}${d.pick?.skipped ? ` (skipped ${d.pick.skipped} stream(s) with nothing movable)` : ''}.`);
+  if (d.pick) {
+    const f = d.streams.flatMap(s => s.files).find(x => x.slug === d.pick.slug);
+    out.push('');
+    out.push(`PICK  ${d.pick.slug}`);
+    out.push(`      ${by[d.pick.slug]?.shortTitle || by[d.pick.slug]?.title} — ${f.stage}, idle ${f.idle}d, debt ${f.debt}; ${d.pick.reason}.`);
+    if (f.next) out.push(`      Next move: ${f.next}`);
+  }
+  for (const s of d.streams) {
+    out.push('');
+    out.push(`Stream ${s.id} · ${s.label}${s.lead ? `   lead: ${s.lead}` : '   nothing movable'}`);
+    s.files.slice(0, 8).forEach((f, i) => out.push(`  ${String(i + 1).padStart(2)}. ${f.slug.padEnd(58)} ${f.stage.padEnd(9)} idle ${String(Math.floor(f.idle)).padStart(3)}d  debt ${String(Math.round(f.debt)).padStart(3)}${f.pickup ? '  PICK-UP' : ''}${f.claimed ? '  CLAIMED' : ''}${f.next ? '' : '  NO NEXT MOVE'}`));
+  }
+  if (d.overwatch?.length) { out.push(''); out.push(`Owed to Overwatch (panel pending, not drawn): ${d.overwatch.join(', ')}`); }
+  out.push('');
+  out.push(`Debt = days idle x stage weight (${Object.entries(d.weights).map(([k, v]) => `${k} ${v}`).join(', ')}). Held claims idle > ${d.pickupDays}d jump the queue. Blocked files rank but never lead.`);
+  console.log(out.join('\n'));
+}
+
 async function main() {
   console.log('[build] scanning repo…');
   const statusText = (await readFileSafe(path.join(ROOT, 'STATUS.md'))) || '';
   const targetsText = (await readFileSafe(path.join(ROOT, 'board/TARGETS.md'))) || '';
   const problems = await collectProblems(statusText);
   const activity = await collectActivity();
-  const [prs, branches] = await Promise.all([fetchGithubPRs(), fetchGithubBranches()]);
+  const DRAW_ONLY = process.argv.includes('--draw');
+  const [prs, branches] = DRAW_ONLY ? [[], []] : await Promise.all([fetchGithubPRs(), fetchGithubBranches()]);
 
   const headSha = (() => { try { return sh('git rev-parse HEAD'); } catch { return null; } })();
   const branch = (() => { try { return sh('git rev-parse --abbrev-ref HEAD'); } catch { return null; } })();
@@ -344,9 +371,12 @@ async function main() {
     routines: extra.routines,
     roleProfiles: extra.roleProfiles,
     connections: extra.connections,
+    draw: extra.draw,
     pulse: extra.pulse,
     lastByRole: extra.lastByRole,
   };
+
+  if (DRAW_ONLY) { printDraw(data); return; }
 
   await copyStatic();
   await buildHtml(data);

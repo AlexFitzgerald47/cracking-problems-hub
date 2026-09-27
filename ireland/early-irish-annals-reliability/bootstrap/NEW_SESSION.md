@@ -48,8 +48,8 @@ Paste into a new session on branch `claude/irish-problems-progress-o6q34y`.
 
 ---
 
-You are a cracker in the Cracking Problems Hub. Read `AGENT_INSTRUCTIONS.md`,
-`_roles/CRACKER.md`, `_roles/README.md` and `board/PRACTICES.md` first, then
+You are a breaker in the Cracking Problems Hub. Read `AGENT_INSTRUCTIONS.md`,
+`_roles/BREAKER.md`, `_roles/README.md` and `board/PRACTICES.md` first, then
 `ireland/early-irish-annals-reliability/analysis/RESULTS.md` — it has a contents
 table and fourteen sections — followed by that folder's `PROGRESS.md` and
 `HANDOVER.md`, including their amendments. Claim the problem in `board/active/`.

@@ -14,6 +14,19 @@ need a default-on instrumented run and a change to the external stored prompts, 
 human-decision list. See `board/IMPROVEMENT.md`, 2026-09-24.
 This policy update does not change the research dispositions below or restart routines.
 
+## Operating framework — 2026-09-27: the draw
+
+By the owner's direction, Breaker work is now **drawn, not chosen**. Four streams — **A**
+Ciphers, **B** Undeciphered texts, **C** Controversies, **D** Ireland — take turns: each
+Breaker firing works the stream after the last Breaker session's, and within it the
+unclaimed file with the highest coverage debt (days since a working session × stage
+weight). A held claim idle for more than 14 days jumps to the front of its stream. No
+session releases a claim without a next move in `HANDOVER.md`. **`discovered/` is live**:
+its packs are drawn and claimable where they sit. Run `npm run draw` to see the pick; the
+rules are in `_roles/README.md`, the standing briefs in `board/streams/`, and the live site
+has a framework page. The *cracker* role is renamed **Breaker**; dated records keep the
+old word. Log: `board/log/2026-09-27-the-draw.md`.
+
 ## Board state
 
 **2026-09-27 post-reconciliation check.** The canonical checkout equalled `origin/main` at
@@ -101,7 +114,7 @@ and no craft was lost.
 ### Ciphers
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | Open — outward prediction, unconfirmed | Latest analysis predicts poem #4 L3/L4 terminal XP → /kos/ using the shared key, not Branch B alone. This is a conditional model application, not independently confirmed plaintext. Read `analysis/2026-09-08-xp-outward-crack.md` and the XP script; a new handover routing note points to both. **Claim released 2026-09-17** — the 2026-09-14 session left a claim and no commits. Unclaimed and available |
+| Debosnys Ciphers | `ciphers/debosnys-ciphers/` | **PARKED 2026-09-27 — shared signature key retired; evidence-blocked by the owner's choice**; unclaimed | A held-out session froze its predictions and then retired the atom-level transition key (`X=EC`, `DOT=OS`, …; Branch A or B) on two frozen falsifiers — the signature's `NU` glyph is the poem's `TCURL` (p = 0.0027). **Read `attempts/2026-09-27-heldout-key-test/RESULTS.md`, then `evidence-acquisition.md`.** The next move needs scans from the Brewster Memorial Library (Adirondack History Museum); an unsent draft request waits for the human. Two archive-free tasks remain: the copied-source sweep of 1878–83 magazine and newspaper verse (freeze the fingerprint and its null first), and checking whether Farnsworth's plates beat the Commons resolution. |
 | Voynich Manuscript | `ciphers/voynich-manuscript/` | Open — corrected and redirected | September 6 audit withdrew the claim that the golden cell controls physical section: illustration class is not quire, and A blocks repeat one folio. Plant-label fit failed held-out (117/120). Next: frozen Tankalusha/Alfonsine degree-list extraction; fit Taurus, predict Gemini/Cancer. See current `HANDOVER.md`. |
 | Kryptos (remaining parts) | `ciphers/kryptos/` | **Restated 2026-09-04** – K4 open as a *method* problem | Plaintext recovered from Sanborn's Smithsonian papers in 2025 and confirmed, but not deciphered and sealed for 50 years. Pure transposition and the Vigenère family eliminated from the public cribs; simple-transposition composites show no signal above chance. See `attempts/2026-09-04-crib-constraints/` |
 | Beale Ciphers | `ciphers/beale-ciphers/` | **Review-ready 2026-09-27** – B1 effectively settled; B3 external no-message case not yet reproduced here | The Hub established only that B1's alphabetical runs are non-random (p < 10⁻⁵) and that B3 lacks that specific signature (p = 0.85). A 2026 peer-reviewed *Cryptologia* study now reports a reproducible broader result favouring deliberate construction for both B1 and B3 after testing the principal composite-cipher families. This is strong external evidence, **not an adopted Hub closure**. Next: reproduce its archived pipeline against the two disputed B3 tokens, then decide whether B3 should move from open decipherment to probable constructed/no-message. See `HANDOVER.md` and `board/log/2026-09-27-external-claim-triage.md` |
@@ -147,7 +160,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Shakespeare Authorship | `historical-controversies/shakespeare-authorship/` | Open — **the cross-register correction is validated out of sample, 2026-09-23**; unclaimed | The 2026-09-21 correction generalises: on 496 non-dramatic chunks by **eleven dramatists who contributed none of the developed arm**, detrend + author-blind centring reaches micro **0.365** (p = 0.001, chance 0.037) against 0.358 on the arm it was developed on. Uncorrected 0.133; sink 33.1% → 17.5%. The folder's reopening condition is met. Three changes to the recipe, both arms: (1) the two steps are **inseparable** — each alone is worse than nothing (0.117 / 0.109 vs 0.133; 0.161 / **0.067** vs 0.141); (2) leave-one-work-out centring is unnecessary, the questioned arm's global mean matches it; (3) the detrend needs the questioned corpus's **period**, not per-document dates — dating every chunk at the arm mean costs 0.010, wrong per-document dates cost 0.041. Handover item 2 is **closed**: nothing predicts which authors recover, and once authors with too little text are dropped the test has no power (n = 10 needs |ρ| ≥ 0.636). Next: genre inside the register — the two failures are one prose romance and one hack's polemic. Still **do not run Oxford/Bacon/Derby**. See `attempts/2026-09-23-third-register-holdout/RESULTS.md` |
 | Letters of Junius — authorship | `historical-controversies/junius-letters-authorship/` | Open — **evidence-blocked, and the block is measured**; promoted out of `discovered/` 2026-09-17 | Corpus built and reproducible (Junius from two independent digitisations, 173 acknowledged Francis letters, 14 rival period authors). Pipeline validated: Junius vs Draper 0.970, Philo Junius placed with Junius 34/34. **The register gap exceeds the author signal**: same-author cross-register Delta 0.588 vs different-author same-register 0.471; cross-register attribution 0.108 against chance 0.125, within-register 0.848. Francis ranks 8th of 15 and **that ranking is evidence neither way**. Reopens on ≥8,000 clean words of Junius's private letters to Woodfall, or ≥20,000 words of acknowledged Francis in the public polemical register 1769–1775. **The compute route recommended here on 2026-09-21 was run that evening and is CLOSED** — see `attempts/2026-09-21-shift-or-loss/` (`FREEZE.md` committed before any test ran; 30 s on the committed corpus). The gap on this corpus is a **loss**, not a shared displacement: the prediction sink does not collapse (observed concentration 0.341 sits *below* its own permutation null's 0.399 ± 0.098), the sink's identity is unstable across bootstraps, and **79 % of each author's register displacement is author-specific** (leave-one-author-out shared fraction 0.214; in-sample the same corpus reads 0.505 and would have said "go"). Do not re-run any centring variant without new evidence. **One reading is withdrawn and one cheap route survives, added 2026-09-23:** the Shakespeare ablation shows centring *alone* scores below doing nothing even where the full treatment works, so "both centrings failed" is not a fourth independent reading; and the detrend — untried here because the panel carries `period` as a volume-level range string — needs only the questioned corpus's *period*, not per-document dates (dating every chunk at the corpus mean costs 0.010). That is the only untried form of the route. Second item: derive the reopening word count from an information-ceiling calculation rather than asserting 8,000. See `board/log/2026-09-23-connection-ablation-ceiling-and-label-permutation.md` |
 | The blood eagle: metaphor or rite? | `historical-controversies/blood-eagle-kenning/` | **Worked 2026-09-23 — the premise is measured and the verdict is *undecidable for a measurable reason***; unclaimed | **The problem is workable at hour one, not hour six:** the complete skaldic corpus is one shell script away (`analysis/code/FETCH_CORPUS.sh`), the pipeline runs in seconds, and the prose dossier is coded in `analysis/data/prose_feature_matrix.tsv`. **Central result: Knútsdrápa st. 1 is a hapax on every axis.** 0 of 772 beast-of-battle occurrences has the beast as agent of a blade verb; 1 of 21 `bak` occurrences involves a beast or a blade, and it is this one; and the corpus's actual carrion formula (`falla und ara greipar`, ≥4 poets) is not what Sigvatr wrote. **Frank's premise that the stanza is "a conventional utterance" fails at corpus level; her conclusion — no viking-age support outside the stanza — is right and now has a denominator.** Because a hapax cannot adjudicate itself the honest verdict is **undecidable, for a measurable reason: n = 1**. Priority for the underlying idea belongs to **Bjarni Einarsson (1986)**, not to this session. Two things to attack first, both flagged by the session itself: the **35-row blade co-occurrence adjudication is load-bearing and is one agent's judgement** (`analysis/data/beast_blade_adjudication.tsv`, a reason per row — if one row is really a beast governing a blade verb the headline moves from 0 to 1), and **finding (i) depends on the *Orkneyinga saga* passage being c. 1200–30 rather than a Flateyjarbók-stage interpolation**, the single most dangerous assumption in the files. Frank 1984 (EHR) remains unread; the argument is reconstructed from her 1988/1990 restatements. A three-hour result is available: *Speculum* 97:1 reports she supports the dative-of-agent reading with three prepositionless instrumental datives elsewhere in *Knútsdrápa* — one was checked and **its datives are instruments, not agents**; if all three are, her own syntactic support argues against her construal. The OCR question here is closed: two independent scans, every number computed twice, same answer. Original promotion ground, still true: "Good — corpus digitised, evidence base enumerable" and passed over for five consecutive passes, which is the failure mode `_roles/ORCHESTRATOR.md` names by name. The deliverable is two inventories — every occurrence of the eagle-tears-the-back image in skaldic verse with manuscript attestation, and every prose blood-eagle narrative with an argued judgement on whether it is independently attested or textually dependent — then a transmission map. Criterion 4 makes "the surviving text cannot decide this" a legitimate and likely outcome. The citation-chain method here is the same one `templo-mayor-1487-sacrifice-count` needs |
-| Templo Mayor 1487 dedication sacrifice count | `historical-controversies/templo-mayor-1487-sacrifice-count/` | **Worked 2026-09-24 — criteria 1 and 2 delivered, verdict (b) returned; unclaimed** | **The notation hypothesis the last pass added to the handover is the answer.** 80,400 = **10 x 8,000 + 1 x 400** = *matlacxiquipilli ipan centzontli*, a vigesimal unit-expression attested in this chronicle family itself: the *Cronica Mexicana*'s editors gloss `macuilxiquipilli ypan macuiltzontli` as 42,000 and print "ochenta mill tarascos (`matlacxiquipilli`)" for a *different* 80,000 in the same text; Motolinia's *Memoriales* defines *xiquipilli* = 8,000. The odd "400" that makes the figure read as a tally is the system's **smallest counter**. **The filiation result:** of the **19 distinct large person-quantities shared by three or more of the five chroniclers, every one except 80,400 is a plain decimal round number** — it is the only non-generic shared value, and four of five have it, so it is transmitted as a bare token. But it does **not** travel with its prose: on two instruments Ixtlilxochitl is textually independent of every other witness (all |z| < 2.6) and has the number anyway. **Three witnesses the proposal did not name change the question:** Tezozomoc translates the same lost *Cronica X* as Duran, narrates the same four days at the same length, and **gives no total at all** (nor does Acosta, the third descendant); Torquemada prints **72,344** in his own narrative *and* 80,400 "segun otros" in a chapter he lifts from Mendieta verbatim; Mendieta dates it **1485**, not 1487, because he needs Cortes's birth year for a Cortes-Luther typology. **One registered prediction failed outright** — the vigesimal shape of Ixtlilxochitl's 16,000/24,000/16,000/24,400 breakdown is *not* significant (P = 0.0146 against an empirical null; these authors' numbers are already 74.5 % divisible by 400), and the argument does not rest on it. **Live verification debt and the named first next step:** a modern editor (Bellini) attributes the figure to **Motolinia**, and it is not in the body of his *Historia* or *Memoriales* — check the *Carta al Emperador* (1555); if he has it, the transmission map is wrong as drawn. Second: read the Telleriano-Remensis folio (BnF Mexicain 385) directly rather than through Orozco y Berra's 1878 count of 2 xiquipilli + 10 tzontli = 20,000. See `attempts/2026-09-24-numeral-or-count/RESULTS.md` and `board/log/2026-09-24-shared-wording-filiation-is-blind-to-a-translated-common-source.md` |
+| Templo Mayor 1487 dedication sacrifice count | `historical-controversies/templo-mayor-1487-sacrifice-count/` | **CLOSED 2026-09-27 by the owner — low priority; do not route breakers here** | Closed on a **corrected** verdict: Motolinía's *Carta al Emperador* (1555) already has *ochenta mill i quatrocientos*, so the 2026-09-24 notation-artefact label (b) is refuted — **(a) as to transmission, (c) as to whether 80,400 was ever a count**. The handover's candid novelty note: most findings were already in print; the only possibly new points (the 1878-only Tezozómoc 72,000; stable staging, unstable number) have had no literature check. Reopen only if a pre-1555 Spanish-side source for 80,400 appears. |
 | Mesha Stele line 31 (BTDWD) | `historical-controversies/mesha-stele-line31/` | **HELD — awaiting human sign-off**; promoted out of `discovered/` 2026-09-17 | Three validator verdicts returned 2026-09-12, all PARTIAL. Balak rejected as an epigraphic reading. Not approved as a solve and not to be published as one. Decisive missing check: blind stroke comparison with genuine stone/squeeze independence |
 | Thera eruption date | `historical-controversies/thera-eruption-date/` | **Worked 2026-09-22** — the success criterion is answered and the answer is a bound; reasoning-ready, unclaimed | Calibration engine, OxCal-equivalent phase model and a validated pipeline are committed and rerun in minutes — **do not rebuild them**. The prior-sensitivity criterion is met and it is large: changing only the within-phase prior on Manning's 31 Akrotiri determinations moves the posterior median **1561 → 1618 BCE**. The deeper result is an information bound — IntCal20 is flat across **1610–1540 BCE** and the asymptotic d′ for 1610 vs 1560 is **0.19**, so no sample size resolves the plateau interior; the endpoints do separate (1620 vs 1530, ceiling 4.89). Bias-corrected by simulation, the evidence gives a 95.4 % support set of **1610–1560 BCE peaking near 1600**, reproducing Manning's published 95.4 % range by another route while his published 68.3 % range is ~3× too narrow. Reopening condition is specific: an annual-resolution curve whose 1610–1540 amplitude exceeds ~40 ¹⁴C yr. Ice cores and tephra geochemistry untouched |
 | Caligula's seashells | `historical-controversies/caligulas-seashells/` | **Worked 2026-09-22** – corpus built, inventory complete, verdict delivered; open on the *reading* side | 120-token sense inventory of `muscul*` across ~19.3M words now in `data/`, rebuildable from `code/`. Verdict: the Latin does **not** support emending *conchae* — `conchas legere` is Cicero's own idiom (*De Or.* 2.22) and Tacitus uses it of gathering Ocean pearls in Britain (*Agr.* 12). **`PROBLEM.md` misattributed Woods's thesis** (huts = Balsdon 1934; Woods argues *boats*) — correction appended there. Woods's boat sense of *musculus* is unattested until c. AD 400. What remains is library access: Malloch *CQ* 2001 and the body of Woods 2000 are unread, so success criterion 3 is still open |
@@ -155,7 +168,11 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 
 ## Next-session priorities
 
-**Read this first if you are a cracker.** The board is not short of sessions that land — four
+*Since 2026-09-27 a Breaker takes the file `npm run draw` names. The list below is the
+orchestrator's standing view and the source for overrides recorded in
+`board/TOP_INTEREST.md`; it no longer picks work on its own.*
+
+**Read this first if you are a breaker.** The board is not short of sessions that land — four
 landed in the 24 hours before this pass. What it is short of is sessions that pick up what those
 left behind. Six problems now hold **committed, reusable pipelines a successor is told not to
 rebuild**: Thera (calibration engine and phase model), the Annals (four-witness entry table and
@@ -278,7 +295,7 @@ as "the two cheapest unworked starts" a full day after both had been worked to c
     replaced (0.406 % does not reproduce and is one of four values; the defensible figure is
     **7.2 %**, or 31.5 % charged for the affine family), and `SOLUTION.md` §5 downgraded in
     light of Hayden & Stifter 2025, which the refuter read in full and which argues against
-    the historical bridge. Those are edits to a cracker-owned folder, so they need a cracker
+    the historical bridge. Those are edits to a breaker-owned folder, so they need a breaker
     session, not an orchestrator.
 
 13. **VENONA — two small enumerable populations, never run.** Constraint-ledger Q3 (the
@@ -293,7 +310,7 @@ as "the two cheapest unworked starts" a full day after both had been worked to c
     human-decision list below.
 
 15. **Fresh Irish cipher lane:** Crelly 1648–49 is the strongest of the three packs, but all
-    three need a solution-status audit *before* a cracker session. Check
+    three need a solution-status audit *before* a breaker session. Check
     `board/EXTERNAL_RESEARCH_INDEX.md` before opening any cipher target — the Maltravers pack
     in the same batch was withdrawn because someone else had already solved it.
 
@@ -311,9 +328,9 @@ Thera and Caligula have criteria answered or partly answered, and blood eagle no
 measured verdict awaiting one cheap adjudication audit.
 
 **The board's real imbalance this pass is not a cold category — it is that validation is the
-only thing that ever falls behind.** Every cracker cycle lands work; panels only run when an
+only thing that ever falls behind.** Every breaker cycle lands work; panels only run when an
 orchestrator pass convenes one. Four claims now sit HELD and two bounded claims (Linear A,
-Byblos) have been waiting for a panel since 09-17. No cracker will do it, because a validator
+Byblos) have been waiting for a panel since 09-17. No breaker will do it, because a validator
 is a different seat.
 
 **Held but not progressing:** nothing. `board/active/` is empty, and for the **third consecutive
@@ -343,7 +360,7 @@ orchestrator pass can choose this, and no further pass should re-open it as a tr
 since 2026-09-08 — **sixteen days** — and the PR queue has now been empty on four consecutive
 passes, so it is not contributing by that route either. Escalated 2026-09-17, unchanged, and it
 is the only unexplained silence on the board. (2) 1641 Depositions needs an archive request to
-TCD that no agent can send; it should not be handed to a cracker as a compute problem. (3)
+TCD that no agent can send; it should not be handed to a breaker as a compute problem. (3)
 **Four** solve-claims are now `HELD — awaiting human sign-off` — Mesha line 31, Ennis STINGING,
 VENONA Meredith/Vernon and, new this pass, the Chinese gold bars — every one on a completed
 three-validator panel and **every verdict on this board is PARTIAL. There is still no PASS
@@ -383,6 +400,10 @@ not just the verdict.
 
 ## Recently Proposed / In `/discovered/`
 
+*Since 2026-09-27 every pack below except the withdrawn Ormonde–Maltravers and the
+methodological validation bound is a **live target**, ranked by the draw in the stream of
+its suggested category. Promotion into a category folder is now filing, not a gate.*
+
 There are **13** problem packs under `discovered/` after this pass's three promotions, plus
 seventeen `MOVED.md` stubs marking problems that now live in a category folder. Physical location does not imply “unworked.” Full discovery
 provenance: `discovered/_manifest/swarm-discovery-2026-09-04.md`,
@@ -393,7 +414,7 @@ provenance: `discovered/_manifest/swarm-discovery-2026-09-04.md`,
 **Promoted out so far:** Proto-Elamite → `historical-texts/` (2026-09-05); Debosnys,
 `VORFYDCGT` and CD 286 → `ciphers/` (2026-09-06); Junius and Mesha line 31 →
 `historical-controversies/`, Byblos → `historical-texts/` (2026-09-17) — those three had
-had full cracker sessions while sitting in a folder this repository defines as holding
+had full breaker sessions while sitting in a folder this repository defines as holding
 *unworked* proposals, which misled every agent that read the dashboard. **2026-09-21: 1641
 Depositions → `ireland/`; Thera eruption date and Caligula's seashells →
 `historical-controversies/`** — these three are promoted on the opposite ground, that they
@@ -404,7 +425,7 @@ are well-formed, high-tractability and *unworked*, and were being passed over in
 `ireland/`** — these last two on a commitment the previous pass recorded with a date, not on a
 fresh judgement. Each promoted folder leaves a one-line `MOVED.md` stub so a
 resuming session cannot recreate it in the wrong place; delete the stub once the problem has
-had a session at its new path. The Thera stub was correctly deleted by its own cracker
+had a session at its new path. The Thera stub was correctly deleted by its own breaker
 session on 09-22 under that rule — the first time it has been exercised.
 
 **2026-09-23: four more.** `patrician-chronology` and `dal-riata-migration-direction` →
@@ -428,7 +449,7 @@ meets (a) and (b) and has been passed over three times is promoted regardless of
 
 - **`discovered/short-cipher-validation-bound/` stays permanently.** It is a
   methodological asset, not a problem with a named unknown, so no category folder is
-  right for it, and eight cracker-owned handovers cite the path. Its real defect was
+  right for it, and eight breaker-owned handovers cite the path. Its real defect was
   invisibility, which is fixed: it is now cited directly in `board/PRACTICES.md`.
 
 **2026-09-25: three more, and the residual queue is closed as a recurring question.**
@@ -461,7 +482,7 @@ without re-deciding:**
 **Two closed, so they are not re-examined.** `cypro-minoan` is **not promotable and the reason is
 not tractability**: it is evidence-blocked until the corpus is digitised, which no session here can
 change, and it should be treated like the 1641 Depositions archive request — a standing item, not a
-cracker task. `ormonde-maltravers-1634-cipher` was solved externally and is already CLOSED; the
+breaker task. `ormonde-maltravers-1634-cipher` was solved externally and is already CLOSED; the
 folder is an audit trail only.
 
 | Problem | Folder | Suggested category | Tractability with text/compute |
@@ -476,12 +497,12 @@ folder is an audit trail only.
 | Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
 | Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
 | Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts | Blocked until corpus digitised |
-| ~~Blitz Ciphers~~ **PROMOTED 2026-09-25, worked 2026-09-27** → `ciphers/blitz-ciphers/` | stub deleted; live folder | ciphers | Promoted because the gold-bar sessions built the authenticity benchmark its criterion 1 asks for; first cracker session landed 2026-09-27 |
+| ~~Blitz Ciphers~~ **PROMOTED 2026-09-25, worked 2026-09-27** → `ciphers/blitz-ciphers/` | stub deleted; live folder | ciphers | Promoted because the gold-bar sessions built the authenticity benchmark its criterion 1 asks for; first breaker session landed 2026-09-27 |
 | ~~Templo Mayor 1487 sacrifice count~~ **PROMOTED 2026-09-24** → `historical-controversies/templo-mayor-1487-sacrifice-count/` | `MOVED.md` stub only | historical-controversies | **Promoted on the 2026-09-23 commitment.** Does the widely-repeated 80,400 figure (Durán, Ixtlilxóchitl, Mendieta) reflect a real count or citation-chain embellishment? A checkable textual-filiation question, not a plausibility judgement. **Promote next pass if still unworked** — same method as `blood-eagle-kenning`, so one session equips the other |
 | ~~"The Night Before Larry Was Stretched" — authorship~~ **PROMOTED 2026-09-24** → `ireland/larry-was-stretched-authorship/` | `MOVED.md` stub only | ireland | **Promoted on the 2026-09-23 commitment.** Unresolved since Farmer (1896) rejected the traditional attribution. Criterion 2 already allows the right answer to be "Maher is structurally untestable by authorship methods". Before a session starts, run the information-ceiling calculation: a single ballad against period candidates is exactly the short-text regime where `discovered/short-cipher-validation-bound/` applies. **Promote next pass if still unworked** |
 | Singapore Stone / Kallang inscription | `discovered/singapore-stone-kallang-inscription/` | historical-texts | **New 2026-09-22.** Script and language of the surviving fragment (the stone was destroyed 1843/48); still described as unresolved in March 2026. Fills the Southeast Asian gap. Tractability is limited by how little of the fragment survives — an information-loss problem before it is a decipherment problem, and that should be measured first |
 | Crelly 1648–49 coded correspondence | `discovered/crelly-1648-coded-correspondence/` | ciphers | **New 2026-09-17.** Casway's 1978 edition describes an undeciphered passage; exact letter, shelfmark, ciphertext length and modern solution status all unverified. Strongest of the three: a same-date Antrim letter gives a parallel account |
-| Ormond–Anglesey 1663–64 partial cipher | `discovered/ormond-anglesey-1663-cipher/` | ciphers | **New 2026-09-17.** Partial key known (E=13/14, THE=246). The volume-5 p.498 pointer is not yet proved to belong to this exchange — resolve that before any cracker session |
+| Ormond–Anglesey 1663–64 partial cipher | `discovered/ormond-anglesey-1663-cipher/` | ciphers | **New 2026-09-17.** Partial key known (E=13/14, THE=246). The volume-5 p.498 pointer is not yet proved to belong to this exchange — resolve that before any breaker session |
 | Ormonde–Maltravers 1634–35 cipher | `discovered/ormonde-maltravers-1634-cipher/` | **CLOSED — solved externally** | Daniel Bourdeau published a reading of both letters, reported to Cryptiana 2026-09-16. The finder pass caught this itself and withdrew the candidate. Folder retained as the audit trail. Only residual: nomenclator values 185 and 149 in one clause. **Do not re-propose** |
 | The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | methodological — stays put | Carries a general result on where a crib set's discriminating power comes from. Cited by five problems and by `PRACTICES.md` |
 
@@ -509,7 +530,7 @@ the plantation and Famine periods.
 
 ## How the Hub Operates
 
-Four agent roles — **cracker** (works a problem), **finder** (discovers new ones),
+Four agent roles — **breaker** (works a problem), **finder** (discovers new ones),
 **validator** (verifies a solve claim), **orchestrator** (overwatch). Read `_roles/` for
 yours, and `board/PRACTICES.md` before starting anything.
 
@@ -529,7 +550,7 @@ yours, and `board/PRACTICES.md` before starting anything.
   them and says which problem needs each one next.
 - `board/log/2026-09-05-methods-that-transfer.md` remains current for the six techniques
   proven on the cipher problems.
-- A cracker taking a screened target from `TARGETS.md` or `TOP_INTEREST.md` may create the
+- A breaker taking a screened target from `TARGETS.md` or `TOP_INTEREST.md` may create the
   problem folder **directly in its category** — `discovered/` is for finder proposals that
   have not been worked.
 - The board is meant to grow. Discovery is part of the core mission.

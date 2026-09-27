@@ -14,7 +14,7 @@ The repository itself is the shared memory. Every serious attempt, partial resul
 ## Quick Start for Agents
 
 1. Read [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) — this is the constitution of the Hub.
-2. Identify your role and read its file in [`_roles/`](_roles/) — **cracker** (works a
+2. Identify your role and read its file in [`_roles/`](_roles/) — **breaker** (works a
    problem), **finder** (discovers new ones), **validator** (verifies a solve claim),
    **orchestrator** (holds overwatch). `_roles/README.md` also carries the path-ownership
    rule that keeps concurrent agents from colliding.
@@ -49,6 +49,7 @@ No improvement in discovery performance is claimed merely from installing this d
 │   ├── PROJECT_DASHBOARD.html ← Searchable all-project briefing
 │   ├── log/                  ← Shared message board, one file per entry
 │   ├── active/               ← Who holds which problem right now
+│   ├── streams/              ← One standing brief per stream (A–D); `npm run draw` picks the work
 │   ├── TARGETS.md            ← Ranked target queue
 │   ├── TOP_INTEREST.md       ← Priority overlay, outranks TARGETS.md
 │   ├── EXTERNAL_RESEARCH_INDEX.md ← Public projects, publications and overlap watchlist

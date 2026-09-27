@@ -85,8 +85,11 @@ function stageOf(p, row, claim) {
   if (p.verdict === 'SOLVED') return 'solved';
   if (p.verdict === '3×PARTIAL') return 'held';
   if (claim && /panel pending/i.test(claim.disposition)) return 'panel';
-  if (/CLOSED|blocked/i.test(st)) return 'blocked';
-  if (p.domain === 'discovered') return 'backlog';
+  if (/CLOSED|PARKED|blocked/i.test(st)) return 'blocked';
+  // discovered/ is a live drawer (framework of 2026-09-27): its packs are
+  // claimable targets. Only a pack STATUS.md files as methodological is not.
+  if (p.domain === 'discovered' && /methodological/i.test(st)) return 'method';
+  if (p.domain === 'discovered') return (p.roleTouches?.breaker || 0) > 0 ? 'working' : 'unworked';
   if (/never worked/i.test(st)) return 'unworked';
   if (!row && !(p.files.hasHandover || p.files.hasAttempts || p.files.hasAnalysis)) return 'unworked';
   return 'working';
@@ -109,7 +112,7 @@ function roleOf(subject, files) {
   // unpack, a bulk rename), not a session working a problem.
   if (new Set(probs.map(m => m[2])).size > 8) return 'other';
   if (probs.length && probs.every(m => m[1] === 'discovered')) return 'finder';
-  if (probs.length || /^claim|^release|cracker/.test(s)) return 'cracker';
+  if (probs.length || /^claim|^release|breaker|cracker/.test(s)) return 'breaker';
   if (files.some(f => /^(STATUS\.md|board\/)/.test(f))) return 'orchestrator';
   return 'other';
 }
@@ -179,7 +182,7 @@ async function readDispatches(ROOT, slugs, addedAt, limit = 14) {
     const roleHint = /orchestrator/i.test(md.slice(0, 400)) ? 'orchestrator'
       : /finder/i.test(md.slice(0, 400)) ? 'finder'
       : /validator/i.test(md.slice(0, 400)) ? 'validator'
-      : /cracker|session/i.test(md.slice(0, 400)) ? 'cracker' : 'other';
+      : /breaker|cracker|session/i.test(md.slice(0, 400)) ? 'breaker' : 'other';
     out.push({
       date: name.slice(0, 10), file: `board/log/${name}`, title,
       lede: lede.length > 280 ? lede.slice(0, 277).replace(/\s+\S*$/, '') + '…' : lede,
@@ -261,7 +264,7 @@ async function readActiveClaims(ROOT) {
 // so this table is the only machine-readable copy; update both together.
 export const ROUTINES = [
   { key: 'orchestrator', label: 'Orchestrator', cadence: 'daily 10:00 UTC', rule: { hours: [10], minute: 0 } },
-  { key: 'cracker', label: 'Cracker', cadence: 'every 6h at :32 UTC', rule: { hours: [0, 6, 12, 18], minute: 32 } },
+  { key: 'breaker', label: 'Breaker', cadence: 'every 6h at :32 UTC', rule: { hours: [0, 6, 12, 18], minute: 32 } },
   { key: 'finder', label: 'Finder', cadence: 'Tue & Fri 13:00 UTC', rule: { hours: [13], minute: 0, weekdays: [2, 5] } },
 ];
 
@@ -275,7 +278,7 @@ async function readRoleProfiles(ROOT) {
     const m = cells[0].match(/Hub (\w+)/);
     if (m) models[m[1].toLowerCase()] = stripMd(cells[1]);
   }
-  for (const key of ['cracker', 'validator', 'orchestrator', 'finder']) {
+  for (const key of ['breaker', 'validator', 'orchestrator', 'finder']) {
     const md = await fs.readFile(path.join(ROOT, `_roles/${key.toUpperCase()}.md`), 'utf8').catch(() => '');
     const para = md.split(/\n\s*\n/).map(x => x.trim()).find(x => x && !x.startsWith('#')) || '';
     const flat = stripMd(para.replace(/\s+/g, ' '));
@@ -284,6 +287,75 @@ async function readRoleProfiles(ROOT) {
     out[key] = { creed: two.length > 170 ? sentences[0].replace(/\s+/g, ' ').trim() : two, model: models[key] || null, file: `_roles/${key.toUpperCase()}.md` };
   }
   return out;
+}
+
+// ---- The draw -------------------------------------------------------------
+// One stream per category. Each firing of the Breaker routine takes the next
+// stream in rotation after the one the last Breaker session worked, and within
+// it the file with the highest coverage debt that nobody holds. A held claim
+// idle past PICKUP_DAYS jumps to the front of its stream. See _roles/README.md.
+export const STREAMS = [
+  { id: 'A', key: 'ciphers', label: 'Ciphers' },
+  { id: 'B', key: 'historical-texts', label: 'Undeciphered texts' },
+  { id: 'C', key: 'historical-controversies', label: 'Controversies' },
+  { id: 'D', key: 'ireland', label: 'Ireland' },
+];
+export const WEIGHT = { held: 2.0, panel: 1.8, working: 1.4, unworked: 1.2, blocked: 0.5 };
+export const PICKUP_DAYS = 14;
+// A Breaker can move these. Panel-pending files wait on Overwatch convening
+// validators, so they are listed as owed to Overwatch rather than drawn.
+const MOVABLE = ['held', 'working', 'unworked'];
+
+function inferDomain(p) {
+  const t = `${p.title} ${p.lede}`.toLowerCase();
+  if (/\bireland|irish|ogham|gaelic|annals\b/.test(t)) return 'ireland';
+  if (/cipher|cypher|cryptogram|code(d)? (letter|correspondence)/.test(t)) return 'ciphers';
+  if (/script|inscription|writing|syllabary|hieroglyph|language|manuscripts?/.test(t)) return 'historical-texts';
+  return 'historical-controversies';
+}
+export const streamKeyOf = p => p.domain !== 'discovered' ? p.domain : (p.statusRow?.suggestedDomain && STREAMS.some(s => s.key === p.statusRow.suggestedDomain) ? p.statusRow.suggestedDomain : inferDomain(p));
+
+function computeDraw(problems, log, activeClaims, now) {
+  const claimed = new Set(activeClaims.map(c => c.problem));
+  // Idle since the last Breaker or Validator session; a file never worked accrues
+  // debt from the day its folder was opened.
+  const idleOf = p => { const d = p.lastWorked || p.firstTouch || p.lastTouch; return d ? Math.max(0, (now - new Date(d).getTime()) / DAY) : 30; };
+  const files = problems.filter(p => !p.isStub && WEIGHT[p.stage]).map(p => {
+    const idle = idleOf(p);
+    return {
+      slug: p.slug, id: p.id, stream: streamKeyOf(p), stage: p.stage,
+      idle: Math.round(idle * 10) / 10, debt: Math.round(idle * WEIGHT[p.stage] * 10) / 10,
+      movable: MOVABLE.includes(p.stage), claimed: claimed.has(p.id),
+      pickup: p.stage === 'held' && idle > PICKUP_DAYS,
+      next: p.nextMove?.text || (p.claim ? stripMd(p.claim.missingCheck) : null),
+    };
+  });
+  const rank = (a, b) => (b.pickup - a.pickup) || (b.debt - a.debt);
+  const streams = STREAMS.map(s => {
+    const list = files.filter(f => f.stream === s.key).sort(rank);
+    const lead = list.find(f => f.movable && !f.claimed) || null;
+    return { ...s, lead: lead?.slug || null, files: list };
+  });
+  // Rotation: the stream after the one the most recent Breaker session worked.
+  let last = null;
+  for (const c of log) {
+    if (roleOf(c.subject, c.files) !== 'breaker') continue;
+    const slug = c.files.map(f => f.match(PROBLEM_PATH)).filter(Boolean).map(m => `${m[1]}/${m[2]}`)[0];
+    const p = slug && problems.find(x => x.slug === slug && !x.isStub);
+    if (!p) continue;
+    last = { stream: STREAMS.find(s => s.key === streamKeyOf(p))?.id, slug, date: c.date, subject: c.subject.slice(0, 140) };
+    break;
+  }
+  const start = last ? (STREAMS.findIndex(s => s.id === last.stream) + 1) % STREAMS.length : 0;
+  let pick = null;
+  for (let k = 0; k < STREAMS.length && !pick; k++) {
+    const s = streams[(start + k) % STREAMS.length];
+    if (!s.lead) continue;
+    const f = s.files.find(x => x.slug === s.lead);
+    pick = { stream: s.id, slug: f.slug, reason: f.pickup ? `pick-up rule: held claim idle ${Math.floor(f.idle)} days` : 'highest coverage debt in the stream', skipped: k };
+  }
+  const overwatch = files.filter(f => f.stage === 'panel').sort((a, b) => b.debt - a.debt).map(f => f.slug);
+  return { weights: WEIGHT, pickupDays: PICKUP_DAYS, streams, rotation: { last, next: STREAMS[start].id }, pick, overwatch };
 }
 
 export async function derive({ ROOT, statusText, problems, activity, domains }) {
@@ -323,7 +395,6 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     p.shortTitle = row?.name || p.title;
     p.statusRow = row ? { status: row.status, notes: row.notes, suggestedDomain: row.suggestedDomain } : null;
     p.claim = claim ? { claim: claim.claim, disposition: claim.disposition, missingCheck: claim.missingCheck, since: claim.since } : null;
-    p.stage = stageOf(p, row, claim);
     const t = touches[p.slug] || [];
     p.commitDates90d = t.filter(x => x.age < 90 * DAY).map(x => x.date);
     p.firstTouch = t.length ? t[t.length - 1].date : null;
@@ -334,6 +405,9 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
       if (k === 'merge' || k === 'infra' || k === 'other') continue;
       p.roleTouches[k] = (p.roleTouches[k] || 0) + 1;
     }
+    // Coverage is measured by working sessions, not by overwatch edits to STATUS.md.
+    p.lastWorked = t.find(x => x.role === 'breaker' || x.role === 'validator')?.date || null;
+    p.stage = stageOf(p, row, claim);
   }
 
   for (const a of activity) {
@@ -352,7 +426,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
   const start = new Date(now - (spanDays - 1) * DAY); start.setUTCHours(0, 0, 0, 0);
   const pulse = Array.from({ length: spanDays }, (_, i) => ({
     date: new Date(start.getTime() + i * DAY).toISOString().slice(0, 10),
-    orchestrator: 0, validator: 0, cracker: 0, finder: 0, other: 0, irregular: 0,
+    orchestrator: 0, validator: 0, breaker: 0, finder: 0, other: 0, irregular: 0,
   }));
   const pulseIdx = Object.fromEntries(pulse.map((d, i) => [d.date, i]));
   for (const c of log) {
@@ -395,6 +469,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     dispatches: await readDispatches(ROOT, problems.filter(p => !p.isStub).map(p => p.slug), addedAt),
     activeClaims: await readActiveClaims(ROOT),
     connections: await readConnections(ROOT, problems.filter(p => !p.isStub).map(p => p.slug)),
+    draw: computeDraw(problems, log, await readActiveClaims(ROOT), now),
     routines: ROUTINES,
     roleProfiles: await readRoleProfiles(ROOT),
     pulse,
