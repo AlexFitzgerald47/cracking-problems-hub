@@ -49,7 +49,17 @@
       <div class="kpis" id="kpis"></div>
     </div>
     <figure class="scope-fig">
+      <div class="scope-modes" role="group" aria-label="Scope mode">
+        <button type="button" data-mode="live" aria-pressed="true">Live</button>
+        <button type="button" data-mode="replay" aria-pressed="false">Replay</button>
+        <button type="button" data-mode="neglect" aria-pressed="false">Neglect</button>
+      </div>
       <div class="scope" id="scope"></div>
+      <div class="transport" id="transport" hidden>
+        <button type="button" id="t-play" aria-label="Play">▶</button>
+        <input type="range" id="t-range" min="0" value="0" aria-label="Replay position" />
+        <span class="mono t-stamp" id="t-stamp"></span>
+      </div>
       <figcaption class="scope-cap" id="scope-cap"></figcaption>
     </figure>
   </section>
