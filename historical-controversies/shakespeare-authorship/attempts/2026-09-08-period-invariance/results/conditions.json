@@ -1,0 +1,395 @@
+{
+ "n_plays": 311,
+ "n_authors": 27,
+ "year_range": [
+  1583,
+  1700
+ ],
+ "raw_features": 500,
+ "key_features": 500,
+ "raw_features_absorbed_by_merge": 51,
+ "merge_groups": {
+  "th": [
+   "the",
+   "thee",
+   "th'"
+  ],
+  "to": [
+   "to",
+   "too"
+  ],
+  "of": [
+   "of",
+   "off"
+  ],
+  "me": [
+   "me",
+   "mee"
+  ],
+  "be": [
+   "be",
+   "bee"
+  ],
+  "her": [
+   "her",
+   "here"
+  ],
+  "he": [
+   "he",
+   "hee"
+  ],
+  "hav": [
+   "have",
+   "haue"
+  ],
+  "we": [
+   "we",
+   "wee"
+  ],
+  "on": [
+   "on",
+   "one"
+  ],
+  "sh": [
+   "she",
+   "shee"
+  ],
+  "god": [
+   "good",
+   "god"
+  ],
+  "do": [
+   "do",
+   "doe"
+  ],
+  "lov": [
+   "love",
+   "loue"
+  ],
+  "tis": [
+   "'tis",
+   "tis"
+  ],
+  "vpon": [
+   "upon",
+   "vpon"
+  ],
+  "il": [
+   "ile",
+   "i'le",
+   "i'll",
+   "ill"
+  ],
+  "vs": [
+   "us",
+   "vs",
+   "use"
+  ],
+  "mad": [
+   "made",
+   "mad"
+  ],
+  "go": [
+   "go",
+   "goe"
+  ],
+  "giv": [
+   "give",
+   "giue"
+  ],
+  "never": [
+   "never",
+   "neuer"
+  ],
+  "self": [
+   "selfe",
+   "self"
+  ],
+  "vp": [
+   "up",
+   "vp"
+  ],
+  "think": [
+   "think",
+   "thinke"
+  ],
+  "don": [
+   "done",
+   "don"
+  ],
+  "ever": [
+   "ever",
+   "euer"
+  ],
+  "own": [
+   "own",
+   "owne"
+  ],
+  "ben": [
+   "been",
+   "beene"
+  ],
+  "leav": [
+   "leave",
+   "leaue"
+  ],
+  "find": [
+   "find",
+   "finde"
+  ],
+  "hear": [
+   "hear",
+   "heare"
+  ],
+  "speak": [
+   "speak",
+   "speake"
+  ],
+  "lok": [
+   "look",
+   "looke"
+  ],
+  "fair": [
+   "faire",
+   "fair"
+  ],
+  "heaven": [
+   "heaven",
+   "heauen"
+  ],
+  "liv": [
+   "live",
+   "liue"
+  ],
+  "again": [
+   "again",
+   "againe"
+  ],
+  "sovl": [
+   "soul",
+   "soule"
+  ],
+  "down": [
+   "down",
+   "downe"
+  ],
+  "fear": [
+   "fear",
+   "feare"
+  ],
+  "por": [
+   "poore",
+   "poor"
+  ],
+  "son": [
+   "son",
+   "sonne"
+  ],
+  "kep": [
+   "keep",
+   "keepe"
+  ],
+  "di": [
+   "dye",
+   "die"
+  ],
+  "er": [
+   "ere",
+   "e're"
+  ],
+  "mean": [
+   "mean",
+   "meane"
+  ]
+ },
+ "mean_r2_date_raw": 0.10316976398003919,
+ "mean_r2_date_norm": 0.043911650763932615,
+ "conditions": {
+  "RAW": [
+   {
+    "gap_years": 0,
+    "n_tested": 311,
+    "accuracy_with_gap": 0.8135048231511254,
+    "accuracy_same_plays_no_gap": 0.819935691318328,
+    "drop": -0.006430868167202619
+   },
+   {
+    "gap_years": 5,
+    "n_tested": 289,
+    "accuracy_with_gap": 0.6678200692041523,
+    "accuracy_same_plays_no_gap": 0.8408304498269896,
+    "drop": -0.17301038062283736
+   },
+   {
+    "gap_years": 10,
+    "n_tested": 249,
+    "accuracy_with_gap": 0.4819277108433735,
+    "accuracy_same_plays_no_gap": 0.8393574297188755,
+    "drop": -0.357429718875502
+   },
+   {
+    "gap_years": 20,
+    "n_tested": 109,
+    "accuracy_with_gap": 0.5137614678899083,
+    "accuracy_same_plays_no_gap": 0.8256880733944955,
+    "drop": -0.3119266055045872
+   },
+   {
+    "gap_years": 30,
+    "n_tested": 39,
+    "accuracy_with_gap": 0.6666666666666666,
+    "accuracy_same_plays_no_gap": 0.8461538461538461,
+    "drop": -0.17948717948717952
+   }
+  ],
+  "DETREND": [
+   {
+    "gap_years": 0,
+    "n_tested": 311,
+    "accuracy_with_gap": 0.819935691318328,
+    "accuracy_same_plays_no_gap": 0.8263665594855305,
+    "drop": -0.006430868167202508
+   },
+   {
+    "gap_years": 5,
+    "n_tested": 289,
+    "accuracy_with_gap": 0.6851211072664359,
+    "accuracy_same_plays_no_gap": 0.8477508650519031,
+    "drop": -0.16262975778546718
+   },
+   {
+    "gap_years": 10,
+    "n_tested": 249,
+    "accuracy_with_gap": 0.46987951807228917,
+    "accuracy_same_plays_no_gap": 0.8473895582329317,
+    "drop": -0.37751004016064255
+   },
+   {
+    "gap_years": 20,
+    "n_tested": 109,
+    "accuracy_with_gap": 0.42201834862385323,
+    "accuracy_same_plays_no_gap": 0.8256880733944955,
+    "drop": -0.4036697247706422
+   },
+   {
+    "gap_years": 30,
+    "n_tested": 39,
+    "accuracy_with_gap": 0.38461538461538464,
+    "accuracy_same_plays_no_gap": 0.8461538461538461,
+    "drop": -0.4615384615384615
+   }
+  ],
+  "DROP": [
+   {
+    "gap_years": 0,
+    "n_tested": 311,
+    "accuracy_with_gap": 0.8263665594855305,
+    "accuracy_same_plays_no_gap": 0.842443729903537,
+    "drop": -0.016077170418006492
+   },
+   {
+    "gap_years": 5,
+    "n_tested": 289,
+    "accuracy_with_gap": 0.7058823529411765,
+    "accuracy_same_plays_no_gap": 0.8650519031141869,
+    "drop": -0.15916955017301038
+   },
+   {
+    "gap_years": 10,
+    "n_tested": 249,
+    "accuracy_with_gap": 0.5622489959839357,
+    "accuracy_same_plays_no_gap": 0.8674698795180723,
+    "drop": -0.30522088353413657
+   },
+   {
+    "gap_years": 20,
+    "n_tested": 109,
+    "accuracy_with_gap": 0.5412844036697247,
+    "accuracy_same_plays_no_gap": 0.8532110091743119,
+    "drop": -0.3119266055045872
+   },
+   {
+    "gap_years": 30,
+    "n_tested": 39,
+    "accuracy_with_gap": 0.6153846153846154,
+    "accuracy_same_plays_no_gap": 0.8717948717948718,
+    "drop": -0.2564102564102564
+   }
+  ],
+  "NORM": [
+   {
+    "gap_years": 0,
+    "n_tested": 311,
+    "accuracy_with_gap": 0.8392282958199357,
+    "accuracy_same_plays_no_gap": 0.8520900321543409,
+    "drop": -0.012861736334405127
+   },
+   {
+    "gap_years": 5,
+    "n_tested": 289,
+    "accuracy_with_gap": 0.740484429065744,
+    "accuracy_same_plays_no_gap": 0.8754325259515571,
+    "drop": -0.1349480968858131
+   },
+   {
+    "gap_years": 10,
+    "n_tested": 249,
+    "accuracy_with_gap": 0.5943775100401606,
+    "accuracy_same_plays_no_gap": 0.8795180722891566,
+    "drop": -0.285140562248996
+   },
+   {
+    "gap_years": 20,
+    "n_tested": 109,
+    "accuracy_with_gap": 0.5045871559633027,
+    "accuracy_same_plays_no_gap": 0.8715596330275229,
+    "drop": -0.3669724770642202
+   },
+   {
+    "gap_years": 30,
+    "n_tested": 39,
+    "accuracy_with_gap": 0.5897435897435898,
+    "accuracy_same_plays_no_gap": 0.9230769230769231,
+    "drop": -0.33333333333333337
+   }
+  ],
+  "NORMDET": [
+   {
+    "gap_years": 0,
+    "n_tested": 311,
+    "accuracy_with_gap": 0.8231511254019293,
+    "accuracy_same_plays_no_gap": 0.8392282958199357,
+    "drop": -0.016077170418006492
+   },
+   {
+    "gap_years": 5,
+    "n_tested": 289,
+    "accuracy_with_gap": 0.7162629757785467,
+    "accuracy_same_plays_no_gap": 0.8615916955017301,
+    "drop": -0.1453287197231834
+   },
+   {
+    "gap_years": 10,
+    "n_tested": 249,
+    "accuracy_with_gap": 0.5662650602409639,
+    "accuracy_same_plays_no_gap": 0.8634538152610441,
+    "drop": -0.29718875502008024
+   },
+   {
+    "gap_years": 20,
+    "n_tested": 109,
+    "accuracy_with_gap": 0.5045871559633027,
+    "accuracy_same_plays_no_gap": 0.8623853211009175,
+    "drop": -0.35779816513761475
+   },
+   {
+    "gap_years": 30,
+    "n_tested": 39,
+    "accuracy_with_gap": 0.5384615384615384,
+    "accuracy_same_plays_no_gap": 0.8974358974358975,
+    "drop": -0.35897435897435903
+   }
+  ]
+ },
+ "runtime_seconds": 31.938779830932617
+}

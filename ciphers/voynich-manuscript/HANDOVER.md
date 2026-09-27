@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+Recovered the unmerged 2026-09-08 zodiac-ordinal package from
+`origin/claude/frontier-problem-solving-2vji0y` at
+`attempts/2026-09-08-zodiac-ordinal-crib/`. Treat its analyses as a dated research record;
+the later main-branch handover entries retain precedence for next actions.
+
+---
+
 ## 2026-09-23 – orchestrator cross-reference (additive; nothing below altered)
 
 **Permute the subset label before believing a post-hoc split — this folder has already been

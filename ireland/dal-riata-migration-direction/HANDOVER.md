@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+Recovered `attempts/2026-09-24-onomastic-founder-test/` from the unmerged
+`origin/claude/busy-galileo-wxsv88` branch. Its negative result closes the untagged-annals
+personal-name route on its stated controls; it does not settle the migration question.
+
+---
+
 ## 2026-09-24 – orchestrator cross-reference: the matcher you would have written will not work (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing below is changed or contested.

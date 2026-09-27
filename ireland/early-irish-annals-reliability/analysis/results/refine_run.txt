@@ -1,0 +1,6 @@
+refined 424 site-magnitudes at or above 0.80
+largest single correction: +0.0298 in magnitude
+
+no eclipse crossed the central threshold
+
+pre-refinement canon kept at results/eclipse_canon_pre_refinement.csv

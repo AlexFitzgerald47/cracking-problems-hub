@@ -1,0 +1,3439 @@
+{
+ "forms": [
+  "concha",
+  "conchae",
+  "concham",
+  "concharum",
+  "conchis",
+  "conchas",
+  "conchyli",
+  "conchylia",
+  "conchylium",
+  "conchyliis",
+  "conchyliorum"
+ ],
+ "corpus_stats": {
+  "latin_library": {
+   "files": 2141,
+   "tokens": 13353918
+  },
+  "perseus": {
+   "files": 364,
+   "tokens": 7926686
+  }
+ },
+ "n_hits": 379,
+ "hits": [
+  {
+   "corpus": "latin_library",
+   "file": "appverg.ciris.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 644,
+   "left": "praetexite honore volumen sunt pandioniis vicinae sedibus urbes actaeos inter colles et candida thesei purpureis late ridentia litora",
+   "right": "quarum non ulli fama concedere digna stat megara alcathoi quondam munita labore alcathoi phoebique deus namque affuit illi"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4a.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7054,
+   "left": "mirantur aurum et ad gratiam poculorum omnium gemmarum adhibent apparatum secant marmora testudinea varietate margaritas legunt plurimas maximasque",
+   "right": "sunt in quibus hoc genus lapidum requiritur quae certo anni tempore luxuriante conceptu sitiunt rorem velut maritum cuius"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4a.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 7163,
+   "left": "micaverit coruscatio intempestivo metu conprimuntur clausaeque subita formidine vitia contrahunt abortiva aut enim perparvuli fiunt scrupuli aut inanes",
+   "right": "ipsis inest sensus partus suos maculari timent cumque flagrantioribus radiis excanduit dies ne fucentur lapides solis calore subsidunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4a.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 7201,
+   "left": "profundum et se gurgitibus ab aestu vindicant huic tamen providentiae aetas opitulatur nam candor senecta disperit et grandescentibus",
+   "right": "flavescit margarita in aqua mollis est unio duratur exemptus numquam duo simul reperiuntur inde unionibus nomen datum ultra"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4a.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7226,
+   "left": "unio duratur exemptus numquam duo simul reperiuntur inde unionibus nomen datum ultra semiunciales inventos negant piscantium insidias timent",
+   "right": "unde est ut aut inter scopulos aut inter marinos canes plurimum delitescant gregatim natant certus examini dux est"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "persius.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1480,
+   "left": "hac scelerata ducere pulpa haec sibi corrupto casiam dissoluit oliuo haec calabrum coxit uitiato murice uellus haec bacam",
+   "right": "rasisse et stringere uenas feruentis massae crudo de puluere iussit peccat et haec peccat uitio tamen utitur at"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "calpurniussiculus.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 4334,
+   "left": "uicinaque saxa petamus saxa quibus uiridis stillanti uellere muscus dependet scopulisque cauum sinuantibus arcum imminet exesa ueluti testudine",
+   "right": "venimus et tacito sonitum mutauimus antro seu residere libet dabit ecce sedilia tophus ponere seu cubitum melior uiret"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "appvergcomp.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 9966,
+   "left": "praetexite honore uolumen sunt pandioniis uicinae sedibus urbes actaeos inter colles et candida thesei purpureis late ridentia litora",
+   "right": "quarum non ulli fama concedere digna stat megara alcathoi quondam murata labore alcathoi phoebique deus namque affuit illi"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "avianus.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 297,
+   "left": "testvdine et aqvila pennatis avibus quondam testudo locuta est si quis eam uolucrum constituisset humi protinus e rubris",
+   "right": "proferret harenis quis precium nitido cortice bacca daret indignum sibimet tardo quod sedula gressu nil ageret toto perficeretque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh2.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 6931,
+   "left": "solem intueri semper omnibusque horis cum eo verti vel nubilo obumbrante iam quidem lunari potestate ostrearum conchyliorumque et",
+   "right": "omnium corpora augeri ac rursus minui quin et soricum fibras respondere numero lunae exquisivere diligentiores minimumque animal formicam"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh2.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 15320,
+   "left": "sidus lunam existimari hoc esse quod terras saturet accedensque corpora impleat abscedens inaniat ideo cum incremento eius augeri",
+   "right": "et maxime spiritum sentire quibus sanguis non sit sed et sanguinem hominum etiam cum lumine eius augeri ac"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sidonius4.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2353,
+   "left": "revertamur post verba quae primum salve ferebant hoc poposcisti ut epigramma transmitterem duodecim versibus terminatum quod posset aptari",
+   "right": "capaci quae per ansarum latus utrumque in extimum gyri a rota fundi senis cavatur striaturis quarum puto destinas"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sidonius4.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2453,
+   "left": "produxerit non minus forti et asprata lima poliri sed ista vel similia quorsum ecce iam canta pistrigero quae",
+   "right": "vehit tritone cytheren hac sibi conlata cedere non dubitet poscimus inclina paulisper culmen erile et munus parvum magna"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "manilius5.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2531,
+   "left": "caeco captabit in aequore piscem et perlucentis cupiens prensare lapillos verticibus mediis oculos immittet avaros cumque suis domibus",
+   "right": "valloque latentis protrahet immersus nihil est audere relictum quaestus naufragio petitur corpusque profundo immissum pariter quam praeda exquiritur"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "manilius5.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2560,
+   "left": "petitur corpusque profundo immissum pariter quam praeda exquiritur ipsa nec semper tanti merces est parva laboris censibus aequantur",
+   "right": "lapidumque nitore vix quisquam est locuples oneratur terra profundo tali sorte suas artes per litora tractat aut emit"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh1.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 2322,
+   "left": "polypo de navigatore nauplio crusta intecti de locustis cancrorum genera de pinotere de echinis de cocleis de pectinibus",
+   "right": "genera quanta luxuriae materia mari sit de margaritis quomodo nascantur et ubi quomodo inveniantur quae genera unionum quae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh1.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 12560,
+   "left": "et medicinae lviiii purpura viiii alga marina ii mus marinus ii ex scorpione marino sanguisugis vi murices xiii",
+   "right": "v piscium adips ii callionymi iii coracini fel i pectunculi i sepiae xxiii ichthyocolla v batia i bacchus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh1.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 12606,
+   "left": "i ex delphinis viii coluthia sive coryphia iii alcyoneum vii thynnus v menae xvi scolopendra ii saurus i",
+   "right": "i siluro xv strombo sive concha longa vi tethea v olus marinum i myaces xxxv mituli viii pelorides"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "pliny.nh1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 12612,
+   "left": "coryphia iii alcyoneum vii thynnus v menae xvi scolopendra ii saurus i conchis i siluro xv strombo sive",
+   "right": "longa vi tethea v olus marinum i myaces xxxv mituli viii pelorides i seriphum ii erythinis ii solea"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "gregdecretals3.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 40093,
+   "left": "idem petro subdiacono idem petro subdiacono indicante et infra cognovimus autem r referente quod moriens uxor redempti unam",
+   "right": "argenteam nudis verbis iussit venundari et suis dari libertis et scutellam argenteam cuidam monasterio reliquisse in quibus utrisque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "more.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 14028,
+   "left": "anni sequentis euentum prospexerint tum ex his quae supersunt magnam uim frumenti mellis lanae lini ligni cocci et",
+   "right": "uellerum cerae seui corii ad haec animalium quoque in alias regiones exportant quarum rerum omnium septimam partem inopibus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 6633,
+   "left": "coruscatio intempestivo metu comprimuntur claus que subita formidine vitia contrahunt abortiva aut enim perparvuli fiunt scrupuli aut inanes",
+   "right": "ipsis inest sensus partus suos maculari timent quumque flagrantioribus radiis excanduit dies ne fucentur lapidis solis calore subsidunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus4.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 6671,
+   "left": "profundum et se gurgitibus ab stu vindicant huic tamen providentia tas opitulatur nam candor senecta disperit et grandescentibus",
+   "right": "flavescunt margarit lapis iste in aqua mollis est duratur evisceratus nunquam duo simul reperiuntur unde unionibus nomen datum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "manilius2.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 592,
+   "left": "nunc sidere lunae mota tenet nunc diverso stimulata recessu nunc anni spatio phoebum comitata volantem sic summersa fretis",
+   "right": "et carcere clausa ad lunae motum variant animalia corpus et tua damna tuas imitantur delia vires tu quoque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "baldo.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 2384,
+   "left": "idque referre monet si cor sibi simia donet arte salutari sic se cito posse iuuari facta dehinc tristis",
+   "right": "terroribus istis sedulitate precum rogat hanc deducere secum quam sic hortatur hac fraudis et arte precatur o mi"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "aus.mos.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 429,
+   "left": "distinguit glarea muscum tota caledoniis talis pictura britannis cum uirides algas et rubra corallia nudat aestus et albentes",
+   "right": "germina bacas delicias hominum locupletibus atque sub undis assimulant nostros imitata monilia cultus haud aliter placidae subter uada"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "kalila.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 25140,
+   "left": "tuum super quem vadis et alios duos magnos elephantes et equum et camelum et sanguinem eorum ponas in",
+   "right": "ibi te lavabimus et cantabimus super te incantaciones forsan te poterimus liberare a temptacione rex vero hec audiens"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "seneca.contr2.txt",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 16055,
+   "left": "muliebrium vitiorum fundamentum avaritia est quae potest non timere opinionem adulterii potest non timere adulterium ex omni rupe",
+   "right": "contrahitur quo vestis cruentetur infelices ancillarum greges laborant ut adultera tenui veste perspicua sit et nihil in corpore"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus2.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 1637,
+   "left": "hos locos superstites undos tempestati fuisse nam in latebrosis rupium cavaminibus qu fluctuum confligiis tunc adesa sunt reduvi",
+   "right": "residerunt et alia multa qu affatim mari incito exspuuntur ita ut sint licet facie mediterranea appareant tamen specie"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tibullus2.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1427,
+   "left": "smaragdos et niueam tyrio murice tingit ouem addit auaritiae causas et coa puellis uestis et e rubro lucida",
+   "right": "mari haec fecere malas hinc clauim ianua sensit et coepit custos liminis esse canis sed pretium si grande"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vitruvius7.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 5485,
+   "left": "procreatur potestate et ideo hoc rhodo etiam insula creatur ceterisque eiusmodi regionibus quae proximae sunt solis cursui ea",
+   "right": "cum sunt lecta ferramentis circa scinduntur e quibus plagis purpurea sanies uti lacrima profluens excussa in mortariis terendo"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vitruvius7.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 5508,
+   "left": "circa scinduntur e quibus plagis purpurea sanies uti lacrima profluens excussa in mortariis terendo comparatur et quod ex",
+   "right": "marinarum testis eximitur ideo ostrum est vocitatum id autem propter salsuginem cito fit siticulosum nisi mel habeat circa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "varro.ll5.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 4686,
+   "left": "a coloribus ut haec asellus umbra turdus alia a vi quadam ut haec lupus canicula torpedo item in",
+   "right": "aliqua ex graecis ut peloris ostrea echinus vernacula ad similitudinem ut surenae pectunculi ungues xiii sunt etiam animalia"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "prop3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3468,
+   "left": "et manifesta ruinis luxuriae nimium libera facta viast inda cavis aurum mittit formica metallis et venit e rubro",
+   "right": "erycina salo et tyros ostrinos praebet cadmea colores cinnamon et multi pistor odoris arabs haec etiam clausas expugnant"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus2a.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 324,
+   "left": "hos locos superstites undosae tempestati fuisse nam in latebrosis rupium cavaminibus quae fluctuum confligiis tunc adesa sunt reduviae",
+   "right": "resederunt et alia multa quae adfatim mari incito expuuntur ita ut sint licet facie mediterranea appareant tamen specie"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "petronius1.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 24525,
+   "left": "esurit armis ingeniosa gula est siculo scarus aequore mersus ad mensam vivus perducitur atque lucrinis eruta litoribus vendunt",
+   "right": "cenas ut renovent per damna famem iam phasidos unda orbata est avibus mutoque in litore tantum solae desertis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "janus1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 643,
+   "left": "mala sunt veniunt uberrima caelo maiestas domui convenit illa iovis tu quoque cum dea sis diva formosior illa",
+   "right": "per aequoreum quam vaga ducit iter basia cur numero caelestia dona coirces nec numeras gemitus dura puella meos"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tibullus3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 473,
+   "left": "tuis et nemora in domibus sacros imitantia lucos aurataeque trabes marmoreumque solum quidue in erythraeo legitur quae litore",
+   "right": "tinctaque sidonio murice lana iuuat et quae praeterea populus miratur in illis inuidia est falso plurima uulgus amat"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tibullus3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 578,
+   "left": "cupiant liceat mihi paupere cultu securo cara coniuge posse frui adsis et timidis faueas saturnia uotis et faueas",
+   "right": "cypria uecta tua aut si fata negant reditum tristesque sorores stamina quae ducunt quaeque futura neunt me uocet"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "varro.ll9.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1525,
+   "left": "sic ex reliquis sui cuiusque generis xxii an aliter hoc fit quam in aere in aqua non hic",
+   "right": "inter se generatim innumerabili numero similes non pisces an e muraena fit lupus aut merula non bos ad"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "propertius1.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 1743,
+   "left": "daret quamvis maiora daturus non tamen illa meos fugit avara sinus hanc ego non auro non indis flectere",
+   "right": "sed potui blandi carminis obsequio sunt igitur musae neque amanti tardus apollo quis ego fretus amo cynthia rara"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sannazaro1.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 897,
+   "left": "dabis quantis hominum succurrere votis incipies stupuit confestim exterrita virgo demisitque oculos totosque expalluit artus non secus ac",
+   "right": "si quando intenta legendis seu micone parva scopulis seu forte seriphi nuda pedem virgo laetae nova gloria matris"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lhomond.viris.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 17277,
+   "left": "esse cum rus ex urbe tanquam e vinculis evolavissent vix audeo dicere de tantis viris sed ita narratur",
+   "right": "eos ad litus maris legere consuevisse et ad omnem animi remissionem ludumque descendere mortuo paulo aemilio scipio cum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "prop4.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2557,
+   "left": "blanda perure saxosamque ferat sedula culpa uiam si te eoa dorozantum iuuat aurea ripa et quae sub tyria",
+   "right": "superbit aqua eurypylique placet coae textura mineruae sectaque ab attalicis putria signa toris seu quae palmiferae mittunt uenalia"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "valmax9.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 214,
+   "left": "ferculorum abundarent aedificiis etiam spatiosis et excelsis deserta ad id tempus ora lucrini lacus pressit quo recentiore usu",
+   "right": "frueretur ubi dum se publicae aquae cupidius inmergit cum considio publicano iudicium nanctus est in quo l crassus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "victor.caes.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 576,
+   "left": "ob incestum ex choro autem bacchanali liberum assereret neque secus contractis ad unum legionibus spe in germaniam transgrediendi",
+   "right": "umbilicosque in ora maris oceani legi iussit cum ipse nunc fluxo cultu venerioque interesset nanc armatus spolia a"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "grattius.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 2632,
+   "left": "falsi tam longam traxere fidem collaribus ergo sunt qui lucifugae cristas inducere maelis iussere aut sacris conserta monilia",
+   "right": "et vivum lapidem et circa melitensia nectunt curalia et magicis adiutas cantibus herbas ac sic offectus oculique venena"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 10108,
+   "left": "hos locos superstites undosae tempestati fuisse nam in latebrosis rupium cauaminibus quae fluctuum confligiis tunc adesa sunt reduuiae",
+   "right": "resederunt et alia multa quae adfatim mari incito expuuntur ita ut sint licet facie mediterranea appareant tamen specie"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 31496,
+   "left": "mirantur aurum et ad gratiam poculorum omnium gemmarum adhibent apparatum secant marmora testudinea uarietate margaritas legunt plurimas maximasque",
+   "right": "sunt in quibus hoc genus lapidum requiritur quae certo anni tempore luxuriante conceptu sitiunt rorem uelut maritum cuius"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 31604,
+   "left": "micauerit coruscatio intempestiuo metu conprimuntur clausaeque subita formidine uitia contrahunt abortiua aut enim perparuuli fiunt scrupuli aut inanes",
+   "right": "ipsis inest sensus partus suos maculari timent cumque flagrantioribus radiis excanduit dies ne fucentur lapides solis calore subsidunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 31642,
+   "left": "profundum et se gurgitibus ab aestu uindicant huic tamen prouidentiae aetas opitulatur nam candor senecta disperit et grandescentibus",
+   "right": "flauescit margarita in aqua mollis est unio duratur exemptus numquam duo simul reperiuntur inde unionibus nomen datum vltra"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "solinus5.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 31667,
+   "left": "unio duratur exemptus numquam duo simul reperiuntur inde unionibus nomen datum vltra semiunciales inuentos negant piscantium insidias timent",
+   "right": "unde est ut aut inter scopulos aut inter marinos canes plurimum delitescant gregatim natant certus examini dux est"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "mirabilia1.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2871,
+   "left": "sit omnium sanctorum ecclesia haec quidem habet porticum spatiosam multis et mirae altitudinis columnis marmoreis sustentatam ante quam",
+   "right": "et vasa alia miranda de marmore porfirico et leones et cetera signa de eodem marmore usque in hodiernum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "mirabilia1.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 3830,
+   "left": "lapideum collem pristinae quantitatis fuisse conversam quod omnino frivolum est quo peregrini multum abundant habet autem pyramis quaelibet",
+   "right": "marmoream undique celatam infra se clausam in qua corpus defuncti sepelitur de pyramide augusti vidi etiam pyramidem augusti"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "landor1795.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 570,
+   "left": "facetiis adornat carmen quod rabida inchoarit ira subridet velut inquiere vates emersam venerem mari columbis iunctis ante vehentibusque",
+   "right": "scripseram cachisti mutationem in picam imitatus illud menagianum de pari clade gargilii viii ad britanniam bello in asia"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "gregdecretals1.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 76095,
+   "left": "ambo etc uno recusato alter solus procedere potest nec tenet processus si cum recusato procedat idem conventui de",
+   "right": "quum super abbatia monasterii vestri inter vos et s quondam abbatem vestrum fuisset quaestio diutius agitata partibus tandem"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "boskovic.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 940,
+   "left": "cum primum heu luctus celadon retulisset amaros deflevi duraque amens in rupe notavi expediam tu paupereas de murice",
+   "right": "dona para et plenis dorila gravia ostrea gemmis fluctus heu noti fluctus et littora remis pulsa meis scopulique"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "boskovic.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 1185,
+   "left": "lacrimas tumulare sepulcro spargite moerentes mea lumina spargite fletus hic certe vacuo statuam tibi littore saltem aequoreis aram",
+   "right": "algaque virenti surgentem celso nam tu sublimis olympo regna tenes coelumque et lucida sidera calcas hic tibi dona"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "catullus.txt",
+   "form": "conchyli",
+   "norm_form": "conchyli",
+   "token_index": 6811,
+   "left": "regali splendida gaza puluinar uero diuae geniale locatur sedibus in mediis indo quod dente politum tincta tegit roseo",
+   "right": "purpura fuco haec uestis priscis hominum uariata figuris heroum mira uirtutes indicat arte namque fluentisono prospectans litore diae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "smarius.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 19,
+   "left": "smarius alexandri smarii crispi rervm gestarvm sive amorvm monobiblion i laura e lavabro qualis in ostrina surrexit lactea",
+   "right": "aequoris e spumis vix ubi nata venus qualis ut egrediens lymphas conspecta minerva est territa deprenso dicitur esse"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "avienus.periegesis.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 8353,
+   "left": "finibus aut adamanta detulerint his glauca dehinc tornatur iaspis nec minus et bacas alii prope marmora curvis excudunt",
+   "right": "pars rursum divite cura herbosi lapidis venas fodit hique rubore suffusas blando quaerunt campis amethystos horum dives enim"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "may/may1.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1646,
+   "left": "belloque imponite finem virtutis pretium mercedem sanguinis auro argentoque referta tenent tentoria regis nilicas gemmas erythraeo e litore",
+   "right": "totque simul procerum congestas undique gazas quae vobis debentur ait nunc sumere restat et rapere a victis nec"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "may/may6.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 166,
+   "left": "procellis quantis mercator quamvis avidissimus undas aequoreas tentare neget nec vellera parmae indum ebur aut rubro pretiosas aequore",
+   "right": "auderet tali ratibus conquirere colo jamque propinquabant classes validisque lacertis sulcatas vertere undas tonsisque secabant excussis fluctu spumabant"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "augustine/civ5.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2105,
+   "left": "ipsius anni tempora uariari et lunaribus incrementis atque detrimentis augeri et minui quaedam genera rerum sicut echinos et",
+   "right": "et mirabiles aestus oceani non autem et animi uoluntates positionibus siderum subdi nunc isti cum etiam nostros actus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.fasti6.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 1130,
+   "left": "cibis quibus ante solebat nec petit adscitas luxuriosa dapes piscis adhuc illi populo sine fraude natabat ostreaque in",
+   "right": "tuta fuere suis nec latium norat quam praebet ionia dives nec quae pygmaeo sanguine gaudet avis et praeter"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.artis2.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 3345,
+   "left": "suo quot lepores in atho quot apes pascuntur in hybla caerula quot bacas palladis arbor habet litore quot",
+   "right": "tot sunt in amore dolores quae patimur multo spicula felle madent dicta erit isse foras intus fortasse videre"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met4.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 4720,
+   "left": "quem turba canum circumsona terret ille avidos morsus velocibus effugit alis quaque patet nunc terga cavis super obsita",
+   "right": "nunc laterum costas nunc qua tenuissima cauda desinit in piscem falcato verberat ense belua puniceo mixtos cum sanguine"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met13.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 5209,
+   "left": "folio nivei galatea ligustri floridior pratis longa procerior alno splendidior vitro tenero lascivior haedo levior adsiduo detritis aequore",
+   "right": "solibus hibernis aestiva gratior umbra mobilior damma platano conspectior alta lucidior glacie matura dulcior uva mollior et cycni"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met8.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 3618,
+   "left": "est pumice multicavo nec levibus atria tophis structa subit molli tellus erat umida musco summa lacunabant alterno murice",
+   "right": "iamque duas lucis partes hyperione menso discubuere toris theseus comitesque laborum hac ixionides illa troezenius heros parte lelex"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met15.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1737,
+   "left": "vidi ego quod fuerat quondam solidissima tellus esse fretum vidi factas ex aequore terras et procul a pelago",
+   "right": "iacuere marinae et vetus inventa est in montibus ancora summis quodque fuit campus vallem decursus aquarum fecit et"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.tristia5.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 657,
+   "left": "de mare demat aquae detrahat ut multum multum restabit acerbi parsque meae poenae totius instar erit litora quot",
+   "right": "quot amoena rosaria flores quotue soporiferum grana papauer habet silua feras quot alit quot piscibus unda natatur quot"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.amor2.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2944,
+   "left": "egelidumque notum non illic urbes non tu mirabere silvas una est iniusti caerula forma maris nec medius tenuis",
+   "right": "pictosque lapillos pontus habet bibuli litoris illa mora est litora marmoreis pedibus signate puellae hactenus est tutum cetera"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met10.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1705,
+   "left": "et metuit pressos veniat ne livor in artus et modo blanditias adhibet modo grata puellis munera fert illi",
+   "right": "teretesque lapillos et parvas volucres et flores mille colorum liliaque pictasque pilas et ab arbore lapsas heliadum lacrimas"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.met10.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1751,
+   "left": "monilia collo aure leves bacae redimicula pectore pendent cuncta decent nec nuda minus formosa videtur conlocat hanc stratis",
+   "right": "sidonide tinctis adpellatque tori sociam adclinataque colla mollibus in plumis tamquam sensura reponit festa dies veneris tota celeberrima"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ovid/ovid.artis3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 816,
+   "left": "denique natum gratulor haec aetas moribus apta meis non quia nunc terrae lentum subducitur aurum lectaque diverso litore",
+   "right": "venit nec quia decrescunt effosso marmore montes nec quia caeruleae mole fugantur aquae sed quia cultus adest nec"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/19.txt",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 7186,
+   "left": "fucata speciem nitoris gratia coloratur kokkon graeci nos rubrum seu vermiculum dicimus est enim vermiculus ex silvestribus frondibus",
+   "right": "dictum eo quod ex conchulis marinis color eius colligitur idem et ostrum vocatur ostrum quod pro colore purpurae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/19.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 7224,
+   "left": "plurimis quidem in locis sed optimum in insula cypro gignitur sive in his quos propius solis cursus inluminat",
+   "right": "autem sunt maris quae circumcisa ferro lacrimas purpurei coloris emittunt his collectis color purpureus temperatur et ostrum exinde"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7605,
+   "left": "oceano mauretaniae non procul a lixo flumine tantam multitudinem lulliginum evolare ex aqua ut etiam naves demergere possint",
+   "right": "et cochleae hac ex causa vocatae quia deficiente luna cavantur id est evacuantur omnium enim clausorum maris animalium"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 7625,
+   "left": "cochleae hac ex causa vocatae quia deficiente luna cavantur id est evacuantur omnium enim clausorum maris animalium atque",
+   "right": "incremento lunae membra turgescunt defectu evacuantur luna enim cum in augmento fuerit auget humorem cum vero in defectum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7651,
+   "left": "enim cum in augmento fuerit auget humorem cum vero in defectum venerit humores minuuntur hoc enim physici dicunt",
+   "right": "autem primae positionis nomen cochleae vero per diminutionem quasi conchleae concharum multa genera sunt inter quas et margaritiferae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 7662,
+   "left": "venerit humores minuuntur hoc enim physici dicunt conchae autem primae positionis nomen cochleae vero per diminutionem quasi conchleae",
+   "right": "multa genera sunt inter quas et margaritiferae quae oceloe dicuntur in quarum carne pretiosus calculus solidatur de quibus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7744,
+   "left": "ex quibus purpura tingitur et inde ostrum appellatum quod haec tinctura ex testae humore elicitur cancros vocari quia",
+   "right": "sunt crura habentes inimica ostreis animalia eorum enim carnibus vivunt miro ingenio nam quia valida testa eius aperiri"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/12.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 8183,
+   "left": "aquis viventium nomina centum quadraginta quattuor plinius ait divisa in generibus beluarum serpentium communium terrae et aquae cancrorum",
+   "right": "lucustarum peloridum polyporum solearum lacertorum et lulliginum et huic similia ex quibus multa quodam naturae intellectu ordinem temporum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/historia.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 210,
+   "left": "curribus invidebis tu superfusis fecunda fluminibus tu aurifluis fulva torrentibus tibi fons equi genitor tibi vellera indigenis fucata",
+   "right": "ad rubores tyrios inardescunt tibi fulgurans inter obscura penitorum montium lapis jubare contiguo vicini solis accenditur alumnis igitur"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "isidore/13.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 6164,
+   "left": "deletis cunctis unum spatium caeli fuit ac pelagi cuius indicium hactenus videmus in lapidibus quos in remotis montibus",
+   "right": "et ostreis concretos saepe etiam cavatos aquis visere solemus secundum diluvium fuit in achaia iacob patriarchae et ogygi"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia11.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 6121,
+   "left": "comum nomen accepit quae tantis laetatur compta muneribus hic profecto lacus est nimis amplissimae vallis profunditate susceptus qui",
+   "right": "formas decenter imitatus spumei litoris albore depingitur circa quem conveniunt in coronae speciem excelsorum montium pulcherrimae summitates cuius"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia1.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 406,
+   "left": "pulcherrima minus ebrietate rubuerint aut lanae non hauserint adorandi muricis pretiosissimam qualitatem quapropter si perscrutator hydrontini maris intusa",
+   "right": "sollemniter condidisset apto tempore acervus ille neptunius generator florentis semper purpurae ornator solii aquarum copia resolutus imbrem aulicum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia1.txt",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 513,
+   "left": "aliquid spiraret horroris haec cum infecta semel substantia perseverat nescit ante subtrahi quam vestis possit absumi quod si",
+   "right": "qualitas non mutatur si torcularis illius una vindemia est culpa nimirum artificis erit cui se copia nulla subtraxit"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia1.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 699,
+   "left": "tardandum verum talis tantaque res quam facili legitur inventa compendio cum fame canis avida in tyrio litore proiecta",
+   "right": "impressis mandibulis contudisset illa naturaliter umorem sanguineum defluentia ore eius mirabili colore tinxerunt et ut est hominibus occasiones"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia1.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7878,
+   "left": "terrere aut forte incumbente austro remigiisque iuvantibus meatus navium echinais morsus inter undas liquidas alligavit aut indici maris",
+   "right": "simili potentia labiis suis navium dorsa fixerunt quarum quietus tactus plus dicitur retinere quam exagitata possunt elementa compellere"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cassiodorus/varia1.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 8003,
+   "left": "sensu aliquo immobilis obstupescat credo talia incurrerunt qui se movere non possunt sed echinais illis impedimentosa venalitas est",
+   "right": "morsus insatiata cupiditas torpedo fraudulenta simulatio ipsi enim studio pravo faciunt moras ut occasiones incurrere videantur adversas quod"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucan/lucan6.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 4211,
+   "left": "draconum quaeque sonant feta tepefacta sub alite saxa non arabum uolucer serpens innataque rubris aequoribus custos pretiosae uipera",
+   "right": "aut uiuentis adhuc libyci membrana cerastae aut cinis eoa positi phoenicis in ara quo postquam uiles et habentis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucan/lucan9.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2252,
+   "left": "peritos torpentem tritonos adit inlaesa paludem hanc ut fama deus quem toto litore pontus audit uentosa perflantem marmora",
+   "right": "hanc et pallas amat patrio quae uertice nata terrarum primam libyen nam proxima caelo est ut probat ipse"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "apuleius/apuleius.cupid.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 546,
+   "left": "hispidus et gravis piscoso sinu salacia et auriga parvulus delphini palaemon iam passim maria persultantes tritonum catervae hic",
+   "right": "sonaci leniter bucinat ille serico tegmine flagrantiae solis obsistit inimici alius sub oculis dominae speculum progerit curru biiuges"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "apuleius/apuleius4.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 4611,
+   "left": "hispidus et gravis piscoso sinu salacia et auriga parvulus delphinis palaemon iam passim maria persultantes tritonum catervae hic",
+   "right": "sonaci leniter bucinat ille serico tegmine flagrantiae solis obsistit inimici alius sub oculis dominae speculum progerit curru biiuges"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr10.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2286,
+   "left": "aut pulex inrepens dente lacessat neu formica rapax populari semina possit nec solum teneras audent erodere frondes implicitus",
+   "right": "limax hirsutaque campe sed cum iam valido pinguescit lurida caule brassica cumque tument pallentia robora betae mercibus atque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr8.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 7533,
+   "left": "omne genus haberi potest limosa regio planum educat piscem velut soleam rhombum passerem eadem quoque maxime idonea est",
+   "right": "murici bu s et ostreis purpurarumque tunc concharum pectunculi s balani s vel sphondyli s at harenosi gurgites"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr8.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 7541,
+   "left": "piscem velut soleam rhombum passerem eadem quoque maxime idonea est conchyliis murici bu s et ostreis purpurarumque tunc",
+   "right": "pectunculi s balani s vel sphondyli s at harenosi gurgites planos quidem non pessime sed pelagios melius pascunt"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr8.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 7569,
+   "left": "gurgites planos quidem non pessime sed pelagios melius pascunt ut auratas ac dentices punicasque et indigenas umbras verum",
+   "right": "minus apti rursus optime saxosum mare nominis sui pisces nutrit qui scilicet quod in petris stabulentur saxatiles dicti"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr8.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 8222,
+   "left": "ista eadem genera etiam litoris harenosi stagnis contineri nam quae limo coenoque lita sunt ut ante iam dixi",
+   "right": "magis et iacentibus apta sunt animalibus neque est eadem lacus positio quae recipit cubantis ne que eadem praebentur"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr11.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 8910,
+   "left": "servandum est ut ante quam translatum deponas omnis radiculas amputes et fibrarum summas partes intondeas tum testulae vel",
+   "right": "quasi sedes singulis subiectae seminibus adobruuntur ut fiant capita latioris incrementi cultus autem porri capitati adsidua sarritio et"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr3.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 8037,
+   "left": "aestatis propulsare radicibus quem secutus virgilius tutari semina et muniri sic praecipit aut lapidem bibulum aut squalentes infode",
+   "right": "et paulo post iamque reperti qui saxo super atque ingentis pondere testae urgerent hoc effusos munimen ad imbres"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "columella/columella.rr12.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 13200,
+   "left": "opere avocentur tum scalae corbulae decemmodiae trimodiae satoriae quibus destricta baca suscipitur fisci funes cannabini vel spartei s",
+   "right": "ferreae quibus depletur oleum opercula quibus vasa olearia conteguntur spongeae maiores et minores urcei quibus oleum progeritur cannae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart7.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 3502,
+   "left": "tucca libellos non faciam nam uis uendere non legere cum saxetani ponatur coda lacerti et bene si cenas",
+   "right": "inuncta tibi sumen aprum leporem boletos ostrea mullos mittis habes nec cor papyle nec genium potaui modo consulare"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart13.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 239,
+   "left": "nos alicam poterit mulsum tibi mittere dives si tibi noluerit mittere dives emes vii faba si spumet rubra",
+   "right": "tibi pallida testa lautorum cenis saepe negare potes viii far inbue plebeias clusinis pultibus ollas ut satur in"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart13.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1348,
+   "left": "lxxxi rhombi quamvis lata gerat patella rhombum rhombus latior est tamen patella lxxxii ostrea ebria baiano veni modo",
+   "right": "lucrino nobile nunc sitio luxuriosa garum lxxxiii squillae caeruleus nos liris amat quem silva maricae protegit hinc squillae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart13.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1468,
+   "left": "aequoreo dulces cum sale pastus aquas xc aurata non omnis laudes pretiumque aurata meretur sed cui solus erit",
+   "right": "lucrina cibus xci acipensis ad palatinas acipensem mittite mensas ambrosias ornent munera rara dapes xcii lepores inter aves"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart5.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1754,
+   "left": "nostro quidam faustine libello dissimulat quasi nil debeat inposuit puella senibus dulcior mihi cycnis agno galaesi mollior phalantini",
+   "right": "lucrini delicatior stagni cui nec lapillos praeferas erythraeos nec modo politum pecudis indicae dentem niuesque primas liliumque non"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart2.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 2003,
+   "left": "pannis fraudare duobus quid renuis non te naeuole sed tineas subdola famosae moneo fuge retia moechae leuior o",
+   "right": "galle cytheriacis confidis natibus non est pedico maritus quae faciat duo sunt irrumat aut futuit coponem laniumque balneumque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart6.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1142,
+   "left": "basia da nobis diadumene pressa quot inquis oceani fluctus me numerare iubes et maris aegaei sparsas per litora",
+   "right": "et quae cecropio monte uagantur apes quaeque sonant pleno uocesque manusque theatro cum populus subiti caesaris ora uidet"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart14.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2350,
+   "left": "te praecingere possum essem si locuples munus utrumque darem cliv lanae amethystinae ebria sidoniae cum sim de sanguine",
+   "right": "non video quare sobria lana vocer clv lanae albae velleribus primis apulia parma secundis nobilis altinum tertia laudat"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart14.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3176,
+   "left": "iste iovem ccviii notarius currant verba licet manus est velocior illis nondum lingua suum dextra peregit opus ccix",
+   "right": "levis ab aequorea cortex mareotica concha fiat inoffensa curret harundo via ccx morio non mendax stupor est nec"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart14.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3182,
+   "left": "licet manus est velocior illis nondum lingua suum dextra peregit opus ccix concha levis ab aequorea cortex mareotica",
+   "right": "fiat inoffensa curret harundo via ccx morio non mendax stupor est nec fingitur arte dolosa quisquis plus iusto"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "martial/mart10.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2039,
+   "left": "mullum visus erit libris qui minor esse tribus et fatuam summa cenare pelorida mensa quosque tegit levi cortice",
+   "right": "brevis ostrea baianis quam non liventia testis quae domino pueri non prohibente vorent hic olidam clamosus ages in"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "silius/silius14.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2329,
+   "left": "per uacuum late cantu resonante profundum inc r epuere tubae quis excitus aequore triton expauit tortae certantia murmura",
+   "right": "uix meminere maris tam uasto ad proelia nisu incumbunt proni positisque in margine puppis extremae plantis nutantes spicula"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "ammianus/16.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1082,
+   "left": "quietis et publicae rei et musarum quod factitasse alexandrum legimus magnum sed multo hic fortius ille namque aenea",
+   "right": "supposita brachio extra cubile protento pilam tenebat argenteam ut cum nervorum vigorem sopor laxasset infusus gestaminis lapsi tinnitus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "quintilian/quintilian.institutio1.txt",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 3405,
+   "left": "corporis frangit quid non adultus concupiscet qui in purpuris repit nondum prima verba exprimit iam coccum intellegit iam",
+   "right": "poscit vii ante palatum eorum quam os instituimus in lecticis crescunt si terram attigerunt e manibus utrimque sustinentium"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "juvenal/8.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 652,
+   "left": "par damnorum sociis florentibus et modo uictis plena domus tunc omnis et ingens stabat aceruos nummorum spartana chlamys",
+   "right": "coa et cum parrhasii tabulis signisque myronis phidiacum uiuebat ebur nec non polycliti multus ubique labor rarae sine"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "juvenal/3.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 541,
+   "left": "non maurus erat neque sarmata nec thrax qui sumpsit pinnas mediis sed natus athenis horum ego non fugiam",
+   "right": "me prior ille signabit fultusque toro meliore recumbet advectus romam quo pruna et cottana vento usque adeo nihil"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "juvenal/6.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1975,
+   "left": "sint discrimina nescit grandia quae mediis iam noctibus ostrea mordet cum perfusa mero spumant unguenta falerno cum bibitur",
+   "right": "cum iam uertigine tectum ambulat et geminis exsurgit mensa lucernis i nunc et dubita qua sorbeat aera sanna"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "juvenal/6.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2979,
+   "left": "ocius inquit adferte atque illis dominum iubet ante feriri deinde canem grauis occursu taeterrima uultu balnea nocte subit",
+   "right": "et castra moueri nocte iubet magno gaudet sudare tumultu cum lassata graui ceciderunt bracchia massa callidus et cristae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "prudentius/prud.psycho.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 5753,
+   "left": "uitrea de rupe recisis construitur quarum tegit edita calculus albens in conum caesus capita et sinuamine subter subductus",
+   "right": "in speciem quod mille talentis margaritum ingens opibusque et censibus hastae addictis animosa fides mercata pararat hoc residet"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "orosius/orosius1.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 4006,
+   "left": "qui praeterita quidem tempora ipsumque auctorem temporum nescientes tamen ex indicio et coniectura lapidum quos in remotis montibus",
+   "right": "et ostreis scabros saepe etiam cauatos aquis uisere solemus coniciendo didicerunt et quamuis huiusmodi adhuc et relatu digna"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "curtius/curtius9.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 7477,
+   "left": "miscentur ipsa solitudo natura quoque inmitia efferavit ingenia prominent ungues numquam recisi comae hirsutae et intonsae sunt tuguria",
+   "right": "et ceteris purgamentis maris instruunt ferarum pellibus tecti piscibus sole duratis et maiorum quoque beluarum quas fluctus eiecit"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "hyginus/hyginus2.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 7726,
+   "left": "se coniecerint et ita sint superati huic similis est historia de bucino tritonis nam is quoque fertur cum",
+   "right": "inventam excavasset secum ad gigantas tulisse et ibi sonum quendam inauditum per concham misisse hostes autem veritos ne"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "hyginus/hyginus2.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 7739,
+   "left": "nam is quoque fertur cum concham inventam excavasset secum ad gigantas tulisse et ibi sonum quendam inauditum per",
+   "right": "misisse hostes autem veritos ne qua esset inmanis fera ab adversariis adducta cuius esset ille mugitus fugae se"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "bultelius/bultelius2.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2974,
+   "left": "qui labores quis fluor artubus ibit solutis dum uariis modis luctamur et dulcem iugalis militiam veneris nouamus putasne",
+   "right": "oscula strictius inexplicatis nectere uinculis putasne tot dulces columbas posse modis uariare miris o quae loysae balsama sugimus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "capellanus/capellanus2.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 8022,
+   "left": "argenteas et super illis omnia ciborum potusque genera praeparata et albissimis circumventa gausapibus in eodem vero prato iucundo",
+   "right": "residebat argenti purissima in qua sufficienter equi potus et pabula consistebant equo igitur ad pastum appulso omni palatium"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sen/seneca.ep20.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 2943,
+   "left": "saepe ducentos saepe decem seruos modo reges atque tetrarchas omnia magna loquens modo sit mihi mensa tripes et",
+   "right": "salis puri toga quae defendere frigus quamuis crassa queat decies centena dedisses huic parco paucis contento quinque diebus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sen/sen.consolatione3.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 3020,
+   "left": "extra concupiscitur uitiis non usibus laboratur non est necesse omne perscrutari profundum nec strage animalium uentrem onerare nec",
+   "right": "ultimi maris ex ignoto litore eruere di istos deaeque perdant quorum luxuria tam inuidiosi imperii fines transcendit vltra"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sen/sen.prov.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 1472,
+   "left": "senex uulsit quid ergo felicior esset si in uentrem suum longinqui litoris pisces et peregrina aucupia congereret si",
+   "right": "superi atque inferi maris pigritiam stomachi nausiantis erigeret si ingenti pomorum strue cingeret primae formae feras captas multa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sen/seneca.ep14-15.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 1349,
+   "left": "fesso voluptatibus ore libatis quantulum ex ista fera periculose capta dominus crudus ac nauseans gustat quantulum ex tot",
+   "right": "tam longe advectis per istum stomachum inexplebilem labitur infelices ecquid intellegitis maiorem vos famem habere quam ventrem haec"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "plautus/rudens.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2222,
+   "left": "urbe ad mare huc prodimus pabulatum pro exercitu gymnastico et palaestrico hoc habemus echinos lopadas ostreas balanos captamus",
+   "right": "marinam urticam musculos plagusias striatas post id piscatum hamatilem et saxatilem aggredimur cibum captamus e mari si eventus"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "plautus/rudens.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 5531,
+   "left": "intellego decet abs te id impetrari ignoscere his te convenit metus has id ut faciant subigit te ex",
+   "right": "natam esse autumant cave tu harum conchas spernas sed optume eccum exit senex patronus mihique et vobis iii"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "plautus/rudens.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 5538,
+   "left": "his te convenit metus has id ut faciant subigit te ex concha natam esse autumant cave tu harum",
+   "right": "spernas sed optume eccum exit senex patronus mihique et vobis iii iv daemones exi e fano natum quantum"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "gellius/gellius20.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3554,
+   "left": "columbulatim labra conserens labris iii item id quoque iucunde lepideque fictum dictitabat iam tonsiles tapetes ebrii fuco quos",
+   "right": "purpura imbuens venenavit x i ex iure manum consertum verba sunt ex antiquis actionibus quae cum lege agitur"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/oratore2.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1669,
+   "left": "ex urbe tamquam e vinclis evolavissent non audeo dicere de talibus viris sed tamen ita solet narrare scaevola",
+   "right": "eos et umbilicos ad caietam et ad laurentum legere consuesse et ad omnem animi remissionem ludumque descendere sic"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/fin3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 6643,
+   "left": "usum adiuvant ut crura ut manus sic inmanes quaedam bestiae sibi solum natae sunt at illa quae in",
+   "right": "patula pina dicitur isque qui enat e concha qui quod eam custodit pinoteres vocatur in eandemque cum se"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/fin3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 6651,
+   "left": "quaedam bestiae sibi solum natae sunt at illa quae in concha patula pina dicitur isque qui enat e",
+   "right": "qui quod eam custodit pinoteres vocatur in eandemque cum se recepit includitur ut videatur monuisse ut caveret itemque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/nd2.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 11232,
+   "left": "inopinato observant et si quid incidit arripiunt idque consumunt pina vero sic enim graece dicitur duabus grandibus patula",
+   "right": "cum parva squilla quasi societatem coit comparandi cibi itaque cum pisciculi parvi in concham hiantem innataverunt tum admonita"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/nd2.txt",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 11246,
+   "left": "dicitur duabus grandibus patula conchis cum parva squilla quasi societatem coit comparandi cibi itaque cum pisciculi parvi in",
+   "right": "hiantem innataverunt tum admonita a squilla pina morsu conprimit conchas sic dissimillimis bestiolis communiter cibus quaeritur in quo"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/nd2.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 11256,
+   "left": "coit comparandi cibi itaque cum pisciculi parvi in concham hiantem innataverunt tum admonita a squilla pina morsu conprimit",
+   "right": "sic dissimillimis bestiolis communiter cibus quaeritur in quo admirandum est congressune aliquo inter se an iam inde ab"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/nd2.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 11397,
+   "left": "usque eo premere earum capita mordicus dum illae captum amitterent in quod ipsa invaderet eademque haec avis scribitur",
+   "right": "se solere complere eas cum stomachi calore concoxerit evomere atque ita eligere ex his quae sunt esculenta ranae"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "cicero/piso.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 7108,
+   "left": "quicquam praeter libidines sumptuosum toreuma nullum maximi calices et ei ne contemnere suos videatur placentini exstructa mensa non",
+   "right": "aut piscibus sed multa carne subrancida servi sordidati ministrant non nulli etiam senes idem coquus idem atriensis pistor"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "suetonius/suet.cal.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 5950,
+   "left": "derecta acie in litore oceani ac ballistis machinisque dispositis nemine gnaro aut opinante quidnam coepturus esset repente ut",
+   "right": "legerent galeasque et sinus replerent imperavit spolia oceani vocans capitolio palatioque debita et in indicium victoriae altissimam turrem"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "suetonius/suet.nero.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 3969,
+   "left": "silvisque varia cum multitudine omnis generis pecudum ac ferarum in ceteris partibus cuncta auro lita distincta gemmis unionumque",
+   "right": "erant cenationes laqueatae tabulis eburneis versatilibus ut flores fistulatis ut unguenta desuper spargerentur praecipua cenationum rotunda quae perpetuo"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/serm1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1863,
+   "left": "saepe ducentos saepe decem servos modo reges atque tetrarchas omnia magna loquens modo sit mihi mensa tripes et",
+   "right": "salis puri et toga quae defendere frigus quamvis crassa queat deciens centena dedisses huic parco paucis contento quinque"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/carm2.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 803,
+   "left": "depone sub lauru mea nec parce cadis tibi destinatis obliuioso leuia massico ciboria exple funde capacibus unguenta de",
+   "right": "quis udo deproperare apio coronas curatue myrto quem venus arbitrum dicet bibendi non ego sanius bacchabor edonis recepto"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/serm2.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 1086,
+   "left": "ut noceant homini credas memor illius escae quae simplex olim tibi sederit at simul assis miscueris elixa simul",
+   "right": "turdis dulcia se in bilem vertent stomachoque tumultum lenta feret pitvita vides ut pallidus omnis cena desurgat dubia"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/serm2.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 3888,
+   "left": "nil nisi lene decet leni praecordia mulso prolueris melius si dura morabitur alvus mitulus et viles pellent obstantia",
+   "right": "et lapathi brevis herba sed albo non sine coo lubrica nascentes inplent conchylia lunae sed non omne mare"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/serm2.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 3901,
+   "left": "mitulus et viles pellent obstantia conchae et lapathi brevis herba sed albo non sine coo lubrica nascentes inplent",
+   "right": "lunae sed non omne mare est generosae fertile testae murice baiano melior lucrina peloris ostrea circeis miseno oriuntur"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/serm2.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 6820,
+   "left": "placentas nomentanus ad hoc qui siquid forte lateret indice monstraret digito nam cetera turba nos inquam cenamus avis",
+   "right": "piscis longe dissimilem noto celantia sucum ut vel continuo patuit cum passeris atque ingustata mihi porrexerit ilia rhombi"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "horace/ep.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 398,
+   "left": "laetum pecus distenta siccet ubera et horna dulci vina promens dolio dapes inemptas adparet non me lucrina iuverint",
+   "right": "magisve rhombus aut scari siquos eois intonata fluctibus hiems ad hoc vertat mare non afra avis descendat in"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.propheta.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 577,
+   "left": "ne sanguine iusti respersisse velis si sic tua dextera ducit iamque illic imo exoriens de gurgite cetus squamosum",
+   "right": "evolvens corporis agmen urgebat propius concusso marmore fluctus sponte dei praedam rapiens quam puppis ab arce provolutatam limosis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.pallio.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 573,
+   "left": "et fontium uenae cauillando et fluminum uiae obhumando mutauit et totus orbis aliquando aquis omnibus obsitus adhuc maris",
+   "right": "et buccinae peregrinantur in montibus cupientes platoni probare etiam ardua fluitasse sed et enatando rursus in forma mutauit"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.pallio.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1472,
+   "left": "tunicam pangere et serere ni etiam piscari uestitum contigisset nam et de mari uellera qua muscosae lanositatis lautiores",
+   "right": "comant prorsus haud latet bombycem uermiculi genus est quae per aerem liquando araneorum horoscopis idonius distendit dehinc deuorat"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.cultu2.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 2229,
+   "left": "spiritalis et carnalis nam et spiritu et carne saecularia circumcidimus x nimirum enim deus monstrauit sucis herbarum et",
+   "right": "saliuis incoquere lanas exciderat illi cum uniuersa nasci iuberet purpureas et coccineas oues mandare deus et ipsarum uestium"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.cultu1.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1259,
+   "left": "forantur ut pendeant et auro lenocinium mutuum praestant sed si quid de mari britannico aut indico ambitio piscatur",
+   "right": "genus est non dico conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim conchas nouerim"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.cultu1.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1276,
+   "left": "piscatur conchae genus est non dico conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim",
+   "right": "nouerim maris poma quodsi concha illa aliquid intrinsecus pustulat uitium magis eius debet esse quam gloria et licet"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.cultu1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1281,
+   "left": "dico conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim conchas nouerim maris poma quodsi",
+   "right": "illa aliquid intrinsecus pustulat uitium magis eius debet esse quam gloria et licet margaritum uocetur non aliud tamen"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "tertullian/tertullian.cultu1.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1302,
+   "left": "intrinsecus pustulat uitium magis eius debet esse quam gloria et licet margaritum uocetur non aliud tamen intellegendum quam",
+   "right": "illius aliqua dura et rotunda uerruca aiunt et de frontibus draconum gemmas erui sicut et in piscium cerebris"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "theodosius/theod10.txt",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 10187,
+   "left": "et clearcho conss iul cth idem aaa ad principium praefectum praetorio si quis naviculam functioni muricis et legendis",
+   "right": "deputatam ausus fuerit usurpare duarum librarum auri illatione teneatur dat vi kal oct aquileiae arcadio a i et"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "hugo/hugo1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3141,
+   "left": "defendunt cortex ambit arborem penna tegit velucrem piscem squama operit lana ovem induit pilus iumenta et feras vestit",
+   "right": "testudinem excipit ebur elephantem iacula non timere facit nec tamen sine causa factum est quod cum singula animantium"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "justinian/digest34.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 5329,
+   "left": "veientani dig ulpianus ad sab margaritas autem nec gemmis nec lapillis contineri satis constitisse ibidem sabinus ait quia",
+   "right": "apud rubrum mare et crescit et coalescit dig ulpianus ad sab murrina autem vasa in gemmis non esse"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "justinian/digest33.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 14436,
+   "left": "pr marcianus inst item pictoris instrumento legato cerae colores similiaque horum legato cedunt item peniculi et cauteria et",
+   "right": "dig marcianus inst instrumento piscatorio contineri aristo ait naucellas quae piscium capiendorum causa comparatae sunt sed et piscatores"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "statius/silvae3.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 3724,
+   "left": "dabit cursus mitis cytherea secundos placabitque notos fors et de puppe timenda transferet inque sua ducet super aequora",
+   "right": "accipe laudatos iuvenis phoebeie crines quos tibi caesareus donat puer accipe laetus intonsoque ostende patri sine dulce nitentes"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "statius/silvae4.txt",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 2852,
+   "left": "distet ab hiberna rhodopes grue quis magis anser exta ferat cur tuscus aper generosior vmbro lubrica qua recubent",
+   "right": "mollius alga nobis verus amor medioque helicone petitus sermo hilaresque ioci brumalem absumere noctem suaserunt mollemque oculis expellere"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "statius/silvae1.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1742,
+   "left": "nymphas virgo premit quantumque egomet nereidas exsto haec et caeruleis mecum consurgere digna fluctibus et nostra potuit considere",
+   "right": "et si flammigeras potuisset scandere sedes hasque intrare domos ipsi erraretis amores huic quamvis census dederim largita beatos"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sha/helio.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 3087,
+   "left": "nisi exquirere novas voluptates primus fecit de piscibus isicia primus de ostreis et lithostreis et aliis huiusmodi marinis",
+   "right": "et lucustis et cammaris et scillis stravit et triclinia de rosa et lectos et porticus ac sic ea"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "sha/gall.txt",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1905,
+   "left": "o pueri pariter sudate medullis omnibus inter vos non mumura vestra columbae brachia non hederae non vincant oscula",
+   "right": "longum est eius versus orationesque conectere quibus suo tempore tam inter poetas quam inter rhetores emicuit sed aliud"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vergil/aen6.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1138,
+   "left": "achilles dardanio aeneae sese fortissimus heros addiderat socium non inferiora secutus sed tum forte cava dum personat aequora",
+   "right": "demens et cantu vocat in certamina divos aemulus exceptum triton si credere dignum est inter saxa virum spumosa"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vergil/aen10.txt",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1350,
+   "left": "it grauis aulestes centenaque arbore fluctum uerberat adsurgens spumant uada marmore uerso hunc uehit immanis triton et caerula",
+   "right": "exterrens freta cui laterum tenus hispida nanti frons hominem praefert in pristim desinit aluus spumea semifero sub pectore"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "vergil/geo2.txt",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2290,
+   "left": "premes uirgulta per agros sparge fimo pingui et multa memor occule terra aut lapidem bibulum aut squalentis infode",
+   "right": "inter enim labentur aquae tenuisque subibit halitus atque animos tollent sata iamque reperti qui saxo super atque ingentis"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucretius/lucretius4.txt",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 6333,
+   "left": "vicinum tangitur auris tundier atque eius crebro pulsarier ictu proptereaque fere res omnes aut corio sunt aut etiam",
+   "right": "aut callo aut cortice tectae interiorem etiam partem spirantibus aer verberat hic idem cum ducitur atque reflatur quare"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucretius/lucretius6.txt",
+   "form": "conchyli",
+   "norm_form": "conchyli",
+   "token_index": 7190,
+   "left": "compages taurea vincla vitigeni latices aquai fontibus audent misceri cum pix nequeat gravis et leve olivom purpureusque colos",
+   "right": "iungitur uno corpore cum lanae dirimi qui non queat usquam non si neptuni fluctu renovare operam des non"
+  },
+  {
+   "corpus": "latin_library",
+   "file": "lucretius/lucretius2.txt",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 3283,
+   "left": "inmani maximitate esse supra quod iam docui non posse probari iam tibi barbaricae vestes meliboeaque fulgens purpura thessalico",
+   "right": "tacta colore aurea pavonum ridenti imbuta lepore saecla novo rerum superata colore iacerent et contemptus odor smyrnae mellisque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi001/phi0959.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 7871,
+   "left": "egelidumque notum non illic urbes non tu mirabere silvas una est iniusti caerula forma maris nec medius tenuis",
+   "right": "pictosque lapillos pontus habet bibuli litoris illa mora est litora marmoreis pedibus signate puellae hactenus est tutum cetera"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi008/phi0959.phi008.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 19096,
+   "left": "mare demat aquae detrahat ut multum multum restabit acerbi acervi parsque meae poenae totius instar erit litora quot",
+   "right": "quot amoena rosaria amoenos hostia vel a postia flores quotve soporiferum grana papaver habet silva feras quot alit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 20364,
+   "left": "quem turba canum circumsona terret ille avidos morsus velocibus effugit alis quaque patet nunc terga cavis super obsita",
+   "right": "nunc laterum costas nunc qua tenuissima cauda desinit in piscem falcato vulnerat ense belua puniceo mixtos cum sanguine"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 39123,
+   "left": "est pumice multicavo nec levibus atria tophis structa subit molli tellus erat umida musco summa lacunabant alterno murice",
+   "right": "iamque duas lucis partes hyperione menso discubuere toris theseus comitesque laborum hac ixionides illa troezenius heros parte lelex"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 48176,
+   "left": "et metuit pressos veniat ne livor in artus et modo blanditias adhibet modo grata puellis munera fert illi",
+   "right": "teretesque lapillos et parvas volucres et flores mille colorum liliaque pictasque pilas et ab arbore lapsas heliadum lacrimas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 48222,
+   "left": "monilia collo aure leves bacae redimicula pectore pendent cuncta decent nec nuda minus formosa videtur conlocat hanc stratis",
+   "right": "sidonide tinctis appellatque tori sociam acclinataque colla mollibus in plumis tamquam sensura reponit festa dies veneris tota celeberrima"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 65812,
+   "left": "folio nivei galatea ligustri floridior pratis longa procerior alno splendidior vitro tenero lascivior haedo levior adsiduo detritis aequore",
+   "right": "solibus hibernis aestiva gratior umbra nobilior pomis platano conspectior alta lucidior glacie matura dulcior uva mollior et cygni"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 74254,
+   "left": "vidi ego quod fuerat quondam solidissima tellus esse fretum vidi factas ex aequore terras et procul a pelago",
+   "right": "iacuere marinae et vetus inventa est in montibus ancora summis quodque fuit campus vallem decursus aquarum fecit et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi007/phi0959.phi007.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 27530,
+   "left": "cibis quibus ante solebat nec petit ascitas luxuriosa dapes piscis adhuc illi populo sine fraude natabat ostreaque in",
+   "right": "tuta fuere suis nec latium norat quam praebet ionia dives nec quae pygmaeo sanguine gaudet avem et praeter"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 8271,
+   "left": "suo quot lepores in atho quot apes pascuntur in hybla caerula quot bacas palladis arbor habet litore quot",
+   "right": "tot sunt in amore dolores quae patimur multo spicula felle madent dicta erit isse foras intus fortasse videre"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 10538,
+   "left": "denique natum gratulor haec aetas moribus apta meis non quia nunc terrae lentum subducitur aurum lectaque diverso litore",
+   "right": "venit nec quia decrescunt effosso marmore montes nec quia caeruleae mole fugantur aquae sed quia cultus adest nec"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 18134,
+   "left": "hispidus et gravis piscoso sinu salacia et auriga parvulus delphini palaemon iam passim maria persultantes tritonum catervae hic",
+   "right": "sonaci leniter buccinat ille serico tegmina flagrantiae solis obsistit inimici alius sub oculis dominae speculum progerit curru biiuges"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0002/stoa0261.stoa0002.perseus-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 16671,
+   "left": "revertamur post verba quae primum salve ferebant hoc poposcisti ut epigramma transmitterem duodecim versibus terminatum quod posset aptari",
+   "right": "capaci quae per ansarum latus utrumque in extimum gyri a rota fundi senis cavatur striaturis quarum puto destinas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0002/stoa0261.stoa0002.perseus-lat1.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 16771,
+   "left": "produxerit non minus forti et asprata lima poliri sed ista vel similia quorsum ecce iam canta pistrigero quae",
+   "right": "vehit tritone cytheren hac sibi conlata cedere non dubitet poscimus inclina paulisper culmen erile et munus parvum magna"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0001/stoa0261.stoa0001.perseus-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 14098,
+   "left": "dorsi qua coeunt supra sinuamina tortilis alvi inter aquas calido portavit corde dionen sed premit adiecto radiantis pondere",
+   "right": "semiferi galatea latus quod pollice fixo vellit et occulto spondet conubia tactu tum gaudens torquente ioco subridet amator"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0261/stoa0001/stoa0261.stoa0001.perseus-lat1.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 16317,
+   "left": "prima minervae palla iovis rutilat cuius bis coetus aeno serica sidonius fucabat stamina murex ebria nec solum spirat",
+   "right": "sandix inscrtum nam fulgur habet filoque rigenti ardebat gravidum de fragmine fulminis ostrum hic viridis patulo glaucus pendebat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 37356,
+   "left": "procreatur potestate et ideo hoc rhodo etiam insula creatur ceterisque eiusmodi regionibus quae proximae sunt solis cursui ea",
+   "right": "cum sunt lecta ferramentis circa scinduntur e quibus plagis purpurea sanies uti lacrima profluens excussa in mortariis terendo"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 37379,
+   "left": "circa scinduntur e quibus plagis purpurea sanies uti lacrima profluens excussa in mortariis terendo comparatur et quod ex",
+   "right": "marinarum testis eximitur ideo ostrum est vocitatum id autem propter salsuginem cito fit siticulosum nisi mel habeat circa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1017/phi015/phi1017.phi015.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 78300,
+   "left": "fesso voluptatibus ore libatis quantulum ex ista fera periculose capta dominus crudus ac nauseans gustat quantulum ex tot",
+   "right": "tam longe advectis per istum stomachum inexplebilem labitur infelices ecquid ecquid gronovius esse quid b intellegitis maiorem vos"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1017/phi015/phi1017.phi015.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 122493,
+   "left": "saepe ducentos saepe decem servos modo reges atque tetrarchas omnia magna loquens modo sit mihi mensa tripes et",
+   "right": "salis puri toga quae defendere frigus quamvis crassa queat decies centena dedisses huic parco paucis contento quinque diebus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1254/phi001/phi1254.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 125843,
+   "left": "caldo columbulatim labra conserens labris item id quoque iucunde lepideque fictum dictitabat iam tonsiles tapetes ebrii fuco quos",
+   "right": "purpura imbuens venenavit something is lacking as the chapter heading shows x argument quid vocabulum ex iure manuni"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0550/phi001/phi0550.phi001.perseus-lat1.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 10545,
+   "left": "inmani maximitate esse supra quod iam docui non posse probari iam tibi barbaricae vestes meliboeaque fulgens purpura thessalico",
+   "right": "tacta colore aurea pavonum ridenti imbuta lepore saecla novo rerum superata colore iacerent et contemptus odor smyrnae mellisque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0550/phi001/phi0550.phi001.perseus-lat1.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 28728,
+   "left": "vicinum tangitur auris tundier atque eius crebro pulsarier ictu proptereaque fere res omnes aut corio sunt aut etiam",
+   "right": "aut callo aut cortice tectae interiorem etiam partem spirantibus aer aer verberat hic idem cum ducitur atque reflatur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0550/phi001/phi0550.phi001.perseus-lat1.xml",
+   "form": "conchyli",
+   "norm_form": "conchyli",
+   "token_index": 47786,
+   "left": "compages taurea vincla vitigeni latices aquai fontibus audent misceri cum pix nequeat gravis et leve olivom purpureusque colos",
+   "right": "iungitur uno corpore cum lanae dirimi qui non queat usquam non si neptuni fluctu renovare operam des non"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0089/stoa006/stoa0089.stoa006.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 941,
+   "left": "vecta per altum deferar haud umquam tanto mihi venerit usu sacri quos petimus thalami pernicius omnes quaerite seu",
+   "right": "libycum circumsonat aequor aegaeas seu frangit aquas quicumque repertum duxerit aurata donabitur ille pharetra dixerat et sparsa diversi"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0089/stoa010/stoa0089.stoa010.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1379,
+   "left": "deprendite fontes herculeum finem bacchi transcurrite metas vestri iuris erit quidquid complectitur axis vobis rubra dabunt pretiosas aequora",
+   "right": "indus ebur ramos panchaia vellera seres"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0089/stoa001/stoa0089.stoa001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 7210,
+   "left": "signis luna venusque fuit attrivit saturnus opes hoc prorsus in uno haereo quae cunnum lambere causa facit de",
+   "right": "transferat huc liquidos fontes heliconia nais et patulo conchae divitis orbe fluat namque latex doctae qui laverit ora"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0089/stoa001/stoa0089.stoa001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 7219,
+   "left": "in uno haereo quae cunnum lambere causa facit de concha transferat huc liquidos fontes heliconia nais et patulo",
+   "right": "divitis orbe fluat namque latex doctae qui laverit ora serenae ultra pegaseas numen habebit aquas de chlamyde et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1002/phi001/phi1002.phi001.perseus-lat2.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 3327,
+   "left": "corporis frangit quid non adultus concupiscet qui in purpuris repit nondum prima verba exprimit iam coccum intelligit iam",
+   "right": "poscit ante palatum eorum quam os instituimus in lecticis crescunt si terram attigerint e manibus utrinque sustinentium pendent"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0690/phi003/phi0690.phi003.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 25874,
+   "left": "achilles dardanio aeneae sese fortissimus heros addiderat socium non inferiora secutus sed tum forte cava dum personat aequora",
+   "right": "demens et cantu vocat in certamina divos aemulus exceptum triton si credere dignum est inter saxa virum spumosa"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0690/phi003/phi0690.phi003.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 47079,
+   "left": "it gravis aulestes centenaque arbore fluctum verberat adsurgens spumant vada marmore verso hunc vehit immanis triton et caerula",
+   "right": "exterrens freta cui laterum tenus hispida nanti frons hominem praefert in pristim desinit alvus spumea semifero sub pectore"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0690/phi002/phi0690.phi002.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 5589,
+   "left": "premes virgulta per agros sparge fimo pingui et multa memor occule terra aut lapidem bibulum aut squalentis infode",
+   "right": "inter enim labentur aquae tenuisque subibit halitus atque animos tollent sata iamque reperti qui saxo super atque ingentis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0162/stoa004/stoa0162.stoa004.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 8399,
+   "left": "servis laudo nuptias laudo coniugium sed quia mihi virgines generant lego de spinis rosas de terra aurum de",
+   "right": "margaritum numquid qui arat tota die arabit nonne et laboris sui fruge laetabitur plus honorantur nuptiae quando quod"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0162/stoa004/stoa0162.stoa004.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 31706,
+   "left": "infantia sermo matris scribitur contulisse hortensii oratio in paterno sinu coaluit difficulter eraditur quod rudes animi perbiberunt lanarum",
+   "right": "quis in pristinum candorem revocet rudis testa diu et saporem retinet et odorem quo primum imbuta est graeca"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa022/stoa0275.stoa022.opp-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 568,
+   "left": "et fontium venae cavillando et fluminum viae obhumando mutavit et totus orbis aliquando aquis omnibus obsitus adhuc maris",
+   "right": "et buccinae peregrinantur in montibus cupientes platoni probare etiam ardua fluitasse sed et enatando rursus in forma mutavit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa022/stoa0275.stoa022.opp-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1459,
+   "left": "tunicam pangere et serere ni etiam piscari vestitum contigisset nam et de mari vellera qua muscosae lanositatis lautiores",
+   "right": "comant prorsus haud latet bombycem vermiculi genus est quae per aerem liquando araneorum horoscopis idonius distendit dehinc devorat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1239,
+   "left": "forantur ut pendeant et auro lenocinium mutuum praestant sed si quid de mari britannico aut indico ambitio piscatur",
+   "right": "genus est non dico conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim conchas noverim"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 1256,
+   "left": "piscatur conchae genus est non dico conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim",
+   "right": "noverim maris poma quod si concha illa aliquid intrinsecus pustulat vitium magis eius debet esse quam gloria et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1262,
+   "left": "conchylio aut ostreo sed nec peloride gratius de sapore ad hoc enim conchas noverim maris poma quod si",
+   "right": "illa aliquid intrinsecus pustulat vitium magis eius debet esse quam gloria et licet margaritum vocetur tamen aliud intellegendum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1282,
+   "left": "aliquid intrinsecus pustulat vitium magis eius debet esse quam gloria et licet margaritum vocetur tamen aliud intellegendum quam",
+   "right": "illius aliqua dura et rotunda verruca aiunt et de frontibus draconum gemmas erui sicut et in piscium cerebris"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1590,
+   "left": "ceterum si materiae ex deo sunt non statim et huiusmodi fructus illarum in hominibus quaeritur et unde sint",
+   "right": "et qua dispositione decorent et ubi speciem suam collocent nam et omnes istae profanae spectaculorum saecularium voluptates sicut"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0275/stoa014/stoa0275.stoa014.opp-lat1.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 4083,
+   "left": "spiritalis et carnalis nam et in spiritu et carne saecularia circumcidimus nimirum enim deus demonstravit sucis herbarum et",
+   "right": "salivis incoquere lanas exciderat illi cum universa nasci iuberet purpureas et coccineas oves mandate deus et ipsarum vestium"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi027/phi0474.phi027.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 7396,
+   "left": "quicquam praeter libidines sumptuosum toreuma nullum maximi calices et ei ne contemnere suos videatur placentini exstructa mensa non",
+   "right": "aut piscibus sed multa carne subrancida servi sordidati ministrant non nulli etiam senes idem coquus idem atriensis pistor"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi053/phi0474.phi053.perseus-lat3.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 16715,
+   "left": "mediis inclusa sint in contrarias partis se vertere iam nervos in fidibus aliis pulsis resonare alios ostreisque et",
+   "right": "omnibus contingere ut cum luna pariter crescant pariterque decrescant arboresque ut hiemali tempore cum luna simul senescente quia"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi053/phi0474.phi053.perseus-lat4.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 16232,
+   "left": "mediis inclusa sint in contrarias partis se vertere iam nervos in fidibus aliis pulsis resonare alios ostreisque et",
+   "right": "omnibus contingere ut cum luna pariter crescant pariterque decrescant arboresque ut hiemali tempore cum luna simul senescente quia"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi048/phi0474.phi048.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 33063,
+   "left": "crura ut manus sic inmanes quaedam bestiae bestie quedam be sibi solum natae sunt at illa quae in",
+   "right": "patula pina dicitur isque qui enat e concha qui quod eam custodit pinoteres vocatur in eandemque in eandemque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi048/phi0474.phi048.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 33071,
+   "left": "quedam be sibi solum natae sunt at illa quae in concha patula pina dicitur isque qui enat e",
+   "right": "qui quod eam custodit pinoteres vocatur in eandemque in eandemque be in eamque cum se recepit recepit cod"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi050/phi0474.phi050.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 22403,
+   "left": "inopinato observant et si quid incidit arripiunt idque consumunt pina vero sic enim graece dicitur duabus grandibus patula",
+   "right": "cum parva squilla quasi societatem coit comparandi cibi itaque cum pisciculi parvi in concham hiantem innataverunt tum admonita"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi050/phi0474.phi050.perseus-lat2.xml",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 22417,
+   "left": "dicitur duabus grandibus patula conchis cum parva squilla quasi societatem coit comparandi cibi itaque cum pisciculi parvi in",
+   "right": "hiantem innataverunt tum admonita a squilla pina morsu comprimit conchas sic dissimillimis bestiolis communiter cibus quaeritur in quo"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi050/phi0474.phi050.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 22427,
+   "left": "coit comparandi cibi itaque cum pisciculi parvi in concham hiantem innataverunt tum admonita a squilla pina morsu comprimit",
+   "right": "sic dissimillimis bestiolis communiter cibus quaeritur in quo admirandum est congressune aliquo inter se an iam inde ab"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi050/phi0474.phi050.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 22569,
+   "left": "usque eo premere earum capita mordicus dum illae captum amitterent in quod ipsa invaderet eademque haec avis scribitur",
+   "right": "se solere complere eas cum stomachi calore concoxerit evomere atque ita eligere ex his quae sunt esculenta ranae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0474/phi037/phi0474.phi037.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 19893,
+   "left": "ex urbe tamquam e vinclis evolavissent non audeo dicere de talibus viris sed tamen ita solet narrare scaevola",
+   "right": "eos et umbilicos ad caietam et ad laurentum legere consuesse et ad omnem animi remissionem ludumque descendere sic"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1038/phi001/phi1038.phi001.perseus-lat1.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 71354,
+   "left": "ferculorum abundarent aedificiis etiam spatiosis et excelsis deserta ad id tempus ora lucrini lacus pressit quo recentiore usu",
+   "right": "frueretur ubi dum se publicae aquae cupidius inmergit cum considio publicano iudicium nanctus est in quo l crassus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0119/phi017/phi0119.phi017.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 2134,
+   "left": "urbe ad mare huc prodimus pabulatum pro exercitu gymnastico et palaestrico hoc habemus echinos lopadas ostreas balanos captamus",
+   "right": "marinam urticam musculos plagusias striatas post id piscatum hamatilem et saxatilem aggredimur cibum captamus e mari si eventus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0119/phi017/phi0119.phi017.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 5419,
+   "left": "intellego decet abs te id impetrari ignoscere his te convenit metus has id ut faciant subigit te ex",
+   "right": "natam esse autumant cave tu harum conchas spernas sed optume eccum exit senex patronus mihique et vobis daemones"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0119/phi017/phi0119.phi017.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 5426,
+   "left": "his te convenit metus has id ut faciant subigit te ex concha natam esse autumant cave tu harum",
+   "right": "spernas sed optume eccum exit senex patronus mihique et vobis daemones exi e fano natum quantum est hominum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0023/stoa001/stoa0023.stoa001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 18463,
+   "left": "quietis et publicae rei et musarum quod factitasse alexandrum legimus magnum sed multo hic fortius ille namque aenea",
+   "right": "supposita brachio extra cubile protento pilam tenebat argenteam ut cum nervorum vigorem sopor laxasset infusus gestaminis lapsi tinnitus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1276/phi001/phi1276.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 2989,
+   "left": "non maurus erat neque sarmata nec thrax qui sumpsit pinnas mediis sed natus athenis horum ego non fugiam",
+   "right": "me prior ille signabit fultusque toro meliore recumbet advectus romam quo pruna et cottona vento usque adeo nihil"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1276/phi001/phi1276.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 8831,
+   "left": "sint discrimina nescit grandia quae mediis iam noctibus ostrea mordet cum perfusa mero spumant unguenta falerno cum bibitur",
+   "right": "cum iam vertigine tectum ambulat et geminis exsurgit mensa lucernis i nunc et dubita qua sorbeat aera sanna"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1276/phi001/phi1276.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 9945,
+   "left": "ocius inquit adferte atque illis dominum iubet ante feriri deinde canem gravis occursu taeterrima vultu balnea nocte subit",
+   "right": "et castra moveri nocte iubet magno gaudet sudare tumultu cum lassata gravi ceciderunt bracchia massa callidus et cristae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1276/phi001/phi1276.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 14010,
+   "left": "par damnorum sociis florentibus et modo victis plena domus tunc omnis et ingens stabat acervus nummorum spartana chlamys",
+   "right": "coa et cum parrhasii tabulis signisque myronis phidiacum vivebat ebur nec non polycliti multus ubique labor rarae sine"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0917/phi001/phi0917.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 30357,
+   "left": "draconum quaeque sonant feta tepefacta sub alite saxa non arabum volucer serpens innataque rubris aequoribus custos pretiosae vipera",
+   "right": "aut viventis adhuc libyci membrana cerastae aut cinis eoa positi phoenicia in ara quo postquam viles nec habentes"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0917/phi001/phi0917.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 44762,
+   "left": "peritos torpentem tritonos adit illaesa paludem hanc ut fama deus quem toto litore pontus audit ventosa perflantem murmura",
+   "right": "hanc et pallas amat patrio quae vertice nata terrarum primam libyen nam proxima coelo est ut probat ipse"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 19226,
+   "left": "oleris et quidquid in caule nascitur qualis est cucurbita et cucumis et capparis omnia poma oleas cochleas itemque",
+   "right": "sed quamvis haec ita discreta sint tamen etiam quae sub eadem specie sunt magna discrimina recipiunt aliaque res"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 20691,
+   "left": "pineis lac omnisque caseus quidquid denique subcrudum aliquis assumsit minima inflatio fit ex venatione aucupio piscibus pomis oleis",
+   "right": "ovis vel mollibus vel sorbilibus vino vetere foeniculum feniculum vero et anethum inflationes etiam levant xxvii de his"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 25665,
+   "left": "cibo id satis est secundo vero aliquid adjici potest ex eodem tamen genere materiae vel olus holus vel",
+   "right": "vel pomum et dum febres quidem increscunt hic solus cibus idoneus est ubi vero aut desinunt aut levantur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 25903,
+   "left": "et rarius tenui simplici molli calido exiguo maximeque oleribus holeribus qualia sunt lapathum urtica malva vel jure etiam",
+   "right": "musculorumve aut locustarum neque danda caro nisi elixa est at potio esse debet magis liberalis et ante cibum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 24596,
+   "left": "quidem cibo id satis est secundo vero aliquid adici potest ex eodem tamen genere materiae vel holus vel",
+   "right": "vel pomum et dum febres quidem increscunt hic solus cibus idoneus est ubi vero aut desinunt aut levantur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat4.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 24828,
+   "left": "serius sunt rarius tenui simplici molli calido exiguo maximeque holeribus qualia sunt lapatium urtica malva vel iure etiam",
+   "right": "musculorumve aut lucustarum neque danda caro nisi elixa est at potio esse debet magis liberalis et ante cibum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 24731,
+   "left": "quidem cibo id satis est secundo uero aliquid adici potest ex eodem tamen genere materiae uel holus uel",
+   "right": "uel pomum et dum febres quidem increscunt hic solus cibus idoneus est ubi uero aut desinunt aut leuantur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0836/phi002/phi0836.phi002.perseus-lat6.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 24964,
+   "left": "serius et rarius tenui simplici molli calido exiguo maximeque holeribus qualia sunt lapatium urtica malua uel iure etiam",
+   "right": "musculorumue aut lucustarum neque danda caro nisi elixa est at potio esse debet magis liberalis et ante cibum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0660/phi001/phi0660.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 6627,
+   "left": "smaragdos et niueam tyrio murice tingit ouem addit auaritiae causas et coa puellis uestis et e rubro lucida",
+   "right": "mari haec fecere malas hinc clauim ianua sensit et coepit custos liminis esse canis sed pretium si grande"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0660/phi001/phi0660.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 8416,
+   "left": "tuis et nemora in domibus sacros imitantia lucos aurataeque trabes marmoreumque solum quidue in erythraeo legitur quae litore",
+   "right": "tinctaque sidonio murice lana iuuat et quae praeterea populus miratur in illis inuidia est falso plurima uulgus amat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0660/phi001/phi0660.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 8521,
+   "left": "cupiant liceat mihi paupere cultu securo cara coniuge posse frui adsis et timidis faueas saturnia uotis et faueas",
+   "right": "cypria uecta tua aut si fata negant reditum tristesque sorores stamina quae ducunt quaeque futura neunt me uocet"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0255/stoa006/stoa0255.stoa006.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 3048,
+   "left": "extra concupiscitur vitiis non usibus laboratur non est necesse omne perscrutari profundum nec strage animalium ventrem onerare nec",
+   "right": "ultimi maris ex ignoto litore eruere dii istos deaeque perdant quorum luxuria tam invidiosi imperii fines transcendit ultra"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 34754,
+   "left": "aestatis propulsare radicibus quem secutus vergilius tutari semina et muniri sic praecipit aut lapidem bibulum aut squalentes infode",
+   "right": "et paulo post iamque reperti qui saxo super atque ingentis pondere testae urgerent hoc effusos munimen ad imbres"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 90884,
+   "left": "genus piscium haberi potest limosa regio planum educat piscem velut soleam rhombum passerem eadem quoque maxime idonea est",
+   "right": "purpurarum muricibus tum concharum ostreis pectunculis balanis vel sphondylis at arenosi gurgites planos quidem non pessime sed sestertium"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 90888,
+   "left": "limosa regio planum educat piscem velut soleam rhombum passerem eadem quoque maxime idonea est conchyliis purpurarum muricibus tum",
+   "right": "ostreis pectunculis balanis vel sphondylis at arenosi gurgites planos quidem non pessime sed sestertium aac sestertiis s defertur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 90936,
+   "left": "sa precipere non potuerit ac percipuerit ut sa conchiliis ac conciliis sa warmington muricibus et ostreis purpurarumque tum",
+   "right": "prior edd pectunculi balani vel sphondili codd pessime a spessime s spissime a proxime c a scipio africanus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 90988,
+   "left": "oyster beds at baiae near naples pelagios melius pascunt ut auratas ac dentices punicasque et indigenas umbras verum",
+   "right": "minus apti rursus optime saxosum mare nominis sui pisces nutrit qui scilicet quod in petris stabulentur saxatiles dicti"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0845/phi002/phi0845.phi002.perseus-lat3.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 91730,
+   "left": "ista eadem genera etiam litoris arcnosi stagnis contineri nam quae limo caenoque lita sunt ut ante iam dixi",
+   "right": "magis et iacentibus apta sunt animalibus neque est eadem lacus positio quae recipit cubantes neque eadem praebentur cibaria"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 7737,
+   "left": "genera de de pinotere pinotere pinothera f a r adt re h de echinis de cocieis de pectinibus",
+   "right": "genera genera om r e quanta luxuriae materia luxuria iae r materiae r materia luxuriae a mari maris"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 33116,
+   "left": "sanguisucus f a sugae h vi vi b s vii rh murices xiii xiii ll h an xii",
+   "right": "v piscium adips adeps e dt h ii i fre h callionymi cal lionymi s mus h caloponymi"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 33312,
+   "left": "thynnus v menae x v i xvi ego xiii bvf a s xii rh scolopendra ii saurus i",
+   "right": "i conchis i j transp voluit post bryon i cfr siluro siluro praem de dt ru b rus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 33314,
+   "left": "menae x v i xvi ego xiii bvf a s xii rh scolopendra ii saurus i conchis i",
+   "right": "i j transp voluit post bryon i cfr siluro siluro praem de dt ru b rus rh xv"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 33338,
+   "left": "bryon i cfr siluro siluro praem de dt ru b rus rh xv strombo strombus v h sive",
+   "right": "longa vi tethea tethea rt h tha e thetea b thea fe phea r a d pea v"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 53000,
+   "left": "iam iam f ydp v nam r quidem quidem fry v dam r lunari potestate ostrearum conchyliorumque et",
+   "right": "omnium dist d corpora augeri augere f r d ac rursus minui quin et soricum fibras respondere numero"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 70046,
+   "left": "va g cfr v esse quod terras saturet accedensque corpora impleat abscedens inaniat ideo cum incremento eius augeri",
+   "right": "et maxime spiritum sentire quibus sanguis non sit sed et sanguinem hominum etiam cum lumine eius augeri ac"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 161573,
+   "left": "v crotale dic ab ea xii bibaga ostreis ac a c ea d a df amp r v",
+   "right": "concylis f ciliis a lis r culis die referta dein deinde d dic v a s dicta v"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 234477,
+   "left": "primum incipit lanarum nigrae nullum colorem sq bibunt de reliquarum infectu suis locis dicemus in conch y liis",
+   "right": "v cfr conchiliis f r conci f a confi r sq maris marinis va s aut herbarum natura"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 239663,
+   "left": "xiii tiberio principi nuntiavit olisipo n ensium olisipolensium fra legatio ob id missa visum auditumque in quodam specu",
+   "right": "canentem tritonem qua noscitur forma et nereidum falsa falsa opinio z va g non est squamis modo hispido"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 240687,
+   "left": "confess io confessio v sso ll quis enim sine respiratione somno locus praeterea bullantium aquarum sufflatio lunaeque effectu",
+   "right": "quoque corpora augescentia super omnia est quod esse auditum et odoratum piscibus non erit dubium ex aeris utrumque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 242934,
+   "left": "delphini cortice ut testudines silicum duritia duritia ut e v ri aut ut a r ut ostreae et",
+   "right": "crustis ut locustae crustis et spinis ut echini squamis ut pisces aspera cute ut squatina qua lignum et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 247222,
+   "left": "sic ut sic ego sic e a j si df r simplice r e v d ci del",
+   "right": "f concha utroque latere sese colligente quibus inhaerentibus plenam venti uenti ego tis ll v cfr vol iv"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 247224,
+   "left": "sic ego sic e a j si df r simplice r e v d ci del concha f",
+   "right": "utroque latere sese colligente quibus inhaerentibus plenam venti uenti ego tis ll v cfr vol iv p med"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 247280,
+   "left": "a ow r peri f r v d ut castrarentur nobiles puer os pueros u ri ll v",
+   "right": "quae quae adtz que quae r b que r cfr al id praestiterint apud semipedalis plin xxxii c"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 247904,
+   "left": "fr wim sol ar viii a plut sa f ael i ar ii b cfr pl xxix vescuntur",
+   "right": "carne quorum conchas conplexu conplexu e v confl xa a r crinium crinium r v crurum e z"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 247907,
+   "left": "ar viii a plut sa f ael i ar ii b cfr pl xxix vescuntur conchyliorum carne quorum",
+   "right": "conplexu conplexu e v confl xa a r crinium crinium r v crurum e z criminum r cfr"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 248233,
+   "left": "praetereunda et l lucullo proconsule baeticae conperta de polypis quae trebius niger e comitibus eius prodidit avidissimos esse",
+   "right": "illas ad tactum conprimi praecidentes praecidentes r v tis rs bracchia eorum ultroque escam ex praedante capere carent"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 248252,
+   "left": "illas ad tactum conprimi praecidentes praecidentes r v tis rs bracchia eorum ultroque escam ex praedante capere carent",
+   "right": "visu omnique sensu alio quam cibi et periculi insidiantur ergo polypi apertis inpositoque lapillo extra corpus ne palpitatu"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 248683,
+   "left": "neque his bimatu longior vita mucian fr brunn navigeram similitudinem et aliam in propontide visam sibi prodidit mucianus",
+   "right": "esse acatii acatii b achati ll v modo carinatam inflexa puppe prora rostrata in hanc hanc e v"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 249530,
+   "left": "aestibus aestatibus fa unguesque velut igne lucentes in tenebris etiam in ore mandentium firmioris iam testae murices et",
+   "right": "genera in quibus magna ludentis naturae varietas tot colorum differentiae tot figurae plans concavis longis lunatis in orbem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 249734,
+   "left": "sed quid qui r haec tam parva commemoro cum populatio morum atque luxuria non aliunde maior quam e",
+   "right": "genere proveniat iam quidem ex tota rerum natura damnosissimum ventri uentri om g mare mari fr est tot"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 249977,
+   "left": "maris rubri isid char ap athen iii e a ael x sol amm marc xxiii origo atque genitura",
+   "right": "s un t sunt s t ego est ll v de dictione cfr vi origo haut multum ostrearum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 249996,
+   "left": "s un t sunt s t ego est ll v de dictione cfr vi origo haut multum ostrearum",
+   "right": "different e s differentes ego nt df e a ns rv ntis coni h d has ubi genitalis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 250043,
+   "left": "sese va s quadam oscitatione impleri roscido conceptu concentu r tradunt gravidas postea eniti niti r h partumque",
+   "right": "esse margaritas pro qualitate roris accepti si purus influxerit candorem conspici si vero turbidus et fetum sordescere dist"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 250107,
+   "left": "trahi colorem aut pro claritate matutina serenum sitempestive satientur grandescere et partus si fulguret fulgor et fa conprimi",
+   "right": "ac pro ieiunii modo minui si vero etiam tonuerit pavidas ac repente conpressas quae vocant physemata efficere specie"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 250149,
+   "left": "ll v l modo inani inflata inflata g tas dfr j tam ea v sine corpore hos esse",
+   "right": "abortus sani quidem partus multiplici constant cute non inproprie callum ut existimari corporis possit itaque et purgantur et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 250290,
+   "left": "est facies et ab ea rotunditas aversis planities ob id tympania nominantur cohaerentes videmus uidimus h brot in",
+   "right": "hac dote unguenta circumferentibus cetero in aqua mollis unio exemptus protinus durescit athen iii b ael x sol"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 250312,
+   "left": "circumferentibus cetero in aqua mollis unio exemptus protinus durescit athen iii b ael x sol amm marc ib",
+   "right": "ipsa cum manum vidit uidet va s conprimit sese operitque septimanumque f a opes suas gnara propter illas"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 250397,
+   "left": "aures feminarum arcentur megasth fr mu ap arrian h ind ael xv sol quidam tradunt sicut apibus ita",
+   "right": "examinibus singulas singulas e v la r magnitudine et vetustate praecipuas esse veluti duces mirae ad cavendum sollertiae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 250857,
+   "left": "rufi ac at d f e v ant e a art r an e dittogr natum parvi in",
+   "right": "quas myas appellant at in acarnania quae vocatur pina pina se xxxii pinna ll v d gignit quo"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 250879,
+   "left": "at in acarnania quae vocatur pina pina se xxxii pinna ll v d gignit quo apparet non uno",
+   "right": "genere nasci namque et iuba tradit arabicis concham esse simile m simile v li ll pectini insecto hirsutam"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 250887,
+   "left": "xxxii pinna ll v d gignit quo apparet non uno conchae genere nasci namque et iuba tradit arabicis",
+   "right": "esse simile m simile v li ll pectini insecto hirsutam echinorum modo ipsum unionem in carne grandini similem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 250908,
+   "left": "m simile v li ll pectini insecto hirsutam echinorum modo ipsum unionem in carne grandini similem simile fa",
+   "right": "non tales ad nos adferuntur nec in acarnania autem laudatireperiuntur enormes enormis fr et feri fere r om"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 251029,
+   "left": "in extremis etiam marginibus velut e uelut e faz v d utae e uti d ut dr g",
+   "right": "exeuntes et in quibusdam quaternos quinosque pondus ad hoc aevi semunciae pauci singulis singulis a v li r"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 251856,
+   "left": "r margaritis prodat et hoc tamen aeternae prope possessionis est sequitur heredem in mancipatum venit ut praedium aliquod",
+   "right": "et purpuras omnis hora hora a dal ora e v horas r atterit quibus eadem mater luxuria paria"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 252003,
+   "left": "sublucens reliquum corpus sterile vivas capere contendunt quia cum vita sucum eum evomunt et maioribus quidem purpuris detracta",
+   "right": "auferunt minores cum te st a vi v as cum testa uiuas h ex ar cum terra uitis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 252165,
+   "left": "similis mari ar v b p ii a viii a lingua purpurae longitudine digitali qua pascitur perforando reliqua",
+   "right": "tanta duritia aculeo est aquae aquae eaz r brot ua rv dulcedine dulcedine eaz brot cedi r cidi"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 252205,
+   "left": "v necantur et sicubi flumen inmergitur alioqui captae et et om va s diebus quinquagenis vivunt saliva sua",
+   "right": "omnes celerrime crescunt praecipue purpurae anno magnitudinem implent quod si hactenus transcurrat expositio fraudatam fraudatu fa profecto se"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 252279,
+   "left": "ll v cfr viii praemio praemia d v cfr xiv vitae suae calleant ar v b iv a",
+   "right": "ad purpuras et conch y lia eadem enim est materia sed distat temperamento duo sunt genera bucinum minor"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 252298,
+   "left": "ad purpuras et conch y lia eadem enim est materia sed distat temperamento duo sunt genera bucinum minor",
+   "right": "ad similitudinem eius qua bucini sonus editur unde et et de v d om ll s causa nomini"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 252579,
+   "left": "ib a capiuntur autem purpurae parvulis rarisque textu veluti nassis in alto iactis inest his esca clusiles mordacesque",
+   "right": "ceu mitulos ceu mitilos f cu itulos ital a fa videmus has semineces sed redditas mari avido hiatu"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 253488,
+   "left": "nec recenti vires neque senescenti abunde tractata est ratio qua se virorum iuxta feminarumque forma credit amplissimam fieri",
+   "right": "generis et pina pinna r va s cfr sect est ar v b chrysipp ap athen iii d"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 254252,
+   "left": "ll b s non c magis v tenue densumque ex quo penicilli achillium nascuntur omnes in petris aluatur",
+   "right": "pisce limo intellectum inesse i is apparent quia ubi avulsorem auul sorem rde v sorum fa an auolsurum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 254298,
+   "left": "e lexicis sensere contractae multo difficilius abstrahuntur hoc idem fluctu pulsante faciunt ar v b vivere esca manifesto",
+   "right": "minutae in i is repertae ostendunt circa toronen tyrone a vesci illis avulsas dist fa muller em iip"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 258009,
+   "left": "h cfr xxxiii n luc p id cuius experiendi cotidie occasio cottidie ex occasio a est cfr supra",
+   "right": "e genere sunt dact y li ab ab r v om r humanorum unguium similitudine similitudine appellant fadt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 270132,
+   "left": "quae se in mari mergunt et capita illarum morsu corripiens donec capturam extorqueat eadem cum devoratis se inplevit",
+   "right": "calore ventris coctas coctas r e v concis r cunctas r evomit atque ita ex i is esculenta"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 295455,
+   "left": "a usu uita de vitam distinguat distinguant va s a morte non omnibus animalium hi ostreis nulli quibusdam",
+   "right": "dubii pectines enim si quis digitos adversum aduersu ante f r su ante a hiantes eos moveat contrahunt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 325779,
+   "left": "durescit e tralucido th ix diosc ib strabo ib alexandro magno res ibi gerente toto die aestivo unam",
+   "right": "impleri iustum erat omni vero fecunditate e maiore horto e om maior horreo eto e et a fea"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 343262,
+   "left": "em ii p vero abies et quercus cubitali altitudine amp del f etiam va h ramis earum adhaerent",
+   "right": "concae f cun ctae ea quercu et tingui lanas lanas mf d v linas r dist ego tradunt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 362714,
+   "left": "faeces cato init ib extr quare saepius die in die dt s capulandum decapulandum va p h praeterea",
+   "right": "concha muller em iii p e cat concham m as rv in conchas g et et in md"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 362715,
+   "left": "cato init ib extr quare saepius die in die dt s capulandum decapulandum va p h praeterea concha",
+   "right": "muller em iii p e cat concham m as rv in conchas g et et in md et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concham",
+   "norm_form": "concham",
+   "token_index": 362722,
+   "left": "in die dt s capulandum decapulandum va p h praeterea concha concha muller em iii p e cat",
+   "right": "m as rv in conchas g et et in md et rv in plumbeas cortinas scor tinas m"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 362727,
+   "left": "decapulandum va p h praeterea concha concha muller em iii p e cat concham m as rv in",
+   "right": "g et et in md et rv in plumbeas cortinas scor tinas m aere vitiari ferventibus ferentibus m"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 455221,
+   "left": "j idem dgfhm d item d v id est e del g turbato tranquillitatem tranquillitate e lolligo volitans",
+   "right": "adhaerescentes echini adfigentes sese aut harena saburrantes tempestatis signa sunt ranae quoque ultra solitum solitum dhm v sonitum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 506438,
+   "left": "v et aliquando exilior vet dal plerumque saturatior alius in malva ad purpuram inclinans alius in viola serotina",
+   "right": "vegetissimus uegetissimus f h ma ll v paria nunc componuntur et natura atque luxuria depugnant lutei video honorem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 521427,
+   "left": "coccum imperatoriis imperatoris vx dal dicatum paludamentis transalpina gallia herbis tyria tyria dtfx brot r ium v atque",
+   "right": "concilia vx conchylium v a brot tinguit et et om r v a s omnes alios colores nec"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 521430,
+   "left": "vx dal dicatum paludamentis transalpina gallia herbis tyria tyria dtfx brot r ium v atque conchylia concilia vx",
+   "right": "v a brot tinguit et et om r v a s omnes alios colores nec quaerit in profundis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 524839,
+   "left": "v uentri vtx uentr r destillationi stomacho panis parotidibus pernionibus cum oleo sudorem sudore cocta vdx coctam cum",
+   "right": "conquiliis vx conchulis b ciere cinere r alvum cum tisana pectus purgare mulierumque menses meses x messes rv"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 529699,
+   "left": "iasione b cfr xxi olus silvestre habetur in terra repens cum lacte multo multa vg florem fert candidum",
+   "right": "conchylium u concy vgr concilium r v a d vocant et huius eadem commendatio ad stimulandos coitus cruda"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 529700,
+   "left": "b cfr xxi olus silvestre habetur in terra repens cum lacte multo multa vg florem fert candidum conchylium",
+   "right": "u concy vgr concilium r v a d vocant et huius eadem commendatio ad stimulandos coitus cruda cruda"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 608914,
+   "left": "phycos v phecos e pechos d poechos r thalassion thalasson e id est fucus marinus lactucae similis qui",
+   "right": "conciliis v substernitur non podagrae modo sed omnibus articulorum morbis orbis e modis v r inpositus priusquam arefiat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 718766,
+   "left": "indiam b cind r conidia e gnidiam d v a s venerem uentrem b uenire vr inueniri b",
+   "right": "quoque esse esse om vrd v a s eiusdem potentiae credi credi om vd f necesse sit ovid"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 726178,
+   "left": "s id vr liberant vesicarum ulcera ulceri b quoque repurgant repugnant b e cocta cocta om e in",
+   "right": "suis uti clusa clavfa b df v a s electae pl iun invenerint inuenerint b d uen rv"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 726639,
+   "left": "cinis cum melle utiliter utiliter be v j ante cum melle d utitur liter e om rs inlinitur",
+   "right": "vel si non uratur uratur vr sc testa urantur rv farina ex aqua doloribus castoreum cum peucedano et"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 727912,
+   "left": "v cia b vrb d hordia b aurium volneribus efficacissime prodest parotides muricum testae cinere cum melle vel",
+   "right": "ex mulso curantur diosc ii eupor i cels vi extr dentium dolores sedantur ossibus draconis marini scariphatis fcariphatif"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliorum",
+   "norm_form": "conchyliorum",
+   "token_index": 728533,
+   "left": "pinguitudo similis oleo fluat hac hac ego haec b ac rv perungunt cfr xenocrates diosc iii muricum vel",
+   "right": "testae cinis maculas in facie mulierum testae mulierum om b purgat cum melle inlitus cutemque erugat cum erugat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 729595,
+   "left": "cum u an utilis post marinus cfr xxii in vino necatus necatur v a d ut inde bibatur",
+   "right": "longae carnes ex mulso potae cum aquae aquae b s ua rv pari modo aut si febres sint"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 729687,
+   "left": "b scia vr sciatioco e muria siluri si iuri v iuri r clystere clysteri vrd infusa dantur autem",
+   "right": "ternis obolis dilutis dilutif b s ti vrd tae v om b in vini sextariis sex tariis duobus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 731689,
+   "left": "impetus sedant ranae subinde recentes inpositae quidam dissectas iubent inponi corpus auget augen tiuf b ius mitulorum et",
+   "right": "diosc ii eupor i pl iun cfr supra scribon comitiales ut diximus coagulum vituli marini bibunt cum lacte"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 735973,
+   "left": "coly cia b cfr sive coryphia coryphia s e xenocr phea b thia h corophia rv phya lugd",
+   "right": "concarum b corum b genera inter quae et margaritiferae cochhloe cochloe r s loae v leae cochroe b"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 737501,
+   "left": "ampla ras ner rv de adiectivi notione aliena cfr viii x xi xiv xxxvii al appellantur et pernae",
+   "right": "generis gefferis r circa pontias pomitias v icias r insulas frequentissimae stant velut uel et v suillum suillum"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 748838,
+   "left": "ut omnis duritia duritias vr solvatur dist ego ac rursus tunditur dein lavatur in in om b sj",
+   "right": "siccatur fic catur b s turque rv d tu m tum ego tunc ll v de mendo cfr"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 753049,
+   "left": "trito minio ex aceto aut patinis patenis v patilif b poatilof b fictilibus inpositum an inpositum in ferrea",
+   "right": "conca v concea r calice coopertum copertum v op d argilla superinlita superinlata vr illata d ven dein"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 786619,
+   "left": "paretonium bd iom v loci nomen habet ex aegypto spumam maris esse dicunt solidatam cum limo et ideo",
+   "right": "minutae inveniuntur inuenitur vr in eo fit fiat in cre ac r et in creta insula atque cyrenis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 834671,
+   "left": "ac d v a s coepti uri coepti uri b v turi f tum l cepturi adh dein",
+   "right": "conchae b l v chon b conce ad concre fh ac fossiles harenae auctores sunt amp ll e"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 834672,
+   "left": "d v a s coepti uri coepti uri b v turi f tum l cepturi adh dein conchae",
+   "right": "b l v chon b conce ad concre fh ac fossiles harenae auctores sunt amp ll e dh"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 865283,
+   "left": "striata ftriata b b ftrata b stricte tae v l v triatus a era tus f crea d",
+   "right": "modo non adeo candida candidae curotias a eurotias situ videtur operire nigritiam eusebes ex eo ex oleo la"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "form": "conchyliis",
+   "norm_form": "conchyliis",
+   "token_index": 873979,
+   "left": "coni j lanum b vocavimus ex i is iis s hif b is d quae terrena et maris",
+   "right": "con chylif b d purpura e purpurae s e coni j ra b volucrum naturae praeter conos bellic"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0045/stoa019/stoa0045.stoa019.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 429,
+   "left": "glarea muscum tota caledoniis talis patet ora britannis cum virides algas et rubra corallia nudat aestus et albentes",
+   "right": "germina bacas delicias hominum locupletibus atque sub undis adsimulant nostros imitata monilia cultus haud aliter placidae subter vada"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi2331/phi017/phi2331.phi017.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 3334,
+   "left": "vita nisi exquirere voluptates primus fecit de piscibus insicia primus de ostreis et leiostreis et aliis huiusmodi marinis",
+   "right": "et locustis et cammaris et scillis stravit et triclinia de rosa et lectos et porticus ac sic deambulavit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi2331/phi023/phi2331.phi023.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 2131,
+   "left": "o pueri pariter sudate medullis omnibus inter vos non murmura vestra columbae brachia non hederae non vincant oscula",
+   "right": "longum est eius versus orationesque conectere quibus suo tempore tam inter poetas quam inter rhetores emicuit sed aliud"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi2331/phi024/phi2331.phi024.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 6725,
+   "left": "in tiburti quae hodieque zenobia dicitur non longe ab hadriani palatio atque ab eo loco cui nomen est",
+   "right": "victoria non tam digna res erat ut etiam vitruvia sive victoria in litteras mitteretur nisi gallieni mores hoc"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1345/phi001/phi1345.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 61045,
+   "left": "per uacuum late cantu resonante profundum inc r epuere tubae quis excitus aequore triton expauit tortae certantia murmura",
+   "right": "uix meminere maris tam uasto ad proelia nisu incumbunt proni positisque in margine puppis extremae plantis nutantes spicula"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0972/phi001p/phi0972.phi001p.perseus-lat1.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 863,
+   "left": "noverit ecce refuso gurgite securos obluit unda pedes ecce inter virides iactatur mytilus algas et rauco trahitur lubrica",
+   "right": "sinu ecce recurrentes qua versat fluctus arenas discolor attrita calculus exit humo haec quisquis calcare potest in litore"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0972/phi001/phi0972.phi001.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 25592,
+   "left": "esurit armis ingeniosa gula est siculo scarus aequore mersus ad mensam vivus perducitur atque lucrinis eruta litoribus vendunt",
+   "right": "cenas ut renovent per damna famem iam phasidos unda orbata est avibus mutoque in litore tantum solae desertis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0972/phi001/phi0972.phi001.perseus-lat1.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 25592,
+   "left": "esurit armis ingeniosa gula est siculo scarus aequore mersus ad mensam vivus perducitur atque lucrinis eruta litoribus vendunt",
+   "right": "cenas ut renovent per damna famem iam phasidos unda orbata est avibus mutoque in litore tantum solae desertis"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi003/phi0893.phi003.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 375,
+   "left": "laetum pecus distenta siccet ubera et horna dulci vina promens dolio dapes inemptas adparet non me lucrina iuverint",
+   "right": "magisve rhombus aut scari siquos eois intonata fluctibus hiems ad hoc vertat mare non afra avis descendat in"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi001/phi0893.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 4757,
+   "left": "depone sub lauru mea nec parce cadis tibi destinatis oblivioso levia massico ciboria exple funde capacibus unguenta de",
+   "right": "quis udo deproperare apio coronas curatve myrto quem venus arbitrum dicet bibendi non ego sanius bacchabor edonis recepto"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1885,
+   "left": "saepe ducentos saepe decem servos modo reges atque tetrarchas omnia magna loquens modo sit mihi mensa tripes et",
+   "right": "salis puri et toga quae defendere frigus quamvis crassa queat deciens centena dedisses huic parco paucis contento quinque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 8140,
+   "left": "ut noceant homini credas memor illius escae quae simplex olim tibi sederit at simul assis miscueris elixa simul",
+   "right": "turdis dulcia se in bilem vertent stomachoque tumultum lenta feret pitvita vides ut pallidus omnis cena desurgat dubia"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 10967,
+   "left": "nil nisi lene decet leni praecordia mulso prolueris melius si dura morabitur alvus mitulus et viles pellent obstantia",
+   "right": "et lapathi brevis herba sed albo non sine coo lubrica nascentes inplent conchylia lunae sed non omne mare"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 10980,
+   "left": "mitulus et viles pellent obstantia conchae et lapathi brevis herba sed albo non sine coo lubrica nascentes inplent",
+   "right": "lunae sed non omne mare est generosae fertile testae murice baiano melior lucrina peloris ostrea circaeis miseno oriuntur"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 13934,
+   "left": "placentas nomentanus ad hoc qui siquid forte lateret indice monstraret digito nam cetera turba nos inquam cenamus avis",
+   "right": "piscis longe dissimilem noto celantia sucum ut vel continuo patuit cum passeris atque ingustata mihi porrexerit ilia rhombi"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0472/phi001/phi0472.phi001.perseus-lat2.xml",
+   "form": "conchyli",
+   "norm_form": "conchyli",
+   "token_index": 6721,
+   "left": "regali splendida gaza pulvinar vero divae geniale locatur sedibus in mediis indo quod dente politum tincta tegit roseo",
+   "right": "purpura fuco haec vestis priscis hominum variata figuris heroum mira virtutes indicat arte namque fluentisono prospectans litore diae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0692/phi007/phi0692.phi007.perseus-lat1.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 648,
+   "left": "praetexite honore uolumen sunt pandioniis uicinae sedibus urbes actaeos inter collis et candida thesei purpureis late ridentia litora",
+   "right": "quarum non ulli fama concedere digna stat megara dagger actaei quondam munita labore alcathoi phoebique deus namque adfuit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1348/abo014/phi1348.abo014.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 5962,
+   "left": "derecta acie in litore oceani ac ballistis machinisque dispositis nemine gnaro aut opinante quidnam coepturus esset repente ut",
+   "right": "legerent galeasque et sinus replerent imperauit spolia oceani uocans capitolio palatioque debita et in indicium uictoriae altissimam turrem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1348/abo016/phi1348.abo016.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 3959,
+   "left": "siluisque uaria cum multitudine omnis generis pecudum ac ferarum in ceteris partibus cuncta auro lita distincta gemmis unionumque",
+   "right": "erant cenationes laqueatae tabulis eburneis uersatilibus ut flores fistulatis ut unguenta desuper spargerentur praecipua cenationum rotunda quae perpetuo"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0969/phi001/phi0969.phi001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 1610,
+   "left": "hac scelerata ducere pulpa haec sibi corrupto casiam dissolvit olivo et calabrum coxit vitiato murice vellus haec bacam",
+   "right": "rasisse et stringere venas ferventis massae crudo de pulvere iussit peccat et haec peccat vitio tamen utitur at"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1020/phi002/phi1020.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 1922,
+   "left": "nymphas virgo premit quantumque egomet nereidas exsto haec et caeruleis mecum consurgere digna fluctibus et nostra potuit considere",
+   "right": "et si flammigeras potuisset scandere sedes hasque intrare domos ipsi erraretis amores huic quamvis census dederim largita beatos"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1020/phi002/phi1020.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 15788,
+   "left": "dabit cursus mitis cytherea secundos placabitque notos fors et de puppe timenda transferet inque sua ducet super aequora",
+   "right": "accipe laudatos iuvenis phoebeie crines quos tibi caesarem donat puer accipe laetus intonsoque ostende patri sine dulce nitentes"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1020/phi002/phi1020.phi002.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 20635,
+   "left": "distet ab hiberna rhodopes grue quis magis anser exta ferat cur tuscus aper generosior umbro lubrica qua recubent",
+   "right": "mollius alga nobis verus amor medioque helicone petitus passu markland passum m passim s sermo hilaresque ioci brumalem"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0238/stoa006/stoa0238.stoa006.perseus-lat2.xml",
+   "form": "concharum",
+   "norm_form": "concharum",
+   "token_index": 2067,
+   "left": "frontis in arce colla vel ignitis sincera incingere sertis auribus aut gravidis virides suspendere bacas nectitur et nitidis",
+   "right": "calculus albens crinibus aureolisque riget coma texta catenis taedet sacrilegas matrum percurrere curas muneribus dotata dei quae plasmata"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0238/stoa002/stoa0238.stoa002.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 5750,
+   "left": "vitrea de rupe recisis construitur quarum tegit edita calculus albens in conum caesus capita et sinuamine subter subductus",
+   "right": "in speciem quod mille talentis margaritum ingens opibusque et censibus hastae addictis animosa fides mercata pararat hoc residet"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 7208,
+   "left": "fraudare duobus quid metuis non te naevole sed tineas xlvii subdola famosae moneo fuge retia moechae levior o",
+   "right": "galle cytheriacis confidis natibus non est pedico maritus quae faciat duo sunt irrumat aut futuit xlviii coponem laniumque"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 18454,
+   "left": "quidam faustine libello dissimulat quasi nil debeat inposuit xxxvii puella senibus dulcior mihi cycnis agna galaesi mollior phalantini",
+   "right": "lucrini delicatior stagni cui nec lapillos praeferas erythraeos nec modo politum pecudis indicae dentem nivesque primas liliumque non"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchas",
+   "norm_form": "conchas",
+   "token_index": 21605,
+   "left": "basia da nobis diadumene pressa quot inquis oceani fluctus me numerare iubes et maris aegaei sparsas per litora",
+   "right": "et quae cecropio monte vagantur apes quaeque sonant pleno vocesque manusque theatro cum populus subiti caesaris ora videt"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 27794,
+   "left": "libellos non faciam nam vis vendere non legere lxxviii cum saxetani ponatur coda lacerti et bene si cenas",
+   "right": "inuncta tibi sumen aprum leporem boletos ostrea mullos mittis habes nec cor papyle nec genium lxxix potavi modo"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 40273,
+   "left": "mullum visus erit libris qui minor esse tribus et fatuam summa cenare pelorida mensa quosque tegit levi cortice",
+   "right": "brevis ostrea baianis quam non liventia testis quae domino pueri non prohibente vorent hic olidam clamosus ages in"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchylia",
+   "norm_form": "conchylia",
+   "token_index": 46164,
+   "left": "foco et quae picenum senserunt frigus olivae haec satis in gustu cetera nosse cupis mentiar ut venias pisces",
+   "right": "sumen et chortis saturas atque paludis aves quae nec stella solet rara nisi ponere cena plus ego polliceor"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 53185,
+   "left": "nos alicam poterit mulsum tibi mittere dives si tibi noluerit mittere dives emes vii faba si spumet rubra",
+   "right": "tibi pallida testa lautorum cenis saepe negare potes viii far inbue plebeias clusinis pultibus ollas ut satur in"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 54294,
+   "left": "lxxxi rhombi quamvis lata gerat patella rhombum rhombus latior est tamen patella lxxxii ostrea ebria baiano veni modo",
+   "right": "lucrino nobile nunc sitio luxuriosa garum lxxxiii squillae caeruleus nos liris amat quem silva maricae protegit hinc squillae"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 54414,
+   "left": "aequoreo dulces cum sale pastus aquas xc aurata non omnis laudes pretiumque aurata meretur sed cui solus erit",
+   "right": "lucrina cibus xci acipensis ad palatinas acipensem mittite mensas ambrosias ornent munera rara dapes xcii lepores inter aves"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 57288,
+   "left": "te praecingere possum essem si locuples munus utrumque darem cliv lanae amethystinae ebria sidoniae cum sim de sanguine",
+   "right": "non video quare sobria lana vocer clv lanae albae velleribus primis apulia parma secundis nobilis altinum tertia laudat"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 58106,
+   "left": "iste iovem ccviii notarius currant verba licet manus est velocior illis nondum lingua suum dextra peregit opus ccix",
+   "right": "levis ab aequorea cortex mareotica concha fiat inoffensa curret harundo via ccx morio non mendax stupor est nec"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1294/phi002/phi1294.phi002.perseus-lat2.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 58112,
+   "left": "licet manus est velocior illis nondum lingua suum dextra peregit opus ccix concha levis ab aequorea cortex mareotica",
+   "right": "fiat inoffensa curret harundo via ccx morio non mendax stupor est nec fingitur arte dolosa quisquis plus iusto"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0860/phi001/phi0860.phi001.perseus-lat2.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 65921,
+   "left": "miscentur ipsa solitudo natura quoque inmitia efferavit ingenia prominent ungues numquam recisi comae hirsutae et intonsae sunt tuguria",
+   "right": "et ceteris purgamentis maris instruunt ferarum pellibus tecti piscibus sole duratis et maiorum quoque beluarum quas fluctus eiecit"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/stoa0058/stoa001/stoa0058.stoa001.perseus-lat2.xml",
+   "form": "conchae",
+   "norm_form": "conchae",
+   "token_index": 22956,
+   "left": "cognitiones diuersis ac differentibus cessere substantiis sensus enim solus cunctis aliis cognitionibus destitutus immobilibus animantibus cessit quales sunt",
+   "right": "maris quaeque alia saxis haerentia nutriuntur imaginatio uero mobilibus beluis quibus iam inesse fugiendi appetendiue aliquis uidetur affectus"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0620/phi001/phi0620.phi001.perseus-lat3.xml",
+   "form": "conchis",
+   "norm_form": "conchis",
+   "token_index": 1724,
+   "left": "daret quamvis maiora daturus non tamen illa meos fugit avara sinus hanc ego non auro non indis flectere",
+   "right": "sed potui blandi carminis obsequio sunt igitur musae neque amanti tardus apollo quis ego fretus amo cynthia rara"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0620/phi001/phi0620.phi001.perseus-lat3.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 16603,
+   "left": "et manifesta ruinis luxuriae nimium libera facta viast inda cavis aurum mittit formica metallis et venit e rubro",
+   "right": "erycina salo et tyros ostrinos praebet cadmea colores cinnamon et multi pistor odoris arabs haec etiam clausas expugnant"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi0620/phi001/phi0620.phi001.perseus-lat3.xml",
+   "form": "concha",
+   "norm_form": "concha",
+   "token_index": 21926,
+   "left": "blanda perure saxosamque ferat sedula culpa uiam si te eoa dorozantum iuuat aurea ripa et quae sub tyria",
+   "right": "superbit aqua eurypylique placet coae textura mineruae sectaque ab attalicis putria signa toris seu quae palmiferae mittunt uenalia"
+  },
+  {
+   "corpus": "perseus",
+   "file": "data/phi1014/phi002/phi1014.phi002.perseus-lat1.xml",
+   "form": "conchylium",
+   "norm_form": "conchylium",
+   "token_index": 3538,
+   "left": "muliebrium uitiorum fundamentum auaritia est quae potest non timere opinionem adulterii potest non timere adulterium ex omni rupe",
+   "right": "contrahitur quo uestis cruentetur infelices ancillarum greges laborant ut adultera tenui ueste perspicua sit et nihil in corpore"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+solar eclipses over Ireland at magnitude >= 0.50:  171
+umbral lunar eclipses visible from Ireland:        710
+pairs 12-18 days apart, both visible:            93  (one every 8.7 years)
+  lunar first:  37      solar first: 56
+  'strong' pairs (solar >= 0.80 AND lunar total):  7  (one every 116 years)
+
+AU 878 is one of these. The strong pairs, which are the ones a
+chronicle keeping any kind of sky-watch should have caught:
+  0561-05-15 (lunar 1.006, total)  ->  0561-04-30 (solar 0.853)   14.7 d
+  0807-02-26 (lunar 1.037, total)  ->  0807-02-11 (solar 0.916)   14.7 d
+  0810-12-14 (lunar 1.021, total)  ->  0810-11-30 (solar 0.876)   14.3 d
+  0854-08-12 (lunar 1.143, total)  ->  0854-07-28 (solar 0.828)   14.2 d
+  0865-01-15 (lunar 1.075, total)  ->  0865-01-01 (solar 0.999)   14.2 d
+  0878-10-15 (lunar 1.054, total)  ->  0878-10-29 (solar 1.025)   14.4 d
+  0966-08-04 (lunar 1.205, total)  ->  0966-07-20 (solar 0.832)   14.4 d
+
+wrote /home/user/cracking-problems-hub/ireland/early-irish-annals-reliability/analysis/results/eclipse_pairs.csv (93 pairs)
+
+BASE RATE WARNING: pairs are the normal structure of an eclipse
+season, not a rarity. Finding them here proves nothing. The question
+for the text is what FRACTION of available pairs the annals record,
+compared with the fraction of isolated eclipses they record.

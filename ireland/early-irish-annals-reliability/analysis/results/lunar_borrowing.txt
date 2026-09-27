@@ -1,0 +1,16 @@
+Umbral lunar eclipses AD 400-1210: 1266
+  visible from Ireland:                   703
+  visible from Rome or Constantinople:    772
+  visible from both (test is blind here): 639  = 91% of the Irish set
+  Ireland only  -> diagnostic of local observation:   64
+  Mediterranean only -> diagnostic of borrowing:     133
+
+Compare the solar version (RESULTS.md section 4): 28 decisive cases
+out of 132 candidates, blind on 28. Here the decisive set is 197.
+
+The lunar test is also *cleaner*. Depth carries no information -- the
+event is identical wherever it can be seen -- so the discriminator is
+a yes or no about the horizon rather than a judgement about how deep an
+eclipse has to be before someone writes it down.
+
+wrote lunar_prediction_borrowed.csv (133), lunar_prediction_irish.csv (64)

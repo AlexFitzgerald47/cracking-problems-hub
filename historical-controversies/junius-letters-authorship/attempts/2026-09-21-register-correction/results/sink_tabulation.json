@@ -1,0 +1,421 @@
+{
+ "cross_letters_from_formal": {
+  "name": "CROSS-REGISTER A: private letters scored against formal-prose centroids",
+  "accuracy": 0.10835913312693499,
+  "macro_accuracy": 0.11815707277855164,
+  "per_class_recall": {
+   "Philip_Francis": 0.0125,
+   "David_Hume": 0.01098901098901099,
+   "Samuel_Johnson": 0.1111111111111111,
+   "Edmund_Burke": 0.3380281690140845
+  },
+  "majority_baseline": 0.28173374613003094,
+  "observed_excess": 0.34055727554179566,
+  "shuffle_excess": [
+   0.32829721362229103,
+   0.5950464396284827
+  ],
+  "n_candidates": 8,
+  "n_test": 323,
+  "chance": 0.125,
+  "pred_share": {
+   "David_Hume": 0.02786377708978328,
+   "Edmund_Burke": 0.3126934984520124,
+   "Hugh_Boyd": 0.25696594427244585,
+   "John_Wilkes": 0.34055727554179566,
+   "Philip_Francis": 0.018575851393188854,
+   "Richard_Price": 0.0,
+   "Samuel_Johnson": 0.030959752321981424,
+   "Thomas_Pownall": 0.01238390092879257
+  },
+  "true_share": {
+   "David_Hume": 0.28173374613003094,
+   "Edmund_Burke": 0.21981424148606812,
+   "Hugh_Boyd": 0.0,
+   "John_Wilkes": 0.0,
+   "Philip_Francis": 0.2476780185758514,
+   "Richard_Price": 0.0,
+   "Samuel_Johnson": 0.25077399380804954,
+   "Thomas_Pownall": 0.0
+  },
+  "largest_sink": [
+   "John_Wilkes",
+   0.34055727554179566
+  ],
+  "top2": 0.653250773993808,
+  "replicate_share": {
+   "David_Hume": [
+    0.04464396284829721,
+    0.02798795857211216
+   ],
+   "Edmund_Burke": [
+    0.2803715170278637,
+    0.10073517488149618
+   ],
+   "Hugh_Boyd": [
+    0.19993808049535605,
+    0.09546873240916316
+   ],
+   "John_Wilkes": [
+    0.34142414860681114,
+    0.12232830877252354
+   ],
+   "Philip_Francis": [
+    0.06656346749226005,
+    0.02069677388651179
+   ],
+   "Richard_Price": [
+    0.0,
+    0.0
+   ],
+   "Samuel_Johnson": [
+    0.05306501547987617,
+    0.04624110300799317
+   ],
+   "Thomas_Pownall": [
+    0.013993808049535605,
+    0.005299094215562765
+   ]
+  },
+  "replicate_accuracy": [
+   0.1344891640866873,
+   0.03716800467935879
+  ],
+  "shuffle_accuracy": [
+   0.12321981424148606,
+   0.23529411764705882
+  ],
+  "shuffle_largest_sink": [
+   0.39900928792569657,
+   0.11600432046915525,
+   0.6318885448916407
+  ],
+  "verdict": "NO SINK above the shuffle null -- concentration is what chance looks like"
+ },
+ "cross_formal_from_letters": {
+  "name": "CROSS-REGISTER B: formal prose scored against private-letter centroids",
+  "accuracy": 0.34173669467787116,
+  "macro_accuracy": 0.1757847038019452,
+  "per_class_recall": {
+   "Philip_Francis": 0.0,
+   "Edmund_Burke": 0.6839080459770115,
+   "Samuel_Johnson": 0.019230769230769232,
+   "David_Hume": 0.0
+  },
+  "majority_baseline": 0.48739495798319327,
+  "observed_excess": 0.2521008403361345,
+  "shuffle_excess": [
+   0.3575490196078432,
+   0.619187675070028
+  ],
+  "n_candidates": 11,
+  "n_test": 357,
+  "chance": 0.09090909090909091,
+  "pred_share": {
+   "David_Hume": 0.05322128851540616,
+   "Edmund_Burke": 0.7394957983193278,
+   "Edward_Gibbon": 0.01680672268907563,
+   "Horace_Walpole": 0.011204481792717087,
+   "James_Boswell": 0.0,
+   "Laurence_Sterne": 0.0028011204481792717,
+   "Lord_Chesterfield": 0.056022408963585436,
+   "Philip_Francis": 0.008403361344537815,
+   "Samuel_Johnson": 0.011204481792717087,
+   "Thomas_Gray": 0.0896358543417367,
+   "William_Cowper": 0.011204481792717087
+  },
+  "true_share": {
+   "David_Hume": 0.047619047619047616,
+   "Edmund_Burke": 0.48739495798319327,
+   "Edward_Gibbon": 0.0,
+   "Horace_Walpole": 0.0,
+   "James_Boswell": 0.0,
+   "Laurence_Sterne": 0.0,
+   "Lord_Chesterfield": 0.0,
+   "Philip_Francis": 0.028011204481792718,
+   "Samuel_Johnson": 0.4369747899159664,
+   "Thomas_Gray": 0.0,
+   "William_Cowper": 0.0
+  },
+  "largest_sink": [
+   "Edmund_Burke",
+   0.7394957983193278
+  ],
+  "top2": 0.8291316526610645,
+  "replicate_share": {
+   "David_Hume": [
+    0.06442577030812326,
+    0.037622707877604064
+   ],
+   "Edmund_Burke": [
+    0.7062184873949581,
+    0.0742896856022175
+   ],
+   "Edward_Gibbon": [
+    0.01675070028011204,
+    0.010666201764696305
+   ],
+   "Horace_Walpole": [
+    0.02145658263305322,
+    0.01175950265089186
+   ],
+   "James_Boswell": [
+    0.0001680672268907563,
+    0.0006652292485735528
+   ],
+   "Laurence_Sterne": [
+    0.002633053221288515,
+    0.0006652292485735527
+   ],
+   "Lord_Chesterfield": [
+    0.06868347338935575,
+    0.026379595506868473
+   ],
+   "Philip_Francis": [
+    0.009187675070028012,
+    0.0074330569369734385
+   ],
+   "Samuel_Johnson": [
+    0.009747899159663865,
+    0.0054385035740108
+   ],
+   "Thomas_Gray": [
+    0.08296918767507001,
+    0.026567206180265715
+   ],
+   "William_Cowper": [
+    0.01775910364145658,
+    0.00707769475149884
+   ]
+  },
+  "replicate_accuracy": [
+   0.3259943977591036,
+   0.04766809140285441
+  ],
+  "shuffle_accuracy": [
+   0.09879551820728291,
+   0.32492997198879553
+  ],
+  "shuffle_largest_sink": [
+   0.4002521008403362,
+   0.1288663948325011,
+   0.6666666666666666
+  ],
+  "verdict": "NO SINK above the shuffle null -- concentration is what chance looks like"
+ },
+ "within_letters": {
+  "name": "IN-DISTRIBUTION reference: private letters vs private-letter centroids",
+  "accuracy": 0.8480113636363636,
+  "macro_accuracy": 0.8504054486886723,
+  "per_class_recall": {
+   "Philip_Francis": 0.7125,
+   "Lord_Chesterfield": 1.0,
+   "Horace_Walpole": 0.8421052631578947,
+   "Thomas_Gray": 0.6444444444444445,
+   "James_Boswell": 0.8653846153846154,
+   "Laurence_Sterne": 1.0,
+   "Edward_Gibbon": 0.8571428571428571,
+   "David_Hume": 0.8681318681318682,
+   "Samuel_Johnson": 0.8765432098765432,
+   "William_Cowper": 0.8431372549019608,
+   "Edmund_Burke": 0.8450704225352113
+  },
+  "majority_baseline": 0.12926136363636365,
+  "observed_excess": 0.021306818181818177,
+  "shuffle_excess": [
+   0.08953835227272727,
+   0.14502840909090906
+  ],
+  "n_candidates": 11,
+  "n_test": 704,
+  "chance": 0.09090909090909091,
+  "pred_share": {
+   "David_Hume": 0.15056818181818182,
+   "Edmund_Burke": 0.10369318181818182,
+   "Edward_Gibbon": 0.10795454545454546,
+   "Horace_Walpole": 0.08096590909090909,
+   "James_Boswell": 0.07528409090909091,
+   "Laurence_Sterne": 0.03551136363636364,
+   "Lord_Chesterfield": 0.10653409090909091,
+   "Philip_Francis": 0.10369318181818182,
+   "Samuel_Johnson": 0.11221590909090909,
+   "Thomas_Gray": 0.052556818181818184,
+   "William_Cowper": 0.07102272727272728
+  },
+  "true_share": {
+   "David_Hume": 0.12926136363636365,
+   "Edmund_Burke": 0.10085227272727272,
+   "Edward_Gibbon": 0.109375,
+   "Horace_Walpole": 0.08096590909090909,
+   "James_Boswell": 0.07386363636363637,
+   "Laurence_Sterne": 0.03551136363636364,
+   "Lord_Chesterfield": 0.10511363636363637,
+   "Philip_Francis": 0.11363636363636363,
+   "Samuel_Johnson": 0.11505681818181818,
+   "Thomas_Gray": 0.06392045454545454,
+   "William_Cowper": 0.07244318181818182
+  },
+  "largest_sink": [
+   "David_Hume",
+   0.15056818181818182
+  ],
+  "top2": 0.26278409090909094,
+  "replicate_share": {
+   "David_Hume": [
+    0.14605113636363634,
+    0.01692593037501683
+   ],
+   "Edmund_Burke": [
+    0.10610795454545455,
+    0.010664766673122706
+   ],
+   "Edward_Gibbon": [
+    0.10110795454545456,
+    0.008349035009439293
+   ],
+   "Horace_Walpole": [
+    0.08539772727272728,
+    0.0067982663687027375
+   ],
+   "James_Boswell": [
+    0.07707386363636365,
+    0.004240574288889037
+   ],
+   "Laurence_Sterne": [
+    0.03647727272727273,
+    0.0011863984669216526
+   ],
+   "Lord_Chesterfield": [
+    0.10713068181818183,
+    0.0010663820669956502
+   ],
+   "Philip_Francis": [
+    0.10207386363636363,
+    0.011134080528952834
+   ],
+   "Samuel_Johnson": [
+    0.10678977272727272,
+    0.008516522362492007
+   ],
+   "Thomas_Gray": [
+    0.055,
+    0.006378078174367816
+   ],
+   "William_Cowper": [
+    0.07678977272727273,
+    0.006542793118171328
+   ]
+  },
+  "replicate_accuracy": [
+   0.8196874999999999,
+   0.012917267187008964
+  ],
+  "shuffle_accuracy": [
+   0.09325284090909092,
+   0.14829545454545437
+  ],
+  "shuffle_largest_sink": [
+   0.164453125,
+   0.024129938927748982,
+   0.20887784090909087
+  ],
+  "verdict": "NO SINK above the shuffle null -- concentration is what chance looks like"
+ },
+ "within_formal": {
+  "name": "IN-DISTRIBUTION reference: formal prose vs formal-prose centroids",
+  "accuracy": 0.9085239085239085,
+  "macro_accuracy": 0.8826220512452764,
+  "per_class_recall": {
+   "John_Wilkes": 0.8787878787878788,
+   "Richard_Price": 0.8461538461538461,
+   "Thomas_Pownall": 0.9629629629629629,
+   "Hugh_Boyd": 0.7058823529411765,
+   "Philip_Francis": 0.9,
+   "Edmund_Burke": 0.9425287356321839,
+   "Samuel_Johnson": 0.9423076923076923,
+   "David_Hume": 0.8823529411764706
+  },
+  "majority_baseline": 0.36174636174636177,
+  "observed_excess": 0.02702702702702703,
+  "shuffle_excess": [
+   0.16840956340956342,
+   0.2598752598752599
+  ],
+  "n_candidates": 8,
+  "n_test": 481,
+  "chance": 0.125,
+  "pred_share": {
+   "David_Hume": 0.0498960498960499,
+   "Edmund_Burke": 0.3492723492723493,
+   "Hugh_Boyd": 0.08523908523908524,
+   "John_Wilkes": 0.09563409563409564,
+   "Philip_Francis": 0.035343035343035345,
+   "Richard_Price": 0.02286902286902287,
+   "Samuel_Johnson": 0.30561330561330563,
+   "Thomas_Pownall": 0.056133056133056136
+  },
+  "true_share": {
+   "David_Hume": 0.035343035343035345,
+   "Edmund_Burke": 0.36174636174636177,
+   "Hugh_Boyd": 0.10602910602910603,
+   "John_Wilkes": 0.06860706860706861,
+   "Philip_Francis": 0.02079002079002079,
+   "Richard_Price": 0.02702702702702703,
+   "Samuel_Johnson": 0.32432432432432434,
+   "Thomas_Pownall": 0.056133056133056136
+  },
+  "largest_sink": [
+   "Edmund_Burke",
+   0.3492723492723493
+  ],
+  "top2": 0.654885654885655,
+  "replicate_share": {
+   "David_Hume": [
+    0.06997920997920998,
+    0.017624297925076166
+   ],
+   "Edmund_Burke": [
+    0.3192515592515593,
+    0.018399626478669905
+   ],
+   "Hugh_Boyd": [
+    0.08320166320166321,
+    0.014703645749193648
+   ],
+   "John_Wilkes": [
+    0.08511434511434512,
+    0.016618549641425038
+   ],
+   "Philip_Francis": [
+    0.061787941787941794,
+    0.016527948848284627
+   ],
+   "Richard_Price": [
+    0.0246985446985447,
+    0.002186019031699778
+   ],
+   "Samuel_Johnson": [
+    0.2967151767151768,
+    0.009344322255692466
+   ],
+   "Thomas_Pownall": [
+    0.059251559251559255,
+    0.003770968221874647
+   ]
+  },
+  "replicate_accuracy": [
+   0.844158004158004,
+   0.02019934283190653
+  ],
+  "shuffle_accuracy": [
+   0.13344074844074846,
+   0.25374220374220374
+  ],
+  "shuffle_largest_sink": [
+   0.23416839916839918,
+   0.04531374612749312,
+   0.3201663201663202
+  ],
+  "verdict": "NO SINK above the shuffle null -- concentration is what chance looks like"
+ }
+}

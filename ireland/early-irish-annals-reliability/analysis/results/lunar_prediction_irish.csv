@@ -1,0 +1,65 @@
+date_julian_cal,year,kind,umbral_mag,visible_ireland,visible_mediterranean
+0413-10-25,413,partial umbral,0.3899,True,False
+0420-12-06,420,partial umbral,0.0725,True,False
+0440-05-03,440,partial umbral,0.6032,True,False
+0464-02-09,464,partial umbral,0.0983,True,False
+0467-11-27,467,partial umbral,0.4305,True,False
+0474-01-19,474,total,1.3813,True,False
+0475-01-08,475,partial umbral,0.1207,True,False
+0476-11-17,476,partial umbral,0.8037,True,False
+0495-11-18,495,total,1.7341,True,False
+0518-03-13,518,partial umbral,0.2737,True,False
+0568-12-20,568,partial umbral,0.4227,True,False
+0578-11-30,578,total,1.7599,True,False
+0579-11-19,579,partial umbral,0.5104,True,False
+0593-02-21,593,total,1.8224,True,False
+0612-08-17,612,partial umbral,0.4602,True,False
+0628-09-19,628,partial umbral,0.4439,True,False
+0633-01-01,633,total,1.7922,True,False
+0633-12-21,633,partial umbral,0.5491,True,False
+0643-12-01,643,total,1.6287,True,False
+0666-03-26,666,partial umbral,0.8501,True,False
+0675-03-17,675,partial umbral,0.5227,True,False
+0682-10-22,682,partial umbral,0.2855,True,False
+0686-02-14,686,partial umbral,0.4887,True,False
+0687-02-03,687,total,1.7516,True,False
+0688-01-23,688,partial umbral,0.6206,True,False
+0693-09-20,693,partial umbral,0.0513,True,False
+0694-03-17,694,total,1.7189,True,False
+0706-07-30,706,partial umbral,0.6418,True,False
+0717-01-02,717,partial umbral,0.8705,True,False
+0736-11-23,736,partial umbral,0.2142,True,False
+0740-03-18,740,partial umbral,0.2588,True,False
+0741-03-07,741,total,1.5563,True,False
+0742-02-24,742,partial umbral,0.784,True,False
+0748-04-18,748,total,1.4176,True,False
+0790-12-26,790,partial umbral,0.176,True,False
+0821-11-13,821,total,1.2302,True,False
+0830-11-04,830,partial umbral,0.0538,True,False
+0835-08-12,835,total,1.3203,True,False
+0849-11-04,849,total,1.2437,True,False
+0934-10-25,934,partial umbral,0.1985,True,False
+0973-09-15,973,total,1.4284,True,False
+0985-02-08,985,partial umbral,0.1019,True,False
+0988-11-26,988,partial umbral,0.2612,True,False
+1020-03-12,1020,total,1.5156,True,False
+1027-10-18,1027,total,1.577,True,False
+1031-02-10,1031,total,1.3207,True,False
+1037-09-27,1037,partial umbral,0.6872,True,False
+1051-12-20,1051,partial umbral,0.8224,True,False
+1060-07-16,1060,total,1.2435,True,False
+1081-11-19,1081,total,1.6334,True,False
+1085-03-14,1085,total,1.5072,True,False
+1089-12-20,1089,partial umbral,0.4294,True,False
+1095-08-18,1095,partial umbral,0.9012,True,False
+1102-04-05,1102,partial umbral,0.7438,True,False
+1135-12-22,1135,total,1.6496,True,False
+1140-04-04,1140,partial umbral,0.4215,True,False
+1140-09-28,1140,partial umbral,0.6778,True,False
+1149-09-19,1149,partial umbral,0.632,True,False
+1153-01-12,1153,partial umbral,0.7701,True,False
+1169-09-08,1169,partial umbral,0.4426,True,False
+1175-10-31,1175,total,1.7556,True,False
+1189-07-29,1189,partial umbral,0.6857,True,False
+1194-10-31,1194,partial umbral,0.7809,True,False
+1203-10-22,1203,partial umbral,0.4661,True,False

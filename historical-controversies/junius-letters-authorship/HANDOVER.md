@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-09-27 – reconciliation recovery (additive)
+
+Recovered the unmerged 2026-09-21 register-correction package from
+`origin/claude/busy-galileo-aafjll` at
+`attempts/2026-09-21-register-correction/`. It supplements, rather than replaces,
+the existing shift-or-loss attempt and all later handover guidance.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

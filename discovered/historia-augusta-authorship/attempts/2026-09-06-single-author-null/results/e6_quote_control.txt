@@ -1,0 +1,27 @@
+E6  narrative-only replication of the lacuna split
+    quoted share: HA pre-lacuna 0.105, post-lacuna 0.240
+
+  100 MFW
+    HA, all text                   blocks= 95  sep +0.4307  z +3.92  p 0.0002
+    HA, narrative only (<q> cut)   blocks= 79  sep +0.4317  z +2.96  p 0.0022
+    Suetonius, narrative only      blocks= 63  sep -0.3714  z -4.34  p 1.0000
+    HA, quote-density-matched (23/30) blocks= 74  sep +0.2771  z +2.22  p 0.0188
+
+  200 MFW
+    HA, all text                   blocks= 95  sep +0.5766  z +4.78  p 0.0002
+    HA, narrative only (<q> cut)   blocks= 79  sep +0.6392  z +4.05  p 0.0006
+    Suetonius, narrative only      blocks= 63  sep -0.2014  z -2.25  p 0.9814
+    HA, quote-density-matched (23/30) blocks= 74  sep +0.3825  z +3.43  p 0.0012
+
+  400 MFW
+    HA, all text                   blocks= 95  sep +0.5380  z +3.99  p 0.0004
+    HA, narrative only (<q> cut)   blocks= 79  sep +0.5514  z +3.22  p 0.0040
+    Suetonius, narrative only      blocks= 63  sep -0.2614  z -2.52  p 0.9904
+    HA, quote-density-matched (23/30) blocks= 74  sep +0.3426  z +2.82  p 0.0046
+
+  quote density as a one-number predictor of the pre/post label
+    mean quote density  pre 0.109   post 0.262
+    the 9 most-quoting vitae contain 6 of the 9 post-lacuna lives
+    rank-sum of post-lacuna vitae: 197  (permutation p 0.0037)
+    corr(quote density, vita length): -0.086
+    mean vita length  pre 3517   post 3805

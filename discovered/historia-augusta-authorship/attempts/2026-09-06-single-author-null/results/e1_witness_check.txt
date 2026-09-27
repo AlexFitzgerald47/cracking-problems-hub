@@ -1,0 +1,9 @@
+E1  cross-witness stability of the 200-MFW profile
+    vitae compared              : 29 (excluded as truncated: alexander_severus)
+    same vita, two witnesses    : mean Delta 0.081  (max 0.291, carus_carinus_numerianus)
+    different vitae, one witness: mean Delta 1.073  (5th pct 0.839)
+    separation ratio            : 13.18x
+    same-vita pairs further apart than a different-vita pair: 0 of 11774 comparisons (0.0%)
+    least stable vitae          : carus_carinus_numerianus 0.29, quadrigae_tyrannorum 0.16, probus 0.14, tacitus 0.13, geta 0.11
+    token-count ratio LL/Perseus: median 1.007, range 0.988-1.137
+    vitae differing >15% in length: none

@@ -1,0 +1,79 @@
+==========================================================================
+0594-07-23   gamma +0.5536   Delta-T 4707 +/- 40 s
+  central line spans lat +15.8 to +60.8, lon -21.6 to +137.4
+  closest point to the Irish Sea: +54.78 N, -5.71 E
+  site: distance from the central line, and what was actually seen
+     Bangor (Down)       13 km   magnitude 1.0612   Sun +14.3 deg   TOTAL
+     Armagh              18 km   magnitude 1.0610   Sun +13.6 deg   TOTAL
+     Clonmacnoise        78 km   magnitude 1.0606   Sun +12.3 deg   TOTAL
+     Jarrow              97 km   magnitude 1.0620   Sun +16.7 deg   TOTAL
+     Dunadd             125 km   magnitude 1.0614   Sun +14.8 deg   TOTAL
+     Iona               176 km   magnitude 0.9893   Sun +14.4 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================
+0664-05-01   gamma +0.4657   Delta-T 4074 +/- 40 s
+  central line spans lat +5.6 to +55.9, lon -123.5 to +24.0
+  closest point to the Irish Sea: +55.12 N, -5.71 E
+  site: distance from the central line, and what was actually seen
+     Jarrow              40 km   magnitude 1.0411   Sun +19.4 deg   TOTAL
+     Bangor (Down)       51 km   magnitude 1.0418   Sun +22.0 deg   TOTAL
+     Armagh              94 km   magnitude 0.9961   Sun +22.5 deg   partial
+     Dunadd             109 km   magnitude 0.9929   Sun +21.8 deg   partial
+     Iona               127 km   magnitude 0.9883   Sun +22.4 deg   partial
+     Clonmacnoise       221 km   magnitude 0.9631   Sun +23.3 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================
+0878-10-29   gamma +0.9405   Delta-T 2376 +/- 25 s
+  central line spans lat +51.0 to +71.7, lon -36.3 to +32.4
+  closest point to the Irish Sea: +54.31 N, -6.12 E
+  site: distance from the central line, and what was actually seen
+     Armagh              15 km   magnitude 1.0251   Sun +19.5 deg   TOTAL
+     Bangor (Down)       49 km   magnitude 1.0249   Sun +18.9 deg   TOTAL
+     Clonmacnoise       158 km   magnitude 0.9960   Sun +20.7 deg   partial
+     Iona               174 km   magnitude 0.9950   Sun +17.5 deg   partial
+     Dunadd             185 km   magnitude 0.9943   Sun +17.6 deg   partial
+     Jarrow             219 km   magnitude 0.9917   Sun +17.5 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================
+0885-06-16   gamma +0.6319   Delta-T 2329 +/- 25 s
+  central line spans lat +31.4 to +63.8, lon -57.1 to +115.2
+  closest point to the Irish Sea: +56.73 N, -8.46 E
+  site: distance from the central line, and what was actually seen
+     Iona               105 km   magnitude 1.0768   Sun +47.1 deg   TOTAL
+     Dunadd             158 km   magnitude 1.0769   Sun +47.6 deg   TOTAL
+     Armagh             284 km   magnitude 0.9715   Sun +47.5 deg   partial
+     Bangor (Down)      288 km   magnitude 0.9705   Sun +48.0 deg   partial
+     Clonmacnoise       333 km   magnitude 0.9598   Sun +46.9 deg   partial
+     Jarrow             391 km   magnitude 0.9450   Sun +50.3 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================
+1133-08-02   gamma +0.5425   Delta-T 1110 +/- 15 s
+  central line spans lat +10.6 to +60.9, lon -90.4 to +67.2
+  closest point to the Irish Sea: +56.31 N, -4.42 E
+  site: distance from the central line, and what was actually seen
+     Jarrow              36 km   magnitude 1.0645   Sun +50.7 deg   TOTAL
+     Dunadd              54 km   magnitude 1.0641   Sun +48.7 deg   TOTAL
+     Iona                54 km   magnitude 1.0640   Sun +48.2 deg   TOTAL
+     Bangor (Down)      199 km   magnitude 0.9791   Sun +49.9 deg   partial
+     Armagh             258 km   magnitude 0.9631   Sun +49.9 deg   partial
+     Clonmacnoise       399 km   magnitude 0.9248   Sun +50.4 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================
+1140-03-20   gamma +0.6136   Delta-T 1088 +/- 15 s
+  central line spans lat +20.4 to +56.1, lon -93.1 to +45.8
+  closest point to the Irish Sea: +52.12 N, -4.57 E
+  site: distance from the central line, and what was actually seen
+     Clonmacnoise       207 km   magnitude 0.9773   Sun +32.9 deg   partial
+     Jarrow             233 km   magnitude 0.9707   Sun +28.5 deg   partial
+     Armagh             280 km   magnitude 0.9594   Sun +31.5 deg   partial
+     Bangor (Down)      290 km   magnitude 0.9571   Sun +30.9 deg   partial
+     Dunadd             434 km   magnitude 0.9228   Sun +29.8 deg   partial
+     Iona               480 km   magnitude 0.9119   Sun +30.0 deg   partial
+     note: distance from the central line does not decide totality when the Sun is low --
+     the umbra on the ground is an ellipse that stretches enormously at low altitude.
+==========================================================================

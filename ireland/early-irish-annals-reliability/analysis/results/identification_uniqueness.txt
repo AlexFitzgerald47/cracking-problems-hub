@@ -1,0 +1,41 @@
+Candidate eclipses within +/-3 years of the annal-year, Irish magnitude >= 0.50
+(the identification is FORCED where there is exactly one)
+
+AU664   annal-year  664 -> 0664-05-01   [3 candidates]
+        0664-05-01  Irish magnitude 1.042 <-- the identification
+        0661-07-02  Irish magnitude 0.963
+        0666-09-04  Irish magnitude 0.930
+
+AU594   annal-year  594 -> 0594-07-23   [3 candidates]
+        0594-07-23  Irish magnitude 1.061 <-- the identification
+        0596-01-05  Irish magnitude 0.761
+        0592-03-19  Irish magnitude 0.573
+
+AU865   annal-year  865 -> 0865-01-01   [3 candidates]
+        0865-01-01  Irish magnitude 0.999 <-- the identification
+        0863-08-18  Irish magnitude 0.680
+        0868-10-19  Irish magnitude 0.636
+
+AU878   annal-year  878 -> 0878-10-29   [2 candidates]
+        0878-10-29  Irish magnitude 1.025 <-- the identification
+        0875-01-11  Irish magnitude 0.647
+
+AU885   annal-year  885 -> 0885-06-16   [FORCED]
+        0885-06-16  Irish magnitude 1.077 <-- the identification
+
+AU764   annal-year  764 -> 0764-06-04   [2 candidates]
+        0764-06-04  Irish magnitude 0.968 <-- the identification
+        0767-04-03  Irish magnitude 0.511
+
+AU753   annal-year  753 -> 0753-01-09   [FORCED]
+        0753-01-09  Irish magnitude 0.865 <-- the identification
+
+AU688   annal-year  688 -> 0688-07-03   [FORCED]
+        0688-07-03  Irish magnitude 0.744 <-- the identification
+
+forced identifications: 3 of 8
+
+Reading this: a FORCED row is a genuine chronological anchor -- there was
+no other eclipse a scholar could have matched, so the annal-year landing
+on it is a fact about the annals. A multi-candidate row is a selection,
+and section 2's circularity warning applies to it in full.

@@ -1,0 +1,44 @@
+E7  structure inside each side of the lacuna
+    same design as E5: 1000-token blocks, text-level permutation null
+
+  100 MFW
+   later block (lives 22-30):
+    Pollio vs Vopiscus                         Pollio:12/Vopiscus:18      sep +0.0851  z -0.39  p 0.7071
+    Pollio vs Vopiscus, narrative only         Pollio:9/Vopiscus:12       sep -0.0505  z -0.66  p 0.7912
+   earlier block (lives 1-21):
+    four sigla                                 Capitolinus:29/Gallicanus:2/Lampridius:19/Spartianus:15 sep +0.1458  z +0.68  p 0.2414
+    Spartianus vs Capitolinus                  Capitolinus:29/Spartianus:15 sep -0.0017  z -0.64  p 0.7355
+    Hauptvita vs Nebenvita                     primary:54/secondary:11    sep +0.3352  z +2.61  p 0.0064
+    Hauptvita vs Nebenvita, narrative only     primary:50/secondary:8     sep +0.2912  z +1.94  p 0.0266
+   whole collection:
+    Hauptvita vs Nebenvita (all 30)            primary:76/secondary:19    sep +0.1109  z +0.68  p 0.2358
+    Hauptvita vs Nebenvita (all 30), narr.     primary:65/secondary:14    sep +0.0989  z +0.60  p 0.2749
+    lacuna split, for comparison               post:30/pre:65             sep +0.4307  z +3.90  p 0.0004
+
+  200 MFW
+   later block (lives 22-30):
+    Pollio vs Vopiscus                         Pollio:12/Vopiscus:18      sep +0.1186  z -0.15  p 0.5221
+    Pollio vs Vopiscus, narrative only         Pollio:9/Vopiscus:12       sep -0.0148  z -0.81  p 0.8402
+   earlier block (lives 1-21):
+    four sigla                                 Capitolinus:29/Gallicanus:2/Lampridius:19/Spartianus:15 sep +0.0874  z +0.18  p 0.4061
+    Spartianus vs Capitolinus                  Capitolinus:29/Spartianus:15 sep -0.0434  z -0.69  p 0.7690
+    Hauptvita vs Nebenvita                     primary:54/secondary:11    sep +0.4010  z +2.67  p 0.0120
+    Hauptvita vs Nebenvita, narrative only     primary:50/secondary:8     sep +0.4278  z +2.64  p 0.0126
+   whole collection:
+    Hauptvita vs Nebenvita (all 30)            primary:76/secondary:19    sep +0.1568  z +1.02  p 0.1520
+    Hauptvita vs Nebenvita (all 30), narr.     primary:65/secondary:14    sep +0.2108  z +1.28  p 0.1006
+    lacuna split, for comparison               post:30/pre:65             sep +0.5766  z +4.74  p 0.0002
+
+  400 MFW
+   later block (lives 22-30):
+    Pollio vs Vopiscus                         Pollio:12/Vopiscus:18      sep +0.0815  z -0.36  p 0.6333
+    Pollio vs Vopiscus, narrative only         Pollio:9/Vopiscus:12       sep +0.0171  z -0.69  p 0.7504
+   earlier block (lives 1-21):
+    four sigla                                 Capitolinus:29/Gallicanus:2/Lampridius:19/Spartianus:15 sep +0.1280  z +0.60  p 0.2613
+    Spartianus vs Capitolinus                  Capitolinus:29/Spartianus:15 sep +0.0347  z -0.01  p 0.4911
+    Hauptvita vs Nebenvita                     primary:54/secondary:11    sep +0.3583  z +2.27  p 0.0164
+    Hauptvita vs Nebenvita, narrative only     primary:50/secondary:8     sep +0.3450  z +2.02  p 0.0298
+   whole collection:
+    Hauptvita vs Nebenvita (all 30)            primary:76/secondary:19    sep +0.1185  z +0.67  p 0.2342
+    Hauptvita vs Nebenvita (all 30), narr.     primary:65/secondary:14    sep +0.1565  z +0.90  p 0.1618
+    lacuna split, for comparison               post:30/pre:65             sep +0.5380  z +4.02  p 0.0006
