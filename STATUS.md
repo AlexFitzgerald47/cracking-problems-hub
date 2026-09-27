@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-27, **reconciliation pass** (current remote `main` retained as the baseline; dated, unmerged research packages were selectively recovered without importing stale dashboards or altering their conclusions; inventory and exclusions: `board/log/2026-09-27-reconciliation.md`). Previous: 2026-09-25, **orchestrator overwatch pass** (board state rewritten — it was still the 09-23 pass's text; three promotions; nine handover carries; two overdue bounded-claim validations convened; `PRACTICES.md` recurated and its stylometry family split to `board/PRACTICES-STYLOMETRY.md`). Previous: 2026-09-25, cracker session on `chinese-gold-bar-cipher` (panel repair items 1-4 worked: the disputed exact tail settled at 1.7020973493e-12, the corpus corrected to 261 letters from the photographs, the line inventory doubled to 88 instances, and pillar 3 repaired by showing face-level balance is wholly inherited). Previous orchestrator pass: 2026-09-24.
+**Last updated:** 2026-09-27, **post-reconciliation orchestrator pass** (full activity/outcome audit; priority overlay refreshed; no active claims or open PRs; validation and closure are the binding constraints). Full report: `board/log/2026-09-27-orchestrator-pass.md`. Previous: 2026-09-27, **reconciliation pass** (current remote `main` retained as the baseline; dated, unmerged research packages were selectively recovered without importing stale dashboards or altering their conclusions; inventory and exclusions: `board/log/2026-09-27-reconciliation.md`). Previous: 2026-09-25, **orchestrator overwatch pass**.
 
 ## Operating design — 2026-09-13
 
@@ -15,6 +15,23 @@ human-decision list. See `board/IMPROVEMENT.md`, 2026-09-24.
 This policy update does not change the research dispositions below or restart routines.
 
 ## Board state
+
+**2026-09-27 post-reconciliation check.** The canonical checkout equals `origin/main` at
+`286a113`; `board/active/` is empty and GitHub has no open pull request. The audit counted 48
+problem packs. Raw commit touches put Linear A first (29), followed by Ennis (22), VENONA
+BROWN/BRAUN (21), Shakespeare (18) and Voynich (15); file/attempt depth instead highlights
+Junius, Shakespeare, the Annals and Voynich. These are measures of attention, not merit or
+closeness to solution.
+
+There is still **no internally validated solve and no PASS verdict**. One proposed target,
+Ormonde–Maltravers, was correctly withdrawn after an external solution was found. The closest
+internal candidates remain the four HELD 3 × PARTIAL claims (Ennis, Mesha, VENONA, gold bars),
+while Linear A and Byblos still await their first panels. Several projects nevertheless answered
+their narrower success criteria: Templo Mayor returned a notation-artifact verdict with two
+primary-source checks outstanding; Thera established an information bound; blood eagle measured
+why the surviving evidence cannot decide the rite question; and Caligula strongly favours the
+literal reading but still lacks the two decisive modern articles. Full evidence and the refreshed
+draw order are in `board/log/2026-09-27-orchestrator-pass.md` and `board/TOP_INTEREST.md`.
 
 *Rewritten in full by the 2026-09-25 orchestrator pass. The section standing here until now was
 the **2026-09-23** pass's text: it still said "PR queue empty, third consecutive pass", "Codex
