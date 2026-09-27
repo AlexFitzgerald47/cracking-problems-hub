@@ -1,0 +1,62 @@
+# Blitz Ciphers: Nick Pelling's ORIGINAL (2011/2013) provisional transcription of
+# "part of the text", from https://ciphermysteries.com/other-ciphers/blitz-ciphers
+# (fetched and extracted from the page's single <blockquote>, 2026-09-27; verified
+# byte-for-byte against an independent extraction by a research assistant, and
+# mirrored identically at http://cipherfoundation.org/older-ciphers/blitz-ciphers/).
+#
+# This uses the ORIGINAL transcription key, NOT the expanded key used for pages 7/8,
+# so its symbol codes are NOT comparable with data/p7.txt and data/p8.txt. Only
+# structural statistics (which are invariant to relabelling) may be compared.
+#
+# Paragraph breaks in the source are marked with a blank line. Paragraph 3 is
+# EXCLUDED from analysis and marked below: its first lines run ABCDEFGHIJKL and
+# PQR...STUVWXYZ, i.e. its glyph sequence coincides with the order of Pelling's own
+# transcription key, so any "structure" in it is the key's ordering, not the text's.
+=P1
+BMnESCMXJoEDji
+dYajJAQeEJVWYE
+MlFZAYkETDlJC
+fBDJiCEgIQpMBk
+YkBSTZqYjMrqBl
+=P2
+BSBjEeSEMD
+BCEY
+=P3-EXCLUDED-KEY-ORDER
+ABCDEFGHIJKLGMNFEO
+PQRkEGSTjUCVBWXAYZ
+ILaMCEBbZXcdDSDebJ
+fgIYcdMeiCYejSDB
+FXYSDeFHEkkCjSAeDE
+GMaQejMEDEMAZDlTbIeX
+SBCBl
+=P4
+SBSDEe
+jMpnEl
+=P5
+MEnYlBCEDlGeBMUElsmLDCYE
+dDlSDEQKGYASDQHEDCD
+QgCMsmYJoUWFBWgVCED
+MfSaQiBBXCJoE
+=P6
+SBDBlDMDBl
+fTBeMCZS
+dsECEDYrEE
+=P7
+JBeSBCBSEDBeebDlrES
+BCDBDEMCEDEYbEg
+ieeXYBDiSqEQM
+=P8
+SCEDCEeS
+=P9
+lBDSC
+BeYkElE
+=P10
+VvEBultgLYQXCcjIcSIEBMqEdqlT
+=P11
+SBHATmYgEIDBjZXYBDDIpddZMDAVE
+AQZBFjBqEetEuHebggdXYBnEIDeQmM
+jgmHZYeeAEBdSgtjvMLgjEslUd
+SlfBjgmMpXndZlwDgltjJoDm
+FxMjCeANcjKnjMZHlTRlBfREl
+dEDtuKNKMjAEDGToglEAVRZA
+mcCZlpZdnBcmEGkED
