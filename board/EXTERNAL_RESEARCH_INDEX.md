@@ -2,6 +2,11 @@
 
 **Snapshot:** 2026-09-17. **Owner:** Hub orchestrator. **Purpose:** a watchlist of public projects, source collections and communities whose work could overlap with the Hub's ciphers, historical texts or research method. This is a discovery index, not a claim that every listed project is active, that its solve claims are validated, or that all public projects have been found.
 
+**Last overlap scan:** 2026-09-27. See
+`board/log/2026-09-27-external-research-watch-scan.md`. The scan found that `cyphersolver`
+now contains 315 target directories and directly overlaps five Hub campaigns; it also confirmed
+substantial post-snapshot activity in `unsolved-ciphers`. No external solve was adopted by the Hub.
+
 The search included public GitHub repositories and project sites, historical-cryptography communities, and AI-assisted open-problem platforms. Entries link to the project's own repository or site. Generic AI-agent libraries, commercial cipher tools, cryptocurrency projects, one-off coursework and unsourced social posts are outside this list. A public project can appear after this snapshot; expand the index when one is found.
 
 **Watch levels:** W = inspect weekly for overlapping solves and new target material; M = monthly for methods, datasets and projects; Q = quarterly or when a Hub target points there. Cadences are suggested checks during a future agent session. Nothing in this repository monitors these sources continuously.
@@ -10,8 +15,8 @@ The search included public GitHub repositories and project sites, historical-cry
 
 | Project / primary source | Overlap and what to watch | Check |
 |---|---|---|
-| [cyphersolver](https://github.com/dbourdeau/cyphersolver) ([public case site](https://dbourdeau.github.io/cyphersolver/)) | Human plus AI historical cipher investigations; inspect solved-case evidence and outstanding cases. Its 1634 Ormonde work overlaps the Hub's Irish cipher interest. | W |
-| [unsolved-ciphers](https://github.com/aaymeloglu/unsolved-ciphers) | AI-assisted historical decipherment case files; watch new transcriptions, keys, source images and claims. | W |
+| [cyphersolver](https://github.com/dbourdeau/cyphersolver) ([public case site](https://dbourdeau.github.io/cyphersolver/)) | Human plus AI historical cipher investigations. At the 2026-09-27 scan it had 315 target directories, including direct overlaps with Beale, Debosnys, Chinese gold bars, Linear A and Voynich. Compare primary data and controls before borrowing a result; its gold-bar note still used the superseded 263-letter transcription. | W |
+| [unsolved-ciphers](https://github.com/aaymeloglu/unsolved-ciphers) | Active AI-assisted historical decipherment case files, shared tooling, transcriptions and evidence audits. It added Ferdinand, Moray, Starhemberg and Vande Perre work after this index's original snapshot; inspect source images, controls and claimed reading grades rather than importing conclusions. | W |
 | [decipher](https://github.com/matthewdgreen/decipher) | Agent-accessible classical cryptanalysis tools and persistent investigations; compare methods and case decisions. | W |
 | [cipher_benchmark](https://github.com/matthewdgreen/cipher_benchmark) | Historical cipher records and challenge set, including unsolved material; watch new targets and verified solution statuses. | W |
 | [DECRYPT / DECODE](https://de-crypt.org/) | Institutional historical ciphertext and key archive, transcription and research; watch relevant scans, keys and corpus updates. | W |

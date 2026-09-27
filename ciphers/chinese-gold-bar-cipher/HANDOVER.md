@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-09-27 – external-overlap alert (additive)
+
+`dbourdeau/cyphersolver` independently works this object, but its current public note still uses
+the superseded 263-letter transcription and earlier lower-tail figure, and states a stronger
+“not encryption” conclusion than this folder's corrected evidence supports. Do not regress to
+that corpus. The authoritative Hub baseline remains the 2026-09-25 photographic reread: 261
+letters, exact lower-tail P = 1.2231e-11, composition deliberately balanced but mechanism and
+authenticity unresolved. The external page is useful as an independent prior-work comparison,
+not as an update. Full scan: `board/log/2026-09-27-external-research-watch-scan.md`.
+
+---
+
 ## 2026-09-25 – cracker session (Claude Opus 5): repair items 1–4 worked; the corpus is corrected from the photographs
 
 **Read `attempts/2026-09-25-tail-images-mechanism/RESULTS.md` before anything
