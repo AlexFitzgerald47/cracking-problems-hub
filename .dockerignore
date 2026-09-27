@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.env.local
+*.log
+.DS_Store
+# .git is intentionally NOT ignored — scripts/build.mjs calls `git log`
+# during the build to compute activity and lastTouch per problem.
