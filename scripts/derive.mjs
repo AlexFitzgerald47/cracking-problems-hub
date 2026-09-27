@@ -242,7 +242,8 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
   }
 
   for (const a of activity) {
-    const c = bySha[a.sha] || null;
+    // collectActivity records abbreviated SHAs (%h); match on prefix.
+    const c = bySha[a.sha] || log.find(x => x.sha.startsWith(a.sha)) || null;
     const files = c?.files || [];
     a.role = roleOf(a.subject, files);
     a.problems = [...new Set(files.map(f => f.match(PROBLEM_PATH)).filter(Boolean).map(m => `${m[1]}/${m[2]}`))].slice(0, 6);

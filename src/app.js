@@ -137,8 +137,8 @@ function paintSitrep() {
     ? `${Words(live)} problems.${day ? ` ${Words(day)} days.` : ''} No PASS.`
     : `${Words(live)} problems. ${Words(passed)} passed.`;
   const second = held
-    ? `<em>${Words(held)} ${held === 1 ? 'claim is' : 'claims are'} held at 3&thinsp;×&thinsp;PARTIAL</em>, waiting on a human.`
-    : `<em>No claim is waiting on a human.</em>`;
+    ? `<span class="bluf-2"><em>${Words(held)} ${held === 1 ? 'claim is' : 'claims are'} held at 3&thinsp;×&thinsp;PARTIAL</em>, waiting on a human.</span>`
+    : `<span class="bluf-2"><em>No claim is waiting on a human.</em></span>`;
   $('#bluf').innerHTML = `<span>${esc(lead)}</span> ${second}`;
 
   const su = DATA.statusUpdated;
@@ -146,7 +146,6 @@ function paintSitrep() {
     ? `<span class="label-inline">Latest pass · ${esc(dm(su.date + 'T00:00:00Z'))}</span> ${esc(su.label)}${su.detail ? ` — ${md(su.detail)}` : ''}.${su.report ? ` <a href="${blob(su.report)}" target="_blank" rel="noopener">Read the report</a>` : ''}`
     : '';
 
-  const openPRs = DATA.prs.filter(p => p.state === 'open').length;
   const kpis = [
     { n: live, label: 'Live problems', href: '#board' },
     { n: held, label: 'Held · 3×PARTIAL', href: '#claims', stage: 'held' },
@@ -154,7 +153,6 @@ function paintSitrep() {
     { n: passed, label: 'PASS / solved', href: '#pipeline', stage: 'pass', zero: passed === 0 },
     { n: t.research7d ?? '—', label: 'Research commits · 7d', href: '#tempo' },
     { n: DATA.activeClaims?.length ?? 0, label: 'Claims open now', href: '#dispatches' },
-    { n: openPRs, label: 'Open PRs', href: '#dispatches' },
   ];
   $('#kpis').innerHTML = kpis.map(k => `
     <a class="kpi${k.zero ? ' is-zero' : ''}" href="${k.href}"${k.stage ? ` data-stage="${k.stage}"` : ''}>
@@ -165,7 +163,10 @@ function paintSitrep() {
 // ---- Strips ---------------------------------------------------------------
 
 // One tick per day; height by commits that day. Neutral ink: colour is for state.
-function strip(dates, days = 90, w = 180, h = 20) {
+// Default window is the repo's lifetime (pulse length): a 90-day strip on a
+// 24-day-old board is two-thirds empty by construction.
+const SPAN = Math.max(14, Math.min(90, (DATA.pulse || []).length || 90));
+function strip(dates, days = SPAN, w = 180, h = 20) {
   const buckets = new Array(days).fill(0);
   for (const d of dates || []) {
     const age = Math.floor((NOW - new Date(d).getTime()) / DAY);
@@ -209,7 +210,7 @@ function paintClaims() {
         <p class="label">Decisive missing check</p>
         <p class="held-check">${c ? md(c.missingCheck) : '<span class="dim">No validation-queue row names this folder. See its dossier.</span>'}</p>
         <footer class="held-foot">
-          ${strip(p.commitDates90d || p.commitDates30d, 30, 120, 18)}
+          ${strip(p.commitDates90d || p.commitDates30d, SPAN, 200, 22)}
           <span class="mono dim">${esc(rel(p.lastTouch))}</span>
         </footer>
       </article>`;
@@ -306,7 +307,9 @@ function matches(p) {
   return state.q.split(/\s+/).every(t => hay.includes(t));
 }
 
-const byStage = (a, b) => (STAGE[stageOf(b)].rank - STAGE[stageOf(a)].rank) ||
+// Board reading order: what is closest to moving first, dead ends last.
+const BOARD_ORDER = ['solved', 'pass', 'held', 'panel', 'working', 'unworked', 'blocked', 'backlog', 'withdrawn'];
+const byStage = (a, b) => (BOARD_ORDER.indexOf(stageOf(a)) - BOARD_ORDER.indexOf(stageOf(b))) ||
   (b.commits30d - a.commits30d) || nameOf(a).localeCompare(nameOf(b));
 
 function row(p, showDomain) {
@@ -330,7 +333,7 @@ function paintBoard() {
   const head = `
     <div class="brow bhead" role="row">
       <div role="columnheader">Stage</div><div role="columnheader">Problem</div>
-      <div role="columnheader">Status, per STATUS.md</div><div role="columnheader">90 days</div>
+      <div role="columnheader">Status, per STATUS.md</div><div role="columnheader">${SPAN} days</div>
       <div role="columnheader">Touched</div><div role="columnheader" title="Commits in the last 30 days">30d</div>
     </div>`;
   let body = '';
@@ -499,8 +502,8 @@ function openDossier(slug, push = true) {
       ${p.statusRow?.notes ? `<section><h3 class="label">Notes · STATUS.md</h3><p class="ds-notes">${md(p.statusRow.notes)}</p></section>` : ''}
       ${!p.statusRow ? `<section><h3 class="label">Lede · PROBLEM.md</h3><p class="ds-notes">${esc(p.lede || 'No lede recorded.')}</p></section>` : ''}
       <section class="ds-activity">
-        <h3 class="label">Activity · 90 days</h3>
-        ${strip(p.commitDates90d || p.commitDates30d, 90, 440, 34)}
+        <h3 class="label">Activity · ${SPAN} days</h3>
+        ${strip(p.commitDates90d || p.commitDates30d, SPAN, 440, 34)}
         <dl class="ds-stats mono">
           <div><dt>30d</dt><dd>${p.commits30d}</dd></div>
           <div><dt>90d</dt><dd>${p.commits90d}</dd></div>
