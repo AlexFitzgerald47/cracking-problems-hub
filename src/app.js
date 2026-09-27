@@ -109,6 +109,18 @@ for (const d of Object.keys(DOMAIN)) {
     .forEach((p, i) => { CASE[p.slug] = `${DOMAIN[d].prefix}-${String(i + 1).padStart(2, '0')}`; });
 }
 
+// Where the repository contradicts itself, or a file has stalled, say so.
+function flagsOf(p) {
+  const f = [], st = stageOf(p);
+  if (st === 'held' && !p.claim) f.push('Held, but no row in the STATUS.md validation queue names this folder.');
+  if (st === 'held' && p.claim?.since && ageDays(p.claim.since) > 14) f.push(`On hold ${Math.floor(ageDays(p.claim.since))} days and the decisive check has not been run.`);
+  if (st === 'unworked' && (p.roleTouches?.cracker || 0) > 0) f.push(`STATUS.md says never worked, but cracker sessions have committed here ${p.roleTouches.cracker} time${p.roleTouches.cracker === 1 ? '' : 's'}.`);
+  if (st === 'working' && ageDays(p.lastTouch) > 14) f.push(`Listed as in work, but no commit for ${Math.floor(ageDays(p.lastTouch))} days.`);
+  if (st === 'panel' && ageDays(p.lastTouch) > 7) f.push(`Waiting for a panel; nothing has touched the folder for ${Math.floor(ageDays(p.lastTouch))} days.`);
+  return f;
+}
+const FLAGS = Object.fromEntries(LIVE.map(p => [p.slug, flagsOf(p)]));
+
 // ---- Decrypt effect -------------------------------------------------------
 // Headlines resolve out of ogham, runes and Greek: the scripts this board works on.
 
@@ -202,10 +214,9 @@ function paintHero() {
     { n: count('panel'), l: 'awaiting a panel', c: 'panel' },
     { n: passed, l: 'passed', c: passed ? 'pass' : 'zero' },
     { n: DATA.totals.research7d ?? '—', l: 'research commits, 7 days' },
-    { n: DATA.activeClaims?.length ?? 0, l: 'sessions holding a claim' },
+    { n: LIVE.filter(p => !['backlog', 'withdrawn'].includes(stageOf(p)) && ageDays(p.lastTouch) > 7).length, l: 'gone cold, 7+ days untouched', c: 'cold' },
   ];
   $('#kpis').innerHTML = k.map(x => `<div class="kpi" ${x.c ? `data-c="${x.c}"` : ''}><span class="kpi-n mono">${esc(x.n)}</span><span class="kpi-l">${esc(x.l)}</span></div>`).join('');
-  $('#scope-cap').innerHTML = `Distance from centre is distance from cracked. The centre is <b>PASS</b>. The sweep brightens each problem by how recently a session touched it.`;
   requestAnimationFrame(() => scramble($('#bluf'), { speed: 14, spread: 320 }));
 }
 
@@ -284,6 +295,7 @@ function buildScope(host, { mini = false } = {}) {
   svg('line', { x1: 0, y1: 0, x2: 0, y2: -R, class: 'beam' }, sweep);
   if (REDUCED) sweep.style.display = 'none';
 
+  const links = svg('g', { class: 'links' }, root);
   const blips = svg('g', {}, root);
   const pts = layout(R);
   const nodes = pts.map(({ p, deg, x, y }) => {
@@ -292,46 +304,246 @@ function buildScope(host, { mini = false } = {}) {
     const g = svg('g', { class: `blip s-${st}`, transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})`, 'data-slug': p.slug, tabindex: mini ? -1 : 0, role: 'button', 'aria-label': `${nameOf(p)}, ${STAGES[st].label}` }, blips);
     svg('circle', { r: size * 1.9, class: 'halo' }, g);
     svg('circle', { r: size, class: 'core' }, g);
+    if (!mini && FLAGS[p.slug].length) svg('circle', { cx: size * 0.8, cy: -size * 0.8, r: 4.5, class: 'flag-dot' }, g);
     svg('circle', { r: Math.max(size * 2.2, 16), class: 'hit' }, g);
-    return { g, deg, x, y, size, p, base: 0.28 + 0.5 * Math.max(0, 1 - ageDays(p.lastTouch) / 21) };
+    const idle = ageDays(p.lastTouch);
+    const expected = !['backlog', 'withdrawn'].includes(st);
+    return { g, deg, x, y, size, p, idle,
+      base: 0.28 + 0.5 * Math.max(0, 1 - idle / 21),
+      neglect: expected ? Math.max(0.14, Math.min(1, idle / 14)) : 0.06 };
   });
 
+  // Neglect mode labels the coldest files that are supposed to be moving.
+  const labels = svg('g', { class: 'neglect-labels' }, root);
+  if (!mini) nodes.filter(n => n.neglect > 0.06).sort((a, b) => b.idle - a.idle).slice(0, 6).forEach(n => {
+    const right = n.x >= 0;
+    const t = svg('text', { x: n.x + (right ? n.size + 10 : -n.size - 10), y: n.y + 4, 'text-anchor': right ? 'start' : 'end' }, labels);
+    t.textContent = `${nameOf(n.p).replace(/\s*\(.*?\)\s*$/, '')} · ${Math.floor(n.idle)}d`;
+  });
+  const pulses = svg('g', { class: 'pulses' }, root);
+  const agentLayer = svg('g', { class: 'agents' }, root);
+
   // Mark where the Breakers last went in.
+  let mark = null;
   const last = DATA.lastByRole?.cracker;
   const target = !mini && last?.problems?.map(s => nodes.find(n => n.p.slug === s)).find(Boolean);
   if (target) {
     const { x, y, size } = target, o = size + 9, l = 7;
-    const mark = svg('g', { class: 'sortie', transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})` }, root);
+    mark = svg('g', { class: 'sortie', transform: `translate(${x.toFixed(1)} ${y.toFixed(1)})` }, root);
     for (const [sx, sy] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
       svg('path', { d: `M${sx * o} ${sy * (o - l)}V${sy * o}H${sx * (o - l)}` }, mark);
     }
     const right = x < 150;
-    const t = svg('text', { x: right ? o + 10 : -o - 10, y: 4, 'text-anchor': right ? 'start' : 'end' }, mark);
-    t.textContent = `LAST SORTIE · ${rel(last.date).toUpperCase()}`;
+    svg('text', { x: right ? o + 10 : -o - 10, y: 4, 'text-anchor': right ? 'start' : 'end' }, mark).textContent = `LAST SORTIE · ${rel(last.date).toUpperCase()}`;
   }
 
   host.appendChild(root);
-  const scope = { sweep, nodes, visible: true };
+  const scope = { mini, R, root, sweep, nodes, by: Object.fromEntries(nodes.map(n => [n.p.slug, n])), links, pulses, agentLayer, visible: true };
   nodes.forEach(n => n.g.style.setProperty('--g', REDUCED ? n.base + 0.2 : n.base));
   scopes.push(scope);
   new IntersectionObserver(([e]) => { scope.visible = e.isIntersecting; }).observe(host);
+  return scope;
 }
 
+// ---- Scope modes: live, replay, neglect -------------------------------------
+
+let MODE = 'live', HERO = null;
 const PERIOD = 9000;
+let lastT = 0;
 function spin(t) {
+  const dt = Math.min(64, t - (lastT || t)); lastT = t;
   const a = (t % PERIOD) / PERIOD * 360;
   for (const s of scopes) {
     if (!s.visible) continue;
+    const neglect = MODE === 'neglect' && !s.mini;
+    s.sweep.style.display = neglect ? 'none' : '';
     s.sweep.setAttribute('transform', `rotate(${a.toFixed(2)})`);
     for (const n of s.nodes) {
+      if (neglect) { n.g.style.setProperty('--g', n.neglect.toFixed(3)); continue; }
       const behind = (a - n.deg + 360) % 360;
       const glow = behind < 320 ? Math.exp(-behind / 50) : 0;
       n.g.style.setProperty('--g', Math.min(1, n.base + glow * 0.9).toFixed(3));
     }
   }
+  if (HERO?.visible) { stepAgents(t, dt); stepPulses(t); if (MODE === 'replay') stepReplay(dt); }
   if (!document.hidden) requestAnimationFrame(spin);
 }
-document.addEventListener('visibilitychange', () => { if (!document.hidden && !REDUCED) requestAnimationFrame(spin); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden && !REDUCED) { lastT = 0; requestAnimationFrame(spin); } });
+
+// Agents: one marker per sortie, in its unit's colour. They fly in from the
+// rim, circle the file they are working, and leave when the work is done.
+let agents = [], pulseList = [];
+const unitOf = a => a.unit === 'irregular' ? 'irregular' : a.role;
+function spawnAgent(role, slug, { dwell = 1600, refuter = false, delay = 0 } = {}) {
+  const n = HERO?.by[slug];
+  if (!n || REDUCED) return;
+  const [sx, sy] = polar(Math.random() * 360, HERO.R * 1.2);
+  const g = svg('g', { class: 'agent', 'data-role': role }, HERO.agentLayer);
+  const trail = svg('polyline', { class: 'trail' }, g);
+  const body = svg('g', {}, g);
+  svg('path', { d: 'M0 -10L7.5 7L0 3.5L-7.5 7Z', class: 'body' }, body);
+  if (refuter) svg('circle', { r: 13, class: 'refuter' }, body);
+  agents.push({ g, trail, body, n, x: sx, y: sy, pts: [], phase: 'wait', t0: performance.now() + delay, dwell, orbit: Math.random() * 6.28, dir: Math.random() < .5 ? 1 : -1 });
+}
+function pulse(n, cls = '', max = 46) {
+  if (REDUCED || !HERO) return;
+  const c = svg('circle', { cx: n ? n.x : 0, cy: n ? n.y : 0, r: n ? n.size : 10, class: `pulse ${cls}` }, HERO.pulses);
+  if (n) c.setAttribute('data-stage', stageOf(n.p));
+  pulseList.push({ c, r0: n ? n.size : 10, max, t0: performance.now(), dur: n ? 900 : 1600 });
+}
+function stepPulses(t) {
+  pulseList = pulseList.filter(p => {
+    const k = (t - p.t0) / p.dur;
+    if (k >= 1) { p.c.remove(); return false; }
+    p.c.setAttribute('r', (p.r0 + (p.max) * k).toFixed(1));
+    p.c.style.opacity = (1 - k) * 0.8;
+    return true;
+  });
+}
+function stepAgents(t, dt) {
+  agents = agents.filter(a => {
+    if (a.phase === 'wait') { if (t < a.t0) return true; a.phase = 'travel'; }
+    const n = a.n;
+    let hx = 0, hy = -1;
+    if (a.phase === 'travel') {
+      const dx = n.x - a.x, dy = n.y - a.y, d = Math.hypot(dx, dy);
+      const reach = n.size + 18;
+      if (d <= reach + 2) { a.phase = 'work'; a.t0 = t; pulse(n); }
+      else { const v = Math.min(d - reach, 0.75 * dt); a.x += dx / d * v; a.y += dy / d * v; hx = dx; hy = dy; }
+    }
+    if (a.phase === 'work') {
+      a.orbit += 0.0022 * dt * a.dir;
+      const r = n.size + 18;
+      const nx = n.x + Math.cos(a.orbit) * r, ny = n.y + Math.sin(a.orbit) * r;
+      hx = nx - a.x; hy = ny - a.y; a.x = nx; a.y = ny;
+      if (t - a.t0 > a.dwell) { a.phase = 'leave'; a.t0 = t; }
+    }
+    if (a.phase === 'leave') {
+      const k = (t - a.t0) / 900;
+      if (k >= 1) { a.g.remove(); return false; }
+      const d = Math.hypot(a.x, a.y) || 1;
+      a.x += a.x / d * 0.5 * dt; a.y += a.y / d * 0.5 * dt; hx = a.x; hy = a.y;
+      a.g.style.opacity = 1 - k;
+    }
+    a.pts.push(`${a.x.toFixed(1)},${a.y.toFixed(1)}`);
+    if (a.pts.length > 10) a.pts.shift();
+    a.trail.setAttribute('points', a.pts.join(' '));
+    const h = Math.atan2(hy, hx) * 180 / Math.PI + 90;
+    a.body.setAttribute('transform', `translate(${a.x.toFixed(1)} ${a.y.toFixed(1)}) rotate(${h.toFixed(0)})`);
+    return true;
+  });
+}
+function clearAgents() { agents.forEach(a => a.g.remove()); agents = []; pulseList.forEach(p => p.c.remove()); pulseList = []; }
+
+// A sortie is one commit by one unit against one or more files.
+function deploy(ev, dwell) {
+  const role = unitOf(ev);
+  if (role === 'orchestrator') {
+    pulse(null, 'overwatch', HERO.R);
+    ev.problems.slice(0, 4).forEach(s => HERO.by[s] && pulse(HERO.by[s]));
+    return;
+  }
+  ev.problems.slice(0, 3).forEach((s, i) => {
+    if (role === 'validator') {
+      [0, 1, 2].forEach(j => spawnAgent('validator', s, { dwell, refuter: j === 2, delay: j * 160 }));
+    } else spawnAgent(role, s, { dwell, delay: i * 120 });
+  });
+}
+
+const EVENTS = DATA.activity
+  .filter(a => ['cracker', 'validator', 'finder', 'orchestrator'].includes(a.role) && (a.problems?.length || a.role === 'orchestrator'))
+  .slice().reverse();
+let rIdx = 0, rPlaying = false, rAcc = 0;
+const R_STEP = 420;
+
+function setUnborn(dateIso) {
+  for (const n of HERO.nodes) {
+    const unborn = dateIso && n.p.firstTouch && n.p.firstTouch > dateIso;
+    n.g.classList.toggle('unborn', !!unborn);
+  }
+}
+function showEvent(i) {
+  const ev = EVENTS[Math.max(0, i - 1)];
+  $('#t-range').value = i;
+  if (!ev) { $('#t-stamp').textContent = ''; return; }
+  const who = UNIT[unitOf(ev)]?.name || ev.role;
+  const d = new Date(ev.date).toISOString();
+  $('#t-stamp').innerHTML = `<b>${esc(dm(d))} ${d.slice(11, 16)}Z</b> <span data-role="${esc(unitOf(ev))}"><i></i>${esc(who)}</span> ${esc(ev.subject)}`;
+  setUnborn(ev.date);
+}
+function stepReplay(dt) {
+  if (!rPlaying) return;
+  rAcc += dt;
+  if (rAcc < R_STEP) return;
+  rAcc = 0;
+  if (rIdx >= EVENTS.length) { rPlaying = false; $('#t-play').textContent = '▶'; return; }
+  deploy(EVENTS[rIdx], 900);
+  rIdx++;
+  showEvent(rIdx);
+}
+
+function spawnLive() {
+  // Units that went out in the last 72 hours are shown still at work.
+  const seen = new Set();
+  const recent = DATA.activity.filter(a => ['cracker', 'validator', 'finder'].includes(a.role) && a.problems?.length && ageDays(a.date) < 3);
+  let k = 0;
+  for (const ev of recent) {
+    const s = ev.problems[0];
+    if (seen.has(s) || k >= 8) continue;
+    seen.add(s);
+    const role = unitOf(ev);
+    if (role === 'validator') [0, 1, 2].forEach(j => spawnAgent('validator', s, { dwell: Infinity, refuter: j === 2, delay: k * 500 + j * 160 }));
+    else spawnAgent(role, s, { dwell: Infinity, delay: k * 500 });
+    k++;
+  }
+  return k;
+}
+
+const CAPTIONS = {
+  live: () => `Distance from centre is distance from cracked; the centre is <b>PASS</b>. The sweep is Overwatch: it brightens each file by how recently a session touched it. Markers circling a file are units that went in during the last 72 hours.`,
+  replay: () => `The board's history, commit by commit. Files appear on the scope when their folder was opened; stages shown are today's, not those at the time.`,
+  neglect: () => `Brightness is time since a session last touched the file; the six coldest files that should be moving are labelled. Backlog proposals are dimmed because nobody is meant to be working them.`,
+};
+function setMode(m) {
+  MODE = m;
+  $$('.scope-modes button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === m));
+  $('#transport').hidden = m !== 'replay';
+  HERO.root.classList.toggle('m-neglect', m === 'neglect');
+  HERO.root.classList.toggle('m-replay', m === 'replay');
+  clearAgents();
+  rPlaying = false; $('#t-play').textContent = '▶';
+  setUnborn(null);
+  if (m === 'live') spawnLive();
+  if (m === 'replay') { rIdx = 0; rAcc = 0; showEvent(0); setUnborn('0'); rPlaying = true; $('#t-play').textContent = '❚❚'; }
+  if (m === 'neglect' && REDUCED) HERO.nodes.forEach(n => n.g.style.setProperty('--g', n.neglect));
+  $('#scope-cap').innerHTML = CAPTIONS[m]();
+}
+
+function wireScope() {
+  $('.scope-modes').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setMode(b.dataset.mode); });
+  const range = $('#t-range');
+  range.max = EVENTS.length;
+  range.addEventListener('input', () => { rPlaying = false; $('#t-play').textContent = '▶'; clearAgents(); rIdx = +range.value; showEvent(rIdx); });
+  $('#t-play').addEventListener('click', () => {
+    if (rIdx >= EVENTS.length) { rIdx = 0; clearAgents(); showEvent(0); setUnborn('0'); }
+    rPlaying = !rPlaying; $('#t-play').textContent = rPlaying ? '❚❚' : '▶';
+  });
+  // Hovering a file draws the board's own links: files named in the same dispatch.
+  const draw = slug => {
+    HERO.links.innerHTML = '';
+    HERO.nodes.forEach(n => n.g.classList.remove('linked'));
+    if (!slug) return;
+    const from = HERO.by[slug]; if (!from) return;
+    for (const [other, w] of (DATA.connections?.[slug] || []).slice(0, 12)) {
+      const to = HERO.by[other]; if (!to || to.g.classList.contains('unborn')) continue;
+      svg('line', { x1: from.x, y1: from.y, x2: to.x, y2: to.y, class: 'link', 'stroke-width': Math.min(4, 0.8 + w * 0.7) }, HERO.links);
+      to.g.classList.add('linked');
+    }
+  };
+  HERO.root.addEventListener('pointerover', e => { const b = e.target.closest('.blip'); if (b) draw(b.dataset.slug); });
+  HERO.root.addEventListener('pointerleave', () => draw(null));
+  HERO.root.addEventListener('focusin', e => { const b = e.target.closest('.blip'); if (b) draw(b.dataset.slug); });
+}
 
 // ---- Shared bits ----------------------------------------------------------
 
@@ -466,6 +678,7 @@ function folder(p, i) {
     <h4 class="f-title">${esc(nameOf(p))}</h4>
     <p class="f-status typed">${st ? md(st) : p.domain === 'discovered' ? 'Proposal, not yet promoted.' : 'No STATUS.md row.'}</p>
     <span class="rubber s-${stageOf(p)} f-stamp" style="--t:${tilt}deg">${esc(STAGES[stageOf(p)].stamp)}</span>
+    ${FLAGS[p.slug].length ? `<span class="f-flag typed" title="${esc(FLAGS[p.slug].join(' '))}">⚑ ${FLAGS[p.slug].length === 1 ? 'Flag' : FLAGS[p.slug].length + ' flags'}</span>` : ''}
     <footer class="f-foot">${strip(p.commitDates90d, SPAN, 120, 18, 'ink')}${marks(p, 'sm')}<span class="typed">${esc(rel(p.lastTouch))}</span></footer>
   </article>`;
 }
@@ -536,6 +749,7 @@ function openFile(slug) {
           ${field('Opened', p.firstTouch ? esc(toDate(p.firstTouch).toISOString().slice(0, 10)) : '—')}
           ${field('Last activity', `${esc(rel(p.lastTouch))} · ${p.commits30d} commits in 30 days`)}
         </dl>
+        ${FLAGS[slug]?.length ? `<section class="ds-flags"><h3 class="typed">Flagged</h3><ul>${FLAGS[slug].map(f => `<li class="typed">${esc(f)}</li>`).join('')}</ul></section>` : ''}
         ${p.statusRow?.status ? `<section><h3 class="typed">Status, per STATUS.md</h3><p class="ds-status">${md(p.statusRow.status)}</p></section>` : ''}
         ${p.claim ? `<section class="ds-claim">
           <h3 class="typed">Validation queue — ${esc(p.claim.claim)}</h3>
@@ -550,6 +764,7 @@ function openFile(slug) {
           ${strip(p.commitDates90d, SPAN, 480, 36, 'ink big')}
           ${p.lastSubject ? `<p class="typed ds-last">Last entry: “${esc(p.lastSubject)}”</p>` : ''}</section>
         <section><h3 class="typed">Enclosures</h3><p class="encl typed">${files.map(([n]) => `<a href="${n.endsWith('/') ? tree(p.slug + '/' + n.slice(0, -1)) : blob(p.slug + '/' + n)}" target="_blank" rel="noopener">${esc(n)}</a>`).join('')}</p></section>
+        ${(DATA.connections?.[slug] || []).length ? `<section><h3 class="typed">Connected files</h3><p class="typed conn-note">Named in the same board/log entry: the route a method takes between folders.</p><div class="conn">${DATA.connections[slug].filter(([o]) => BY[o] && !BY[o].isStub).slice(0, 8).map(([o, w]) => `<button type="button" data-go="${esc(o)}"><span class="mono">${esc(CASE[o] || '')}</span>${esc(nameOf(BY[o]).replace(/\s*\(.*?\)\s*$/, ''))}<span class="w">×${w}</span></button>`).join('')}</div></section>` : ''}
         ${related.length ? `<section><h3 class="typed">Cross-references</h3><ul class="xref">${related.map(x => `<li><span class="typed">${esc(dm(x.date))}</span><a href="${blob(x.file)}" target="_blank" rel="noopener">${esc(x.title)}</a></li>`).join('')}</ul></section>` : ''}
       </div>
     </div>`;
@@ -633,8 +848,9 @@ function wire() {
   });
   document.addEventListener('pointerout', e => { if (e.target.closest('.blip')) untip(); });
   $$('[data-scramble]').forEach(h => new IntersectionObserver(([x], o) => { if (x.isIntersecting) { scramble(h); o.disconnect(); } }, { threshold: 0.6 }).observe(h));
-  const m = location.hash.match(/^#p\/(.+)$/);
-  if (m) openFile(decodeURIComponent(m[1]));
+  const fromHash = () => { const m = location.hash.match(/^#p\/(.+)$/); if (m && m[1] !== current) openFile(decodeURIComponent(m[1])); };
+  addEventListener('hashchange', fromHash);
+  fromHash();
 }
 
 function paintFoot() {
@@ -652,7 +868,8 @@ function paintFoot() {
 
 paintTicker();
 paintHero();
-buildScope($('#scope'));
+HERO = buildScope($('#scope'));
+wireScope();
 paintPriority();
 paintUnits();
 paintControls();
@@ -663,4 +880,5 @@ paintFoot();
 wire();
 tick();
 setInterval(tick, 1000);
+setMode('live');
 if (!REDUCED) requestAnimationFrame(spin);

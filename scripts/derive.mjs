@@ -105,6 +105,9 @@ function roleOf(subject, files) {
   if (/validator|\bpanel\b|verdict/.test(s)) return 'validator';
   if (/finder|discovery|^propos/.test(s)) return 'finder';
   const probs = files.map(f => f.match(PROBLEM_PATH)).filter(Boolean);
+  // A commit that touches many folders at once is housekeeping (an archive
+  // unpack, a bulk rename), not a session working a problem.
+  if (new Set(probs.map(m => m[2])).size > 8) return 'other';
   if (probs.length && probs.every(m => m[1] === 'discovered')) return 'finder';
   if (probs.length || /^claim|^release|cracker/.test(s)) return 'cracker';
   if (files.some(f => /^(STATUS\.md|board\/)/.test(f))) return 'orchestrator';
@@ -183,6 +186,32 @@ async function readDispatches(ROOT, slugs, addedAt, limit = 14) {
       problems: mentions.slice(0, 5), role: roleHint, addedAt: addedAt[`board/log/${name}`] || null,
     });
   }
+  return out;
+}
+
+// Problems named together in the same board/log entry. A shared dispatch is how
+// a method travels between folders, so co-mention is the board's own link graph.
+async function readConnections(ROOT, slugs) {
+  const dir = path.join(ROOT, 'board/log');
+  let names = [];
+  try { names = (await fs.readdir(dir)).filter(n => n.endsWith('.md')); } catch { return {}; }
+  const pair = {};
+  for (const name of names) {
+    const md = await fs.readFile(path.join(dir, name), 'utf8').catch(() => '');
+    const listed = ((md.match(/^problems:\s*(.+)$/m) || [null, ''])[1]).split(/[;,]\s*/).map(x => x.trim());
+    const hit = slugs.filter(s => md.includes(s + '/') || md.includes(s + '`') || listed.includes(s.split('/')[1]));
+    for (const a of hit) for (const b of hit) if (a < b) {
+      const k = a + '|' + b;
+      (pair[k] ||= []).push(name.slice(0, 10));
+    }
+  }
+  const out = {};
+  for (const [k, dates] of Object.entries(pair)) {
+    const [a, b] = k.split('|');
+    (out[a] ||= []).push([b, dates.length]);
+    (out[b] ||= []).push([a, dates.length]);
+  }
+  for (const k of Object.keys(out)) out[k].sort((x, y) => y[1] - x[1]);
   return out;
 }
 
@@ -334,6 +363,7 @@ export async function derive({ ROOT, statusText, problems, activity, domains }) 
     validationQueue: queue,
     dispatches: await readDispatches(ROOT, problems.filter(p => !p.isStub).map(p => p.slug), addedAt),
     activeClaims: await readActiveClaims(ROOT),
+    connections: await readConnections(ROOT, problems.filter(p => !p.isStub).map(p => p.slug)),
     routines: ROUTINES,
     roleProfiles: await readRoleProfiles(ROOT),
     pulse,
