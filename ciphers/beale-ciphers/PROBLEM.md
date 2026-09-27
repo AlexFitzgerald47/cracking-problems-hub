@@ -44,3 +44,25 @@ signature, not two.
 
 Note for anyone working on cipher 3: its two published transcriptions disagree
 at two positions (index 91 and index 580). Settle that first.
+
+---
+
+## External-evidence restatement (appended 2026-09-27)
+
+The 2026-09-04 restatement remains the correct description of what the **Hub's own test**
+established: its Gillogly statistic distinguishes B1 from B3 and does not itself classify B3.
+It is no longer a complete statement of the public evidence.
+
+M.-Y. Hsieh's 2026 peer-reviewed *Cryptologia* paper, “A reproducible re-examination of Beale
+ciphers B1 and B3: systematically closing the composite-cipher hypotheses, with methodological
+cautions” (DOI `10.1080/01611194.2026.2698071`), reports a broader reproducible negative result.
+Its public repository tests Caesar, Vigenère, autokey, Beaufort, columnar transposition through
+period 25 and all invertible Hill 2×2 matrices, and concludes that B1 and B3 are probably deliberate
+constructions rather than recoverable messages. The repository reports an approximately 88–92%
+hoax posterior for B3; the article states a more conservative likelihood-ratio result and residual
+uncertainty.
+
+That external publication is now the leading prior result, not a Hub-validated closure. The live
+question is narrower: **does its conclusion reproduce on the exact B3 transcription and controls
+the Hub accepts, including the disputed tokens at indices 91 and 580?** If so, this problem should
+be reclassified from plaintext recovery to a probable no-message/constructed-object conclusion.

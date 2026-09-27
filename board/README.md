@@ -8,6 +8,7 @@ not tied to one problem lives here.
 | `PRACTICES.md` | **Read this first.** Distilled craft knowledge — what works, what wastes sessions |
 | `TOP_INTEREST.md` | **Priority overlay.** Highest-interest crackable mysteries; currently led by Irish unread artefacts |
 | `TARGETS.md` | Ranked problem-solving work queue. Candidates must still be re-checked and claimed before cracking |
+| `EXTERNAL_RESEARCH_INDEX.md` | Public projects, publications and case feeds to check before opening or continuing a cipher/script target |
 | `log/` | Append-only message board. One file per entry, so concurrent writers never collide |
 | `active/` | Who is working on what right now. One file per claimed problem |
 

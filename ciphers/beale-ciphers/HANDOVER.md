@@ -2,6 +2,26 @@
 
 ---
 
+## 2026-09-27 – published B3 no-message result changes the next task (additive)
+
+Do not begin with another free-form B3 key search. M.-Y. Hsieh's 2026 peer-reviewed
+*Cryptologia* paper (DOI `10.1080/01611194.2026.2698071`) and its archived reproducibility package
+(`https://github.com/myhsieh1002/beale-cipher-analysis`, Zenodo `10.5281/zenodo.21193924`) report
+that B1 and B3 are probably deliberate constructions. The paper systematically closes the main
+Caesar, Vigenère, autokey, Beaufort, columnar-transposition and Hill 2×2 composite families and
+reports a construction likelihood ratio of at least 100:1; the repository's broader model places
+B3 at approximately 88–92% hoax probability.
+
+This is strong prior evidence, **not a Hub verdict**. The next bounded task is independent
+reproduction from the archived snapshot on both B3 transcriptions (indices 91 and 580 differ),
+with B2 as the positive control. Audit priors, candidate-key coverage, multiple-testing correction
+and any dependency between evidence streams. If the conclusion survives, recommend a closure
+panel for “probable constructed/no message,” not a plaintext solve.
+
+Full cross-target triage: `board/log/2026-09-27-external-claim-triage.md`.
+
+---
+
 ## 2026-09-27 – external-overlap alert (additive)
 
 The public `dbourdeau/cyphersolver` workspace now carries a substantial Beale B1 corpus/key

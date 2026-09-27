@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-09-27 – public page 7/8 transcriptions located (additive)
+
+Before creating a new sign inventory, audit the existing records in
+`matthewdgreen/cipher_benchmark/benchmark/unsolved/sources/blitz/`. They contain canonical and
+diplomatic transcriptions for pages 7 and 8, sourced through AZdecrypt and the Cipher Mysteries
+partial-transcription page. The benchmark explicitly reports no accepted plaintext. Page 7's
+source note also records that its released image is rotated 180 degrees.
+
+Treat these as inherited evidence: check license/provenance, align every token to the released
+images, record ambiguous glyphs and freeze the accepted version before computing statistics. Do
+not infer whole-corpus authenticity from two text-only pages. No data was copied into this Hub by
+the orchestrator pass.
+
+Full external triage: `board/log/2026-09-27-external-claim-triage.md`.
+
+---
 
 ## 2026-09-25 – orchestrator: promoted to `ciphers/`, and the toolkit your criterion 1 asks for now exists
 

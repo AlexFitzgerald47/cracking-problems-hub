@@ -3,9 +3,12 @@
 **Snapshot:** 2026-09-17. **Owner:** Hub orchestrator. **Purpose:** a watchlist of public projects, source collections and communities whose work could overlap with the Hub's ciphers, historical texts or research method. This is a discovery index, not a claim that every listed project is active, that its solve claims are validated, or that all public projects have been found.
 
 **Last overlap scan:** 2026-09-27. See
-`board/log/2026-09-27-external-research-watch-scan.md`. The scan found that `cyphersolver`
-now contains 315 target directories and directly overlaps five Hub campaigns; it also confirmed
-substantial post-snapshot activity in `unsolved-ciphers`. No external solve was adopted by the Hub.
+`board/log/2026-09-27-external-research-watch-scan.md` and the follow-up
+`board/log/2026-09-27-external-claim-triage.md`. The first scan found that `cyphersolver`
+contains 315 target directories and directly overlaps five Hub campaigns. The follow-up identified
+a peer-reviewed Beale B1/B3 construction result that now requires Hub reproduction and corrected
+Rohonc from “never worked” to “published partial codebook reading.” Recent Dorabella and Voynich
+solve claims were screened but not adopted.
 
 The search included public GitHub repositories and project sites, historical-cryptography communities, and AI-assisted open-problem platforms. Entries link to the project's own repository or site. Generic AI-agent libraries, commercial cipher tools, cryptocurrency projects, one-off coursework and unsourced social posts are outside this list. A public project can appear after this snapshot; expand the index when one is found.
 
@@ -19,6 +22,9 @@ The search included public GitHub repositories and project sites, historical-cry
 | [unsolved-ciphers](https://github.com/aaymeloglu/unsolved-ciphers) | Active AI-assisted historical decipherment case files, shared tooling, transcriptions and evidence audits. It added Ferdinand, Moray, Starhemberg and Vande Perre work after this index's original snapshot; inspect source images, controls and claimed reading grades rather than importing conclusions. | W |
 | [decipher](https://github.com/matthewdgreen/decipher) | Agent-accessible classical cryptanalysis tools and persistent investigations; compare methods and case decisions. | W |
 | [cipher_benchmark](https://github.com/matthewdgreen/cipher_benchmark) | Historical cipher records and challenge set, including unsolved material; watch new targets and verified solution statuses. | W |
+| [Beale B1/B3 reproducible re-examination](https://github.com/myhsieh1002/beale-cipher-analysis) ([paper](https://doi.org/10.1080/01611194.2026.2698071), [archive](https://doi.org/10.5281/zenodo.21193924)) | Peer-reviewed 2026 evidence that B1 and B3 are deliberate constructions rather than recoverable messages. Reproduce on both B3 transcriptions before changing the Hub disposition; audit priors, composite-family coverage and evidence dependence. | W |
+| [cipher-lab](https://github.com/lessthanzero/cipher-lab) | Reproducible investigations overlapping Rohonc and Dorabella, with explicit scientific limits. Its Rohonc implementation builds on Király–Tokai; its Dorabella lane labels text unsolved and musical evidence exploratory. Check primary publications before accepting its stronger project-level labels. | W |
+| [Linear A corpus-validation audit](https://github.com/ChristosTsirkas/corpus-validation-for-undeciphered-scripts-linear-a) | Reproducible corpus and adequacy audit, including a sheep/goat sign inversion across 14 documents, SigLA extraction and power bounds. It explicitly does not attempt decipherment. Required prior work for the Hub's pending Linear A panel. | W |
 | [DECRYPT / DECODE](https://de-crypt.org/) | Institutional historical ciphertext and key archive, transcription and research; watch relevant scans, keys and corpus updates. | W |
 | [solveathome/platform](https://github.com/solveathome/platform) ([site](https://solveathome.org/)) | Public AI-agent collaboration on open mathematics with assigned tasks and peer checks; direct overlap in agent coordination and research memory. | W |
 | [Prize Problem Lab](https://github.com/kevjenz/prize-problem-lab) | Human and AI workspace for prize mathematics, revision history and review lanes; watch validation and provenance design. | W |
@@ -41,6 +47,7 @@ The search included public GitHub repositories and project sites, historical-cry
 | [M-209 known-plaintext ML attack](https://github.com/CrypToolProject/M209KnownPlaintextAttackML) | A bounded historical machine-cipher ML experiment; method reference, not a general unsolved-case hub. | Q |
 | [historical-ciphertext-alignment](https://github.com/fboglind/historical-ciphertext-alignment) | Research on aligning historical ciphertext and plaintext; possible corpus preparation technique. | Q |
 | [DebosnysCipher](https://github.com/mdtrotter/DebosnysCipher) | Digital type / glyph representation for a Hub cipher; watch image-to-transcription discrepancies, not solve claims. | M |
+| [Dorabella musical claim](https://github.com/ajejfiejof/dorabella-cipher-solver) ([underlying study](https://arxiv.org/abs/2509.17950)) | September 2026 repository claims a definitive G-major solution, but its checks largely verify consequences of its chosen mapping and the cited study explicitly disclaims a unique solve. It does not resolve the Hub's 36 uncertain glyph positions. Watch for independent musicological review or a better source image, not repository test badges. | M |
 | [voynich-manuscript-analysis](https://github.com/Workwrite-Niidome/voynich-manuscript-analysis) | AI-assisted Voynich structural hypotheses and experiments; assess independent held-out predictions. | M |
 | [Voynich, cesarjz](https://github.com/cesarjz/Voynich) | Computational and AI-assisted Voynich analyses; model claims need independent tests. | M |
 | [voynich, Pantani](https://github.com/Pantani/voynich) | Reproducible Voynich structural analysis with explicit limits on decipherment claims. | M |
