@@ -4,6 +4,45 @@
 
 ---
 
+## 2026-09-27 (later) – Claude Code cloud session / evidence-acquisition plan, parked
+
+**What was attempted:** established where the missing evidence lives, and wrote it up as a work
+order (`evidence-acquisition.md`). Nothing was sent or requested; the user asked for it to be
+held for a future session.
+
+**Findings, verified from sources cited in the work order:**
+
+- **The originals** are at the Brewster Memorial Library of the Essex County Historical Society
+  (Adirondack History Museum, Elizabethtown NY). They came via the granddaughter of the visitor
+  Debosnys entrusted them to, with more material acquired as late as 1991.
+- **No inventory of those holdings is published.** Whether unpublished cipher pages exist is
+  unknown, and it is the highest-value question to put to the museum.
+- **Matthew Brown's 2021 plagiarism study lists the concrete sources of Debosnys's clear
+  writings:**
+  - Moore;
+  - Stoddart;
+  - Chivers;
+  - Colesworthy;
+  - Fordyce;
+  - Virgil and the Vulgate;
+  - *Peterson's Magazine* 1879;
+  - the NYT of February 1882;
+  - Julian Hawthorne's "A Rebel" (July 1882).
+
+  That is his jail reading list, and the shelf to sweep for the cipher poem's copied source.
+  Several of these (*Peterson's*, Chivers, Colesworthy, 1882–83 newspaper verse) have never
+  been searched against the poem.
+- **The two local 1882–83 papers are digitized** on NYS Historic Newspapers. The portal blocked
+  automated search from this environment.
+
+**Receipt.**
+- **Changed:** work order added; state set to evidence-blocked and parked.
+- **Evidence:** `evidence-acquisition.md`.
+- **Next:** with the user's go-ahead, send the museum request. Independently of that, a
+  session may run the frozen source sweep.
+
+---
+
 ## 2026-09-27 – Claude Code cloud session / held-out test: the shared signature key is retired
 
 ### What was attempted

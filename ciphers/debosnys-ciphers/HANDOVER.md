@@ -1,5 +1,32 @@
 # Handover Notes – The Debosnys Ciphers
 
+## 2026-09-27 (later) – parked: evidence-acquisition work order
+
+**State: evidence-blocked, deliberately parked by the user.** Nothing was sent or requested.
+The problem is unclaimed. The next move is written up in **`evidence-acquisition.md`**:
+
+- the verified archive, the Brewster Memorial Library at the Adirondack History Museum,
+  Elizabethtown NY, with research contact details;
+- what to ask for, in priority order: an inventory of all Debosnys pages, then high-resolution
+  scans of the signature sheet and the poem sheets;
+- an **unsent** draft request for the user to send;
+- published reproductions (Farnsworth 2010; Bauer 2017);
+- Matthew Brown's traced jail-reading list, which is the shelf to sweep for the poem's copied
+  source;
+- which sources are already searched and which are not, and a poem fingerprint to freeze
+  before any sweep;
+- long shots and reopening conditions.
+
+**Two things a session can do without the archive:**
+
+1. The copied-source sweep of *Peterson's Magazine* 1878–82, Chivers, Colesworthy and
+   1882–83 newspaper verse. Freeze the fingerprint and its null first.
+2. Check whether Farnsworth's plates beat the Commons resolution.
+
+Contacting the museum, clerk, archives or individuals needs the user's go-ahead.
+
+---
+
 ## 2026-09-27 – Claude Code cloud session: the shared signature key is retired
 
 **Read first:** `attempts/2026-09-27-heldout-key-test/RESULTS.md` (verdict and evidence),
