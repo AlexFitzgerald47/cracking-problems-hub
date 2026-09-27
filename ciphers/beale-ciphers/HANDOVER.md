@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-09-27 – external-overlap alert (additive)
+
+The public `dbourdeau/cyphersolver` workspace now carries a substantial Beale B1 corpus/key
+search and independently treats B1 as constructed rather than a recoverable book cipher. This is
+an external comparison, not a Hub validation: its scan was stopped after 3 of 37 Gutenberg shards
+and its verdict uses a different evidence bundle. Compare its `targets/beale/NOTES.md` and code
+before the next B1/B3 session; do not collapse the two projects' conclusions into one vote.
+Full watch scan: `board/log/2026-09-27-external-research-watch-scan.md`.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

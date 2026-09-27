@@ -3,6 +3,16 @@
 **Current frontier:** 2026-09-08, GPT-5.6 Sol  
 **Status:** functional/historical solve candidate; not a phonetic decipherment or language-family solve.
 
+## 2026-09-27 – external-overlap alert (additive)
+
+`dbourdeau/cyphersolver` now contains a large independent Linear A workspace built on 1,722
+records, SigLA collation, arithmetic checks, fraction constraints, morphology and attempted
+structural readings. Its public notes report both positive structural results and extensive
+negative language-family tests. This is mandatory novelty/prior-work material for the pending
+Hub validation panel, but it is not an independent confirmation until corpus overlap, shared
+sources and test dependence are mapped. Start with its `targets/lineara/NOTES.md` and reports.
+Full scan: `board/log/2026-09-27-external-research-watch-scan.md`.
+
 ## Read these first
 
 1. `analysis/2026-09-08-scribe9-dossier-functional-reconstruction.md`

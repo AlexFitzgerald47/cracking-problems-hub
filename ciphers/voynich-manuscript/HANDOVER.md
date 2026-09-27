@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-09-27 – external-overlap alert (additive)
+
+`dbourdeau/cyphersolver` has a separate Voynich adjudication with committed scripts and results
+for entropy, word grammar, repetition and hoax/cipher controls. It does not claim a decipherment;
+its surviving model classes are structured meaningless text versus verbose/positional encoding.
+Use it as an external comparator for controls and exclusions, not as independent evidence where
+both projects use the same public transcriptions. Full scan:
+`board/log/2026-09-27-external-research-watch-scan.md`.
+
+---
+
 ## 2026-09-27 – reconciliation recovery (additive)
 
 Recovered the unmerged 2026-09-08 zodiac-ordinal package from
