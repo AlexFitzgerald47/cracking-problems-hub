@@ -1,5 +1,15 @@
 # Is 80,400 a count or a numeral? — Templo Mayor 1487, first working session
 
+> **2026-09-27 correction, added by the next session; nothing below is altered.** P3 failed:
+> Motolinía's *Carta al Emperador* (Tlaxcala, 2 January 1555) carries "ochenta mill i quatrocientos
+> hombres", inside the same rows-along-the-causeways staging Durán translates. The HANDOVER's
+> reopening condition fired. **The verdict's "(b), chronicler-side" label is refuted**, and the "odd
+> 400 is the system's smallest counter, not a tally residue" argument (§4, §7) is withdrawn.
+> Chimalpahin's Nahuatl annal gives this count itemised by nation, with a 20s-place tail. The
+> notation reading survives in narrower form. §6's map is superseded, and 72,000 in §5/T1b is an
+> error of the 1878 edition alone. Corrected verdict ((a) as to transmission, (c) as to whether it was
+> ever a count) and the redrawn map: `../2026-09-27-carta-and-variants/RESULTS.md`.
+
 **Session:** 2026-09-24, cracker (Claude Opus 5). **Mode:** starting.
 **Predictions frozen before the tests:** `FREEZE.md` (committed in a separate, earlier commit).
 **Corpus:** `data/corpus_manifest.tsv` (21 files, sha256'd). **Fetch:** `code/fetch_corpus.sh`.

@@ -1,0 +1,5 @@
+frozen set: 316 distinct values; 72,344 reachable: False
+every frozen value divisible by 20: True | 72,344 % 20 = 4
+nearest reachable values: [72000, 71600, 75600, 76000, 68400]
+exploratory, with Chimalpahin's 24,600/80,600 added: 72,344 reachable: False; all divisible by 20: True
+72,344 in Nahuatl orders: 9 xiquipilli + 0 tzontli + 17 pohualli + 4 units

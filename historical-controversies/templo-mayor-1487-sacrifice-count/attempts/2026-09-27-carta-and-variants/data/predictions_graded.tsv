@@ -1,0 +1,21 @@
+id	kind	p	prediction (FREEZE.md, committed 8742b52 before looking)	outcome	evidence
+P3 (2026-09-24)	prior session	—	Motolinía does not contain 80,400	FAILED	the Carta al Emperador, Icazbalceta 1858 p. 254
+F1.1	derivation-contaminated	0.8	the Carta contains 80,400, Moteczuma's predecessor, one temple, 3-4 days	passed (not credited: contaminated)	p. 254
+F1.2	prospective	0.75	no calendar year in the Carta	passed	p. 254
+F1.3	prospective	0.85	no itemisation	passed	p. 254
+F1.4	prospective	0.6	no explicit source claim for the figure	passed (the preceding sentence cites Motolinía's own relación to the Conde de Benavente for the dynastic history, not for the number)	p. 254
+F1.5	prospective	0.6	Mendieta shares with the Carta an element beyond the number (phrase, qualifier, one-temple or 3-4-days framing) not in Durán or Ixtlilxóchitl	FAILED on every listed element; the only shared element is the providential argument	Mendieta 2008 ed. pp. 175-176 vs Carta p. 254
+F1.6	derivation-contaminated	0.5	the Carta mentions four rows / four streets	passed (not credited)	p. 254
+F2.1	prospective	0.85	1878 printed page reads setenta y dos mil	passed	page image p. 517
+F2.2	prospective	0.9	1997 printed page reads sesenta y dos mill	passed	page image p. 304
+F2.3	prospective	0.8	62,000 is the manuscript reading; 72,000 a 19th-century transmission error	passed	Kraus MS (1997 ed.), Ternaux 1853, Kingsborough 1848 all read 62,000
+F2.4	prospective	0.5	72,000 predates Orozco y Berra: Kingsborough 1848 reads 72,000	FAILED	Kingsborough reads sesenta y dos mil
+F2.5	prospective	0.7	no note by Orozco y Berra citing Torquemada or defending 72,000	passed	p. 517 page image; his dedication note pp. 518-519 discusses 80,400 and 20,000 only
+F2.class	prospective	0.55	copy/print error inherited through the 19th-century copy text; not OCR; not harmonisation	"PARTLY FAILED: not OCR (passed); no evidence of harmonisation (passed, not provable); ""inherited"" failed — the error is specific to the 1878 edition"	stemma table
+F3.1	prospective	0.55	no written source named for 72,344	passed	page image p. 186, no marginal note
+F3.2	prospective	0.9	72,344 in no other text in the corpus	passed, and in none of 10 further texts	data/torquemada_72344_search.tsv
+F3.3	prospective	0.7	72,344 not derivable by the frozen operations	passed	code/arith_check.py: 316 reachable values, all multiples of 20
+F3.4	prospective	0.55	Torquemada cap. 63 content overlap z < 2 against both Durán and Tezozómoc	FAILED narrowly: Durán z = 2.045, p = 0.036 (exploratory 5,000-draw null: z = 1.95, p = 0.041); Tezozómoc z = 0.31	data/out_content_torq63.txt
+F3.5	prospective	0.55	source of 72,344 cannot be established from reachable material	passed	—
+F4.1	prospective	0.6	BnF image shows 2 bags + 10 feather signs	passed	original + 1899 facsimile
+F4.2	prospective	0.5	the Spanish gloss, if present, gives a figure consistent with the glyphs	FAILED: gloss says quatro mil (4,000) against glyphs of 20,000	fol. 39r gloss
