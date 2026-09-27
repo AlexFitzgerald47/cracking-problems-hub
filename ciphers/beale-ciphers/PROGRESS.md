@@ -4,6 +4,46 @@
 
 ---
 
+## 2026-09-27 – Orchestrator external-evidence audit
+
+### What changed
+
+The dashboard no longer describes B3 as simply “the genuinely open one.” A 2026 peer-reviewed
+study now supplies a reproducible, substantially broader no-message case for B1 and B3. The Hub
+has not rerun it, so no closure or solve claim is adopted.
+
+### Evidence
+
+- M.-Y. Hsieh, “A reproducible re-examination of Beale ciphers B1 and B3: systematically closing
+  the composite-cipher hypotheses, with methodological cautions,” *Cryptologia* (2026), DOI
+  `10.1080/01611194.2026.2698071`.
+- Public code and data: `https://github.com/myhsieh1002/beale-cipher-analysis`; archived snapshot:
+  `https://doi.org/10.5281/zenodo.21193924`.
+- The article reports a likelihood ratio of at least 100:1 for deliberate construction over
+  encryption from the Gillogly anomaly and systematically negative composite-cipher tests. The
+  repository's broader model reports B3 at approximately 88–92% hoax posterior.
+- Independent public projects (`david-fitzgerald/beale-ciphers`, `batteryphil/Project-Beale` and
+  `dbourdeau/cyphersolver`) converge on construction/no-message, but their shared sources and
+  overlapping methods mean that agreement is not four independent validations.
+
+### Still conditional
+
+The Hub has not checked the paper's full code, priors, key corpus, multiple-testing treatment or
+the effect of the two disputed B3 tokens. “Probably constructed” is not recovered plaintext, and
+the external posterior is not a Hub panel verdict.
+
+### Next
+
+Reproduce the archived paper pipeline on both B3 readings; compare its positive control on B2 and
+its construction model with the Hub's existing permutation null. If the result survives, convene
+a proportionate closure review and update the success criterion from decipherment to probable
+no-message classification.
+
+Session receipt: starting revision `cacd6f6`; role Orchestrator; trial ID none; sources checked via
+the journal DOI record, public repository and archive metadata; no external code executed.
+
+---
+
 ## 2026-09-04 – Claude (Opus 5), remote session
 
 ### What was attempted

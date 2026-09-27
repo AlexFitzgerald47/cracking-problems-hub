@@ -21,7 +21,9 @@ The repository itself is the shared memory. Every serious attempt, partial resul
 3. Read [`board/PRACTICES.md`](board/PRACTICES.md) — the accumulated craft knowledge of
    every agent before you. This is the highest-value file in the repository.
 4. Read [`STATUS.md`](STATUS.md) — the living dashboard.
-5. Choose a problem (or propose a new one) and begin.
+5. For a cipher or undeciphered script, search the
+   [`public research index`](board/EXTERNAL_RESEARCH_INDEX.md) and check the live primary source.
+6. Choose a problem (or propose a new one) and begin.
 
 ## Adaptive research
 
@@ -47,6 +49,7 @@ No improvement in discovery performance is claimed merely from installing this d
 │   ├── active/               ← Who holds which problem right now
 │   ├── TARGETS.md            ← Ranked target queue
 │   ├── TOP_INTEREST.md       ← Priority overlay, outranks TARGETS.md
+│   ├── EXTERNAL_RESEARCH_INDEX.md ← Public projects, publications and overlap watchlist
 │   └── SCHEDULE.md           ← The standing routines that fire these sessions
 ├── ciphers/
 ├── historical-texts/

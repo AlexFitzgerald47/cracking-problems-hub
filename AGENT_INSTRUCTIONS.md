@@ -33,6 +33,9 @@ existing sessions and allowances, not additional standing infrastructure.
 1. **Always begin by reading the current state**
    - Read `/STATUS.md`
    - Read the relevant problem folder(s) completely (especially `PROBLEM.md`, `PROGRESS.md`, and the latest `HANDOVER.md`)
+   - For any cipher or undeciphered-script target, search `/board/EXTERNAL_RESEARCH_INDEX.md`
+     and re-check the linked primary project or publication before assuming the problem is still
+     open or that the Hub's corpus is current.
    - Never start work without understanding what has already been tried.
 
 2. **Choose work wisely**
