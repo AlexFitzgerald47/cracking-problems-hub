@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cracking Problems Hub — Live</title>
+<meta name="description" content="Live research frontier: every problem, every claim, every commit, one board." />
+<meta name="theme-color" content="#091016" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<a class="skip" href="#frontier">Skip to frontier</a>
+
+<div class="scanline"></div>
+
+<header class="site">
+  <div class="wrap topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <span class="brand-eyebrow">The Hub</span>
+        <span class="brand-name">Cracking Problems</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#frontier">Frontier</a>
+      <a href="#board">Board</a>
+      <a href="#activity">Activity</a>
+      <a href="#prs">Pull requests</a>
+      <a id="repo-link" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <div class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span> Live from <code id="hero-branch">main</code> · <span id="hero-generated"></span></div>
+      <h1>Every unknown, <em>ranked</em> by how close it is to being cracked.</h1>
+      <p class="lede">This is the operational front door for the Hub. It reads directly from the repository and GitHub on every deploy — the numbers below are not hand-maintained. Curated judgement stays versioned in <code>STATUS.md</code>; motion is measured from commits, files and claim state.</p>
+      <div class="hero-actions">
+        <button class="btn primary" data-scroll="#frontier">See the frontier</button>
+        <button class="btn ghost" data-scroll="#board">Full board</button>
+        <a class="btn ghost" id="raw-data" href="/data.json">Raw data ↗</a>
+      </div>
+    </div>
+    <aside class="hero-stack">
+      <div class="stack-card">
+        <div class="stack-label">Head commit</div>
+        <div class="stack-value mono" id="hero-sha">—</div>
+        <div class="stack-sub" id="hero-last-subject">—</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-label">Open pull requests</div>
+        <div class="stack-value" id="hero-open-prs">0</div>
+        <div class="stack-sub" id="hero-open-prs-sub">Reviewer queue</div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="wrap metrics" aria-label="Board totals">
+    <div class="metric" data-state="all">
+      <b id="m-total">0</b><span>Problems tracked</span>
+    </div>
+    <div class="metric" data-state="active">
+      <b id="m-active">0</b><span>Active last 30d</span>
+    </div>
+    <div class="metric" data-state="held">
+      <b id="m-held">0</b><span>Held claims (PARTIAL)</span>
+    </div>
+    <div class="metric" data-state="frozen">
+      <b id="m-frozen">0</b><span>Frozen predictions</span>
+    </div>
+    <div class="metric" data-state="validated">
+      <b id="m-validated">0</b><span>PASS / SOLVED</span>
+    </div>
+    <div class="metric" data-state="proposed">
+      <b id="m-proposed">0</b><span>Backlog</span>
+    </div>
+  </section>
+
+  <section id="frontier" class="wrap section">
+    <header class="section-head">
+      <div>
+        <h2>Cracking frontier</h2>
+        <p class="section-lede">Top ten by progress signal. The bar fills as evidence, corpus, code, freeze, results and validation land in the folder. It is a <em>visual index of motion</em>, not a truth verdict — that is what the reviewers and STATUS.md are for.</p>
+      </div>
+      <div class="legend">
+        <span class="k solved">SOLVED</span>
+        <span class="k validated">PASS</span>
+        <span class="k held">HELD · PARTIAL</span>
+        <span class="k frozen">FROZEN</span>
+        <span class="k active">ACTIVE</span>
+        <span class="k quiet">QUIET</span>
+      </div>
+    </header>
+    <div id="frontier-list" class="frontier"></div>
+  </section>
+
+  <section id="board" class="wrap section">
+    <header class="section-head">
+      <div>
+        <h2>The full board</h2>
+        <p class="section-lede">Every folder is a problem. Filter, search, click through.</p>
+      </div>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search 48 problems — name, id, verdict…" autocomplete="off" />
+        <div class="chips" id="domain-chips" role="tablist" aria-label="Filter by domain"></div>
+        <div class="chips state-chips" id="state-chips" role="tablist" aria-label="Filter by state">
+          <button class="chip on" data-state="all">All states</button>
+          <button class="chip" data-state="held">Held</button>
+          <button class="chip" data-state="frozen">Frozen</button>
+          <button class="chip" data-state="active">Active</button>
+          <button class="chip" data-state="validated">Validated</button>
+          <button class="chip" data-state="closed">Closed / withdrawn</button>
+          <button class="chip" data-state="proposed">Backlog</button>
+        </div>
+      </div>
+    </header>
+    <div id="grid" class="grid"></div>
+    <p id="grid-empty" class="empty" hidden>No problems match this filter.</p>
+  </section>
+
+  <section id="activity" class="wrap section">
+    <header class="section-head">
+      <div>
+        <h2>Activity stream</h2>
+        <p class="section-lede">Every routine firing, every merge. Colour-coded by role.</p>
+      </div>
+      <div class="legend">
+        <span class="k orchestrator">Orchestrator</span>
+        <span class="k cracker">Cracker</span>
+        <span class="k finder">Finder</span>
+        <span class="k merge">Merge</span>
+        <span class="k commit">Other</span>
+      </div>
+    </header>
+    <div id="timeline" class="timeline"></div>
+  </section>
+
+  <section id="prs" class="wrap section">
+    <header class="section-head">
+      <div>
+        <h2>Pull requests</h2>
+        <p class="section-lede">Live from GitHub. Open first, then recently merged.</p>
+      </div>
+    </header>
+    <div id="pr-list" class="pr-list"></div>
+  </section>
+
+  <section class="wrap section detail-holder">
+    <div id="detail" class="detail" hidden></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <span class="foot-brand">Cracking Problems Hub</span> ·
+      <span id="foot-generated">generated —</span> ·
+      <a id="foot-repo" href="#" target="_blank" rel="noopener">source on GitHub ↗</a>
+    </div>
+    <div class="foot-motto">Bold leaps, decisive checks, compact handovers.</div>
+  </div>
+</footer>
+
+<!--DATA-->
+<script src="/app.js" type="module"></script>
+</body>
+</html>
