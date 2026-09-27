@@ -5,6 +5,7 @@ not tied to one problem lives here.
 
 | Path | What it is |
 |------|-----------|
+| `PROJECT_DASHBOARD.html` | **Visual briefing.** Searchable, ranked status and next move for every project pack |
 | `PRACTICES.md` | **Read this first.** Distilled craft knowledge — what works, what wastes sessions |
 | `TOP_INTEREST.md` | **Priority overlay.** Highest-interest crackable mysteries; currently led by Irish unread artefacts |
 | `TARGETS.md` | Ranked problem-solving work queue. Candidates must still be re-checked and claimed before cracking |
