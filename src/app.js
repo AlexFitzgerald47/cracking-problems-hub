@@ -37,8 +37,9 @@ const rel = iso => {
 };
 const sha7 = s => (s || '').slice(0, 7);
 const REPO = DATA.repo.url;
-const blob = p => `${REPO}/blob/main/${p}`;
-const tree = p => `${REPO}/tree/main/${p}`;
+const blob = p => esc(`${REPO}/blob/main/${p}`);
+const tree = p => esc(`${REPO}/tree/main/${p}`);
+const commitUrl = sha => esc(`${REPO}/commit/${sha}`);
 
 // ---- Vocabulary -----------------------------------------------------------
 
@@ -202,7 +203,7 @@ function paintHero() {
   const day = DATA.history?.since ? Math.floor(ageDays(DATA.history.since)) + 1 : null;
   const built = new Date(DATA.generatedAt).toISOString();
   $('#kicker').innerHTML = [day ? `Day ${day}` : null, `${dm(built)} ${built.slice(11, 16)}Z`,
-    `<a href="${REPO}/commit/${DATA.repo.headSha}" target="_blank" rel="noopener">${esc(sha7(DATA.repo.headSha))}</a>`]
+    `<a href="${commitUrl(DATA.repo.headSha)}" target="_blank" rel="noopener">${esc(sha7(DATA.repo.headSha))}</a>`]
     .filter(Boolean).join('<span class="sep">·</span>');
   const lead = passed === 0
     ? `${Words(live)} problems.${day ? ` ${Words(day)} days.` : ''} Nothing cracked.`
@@ -695,7 +696,7 @@ function paintUnits() {
       </dl>
       ${tape}
       <div class="uc-deploy">${deploy}</div>
-      <div class="uc-last">${l ? `<span class="label">Last sortie · ${esc(rel(l.date))}</span><a href="${REPO}/commit/${l.sha}" target="_blank" rel="noopener">${esc(l.subject)}</a>${l.problems?.length ? `<div class="pchips">${chips(l.problems)}</div>` : ''}` : '<span class="label">No sortie in window</span>'}</div>
+      <div class="uc-last">${l ? `<span class="label">Last sortie · ${esc(rel(l.date))}</span><a href="${commitUrl(l.sha)}" target="_blank" rel="noopener">${esc(l.subject)}</a>${l.problems?.length ? `<div class="pchips">${chips(l.problems)}</div>` : ''}` : '<span class="label">No sortie in window</span>'}</div>
     </article>`;
   }).join('');
 }
@@ -769,12 +770,13 @@ function linkHover() {
 const SIGNALS = [['PROBLEM.md', 'hasProblem'], ['PROGRESS.md', 'hasProgress'], ['HANDOVER.md', 'hasHandover'], ['SOURCES.md', 'hasSources'],
   ['FREEZE.md', 'hasFreeze'], ['RESULTS.md', 'hasResults'], ['SOLUTION.md', 'hasSolution'], ['CLAIM.md', 'hasClaim'],
   ['analysis/', 'hasAnalysis'], ['code/', 'hasCode'], ['data/', 'hasData'], ['attempts/', 'hasAttempts']];
-let lastFocus = null, current = null;
+let lastFocus = null, current = null, closeTimer = null;
 
 function openFile(slug) {
   const p = BY[slug]; if (!p) return;
   if (!current) lastFocus = document.activeElement;
   current = slug;
+  clearTimeout(closeTimer); // a pending hide from a just-closed file must not hide this one
   const d = $('#dossier');
   const order = VISIBLE.length ? VISIBLE : [...LIVE].sort(byStage);
   const i = Math.max(0, order.findIndex(x => x.slug === slug));
@@ -842,7 +844,7 @@ function openFile(slug) {
 function closeFile() {
   const d = $('#dossier'); if (d.hidden) return;
   d.classList.remove('open'); $('#scrim').hidden = true; document.body.classList.remove('locked');
-  setTimeout(() => { d.hidden = true; }, 220);
+  closeTimer = setTimeout(() => { d.hidden = true; }, 220);
   history.replaceState(null, '', location.pathname);
   $$('.blip.sel').forEach(b => b.classList.remove('sel'));
   current = null;

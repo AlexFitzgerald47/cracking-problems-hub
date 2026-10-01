@@ -5,7 +5,7 @@
   "description": "Live dashboard for the Cracking Problems Hub — reads the repo and GitHub, renders the frontier",
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "build": "node scripts/build.mjs",
