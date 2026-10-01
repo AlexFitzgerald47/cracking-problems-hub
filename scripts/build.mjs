@@ -4,6 +4,7 @@
 
 import { execSync } from 'node:child_process';
 import { promises as fs } from 'node:fs';
+import zlib from 'node:zlib';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { derive } from './derive.mjs';
@@ -285,9 +286,14 @@ async function fetchGithubBranches() {
 
 async function copyStatic() {
   await fs.mkdir(DIST, { recursive: true });
-  for (const f of ['style.css', 'app.js', 'framework.html', 'framework.css', 'framework.js']) {
+  for (const f of ['style.css', 'app.js', 'ascent3d.js', 'framework.html', 'framework.css', 'framework.js']) {
     await fs.copyFile(path.join(SRC, f), path.join(DIST, f));
   }
+  // three.js (MIT), vendored so the CSP can stay same-origin; sirv serves the .gz when it can.
+  await fs.mkdir(path.join(DIST, 'vendor'), { recursive: true });
+  const three = await fs.readFile(path.join(SRC, 'vendor', 'three.module.min.js'));
+  await fs.writeFile(path.join(DIST, 'vendor', 'three.module.min.js'), three);
+  await fs.writeFile(path.join(DIST, 'vendor', 'three.module.min.js.gz'), zlib.gzipSync(three, { level: 9 }));
 }
 
 async function buildHtml(data) {
