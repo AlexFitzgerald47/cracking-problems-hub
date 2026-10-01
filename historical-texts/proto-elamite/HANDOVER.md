@@ -4,6 +4,125 @@
 
 ---
 
+## 2026-10-01 – breaker session: block-aware split, the correction base, 130 new tablets
+
+**Read `attempts/2026-10-01-block-aware-split/RESULTS.md` first.** It answers folder
+items 1, 3 and 4, and it **corrects one claim in the 2026-09-17 entry below** (the
+face-blocked q-values are not on the same correction base as the numbers they are printed
+beside). Nothing below is deleted or rewritten.
+
+### Recommended next experiments
+
+1. **Re-tier the constraint set on one declared correction base, and put the base in the
+   table.** This is the cheapest and highest-value move on the folder and it needs no new
+   data. Concretely: run `attempts/2026-10-01-block-aware-split/coinflip_and_base.py`,
+   which already prints every pair's face-blocked p, p-floor, q-over-8 and q-over-54 on
+   the published bucket-0 holdout, then rewrite the tier table in this handover so each
+   tier names its base. What would change the verdict: if the board decides a confirmatory
+   re-test of 8 pre-registered pairs should correct over 8, the three-tier reading of
+   2026-09-17 stands and only the labelling needs fixing; if it should correct over the
+   54 candidates the design itself screened, **the load-bearing set is two pairs
+   (M263–N01, M297–N39B), not three**, and M263–N30C, M297–N01, M297–N24, M106–N24 and
+   M243–N39B all drop to leads. Either answer is publishable; what is not defensible is
+   the current state, where three different bases are in use across three files and none
+   is named. Decide it once and propagate.
+
+2. **Pre-register the M288–N45 fair-coin prediction against the next CDLI growth.** The
+   pair's cleanest evidence is eight two-line faces (`total = 2, s = 1, t = 1`) that are
+   exact fair coins under the null, all eight heads, binomial p = 0.0039. That is a
+   statistic with no modelling in it and it makes a sharp prediction: **new fair-coin
+   faces should come up heads at well above 50%.** Freeze it now, then re-run
+   `cdli_replicate.py` against a later export — the route and the compatibility check are
+   both committed. Today's 130 new tablets produced **zero** new coin faces, so this is a
+   months-to-years instrument, not a next-session one; freeze it anyway, because it costs
+   one paragraph and it is the only test that can settle this pair without a method change.
+
+3. **Item 5, Born et al. 2022 header refinement — now the only untouched item on the
+   folder and the only route toward document structure rather than line-level
+   association.** Needs the replication package from
+   <https://aclanthology.org/2022.emnlp-main.620/>. Everything else on the 2026-09-17 list
+   is closed: item 1 is answered here, items 2 and 3 are done, item 4 is done to the limit
+   the available new data allows.
+
+4. **Audit the `N08` → `N08A` renaming.** CDLI has renamed pinned `N08` to `N08A`
+   upstream. No pair under test here touches N08, but any future result that mixes the
+   SFU pin with a live export will silently split or merge that sign. One grep over both
+   serialisations settles whether it is a pure rename or a genuine re-reading, and the
+   answer belongs in `analysis/README.md`'s corpus-pin section.
+
+5. **If any future pass reports an odds ratio for a face-blocked pair, report the forced
+   overlap beside it.** Not an experiment, a standing requirement this session's results
+   justify: M288–N45's published OR of 16.29 is inflated by 38 co-occurrences the test
+   never had the option to refuse. `block_split.py`'s `blocked_test` returns
+   `observed / forced / max / freedom_used` for exactly this purpose.
+
+### Frontier now
+
+| pair | status after this session |
+|---|---|
+| **M297–N39B** | load-bearing on **any** correction base. Survives face blocking (q = 0.039 at base 54), survives the triple complexity block below 1e-5, family merge audited 2026-09-17 and upheld, direction holds on 130 new tablets |
+| **M263–N01** | load-bearing on **any** base (q = 0.015 at base 54). Merge now audited across **four** graphical variants, all enriched. Direction holds on new tablets |
+| **M263–N30C** | load-bearing at base 8, **lead** at base 54 (q = 0.152, p-floor 0.019 — barely powered). But the N30C absence is **total in all four M263 variants separately**, which is the strongest variant-level evidence in the set. Direction holds on new tablets |
+| **M243–N39B** | boundary at base 54 (q = 0.055). Barely testable at this corpus size |
+| M297–N01, M297–N24, M106–N24 | leads. Clear base 8, not base 54 |
+| **M288–N45** | **real but under-powered for the folder's bar.** Not a face artefact (p = 0.0216 at floor 0.0022 in a properly powered split), not a complexity artefact (Mantel–Haenszel OR 5.87; 4/4 on equal-length coin faces), not a merge artefact (538 of 559 form-lines are the plain form). Eight fair coins, eight heads, p = 0.0039. Still q = 0.152 at base 54. **Neither confirmed nor refuted — and now for a stated reason: the bar is the binding constraint, not the evidence** |
+
+### Conditional assumptions
+
+- Everything remains **structural**. No sign has a semantic, phonetic or metrological
+  value and nothing in this session moves toward one.
+- Pooled 1,597-tablet figures include selection data and are power demonstrations, not
+  confirmations — the same caveat 2026-09-17 attached to its full-corpus figure.
+- Novelty against specialist sign-by-sign literature is still unestablished. No session on
+  this folder has yet done that search.
+- The 130 new tablets were read from their ATF only; no catalogue metadata was joined and
+  no claim about their provenience is made beyond their publication headers (115 of 130
+  are *PETF 1*).
+
+### Three things a future session must not redo
+
+1. **Do not re-run item 3 (the exact-form audit).** It is complete for both remaining
+   families. M263's merge is upheld across four variants; M288 has no testable variant
+   (538 of 559 lines are the plain form) so the question does not arise.
+2. **Do not treat the triple `(tablet, face, numeral count)` block as a verdict on a thin
+   pair.** It forced 50 of M288–N45's 58 co-occurrences. It is over-conditioning:
+   conditioning on a consequence of the association. Use the Mantel–Haenszel estimate,
+   which keeps the power.
+3. **Do not use `github.com/cdli-gh/data` as a current CDLI export.** It advertises a
+   daily dump; its newest real commit is 2022-12 and its README admits August 2022. Use
+   the live route in item 2 above.
+
+### Evidence dependency
+
+Items 1, 2, 4 and 5 need nothing beyond what is already committed plus the pinned corpus.
+Item 2 needs a future CDLI export, which the committed route fetches in one request
+(`robots.txt` asks for a 60-second crawl delay). Item 3 needs the Born et al. 2022
+replication package. No archival access, no images, no paywalled material.
+
+### Trap for the next session — two serialisations now exist
+
+The pinned SFU corpus and the live CDLI export agree closely but not exactly on the 1,467
+shared tablets: 4,869 vs 4,868 eligible lines, 11 tablets differing, per-sign counts
+differing by 1–2 (M288 557/558, M263 191/190, N39B 621/620, N01 3585/3587). Those are
+CDLI's own curation edits since August 2022, **not** a parser problem —
+`cdli_compat.py` establishes that and must be re-run, not assumed, after any future
+fetch. The CRLF digest trap recorded in the 2026-09-17 entry below is still live and was
+confirmed again this session.
+
+### Reopening condition
+
+**M288–N45** reopens when either (a) new fair-coin faces appear in a later CDLI export —
+freeze the prediction in item 2 first — or (b) the board settles the correction base in
+item 1 in favour of a confirmatory base, under which the pair should be re-evaluated at
+base 8 rather than 54. It does **not** reopen on another split of the present corpus:
+2,000 alternative splits were examined and the question is now power, not design.
+
+**M297–N39B and M263–N01** reopen if they fail to replicate in direction on a *materially
+larger* independent export. They passed that test on 130 new tablets this session, but 130
+tablets carry no power, so the test is weak and should be repeated when the corpus grows.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.
