@@ -51,7 +51,7 @@ if (!d) {
     <p class="lv-why">${esc(STAGE[f.stage] || f.stage)} · idle ${Math.floor(f.idle)} days · debt ${Math.round(f.debt)} — ${esc(P.reason)}.</p>
     ${f.next ? `<p class="lv-next"><span class="mono">Next move</span>${esc(f.next)}</p>` : '<p class="lv-next warn">No next move written yet.</p>'}` : '<p>Nothing is drawable right now.</p>'}
     ${d.overwatch?.length ? `<p class="lv-ow"><span class="mono">Owed to Overwatch</span>${d.overwatch.map(s => esc(name(s))).join(', ')} — panels no Breaker can convene.</p>` : ''}
-    <p class="lv-cta"><a href="/#draw">See all four streams →</a></p>`;
+    <p class="lv-cta"><a href="/#draw">See the board →</a></p>`;
 
   // Weights, drawn to scale, and the arithmetic on today's pick.
   const W = d.weights, maxW = Math.max(...Object.values(W));

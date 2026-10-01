@@ -98,7 +98,10 @@ const stageOf = p => STAGES[p.stage] ? p.stage : 'working';
 const nameOf = p => p.shortTitle || p.title;
 const count = k => LIVE.filter(p => stageOf(p) === k).length;
 const hash = s => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+// A file's sector on the scope is its stream in the draw, so the two views agree.
+const STREAM_OF = Object.fromEntries((DATA.draw?.streams || []).flatMap((s, i) => s.files.map(f => [f.slug, i])));
 const sectorOf = p => {
+  if (STREAM_OF[p.slug] != null && SECTORS[STREAM_OF[p.slug]]) return SECTORS[STREAM_OF[p.slug]].key;
   if (p.domain !== 'discovered') return p.domain;
   const s = p.statusRow?.suggestedDomain;
   return SECTORS.some(x => x.key === s) ? s : SECTORS[hash(p.id) % 4].key;
@@ -203,24 +206,16 @@ function paintHero() {
   const day = DATA.history?.since ? Math.floor(ageDays(DATA.history.since)) + 1 : null;
   const built = new Date(DATA.generatedAt).toISOString();
   $('#kicker').innerHTML = [day ? `Day ${day}` : null, `${dm(built)} ${built.slice(11, 16)}Z`,
+    DATA.totals.research7d != null ? `${DATA.totals.research7d} research commits this week` : null,
     `<a href="${commitUrl(DATA.repo.headSha)}" target="_blank" rel="noopener">${esc(sha7(DATA.repo.headSha))}</a>`]
     .filter(Boolean).join('<span class="sep">·</span>');
   const lead = passed === 0
-    ? `${Words(live)} problems.${day ? ` ${Words(day)} days.` : ''} Nothing cracked.`
+    ? `${Words(live)} problems.${day ? ` ${day} days.` : ''} Nothing cracked.`
     : `${Words(live)} problems. ${Words(passed)} cracked.`;
   $('#bluf').innerHTML = `<span class="l1">${esc(lead)}</span>` +
     (held ? `<span class="l2"><em>${Words(held)} ${held === 1 ? 'claim sits' : 'claims sit'} one signature out.</em></span>` : '');
   const su = DATA.statusUpdated;
   if (su) $('#bluf-sub').innerHTML = `The latest pass, ${esc(dm(su.date))}: ${esc(su.label)}${su.detail ? ` — ${md(su.detail)}` : ''}.${su.report ? ` <a href="${blob(su.report)}" target="_blank" rel="noopener">Read it</a>.` : ''}`;
-  const k = [
-    { n: live, l: 'live problems' },
-    { n: held, l: 'held at 3×PARTIAL', c: 'held' },
-    { n: count('panel'), l: 'awaiting a panel', c: 'panel' },
-    { n: passed, l: 'passed', c: passed ? 'pass' : 'zero' },
-    { n: DATA.totals.research7d ?? '—', l: 'research commits, 7 days' },
-    { n: LIVE.filter(p => !['method', 'withdrawn'].includes(stageOf(p)) && ageDays(workedAt(p)) > 7).length, l: 'gone cold, 7+ days unworked', c: 'cold' },
-  ];
-  $('#kpis').innerHTML = k.map(x => `<div class="kpi" ${x.c ? `data-c="${x.c}"` : ''}><span class="kpi-n mono">${esc(x.n)}</span><span class="kpi-l">${esc(x.l)}</span></div>`).join('');
   requestAnimationFrame(() => scramble($('#bluf'), { speed: 14, spread: 320 }));
 }
 
@@ -267,10 +262,6 @@ function buildScope(host, { mini = false } = {}) {
   for (const [k, s] of Object.entries(STAGES)) {
     if (!s.ring) continue;
     svg('circle', { r: s.r * R, class: `ring ring-${k}` }, face);
-    if (!mini) {
-      const n = k === 'working' ? count('working') + count('blocked') : count(k);
-      svg('text', { x: 8, y: -s.r * R - 6, class: 'ring-label' }, face).textContent = `${s.ring.toUpperCase()}  ${n}`;
-    }
   }
   for (let a = 0; a < 360; a += 90) { const [x1, y1] = polar(a, 0.1 * R), [x2, y2] = polar(a, R); svg('line', { x1, y1, x2, y2, class: 'axis' }, face); }
   if (!mini) for (let a = 0; a < 360; a += 2) {
@@ -283,7 +274,7 @@ function buildScope(host, { mini = false } = {}) {
     const a1 = i * 90 + 6, a2 = i * 90 + 84;
     svg('path', { id, d: lower ? arc(a2, a1, R + (mini ? 44 : 40), 0) : arc(a1, a2, R + (mini ? 22 : 26), 1), fill: 'none' }, defs);
     const t = svg('text', { class: 'sector-label' }, face);
-    const n = LIVE.filter(p => sectorOf(p) === s.key).length;
+    const n = DATA.draw?.streams[i]?.files.length ?? LIVE.filter(p => sectorOf(p) === s.key).length;
     svg('textPath', { href: `#${id}`, startOffset: '50%', 'text-anchor': 'middle' }, t).textContent = mini ? s.label.toUpperCase() : `${s.label.toUpperCase()}  ·  ${n}`;
   });
   const passed = count('pass') + count('solved');
@@ -337,8 +328,6 @@ function buildScope(host, { mini = false } = {}) {
     for (const [sx, sy] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
       svg('path', { d: `M${sx * o} ${sy * (o - l)}V${sy * o}H${sx * (o - l)}` }, mark);
     }
-    const right = x < 150;
-    svg('text', { x: right ? o + 10 : -o - 10, y: 4, 'text-anchor': right ? 'start' : 'end' }, mark).textContent = `LAST SORTIE · ${rel(last.date).toUpperCase()}`;
   }
 
   host.appendChild(root);
@@ -504,7 +493,7 @@ function spawnLive() {
 }
 
 const CAPTIONS = {
-  live: () => `Distance from centre is distance from cracked; the centre is <b>PASS</b>. The sweep is Overwatch: it brightens each file by how recently a session touched it. Markers circling a file are units that went in during the last 72 hours.`,
+  live: () => `Rings, from the centre out: <b>PASS</b>, held, panel pending, in work, unworked. The sweep is Overwatch, brightening each file by how recently a session touched it. Markers circling a file are units that went in during the last 72 hours; the brackets mark where the Breakers last went in${DATA.lastByRole?.breaker ? `, ${esc(rel(DATA.lastByRole.breaker.date))}` : ''}.`,
   replay: () => `The board's history, commit by commit. Files appear on the scope when their folder was opened; stages shown are today's, not those at the time.`,
   neglect: () => `Brightness is time since a session last touched the file; the six coldest files that should be moving are labelled. Idle time counts from the last Breaker or Validator session, not from edits to STATUS.md.`,
 };
@@ -604,48 +593,128 @@ function paintPriority() {
       </article>`).join('')}</div>` : '';
 }
 
-// ---- The draw ---------------------------------------------------------------
-// Rendered from DATA.draw, which scripts/derive.mjs computes — the same numbers a
+// ---- The board --------------------------------------------------------------
+// Rendered from DATA.draw, which scripts/derive.mjs computes: the same numbers a
 // Breaker session gets from `npm run draw`. The site never re-ranks on its own.
-const nextOf = f => f?.next ? { text: f.next } : null;
+// Rows are closeness to cracked, top is nearest; columns are the four streams in
+// rotation order; within a cell, files stand in draw order, highest debt first.
 
-function paintDraw() {
+const boardName = p => nameOf(p).split(/\s+[—–]\s+|:\s|\s\(/)[0];
+// Idle days were counted at build time; keep counting since.
+const DRIFT = Math.max(0, (NOW - Date.parse(DATA.generatedAt)) / DAY);
+const idleOf = f => Math.floor(f.idle + DRIFT);
+const ROWS = [
+  { k: 'held', note: 'Survived a panel at 3×PARTIAL. One check and a signature from PASS.' },
+  { k: 'panel', note: 'A bounded claim waiting for its panel. Owed to Overwatch, never drawn.' },
+  { k: 'working', note: 'Opened by a Breaker and still moving.' },
+  { k: 'unworked', note: 'No Breaker has gone in yet.' },
+  { k: 'blocked', note: 'Evidence out of reach. Ranked, but never leads.' },
+];
+
+function paintFiring() {
+  const d = DATA.draw, P = d?.pick, L = d?.rotation.last;
+  if (!P) { $('#firing').innerHTML = '<p class="label">Next Breaker firing</p><p class="f-why">Nothing is drawable right now.</p>'; return; }
+  const f = d.streams.flatMap(s => s.files).find(x => x.slug === P.slug), p = BY[P.slug];
+  const S = d.streams.find(s => s.id === P.stream);
+  const order = d.streams.map(s => s.id);
+  const after = [1, 2, 3].map(i => order[(order.indexOf(P.stream) + i) % order.length]);
+  $('#firing').className = `firing s-${f.stage}`;
+  $('#firing').innerHTML = `
+    <p class="f-head"><span class="label">Next Breaker firing</span><span class="mono f-cd" data-countdown="breaker">--:--:--</span></p>
+    <p class="f-stream mono">Stream ${esc(P.stream)} · ${esc(S.label)}</p>
+    <h2 class="f-name"><button type="button" data-slug="${esc(P.slug)}">${esc(nameOf(p))}</button></h2>
+    <p class="f-why"><span class="badge s-${f.stage}">${esc(STAGES[f.stage].label)}</span> idle ${idleOf(f)} days · debt ${Math.round(f.debt)}${f.pickup ? ' · <b class="pickup">pick-up rule</b>' : ''}. ${esc(P.reason[0].toUpperCase() + P.reason.slice(1))}.</p>
+    ${f.next ? `<p class="f-next"><span class="label">Its next move</span>${md(f.next)}</p>` : '<p class="f-next warn-text">No next move written. The session writes one before it may release.</p>'}
+    <ol class="f-rot mono" aria-label="Rotation">
+      ${L ? `<li class="was"><b>${esc(L.stream)}</b>last · ${esc(rel(L.date))}</li>` : ''}
+      <li class="now"><b>${esc(P.stream)}</b>next</li>
+      ${after.filter(x => x !== L?.stream).map(x => `<li><b>${esc(x)}</b></li>`).join('')}
+    </ol>
+    ${d.overwatch?.length ? `<p class="f-ow"><span class="label">Owed to Overwatch</span>${d.overwatch.map(s => `<button type="button" class="linkish" data-slug="${esc(s)}">${esc(boardName(BY[s]))}</button>`).join(', ')}: panels, which no Breaker can convene.</p>` : ''}
+    <a class="f-more" href="/framework">How the draw works →</a>`;
+}
+
+function paintBoard() {
   const d = DATA.draw;
-  if (!d) { $('#streams').innerHTML = '<p class="empty">No draw in this build.</p>'; return; }
+  if (!d) { $('#board').innerHTML = '<p class="empty">No draw in this build.</p>'; return; }
+  const P = d.pick, L = d.rotation.last;
   const all = d.streams.flatMap(s => s.files);
   const max = Math.max(1, ...all.map(f => f.debt));
-  const L = d.rotation.last, P = d.pick;
-  const breakerRoutine = (DATA.routines || []).find(r => r.key === 'breaker');
-  $('#draw-lede').innerHTML = `Breaker work is drawn, not chosen. ${L ? `The last Breaker session worked <b>stream ${esc(L.stream)}</b> (${esc(nameOf(BY[L.slug]) || L.slug)}, ${esc(rel(L.date))}). ` : ''}${P ? `The next firing${breakerRoutine ? `, in <span class="mono" data-countdown="breaker">--:--:--</span>,` : ''} takes <b>stream ${esc(P.stream)}</b> and draws <b>${esc(nameOf(BY[P.slug]))}</b>: ${esc(P.reason)}.` : ''} <a href="/framework">How the draw works</a>.`;
-  const row = (f, i) => `
-        <li data-slug="${esc(f.slug)}" tabindex="0" role="button" class="${f.claimed ? 'is-claimed' : ''}">
-          <span class="st-name">${esc(nameOf(BY[f.slug]).replace(/\s*\(.*?\)\s*$/, ''))}${f.slug.startsWith('discovered/') ? ' <i class="disc">new</i>' : ''}</span>
-          <span class="badge s-${f.stage}"></span>
-          <span class="debt sm"><i style="width:${(f.debt / max * 100).toFixed(1)}%"></i></span>
-          <span class="mono dim">${Math.floor(f.idle)}d</span>
-        </li>`;
-  $('#streams').innerHTML = d.streams.map(s => {
-    const lead = s.files.find(f => f.slug === s.lead);
-    const rest = s.files.filter(f => f !== lead).slice(0, 5);
-    const isPick = P && P.stream === s.id;
-    const cold = s.files.filter(f => f.movable && f.idle > 14).length;
-    const noNext = s.files.filter(f => f.movable && !f.next).length;
+  const n = k => all.filter(f => f.stage === k).length;
+  const passed = count('pass') + count('solved');
+  const chip = f => {
+    const p = BY[f.slug], idle = idleOf(f);
+    const pick = P?.slug === f.slug, last = L?.slug === f.slug;
+    const cold = f.movable && idle > 14;
+    const tags = [
+      pick && '<i class="t-next">next</i>',
+      f.pickup && '<i class="t-pickup">pick-up</i>',
+      last && '<i class="t-last">last</i>',
+      f.claimed && '<i class="t-claimed">claimed</i>',
+      f.slug.startsWith('discovered/') && '<i class="t-new">new</i>',
+      f.movable && !f.next && '<i class="t-warn" title="No next move written" aria-label="No next move written">!</i>',
+    ].filter(Boolean).join('');
+    return `<button type="button" class="fc s-${f.stage}${pick ? ' is-pick' : ''}${cold ? ' is-cold' : ''}${idle < 3 ? ' is-fresh' : ''}" data-slug="${esc(f.slug)}" style="--d:${(f.debt / max).toFixed(3)}">
+      <span class="fc-n">${esc(boardName(p))}</span>${tags ? `<span class="fc-t">${tags}</span>` : ''}<span class="fc-i mono">${idle}d</span></button>`;
+  };
+  const rail = `
+    <div class="b-rail" aria-hidden="true">
+      <div class="b-rh"><span class="mono">Closer to cracked</span><svg viewBox="0 0 10 40"><path d="M5 39V2M1 7l4-5 4 5"/></svg></div>
+      <div class="b-rl s-pass"><span class="b-rn">PASS<b class="mono">${passed}</b></span></div>
+      ${ROWS.map(r => `<div class="b-rl s-${r.k}"><span class="b-rn">${esc(STAGES[r.k].label)}<b class="mono">${n(r.k)}</b></span><span class="b-rnote">${esc(r.note)}</span></div>`).join('')}
+    </div>`;
+  const pass = `<div class="b-pass s-pass">${passed ? `${Words(passed)} ${passed === 1 ? 'file has' : 'files have'} crossed.` : '<b>Nothing has crossed.</b> A file reaches PASS only when two validators and a refuter all pass it and a human signs.'}</div>`;
+  const cols = d.streams.map((s, si) => {
+    const isNext = P?.stream === s.id, isLast = L?.stream === s.id;
+    const cold = s.files.filter(f => f.movable && idleOf(f) > 14).length;
     return `
-    <article class="stream${isPick ? ' is-pick' : ''}">
-      <header class="st-head"><span class="mono">Stream ${s.id}${isPick ? ' · <b>next firing</b>' : ''}</span><h3>${esc(s.label)}</h3>
-        <span class="mono dim">${s.files.length} files${cold ? ` · <b class="cold">${cold} cold</b>` : ''}${noNext ? ` · <b class="warn">${noNext} without a next move</b>` : ''}</span></header>
-      ${lead ? `
-      <div class="st-lead" data-slug="${esc(lead.slug)}" tabindex="0" role="button">
-        <p class="label">${isPick ? 'The pick' : 'Next in stream'}${lead.pickup ? ' · <b class="pickup">pick-up rule</b>' : ''}</p>
-        <h4>${esc(nameOf(BY[lead.slug]))}</h4>
-        <p class="st-meta">${badge(BY[lead.slug])}<span class="mono">${esc(CASE[lead.slug] || '')} · idle ${Math.floor(lead.idle)}d · debt ${Math.round(lead.debt)}</span></p>
-        <div class="debt"><i style="width:${(lead.debt / max * 100).toFixed(1)}%"></i></div>
-        ${lead.next ? `<p class="st-next"><span class="label">Next move</span>${esc(lead.next)}</p>` : '<p class="st-next warn-text">No next move written. Whoever takes this writes one before releasing.</p>'}
-      </div>` : '<p class="empty">Nothing a Breaker can move.</p>'}
-      <ol class="st-rest" start="2">${rest.map(row).join('')}</ol>
-    </article>`;
+    <section class="b-col${isNext ? ' is-next' : ''}${isLast ? ' is-last' : ''}" data-stream="${esc(s.id)}" style="grid-column:${si + 2}" aria-label="Stream ${esc(s.id)}, ${esc(s.label)}">
+      <header class="b-head">
+        <span class="b-id">${esc(s.id)}</span>
+        <div class="b-ht"><h3>${esc(s.label)}</h3>
+        <p class="mono">${s.files.length} files${cold ? ` · <b class="cold">${cold} cold</b>` : ''}</p></div>
+        ${isNext ? '<span class="b-flag next">Next firing</span>' : isLast ? `<span class="b-flag last">Last · ${esc(rel(L.date))}</span>` : ''}
+      </header>
+      ${ROWS.map((r, i) => {
+        const fs = s.files.filter(f => f.stage === r.k);
+        return `<div class="b-cell s-${r.k}${fs.length ? '' : ' is-empty'}" style="grid-row:${i + 3}" data-label="${esc(STAGES[r.k].label)}">${fs.map(chip).join('')}</div>`;
+      }).join('')}
+    </section>`;
   }).join('');
-  $('#draw-note').innerHTML = `${d.overwatch?.length ? `<b>Owed to Overwatch</b> (panel pending, not drawn): ${d.overwatch.map(s => `<button type="button" class="linkish" data-slug="${esc(s)}">${esc(nameOf(BY[s]))}</button>`).join(', ')}. ` : ''}Debt = days since a Breaker or Validator session × stage weight (held ${d.weights.held}, in work ${d.weights.working}, unworked ${d.weights.unworked}, blocked ${d.weights.blocked}). Held claims idle past ${d.pickupDays} days jump the queue; blocked files never lead. Run <code>npm run draw</code> for the same ranking in a terminal.`;
+  $('#board').innerHTML = rail + pass + cols;
+  $('#b-tabs').innerHTML = `<p class="b-mpass s-pass"><b class="mono">PASS ${passed}</b> ${passed ? 'crossed' : 'nothing has crossed'}</p><div class="b-tab-row">${d.streams.map(s => `<button type="button" role="tab" data-tab="${esc(s.id)}" aria-selected="false"${P?.stream === s.id ? ' class="is-next"' : ''}><b>${esc(s.id)}</b>${esc(s.label.replace('Undeciphered texts', 'Texts'))}</button>`).join('')}</div>`;
+  const other = LIVE.length - all.length;
+  $('#board-foot').innerHTML = `Within each cell, files stand in draw order: highest coverage debt first, and the bar under each is its debt (days since a Breaker or Validator session × a stage weight). The number is idle days; past ${d.pickupDays}, a file is cold. <span class="t-warn-inline">!</span> marks a file with no next move written.${other ? ` ${Words(other)} ${other === 1 ? 'file is' : 'files are'} not drawn: method notes and withdrawn claims, kept in the case files.` : ''} <a href="/framework">The rules →</a>`;
+
+  // Narrow screens: the columns become a swipeable carousel with stream tabs.
+  const board = $('#board'), tabs = $$('#b-tabs [data-tab]');
+  const sync = () => {
+    const w = $('.b-col', board)?.offsetWidth || 1;
+    const per = Math.max(1, Math.round(board.clientWidth / w));
+    const k = Math.min(Math.round(board.scrollLeft / w), tabs.length - per);
+    tabs.forEach((t, j) => t.setAttribute('aria-selected', j >= k && j < k + per));
+    fit(k, per);
+  };
+  // The carousel is as tall as the stream in view, not the longest one.
+  let shown = '';
+  const fit = (i, per) => {
+    const cols = $$('.b-col', board), key = `${i}/${per}`;
+    if (key === shown) return; shown = key;
+    const h = Math.max(...cols.slice(i, i + per).map(c => c.scrollHeight));
+    board.style.height = getComputedStyle(board).display === 'flex' && h > 0 ? `${h}px` : '';
+  };
+  board.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+  addEventListener('resize', () => { shown = ''; sync(); });
+  $('#b-tabs').addEventListener('click', e => {
+    const t = e.target.closest('[data-tab]'); if (!t) return;
+    const col = $(`.b-col[data-stream="${t.dataset.tab}"]`, board);
+    board.scrollTo({ left: col.offsetLeft - board.offsetLeft, behavior: REDUCED ? 'auto' : 'smooth' });
+  });
+  const start = $$('.b-col', board).findIndex(c => c.classList.contains('is-next'));
+  requestAnimationFrame(() => {
+    if (start > 0 && getComputedStyle(board).display === 'flex') board.scrollLeft = start * $('.b-col', board).offsetWidth;
+    sync();
+  });
 }
 
 function paintKey() {
@@ -906,7 +975,13 @@ function wire() {
     const p = BY[b.dataset.slug];
     tip(`<span class="mono tip-no">${esc(CASE[p.slug])}</span> <b>${esc(nameOf(p))}</b><br><span class="tip-st s-${stageOf(p)}">${esc(STAGES[stageOf(p)].label)}</span> · ${esc(rel(p.lastTouch))}`, b.querySelector('.core').getBoundingClientRect());
   });
-  document.addEventListener('pointerout', e => { if (e.target.closest('.blip')) untip(); });
+  document.addEventListener('pointerout', e => { if (e.target.closest('.blip, .fc')) untip(); });
+  const files = Object.fromEntries((DATA.draw?.streams || []).flatMap(s => s.files).map(f => [f.slug, f]));
+  document.addEventListener('pointerover', e => {
+    const c = e.target.closest('.fc'); if (!c || e.pointerType === 'touch') return;
+    const f = files[c.dataset.slug], p = BY[f.slug];
+    tip(`<span class="mono tip-no">${esc(CASE[p.slug])}</span> <b>${esc(nameOf(p))}</b><br><span class="tip-st s-${f.stage}">${esc(STAGES[f.stage].label)}</span> · idle ${idleOf(f)}d · debt ${Math.round(f.debt)}${f.next ? `<span class="tip-next">${esc(f.next.length > 170 ? f.next.slice(0, 168) + '…' : f.next)}</span>` : ''}`, c.getBoundingClientRect());
+  });
   $$('[data-scramble]').forEach(h => new IntersectionObserver(([x], o) => { if (x.isIntersecting) { scramble(h); o.disconnect(); } }, { threshold: 0.6 }).observe(h));
   const fromHash = () => { const m = location.hash.match(/^#p\/(.+)$/); if (m && m[1] !== current) openFile(decodeURIComponent(m[1])); };
   addEventListener('hashchange', fromHash);
@@ -928,10 +1003,11 @@ function paintFoot() {
 
 paintTicker();
 paintHero();
+paintFiring();
+paintBoard();
 HERO = buildScope($('#scope'));
 wireScope();
 paintPriority();
-paintDraw();
 paintKey();
 paintUnits();
 paintControls();
