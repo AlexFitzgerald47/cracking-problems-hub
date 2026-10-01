@@ -694,7 +694,7 @@ mark { background: linear-gradient(transparent 12%, rgba(240, 214, 90, .62) 12%,
 .wall-threads .linkish { color: var(--paper-2); }
 
 /* ---- IV. The job --------------------------------------------------------- */
-.job-scene { overflow-x: auto; overscroll-behavior-x: contain; border: 1px solid #14202a; border-radius: 4px; background: #080d12; }
+.job-scene { position: relative; overflow-x: auto; overscroll-behavior-x: contain; border: 1px solid #14202a; border-radius: 4px; background: #080d12; }
 .job-scene svg { display: block; width: 100%; min-width: 760px; height: auto; font-family: var(--sans); }
 .jb-panel { fill: #0c141a; stroke: #131e26; }
 .jb-skirt { fill: #111a21; }
@@ -844,4 +844,27 @@ mark { background: linear-gradient(transparent 12%, rgba(240, 214, 90, .62) 12%,
   .a3-tag.held { font-size: 11.5px; padding: 2px 6px; }
   .a3-tag.stream b { font-size: 24px; }
   .a3-tag.stream { font-size: 13px; }
+}
+
+/* ---- IV. The noir room ---------------------------------------------------- */
+.job-scene.is-3d { position: relative; height: clamp(460px, 50vw, 720px); overflow: hidden; background: #07090c; }
+.job-scene.is-3d > svg { display: none; }
+.job-scene canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.j3-hint { position: absolute; left: 12px; bottom: 10px; z-index: 2; margin: 0; font-size: 11px; color: var(--dim); pointer-events: none; }
+.j3-hint[hidden] { display: none; }
+.j3-labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.j3-tag { position: absolute; left: 0; top: 0; white-space: nowrap; will-change: transform; transition: opacity .3s; }
+.j3-tag.bubble { display: grid; gap: 1px; padding: 8px 12px 9px; background: #ece4cf; color: #2a251c; border-radius: 10px; font: 400 12px var(--typewriter); box-shadow: 0 8px 20px -8px #000; margin-top: -12px; }
+.j3-tag.bubble::after { content: ""; position: absolute; left: 50%; bottom: -9px; margin-left: -8px; border: 9px solid transparent; border-bottom: 0; border-top-color: #ece4cf; }
+.j3-tag.bubble span { font-weight: 700; font-size: 13px; }
+.j3-tag.bubble em { font-style: normal; color: #5a5140; }
+.j3-tag.bubble i { font: 700 12px var(--mono); font-style: normal; color: #0c6962; }
+.j3-tag.crew { padding: 3px 9px; font: 600 10px var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ink); background: var(--c); border-radius: 2px; }
+.j3-tag.crew.breaker { --c: var(--cyan); } .j3-tag.crew.validator { --c: var(--yellow); } .j3-tag.crew.orchestrator { --c: var(--purple); } .j3-tag.crew.finder { --c: var(--blue); } .j3-tag.crew.irregular { --c: var(--sand); }
+.j3-tag.crew small { display: block; margin-top: 2px; font-size: 8.5px; letter-spacing: .14em; opacity: .75; }
+.j3-tag.note { margin-top: 26px; font: 600 10px var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--sand); }
+@media (max-width: 720px) {
+  .job-scene.is-3d { height: 440px; }
+  .j3-tag.bubble { font-size: 11px; padding: 6px 10px 7px; }
+  .j3-tag.bubble span { font-size: 12px; }
 }

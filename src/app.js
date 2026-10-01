@@ -843,6 +843,45 @@ function bubble(p, x, y, w, h, tx, ty, lines) {
   return g;
 }
 
+// A crew's record, from the commit log.
+function crewRecord(k) {
+  const acts = DATA.activity.filter(a => (a.unit === 'irregular' ? 'irregular' : a.role) === k);
+  const wk = acts.filter(a => ageDays(a.date) <= 7).length, last = acts[0];
+  return `<b>${esc(UNIT[k].name)}</b><br>${acts.length} commits in the log · ${wk} this week${last ? `<span class="tip-next">Last job, ${esc(rel(last.date))}: ${esc(last.subject)}</span>` : ''}`;
+}
+const showCrew = k => $(`.unit-card[data-role="${k}"]`)?.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'center' });
+
+// The noir room: the same crews in three dimensions, loaded only when the section is near.
+function wireJob3d() {
+  const host = $('#job-scene');
+  let gl = false;
+  try { const c = document.createElement('canvas'); gl = !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { gl = false; }
+  if (!gl) return;
+  const hex = v => parseInt(getComputedStyle(document.documentElement).getPropertyValue(v).trim().replace('#', ''), 16);
+  new IntersectionObserver(async ([e], o) => {
+    if (!e.isIntersecting) return;
+    o.disconnect();
+    try {
+      const m = await import('./job3d.js');
+      const P = DATA.draw?.pick && BY[DATA.draw.pick.slug];
+      host.classList.add('is-3d');
+      m.mount(host, {
+        pick: DATA.draw?.pick, pickName: P ? esc(clip(boardName(P), 30)) : '',
+        overwatchOwed: DATA.draw?.overwatch?.length || 0,
+        newPacks: Object.values(DRAWN).filter(f => f.slug.startsWith('discovered/')).length,
+        best: Math.max(0, ...LIVE.map(p => gatesOf(stageOf(p)))),
+        streamIds: STREAMS.map(s => s.id),
+        units: UNITS.map(u => ({ key: u.key, name: esc(u.name), color: hex({ breaker: '--cyan', validator: '--yellow', orchestrator: '--purple', finder: '--blue', irregular: '--sand' }[u.key]) })),
+        onCrew: showCrew, onCrewTip: (k, rect) => tip(crewRecord(k), rect), onUntip: untip, reduced: REDUCED,
+      });
+      tick();
+    } catch (err) {
+      console.error('The noir room is unavailable, keeping the illustration', err);
+      host.classList.remove('is-3d');
+    }
+  }, { rootMargin: '600px 0px' }).observe(host);
+}
+
 function paintJob() {
   const host = $('#job-scene');
   const W = 1400, H = 860, FLOOR = 800, SX = 850, SY = 410, SR = 330;
@@ -931,15 +970,9 @@ function paintJob() {
   host.appendChild(root);
   // The dial turns to the stream the next firing takes, once, when the scene comes into view.
   new IntersectionObserver(([e], o) => { if (e.isIntersecting) { root.classList.add('turned'); o.disconnect(); } }, { threshold: .3 }).observe(root);
-  // A crew's record: tap or hover a raccoon.
-  const record = k => {
-    const acts = DATA.activity.filter(a => (a.unit === 'irregular' ? 'irregular' : a.role) === k);
-    const wk = acts.filter(a => ageDays(a.date) <= 7).length, last = acts[0];
-    return `<b>${esc(UNIT[k].name)}</b><br>${acts.length} commits in the log · ${wk} this week${last ? `<span class="tip-next">Last job, ${esc(rel(last.date))}: ${esc(last.subject)}</span>` : ''}`;
-  };
-  root.addEventListener('pointermove', e => { const c = e.target.closest('.jb-crew'); if (!c) return untip(); tip(record(c.dataset.unit), { left: e.clientX - 1, width: 2, top: e.clientY - 1, bottom: e.clientY + 1 }); });
+  root.addEventListener('pointermove', e => { const c = e.target.closest('.jb-crew'); if (!c) return untip(); tip(crewRecord(c.dataset.unit), { left: e.clientX - 1, width: 2, top: e.clientY - 1, bottom: e.clientY + 1 }); });
   root.addEventListener('pointerleave', untip);
-  root.addEventListener('click', e => { const c = e.target.closest('.jb-crew'); if (c) $(`.unit-card[data-role="${c.dataset.unit}"]`)?.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'center' }); });
+  root.addEventListener('click', e => { const c = e.target.closest('.jb-crew'); if (c) showCrew(c.dataset.unit); });
   root.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.closest?.('.jb-crew')) { e.preventDefault(); e.target.closest('.jb-crew').dispatchEvent(new MouseEvent('click', { bubbles: true })); } });
   // On a phone, start the scene on the Breaker at the dial.
   const wrap = host;
@@ -1256,6 +1289,7 @@ paintAscent();
 wireAscent3d();
 paintWall();
 paintJob();
+wireJob3d();
 wireFlapBoard();
 paintUnits();
 paintControls();
