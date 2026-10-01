@@ -286,7 +286,7 @@ async function fetchGithubBranches() {
 
 async function copyStatic() {
   await fs.mkdir(DIST, { recursive: true });
-  for (const f of ['style.css', 'app.js', 'ascent3d.js', 'framework.html', 'framework.css', 'framework.js']) {
+  for (const f of ['style.css', 'app.js', 'ascent3d.js', 'job3d.js', 'framework.html', 'framework.css', 'framework.js']) {
     await fs.copyFile(path.join(SRC, f), path.join(DIST, f));
   }
   // three.js (MIT), vendored so the CSP can stay same-origin; sirv serves the .gz when it can.
