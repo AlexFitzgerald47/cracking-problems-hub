@@ -1,6 +1,7 @@
 # Simple two-stage build to avoid Nixpacks' node_modules/.cache mount clash
 # (npm ci fails with EBUSY on rmdir /app/node_modules/.cache).
-FROM node:20-alpine AS build
+# Node 20 reached end of life in April 2026 and no longer gets security fixes.
+FROM node:22-alpine AS build
 WORKDIR /app
 
 # git is needed at build time so scripts/build.mjs can read commit history
@@ -27,7 +28,7 @@ RUN if [ ! -e .git ]; then \
 
 RUN npm run build
 
-FROM node:20-alpine AS run
+FROM node:22-alpine AS run
 WORKDIR /app
 ENV NODE_ENV=production
 
@@ -36,6 +37,9 @@ RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
 
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/server.mjs ./server.mjs
+
+# Serve as the unprivileged user that ships with the image, not root.
+USER node
 
 EXPOSE 8080
 CMD ["node", "server.mjs"]
