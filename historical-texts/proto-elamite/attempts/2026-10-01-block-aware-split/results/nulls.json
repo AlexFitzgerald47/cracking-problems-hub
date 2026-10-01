@@ -1,0 +1,115 @@
+{
+  "observed": {
+    "p": 0.02156249999999997,
+    "p_floor": 0.002249999999999997,
+    "observed_overlap": 21,
+    "forced_overlap": 12,
+    "max_possible_overlap": 22,
+    "freedom": 10,
+    "freedom_used": 9,
+    "informative_blocks": 10,
+    "blocks": 299,
+    "has_power_at_05": true
+  },
+  "split": {
+    "informative_tablets_total": 15,
+    "informative_blocks_total": 16,
+    "stratum_i_in_validation": [
+      "P008047",
+      "P008057",
+      "P008122",
+      "P008152",
+      "P008711",
+      "P008844",
+      "P008984",
+      "P009018",
+      "P009198",
+      "P009251"
+    ],
+    "stratum_i_in_train": [
+      "P008020",
+      "P008096",
+      "P008908",
+      "P009335",
+      "P272825"
+    ],
+    "informative_blocks_in_validation": 10,
+    "informative_blocks_in_train": 6,
+    "min_blocks_target": 10,
+    "validation_tablet_count": 235,
+    "train_tablet_count": 889
+  },
+  "n1_split_invariance": {
+    "trials": 60,
+    "identical": 60
+  },
+  "n2_uniformity": {
+    "replicates": 500,
+    "fraction_le_05": 0.024,
+    "fraction_le_observed": 0.024,
+    "quartiles": [
+      0.2615624999999996,
+      0.5034999999999992,
+      0.9024999999999985
+    ]
+  },
+  "n3_alternative_splits": {
+    "count": 2000,
+    "min": 9.300595238095285e-06,
+    "q1": 0.00048363095238095446,
+    "median": 0.002122073412698447,
+    "q3": 0.007533035714285814,
+    "max": 0.05717375000000057,
+    "fraction_le_05": 0.963,
+    "chosen_percentile": 88.0,
+    "mean_informative_blocks": 10.078
+  },
+  "n4_complexity_block_full_corpus": {
+    "p": 0.057477678571428895,
+    "p_floor": 0.0005580357142857171,
+    "observed_overlap": 56,
+    "forced_overlap": 50,
+    "max_possible_overlap": 58,
+    "freedom": 8,
+    "freedom_used": 6,
+    "informative_blocks": 8,
+    "blocks": 1881,
+    "has_power_at_05": true
+  },
+  "n4_complexity_block_validation_only": {
+    "p": 0.1875000000000005,
+    "p_floor": 0.03125000000000008,
+    "observed_overlap": 21,
+    "forced_overlap": 17,
+    "max_possible_overlap": 22,
+    "freedom": 5,
+    "freedom_used": 4,
+    "informative_blocks": 5,
+    "blocks": 400,
+    "has_power_at_05": true
+  },
+  "n4_complexity_block_M297-N39B": {
+    "p": 1.0749035642287154e-11,
+    "p_floor": 9.01839656580415e-24,
+    "observed_overlap": 135,
+    "forced_overlap": 95,
+    "max_possible_overlap": 143,
+    "freedom": 48,
+    "freedom_used": 40,
+    "informative_blocks": 40,
+    "blocks": 1881,
+    "has_power_at_05": true
+  },
+  "n4_complexity_block_M263-N01": {
+    "p": 2.0381529260839274e-22,
+    "p_floor": 3.3418013009697974e-28,
+    "observed_overlap": 176,
+    "forced_overlap": 106,
+    "max_possible_overlap": 179,
+    "freedom": 73,
+    "freedom_used": 70,
+    "informative_blocks": 47,
+    "blocks": 1881,
+    "has_power_at_05": true
+  }
+}

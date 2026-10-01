@@ -1,0 +1,180 @@
+{
+  "numerals_per_line": {
+    "m288_mean": 1.8384201077199283,
+    "m288_n": 557,
+    "other_mean": 1.2915120593692022,
+    "other_n": 4312,
+    "m288_dist": {
+      "1": 276,
+      "2": 161,
+      "3": 82,
+      "4": 25,
+      "5": 8,
+      "6": 2,
+      "7": 1,
+      "10": 1,
+      "11": 1
+    },
+    "other_dist": {
+      "1": 3374,
+      "2": 714,
+      "3": 156,
+      "4": 47,
+      "5": 16,
+      "6": 4,
+      "7": 1
+    }
+  },
+  "n45_rate_by_numeral_count": {
+    "1": {
+      "m288_n": 276,
+      "m288_n45_rate": 0.018115942028985508,
+      "other_n": 3374,
+      "other_n45_rate": 0.002074688796680498
+    },
+    "2": {
+      "m288_n": 161,
+      "m288_n45_rate": 0.09937888198757763,
+      "other_n": 714,
+      "other_n45_rate": 0.014005602240896359
+    },
+    "3": {
+      "m288_n": 82,
+      "m288_n45_rate": 0.1951219512195122,
+      "other_n": 156,
+      "other_n45_rate": 0.057692307692307696
+    },
+    "4": {
+      "m288_n": 25,
+      "m288_n45_rate": 0.44,
+      "other_n": 47,
+      "other_n45_rate": 0.1276595744680851
+    },
+    "5": {
+      "m288_n": 8,
+      "m288_n45_rate": 0.375,
+      "other_n": 16,
+      "other_n45_rate": 0.125
+    },
+    "6": {
+      "m288_n": 2,
+      "m288_n45_rate": 1.0,
+      "other_n": 4,
+      "other_n45_rate": 0.0
+    },
+    "7": {
+      "m288_n": 1,
+      "m288_n45_rate": 1.0,
+      "other_n": 1,
+      "other_n45_rate": 1.0
+    },
+    "10": {
+      "m288_n": 1,
+      "m288_n45_rate": 1.0,
+      "other_n": 0,
+      "other_n45_rate": NaN
+    },
+    "11": {
+      "m288_n": 1,
+      "m288_n45_rate": 1.0,
+      "other_n": 0,
+      "other_n45_rate": NaN
+    }
+  },
+  "mantel_haenszel_or_stratified_by_numeral_count": 5.868772959551321,
+  "equal_length_coin_faces": {
+    "n": 4,
+    "heads": 4,
+    "binomial_p": 0.0625
+  },
+  "coin_faces": [
+    {
+      "tablet": "P008020",
+      "face": "reverse",
+      "m288_line_numerals": 5,
+      "other_line_numerals": 1,
+      "n45_on_m288_line": true,
+      "m288_line_longer": true,
+      "equal_length": false,
+      "m288_text": "B. M056~E pu2<M288<M288 , 2(N34) 1(N45) 9(N14) 5(N01) 3(N39B)",
+      "other_text": "A. nu<M391<M391 , 5(N01)"
+    },
+    {
+      "tablet": "P008096",
+      "face": "obverse",
+      "m288_line_numerals": 2,
+      "other_line_numerals": 2,
+      "n45_on_m288_line": true,
+      "m288_line_longer": false,
+      "equal_length": true,
+      "m288_text": "M195~D M296 pu2<M288<M288 , 1(N45) 1(N14)",
+      "other_text": "a<M218<M218 , 1(N14) 2(N01)"
+    },
+    {
+      "tablet": "P008711",
+      "face": "obverse",
+      "m288_line_numerals": 3,
+      "other_line_numerals": 3,
+      "n45_on_m288_line": true,
+      "m288_line_longer": false,
+      "equal_length": true,
+      "m288_text": "M139 she<M032<M032 M348 pu2<M288<M288 , 1(N45) 1(N14) 1(N39B)",
+      "other_text": "M010~2 , 1(N01) 2(N39B) 1(N24)"
+    },
+    {
+      "tablet": "P008984",
+      "face": "obverse",
+      "m288_line_numerals": 2,
+      "other_line_numerals": 2,
+      "n45_on_m288_line": true,
+      "m288_line_longer": false,
+      "equal_length": true,
+      "m288_text": "M284~E li<M319<M319 pu2<M288<M288 , 1(N45) 7(N14)",
+      "other_text": "M010~2 , 6(N14) 4(N01)"
+    },
+    {
+      "tablet": "P009018",
+      "face": "reverse",
+      "m288_line_numerals": 1,
+      "other_line_numerals": 1,
+      "n45_on_m288_line": true,
+      "m288_line_longer": false,
+      "equal_length": true,
+      "m288_text": "pu2<M288<M288 , 2(N45)",
+      "other_text": "M376 , 3(N14)"
+    },
+    {
+      "tablet": "P009198",
+      "face": "obverse",
+      "m288_line_numerals": 3,
+      "other_line_numerals": 1,
+      "n45_on_m288_line": true,
+      "m288_line_longer": true,
+      "equal_length": false,
+      "m288_text": "pu2<M288<M288 , 1(N45) 4(N14) 5(N01)",
+      "other_text": "M005~A M305+X , 8(N14)"
+    },
+    {
+      "tablet": "P009251",
+      "face": "obverse",
+      "m288_line_numerals": 4,
+      "other_line_numerals": 2,
+      "n45_on_m288_line": true,
+      "m288_line_longer": true,
+      "equal_length": false,
+      "m288_text": "pu2<M288<M288 , 2(N34) 1(N45) 1(N14) 2(N01)",
+      "other_text": "M295 a<M218<M218 a<M218<M218 , 2(N14) 2(N01)"
+    },
+    {
+      "tablet": "P009335",
+      "face": "obverse",
+      "m288_line_numerals": 2,
+      "other_line_numerals": 1,
+      "n45_on_m288_line": true,
+      "m288_line_longer": true,
+      "equal_length": false,
+      "m288_text": "pu2<M288<M288 , 1(N45) 3(N14)",
+      "other_text": "nu<M391<M391 , 2(N01)"
+    }
+  ]
+}
