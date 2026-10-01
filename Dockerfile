@@ -12,6 +12,19 @@ RUN npm ci --no-audit --no-fund
 # Copy the full repo — the build script reads STATUS.md, board/, ciphers/, etc.
 COPY . .
 
+# Railway's build context carries no .git, but the site is built from history
+# (activity, replay, the draw's idle clocks). The repo is public, so fetch it.
+# RAILWAY_GIT_COMMIT_SHA pins the fetch to the commit being deployed. If the
+# fetch fails the build still succeeds and the site says it has no history.
+ARG RAILWAY_GIT_COMMIT_SHA
+RUN if [ ! -e .git ]; then \
+      git init -q . \
+      && git remote add origin https://github.com/AlexFitzgerald47/cracking-problems-hub.git \
+      && git fetch -q origin "${RAILWAY_GIT_COMMIT_SHA:-main}" \
+      && git reset -q --soft FETCH_HEAD \
+      || echo "WARNING: could not fetch git history; building without it"; \
+    fi
+
 RUN npm run build
 
 FROM node:20-alpine AS run
