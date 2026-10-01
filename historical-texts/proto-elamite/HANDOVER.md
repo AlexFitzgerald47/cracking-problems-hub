@@ -4,6 +4,139 @@
 
 ---
 
+## 2026-10-01 – breaker session: M288–N45 settled; the holdout retired; constraint set 8 → 26
+
+Full report: `attempts/2026-10-01-block-aware-split/RESULTS.md`. Predictions frozen
+before any new p-value: same folder, `PREDICTIONS.md`. Code and results committed.
+
+### Recommended next experiments
+
+1. **Replicate the 26-pair table on a newer CDLI ATF export.** This is now the folder's
+   strongest falsification test and it is fully specified for the first time. *Concretely:*
+   fetch a current CDLI Proto-Elamite export, point `src/search_budget.py` at it (it takes
+   the corpus directory as `argv[1]` and needs no third-party packages), and run
+   `src/constraint_table.py`. **The frozen prediction is the committed table**
+   `attempts/2026-10-01-block-aware-split/results/constraint_table.csv`: all 26 pairs hold
+   in direction, and the six published ones among them hold at p ≤ 1e-4. **What changes the
+   verdict:** any of the six published pairs flipping direction reopens the load-bearing
+   tier; more than ~3 of the 20 new pairs failing to replicate means the corpus-wide sweep
+   is overfitting something about this export and the expansion must be withdrawn. Run
+   `src/validate_pipeline.py` first on the *pinned* corpus to confirm the environment, then
+   on the new one — the digest will differ and that is expected, not drift.
+2. **Audit the 20 new pairs against the specialist literature before any of them is used
+   in an argument.** They have had the tautology, replicate-count and search-budget checks
+   and nothing else. The two items to read are named under *Priority check* below; the
+   folder's standing "novelty unestablished" assumption applies to all 26.
+3. **Extend the exact-form audit to M263** (2026-09-17 recommended experiment 3, still
+   open). M288 was audited this session and is a non-issue — 538 of 559 occurrences are
+   plain `M288`, no variant reaches 20 lines. M263 now carries **five** rows of the
+   expanded table (N01, N30C, N39B, N24) and has never been checked for the merge
+   assumption. Same script, change the `family` argument in `face_and_form.test_b`.
+4. **Compute the occupancy table for every sign in the 26-pair set before any ranking,
+   clustering or sign-value proposal.** `src/level_of_analysis.py` emits it. M376 and M002
+   carry very large odds ratios (98.8 and 17.5) on 12 and 15 tablets respectively and have
+   never been looked at by this folder at all.
+5. **Header refinement against Born et al. 2022** (open since 2026-09-04, still untouched)
+   is the only route here toward document structure rather than line-level association.
+   Needs the Born et al. replication package.
+
+### Frontier now
+
+**M288–N45 confirms** — p = 9.695e-5 face-blocked, floor 4.46e-9, 16 informative blocks
+across 15 distinct tablets, identical under column blocking, BY q = 1.31e-2 over the full
+candidate space. It moves from *untestable at holdout scale* to **load-bearing**. This
+folder's 2026-09-17 frozen prediction **A2 is refuted** and should be read as refuted.
+
+**Why its 2026-09-17 test had no power is the more useful finding: occupancy, not sample
+size.** M288 occupies *every* eligible line on 179 of the 350 faces where it occurs (mean
+within-face occupancy 0.701) — **rank 1 of 145 signs**. 38 of its 56 N45 co-occurrences
+sit in blocks where the overlap is forced by arithmetic. A within-block conditional test
+is blind to a covariate that saturates its blocks, and this is a **structural** ceiling:
+more tablets of the same kind add forced blocks, not evidence. Posted as
+`board/log/2026-10-01-a-conditional-test-is-blind-to-a-saturating-covariate.md`.
+
+**The 80/20 tablet holdout is retired for conditional tests on this corpus.** It exists
+because the *screen's* pooled Fisher p-values are invalid; the *validation* statistic is
+valid on its own. Selecting a pair by its p-value needs multiple-testing correction, not
+a holdout — and the holdout costs ~80 % of the data. Corpus-wide, 1,430 candidate pairs,
+514 powered, **26 at p ≤ 1e-4** against a 500-replicate within-face permutation null with
+mean 0.02 and maximum 1 (permutation p = 0.0020, the floor; smallest null p anywhere
+1.428e-5 versus an observed minimum of 1.683e-29).
+
+**Tiering, restated.**
+
+| tier | pairs |
+|---|---|
+| **Load-bearing** | M297–N39B, M263–N01, M263–N30C, **M288–N45** (promoted) |
+| **Leads** | M297–N01, M297–N24, M106–N24, M243–N39B |
+| **Candidate (new, this session)** | 20 pairs at p ≤ 1e-4, BY q ≤ 1.31e-2 — see `results/constraint_table.csv` |
+
+### Conditional assumptions
+
+- Structural only. No sign has a semantic, phonetic or metrological value and nothing
+  this session did moves toward one.
+- Corpus is 1,334/1,467 MDP (Susa); nothing here speaks to other provenances.
+- The expanded table's validity rests on selection-on-marginals being ancillary to the
+  conditional null. Argued analytically, verified by simulation (the split moved in **0 of
+  16,000** replicates), priced at sweep level, and pinned in `src/test_blocks.py`. It would
+  fail if any selection step used an *overlap* rather than a marginal; none does.
+- The 20 new pairs are at the tier the published eight occupied on 2026-09-04.
+
+### Negative results, recorded as results
+
+- **P5 failed.** M288 is **not** a face-level marker. Tablet-face as unit, tablet as block:
+  p = 0.109, floor 0.0156 — powered and it did not fire. Do not re-run as written; if you
+  want this, it needs a different unit, not more replicates.
+- **P4 failed, conservatively.** Realised FPR 0.0150 at nominal 0.05, outside the frozen
+  [0.03, 0.07] band. Cause is discreteness (most informative blocks have `hi − lo = 1`), so
+  the exact test gives P(p ≤ α) ≤ α. **A two-sided calibration band is the wrong shape for
+  a discrete test** — the next session freezing one should state it one-sided.
+- **The entry-level rung is withdrawn.** M288–N45 at entry level gave p = 3.125e-2, which
+  is exactly 2⁻⁵ — the test returned its own floor — and all five of its informative entry
+  blocks are from **one tablet, P008020**. Five of the eight published pairs have *zero*
+  informative entry blocks, because 4,628 entry blocks hold 4,869 lines. **Do not re-run the
+  entry rung on this corpus**; reopens only if a corpus with substantially more multi-line
+  accounting entries becomes available.
+
+### Priority check (done this session; do not repeat, extend)
+
+Crossref enumeration from 2022, cross-checked against OpenAlex — identical author lists
+from both indexes. Two items postdate everything in this folder:
+
+- **Monroe, M. Willis; Kelley, Kathryn; Born, Logan; Sarkar, Anoop**, "Recent Progress in
+  Deciphering Proto-Elamite", *Near Eastern Archaeology* **88**(4), 314–323, Dec 2025,
+  [10.1086/738240](https://doi.org/10.1086/738240). Four authors — the Born et al. 2022
+  team. **Closed access; OpenAlex reports no OA copy in any repository; unread here.**
+- **Kelley, Kathryn**, *Proto-Elamite*, Cambridge Elements, 18 Jul 2026,
+  [10.1017/9781009614559](https://doi.org/10.1017/9781009614559). Abstract verified,
+  full text unread.
+
+**No novelty is claimed against the specialist literature.** "New" means new to this
+folder. These two are the concrete way to discharge the folder's standing assumption.
+
+### Evidence dependency
+
+Items 2–4 need nothing beyond the repository and the pinned corpus. Item 1 needs a newer
+CDLI ATF export. Items 2 and 5 need paywalled or packaged material: NEA 88(4), the
+Cambridge Element, and the Born et al. 2022 replication package.
+
+### Trap preserved from 2026-09-17 — the corpus digest
+
+`analysis/results/associations.json` records `ee4fa7ba…c083d6a`, the **CRLF** hash from a
+Windows run. A Linux or macOS checkout of the identical pinned commit gives
+`8849716c…8bf2b2dcf`. **Confirmed again this session on a fresh Linux clone.** Not drift;
+do not re-pin.
+
+### Reopening condition
+
+The four load-bearing constraints reopen if they fail to replicate in direction on an
+independent CDLI export. The 20 new pairs are withdrawn wholesale if more than ~3 fail to
+replicate there. The retired holdout reopens if anyone shows a selection step in this
+pipeline that uses an overlap rather than a block marginal.
+
+---
+
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.

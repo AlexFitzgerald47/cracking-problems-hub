@@ -1,0 +1,427 @@
+{
+  "eligible_lines": 4869,
+  "rungs": [
+    "tablet",
+    "face",
+    "column",
+    "entry"
+  ],
+  "pairs": {
+    "M297-N39B": {
+      "direction": "enriched",
+      "cooccurrences_total": 135,
+      "tablet": {
+        "p": 2.2086573894690393e-21,
+        "p_floor": 1.1517559231596082e-60,
+        "blocks": 1124,
+        "informative_blocks": 83,
+        "observed_overlap": 135,
+        "max_possible_overlap": 162,
+        "min_possible_overlap": 48,
+        "cooccurrences_in_forced_blocks": 36,
+        "expected_under_null": 91.28118697577226,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 9.486845801023622e-13,
+        "p_floor": 5.714291828210203e-42,
+        "blocks": 1426,
+        "informative_blocks": 64,
+        "observed_overlap": 135,
+        "max_possible_overlap": 157,
+        "min_possible_overlap": 73,
+        "cooccurrences_in_forced_blocks": 68,
+        "expected_under_null": 106.19121033348715,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 1.2068334463970484e-11,
+        "p_floor": 1.8285733850272614e-40,
+        "blocks": 1444,
+        "informative_blocks": 61,
+        "observed_overlap": 135,
+        "max_possible_overlap": 157,
+        "min_possible_overlap": 77,
+        "cooccurrences_in_forced_blocks": 72,
+        "expected_under_null": 108.2745436668199,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "blocks": 4628,
+        "informative_blocks": 0,
+        "observed_overlap": 135,
+        "max_possible_overlap": 135,
+        "min_possible_overlap": 135,
+        "cooccurrences_in_forced_blocks": 135,
+        "expected_under_null": 135.0,
+        "has_power_at_05": false
+      }
+    },
+    "M297-N24": {
+      "direction": "enriched",
+      "cooccurrences_total": 44,
+      "tablet": {
+        "p": 5.189771674178876e-06,
+        "p_floor": 2.5526633707815197e-38,
+        "blocks": 1124,
+        "informative_blocks": 46,
+        "observed_overlap": 44,
+        "max_possible_overlap": 70,
+        "min_possible_overlap": 9,
+        "cooccurrences_in_forced_blocks": 7,
+        "expected_under_null": 28.746233023667184,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 0.01069026836293412,
+        "p_floor": 2.012326837493299e-26,
+        "blocks": 1426,
+        "informative_blocks": 34,
+        "observed_overlap": 44,
+        "max_possible_overlap": 66,
+        "min_possible_overlap": 20,
+        "cooccurrences_in_forced_blocks": 19,
+        "expected_under_null": 36.77406611800595,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 0.019121548913834507,
+        "p_floor": 8.049307349973187e-26,
+        "blocks": 1444,
+        "informative_blocks": 33,
+        "observed_overlap": 44,
+        "max_possible_overlap": 66,
+        "min_possible_overlap": 21,
+        "cooccurrences_in_forced_blocks": 20,
+        "expected_under_null": 37.52406611800581,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 0.03125000000000007,
+        "p_floor": 0.03125000000000007,
+        "blocks": 4628,
+        "informative_blocks": 5,
+        "observed_overlap": 44,
+        "max_possible_overlap": 44,
+        "min_possible_overlap": 39,
+        "cooccurrences_in_forced_blocks": 39,
+        "expected_under_null": 41.500000000000085,
+        "has_power_at_05": true
+      }
+    },
+    "M297-N01": {
+      "direction": "depleted",
+      "cooccurrences_total": 117,
+      "tablet": {
+        "p": 5.461517423510226e-10,
+        "p_floor": 4.239345474505934e-56,
+        "blocks": 1124,
+        "informative_blocks": 78,
+        "observed_overlap": 117,
+        "max_possible_overlap": 190,
+        "min_possible_overlap": 80,
+        "cooccurrences_in_forced_blocks": 66,
+        "expected_under_null": 144.88859121180883,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 1.3183423626676146e-07,
+        "p_floor": 4.706694434308544e-39,
+        "blocks": 1426,
+        "informative_blocks": 61,
+        "observed_overlap": 117,
+        "max_possible_overlap": 171,
+        "min_possible_overlap": 91,
+        "cooccurrences_in_forced_blocks": 80,
+        "expected_under_null": 137.67320171347458,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 6.689778991482924e-08,
+        "p_floor": 1.2551185158156094e-38,
+        "blocks": 1444,
+        "informative_blocks": 59,
+        "observed_overlap": 117,
+        "max_possible_overlap": 170,
+        "min_possible_overlap": 92,
+        "cooccurrences_in_forced_blocks": 82,
+        "expected_under_null": 137.83986838014098,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "blocks": 4628,
+        "informative_blocks": 0,
+        "observed_overlap": 117,
+        "max_possible_overlap": 117,
+        "min_possible_overlap": 117,
+        "cooccurrences_in_forced_blocks": 117,
+        "expected_under_null": 117.0,
+        "has_power_at_05": false
+      }
+    },
+    "M263-N30C": {
+      "direction": "depleted",
+      "cooccurrences_total": 0,
+      "tablet": {
+        "p": 5.523333146668361e-14,
+        "p_floor": 5.523333146668361e-14,
+        "blocks": 1124,
+        "informative_blocks": 34,
+        "observed_overlap": 0,
+        "max_possible_overlap": 54,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 21.17131702985403,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 3.519316958861077e-10,
+        "p_floor": 3.519316958861077e-10,
+        "blocks": 1426,
+        "informative_blocks": 27,
+        "observed_overlap": 0,
+        "max_possible_overlap": 41,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 15.358314209011112,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 4.692422611814761e-10,
+        "p_floor": 4.692422611814761e-10,
+        "blocks": 1444,
+        "informative_blocks": 26,
+        "observed_overlap": 0,
+        "max_possible_overlap": 40,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 15.10831420901108,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "blocks": 4628,
+        "informative_blocks": 0,
+        "observed_overlap": 0,
+        "max_possible_overlap": 0,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 0.0,
+        "has_power_at_05": false
+      }
+    },
+    "M263-N01": {
+      "direction": "enriched",
+      "cooccurrences_total": 176,
+      "tablet": {
+        "p": 2.555210241999204e-25,
+        "p_floor": 1.5340650543995502e-37,
+        "blocks": 1124,
+        "informative_blocks": 66,
+        "observed_overlap": 176,
+        "max_possible_overlap": 183,
+        "min_possible_overlap": 80,
+        "cooccurrences_in_forced_blocks": 50,
+        "expected_under_null": 134.0470945495989,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 1.4915114200251437e-23,
+        "p_floor": 4.624955819764938e-31,
+        "blocks": 1426,
+        "informative_blocks": 55,
+        "observed_overlap": 176,
+        "max_possible_overlap": 180,
+        "min_possible_overlap": 96,
+        "cooccurrences_in_forced_blocks": 73,
+        "expected_under_null": 139.74864923658558,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 1.4201412596040765e-23,
+        "p_floor": 4.396562939776561e-31,
+        "blocks": 1444,
+        "informative_blocks": 55,
+        "observed_overlap": 176,
+        "max_possible_overlap": 180,
+        "min_possible_overlap": 96,
+        "cooccurrences_in_forced_blocks": 73,
+        "expected_under_null": 139.70824519618188,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "blocks": 4628,
+        "informative_blocks": 0,
+        "observed_overlap": 176,
+        "max_possible_overlap": 176,
+        "min_possible_overlap": 176,
+        "cooccurrences_in_forced_blocks": 176,
+        "expected_under_null": 176.0,
+        "has_power_at_05": false
+      }
+    },
+    "M243-N39B": {
+      "direction": "enriched",
+      "cooccurrences_total": 22,
+      "tablet": {
+        "p": 1.0810899422323067e-06,
+        "p_floor": 1.530426529824892e-12,
+        "blocks": 1124,
+        "informative_blocks": 18,
+        "observed_overlap": 22,
+        "max_possible_overlap": 26,
+        "min_possible_overlap": 2,
+        "cooccurrences_in_forced_blocks": 1,
+        "expected_under_null": 11.4399877899878,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 0.00017545846545620816,
+        "p_floor": 6.4602848561827105e-09,
+        "blocks": 1426,
+        "informative_blocks": 12,
+        "observed_overlap": 22,
+        "max_possible_overlap": 25,
+        "min_possible_overlap": 8,
+        "cooccurrences_in_forced_blocks": 8,
+        "expected_under_null": 15.124156545209148,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 2.556693622305722e-05,
+        "p_floor": 1.2920569712365414e-08,
+        "blocks": 1444,
+        "informative_blocks": 11,
+        "observed_overlap": 22,
+        "max_possible_overlap": 24,
+        "min_possible_overlap": 8,
+        "cooccurrences_in_forced_blocks": 8,
+        "expected_under_null": 14.62415654520914,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 1.0,
+        "p_floor": 1.0,
+        "blocks": 4628,
+        "informative_blocks": 0,
+        "observed_overlap": 22,
+        "max_possible_overlap": 22,
+        "min_possible_overlap": 22,
+        "cooccurrences_in_forced_blocks": 22,
+        "expected_under_null": 22.0,
+        "has_power_at_05": false
+      }
+    },
+    "M106-N24": {
+      "direction": "enriched",
+      "cooccurrences_total": 14,
+      "tablet": {
+        "p": 9.328587593976241e-08,
+        "p_floor": 7.479833248116342e-18,
+        "blocks": 1124,
+        "informative_blocks": 11,
+        "observed_overlap": 14,
+        "max_possible_overlap": 20,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 3.7747269604921687,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 6.658738109971106e-08,
+        "p_floor": 3.884657923906329e-16,
+        "blocks": 1426,
+        "informative_blocks": 12,
+        "observed_overlap": 14,
+        "max_possible_overlap": 19,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 3.6394904578270104,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 6.658738109971106e-08,
+        "p_floor": 3.884657923906329e-16,
+        "blocks": 1444,
+        "informative_blocks": 12,
+        "observed_overlap": 14,
+        "max_possible_overlap": 19,
+        "min_possible_overlap": 0,
+        "cooccurrences_in_forced_blocks": 0,
+        "expected_under_null": 3.6394904578270104,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 7.230783469850559e-07,
+        "p_floor": 7.230783469850559e-07,
+        "blocks": 4628,
+        "informative_blocks": 9,
+        "observed_overlap": 14,
+        "max_possible_overlap": 14,
+        "min_possible_overlap": 5,
+        "cooccurrences_in_forced_blocks": 5,
+        "expected_under_null": 7.071428571428629,
+        "has_power_at_05": true
+      }
+    },
+    "M288-N45": {
+      "direction": "enriched",
+      "cooccurrences_total": 56,
+      "tablet": {
+        "p": 3.205965401748716e-09,
+        "p_floor": 1.3768256107926748e-15,
+        "blocks": 1124,
+        "informative_blocks": 25,
+        "observed_overlap": 56,
+        "max_possible_overlap": 60,
+        "min_possible_overlap": 28,
+        "cooccurrences_in_forced_blocks": 28,
+        "expected_under_null": 41.57927350427355,
+        "has_power_at_05": true
+      },
+      "face": {
+        "p": 9.694630456349345e-05,
+        "p_floor": 4.4642857142857545e-09,
+        "blocks": 1426,
+        "informative_blocks": 16,
+        "observed_overlap": 56,
+        "max_possible_overlap": 59,
+        "min_possible_overlap": 38,
+        "cooccurrences_in_forced_blocks": 38,
+        "expected_under_null": 48.160000000000586,
+        "has_power_at_05": true
+      },
+      "column": {
+        "p": 9.694630456349345e-05,
+        "p_floor": 4.4642857142857545e-09,
+        "blocks": 1444,
+        "informative_blocks": 16,
+        "observed_overlap": 56,
+        "max_possible_overlap": 59,
+        "min_possible_overlap": 38,
+        "cooccurrences_in_forced_blocks": 38,
+        "expected_under_null": 48.160000000000586,
+        "has_power_at_05": true
+      },
+      "entry": {
+        "p": 0.03125000000000007,
+        "p_floor": 0.03125000000000007,
+        "blocks": 4628,
+        "informative_blocks": 5,
+        "observed_overlap": 56,
+        "max_possible_overlap": 56,
+        "min_possible_overlap": 51,
+        "cooccurrences_in_forced_blocks": 51,
+        "expected_under_null": 53.50000000000012,
+        "has_power_at_05": true
+      }
+    }
+  }
+}

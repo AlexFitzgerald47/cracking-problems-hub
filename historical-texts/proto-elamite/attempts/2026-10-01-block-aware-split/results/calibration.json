@@ -1,0 +1,69 @@
+{
+  "replicates": 2000,
+  "pairs": {
+    "M297-N39B": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.029,
+      "false_positive_rate_at_0.01": 0.003,
+      "ks_statistic_vs_uniform": 0.10146016004920572,
+      "median_p": 0.5664601600492057
+    },
+    "M297-N24": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.0255,
+      "false_positive_rate_at_0.01": 0.0055,
+      "ks_statistic_vs_uniform": 0.1284535432513212,
+      "median_p": 0.5338351888006113
+    },
+    "M297-N01": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.0225,
+      "false_positive_rate_at_0.01": 0.005,
+      "ks_statistic_vs_uniform": 0.12002692018654032,
+      "median_p": 0.5820269201865403
+    },
+    "M263-N30C": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.04,
+      "false_positive_rate_at_0.01": 0.006,
+      "ks_statistic_vs_uniform": 0.14549558995365608,
+      "median_p": 0.5242648923043454
+    },
+    "M263-N01": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.0455,
+      "false_positive_rate_at_0.01": 0.006,
+      "ks_statistic_vs_uniform": 0.10691170123924609,
+      "median_p": 0.5256427975797276
+    },
+    "M243-N39B": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.026,
+      "false_positive_rate_at_0.01": 0.004,
+      "ks_statistic_vs_uniform": 0.20940177313170083,
+      "median_p": 0.6309017731317008
+    },
+    "M106-N24": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.0525,
+      "false_positive_rate_at_0.01": 0.005,
+      "ks_statistic_vs_uniform": 0.2203451349830065,
+      "median_p": 0.5123451349830065
+    },
+    "M288-N45": {
+      "split_invariant_under_null": true,
+      "replicates_where_split_moved": 0,
+      "false_positive_rate_at_0.05": 0.015,
+      "false_positive_rate_at_0.01": 0.004,
+      "ks_statistic_vs_uniform": 0.22266593415179348,
+      "median_p": 0.6246659341517935
+    }
+  }
+}
