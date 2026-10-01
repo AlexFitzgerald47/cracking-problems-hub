@@ -4,6 +4,130 @@
 
 ---
 
+## 2026-10-01 – breaker session: M288–N45 settled, and half the constraint set re-tiered
+
+**Read `attempts/2026-10-01-block-aware-split/RESULTS.md` before anything else in this
+folder.** It answers recommended experiment 1, and it demotes four of the eight published
+constraints — including one the 2026-09-17 tiering called load-bearing. Nothing below is
+deleted or contested; the 2026-09-04 and 2026-09-17 computations both reproduce exactly.
+What changes is an interpretation.
+
+### Frontier now
+
+**M288–N45 is confirmed, not untestable.** The donor split — validation = the tablets
+carrying an informative `(tablet, face)` block, screening = the rest — puts all 16 of the
+corpus's informative blocks in validation, where the 2026-09-04 hash split had 4 of 290.
+Floor falls from 0.12 to 4.46e-09 and the face-blocked p from 0.4700 to **9.70e-05**,
+screened blind on 1,109 complement tablets at OR 10.39, q = 1.1e-16. Under face **and**
+numeral-richness blocking together it still passes at p = 1.10e-02, floor 3.97e-04.
+
+**But a confound no prior session tested demotes four pairs.** Counting N-signs other than
+the target (so the stratification is not circular), N45 lines carry 2.07 other numerals
+against 1.32 for lines without it, and M288 lines 1.74 against 1.28. Blocking on richness
+gives a new tiering:
+
+| tier | pairs | status |
+|---|---|---|
+| **Load-bearing** | M297–N39B, M106–N24, M263–N30C, **M288–N45** | survive tablet, face, richness and face+richness blocking, all with power |
+| **Explained by numeral richness** | M297–N24, M297–N01, **M263–N01**, M243–N39B | fail *with* the power to confirm (floors 4.0e-19, 9.2e-08, 8.7e-04, 3.7e-02) |
+
+**M263–N01 was load-bearing in the 2026-09-17 tiering and is not any more.** M106–N24 and
+M288–N45 are promoted into it. The mechanism is single: **N01 is the numeral-poor-line
+sign** (0.377 other numerals against 0.618 corpus-wide — it is the commonest N-sign in a
+corpus where 3,650 of 4,869 eligible lines carry exactly one numeral), so any M-sign's
+richness skew manufactures an apparent N01 association in whichever direction the skew
+runs. M263 lines are poor (0.131) → spurious enrichment; M297 lines are rich (1.270) →
+spurious depletion. **Both N01 constraints, opposite in direction, are one artefact.**
+
+### Conditional assumptions
+
+- Everything remains **structural**. No sign has a semantic, phonetic or metrological
+  value and nothing in this session moves toward one.
+- **Richness is controlled as a confound; it could be a mediator.** If M263 denotes
+  something whose accounting intrinsically uses one numeral, conditioning on richness
+  removes a real effect. The claim that survives either reading is about information
+  content: "M263 is enriched with N01" conveys nothing beyond "M263 occurs on
+  numeral-poor lines." Do not cite the demoted four as sign-pair constraints.
+- Novelty against specialist sign-by-sign literature is still unestablished. Untested.
+- §7's 14 leads are search results under BH correction, not held-out confirmations.
+
+### Three things a future session must not redo
+
+1. **Do not look for a cleverer split.** A blocked exact p-value is a function of the
+   informative blocks alone — degenerate blocks convolve in a point mass that shifts the
+   observed total and the null identically. The donor-split p-value is therefore *equal*
+   to the full-corpus p-value for the same blocking. The split does no statistical work;
+   it makes the screening honest and the power visible. Recommended experiment 1 is done.
+2. **Do not run a literal label permutation on the donor split.** Donor status is fixed by
+   the block marginals rather than chosen, so a permuted label yields sets with no
+   informative blocks, where the test has no power and returns p ≈ 1 by construction. The
+   full-search-budget run is the substitute and is done (M288–N45 ranks 21st of 506
+   powered pairs, BH q = 2.34e-03 over the whole budget).
+3. **Do not donor-split a dense pair.** With 67 donor tablets M288–N39B's complement OR
+   falls from 3.60 to 1.63 and the blind screen fails. The design works for sparse pairs
+   only — exactly the class a fixed-hash holdout destroys.
+
+### Recommended next experiments
+
+1. **Hold out the 14 richness-blocked leads on an independent CDLI export, starting with
+   M288–N39B and M288–N24.** This is the cheapest decisive item on the folder and it is
+   two steps. (a) Fetch a newer CDLI ATF export of the Proto-Elamite corpus
+   (<https://cdli.mpiwg-berlin.mpg.de/> bulk data, or the `cdli-gh/data` repository) and
+   pin its commit and LF digest beside the existing pin. (b) Run
+   `block_aware_split.py --corpus <new>` unchanged. The leads in `RESULTS.md` §7 cannot be
+   screened blind on this corpus (handover item 3 above), so a second corpus is the only
+   available warrant for them, and the tablets new to that export are a genuine holdout.
+   **What would change the verdict:** M288–N39B (p = 5.17e-19, q = 1.53e-16, 34
+   informative blocks) and M288–N24 (2.01e-13) are strong enough that failure to replicate
+   in *direction* on new tablets would indict the richness-blocked donor-split procedure
+   itself, not just the pair. Conversely, replication promotes them above every constraint
+   this folder has published, since both are an order of magnitude stronger than
+   M297–N39B. The same run re-tests the four surviving constraints, whose reopening
+   condition is below, and the four demoted ones, which should stay dead.
+2. **Decide the confound-or-mediator question for the four demoted pairs with a
+   non-distributional axis.** Richness blocking cannot separate the two readings
+   (conditional assumptions above), and no amount of the same corpus will. The discriminator
+   is whether the numeral *systems* differ: if M263's single numeral is drawn from a
+   different metrological system than M297's many, richness is a proxy for system and the
+   demotion stands as a statement about sign pairs; if the systems match, richness is a
+   mediator and M263–N01 is a real constraint seen through a generic property. Englund's
+   system assignments and the N-sign tables in `pe-sign-value-data/tables/` are the inputs;
+   no new corpus is needed.
+3. **Re-run the 2026-09-17 per-sign self-match with the richness axis added.**
+   `matched_selfmatch.py` takes 8 seconds and ranks signs by face sensitivity; the same
+   construction on numeral-richness strata would say which signs are richness-sensitive.
+   M297 was the most face-sensitive sign in the corpus and two of its three constraints
+   have now died on richness, so the two axes are probably tracking the same signs. If so,
+   the 2026-09-17 instruction "report the face effect of the specific signs you rank"
+   should become "report both effects".
+4. **Extend the exact-form audit to M263 and M288** — still unrun from 2026-09-17, and now
+   more pointed: M263 keeps one surviving constraint and loses one, and M288 has gone from
+   carrying the folder's weakest result to carrying three of the strongest.
+5. **Header refinement against Born et al. 2022** remains untouched and is still the only
+   route in the folder toward document structure rather than line-level association.
+
+### Evidence dependency
+
+Items 2–5 need nothing beyond the repository and the pinned corpus. Item 1 needs a newer
+CDLI ATF export — no archival access, no images, no paywalled material.
+
+### Reopening condition
+
+The four surviving constraints (M297–N39B, M106–N24, M263–N30C, M288–N45) reopen if they
+fail to replicate **in direction** on an independent CDLI export; that is the falsification
+test they are now published under, and the predictions must be stated per *this* tiering,
+not the 2026-09-17 one. The four demoted pairs reopen only on item 2 — if the metrological
+systems match, richness is a mediator and the demotion is wrong.
+
+### Trap for the next session — the corpus digest, re-confirmed
+
+The CRLF/LF digest mismatch flagged in the 2026-09-17 handover is real and benign. A Linux
+checkout of the pinned commit gives `8849716c…bf2b2dcf`, recomputed independently this
+session; `analysis/results/associations.json` records the CRLF hash `ee4fa7ba…c083d6a`. Do
+not read it as drift and do not re-pin.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.
