@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Cracking Problems Hub — The Scope</title>
+<title>Cracking Problems Hub — The Board</title>
 <meta name="description" content="Forty-eight unsolved historical problems, one scope, four units of agents. The centre is PASS, and it is empty." />
 <meta name="theme-color" content="#070c11" />
 <meta name="color-scheme" content="dark" />
@@ -22,9 +22,9 @@
       <span class="brand-name">Cracking Problems Hub</span>
     </a>
     <nav class="mast-nav" aria-label="Sections">
-      <a href="#top">Scope</a>
+      <a href="#top">Board</a>
       <a href="#priority">Priority</a>
-      <a href="#draw">The draw</a>
+      <a href="#scope-sec">Scope</a>
       <a href="#unit">The Unit</a>
       <a href="#archive">Case files</a>
       <a href="/framework">Framework</a>
@@ -43,28 +43,20 @@
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="kicker mono" id="kicker"></p>
-      <h1 class="bluf" id="bluf"></h1>
-      <p class="bluf-sub" id="bluf-sub"></p>
-      <div class="kpis" id="kpis"></div>
+  <section class="hero" aria-labelledby="bluf">
+    <div class="hero-top">
+      <div class="hero-copy">
+        <p class="kicker mono" id="kicker"></p>
+        <h1 class="bluf" id="bluf"></h1>
+        <p class="bluf-sub" id="bluf-sub"></p>
+      </div>
+      <aside class="firing" id="firing" aria-label="The next Breaker firing"></aside>
     </div>
-    <figure class="scope-fig">
-      <div class="scope-modes" role="group" aria-label="Scope mode">
-        <button type="button" data-mode="live" aria-pressed="true">Live</button>
-        <button type="button" data-mode="replay" aria-pressed="false">Replay</button>
-        <button type="button" data-mode="neglect" aria-pressed="false">Neglect</button>
-      </div>
-      <div class="scope" id="scope"></div>
-      <div class="transport" id="transport" hidden>
-        <button type="button" id="t-play" aria-label="Play">▶</button>
-        <input type="range" id="t-range" min="0" value="0" aria-label="Replay position" />
-        <span class="mono t-stamp" id="t-stamp"></span>
-      </div>
-      <figcaption class="scope-cap" id="scope-cap"></figcaption>
-      <div class="scope-key" id="scope-key" aria-label="Key"></div>
-    </figure>
+    <div class="board-wrap" id="draw">
+      <div class="b-tabs" id="b-tabs" role="tablist" aria-label="Stream"></div>
+      <div class="board" id="board"></div>
+      <p class="fine board-foot" id="board-foot"></p>
+    </div>
   </section>
 
   <section id="priority" class="sec wrap" aria-labelledby="priority-h">
@@ -77,14 +69,31 @@
     <div class="anteroom" id="anteroom"></div>
   </section>
 
-  <section id="draw" class="sec wrap" aria-labelledby="draw-h">
+  <section id="scope-sec" class="sec wrap" aria-labelledby="scope-h">
     <header class="sec-head">
       <span class="sec-no">II</span>
-      <h2 id="draw-h" data-scramble>The draw</h2>
-      <p class="sec-lede" id="draw-lede"></p>
+      <h2 id="scope-h" data-scramble>The scope</h2>
+      <p class="sec-lede">The same files as a radar. Distance from the centre is distance from cracked, and the centre is still empty. Watch the units go in, replay the board from its first commit, or find what has gone cold.</p>
     </header>
-    <div class="streams" id="streams"></div>
-    <p class="fine draw-note" id="draw-note"></p>
+    <div class="scope-layout">
+      <figure class="scope-fig">
+        <div class="scope" id="scope"></div>
+      </figure>
+      <div class="scope-side">
+        <div class="scope-modes" role="group" aria-label="Scope mode">
+          <button type="button" data-mode="live" aria-pressed="true">Live</button>
+          <button type="button" data-mode="replay" aria-pressed="false">Replay</button>
+          <button type="button" data-mode="neglect" aria-pressed="false">Neglect</button>
+        </div>
+        <div class="transport" id="transport" hidden>
+          <button type="button" id="t-play" aria-label="Play">▶</button>
+          <input type="range" id="t-range" min="0" value="0" aria-label="Replay position" />
+          <span class="mono t-stamp" id="t-stamp"></span>
+        </div>
+        <p class="scope-cap" id="scope-cap"></p>
+        <div class="scope-key" id="scope-key" aria-label="Key"></div>
+      </div>
+    </div>
   </section>
 
   <section id="unit" class="sec wrap" aria-labelledby="unit-h">
