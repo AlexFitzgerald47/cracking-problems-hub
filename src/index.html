@@ -74,9 +74,14 @@
     <header class="sec-head">
       <span class="sec-no">II</span>
       <h2 id="ascent-h" data-scramble>The ascent</h2>
-      <p class="sec-lede">Each stream is a mountain and PASS is its summit. Every file is a party camped at the altitude its evidence has reached; the inked route shows how high each stream has climbed. Fog settles on any party idle past fourteen days. Tap a party to open its file.</p>
+      <p class="sec-lede">Each stream is a mountain and PASS is its summit. Every file is a camp at the altitude its evidence has reached; the inked route shows how high each stream has climbed. Fog settles on any camp idle past fourteen days, and a beacon marks where the next firing goes. Drag to turn the islands; tap a camp to open its file.</p>
     </header>
-    <div class="ascent" id="ascent"></div>
+    <div class="a3-bar">
+      <div class="a3-legend" id="a3-legend"></div>
+      <div class="a3-toggle" id="a3-toggle" role="group" aria-label="View"><button type="button" data-v="3d" aria-pressed="true">Islands</button><button type="button" data-v="flat" aria-pressed="false">Flat chart</button></div>
+    </div>
+    <div class="a3" id="ascent3d" role="img" aria-label="Four floating islands, one per stream, each a mountain whose summit is PASS. Files are lantern-lit camps at the altitude of their stage. The flat chart shows the same data."><p class="a3-hint mono">Drag to turn · tap a camp to open its file</p></div>
+    <div class="ascent" id="ascent" hidden></div>
   </section>
 
   <section id="wall-sec" class="sec wrap" aria-labelledby="wall-h">

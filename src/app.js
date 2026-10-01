@@ -689,6 +689,41 @@ function paintAscent() {
   host.innerHTML = rail + peaks;
 }
 
+// The islands: the same data in three dimensions, loaded only when the section is near.
+function tipFile(slug, rect) {
+  const f = DRAWN[slug], p = BY[slug]; if (!f || !p) return;
+  tip(`<span class="mono tip-no">${esc(CASE[p.slug])}</span> <b>${esc(nameOf(p))}</b><br><span class="tip-st s-${f.stage}">${esc(STAGES[f.stage].label)}</span> · stream ${esc(f.stream)} · idle ${idleOf(f)}d${f.next ? `<span class="tip-next">${esc(f.next.length > 170 ? f.next.slice(0, 168) + '…' : f.next)}</span>` : ''}`, rect);
+}
+function wireAscent3d() {
+  const host = $('#ascent3d'), flatEl = $('#ascent'), toggle = $('#a3-toggle');
+  $('#a3-legend').innerHTML = ['held', 'panel', 'working', 'blocked', 'unworked'].map(k => `<span class="k s-${k}"><i></i>${esc(STAGES[k].label)}</span>`).join('')
+    + '<span class="k fogk"><i></i>Fog: idle 14+ days</span><span class="k beam"><i></i>Next firing</span>';
+  const show = v => {
+    host.hidden = v !== '3d'; flatEl.hidden = v === '3d';
+    $$('button', toggle).forEach(b => b.setAttribute('aria-pressed', b.dataset.v === v));
+  };
+  let gl = false;
+  try { const c = document.createElement('canvas'); gl = !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { gl = false; }
+  if (!STREAMS.length || !gl) { toggle.hidden = true; show('flat'); return; }
+  show('3d');
+  toggle.addEventListener('click', e => { const b = e.target.closest('button'); if (b) show(b.dataset.v); });
+  new IntersectionObserver(async ([e], o) => {
+    if (!e.isIntersecting) return;
+    o.disconnect();
+    try {
+      const m = await import('./ascent3d.js');
+      m.mount(host, {
+        streams: STREAMS.map(s => ({ id: s.id, label: esc(s.label), files: s.files.map(f => ({ ...f, name: esc(clip(boardName(BY[f.slug]), 22)), idleNow: idleOf(f) })) })),
+        pick: DATA.draw.pick, reduced: REDUCED, onOpen: openFile, onTip: tipFile, onUntip: untip,
+      });
+      host.classList.add('ready');
+    } catch (err) {
+      console.error('Islands unavailable, showing the flat chart', err);
+      toggle.hidden = true; show('flat');
+    }
+  }, { rootMargin: '600px 0px' }).observe(host);
+}
+
 // ---- III. The wall -----------------------------------------------------------
 // Files pinned by stream, red string between files the board's own dispatches name
 // together. The layout is fixed; nothing drifts.
@@ -1218,6 +1253,7 @@ paintFiring();
 paintBoard();
 paintPriority();
 paintAscent();
+wireAscent3d();
 paintWall();
 paintJob();
 wireFlapBoard();
