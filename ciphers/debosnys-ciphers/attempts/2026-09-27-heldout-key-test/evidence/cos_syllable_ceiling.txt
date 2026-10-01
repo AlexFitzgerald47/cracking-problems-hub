@@ -1,0 +1,7 @@
+es: syllables= 692692  /kos/ share=0.0946%   /de/ (open) share=3.9059%
+pt: syllables= 103935  /kos/ share=0.2232%   /de/ (open) share=2.8749%
+fr: syllables=  40807  /kos/ share=0.0049%   /de/ (open) share=3.2421%
+la: syllables= 143404  /kos/ share=0.1548%   /de/ (open) share=0.9881%
+it: syllables= 166069  /kos/ share=0.1313%   /de/ (open) share=1.0592%
+en: syllables=  12348  /kos/ share=0.0081%   /de/ (open) share=1.0285%
+el: syllables= 201974  /kos/ share=0.1069%   /de/ (open) share=0.5852%

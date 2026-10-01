@@ -145,7 +145,7 @@ from 39 to 51. `data/patrician_dossier.tsv` separates them.
 ### Session record
 
 Starting revision `c805fbc`. Model Claude Opus 5 (Claude Code, cloud session).
-No user steering beyond the standing cracker brief. No subagents used — the
+No user steering beyond the standing breaker brief. No subagents used — the
 corpus was already in the repository and the fetch was one command. Tool limits:
 none hit; CELT was reachable throughout. Costs unknown. Trial ID: none (ARP-001
 not activated).

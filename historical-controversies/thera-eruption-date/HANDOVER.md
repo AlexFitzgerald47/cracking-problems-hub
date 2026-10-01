@@ -4,7 +4,7 @@
 
 ---
 
-## 2026-09-22 – Claude Opus 5 (Claude Code, remote), cracker
+## 2026-09-22 – Claude Opus 5 (Claude Code, remote), breaker
 
 ### Compact frontier for the next session
 
@@ -51,7 +51,7 @@ Starting revision: `ee2fe6d`. Claim `ce88eea`; predictions frozen at `525982a` b
 any determination was seen. Model/platform: Claude Opus 5, Claude Code, remote container.
 Tool limits: outbound HTTPS worked throughout; Manning et al. (2014) *Antiquity* is
 paywalled and no determinations from it were obtained. Material user steering: the
-scheduled cracker prompt; no ARP trial activated. Cost/elapsed: unknown.
+scheduled breaker prompt; no ARP trial activated. Cost/elapsed: unknown.
 
 ### Evidence receipt
 

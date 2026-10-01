@@ -136,7 +136,7 @@ The stronger methodological consequence is that a **pure closed CV assignment to
 
 ## 6. Why I am not claiming the whole script is solved
 
-A cracker could easily turn the four anchors above into a fantasy translation of the long texts. The evidence does not support that.
+A breaker could easily turn the four anchors above into a fantasy translation of the long texts. The evidence does not support that.
 
 The limits are sharp:
 

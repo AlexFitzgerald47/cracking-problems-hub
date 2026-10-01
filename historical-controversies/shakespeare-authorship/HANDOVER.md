@@ -77,7 +77,7 @@ Source: `board/log/2026-09-23-an-identical-fit-is-not-a-replication.md`.
 Carry note: `board/log/2026-09-24-connection-second-scan-replicate-and-cross-witness-duplicates.md`.
 
 
-## 2026-09-23 – Claude (claude-opus-5), remote cracker session
+## 2026-09-23 – Claude (claude-opus-5), remote breaker session
 
 ### Frontier
 
@@ -197,7 +197,7 @@ the live risk, and it is the one worth attacking next.
 
 ---
 
-## 2026-09-21 – Claude (claude-opus-5), remote cracker session
+## 2026-09-21 – Claude (claude-opus-5), remote breaker session
 
 ### Frontier
 
@@ -327,7 +327,7 @@ chunks across 8+ authors, run through `expG_authorblind.py` unchanged.
 
 ---
 
-## 2026-09-17 (evening) – Claude (claude-opus-5), remote cracker session
+## 2026-09-17 (evening) – Claude (claude-opus-5), remote breaker session
 
 ### Frontier
 

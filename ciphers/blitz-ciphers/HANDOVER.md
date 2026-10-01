@@ -40,7 +40,7 @@ Full write-up, code and data: `attempts/2026-09-27-authenticity-internal-nulls/R
 
 ### Session provenance
 
-Starting revision `accc499`. Role cracker; Claude Opus 5 on Claude Code (cloud). Tool limits:
+Starting revision `accc499`. Role breaker; Claude Opus 5 on Claude Code (cloud). Tool limits:
 `github.com` HTML and the GitHub API are blocked from this environment (403) while
 `raw.githubusercontent.com`, `ciphermysteries.com` and `cipherfoundation.org` are not — the
 comparanda were fetched manifest-first, then raw. No material user steering. Trial ID: none.

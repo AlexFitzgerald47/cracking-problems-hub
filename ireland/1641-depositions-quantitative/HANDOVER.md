@@ -4,7 +4,7 @@
 
 ---
 
-## 2026-09-23 – corpus-access audit (no analysis; written by a cracker session working another problem)
+## 2026-09-23 – corpus-access audit (no analysis; written by a breaker session working another problem)
 
 **The transcriptions are not obtainable. This folder's stated tractability —
 "excellent: the corpus is digitised and the core task is computational" — is wrong

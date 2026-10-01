@@ -51,7 +51,7 @@ const STAGES = {
   working:   { label: 'In work',       stamp: 'Active',     r: 0.56, order: 4, ring: 'In work' },
   blocked:   { label: 'Blocked',       stamp: 'Blocked',    r: 0.56, order: 5 },
   unworked:  { label: 'Unworked',      stamp: 'Unopened',   r: 0.71, order: 6, ring: 'Unworked' },
-  backlog:   { label: 'Backlog',       stamp: 'Proposed',   r: 0.86, order: 7, ring: 'Backlog' },
+  method:    { label: 'Method note',   stamp: 'Method',     r: 0.86, order: 7, ring: 'Method notes' },
   withdrawn: { label: 'Withdrawn',     stamp: 'Withdrawn',  r: 0.97, order: 8 },
 };
 const SECTORS = [
@@ -65,13 +65,13 @@ const DOMAIN = {
   'historical-texts': { short: 'Texts', drawer: 'B', prefix: 'T' },
   'historical-controversies': { short: 'Controversies', drawer: 'C', prefix: 'H' },
   'ireland': { short: 'Ireland', drawer: 'D', prefix: 'I' },
-  'discovered': { short: 'Backlog', drawer: 'E', prefix: 'P' },
+  'discovered': { short: 'Discovered', drawer: 'E', prefix: 'P' },
 };
 
 // The unit. Callsigns are this site's; creeds and models are quoted from the
 // repository (_roles/*.md, board/SCHEDULE.md) at build time.
 const UNITS = [
-  { key: 'cracker', no: '01', name: 'The Breakers', role: 'Cracker', orders: 'Takes an unclaimed problem, or advances a held one, and works it against primary evidence.' },
+  { key: 'breaker', no: '01', name: 'The Breakers', role: 'Breaker', orders: 'Takes an unclaimed problem, or advances a held one, and works it against primary evidence.' },
   { key: 'validator', no: '02', name: 'The Tribunal', role: 'Validator', orders: 'Three seats, one of them the refuter. Convened by Overwatch whenever a solve-claim is waiting.' },
   { key: 'orchestrator', no: '03', name: 'Overwatch', role: 'Orchestrator', orders: 'Reads the whole board, breaks silos between folders, keeps STATUS.md honest.' },
   { key: 'finder', no: '04', name: 'Pathfinders', role: 'Finder', orders: 'Brings back four verified problems a run, and checks nobody solved them first.' },
@@ -81,7 +81,7 @@ const UNIT = Object.fromEntries(UNITS.map(u => [u.key, u]));
 
 // Insignia: one geometric idea per unit, drawn on a 64-unit grid.
 const SIGIL = {
-  cracker: '<circle cx="32" cy="32" r="15"/><path d="M33 13l-5 9 7 6-6 8 5 6-3 9"/><path d="M20 44l-6 6M44 20l6-6"/>',
+  breaker: '<circle cx="32" cy="32" r="15"/><path d="M33 13l-5 9 7 6-6 8 5 6-3 9"/><path d="M20 44l-6 6M44 20l6-6"/>',
   validator: '<path d="M16 24L32 14l16 10z"/><path d="M22 27v17M32 27v17M42 27v17M15 47h34"/>',
   orchestrator: '<circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><circle cx="32" cy="32" r="1.6" class="fill"/><path d="M32 10v6M32 48v6M10 32h6M48 32h6M32 32l11-11"/>',
   finder: '<path d="M32 11l4.5 16.5L53 32l-16.5 4.5L32 53l-4.5-16.5L11 32l16.5-4.5z"/><path d="M32 18v8"/>',
@@ -90,6 +90,8 @@ const SIGIL = {
 const sigil = (k, cls = '') => `<svg class="sigil ${cls}" viewBox="0 0 64 64" aria-hidden="true">${SIGIL[k] || ''}</svg>`;
 
 const LIVE = DATA.problems.filter(p => !p.isStub);
+// Coverage clock: the last working session, or the day the folder opened.
+const workedAt = p => p.lastWorked || p.firstTouch || p.lastTouch;
 const BY = Object.fromEntries(DATA.problems.map(p => [p.slug, p]));
 const stageOf = p => STAGES[p.stage] ? p.stage : 'working';
 const nameOf = p => p.shortTitle || p.title;
@@ -114,8 +116,9 @@ function flagsOf(p) {
   const f = [], st = stageOf(p);
   if (st === 'held' && !p.claim) f.push('Held, but no row in the STATUS.md validation queue names this folder.');
   if (st === 'held' && p.claim?.since && ageDays(p.claim.since) > 14) f.push(`On hold ${Math.floor(ageDays(p.claim.since))} days and the decisive check has not been run.`);
-  if (st === 'unworked' && (p.roleTouches?.cracker || 0) > 0) f.push(`STATUS.md says never worked, but cracker sessions have committed here ${p.roleTouches.cracker} time${p.roleTouches.cracker === 1 ? '' : 's'}.`);
-  if (st === 'working' && ageDays(p.lastTouch) > 14) f.push(`Listed as in work, but no commit for ${Math.floor(ageDays(p.lastTouch))} days.`);
+  if (st === 'unworked' && (p.roleTouches?.breaker || 0) > 0) f.push(`STATUS.md says never worked, but breaker sessions have committed here ${p.roleTouches.breaker} time${p.roleTouches.breaker === 1 ? '' : 's'}.`);
+  if (st === 'working' && ageDays(workedAt(p)) > 14) f.push(`Listed as in work, but no working session for ${Math.floor(ageDays(workedAt(p)))} days.`);
+  if (['working', 'unworked', 'held'].includes(st) && !p.nextMove && !p.claim) f.push('No next move in HANDOVER.md. Whoever takes this writes one before releasing.');
   if (st === 'panel' && ageDays(p.lastTouch) > 7) f.push(`Waiting for a panel; nothing has touched the folder for ${Math.floor(ageDays(p.lastTouch))} days.`);
   return f;
 }
@@ -214,7 +217,7 @@ function paintHero() {
     { n: count('panel'), l: 'awaiting a panel', c: 'panel' },
     { n: passed, l: 'passed', c: passed ? 'pass' : 'zero' },
     { n: DATA.totals.research7d ?? '—', l: 'research commits, 7 days' },
-    { n: LIVE.filter(p => !['backlog', 'withdrawn'].includes(stageOf(p)) && ageDays(p.lastTouch) > 7).length, l: 'gone cold, 7+ days untouched', c: 'cold' },
+    { n: LIVE.filter(p => !['method', 'withdrawn'].includes(stageOf(p)) && ageDays(workedAt(p)) > 7).length, l: 'gone cold, 7+ days unworked', c: 'cold' },
   ];
   $('#kpis').innerHTML = k.map(x => `<div class="kpi" ${x.c ? `data-c="${x.c}"` : ''}><span class="kpi-n mono">${esc(x.n)}</span><span class="kpi-l">${esc(x.l)}</span></div>`).join('');
   requestAnimationFrame(() => scramble($('#bluf'), { speed: 14, spread: 320 }));
@@ -306,8 +309,8 @@ function buildScope(host, { mini = false } = {}) {
     svg('circle', { r: size, class: 'core' }, g);
     if (!mini && FLAGS[p.slug].length) svg('circle', { cx: size * 0.8, cy: -size * 0.8, r: 4.5, class: 'flag-dot' }, g);
     svg('circle', { r: Math.max(size * 2.2, mini ? 16 : 26), class: 'hit' }, g);
-    const idle = ageDays(p.lastTouch);
-    const expected = !['backlog', 'withdrawn'].includes(st);
+    const idle = ageDays(workedAt(p));
+    const expected = !['method', 'withdrawn'].includes(st);
     return { g, deg, x, y, size, p, idle,
       base: 0.28 + 0.5 * Math.max(0, 1 - idle / 21),
       neglect: expected ? Math.max(0.14, Math.min(1, idle / 14)) : 0.06 };
@@ -325,7 +328,7 @@ function buildScope(host, { mini = false } = {}) {
 
   // Mark where the Breakers last went in.
   let mark = null;
-  const last = DATA.lastByRole?.cracker;
+  const last = DATA.lastByRole?.breaker;
   const target = !mini && last?.problems?.map(s => nodes.find(n => n.p.slug === s)).find(Boolean);
   if (target) {
     const { x, y, size } = target, o = size + 9, l = 7;
@@ -451,7 +454,7 @@ function deploy(ev, dwell) {
 }
 
 const EVENTS = DATA.activity
-  .filter(a => ['cracker', 'validator', 'finder', 'orchestrator'].includes(a.role) && (a.problems?.length || a.role === 'orchestrator'))
+  .filter(a => ['breaker', 'validator', 'finder', 'orchestrator'].includes(a.role) && (a.problems?.length || a.role === 'orchestrator'))
   .slice().reverse();
 let rIdx = 0, rPlaying = false, rAcc = 0;
 const R_STEP = 420;
@@ -485,7 +488,7 @@ function stepReplay(dt) {
 function spawnLive() {
   // Units that went out in the last 72 hours are shown still at work.
   const seen = new Set();
-  const recent = DATA.activity.filter(a => ['cracker', 'validator', 'finder'].includes(a.role) && a.problems?.length && ageDays(a.date) < 3);
+  const recent = DATA.activity.filter(a => ['breaker', 'validator', 'finder'].includes(a.role) && a.problems?.length && ageDays(a.date) < 3);
   let k = 0;
   for (const ev of recent) {
     const s = ev.problems[0];
@@ -502,7 +505,7 @@ function spawnLive() {
 const CAPTIONS = {
   live: () => `Distance from centre is distance from cracked; the centre is <b>PASS</b>. The sweep is Overwatch: it brightens each file by how recently a session touched it. Markers circling a file are units that went in during the last 72 hours.`,
   replay: () => `The board's history, commit by commit. Files appear on the scope when their folder was opened; stages shown are today's, not those at the time.`,
-  neglect: () => `Brightness is time since a session last touched the file; the six coldest files that should be moving are labelled. Backlog proposals are dimmed because nobody is meant to be working them.`,
+  neglect: () => `Brightness is time since a session last touched the file; the six coldest files that should be moving are labelled. Idle time counts from the last Breaker or Validator session, not from edits to STATUS.md.`,
 };
 function setMode(m) {
   MODE = m;
@@ -600,52 +603,53 @@ function paintPriority() {
       </article>`).join('')}</div>` : '';
 }
 
-// ---- The draw: coverage debt by sector stream ----------------------------
-// Advisory. Debt is days since a session last touched the file, weighted by
-// how close the file stands to cracked, so a stalled held claim outranks an
-// idle backlog proposal. STATUS.md and board/TOP_INTEREST.md outrank this.
-const WEIGHT = { held: 2.0, panel: 1.8, working: 1.4, unworked: 1.2, blocked: 0.5 };
-// The next move: the handover's own, or for a held claim the panel's decisive check.
-const nextOf = p => p.nextMove ? { text: p.nextMove.text, src: 'per HANDOVER.md' } : p.claim ? { text: p.claim.missingCheck.replace(/\*\*|`/g, ''), src: 'decisive missing check, per STATUS.md' } : null;
-const debtOf = p => (WEIGHT[stageOf(p)] ? Math.max(0, ageDays(p.lastTouch)) * WEIGHT[stageOf(p)] : 0);
-const STREAM = { 'ciphers': 'A', 'historical-texts': 'B', 'historical-controversies': 'C', 'ireland': 'D' };
+// ---- The draw ---------------------------------------------------------------
+// Rendered from DATA.draw, which scripts/derive.mjs computes — the same numbers a
+// Breaker session gets from `npm run draw`. The site never re-ranks on its own.
+const nextOf = f => f?.next ? { text: f.next } : null;
 
 function paintDraw() {
-  const ranked = LIVE.filter(p => WEIGHT[stageOf(p)] && p.domain !== 'discovered').map(p => ({ p, debt: debtOf(p) }));
-  const max = Math.max(1, ...ranked.map(x => x.debt));
-  $('#draw-lede').innerHTML = `Where the next session should go, if coverage were the only rule. One stream per drawer; each file ranked by <b>coverage debt</b>: days since a session touched it, weighted by how close it stands to cracked.`;
-  $('#streams').innerHTML = SECTORS.map(sec => {
-    const list = ranked.filter(x => x.p.domain === sec.key).sort((a, b) => b.debt - a.debt);
-    // A blocked file cannot move without an archive or a human, so it never leads a stream.
-    const lead = list.find(x => stageOf(x.p) !== 'blocked');
-    const rest = list.filter(x => x !== lead).slice(0, 4);
-    const cold = list.filter(x => ageDays(x.p.lastTouch) > 14).length;
+  const d = DATA.draw;
+  if (!d) { $('#streams').innerHTML = '<p class="empty">No draw in this build.</p>'; return; }
+  const all = d.streams.flatMap(s => s.files);
+  const max = Math.max(1, ...all.map(f => f.debt));
+  const L = d.rotation.last, P = d.pick;
+  const breakerRoutine = (DATA.routines || []).find(r => r.key === 'breaker');
+  $('#draw-lede').innerHTML = `Breaker work is drawn, not chosen. ${L ? `The last Breaker session worked <b>stream ${esc(L.stream)}</b> (${esc(nameOf(BY[L.slug]) || L.slug)}, ${esc(rel(L.date))}). ` : ''}${P ? `The next firing${breakerRoutine ? `, in <span class="mono" data-countdown="breaker">--:--:--</span>,` : ''} takes <b>stream ${esc(P.stream)}</b> and draws <b>${esc(nameOf(BY[P.slug]))}</b>: ${esc(P.reason)}.` : ''} <a href="/framework">How the draw works</a>.`;
+  const row = (f, i) => `
+        <li data-slug="${esc(f.slug)}" tabindex="0" role="button" class="${f.claimed ? 'is-claimed' : ''}">
+          <span class="st-name">${esc(nameOf(BY[f.slug]).replace(/\s*\(.*?\)\s*$/, ''))}${f.slug.startsWith('discovered/') ? ' <i class="disc">new</i>' : ''}</span>
+          <span class="badge s-${f.stage}"></span>
+          <span class="debt sm"><i style="width:${(f.debt / max * 100).toFixed(1)}%"></i></span>
+          <span class="mono dim">${Math.floor(f.idle)}d</span>
+        </li>`;
+  $('#streams').innerHTML = d.streams.map(s => {
+    const lead = s.files.find(f => f.slug === s.lead);
+    const rest = s.files.filter(f => f !== lead).slice(0, 5);
+    const isPick = P && P.stream === s.id;
+    const cold = s.files.filter(f => f.movable && f.idle > 14).length;
+    const noNext = s.files.filter(f => f.movable && !f.next).length;
     return `
-    <article class="stream">
-      <header class="st-head"><span class="mono">Stream ${STREAM[sec.key]}</span><h3>${esc(sec.label)}</h3><span class="mono dim">${list.length} files${cold ? ` · <b class="cold">${cold} cold</b>` : ''}</span></header>
+    <article class="stream${isPick ? ' is-pick' : ''}">
+      <header class="st-head"><span class="mono">Stream ${s.id}${isPick ? ' · <b>next firing</b>' : ''}</span><h3>${esc(s.label)}</h3>
+        <span class="mono dim">${s.files.length} files${cold ? ` · <b class="cold">${cold} cold</b>` : ''}${noNext ? ` · <b class="warn">${noNext} without a next move</b>` : ''}</span></header>
       ${lead ? `
-      <div class="st-lead" data-slug="${esc(lead.p.slug)}" tabindex="0" role="button">
-        <p class="label">Next in stream</p>
-        <h4>${esc(nameOf(lead.p))}</h4>
-        <p class="st-meta">${badge(lead.p)}<span class="mono">${esc(CASE[lead.p.slug])} · idle ${Math.floor(ageDays(lead.p.lastTouch))}d · debt ${lead.debt.toFixed(0)}</span></p>
+      <div class="st-lead" data-slug="${esc(lead.slug)}" tabindex="0" role="button">
+        <p class="label">${isPick ? 'The pick' : 'Next in stream'}${lead.pickup ? ' · <b class="pickup">pick-up rule</b>' : ''}</p>
+        <h4>${esc(nameOf(BY[lead.slug]))}</h4>
+        <p class="st-meta">${badge(BY[lead.slug])}<span class="mono">${esc(CASE[lead.slug] || '')} · idle ${Math.floor(lead.idle)}d · debt ${Math.round(lead.debt)}</span></p>
         <div class="debt"><i style="width:${(lead.debt / max * 100).toFixed(1)}%"></i></div>
-        ${nextOf(lead.p) ? `<p class="st-next"><span class="label">Next move, ${esc(nextOf(lead.p).src)}</span>${esc(nextOf(lead.p).text)}</p>` : '<p class="st-next dim">No next move written in the handover. Whoever takes this should write one.</p>'}
-      </div>` : '<p class="empty">Nothing in this stream.</p>'}
-      <ol class="st-rest" start="2">${rest.map(x => `
-        <li data-slug="${esc(x.p.slug)}" tabindex="0" role="button">
-          <span class="st-name">${esc(nameOf(x.p).replace(/\s*\(.*?\)\s*$/, ''))}</span>
-          <span class="badge s-${stageOf(x.p)}"></span>
-          <span class="debt sm"><i style="width:${(x.debt / max * 100).toFixed(1)}%"></i></span>
-          <span class="mono dim">${Math.floor(ageDays(x.p.lastTouch))}d</span>
-        </li>`).join('')}</ol>
+        ${lead.next ? `<p class="st-next"><span class="label">Next move</span>${esc(lead.next)}</p>` : '<p class="st-next warn-text">No next move written. Whoever takes this writes one before releasing.</p>'}
+      </div>` : '<p class="empty">Nothing a Breaker can move.</p>'}
+      <ol class="st-rest" start="2">${rest.map(row).join('')}</ol>
     </article>`;
   }).join('');
-  $('#draw-note').innerHTML = `Weights: held ×2.0, panel pending ×1.8, in work ×1.4, unworked ×1.2, blocked ×0.5 (a blocked file cannot move without an archive or a human). Backlog proposals are not ranked. Advisory only: <code>STATUS.md</code> and <code>board/TOP_INTEREST.md</code> set the real draw order.`;
+  $('#draw-note').innerHTML = `${d.overwatch?.length ? `<b>Owed to Overwatch</b> (panel pending, not drawn): ${d.overwatch.map(s => `<button type="button" class="linkish" data-slug="${esc(s)}">${esc(nameOf(BY[s]))}</button>`).join(', ')}. ` : ''}Debt = days since a Breaker or Validator session × stage weight (held ${d.weights.held}, in work ${d.weights.working}, unworked ${d.weights.unworked}, blocked ${d.weights.blocked}). Held claims idle past ${d.pickupDays} days jump the queue; blocked files never lead. Run <code>npm run draw</code> for the same ranking in a terminal.`;
 }
 
 function paintKey() {
-  const stages = ['held', 'panel', 'working', 'blocked', 'unworked', 'backlog'];
-  const units = ['cracker', 'validator', 'finder', 'irregular'];
+  const stages = ['held', 'panel', 'working', 'blocked', 'unworked'];
+  const units = ['breaker', 'validator', 'finder', 'irregular'];
   $('#scope-key').innerHTML = `
     <span class="k-group">${stages.map(k => `<span class="k s-${k}"><i></i>${esc(STAGES[k].label)}</span>`).join('')}</span>
     <span class="k-group">${units.map(k => `<span class="k" data-role="${k}"><svg viewBox="-10 -12 20 22" aria-hidden="true"><path d="M0 -10L7.5 7L0 3.5L-7.5 7Z"/></svg>${esc(UNIT[k].name)}</span>`).join('')}
@@ -699,7 +703,7 @@ function paintUnits() {
 // ---- III. Case files ------------------------------------------------------
 
 const state = { domain: 'all', stage: 'all', q: '' };
-const BOARD_ORDER = ['solved', 'pass', 'held', 'panel', 'working', 'unworked', 'blocked', 'backlog', 'withdrawn'];
+const BOARD_ORDER = ['solved', 'pass', 'held', 'panel', 'working', 'unworked', 'blocked', 'method', 'withdrawn'];
 const byStage = (a, b) => BOARD_ORDER.indexOf(stageOf(a)) - BOARD_ORDER.indexOf(stageOf(b)) || (b.commits30d - a.commits30d) || nameOf(a).localeCompare(nameOf(b));
 let VISIBLE = [];
 

@@ -95,7 +95,7 @@ Carry note: `board/log/2026-09-24-connection-second-scan-replicate-and-cross-wit
 
 ## 2026-09-23 (later) – cross-reference from `ireland/patrician-chronology/`, not a session on this folder
 
-A cracker session on the Patrician problem used this folder's corpus and parser.
+A breaker session on the Patrician problem used this folder's corpus and parser.
 Two things it produced bear directly on the question here, and one of them is an
 independent measurement of the transition this folder exists to date.
 

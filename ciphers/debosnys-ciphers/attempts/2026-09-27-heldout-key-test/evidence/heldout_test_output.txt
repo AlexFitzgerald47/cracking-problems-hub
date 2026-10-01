@@ -1,0 +1,68 @@
+=== T1  line-final rime (couplets counted once) ===
+ S1 tcurl=NU: violating couplets [1, 9]  finals=[(1, 'U'), (2, 'U'), (3, 'DOT'), (4, 'DOT'), (5, 'O'), (6, 'O'), (7, 'O'), (8, 'O'), (13, 'O'), (14, 'O'), (17, 'U'), (18, 'U')]
+ S1 tcurl=opaque: violating couplets []  finals=[(3, 'DOT'), (4, 'DOT'), (5, 'O'), (6, 'O'), (7, 'O'), (8, 'O'), (13, 'O'), (14, 'O')]
+ S2 tcurl=NU: violating couplets [1, 9]  finals=[(1, 'U'), (2, 'U'), (3, 'X'), (4, 'X'), (5, 'O'), (6, 'O'), (7, 'O'), (8, 'O'), (13, 'O'), (14, 'O'), (17, 'U'), (18, 'U')]
+ S2 tcurl=opaque: violating couplets []  finals=[(3, 'X'), (4, 'X'), (5, 'O'), (6, 'O'), (7, 'O'), (8, 'O'), (13, 'O'), (14, 'O')]
+
+=== T3  predecessor of every glyph-initial single tilde N ===
+ S1 tcurl=NU: n=31 {'key:R': 13, 'key:RO': 5, 'NONKEY': 6, 'AMBIG': 7} violations=5
+ S1 tcurl=opaque: n=21 {'key:R': 8, 'NONKEY': 5, 'key:RO': 4, 'AMBIG': 4} violations=4
+ S2 tcurl=NU: n=31 {'key:RO': 4, 'key:R': 15, 'NONKEY': 5, 'AMBIG': 7} violations=4
+ S2 tcurl=opaque: n=21 {'key:RO': 2, 'NONKEY': 4, 'key:R': 11, 'AMBIG': 4} violations=2
+
+=== T4  typed grammar, exact 4,200-typing null ===
+[S1 V2_eye tcurl=NU punct=transp romance] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V1_all_dots tcurl=NU punct=transp romance] pairs=162 canonical=124 hiatus=31 violations=7 | null min=1 q05=12 median=43.0 | p(V<=key)=0.0267
+[S1 V1_all_dots tcurl=NU punct=transp greek] pairs=162 canonical=124 hiatus=31 violations=7 | null min=1 q05=12 median=43.0 | p(V<=key)=0.0267
+[S1 V1_all_dots tcurl=NU punct=break romance] pairs=162 canonical=124 hiatus=31 violations=7 | null min=1 q05=12 median=43.0 | p(V<=key)=0.0267
+[S1 V1_all_dots tcurl=NU punct=break greek] pairs=162 canonical=124 hiatus=31 violations=7 | null min=1 q05=12 median=43.0 | p(V<=key)=0.0267
+[S1 V1_all_dots tcurl=opaque punct=transp romance] pairs=144 canonical=107 hiatus=31 violations=6 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0460
+[S1 V1_all_dots tcurl=opaque punct=transp greek] pairs=144 canonical=107 hiatus=31 violations=6 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0460
+[S1 V1_all_dots tcurl=opaque punct=break romance] pairs=144 canonical=107 hiatus=31 violations=6 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0460
+[S1 V1_all_dots tcurl=opaque punct=break greek] pairs=144 canonical=107 hiatus=31 violations=6 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0460
+[S1 V2_eye tcurl=NU punct=transp greek] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V2_eye tcurl=NU punct=break romance] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V2_eye tcurl=NU punct=break greek] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V2_eye tcurl=opaque punct=transp romance] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V2_eye tcurl=opaque punct=transp greek] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V2_eye tcurl=opaque punct=break romance] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V2_eye tcurl=opaque punct=break greek] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V3_measured tcurl=NU punct=transp romance] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V3_measured tcurl=NU punct=transp greek] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V3_measured tcurl=NU punct=break romance] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V3_measured tcurl=NU punct=break greek] pairs=154 canonical=118 hiatus=29 violations=7 | null min=1 q05=12 median=41.0 | p(V<=key)=0.0302
+[S1 V3_measured tcurl=opaque punct=transp romance] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V3_measured tcurl=opaque punct=transp greek] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V3_measured tcurl=opaque punct=break romance] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S1 V3_measured tcurl=opaque punct=break greek] pairs=136 canonical=101 hiatus=29 violations=6 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0500
+[S2 V1_all_dots tcurl=NU punct=transp romance] pairs=162 canonical=125 hiatus=30 violations=7 | null min=1 q05=13 median=42.0 | p(V<=key)=0.0240
+[S2 V1_all_dots tcurl=NU punct=transp greek] pairs=162 canonical=127 hiatus=30 violations=5 | null min=1 q05=12 median=42.0 | p(V<=key)=0.0183
+[S2 V1_all_dots tcurl=NU punct=break romance] pairs=162 canonical=125 hiatus=30 violations=7 | null min=1 q05=13 median=42.0 | p(V<=key)=0.0240
+[S2 V1_all_dots tcurl=NU punct=break greek] pairs=162 canonical=127 hiatus=30 violations=5 | null min=1 q05=12 median=42.0 | p(V<=key)=0.0183
+[S2 V1_all_dots tcurl=opaque punct=transp romance] pairs=144 canonical=109 hiatus=30 violations=5 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0360
+[S2 V1_all_dots tcurl=opaque punct=transp greek] pairs=144 canonical=111 hiatus=30 violations=3 | null min=0 q05=6 median=37.0 | p(V<=key)=0.0231
+[S2 V1_all_dots tcurl=opaque punct=break romance] pairs=144 canonical=109 hiatus=30 violations=5 | null min=0 q05=7 median=38.0 | p(V<=key)=0.0360
+[S2 V1_all_dots tcurl=opaque punct=break greek] pairs=144 canonical=111 hiatus=30 violations=3 | null min=0 q05=6 median=37.0 | p(V<=key)=0.0231
+[S2 V2_eye tcurl=NU punct=transp romance] pairs=152 canonical=118 hiatus=27 violations=7 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0240
+[S2 V2_eye tcurl=NU punct=transp greek] pairs=152 canonical=120 hiatus=27 violations=5 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0183
+[S2 V2_eye tcurl=NU punct=break romance] pairs=152 canonical=118 hiatus=27 violations=7 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0240
+[S2 V2_eye tcurl=NU punct=break greek] pairs=152 canonical=120 hiatus=27 violations=5 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0183
+[S2 V2_eye tcurl=opaque punct=transp romance] pairs=135 canonical=103 hiatus=27 violations=5 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0360
+[S2 V2_eye tcurl=opaque punct=transp greek] pairs=135 canonical=105 hiatus=27 violations=3 | null min=0 q05=6 median=35.0 | p(V<=key)=0.0231
+[S2 V2_eye tcurl=opaque punct=break romance] pairs=135 canonical=103 hiatus=27 violations=5 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0360
+[S2 V2_eye tcurl=opaque punct=break greek] pairs=135 canonical=105 hiatus=27 violations=3 | null min=0 q05=6 median=35.0 | p(V<=key)=0.0231
+[S2 V3_measured tcurl=NU punct=transp romance] pairs=153 canonical=119 hiatus=27 violations=7 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0240
+[S2 V3_measured tcurl=NU punct=transp greek] pairs=153 canonical=121 hiatus=27 violations=5 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0183
+[S2 V3_measured tcurl=NU punct=break romance] pairs=153 canonical=119 hiatus=27 violations=7 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0240
+[S2 V3_measured tcurl=NU punct=break greek] pairs=153 canonical=121 hiatus=27 violations=5 | null min=1 q05=12 median=40.0 | p(V<=key)=0.0183
+[S2 V3_measured tcurl=opaque punct=transp romance] pairs=135 canonical=103 hiatus=27 violations=5 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0360
+[S2 V3_measured tcurl=opaque punct=transp greek] pairs=135 canonical=105 hiatus=27 violations=3 | null min=0 q05=6 median=35.0 | p(V<=key)=0.0231
+[S2 V3_measured tcurl=opaque punct=break romance] pairs=135 canonical=103 hiatus=27 violations=5 | null min=0 q05=7 median=36.0 | p(V<=key)=0.0360
+[S2 V3_measured tcurl=opaque punct=break greek] pairs=135 canonical=105 hiatus=27 violations=3 | null min=0 q05=6 median=35.0 | p(V<=key)=0.0231
+
+[best-of-2 V1_all_dots tcurl=NU] key min V=7 | null median=41.0 q05=12 | p=0.0286
+[best-of-2 V1_all_dots tcurl=opaque] key min V=5 | null median=36.0 q05=6 | p=0.0400
+[best-of-2 V2_eye tcurl=NU] key min V=7 | null median=39.0 q05=11 | p=0.0312
+[best-of-2 V2_eye tcurl=opaque] key min V=5 | null median=34.0 q05=6 | p=0.0450
+[best-of-2 V3_measured tcurl=NU] key min V=7 | null median=39.0 q05=11 | p=0.0312
+[best-of-2 V3_measured tcurl=opaque] key min V=5 | null median=34.0 q05=6 | p=0.0450

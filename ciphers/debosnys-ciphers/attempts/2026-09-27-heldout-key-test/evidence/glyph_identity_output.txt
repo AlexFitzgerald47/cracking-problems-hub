@@ -1,0 +1,33 @@
+1. instrument validation (each TCURL as probe; mean rank of the other nine among 24):
+   mean 5.32 (chance 11.5, best possible 4.0); per probe [np.float64(5.3), np.float64(5.2), np.float64(4.4), np.float64(6.2), np.float64(4.9), np.float64(5.0), np.float64(7.0), np.float64(5.2), np.float64(4.9), np.float64(5.0)]
+2. signature NU_with_blot: TCURL mean rank 11.9 of 24 (chance 12.0); exact rank-sum p = 4.89e-01; top5 = ['L18 t1/LOOP', 'L13 t11/N_X', 'L10 t12/N_X', 'L5 t1/OMEGA', 'L13/TCURL']
+2. signature NU: TCURL mean rank 7.1 of 24 (chance 12.0); exact rank-sum p = 2.71e-03; top5 = ['L13/TCURL', 'L18 end/TCURL', 'L4 t6/N_OO', 'L9/TCURL', 'L15 t8/N_SLO']
+3. specificity: probe O2RNO  -> TCURL mean rank 17.2
+3. specificity: probe CROSSB -> TCURL mean rank 16.8
+3. specificity: probe C2B2   -> TCURL mean rank 17.0
+4. dotted-X marks: line token height width ink_px gap elongation
+   L 2 t10  8  7  40  6 1.03
+   L 3 t 4  4  3   7 11 1.31
+   L 3 t 5  2  2   3 11 1.73
+   L 3 t12  4  3  11 10 1.42
+   L 4 t 5  4  3   9 12 1.62
+   L 4 t13  5  6  26  8 1.15
+   L 5 t 4  5  5  19  8 1.17
+   L 6 t 7  8  5  22  7 2.66
+   L 7 t 6  5  3  10 14 2.44
+   L 7 t 7  4  2   7 12 2.18
+   L 8 t 6  6  5  24  8 1.18
+   L 9 t 5  6  4  16  6 1.62
+   L11 t 6  6  5  21 15 1.33
+   L11 t11  5  3  11  4 2.10
+   L11 t16  6  5  21 10 1.69
+   L11 t17  6  4  15 10 1.41
+   L13 t17  5  6  23  6 1.51
+   L14 t12  4  4  11 13 1.81
+   L15 t 4  7  6  31  6 1.25
+   L15 t 5  6  6  28  7 1.11
+   L16 t 3  6  4  15  4 1.94
+   L17 t 6  9  4  26  5 2.43
+   L19 t 4  3  2   6  8 1.63
+   L20 t 2  6  6  29  1 1.23
+   L20 t 3  7  5  29  1 1.55

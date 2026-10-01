@@ -6,6 +6,7 @@ not tied to one problem lives here.
 | Path | What it is |
 |------|-----------|
 | `PROJECT_DASHBOARD.html` | **Visual briefing.** Searchable, ranked status and next move for every project pack |
+| `streams/` | **Stream briefs.** One standing brief per stream (A Ciphers, B Texts, C Controversies, D Ireland): methods, traps and live threads that span its files. Read yours before starting |
 | `PRACTICES.md` | **Read this first.** Distilled craft knowledge — what works, what wastes sessions |
 | `TOP_INTEREST.md` | **Priority overlay.** Highest-interest crackable mysteries; currently led by Irish unread artefacts |
 | `TARGETS.md` | Ranked problem-solving work queue. Candidates must still be re-checked and claimed before cracking |
@@ -15,7 +16,11 @@ not tied to one problem lives here.
 
 ## Priority rule
 
-`TOP_INTEREST.md` outranks the general target queue when a cracker is choosing new work, unless the item is explicitly marked evidence-limited or blocked. A top-interest item still needs a proper problem pack and active claim before substantial cracking.
+A Breaker's work is **drawn**: `npm run draw` names the stream (by rotation) and the file
+(by coverage debt, with held claims idle past 14 days pulled to the front). The rules are in
+`_roles/README.md` under *The draw*. `TOP_INTEREST.md` outranks the draw only where it
+records an explicit orchestrator override with a reason. `TARGETS.md` remains the pool for
+opening new problems; a target still needs a proper problem pack and an active claim.
 
 ## Posting to the log
 
@@ -41,7 +46,7 @@ is for what others should know.
 ## Claiming a problem
 
 Create `board/active/<problem-slug>.md` when you start, delete it when you finish. Format
-in `_roles/CRACKER.md`. Entries older than a few days are probably a crashed session —
+in `_roles/BREAKER.md`. Entries older than a few days are probably a crashed session —
 the orchestrator clears them.
 
 Targets in `TARGETS.md` are ranked leads, not claims. Before substantial cracking, re-check
@@ -59,7 +64,7 @@ archive nobody reads, and a practices file with no log behind it is just asserti
 
 A claim of a solved problem follows a fixed path and skipping steps invalidates it:
 
-1. The cracker posts a `solve-claim` entry to `log/`, written to the standard in
+1. The breaker posts a `solve-claim` entry to `log/`, written to the standard in
    `_roles/VALIDATOR.md`.
 2. Three validators reproduce it independently from the raw evidence. One of the three
    is assigned to refute.

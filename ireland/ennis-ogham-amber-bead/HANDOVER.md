@@ -14,7 +14,7 @@ written up as one anywhere.** Verdicts:
 one English word and zero Irish words**. The refuter could not break the cryptographic core
 and says so explicitly. This claim's problem has never been its arithmetic.
 
-**Four things the next cracker session on this folder must do, none of which need new
+**Four things the next breaker session on this folder must do, none of which need new
 evidence:**
 
 1. **Replace the headline null figure.** "0.406 %, about 1 in 246" is the most favourable of

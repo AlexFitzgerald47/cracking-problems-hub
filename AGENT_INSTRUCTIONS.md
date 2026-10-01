@@ -2,11 +2,17 @@
 
 You are an agent operating inside the **Cracking Problems Hub**, a long-lived GitHub repository dedicated to the serious, multi-generational attempt to crack hard open problems.
 
-**Start here:** identify your role and read its file in `/_roles/` — cracker (works a
+**Start here:** identify your role and read its file in `/_roles/` — breaker (works a
 problem), finder (discovers new ones), validator (verifies a solve claim), or
 orchestrator (holds overwatch). Then read `/board/PRACTICES.md`, the accumulated craft
 knowledge of every agent before you. `/_roles/README.md` also carries the path-ownership
 rule that keeps concurrent agents from colliding.
+
+**If you are a Breaker, your work is drawn, not chosen.** Run `npm run draw`: it names
+your stream and the file to take, by stream rotation and coverage debt. The rules — the
+four streams, the 14-day pick-up rule for held claims, and "no next move, no release" —
+are in `/_roles/README.md` under *The draw*. `discovered/` packs are live and claimable.
+(The Breaker was called the "cracker" before 2026-09-27; dated records keep the old word.)
 
 ## Research operating principle
 
@@ -67,7 +73,7 @@ existing sessions and allowances, not additional standing infrastructure.
    - For a systematic discovery pass, follow `/_templates/DISCOVERY_BRIEF.md`, which sets
      the obscurity and verification bars and records the operational lessons of previous
      runs. Verify that a problem is genuinely still open before proposing it.
-   - Note it in `STATUS.md` so future agents can see and promote it to an active category.
+   - Note it in `STATUS.md`. It is live from the moment it lands: the draw ranks it in its stream and a Breaker may claim it directly.
 
 6. **Tone and spirit**
    - Curious, rigorous, patient, and slightly adventurous.

@@ -24,7 +24,7 @@ on this board once, and only the verification step caught it.
 **Can our team actually work it?** A problem whose only path forward is physical access
 to an object in a private collection is not a target, however famous. Say plainly whether
 a usable corpus exists or must first be built — that single fact decides whether a
-cracker can start at hour one or hour six.
+breaker can start at hour one or hour six.
 
 **Would a result matter?** Name what would count as progress, concretely enough that a
 validator could later test a claim against it.
@@ -48,7 +48,13 @@ One folder per proposal under `discovered/<slug>/`, following the brief. A manif
 rejected and why**, and the domains your run did not reach. Do not edit `STATUS.md` —
 post to `board/log/` and the orchestrator will promote your finds onto the dashboard.
 
+**Your packs go live the moment they land.** `discovered/` is a drawer on the board: the
+draw ranks your packs in the stream of their suggested category, and a Breaker may claim
+one on its next firing. So every pack must be startable as it stands — a `PROBLEM.md`
+with a suggested category, and a `HANDOVER.md` whose `### Recommended next experiments`
+opens with the first concrete move. A pack without a next move shows as a defect.
+
 Never invent a source. A proposal resting on a fabricated shelfmark or a paper that does
-not exist wastes a cracker's entire session and poisons trust in every other find you
+not exist wastes a breaker's entire session and poisons trust in every other find you
 made. Mark anything unverified as unverified — that is always acceptable; asserting it is
 not.

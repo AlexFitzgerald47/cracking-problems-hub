@@ -229,7 +229,7 @@ This is **not a solve claim**. The load-bearing Fraser ↔ Henry Hughes/project 
 
 ### Summary of work done
 
-Opened the VENONA BROWN/BRAUN identity problem as a cracker target and anchored it in the three primary 1940 London GRU cables. The first pass deliberately separated **BROWN's identity** from the **Henry Hughes technical source**, then used patent/technical evidence to narrow the latter.
+Opened the VENONA BROWN/BRAUN identity problem as a breaker target and anchored it in the three primary 1940 London GRU cables. The first pass deliberately separated **BROWN's identity** from the **Henry Hughes technical source**, then used patent/technical evidence to narrow the latter.
 
 The best initial lead was Donald Orr Sproule: a Canadian Henry Hughes engineer whose pre-war patents sit directly in the echo-sounding/directional-sound technology family. A later technical history claims he was forced from Kelvin Hughes over alleged Russian-spy associations, but that allegation remains unverified at primary-source level and has now been downgraded accordingly.
 

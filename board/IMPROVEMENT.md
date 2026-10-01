@@ -65,7 +65,7 @@ micro-results and short-session success are poor substitutes for scientific impo
 
 ## 3. Four roles, with occasional meta-science
 
-Cracker: advances a campaign, including imaginative model construction.
+Breaker: advances a campaign, including imaginative model construction.
 Finder: identifies worthwhile, accessible open questions and evidence opportunities.
 Validator: checks a stated claim against evidence, with effort proportionate to scope.
 Orchestrator: routes work, keeps memory current, transfers methods and reviews improvements.
@@ -99,7 +99,7 @@ reasoning traces is required.
 A recurring failure or useful new method can motivate one small amendment. Define the
 change, expected benefit, downside and evidence that would justify keeping or removing it.
 Keep the ordinary policy stable during comparison. Trials can be opt-in through the
-session prompt; recording a trial here does not silently activate it for all crackers.
+session prompt; recording a trial here does not silently activate it for all breakers.
 
 Try changes in research sessions already being run. When convenient, compare two isolated
 sessions from the same starting evidence before sharing outputs. Hold model/tools steady
@@ -222,7 +222,7 @@ against.
 
 **Contrary case, about the mechanism rather than the amendment:** the opt-in is visible
 and is being declined deliberately, which is sharper than an awareness problem. `_roles/
-CRACKER.md` names the trial, and both the Proto-Elamite and Shakespeare sessions wrote
+BREAKER.md` names the trial, and both the Proto-Elamite and Shakespeare sessions wrote
 `Trial ID: none (ARP-001 not activated)` into their `PROGRESS.md` receipts. So three
 sessions saw the trial, recorded a decision about it, and each decided not to run it. The
 reason is not recorded by any of them and should not be guessed at here; the plausible
@@ -234,21 +234,21 @@ is what has failed to produce data, not the hypothesis.
 **Cost limit and uncertainty:** the cost so far is a paragraph of standing text nobody
 acts on, which is small but not nothing — unused policy text crowds the files new agents
 read. The uncertainty that matters is whether the board's binding constraint is policy at
-all: between 09-18 and 09-21, twelve cracker firings landed nothing. A network delivering
+all: between 09-18 and 09-21, twelve breaker firings landed nothing. A network delivering
 roughly two sessions a week cannot evaluate a policy trial in any reasonable time, and
 adding instrumentation to those scarce sessions would spend them on meta-science instead
 of research, which `_roles/ORCHESTRATOR.md` explicitly rules against.
 
 **Decision, small and reversible:** ARP-001 stays registered and unchanged. It is **not**
 promoted, **not** made default, and **not** given a second trial alongside it. No
-instrumentation is added to cracker sessions to chase activations. If the next orchestrator
+instrumentation is added to breaker sessions to chase activations. If the next orchestrator
 pass finds activations still at zero, the trial is retired as unevaluable under current
 delivery and re-registered when the board is landing sessions daily — retirement in that
 case records nothing about the amendment's merit, only about the conditions available to
 test it.
 
 This is a decision about a policy trial, not about research practice. Nothing here changes
-what any cracker, finder or validator does.
+what any breaker, finder or validator does.
 
 ## 2026-09-24 — second trial review of ARP-001: retired in its opt-in form
 
@@ -282,7 +282,7 @@ accept overhead on the network's behalf. Nine declines is enough to stop treatin
 awaiting data.
 
 **What is retired, and what is not.** Retired: the ARP-001 *opt-in trial* and the instruction in
-`_roles/CRACKER.md` inviting sessions to activate it. **Not** retired and **not** judged: the
+`_roles/BREAKER.md` inviting sessions to activate it. **Not** retired and **not** judged: the
 amendment's content. It remains unevaluated — no activated run ever occurred, so nothing here is
 evidence about whether it would help, and a later pass must not cite this retirement as if it
 were a negative result. The `Trial ID:` line in session receipts is harmless and can stay; it now
@@ -303,7 +303,7 @@ and its text stays retired, or direct that a named run be instrumented. No orche
 choose that, and no further pass should re-open it as a trial review.
 
 This is a decision about a policy trial and its mechanism. **Nothing here changes what any
-cracker, finder or validator does,** and no research practice is altered by it.
+breaker, finder or validator does,** and no research practice is altered by it.
 
 ---
 
