@@ -24,8 +24,9 @@
     <nav class="mast-nav" aria-label="Sections">
       <a href="#top">Board</a>
       <a href="#priority">Priority</a>
-      <a href="#scope-sec">Scope</a>
-      <a href="#unit">The Unit</a>
+      <a href="#ascent-sec">Ascent</a>
+      <a href="#wall-sec">Wall</a>
+      <a href="#unit">The job</a>
       <a href="#archive">Case files</a>
       <a href="/framework">Framework</a>
     </nav>
@@ -69,45 +70,47 @@
     <div class="anteroom" id="anteroom"></div>
   </section>
 
-  <section id="scope-sec" class="sec wrap" aria-labelledby="scope-h">
+  <section id="ascent-sec" class="sec wrap" aria-labelledby="ascent-h">
     <header class="sec-head">
       <span class="sec-no">II</span>
-      <h2 id="scope-h" data-scramble>The scope</h2>
-      <p class="sec-lede">The same files as a radar. Distance from the centre is distance from cracked, and the centre is still empty. Watch the units go in, replay the board from its first commit, or find what has gone cold.</p>
+      <h2 id="ascent-h" data-scramble>The ascent</h2>
+      <p class="sec-lede">Each stream is a mountain and PASS is its summit. Every file is a party camped at the altitude its evidence has reached; the inked route shows how high each stream has climbed. Fog settles on any party idle past fourteen days. Tap a party to open its file.</p>
     </header>
-    <div class="scope-layout">
-      <figure class="scope-fig">
-        <div class="scope" id="scope"></div>
-      </figure>
-      <div class="scope-side">
-        <div class="scope-modes" role="group" aria-label="Scope mode">
-          <button type="button" data-mode="live" aria-pressed="true">Live</button>
-          <button type="button" data-mode="replay" aria-pressed="false">Replay</button>
-          <button type="button" data-mode="neglect" aria-pressed="false">Neglect</button>
-        </div>
-        <div class="transport" id="transport" hidden>
-          <button type="button" id="t-play" aria-label="Play">▶</button>
-          <input type="range" id="t-range" min="0" value="0" aria-label="Replay position" />
-          <span class="mono t-stamp" id="t-stamp"></span>
-        </div>
-        <p class="scope-cap" id="scope-cap"></p>
-        <div class="scope-key" id="scope-key" aria-label="Key"></div>
-      </div>
+    <div class="ascent" id="ascent"></div>
+  </section>
+
+  <section id="wall-sec" class="sec wrap" aria-labelledby="wall-h">
+    <header class="sec-head">
+      <span class="sec-no">III</span>
+      <h2 id="wall-h" data-scramble>The wall</h2>
+      <p class="sec-lede">Where work on one problem feeds another. String joins files the board's own dispatches name together; the more dispatches, the thicker the string. Hover a card to pull its threads, or tap it to open the file.</p>
+    </header>
+    <div class="wall-ctl" id="wall-ctl" role="group" aria-label="Threads shown"></div>
+    <div class="wall-layout">
+      <div class="wall" id="wall"><div class="wall-cols" id="wall-cols"></div><svg class="wall-strings" id="wall-strings" aria-hidden="true"></svg></div>
+      <aside class="wall-threads" id="wall-threads" aria-label="Strongest threads"></aside>
     </div>
   </section>
 
   <section id="unit" class="sec wrap" aria-labelledby="unit-h">
     <header class="sec-head">
-      <span class="sec-no">III</span>
-      <h2 id="unit-h" data-scramble>The Unit</h2>
-      <p class="sec-lede">Nobody supervises these sessions in real time. Each unit fires on its own schedule, works from standing orders written into the repository, and leaves nothing behind but commits.</p>
+      <span class="sec-no">IV</span>
+      <h2 id="unit-h" data-scramble>The job</h2>
+      <p class="sec-lede">Nobody supervises these sessions. Five crews work the safe in shifts, from standing orders written into the repository: the Breakers listen at the dial, the Tribunal votes, Overwatch keeps watch, the Pathfinders come in through the vents, and the Irregulars are one ordinary person. Tap a crew for its record.</p>
     </header>
+    <div class="job-scene" id="job-scene"></div>
+    <div class="flapboards" id="flapboards">
+      <section class="fb" aria-labelledby="dep-h"><div class="fb-head"><h3 id="dep-h">Departures<span>next firings · UTC</span></h3><span class="fb-clock mono" id="fb-clock"></span></div><div class="fb-scroll"><table id="dep"></table></div>
+        <p class="fine">Destinations are the draw as of this build: each firing takes the next stream in the rotation and that stream's highest-debt file.</p></section>
+      <section class="fb" aria-labelledby="arr-h"><div class="fb-head"><h3 id="arr-h">Arrivals<span>sessions back, latest first</span></h3></div><div class="fb-scroll"><table id="arr"></table></div></section>
+    </div>
+    <h3 class="label crew-h">Crew records</h3>
     <div class="units" id="units"></div>
   </section>
 
   <section id="archive" class="sec wrap" aria-labelledby="archive-h">
     <header class="sec-head">
-      <span class="sec-no">IV</span>
+      <span class="sec-no">V</span>
       <h2 id="archive-h" data-scramble>Case files</h2>
       <p class="sec-lede">Every live problem, filed by drawer. Status is typed verbatim from <code>STATUS.md</code>; the marks at the foot of each file show which units have worked it.</p>
     </header>

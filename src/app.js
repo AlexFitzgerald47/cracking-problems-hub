@@ -177,6 +177,7 @@ const cd = ms => {
 function tick() {
   const now = Date.now();
   $('#clock').textContent = new Date(now).toISOString().slice(11, 19) + 'Z';
+  const fc = $('#fb-clock'); if (fc) fc.textContent = new Date(now).toISOString().slice(11, 19);
   const next = (DATA.routines || []).map(r => ({ ...r, at: nextFire(r.rule, now) })).filter(r => r.at).sort((a, b) => a.at - b.at)[0];
   if (next) $('#mast-next').innerHTML = `<span class="dim">${esc(UNIT[next.key]?.name || next.label)} deploy in</span> ${cd(next.at - now)}`;
   $$('[data-countdown]').forEach(el => {
@@ -338,205 +339,23 @@ function buildScope(host, { mini = false } = {}) {
   return scope;
 }
 
-// ---- Scope modes: live, replay, neglect -------------------------------------
+// ---- The mini scope's sweep ----------------------------------------------------
 
-let MODE = 'live', HERO = null;
 const PERIOD = 9000;
-let lastT = 0;
 function spin(t) {
-  const dt = Math.min(64, t - (lastT || t)); lastT = t;
   const a = (t % PERIOD) / PERIOD * 360;
   for (const s of scopes) {
     if (!s.visible) continue;
-    const neglect = MODE === 'neglect' && !s.mini;
-    s.sweep.style.display = neglect ? 'none' : '';
     s.sweep.setAttribute('transform', `rotate(${a.toFixed(2)})`);
     for (const n of s.nodes) {
-      if (neglect) { n.g.style.setProperty('--g', n.neglect.toFixed(3)); continue; }
       const behind = (a - n.deg + 360) % 360;
       const glow = behind < 320 ? Math.exp(-behind / 50) : 0;
       n.g.style.setProperty('--g', Math.min(1, n.base + glow * 0.9).toFixed(3));
     }
   }
-  if (HERO?.visible) { stepAgents(t, dt); stepPulses(t); if (MODE === 'replay') stepReplay(dt); }
   if (!document.hidden) requestAnimationFrame(spin);
 }
-document.addEventListener('visibilitychange', () => { if (!document.hidden && !REDUCED) { lastT = 0; requestAnimationFrame(spin); } });
-
-// Agents: one marker per sortie, in its unit's colour. They fly in from the
-// rim, circle the file they are working, and leave when the work is done.
-let agents = [], pulseList = [];
-const unitOf = a => a.unit === 'irregular' ? 'irregular' : a.role;
-function spawnAgent(role, slug, { dwell = 1600, refuter = false, delay = 0 } = {}) {
-  const n = HERO?.by[slug];
-  if (!n || REDUCED) return;
-  const [sx, sy] = polar(Math.random() * 360, HERO.R * 1.2);
-  const g = svg('g', { class: 'agent', 'data-role': role }, HERO.agentLayer);
-  const trail = svg('polyline', { class: 'trail' }, g);
-  const body = svg('g', {}, g);
-  svg('path', { d: 'M0 -10L7.5 7L0 3.5L-7.5 7Z', class: 'body' }, body);
-  if (refuter) svg('circle', { r: 13, class: 'refuter' }, body);
-  agents.push({ g, trail, body, n, x: sx, y: sy, pts: [], phase: 'wait', t0: performance.now() + delay, dwell, orbit: Math.random() * 6.28, dir: Math.random() < .5 ? 1 : -1 });
-}
-function pulse(n, cls = '', max = 46) {
-  if (REDUCED || !HERO) return;
-  const c = svg('circle', { cx: n ? n.x : 0, cy: n ? n.y : 0, r: n ? n.size : 10, class: `pulse ${cls}` }, HERO.pulses);
-  if (n) c.setAttribute('data-stage', stageOf(n.p));
-  pulseList.push({ c, r0: n ? n.size : 10, max, t0: performance.now(), dur: n ? 900 : 1600 });
-}
-function stepPulses(t) {
-  pulseList = pulseList.filter(p => {
-    const k = (t - p.t0) / p.dur;
-    if (k >= 1) { p.c.remove(); return false; }
-    p.c.setAttribute('r', (p.r0 + (p.max) * k).toFixed(1));
-    p.c.style.opacity = (1 - k) * 0.8;
-    return true;
-  });
-}
-function stepAgents(t, dt) {
-  agents = agents.filter(a => {
-    if (a.phase === 'wait') { if (t < a.t0) return true; a.phase = 'travel'; }
-    const n = a.n;
-    let hx = 0, hy = -1;
-    if (a.phase === 'travel') {
-      const dx = n.x - a.x, dy = n.y - a.y, d = Math.hypot(dx, dy);
-      const reach = n.size + 18;
-      if (d <= reach + 2) { a.phase = 'work'; a.t0 = t; pulse(n); }
-      else { const v = Math.min(d - reach, 0.75 * dt); a.x += dx / d * v; a.y += dy / d * v; hx = dx; hy = dy; }
-    }
-    if (a.phase === 'work') {
-      a.orbit += 0.0022 * dt * a.dir;
-      const r = n.size + 18;
-      const nx = n.x + Math.cos(a.orbit) * r, ny = n.y + Math.sin(a.orbit) * r;
-      hx = nx - a.x; hy = ny - a.y; a.x = nx; a.y = ny;
-      if (t - a.t0 > a.dwell) { a.phase = 'leave'; a.t0 = t; }
-    }
-    if (a.phase === 'leave') {
-      const k = (t - a.t0) / 900;
-      if (k >= 1) { a.g.remove(); return false; }
-      const d = Math.hypot(a.x, a.y) || 1;
-      a.x += a.x / d * 0.5 * dt; a.y += a.y / d * 0.5 * dt; hx = a.x; hy = a.y;
-      a.g.style.opacity = 1 - k;
-    }
-    a.pts.push(`${a.x.toFixed(1)},${a.y.toFixed(1)}`);
-    if (a.pts.length > 10) a.pts.shift();
-    a.trail.setAttribute('points', a.pts.join(' '));
-    const h = Math.atan2(hy, hx) * 180 / Math.PI + 90;
-    a.body.setAttribute('transform', `translate(${a.x.toFixed(1)} ${a.y.toFixed(1)}) rotate(${h.toFixed(0)})`);
-    return true;
-  });
-}
-function clearAgents() { agents.forEach(a => a.g.remove()); agents = []; pulseList.forEach(p => p.c.remove()); pulseList = []; }
-
-// A sortie is one commit by one unit against one or more files.
-function deploy(ev, dwell) {
-  const role = unitOf(ev);
-  if (role === 'orchestrator') {
-    pulse(null, 'overwatch', HERO.R);
-    ev.problems.slice(0, 4).forEach(s => HERO.by[s] && pulse(HERO.by[s]));
-    return;
-  }
-  ev.problems.slice(0, 3).forEach((s, i) => {
-    if (role === 'validator') {
-      [0, 1, 2].forEach(j => spawnAgent('validator', s, { dwell, refuter: j === 2, delay: j * 160 }));
-    } else spawnAgent(role, s, { dwell, delay: i * 120 });
-  });
-}
-
-const EVENTS = DATA.activity
-  .filter(a => ['breaker', 'validator', 'finder', 'orchestrator'].includes(a.role) && (a.problems?.length || a.role === 'orchestrator'))
-  .slice().reverse();
-let rIdx = 0, rPlaying = false, rAcc = 0;
-const R_STEP = 420;
-
-function setUnborn(dateIso) {
-  for (const n of HERO.nodes) {
-    const unborn = dateIso && n.p.firstTouch && n.p.firstTouch > dateIso;
-    n.g.classList.toggle('unborn', !!unborn);
-  }
-}
-function showEvent(i) {
-  const ev = EVENTS[Math.max(0, i - 1)];
-  $('#t-range').value = i;
-  if (!ev) { $('#t-stamp').textContent = ''; return; }
-  const who = UNIT[unitOf(ev)]?.name || ev.role;
-  const d = new Date(ev.date).toISOString();
-  $('#t-stamp').innerHTML = `<b>${esc(dm(d))} ${d.slice(11, 16)}Z</b> <span data-role="${esc(unitOf(ev))}"><i></i>${esc(who)}</span> ${esc(ev.subject)}`;
-  setUnborn(ev.date);
-}
-function stepReplay(dt) {
-  if (!rPlaying) return;
-  rAcc += dt;
-  if (rAcc < R_STEP) return;
-  rAcc = 0;
-  if (rIdx >= EVENTS.length) { rPlaying = false; $('#t-play').textContent = '▶'; return; }
-  deploy(EVENTS[rIdx], 900);
-  rIdx++;
-  showEvent(rIdx);
-}
-
-function spawnLive() {
-  // Units that went out in the last 72 hours are shown still at work.
-  const seen = new Set();
-  const recent = DATA.activity.filter(a => ['breaker', 'validator', 'finder'].includes(a.role) && a.problems?.length && ageDays(a.date) < 3);
-  let k = 0;
-  for (const ev of recent) {
-    const s = ev.problems[0];
-    if (seen.has(s) || k >= 8) continue;
-    seen.add(s);
-    const role = unitOf(ev);
-    if (role === 'validator') [0, 1, 2].forEach(j => spawnAgent('validator', s, { dwell: Infinity, refuter: j === 2, delay: k * 500 + j * 160 }));
-    else spawnAgent(role, s, { dwell: Infinity, delay: k * 500 });
-    k++;
-  }
-  return k;
-}
-
-const CAPTIONS = {
-  live: () => `Rings, from the centre out: <b>PASS</b>, held, panel pending, in work, unworked. The sweep is Overwatch, brightening each file by how recently a session touched it. Markers circling a file are units that went in during the last 72 hours; the brackets mark where the Breakers last went in${DATA.lastByRole?.breaker ? `, ${esc(rel(DATA.lastByRole.breaker.date))}` : ''}.`,
-  replay: () => `The board's history, commit by commit. Files appear on the scope when their folder was opened; stages shown are today's, not those at the time.`,
-  neglect: () => `Brightness is time since a session last touched the file; the six coldest files that should be moving are labelled. Idle time counts from the last Breaker or Validator session, not from edits to STATUS.md.`,
-};
-function setMode(m) {
-  MODE = m;
-  $$('.scope-modes button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === m));
-  $('#transport').hidden = m !== 'replay';
-  HERO.root.classList.toggle('m-neglect', m === 'neglect');
-  HERO.root.classList.toggle('m-replay', m === 'replay');
-  clearAgents();
-  rPlaying = false; $('#t-play').textContent = '▶';
-  setUnborn(null);
-  if (m === 'live') spawnLive();
-  if (m === 'replay') { rIdx = 0; rAcc = 0; showEvent(0); setUnborn('0'); rPlaying = true; $('#t-play').textContent = '❚❚'; }
-  if (m === 'neglect' && REDUCED) HERO.nodes.forEach(n => n.g.style.setProperty('--g', n.neglect));
-  $('#scope-cap').innerHTML = CAPTIONS[m]();
-}
-
-function wireScope() {
-  $('.scope-modes').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setMode(b.dataset.mode); });
-  const range = $('#t-range');
-  range.max = EVENTS.length;
-  range.addEventListener('input', () => { rPlaying = false; $('#t-play').textContent = '▶'; clearAgents(); rIdx = +range.value; showEvent(rIdx); });
-  $('#t-play').addEventListener('click', () => {
-    if (rIdx >= EVENTS.length) { rIdx = 0; clearAgents(); showEvent(0); setUnborn('0'); }
-    rPlaying = !rPlaying; $('#t-play').textContent = rPlaying ? '❚❚' : '▶';
-  });
-  // Hovering a file draws the board's own links: files named in the same dispatch.
-  const draw = slug => {
-    HERO.links.innerHTML = '';
-    HERO.nodes.forEach(n => n.g.classList.remove('linked'));
-    if (!slug) return;
-    const from = HERO.by[slug]; if (!from) return;
-    for (const [other, w] of (DATA.connections?.[slug] || []).slice(0, 12)) {
-      const to = HERO.by[other]; if (!to || to.g.classList.contains('unborn')) continue;
-      svg('line', { x1: from.x, y1: from.y, x2: to.x, y2: to.y, class: 'link', 'stroke-width': Math.min(4, 0.8 + w * 0.7) }, HERO.links);
-      to.g.classList.add('linked');
-    }
-  };
-  HERO.root.addEventListener('pointerover', e => { const b = e.target.closest('.blip'); if (b) draw(b.dataset.slug); });
-  HERO.root.addEventListener('pointerleave', () => draw(null));
-  HERO.root.addEventListener('focusin', e => { const b = e.target.closest('.blip'); if (b) draw(b.dataset.slug); });
-}
+document.addEventListener('visibilitychange', () => { if (!document.hidden && !REDUCED) requestAnimationFrame(spin); });
 
 // ---- Shared bits ----------------------------------------------------------
 
@@ -574,6 +393,7 @@ function paintPriority() {
       <h3 class="pf-title">${esc(nameOf(p))}</h3>
       <div class="pf-stamps">${['Validator', 'Validator', 'Refuter'].map((who, j) =>
         `<span class="rubber partial" style="--t:${tilt[(i + j) % 5]}deg">Partial<i>${who}</i></span>`).join('')}</div>
+      <div class="pf-lock">${inkLock('held')}<p class="typed">Five of seven pins set. PASS and a signature outstanding.</p></div>
       <div class="pf-held"><span class="mono">${days ?? '—'}</span><span class="typed">days on hold${c?.since ? `<br>panel closed ${esc(dm(c.since))}` : ''}</span></div>
       <p class="pf-label typed">Action required</p>
       <p class="pf-check"><mark>${c ? md(c.missingCheck) : 'No validation-queue row names this folder.'}</mark></p>
@@ -717,16 +537,7 @@ function paintBoard() {
   });
 }
 
-function paintKey() {
-  const stages = ['held', 'panel', 'working', 'blocked', 'unworked'];
-  const units = ['breaker', 'validator', 'finder', 'irregular'];
-  $('#scope-key').innerHTML = `
-    <span class="k-group">${stages.map(k => `<span class="k s-${k}"><i></i>${esc(STAGES[k].label)}</span>`).join('')}</span>
-    <span class="k-group">${units.map(k => `<span class="k" data-role="${k}"><svg viewBox="-10 -12 20 22" aria-hidden="true"><path d="M0 -10L7.5 7L0 3.5L-7.5 7Z"/></svg>${esc(UNIT[k].name)}</span>`).join('')}
-    <span class="k"><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="4.5" class="flag-dot"/></svg>Flagged</span></span>`;
-}
-
-// ---- II. The Unit ---------------------------------------------------------
+// ---- IV. The job: crew records ------------------------------------------------
 
 function paintUnits() {
   const days = DATA.pulse || [];
@@ -770,7 +581,406 @@ function paintUnits() {
   }).join('');
 }
 
-// ---- III. Case files ------------------------------------------------------
+// ---- Shared by the scenes -------------------------------------------------
+
+const DRAWN = Object.fromEntries((DATA.draw?.streams || []).flatMap(s => s.files.map(f => [f.slug, { ...f, stream: s.id }])));
+const STREAMS = DATA.draw?.streams || [];
+// The seven gates between an opened folder and a signed solution.
+const GATES = ['Opened', 'Worked', 'Claim staked', 'Panel sat', '3×PARTIAL held', 'PASS', 'Signed'];
+const gatesOf = st => ({ held: 5, panel: 3, working: 2, blocked: 2, unworked: 1, pass: 6, solved: 7 }[st] || 1);
+const rng = seed => () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+const clip = (s, n) => s.length > n ? s.slice(0, n - 1) + '…' : s;
+// Every scene's file marks carry data-slug (opens the case file) and data-tip
+// (the paper tooltip with the next move), so they behave like the board's chips.
+const tipAttrs = slug => `data-slug="${esc(slug)}" data-tip="${esc(slug)}"`;
+
+// A tumbler lock in ink, for paper: pins set as far as the file's gates.
+function inkLock(st) {
+  const g = gatesOf(st), cw = 30, H = 46, sy = 23;
+  const cells = GATES.map((name, i) => {
+    const x = i * cw + 2, set = i < g, never = i >= 5;
+    const drop = set ? 0 : 7;
+    return `<rect x="${x}" y="1" width="${cw - 4}" height="${H - 2}" rx="2" class="lk-ch${never ? ' never' : ''}"/>
+      <rect x="${x + 5}" y="5" width="${cw - 14}" height="${sy - 7 + drop}" rx="1.5" class="lk-dr"/>
+      <rect x="${x + 5}" y="${sy + 1 + drop}" width="${cw - 14}" height="${H - sy - 6 - drop}" rx="1.5" class="${set ? 'lk-set' : 'lk-un'}"/>
+      <text x="${x + (cw - 4) / 2}" y="${H + 13}" class="lk-n">${['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii'][i]}</text>`;
+  }).join('');
+  return `<svg class="inklock" viewBox="0 0 212 62" role="img" aria-label="${g} of 7 gates passed"><title>${g} of 7 gates passed: ${GATES.slice(0, g).join(', ')}</title>${cells}<line x1="0" x2="212" y1="${sy}" y2="${sy}" class="lk-sh"/></svg>`;
+}
+
+// ---- II. The ascent ---------------------------------------------------------
+// Each stream is a mountain and PASS its summit; every file is a party camped at
+// the altitude its evidence has reached. Fog settles on anything idle past 14 days.
+
+const CAMPS = [
+  { k: 'unworked', l: 'Base camp', s: 'unworked', r: '', h: .1 },
+  { k: 'working', l: 'Camp I', s: 'in work · blocked', r: 'I', h: .34 },
+  { k: 'panel', l: 'Camp II', s: 'claim before a panel', r: 'II', h: .55 },
+  { k: 'held', l: 'Camp III', s: 'held at 3×PARTIAL', r: 'III', h: .74 },
+  { k: 'pass', l: 'Summit', s: 'PASS · nobody yet', r: 'PASS', h: .95 },
+];
+const PW = 360, PH = 640, BASE = 586, TOPY = 56;
+const altY = h => BASE - h * (BASE - TOPY);
+
+function paintAscent() {
+  const host = $('#ascent');
+  if (!STREAMS.length) { host.innerHTML = '<p class="empty">No draw in this build.</p>'; return; }
+  // Rail: the camp names, drawn at the same scale as the peaks beside it.
+  const rail = `<svg class="as-rail" viewBox="0 0 150 ${PH}" aria-hidden="true">${CAMPS.map(c =>
+    `<text x="0" y="${altY(c.h) - 4}" class="as-cl">${esc(c.l.toUpperCase())}</text><text x="0" y="${altY(c.h) + 12}" class="as-cs">${esc(c.s)}</text>`).join('')}</svg>`;
+  const peaks = STREAMS.map(s => {
+    const r = rng(hash(s.id) + 11), cx = PW / 2, half = 168, N = 30;
+    const pts = [];
+    for (let j = 0; j <= N; j++) {
+      const t = j / N, side = t < .5 ? t * 2 : (1 - t) * 2;
+      const hh = j === N / 2 ? .97 : Math.max(0, side ** 1.25 * .97 + (j && j < N ? (r() - .5) * .1 : 0));
+      pts.push([cx - half + t * half * 2, altY(hh)]);
+    }
+    const ridge = pts.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join('L');
+    const shape = `M${ridge}L${cx + half} ${BASE + 30}L${cx - half} ${BASE + 30}Z`;
+    const widthAt = h => half * (1 - (h / .97) ** .8) * .6;
+    // Parties by camp, blocked files camping at Camp I with the in-work ones.
+    const byCamp = {};
+    for (const f of s.files) (byCamp[f.stage === 'blocked' ? 'working' : f.stage] ||= []).push(f);
+    const top = [...CAMPS].reverse().find(c => byCamp[c.k]?.length);
+    // The route: a switchback from base camp to the summit, inked as far as anyone has climbed.
+    const route = CAMPS.map((c, i) => [cx + (i % 2 ? 1 : -1) * widthAt(c.h) * .55 * (i === 4 ? 0 : 1), altY(c.h) + (i === 4 ? 0 : 6)]);
+    const reached = Math.max(0, CAMPS.indexOf(top));
+    const path = pts2 => 'M' + pts2.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join('L');
+    let parties = '', fog = '', labels = '';
+    for (const c of CAMPS) {
+      const fs = (byCamp[c.k] || []).sort((a, b) => b.debt - a.debt);
+      const w = widthAt(c.h);
+      fs.forEach((f, j) => {
+        const t = fs.length === 1 ? 0 : (j / (fs.length - 1)) * 2 - 1;
+        const x = cx + t * w, y = altY(c.h) - 9 - (j % 2) * 8;
+        const idle = idleOf(f), cold = f.movable && idle > 14, p = BY[f.slug];
+        const mark = f.stage === 'blocked'
+          ? `<path d="M-5 -5L5 5M5 -5L-5 5" class="as-x"/>`
+          : `<circle r="${f.stage === 'held' ? 8 : 6}" class="as-dot"/>`;
+        parties += `<g class="as-party s-${f.stage}${cold ? ' cold' : ''}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})" ${tipAttrs(f.slug)} tabindex="0" role="button" aria-label="${esc(nameOf(p))}, ${esc(STAGES[f.stage]?.label || f.stage)}, idle ${idle} days"><circle r="15" class="hit"/>${mark}${
+          f.slug === DATA.draw.pick?.slug ? `<line x1="0" x2="0" y1="-9" y2="-44" class="as-pole"/><path d="M0 -44l24 6l-24 6Z" class="as-flag next"/><text y="-52" class="as-ft next">NEXT ASCENT</text>` : ''}${
+''}</g>`;
+        if (cold) fog += `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="34" ry="15" class="as-fog" style="animation-delay:${-(hash(f.slug) % 90) / 10}s"/>`;
+        if (f.stage === 'held') {
+          const lx = Math.min(PW - 92, Math.max(92, x));
+          labels += `<text x="${lx.toFixed(1)}" y="${(altY(c.h) - 48 - j * 36).toFixed(1)}" text-anchor="middle" class="as-lab">${esc(clip(boardName(p), 20))}${f.pickup ? `<tspan x="${lx.toFixed(1)}" dy="15" class="as-pu">pick-up rule</tspan>` : ''}</text>`;
+        }
+      });
+    }
+    const cold = s.files.filter(f => f.movable && idleOf(f) > 14).length;
+    return `
+    <figure class="as-peak${DATA.draw.pick?.stream === s.id ? ' is-next' : ''}">
+      <svg viewBox="0 0 ${PW} ${PH}" role="img" aria-label="Stream ${esc(s.id)}, ${esc(s.label)}: ${s.files.length} files, highest at ${esc(top?.l || 'base camp')}">
+        <defs><clipPath id="as-clip-${esc(s.id)}"><path d="${shape}"/></clipPath><filter id="as-blur-${esc(s.id)}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter></defs>
+        ${CAMPS.map(c => `<line x1="0" x2="${PW}" y1="${altY(c.h)}" y2="${altY(c.h)}" class="as-camp${c.k === 'pass' ? ' summit' : ''}"/><text x="${PW - 4}" y="${altY(c.h) - 5}" class="as-roman">${c.r}</text>`).join('')}
+        <path d="${shape}" class="as-fill"/>
+        <g clip-path="url(#as-clip-${esc(s.id)})">${Array.from({ length: Math.ceil((BASE + 30 - TOPY) / 7) }, (_, i) => `<line x1="0" x2="${PW}" y1="${TOPY + i * 7}" y2="${TOPY + i * 7 + 3}" class="as-eng"/>`).join('')}</g>
+        <path d="M${ridge}" class="as-edge"/>
+        <path d="${path(route)}" class="as-route"/>
+        <path d="${path(route.slice(0, reached + 1))}" class="as-route done"/>
+        <line x1="${cx}" x2="${cx}" y1="${altY(.97)}" y2="${altY(.97) - 34}" class="as-pole"/><path d="M${cx} ${altY(.97) - 34}l22 6l-22 6Z" class="as-flag empty"/>
+        <g filter="url(#as-blur-${esc(s.id)})">${fog}</g>
+        ${parties}${labels}
+      </svg>
+      <figcaption><span class="as-id">${esc(s.id)}</span><span class="as-name">${esc(s.label)}</span><span class="as-sum mono">${esc(top?.l || 'Base camp')} · ${s.files.length} parties</span>${cold ? `<span class="as-sum mono"><b>${cold} in fog</b></span>` : ''}</figcaption>
+    </figure>`;
+  }).join('');
+  host.innerHTML = rail + peaks;
+}
+
+// ---- III. The wall -----------------------------------------------------------
+// Files pinned by stream, red string between files the board's own dispatches name
+// together. The layout is fixed; nothing drifts.
+
+let WALL_MIN = 5;
+const THREADS = (() => {
+  const seen = new Set(), out = [];
+  for (const [a, list] of Object.entries(DATA.connections || {})) for (const [b, w] of list) {
+    const k = [a, b].sort().join('|');
+    if (a === b || seen.has(k) || !DRAWN[a] || !DRAWN[b]) continue;
+    seen.add(k); out.push({ a, b, w });
+  }
+  return out.sort((x, y) => y.w - x.w);
+})();
+const tilt = s => ((hash(s) % 60) - 30) / 10;
+
+function paintWall() {
+  if (!STREAMS.length) return;
+  const order = ['held', 'panel', 'working', 'blocked', 'unworked'];
+  $('#wall-cols').innerHTML = STREAMS.map(s => {
+    const fs = [...s.files].sort((a, b) => order.indexOf(a.stage) - order.indexOf(b.stage) || b.debt - a.debt);
+    return `<section class="w-col" aria-label="Stream ${esc(s.id)}"><h3 class="w-h"><b>${esc(s.id)}</b>${esc(s.label)}</h3><div class="w-cards">${fs.map(f => {
+      const p = BY[f.slug];
+      return `<button type="button" class="w-card s-${f.stage}${f.stage === 'held' ? ' big' : ''}${f.slug === DATA.draw.pick?.slug ? ' pick' : ''}" ${tipAttrs(f.slug)} style="--r:${tilt(f.slug)}deg">
+        <span class="w-pin"></span><span class="w-no">${esc(CASE[f.slug] || '')} · stream ${esc(s.id)}</span>
+        <span class="w-t">${esc(boardName(p))}</span><span class="w-foot"><span class="w-stamp">${esc(STAGES[f.stage].label)}</span><span>${idleOf(f)}d</span></span></button>`;
+    }).join('')}</div></section>`;
+  }).join('');
+  const counts = [5, 3, 1].map(m => THREADS.filter(t => t.w >= m).length);
+  $('#wall-ctl').innerHTML = `<span class="label">Show</span>${[[5, 'Strongest'], [3, 'Strong'], [1, 'Every thread']].map(([m, l], i) =>
+    `<button type="button" data-min="${m}" aria-pressed="${m === WALL_MIN}">${l}<span class="mono">${counts[i]}</span></button>`).join('')}`;
+  $('#wall-ctl').addEventListener('click', e => {
+    const b = e.target.closest('[data-min]'); if (!b) return;
+    WALL_MIN = +b.dataset.min;
+    $$('#wall-ctl [data-min]').forEach(x => x.setAttribute('aria-pressed', x === b));
+    drawStrings(); paintThreadList();
+  });
+  paintThreadList();
+  const wall = $('#wall');
+  wall.addEventListener('pointerover', e => { const c = e.target.closest('.w-card'); focusWall(c ? [c.dataset.slug] : null); });
+  wall.addEventListener('pointerleave', () => focusWall(null));
+  wall.addEventListener('focusin', e => { const c = e.target.closest('.w-card'); if (c) focusWall([c.dataset.slug]); });
+  $('#wall-threads').addEventListener('pointerover', e => { const t = e.target.closest('[data-pair]'); focusWall(t ? t.dataset.pair.split('|') : null, true); });
+  $('#wall-threads').addEventListener('pointerleave', () => focusWall(null));
+  addEventListener('resize', () => requestAnimationFrame(drawStrings));
+  document.fonts?.ready.then(drawStrings);
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { drawStrings(); o.disconnect(); } }).observe(wall);
+  drawStrings();
+}
+function paintThreadList() {
+  const list = THREADS.filter(t => t.w >= Math.max(WALL_MIN, 3)).slice(0, 8);
+  $('#wall-threads').innerHTML = `<p class="label">Strongest threads</p><ol>${list.map(t =>
+    `<li data-pair="${esc(t.a)}|${esc(t.b)}"><span class="wt-n mono">${t.w}</span><span><button type="button" class="linkish" data-slug="${esc(t.a)}">${esc(boardName(BY[t.a]))}</button> <i>and</i> <button type="button" class="linkish" data-slug="${esc(t.b)}">${esc(boardName(BY[t.b]))}</button></span></li>`).join('')}</ol>
+    <p class="fine">The number is how many dispatches name both files. Hover a pair to pull its string; tap a name to open the file.</p>`;
+}
+function drawStrings() {
+  const wall = $('#wall'), svgEl = $('#wall-strings');
+  if (!wall || !svgEl) return;
+  const box = wall.getBoundingClientRect();
+  svgEl.setAttribute('viewBox', `0 0 ${box.width} ${box.height}`);
+  const pin = s => { const c = $(`.w-card[data-slug="${CSS.escape(s)}"] .w-pin`, wall); if (!c) return null; const r = c.getBoundingClientRect(); return [r.left + r.width / 2 - box.left, r.top + r.height / 2 - box.top]; };
+  svgEl.innerHTML = THREADS.filter(t => t.w >= WALL_MIN).map(t => {
+    const A = pin(t.a), B = pin(t.b); if (!A || !B) return '';
+    const len = Math.hypot(B[0] - A[0], B[1] - A[1]);
+    const mx = (A[0] + B[0]) / 2, my = (A[1] + B[1]) / 2 + Math.min(110, len * .16);
+    return `<path d="M${A[0].toFixed(1)} ${A[1].toFixed(1)}Q${mx.toFixed(1)} ${my.toFixed(1)} ${B[0].toFixed(1)} ${B[1].toFixed(1)}" stroke-width="${Math.min(3.4, .9 + t.w * .4).toFixed(2)}" data-a="${esc(t.a)}" data-b="${esc(t.b)}"/>`;
+  }).join('');
+}
+function focusWall(slugs, pairOnly = false) {
+  const wall = $('#wall');
+  wall.classList.toggle('focus', !!slugs);
+  $$('.w-card.on', wall).forEach(c => c.classList.remove('on'));
+  $$('#wall-strings path.on').forEach(p => p.classList.remove('on'));
+  if (!slugs) return;
+  const on = new Set(slugs);
+  $$('#wall-strings path').forEach(p => {
+    const hit = pairOnly ? on.has(p.dataset.a) && on.has(p.dataset.b) : on.has(p.dataset.a) || on.has(p.dataset.b);
+    if (!hit) return;
+    p.classList.add('on'); on.add(p.dataset.a); on.add(p.dataset.b);
+  });
+  on.forEach(s => $(`.w-card[data-slug="${CSS.escape(s)}"]`, wall)?.classList.add('on'));
+}
+
+// ---- IV. The job ---------------------------------------------------------------
+// The five crews as raccoons in trench coats, working a very large safe. Each one
+// is doing its real job, and its record below comes from the commit log.
+
+function rHead(p, x, y, c, s = 1, hat = true) {
+  const head = svg('g', { transform: `translate(${x} ${y}) scale(${s})` }, p);
+  head.innerHTML = `<path d="M-30 -14L-38 -40L-14 -28Z M30 -14L38 -40L14 -28Z" class="rc-ear"/><path d="M-29 -20L-33 -34L-20 -27Z M29 -20L33 -34L20 -27Z" class="rc-dark"/>
+    <ellipse rx="36" ry="30" class="rc-fur"/><path d="M-34 -4Q-20 -16 0 -6Q20 -16 34 -4Q30 10 14 8Q0 2 -14 8Q-30 10 -34 -4Z" class="rc-dark"/>
+    <ellipse cy="14" rx="15" ry="12" class="rc-muzzle"/><circle cx="-14" cy="-3" r="5" class="rc-eye"/><circle cx="14" cy="-3" r="5" class="rc-eye"/>
+    <circle cx="-13" cy="-2" r="2.6" class="rc-pupil"/><circle cx="15" cy="-2" r="2.6" class="rc-pupil"/><ellipse cy="9" rx="5" ry="3.5" class="rc-pupil"/>
+    <path d="M-22 -22Q0 -32 22 -22" class="rc-brow"/>${hat ? `<ellipse cy="-24" rx="48" ry="9" class="rc-brim"/><path d="M-28 -26Q-30 -62 0 -60Q30 -62 28 -26Z" class="rc-crown"/><path d="M-28 -32Q0 -26 28 -32V-40Q0 -34 -28 -40Z" style="fill:${c}"/><path d="M-10 -58Q0 -50 10 -58" class="rc-dent"/>` : ''}`;
+  return head;
+}
+// A raccoon in a trench coat; (x, y) is the point between its feet.
+function raccoon(p, { x, y, s = 1, c, flip = false, hat = true, head = true, coatH = 150, arm = null }) {
+  const g = svg('g', { transform: `translate(${x} ${y}) scale(${flip ? -s : s} ${s})` }, p);
+  const top = -coatH - 8;
+  g.innerHTML = `<g transform="translate(30 -40) rotate(-28)">${Array.from({ length: 6 }, (_, i) => `<ellipse cx="${10 + i * 13}" rx="9" ry="${12 - i * .6}" class="${i % 2 ? 'rc-dark' : 'rc-fur'}"/>`).join('')}</g>
+    <ellipse cx="-16" cy="-4" rx="13" ry="6" class="rc-foot"/><ellipse cx="16" cy="-4" rx="13" ry="6" class="rc-foot"/>
+    <path d="M-30 ${top}Q-40 ${top + 40} -46 -8H46Q40 ${top + 40} 30 ${top}Z" class="rc-coat"/><path d="M0 ${top + 6}V-10" class="rc-seam"/>
+    <path d="M-30 ${top}L-4 ${top + 34}L-18 ${top + 50}Z M30 ${top}L4 ${top + 34}L18 ${top + 50}Z" class="rc-lapel"/>
+    <rect x="-42" y="${top + coatH * .55}" width="84" height="9" class="rc-belt"/><rect x="-6" y="${top + coatH * .55 - 1}" width="12" height="11" rx="2" class="rc-buckle"/>
+    ${[top + 62, top + 90].map(by => `<circle cx="-9" cy="${by}" r="3" class="rc-btn"/><circle cx="9" cy="${by}" r="3" class="rc-btn"/>`).join('')}
+    <circle cx="-18" cy="${top + 22}" r="5" style="fill:${c}" class="rc-badge"/>${arm ? arm(top) : ''}`;
+  if (head) rHead(g, 0, top - 22, c, 1, hat);
+  return g;
+}
+const sleeve = d => `<path d="${d}" class="rc-sleeve"/>`;
+const paw = (x, y) => `<circle cx="${x}" cy="${y}" r="8" class="rc-dark"/>`;
+function bubble(p, x, y, w, h, tx, ty, lines) {
+  const g = svg('g', { class: 'rc-bubble' }, p);
+  g.innerHTML = `<path d="M${x + 18} ${y + h}L${tx} ${ty}L${x + 42} ${y + h}Z"/><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12"/><rect x="${x + 16}" y="${y + h - 3}" width="30" height="6" class="mend"/>
+    ${lines.map(([t, cls, attrs], i) => `<text x="${x + 14}" y="${y + 24 + i * 20}" class="${cls || ''}" ${attrs || ''}>${esc(t)}</text>`).join('')}`;
+  return g;
+}
+
+function paintJob() {
+  const host = $('#job-scene');
+  const W = 1400, H = 860, FLOOR = 800, SX = 850, SY = 410, SR = 330;
+  const root = svg('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'The five crews as raccoons in trench coats, working a giant safe marked PASS' });
+  const u = k => `var(--u-${k})`;
+  const best = Math.max(0, ...LIVE.map(p => gatesOf(stageOf(p))));
+  const pick = DATA.draw?.pick, P = pick && BY[pick.slug];
+  const ids = STREAMS.map(s => s.id);
+  const nNew = Object.values(DRAWN).filter(f => f.slug.startsWith('discovered/')).length;
+  let room = '';
+  for (let x = 0; x < W; x += 140) room += `<rect x="${x + 6}" y="20" width="128" height="${FLOOR - 70}" rx="3" class="jb-panel"/>`;
+  room += `<rect y="${FLOOR - 40}" width="${W}" height="40" class="jb-skirt"/>`;
+  for (let x = 0; x < W; x += 70) room += `<rect x="${x}" y="${FLOOR}" width="70" height="${H - FLOOR}" class="jb-tile${(x / 70) % 2 ? ' alt' : ''}"/>`;
+  // The safe.
+  let safe = `<defs><radialGradient id="jb-steel" cx="42%" cy="38%" r="70%"><stop offset="0" stop-color="#5d6a73"/><stop offset="1" stop-color="#2a333a"/></radialGradient>
+      <radialGradient id="jb-lamp"><stop offset="0" stop-color="#ffd38a"/><stop offset="1" stop-color="#f0884a"/></radialGradient></defs>
+    <rect x="${SX - SR - 34}" y="${SY - SR - 34}" width="${SR * 2 + 68}" height="${SR * 2 + 68}" rx="14" class="jb-frame"/>
+    <circle cx="${SX}" cy="${SY}" r="${SR}" fill="url(#jb-steel)" class="jb-door"/><circle cx="${SX}" cy="${SY}" r="${SR - 26}" class="jb-ring"/>`;
+  for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2; safe += `<circle cx="${(SX + Math.cos(a) * (SR - 13)).toFixed(1)}" cy="${(SY + Math.sin(a) * (SR - 13)).toFixed(1)}" r="5.5" class="jb-bolt"/>`; }
+  for (const y of [SY - 200, SY + 200]) safe += `<rect x="${SX + SR - 6}" y="${y - 34}" width="40" height="68" rx="6" class="jb-hinge"/>`;
+  safe += `<rect x="${SX - 110}" y="${SY - 250}" width="220" height="40" rx="4" class="jb-plate"/><text x="${SX}" y="${SY - 224}" class="jb-plate-t">PASS</text>`;
+  ['OPEN', 'WORK', 'CLAIM', 'PANEL', 'HELD', 'PASS', 'SIGN'].forEach((g, i) => {
+    const a = Math.PI * (1.18 + i * .107), x = SX + Math.cos(a) * 190, y = SY + Math.sin(a) * 190 + 40, on = i < best;
+    safe += `${on ? `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="26" class="jb-glow"/>` : ''}<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15" ${on ? 'fill="url(#jb-lamp)"' : ''} class="jb-lamp${on ? ' on' : ''}"><title>${esc(GATES[i])}: ${on ? 'clicked' : 'not yet'}</title></circle><text x="${x.toFixed(1)}" y="${(y + 32).toFixed(1)}" class="jb-lamp-t">${g}</text>`;
+  });
+  let ticks = '';
+  for (let i = 0; i < 40; i++) { const a = i / 40 * Math.PI * 2; ticks += `<line x1="${(Math.cos(a) * 74).toFixed(1)}" y1="${(Math.sin(a) * 74).toFixed(1)}" x2="${(Math.cos(a) * (i % 10 ? 80 : 86)).toFixed(1)}" y2="${(Math.sin(a) * (i % 10 ? 80 : 86)).toFixed(1)}" class="jb-tick${i % 10 ? '' : ' major'}"/>`; }
+  ids.forEach((id, i) => { const a = (i / 4) * Math.PI * 2 - Math.PI / 2; ticks += `<text x="${(Math.cos(a) * 56).toFixed(1)}" y="${(Math.sin(a) * 56).toFixed(1)}" class="jb-dial-t">${esc(id)}</text>`; });
+  const pickAngle = -Math.max(0, ids.indexOf(pick?.stream)) * 90;
+  safe += `<g transform="translate(${SX} ${SY + 40})"><circle r="104" class="jb-dial-o"/><circle r="86" class="jb-dial-i"/><g class="jb-rot" style="--a:${pickAngle}deg">${ticks}</g><circle r="30" class="jb-knob"/><path d="M0 -112l9 -14h-18Z" class="jb-index"/></g>`;
+  safe += `<g transform="translate(${SX + 190} ${SY + 150})">${[0, 1, 2].map(i => { const a = i * Math.PI / 3; return `<line x1="${(Math.cos(a) * -54).toFixed(1)}" y1="${(Math.sin(a) * -54).toFixed(1)}" x2="${(Math.cos(a) * 54).toFixed(1)}" y2="${(Math.sin(a) * 54).toFixed(1)}" class="jb-spoke"/>`; }).join('')}<circle r="14" class="jb-hub"/></g>`;
+  root.innerHTML = room + safe;
+  const crew = k => svg('g', { class: 'jb-crew', 'data-unit': k, tabindex: 0, role: 'button', 'aria-label': `${UNIT[k].name}: show the crew record` }, root);
+
+  // Pathfinders: in through the vent with a sack of new problems.
+  {
+    const g = crew('finder'), vx = 150, vy = 110, vw = 180, vh = 110;
+    svg('rect', { x: vx, y: vy, width: vw, height: vh, rx: 6, class: 'jb-vent' }, g);
+    rHead(g, vx + vw / 2, vy + vh - 26, u('finder'), .86);
+    g.insertAdjacentHTML('beforeend', `<rect x="${vx - 4}" y="${vy + vh - 4}" width="${vw + 8}" height="10" rx="3" class="jb-lip"/>${paw(vx + vw / 2 - 34, vy + vh + 2)}${paw(vx + vw / 2 + 34, vy + vh + 2)}
+      <line x1="${vx + vw / 2 + 34}" y1="${vy + vh + 6}" x2="${vx + vw / 2 + 50}" y2="${vy + vh + 40}" class="jb-cord"/>
+      <path d="M${vx + vw / 2 + 30} ${vy + vh + 40}q22 -8 40 2q14 30 -8 44q-30 6 -40 -16q-4 -18 8 -30Z" class="jb-sack"/><text x="${vx + vw / 2 + 50}" y="${vy + vh + 74}" class="jb-sack-t">+${nNew}</text>
+      <g transform="translate(${vx + 10} ${vy + 330}) rotate(-8)"><rect width="120" height="74" rx="4" class="jb-grille"/>${[1, 2, 3, 4, 5].map(i => `<line x1="8" x2="112" y1="${i * 12.3}" y2="${i * 12.3}" class="jb-grille-l"/>`).join('')}</g>`);
+  }
+  // The Irregulars: three raccoons, one coat, one hat.
+  {
+    const g = crew('irregular'), x = 104, sc = .95, coatH = 330;
+    raccoon(g, { x, y: FLOOR - 4, s: sc, c: u('irregular'), coatH, head: false });
+    const my = FLOOR - 4 - coatH * sc * .58;
+    g.insertAdjacentHTML('beforeend', `${[-40, 40].map(dx => `<ellipse cx="${x + dx}" cy="${FLOOR - 8}" rx="11" ry="5" class="rc-foot"/>`).join('')}
+      <path d="M${x - 22} ${my}Q${x} ${my - 14} ${x + 22} ${my}Q${x} ${my + 12} ${x - 22} ${my}Z" class="rc-dark"/>
+      ${[x - 9, x + 9].map(ex => `<circle cx="${ex}" cy="${my}" r="4.5" class="rc-eye"/><circle cx="${ex + 1}" cy="${my + 1}" r="2.2" class="rc-pupil"/>`).join('')}
+      <text x="${x}" y="${FLOOR + 40}" class="jb-tag" style="fill:${u('irregular')}">DEFINITELY A HUMAN</text>`);
+    rHead(g, x, FLOOR - 4 - (coatH + 8) * sc - 22 * sc, u('irregular'), sc);
+  }
+  // The Tribunal: three seats, three placards.
+  {
+    const g = crew('validator');
+    [['PARTIAL', 222], ['PARTIAL', 300], ['REFUTE?', 378]].forEach(([word, x], i) => {
+      const r = [-5, 4, -3][i], sy = FLOOR - 236;
+      g.insertAdjacentHTML('beforeend', `<line x1="${x + 22}" y1="${FLOOR - 100}" x2="${x + 22}" y2="${sy + 40}" class="jb-stick"/>
+        <g transform="rotate(${r} ${x + 22} ${sy + 20})"><rect x="${x - 20}" y="${sy}" width="84" height="40" rx="3" class="jb-sign"/><text x="${x + 22}" y="${sy + 25}" class="jb-sign-t${i === 2 ? ' refute' : ''}">${word}</text></g>`);
+      raccoon(g, { x, y: FLOOR + 20, s: .66, c: u('validator'), coatH: 118, arm: t => sleeve(`M20 ${t + 40}Q34 ${t + 20} 33 ${t - 6}`) + paw(33, t - 8) });
+    });
+  }
+  // The Breakers: ear to the door, stethoscope on the dial.
+  {
+    const g = crew('breaker');
+    raccoon(g, { x: 470, y: FLOOR - 4, s: 1.25, c: u('breaker'), coatH: 170 });
+    g.insertAdjacentHTML('beforeend', `<path d="M478 ${FLOOR - 270}C520 ${FLOOR - 250} 520 ${FLOOR - 360} 560 ${FLOOR - 370}C620 ${FLOOR - 380} 700 ${FLOOR - 360} ${SX - 100} ${SY + 40}" class="jb-steth"/><circle cx="${SX - 100}" cy="${SY + 40}" r="11" class="jb-steth-h"/>`);
+    if (P) { bubble(g, 390, 190, 280, 86, 486, 470, [[`Shh. Stream ${pick.stream}.`, 'b1'], [clip(boardName(P), 30), 'b2'], ['next firing in', 'b2']]); g.insertAdjacentHTML('beforeend', `<text x="528" y="254" class="rc-cd" data-countdown="breaker">--:--:--</text>`); }
+  }
+  // Overwatch: up the ladder, binoculars on the room.
+  {
+    const g = crew('orchestrator'), lx = 1270;
+    let ladder = '';
+    for (const dx of [-30, 30]) ladder += `<line x1="${lx + dx}" y1="${FLOOR}" x2="${lx + dx * .6}" y2="330" class="jb-ladder"/>`;
+    for (let y = FLOOR - 40; y > 340; y -= 52) { const k = (FLOOR - y) / (FLOOR - 330) * 12; ladder += `<line x1="${lx - 30 + k}" x2="${lx + 30 - k}" y1="${y}" y2="${y}" class="jb-ladder"/>`; }
+    g.insertAdjacentHTML('beforeend', ladder);
+    raccoon(g, { x: lx, y: 340, s: .9, c: u('orchestrator'), coatH: 130, flip: true });
+    const by = 340 - (130 + 8) * .9 - 22 * .9;
+    g.insertAdjacentHTML('beforeend', `<rect x="${lx - 36}" y="${by - 12}" width="30" height="22" rx="7" class="jb-bino"/><rect x="${lx - 4}" y="${by - 12}" width="30" height="22" rx="7" class="jb-bino"/><circle cx="${lx - 21}" cy="${by - 1}" r="6" class="jb-lens"/><circle cx="${lx + 11}" cy="${by - 1}" r="6" class="jb-lens"/>`);
+    const owed = DATA.draw?.overwatch?.length || 0;
+    bubble(g, 1040, 70, 220, 66, 1210, 170, [['Overwatch here.', 'b1'], [`${owed} panel${owed === 1 ? '' : 's'} owed.`, 'b2']]);
+  }
+  host.appendChild(root);
+  // The dial turns to the stream the next firing takes, once, when the scene comes into view.
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { root.classList.add('turned'); o.disconnect(); } }, { threshold: .3 }).observe(root);
+  // A crew's record: tap or hover a raccoon.
+  const record = k => {
+    const acts = DATA.activity.filter(a => (a.unit === 'irregular' ? 'irregular' : a.role) === k);
+    const wk = acts.filter(a => ageDays(a.date) <= 7).length, last = acts[0];
+    return `<b>${esc(UNIT[k].name)}</b><br>${acts.length} commits in the log · ${wk} this week${last ? `<span class="tip-next">Last job, ${esc(rel(last.date))}: ${esc(last.subject)}</span>` : ''}`;
+  };
+  root.addEventListener('pointermove', e => { const c = e.target.closest('.jb-crew'); if (!c) return untip(); tip(record(c.dataset.unit), { left: e.clientX - 1, width: 2, top: e.clientY - 1, bottom: e.clientY + 1 }); });
+  root.addEventListener('pointerleave', untip);
+  root.addEventListener('click', e => { const c = e.target.closest('.jb-crew'); if (c) $(`.unit-card[data-role="${c.dataset.unit}"]`)?.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'center' }); });
+  root.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.closest?.('.jb-crew')) { e.preventDefault(); e.target.closest('.jb-crew').dispatchEvent(new MouseEvent('click', { bubbles: true })); } });
+  // On a phone, start the scene on the Breaker at the dial.
+  const wrap = host;
+  requestAnimationFrame(() => { if (wrap.scrollWidth > wrap.clientWidth) wrap.scrollLeft = (wrap.scrollWidth - wrap.clientWidth) * .32; });
+}
+
+// Departures and arrivals: the unit's timetable, on split-flap.
+const FLAP = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+const flaps = (text, n) => {
+  const s = String(text).toUpperCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Z0-9 :·\-/×]/g, ' ').padEnd(n).slice(0, n);
+  return `<span class="flaps" aria-label="${esc(String(text))}">${[...s].map(c => `<span class="f" data-c="${c === ' ' ? '' : esc(c)}" aria-hidden="true">${c === ' ' ? '&nbsp;' : esc(c)}</span>`).join('')}</span>`;
+};
+const hhmm = t => new Date(t).toISOString().slice(11, 16);
+function firings(key, n) {
+  const r = (DATA.routines || []).find(x => x.key === key); if (!r) return [];
+  const out = []; let from = Date.now();
+  while (out.length < n) { const t = nextFire(r.rule, from); if (!t) break; out.push(t); from = t + 1000; }
+  return out;
+}
+let FLAP_W = 0;
+function destWidth(timeChars) {
+  const box = $('.fb-scroll'), probe = $('#flapboards .f');
+  const cw = (probe ? probe.getBoundingClientRect().width : 16) + 1.5;
+  const wide = innerWidth >= 720;
+  const fixed = timeChars + (wide ? 11 : 0) + 1 + 8;
+  const extra = (wide ? 5 : 4) * 8 + (wide ? 13 : 0) + 6;
+  return Math.max(8, Math.min(24, Math.floor(((box?.clientWidth || 600) - extra) / cw) - fixed));
+}
+function paintFlapBoard(animate = false) {
+  const narrow = innerWidth < 720;
+  FLAP_W = innerWidth;
+  const dw = destWidth(5), aw = destWidth(narrow ? 5 : 12);
+  const ids = STREAMS.map(s => s.id), start = Math.max(0, ids.indexOf(DATA.draw?.pick?.stream));
+  const dep = firings('breaker', 4).map((t, i) => {
+    const sid = ids[(start + i) % ids.length], s = STREAMS.find(x => x.id === sid);
+    const slug = i === 0 ? DATA.draw.pick.slug : s?.lead;
+    return { t, unit: 'breaker', gate: sid || '·', dest: slug ? boardName(BY[slug]) : '—', slug };
+  });
+  dep.push(...firings('orchestrator', 1).map(t => ({ t, unit: 'orchestrator', gate: '·', dest: `Board pass · ${DATA.draw?.overwatch?.length || 0} panels` })));
+  dep.push(...firings('finder', 1).map(t => ({ t, unit: 'finder', gate: '·', dest: 'Four new problems' })));
+  dep.sort((a, b) => a.t - b.t);
+  const status = r => { const m = (r.t - Date.now()) / 6e4; return m < 30 ? ['Boarding', 'boarding'] : m < 1440 ? ['On time', 'ontime'] : [dm(new Date(r.t).toISOString()), 'ontime']; };
+  const unitName = k => UNIT[k].name.replace('The ', '');
+  const head = cols => `<tr>${cols.map(c => `<th${c[1] ? ` class="${c[1]}"` : ''}>${c[0]}</th>`).join('')}</tr>`;
+  $('#dep').innerHTML = head([['Time'], ['Unit', 'wide'], ['Gate'], ['Destination'], ['Status']]) + dep.map(r => {
+    const [st, cls] = status(r);
+    return `<tr${r.slug ? ` ${tipAttrs(r.slug)} class="go"` : ''}><td>${flaps(hhmm(r.t), 5)}</td><td class="wide"><i class="ud" style="background:var(--u-${r.unit})"></i>${flaps(unitName(r.unit), 11)}</td><td>${flaps(r.gate, 1)}</td><td>${flaps(r.dest, dw)}</td><td class="st-${cls}">${flaps(st, 8)}</td></tr>`;
+  }).join('');
+  const arr = DATA.activity.filter(a => a.problems?.length && BY[a.problems[0]] && ['breaker', 'validator', 'finder', 'orchestrator'].includes(a.role)).slice(0, 8).map(a => {
+    const p = BY[a.problems[0]], st = stageOf(p), k = a.unit === 'irregular' ? 'irregular' : a.role;
+    const s = st === 'blocked' ? ['Parked', 'parked'] : st === 'held' ? ['Held', 'held'] : k === 'finder' ? ['Filed', 'landed'] : ['Landed', 'landed'];
+    return { a, p, k, s };
+  });
+  $('#arr').innerHTML = head([['Time'], ['Unit', 'wide'], ['Gate'], ['From'], ['Status']]) + arr.map(({ a, p, k, s }) =>
+    `<tr ${tipAttrs(p.slug)} class="go"><td>${flaps(narrow ? hhmm(a.date) : `${dm(a.date)} ${hhmm(a.date)}`, narrow ? 5 : 12)}</td><td class="wide"><i class="ud" style="background:var(--u-${k})"></i>${flaps(unitName(k), 11)}</td><td>${flaps(DRAWN[p.slug]?.stream || '·', 1)}</td><td>${flaps(boardName(p), aw)}</td><td class="st-${s[1]}">${flaps(s[0], 8)}</td></tr>`).join('');
+  if (animate && !REDUCED) $$('#flapboards .f').forEach((c, i) => {
+    const final = c.dataset.c; if (!final) return;
+    let n = 3 + (i % 6);
+    const step = () => {
+      c.classList.remove('flip'); void c.offsetWidth; c.classList.add('flip');
+      if (--n <= 0) { c.textContent = final; return; }
+      c.textContent = FLAP[(Math.random() * FLAP.length) | 0];
+      setTimeout(step, 55);
+    };
+    setTimeout(step, 120 + (i % 24) * 22);
+  });
+}
+function wireFlapBoard() {
+  paintFlapBoard();
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { paintFlapBoard(true); o.disconnect(); } }, { threshold: .25 }).observe($('#flapboards'));
+  // Re-letter when the layout crosses the phone breakpoint, and each minute so departed rows leave the board.
+  addEventListener('resize', () => { if (Math.abs(innerWidth - FLAP_W) > 30) paintFlapBoard(); });
+  setInterval(() => paintFlapBoard(), 60000);
+}
+
+// ---- V. Case files -------------------------------------------------------
 
 const state = { domain: 'all', stage: 'all', q: '' };
 const BOARD_ORDER = ['solved', 'pass', 'held', 'panel', 'working', 'unworked', 'blocked', 'method', 'withdrawn'];
@@ -975,11 +1185,12 @@ function wire() {
     const p = BY[b.dataset.slug];
     tip(`<span class="mono tip-no">${esc(CASE[p.slug])}</span> <b>${esc(nameOf(p))}</b><br><span class="tip-st s-${stageOf(p)}">${esc(STAGES[stageOf(p)].label)}</span> · ${esc(rel(p.lastTouch))}`, b.querySelector('.core').getBoundingClientRect());
   });
-  document.addEventListener('pointerout', e => { if (e.target.closest('.blip, .fc')) untip(); });
+  document.addEventListener('pointerout', e => { if (e.target.closest('.blip, .fc, [data-tip]')) untip(); });
   const files = Object.fromEntries((DATA.draw?.streams || []).flatMap(s => s.files).map(f => [f.slug, f]));
   document.addEventListener('pointerover', e => {
-    const c = e.target.closest('.fc'); if (!c || e.pointerType === 'touch') return;
-    const f = files[c.dataset.slug], p = BY[f.slug];
+    const c = e.target.closest('.fc, [data-tip]'); if (!c || e.pointerType === 'touch') return;
+    const f = files[c.dataset.slug]; if (!f) return;
+    const p = BY[f.slug];
     tip(`<span class="mono tip-no">${esc(CASE[p.slug])}</span> <b>${esc(nameOf(p))}</b><br><span class="tip-st s-${f.stage}">${esc(STAGES[f.stage].label)}</span> · idle ${idleOf(f)}d · debt ${Math.round(f.debt)}${f.next ? `<span class="tip-next">${esc(f.next.length > 170 ? f.next.slice(0, 168) + '…' : f.next)}</span>` : ''}`, c.getBoundingClientRect());
   });
   $$('[data-scramble]').forEach(h => new IntersectionObserver(([x], o) => { if (x.isIntersecting) { scramble(h); o.disconnect(); } }, { threshold: 0.6 }).observe(h));
@@ -1005,10 +1216,11 @@ paintTicker();
 paintHero();
 paintFiring();
 paintBoard();
-HERO = buildScope($('#scope'));
-wireScope();
 paintPriority();
-paintKey();
+paintAscent();
+paintWall();
+paintJob();
+wireFlapBoard();
 paintUnits();
 paintControls();
 buildScope($('#scope-mini'), { mini: true });
@@ -1018,5 +1230,4 @@ paintFoot();
 wire();
 tick();
 setInterval(tick, 1000);
-setMode('live');
 if (!REDUCED) requestAnimationFrame(spin);
