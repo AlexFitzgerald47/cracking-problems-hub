@@ -1,0 +1,30 @@
+M-families 110, N-signs 13, blocks 1426, tablets 1124
+
+REAL SWEEP (direction from training complement):
+  tested 390, with power 292, PASSING at 0.05: 72
+  M288-N45  p = 9.6946e-05  floor = 4.464e-09  dir enriched (train OR 10.39)  rank 14/390
+  rep   10: passing   12 (running mean 9.4)
+  rep   20: passing   10 (running mean 9.2)
+  rep   30: passing    8 (running mean 8.9)
+  rep   40: passing   13 (running mean 9.1)
+  rep   50: passing    6 (running mean 9.1)
+  rep   60: passing    6 (running mean 9.1)
+  rep   70: passing    8 (running mean 9.4)
+  rep   80: passing   13 (running mean 9.5)
+  rep   90: passing   10 (running mean 9.5)
+  rep  100: passing   13 (running mean 9.5)
+  rep  110: passing   10 (running mean 9.5)
+  rep  120: passing    9 (running mean 9.6)
+  rep  130: passing   10 (running mean 9.5)
+  rep  140: passing   13 (running mean 9.6)
+  rep  150: passing    4 (running mean 9.5)
+  rep  160: passing    5 (running mean 9.5)
+  rep  170: passing   13 (running mean 9.4)
+  rep  180: passing    7 (running mean 9.4)
+  rep  190: passing   14 (running mean 9.5)
+  rep  200: passing   13 (running mean 9.4)
+
+NULL B SWEEP over 200 replicates:
+  pairs passing at 0.05 -- mean 9.4, median 9, range [3, 19], 95th pct 14
+  REAL = 72
+  replicates where M288-N45 reached the real p: 0/200
