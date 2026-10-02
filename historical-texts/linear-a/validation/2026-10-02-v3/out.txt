@@ -340,14 +340,14 @@ ATTACK 4a — are the 'dossier' shared types just the corpus's commonest names?
     DI             on  11/133 HT tablets (rank    6 of 467)   inside Scribe-9 set: 3
     KU-PA₃-NU      on   6/133 HT tablets (rank   12 of 467)   inside Scribe-9 set: 2
     PA             on   6/133 HT tablets (rank   13 of 467)   inside Scribe-9 set: 2
-    DA-RI-DA       on   4/133 HT tablets (rank   26 of 467)   inside Scribe-9 set: 2
     DA-SI-*118     on   4/133 HT tablets (rank   31 of 467)   inside Scribe-9 set: 2
+    DA-RI-DA       on   4/133 HT tablets (rank   26 of 467)   inside Scribe-9 set: 2
     DA-RE          on   4/133 HT tablets (rank   25 of 467)   inside Scribe-9 set: 2
     QA-*310-I      on   3/133 HT tablets (rank   46 of 467)   inside Scribe-9 set: 2
-    MI-TU          on   2/133 HT tablets (rank   73 of 467)   inside Scribe-9 set: 2
-    DI-KI-SE       on   2/133 HT tablets (rank   75 of 467)   inside Scribe-9 set: 2
-    MA-KA-RI-TE    on   2/133 HT tablets (rank   76 of 467)   inside Scribe-9 set: 2
-    PA-TA-NE       on   2/133 HT tablets (rank   87 of 467)   inside Scribe-9 set: 2
+    MA-KA-RI-TE    on   2/133 HT tablets (rank   73 of 467)   inside Scribe-9 set: 2
+    MI-TU          on   2/133 HT tablets (rank   76 of 467)   inside Scribe-9 set: 2
+    DI-KI-SE       on   2/133 HT tablets (rank   78 of 467)   inside Scribe-9 set: 2
+    PA-TA-NE       on   2/133 HT tablets (rank   88 of 467)   inside Scribe-9 set: 2
 
   median corpus-wide tablet count of the shared types: 4
   median over ALL HT types: 1
@@ -374,16 +374,16 @@ ATTACK 4b — DI-KI-SE as 'the strongest quasi-experimental control'
     PA-JA-RE         n= 3  KI-RO tablets ['HT88']  non-KI-RO ['HT29', 'HT8']  <== claimed as a control
     QE-RA₂-U         n= 2  KI-RO tablets ['HT1']  non-KI-RO ['HT95']
     DI-RI-NA         n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT102']
-    MI-TU            n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT135']
-    U-MI-NA-SI       n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT28']
-    DI-KI-SE         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT87']  <== claimed as a control
     MA-KA-RI-TE      n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT87']
     KU-RE-JU         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT39']
+    U-MI-NA-SI       n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT28']
+    MI-TU            n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT135']
     KI-DA-RO         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT47']
+    DI-KI-SE         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT87']  <== claimed as a control
     I-GRA+PA         n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT120']
     PA-TA-NE         n= 2  KI-RO tablets ['HT94']  non-KI-RO ['HT122']  <== claimed as a control
-    KA-NA            n= 2  KI-RO tablets ['HT123']  non-KI-RO ['HT23']
     PU-VIN           n= 2  KI-RO tablets ['HT123']  non-KI-RO ['HT14']
+    KA-NA            n= 2  KI-RO tablets ['HT123']  non-KI-RO ['HT23']
     RE-ZA            n= 2  KI-RO tablets ['HT88']  non-KI-RO ['HT13']
     U-*34-SI         n= 2  KI-RO tablets ['HT15']  non-KI-RO ['HT140']
     PA₃-NI-NA        n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT6']
@@ -706,3 +706,49 @@ SCORECARD: the claimant's 'arithmetic/cardinality controls: 6/6 pass'
   Surviving independent arithmetic support for KI-RO = residual: NONE.
   Surviving independent arithmetic support for KU-RO = total: 8 exact
   balancing blocks corpus-wide (ATTACK 1d), which is prior scholarship.
+
+
+##############################################################################
+### attack_witness_drift.py
+##############################################################################
+  data/LinearAInscriptions.js                  sha256 4da8e1f9693d30880ee505e56541fc189add70605bad88436c44a8e11a57764c
+  data_20261002/LinearAInscriptions.js         sha256 9a14cc300201ac8ed07563c09b92142ab59de91a74e646b2e743ca6aeb695f5e
+
+  records: 2026-09-25 snapshot 1721, 2026-10-02 snapshot 1721
+  records only in the old snapshot: []
+  records only in the new snapshot: []
+
+  faces whose transliterated word sequence CHANGED in 7 days: 12
+    HT127a       old-only ['*304+PA-DA-*47-KU']  new-only ['*304+PA', 'DA-*47-KU']
+    HT127b       old-only ['14']  new-only ['[[KI+MU]]', '[[14]]']
+    HT34         old-only ['37']  new-only ['30', '[[7]]']  <== a tablet the claim depends on
+    HT36         old-only ['64', '6']  new-only ['[[20]]', '44', '[[6]]']
+    HT46b        old-only ['6']  new-only ['2', '[[4]]']
+    HTWa1020     old-only ['*304+PA-KU-PA']  new-only ['*304+PA', 'KU-PA']
+    HTWa1021bis  old-only ['*304+PA-CYP+D']  new-only ['*304+PA', 'CYP+D']
+    HTWc3016     old-only ['*304+PA-CYP+D']  new-only ['*304+PA', 'CYP+D']
+    HTWc3017     old-only ['CYP+D-*304+PA']  new-only ['CYP+D', '*304+PA']
+    HTWeWc3020   old-only ['*304+PA-CYP+D']  new-only ['*304+PA', 'CYP+D']
+    KH8          old-only []  new-only ['[[NI]]', '[[¹⁄₂]]']
+    PKZg22       old-only ['VIN-VIN']  new-only ['VIN', '[[VIN]]']
+
+  CONSEQUENCE. Every numeric result in this folder -- the claimant's and
+  every validator's -- is stated against a digital witness that is edited
+  continuously and carries no version pin. Results must cite a snapshot
+  hash. This attack directory vendors both snapshots and prints both.
+
+  KU-RO audit re-run on the 2026-10-02 snapshot: 7/23 integer-only blocks balance (was 8/23 on the 09-25 snapshot)
+    balances: HT117a     KU-RO       10 = 10
+    balances: HT11b      KU-RO       180 = 180
+    balances: HT85a      KU-RO       66 = 66
+    balances: HT88       KU-RO       6 = 6
+    balances: HT89       KU-RO       87 = 87
+    balances: HT94b      KU-RO       5 = 5
+    balances: HT9b       KU-RO       24 = 24
+
+  HT34 on the new snapshot: KI-RO followed by ['30', '[[7]]']
+  -> the newer edition states 30 with an erasure [[7]], confirming the
+     claimant's number and confirming that witness A's earlier '37' was a
+     tabulation defect. Three independent routes now agree: Younger's
+     commentary table, the re-edited witness, and (per validator 1) the
+     GORILA plate apparatus.

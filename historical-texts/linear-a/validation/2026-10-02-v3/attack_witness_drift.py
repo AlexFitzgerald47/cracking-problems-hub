@@ -56,10 +56,6 @@ def main():
     print("  hash. This attack directory vendors both snapshots and prints both.")
 
 
-if __name__ == "__main__":
-    main()
-
-
 def rerun_on_new():
     """Does the newer snapshot change any load-bearing number?"""
     import corpus
@@ -93,4 +89,5 @@ def rerun_on_new():
 
 
 if __name__ == "__main__":
+    main()
     rerun_on_new()

@@ -23,6 +23,7 @@ Attack index
   6,7    attack_unfalsifiable.py  A-DU polarity decidability; falsifiability of
                                the construction grammar; corpus coverage
   8      attack_controls.py    the claimed 'arithmetic/cardinality controls 6/6'
+  9      attack_witness_drift.py  the digital witness is an unpinned moving edition
 """
 import subprocess, sys, os
 
@@ -30,7 +31,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 STEPS = ["attack_arith.py", "attack_arith2.py", "attack_arith3.py",
          "attack_nulls.py", "attack_split.py", "attack_split2.py",
          "attack_names.py", "attack_structure.py", "attack_unfalsifiable.py",
-         "attack_controls.py"]
+         "attack_controls.py", "attack_witness_drift.py"]
 
 def main():
     out = []
