@@ -1,0 +1,469 @@
+{
+  "eligible_lines": 4869,
+  "families": {
+    "M263": {
+      "form_line_counts": {
+        "M263": 93,
+        "M263~A": 34,
+        "M263~B1": 27,
+        "M263~1": 23,
+        "M263~B": 6,
+        "M263~E": 5,
+        "M263~F": 2,
+        "M263~G": 1,
+        "M263~B2": 1,
+        "M263~A1": 1
+      },
+      "testable_forms": [
+        "M263",
+        "M263~A",
+        "M263~B1",
+        "M263~1"
+      ],
+      "targets": {
+        "N01": {
+          "base_rate_excluding_family": 0.7287302265925609,
+          "per_form": {
+            "M263": {
+              "lines": 93,
+              "hits": 84,
+              "rate": 0.9032258064516129,
+              "odds_ratio_vs_rest": 3.31188397743148,
+              "p_vs_rest": 7.249227435947757e-05
+            },
+            "M263~A": {
+              "lines": 34,
+              "hits": 34,
+              "rate": 1.0,
+              "odds_ratio_vs_rest": 25.691597008358997,
+              "p_vs_rest": 4.2349478943459406e-05
+            },
+            "M263~B1": {
+              "lines": 27,
+              "hits": 25,
+              "rate": 0.9259259259259259,
+              "odds_ratio_vs_rest": 3.797888253409591,
+              "p_vs_rest": 0.016989473562703073
+            },
+            "M263~1": {
+              "lines": 23,
+              "hits": 20,
+              "rate": 0.8695652173913043,
+              "odds_ratio_vs_rest": 2.1808602015377203,
+              "p_vs_rest": 0.16050644036178602
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M263",
+              "form_2": "M263~A",
+              "table": [
+                84,
+                9,
+                34,
+                0
+              ],
+              "odds_ratio": 0.12890922959572845,
+              "p_two_sided": 0.11135920230536771
+            },
+            {
+              "form_1": "M263",
+              "form_2": "M263~B1",
+              "table": [
+                84,
+                9,
+                25,
+                2
+              ],
+              "odds_ratio": 0.8720330237358102,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263",
+              "form_2": "M263~1",
+              "table": [
+                84,
+                9,
+                20,
+                3
+              ],
+              "odds_ratio": 1.5186136071887035,
+              "p_two_sided": 0.7028089557217871
+            },
+            {
+              "form_1": "M263~A",
+              "form_2": "M263~B1",
+              "table": [
+                34,
+                0,
+                25,
+                2
+              ],
+              "odds_ratio": 6.764705882352941,
+              "p_two_sided": 0.1918032786885249
+            },
+            {
+              "form_1": "M263~A",
+              "form_2": "M263~1",
+              "table": [
+                34,
+                0,
+                20,
+                3
+              ],
+              "odds_ratio": 11.78048780487805,
+              "p_two_sided": 0.06052631578947018
+            },
+            {
+              "form_1": "M263~B1",
+              "form_2": "M263~1",
+              "table": [
+                25,
+                2,
+                20,
+                3
+              ],
+              "odds_ratio": 1.7414634146341463,
+              "p_two_sided": 0.650727312201474
+            }
+          ]
+        },
+        "N30C": {
+          "base_rate_excluding_family": 0.06284737067122702,
+          "per_form": {
+            "M263": {
+              "lines": 93,
+              "hits": 0,
+              "rate": 0.0,
+              "odds_ratio_vs_rest": 0.07961468273063199,
+              "p_vs_rest": 0.004021618937569925
+            },
+            "M263~A": {
+              "lines": 34,
+              "hits": 0,
+              "rate": 0.0,
+              "odds_ratio_vs_rest": 0.21576732855982875,
+              "p_vs_rest": 0.27018247935487594
+            },
+            "M263~B1": {
+              "lines": 27,
+              "hits": 0,
+              "rate": 0.0,
+              "odds_ratio_vs_rest": 0.2706899212841488,
+              "p_vs_rest": 0.41055324957094685
+            },
+            "M263~1": {
+              "lines": 23,
+              "hits": 0,
+              "rate": 0.0,
+              "odds_ratio_vs_rest": 0.3167648015027273,
+              "p_vs_rest": 0.39644828499979706
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M263",
+              "form_2": "M263~A",
+              "table": [
+                0,
+                93,
+                0,
+                34
+              ],
+              "odds_ratio": 0.3689839572192513,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263",
+              "form_2": "M263~B1",
+              "table": [
+                0,
+                93,
+                0,
+                27
+              ],
+              "odds_ratio": 0.29411764705882354,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263",
+              "form_2": "M263~1",
+              "table": [
+                0,
+                93,
+                0,
+                23
+              ],
+              "odds_ratio": 0.25133689839572193,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263~A",
+              "form_2": "M263~B1",
+              "table": [
+                0,
+                34,
+                0,
+                27
+              ],
+              "odds_ratio": 0.7971014492753623,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263~A",
+              "form_2": "M263~1",
+              "table": [
+                0,
+                34,
+                0,
+                23
+              ],
+              "odds_ratio": 0.6811594202898551,
+              "p_two_sided": 1.0
+            },
+            {
+              "form_1": "M263~B1",
+              "form_2": "M263~1",
+              "table": [
+                0,
+                27,
+                0,
+                23
+              ],
+              "odds_ratio": 0.8545454545454545,
+              "p_two_sided": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "M288": {
+      "form_line_counts": {
+        "M288": 538,
+        "M288~I": 6,
+        "M288~D": 4,
+        "M288~F": 3,
+        "M288~A": 2,
+        "M288~G": 2,
+        "M288~E": 2,
+        "M288~C": 1,
+        "M288~B": 1
+      },
+      "testable_forms": [
+        "M288"
+      ],
+      "targets": {
+        "N45": {
+          "base_rate_excluding_family": 0.008116883116883116,
+          "per_form": {
+            "M288": {
+              "lines": 538,
+              "hits": 56,
+              "rate": 0.10408921933085502,
+              "odds_ratio_vs_rest": 14.109538057359702,
+              "p_vs_rest": 1.1262118275967478e-31
+            }
+          },
+          "homogeneity_pairs": []
+        }
+      }
+    },
+    "M297": {
+      "form_line_counts": {
+        "M297": 175,
+        "M297~B": 62,
+        "M297~D": 10,
+        "M297~C": 3,
+        "M297~BC": 2
+      },
+      "testable_forms": [
+        "M297",
+        "M297~B"
+      ],
+      "targets": {
+        "N39B": {
+          "base_rate_excluding_family": 0.10526315789473684,
+          "per_form": {
+            "M297": {
+              "lines": 175,
+              "hits": 86,
+              "rate": 0.49142857142857144,
+              "odds_ratio_vs_rest": 8.207634052375019,
+              "p_vs_rest": 1.8585172130317572e-35
+            },
+            "M297~B": {
+              "lines": 62,
+              "hits": 39,
+              "rate": 0.6290322580645161,
+              "odds_ratio_vs_rest": 14.27427784216396,
+              "p_vs_rest": 1.2268361409273847e-22
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M297",
+              "form_2": "M297~B",
+              "table": [
+                86,
+                89,
+                39,
+                23
+              ],
+              "odds_ratio": 0.574994696273248,
+              "p_two_sided": 0.07572707016345925
+            }
+          ]
+        },
+        "N24": {
+          "base_rate_excluding_family": 0.050032488628979854,
+          "per_form": {
+            "M297": {
+              "lines": 175,
+              "hits": 31,
+              "rate": 0.17714285714285713,
+              "odds_ratio_vs_rest": 4.130568654853633,
+              "p_vs_rest": 2.8779208864846763e-09
+            },
+            "M297~B": {
+              "lines": 62,
+              "hits": 9,
+              "rate": 0.14516129032258066,
+              "odds_ratio_vs_rest": 3.3646272784158575,
+              "p_vs_rest": 0.0039500727743270935
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M297",
+              "form_2": "M297~B",
+              "table": [
+                31,
+                144,
+                9,
+                53
+              ],
+              "odds_ratio": 1.227645237661628,
+              "p_two_sided": 0.6940509858648556
+            }
+          ]
+        },
+        "N01": {
+          "base_rate_excluding_family": 0.751137102014295,
+          "per_form": {
+            "M297": {
+              "lines": 175,
+              "hits": 73,
+              "rate": 0.41714285714285715,
+              "odds_ratio_vs_rest": 0.23764613226354261,
+              "p_vs_rest": 5.507680147064692e-20
+            },
+            "M297~B": {
+              "lines": 62,
+              "hits": 33,
+              "rate": 0.532258064516129,
+              "odds_ratio_vs_rest": 0.3763483946315874,
+              "p_vs_rest": 0.0002978495005329717
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M297",
+              "form_2": "M297~B",
+              "table": [
+                73,
+                102,
+                33,
+                29
+              ],
+              "odds_ratio": 0.6314524936294139,
+              "p_two_sided": 0.13770760591240924
+            }
+          ]
+        }
+      }
+    },
+    "M243": {
+      "form_line_counts": {
+        "M243~J": 18,
+        "M243": 5,
+        "M243~E": 4,
+        "M243~B": 4,
+        "M243~H": 3,
+        "M243~EE": 3,
+        "M243~N": 1,
+        "M243~EF": 1,
+        "M243~AA": 1,
+        "M243~AC": 1,
+        "M243~I": 1,
+        "M243~F": 1,
+        "M243~G": 1,
+        "M243~EG": 1,
+        "M243~C": 1
+      },
+      "testable_forms": [
+        "M243~J"
+      ],
+      "targets": {
+        "N39B": {
+          "base_rate_excluding_family": 0.12419655815882231,
+          "per_form": {
+            "M243~J": {
+              "lines": 18,
+              "hits": 11,
+              "rate": 0.6111111111111112,
+              "odds_ratio_vs_rest": 10.804948568251321,
+              "p_vs_rest": 1.6093007879277569e-06
+            }
+          },
+          "homogeneity_pairs": []
+        }
+      }
+    },
+    "M106": {
+      "form_line_counts": {
+        "M106": 30,
+        "M106~A": 24,
+        "M106~2": 5
+      },
+      "testable_forms": [
+        "M106",
+        "M106~A"
+      ],
+      "targets": {
+        "N24": {
+          "base_rate_excluding_family": 0.054261954261954265,
+          "per_form": {
+            "M106": {
+              "lines": 30,
+              "hits": 4,
+              "rate": 0.13333333333333333,
+              "odds_ratio_vs_rest": 2.954327356686749,
+              "p_vs_rest": 0.07863804553850007
+            },
+            "M106~A": {
+              "lines": 24,
+              "hits": 10,
+              "rate": 0.4166666666666667,
+              "odds_ratio_vs_rest": 12.598338498054988,
+              "p_vs_rest": 2.5356872997991617e-07
+            }
+          },
+          "homogeneity_pairs": [
+            {
+              "form_1": "M106",
+              "form_2": "M106~A",
+              "table": [
+                4,
+                26,
+                10,
+                14
+              ],
+              "odds_ratio": 0.23450134770889489,
+              "p_two_sided": 0.028356528386213928
+            }
+          ]
+        }
+      }
+    }
+  }
+}

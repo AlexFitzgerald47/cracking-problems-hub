@@ -4,6 +4,141 @@
 
 ---
 
+## 2026-10-02 – breaker session: M288–N45 settled, constraint set re-counted on its own multiplicity basis
+
+**Read `attempts/2026-10-02-block-aware-split/RESULTS.md` before anything else in this
+folder.** It takes recommended experiment 1 to a verdict, takes experiment 3, and corrects
+the multiplicity basis of the 2026-09-17 face-blocked q-column. Nothing below is deleted or
+altered.
+
+### Frontier now
+
+**M288–N45 is confirmed against the face confound.** A pre-registered block-aware split
+(arm A) gives face-blocked p = 0.00385 at a p-floor of 3.0e-7, BH q = 0.0482 over that
+arm's own 50 re-screened candidates, OR 19.29. The published holdout's floor was 0.12, so
+this is the first test of the pair that could return either answer. Recommended experiment
+1 is **done**; do not re-run it.
+
+**But the constraint set is smaller than the folder believed, and this is the more
+important change.** The 2026-09-17 face-blocked q-values corrected over the 8 pairs that
+had already survived the 2026-09-04 validation, not over the 54 candidates that validation
+was applied to — and those 8 were winnowed using the same holdout. Every raw p-value
+reproduces exactly; only the family changes. On the design's own 54-candidate BH basis:
+
+| tier | pairs | basis |
+|---|---|---|
+| **Load-bearing** | M263–N01 (q = 0.0155), M297–N39B (q = 0.0392) | confirmed on all three splits run through identical machinery; 12–18 informative blocks; floors ≤ 1.2e-9 |
+| **Confirmed, one split** | M288–N45 (arm A, q = 0.048), M243–N39B (arm A, q = 0.048) | boundary cases, q = 0.054–0.055 elsewhere; not refuted |
+| **Power-limited, no verdict** | M263–N30C (floor 0.019), M106–N24 (2 informative blocks) | cannot reach a corrected threshold at this corpus and split size |
+| **Uncorrected-only** | M297–N01, M297–N24 | raw face-blocked p ≤ 0.05 on every split, never clear BH over the real candidate family |
+
+M263–N30C has **left** the load-bearing tier — not refuted, undecided. Treat the
+load-bearing tier as two pairs from here.
+
+Family merges: **M263 upheld** (6/6 pairwise homogeneity tests on N01 at p ≥ 0.0605; on
+N30C all four testable forms at rate exactly 0.000 vs a 0.063 base rate). **M288's merge
+is a non-issue** — 538 of 559 form-occurrences are the plain form, which closes the obvious
+objection to the arm A result. **M243 is untestable** — 46 occurrences over 15 graphical
+forms, only M243~J reaching 15 lines. **M106 is the one that looks unsafe** (M106 vs
+M106~A on N24, p = 0.0284, OR 0.23) but no homogeneity test survives BH over the 16 run
+(all q ≥ 0.40): a flag, not a finding.
+
+### Two rules this session added, both of which bind the next session
+
+1. **A p-floor must be quoted against the threshold the design will actually apply, not
+   against 0.05.** Arm B's observed overlap was **19 of a maximum possible 19** — the most
+   extreme result its data could physically produce — giving p exactly equal to its floor,
+   0.0150, and q = 0.1325 after BH over 53 candidates. A floor under 0.05 means the test
+   can fire *before* multiplicity. This extends the 2026-09-17 floor rule rather than
+   replacing it.
+2. **A split can be designed from the conditioning marginals without biasing an exact
+   conditional test, and the space of such splits can be enumerated instead of sampled.**
+   Informativeness and the p-floor are functions of each block's
+   `(n_lines, n_M_lines, n_target_lines)`, which the test holds fixed; the observed overlap
+   never enters. And because non-informative blocks add the same constant to the observed
+   total and to the null's support, the face-blocked p depends *only* on which informative
+   blocks the validation set holds — so all 32,767 carrier assignments were enumerated
+   exactly. Both facts are proved in `test_block_aware_split.py`.
+
+### Conditional assumptions
+
+- Everything remains **structural**. No sign has a semantic, phonetic or metrological value
+  and nothing this session did moves toward one.
+- The two arms are not two independent replications. Their test statistics use disjoint
+  informative blocks, but each arm's screen used the other arm's validation lines, so the
+  Fisher combination (p = 6.2e-4) is indicative only and is not the headline.
+- Novelty against specialist sign-by-sign literature is **still unestablished** and was not
+  searched this session, as in 2026-09-04 and 2026-09-17.
+- The split enumeration covers M288–N45 only.
+
+### Three things a future session must not redo
+
+Carrying forward the 2026-09-17 pair, plus one new:
+
+1. **Do not run recommended experiment 4 (provenience/metadata control) as written** — the
+   within-tablet permutation already controls it and the corpus is 1,334/1,467 Susa.
+2. **Do not run the 2026-09-04 recommended experiment 1 as written** — 363 of 370 M297
+   tokens carry the `ri2<M297<…` annotation and only 5 are compound members.
+3. **Do not re-run the M288–N45 block-aware split.** It is done, both arms are reported,
+   and the whole space of such splits is enumerated in
+   `results/enumeration_full.csv.gz`. What remains for that pair is independent data, not a
+   better split.
+
+### Recommended next experiments
+
+1. **Replication on a newer independent CDLI export — now the only test that can move
+   anything.** This is the cheapest decisive item on the folder and it is the one the
+   constraint set was published under. Concretely: pull the current CDLI Proto-Elamite ATF
+   (`https://github.com/cdli-gh/data`, or a fresh `pe-sign-value-data` export), run
+   `analysis/structure_associations.py` unchanged on it, then
+   `attempts/2026-10-02-block-aware-split/block_aware_split.py` for the face-blocked and
+   block-aware tests, and record the new corpus digest **as both LF and CRLF** (see the
+   digest trap below). **Predictions, per tier:** M263–N01 and M297–N39B must hold in
+   direction and clear BH over the new screen's own candidate family — if either fails,
+   the folder's load-bearing tier is empty and the whole constraint set reverts to leads.
+   M288–N45 and M243–N39B must hold in *direction*; their q-values may not clear, and that
+   would not refute them. M263–N30C should gain informative blocks: if a larger export
+   lifts it above a floor of ~0.005 it becomes decidable for the first time, in either
+   direction. **What would change the verdict:** any load-bearing pair reversing direction.
+2. **Split M106–N24 by exact graphical form before it is used for anything.** The merge is
+   the least safe in the set (p = 0.0284 uncorrected, OR 0.23) and the test is one
+   `exact_form_audit.py` run restricted to the two forms with a pre-registered single
+   hypothesis, which removes the BH-over-16 penalty that makes it uncallable now.
+3. **Header refinement against Born et al. 2022** — still untouched, still the only route
+   in the folder toward document structure rather than line-level association. Needs the
+   replication package from <https://aclanthology.org/2022.emnlp-main.620/>.
+4. **M263~A is 34 of 34 eligible lines with N01.** Not pursued here and not a planned
+   experiment, but an extreme worth someone's eyes: either a genuine near-deterministic
+   constraint or an artefact of how that variant is annotated.
+5. **Establish novelty, or stop claiming the question is open.** Three sessions have now
+   deferred the sign-by-sign literature check. Until someone enumerates what Englund,
+   Dahl and Born have already said about M263/N01 and M297/N39B, this folder cannot say
+   whether its load-bearing tier is new. This is a finder-shaped task, not a breaker one.
+
+### Evidence dependency
+
+Item 1 needs a newer CDLI ATF export (network only). Items 2 and 4 need nothing not already
+in the repository plus the pinned corpus. Item 3 needs the Born et al. 2022 replication
+package. Item 5 needs literature access. No archival access, no images, no paywalled
+material for 1, 2 or 4.
+
+### Trap for the next session — the corpus digest (unchanged, still live)
+
+`analysis/results/associations.json` records `ee4fa7ba…c083d6a`, which is the **CRLF** hash
+from a Windows checkout. A Linux or macOS checkout of the identical pinned commit gives
+`8849716c…8bf2b2dcf`, reproduced again this session. Do not read the mismatch as corpus
+drift and do not re-pin.
+
+### Reopening condition
+
+M263–N01 and M297–N39B reopen if they fail to replicate, in direction, on an independent
+CDLI export. M288–N45 is settled against the *face* confound and reopens only on that same
+replication, or if someone shows the arm A screen leaked — the code and both arms are
+committed so that this can be attacked. M263–N30C and M106–N24 reopen the moment a larger
+corpus gives either a p-floor below ~0.005.
+
+---
+
 ## 2026-09-25 – orchestrator cross-reference (additive; nothing below altered)
 
 Posted by the orchestrator. Nothing in the session notes below is changed or contested.
