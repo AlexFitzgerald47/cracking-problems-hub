@@ -12,66 +12,229 @@ function canvasTex(w, h, draw) {
   const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return t;
 }
 
-// A raccoon in a trench coat. Returns the group and the parts that move.
+// ---- The raccoon ------------------------------------------------------------
+// Sculpted rather than assembled: a smooth head pushed into a muzzle and cheek
+// ruffs, the mask painted into its vertices, a tailored coat with fabric sheen.
+
+const smooth = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+const mix = (a, b, t) => a + (b - a) * t;
+let TEX = null;
+// Fur and twill, drawn once: fine strands for the head, a diagonal weave for the cloth.
+function textures() {
+  if (TEX) return TEX;
+  const r = rng(31);
+  const fur = canvasTex(256, 256, (x, w, h) => {
+    x.fillStyle = '#808080'; x.fillRect(0, 0, w, h);
+    for (let i = 0; i < 2600; i++) {
+      const px = r() * w, py = r() * h, a = -1.2 + r() * .5, l = 3 + r() * 7, v = 90 + r() * 120;
+      x.strokeStyle = `rgb(${v},${v},${v})`; x.lineWidth = .7 + r() * .6;
+      x.beginPath(); x.moveTo(px, py); x.lineTo(px + Math.cos(a) * l, py + Math.sin(a) * l); x.stroke();
+    }
+  });
+  const twill = canvasTex(128, 128, (x, w, h) => {
+    x.fillStyle = '#7a7a7a'; x.fillRect(0, 0, w, h);
+    for (let i = -h; i < w; i += 4) { x.strokeStyle = i % 8 ? '#9a9a9a' : '#5c5c5c'; x.lineWidth = 1.6; x.beginPath(); x.moveTo(i, 0); x.lineTo(i + h, h); x.stroke(); }
+    for (let i = 0; i < 400; i++) { const v = 100 + r() * 60; x.fillStyle = `rgb(${v},${v},${v})`; x.fillRect(r() * w, r() * h, 1, 1); }
+  });
+  for (const t of [fur, twill]) { t.wrapS = t.wrapT = THREE.RepeatWrapping; t.colorSpace = THREE.NoColorSpace; }
+  fur.repeat.set(3, 3); twill.repeat.set(10, 10);
+  TEX = { fur, twill };
+  return TEX;
+}
+const cloth = (color, o = {}) => new THREE.MeshPhysicalMaterial({ color, roughness: .82, sheen: .6, sheenRoughness: .6, sheenColor: new THREE.Color(color).lerp(new THREE.Color(0xffffff), .2), bumpMap: textures().twill, bumpScale: .6, envMapIntensity: .35, ...o });
+const felt = color => new THREE.MeshPhysicalMaterial({ color, roughness: .92, sheen: .8, sheenRoughness: .7, sheenColor: new THREE.Color(color).lerp(new THREE.Color(0xffffff), .25), envMapIntensity: .25 });
+const gloss = (color, o = {}) => new THREE.MeshPhysicalMaterial({ color, roughness: .18, clearcoat: 1, clearcoatRoughness: .15, envMapIntensity: 1.2, ...o });
+
+// The head, with its pattern painted per vertex.
+function headGeometry() {
+  const g = new THREE.SphereGeometry(.26, 64, 48), p = g.attributes.position;
+  const col = new Float32Array(p.count * 3), c = new THREE.Color();
+  const GREY = new THREE.Color(0x6d7178), TOP = new THREE.Color(0x4f5359), BLACK = new THREE.Color(0x0b0b0c), WHITE = new THREE.Color(0xf2efe8), CREAM = new THREE.Color(0xc9c1b2);
+  for (let i = 0; i < p.count; i++) {
+    let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+    const ox = x, oy = y, oz = z;
+    const front = Math.max(0, z / .26), low = 1 - smooth(-.1, .09, y);
+    // Muzzle: pulled forward and narrowed below the eyes.
+    z += .24 * front ** 2.6 * (.3 + .7 * low);
+    x *= 1 - .5 * front ** 2.6 * (.4 + .6 * low);
+    y += .03 * front ** 3 * low;
+    // Cheek ruffs: the sides flare out and back below the mask.
+    const ruff = Math.exp(-(((oy + .07) / .085) ** 2)) * smooth(.1, .24, Math.abs(ox)) * (1 - front * .4);
+    x *= 1 + .32 * ruff; z -= .05 * ruff;
+    // A flatter crown.
+    if (y > .1) y = .1 + (y - .1) * .78;
+    p.setXYZ(i, x, y, z);
+    // The pattern, from the undeformed position so it sits where a raccoon's does.
+    const ax = Math.abs(ox);
+    c.copy(GREY).lerp(TOP, smooth(.05, .24, oy));
+    const maskY = .015 - ax * .28;               // the band sweeps down toward the cheeks
+    const mask = Math.exp(-(((oy - maskY) / .07) ** 2)) * smooth(.018, .05, ax) * smooth(-.08, .08, oz);
+    const brow = Math.exp(-(((oy - .1 + ax * .2) / .03) ** 2)) * smooth(.02, .05, ax) * smooth(.12, .2, oz) * (1 - smooth(.13, .19, ax));
+    const muzzle = smooth(.12, .22, oz) * low * (1 - smooth(-.02, .04, oy - maskY - .03));
+    const cheek = ruff * 1.2 * (1 - mask);
+    c.lerp(CREAM, Math.min(1, cheek * .8));
+    c.lerp(WHITE, Math.min(1, muzzle + brow * 1.2));
+    c.lerp(BLACK, Math.min(1, mask * 1.7));
+    // The dark stripe down the bridge of the nose.
+    const stripe = (1 - smooth(.012, .03, ax)) * smooth(.02, .1, oy - .0) * smooth(.15, .22, oz) * (1 - smooth(.12, .16, oy));
+    c.lerp(new THREE.Color(0x2a2a2d), stripe * .9);
+    c.toArray(col, i * 3);
+  }
+  g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  g.computeVertexNormals();
+  return g;
+}
+function earGeometry() {
+  const g = new THREE.SphereGeometry(.085, 24, 16), p = g.attributes.position, col = new Float32Array(p.count * 3), c = new THREE.Color();
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+    p.setXYZ(i, x, y * 1.25 + (y > 0 ? y * .3 : 0), z * .32);
+    const rr = Math.hypot(x, y) / .085;
+    c.set(0x6f747a).lerp(new THREE.Color(0xeeeae2), smooth(.78, .95, rr) * (y > -.02 ? 1 : .3));
+    if (z > 0) c.lerp(new THREE.Color(0x26272a), (1 - smooth(.45, .75, rr)));
+    c.toArray(col, i * 3);
+  }
+  g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.computeVertexNormals(); return g;
+}
+// A tail: a tube that tapers, ringed black and grey.
+function tailGeometry(curve) {
+  const tubular = 64, radial = 16, g = new THREE.TubeGeometry(curve, tubular, .1, radial, false), p = g.attributes.position;
+  const col = new Float32Array(p.count * 3), c = new THREE.Color(), center = new THREE.Vector3(), v = new THREE.Vector3();
+  for (let j = 0; j <= tubular; j++) {
+    const u = j / tubular; curve.getPointAt(u, center);
+    const taper = mix(.95, .55, u) * (u > .9 ? 1 - smooth(.9, 1, u) * .7 : 1);
+    const ring = Math.sin(u * Math.PI * 11) > .1;
+    for (let k = 0; k <= radial; k++) {
+      const i = j * (radial + 1) + k;
+      v.fromBufferAttribute(p, i).sub(center).multiplyScalar(taper).add(center);
+      p.setXYZ(i, v.x, v.y, v.z);
+      c.set(ring ? 0x1d1e21 : 0x9a9ea4); if (u > .92) c.set(0x1d1e21);
+      c.toArray(col, i * 3);
+    }
+  }
+  g.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.computeVertexNormals(); return g;
+}
+function lapelGeometry() {
+  const s = new THREE.Shape();
+  s.moveTo(0, 0); s.lineTo(.11, .02); s.lineTo(.16, .22); s.lineTo(.1, .2); s.lineTo(.13, .28); s.lineTo(.05, .3); s.lineTo(.01, .12); s.lineTo(0, 0);
+  return new THREE.ExtrudeGeometry(s, { depth: .012, bevelEnabled: true, bevelThickness: .006, bevelSize: .006, bevelSegments: 3, curveSegments: 4 });
+}
+function hatParts(hatColor, bandColor) {
+  const grp = new THREE.Group();
+  // Brim: snapped down at the front, curled up at the sides and back.
+  const brimGeo = new THREE.LatheGeometry([[.19, 0], [.3, -.004], [.4, -.002], [.45, .012], [.462, .03], [.455, .036], [.39, .016], [.28, .012], [.19, .016]].map(([a, b]) => new THREE.Vector2(a, b)), 64);
+  const bp = brimGeo.attributes.position;
+  for (let i = 0; i < bp.count; i++) {
+    const x = bp.getX(i), y = bp.getY(i), z = bp.getZ(i), rr = Math.hypot(x, z), front = Math.max(0, z / rr);
+    const curl = smooth(.3, .46, rr) * (1 - front * 1.4);
+    bp.setY(i, y + .07 * curl - .035 * front * smooth(.25, .46, rr));
+  }
+  brimGeo.computeVertexNormals();
+  const brim = new THREE.Mesh(brimGeo, felt(hatColor)); brim.castShadow = true; grp.add(brim);
+  // Crown: a teardrop crease on top and two pinches at the front.
+  const crownGeo = new THREE.LatheGeometry([[.205, 0], [.215, .05], [.212, .12], [.2, .17], [.17, .195], [.1, .205], [0, .2]].map(([a, b]) => new THREE.Vector2(a, b)), 64, 0, Math.PI * 2);
+  const cp = crownGeo.attributes.position;
+  for (let i = 0; i < cp.count; i++) {
+    let x = cp.getX(i), y = cp.getY(i), z = cp.getZ(i);
+    z *= .86;
+    const top = smooth(.12, .2, y);
+    y -= .055 * Math.exp(-((x / .055) ** 2)) * top * (z < .12 ? 1 : .3);
+    const pinch = smooth(.02, .16, z) * smooth(.07, .17, y);
+    x *= 1 - .16 * pinch;
+    cp.setXYZ(i, x, y, z);
+  }
+  crownGeo.computeVertexNormals();
+  const crown = new THREE.Mesh(crownGeo, felt(hatColor)); crown.position.y = .012; crown.castShadow = true; grp.add(crown);
+  const bandGeo = new THREE.CylinderGeometry(.218, .222, .05, 64, 1, true); bandGeo.scale(1, 1, .87);
+  const band = new THREE.Mesh(bandGeo, new THREE.MeshPhysicalMaterial({ color: bandColor, roughness: .45, sheen: 1, sheenColor: new THREE.Color(bandColor), side: THREE.DoubleSide, emissive: bandColor, emissiveIntensity: .12 }));
+  band.position.y = .04; grp.add(band);
+  const bow = new THREE.Mesh(new THREE.BoxGeometry(.012, .045, .07), band.material); bow.position.set(.21, .04, -.03); bow.rotation.y = .4; grp.add(bow);
+  return grp;
+}
+
 function raccoon({ coat, band, hat = 0x232326, scale = 1, glasses = true, coatH = 1, head = true }) {
   const g = new THREE.Group(), parts = {};
-  const coatMat = std(coat, { roughness: .95 }), dark = std(0x1b1c1f), fur = std(0x8b8f95), cream = std(0xe6e0d4);
+  const coatMat = cloth(coat), trim = cloth(new THREE.Color(coat).multiplyScalar(.78).getHex());
+  const paws = new THREE.MeshPhysicalMaterial({ color: 0x1c1d20, roughness: .7, bumpMap: textures().fur, bumpScale: .4 });
   const H = 1.25 * coatH;
-  // The coat: a lathe, flared at the hem, nipped at the belt.
-  const prof = [[.02, 0], [.44, .06], [.42, .3 * H], [.37, .52 * H], [.31, .62 * H], [.33, .8 * H], [.37, .92 * H], [.34, .98 * H], [.17, 1.0 * H]].map(([r, y]) => new THREE.Vector2(r, y));
-  const body = new THREE.Mesh(new THREE.LatheGeometry(prof, 11), coatMat); body.castShadow = true; g.add(body); parts.body = body;
-  const belt = new THREE.Mesh(new THREE.TorusGeometry(.315, .035, 4, 14), std(new THREE.Color(coat).multiplyScalar(.7)));
-  belt.rotation.x = Math.PI / 2; belt.position.y = .62 * H; g.add(belt);
-  const buckle = new THREE.Mesh(new THREE.BoxGeometry(.1, .08, .03), std(0xb89a5e, { metalness: .6, roughness: .4 })); buckle.position.set(0, .62 * H, .33); g.add(buckle);
-  // Lapels, collar, two rows of buttons.
+  // The coat: a tailored lathe, flared at the hem, nipped at the belt, square at the shoulders.
+  const prof = [[.02, 0], [.45, .03], [.455, .06], [.43, .22 * H], [.39, .42 * H], [.335, .58 * H], [.315, .63 * H], [.33, .7 * H], [.355, .82 * H], [.375, .9 * H], [.37, .94 * H], [.32, .975 * H], [.22, .995 * H], [.15, 1.0 * H]].map(([r, y]) => new THREE.Vector2(r, y));
+  const coatGeo = new THREE.LatheGeometry(prof, 64);
+  coatGeo.scale(1, 1, .86);
+  const body = new THREE.Mesh(coatGeo, coatMat); body.castShadow = body.receiveShadow = true; g.add(body); parts.body = body;
+  // The front edge where the two panels overlap, off-centre as on a double-breasted coat.
+  const edge = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([[.07, .05, .385], [.08, .3 * H, .34], [.085, .58 * H, .29], [.09, .8 * H, .305], [.11, .9 * H, .3]].map(a => new THREE.Vector3(...a))), 24, .006, 6), trim);
+  g.add(edge);
+  // Belt with a buckle.
+  const belt = new THREE.Mesh(new THREE.TorusGeometry(.322, .028, 10, 64), trim); belt.scale.set(1, .86, 1); belt.rotation.x = Math.PI / 2; belt.position.y = .63 * H; g.add(belt);
+  const bs = new THREE.Shape(); bs.moveTo(-.06, -.045); bs.lineTo(.06, -.045); bs.lineTo(.06, .045); bs.lineTo(-.06, .045); bs.lineTo(-.06, -.045);
+  const hole = new THREE.Path(); hole.moveTo(-.04, -.027); hole.lineTo(.04, -.027); hole.lineTo(.04, .027); hole.lineTo(-.04, .027); hole.lineTo(-.04, -.027); bs.holes.push(hole);
+  const buckle = new THREE.Mesh(new THREE.ExtrudeGeometry(bs, { depth: .012, bevelEnabled: true, bevelThickness: .004, bevelSize: .004, bevelSegments: 2 }), new THREE.MeshPhysicalMaterial({ color: 0xb59457, metalness: .9, roughness: .3, envMapIntensity: 1.2 }));
+  buckle.position.set(0, .63 * H, .29); g.add(buckle);
+  // Lapels, a raised collar and epaulettes.
+  const lg = lapelGeometry();
   for (const s of [-1, 1]) {
-    const lapel = new THREE.Mesh(new THREE.BoxGeometry(.16, .3, .03), std(new THREE.Color(coat).multiplyScalar(.82)));
-    lapel.position.set(s * .1, .86 * H, .3); lapel.rotation.set(-.25, 0, s * .45); g.add(lapel);
-    for (const y of [.74, .52, .36]) { const b = new THREE.Mesh(new THREE.SphereGeometry(.022, 6, 4), dark); b.position.set(s * .1, y * H, .33 - (y < .5 ? -.04 : 0)); g.add(b); }
+    const lapel = new THREE.Mesh(lg, trim); lapel.scale.set(s * 1.25, 1.15, 1); lapel.position.set(s * .015, .66 * H, .305); lapel.rotation.set(-.12, s * .3, s * -.05); lapel.castShadow = true; g.add(lapel);
+    const ep = new THREE.Mesh(new THREE.BoxGeometry(.16, .018, .07, 1, 1, 1), trim); ep.position.set(s * .29, .975 * H, 0); ep.rotation.z = -s * .25; g.add(ep);
+    const flap = new THREE.Mesh(new THREE.BoxGeometry(.14, .05, .015), trim); flap.position.set(s * .27, .4 * H, .32); flap.rotation.set(-.15, s * .5, 0); g.add(flap);
   }
-  const collar = new THREE.Mesh(new THREE.CylinderGeometry(.2, .3, .16, 10, 1, true), std(new THREE.Color(coat).multiplyScalar(.85), { side: THREE.DoubleSide }));
-  collar.position.y = 1.0 * H; g.add(collar);
-  // Sleeves with paws, hanging into the pockets unless a pose lifts them.
+  const collar = new THREE.Mesh(new THREE.CylinderGeometry(.17, .23, .14, 48, 1, true, -Math.PI * .85, Math.PI * 1.7), cloth(new THREE.Color(coat).multiplyScalar(.85).getHex(), { side: THREE.DoubleSide }));
+  collar.scale.z = .86; collar.rotation.y = Math.PI; collar.position.y = .985 * H; g.add(collar);
+  const horn = new THREE.MeshPhysicalMaterial({ color: 0x2a1d14, roughness: .35, clearcoat: .8, envMapIntensity: .8 });
+  for (const s of [-1, 1]) for (const y of [.78, .53, .37]) {
+    const b = new THREE.Mesh(new THREE.CylinderGeometry(.024, .024, .012, 20), horn);
+    const zz = .3 + (y < .6 ? (.6 - y) * .25 : 0);
+    b.position.set(s * .1 + .02, y * H, zz); b.rotation.x = Math.PI / 2 - (y < .6 ? .25 : .1); g.add(b);
+  }
+  // Sleeves with cuff straps and paws, hanging into the pockets unless a pose lifts them.
   for (const s of [-1, 1]) {
-    const arm = new THREE.Group(); arm.position.set(s * .36, .92 * H, 0);
-    const sleeve = new THREE.Mesh(new THREE.CapsuleGeometry(.075, .42, 3, 7), coatMat); sleeve.position.y = -.26; sleeve.castShadow = true;
-    const paw = new THREE.Mesh(new THREE.SphereGeometry(.07, 7, 5), dark); paw.position.y = -.54;
-    arm.add(sleeve, paw); arm.rotation.z = s * .12; g.add(arm);
+    const arm = new THREE.Group(); arm.position.set(s * .37, .92 * H, 0);
+    const sleeve = new THREE.Mesh(new THREE.CapsuleGeometry(.082, .4, 8, 24), coatMat); sleeve.position.y = -.25; sleeve.castShadow = true;
+    const cuff = new THREE.Mesh(new THREE.TorusGeometry(.083, .014, 8, 32), trim); cuff.rotation.x = Math.PI / 2; cuff.position.y = -.42;
+    const paw = new THREE.Group(); paw.position.y = -.52;
+    const palm = new THREE.Mesh(new THREE.SphereGeometry(.062, 20, 14), paws); palm.scale.set(1, 1.1, .85); paw.add(palm);
+    for (let k = 0; k < 4; k++) { const f = new THREE.Mesh(new THREE.SphereGeometry(.022, 12, 8), paws); f.position.set((k - 1.5) * .028, -.058, .012); f.scale.y = 1.4; paw.add(f); }
+    arm.add(sleeve, cuff, paw); arm.rotation.z = s * .1; g.add(arm);
     parts[s < 0 ? 'armL' : 'armR'] = arm;
   }
-  // Feet under the hem, and a ringed tail out the back.
-  for (const s of [-1, 1]) { const f = new THREE.Mesh(new THREE.SphereGeometry(.09, 7, 4), dark); f.scale.set(1, .5, 1.5); f.position.set(s * .14, .03, .14); g.add(f); }
-  const tail = new THREE.Group(); tail.position.set(0, .16, -.36); g.add(tail); parts.tail = tail;
-  for (let i = 0; i < 6; i++) {
-    const seg = new THREE.Mesh(new THREE.SphereGeometry(.1 - i * .006, 7, 5), i % 2 ? dark : fur);
-    seg.position.set(Math.sin(i * .5) * .05, i * .03, -i * .11); seg.scale.set(1, 1, 1.3); seg.castShadow = true; tail.add(seg);
+  for (const s of [-1, 1]) {
+    const foot = new THREE.Group(); foot.position.set(s * .15, .025, .17);
+    const sole = new THREE.Mesh(new THREE.SphereGeometry(.075, 20, 12), paws); sole.scale.set(1, .45, 1.45); foot.add(sole);
+    for (let k = 0; k < 4; k++) { const toe = new THREE.Mesh(new THREE.SphereGeometry(.022, 10, 8), paws); toe.position.set((k - 1.5) * .03, .0, .1); foot.add(toe); }
+    g.add(foot);
   }
+  const tailCurve = new THREE.CatmullRomCurve3([[0, .12, -.28], [.04, .1, -.48], [.12, .14, -.68], [.16, .26, -.84], [.13, .4, -.94]].map(a => new THREE.Vector3(...a)));
+  const tail = new THREE.Group(); g.add(tail); parts.tail = tail;
+  const tailMesh = new THREE.Mesh(tailGeometry(tailCurve), new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: .8, bumpMap: textures().fur, bumpScale: .9, sheen: .6, sheenColor: new THREE.Color(0x9aa0a8) }));
+  tailMesh.castShadow = true; tail.add(tailMesh);
   if (head) {
     const hd = new THREE.Group(); hd.position.y = H + .2; g.add(hd); parts.head = hd;
-    const skull = new THREE.Mesh(new THREE.IcosahedronGeometry(.27, 1), fur); skull.scale.set(1.05, .86, .92); skull.castShadow = true; hd.add(skull);
-    // Cheek ruffs, the white brow, the dark mask, the muzzle and nose.
-    for (const s of [-1, 1]) {
-      const ruff = new THREE.Mesh(new THREE.ConeGeometry(.12, .22, 5), cream); ruff.position.set(s * .25, -.08, .05); ruff.rotation.z = s * 2.1; hd.add(ruff);
-      const mask = new THREE.Mesh(new THREE.SphereGeometry(.1, 8, 6), dark); mask.scale.set(1.4, .75, .5); mask.position.set(s * .1, .02, .21); hd.add(mask);
-      const ear = new THREE.Mesh(new THREE.ConeGeometry(.08, .15, 4), fur); ear.position.set(s * .19, .22, -.02); ear.rotation.z = -s * .35; hd.add(ear);
-      const inner = new THREE.Mesh(new THREE.ConeGeometry(.045, .09, 4), dark); inner.position.set(s * .19, .22, .02); inner.rotation.z = -s * .35; hd.add(inner);
-    }
-    const brow = new THREE.Mesh(new THREE.SphereGeometry(.1, 8, 5), cream); brow.scale.set(1.9, .45, .5); brow.position.set(0, .11, .2); hd.add(brow);
-    const muzzle = new THREE.Mesh(new THREE.ConeGeometry(.1, .2, 7), cream); muzzle.rotation.x = Math.PI / 2; muzzle.position.set(0, -.07, .3); hd.add(muzzle);
-    const nose = new THREE.Mesh(new THREE.SphereGeometry(.035, 7, 5), std(0x0b0b0d, { roughness: .3 })); nose.position.set(0, -.06, .4); hd.add(nose);
+    const furMat = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: .78, bumpMap: textures().fur, bumpScale: .8, sheen: .25, sheenRoughness: .7, sheenColor: new THREE.Color(0x5a5e64), envMapIntensity: .2 });
+    const skull = new THREE.Mesh(headGeometry(), furMat); skull.scale.set(.94, 1.06, 1); skull.castShadow = true; hd.add(skull);
+    const ears = earGeometry();
+    for (const s of [-1, 1]) { const ear = new THREE.Mesh(ears, furMat); ear.position.set(s * .17, .19, -.03); ear.rotation.set(-.15, s * -.3, s * -.4); hd.add(ear); }
+    const nose = new THREE.Mesh(new THREE.SphereGeometry(.034, 24, 16), gloss(0x0c0c0e)); nose.scale.set(1.25, .85, .9); nose.position.set(0, -.05, .485); hd.add(nose);
+    // Whiskers.
+    const wp = [];
+    for (const s of [-1, 1]) for (let k = 0; k < 4; k++) { const y = -.07 + k * .012; wp.push(s * .055, y - .01, .43, s * (.28 + k * .02), y - .03 + k * .015, .36 - k * .02); }
+    const wg = new THREE.BufferGeometry(); wg.setAttribute('position', new THREE.Float32BufferAttribute(wp, 3));
+    hd.add(new THREE.LineSegments(wg, new THREE.LineBasicMaterial({ color: 0xe8e4dc, transparent: true, opacity: .55 })));
     if (glasses) {
-      const lens = std(0x050608, { roughness: .15, metalness: .5 });
-      for (const s of [-1, 1]) { const l = new THREE.Mesh(new THREE.BoxGeometry(.13, .07, .02), lens); l.position.set(s * .085, .02, .26); hd.add(l); }
-      const bridge = new THREE.Mesh(new THREE.BoxGeometry(.06, .015, .015), lens); bridge.position.set(0, .04, .265); hd.add(bridge);
+      const lensMat = new THREE.MeshPhysicalMaterial({ color: 0x0d1418, roughness: .03, metalness: .6, clearcoat: 1, clearcoatRoughness: .05, envMapIntensity: 2.2 });
+      const frameMat = new THREE.MeshPhysicalMaterial({ color: 0x8a7a55, metalness: 1, roughness: .25, envMapIntensity: 1.5 });
+      for (const s of [-1, 1]) {
+        const lens = new THREE.Mesh(new THREE.CylinderGeometry(.06, .06, .012, 32), lensMat); lens.rotation.x = Math.PI / 2; lens.scale.set(1.1, 1, .9); lens.position.set(s * .09, .014, .298); hd.add(lens);
+        const rim = new THREE.Mesh(new THREE.TorusGeometry(.064, .006, 8, 40), frameMat); rim.scale.set(1.1, .9, 1); rim.position.set(s * .09, .014, .305); hd.add(rim);
+        const arm = new THREE.Mesh(new THREE.CylinderGeometry(.004, .004, .2, 6), frameMat); arm.rotation.x = Math.PI / 2; arm.position.set(s * .2, .02, .2); arm.rotation.y = s * .25; hd.add(arm);
+      }
+      const bridge = new THREE.Mesh(new THREE.TorusGeometry(.02, .004, 6, 16, Math.PI), frameMat); bridge.position.set(0, .024, .31); hd.add(bridge);
     } else {
-      for (const s of [-1, 1]) { const e = new THREE.Mesh(new THREE.SphereGeometry(.028, 6, 5), std(0x0a0a0a, { roughness: .2 })); e.position.set(s * .09, .02, .255); hd.add(e); const glint = new THREE.Mesh(new THREE.SphereGeometry(.008, 4, 3), new THREE.MeshBasicMaterial({ color: 0xffffff })); glint.position.set(s * .09 + .01, .03, .28); hd.add(glint); }
+      for (const s of [-1, 1]) {
+        const eye = new THREE.Mesh(new THREE.SphereGeometry(.03, 24, 16), gloss(0x0a0807)); eye.position.set(s * .088, .016, .272); hd.add(eye);
+        const glint = new THREE.Mesh(new THREE.SphereGeometry(.007, 8, 6), new THREE.MeshBasicMaterial({ color: 0xffffff })); glint.position.set(s * .088 + .011, .028, .298); hd.add(glint);
+      }
     }
-    // The fedora, tipped a little; its band is the crew's colour.
-    const hatG = new THREE.Group(); hatG.position.y = .2; hatG.rotation.set(-.08, 0, .06); hd.add(hatG);
-    const brim = new THREE.Mesh(new THREE.CylinderGeometry(.46, .46, .025, 18), std(hat, { roughness: .9 })); brim.castShadow = true; hatG.add(brim);
-    const crown = new THREE.Mesh(new THREE.CylinderGeometry(.21, .26, .18, 14), std(hat, { roughness: .9 })); crown.position.y = .1; crown.scale.z = .88; crown.castShadow = true; hatG.add(crown);
-    const pinch = new THREE.Mesh(new THREE.BoxGeometry(.16, .035, .36), std(new THREE.Color(hat).multiplyScalar(.7))); pinch.position.y = .185; hatG.add(pinch);
-    const bandM = new THREE.Mesh(new THREE.CylinderGeometry(.263, .263, .055, 14), std(band, { emissive: band, emissiveIntensity: .25 })); bandM.position.y = .045; bandM.scale.z = .88; hatG.add(bandM);
+    const hatG = hatParts(hat, band); hatG.position.y = .125; hatG.rotation.set(-.1, 0, .07); hd.add(hatG);
   }
   g.scale.setScalar(scale);
   return { g, parts };
@@ -89,6 +252,15 @@ export function mount(host, { pick, pickName, overwatchOwed, newPacks, best, str
 
   const scene = new THREE.Scene();
   scene.fog = new THREE.FogExp2(0x07090c, .045);
+  // Something for glass, metal and fur sheen to reflect: a warm lamp above, a cold window to one side.
+  {
+    const pm = new THREE.PMREMGenerator(renderer), env = new THREE.Scene();
+    env.background = new THREE.Color(0x0b0d10);
+    const panel = (w, h, d, x, y, z, c, k) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), new THREE.MeshBasicMaterial({ color: new THREE.Color(c).multiplyScalar(k) })); m.position.set(x, y, z); env.add(m); };
+    panel(3, .3, 3, 0, 6, 1, 0xffd59a, 8); panel(.2, 3, 5, -8, 2.5, 2, 0x6f8fd0, 2); panel(8, 4, .2, 0, 2, -8, 0x3a2418, 1.2); panel(.2, 2, 3, 8, 2, 0, 0xb7a6ff, 1);
+    scene.environment = pm.fromScene(env, .04).texture;
+    pm.dispose();
+  }
   const camera = new THREE.PerspectiveCamera(32, 1, .1, 100);
   const r = rng(77);
 
@@ -120,7 +292,7 @@ export function mount(host, { pick, pickName, overwatchOwed, newPacks, best, str
   const lampPos = new THREE.Vector3(1.4, 5.4, 1.2);
   const spot = new THREE.SpotLight(0xffd59a, 70, 16, .78, .5, 1.6);
   spot.position.copy(lampPos); spot.target.position.set(1.2, 0, .4); spot.castShadow = true;
-  spot.shadow.mapSize.set(1024, 1024); spot.shadow.bias = -.0006; scene.add(spot, spot.target);
+  spot.shadow.mapSize.set(2048, 2048); spot.shadow.bias = -.0006; scene.add(spot, spot.target);
   const rim = new THREE.DirectionalLight(0x6f8fd0, .6); rim.position.set(-6, 4, 3); scene.add(rim);
   const fill = new THREE.PointLight(0x7a5a3a, 6, 9, 2); fill.position.set(-4.2, 3, 2); scene.add(fill);
   // The lamp itself: flex, shade, bulb glow, and the cone of light through the dust.
