@@ -1,0 +1,708 @@
+
+##############################################################################
+### attack_arith.py
+##############################################################################
+==============================================================================
+ATTACK 1 — damage-aware arithmetic audit of KU-RO / PO-TO-KU-RO
+==============================================================================
+
+--- WHOLE CORPUS (all sites, all supports): 28 total-markers with a stated integer and >=1 preceding numeral
+    exact balance overall          : 9/28 = 32.1%
+    faces with NO lacuna & NO fraction: 3; exact balance 2/3 = 66.7%
+    faces WITH lacuna or fraction     : 25; exact balance 7/25 = 28.0%
+
+--- HAGHIA TRIADA TABLETS: 28 total-markers with a stated integer and >=1 preceding numeral
+    exact balance overall          : 9/28 = 32.1%
+    faces with NO lacuna & NO fraction: 3; exact balance 2/3 = 66.7%
+    faces WITH lacuna or fraction     : 25; exact balance 7/25 = 28.0%
+
+--- the ten faces the dossier quotes, under the claimant's own rule
+  HT85a    KU-RO       block=face-start                   n= 7 sum=     66 stated=     66  BALANCES   lacunae_on_face=1
+  HT85b    no total marker with a stated integer (lacunae_on_face=1)
+  HT87     no total marker with a stated integer (lacunae_on_face=2)
+  HT88     KU-RO       block=after-KI-RO-forward-scope    n= 6 sum=      6 stated=      6  BALANCES   lacunae_on_face=0
+  HT94a    KU-RO       block=face-start                   n= 5 sum=    111 stated=    110  SHORT/OVER by +1   lacunae_on_face=2
+  HT94b    KU-RO       block=after-KI-RO-forward-scope    n= 5 sum=      5 stated=      5  BALANCES   lacunae_on_face=4
+  HT117a   KU-RO       block=after-KI-RO-forward-scope    n=10 sum=     10 stated=     10  BALANCES   lacunae_on_face=0
+  HT117b   no total marker with a stated integer (lacunae_on_face=0)
+  HT119    KU-RO       block=face-start                   n= 9 sum=    159 stated=    160  SHORT/OVER by -1   lacunae_on_face=0
+  HT122a   KU-RO       block=face-start                   n=16 sum=     22 stated=     31  SHORT/OVER by -9   lacunae_on_face=5
+  HT122b   KU-RO       block=face-start                   n= 5 sum=     15 stated=     65  SHORT/OVER by -50   lacunae_on_face=3
+  HT122b   PO-TO-KU-RO block=after-KU-RO                  n= 1 sum=     65 stated=     97  SHORT/OVER by -32   lacunae_on_face=3
+  HT34     no total marker with a stated integer (lacunae_on_face=2)
+  HT15     no total marker with a stated integer (lacunae_on_face=1)
+  HT1      no total marker with a stated integer (lacunae_on_face=0)
+  HT2      no total marker with a stated integer (lacunae_on_face=6)
+  HT30     no total marker with a stated integer (lacunae_on_face=4)
+  HT37     no total marker with a stated integer (lacunae_on_face=6)
+
+--- HT122: what actually supports the 'hierarchical control total'?
+  HT122a: lacuna markers in raw transcription = 5
+        raw words with damage flags = RA-RI 𐄁 U-DE-ZA 2 / 2 / DA-SI-*118 2 / PA 𐄁 / DI 1 / TE-KI 2 / QA-*310-I 3 / JA-MI-DA-RE 1 / SI-DA-RE 1 / *324-DI-RA 1 / PA-DE 1 / KU-PA₃-NU 1 / PA-TA-NE 1 / *306-TU 1 / DU 1 / KU-PA₃-NU 1 / DA-RI-DA 1 / KU-RO 31 / KU-DA 1
+  HT122b: lacuna markers in raw transcription = 3
+        raw words with damage flags = JE-DI 𐄁 *346 𐄁 VIR+[?] / *306-KI-TA₂ 7 / A-RA-JU-U-DE-ZA 2 / QA-QA-RU 2 / DI 2 / DA-RE 2 / KU-RO 65 / PO-TO-KU-RO 97
+  stated-total identity 31 + KU-DA 1 + 65 = 97 : True
+  BUT the entry lines of neither face reach their own stated subtotal;
+  the identity is arithmetic over three numbers the scribe wrote, not a
+  reconciliation of the itemised detail.
+
+--- null for 'a + b (+ small item) = grand total' over stated totals
+  faces carrying >=2 stated totals: 2
+  of those, subtotals(+0 or +1) == last total: 0 -> []
+
+
+##############################################################################
+### attack_arith2.py
+##############################################################################
+==============================================================================
+ATTACK 1b — how strong is the KU-RO arithmetic anchor, honestly counted?
+==============================================================================
+  total-marker tokens (KU-RO / PO-TO-KU-RO) in the corpus: 39
+    integer-only block, testable               23
+    no stated integer after the marker         8
+    block carries fractions/measures           5
+    no preceding numeral in the block          3
+
+  INTEGER-ONLY BLOCKS (the fair test of 'KU-RO = total')
+    exact balance                     : 8/23 = 34.8%
+    restricted to faces with 0 lacunae: 2/3 = 66.7%
+    failures, worst first:
+      HT131b   PO-TO-KU-RO n= 2 sum=     32 stated=    452 delta=    -420 lacunae=8
+      HT109    KU-RO       n= 2 sum=      8 stated=    129 delta=    -121 lacunae=6
+      HT110a   KU-RO       n= 2 sum=     21 stated=    100 delta=     -79 lacunae=4
+      HT122b   KU-RO       n= 5 sum=     15 stated=     65 delta=     -50 lacunae=3
+      HT46a    KU-RO       n= 1 sum=      1 stated=     43 delta=     -42 lacunae=4
+      HT122b   PO-TO-KU-RO n= 1 sum=     65 stated=     97 delta=     -32 lacunae=3
+      HT118    KU-RO       n= 7 sum=     50 stated=     30 delta=     +20 lacunae=1
+      HT25b    KU-RO       n= 3 sum=     68 stated=     52 delta=     +16 lacunae=2
+      HT27a    KU-RO       n= 8 sum=    322 stated=    335 delta=     -13 lacunae=5
+      HT102    KU-RO       n= 7 sum=   1070 stated=   1060 delta=     +10 lacunae=1
+      HT122a   KU-RO       n=16 sum=     22 stated=     31 delta=      -9 lacunae=5
+      HT100    KU-RO       n= 5 sum=     93 stated=     97 delta=      -4 lacunae=2
+      HT11a    KU-RO       n= 3 sum=      6 stated=     10 delta=      -4 lacunae=2
+      HT119    KU-RO       n= 9 sum=    159 stated=    160 delta=      -1 lacunae=0
+      HT94a    KU-RO       n= 5 sum=    111 stated=    110 delta=      +1 lacunae=2
+
+  BLOCKS WITH FRACTIONS/MEASURES (not a fair integer test)
+    exact balance                     : 1/5 = 20.0%
+    restricted to faces with 0 lacunae: 0/2 = 0.0%
+    failures, worst first:
+      HT123+124a KU-RO       n= 1 sum=     93 stated=     25 delta=     +68 lacunae=3
+      HT123+124b KU-RO       n= 5 sum=     27 stated=     20 delta=      +7 lacunae=1
+      HT9a     KU-RO       n= 7 sum=     29 stated=     31 delta=      -2 lacunae=0
+      HT104    KU-RO       n= 3 sum=     94 stated=     95 delta=      -1 lacunae=0
+
+==============================================================================
+ATTACK 1c — is '31 + KU-DA 1 + 65 = PO-TO-KU-RO 97' more than one lucky sum?
+==============================================================================
+  tablets with >=3 stated totals across their faces: 1
+    HT122    [('HT122a', 'KU-RO', 31.0), ('HT122b', 'KU-RO', 65.0), ('HT122b', 'PO-TO-KU-RO', 97.0)]
+
+  tablets carrying a PO-TO-KU-RO at all:
+    ['HT122', 'HT131']
+    HT122: subtotals [31.0, 65.0] sum=96.0  grand=97.0  gap=+1   CLOSES with one unit item
+    HT131: subtotals [] sum=0  grand=452.0  gap=+452   does NOT close
+
+  => the hierarchy claim rests on ONE tablet (HT122). n=1 is not a
+     tested structure; it is a single arithmetic coincidence candidate.
+     P(three stated integers a,b,c with a+1+b=c) is not estimable from n=1.
+
+
+##############################################################################
+### attack_arith3.py
+##############################################################################
+==============================================================================
+ATTACK 1d — KU-RO balance vs. how damaged the face is
+==============================================================================
+  integer-only testable blocks: 23
+
+  BALANCING blocks:
+    HT117a    KU-RO       n=10 sum=     10 stated=     10  lacunae=0
+    HT11b     KU-RO       n= 5 sum=    180 stated=    180  lacunae=1
+    HT127b    KU-RO       n= 6 sum=    292 stated=    292  lacunae=4
+    HT85a     KU-RO       n= 7 sum=     66 stated=     66  lacunae=1
+    HT88      KU-RO       n= 6 sum=      6 stated=      6  lacunae=0
+    HT89      KU-RO       n= 5 sum=     87 stated=     87  lacunae=1
+    HT94b     KU-RO       n= 5 sum=      5 stated=      5  lacunae=4
+    HT9b      KU-RO       n= 7 sum=     24 stated=     24  lacunae=1
+
+  mean lacunae on face, BALANCING blocks : 1.50  (n=8)
+  mean lacunae on face, FAILING blocks   : 3.20  (n=15)
+
+  balance rate by lacuna count on the face:
+    lacunae=  0  2/3 balance = 67%
+    lacunae=  1  4/6 balance = 67%
+    lacunae=  2  0/4 balance = 0%
+    lacunae=  3  0/2 balance = 0%
+    lacunae=  4  2/4 balance = 50%
+    lacunae=>=5  0/4 balance = 0%
+
+  Mann-Whitney U (balancing have FEWER lacunae): U=91.0, E[U]=60.0, z=+2.00
+  VERDICT on the mismatches: they track damage, not arithmetic.
+  They are therefore NOT evidence of scribal error, NOT witness error and
+  NOT claimant error -- but they do mean the itemised detail of the
+  keystone register HT122 is largely lost:
+    HT122a entries recover 22 of a stated 31; HT122b entries recover 15 of 65.
+    legible fraction of the register's own stated personnel = 39%
+
+
+##############################################################################
+### attack_nulls.py
+##############################################################################
+==============================================================================
+ATTACK 2 — coincidence base rates, nulls drawn from the corpus's own amounts
+==============================================================================
+  empirical amount pool: n=789 entry amounts on HT tablets
+  most common amounts: [(1.0, 192), (2.0, 83), (3.0, 61), (10.0, 53), (5.0, 51), (4.0, 43), (6.0, 37), (20.0, 29), (8.0, 19), (7.0, 19), (30.0, 15), (15.0, 14)]
+  mean 24.11  median 5  max 3000
+
+--- 2a  HT119: an exact 2:1 pair somewhere in a 9-item list
+  P(at least one exact 2:1 pair in 9 corpus-like amounts)      = 0.8466   (169314/200000)
+  P(at least one exact k:1 pair, k in (2, 3, 4, 5))              = 0.9835
+  P(the FIRST TWO entries are exactly 2:1)                     = 0.0915
+  observed on HT119: exactly one 2:1 pair, and it is the first two lines.
+  -> the 'somewhere in the list' version of the observation is NOT rare;
+     only the 'first two lines' version is, and that is the version the
+     dossier actually states.  Note however that the pair is *327 34 :
+     VIR 68, i.e. an UNIDENTIFIED sign against 'men'.  A 1:2 relation
+     between an unknown unit and men is untestable: whatever the ratio
+     had been, *327 could be defined as the unit that gives it.
+
+  corpus check: how many HT tablet faces contain an exact 2:1 pair?
+    62/140 = 44% of HT faces with >=2 entry amounts contain an exact 2:1 pair
+    e.g. ['HT101', 'HT102', 'HT106', 'HT108', 'HT10a', 'HT10b', 'HT110b', 'HT115a', 'HT116a', 'HT119', 'HT11a', 'HT121', 'HT122a', 'HT123+124a', 'HT123+124b', 'HT125a', 'HT125b', 'HT126a']
+    -> an exact 2:1 pair is a majority property of HT faces. As a
+       'fixed manpower ratio' finding it carries no information.
+
+--- 2b  HT85: '66 = 11 x 6', eleven six-person gangs
+  Degrees of freedom in the move: the gang size m is FREE; it is chosen
+  after seeing the entry count on the other face.  The only constraint is
+  total %% entrycount == 0 and quotient >= 2.
+  base rate corpus-wide: 4/17 = 24% of (total on one face, entry count on the other) pairs give an integer 'gang size' >= 2
+     ('HT11', 'b', 180, 4, 45)
+     ('HT123+124', 'b', 20, 10, 2)
+     ('HT131', 'b', 452, 2, 226)
+     ('HT85', 'a', 66, 11, 6)
+  divisor count of 66 =  8   -> [1, 2, 3, 6, 11, 22, 33, 66]
+  so 66 admits 8 'k groups of m' stories; the one chosen is the one whose
+  k matches the other face's entry count.  That is a fit, not a prediction.
+
+  P(a corpus-like total is divisible by some m in 2..12 with quotient>=2):
+    25/31 = 81% of stated totals in the whole corpus
+
+--- 2c  HT85a: 'first four entries are multiples of 6; last three sum to 12'
+  observed entries [12, 12, 6, 24, 5, 3, 4], sum 66
+  the claimant's partition statement, stated as a testable predicate:
+    exists m>=2 and a split of the 7 entries into singly-divisible ones and
+    a remainder whose sum is divisible by m, with total/m == 11
+  P(a random 7-entry corpus-like list satisfies it) = 0.7235
+  -> the 'partitions into sixes' observation is ALMOST CERTAIN for any
+     list: if m divides the total, the non-multiples' remainder is forced
+     to be divisible by m. The statement is arithmetically vacuous.
+     (sum(rest) == T - sum(div), and m | T, m | sum(div) => m | sum(rest).)
+
+--- 2d  HT122 'KU-RO 65 + KU-DA 1 = 66 = HT85 total' cross-tablet bridge
+  distinct stated totals in the corpus: 27 -> [5, 6, 10, 16, 20, 24, 25, 30, 31, 43, 52, 65, 66, 87, 95, 97, 100, 110, 129, 130, 160, 180, 292, 335, 420, 452, 1060]
+  stated totals within +/-1 of 66: [65, 66]
+  with a free +/-1 adjustment ('KU-DA 1'), the number of corpus totals that
+  'reconcile' with 66 is 2 of 27; and the adjustment term
+  was selected AFTER seeing the gap.  The bridge has one free parameter and
+  one observation: it cannot be evidence either way.
+
+
+##############################################################################
+### attack_split.py
+##############################################################################
+
+==============================================================================
+ATTACK 3 — all sign-group types (the 09-25 statistic)
+==============================================================================
+  pool: 133 HT tablets, 810 sign-group type-slots
+  Scribe 9 tablets (10): ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+  OBSERVED cohesion = 13; shared types = ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+
+  3a size-matched null (+/-10% of 109 type-slots), n=20000:
+     mean 9.83  95% [5, 16]  p = 0.1843
+
+  3b EVERY HT scribe with >=3 attributed tablets, same statistic,
+     each against its OWN size-matched null:
+     scribe             n  obs  null mean        p
+     HT Scribe 2        8    6       2.95   0.0540
+     HT Scribe 1        4    3       0.97   0.0717
+     HT Scribe 9       10   13       9.14   0.1330  <-- Scribe 9
+     HT Scribe 6        3    2       0.83   0.2082
+     HT Scribe 5        5    3       1.59   0.2089
+     HT Scribe 23       3    1       0.28   0.2327
+     HT Scribe 7        3    1       0.84   0.5734
+     HT Scribe 11       3    1       0.84   0.5746
+     HT Scribe 14       5    1       1.06   0.6633
+     HT Scribe 21       3    0       0.38   1.0000
+     HT Scribe 3        3    0       0.60   1.0000
+     HT Scribe 8        6    0       2.57   1.0000
+     scribes at least as 'cohesive' as Scribe 9 by p: 2 -> ['HT Scribe 2', 'HT Scribe 1']
+
+  3c FINDSPOT-matched null. Scribe-9 findspots = ['Casa Room 7', 'Casa Room 9', 'Casa del Lebete']
+     HT tablets from those same deposits (any hand): 57
+     ['HT100', 'HT101', 'HT102', 'HT103', 'HT104', 'HT105', 'HT106', 'HT107', 'HT108', 'HT109', 'HT110', 'HT111', 'HT112', 'HT113', 'HT114', 'HT115', 'HT116', 'HT117', 'HT118', 'HT119', 'HT120', 'HT121', 'HT122', 'HT123', 'HT125', 'HT126', 'HT127', 'HT128', 'HT129', 'HT130', 'HT131', 'HT132', 'HT133', 'HT135', 'HT137', 'HT139', 'HT140', 'HT141', 'HT144', 'HT146', 'HT147', 'HT154', 'HT85', 'HT86', 'HT87', 'HT88', 'HT89', 'HT90', 'HT91', 'HT92', 'HT93', 'HT94', 'HT95', 'HT96', 'HT97', 'HT98', 'HT99']
+     null mean 5.74  95% [2, 12]  p = 0.0173
+
+==============================================================================
+ATTACK 3' — STRICT: multi-sign names only, admin operators removed
+==============================================================================
+  pool: 115 HT tablets, 471 sign-group type-slots
+  Scribe 9 tablets (10): ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+  OBSERVED cohesion = 9; shared types = ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE', 'QA-*310-I']
+
+  3a size-matched null (+/-10% of 82 type-slots), n=18102:
+     mean 4.24  95% [0, 10]  p = 0.0604
+
+  3b EVERY HT scribe with >=3 attributed tablets, same statistic,
+     each against its OWN size-matched null:
+     scribe             n  obs  null mean        p
+     HT Scribe 6        3    2       0.21   0.0297
+     HT Scribe 9       10    9       3.91   0.0487  <-- Scribe 9
+     HT Scribe 5        4    1       0.16   0.1397
+     HT Scribe 2        7    1       0.28   0.2419
+     HT Scribe 1        3    0       0.00   1.0000
+     HT Scribe 11       3    0       0.12   1.0000
+     HT Scribe 14       4    0       0.03   1.0000
+     HT Scribe 21       3    0       0.02   1.0000
+     HT Scribe 3        3    0       0.06   1.0000
+     HT Scribe 7        3    0       0.07   1.0000
+     HT Scribe 8        6    0       0.59   1.0000
+     scribes at least as 'cohesive' as Scribe 9 by p: 1 -> ['HT Scribe 6']
+
+  3c FINDSPOT-matched null. Scribe-9 findspots = ['Casa Room 7', 'Casa Room 9', 'Casa del Lebete']
+     HT tablets from those same deposits (any hand): 49
+     ['HT101', 'HT102', 'HT103', 'HT104', 'HT106', 'HT108', 'HT109', 'HT110', 'HT111', 'HT112', 'HT113', 'HT114', 'HT115', 'HT116', 'HT117', 'HT118', 'HT119', 'HT120', 'HT121', 'HT122', 'HT123', 'HT125', 'HT126', 'HT127', 'HT128', 'HT129', 'HT130', 'HT131', 'HT132', 'HT135', 'HT139', 'HT140', 'HT141', 'HT146', 'HT154', 'HT85', 'HT86', 'HT87', 'HT88', 'HT89', 'HT90', 'HT91', 'HT93', 'HT94', 'HT95', 'HT96', 'HT97', 'HT98', 'HT99']
+     null mean 1.62  95% [0, 6]  p = 0.0038
+
+
+##############################################################################
+### attack_split2.py
+##############################################################################
+
+==============================================================================
+ATTACK 3d/3e [ALL sign-group types]
+==============================================================================
+  observed Scribe-9 cohesion = 13 over 10 tablets (109 type-slots; pool average 6.1 per tablet, Scribe-9 average 10.9)
+  HT scribes with >=3 tablets: 12 -> [('HT Scribe 9', 10), ('HT Scribe 2', 8), ('HT Scribe 8', 6), ('HT Scribe 5', 5), ('HT Scribe 14', 5), ('HT Scribe 1', 4), ('HT Scribe 21', 3), ('HT Scribe 3', 3), ('HT Scribe 7', 3), ('HT Scribe 11', 3), ('HT Scribe 6', 3), ('HT Scribe 23', 3)]
+  tablets carrying ANY scribe attribution: 75 of 133
+
+  3d(i)  null for a permuted 10-tablet scribe group, n=20000:
+         mean 5.25  95% [2, 11]  p = 0.0108
+  3d(ii) null for the MAX cohesion over all >=3-tablet groups (selection-corrected), n=20000:
+         mean 6.13  95% [3, 11]  p = 0.0128
+
+  3e  findspot-matched AND size-matched null (57 tablets from the same three deposits, +/-10% of 109 type-slots), n=20000:
+      mean 10.29  95% [5, 17]  p = 0.2502
+
+  summary of the four nulls for the same observed statistic:
+      unmatched random 10 tablets                 -> p small (09-25: 0.0045)
+      size-matched random 10 tablets              -> see ATTACK 3 3a
+      scribe-label permutation, same group size   -> p = 0.0108
+      same, corrected for choosing the best scribe -> p = 0.0128
+      findspot + size matched                     -> p = 0.2502
+
+==============================================================================
+ATTACK 3d/3e [STRICT: multi-sign names, admin operators removed]
+==============================================================================
+  observed Scribe-9 cohesion = 9 over 10 tablets (82 type-slots; pool average 4.1 per tablet, Scribe-9 average 8.2)
+  HT scribes with >=3 tablets: 11 -> [('HT Scribe 9', 10), ('HT Scribe 2', 7), ('HT Scribe 8', 6), ('HT Scribe 5', 4), ('HT Scribe 14', 4), ('HT Scribe 21', 3), ('HT Scribe 3', 3), ('HT Scribe 7', 3), ('HT Scribe 11', 3), ('HT Scribe 6', 3), ('HT Scribe 1', 3)]
+  tablets carrying ANY scribe attribution: 68 of 115
+
+  3d(i)  null for a permuted 10-tablet scribe group, n=20000:
+         mean 1.27  95% [0, 6]  p = 0.0025
+  3d(ii) null for the MAX cohesion over all >=3-tablet groups (selection-corrected), n=20000:
+         mean 2.05  95% [0, 6]  p = 0.0026
+
+  3e  findspot-matched AND size-matched null (49 tablets from the same three deposits, +/-10% of 82 type-slots), n=20000:
+      mean 4.60  95% [1, 10]  p = 0.0640
+
+  summary of the four nulls for the same observed statistic:
+      unmatched random 10 tablets                 -> p small (09-25: 0.0045)
+      size-matched random 10 tablets              -> see ATTACK 3 3a
+      scribe-label permutation, same group size   -> p = 0.0025
+      same, corrected for choosing the best scribe -> p = 0.0026
+      findspot + size matched                     -> p = 0.0640
+
+
+##############################################################################
+### attack_names.py
+##############################################################################
+==============================================================================
+ATTACK 4a — are the 'dossier' shared types just the corpus's commonest names?
+==============================================================================
+  the 13 shared types, with how many of the 133 HT
+  tablets carry each one corpus-wide, and its rank by that frequency:
+    KU-RO          on  27/133 HT tablets (rank    2 of 467)   inside Scribe-9 set: 5
+    KI-RO          on  11/133 HT tablets (rank    5 of 467)   inside Scribe-9 set: 2
+    DI             on  11/133 HT tablets (rank    6 of 467)   inside Scribe-9 set: 3
+    KU-PA₃-NU      on   6/133 HT tablets (rank   12 of 467)   inside Scribe-9 set: 2
+    PA             on   6/133 HT tablets (rank   13 of 467)   inside Scribe-9 set: 2
+    DA-RI-DA       on   4/133 HT tablets (rank   26 of 467)   inside Scribe-9 set: 2
+    DA-SI-*118     on   4/133 HT tablets (rank   31 of 467)   inside Scribe-9 set: 2
+    DA-RE          on   4/133 HT tablets (rank   25 of 467)   inside Scribe-9 set: 2
+    QA-*310-I      on   3/133 HT tablets (rank   46 of 467)   inside Scribe-9 set: 2
+    MI-TU          on   2/133 HT tablets (rank   73 of 467)   inside Scribe-9 set: 2
+    DI-KI-SE       on   2/133 HT tablets (rank   75 of 467)   inside Scribe-9 set: 2
+    MA-KA-RI-TE    on   2/133 HT tablets (rank   76 of 467)   inside Scribe-9 set: 2
+    PA-TA-NE       on   2/133 HT tablets (rank   87 of 467)   inside Scribe-9 set: 2
+
+  median corpus-wide tablet count of the shared types: 4
+  median over ALL HT types: 1
+  of the top 20 most widespread HT types, how many are in the shared set: 5 -> ['DI', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'PA']
+  -> a type that appears on many HT tablets will appear on >=2 of ANY
+     10-tablet subset almost automatically. The 'dossier cohesion' statistic
+     is dominated by exactly those types.
+
+  expected cohesion of a RANDOM 10-tablet subset from marginal
+  frequencies alone (hypergeometric, no clustering): 4.80
+  observed for Scribe 9: 13
+
+==============================================================================
+ATTACK 4b — DI-KI-SE as 'the strongest quasi-experimental control'
+==============================================================================
+  HT tablets containing KI-RO: 11 -> ['HT1', 'HT117', 'HT123', 'HT15', 'HT30', 'HT34', 'HT37', 'HT55', 'HT88', 'HT93', 'HT94']
+  multi-sign name types occurring on >=1 KI-RO tablet AND >=1 non-KI-RO
+  tablet: 21
+    KU-PA₃-NU        n= 6  KI-RO tablets ['HT1', 'HT117', 'HT88']  non-KI-RO ['HT122', 'HT3', 'HT49']  <== claimed as a control
+    DA-RI-DA         n= 4  KI-RO tablets ['HT93']  non-KI-RO ['HT10', 'HT122', 'HT85']
+    SA-RU            n= 4  KI-RO tablets ['HT123', 'HT94']  non-KI-RO ['HT86', 'HT95']  <== claimed as a control
+    QA-QA-RU         n= 3  KI-RO tablets ['HT93']  non-KI-RO ['HT118', 'HT122']
+    A-SE             n= 3  KI-RO tablets ['HT93']  non-KI-RO ['HT132', 'HT81']
+    PA-JA-RE         n= 3  KI-RO tablets ['HT88']  non-KI-RO ['HT29', 'HT8']  <== claimed as a control
+    QE-RA₂-U         n= 2  KI-RO tablets ['HT1']  non-KI-RO ['HT95']
+    DI-RI-NA         n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT102']
+    MI-TU            n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT135']
+    U-MI-NA-SI       n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT28']
+    DI-KI-SE         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT87']  <== claimed as a control
+    MA-KA-RI-TE      n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT87']
+    KU-RE-JU         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT39']
+    KI-DA-RO         n= 2  KI-RO tablets ['HT117']  non-KI-RO ['HT47']
+    I-GRA+PA         n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT120']
+    PA-TA-NE         n= 2  KI-RO tablets ['HT94']  non-KI-RO ['HT122']  <== claimed as a control
+    KA-NA            n= 2  KI-RO tablets ['HT123']  non-KI-RO ['HT23']
+    PU-VIN           n= 2  KI-RO tablets ['HT123']  non-KI-RO ['HT14']
+    RE-ZA            n= 2  KI-RO tablets ['HT88']  non-KI-RO ['HT13']
+    U-*34-SI         n= 2  KI-RO tablets ['HT15']  non-KI-RO ['HT140']
+    PA₃-NI-NA        n= 2  KI-RO tablets ['HT93']  non-KI-RO ['HT6']
+
+  -> the 'status-switch control' property is shared by 21 name
+     types. DI-KI-SE is not a designed experiment; it is one member of a
+     large class, and the class is exactly what you get when frequent names
+     are spread over tablets some of which happen to carry KI-RO.
+
+==============================================================================
+ATTACK 4c — the five claimed controls, checked against witness A
+==============================================================================
+  DI-KI-SE       occurs on faces ['HT117b', 'HT87']
+  KU-PA₃-NU      occurs on faces ['HT1', 'HT117a', 'HT122a', 'HT3', 'HT49a', 'HT88', 'PH(?)31a']
+  PA-TA-NE       occurs on faces ['HT122a', 'HT94b', 'HTWa1019']
+  PA-JA-RE       occurs on faces ['HT29', 'HT88', 'HT8b', 'ZA10b']
+  SA-RU          occurs on faces ['HT123+124a', 'HT86a', 'HT86b', 'HT94b', 'HT95a', 'HT95b']
+
+
+##############################################################################
+### attack_structure.py
+##############################################################################
+==============================================================================
+ATTACK 5a — HT117: what is inside KI-RO's scope under the claimant's own rule?
+==============================================================================
+  HT117a: MA-KA-RI-TE · KI-RO · U-MI-NA-SI · / U-SU 1 / MI-TU 1 / KU-RA-MU 1 / MA-RU 1 / KU-PA₃-NU 1 / TU-JU-MA 1 / U-DI-MI 1 / MI-RU-TA-RA-RE 1 / TE-JA-RE 1 / NA-DA-RE 1 / KU-RO 10 /  ===RULING===  / SA-TA · / KU-KU-DA-RA 1 / KO-SA-I-TI 1 / DA-MI-NU 1 / DA-NE-KU-TI 1 / KI-DA-RO 1
+  HT117b: *21F-TU-NE · / KU-RE-JU 1 / DI-KI-SE 1
+
+  token index of KI-RO   : 2
+  token index of KU-RO 10: 37  (closes the KI-RO block per the rule)
+  token index of RULING  : 40  (a physical section line on the tablet)
+  token index of SA-TA   : 42
+
+  entries inside the KI-RO block (KI-RO ... KU-RO 10): 10 personnel + the subheading U-MI-NA-SI
+    ['U-MI-NA-SI', 'U-SU', 'MI-TU', 'KU-RA-MU', 'MA-RU', 'KU-PA₃-NU', 'TU-JU-MA', 'U-DI-MI', 'MI-RU-TA-RA-RE', 'TE-JA-RE', 'NA-DA-RE']
+
+  everything AFTER the closing KU-RO 10, i.e. OUTSIDE KI-RO's scope:
+    on face a (after a ruling): ['SA-TA', 'KU-KU-DA-RA', 'KO-SA-I-TI', 'DA-MI-NU', 'DA-NE-KU-TI', 'KI-DA-RO']
+    on face b                 : ['KU-RE-JU', 'DI-KI-SE']
+
+  DI-KI-SE is on face HT117b, i.e. after the closing KU-RO 10 AND after a ruling AND on the other face.
+  The SA-TA block on face a carries NO closing KU-RO at all:
+    tokens after SA-TA on face a: ['SA-TA', '𐄁', 'KU-KU-DA-RA', '1', 'KO-SA-I-TI', '1', 'DA-MI-NU', '1', 'DA-NE-KU-TI', '1', 'KI-DA-RO', '1']
+
+  CONSEQUENCE. Under the claimant's own frozen Construction B, KU-RO 10
+  closes the KI-RO block. Therefore:
+    * HT117 is NOT 'a large KI-RO exception roster grouped by units';
+      only its first 10-name block is in KI-RO scope.
+    * U-MI-NA-SI, SA-TA and *21F-TU-NE are NOT three parallel subheadings
+      inside one KI-RO block: the first is inside, the other two are after
+      it. The 'GROUP BY accountable unit' reading needs all three inside.
+    * DI-KI-SE does NOT carry KI-RO. The 'status-switch' between HT87 and
+      HT117 therefore has nothing switched: in HT87 DI-KI-SE stands under
+      *21F-TU-NE · MA-KA-RI-TE, and in HT117b under *21F-TU-NE · -- the SAME
+      unit heading, with no KI-RO in either case.
+  This is the dossier's self-described strongest result, and it is
+  contradicted by the dossier's own grammar applied to the raw corpus.
+
+  (transcription note) the claimant writes QI-TU-NE; witness A reads
+  *21F-TU-NE (an undeciphered sign variant) and witness B reads qif-tu-ne.
+  Both witnesses agree the SAME sign-group heads HT87 and HT117b, so the
+  pairing itself is not a transcription artefact -- only the name is.
+
+==============================================================================
+ATTACK 5b — HT85: do the two faces balance?
+==============================================================================
+  HT85a: A-DU · *307+*387 · VIR+[?] · / DA-RI-DA 12 / PA₃-NI 12 / U-*325-ZA 6 / DA-SI-*118 24 / KU-ZU-NI 5 / TE-KE 3 / DA-RE 4 / KU-RO 66
+  HT85b: KI-KI-RA-JA · / KI-RE-TA₂ 1 / QE-KA 1 / PA 1 / TE-TU 1 / KA 1 / DI 1 / ME-ZA 1 / RE-DI-SE 1 / WA-DU-NI-MI 1 / MA-DI 1 / QA-*310-I 1
+
+  face a entry amounts [12, 12, 6, 24, 5, 3, 4] -> sum 66; stated KU-RO 66  BALANCES
+  face b entry amounts [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] -> sum 11; NO stated total on face b
+
+  So the tablet states 66 on one face and 11 units on the other.
+  The dossier reads 'eleven standardized six-person work gangs'. That
+  requires the unattested equation  1 (the numeral on every face-b line)
+  = 6 persons.  Nothing on HT85 states it, and no other tablet in the
+  corpus supplies it.  The straightforward reading of face b is eleven
+  entries of one unit each, total eleven.
+  The two faces do NOT balance under any reading the tablet supplies:
+    66 vs 11; the ratio 6 is supplied by the interpreter.
+
+  double-counting check on the dossier's own rendering table
+  (2026-09-07-haghia-triada-labor-control-functional-solve.md §2):
+    that table lists EIGHT receiving rows (KI-RE-TA2, QE-KA, TE-TU, ME-ZA,
+    RE-DI-SE, WA-DU-NI-MI, MA-DI, QA-*310-I) and assigns them
+    1,2,3,1,1,1,1,1 = 11 gangs, having absorbed PA into QE-KA and KA,DI
+    into TE-TU.  But the 66 = 11 x 6 argument needs ELEVEN entries.
+    The number 11 is therefore used twice with two incompatible
+    referents: eleven face-b entries, and eleven gangs over eight entries.
+
+==============================================================================
+ATTACK 5c — HT85b entry count: witness A vs witness B
+==============================================================================
+  witness A (GORILA via Douros): 12 sign-groups -> ['KI-KI-RA-JA', 'KI-RE-TA₂', 'QE-KA', 'PA', 'TE-TU', 'KA', 'DI', 'ME-ZA', 'RE-DI-SE', 'WA-DU-NI-MI', 'MA-DI', 'QA-*310-I']
+  witness B (SigLA)            : 9 sequences   -> ['ki-ki-ra-ja', 'ki-re-ta2', 'qe-ka', 'te-tu-[?]', 'me-za', 're-di-se', 'wa-du-ni-mi', 'ma-di', 'qa-A310-i']
+  after normalising * / subscripts / trailing hyphens:
+    present only in witness A: ['pa', 'ka', 'di']
+    present only in witness B: []
+
+  => the entire divergence is the three SINGLE-SIGN tokens ['pa', 'ka', 'di'].
+     Witness A treats PA, KA and DI as independent numbered entries;
+     witness B does not segment them as separate words at all.
+     entry count excluding the header: witness A 11, witness B 8
+     The '11 entries' on which 66 = 11 x 6 depends EXISTS IN ONE WITNESS
+     ONLY.  Under SigLA's segmentation HT85b has 8 entries and 66/8 is
+     not an integer, so the gang reading does not arise at all.
+
+
+##############################################################################
+### attack_unfalsifiable.py
+##############################################################################
+==============================================================================
+ATTACK 6a — does A-DU ever carry a quantity?
+==============================================================================
+  term               num  frac   div  word   end
+  KU-RO               29     0     1     7     0
+  PO-TO-KU-RO          2     0     0     0     0
+  KI-RO                6     3     6     0     1
+  A-DU                 0     0     8     2     0
+  KU-DA                1     0     0     0     0
+  KA-PA                0     2     1     3     0
+  SA-RA₂               1     0     4    14     1
+  MA-KA-RI-TE          0     0     2     0     0
+  U-MI-NA-SI           0     0     2     0     0
+  KI-KI-RA-JA          0     0     1     0     0
+  DA-DU-MA-TA          0     0     1     0     0
+  SA-TA                0     0     1     0     0
+  A-KA-RU              0     0     3     0     0
+  KA-RU                0     0     1     1     0
+
+  A-DU takes a numeral in 0 of 10 attestations.
+  => A-DU never carries a magnitude. It is a heading, like DA-DU-MA-TA,
+     MA-KA-RI-TE, U-MI-NA-SI and KI-KI-RA-JA (all 0 numerals).
+     CONSEQUENCE: whether A-DU means ASSESSED or RENDERED cannot be
+     decided by any arithmetic the corpus contains, because no number is
+     ever attached to it. The polarity of the obligation circuit is not
+     merely 'unresolved' -- it is undecidable from this evidence. A model
+     whose central arrow cannot be oriented by any possible observation in
+     the corpus is not a reading of the corpus.
+
+==============================================================================
+ATTACK 6b — is ASSESSED = RENDERED + OUTSTANDING ever instantiated?
+==============================================================================
+  tablets with A-DU : 10 -> ['HT133', 'HT85', 'HT86', 'HT88', 'HT92', 'HT95', 'HT99', 'KH11', 'KH23', 'TY3']
+  tablets with KI-RO: 11 -> ['HT1', 'HT117', 'HT123', 'HT15', 'HT30', 'HT34', 'HT37', 'HT55', 'HT88', 'HT93', 'HT94']
+  tablets with BOTH on the same FACE : ['HT88']
+  tablets with BOTH anywhere         : ['HT88']
+  tablets with DA-DU-MA-TA           : ['HT95']
+  tablets carrying ALL THREE states (DA-DU-MA-TA, A-DU, KI-RO): NONE
+
+  => the three-state lifecycle ASSESS -> RENDER -> OUTSTANDING is never
+     attested together on any tablet in the corpus. It is assembled from
+     HT95 (two faces, no KI-RO) plus HT88 (A-DU and KI-RO, no arithmetic
+     link). The claimant's own note concedes this: 'HT95 does not itself
+     contain KI-RO, so this bridge is an inference across the
+     administrative system, not a direct three-way inscription.'
+
+  HT88, the 'clean conceptual bridge', in full:
+    A-DU VIR+KA 20 / RE-ZA 6 / NI 𐄁 KI-KI-NA 7 / KI-RO 𐄁 / KU-PA₃-PA₃ 1 / KA-JU 1 / KU-PA₃-NU 1 / PA-JA-RE 1 / SA-MA-RO 1 / DA-TA-RE 1 / KU-RO 6
+    A-DU block quantities: VIR+KA 20, RE-ZA 6, KI-KI-NA 7  -> sum 33
+    KI-RO block: six names at 1 each -> KU-RO 6
+    33 and 6 stand in no stated relation. 33 - 6 = 27; 33 + 6 = 39;
+    neither appears on the tablet. The 'both sides of the state system
+    on one small tablet' claim is two unrelated blocks on one tablet.
+
+==============================================================================
+ATTACK 6c — the claimant's own two notes assign A-DU opposite polarities
+==============================================================================
+  2026-09-07-obligation-circuit-post-award.md, Leap 2 and
+  analysis/administrative_state_machine.csv:
+      A-DU = 'rendered / contributed / delivered / fulfilled'  (medium-high)
+  2026-09-08-scribe9-dossier-functional-reconstruction.md, New result 4:
+      A-DU = 'ASSESSED / ACTIVATED OBLIGATION / ON-BOOK LIABILITY'
+  These are the two ENDS of the state machine, not two shades of one gloss.
+  The claimant's own frozen falsifier #3 is:
+      'A-DU requiring incompatible meanings across labor and assessment
+       records.'
+  HT85a is headed A-DU and is read in one note as 'RENDERED / LEVIED
+  PERSONNEL' and in the other as the 'assessed liability' source side.
+  The falsifier is therefore already met inside the Hub's own files.
+
+==============================================================================
+ATTACK 6d — can the '9/9 construction grammar' fail?
+==============================================================================
+  The rule classifies a KI-RO occurrence BY the token that follows it:
+    numeral after KI-RO -> 'scalar residual';  divider after KI-RO ->
+    'forward-scoping block'.  The classification and the prediction are
+    the same observation, so no occurrence can contradict it.
+  KI-RO tokens in the corpus: 16
+  word types with >=4 attestations: 86
+  ... of which EVERY attestation is followed by either a numeral or a
+      divider, i.e. would also score 'n/n, 0 contradictions': 6
+      ['DA-SI-*118', 'DU', 'KU-PA', 'PA-JA-RE', 'SA', 'SA-MA']
+  ... and showing BOTH constructions (a 'two-construction grammar'): 37
+      ['A', 'DI-NA-U', 'E', 'I', 'JA', 'JU', 'KA', 'KI', 'KI-RO', 'KU', 'KU-NI-SU', 'KU-PA', 'KU-RO', 'MI', 'MI+JA+RU', 'NA', 'NE', 'NI', 'PA', 'PA₃', 'PI', 'QE', 'RA', 'RE', 'RU', 'SA-MA', 'SA-RA₂', 'SA-RO', 'SE', 'SI', 'TA', 'TA-NA-TI', 'TE', 'TI', 'TU', 'ZA', 'ZU']
+  => 'two constructions predicted by the next token' is a property of a
+     large class of HT words, including pure commodity classifiers. It is
+     not a discovery about KI-RO. The only non-vacuous part is whether the
+     two constructions share one semantics, and that rests on exactly two
+     arithmetically checkable cases (HT34, HT123+124).
+
+==============================================================================
+ATTACK 7 — coverage against the pre-registered criterion
+==============================================================================
+  corpus records (witness A)                     : 1721
+  records carrying >=1 syllabic sign-group       : 1241
+  distinct sign-group types corpus-wide          : 1024
+  sign-group tokens corpus-wide                  : 2520
+  Haghia Triada tablet faces                     : 183  (902 tokens = 35.8% of corpus tokens)
+  Scribe-9 faces                                 : 17 (= 10 tablets)
+  Scribe-9 sign-group tokens                     : 115 = 4.56% of corpus tokens
+  Scribe-9 distinct sign-group types             : 92 = 8.98% of corpus types
+
+  sign-groups the claim assigns a function to    : 14 -> ['KU-RO', 'PO-TO-KU-RO', 'KI-RO', 'A-DU', 'KU-DA', 'KA-PA', 'SA-RA₂', 'MA-KA-RI-TE', 'U-MI-NA-SI', 'KI-KI-RA-JA', 'DA-DU-MA-TA', 'SA-TA', 'A-KA-RU', 'KA-RU']
+  their token coverage                           : 104 = 4.13% of corpus sign-group tokens
+  type coverage                                  : 1.37% of the 1024 distinct types
+
+  phonetic/lexical values recovered by the claim  : 0 (explicitly disclaimed)
+  language family identified                     : none (explicitly disclaimed)
+  readings of running text                       : none; the readings are
+    database field labels over lists of numerals.
+
+
+##############################################################################
+### attack_controls.py
+##############################################################################
+==============================================================================
+ATTACK 8a — HT88 / HT94b / HT117a: control or tautology?
+==============================================================================
+  HT88     entries 6  amounts [1, 1, 1, 1, 1, 1]  KU-RO 6
+           every amount == 1 ? True   => KU-RO == entry count is then arithmetically forced
+  HT94b    entries 5  amounts [1, 1, 1, 1, 1]  KU-RO 5
+           every amount == 1 ? True   => KU-RO == entry count is then arithmetically forced
+  HT117a   entries 10  amounts [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]  KU-RO 10
+           every amount == 1 ? True   => KU-RO == entry count is then arithmetically forced
+
+  All three 'controls' are lists in which EVERY entry carries the numeral
+  1. The sum of n ones is n. These cases therefore test only that KU-RO is
+  a total -- which was never in dispute -- and carry ZERO information about
+  what KI-RO means. Calling them 'residual personnel block has exact
+  cardinality' restates 1+1+...+1 = n.
+  They are also not independent of prior scholarship: the external
+  workspace dbourdeau/cyphersolver reproduces exactly HT88:6, HT94b:5,
+  HT117a:10 and labels the result 'replication, not discovery', citing
+  John Younger's commentaries as already identifying these lists.
+
+==============================================================================
+ATTACK 8b — HT34: '100 - 70 = 30 = KI-RO', graded 'high' by the claimant
+==============================================================================
+  witness A, HT34 in full:
+    DA-JU-TE 𐄁 SI-*516 𐄁 / SA-RA₂ 𐄁 MI+JA+KA / 𐝫 / ¹⁄₃ / E 𐄁 GRA 200 / E+[ ] 2 𐝅𐝇 / QA2+[?]+PU ≈ ¹⁄₆ / QA2+[?]+RE ¹⁄₄ / MI+JA+I 245 / SA+MU+KU 100 / PA₃ 70 / KI-RO 37 / E+KA ¹⁄₁₆ / PU ¹⁄₈
+
+  witness A reads KI-RO followed by: '37'
+  the claimant's ledger (analysis/kiro_scope_ledger.csv) records
+    HT34,scalar_residual,100,70,30  and '100 - 70 = 30 exactly', grade high
+  100 - 70 = 30, but witness A's number is 37
+
+  ADJUDICATED against the source the claimant itself cites
+  (mwenge/lineara.xyz commentary/HT34.html, John Younger's GORILA table):
+    the table reads   KI-RO   30 [[7]]
+    '[[7]]' is GORILA notation for an ERASED sign. The reading is 30 with an
+    erased 7.  Witness A (Douros tabulation) has collapsed the erasure into
+    the figure and prints 37.
+  => this is a WITNESS defect, not claimant error. The claimant's 30 is right.
+  But the control still does not do the work claimed for it, because the
+  SAME commentary supplies the interpretation, conditionally:
+    'If PA3 records an amount (70) to be omitted from *521 100, as if
+     delivered ... then 30 is the result, apparently a deficit (KI-RO)'
+  The 'exact arithmetic relation' is Younger's own hypothesis about what
+  PA3 70 does, restated. Nothing on the tablet states that 70 is to be
+  subtracted from 100; the two lines are adjacent entries among eight.
+  Using it as independent confirmation of the residual model is circular.
+
+==============================================================================
+ATTACK 8c — HT123+124a: does the KI-RO make-up ratio hold on all four rows?
+==============================================================================
+  witness A, HT123+124a:
+    KI-TA-I 𐄁 OLIV 31 / *308 8 ¹⁄₄ / KI-RO 1 .3 / PU-VIN OLIV 31 ¹⁄₂ / *308 8 ³⁄₄ / KI-RO .3 / SA-RU OLIV 16 / *308 4 ≈ ¹⁄₆ / KI-RO ³⁄₄ / DA-TU OLIV 15 / *308 4 ¹⁄₄ / KI-RO ³⁄₄ / KU-RO OLIV 93 ¹⁄₂ / *308 𐄁 / KU-RO 25 ≈ ¹⁄₆ / KI-RO 6
+
+  row            OLIV     *308    KI-RO  308+KIRO   OLIV/3  ratio implied
+  𐄁            31.000    8.250    1.000     9.250   10.333         0.2984
+  PU-VIN     unreadable under this parse: {'name': 'PU-VIN', 'OLIV': 31.5, '308': 8.75, 'KIRO': None}
+  SA-RU        16.000    4.167    0.750     4.917    5.333         0.3073
+  DA-TU        15.000    4.250    0.750     5.000    5.000         0.3333
+  KU-RO      unreadable under this parse: {'name': 'KU-RO', 'OLIV': 93.5, '308': None, 'KIRO': 6.0}
+
+  The claimant quotes ONLY the DA-TU row (OLIV 15, *308 4 1/4, KI-RO 3/4,
+  target 15/3 = 5) and grades HT123+124 'high'. The implied ratio
+  (*308 + KI-RO)/OLIV is NOT constant across the rows, so a single
+  conversion ratio with additive KI-RO cannot fit the tablet.
+  The external workspace dbourdeau/cyphersolver derives the same result
+  algebraically from rows 1-2 and finds the bundle forces ratio r = -1,
+  i.e. no positive common ratio exists. Younger's commentary already
+  discusses the underlying discrepancy.
+  => the second of the claimant's two arithmetically checkable KI-RO cases
+     is a row selected from a tablet that as a whole contradicts the model.
+
+==============================================================================
+ATTACK 8d — HT15: was the 'held-out semantic HIT' a derivation?
+==============================================================================
+  witness A, HT15: U-*34-SI GRA / DU-AROM-A 684 / GRA+L4+L4 570 / *188 𐄁 KI-RO 400 / 𐝫
+  684 + 570 = 1254  <- this arithmetic is real and independent
+  KI-RO 400: 1254 - 400 = 854 (not on the tablet);
+             1254 + 400 = 1654 (not on the tablet)
+  The number 400 is not derivable from anything on HT15. The claimant's
+  'HIT' consists of the cited commentary calling 400 a deficit. That is the
+  received gloss the note elsewhere disclaims discovering, used as its own
+  held-out confirmation. It is not a held-out test.
+
+==============================================================================
+SCORECARD: the claimant's 'arithmetic/cardinality controls: 6/6 pass'
+==============================================================================
+  HT88  cardinality      -> tautology: n ones sum to n; tests KU-RO, not KI-RO
+  HT94b cardinality      -> tautology, same
+  HT117a cardinality     -> tautology, same; also the block it closes is NOT the whole tablet (see ATTACK 5a)
+  HT34  100-70=30        -> restates Younger's conditional interpretation; the subtraction is not stated by the tablet
+  HT123+124 DA-TU row    -> 1 of 4 rows; the 4-row system admits no positive common ratio
+  HT15  held-out         -> confirmation is the commentary's gloss, not a derivation
+
+  Surviving independent arithmetic support for KI-RO = residual: NONE.
+  Surviving independent arithmetic support for KU-RO = total: 8 exact
+  balancing blocks corpus-wide (ATTACK 1d), which is prior scholarship.

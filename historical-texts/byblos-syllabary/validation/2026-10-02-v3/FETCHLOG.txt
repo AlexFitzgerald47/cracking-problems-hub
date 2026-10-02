@@ -1,0 +1,65 @@
+2026-10-02 VALIDATOR 3 (refuter) -- external sources fetched, with checksums.
+
+Byblos.elm.fetched20261002
+  https://raw.githubusercontent.com/elamicon/elamicon/master/src/Scripts/Byblos.elm
+  md5 bbfb29fd2605d33999d9a7dc43c55797
+  IDENTICAL to validation/2026-09-25/Byblos.elm -- the corpus has not changed
+  since the previous refutation session, so that session's numbers are
+  comparable to these.
+Specialchars.elm.fetched20261002
+  https://raw.githubusercontent.com/elamicon/elamicon/master/src/Specialchars.elm
+  md5 da866ec156a6ccf134f05d6e0d8de563
+  IDENTICAL to validation/2026-09-25/Specialchars.elm.
+
+geas_2021_anchor_page.html
+  https://center-for-decipherment.ch/news/2021-03-01-james-hoch-1990-confirmed/
+  Verifies the kernel's quotation of GEAS: the page does give "<E4AF> ATON" and
+  "<E42A><E483> AMUN".  It also gives pa as TWO forms, "<E44D>; <E49B> pa"
+  (the Hub freezes only E44D), and calls the object "the historisizing Garbini
+  (2004) seal" -- a description that appears nowhere in the Hub files.
+
+colless_2019_cryptcracker.html
+  http://cryptcracker.blogspot.com/2019/06/west-semitic-syllabic-cylinder.html
+  Brian Colless, "WEST SEMITIC CYLINDER STAMPS", 29 June 2019.  Gives the
+  object's primary publication (Garbini, Luiselli & Devoto 2004, Rendiconti
+  dell'Accademia Nazionale dei Lincei 9/15, 377-390), its provenance
+  ("apparently emanating from somewhere in Phoenicia, possibly Byblos"),
+  Maeder's argument in Maeder's own words, and Colless's objections, including
+  the two that bear directly on kernel section 2 constraint (3):
+    "I would have to say that these '2' letters are not the same; and the one
+     on the left is actually the second letter in the sequence."
+    "And the signs at the bottom of the cartouches are similar but not the
+     same; they are supposed to represent the Aton, the disc of the sun."
+
+schmutz_maeder_2024.pdf / .txt
+  https://center-for-decipherment.ch/journal/2024_01__Schmutz-%26-Maeder__Die-Byblos-Schrift_Beurteilung-Woudhuizen-Best.pdf
+  Confirms the kernel's section 5 reporting.  Two further things the kernel does
+  not report: (a) Mendenhall is handled in footnote 33 only, by asserting that
+  Colless explains the mismatch away with "diversen schlecht verstaendlichen
+  Hilfshypothesen" -- the application of Mendenhall's values to the three names
+  is never shown; (b) footnote 2 states that the ONE Byblos decipherment attempt
+  the authors consider methodologically acceptable is Garbini (2009), evaluation
+  deferred to a later paper.  Garbini 2009 is therefore a live rival system and
+  is absent from the Hub's "what is already dead" section.
+
+DEAPS KAI 003 / KAI 004 (checked 2026-10-02, not saved):
+  https://deaps.osu.edu/text_objects/11443 -- "Gregorian -1000 to -975",
+    General Notes: "Martin (1961, 60-63) shows that it was written over top of
+    an older pseudohieroglyphic writing."
+  https://deaps.osu.edu/text_objects/11444 -- "Gregorian -950 to -920",
+    General Notes: "Martin (1961, 66-67) shows that this inscription was
+    incised on the stone over a faded pseudohieroglyphic inscription whose
+    traces and ruling lines are still subtly visible."
+  PALIMPSEST_CHRONOLOGY.md reports both dates correctly.  Note that DEAPS
+  attributes the palimpsest observation itself to Martin (1961) -- the reading
+  the same document says should not be trusted in detail; the document is right
+  to rest the physical claim on Vita & Zamora's reinspection instead.
+
+ResearchGate publication 366580046 (403 to automated fetch; identified via
+  search result title and the matching article at
+  https://bop.unibe.ch/baf/article/view/7186):
+  = Michael Maeder, "Detecting word boundaries in an undeciphered script: The
+  Byblos syllabary", BAF-Online.  PROBLEM.md, PARTIAL_BIGRAPH_KERNEL.md and
+  ME_ANCHOR_TRANSFER.md all attach this id to "Zwei Lautwertvorschlaege zum
+  Byblos-Syllabar: me und pa", Ugarit-Forschungen 52.  Flagged as a probable
+  citation error, not verified at the RG page itself.

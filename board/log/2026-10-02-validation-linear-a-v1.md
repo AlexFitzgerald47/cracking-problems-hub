@@ -256,9 +256,30 @@ cannot be restated against GORILA's plates and SigLA's sign data is not yet a re
 ---
 
 dissent: I wrote the whole of the above from my own reproduction before opening
-`board/log/2026-10-02-validation-linear-a-v2.md`, to keep the panel's errors uncorrelated. I
-record three places where I expect to differ from a co-validator working only from the digital
-witness, and where I ask that my reading be preferred because it rests on the primary edition:
+`board/log/2026-10-02-validation-linear-a-v2.md`, to keep the panel's errors uncorrelated, and
+then read v2 only to state the disagreement accurately.
+
+**I differ from validator 2 on the verdict label: v2 says FAIL, I say PARTIAL.** We do not
+differ on a single fact. We agree that the criterion is not met, that HT 88's "+33" is a
+sectioning artefact and not the claimant's error, that HT 94a, HT 119 and the HT 122 hierarchy
+do not close, that the exception/ordinary permutation is null, and that nothing here is a
+decipherment. The disagreement is about what PARTIAL is for. V2's prior-art ablation is
+correct and I accept it: KU-RO = total, PO-TO-KU-RO = grand total, KI-RO in the
+deficit/missing family, the HT 88 = 6 / HT 94b = 5 / HT 117a = 10 cardinality table, the 19-node
+circuit, HT 85's 11 × 6, and KI-KI-RA-JA ~ KI-RO are all published elsewhere, and the mwenge
+edition's own `translatedWords` field hands the glosses over as data. Section 6 of my report
+should be read with that ablation applied — items 1 and 2 of "what it is worth" are
+reproductions, not discoveries, and I was too generous in listing them without saying so. I
+still record PARTIAL rather than FAIL because two things on that list are Hub-side and did
+survive my own adversarial testing: the correction that the external `kuro_test.py` KI-RO
+result is a parser-direction artefact (which is a real fix to a published negative, and which
+the 2026-09-25 session then re-committed), and the set of now-closed branches with numbers
+attached. A reader who weighs novelty-ablation more heavily than I do should prefer v2's FAIL;
+on the criterion itself we are unanimous, and **no part of this should be recorded as a pass.**
+
+I also record three places where I expect to differ from any co-validator working only from the
+digital witness, and where I ask that my reading be preferred because it rests on the primary
+edition:
 
 1. **HT 88 is not a mismatch.** Any audit that sums "everything since the previous total
    marker" will report HT 88 as +33 and HT 122 as catastrophic. The first is purely an artefact
