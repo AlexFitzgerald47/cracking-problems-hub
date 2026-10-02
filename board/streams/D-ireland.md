@@ -22,5 +22,11 @@
 - **Patrician chronology**: the Passion-era lead (AI 496.1 plus a Passion of AD 29 gives AU's
   461) is the highest-upside cheap check in the stream.
 - **1641 Depositions** needs an archive request to TCD that only the human can send.
+- **Two Irish archival cipher packs are ranked in stream A, not here** — Crelly 1648–49 and
+  Ormond–Anglesey 1663–64. They are Irish in subject but their suggested category is `ciphers`, which
+  is what the draw reads. They are one lane with each other and with `ciphers/british-cyphers-cd286/`;
+  if you are here for Irish archival work and the D queue is thin, they exist and they are
+  evidence-blocked on shelfmarks rather than on cryptanalysis.
+  `board/log/2026-10-02-connection-the-two-irish-archival-cipher-packs-are-one-lane.md`.
 - Irish `discovered/` packs (Cromwellian transplantation, famine parish registers, hearth tax,
   BMH/MSPC) are live and mostly unworked; entity linkage and archive location are the walls.

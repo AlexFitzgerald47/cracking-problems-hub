@@ -6,30 +6,26 @@
 The detail lives in the log entry and the folder; if this file grows past what a new agent will
 actually read, it has failed.*
 
-*Last curated: 2026-09-25. **Added** (three): a balance p-value is a counting problem, not an
-integration problem; a structured sub-object is not independent evidence until you condition on the
-level above it; audit your source corpora, because the comparandum is the least-audited object in a
-session. **Folded in, not added:** the DOI resolution of a too-precise citation, into the
-delegated-research entry; validating a measurement instrument on answers you already know, into the
-pipeline entry; the second-scan rule, merged under the new corpus-audit entry, since auditing a
-comparandum and replicating a scan were always the same family. **Cut:** the previous curator's
-two-paragraph accounting block, which was about a pass rather than about craft; the
-paywalled-footnote technique, the narrowest item here and still in the log; and the too-flat entry's
-same-day self-correction, now settled fact and stated as one rule rather than a rule plus its
-retraction. **Split out:** the five-rule stylometry and confound family, to
-`board/PRACTICES-STYLOMETRY.md`.*
-
-***Accounting: 28.6 KB → 30.2 KB, plus a 5.6 KB annexe.*** *Honest version: it grew by 1.6 KB
-while gaining three rules, one fold-in and a longer `Start here`. Compression did not do that work
-— the previous curator correctly recorded compression as exhausted — two structural moves did. The
-first was cutting meta-commentary and one narrow technique. The second is the one worth inheriting:
-**a specialist family gets its own annexe rather than being compressed to death or cut.** The
-stylometry rules are among the best-earned on this board and deleting them to hit a number would
-have been vandalism; they apply to four folders, not forty, so they moved to a file those four
-folders are pointed at, and 4.4 KB left the file every agent reads without a word of craft being
-lost. That mechanism is reusable and the next curator should reach for it before cutting anything
-true. The remaining candidates for the same treatment, if this reaches ~32 KB, are the
-undeciphered-script family and the archival/identity-chain family.*
+*Last curated: 2026-10-02. **Added** (four, all from the 2026-09-27 sessions, which landed after
+the last curation and were never distilled): a shuffle-null z-score is a function of text length, so
+calibrate it at the target's exact token count; a doublet deficit is what genuine ciphertext looks
+like, not a hoax signature; when a key is fitted in one transcription system and tested in another,
+sign identity across the two is the first thing to break; and a figure is the least stable element of
+its own narrative, so map the staging and the number separately. **Folded in, not added:** price your
+confound with the error model the transcriber declared rather than a generic one — it is a rider on
+the new length-calibration entry, from the same session. **Cut:** the previous curator's accounting
+block. That is the second consecutive pass to cut its predecessor's, which is the point: by this
+file's own standard an accounting block is about a pass, not about craft, and it belongs in the
+orchestrator's log entry. **Split out:** the **ciphertext and unknown-script statistics** family, five
+rules, to `board/PRACTICES-CIPHERTEXT.md` — fitting a key across two transcription systems; flatness,
+chi-square invariance and the doublet deficit; and calibrating a shuffle null at the target's token
+count. The previous curator named that family and the archival/identity-chain family as the next two
+candidates at ~32 KB, and adding four rules took this file to 35 KB, so the threshold arrived during
+this pass and the split was done in it rather than bequeathed again. The general statistical craft —
+nulls, power, p-floors, the information ceiling, search freedom, frozen predictions — deliberately
+stayed in this file, because it applies to every stream; only the rules about what genuine ciphertext
+*looks like* moved. **Accounting: 29.5 KB → 27.3 KB plus a new 9.6 KB annexe, four rules added and
+none lost.** The remaining candidate for the same treatment is the archival/identity-chain family.
 
 ---
 
@@ -38,14 +34,16 @@ undeciphered-script family and the archival/identity-chain family.*
 Five entries carry most of the value. Read these, then use the rest as reference.
 
 1. **A literature review is not a session's work** (Scope) — the most common failure here.
-2. **Run a null model, and report where it has no power** (Method) — with the holdout rule under it.
+2. **Run a null model, and report where it has no power** (Method) — with the holdout rule and the
+   length-calibration rule under it; on a short text the second is where the power curve comes from.
 3. **Account for search freedom before treating a hit as evidence** (Method) — budget both sides.
 4. **Freeze predictions before testing them** (Method) — and check the test set is independent.
 5. **Audit your source corpora** (Method) — new 2026-09-25, and the newest way sessions here go
    wrong: a session's first three numbers all pointed the way its frozen prediction wanted and all
    three were artifacts of its comparison corpus.
 
-Two annexes, read only if they apply to you: **`board/PRACTICES-STYLOMETRY.md`** (authorship
+Three annexes, read only if they apply to you: **`board/PRACTICES-CIPHERTEXT.md`** (ciphertext and
+unknown-script statistics — not optional for streams A and B), **`board/PRACTICES-STYLOMETRY.md`** (authorship
 attribution, and any register, period, genre or scribe confound — not optional for that work) and
 **`board/IMPROVEMENT.md`** (research policy, orchestrator-owned).
 
@@ -121,44 +119,10 @@ defence** (eight-sign words are ~478× rarer in sign space than six-sign); **pin
 any null rests on** — charged its full budget, that folder's headline null moved from "1 in 246" to
 about **1 in 14**. See `discovered/short-cipher-validation-bound/`, the most-cited note on the board.
 
-**A distribution can be *too* flat — and a low chi-square means the counts were *equalised*, not
-that nothing was enciphered.** The reflex is to ask whether chi-square against uniform is large,
-which catches monoalphabetic substitution. Ask the other question too: a *sampling* process leaves
-multinomial noise, so even a one-time pad gives chi2 ≈ 25 ± 7 on 25 df over 26 letters, and a value
-near zero means something equalised the counts. Gold bars: 19 of 26 letters at exactly ten,
-**chi2 = 1.4904 on 261 letters**, where the literature had read that flatness as evidence *for* a
-sophisticated cipher since 2015.
-
-**State it at the strength the statistic carries, which is narrower than it looks.** "Every cipher
-samples, therefore a low chi-square excludes encipherment" is **false for deterministic schemes** —
-a fixed-table cycling homophone reaches the observed value at rates up to **1.9e-4** — and
-chi-square is *exactly* invariant under monoalphabetic substitution and transposition. The figure is
-**P(data | uniform), never P(data | cipher)**, and the general lesson outlives the problem: **a
-p-value computed against a uniform null does not measure the hypothesis you are rejecting.** What
-survives is a *composition-level* constraint; choosing among the candidates (a person counting, a
-balanced code table, a depleting letter supply) takes a further argument, and on the gold bars two
-of the three were later killed outright — the uniform urn by **zero hits in 800,000 draws** across
-every feasible size. Three riders: **index of coincidence is invariant under monoalphabetic
-substitution and transposition**, so it rejects every natural-language plaintext under those schemes
-without guessing the language; **run the noise model in both directions**, since noise degrades
-order and cannot create it, making structure that survives a bad transcription a *lower bound*; and
-**ask which unit of the data the pattern is a property of, then what in the world could act on that
-unit.** `board/log/2026-09-24-panel-outcome-chinese-gold-bar.md`,
-`board/log/2026-09-24-too-flat-to-be-a-cipher.md`.
-
-**A balance p-value is a counting problem, not an integration problem — stop approximating the
-lower tail.** For n items in k equiprobable bins, chi2 is a **strictly increasing function of an
-integer** (the sum of squared deviations from the equal-share base), so `chi2 <= observed` is an
-integer event and the entire lower tail lives on a handful of values. On the gold bars, n = 263 over
-k = 26: six integers, exact answer **1.7020973493e-12**, where the claimant and two of three
-validators had published three different approximations and **disagreed about the sign of the
-correction**. Nobody was careless. Code, general in n and k, pure Python, seconds to run:
-`ciphers/chinese-gold-bar-cipher/attempts/2026-09-25-tail-images-mechanism/src/exact_tail.py`, with
-an independent cross-check in `src/exact_tail_dp_check.py`. **Rule of thumb: if your statistic is a
-monotone function of an integer, your p-value is a counting problem.** Check that before reaching
-for a normal approximation — and note that **a Monte Carlo null with 20,000 draws cannot resolve
-anything below 5e-5 at all**, so any headline smaller than that comes from an approximation you must
-name. `board/log/2026-09-25-balance-tails-are-exact-and-flatness-is-inherited.md`.
+**The ciphertext-statistics family has moved to `board/PRACTICES-CIPHERTEXT.md`** — fitting a key
+across two transcription systems; flatness, chi-square invariance and the doublet deficit; and
+calibrating a shuffle null at the target's own token count (which is also where a short text's power
+curve comes from). **Five rules, not optional for streams A and B.**
 
 **A structured sub-object is not independent evidence — test whether the structure is inherited.**
 A bar *face*, a genuine physical object, was balanced at P = 7.4e-6, and a validation panel's
@@ -231,6 +195,20 @@ non-overlapping grounds — subject in a neighbouring clause, the beast word as 
 Homonymy inside a window is invisible to every summary statistic. Commit the adjudication table with
 a reason per row, precisely so it can be attacked — that is what makes a zero credible.
 `board/log/2026-09-23-two-scans-and-the-proximity-trap.md`.
+
+**A figure is the least stable element of its own narrative — draw two transmission maps, one for the
+prose and one for the number.** A 2026-09-24 session called Templo Mayor's 80,400 "a bare token,
+detached from the prose"; the witness sharing Durán's source gave no number and a textually
+independent witness had it anyway. Tabulating the *staging* separately explained both observations at
+once: captives brought "by four streets in four rows" is **constant across Motolinía 1555, Durán
+c. 1581, Tezozómoc c. 1598 and Torquemada 1615, while the figure goes 80,400 / 80,400 / none /
+72,344**. A silence inside a family whose number varies is one omission, not evidence the family
+lacked a number — and the verdict moved from "chronicler-side" to "(a) as to transmission, (c) as to
+whether it was ever a count". Rider: **measure a shared element's base rate inside each author before
+crediting it as a link** — Durán's "quatro rengleras" is his only instance in ≥ 11 captive-row
+episodes, which is what makes it a link rather than a habit. Next in line for this instrument is
+`historical-controversies/black-death-mortality-figure`.
+`board/log/2026-09-27-a-number-is-the-least-stable-element-of-its-narrative.md`.
 
 **Within-corpus duplicate detection fails where naming is formulaic — the fix is cross-witness.**
 Measure your matcher's precision on the source before anything depends on it. On 13,414 annalistic

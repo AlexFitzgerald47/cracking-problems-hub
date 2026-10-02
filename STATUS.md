@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-09-27, **external-claim triage** (Beale B3 and Rohonc dispositions corrected; recent Dorabella/Voynich solve claims screened but not adopted). Full report: `board/log/2026-09-27-external-claim-triage.md`. Previous: 2026-09-27, **post-reconciliation orchestrator pass** (full activity/outcome audit; priority overlay refreshed; no active claims or open PRs; validation and closure are the binding constraints). Full report: `board/log/2026-09-27-orchestrator-pass.md`.
+**Last updated:** 2026-10-02, **orchestrator overwatch pass** (the board has not been worked since 2026-09-27; both outstanding validation panels convened; two folders added that were missing from this dashboard; `PRACTICES.md` curated and split). Full report: `board/log/2026-10-02-orchestrator-pass.md`. Previous: 2026-09-27, **external-claim triage** (Beale B3 and Rohonc dispositions corrected; recent Dorabella/Voynich solve claims screened but not adopted) — `board/log/2026-09-27-external-claim-triage.md`.
 
 ## Operating design — 2026-09-13
 
@@ -28,6 +28,69 @@ has a framework page. The *cracker* role is renamed **Breaker**; dated records k
 old word. Log: `board/log/2026-09-27-the-draw.md`.
 
 ## Board state
+
+**2026-10-02: the board is idle, and that is the only finding that matters this pass.** The last
+Breaker session closed `ciphers/debosnys-ciphers` at **2026-09-27 20:30 UTC**. Nothing has been worked
+since. At the routine's six-hour cadence that is about **eighteen consecutive missed firings**, and the
+only commits to `main` in those four and a half days are the owner's site and visual work (#21–#28).
+Every problem folder is idle 7–9 days.
+
+**Nothing is blocking it.** `board/active/` holds only its `.gitkeep`, so no claim is stale and none
+needed clearing — the fifth consecutive pass with clean claim hygiene. GitHub has **no open pull
+request**, so the Codex queue is clear and nothing is waiting on review. The draw runs, names a pick
+(`historical-texts/proto-elamite`, stream B, with a written next move) and marks no file `PICK-UP`.
+The two `NO NEXT MOVE` defects it did mark were filing, not emptiness, and are fixed. **So the board
+is not blocked, under-specified or jammed; it is simply not being drawn from.** No promotion,
+re-ranking or priority overlay changes that, which is why it is recorded here and at the top of
+`board/TOP_INTEREST.md` as a human decision about the Breaker routine rather than as a routing problem.
+
+**Validation was the standing constraint and it has been discharged.** Linear A and Byblos had been
+panel-pending since **2026-09-17**. A 2026-09-25 pass convened both and committed in-progress
+refutation artifacts into each folder (`validation/2026-09-25/` — a working two-witness Linear A
+reproduction harness, and four OCBI parsing/refutation scripts for Byblos) **but never posted a
+verdict**, so the panels stayed owed to Overwatch for a further week while looking, from the outside,
+like work in progress. Both panels were **convened on 2026-10-02** — three validators each, the third
+assigned to refute, judged against the criteria already written in each `PROBLEM.md` and reproducing
+from the raw corpora rather than reviewing the writeups. Verdicts land in `board/log/` as
+`2026-10-02-validation-<slug>-v{1,2,3-refuter}.md`. **Until an orchestrator records the outcome both
+files remain panel-pending and no Breaker should re-polish either.** Whatever comes back, neither
+becomes "solved" here: the standing rule is `HELD — awaiting human sign-off`.
+
+**Two folders existed on disk and not on this dashboard, and that is a dashboard bug of the exact kind
+the draw was built to prevent.** `historical-controversies/venona-baron/` and
+`discovered/historia-augusta-authorship/` both landed in the **2026-09-27 reconciliation** and were
+never entered in the tables below. `venona-baron` has in fact been drawable and ranks 8th in stream C;
+`historia-augusta-authorship` ranks just below the cut in the same stream. Both now have rows. The
+lesson is narrow and worth keeping: **a reconciliation commit that imports folders must also add their
+rows, because the draw will happily rank a problem this file has never heard of.**
+
+**One override is now standing, for a mechanism gap rather than a disagreement.**
+`discovered/cypro-minoan/` has been recorded since 2026-09-25 as evidence-blocked until its corpus is
+digitised — a standing item like the 1641 Depositions archive request, not a Breaker task — yet the
+draw ranked it 5th in stream B as `unworked`, because `stageOf` can only read `blocked` from the table's
+*status* column and a `discovered/` row uses that column for the suggested category. Its row now says
+`historical-texts — evidence-blocked`, which ranks it `blocked` (weight 0.5, never leads) while leaving
+it in stream B. The underlying gap is in `scripts/derive.mjs`, which is the owner's file, so it is on
+the human-decision list rather than patched here.
+
+**Held claims will start tripping the pick-up rule from 2026-10-08.** The four HELD 3 × PARTIAL files
+(Ennis, Mesha line 31, VENONA BROWN/BRAUN, Chinese gold bars) are idle 7–8 days. If nothing runs, they
+cross the 14-day pick-up threshold between **2026-10-08 and 2026-10-09** and will jump to the front of
+their streams — which is the mechanism working as designed, but it is also the point at which an idle
+board starts re-presenting its oldest unfinished business instead of its most tractable work.
+
+**What the board produced this pass was method, not evidence.** Two cross-silo carries were posted:
+the Blitz length-matched-null and doublet rules, written into **seven** `HANDOVER.md` files and a new
+annexe (`board/log/2026-10-02-connection-length-matched-nulls-and-the-doublet-trap.md`), and the
+Crelly/Ormond–Anglesey archival lane
+(`board/log/2026-10-02-connection-the-two-irish-archival-cipher-packs-are-one-lane.md`).
+`board/PRACTICES.md` was curated for the first time since 2026-09-25 — four rules added from the
+2026-09-27 sessions, which had never been distilled — and the ciphertext-statistics family split out to
+**`board/PRACTICES-CIPHERTEXT.md`**, taking the main file from 29.5 KB to 27.3 KB with nothing lost.
+
+*Everything from here down is the **2026-09-27** text unless a row says otherwise. It was accurate
+when written. Where it says the board is delivering, read the paragraph above instead.*
+
 
 **2026-09-27 post-reconciliation check.** The canonical checkout equalled `origin/main` at
 `cacd6f6`; `board/active/` was empty and GitHub had no open pull request. The audit counted 48
@@ -165,6 +228,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 | Thera eruption date | `historical-controversies/thera-eruption-date/` | **Worked 2026-09-22** — the success criterion is answered and the answer is a bound; reasoning-ready, unclaimed | Calibration engine, OxCal-equivalent phase model and a validated pipeline are committed and rerun in minutes — **do not rebuild them**. The prior-sensitivity criterion is met and it is large: changing only the within-phase prior on Manning's 31 Akrotiri determinations moves the posterior median **1561 → 1618 BCE**. The deeper result is an information bound — IntCal20 is flat across **1610–1540 BCE** and the asymptotic d′ for 1610 vs 1560 is **0.19**, so no sample size resolves the plateau interior; the endpoints do separate (1620 vs 1530, ceiling 4.89). Bias-corrected by simulation, the evidence gives a 95.4 % support set of **1610–1560 BCE peaking near 1600**, reproducing Manning's published 95.4 % range by another route while his published 68.3 % range is ~3× too narrow. Reopening condition is specific: an annual-resolution curve whose 1610–1540 amplitude exceeds ~40 ¹⁴C yr. Ice cores and tephra geochemistry untouched |
 | Caligula's seashells | `historical-controversies/caligulas-seashells/` | **Worked 2026-09-22** – corpus built, inventory complete, verdict delivered; open on the *reading* side | 120-token sense inventory of `muscul*` across ~19.3M words now in `data/`, rebuildable from `code/`. Verdict: the Latin does **not** support emending *conchae* — `conchas legere` is Cicero's own idiom (*De Or.* 2.22) and Tacitus uses it of gathering Ocean pearls in Britain (*Agr.* 12). **`PROBLEM.md` misattributed Woods's thesis** (huts = Balsdon 1934; Woods argues *boats*) — correction appended there. Woods's boat sense of *musculus* is unattested until c. AD 400. What remains is library access: Malloch *CQ* 2001 and the body of Woods 2000 are unread, so success criterion 3 is still open |
 | The Black Death's mortality figure | `historical-controversies/black-death-mortality-figure/` | Open — never worked; **promoted out of `discovered/` 2026-09-25** | Where does the received "one third" / "one half" actually come from, and do the modern estimates measure the same quantity? Criterion 1 is a citation lineage and is fully tractable from digitised material. Promoted because **two completed sessions now supply the instrument**: blood eagle's audited citation chain (with the proximity-is-not-construction rider — 18 apparent hits, all 18 spurious on row-by-row adjudication) and Templo Mayor's transmission map, which found 80,400 is a **vigesimal numeral, not a tally**. Its `HANDOVER.md` carries the third hypothesis the proposal omits: "one third" may be a conventional fraction doing rhetorical rather than arithmetic work. **Scope warning: the palynology half is rated poor and a survey of what historians have said is a literature review** |
+| VENONA BARON identity | `historical-controversies/venona-baron/` | Open — **first session 2026-09-07 released its claim the same day; added to this dashboard 2026-10-02, having been missing since the folder landed in the 2026-09-27 reconciliation** | **Not an open-field search.** BARON already has a published identification — West (1999): the Czechoslovak intelligence officer Karel Sedláček, carried into Haynes's concordance attributed to West — and the task is to *test* it, not to find a name. The identification is untested and collides with Sedláček's residence in Switzerland. BARON is the London GRU source connected in the public record with British decryption of German Enigma traffic, known from London No. 649 of 3 April 1941 and a two-page "Report from BARON" of 29 July 1941. **Read `analysis/solution-status-ledger.md` and `analysis/access-ledger.md` first: no claim in that folder was verified against a primary document — the first session had no working fetch and labelled every statement accordingly. Respect the labels.** Sits in stream C; lane-mates are the other VENONA folders, whose role-separation and OBSERVED/INFERRED/MISSING ledger practice in `board/PRACTICES.md` applies directly |
 
 ## Next-session priorities
 
@@ -496,7 +560,7 @@ folder is an audit trail only.
 | Epi-Olmec / Isthmian decipherment | `discovered/epi-olmec-isthmian/` | historical-texts | Moderate – historiographic half fully tractable |
 | Dongba manuscripts | `discovered/dongba-manuscript-corpus/` | historical-texts | Good for corpus; structurally limited for meaning |
 | Zapotec hieroglyphic writing | `discovered/zapotec-hieroglyphic-writing/` | historical-texts | Good for distributional analysis, poor for decipherment |
-| Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts | Blocked until corpus digitised |
+| Cypro-Minoan | `discovered/cypro-minoan/` | historical-texts — evidence-blocked | **Blocked until the corpus is digitised, and this is not a tractability judgement** — no session here can change it, so treat it like the 1641 Depositions archive request: a standing item, not a Breaker task. The category is still historical-texts (stream B) and the draw infers that from the pack's own text; the words *evidence-blocked* in this column are what make `stageOf` rank it `blocked` (weight 0.5, never leads) instead of `unworked`. Standing override recorded in `board/TOP_INTEREST.md`, 2026-10-02 |
 | ~~Blitz Ciphers~~ **PROMOTED 2026-09-25, worked 2026-09-27** → `ciphers/blitz-ciphers/` | stub deleted; live folder | ciphers | Promoted because the gold-bar sessions built the authenticity benchmark its criterion 1 asks for; first breaker session landed 2026-09-27 |
 | ~~Templo Mayor 1487 sacrifice count~~ **PROMOTED 2026-09-24** → `historical-controversies/templo-mayor-1487-sacrifice-count/` | `MOVED.md` stub only | historical-controversies | **Promoted on the 2026-09-23 commitment.** Does the widely-repeated 80,400 figure (Durán, Ixtlilxóchitl, Mendieta) reflect a real count or citation-chain embellishment? A checkable textual-filiation question, not a plausibility judgement. **Promote next pass if still unworked** — same method as `blood-eagle-kenning`, so one session equips the other |
 | ~~"The Night Before Larry Was Stretched" — authorship~~ **PROMOTED 2026-09-24** → `ireland/larry-was-stretched-authorship/` | `MOVED.md` stub only | ireland | **Promoted on the 2026-09-23 commitment.** Unresolved since Farmer (1896) rejected the traditional attribution. Criterion 2 already allows the right answer to be "Maher is structurally untestable by authorship methods". Before a session starts, run the information-ceiling calculation: a single ballad against period candidates is exactly the short-text regime where `discovered/short-cipher-validation-bound/` applies. **Promote next pass if still unworked** |
@@ -505,6 +569,7 @@ folder is an audit trail only.
 | Ormond–Anglesey 1663–64 partial cipher | `discovered/ormond-anglesey-1663-cipher/` | ciphers | **New 2026-09-17.** Partial key known (E=13/14, THE=246). The volume-5 p.498 pointer is not yet proved to belong to this exchange — resolve that before any breaker session |
 | Ormonde–Maltravers 1634–35 cipher | `discovered/ormonde-maltravers-1634-cipher/` | **CLOSED — solved externally** | Daniel Bourdeau published a reading of both letters, reported to Cryptiana 2026-09-16. The finder pass caught this itself and withdrew the candidate. Folder retained as the audit trail. Only residual: nomenclator values 185 and 149 in one clause. **Do not re-propose** |
 | The Short-Cipher Validation Bound | `discovered/short-cipher-validation-bound/` | methodological — stays put | Carries a general result on where a crib set's discriminating power comes from. Cited by five problems and by `PRACTICES.md` |
+| The Historia Augusta: how many hands, and where do they change? | `discovered/historia-augusta-authorship/` | historical-controversies | **Added to this dashboard 2026-10-02, having been missing since the pack landed in the 2026-09-27 reconciliation; never worked.** Thirty Latin imperial lives (Hadrian–Numerian, AD 117–284) presenting themselves as the work of six named authors. The problem is the hand-count and the boundaries, which makes it an authorship-boundary target: `board/PRACTICES-STYLOMETRY.md` is **not optional**, and the register/period/genre confound rules there apply before any hand-count is believed — Junius showed on this board that a register gap can exceed the author signal outright. Suggested category `historical-controversies` (stream C), beside Shakespeare and Junius |
 
 **Verification standard for the run-2 batch — read before relying on it.** `WebFetch` was
 blocked by network egress policy for the whole of discovery run 2. Citations were confirmed

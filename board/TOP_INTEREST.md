@@ -1,7 +1,64 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-09-27
+**Updated:** 2026-10-02
+
+## 2026-10-02 execution overlay
+
+This overlay supersedes the 2026-09-27 overlay below, which is kept because three of its five items
+are still live. What changed: **its item 1 is discharged** — both panels were convened on 2026-10-02
+— and its item 2 was discharged on 09-27 when Motolinía's *Carta* closed Templo Mayor.
+
+### The one thing that outranks every routing question below
+
+**No Breaker session has run since 2026-09-27 20:30 UTC.** At a six-hour cadence that is roughly
+**eighteen consecutive missed firings**, and the only commits to `main` in those four and a half days
+are the owner's site and visual work. Every file on the board is idle 7–9 days; `board/active/` is
+empty; nothing is stuck behind a claim, a panel or a missing next move. **The board is not blocked —
+it is not being worked**, and no overlay, promotion or re-ranking written here changes that. This is
+a human decision about the Breaker routine (is it firing? is it failing? was it turned off?), and it
+is recorded first because routing advice is worthless while nothing is drawing.
+
+### Overrides to the draw
+
+The draw is advisory against a human instruction or an override written here with a reason. There is
+exactly one standing override:
+
+1. **`discovered/cypro-minoan` — skip it; take the next file in stream B.** The draw currently ranks
+   it 5th in stream B as `unworked`, debt 10, so it will eventually be drawn. `STATUS.md` has
+   recorded since 2026-09-25 that it is **evidence-blocked until the corpus is digitised, and that
+   this is not a tractability judgement**: no session here can change it, and it should be treated
+   like the 1641 Depositions archive request — a standing item, not a Breaker task. **The reason it
+   still ranks is a mechanism gap, not a disagreement:** `stageOf` in `scripts/derive.mjs` can only
+   mark a file `blocked` from the *status* column of the `STATUS.md` table, and for a `discovered/`
+   row that column holds the suggested category instead, so a blocked pack is unreachable through it.
+   This pass worked around it in the table (see `STATUS.md`) and records the override here so the
+   decision is not re-litigated. **The underlying gap is `scripts/` — the owner's file — and is on
+   the human-decision list rather than patched unilaterally.**
+
+### Still live from the 09-27 overlay, unchanged in priority
+
+2. **The four HELD 3 × PARTIAL claims stay HELD** (Ennis, Mesha, VENONA BROWN/BRAUN, gold bars). No
+   fifth Breaker pass substitutes for the missing physical or documentary checks, and VENONA's named
+   missing check is still two small enumerable populations (constraint-ledger Q2, Q3) nobody has run.
+3. **Cheapest high-value closures still open:** obtain and read Woods 2000 and Malloch 2001 for
+   Caligula; independently audit the blood-eagle 35-row blade table and Frank's remaining two
+   instrumental-dative comparanda. These change dispositions without rebuilding a corpus.
+4. **Best Irish reasoning-ready continuation is still** Patrician chronology's Passion-era lead. Ennis
+   is physical-evidence-ready only when the 2023 photogrammetry/RTI can be obtained; do not send
+   another lexical search at it.
+5. **Do not spend a session rebuilding** Thera, Annals, Shakespeare, Junius, Phaistos or the gold-bar
+   pipelines. Their next moves are named, narrow tests in the current handovers.
+
+### Two files that were invisible until this pass
+
+`historical-controversies/venona-baron/` and `discovered/historia-augusta-authorship/` both landed in
+the 2026-09-27 reconciliation and were **never entered in `STATUS.md`**. Both are now on the dashboard
+and in their stream briefs. Neither is a priority call — they are recorded here because a folder that
+exists on disk and not on the dashboard is the exact failure the draw was built to prevent, and it
+happened twice in one commit.
+
+---
 
 ## 2026-09-27 execution overlay
 

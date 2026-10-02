@@ -4,6 +4,41 @@
 
 ---
 
+## 2026-10-02 — connection: calibrate a shuffle null at your own token count (orchestrator note, additive; nothing below altered)
+
+Posted by the orchestrator, carrying the 2026-09-27 `ciphers/blitz-ciphers/` session's result into the
+folders that need it. Nothing below this section is changed or contested.
+
+**The rule.** A shuffle-null z-score is a function of text length — the same text at twice the length
+gives roughly √2 times the z — so `z = +5.84` on its own says nothing, and comparing your target
+against a longer genuine document compares lengths rather than documents. Cut each genuine comparandum
+into **non-overlapping contiguous blocks of exactly your target's token count**, run the identical null
+on each, and report your target as a **percentile of that distribution**. On Blitz this turned
+"z = +5.84, is that a lot?" into "**0 of 402 genuine blocks at this length fall this low**". The same
+blocks give the power curve free: the fraction of genuine blocks reaching p < 0.05 **is** the power at
+that length — 1.000 at 470 tokens there, 0.885–0.982 at 159, which closed off "too short to tell"
+before anyone raised it and simultaneously showed the 159-token page decides nothing.
+
+**The asset.** `matthewdgreen/cipher_benchmark` is a ready-made genuine-ciphertext comparandum corpus:
+101 Copiale pages (74,860 tokens, homophonic, German) and 397 Borg pages (120,191 tokens,
+monoalphabetic, Latin), both solved and verified, plus 155 DECODE/Gallica records and 180 synthetic
+substitution texts in four languages. One `curl` per file; fetch script at
+`ciphers/blitz-ciphers/attempts/2026-09-27-authenticity-internal-nulls/src/fetch_comparanda.sh`. Audit
+it before use — check the symbol maps are global, and decide explicitly what to do with word separators.
+
+**And do not read a doublet deficit as a hoax signature.** It is backwards for enciphered text: Borg
+gives z = **-47.3**, Copiale z = **-33.0**. Shuffling a text's own symbols produces adjacent repeats at
+Σpᵢ² (4–7 %); real doubled-letter rates are 1–2 %. Language suppresses doublets hard and substitution
+inherits the suppression. The anomalous document is the one whose doublet rate sits *near* Σpᵢ².
+
+Both rules, with the numbers and the riders, are now in the new annexe
+**`board/PRACTICES-CIPHERTEXT.md`** — read it before any null on this folder.
+Source: `board/log/2026-09-27-a-doublet-deficit-is-a-language-signature-and-a-shuffle-z-needs-a-length-matched-ruler.md`.
+
+**Why this folder.** This folder invented the exact-tail enumerator for chi-square; the length-block rule is its sibling for shuffle nulls, and the comparandum corpus finally supplies genuine ciphertext of matched length for the authenticity half of the problem — which the 09-24 panel's repair items asked for and nobody had a corpus for.
+
+---
+
 ## 2026-09-27 – external-overlap alert (additive)
 
 `dbourdeau/cyphersolver` independently works this object, but its current public note still uses
