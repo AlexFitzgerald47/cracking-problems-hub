@@ -1,0 +1,85 @@
+==============================================================================
+R1.  CAN EACH ANCHOR BE TESTED OFF THE SEAL AT ALL?
+==============================================================================
+  E49A   ME                 off-seal tokens  3 (clear  3)  m II 3   das Z gerundet
+  E4B0   ME' (mirror form)  off-seal tokens  1 (clear  0)  Rb II 1   Die Zwei gespiegelt
+  E44D   PA                 off-seal tokens 11 (clear 10)  d XXVIII 2  Andreaskreuz
+  E4AF   ATON               off-seal tokens  0 (clear  0)  Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+  E42A   AMUN-1             off-seal tokens 23 (clear 20)  d III 11  Joch
+  E483   AMUN-2             off-seal tokens  2 (clear  2)  f II 4   Kamm mit 3 Zähnen
+  -> ATON (E4AF) has zero off-seal tokens: it is UNTESTABLE off the seal
+     by construction, so no held-out prediction can ever involve it.
+  -> AMUN-2 (E483) has 2.  ME' (E4B0) has 1, and it is a guess-marked
+     reading (see ME_ANCHOR_TRANSFER.md section 8).  Only PA and AMUN-1
+     have enough tokens for any distributional test at all.
+
+==============================================================================
+R2.  PA HELD OUT: POSITIONAL PROFILE
+==============================================================================
+  off-seal line-edge sign tokens 331, line-internal 971 -> P(edge)=0.2542
+  E44D   n=11  at a line edge  4 (expected 2.8)  p(>=)=0.298 p(<=)=0.878  d XXVIII 2  Andreaskreuz
+  E49A   n=3   at a line edge  0 (expected 0.8)  p(>=)=1.000 p(<=)=0.415  m II 3   das Z gerundet
+  E42A   n=23  at a line edge  5 (expected 5.8)  p(>=)=0.732 p(<=)=0.450  d III 11  Joch
+  E402   n=13  at a line edge  0 (expected 3.3)  p(>=)=1.000 p(<=)=0.022  b I 7   kurzer Worttrenner oben
+  E404   n=3   at a line edge  0 (expected 0.8)  p(>=)=1.000 p(<=)=0.415  b II 3   kurzer Worttrenner Mitte
+  E416   n=17  at a line edge  3 (expected 4.3)  p(>=)=0.846 p(<=)=0.338  d I 7    offener Ring
+  -> PA's positional profile is indistinguishable from an ordinary sign.
+     That is consistent with a syllabogram, but it is not evidence FOR
+     one: it is the absence of a signal either way.
+
+==============================================================================
+R3.  PA HELD OUT: NEIGHBOUR STRUCTURE, BUDGET-MATCHED
+==============================================================================
+  For PA and for every sign of comparable frequency, the share of the
+  commonest neighbour on each side:
+  21 signs have 8-16 off-seal tokens (PA has 11).
+   top LEFT-neighbour concentration:
+     E4DD   n=7   commonest left-nb E43B x5  share 0.71
+     E422   n=12  commonest left-nb E41F x8  share 0.67
+     E451   n=5   commonest left-nb E4E4 x2  share 0.40
+     E42D   n=8   commonest left-nb E42C x3  share 0.38
+     E417   n=8   commonest left-nb E416 x3  share 0.38
+     E425   n=14  commonest left-nb E431 x5  share 0.36
+     PA's rank among them: [8] of 21
+   top RIGHT-neighbour concentration:
+     E43B   n=8   commonest right-nb E4DD x5  share 0.62
+     E422   n=12  commonest right-nb E41E x7  share 0.58
+     E4DD   n=7   commonest right-nb E42A x4  share 0.57
+     E464   n=8   commonest right-nb E426 x3  share 0.38
+     E451   n=8   commonest right-nb E4FB x3  share 0.38
+     E42B   n=8   commonest right-nb E426 x3  share 0.38
+     PA's rank among them: [13] of 21
+  -> PA has no invariant or even dominant neighbour on either side.  The
+     ME result reported in ME_ANCHOR_TRANSFER.md (3/3 identical right
+     neighbour) does not generalise to the anchor the kernel itself calls
+     the strongest one.
+
+==============================================================================
+R4.  PA vs THE DIVIDER CONTROL
+==============================================================================
+  OCBI names two forms 'kurzer Worttrenner' (short word divider):
+     E402   b I 7   kurzer Worttrenner oben   n=13
+     E404   b II 3   kurzer Worttrenner Mitte   n=3
+  The 2026-09-25 session (refute3.py, sections F-H) showed that E402 is
+  distributionally a divider and that the entire ME 'adjacency family'
+  of ME_ANCHOR_TRANSFER.md is 'ME followed by a word divider'.  This
+  session reproduces that result bit-for-bit.  The check that matters
+  here is whether PA shows the same confound:
+  PA tokens adjacent to a divider: 0 of 11 -> PA is not a divider-bound
+  form, and its distribution carries no divider artefact.  It also
+  carries no detectable structure.
+
+==============================================================================
+R5.  THE PREDICTION THE BIGRAPH ACTUALLY LICENSES, AND ITS RESULT
+==============================================================================
+  If the ATON class marks a theonym-final slot, then after the split the
+  kernel promotes (syl6-syl8), that class should show up in terminal
+  positions in the Dunand core.  Test it:
+    search  ATON class E416 E495 E4AE E4AF                          off-seal n=20  line-final 2 of 169 lines
+    syl6    ATON class E450 E455 E47B E4C9 E4AE E4AF E4FD           off-seal n=3   line-final 0 of 169 lines
+    syl8    ATON class E450 E455 E47B E4C9 E4AE E4AF E4FD           off-seal n=3   line-final 0 of 169 lines
+  -> under the merged inventory the class has 20 off-seal tokens and can
+     be tested; under the split the kernel promotes it has 3, and the
+     split therefore DESTROYS the only held-out test the ATON anchor
+     could have had.  The inventory decision the kernel offers as its
+     new result moves the claim away from criterion 4, not towards it.

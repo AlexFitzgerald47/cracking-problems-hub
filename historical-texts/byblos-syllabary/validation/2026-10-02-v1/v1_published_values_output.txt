@@ -1,0 +1,35 @@
+==============================================================================
+N. PUBLISHED SEGMENTATION vs THE HUB'S FROZEN ANCHOR SET
+==============================================================================
+
+[anch-es-en] ... Schrift notiert. Und die Kopie der Familienstele aus Byblos zeigt drei kurze Inschriften genau dort, wo auch auf dem Original die Namen der Töchter stehen. Es bleibt somit kein Zweifel, dass die drei Inschriften BYBLra, BYBLrb und BYBLrc die drei Namen  anch-es-en-paa-mun,  me-ʕ-ke(t)-ATON und  me-ri-t-ATON wiedergeben.32 Setzt man die Lautwerte von Woudhuizen und Best ein, entsteht in keiner Weise eine schlüssige Lautabfolge, und schon gar nicht werden die drei Namen Anchesen-pa-Aton, Merit-Aton und ...
+
+[Mendenhall (1985)] ... nales Handbuch, Berlin. BEST, J. 2008a Breaking the Code of the Byblos Script, Ugarit-Forschungen 40, 129–33. BEST, J. 2008b Suruya in the Byblos Corpus, Ugarit-Forschungen 40, 135–41. BEST, J. & WOUDHUIZEN, F. 33 Dasselbe gilt übrigens für die Lautwerte von Mendenhall (1985). Mendenhalls Entzifferungsvorschlag wird heute von Brian Colless vehement vertreten. Die Nichtübereinstimmung der zu erwartenden drei Namen mit den von ihm weiterhin vertretenen Lautwerten wird von Colless mit diversen schlecht verständlichen ...
+
+[attestedly incorrect] ... pplication of the phonetic values to previously unexamined inscriptions (the bigraphic “daughter’s names” on the cylinder seal of Byblos and the Berlin Familienstele respectively) can be used to prove that the translations advocated by Woudhuizen and Best are attestedly incorrect. Einleitung Im Zuge der Beschäftigung mit unentzifferten Schriftsystemen haben die Beitragenden der 2016 gegründeten Gesellschaft für die Entzifferung antiker Schriftsysteme (GEAS) einen schrift- und sprachübergreifenden theoretischen Rahm ...
+
+Published segmentation under rb Var.3 / rc Var.3:
+   rb: E49A=me   E416=' (ayin)   E491=ke(t)   E4AF=ATON
+   rc: E4B0=me   E443=ri         E429=t       E4AF=ATON
+PARTIAL_BIGRAPH_KERNEL section 7 freezes only ME / PA / ATON / AMUN.
+So three published values (E416=', E491=ke(t), E429=t) are left on the table,
+and ME_ANCHOR_TRANSFER reaches a weaker CONDITIONAL T-class for E491 via the
+OCBI E491~E412 merge when the published source states ke(t) outright.
+
+sign   GEAS name                          tot   off  off-cylinder objects
+E49A   m II 3   das Z gerundet              6     6  ['i', 'k', 'm', 'rb (Var. 1)', 'rb (Var. 2)', 'rb (Var. 3)']
+E4B0   Rb II 1   Die Zwei gespiegelt        4     4  ['f (face b = recto)', 'rc (Var. 1)', 'rc (Var. 2) ', 'rc (Var. 3)']
+E44D   d XXVIII 2  Andreaskreuz            12    11  ['a', 'b', 'd', 'f (face b = recto)', 'i', 'p', 'v']
+E49B   n I 4   Ypsilon senkrecht gespie     1     1  ['n']
+E4AF   Rb I 3   Sonnenaufgang / Rechts-     4     4  ['rb (Var. 1)', 'rb (Var. 2)', 'rb (Var. 3)', 'rc (Var. 3)']
+E416   d I 7    offener Ring               18    18  ['d', 'g', 'h', 'k', 'l', 'n', 'rb (Var. 3)']
+E491   j II 2   Bett                        5     5  ['j', 'l', 'o (verso) Var. 1', 'o (verso) Var. 2', 'rb (Var. 3)']
+E443   d XV 1  Türe mit Angeln              7     7  ['a', 'd', 'e', 'rc (Var. 3)']
+E429   d III 10  Antenne                   27    26  ["a' (Var. 2)", 'b', 'c', 'd', 'e', 'f (face a = verso)', 'f (face b = recto)', 'g', 'rc (Var. 3)']
+E42A   d III 11  Joch                      25    24  ['a', 'c', 'd', 'g', 'i', 'l', 'rc (Var. 1)', 's']
+E483   f II 4   Kamm mit 3 Zähnen           3     2  ['c', 'o (verso) Var. 1']
+
+=> E429 (published value 't') has 25 off-cylinder tokens on 8 objects and E416
+   (published ''') has 17 on 6.  These are by far the best criterion-4 probes in
+   the corpus and NEITHER is tested anywhere in the folder.  The folder's only
+   criterion-4 attempt uses E49A, which has 3 off-cylinder tokens.

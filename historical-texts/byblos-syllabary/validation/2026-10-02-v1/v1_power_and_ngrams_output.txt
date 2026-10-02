@@ -1,0 +1,117 @@
+
+==============================================================================
+A. POWER ANALYSIS OF THE OCBI CORPUS  (absent from the claim artifacts)
+==============================================================================
+de-duplicated corpus (one transcription variant per object)
+  sign tokens N                      = 1284
+  attested sign types V              = 213
+  declared repertoire (rawTokens)    = 238
+  tokens per type N/V                = 6.03
+  hapax legomena V1                  = 78 (37% of V)
+  types with <=2 tokens              = 111 (52% of V)
+  unreadable (wildcard) slots        = 245 (16% of all slots)
+  guess-marked sign tokens           = 137 (11% of signs)
+  Good-Turing est. unseen-type mass  = V1/N = 0.061
+  maximal uninterrupted certain-sign runs: n=215, longest=19, median=5, runs of length>=6: 95
+
+WHAT THIS CAN AND CANNOT SUPPORT (validator-1 statement):
+  * Estimating a value for one sign type needs that type to recur in several
+    independent, readable environments. 111/213 types (52%) occur <=2 times, so
+    for the majority of the signary there is no distributional evidence at all,
+    at ANY sample size, from this corpus.
+  * A free CV syllabary of 60-120 values over 213 types implies >=213
+    independent constraints; the corpus offers 1069 bigram slots, 16% of which
+    are adjacent to an unreadable or guessed slot.
+  * Unseen-type mass V1/N = 0.061 means ~6% of the next sign token drawn
+    would be a type seen once or not at all: the inventory is not closed, so any
+    claim of the form "sign X occurs only on object Y" is a statement about the
+    transcription, not about the script.
+
+==============================================================================
+B. NULL MODEL: HOW OFTEN DOES A TRIGRAPH RECUR ACROSS OBJECTS ANYWAY?
+==============================================================================
+2-grams: 832 distinct, 61 (7.3%) occur on >=2 distinct OBJECTS
+3-grams: 814 distinct, 11 (1.4%) occur on >=2 distinct OBJECTS
+4-grams: 703 distinct, 2 (0.3%) occur on >=2 distinct OBJECTS
+
+All trigraphs attested on >=2 distinct objects in the de-dup corpus:
+   E439 E435 E438       objects=['a', 'd']
+   E415 E444 E439       objects=['c', 'd']
+   E411 E447 E43E       objects=['c', 'd']
+   E452 E41C E43E       objects=['c', 'd']
+   E41C E43E E453       objects=['c', 'd']
+   E447 E415 E42A       objects=['c', 'd']
+   E431 E412 E45A       objects=['c', 'k']
+   E453 E453 E453       objects=['c', 'e']
+   E498 E46B E45A       objects=['i', 'm']
+   E49A E402 E48F       objects=['i', 'm']
+   E4E4 E451 E4FB       objects=['p', 'u']
+
+ME_ANCHOR_TRANSFER target trigraph E49A E402 E48F : on objects ['i', 'm']
+
+=> The claimed cross-object trigraph is one of 11 cross-object trigraphs in a
+   corpus of this size. Recurring on 2 objects is therefore NOT by itself
+   surprising; what is unusual is only that it exhausts the distribution of a
+   sign with 3 tokens.
+
+==============================================================================
+C. IS 'E402 E48F' SPECIAL, OR THE ORDINARY FATE OF E402?
+==============================================================================
+every E402 token in the de-dup corpus, with its string neighbours:
+   b                line 1   L=E401   R=E453  
+   b                line 2   L=E41C   R=E466  
+   b                line 3   L=E406   R=E407  
+   b                line 6   L=E40C   R=E418  
+   i                line 2   L=E408   R=E48C  
+   i                line 5   L=E439   R=E45E  
+   i                line 8   L=WILD   R=E413  
+   i                line 9   L=E442   R=E49A  
+   i                line 9   L=E49A   R=E48F  
+   j                line 3   L=E417   R=E41C  
+   k                line 4   L=E49A   R=E412  
+   m                line 2   L=E49A   R=E48F  
+   q                line 1   L=E413   R=E4FC  
+
+followers of E402: {'E453': 1, 'E466': 1, 'E407': 1, 'E418': 1, 'E48C': 1, 'E45E': 1, 'E413': 1, 'E49A': 1, 'E48F': 2, 'E41C': 1, 'E412': 1, 'E4FC': 1}
+E402 -> E48F happens 2/13 times (15%); both are inside the ME cluster
+
+==============================================================================
+D. SYLLABARY 9 -- THE NEWEST OCBI INVENTORY, UNMENTIONED BY THE CLAIM
+==============================================================================
+  E416   -> group 36  = E416 E495
+  E495   -> group 36  = E416 E495
+  E4AE   -> ABSENT from syl9
+  E4AF   -> ABSENT from syl9
+  E4FD   -> ABSENT from syl9
+  E491   -> group 62  = E491
+  E412   -> group 67  = E412
+  E49A   -> group 87  = E49A
+  E4B0   -> group 92  = E487 E4B0
+  E402   -> group 0   = E402 E404 E498
+  E48F   -> group 49  = E48F E471 E4AC E481
+
+Consequences the claim does not state:
+  * syl9 contains neither E4AF nor E4AE nor E4FD at all, so the 'Syl6-Syl8
+    split' is not the end state of the OCBI inventory series.
+  * syl9 SPLITS E491 from E412. ME_ANCHOR_TRANSFER's conditional
+    'ME - ? - T(?)' reading of BYBL k depends on E491 ~ E412 being MERGED,
+    which is true only of the OLDER syllabaries (search..syl8).
+  * So the claim promotes the LATER OCBI decision where it supports the kernel
+    (E416 != E4AF) and relies on the EARLIER decision where it supports the
+    transfer (E491 ~ E412). Those two moves are in opposite directions.
+
+==============================================================================
+E. syllableMap AS ENCODED
+==============================================================================
+   me      = E49A
+   pa      = E44D
+   ATON    = E416
+   AMUN    = E42A E483
+   i       = E42A
+   o       = E45A
+   ḥ       = E419
+   m       = E41F
+   b       = E444
+   ś       = E411
+   h       = E410
+   aleph   = E447

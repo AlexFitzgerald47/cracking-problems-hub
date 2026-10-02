@@ -1,0 +1,124 @@
+==============================================================================
+S1.  DOES A POWER ANALYSIS EXIST ANYWHERE IN THE CLAIM SET?
+==============================================================================
+  criterion 1 verbatim: 'A reproducible structural audit: sign inventory
+  with documented variant-merging decisions, positional statistics, and
+  an explicit power analysis stating what a corpus of this size can and
+  cannot support.'
+  PROBLEM.md                   power=1  null=0  p-value=0  positional=1  sign=1
+  PARTIAL_BIGRAPH_KERNEL.md    power=0  null=0  p-value=0  positional=0  sign=1
+  PALIMPSEST_CHRONOLOGY.md     power=0  null=0  p-value=0  positional=0  sign=2
+  ME_ANCHOR_TRANSFER.md        power=0  null=0  p-value=2  positional=0  sign=0
+  PROGRESS.md                  power=0  null=0  p-value=0  positional=0  sign=1
+  HANDOVER.md                  power=1  null=1  p-value=0  positional=0  sign=3
+
+  PROBLEM.md                 : decisions, positional statistics, and an explicit power analysis stating what a
+  HANDOVER.md                : Run a power analysis first and state plainly what a corpus of ~16 inscriptions can support
+  -> the phrase appears only where the criterion or an old recommendation
+     states that one SHOULD be run.  No file carries a null model, a
+     permutation test, a p-value, or a stated detection ceiling.
+     Criterion 1's power-analysis component is ABSENT from the claim set.
+     (The arithmetic is now in r4_power_null.py in this directory, and it
+      does not favour the claim.)
+
+==============================================================================
+S2.  WHICH CRITERIA DOES THE CLAIM SET EVEN ASSERT?
+==============================================================================
+  PARTIAL_BIGRAPH_KERNEL.md section 7, in its own words:
+    The correct next move is no longer a blind decipherment or another visual-comparison table.
+    Then run **leave-the-cylinder-out** searches on the core Dunand corpus only. Ask whether the anchored phonetic signs participate in repeated structural slots consistent with syllabic material, without using a guessed language to score them. If the anchors produce no coherent cross-text prediction, downgrade the bigraph's script-identification claim. If they do, that is the bridge from a partial bilingual into real decipherment.
+    The important point is that the next test is now falsifiable. We finally have something that can lose.
+  -> the kernel places the criterion-4 test in the FUTURE.  It does not
+     claim criterion 4, and criterion 4 is the criterion PROBLEM.md calls
+     'the critical bridge'.
+
+==============================================================================
+S3.  CITATION INTEGRITY ON THE ANCHORS' PRIMARY SOURCE
+==============================================================================
+  PROBLEM.md                 : author copy embedded at https://www.researchgate.net/publication/366580046
+  PARTIAL_BIGRAPH_KERNEL.md  : - Michael Mäder, “Zwei Lautwertvorschläge zum Byblos-Syllabar: me und pa”, *Ugarit-Forschungen* 52; public author copy embedded at ResearchGate: https
+  ME_ANCHOR_TRANSFER.md      : - Michael Mäder, “Zwei Lautwertvorschläge zum Byblos-Syllabar: me und pa”, *Ugarit-Forschungen* 52; public author copy embedded at https://www.researc
+  checked 2026-10-02: ResearchGate publication 366580046 is Michael
+  Maeder, 'Detecting word boundaries in an undeciphered script: The
+  Byblos syllabary', BAF-Online (Berner Altorientalisches Forum), also at
+  https://bop.unibe.ch/baf/article/view/7186 -- NOT 'Zwei
+  Lautwertvorschlaege zum Byblos-Syllabar: me und pa'.  The Hub files
+  attach that RG id to the me/pa paper in three places.  The me/pa paper
+  (Ugarit-Forschungen 52) is therefore cited but not located, and nothing
+  in the claim set quotes it directly; the operative wording of the
+  mirror/allograph argument reaches the Hub only through Schmutz & Maeder
+  2024 and GEAS's 2021 news page.
+  (Note the irony: the paper actually at that id is Maeder's WORD-BOUNDARY
+  paper, which is the one bearing on whether E402 is a divider.)
+
+==============================================================================
+S4.  CHRONOLOGY: IS THE NOMINATED KILL-TEST RUNNABLE?
+==============================================================================
+  PALIMPSEST_CHRONOLOGY.md section 5 requires every sign to be labelled
+  (i) core, (ii) Linear Pseudo-Hieroglyphic, (iii) secure palimpsest.
+  The machine-readable corpus carries these metadata fields only:
+    (source, group) values present: [('BYBL', 'BYBL'), ('BYBL', 'BYBL?'), ('BYBL?', 'BYBL?')]
+    dir values: {'RTL': 32, 'LTR': 1, 'TDR': 10}
+  There is NO period, phase, medium, palimpsest or 'linear' field, and no
+  witness is labelled Linear Pseudo-Hieroglyphic.  The nominated kill-test
+  cannot be run from the only machine-readable corpus; it needs a phase
+  classification that does not exist and that the session did not build.
+  Status: INABILITY TO ASSESS, not refutation.
+
+  Exploratory substitute (NOT the nominated test): OCBI's glyph outlines
+  carry a path-length field, a crude proxy for graphic complexity.  If a
+  'linearized terminal phase' is present in this corpus at all, some
+  witness should be enriched in simple forms.
+    corpus mean glyph path-length 548 (median 365, n=1336)
+    per-witness mean complexity (>=10 tokens), simplest first:
+      q            n=16   mean 280
+      w            n=19   mean 333
+      f            n=40   mean 365
+      y            n=10   mean 384
+      e            n=17   mean 412
+      b            n=43   mean 423
+      u            n=10   mean 431
+      j            n=14   mean 439
+      l            n=57   mean 452
+      m            n=12   mean 456
+      o            n=25   mean 456
+      n            n=18   mean 501
+      r (seal)     n=34   mean 501
+      i            n=88   mean 514
+      c            n=212  mean 531
+      a'           n=25   mean 548
+      d            n=443  mean 588
+      a            n=114  mean 634
+      p            n=26   mean 674
+      k            n=29   mean 674
+      g            n=38   mean 746
+    spread: min 280  max 746  ratio 2.67
+  -> the witnesses do not separate into a simple and a complex population;
+     means lie on a continuum with a ~2.7x spread and no gap.  This is
+     consistent with the two-phase model AND with a single-phase model, so
+     it discriminates nothing.  The model as written makes no prediction
+     that the available machine-readable evidence could falsify.
+
+==============================================================================
+S5.  THE LOGICAL SHAPE OF THE CHRONOLOGY ARGUMENT
+==============================================================================
+  PALIMPSEST_CHRONOLOGY.md section 3 argues: IF the conventional/DEAPS royal
+  chronology is approximately right, THEN a Byblos-script layer beneath KAI 3
+  or KAI 4 predates the tenth century, so a ca. 900 invention is impossible.
+  
+  But the proposition 'the early royal Byblian Phoenician inscriptions are
+  tenth-century' is precisely what Sass (2005) disputes and Rollston (2008)
+  and Lemaire (2006) defend.  Sass's ca. 900 invention is a package that
+  includes lowering that series.  Conditioning on the series being tenth-
+  century therefore assumes the contested premise; the document's own text
+  concedes as much ('None of those moves is individually impossible.  The
+  problem is cumulative') and then rests on parsimony rather than on a test.
+  
+  That is a legitimate and well-argued position in a palaeographic dispute.
+  It is not a falsification of Sass, and the document's 'moderate confidence'
+  grading is honest about it.  What it is NOT is new evidence: every element
+  of the chain (DEAPS dates, Sheshonq/Osorkon monuments, the Yehimilk-Elibaal
+  genealogy, Vita & Zamora's reinspection) is cited literature, assembled
+  rather than tested.  Criterion 3 asks for 'progress on the dating question
+  by systematically separating core, linear/palimpsest and later comparanda'.
+  The separation is PROPOSED here and nowhere performed on the signs.

@@ -1,0 +1,115 @@
+==============================================================================
+K0.  WHAT THE SEAL ACTUALLY OFFERS  (primary source, not the write-up)
+==============================================================================
+  OCBI records 8 entries for the seal, i.e. 4 physical columns with
+  alternative readings:
+    ra               n=6  E4AC E4AD E41F E44D E42A E483
+    rb (Var. 1)      n=4  E4FF E49A E4AE E4AF
+    rb (Var. 2)      n=4  E4FF E49A E4AE E4AF
+    rb (Var. 3)      n=4  E49A E416 E491 E4AF
+    rc (Var. 1)      n=5  E4B0 E42A E4AE E417 E4AE
+    rc (Var. 2)      n=4  E4B0 E4B1 E4B2 E4FD
+    rc (Var. 3)      n=4  E4B0 E443 E429 E4AF
+    rd               n=3  E45C E4B3 E429
+
+  -> the composition is said to carry THREE daughter names, but OCBI
+     transcribes FOUR columns (ra, rb, rc, rd).  Column rd is left
+     unaccounted for by the alignment; choosing which 3 of 4 columns to
+     use is a free parameter the kernel never charges.
+  -> rb has 3 alternative readings, rc has 3.  9 combinations.
+
+  off-cylinder canonical corpus: 1302 sign tokens, 211 distinct forms
+  P(two independently drawn signs are the SAME form)  = sum p_i^2 = 0.01306
+
+==============================================================================
+K1.  ANALYTIC PER-TRIAL PROBABILITY, AND THE BUDGET ACTUALLY SPENT
+==============================================================================
+  licence (a) FREE  'declare any two forms mirror allographs': P=1
+  licence (b) same grapheme class in the DEFAULT OCBI inventory:
+              P(two random tokens in one class) = sum P(c)^2 = 0.03845
+  licence (c) OCBI's own mirror taxonomy: 15 of 239 catalogued forms are
+              explicitly named '<X> gespiegelt'.  For the ME claim this
+              licence FAILS outright -- see r6_mirror_shape_test.py:
+                E49A = m II 3   das Z gerundet
+                E4B0 = Rb II 1   Die Zwei gespiegelt
+              i.e. OCBI names E4B0 the mirror of 'die Zwei' (E47D,
+              e I 6   die Zwei), NOT of E49A.
+
+  constraint (3a) the two 4-sign columns end in the SAME exact form : p=0.01306
+  constraint (3b) their onsets are an admissible ME pair           : p=0.03845 (licence b)
+  constraint (5)  the long column has E44D at position 4            : p=0.00845
+  per-trial p (free mirror licence ) = 1.104e-04   family-wise over 54 variant x column
+      choices                                 -> p = 0.0059
+  per-trial p (OCBI-class licence  ) = 4.244e-06   family-wise over 54 variant x column
+      choices                                 -> p = 0.0002
+
+  Dropping constraint (5) -- which is a separate anchor, not part of the
+  two-sisters pattern -- the two-sister pattern alone is:
+      free mirror licence    per-trial 0.0131   family-wise 0.5084
+      OCBI-class licence     per-trial 0.0005   family-wise 0.0268
+
+==============================================================================
+K2.  EMPIRICAL: THE SAME TEMPLATE, SEARCHED IN THE DUNAND CORE
+==============================================================================
+  Enumerate every 4-sign window of consecutive, uninterrupted signs in
+  off-cylinder material (no wildcard/fracture/gap crossed), then count
+  pairs of windows that reproduce the two-sister pattern:
+    same exact final sign, different initial signs, initials in one
+    grapheme class of the inventory named.
+  4-sign windows: 741  (from 222 uninterrupted runs)
+    search   matching window pairs:   115   distinct shared terminals: 31
+    syl1     matching window pairs:   115   distinct shared terminals: 31
+    syl2     matching window pairs:   115   distinct shared terminals: 31
+    syl3     matching window pairs:   130   distinct shared terminals: 33
+    syl4     matching window pairs:   154   distinct shared terminals: 35
+    syl5     matching window pairs:   153   distinct shared terminals: 35
+    syl6     matching window pairs:   156   distinct shared terminals: 39
+    syl7     matching window pairs:   190   distinct shared terminals: 41
+    syl8     matching window pairs:   191   distinct shared terminals: 42
+    syl9     matching window pairs:    37   distinct shared terminals: 16
+
+  Same thing under the FREE mirror licence (initials unconstrained,
+  only the exact shared terminal and distinct initials required):
+    matching window pairs: 3764 over 92 distinct shared terminals
+    most productive terminals: [('E41C', 472), ('E426', 450), ('E421', 202), ('E420', 166), ('E41F', 165), ('E45A', 152), ('E41E', 134), ('E415', 131)]
+
+  And the full three-string template, requiring in addition a longer
+  (>=5 sign) window elsewhere with E44D at its 4th position:
+    long windows with E44D in position 4: 10
+    => complete templates available in the core corpus (free licence):
+       3764 two-sister pairs x 10 long windows = 37640
+
+==============================================================================
+K3.  MONTE CARLO OVER THE SEAL, CHARGING THE VARIANT BUDGET
+==============================================================================
+  Re-draw the seal as 4 columns of the observed lengths (6,4,4,3) with
+  signs i.i.d. from off-cylinder frequencies.  For rb and rc draw 3
+  alternative readings each, exactly as OCBI offers.  Then ask whether
+  ANY admissible choice yields the kernel's pattern.
+  licence=free    P(two-sister pattern found) = 0.1081   P(+ pa in ra position 4) = 0.00094
+  licence=class   P(two-sister pattern found) = 0.0029   P(+ pa in ra position 4) = 0.00002
+  (TRIALS=200000, seed 20261002)
+
+  SENSITIVITY: 'the expected internal position' for pa is position 4 only
+  under one chosen segmentation of Ankhesen-pa-amun (anch-e-sen-pa-AMUN).
+  If pa is merely required to be INTERNAL (positions 2..5 of 6), the
+  surviving significance degrades:
+    licence=free   P(pattern + pa anywhere internal) = 0.00360  family-wise over the 6 ways of picking 2 of 4 columns = 0.0214
+    licence=class  P(pattern + pa anywhere internal) = 0.00014  family-wise over the 6 ways of picking 2 of 4 columns = 0.0008
+
+==============================================================================
+K4.  THE NAME SIDE OF THE BUDGET
+==============================================================================
+  Akhenaten and Nefertiti had SIX daughters: Meritaten, Meketaten,
+  Ankhesenpaaten, Neferneferuaten-tasherit, Neferneferure, Setepenre.
+  Three of the six end in -aten; two of those three begin with 'Me-'.
+  So the two facts the kernel treats as constraints (3) -- 'both short
+  names begin with the same syllable' and 'both end in the same divine
+  name' -- are properties of EGYPTIAN ONOMASTICS, fixed before any
+  Byblos sign is looked at.  They constrain the script side by exactly
+  one bit each: 'the two 4-sign columns must agree in position 1 (up to
+  a declarable mirror) and in position 4'.  Position 1 agreement is NOT
+  observed: the two onsets are different codepoints (E49A vs E4B0) and
+  are reconciled by an asserted mirror relation.  The only unpurchased
+  observation left is the identity of position 4 -- one coincidence of
+  p = 0.0131 per trial, against the budget computed in K1.

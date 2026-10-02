@@ -1,0 +1,609 @@
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+
+
+
+                        Die Byblos-Schrift: Beurteilung des Entzifferungsvorschlags von
+                         F. Woudhuizen und J. Best anhand der GEAS-Methodologie
+
+                                                Elisabeth Schmutz & Michael Mäder,
+                                       Gesellschaft für die Entzifferung antiker Schriftsysteme
+                                                            CH-3013 Bern
+
+
+
+Abstract
+In the course of their investigations on undeciphered writing systems, the scholars contributing to the
+Gesellschaft für die Entzifferung antiker Schriftsysteme (GEAS) have developed a cross-linguistic
+theoretical framework, the GEAS “Guidelines for technical Script Decipherment”. It is the aim of the
+Assessing Decipherment Attempts Series to apply this methodological framework to existing decipherment
+proposals. The Woudhuizen/Best attempt on the Byblos Syllabary is the object of the first contribution
+to this series.
+In a total of over a dozen publications and synoptic monographs, Fred F. Woudhuizen and Jan Best
+have presented, and relentlessly defended, their own interpretation of the Byblos inscriptions. While the
+translations may sound coherent at first glance, this impression turns to the opposite upon closer
+inspection: The present study focuses on the basic assumptions of Woudhuizen’s and Best’s proposals,
+i.e. the primary assignments of sound values to graphemes, on which the linguistic interpretation is
+based. The conclusion is that none of the steps taken in this critical phase of script analysis complies
+with the GEAS principles. Without any exception, the proposed sound values are based on a series of
+unsubstanciated assumptions. The argumentation is flawed, unmethodical, and even simply absent to a
+large part, while major portions of the considerable amount of text are dedicated to justifying secondary
+guesses. As a result, the proposed decipherment is unfalsifiable and therefore scientifically unsuitable.
+Furthermore, mathematical means (determining the degree of phoneticization) and a linguistic
+application of the phonetic values to previously unexamined inscriptions (the bigraphic “daughter’s
+names” on the cylinder seal of Byblos and the Berlin Familienstele respectively) can be used to prove
+that the translations advocated by Woudhuizen and Best are attestedly incorrect.
+
+
+Einleitung
+Im Zuge der Beschäftigung mit unentzifferten Schriftsystemen haben die Beitragenden der 2016
+gegründeten Gesellschaft für die Entzifferung antiker Schriftsysteme (GEAS) einen schrift- und
+sprachübergreifenden theoretischen Rahmen erarbeitet: die GEAS-Richtlinien.1 Ziel der Serie Assessing
+Decipherment Attempts ist es, diesen Beurteilungsrahmen auf prominente Entzifferungsvorschläge
+anzuwenden.
+In einer Reihe von insgesamt über einem Dutzend Publikationen sowie synoptischen Monographien
+haben Fred F. Woudhuizen und Jan Best ihre eigene Interpretation der Byblos-Inschriften präsentiert
+und unablässig verteidigt. So gut und schlüssig die Übersetzungen bei oberflächlicher Betrachtung
+klingen, so schlecht, unmethodisch – und in grossen Teilen schlicht abwesend – ist die Argumentation
+bei näherer Betrachtung. Die vorliegende Untersuchung fokussiert auf die Grundannahmen der
+Woudhuizen-Best’schen Vorschläge, d.h. auf primären Zuordnungen von Lautwerten, auf denen die
+linguistische Interpretation basiert. Resultat der Untersuchung ist, dass keiner der in dieser
+1
+    Die aktuelle Version der GEAS-Richtlinien (Zugriff: Juli 2025) ist zu finden unter https://center-for-decipherment.ch/standards/.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+neuralgischen Phase einer Schriftanalyse erfolgten Schritte den Prinzipien genügt. Dies führt dazu, dass
+der Entzifferungsvorschlag nicht falsifizierbar und somit wissenschaftlich untauglich ist. Überdies kann
+mit mathematischen Mitteln (Ermittlung des Phonetisierungsgrades) sowie einer linguistischen
+Anwendung der Lautwerte auf bisher nicht behandelte Inschriften (die Bigraphe auf dem Zylindersiegel
+von Byblos) bewiesen werden, dass die von Woudhuizen und Best propagierten Übersetzungen falsch
+sind.2
+
+1        Externe vs. interne Evidenz für Lautwertvorschläge
+Die Unterscheidung zwischen exo-referenzieller (externer) und endo-referenzieller (interner)
+Argumentation ist zentral für die Bewertung eines linguistischen Entzifferungsversuchs und dessen
+einzelner Schritte. Sie geht auf Alice KOBERS (1948) «Fact vs. Theory»-Dichotomie zurück und beruht
+gemäss den GEAS-Richtlinien3 auf der Frage, ob ein Argument auch unabhängig vom jeweiligen
+Entzifferungsvorschlag bzw. Lautwertvorschlag seine Richtigkeit beibehält. Beispiel für eine exo-
+referenzielle Argumentation ist eine Aussage wie «Die Zeichenkombination XY kommt mit einer
+Wahrscheinlichkeit von z Prozent am Wortende vor, d.h. vor einem Worttrenner oder am Ende eines
+Textes». Eine solche Aussage ist unabhängig vom Ausgang des Entzifferungsversuchs evident, d.h. auch
+wenn das Resultat des Entzifferungsversuchs letztendlich falsch sein sollte, bleibt die exo-referenzielle
+Aussage korrekt – sie kann einzig durch neugefundene Inschriften widerlegt bzw. angepasst werden. Im
+Gegensatz dazu stehen endo-referenzielle Aussagen. Ihre Richtigkeit kann erst nach einer erfolgreichen
+Entzifferung des betreffenden Schriftsystems bestätigt werden, sie sind sozusagen systemabhängig. Ein
+Beispiel ist: «Die Zeichenkombination XY ist ein Artikel, da sie immer vor Nomina vorkommt und der
+Artikel im Phönizischen dieser betreffenden Epoche aus den zwei Lauten X und Y gebildet wurde.» Es
+ist einleuchtend, dass eine solche Aussage erst überprüft werden kann, wenn das Schriftsystem entziffert
+ist und mithin die Frage geklärt ist, welche Sprache abgebildet wird und wo syntaktisch die Nomina zu
+stehen kommen. Die Richtigkeit einer endo-referenziellen Aussage ist somit davon abhängig, ob alle
+anderen mit ihr verknüpften Annahmen ebenfalls richtig sind; wenn nicht, stehen wir vor dem
+berühmten zirkelschlüssigen Kartenhaus, das bei jeder neugefundenen Inschrift in sich
+zusammenzubrechen droht (während exo-referenzielle Aussagen durch neue Inschriften höchstens
+graduell korrigiert werden). Zusammengefasst sind exo-referenzielle Argumente a) stringent, b)
+sprachunabhängig, c) ausserhalb des Schriftsystems begründet [z.B. in der Archäologie, Ikonografie
+o.ä.], d) falsifizierbar, e) auf zahlreichen Teilschritten verschiedener Forscher aufbauend, und f ) primär
+auf die Suche nach syntaktischen Mustern und erst sekundär auf das Vorschlagen von Lautwerten
+ausgerichtet. Dagegen sind endo-referenzielle Argumentationen a) zirkelschlüssig, b) sprachabhängig, c)
+im Schriftsystem selbst begründet, d) nicht falsifizierbar, e) auf dem «Knacken des Codes» durch einen
+einzigen Forscher beruhend, und f ) primär auf das Vorschlagen von Lautwerten ausgerichtet. Es muss
+einen deshalb bereits misstrauisch machen, wenn – um zum Untersuchungsgegenstand zurückzukehren
+– Fred WOUDHUIZEN (2007:699) schreibt: «Breaking the code of an undeciphered script in effect boils
+down to a hunt for sound values.» Freilich können glückliche Zufälle wie das als Bilingue dienende
+Inschriftenpaar “Byblos-Zylindersiegel/Familienstele” vage Vorschläge für die Lautwerte einzelner
+Grapheme anbieten,4 doch die Knochenarbeit erledigen auch in der Byblos-Forschung
+strukturanalytische Beiträge wie jene von SOBELMAN (1961) und BEST & RIETVELD (2010). Nach
+diesen allgemeinen Betrachtungen wollen wir im Folgenden die Best/Woudhuizensche Vollentzifferung
+2
+    Es sei vorweggenommen, dass den Autoren der vorliegenden Studie nur ein Byblos-Entzifferungsversuch bekannt ist, der den
+    Vorgaben der GEAS-Richtlinien einigermassen entspricht, nämlich jener von Garbini (2009). Eine eingehende Beschäftigung mit
+    diesem Vorschlag erfolgt in einem späteren Beitrag der Serie.
+3
+    Paragraph § 1, Art. 3a der “GEAS-Richtlinien für technische Schriftentzifferung”, abgerufen unter https://center-for-
+    decipherment.ch/standards/GEAS_Richtlinien_Guidelines.pdf.
+4
+    MÄDER (forthc.); GARBINI et al. 2004.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+methodisch kritisieren, und zwar anhand der Artikel von BEST (2008a) und WOUDHUIZEN (2007),
+beginnend mit den Punkten, die den «GEAS-Richtlinien für technische Schriftentzifferung»5
+zuwiderlaufen.
+
+2.1      Den GEAS-Richtlinien widersprechende Vorgehensweisen
+-        Formale Ähnlichkeit wird als «external evidence» definiert (WOUDHUIZEN 2007:691). Im Sinne
+der Richtlinien ist formale Ähnlichkeit aber ein internes, endo-referenzielles Argument (d.h. ob die
+grafische Ähnlichkeit einer Teilmenge der Zeichen zufällig oder systematisch ist, kann erst nach
+erfolgreicher, extern bestätigter Entzifferung erkannt werden und ist keinesfalls “Evidenz”); formale
+Ähnlichkeit einzelner Schriftzeichen darf somit niemals als unkritische Grundlage für
+Lautwerthypothesen herangezogen werden, wie schon DANIELS (1996:22) formuliert hat: «The
+comparison of shapes alone [is] the oldest fallacy in the study of writing systems.»
+-        Die diskussionslose Annahme, dem Byblos-Syllabar liege eine westsemitische Sprache zugrunde,
+ist aus schrifthistorischer Sicht nicht zulässig. Zwar müssen auch Skeptiker, in deren Rolle wir uns hier
+bewusst begeben, eingestehen, dass der rein grafische Vergleich mit dem Phönizischen, wie ihn bereits
+DUNAND (1945:185, Fig. 54) übersichtlich ausgebreitet hat,6 eine systematische Verbindung mit dem
+Phönizischen in der Tat erahnen lässt. Doch eine genealogischeVerwandtschaft der Schriftsysteme bedeutet
+noch nicht eine Verwandtschaft der Sprachen, die damit abgebildet werden. Im Gegenteil hat eine mit
+Abstrahierung und Vereinfachung verbundene Schriftreform, wie sie hier exemplarisch vorliegt, ihren
+Grund meist mit einer kulturellen Separationsbewegung durch Erstarkung einer (neuerlich oder lange
+zuvor eingewanderten) ethnisch-kulturell und oftmals sprachlich distinkten Gruppe der Gesellschaft.
+Für das Abgrenzungsphänomen “Neue herrschende Sprache/Ethnie = neu eingeführte Schrift” gibt es
+eine grosse Zahl an Beispielen. Genannt seien hier nur die prominenten Beispiele Altpersische Schrift
+(infolge Erstarkens der Perser in Elam), Elamische Strichschrift (infolge Erstarkens der Hochland-
+Elamer unter Puzur-Inšušinak im akkadisch geprägten Susa)7 oder die Orchon-Runen (Einführung und
+Abstrahierung der aus dem soghdischen Alphabet entlehnten Schrift infolge Zunahme des soghdischen
+Einflusses in der Mongolei).8 Bei keiner der in diese Kategorie fallenden abstrahierenden
+Schriftübernahmen wurde auch die Sprache übernommen. Aus diesen Gründen müssen meines
+Erachtens für das vielprachige Byblos a priori auch andere Sprachen in Betracht gezogen werden,
+insbesondere das Hurritische, für das in der Levante kulturelle und sprachliche Einflüsse belegt,9 aber
+bisher in Byblos selbst keine Sprachzeugnisse bekannt sind. Jedenfalls sollte vor einem “hunt for
+[semitic] sound values” zwingend eine sprachoffene Strukturanalyse durchgeführt werden – das
+systematischste mir bekannte Werk ist hier Fuls (2019), ein Entwurf für eine sprachunabhängige
+Methode zur Identifizierung von Morphemgrenzen in unentzifferten Schriftsystemen findet sich zudem
+in MÄDER et al. (2018). Jedenfalls reichen einmalige Beispiele von Sequenzen 10 sicherlich nicht aus, um
+Wortgrenzen zu definieren und darauf weitere Hypothesen aufzubauen.
+
+
+5
+      Siehe die vorangehende Fussnote.
+6
+      Von Best und Woudhuizen wird die systematische Ähnlichkeit mit dem phönizischen Alphabet nicht weiterverfolgt, da sie ihr
+     eigenes, auf dem Akrophonie-Prinzip basierendes System entwerfen (siehe weiter unten). Hingegen arbeitet HOCH (1990) an der Idee
+     vielversprechend weiter.
+7
+      Vgl. MÄDER 2021:1.
+8
+      ALTHEIM 1948:6.
+9
+      So MICHEL (2017:267ff.), der eine “influence linguistique hourrite (…) bien attestée dans la région d’Alalakh, d’Emar et de Qatna”,
+     insbesondere aber in Ugarit feststellt. Mit Blick auf religiöse Texte sei zu erkennen, dass “des scribes-prêtres, autrement dit le
+     personnel cultuel, étaient au moins bilingues et capables de transcrire du hourrite, lorsque le rituel le demandait” (ebd.:768); in der
+     Zeit vor dem 14. Jh. v. Chr. war die Hurritische Sprache in der Levante offenbar im Volk verbreitet. Sie wurde im Verlaufe des 14. Jh.
+     zunehmend auf die Schreiber- und Priesterkaste reduziert (SANMARTÍN ASCASO 1999).
+10
+      So WOUDHUIZEN 2007:702.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+-       Aufbauend auf der grafischen Ähnlichkeit wendet Woudhuizen das Akrophonie-Prinzip an:
+Dabei soll der Wortwert, den ein Zeichen z.B. im Ägyptischen annimmt, vom Byblos-Schrifterfinder in
+dessen Sprache übersetzt worden sein, und der Anlaut dieses übersetzten Begriffs sei dann der Lautwert
+des neuen Byblos-Zeichens, womit in Best/Woudhuizens System Lautwert und Form der Byblos-
+Zeichen in vielen Fällen den Lautwerten und Formen der Linear-A-Zeichen entsprechen sollen, von
+welchem sie ebenfalls glauben, es entziffert zu haben.11 Tatsächlich konnte das Akrophonie-Prinzip für
+die Entwicklung der protosinaitischen (und folglich der phönizischen) Schrift nachgewiesen werden.
+Dass dies auch für die Byblos-Schrift gilt, ist aber nicht mehr als eine Hypothese, auf keine weiteren
+Hypothesen aufgebaut werden dürfen, um Zirkelschlüsse zu vermeiden (GEAS-Richtlinien § 3). Etwas
+allgemeiner, dafür umso einleuchtender hat Andreas FULS (2009) die Kritik am von Best/Woudhuizen
+angewandten Akrophonie-Prinzip formuliert. Sie lässt sich folgendermassen zusammenfassen: Für das
+(an sich hypothetische) Rebus-Prinzip (Akrophonie-Prinzip) mussten die Autoren sowohl eine
+zugrundeliegende Sprache als auch die korrekte Identifikation jedes einzelnen Schriftzeichens – d.h.
+welchem ägyptischen Schriftzeichen es entsprechen könnte, was es im Ägyptischen bedeutete und wie
+das ägyptische Wort ins Phönizische übertragen worden sein könnte – annehmen, zusätzlich zu der
+Annahme, dass das Rebus-Prinzip überhaupt angewandt wurde. Hinzu kommt eine vierte Annahme,
+nämlich dass dem Byblos-Zeichen der Lautwert der Anlautsilbe des ins Phönizische übersetzten Wortes
+und nicht der Wortwert (das Logogramm) zugeordnet wurde.
+-       Bests und Woudhuizens Lesungsvorschläge sind insgesamt eine Aneinanderreihung unbestätigter
+(d.h. nicht exo-referentieller) Hypothesen: Auf der Annahme, grafisch-lautliche Entsprechung zu den (von
+ihnen selbst postulierten12 und in der Forschergemeinschaft nicht akzeptierten) Linear-A-Lautwerten sei
+gegeben und grafische Ähnlichkeit zum Phönizischen sei gleichzeitig relevant, baut die Annahme des
+Akrophonie-Prinzips auf, auf der wiederum die semitische Sprachhypothese fusst. Diese dient dann als
+Basis ihrer Lesungen, d.h. Lautwerthypothesen, welche wiederum zirkelschlüssig als Beweis für die
+Richtigkeit aller anderen Annahmen dienen. Gemäss den GEAS-Richtlinien sind aber Zirkelschlüsse
+per Definition endo-referentiell und dürfen zwar als Hypothese formuliert werden, nicht aber als Basis
+weiterer Hypothesen dienen (§3 ii). Zudem sollten Zirkelschlüsse als solche gekennzeichnet, d.h. in
+ihrer Aussagekraft relativiert werden (§3 iii). Ein Beispiel für die unbekümmert zirkelschlüssige
+Vorgehensweise soll hier stellvertretend erwähnt werden: Obwohl die Wortgrenzen nie
+wahrscheinlichkeitsstatistisch ermittelt wurden, wird das sogenannte Triplet 1 identifiziert
+(WOUDHUIZEN 2007:743):  wa-ka-ya-lu ‘overseer’13;  wa-ka-ya-le ‘overseer’14; 
+wa-ka-ya-lim ‘from among the overseers’. Das erste Beispiel auf -u wird mit dem akkadischen Nom. sg.
+verglichen (WOUDHUIZEN 2007:732 “Nominal declension”), das zweite auf -e bleibt kommentarlos
+ohne semitische Entsprechung (die vermeintliche Silbe le passt andernorts in die Übersetzung, was der
+einzige Grund für die Hinzunahme in ein “Triplet” sein dürfte) und das dritte Beispiel auf -lim passt auf
+den ersten Blick perfekt ins semitische Schema (-lim als Obl. pl. gemäss der akk. Deklination) doch bei
+genauerem Hinsehen wird klar, dass das Zeichen  einzig deshalb die Silbe lim zugeordnet bekommt,
+weil eine solche Silbe noch nötig war, um ebendieses semitische Suffix für die semitischen Lesungen
+noch nötig war. Man hat also den Zeichen genau jene Werte zugeschrieben, die man benötigte, um die
+a priori erwarteten bzw. erwünschten lingustischen Strukturen der a priori erwarteten Sprache zu
+erhalten! Dabei ist es wichtig zu betonen, dass es eine unbestätigte Annahme ist, dass die Triplets ein
+paradigmatisches Muster abbilden – die Wortgrenzen könnten auch innerhalb der Triplets zu liegen
+
+11
+     (BEST 2008a:129); BEST & WOUDHUIZEN 1988. Die dort postulierten Lautwerte für Linear A werden, obwohl von der
+     Forschungsgemeinde nicht akzeptiert, von Best und Woudhuizen dann als vermeintlich exo-referentielle Tatsachen für die Byblos-
+     Entzifferung verwendet.
+12
+     Siehe die vorangehende Fussnote.
+13   BYBL
+         c XV = Woudhuizens c 15 (2007:719).
+14   BYBL
+         c II = Woudhuizens c2 (2007:718).
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+kommen, oder aber einzelne Grapheme könnten Logogramme sein. Trotzdem wird die rein
+hypothetische Lautwertzuordnung  lim als Tatsache genommen, um an anderen Textstellen weitere
+semitische Wörter zu “finden”. Und als letzter Schritt werden auf Basis der “gefundenen” Wörter und
+Morpheme gar eine Byblos-Grammatik geschrieben15 und historische Behauptungen aufgestellt.16
+-       Auf graphematischer Ebene machen Best und Woudhuizen methodisch unzulässige
+Zusammenführungen von Formvarianten zu einer Type. Ein Beispiel ist die vermeintliche Identifikation
+der Konjunktion  wa-ya, die zentral für die Entzifferung sei: “Owing to their frequency, especially if
+their various writing forms are taken into consideration, the identification of these conjunctions (…)
+enables us to unravel the structure of the texts of tablets c and d to a great deal (…).” (ebd.:704). Nun
+kommt allerdings im ganzen Korpus  nur gerade drei Mal vor, davon einmal gut leserlich 17 und
+zweimal schlecht bzw. gar nicht leserlich, also faktisch nur in Dunands Abzeichnungen. 18 Dies ist
+keineswegs eine Häufigkeit, die man für die im Semitischen derart häufige Konjunktion ‘und; und aber’
+erwarten würde. Bei genauerer Betrachtung19 zeigt sich, dass, was Woudhuizen im unscheinbaren
+Nebensatz “especially if their various writing forms are taken into consideration” verbirgt, in Wahrheit
+die Hinzunahme der Sequenzen  (mit zwei Attestationen),  (mit ebenfalls zwei Attestationen)
+und  (eine Attestation) bedeutet. Das heisst, dass er völlig grundlos annimmt, dies seien
+Schreibvarianten, obwohl die Tafeln c und d mit klaren Strichen geschrieben sind und die betreffenden
+Grapheme zweifellos intentional anders geschrieben sind, und dieses Vorgehen nicht transparent macht,
+geschweige denn problematisiert. Hier werden also grundlegende Prinzipien der Syllabar-Erstellung (§ 7
+der GEAS-Richtlinien) torpediert mit dem einzigen Ziel, das Textmaterial den eigenen Vorstellungen
+anzupassen.
+-       Die Prinzipien einer transparenten Syllabar-Erstellung werden auch anderweitig verletzt. So
+werden immer dann, wenn eine Sequenz nicht in die ausgedachte Übersetzung passt, unbegründet
+Allographen postuliert: So sollen – um nur eines der vielen Beispiele anzuführen – gemäss WOUDHUIZEN
+(2007:743) einerseits die Sequenzen  ti-ša-da-lu bzw.  ti-ša-da-le für den hurritischen
+Eigennamen Tišatal stehen, andererseits sollen aber auch die Sequenzen  ti-sa2-da-lu bzw.
+ ti-sa2-da-le denselben Namen abbilden. Es wird also und  als Allographen hingenommen,
+und dies ohne ersichtlichen Grund (ausser dem Pässlichmachen der Übersetzung). Dasselbe gilt für ihre
+“prefixed combination”  a-la/le-pi vs.  ḫa-la/le-pi (ebd.:747), wo sie  und  als Allographen
+bzw. orthografische Varianten lesen wollen und gleichzeitig  als Allophon mit den zwei möglichen
+Lautwerten la und le postulieren, ohne dies zu problematisieren oder auch nur zu erwähnen. Dabei ist
+offensichtlich, dass es für solche teilkongruenten Sequenzen zahlreiche mögliche Erklärungen gibt;
+orthografische Variation ist nur eine von vielen, und erst noch eine, die (zusammen mit
+Schreiberfehlern) nur dann postuliert werden darf, wenn die dahinterliegenden Gründe aufgezeigt
+werden können.20 Dies sind nur zwei Beispiele für die zahlreichen nicht falsifizierbaren Annahmen, die
+in ihrer Fülle geradezu zwangsläufig zu einem Glaubenssystem führen.
+
+15
+      WOUDHUIZEN 2007:728-734. Die meisten in dieser Grammatik vorgeschlagenen Morpheme, z.B. (“Enclitic Pronouns”,
+     “Prepositions”, “Conjunctions” oder “Particles” sind monosyllabisch. Dies ist ein weiterer Zirkelschluss, denn wenn man den Zeichen
+     Silbenwerte zuordnet, die in die westsemitische Phonologie passen, ist es nicht schwer, damit einen Text zusammenzufügen, der nach
+     westsemitischer Phonologie klingt.
+16
+      BEST (2008b) will den indo-arischen Götternamen Suruya gefunden haben.
+17    BYBL
+          c IX 7–8.
+18    BYBL
+          d XVII 1–2.
+19
+      Genauere Betrachtung heisst konkret folgendes: Der Leser muss mühselig die Transliteration (WOUDHUIZEN 2007:718-722), auf
+     der keine Zeilennummern angegeben sind, mit den Abzeichnungen (ebd.:742) abgleichen. Die Rekonstruktion der Argumente wird
+     heute durch das digitalisierte, durchsuchbare und alle Zeichenvarianten exakt abbildende Korpus im OCBI wesentlich vereinfacht.
+     Doch auch so ist es noch schwierig, im Dschungel der wohlklingenden Formulierungen die eigentlichen Kernpunkte herauszufiltern
+     und zu prüfen.
+20
+      GEAS-Richtlinien, § 5.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+-       WOUDHUIZEN (2007; vgl. seine Bemerkung auf S. 689) wie auch BEST (2008a) führen führen
+nicht nur keine Autopsie durch – dies ist aus praktischen Gründen verzehilich und in den GEAS-
+Richtlinien auch nicht vorgeschrieben – sondern sie nehmen auch keinen Bezug auf die
+Originalfotografien. Sie vertrauen ohne Skepsis den zwar grundsätzlich zuverlässigen, aber in Einzelfällen
+doch immer wieder ergänzten und normalisierten Abzeichnungen von Maurice Dunand.
+
+
+2.2      Den GEAS-Richtlinien nicht widersprechende, aber im konkreten Fachgebiet problematische
+Vorgehensweisen methodischer Art
+-        Best und Woudhuizen kreieren ihr eigenes System, das bisherige Erkenntnisse negiert. Der bislang
+meines Erachtens vielversprechendste Ansatz ist die Hypothese, dass die Schlusszeile von Tafel c, 
+, für die phönizische Formel b-šnt 7 ‘im Jahre 7’ stehe.21 Dass ein Text so endet, ist in der Tat
+plausibel, und  b sowie  t entsprechen exakt phönizischen Zeichenformen. Mehr noch: Das
+hieratisch-ägyptische Zeichen bzw. ‘Haus’ dürfte Vorbild für das phönizische  b (für phön. bayt
+‘Haus’) gewesen sein.22 Es passt zum in sich abgeschlossenen System von Best und Woudhuizen, dass sie
+den b-šnt-Ansatz und die stringenten Argumente von James E. Hoch ignorieren und die Sequenz
+ als wa-ka-ya-lu ‘overseer’ lesen und dafür komplizierte oder gar keine Erklärungen liefern.
+-        WOUDHUIZEN (ebd.:691; ebenso BEST 2008a) nimmt für den Übernahmeprozess der Byblos-
+Schrift prinzipiell Eklektizismus an, d.h. die Grapheme seien jeweils zu ähnlichen Teilen aus der
+ägyptischen Hieroglyphenschrift, der ägäischen Linear A sowie dem phönizischen Alphabet
+entnommen. Dies ist erstens aus schriftarchäologischer Sicht extrem unwahrscheinlich – bewusst
+eklektische Schriftentlehnungen sind bis auf moderne Einzelfälle wie die Cherokee-Schrift nicht bezeugt
+– und birgt kombiniert mit der ähnlichkeitsbasierten Lautwertzuordnung ein methodisches Problem –
+letztlich stehen für die ca. 100 Byblos-Grapheme mehrere Tausend mögliche Modell-Grapheme zur
+Verfügung, womit es mathematisch geradezu zwingend ist, dass äussere Ähnlichkeiten erkannt und
+erahnt werden können, erst recht bei der grosszügigen Toleranz, die Woudhuizen bei den für seine
+Vorschäge passenden Analogien walten lässt.
+-        Auch auf sprachlicher Ebene wird immer wieder eklektisch gearbeitet, so dass für die
+westsemitischen Entzifferungsvorschläge auch mal mit der ostsemitischen (akkadischen) Grammatik
+argumentiert wird, wenn es hilft. Um nur ein Beispiel zu nennen: Weil BEST (2008b:136) für eine
+Zeichensequenz keine passende Übersetzung parat hat, postuliert er für ein syntaktisch isoliertes
+Zeichen einfach den Lautwert šu, um darin das monosyllabische akkadische Relativpronomen zu
+erkennen. Dies wiederum hilft ihm, andernorts im Text den indo-arischen Gott Suraya zu lesen!
+Überhaupt wierden alle möglichen Wörterbücher durchforstet, namentlich das ägyptische, akkadische,
+aramäische, althebräische, hethitische, hurritische, sumerische (!),23 ugaritische, um alles “übersetzen” zu
+können.
+-        Allgemein mangelt es Woudhuizens und Bests Vollentzifferung generell an Selbstkritik. Ein
+Beispiel ist die vorgeschlagene Interpunktion: Dass  und  aufgrund ihrer Ähnlichkeit zu heutigem
+Punkt Komma als Interpunktion zu lesen seien, scheint möglich, wird aber nicht exo-referentiell (z.B.
+mittels syntaktischer Untersuchung) erhärtet. So müsste zumindest erwähnt werden, dass diese
+Interpunktionen, wenn es denn welche sind, nicht konsequent gesetzt werden. Um dem Problem zu
+21
+      Dieser départ de déchiffrement wird bereits von DHORME (1946), MENDENHALL (1985) und SZAŁEK (2001) verwendet. Alle drei
+     Autoren verfolgen den Ansatz grafischer Ähnlichkeit mit dem Phönizischen mitsamt Übernahme der phönizischen Lautwerte weiter
+     und gelangen – dies zeigt die Willkür der weiteren Schritte – zu vollkommen unterschiedlichen Ergebnissen.
+22
+      HOCH 1990:118f., KAMMERZELL 2001:117, Abb. 2.
+23
+      So soll in BYBLc I 10–12 die Sequenz  lu-ka1-lu gelesen werden und sumerisch lugal ‘König’ bedeuten (WOUDHUIZEN
+     2007:718). Solche Vorschläge erfolgen in voller Überzeugung und ohne die naheliegende Frage zu beantworten, warum gerade das
+     Wort für ‘König’ in der Byblos-Schrift dem Sumerischen entlehnt sei.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+begegnen, dass  in drei Fällen als geminiertes  erscheint, 24 stellt Best die Hilfshypothese auf, dies sei
+ein Semikolon. Er argumentiert gar ansatzweise syntaktisch, wenn er schreibt, “its position at the end of
+the line being in favour of our semicolon”, erwähnt aber nicht, dass dies nur für BYBLc VII 17–18
+zutrifft. An den anderen beiden Stellen (vgl. Fn. 24) steht  mitten in der Zeile. Desweiteren sei 
+das dritte Zeichen, das als Interpunktion fungiere. Ein Hinweis ist laut WOUDHUIZEN (2007:701), dass
+das Zeichen “a marked tendency to feature at the end of a line” aufweise. Die Liste der insgesamt 34
+Vorkommnisse25 von  zeigt aber, dass im ganzen Korpus dieses Graphem 23 Mal innerhalb einer
+Zeile,26 3 Mal am Zeilenanfang und nur gerade 8 Mal am Zeilenende steht. Dieses tendenziöse
+Herauspicken von Pro-Argumenten bei gleichzeitigem Weglassen jeglicher Contra-Evidenz zieht sich
+wie ein roter Faden durch Bests und Woudhuizens Arbeiten. Es klingt auf den ersten Blick nach
+schlüssiger Argumentation, ist aber bei näherer Betrachtung, die durch die unübersichtliche
+Referenzierung und die verschachtelte Formulierung erschwert wird, nichts als ein rhetorisches
+Aufwerten wackliger Hypothesen.
+-        Die fieberhafte Suche nach sogenannten “Kober doublets and triplets” (WOUDHUIZEN
+2007:701) mit dem Ziel, im Fahrwasser der berühmten Linear-B-Entzifferung ein “grid” zu erstellen, in
+dem die Spalten den konsonantischen Anlaut und die Zeilen den vokalischen Auslaut beinhalten, geht
+von der gänzlich aus der Luft gegriffenen Annahme aus, dass die Byblos-Zeichen generell offene Silben
+repräsentieren.27 Die Behauptung (ebd.), dass “alternating signs in final position of otherwise identical
+combinations may be indicative of nominal declension which in syllabic writing can only find
+expression by signs rendering one and the same consonant but of which the vowel differs” entbehrt
+jeglicher Grundlage. Selbstverständlich erscheinen in jeder denkbaren Codierungsart Muster, die
+äusserlich einem paradigmatischen (d.h. mit vermeintlichen Suffixen versehenen “Wortstämmen”)
+System ähneln.28 Erst recht müssen es nicht, wie im Linear B, Verben sein. Um es anschaulich zu
+formulieren: Wenn in einem deutschsprachigen alphabetischen Text die Sequenzen PARABEL, RABE,
+ODER ABER, BLAMABEL und AM ABEND vorkommen, käme man mit derselben Methodik zum
+Schluss, AB sei ein Nominalstamm mit den Präfixen M und R sowie mit den Suffixen L und N.
+Theoretischer ausgedrückt: Solange die Wortgrenzen nicht bekannt sind, sind vermeintliche
+paradigmatische Muster in jeder informationstragenden Sequenz vorhanden.
+-        Alle nicht ins semitische Schema passenden Sequenzen werden als (ansonsten meist nicht
+attestierte) Eigennamen ausgegeben. Einige Namen (z.B. “Nureyala”) werden kommentarlos in die
+Übersetzung eingebaut und als “Onomastic Evidence” zusammenhangslos in die Forschung eingeführt
+(WOUDHUIZEN 2007:722), für andere wird immerhin eine mögliche semitische Etymologie gefunden.
+Es gäbe noch zahlreiche weitere Punkte zu bemängeln. Für eine generelle Kritik an Woudhuizens und
+Bests Methodik verweisen wir auf VITA & ZAMORA 2018:96ff. und FULS 2009 (zu Woudhuizens
+Byblos-Entzifferungsvorschlag) sowie PAYNE 2016 (zu den methodischen Fehlleistungen in
+Woudhuizens Beiträgen zur Luwischen Hieroglyphenschrift, insbesondere der selektiven Missachtung
+der Konventionen und Erkenntnisse der Communauté scientifique). So muss man zum gleichen Schluss
+
+
+24   BYBL
+         c Ⅰ 4–5; BYBLc VII 17–18 sowie BYBLd VII 7–8.
+25
+      Um eine solche Liste zu erstellen, kann im OCBI das betreffende Zeichen ins Feld “Search” kopiert werden. Damit nur die
+     gewünschte grafische Form (ohne ihre möglicherweise funktionsgleichen Formvarianten) aufgelistet wird, muss vorgängig in den
+     “Settings” das Syllabar auf “Codepoint order” eingestellt werden.
+26
+      Unter die Kategorie “innerhalb der Zeile” zählen hier auch jene Fälle, wo  vor einem Inschriftenabbruch (im OCBI mit 
+     symbolisiert) steht. Zwei der Fälle (BYBLa IV 11 sowie BYBLn II 2) sind als schlecht erkennbar (  ) markiert.
+27
+     Starke Argumente dafür, dass nicht nur Silben des Typs CV, sondern auch VC und CVC vorkommen, liefert Garbini (2009).
+28
+      Im Sinne von Claude E. Shannons Informationstheorie ist Schrift notwendigerweise teil-entropisch. Denn die beiden Extreme
+     “minimale Entropie” (d.h. die Wiederholung eines einzigen Zeichens) wie auch “maximale Entropie” (die zufällige
+     Aneinanderreihung verschiedener Zeichen, d.h. sogenanntes Rauschen) beinhalten per Definition keine Information (vgl.
+     BALASUBRAHMANYAN & NARANAN 2005:882).
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+kommen, wie es schon GARBINI (1988:129) in seiner Rezension zu Mendenhalls Entzifferungsvorschlag
+formuliert hat: «L’autore [...] presenta in realtà più le sue conclusioni che il suo metodo.»
+
+
+3        Der Phonetisierungsgrad der Byblos-Schrift gemäss FULS (2019)
+All diese methodischen Unzulänglichkeiten im Blick, ist es zwar möglich, dass der
+Entzifferungsvorschlag ganz oder in Teilen zutreffend ist, aber überprüfbar, d.h. falsifizierbar im
+Popperschen Sinne, ist er nicht. Es bleibt die Frage, ob man aufzeigen kann, dass er falsch ist, und seit
+Kurzem ist diese Frage mit Ja zu beantworten. Mit einem rein mathematischen – meines Erachtens für
+die Disziplin der Schriftentzifferung bahnbrechenden – Vorgehen hat der Naturwissenschaftler Andreas
+Fuls aufgezeigt, dass man rein aufgrund der Häufigkeitsverteilung der Grapheme eines beliebigen
+Schriftsystems erstaunlich exakt berechnen kann, welcher Anteil der Grapheme einen phonetischen und
+welcher einen logografischen Wert abbildet. Als Resultat wissen wir nicht, welche Zeichen
+Phonogramme und welche Logogramme sind, aber wir kennen deren prozentuales Verhältnis. FULS
+(2019:12ff.) testet die Formel, die auf dem Zipfschen Frequenzklassengesetz bzw. dem von NARANAN
+& BALASUBRAHMANYAN (2005) weiterentwickelten Potenzgesetz basiert, an zahlreichen entzifferten
+Schriftsystemen und zeigt vereinfacht gesagt auf, dass voll phonetisierte Schriftsysteme (d.h. Alphabete)
+einen Exponenten G zwischen 0 und –0,2 haben; zu 60 bis 90% phonetisierte (d.h. syllabische)
+Schriftsysteme einen Exponenten G zwischen –0,2 und –1,0; zu 20 bis 60% phonetisierte (d.h. logo-
+syllabische) Schriftsysteme einen Exponenten G zwischen –1,0 und –1,5; und schliesslich
+Schriftsysteme, die keine rein phonetischen Zeichen aufweisen (d.h. logographische Schriften sowie
+Wörterlisten) einen Exponenten G zwischen –1,5 und –2,0.29 Für die Byblos-Schrift errechnet Fuls
+einen Exponenten G = 1,077; somit liegt der Phonetisierungsgrad bei 69%. Zwar kann dieser Wert bei
+vergrössertem Korpus (d.h. neuen Inschriften, die womöglich einer anderen Textgattung angehören)
+noch leicht schwanken,30 allerdings in für unsere Untersuchung vernachlässigbarem Ausmass. Das
+heisst, man kann – ohne die Byblos-Schrift entziffert zu haben – mit Sicherheit voraussagen, dass
+ungefähr ein Drittel der Grapheme Logogramme sind. Woudhuizens und Bests «Entzifferung» enthält
+aber auf 84 Grapheme nur gerade 5 Logogramme,31 d.h. weniger als 7%. Ihre Lesung ist als Ganzes also
+erwiesenermassen falsch.
+
+
+4       Überprüfung anhand der ersten Bilingue
+Unterdessen sind die Lautwerte von Woudhuizen und Best übrigens auch überprüfbar: Garbini et al.
+2004 haben ein ägyptisierendes Zylindersiegel publiziert, das in Byblos-Schrift die Namen der drei
+Töchter von Nofretete und Echnaton wiedergibt. Die drei Namen sind auf dem ägyptischen Original,
+der Familienstele, in ägyptischer Schrift notiert. Und die Kopie der Familienstele aus Byblos zeigt drei
+kurze Inschriften genau dort, wo auch auf dem Original die Namen der Töchter stehen. Es bleibt somit
+kein Zweifel, dass die drei Inschriften BYBLra, BYBLrb und BYBLrc die drei Namen  anch-es-en-pa-
+a-mun,  me-ʕ-ke(t)-ATON und  me-ri-t-ATON wiedergeben.32 Setzt man die
+Lautwerte von Woudhuizen und Best ein, entsteht in keiner Weise eine schlüssige Lautabfolge, und
+schon gar nicht werden die drei Namen Anchesen-pa-Aton, Merit-Aton und Meket-Aton auch nur
+annähernd wiedergegeben.33 Diese missglückte Prüflesung ist der endgültige Beweis, dass die
+Entzifferung von Woudhuizen und Best falsch ist.
+29
+      Fuls hat also nebenbei aufgezeigt, dass die Einteilung in die Codierungsarten „alphabetisch“, „syllabisch“, „logosyllabisch“ und
+     „logografisch“ nicht wie bisher angenommen (vgl. DANIELS & BRIGHT u.v.a) kategorisch, sondern graduell ist.
+30
+      Pers. Mitteilung A. Fuls.
+31
+      Die von ihm postulierten Logogramme sind TU; ARA; YA1; YÁ; AES.
+32
+      Siehe Mäder (forthcoming).
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+
+
+
+5       Schlussfolgerung
+Alle grundlegenden Prinzipien, denen ein solider Entzifferungsansatz unterliegen sollte, werden
+missachtet. Die Unterscheidung zwischen interner (endo-referentieller) und externer (exo-referentieller)
+Evidenz wird komplett missachtet, und folglich wird das Prinzip, wonach Lautwertzuordnungen nur
+auf Basis von externen (z.B. ikonographisch, graphisch-syntaktisch oder durch eine Bilingue
+abgesicherten) Fakten gemacht werden dürfen, missachtet. Zudem führt das übermässige Postulieren
+von Allographen und Allophonen, das allein dazu dient ein Grid von offenen Silben zu erstellen und
+westsemitische Lesungen pässlich zu machen, zu einer derart grossen Anzahl linguistischer
+Interpretationsmöglichkeiten, dass die Übersetzungen nicht annähernd falsifizierbar sind. Die
+Unfalsifizierbarkeit der Resultate ist allein Grund genug, den Entzifferungsvorschlag abzulehnen. Sie
+beweist aber noch nicht, dass er nicht korrekt ist. Der Beweis, dass die Übersetzungen von
+Woudhuizen/Best falsch sind, wird in der vorliegenden Arbeit fdurch zweierlei Methoden erbracht:
+Erstens kann man sprchunabhängig, d.h. rein aufgrund der Frequenzverteilung der einzelnen
+Grapheme, den Anteil von Phonogrammen gegenüber Logogrammen exakt berechnen. Die lediglich 5
+postulierten Logogramme entsprechen nicht den errechneten, d.h. zu erwartenden 20-30
+Logogrammen. Zweitens kann man zur Überprüfung des Vorschlags die postulierten Lautwerte auf drei
+Eigennamen anwenden, die aufgrund einer partiellen Bilingue – der Byblos-Version der Berliner
+Familienstele mit den im Original in ägyptischen Hieroglyphen geschriebenen Namen von Meritaton
+(), Meketaton () und Ankhesen(pa)amun () – bekannt sind. Die
+Anwendung der von Woudhuizen und Best postulierten Lautwerte auf die Zeichenabfolgen dieser
+Namen ergibt aber kein schlüssiges Resultat. Aus all diesen Gründen ist der hier untersuchte
+Entzifferungsvorschlag mit Sicherheit unkorrekt.
+
+
+
+Literatur
+
+ALTHEIM, F.
+1948   Hunnische Runen. Halle: M. Niemeyer.
+
+BALASUBRAHMANYAN, V.K. & NARANAN, S.
+2005      Entropy, information, and complexity, 878–891, in G. ALTMANN, & R.G. PIOTROWSKI, (ed.), Quantitative
+Linguistik: Ein Internationales Handbuch, Berlin.
+
+BEST, J.
+2008a Breaking the Code of the Byblos Script, Ugarit-Forschungen 40, 129–33.
+
+BEST, J.
+2008b Suruya in the Byblos Corpus, Ugarit-Forschungen 40, 135–41.
+
+BEST, J. & WOUDHUIZEN, F.
+
+33
+      Dasselbe gilt übrigens für die Lautwerte von Mendenhall (1985). Mendenhalls Entzifferungsvorschlag wird heute von Brian Colless
+     vehement vertreten. Die Nichtübereinstimmung der zu erwartenden drei Namen mit den von ihm weiterhin vertretenen Lautwerten
+     wird von Colless mit diversen schlecht verständlichen Hilfshypothesen wegerklärt. Dies zeigt eindrücklich die Gefahr, wenn man in
+     einer Art Glaubensbekenntnis an einem Denksystem festhält. Sobald die Faktenprüfung das Denksystem infrage stellt, muss
+     zwangsläufig die Faktenprüfung in Zweifel gezogen werden. Colless (2019:1) schreibt in einer Art umgekehrter Logik: „[The]
+     suggestion is that the three columns of Semitic text provide the daughters' names (Michael Mäder), and this would assist us in
+     deciphering this script. However, this is not the result we get when we apply the system of decipherment proposed by George
+     Mendenhall in 1985, and adapted by myself as the West Semitic logo-syllabary.“
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+1988   Ancient Scripts from Crete and Cyprus. (Publications of the Henri Frankfort Foundation 9). Leiden / New York /
+København / Köln.
+
+BEST, J. & RIETVELD, L.
+2010     Structuring Byblos Tablets c and d. Ugarit-Forschungen 42, 15–40.
+
+COLLESS, B.
+2019     A West Semitic Syllabic Cylinder from Byblos. https://cryptcracker.blogspot.com/2019/06/west-semitic-syllabic-
+cylinder.html
+
+DANIELS, P.T.
+1996   The First Civilizations, 21–28, in: P. DANIELS, & W. BRIGHT (ed.), The World’s Writing Systems. Oxford.
+
+DHORME, É.
+1946  Déchiffrement des inscriptions pseudohiéroglyphiques de Byblos, Syria 25, 1–35.
+
+DUNAND, M.
+1945  Byblia Grammata: Documents et recherches sur le développement de l’écriture en Phénicie, Beirut.
+
+FULS, A.
+2009     Methoden zur Entzifferung von Schriftsystemen, Megalithos 10/3, 98–104.
+
+FULS, A.
+2019     Classifying undeciphered writing systems (8–19), in A. FULS (Hrsg.); Deciphering the Phaistos Disk and other Cretan
+Hieroglyphic Inscriptions. Epigraphic and Linguistic Analysis of a Minoan Enigma. Hamburg: Tredition.
+
+GARBINI, G.
+1988    Recensione G. E. Mendenhall, The Syllabic Inscriptions from Byblos, Rivista di Studi Fenici 16/1, 129–131.
+
+GARBINI, G.; LUISELLI, M.M. & DEVOTO, G.
+2004    Sigillo di età amarniana da Biblo con iscrizione, Rendiconti dell’Accademia Nazionale dei Lincei 15, 377–390.
+
+GARBINI, G.
+2009    Decifrazione e origine della scrittura pseudo-geroglifica di Biblo, in: La scrittura nel Vicino Oriente antico. Atti del
+Convegno internazionale, Milano, 26 gennaio 2008. 37-62.
+
+HABICHT, M.E.
+2011   Nofretete und Echnaton. Das Geheimnis der Amarna-Mumien, Leipzig.
+
+HOCH, J.E.
+1990      The Byblos Syllabary: Bridging the Gap Between Egyptian Hieroglyphs and Semitic Alphabets, Journal of the
+Society for the Study of Egyptian Antiquities 20, 115–124.
+
+KAMMERZELL, F.
+2001     Die Entstehung der Alphabetreihe, in: D. BORCHERS et al. (Hrsg.): Hieroglyphen, Alphabete, Schriftreformen.
+Studien zu Multilateralismus, Schriftwechsel und Orthographieneuregelungen. Göttingen. 117–158.
+
+KOBER, A.
+1948   The Minoan scripts. Facts and theory. American Journal of Archaeology 52/1, 82–103.
+
+MÄDER, M.
+2021   Linear Elamite (s. v.), in: Encyclopedia of Ancient History: Asia and Africa. New Jersey.
+
+MÄDER, M.
+(forthc.) Lautwertvorschläge zum Byblos-Syllabar anhand der ersten bekannten Bigraphe. Ägypten und Levante.
+Begleitpapiere zum Entzifferungstool (Assessing Decipherment Attempts Series 1)      No. 2024/1
+________________________________________________________________________________________________
+
+
+MÄDER, M.; BALMER, ST.; PLACHTZIK, S. UND RAWYLER, N.
+2018      Sequenzanalysen zur elamischen Strichschrift, in: B. MOFIDI-NASRABADI, D. PRECHEL, A. PRUẞ (ed.), Elam and
+its Neighbors. Recent Research and New Perspectives. Proceedings of the international congress held at Johannes Gutenberg
+University Mainz, September 21–23, 2016 (Elamica 8), 49–104.
+
+MENDENHALL, G.E.
+1985  The Syllabic Inscriptions from Byblos, Beirut.
+
+MICHEL, P.M.
+2017   L’emprunt lexical à Ougarit: indication(s) sur les pratiques rituelles ? Ugarit-Forschungen 48, 767–785.
+
+NARANAN, S. & BALASUBRAHMANYAN, V.K.
+2005     Power Laws in Statistical Linguistics, 716–738, in: G. ALTMANN, & R.G. PIOTROWSKI, Quantitative Linguistik:
+Ein Internationales Handbuch, Berlin.
+
+OCBI: Online Corpus of Byblos Inscriptions, https://center-for-decipherment.ch/tool/#byblos.
+
+PAYNE, A.
+2016    FRED C. Woudhuizen: Selected Luwian Hieroglyphic Texts (Rezension), Orientalistische Literaturzeitung 111(4–5),
+41–42.
+
+SANMARTÍN ASCASO, J.
+1999      Sociedades y lenguas en el medio sirio-levantino del II milenio a.C. : Ugarit y lo hurrita, Aula orientalis: revista de
+estudios del Próximo Oriente Antiguo 17/18, 113–123.
+
+SANTONI, A.
+2019     Mnamon – Ancient writing systems in the Mediterranean: A critical guide to electronic resources.
+http://mnamon.sns.it/index.php?page=Scrittura&id=3&lang=en
+
+SOBELMAN, H.
+1961   The proto-byblian inscriptions – a fresh approach, Journal of Semitic Studies 6/2, 226–245.
+
+SZAŁEK, B.Z.
+2001    The Proto-Byblian Inscriptions in the light of Heuristics and Cryptology, Szczecin.
+
+VITA, J.-P. & ZAMORA, J.Á.
+2018      The Byblos Script, 75–102, in: Ferrara, Silvia, & Valério, Miguel: Paths into Script Formation in the Ancient
+Mediterranean. SMEA NS Supplemento 1.
+
+WOUDHUIZEN, F.
+2007 On the Byblos Script. Ugarit-Forschungen 39, 689–755.
+

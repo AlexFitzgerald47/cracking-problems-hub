@@ -1,0 +1,84 @@
+==============================================================================
+P1.  OCBI'S OWN MIRROR TAXONOMY
+==============================================================================
+  OCBI forms explicitly named '<X> gespiegelt' with a locatable base form:
+    E40D   b VII 1   Fahne gespiegelt                  <-> base E436   d VI 10  Fahne
+    E40E   b VII 2   die Eins gespiegelt               <-> base E453   d XXXI 8  die Eins
+    E463   c III 5   Kreuzaxt / gekippter Stuhl gespiegelt  <-> base E442   d XIV 7 Kreuzaxt / gekippter Stuhl
+    E46B   c V 3   Stuhl gespiegelt                    <-> base E41D   d II 3   Stuhl
+    E486   f IV 5   Komma gespiegelt                   <-> base E426   d III 7  Komma
+    E4B0   Rb II 1   Die Zwei gespiegelt               <-> base E47D   e I 6   die Zwei
+    E4D1   Y VI 2   Ypsilon auf Kopf gespiegelt        <-> base E4A0   q I 1   Ypsilon auf Kopf
+    E4E0   L III 1   das K gespiegelt                  <-> base E422   d II 6   das K
+    E4E2   L XII 1   Palme gespiegelt                  <-> base E469   c V 1   Palme
+    E4FC   Q I 4   Hängender Rechts-Haken / Blitz gespiegelt  <-> base E4A1   q I 4   Hängender Rechts-Haken / Blitz
+
+  The two 'me' forms:
+    E49A   m II 3   das Z gerundet
+    E4B0   Rb II 1   Die Zwei gespiegelt
+    E400   b I 5   das Z
+    E47D   e I 6   die Zwei
+  E4B0 is named the mirror of 'die Zwei'.  The only form OCBI names
+  'die Zwei' is E47D.  E49A is named a variant ('gerundet') of 'das Z'
+  (E400).  On OCBI's own taxonomy E49A and E4B0 are variants of two
+  DIFFERENT base signs, and nothing in the source calls them mirrors of
+  each other.
+
+==============================================================================
+P2.  GEOMETRY: CALIBRATED MIRROR TEST
+==============================================================================
+  positive controls -- distance between each OCBI-declared mirror pair
+  after mirroring one of them (lower = better match):
+    0.0000   E4E2   vs mirror(E469  )   palme
+    0.0029   E46B   vs mirror(E41D  )   stuhl
+    0.0029   E4D1   vs mirror(E4A0  )   ypsilon auf kopf
+    0.0785   E40D   vs mirror(E436  )   fahne
+    0.0839   E463   vs mirror(E442  )   kreuzaxt / gekippter stuhl
+    0.1115   E4FC   vs mirror(E4A1  )   hängender rechts-haken / blitz
+    0.1401   E486   vs mirror(E426  )   komma
+    0.2075   E40E   vs mirror(E453  )   die eins
+    0.2353   E4B0   vs mirror(E47D  )   die zwei
+    0.3669   E4E0   vs mirror(E422  )   das k
+    positive-control mirror distance: median 0.0977  max 0.3669
+
+  negative controls -- 4000 random form pairs, same statistic:
+    median 0.3484   5th pct 0.2244   1st pct 0.1870
+
+  THE CLAIM UNDER TEST:
+    E4B0 vs mirror(E49A)   [the kernel's ME allograph claim]   d=0.3427   better than 52.5% of random pairs
+    E49A vs mirror(E4B0)   [same, other orientation]           d=0.3427   better than 52.5% of random pairs
+    E4B0 vs mirror(E47D)   [OCBI's own naming: 'die Zwei gespiegelt'] d=0.2353   better than 92.5% of random pairs
+    E49A vs mirror(E400)   [OCBI's own naming: 'das Z gerundet' vs 'das Z'] d=0.2673   better than 83.8% of random pairs
+    E49A vs E400 unmirrored [same-family control]              d=0.1802   better than 99.2% of random pairs
+    E4B0 vs E47D unmirrored [same-family control]              d=0.2529   better than 88.4% of random pairs
+
+  Also: is the pair even the same size?  OCBI path lengths ('plen'):
+    E49A   plen=1019   m II 3   das Z gerundet
+    E4B0   plen=655    Rb II 1   Die Zwei gespiegelt
+    E400   plen=594    b I 5   das Z
+    E47D   plen=986    e I 6   die Zwei
+
+==============================================================================
+P3.  SAME TEST, BUT GIVING THE CLAIM ITS BEST SHOT
+==============================================================================
+  P2 fixed the mirror axis to vertical.  Here the mirrored shape is also
+  rotated to whatever angle minimises the distance (5-degree grid), and
+  isotropic scale is already normalised.  Both controls get the same
+  treatment, so the comparison stays fair.
+  positive controls, best-rotation mirror distance:
+    0.0000   E4E2   vs best-rotated mirror(E469  )  palme
+    0.0029   E46B   vs best-rotated mirror(E41D  )  stuhl
+    0.0029   E4D1   vs best-rotated mirror(E4A0  )  ypsilon auf kopf
+    0.0785   E40D   vs best-rotated mirror(E436  )  fahne
+    0.0839   E463   vs best-rotated mirror(E442  )  kreuzaxt / gekippter stuhl
+    0.1070   E4FC   vs best-rotated mirror(E4A1  )  hängender rechts-haken / blitz
+    0.1139   E486   vs best-rotated mirror(E426  )  komma
+    0.2021   E40E   vs best-rotated mirror(E453  )  die eins
+    0.2262   E4B0   vs best-rotated mirror(E47D  )  die zwei
+    0.3357   E4E0   vs best-rotated mirror(E422  )  das k
+  negative controls (400 random pairs): median 0.2731  5th pct 0.1882  1st pct 0.1699
+
+  CLAIM  E4B0 vs best-rotated mirror(E49A):  d=0.2259
+         better than 79.8% of random pairs; 8 of 10 genuine OCBI mirror
+         pairs score better.
+  CLAIM  E4B0 vs best-rotated mirror(E47D) [OCBI's own pairing]: d=0.2262

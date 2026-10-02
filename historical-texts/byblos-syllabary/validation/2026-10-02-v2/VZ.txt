@@ -1,0 +1,1306 @@
+                                                      es
+                                                        tra
+                                                         tto
+STUDI MICENEI ED EGEO-ANATOLICI
+NUOVA SERIE
+
+SUPPLEMENTO 1
+
+
+
+Paths into Script Formation
+in the Ancient Mediterranean
+edited by
+Silvia Ferrara and Miguel Valério
+
+
+
+
+                                    Edizioni Quasar
+                                                                          es
+                                                                            tra
+                                                                             tto
+STUDI MICENEI
+ED EGEO-ANATOLICI
+NUOVA SERIE
+SUPPLEMENTO 1
+
+è una pubblicazione del Consiglio Nazionale delle Ricerche, Roma
+
+ISBN    978-88-7140-898-9
+
+
+Direttore / Editor-in-chief
+Anna D’Agata (CNR, Roma)
+
+
+
+
+Undertaken with the assistance of
+Institute for Aegean Prehistory (INSTAP), Philadelphia
+*
+
+Printed with the support of
+Gerda Henkel Stiftung, Düsseldorf
+*
+
+The editors are grateful to Judith Weingarten for revising
+the English of the original manuscript
+
+
+
+
+Immagine di copertina / Cover illustration
+Writing Travels the Sea, drawing by Miguel Valério based on signs
+from the Cretan Hieroglyphic, Byblos and Anatolian Hieroglyphic scripts
+
+
+Stampa e distribuzione / Printing and distribution
+Edizioni Quasar di Severino Tognon s.r.l.
+Via Ajaccio 41-43 – 00198 Roma
+tel. +39 0685358444, fax +39 0685833591
+email: info@edizioniquasar.it
+www.edizioniquasar.it
+
+© 2018 CNR - Consiglio Nazionale delle Ricerche
+Autorizzazione Tribunale di Roma nr. 288/2014 del 31.12.2014
+                                                                            es
+                                                                              tra
+                                                                               tto
+SOMMARIO
+
+
+
+
+Anna Lucia D’Agata
+Preface                                                                         7
+Silvia Ferrara, Miguel Valério
+Introduction                                                                    9
+Image-Bound Scripts at the Inception of Writing
+1. Roeland P.-J.E. Decorte
+The Origins of Bronze Age Aegean Writing: Linear A,
+Cretan Hieroglyphic and a New Proposed Pathway of Script Formation             13
+2. Mark Weeden
+Hieroglyphic Writing on Old Hittite Seals and Sealings?
+Towards a Material Basis for Further Research                                  51
+Adaptations: Between Pictorialism and Schematism
+3. Juan Pablo Vita, José Ángel Zamora
+The Byblos Script                                                              75
+4. Miguel Valério
+Cypro-Minoan: An Aegean-derived Syllabary on Cyprus (and Elsewhere)           103
+5. Javier de Hoz
+The Southwestern Palaeo-Hispanic Script:
+State of Knowledge, Hypotheses and Controversies                              129
+6. Ignasi-Xavier Adiego
+Local Adaptations of the Alphabet among the Non-Greek Peoples of Anatolia     145
+7. Alex de Voogt
+The Meroitic Writing System: Change and Variation                             163
+Patterns and Diversity: A World of Possibilities
+8. Gordon Whittaker
+Aztec Hieroglyphic Writing: A Comparative Perspective                         173
+9. Piers Kelly
+The Invention, Transmission and Evolution of Writing:
+Insights from the New Scripts of West Africa                                  189
+                                                                                                                                   es
+                                                                                                                                     tra
+                                                                                                                                             tto
+CHAPTER 3
+
+THE BYBLOS SCRIPT
+
+Juan-Pablo Vita, José-Ángel Zamora
+
+
+Summary
+The discovery of the first pseudo-hieroglyphic inscription in 1929 in the city of Byblos (modern Jbeil, Lebanon) by Maurice
+Dunand marks the beginning of the modern history of this type of inscriptions, the current corpus currently being made
+up of about fifteen texts. Written in a pictographic signary, probably a syllabary and seemingly Egyptian-inspired, almost
+one hundred different signs are attested. These inscriptions were all found in Byblos in unclear archaeological contexts (they
+are usually dated from the early stages of the second millennium BC) and are incised on various supports. The area and
+period of reference might suggest that the language used in these texts is Northwest Semitic, though no internal evidence
+supports this claim. Yet, despite numerous efforts, the script must still be considered as undeciphered. Notwithstanding
+all the difficulties attached to this epigraphic corpus, the pseudo-hieroglyphic script is highly significant for the history of
+ancient writing. It reveals that local scripts other than Egyptian hieroglyphic and Mesopotamian cuneiform systems existed
+in the Syro-Palestine area prior to or simultaneous with the first linear alphabet or alphabets. Syria-Palestine in the second
+millennium BC thus appears to be a hotbed of disparate languages and scripts which fostered the development of new
+systems. This chapter will review the history of research, the chronological issues, the morphology of signs and the layout
+of lines, the direction of the script, punctuation marks, etc. An internal analysis of the script system will also be attempted,
+with the due caveat that this is an undeciphered script recording an unknown language. We will examine the possible stems,
+declension patterns, suffixes, logograms, etc. The ultimate purpose is not to identify the underlying language, but rather to
+gain a greater understanding of how this script works.
+
+
+INTRODUCTION
+In the late 1920’s and early 1930’s a small group of texts, carved on a couple of metal tablets, some fragments of
+stone stelae and several bronze spatulas, was discovered during Dunand’s archaeological excavations at Byblos (Fig.
+1). They were written, probably in the second millennium BC, in a linear script usually called pseudo-hieroglyphic
+of Byblos due to the resemblance of its signs, noticeably pictographic, to Egyptian hieroglyphs.
+        Nevertheless, the designation ‘pseudo-hieroglyphic of Byblos’ poses some issues. While the geographi-
+cal reference is quite appropriate to refer to the script known chiefly in pre-classical Byblos (though it is not
+certain that the script actually originated in the city), the adjective ‘pseudo-hieroglyphic’ seems inferential
+(as it a priori links its name to the Egyptian script)1 and unclear (it may apply to any, even non epigraphic,
+hieroglyph-like element).2 Other possibly more accurate options, such as ‘Byblos syllabary’ (or the bolder
+variant ‘Canaanite syllabary’), also presupposes conclusions on its functioning and/or historical use. The least
+problematic designation given to this script consequently alludes exclusively to the place the documents were
+mainly found: ‘the Byblos script’. While not entirely trouble-free3 when other terms could perhaps be more
+
+
+
+1 As we shall see, the resemblance of the signs to Egyptian hieroglyphs actually originated the term. As a reference to a similar graphical
+system, the term is equally inappropriate.
+2 In archaeological literature the term “pseudo-hieroglyphic inscriptions” is used on some occasions to refer to those using Egyptian signs,
+either imitating them or for purely decorative reasons, without conveying a coherent text.
+3 The script dealt with here is not the only script attested in Byblos. In fact, the Greek name of the city is used to identify other scripts
+and groups of documents such as the Phoenician inscriptions from the first millennium BC found at the site (as both the language and the
+script used in these inscriptions constitute clearly differentiated variants within the Phoenician corpus). As a matter of fact, in that context,
+“the Byblos script” would refer to the palaeographic variant of the Phoenician linear alphabet used in the city.
+
+SMEA NS SUPPL. 1, 2018, 75-102
+                                                                                                                            es
+76 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                              tra
+                                                                                                                                      tto
+                       Byblos/Jbeil
+
+
+
+
+Fig. 1. Map of Lebanon showing the location of modern Jbeil, ancient Byblos (on Google Maps) and aerial photograph of the city’s archaeo-
+logical area (after Francis-Allouche, Grimal 2012, fig. 1).
+
+
+
+appropriate,4 ‘the Byblos script’ will be the term used herein (we will refer to the sources as ‘documents in the
+Byblos script’).
+       This paper will produce a detailed account of the corpus in the Byblos script and of its features, its geograph-
+ical and chronological framework, and the various theories regarding its formation. Finally, brief conclusions and
+final considerations will be presented.
+
+
+CORPUS OF TEXTS
+
+Dunand’s inscriptions
+The modern history of inscriptions goes back to 1929 when French archaeologist Maurice Dunand found the first
+instance of this script during his eighth archaeological campaign at the ancient city of Byblos (modern Lebanon).
+One year later Dunand published the find, a fragment of a stela engraved with an, until then, unknown script
+(Dunand 1930).
+       Later campaigns unveiled further inscriptions in the Byblos script. In 1945 Dunand published in one vol-
+ume, Byblia Grammata, all the inscriptions found during his excavations at Byblos with the purpose of reaching
+an improved knowledge of the origin and development of the alphabet. He gathered different types of inscriptions
+from different periods, including ten inscriptions in the Byblos script. Following the order in which they were
+found, he identified them with letters a to j. They consisted of four stelae (a, g, h, j), four spatulas (b, e, f, i) and
+two bronze tablets (c, d).
+
+
+4 Sznycer (1975, 82) suggested using the term “Gublite” to refer to this script, derived from the local name of the city, Gubla or Gebel.
+The label “Gublian script” would indeed reduce misunderstandings since, in this way, ‘Byblos’ or Byblian’ would thus be used to refer
+only to inscriptions from the first millennium BC (in accordance with the later Greek version of the name for the city beyond a mere
+conventionalism). His proposal, however, has had little influence.
+                                                                                                            es
+                                                                                            The Byblos Script        77
+
+
+
+
+                                                                                                              tra
+                                                                                                                     tto
+     A few years later Dunand published four further inscribed fragments of stelae, which he named from k to n
+(Dunand 1978). In total, he located and published the fourteen texts in Byblos script presented herein.
+
+Tablets
+— Tablet c (Fig. 2)
+Editio princeps: Dunand 1945, 74-76.
+Material: Bronze.
+Number of lines: 15 (A: 13 + B: 2).
+Total number of signs (visible or partially visible): 225.
+Number of diverse signs: 46 + 3.
+Direction of text: From right to left. This is demonstrated by the fact that lines start right next to the right edge of
+the piece and mostly finish before reaching the end of the left edge (including several consecutive lines, thus ruling
+out the possibility of a boustrophedon text). Unlike the Mesopotamian practice, in order to read the reverse the
+tablet needs to be turned on a theoretical vertical axis without inverting the obverse (as we would nowadays turn
+the pages of a book).
+Dividers: No division lines between lines. No dots, lines or division spaces between letters.
+Material segmentation indicators: Lines that have blank beginnings or ends.
+
+
+
+
+Fig. 2. Photograph and drawing of Tablet c (Dunand 1945, pl. IX, fig. 28).
+                                                                                                                 es
+78 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                   tra
+                                                                                                                           tto
+— Tablet d (Fig. 3)
+Editio princeps: Dunand 1945, 76-78.
+Material: Bronze.
+Number of lines: 41 (A: 22 + B: 19).
+Total number of signs (visible or partially visible): Approx. 457 + 3 numerals.
+Number of diverse signs: 65 + 3.
+Direction of text: From right to left. In this case, the reverse was read by turning the tablet on a theoretical horizontal
+axis, turning the back upside down (that is, identical to Mesopotamian custom).
+Dividers: No division lines between lines. No dots, lines or division spaces between letters.
+Material segmentation indicators: Non-existent.
+
+
+
+
+                                                                            Fig. 3. Photograph and drawing of Tablet d (Dunand
+                                                                            1945, pl. X, fig. 29).
+                                                                                                       es
+                                                                                        The Byblos Script      79
+
+
+
+
+                                                                                                         tra
+                                                                                                               tto
+Stelae
+— Stela a (Fig. 4)
+Editio princeps: Dunand 1930; 1945, 71-73.
+Material: Limestone.
+Number of lines: 10.
+Total number of signs (visible or partially visible): 123.
+Number of diverse signs: 34 + 3.
+Direction of text: From right to left.
+Dividers: Text lines divided by horizontal lines.
+Material segmentation indicators: Non-existent.
+
+
+
+
+Fig. 4. Photograph and drawing of Stela
+a (after Dunand 1945, pl. VIII, fig. 26).
+
+— Stela g (Fig. 5)
+Editio princeps: Dunand 1945, 80-81.
+Material: White limestone.
+Number of columns: 6 (5 of them are textual in all certainty; the column on the right end is hardly visible).
+Total number of signs (visible or partially visible): 40.
+Number of diverse signs: 18 + 3.
+Direction of text: Judging by the bird-shaped sign in the first column (provided each sign is oriented as in other
+inscriptions), the text should be read from right to left. The arrangement of signs into columns is reminiscent of
+Egyptian practice, unlike the succession of signs following sequentially.
+Dividers: Double division lines between columns, though apparently no dividers are used between signs.
+Material segmentation indicators: Non-existent.
+
+
+
+
+Fig. 5. Photograph and drawing of Stela g (after Dunand 1945,
+pl. 11.g, fig. 32).
+                                                                                                                 es
+80 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                   tra
+                                                                                                                           tto
+— Stela h (Fig. 6)
+Editio princeps: Dunand 1945, 82.
+Material: Stone, unspecified.
+Number of lines: 4 (three of them certainly textual).
+Total number of signs (visible or partially visible): 7.
+Number of diverse signs: 4 + 3.
+Direction of text: From right to left (judging by the anepigraphic spaces on the left margin of lines).
+Dividers: No dividers between signs. Text lines separated by horizontal lines.
+Material segmentation indicators: Non-existent.
+
+
+
+
+                                                                       Fig. 6. Photograph and drawing of Stela h (after Dunand
+                                                                       1945, pl. XI.h, fig. 33).
+
+— Stela j (Fig. 7)
+Editio princeps: Dunand 1945, 83-76. According to Dunand 1945, 83, it is highly likely that fragments h and j may
+correspond to the same inscription.
+Material: Limestone.
+Number of lines: 4 preserved, though one of them, the first on the upper part, is scarcely visible.
+Total number of signs (visible or partially visible): Approx. 16.
+Number of diverse signs: 10 + 3.
+Direction of text: Presumably from right to left, as some lines do not cover all the space available on the left margin.
+Dividers: Text lines separated by horizontal lines.
+Material segmentation indicators: Dividers between letters; end of lines 2 and 4.
+
+
+
+
+                                                                       Fig. 7. Photograph and drawing of Stela f (after Dunand
+                                                                       1945, pl. XI.f, fig. 35).
+
+
+— Stela k (Fig. 8)
+Editio princeps: Dunand 1978, 51-53.
+Material: Limestone.
+Number of lines: 5.
+Total number of signs (visible or partially visible): 30.
+Number of diverse signs: 18 + 1.
+                                                                                                                es
+                                                                                               The Byblos Script         81
+
+
+
+
+                                                                                                                  tra
+                                                                                                                         tto
+Direction of text: Apparently from right to left (some lines do not cover all the space on the left).
+Dividers: Possible divider between signs 4 and 5 of the fourth line. Unclear stroke between signs 1 and 2 of the fifth line.
+Material segmentation indicators: The divider (provided it exists, as seems to be the case).
+
+
+
+
+Fig. 8. Photograph and drawing of Stela k (after
+Dunand 1978, pl. V, fig. 1).
+
+
+— Stela l (Fig. 9)
+Editio princeps: Dunand 1978, 53-56. See also Hoch 1995.
+Material: Limestone.
+Number of lines: 13.
+Total number of signs (visible or partially visible): Approx. 74.
+Number of diverse signs: Approx. 51.
+Direction of text: Probably from right to left, but cf. l. 12.
+Dividers: Possible dividers between signs.
+Material segmentation indicators: Unclear.
+
+
+
+
+Fig. 9. Photograph and drawing of Stela l (after
+Dunand 1978, pl. VI, fig. 2).
+
+— Stela m (Fig. 10)
+Editio princeps: Dunand 1978, 58.
+Material: Limestone.
+Number of lines: 3.
+Total number of signs (visible or partially visible): 14.
+Number of diverse signs: 8.
+Direction of text: From left to right (if, for instance, the orientation of sign      on the second line is analogous to
+that of other preserved inscriptions).
+                                                                                                                   es
+82 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                     tra
+                                                                                                                             tto
+Dividers: Possible dividers between signs 2 and 3 on the first line and signs 3 and 4 on the second line.
+Material segmentation indicators: Dividers.
+
+
+
+
+                                         Fig. 10. Drawing of Stela m (after Dunand 1978, fig. 3).
+
+
+— Stela n (Fig. 11)
+Editio princeps: Dunand 1978, 58-59.
+Material: Stone, unspecified.
+Number of lines: 5. No noticeable signs on the first line, the most poorly preserved. No indication of a sixth line can
+be noticed under the fifth preserved line.
+Total number of signs (visible or partially visible): Approx. 19.
+Number of diverse signs: 18.
+Direction of text: Probably from right to left (cf. for example sign on line 5).
+Dividers: Possible divider after the second visible sign on the third line.
+Material segmentation indicators: Unclear.
+
+
+
+
+                                                                        Fig. 11. Photograph and drawing of Stela n (after Dunand
+                                                                        1978, pl. VI, fig. 4).
+
+Spatulas
+— Spatula b (Fig. 12)
+Editio princeps: Dunand 1945, 73-74.
+Material: Bronze.
+                                                                                                                 es
+                                                                                                The Byblos Script         83
+
+
+
+
+                                                                                                                   tra
+                                                                                                                          tto
+Number of lines: 7 (A: 4 + B: 3).
+Total number of signs (visible or partially visible): 43 (39 + 4 dividers).
+Number of diverse signs: 23 + 4 (dividers).
+Direction of text: From right to left, as revealed, for instance, by the first sign on line 3, repeated on several occasions.
+Dividers: No division lines between lines. Four dividers of sign sequences (on lines 1, 2, 3 and 6).
+Material segmentation indicators: Beginning and end of text. Dividers on lines 1, 2, 3 and 6.
+
+
+
+
+Fig. 12. Photograph and drawing of Spatula b (after Dunand
+1945, pl. XIII.1, fig. 27).
+
+— Spatula e (Fig. 13)
+Editio princeps: Dunand 1945, 78-79.
+Material: Bronze.
+Number of lines: 3 (A: 3 + B: 0).
+Total number of signs (visible or partially visible): 17 (12 + 5 numbers).
+Number of diverse signs: 11 + 1.
+Direction of text: From right to left. Lines are laid out aligned from the right and end irregularly on the left. The last
+two lines do not cover all the available space on the left margin.
+Dividers: No division lines between lines. No division lines between signs.
+Material segmentation indicators: Beginning and end of text. End of line 2 and beginning of 3.
+
+
+
+
+Fig. 13. Photograph and drawing of Spatula
+e (after Dunand 1945, pl. XII.e, fig. 30).
+
+
+— Spatula f (Fig. 14)
+Editio princeps: Dunand 1945, 79-80.
+Material: Bronze.
+Number of lines: 7 (A: 3 + B: 4).
+Total number of signs (visible or partially visible): Approx. 50 (47 + 3 numbers).
+Number of diverse signs: Approx. 28.
+Direction of text: From right to left on side A, and from left to right on side B (where the orientation of some signs,
+not all, is flipped horizontally), judging by the arrangement of the signs on the spatula.
+Dividers: No division lines between lines. No clear division lines between letters.
+Material segmentation indicators: Beginning and end of text; perhaps also the end of some lines.
+                                                                                                              es
+84 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                tra
+                                                                                                                        tto
+                                                                                 Fig. 14. Photograph and drawing of Spatula
+                                                                                 f (after Dunand 1945, pl. XII.f, fig. 31).
+
+— Spatula i (Fig. 15)
+Editio princeps: Dunand 1945, 82.
+Material: Bronze.
+Number of lines: 9 (A: 4 + B: 5).
+Total number of signs (visible or partially visible): Approx. 96.
+Number of diverse signs: Approx. 36.
+Direction of text: Apparently, from right to left. Lines start quite well aligned from the right and end irregularly on
+the left. The last line does not cover all the space available on the left margin.
+Dividers: No division lines between lines. Small vertical division lines between letters.
+Material segmentation indicators: Dividers (in addition to the beginning and the end of the text).
+
+
+
+
+                                                                                 Fig. 15. Photograph and drawing of Spatula
+                                                                                 i (after Dunand 1945, pl. XII.i, fig. 34).
+
+
+       Summing up, it could be claimed that while sign appearance and line arrangement may vary depending on
+the surface (on bronze, strokes are simple and lines are horizontal; on stone, however, signs present double strokes,
+and lines can also be arranged vertically), these sources reveal a remarkably homogenous script from a graphic view-
+point. Its use seems also quite regular: while some spatulas present a different direction of text on each side, most
+documents are written from right to left. Another significant feature is the use of word or word-group dividers in
+some inscriptions (as in the Ugaritic alphabet or in the archaic Phoenician alphabet, and must therefore have ap-
+plied also to the linear alphabet of the second millennium BC, at least in some of its versions). Moreover, while the
+                                                                                                           es
+                                                                                           The Byblos Script        85
+
+
+
+
+                                                                                                             tra
+                                                                                                                    tto
+exact inventory of preserved signs of the Byblos script is yet to be established with certainty (and quite probably we
+do not possess the complete repertoire), most estimates agree in its comprising no fewer than one hundred signs. It
+therefore seems to consist of a syllabic or logosyllabic script.
+        Furthermore, the core of the documents in the Byblos script originates, as already stated, in undetermined
+locations within the city. Texts appear on a variety of surfaces which, besides affecting the shapes of the signs sig-
+nificantly, reflect different uses of the objects themselves. In the absence of reliable chronological data, it is also
+highly possible that the texts were produced in different periods. Likewise, it is apparent that a relatively high
+number of scribes and etchers were involved. In fact, graphic variants are noted in the signs, possibly resulting
+from one or several of the above circumstances. Yet it is nonetheless possible to identify clearly the same script
+in all the inscriptions, a fact that provides some homogeneity to the corpus. Everything seems to suggest that
+this script was regulated by well-defined rules and that its use was extensive and varied, at least in certain circles
+at Byblos.
+        Given the exhaustive excavation method deployed by Dunand at the site of ancient Byblos, a script with such
+varied attestations could be expected to be more conspicuous. The limited number of documents found, however,
+contradicts this expectations. The scarcity could mean that, contrary to what stated above, the Byblos script was
+not actually widely used in the city or was used only for a short period of time. However, this does not necessarily
+need to be the case: as it is well known, the extant documents do not directly attest to the overall use of the script
+but only to its use on potentially durable material. As a matter of fact, the documents imply that such surfaces were
+sought deliberately for text preservation, which indicates the existence of proper epigraphy in the Byblos script – in
+other words, the development of a specific epigraphic tradition (as a monumental use of the script, intended as a
+permanent link between a text and an object, or as the conscious creation of a lasting document).
+
+
+OTHER TEXTS POSSIBLY WRITTEN IN THE BYBLOS SCRIPT
+
+Texts in “Linear Pseudo-Hieroglyphic”
+Besides the fourteen texts presented above, the corpus in the Byblos script may actually be larger. Dunand (1934)
+also published an inscription on a stone block whose script he called “Linear Pseudo-Hieroglyphic” (cf. Dunand
+1945, 135) (Fig. 16a). Moreover, the author considered that the morphology of the signs was close to that of the
+earliest Phoenician alphabet, but similarities were even closer to the morphology of signs in the Byblos script. Ac-
+cording to Dunand, it therefore consisted of a morphologically evolved and simplified Byblos script that was closer
+to a purely linear tradition, though still related. Results later reached by Martin after directly examining the piece
+reinforced these considerations. Martin identified new signs underneath the inscription published by Dunand
+(who had already pointed out the presence of previous incisions under the better visible ones; indeed, deliberate
+strokes can be noticed at least on the second line). Despite its poor condition, Martin claimed that these strokes
+clearly corresponded to signs in the Byblos script from a previous inscription (Fig. 16b); the inscription could hence
+be a palimpsest (Martin 1962a, 258-260; Röllig 1972-1975, 394):
+
+— Stela in “Linear Pseudo-Hieroglyphic” (Fig. 16a-b)
+Editio princeps: Dunand 1934, 567-571. See also Dunand 1945, 135-138.
+Material: Limestone.
+Number of lines: 3.
+Total number of signs (visible or partially visible): Ca. 22 + 2.
+Number of diverse signs: Ca. 14-15.
+Direction of text: From right to left (Dunand 1934, 568: “sens qui s’accommode le mieux de l’orientation des lettres
+d’apparence phénicienne”).
+                                                                                                                        es
+86 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                          tra
+                                                                                                                                  tto
+Fig. 16a. Photograph and drawing of the block with “Linear Pseudo-Hieroglyphic” inscrip- Fig. 16b. Drawing of the block with “Linear
+tion (after Dunand 1945, pl. XIVb, fig. 47).                                             Pseudo-Hieroglyphic” inscription (after Mar-
+                                                                                         tin 1961, 69).
+
+
+
+Dividers: Ruling between lines and possible dividers (vertical strokes) between signs: possible division mark on the
+first line, at the beginning of the left edge of the damaged area, and on the second line (third from the right; cf.
+Dunand 1934, 568).
+Material segmentation indicators: No clear indicators.
+
+Palimpsests
+Martin published three other palimpsests in the same article, which consist of Phoenician texts incised over ancient
+inscriptions originally written in the Byblos script, which had been erased, but were still noticeable in certain areas.
+In particular, he identified a text written in the Byblos script on a spatula showing a Phoenician inscription on one
+side (Dunand 1938, 99-107; KAI 3), and signs which Dunand already suggested could be ‘pseudo-hieroglyphic’ on
+the other side (Fig. 17a). The text in the Byblos script, identified by Martin as a Semitic language, can be seen on
+just one of the sides of the spatula (Fig. 17b) but, in Martin’s opinion, it possibly extended also to the other side,
+where the Phoenician text was later incised (Martin 1961, 47-63; see also Sass 1988, 86-87):
+
+— “Palimpsest” spatula (Fig. 17a-b)
+Editio princeps: Dunand 1938, 99-107; Dunand 1945, 85-86.
+Material: Bronze.
+Number of lines: Underneath the Phoenician text, possible traces of several lines. On the other side, four probable lines.
+Total number of signs (visible or partially visible): Underneath the Phoenician text, impossible to quantify. On the
+other side, 15 to 20 in well preserved areas.
+Number of diverse signs (visible or partially visible): Both underneath the Phoenician text and on the other side,
+impossible to quantify.
+Direction of text: Probably from right to left.
+Dividers: No dividers between lines, impossible to trace dividers between signs.
+Material segmentation indicators: No certain indications of text segmentation.
+                                                                                                                              es
+                                                                                                           The Byblos Script            87
+
+
+
+
+                                                                                                                                tra
+                                                                                                                                         tto
+Fig. 17a. Photograph and drawing (side A) of “Palimpsest spatula”     Fig. 17b. Recent photographs of both sides (by J. Á. Zamora) and draw-
+(Dunand 1945, pl. XIII.2, fig. 51).                                   ing of side A (after Martin 1961, fig. 4) of the “Palimpsest spatula”.
+
+
+
+— The Yehimilk inscription as a palimpsest
+Martin also noticed signs in the Byblos script underneath the Phoenician inscription of Yehimilk (Dunand 1930,
+321-331, KAI 4) (Martin 1961, 63-67) (Fig. 18). These signs are indeed apparently visible at the end of some lines
+wherever they are not covered by the Phoenician text. Furthermore, the obvious re-elaboration of the surface of the
+stone block (division lines originally existing between the text lines are only partially preserved) does suggest the
+existence of a previous inscription.5
+
+
+
+
+Fig. 18. Recent photograph (by J.-Á. Zamora) and drawing
+(after Martin 1961, fig. 6) of the inscription of Yehimilk.
+
+
+
+5 The ruling between text lines (clearly reminiscent of those used in monumental Egyptian Hieroglyphic script) are incidentally a feature
+of some Phoenician inscriptions from Byblos (such as the Yehimilk inscription) and do not appear in most of the inscriptions found outside
+the city – therefore pointing to a continuity trait in terms of traditions already in use in the Byblos script (see n.7).
+                                                                                                                                es
+88 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                                  tra
+                                                                                                                                           tto
+— The Ahirom inscription as a palimpsest
+Martin also saw signs in the Byblos script, nowadays more doubtfully identifiable, at the beginning of the inscrip-
+tion on the Ahirom sarcophagus (KAI 1; Martin 1961, 70-76) (Fig. 19).6
+
+
+
+
+                                                                                           Fig. 19. Recent photograph (by J.-Á. Zamora)
+                                                                                           and drawing (after Martin 1961, fig. 8) of the
+                                                                                           beginning of the inscription on the Ahirom sar-
+                                                                                           cophagus.
+
+Other possible inscriptions
+More recently Colless (1996-1997, 45-55; 1998, 29-33) suggested that a series of inscriptions, which, up until
+then, had not been satisfactorily interpreted, should be identified and read as texts written in the Byblos script.
+These comprise: an inscription on a ring found in Megiddo;7 Sinai inscription 526; an inscription on an Egyptian
+ostracon, and three inscriptions on lamps found in Egypt; one inscription on a clay tablet found in Trieste (Italy);
+and an inscription on a scaraboid seal of unknown origin (Fig. 20).
+
+
+
+
+                                                                                       Fig. 20. Drawings of inscriptions interpreted as writ-
+                                                                                       ten in the Byblos script by Colless: a) Megiddo ring
+                                                                                       (after Colless 1996-1997, 46); b) Sinai inscription
+                                                                                       526 (after Colless 1996-1997, 47); c) Thebes ostra-
+                                                                                       kon (after Colless 1998, 32); d) Lamp inscription 1
+                                                                                       (after Colless 1996-1997, 51); e) Lamp inscription 2
+                                                                                       (after Colless 1996-1997, 53); f ) Lamp inscription 3
+                                                                                       (after Colless 1996-1997, 54); g) Scaraboid seal (af-
+                                                                                       ter Colless 1998, 30); h) Trieste plaque (after Colless
+                                                                                       1998, 31).
+
+
+6 Regarding subjectivity in the identification of some of these signs, note the criticism by Sass 2005, 78: “Yet these underlying ‘pseudo-
+hieroglyphic’ texts may well be a figment of Martin’s imagination: Not one of those who quoted Martin ever professed to have seen them
+with their own eyes; nor was I able to make out these texts on the originals or their photographs”. However, the existence of signs of the
+Byblos script seems clear, at least underneath the inscription of Yehimilk and on one of the sides of the spatula, which demonstrates, at the
+very least, that one script succeeded the other at Byblos. The possible coexistence in use of both graphic systems poses more problems, as it
+may only be deduced with certainty that the authors of the inscriptions in Phoenician knew the inscriptions in the Byblos script. We cannot
+know whether they could read them and, if so, for how long they still preserved this knowledge.
+7 Puech (1999) suggests reading the inscription on this ring as a purely alphabetic Semitic text. The inscription could bear the name of
+the ring owner and his patronymic.
+                                                                                                             es
+                                                                                             The Byblos Script        89
+
+
+
+
+                                                                                                               tra
+                                                                                                                      tto
+Finally, Garbini (apud Garbini, Luiselli, Devoto 2004, 377-381) proposed to identify as representing the Byblos
+script an inscription on a cylindrical seal which, according to the author, could have originated from Byblos and
+ought to be dated to the middle of the fourteenth century BC (Fig. 21). Its signs could be a simplified and sche-
+matised version of Byblos signs.
+
+
+
+
+Fig. 21. Photographs of inscriptions on the cylin-
+der seal (after Garbini, Luiselli, Devoto 2004, fig.
+2-4).
+
+       Evidently, unlike the homogeneous group of fourteen inscriptions found in Byblos and published by Dunand
+as proper Byblos script, and unlike the less clear inscriptions on the palimpsests, the texts proposed by Colless and
+Garbini constitute a much more heterogeneous and problematic ensemble. Even if we were to accept their very
+dubious identification as Byblos script, the differentiation and configuration of each of its signs, and their alleged
+relationship with the graphic material extracted from the Byblos corpus, seem quite often – and at the very least –
+highly speculative.
+
+
+CONTEXT OF THE BYBLOS SCRIPT: SPACE AND TIME
+
+Area of use of the Byblos script: Byblos centrality
+Most of the inscriptions in the Byblos script originate in different locations at the site. The documents originating
+outside Byblos and proposed as specimens of the Byblos script are few and highly dubious. This script may thus
+only be considered with certainty to have been used within the city’s confines. Obviously, it cannot be discounted
+that documents written in the Byblos script circulated over a wider area (all the more probable if we assume that
+the material used for writing was perishable), but no direct or indirect evidence of this can be observed. This was
+thus, in all likelihood, a local system, plausibly originating from Byblos itself, to record texts in the language of the
+area. Nonetheless, the scarcity of available documents allows for no secure inferences.
+
+Period of use of the Byblos script: The issue of chronology
+The dating of the inscriptions in the Byblos script poses serious issues. For stratigraphical reasons, Dunand (1945,
+87; cf. also 78, 131-132) did not consider any of the inscriptions in the Byblos script to be earlier than the 12th
+Egyptian Dynasty, or later than the 18th Dynasty, thus placing them between 1900 and 1600 BC approximately.
+This chronological horizon is accepted by a substantial number of scholars. Along these lines, after comparing the
+morphology of its signs to the Egyptian Hieratic script, Posener (1969, 239) proposed dating the Byblos script to
+the nineteenth century BC. Hoch (1990, 119), however, concluded that the comparison to the Egyptian Hieratic
+script allowed for an even earlier date: it could have been developed between the Ancient and Middle Egyptian
+Kingdoms, while the basic forms of the Byblos script could have been established before the 12th Dynasty.
+       A different chronological clue, pointing to a later date, is provided by the spatula which features signs of
+the Byblos script along with a Phoenician inscription (Dunand 1938, 99-107; 1945, 85-86, 155-157; KAI 3; see
+above). The fact that the Phoenician inscription may be dated, according to some views, to the tenth century BC
+                                                                                                                                es
+90 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                                  tra
+                                                                                                                                           tto
+                                                             (KAI 3; Sass 1988, 87) or even later (Sass 2005, 54), has
+                                                             led scholars to conclude that the Byblos script possibly
+                                                             remained in use as late as the first decades of the ninth
+                                                             century BC (Sass 1988, 86 with n. 58; 2005, 54).
+                                                                     The date of the Phoenician inscription is, howev-
+                                                             er, unclear as are the implications in dating the Byblos
+                                                             script.8 While the spatula involves the physical associa-
+                                                             tion on the same surface of two scripts, namely Byblos
+                                                             and linear Phoenician, it is not clear whether they were
+                                                             both simultaneously in use or whether the latter script
+                                                             was used on this object, when its surface was no longer
+                                                             legible. Should this be the case, although the piece must
+                                                             have been in relatively good condition when it was etched
+                                                             in Phoenician, it is not easily deduced how long before
+                                                             it had been engraved in the Byblos script and when this
+                                                             older system may have been abandoned.
+                                                                     Moreover, the noticeable graphic variants in the
+                                                             Byblos script and the existence of documents that might
+                                                             be evidence of later stages or derivations of the script
+                                                             (such as the inscription referred to by Dunand as “Lin-
+                                                             ear Pseudo-Hieroglyphic”, see above) suggest a relatively
+                                                             long period of use. The scarcity of documents, conversely,
+                                                             could point to a limited lifespan, (because a short period
+                                                             of use would theoretically explain why no more traces of
+Fig. 22. First table of signs by Dunand 1930, 5.             the script remain). Yet we must not forget that the change
+                                                             of the script from its specific everyday supports to monu-
+mental or consciously chosen hard surfaces is exceptional for the Levant in the Bronze Age (Zamora 2006; 2007).
+In that case, the scarcity of documents has no chronological relevance: the Byblos script may well have been used
+for a significantly long period of time, mainly for practical purposes on probably perishable material, which would
+have left few traces. This would explain, to a large extent, the limited but existent development of a local epigraphic
+culture.
+
+
+CHARACTERISTICS AND FORMATION OF THE BYBLOS SCRIPT
+When the Byblos script was discovered, it was perceived as different from any other script known up until then, even
+though its appearance, epigraphic technique and (likely logosyllabic) structure seemed quite familiar. It looked incised,
+formed by an abundant though limited inventory of signs (thus excluding e.g. alphabetical systems, rather pointing to
+a sort of syllabic script not different from the ones already known in the area); these, well defined, were linear though
+potently pictographic, with similar shapes to the signs used in other graphic systems at the time in the area.
+        In his edition of the Stela a, the first published text, Dunand (1930) pointed out that, in the condition it
+was when it was recovered, the inscription displayed 119 certain signs, though three more could be conjectured. He
+grouped these signs into 38 different classes as shown in fig. 22.
+
+
+
+8 This is a question to be framed also within recent discussions on the chronology of the oldest instances of alphabetic script in the Levant.
+See above all Sass (2005), who reduces the dates traditionally attributed to the oldest Phoenician inscriptions from Byblos, not without
+rejections (see i.e. Rollston 2008). Confront with recent summary by Amadasi Guzzo (2014).
+                                                                                                           es
+                                                                                           The Byblos Script       91
+
+
+
+
+                                                                                                             tra
+                                                                                                                   tto
+       He analysed their morphology and compared them to signs of other ancient scripts. He concluded that most
+signs were remarkably hieroglyph-like, half way between Egyptian and Hittite hieroglyphs in their design. In terms
+of shape and orientation, between seven and nine signs were, according to Dunand, practically identical to archaic
+Phoenician signs, while fifteen corresponded to similar signs in the Egyptian Hieroglyphic script. The remaining
+ten signs were without corresponding parallels in either of these two writing systems.
+       In 1945, Dunand (1945, 88-131) undertook a renewed, extensive and meticulous analysis of the signs in
+the ten texts in the Byblos script he had published. He concluded that these texts presented a total of 114 different
+signs, which still fell short of a complete system. He grouped them into different categories depending on the class
+of object they seemed to depict: A – animals, B – vegetables, C – sky, water, D – buildings, E – tools, F – cult, G –
+geometrical shapes, H – unidentified objects, I – uncertain signs (Fig. 23a).
+
+
+
+
+Fig. 23a. Expanded and classified table of signs by Dunand 1945, 88-89.
+
+
+         He next looked for purely formal equivalences in scripts from different times and places (Fig. 23b). Thus, he
+compared sign 1 to a sign on the Phaistos Disc, sign 14 to signs in Phoenician, Cretan and even Chinese scripts,
+sign 15 to a sign in Phoenician and South Arabian alphabets and also to a Sinaitic sign, he also compared sign 16
+to an Anatolian hieroglyphic sign, etc.
+         Nevertheless, the author was well aware that this type of purely formal and external comparisons was of
+little significance, admitting that most of these parallels should be considered merely fortuitous (Dunand 1945,
+                                                                                                                               es
+92 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                                 tra
+                                                                                                                                         tto
+122-131). When dealing with the Proto-Sinaitic script, for instance, he contended that both this and the Byblos
+script must be understood as two parallel and independent scripts, though with a common origin: the Egyptian
+Hieroglyphic script. Dunand believed that some of the signs in the Byblos script bore what he called “striking”
+similarities to Egyptian hieroglyphs. Such similarities, according to the author, were even greater when compared
+to Hieratic signs. In total, these similarities would apply to about 50 signs in the Byblos script, 25 of which would
+have been extracted directly from the Egyptian Hieroglyph repertoire (Fig. 23b).
+
+
+
+
+Fig. 23b. Tables by Dunand 1945, 122-123 comparing signs in the Byblos script (“hiéroglyphes phéniciens” or “signes phéniciens”) to Mi-
+noan signs (left) and to Egyptian hieroglyphs and hieratic signs (right). Below, signs in the Byblos script directly extracted from Egyptian
+hieroglyphs.
+
+
+
+        In conclusion, Dunand contributed two key notions which have served as the basis for a number of later
+analyses concerning the Byblos script. On the one hand, the fact that the script had been elaborated under the di-
+rect influence of Egyptian hieroglyphs and Hieratic signs; on the other hand, the fact that the system of the Byblos
+script could have been the source of Phoenician alphabetic signs (Dunand 1945, 130-131).
+        Later, Martin (1962a; 1962b) revised Dunand’s proposal and conducted his own analysis of the signs. His
+was an internal analysis of the Byblos script itself, without comparing it to any other writing systems. He first pro-
+posed the following classification: 1. bird, 2. insect, 3. snake, 4. fish, 5. ox-head, 6. head (frontal), 7. head (lateral),
+8. eye, 9. mouth, 10. hand, 11. hand, bough, 12. human figure, 13. tree, prop, 14. plant, stick, 15. blossom, 16.
+crooked staff, 17. twisted rope, 18. cruciform, 19. building, monument, 20. courtyard, house, 21. door, 22. masse-
+bah (“pillar, memorial stone”), 23. angle, 24. star, 25. hill-country, 26. water, 27. numerals (Martin 1962a, 261). In
+his later analysis, he concluded that all the signs could actually be grouped into 26 fundamental classes (Fig. 24),
+to which a final group could be added comprising signs with a numeral function (Martin 1962b, 350). A number
+of variants could be identified within each group which he defined as “a sign which results from the addition of a
+stroke to a fundamental type and whose function in the script is thereby modified”.
+                                                                                                         es
+                                                                                         The Byblos Script       93
+
+
+
+
+                                                                                                           tra
+                                                                                                                 tto
+Fig. 24. Martin’s classification of the signs in the Byblos script (1962b).
+
+
+        As Daniels (1996, 30) points out, “[i]t is clear from the descriptions attached and from certain remarks in
+the text that he was trying to make the script into an ordinary alphabet (i.e. abjad). The absence of further publi-
+cations suggests that the attempt was not successful”.
+        As explained above, Dunand stressed the
+noticeable influence of Egyptian Hieroglyphic and
+Hieratic on the Byblos script. Several Egyptologists
+have pursued this line of thinking. Posener (1969),
+for instance, investigated the problem of the formal
+relationships between the Byblos and Egyptian Hier-
+atic scripts. After analysing certain signs (Fig. 25), he
+concluded on the basis of palaeographical features of
+Hieratic that the terminus ante quem for the formation
+of the Byblos script could be set in the nineteenth
+century BC.
+
+
+
+Fig. 25. Comparison with Hieratic signs, as suggested by Po-
+sener 1969.
+                                                                                                                           es
+94 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                             tra
+                                                                                                                                     tto
+                                                                                                Next, Hoch (1990,
+                                                                                         116) claimed that, as Mend-
+                                                                                         enhall (1985) had already
+                                                                                         suggested, the acrophonic
+                                                                                         principle was a regular fea-
+                                                                                         ture in the Byblos script,
+                                                                                         whose signs could derive
+                                                                                         both from Egyptian Hiero-
+                                                                                         glyphic and Hieratic signs.
+                                                                                         Some signs could have been
+                                                                                         borrowed directly from the
+                                                                                         Egyptian Hieroglyphic rep-
+                                                                                         ertoire, others were possi-
+                                                                                         bly of the same origin but
+                                                                                         with considerable modifica-
+                                                                                         tions, and finally other signs
+                                                                                         could have been sourced
+                                                                                         from Egyptian signs and
+                                                                                         afterwards subjected to sig-
+                                                                                         nificant adaptations. Again
+                                                                                         according to Hoch, most of
+                                                                                         these Byblos signs of alleged
+                                                                                         Egyptian origin or back-
+                                                                                         ground would have been ro-
+                                                                                         tated with regard to the usual
+                                                                                         Egyptian orientation. Other
+                                                                                         signs in the Byblos script,
+                                                                                         however, constituted local
+                                                                                         innovations (Hoch 1990,
+                                                                                         116-117; Zauzich 2015, 18)
+Fig. 26a. Analysis of signs in the Byblos script by Hoch 1990, 115-118.                  (Fig. 26a).
+                                                                                         Hoch also highlighted the
+graphic closeness between some signs in the Byblos script and signs in alphabetic “Proto-Sinaitic” inscriptions
+(Hoch 1990, 119) and proposed the identification of several signs in the Byblos script with signs in later linear
+alphabetic systems (Hoch 1990, 120). He also suggested that some of the signs which were not incorporated into
+the Canaanite alphabet reappeared, however, in the much later Old South Arabic (Sabaean) and Ethiopic scripts
+(Hoch 1990, 120). The author concludes that “the remains of the Byblian syllabary formed the core of the Semitic
+linear alphabets” (Fig. 26b).
+        Other scholars later continued to explore the two key notions put forward by Dunand: 1) at least some of
+the signs in the Byblos script are heavily influenced by the Egyptian script, and 2) these signs are the origin of some
+of the signs in later Semitic alphabetic systems. This is the idea underlying the reconstruction of the Byblos script
+suggested by Colless (1998, 34-35) (Fig. 27), a script he refers to as “Canaanite syllabary”.9
+
+
+
+9 According to Colless (1998, 36-38): “The Canaanite syllabary could be described as a vocalic script, in that it shows the vowels along
+with the consonants […] is a simple monosyllabic script, with a much smaller signary than Egyptian hieroglyphic writing or Babylonian
+cuneiform writing […] it is a logo-syllabary, such that a sign can stand for the word it represents as well as a syllable”.
+                                                                                                                               es
+                                                                                                            The Byblos Script            95
+
+
+
+
+                                                                                                                                 tra
+                                                                                                                                          tto
+Fig. 26b. Comparison of signs in the Byblos script to Proto-Sinaitic signs, Canaanite signs and Old South Arabic signs by Hoch 1990, 119-121.
+
+
+
+
+Fig. 27. Reconstruction of the graphic system in the Byblos script by Colless 1998, 34-35.
+                                                                                                         es
+96 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                           tra
+                                                                                                                    tto
+                                        Fig. 28a. Comparison of signs in the Byblos script to Egyptian and Creatan
+                                        (sic) signs according to Woudhuizen 2007, 750-751.
+
+
+
+                                               Woudhuizen, in turn, proposes a series of correspond-
+                                        ences between signs in the Byblos script and Egyptian hiero-
+                                        glyphs, adding some possible correspondences with Cretan
+                                        Hieroglyphic and Linear A signs (Fig. 28a). He also suggests
+                                        some writing variants for a series of signs in the Byblos script
+                                        (Fig. 28b). Nevertheless, as is also the case with other authors
+                                        (Mendenhall, Colless, Garbini), his highly speculative approach
+                                        results in unacceptable translations – both from philological
+                                        and historical perspectives.
+                                               More recently, other Egyptologists have briefly reassessed
+                                        the Byblos script. According to Morenz (2011, 251-252), as
+                                        also proposed by other scholars before him (see above), some of
+                                        the signs in the Byblos script may derive from Egyptian signs
+                                        through acrophony. Later on, the same principle could have
+                                        been operating to facilitate the transfer of some of the Byblos
+                                        signs onto linear alphabets (Fig. 29). In comparison to the
+                                        Egyptian Hieroglyphic script, Morenz points out the limited
+                                        number of signs representing birds, as well as the lack of rep-
+
+
+                                        Fig. 28b. Writing variants of the graphic system in the Byblos script according
+                                        to Woudhuizen 2007, 756.
+                                                                                                                               es
+                                                                                                            The Byblos Script           97
+
+
+
+
+                                                                                                                                 tra
+                                                                                                                                         tto
+Fig. 29. Acrophony, Egyptian origin and Canaanite derivation of the Byblos script according Fig. 30. Signs in the Byblos script, their rela-
+to Morenz 2011, 251-252.                                                                    tion with Egyptian signs and their acrophon-
+                                                                                            ic value, according to Zauzich 2015, 124.
+
+
+
+
+resentation of the human body. In general, the Byblos script could be much more abstract than the later Canaanite
+linear script and the Egyptian Hieroglyphic script itself. He also suggests the possibility that the prestige of the
+Egyptian script could have been at the same time the prompt for the creation, and the root of the obsolescence of
+the Byblos script itself.
+       Zauzich (2015, 17-18, 122-125) also suggests the possibility that acrophony may have operated (Fig. 30),
+but puts more emphasis on the possibility that almost all the signs in the older Phoenician alphabet may have an
+equivalent sign in the Byblos script.
+       In conclusion, comparisons that are strictly graphic have led researchers to seek the origin and inspiration
+for the Byblos script in the Egyptian (Hieroglyphic, but also Hieratic) scripts, though a precise chronological
+framework and reconstruction has not yet been established. Furthermore, graphic similarities (particularly in light
+of documents taken as intermediate between the properly Byblos script and the Phoenician alphabet) have prompt-
+ed – with more difficulties – the suggestion that the Byblos script represented the first step in the creation of the
+Northwestern Semitic linear alphabet. Nonetheless, in both cases, difficulties arise when attempts to tie the script to
+a graphic tradition and understand its formation process become mixed with efforts at deciphering it. These efforts
+have proved to be ridden with uncertainties.
+                                                                                                                                es
+98 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                                  tra
+                                                                                                                                           tto
+       The plausible hypotheses guiding both the study of graphic formation and any attempts at reading this script
+consist of presupposing on the one hand a syllabic system created by some sort of reinterpretation of the Egyptian
+system in a Northwestern Semitic linguistic context, and, on the other, an alphabetic derivation somehow based
+on acrophony which eventually could have resulted in the linear alphabet that later became standard. But given the
+scarce or dubious results reached by various decipherment proposals, the hypotheses on the creation and develop-
+ment of the graphic system have not found solid material to be supported.
+
+CONCLUSIONS AND FINAL CONSIDERATIONS
+
+The Byblos script, an undeciphered graphic system
+Indeed, any attempt at reconstructing the Byblos script formation process must be assessed bearing in mind the
+almost total lack of certainties in terms of attributing phonetic values to its signs and even a basic understanding of
+how it worked. It must be accepted that despite numerous efforts,10 this undeciphered script conceals a language yet
+to be identified.11 Further attestations (alas, quite unlikely) may probably be needed to achieve such decipherment,
+either in the form of a significant increase in the number of available texts to facilitate the successful application of
+statistic methods, or through the appearance of bilingual or parallel texts allowing for more solid conventional ap-
+proaches. Besides, advances in the understanding of other graphic systems in the area could contribute to integrate
+the available documentation within a broader and better known framework, thus leading to the cogent reading of
+the texts in the Byblos script, and fostering the formulation of new and better-grounded hypotheses.12
+
+The corpus: Characteristics and implications
+Therefore, we can only establish more or less solid starting points from which we can draw some reasonable con-
+clusions in the light of our current knowledge. The Byblos script is attested on a very small number of documents.
+Those belonging to the proper corpus originate in just one place, the ancient city of Byblos. The variety of objects
+engraved with this script, whose morphology and sign ductus feature variants, suggests that it was used for diverse
+purposes and genres, perhaps throughout a significantly long period of time. Yet, the core of the extant documents
+does reveal the kind of homogeneity that could be attributed to a well defined, regularly used script. It would appear
+that the graphic system was extensively and variously used for some time at least in some circles in the city of By-
+blos – probably amongst (some of ) its scribes. It must have been mainly used for ordinary matters on non-preserved
+supports, only leaving behind remains of what seem to be proper epigraphic – and probably exceptional – uses.
+        Indeed the use of a script on surfaces other than those commonly used seems to have been exceptional in the
+Bronze Age Levant, where local graphic systems seem to have been particularly used, above all, for practical, daily
+purposes, being only rarely preserved on hard supports and seldom applied to purely epigraphic practices and gen-
+res13. All this, together with the number and variety of documents in the Byblos script, is totally compatible with a
+regular use for a significant period of time. Used mainly for practical purposes on probably perishable material,14 as
+
+
+10 See above all the analyses by Dunand 1930; 1945; Hrozny 1944; Dhorme 1946; Sobelman 1961; Mendenhall 1985; Colless 1992;
+1993; 1994; 1995; 1996-1997; 1998; Woudhuizen 2007; Best 2008; Best, Rietveld 2010; Garbini 2009a; 2009b. See, more in general, the
+history of investigation presented by Sznycer 1994; Israel 2003; Van de Sande 2004.
+11 This is an opinion shared by a large number of scholars: see, for instance, Röllig 1972-1975, 394; Lipiński 1993, 363; Daniels 1996, 29-30;
+Woodard 2004, 6; 2008, 2; Huehnergard 2008, 580; Charaf 2014, 446. See, as a recent summary, the considerations by Amadasi Guzzo 2014, 72;
+cf. also n. 17: “les différentes tentatives entreprises dernièrement ne me semblent pas avoir résolu le problème de cette écriture”.
+12 Unfortunately, chances of fully deciphering the Byblos script seem remote. See also the considerations made by Daniels 1996, 141-142,
+or Hackett 2002, 66.
+13 Compare, for instance, to the case of Ugarit, Zamora 2006; 2007.
+14 This is probably papyrus, in light of the intense relations between Byblos and Egypt and the privileged use of this material in the Nile
+valley. The city of Byblos became the great centre of the papyrus trade in the eastern Mediterranean at least from the first millennium BC, a
+fact which explains that the name of the city was the origin, as is well known, of the Greek word for ‘book’ (byblos).
+                                                                                                                                  es
+                                                                                                               The Byblos Script            99
+
+
+
+
+                                                                                                                                    tra
+                                                                                                                                             tto
+the possible existence of cursive features in some sign variants indicates, only a very small percentage of potentially
+preservable texts might have existed (of which, even a smaller percentage could have been preserved, discovered
+and identified).
+
+Space and time: Byblos in the second millennium BC as the place of birth and use of the Byblos script
+The local urban use and the context of the Bronze Age appear to be the space and time framework in which we
+should set the inception and use of the Byblos script, as can be concluded from the available material evidence. As
+regards the geographical framework, Byblos clearly played a central role in terms of written documents. Lack of
+evidence precludes us from considering a potential widespread use outside the city, although this option certainly
+may not be discarded. Moreover, further data make Byblos the ideal place where the graphic system could have
+been born and developed.
+        Byblos’ relationship with writing was indeed prolonged and intense. The Egyptian Hieroglyphic script was
+well known there at least from the middle of the third millennium BC (Helck 1974; Redford 1992, 41) and all
+clues indicate that in the ensuing millennium, scribes in the city, or scribes who frequented it, were able to use it.
+The tradition of Mesopotamian writing was also well known in Byblos from a very early period, as finds at the site
+and testimonies in the Amarna and Ugarit archives confirm.15
+        These documents demonstrate that the syllabic cuneiform script was known in Byblos by the third millenni-
+um BC and regularly in use in the city, at least in compiling international documents until the thirteenth century
+BC.16 The scribes in Byblos in the Bronze Age must have therefore been accustomed to several scripts linked to
+different languages and regularly exposed to their underpinnings. In this context, it is hardly surprising that, for still
+unknown reasons (such as administrative purposes or suitability to record cultic texts), scribes in Byblos felt at some
+point the need to also record their own language in writing and that, in order to do so, instead of adapting a foreign
+script they had already mastered, which was linked to a specific foreign language, they chose to develop their own.17
+
+The second millennium BC as the period of development and use of writing in the Byblos script
+The Bronze Age, namely the second millennium BC, seems to be the most plausible chronological framework
+where the origin and use of the Byblos script ought to be set. In spite of the challenging issues in terms of dating,
+this is the period indicated by the archaeological context where the documents were found (as far as Dunand’s con-
+clusions on stratigraphy are based on reliable excavation techniques) and by the graphic relationships between the
+Byblos script and the Egyptian (despite the fact that the particulars of such correlations continue to be debated).
+        The precise moment when the Byblos script system was created and how long it was in operation can not be
+easily determined, although it would appear that this period must not have been specific or limited, as the attested
+variants seem to indicate some diachronic development. The attestation of documents where the Byblos script
+appears to be supplanted by archaic versions of the Phoenician linear alphabet prompts further considerations as
+to its demise. While some of these scripts must not have been chronologically distant, and may even have existed
+simultaneously at some stage, the Byblos script could have preceded the Phoenician until the Phoenician eventually
+prevailed in the late Bronze Age across the Levant, including Byblos. Perhaps the Byblian epigraphic culture main-
+tained some of the features of the previous local tradition, all the same.
+
+
+15 In the same excavation site that was explored by Dunand, a cuneiform school text from the third millennium BC was found. See
+Dossin 1969; Klengel 1992, 32.
+16 It should also be recalled that Byblos is the place where the oldest monumental inscriptions using the Phoenician alphabet were found
+(KAI 1-8), which supports the hypothesis that its linear precedents in the second millennium BC were also extensively used. See below.
+17 This also happened, possibly soon afterwards, to the eventually triumphant linear alphabet, seemingly used from the beginning to
+record in writing the local languages in the Levant. In this respect, it is relevant to mention the case of Ugarit where this alphabet adapts to
+the cuneiform technique in order to register texts in the local language (almost never using the syllabic cuneiform, mastered by scribes in
+Ugarit, to record the Ugaritic language). Even in cases where the surface was different, they favoured the script linked to the local language,
+rather than use the script linked to a different language. See again Zamora 2006; 2007.
+                                                                                                                           es
+100 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                             tra
+                                                                                                                                     tto
+       Graphic relationships between signs in the Byblos script and alphabetic signs (and the obvious geographical
+continuity) have repeatedly led scholars to suggest, as explained above, that that relation could somehow also imply
+development; that is, that the linear alphabetic script could have originated in the probably syllabic Byblos script.
+In fact, beyond the comparison of the signs in both scripts, the only material support for this hypothesis is the ex-
+istence of documents which could be interpreted as intermediate stages of such a development. But these possible
+intermediate steps are in fact few and obscure and, once more, attempts at producing a precise interpretation of this
+development have not yielded solid conclusions.
+
+The formation of the Byblos script
+The most commonly supported hypothesis to explain the genesis of the Byblos script, namely the Egyptian inspira-
+tion or derivation of, at least, the morphology of a substantial number of its signs, is therefore well at home in the
+historical context of Byblos in the second millennium BC, not least in light of the intense and continuous relations
+between the city and Egypt at that time.18 However, the specific process, or the precise moment (or moments),
+when it may have taken place remains unclear.
+       In fact, strictly speaking, we cannot affirm that the relationship between the signs of the Byblos script and
+those of the Egyptian scripts was exclusive, or that there was necessarily a direct transmission between the two sys-
+tems as we know them. Overall, we are once more confronted with the paradox that the most reasonable hypothesis
+(the creation of a local system in Byblos, most probably syllabic, originating on the knowledge of the Egyptian
+scripts to record a Northwestern Semitic language in the second millennium BC) does not yield more convincing
+decipherment proposals. We can only hope that closer integration in the studies on the Byblos script and further
+research on the formation processes of scripts in the ancient Mediterranean may open up new and more fruitful
+routes.
+
+Abbreviations
+KAI    Donner H., Röllig W. 2002, Kanaanäische und aramäische Inschriften, 5th edition, Wiesbaden.
+
+References
+Acquaro E., Mazza F., Ribichini S., Scandone G., Xella P. 1994, Biblo. Una città e la sua cultura, Rome.
+Amadasi Guzzo M.G. 2014, ‘Alphabet insaisissable’. Quelques notes concernant la diffusion de l’écriture consonantique,
+   Transeuphratène 44, 67-86.
+Best J. 2008, Breaking the Code of the Byblos Script, UgaritF 40, 129-133.
+Best J., Rietveld, L. 2010, Structuring Byblos Tablets c and d, UgaritF 42, 15-40.
+Charaf H. 2014, The Northern Levant (Lebanon) during the Middle Bronze Age, in Steiner M.L., Killebrew A.E. (eds), The
+   Oxford Handbook of the Archaeology of the Levant c. 8000-332 BCE, Oxford, 434-450.
+Colless B.E. 1992, The Byblos Syllabary and the Proto-Alphabet, Abr-Nahrain 30, 55-102.
+Colless B.E. 1993, The Syllabic Inscriptions of Byblos: Text D, Abr-Nahrain 31, 1-35.
+Colless B.E. 1994, The Syllabic Inscriptions of Byblos: Texts C and A, Abr-Nahrain 32, 59-79.
+Colless B.E. 1995, The Syllabic Inscriptions of Byblos: Texts B, E, F, I, K, Abr-Nahrain 33, 17-29.
+Colless B.E. 1996-1997, The Syllabic Inscriptions of Byblos: Miscellaneous Texts, Abr-Nahrain 34, 42-57.
+Colless B.E. 1998, The Canaanite Syllabary, Abr-Nahrain 35, 28-46.
+Daniels P.T. 1996, The First Civilizations, in Daniels P. T., Bright W. (eds), The World’s Writing Systems, New York-Oxford,
+   21-32.
+Dhorme É. 1946-1948, Déchiffrement des inscriptions pseudo-hiéroglyphiques de Byblos, Syria 25, 1-35.
+
+
+
+18 On the relations between Byblos and Egypt (which began much earlier and went on much later) see for instance Redford 1992; Helck
+1974; 1994; Morenz 2011, 253-254. Regarding the history of pre-classical Byblos, see for instance Acquaro et al. 1994; Klengel 1992. Cf.
+Elayi 2009 for the first millennium BC and, more generally, Jidejian 1968.
+                                                                                                                        es
+                                                                                                     The Byblos Script          101
+
+
+
+
+                                                                                                                          tra
+                                                                                                                                  tto
+Dossin G. 1969, Trois inscriptions cunéiformes de Byblos, MUSJ 45, 243-255.
+Dunand M. 1930, Nouvelle inscription découverte à Byblos, Syria 11, 1-10.
+Dunand M. 1945, Byblia Grammata. Documents et recherches sur le développement de l’écriture en Phénicie, Beirut.
+Dunand M. 1978, Nouvelles inscriptions pseudo-hiérogliphiques découvertes à Byblos, Bulletin du Musée de Beyrouth 30, 51-59.
+Elayi J. 2009, Byblos, citée sacrée (8e-4e s. av. J.-C.), Paris.
+Février J.G. 1950, Les écritures, in Pirot L. (ed.), Supplément au Dictionnaire de la Bible 5, 299-317.
+Francis-Allouche F., Grimal N. 2012, “Byblos et la Mer.” Rapport préliminaire de la 1ère campagne, Beyrouth. Available at
+    https://www.academia.edu/4173349/FRANCISALLOUCHE_M._GRIMAL_N._Byblos_et_la_mer_Rapport_
+    pr%C3%A9liminaire_de_la_1%C3%A8re_campagne_2012
+Garbini G. 2009a, Decifrazione e origine della scrittura ‘pseudo-geroglifica’ di Biblo, in La scrittura nel Vicino Oriente antico,
+    Milan, 37-61.
+Garbini G. 2009b, Avvio alla lettura delle iscrizioni ‘pseudo-geroglifiche’ di Biblo, Atti della Accademia Nazionale dei Lincei,
+    Rendiconti Classe di Scienze Morali, Storiche e Filologiche, s. 9, 20, 233-273.
+Garbini G., Luiselli M.M., Devoto G. 2004, Sigillo di età amarniana da Biblo con iscrizione, Atti della Accademia Nazionale
+    dei Lincei, Rendiconti Classe di Scienze Morali, Storiche e Filologiche, s. 9, 15, 377-392.
+Hackett J.A. 2002, The Study of Partially Documented Languages, in Izre’el Sh. (ed.), Semitic Linguistics: The State of the Art
+    at the Turn of the Twenty-First Century, Winona Lake, 57-75.
+Helck W. 1974, Byblos, in Helck, W., Eberhard, O. (eds), Lexikon der Ägyptologie 1/6, 889-891.
+Helck W. 1994, Byblos und Ägypten, in Acquaro E., Mazza F., Ribichini S., Scandone G., Xella P. (eds), Biblo. Una città e la
+    sua cultura, Rome, 105-111.
+Hoch J.E. 1990, The Byblos Syllabary: Bridging the Gap between Egyptian Hieroglyphs and Semitic Alphabet, SSEAJ 20,
+    115-124.
+Hoch J.E. 1995, Egyptian Hieratic Writing in the Byblos Pseudo-hieroglyphic Stele L, Journal of the American Research Center
+    in Egypt 32, 59-65 .
+Hrozny B. 1944, Die hieroglyphische Stele von Byblos, ArOr 15, 138-157.
+Huehnergard J. 2008, Languages of the Ancient Near East, in Doob Sakenfeld K. (ed.), The New Interpreter’s Dictionary of the
+    Bible, vol. 3, Nashville, 576-580.
+Israel F. 2003, Studi prefenici I: Le iscrizioni pseudogeroglifiche di Biblos: A) Documentazione bibliografica, in González
+    A., Vita J.-P., Zamora J.-Á. (eds), De la tablilla a la inteligencia artificial. Homenaje al Prof. Jesús Luis Cunchillos en su 65
+    aniversario, Zaragoza, 365-373.
+Jidejian N. 1968, Byblos through the Ages, Beirut.
+Klengel H. 1992, Syria 3000 to 300 B.C., Berlin.
+Lipiński E. 1993, Pseudo-hiérogyphes giblites, in Lipiński E., Baurain C., Bonnet C., Debergh J., Gubel E., Krings V. (eds),
+    Dictionnaire de la civilisation phénicienne et punique, Turnhout, 363.
+Martin M. 1961, A Preliminary Report after Re-Examination of the Byblian Inscriptions, Orientalia 30, 46-78.
+Martin M. 1962a, Revision and Reclassification of the Proto-Byblian Signs, Orientalia 31, 250-271.
+Martin M. 1962b, Revision and Reclassification of the Proto-Byblian Signs (Continued), Orientalia 31, 339-363.
+Mendenhall G.E. 1985, The Syllabic Inscriptions from Byblos, Beirut.
+Morenz L.D. 2011, Die Genese der Alphabetschrift: Ein Markstein ägyptisch-kanaanäischer Kulturkontakte (Wahrnehmungen
+    und Spuren Altägyptens 3), Würzburg 2011.
+Posener G. 1969, Sur les inscriptions pseudo-hiéroglyphiques de Byblos, in Fleisch H. (ed.), Mélanges offerts à Maurice Dunand,
+    vol. I, Beirut, 223-239.
+Puech É. 1999, Un anneau inscrit du Bronze Récent à Megiddo, in Chazan R., Hallo W.W., Schiffman L.H. (eds), Ki Baruch
+    Hu. Ancient Near Eastern, Biblical and Judaic Studies in Honor of Baruch A. Levine, Winona Lake, 51-61.
+Redford D.B. 1992, Egypt, Canaan, and Israel in Ancient Times, Princeton.
+Röllig W. 1972-1975, Hierogyphen von Byblos, in Reallexikon der Assyriologie 4, 393-394.
+Sass B. 2005, The Alphabet at the Turn of the Millennium, Tel Aviv.
+Sznycer M. 1975, Les inscriptions pseudo-hiéroglyphiques de Byblos, in Leclant J. (ed.), Le déchiffrement des écritures et des
+    langues, Paris, 75-84.
+Sznycer M. 1994, Les inscriptions ‘pseudo-hiéroglyphiques’ de Byblos, in Acquaro E., Mazza F., Ribichini S., Scandone G.,
+    Xella P. (eds), Biblo. Una città e la sua cultura, Rome, 167-178.
+                                                                                                                        es
+102 Juan-Pablo Vita, José-Ángel Zamora
+
+
+
+
+                                                                                                                          tra
+                                                                                                                                  tto
+Van de Sande A. 2008, Les pséudo-hiéroglyphes de Byblos. Bibliographie et remarques générales, Res Antiquae 5, 465-470.
+Woodard R.D. 2004, Introduction, in Woodard R.D. (ed.), The Cambridge Encyclopedia of the World’s Ancient Languages,
+   Cambridge, 1-18.
+Woodard R.D. 2008, Language in Ancient Syria-Palestine and Arabia: an introduction, in Woodard R.D. (ed.), The Ancient
+   Languages of Syria-Palestine and Arabia, Cambridge, 1-4.
+Woudhuizen F.C. 2007, On the Byblos Script, UgaritF 39, 689-756.
+Zamora J.-Á. 2006, Les utilisations de l’alphabet lors du IIe millénaire av. J.-C. et le développement de l’épigraphie alphabétique :
+   une approche à travers la documentation ougaritique en dehors des tablettes (II), in Del Olmo G., Feliu Ll., Millet A. (eds),
+   Šapal tibnim mû illakū. Studies Presented to Joaquín San­martín on the Occasion of His 65th Birthday, Saba­dell-Barcelona,
+   491-528.
+Zamora J.-Á. 2007, Les utilisations de l’alphabet lors du IIe millénaire av. J.-C. et le développement de l’épigraphie alphabétique :
+   une approche à travers la documentation ougaritique en dehors des tablettes (I), in Michaud J.-M. (ed.), Le royaume
+   d’Ougarit de la Crète à l’Éuphrate. Nouveaux axes de recherche, Sherbrooke, 9-47.
+Zauzich K.-T. 2015, Hieroglyphen mit Geheimnis. Neue Erkenntnisse zur Entstehung unseres Alphabets, Darmstadt.
+
+Juan-Pablo Vita
+Consejo Superior de Investigaciones Científicas (CSIC)
+Instituto de Lenguas y Culturas del Mediterráneo y Oriente Próximo (ILC)
+Calle Albasanz, 26-28,
+28037 Madrid
+Spain
+ juanpablo.vita@cchs.csic.es
+
+José-Ángel Zamora
+Consejo Superior de Investigaciones Científicas (CSIC)
+Instituto de Lenguas y Culturas del Mediterráneo y Oriente Próximo (ILC)
+Calle Albasanz, 26-28,
+28037 Madrid
+Spain
+joseangel.zamora@cchs.csic.es
+                                              es
+                                                tra
+                                                 tto
+
+
+
+
+Finito di stampare nel mese di ottobre 2018
+ presso Global Print srl – Gorgonzola (MI)
+

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Detecting word boundaries in an undeciphered script: The Byblos syllabary
+							| BAF-Online: Proceedings of the Berner Altorientalisches Forum
+			</title>
+
+	
+<link rel="icon" href="https://bop.unibe.ch/public/journals/17/favicon_en_US.png">
+<meta name="generator" content="Open Journal Systems 3.4.0.6">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Michael Mäder"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2022-12-24"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2020-10-09"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2020-11-06"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2026-03-31"/>
+<meta name="DC.Description" xml:lang="en" content="The Byblos writing system (ca. 1500 BC) comprises 15 inscriptions, with the largest one containing 461 clearly discernible signs. Some further 28 unassigned fragments found in the Levante and in Italy are tentatively assigned to the Byblos corpus too. We have created a Unicode letter for each sign variant found in these inscriptions and transcribed the corpus. Feeding the corpus into our RegEx- based deciphering tool, we established a preliminary (dynamic) syllabary laying a foundation for computer-assisted deciphering efforts of the Byblos script. A first sequence analysis allows to detect morphemes and word boundaries, so that even without knowing the sound values, we gain some insight into the syntax of the language depicted by these beautiful graphemes."/>
+<meta name="DC.Format" scheme="IMT" content="application/pdf"/>
+<meta name="DC.Identifier" content="7186"/>
+<meta name="DC.Identifier.DOI" content="10.22012/baf.2019.03"/>
+<meta name="DC.Identifier.URI" content="https://bop.unibe.ch/baf/article/view/7186"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2020 Michael Mäder"/>
+<meta name="DC.Source" content="BAF-Online: Proceedings of the Berner Altorientalisches Forum"/>
+<meta name="DC.Source.ISSN" content="2504-2076"/>
+<meta name="DC.Source.Issue" content="1"/>
+<meta name="DC.Source.Volume" content="4"/>
+<meta name="DC.Source.URI" content="https://bop.unibe.ch/baf"/>
+<meta name="DC.Title" content="Detecting word boundaries in an undeciphered script: The Byblos syllabary"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="Panel GIGA.MEŠ: Techniques of digital reconstruction "/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="BAF-Online: Proceedings of the Berner Altorientalisches Forum"/>
+<meta name="citation_journal_abbrev" content="BAF-O"/>
+<meta name="citation_issn" content="2504-2076"/> 
+<meta name="citation_author" content="Michael Mäder"/>
+<meta name="citation_title" content="Detecting word boundaries in an undeciphered script: The Byblos syllabary"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2019"/>
+<meta name="citation_volume" content="4"/>
+<meta name="citation_issue" content="1"/>
+<meta name="citation_doi" content="10.22012/baf.2019.03"/>
+<meta name="citation_abstract_html_url" content="https://bop.unibe.ch/baf/article/view/7186"/>
+<meta name="citation_abstract" xml:lang="en" content="The Byblos writing system (ca. 1500 BC) comprises 15 inscriptions, with the largest one containing 461 clearly discernible signs. Some further 28 unassigned fragments found in the Levante and in Italy are tentatively assigned to the Byblos corpus too. We have created a Unicode letter for each sign variant found in these inscriptions and transcribed the corpus. Feeding the corpus into our RegEx- based deciphering tool, we established a preliminary (dynamic) syllabary laying a foundation for computer-assisted deciphering efforts of the Byblos script. A first sequence analysis allows to detect morphemes and word boundaries, so that even without knowing the sound values, we gain some insight into the syntax of the language depicted by these beautiful graphemes."/>
+<meta name="citation_pdf_url" content="https://bop.unibe.ch/baf/article/download/7186/12109"/>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+	<link rel="stylesheet" href="https://bop.unibe.ch/baf/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://bop.unibe.ch/baf/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="https://bop.unibe.ch/lib/pkp/styles/fontawesome/fontawesome.css?v=3.4.0.6" type="text/css" /><link rel="stylesheet" href="https://bop.unibe.ch/public/journals/17/styleSheet.css?d=2025-01-30+15%3A47%3A57" type="text/css" /><link rel="stylesheet" href="https://bop.unibe.ch/public/site/styleSheet.css?v=3.4.0.6" type="text/css" /><link rel="stylesheet" href="https://bop.unibe.ch/plugins/generic/citationStyleLanguage/css/citationStyleLanguagePlugin.css?v=3.4.0.6" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						
+ <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Skip to main content</a>
+	<a href="#siteNav">Skip to main navigation menu</a>
+		<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://bop.unibe.ch/baf/index
+					" class="is_img">
+							<img src="https://bop.unibe.ch/public/journals/17/pageHeaderLogoImage_en_US.png" width="3000" height="334" alt="BAF-Online" />
+						</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Site Navigation">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://bop.unibe.ch/baf/about">
+					About
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://bop.unibe.ch/baf/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://bop.unibe.ch/baf/about/submissions">
+										Submissions
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://bop.unibe.ch/baf/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://bop.unibe.ch/baf/about/privacy">
+										Privacy Statement
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://bop.unibe.ch/baf/about/contact">
+										Contact
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://bop.unibe.ch/baf/issue/current">
+					Current
+				</a>
+							</li>
+								<li class="">
+				<a href="https://bop.unibe.ch/baf/announcement">
+					Announcements
+				</a>
+							</li>
+								<li class="">
+				<a href="https://bop.unibe.ch/baf/issue/archive">
+					Archives
+				</a>
+							</li>
+								<li class="">
+				<a href="http://www.baf.unibe.ch">
+					>>> The BAF <<<
+				</a>
+							</li>
+			</ul>
+
+				
+
+																						<div class="pkp_navigation_search_wrapper">
+									<a href="https://bop.unibe.ch/baf/search" class="pkp_search pkp_search_desktop">
+										<span class="fa fa-search" aria-hidden="true"></span>
+										Search
+									</a>
+								</div>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="https://bop.unibe.ch/baf/about/contact">
+					<i class="fa fa-envelope"></i>
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://bop.unibe.ch/baf/search">
+					<i class="fa fa-search"></i>
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://bop.unibe.ch/baf/user/register">
+					Register
+				</a>
+							</li>
+								<li class="profile">
+				<a href="https://bop.unibe.ch/baf/login">
+					Login
+				</a>
+							</li>
+										</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol>
+		<li>
+			<a href="https://bop.unibe.ch/baf/index">
+				Home
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li>
+			<a href="https://bop.unibe.ch/baf/issue/archive">
+				Archives
+			</a>
+			<span class="separator">/</span>
+		</li>
+					<li>
+				<a href="https://bop.unibe.ch/baf/issue/view/896">
+					Vol. 4 No. 1 (2019): Proceedings of the 4th Berner Altorientalisches Forum (BAF), 11th-13th June 2019
+				</a>
+				<span class="separator">/</span>
+			</li>
+				<li class="current" aria-current="page">
+			<span aria-current="page">
+									Panel GIGA.MEŠ: Techniques of digital reconstruction 
+							</span>
+		</li>
+	</ol>
+</nav>
+	
+		  	 <article class="obj_article_details">
+
+		
+	<h1 class="page_title">
+		Detecting word boundaries in an undeciphered script: The Byblos syllabary
+	</h1>
+
+	
+	<div class="row">
+		<div class="main_entry">
+
+							<section class="item authors">
+					<h2 class="pkp_screen_reader">Authors</h2>
+					<ul class="authors">
+											<li>
+							<span class="name">
+								Michael Mäder
+							</span>
+																																		</li>
+										</ul>
+				</section>
+			
+																	<section class="item doi">
+					<h2 class="label">
+												DOI:
+					</h2>
+					<span class="value">
+						<a href="https://doi.org/10.22012/baf.2019.03">
+							https://doi.org/10.22012/baf.2019.03
+						</a>
+					</span>
+				</section>
+			
+
+						
+										<section class="item abstract">
+					<h2 class="label">Abstract</h2>
+					<p>The Byblos writing system (ca. 1500 BC) comprises 15 inscriptions, with the largest one containing 461 clearly discernible signs. Some further 28 unassigned fragments found in the Levante and in Italy are tentatively assigned to the Byblos corpus too. We have created a Unicode letter for each sign variant found in these inscriptions and transcribed the corpus. Feeding the corpus into our RegEx- based deciphering tool, we established a preliminary (dynamic) syllabary laying a foundation for computer-assisted deciphering efforts of the Byblos script. A first sequence analysis allows to detect morphemes and word boundaries, so that even without knowing the sound values, we gain some insight into the syntax of the language depicted by these beautiful graphemes.</p>
+				</section>
+			
+			
+
+						
+																			
+						
+		</div><!-- .main_entry -->
+
+		<div class="entry_details">
+
+										<div class="item cover_image">
+					<div class="sub_item">
+													<a href="https://bop.unibe.ch/baf/issue/view/896">
+								<img src="https://bop.unibe.ch/public/journals/17/cover_issue_896_en_US.jpg" alt="">
+							</a>
+											</div>
+				</div>
+			
+										<div class="item galleys">
+					<h2 class="pkp_screen_reader">
+						Downloads
+					</h2>
+					<ul class="value galleys_links">
+													<li>
+								
+	
+													
+
+<a class="obj_galley_link file" href="https://bop.unibe.ch/baf/article/view/7186/12110">
+		
+	Video
+
+	</a>
+							</li>
+											</ul>
+				</div>
+										<div class="item galleys">
+					<h3 class="pkp_screen_reader">
+						Additional Files
+					</h3>
+					<ul class="value supplementary_galleys_links">
+													<li>
+								
+	
+													
+
+<a class="obj_galley_link_supplementary pdf" href="https://bop.unibe.ch/baf/article/view/7186/12109">
+		
+	Abstract
+
+	</a>
+							</li>
+											</ul>
+				</div>
+			
+						<div class="item published">
+				<section class="sub_item">
+					<h2 class="label">
+						Published
+					</h2>
+					<div class="value">
+																			<span>2022-12-24</span>
+																	</div>
+				</section>
+							</div>
+			
+						
+										<div class="item issue">
+
+											<section class="sub_item">
+							<h2 class="label">
+								Issue
+							</h2>
+							<div class="value">
+								<a class="title" href="https://bop.unibe.ch/baf/issue/view/896">
+									Vol. 4 No. 1 (2019): Proceedings of the 4th Berner Altorientalisches Forum (BAF), 11th-13th June 2019
+								</a>
+							</div>
+						</section>
+					
+											<section class="sub_item">
+							<h2 class="label">
+								Section
+							</h2>
+							<div class="value">
+								Panel GIGA.MEŠ: Techniques of digital reconstruction 
+							</div>
+						</section>
+					
+									</div>
+			
+						
+										<div class="item copyright">
+					<h2 class="label">
+						License
+					</h2>
+										<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License" /><br /></a>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+				</div>
+			
+				<div class="item citation">
+		<section class="sub_item citation_display">
+			<h2 class="label">
+				How to Cite
+			</h2>
+			<div class="value">
+				<div id="citationOutput" role="region" aria-live="polite">
+					<div class="csl-bib-body">
+  <div class="csl-entry">Mäder, M. (2022). Detecting word boundaries in an undeciphered script: The Byblos syllabary. <i>BAF-Online: Proceedings of the Berner Altorientalisches Forum</i>, <i>4</i>(1). <a href="https://doi.org/10.22012/baf.2019.03">https://doi.org/10.22012/baf.2019.03</a></div>
+</div>
+				</div>
+				<div class="citation_formats">
+					<button class="citation_formats_button label" aria-controls="cslCitationFormats" aria-expanded="false" data-csl-dropdown="true">
+						More Citation Formats
+					</button>
+					<div id="cslCitationFormats" class="citation_formats_list" aria-hidden="true">
+						<ul class="citation_formats_styles">
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/acm-sig-proceedings?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/acm-sig-proceedings?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										ACM
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/acs-nano?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/acs-nano?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										ACS
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/apa?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/apa?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										APA
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										ABNT
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/chicago-author-date?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/chicago-author-date?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										Chicago
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/harvard-cite-them-right?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/harvard-cite-them-right?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										Harvard
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/ieee?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/ieee?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										IEEE
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/modern-language-association?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/modern-language-association?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										MLA
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										Turabian
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/vancouver?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/vancouver?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										Vancouver
+									</a>
+								</li>
+															<li>
+									<a
+											aria-controls="citationOutput"
+											href="https://bop.unibe.ch/baf/citationstylelanguage/get/ama?submissionId=7186&amp;publicationId=4947&amp;issueId=896"
+											data-load-citation
+											data-json-href="https://bop.unibe.ch/baf/citationstylelanguage/get/ama?submissionId=7186&amp;publicationId=4947&amp;issueId=896&amp;return=json"
+									>
+										AMA
+									</a>
+								</li>
+													</ul>
+													<div class="label">
+								Download Citation
+							</div>
+							<ul class="citation_formats_styles">
+																	<li>
+										<a href="https://bop.unibe.ch/baf/citationstylelanguage/download/ris?submissionId=7186&amp;publicationId=4947&amp;issueId=896">
+											<span class="fa fa-download"></span>
+											Endnote/Zotero/Mendeley (RIS)
+										</a>
+									</li>
+																	<li>
+										<a href="https://bop.unibe.ch/baf/citationstylelanguage/download/bibtex?submissionId=7186&amp;publicationId=4947&amp;issueId=896">
+											<span class="fa fa-download"></span>
+											BibTeX
+										</a>
+									</li>
+															</ul>
+											</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+				<link rel="stylesheet" type="text/css" href="https://bop.unibe.ch/plugins/generic/shariff/css/shariff.css">
+				<link rel="stylesheet" type="text/css" href="https://bop.unibe.ch/plugins/generic/shariff/shariff-3.3.0/shariff.complete.css">
+				<link rel="stylesheet" type="text/css" href="https://bop.unibe.ch/plugins/generic/shariff/css/wcag-themes.css">
+				<div class="item shariffblock"><div>
+				<div class="shariff item" data-lang="en"
+					data-services="[linkedin,mail,print]"
+					data-mail-url="mailto:"
+					data-mail-body="https://bop.unibe.ch/index.php/baf/article/view/7186"
+					data-backend-url="https://bop.unibe.ch/shariff-backend"
+					data-theme="white"
+					data-orientation="horizontal"
+					data-url="https://bop.unibe.ch/index.php/baf/article/view/7186">
+				</div>
+				</div>
+				</div>
+				<script src="https://bop.unibe.ch/plugins/generic/shariff/shariff-3.3.0/shariff.complete.js"></script>
+
+		</div><!-- .entry_details -->
+	</div><!-- .row -->
+
+</article>
+
+	
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary">
+				<div class="pkp_block block_language">
+	<h2 class="title">
+		Language
+	</h2>
+
+	<div class="content">
+		<ul>
+							<li class="locale_de" lang="de">
+					<a href="https://bop.unibe.ch/baf/user/setLocale/de?source=%2Fbaf%2Farticle%2Fview%2F7186">
+						Deutsch
+					</a>
+				</li>
+							<li class="locale_en current" lang="en">
+					<a href="https://bop.unibe.ch/baf/user/setLocale/en?source=%2Fbaf%2Farticle%2Fview%2F7186">
+						English
+					</a>
+				</li>
+							<li class="locale_fr_CA" lang="fr-CA">
+					<a href="https://bop.unibe.ch/baf/user/setLocale/fr_CA?source=%2Fbaf%2Farticle%2Fview%2F7186">
+						Français
+					</a>
+				</li>
+							<li class="locale_it" lang="it">
+					<a href="https://bop.unibe.ch/baf/user/setLocale/it?source=%2Fbaf%2Farticle%2Fview%2F7186">
+						Italiano
+					</a>
+				</li>
+					</ul>
+	</div>
+</div><!-- .block_language -->
+
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<div id="bop_footer">
+<table width="100%">
+<tbody>
+<tr>
+<td align="left">
+<div id="footer_w_font">
+<table>
+<tbody>
+<tr>
+<td>published by</td>
+</tr>
+<tr>
+<td><a title="BOP" href="https://doi.org/10.36950/BOP" target="_blank" rel="noopener"><img src="https://bop.unibe.ch/public/site/images/pkpadmin/bop-icon-white-adress.png" width="300" height="48" /></a></td>
+</tr>
+<tr>
+<td>Hochschulstrasse 6<br />CH-3012 Bern<br />
+<div id="footer_w_link"><a href="mailto:bop@unibe.ch">bop@unibe.ch</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td> </td>
+<td align="right">
+<div id="uni_logo"><a href="https://www.unibe.ch/" target="_blank" rel="noopener"><img src="https://bop.unibe.ch/public/site/images/pkpadmin/ub-180px-white-neu.png" width="180" height="147" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+			</div>
+		
+		<div class="pkp_brand_footer">
+			<a href="https://bop.unibe.ch/baf/about/aboutThisPublishingSystem">
+				<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://bop.unibe.ch/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="https://bop.unibe.ch/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/plugins/themes/default/js/lib/popper/popper.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/plugins/themes/default/js/lib/bootstrap/util.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/plugins/themes/default/js/main.js?v=3.4.0.6" type="text/javascript"></script><script src="https://bop.unibe.ch/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.4.0.6" type="text/javascript"></script>
+
+
+</body>
+</html>

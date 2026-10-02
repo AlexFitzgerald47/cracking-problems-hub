@@ -1,0 +1,65 @@
+
+==============================================================================
+L. THE DISPUTED SIGNS, WITH THEIR GEAS SHAPE NAMES
+==============================================================================
+   E416   offener Ring                   d I 7    offener Ring
+   E495   offener Ring eingedreht        k III 2   offener Ring eingedreht
+   E4FD   flaches Boot                   Rc I 3   flaches Boot
+   E4AE   Sonnenaufgang                  Rb I 2   Sonnenaufgang
+   E4AF   Sonnenaufgang / Rechts-Schlaufe   Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+   E450   Liegebett                      d XXVIII 11 Liegebett
+   E455   Liegebett schlaff              d XXXIV 6  Liegebett schlaff
+   E47B   Galgen liegend                 c XIV 11 Galgen liegend
+   E4C9   Liegebett sehr steif           Y I 1   Liegebett sehr steif
+
+=> E416/E495 are the 'offener Ring' (open ring) family.
+   E4AE/E4AF are the 'Sonnenaufgang' (sunrise) family -- and BOTH are first
+   attested on the cylinder column Rb I (Rb I 2 and Rb I 3).
+   Syl2-Syl5 put a RING and a SUNRISE in one grapheme group; Syl6-Syl8 separate
+   the rings from the sunrises.  That is a graphic re-grouping along the
+   project's own shape taxonomy.  The Amarna alignment coincides with it; it is
+   not evident that the alignment caused it, and the kernel's claim that OCBI
+   'independently moves in exactly the direction demanded by the external
+   control' overstates what the sequence of inventories shows.
+
+Syl6 group that receives E4AE/E4AF/E4FD, with shape names:
+   E450   Liegebett
+   E455   Liegebett schlaff
+   E47B   Galgen liegend
+   E4C9   Liegebett sehr steif
+   E4AE   Sonnenaufgang
+   E4AF   Sonnenaufgang / Rechts-Schlaufe
+   E4FD   flaches Boot
+
+Syl6 group containing E416:
+   E416   offener Ring
+   E495   offener Ring eingedreht
+
+==============================================================================
+M. HOW MUCH OF THE CYLINDER'S SIGNARY IS CYLINDER-ONLY?
+==============================================================================
+distinct signs on the cylinder (all variants) : 21
+of those, attested NOWHERE else in OCBI       : 8 (38%)
+   E4AC   Ra I 1   zwei Pfeile nach rechts unten
+   E4AD   Ra I 2   Auge klein
+   E4AE   Rb I 2   Sonnenaufgang
+   E4AF   Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+   E4B1   Rb II 2   Fernseher
+   E4B2   Rb II 3   Galgen mit doppeltem Dach
+   E4FD   Rc I 3   flaches Boot
+   E4FF   Rb I 1   Götterzeichen auf Siegel
+
+Base rate for comparison: share of all attested types that occur in exactly one
+fragment entry = 0%.
+   single-fragment types corpus-wide: 94 of 219 (43%)
+
+=> 8 of the cylinder's 21 signs (38%) are attested only on the cylinder,
+   against a corpus-wide single-fragment rate of 43%.  THIS ATTACK FAILS:
+   the cylinder is NOT anomalous in its share of otherwise unattested signs --
+   it is slightly below the corpus base rate.  Validator-1 records that as a
+   point IN FAVOUR of the kernel's script identification.
+   What does follow is narrower and still decisive for criterion 4: the two
+   divine-name anchors (E4AF, and E4AE in the Var.1/2 reading) and the second
+   half of the AMUN digraph in combination have ZERO off-cylinder attestation,
+   so they cannot generate any held-out prediction on the Dunand core by
+   construction.

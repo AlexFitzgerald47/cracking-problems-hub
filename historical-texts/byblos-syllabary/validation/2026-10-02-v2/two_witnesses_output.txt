@@ -1,0 +1,42 @@
+
+==============================================================================
+1. SYLLABARY BLOCKS: W1 (master source) vs W2 (deployed build)
+==============================================================================
+  W1 syllabaries : 10  (search, syl1, syl2, syl3, syl4, syl5, syl6, syl7, syl8, syl9)
+  W2 blocks >=10 groups found in the bundle : 10
+  W1 ids exactly reproduced in W2 : ['search', 'syl1', 'syl2', 'syl3', 'syl4', 'syl5', 'syl6', 'syl7', 'syl8', 'syl9']
+  W1 ids NOT found in W2          : []
+  W2 blocks with no W1 counterpart: 0
+
+==============================================================================
+2. THE LOAD-BEARING PAIR E416 / E4AF IN BOTH WITNESSES
+==============================================================================
+  W1 per-inventory verdicts : {'merged': 6, 'split/absent': 4}
+  W2 per-block  verdicts    : {'merged': 6, 'split/absent': 4}
+
+==============================================================================
+3. syllableMap IN BOTH WITNESSES
+==============================================================================
+  W1: "me <E49A>\npa <E44D>\nATON <E416>\nAMUN <E42A><E483>\ni <E42A>\no <E45A>\n\u1e25 <E419>\nm <E41F>\nb <E444>\n\u015b <E411>\nh <E410>\naleph <E447>"
+  W2: "\"\\nme <E49A>\\npa <E44D>\\nATON <E416>\\nAMUN <E42A><E483>\\ni <E42A>\\no <E45A>\\n\u1e25 <E419>\\nm <E41F>\\nb <E444>\\n\u015b <E411>\\nh <E410>\\naleph <E447>\\n\""
+  IDENTICAL ATON ASSIGNMENT IN BOTH WITNESSES: True
+
+==============================================================================
+4. CYLINDER ROWS IN BOTH WITNESSES
+==============================================================================
+  ra               W1=<E4AC><E4AD><E41F><E44D><E42A><E483>   byte-for-byte present in W2: True
+  rb (Var. 1)      W1=<E4FF><E49A><E4AE><E4AF>   byte-for-byte present in W2: True
+  rb (Var. 2)      W1=<E4FF><E49A><E4AE><E4AF>   byte-for-byte present in W2: True
+  rb (Var. 3)      W1=<E49A><E416><E491><E4AF>   byte-for-byte present in W2: True
+  rc (Var. 1)      W1=<E4B0><E42A><E4AE><E417><E4AE>   byte-for-byte present in W2: True
+  rc (Var. 2)      W1=<E4B0><E4B1><E4B2><E4FD>   byte-for-byte present in W2: True
+  rc (Var. 3)      W1=<E4B0><E443><E429><E4AF>   byte-for-byte present in W2: True
+  rd               W1=<E45C><E4B3><E429>   byte-for-byte present in W2: True
+
+==============================================================================
+5. CORPUS COUNTS IN BOTH WITNESSES
+==============================================================================
+  W1 group field counts : {'BYBL': 29, 'BYBL?': 14}
+  W2 occurrences of the literal "BYBL?" : 28
+  W2 occurrences of the literal "BYBL"  : 130
+  (W2 is minified, so these are upper bounds, not object counts.)

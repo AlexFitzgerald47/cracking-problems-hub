@@ -1,0 +1,151 @@
+
+==============================================================================
+0. CORPUS SHAPE AS ACTUALLY ENCODED
+==============================================================================
+fragment entries in file : 43
+rawTokens (declared sign repertoire) : 238 codepoints
+by `source` field : {'BYBL': 31, 'BYBL?': 12}
+by `group`  field : {'BYBL': 29, 'BYBL?': 14}
+distinct object ids after stripping Var./face suffixes : 35
+    ['a', "a'", 'b', "b'a", "b'b", "b'c", 'c', "c'", 'd', "d'", 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'ra', 'rb', 'rc', 'rd', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+objects with source==BYBL : 24  -> ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'ra', 'rb', 'rc', 'rd', 's', 't', 'u']
+objects with source==BYBL? : 11
+collapsing cylinder r a-d into one object -> BYBL objects : 21
+OCBI's own description text claims: 18 BYBL (a-s) and 14 BYBL? (t-d')
+
+sign tokens (all variants counted)      : 1377
+unreadable wildcard slots               : 283
+guess-marked sign tokens                : 143 (10.4%)
+distinct sign TYPES actually attested    : 219
+declared rawTokens not attested in texts : 19
+
+de-duplicated (first variant per object): 1284 tokens, 213 types
+type/token ratio (dedup)                : 0.166
+hapax sign types (dedup)                : 78  (37% of types)
+
+==============================================================================
+1. THE AMARNA CYLINDER AS ENCODED (all variants, nothing selected)
+==============================================================================
+  ra               dir=TDR   E4AC E4AD E41F E44D E42A E483
+  rb (Var. 1)      dir=TDR   E4FF E49A E4AE E4AF
+  rb (Var. 2)      dir=TDR   E4FF E49A E4AE E4AF
+  rb (Var. 3)      dir=TDR   E49A E416 E491 E4AF
+  rc (Var. 1)      dir=TDR   E4B0 E42A E4AE E417 E4AE?
+  rc (Var. 2)      dir=TDR   E4B0 E4B1 E4B2 E4FD
+  rc (Var. 3)      dir=TDR   E4B0 E443 E429 E4AF
+  rd               dir=RTL   E45C E4B3 E429
+
+CLAIM (PARTIAL_BIGRAPH_KERNEL table):
+  BYBL ra        = E4AC E4AD E41F E44D E42A E483   -> Ankhesen(pa)amun
+  BYBL rb Var.3  = E49A E416 E491 E4AF             -> Meketaton
+  BYBL rc Var.3  = E4B0 E443 E429 E4AF             -> Meritaton
+  ra             claimed==encoded : True
+  rb (Var. 3)    claimed==encoded : True
+  rc (Var. 3)    claimed==encoded : True
+
+==============================================================================
+1b. VARIANT SENSITIVITY OF THE CYLINDER READINGS  [validator-1 new test]
+==============================================================================
+rb has 3 transcription variants and rc has 3, of the SAME physical columns.
+The claim silently selects Var.3 for both. Consequences:
+  rb (Var. 1)    = E4FF E49A E4AE E4AF             len=4  terminal=E4AF  contains E416=False
+  rb (Var. 2)    = E4FF E49A E4AE E4AF             len=4  terminal=E4AF  contains E416=False
+  rb (Var. 3)    = E49A E416 E491 E4AF             len=4  terminal=E4AF  contains E416=True
+  rc (Var. 1)    = E4B0 E42A E4AE E417 E4AE        len=5  terminal=E4AE  contains E416=False
+  rc (Var. 2)    = E4B0 E4B1 E4B2 E4FD             len=4  terminal=E4FD  contains E416=False
+  rc (Var. 3)    = E4B0 E443 E429 E4AF             len=4  terminal=E4AF  contains E416=False
+
+==============================================================================
+2. INVENTORY MERGE / SPLIT, RE-DERIVED FOR EVERY SYLLABARY
+==============================================================================
+syllabary  E416~E4AF  E4AE~E4AF  E416~E4AE  E416~E495  E4AF~E4FD  E491~E412  E49A~E4B0
+search/Initial Syllabary MERGED MERGED MERGED MERGED absent MERGED MERGED
+syl1/Syl1  MERGED MERGED MERGED MERGED MERGED MERGED MERGED
+syl2/Syl2  MERGED MERGED MERGED MERGED MERGED MERGED MERGED
+syl3/Syl3  MERGED MERGED MERGED MERGED MERGED MERGED MERGED
+syl4/Syl4  MERGED MERGED MERGED MERGED MERGED MERGED MERGED
+syl5/Syl4  MERGED MERGED MERGED MERGED MERGED MERGED MERGED
+syl6/Syl6  split  MERGED split  MERGED MERGED MERGED MERGED
+syl7/Syl7  split  MERGED split  MERGED MERGED MERGED MERGED
+syl8/Syl8  split  MERGED split  MERGED MERGED MERGED MERGED
+syl9/Syl9  absent absent absent MERGED absent split  split 
+
+CLAIM: 'Syl2-Syl5: E416 and E4AF merged; Syl6-Syl8: E416 E495 separated from
+        the group containing E4AE E4AF E4FD.'
+
+==============================================================================
+2b. WHAT THE SPLIT ARGUMENT LOOKS LIKE UNDER THE OTHER VARIANTS  [new test]
+==============================================================================
+The argument is: 'two signs that OCBI merges both occur inside one 4-sign
+proper name, forcing unnecessary polyfunctionality -> split them.'
+Applying the SAME argument mechanically to every cylinder-name variant:
+  ra             syl8     same-group pairs inside the name: [('E4AC', 'E41F')]
+  rb (Var. 1)    search   same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 1)    syl5     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 1)    syl6     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 1)    syl8     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 2)    search   same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 2)    syl5     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 2)    syl6     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 2)    syl8     same-group pairs inside the name: [('E4AE', 'E4AF')]
+  rb (Var. 3)    search   same-group pairs inside the name: [('E416', 'E4AF')]
+  rb (Var. 3)    syl5     same-group pairs inside the name: [('E416', 'E4AF')]
+  rc (Var. 1)    syl6     same-group pairs inside the name: [('E42A', 'E417')]
+  rc (Var. 2)    search   same-group pairs inside the name: [('E4B1', 'E4B2')]
+  rc (Var. 2)    syl5     same-group pairs inside the name: [('E4B1', 'E4B2')]
+  rc (Var. 2)    syl6     same-group pairs inside the name: [('E4B1', 'E4B2')]
+  rc (Var. 2)    syl8     same-group pairs inside the name: [('E4B1', 'E4B2')]
+
+==============================================================================
+3. POSITIONAL / DISTRIBUTIONAL FACTS FOR THE ANCHOR SIGNS
+==============================================================================
+E49A:   6 tokens total,  3 on cylinder r*,  3 off-cylinder, in 6 fragment entries
+E4B0:   4 tokens total,  3 on cylinder r*,  1 off-cylinder, in 4 fragment entries
+E44D:  12 tokens total,  1 on cylinder r*, 11 off-cylinder, in 8 fragment entries
+E4AF:   4 tokens total,  4 on cylinder r*,  0 off-cylinder, in 4 fragment entries
+E416:  18 tokens total,  1 on cylinder r*, 17 off-cylinder, in 7 fragment entries
+E4AE:   4 tokens total,  4 on cylinder r*,  0 off-cylinder, in 3 fragment entries
+E483:   3 tokens total,  1 on cylinder r*,  2 off-cylinder, in 3 fragment entries
+E42A:  25 tokens total,  2 on cylinder r*, 23 off-cylinder, in 9 fragment entries
+E491:   5 tokens total,  1 on cylinder r*,  4 off-cylinder, in 5 fragment entries
+E412:  13 tokens total,  0 on cylinder r*, 13 off-cylinder, in 6 fragment entries
+E402:  13 tokens total,  0 on cylinder r*, 13 off-cylinder, in 6 fragment entries
+
+CLAIM: 'E4AF is cylinder-only in the current OCBI raw transcription'
+  -> off-cylinder E4AF tokens found: 0
+CLAIM: 'E42A E483 is cylinder-only as an exact digraph' -> occurrences: 1 ['ra']
+  (E483 alone occurs in: ['c', 'o (verso) Var. 1', 'ra'] )
+
+==============================================================================
+4. THE ME ANCHOR TRANSFER (criterion-4 candidate), RE-DERIVED
+==============================================================================
+  i              dir=RTL  line 9 pos 4  guess=False
+        line: E45A? E413 E442 E402 E49A E402 E48F E40D? E439? E412? E411
+        string-left=E402   string-right=E402
+  k              dir=RTL  line 4 pos 3  guess=False
+        line: E45A E497 E439 E49A E402 E412 E45A
+        string-left=E439   string-right=E402
+  m              dir=RTL  line 2 pos 3  guess=False
+        line: FRACT WILD E410 E49A E402 E48F E46B FRACT
+        string-left=E410   string-right=E402
+  rb (Var. 1)    dir=TDR  line 1 pos 1  guess=False
+        line: E4FF E49A E4AE E4AF
+        string-left=E4FF   string-right=E4AE
+  rb (Var. 2)    dir=TDR  line 1 pos 1  guess=False
+        line: E4FF E49A E4AE E4AF
+        string-left=E4FF   string-right=E4AE
+  rb (Var. 3)    dir=TDR  line 1 pos 0  guess=False
+        line: E49A E416 E491 E4AF
+        string-left=(line start)   string-right=E416
+
+CLAIM (ME_ANCHOR_TRANSFER table 3) says the three left neighbours are
+  BYBL i -> E442, BYBL k -> E439, BYBL m -> E410.
+
+==============================================================================
+4b. NULL MODEL FOR THE 'E49A -> E402' ADJACENCY  [validator-1 new test]
+==============================================================================
+de-dup corpus bigram slots: 1423 ; E402 as right member: 13 ; base rate p=0.0091
+naive P(all 3 of 3 rare-sign followers are E402) = p^3 = 7.62e-07
+P(ANY single sign is the follower all 3 times) = sum p_i^3 = 0.00371
+EMPIRICAL null: signs with exactly 3 tokens in the de-dup corpus: 15
+  of those with 3 recoverable followers: 13 tested, 0 (0%) have a CONSTANT follower

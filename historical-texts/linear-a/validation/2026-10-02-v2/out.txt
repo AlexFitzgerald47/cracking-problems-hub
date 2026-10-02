@@ -1,0 +1,209 @@
+
+==============================================================================
+P1  COVERAGE — how much of the corpus does this reading touch?
+==============================================================================
+  corpus records (faces/objects)          : 1721
+  distinct documents after merging faces  : 1599
+  of which support=Tablet                 : 435 records
+  HT tablet records / merged HT tablets   : 205 / 137
+
+  documents named anywhere in the claimant's analysis/ files: 30
+  ... of which exist in the corpus                          : 30
+      ['ARKH4', 'HT1', 'HT112', 'HT117', 'HT119', 'HT122', 'HT123', 'HT128', 'HT132', 'HT135', 'HT15', 'HT2', 'HT28', 'HT29', 'HT30', 'HT34', 'HT37', 'HT8', 'HT85', 'HT86', 'HT87', 'HT88', 'HT93', 'HT94', 'HT95', 'HT96', 'HT97', 'ZA10', 'ZA4', 'ZA6']
+  => named-document coverage: 30/1599 = 1.88% of documents
+  the dossier proper (Scribe 9)  : 10/1599 = 0.63% of documents  ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+
+  sign-group tokens in the whole corpus   : 2420
+  distinct sign-group types               : 971
+  tokens of the 7-term claimed lexicon    : 68 = 2.81%   {'KI-RO': 16, 'KU-RO': 37, 'A-DU': 10, 'KI-KI-RA-JA': 1, 'DA-DU-MA-TA': 1, 'KU-DA': 1, 'PO-TO-KU-RO': 2}
+  + the 10 further type-assigned groups   : 39 = 1.61%   {'A-KA-RU': 3, 'KA-PA': 6, 'SA-RA₂': 20, 'U-MI-NA-SI': 2, 'KA-RU': 2, 'MA-KA-RI-TE': 2, 'DI-KI-SE': 2, 'SA-TA': 1, 'QA-RE-TO': 1}
+  => sign-group tokens given ANY function : 107/2420 = 4.42%
+  => sign-group TYPES given any function  : 16/971 = 1.65%
+  records containing at least one lexicon term: 52/1721 = 3.02%
+
+==============================================================================
+P2  LABEL PERMUTATION — contents fixed in position, only the label moves
+==============================================================================
+
+-- statistic: STRICT (multi-sign groups, admin operators dropped)
+   observed Scribe-9 cohesion = 9 shared types; mean pairwise Jaccard = 0.0077
+   shared types = ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE', 'QA-*310-I']
+   (i)  label permuted over all 137 HT tablets:
+        count  null mean   0.63  95% [0, 4]   p = 0.0004
+        Jaccard null mean 0.0015  95% [0.0000, 0.0091]   p = 0.0327
+   (ii) same permutation restricted to length-matched labels (+/-10% of 114 tokens, n=5000):
+        count  null mean   2.93  95% [0, 8]   p = 0.0178
+        Jaccard null mean 0.0043  95% [0.0000, 0.0151]   p = 0.1420
+
+-- statistic: LOOSE (every sign-group, as the dossier counts)
+   observed Scribe-9 cohesion = 13 shared types; mean pairwise Jaccard = 0.0173
+   shared types = ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+   (i)  label permuted over all 137 HT tablets:
+        count  null mean   4.38  95% [1, 10]   p = 0.0038
+        Jaccard null mean 0.0163  95% [0.0017, 0.0454]   p = 0.3743
+   (ii) same permutation restricted to length-matched labels (+/-10% of 114 tokens, n=5000):
+        count  null mean   8.87  95% [4, 15]   p = 0.1216
+        Jaccard null mean 0.0203  95% [0.0073, 0.0417]   p = 0.5739
+
+-- (iii) the test the claimant never ran: EVERY attested HT tablet scribe
+   scribe             n  tok  coh       p   jacc       p
+   HT Scribe 9       10  114    9  0.0002 0.0077  0.0347  ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE', 'QA-*310-I']
+   HT Scribe 6        3   37    2  0.0027 0.0511  0.0082  ['DA-ME', 'SA-RU']
+   HT Scribe 2        8   43    1  0.2664 0.0030  0.1727  ['KI-RE-TA-NA']
+   HT Scribe 5        5   30    1  0.1255 0.0083  0.0682  ['DI-RI-NA']
+   HT Scribe 1        4   19    0  1.0000 0.0000  1.0000  []
+   HT Scribe 11       3   33    0  1.0000 0.0000  1.0000  []
+   HT Scribe 14       5   25    0  1.0000 0.0000  1.0000  []
+   HT Scribe 21       3   14    0  1.0000 0.0000  1.0000  []
+   HT Scribe 23       3   11    0  1.0000 0.0000  1.0000  []
+   HT Scribe 3        4   23    0  1.0000 0.0000  1.0000  []
+   HT Scribe 7        3   29    0  1.0000 0.0000  1.0000  []
+   HT Scribe 8        6   53    0  1.0000 0.0000  1.0000  []
+   scribes with >=3 tablets: 12; count-cohesion p<0.05: 2; Jaccard p<0.05: 2
+
+-- (iv) permute ONLY the document-class label, inside Scribe 9
+        (the orchestrator cross-reference's exact test: every tablet keeps its
+         own content, only 'exception' vs 'ordinary' moves)
+   [strict] exception=['HT117', 'HT94'] ordinary=['HT122', 'HT85', 'HT87']
+          observed cross-class shared types = 4  ['DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'PA-TA-NE']
+          null mean 4.78  95% [1, 8]   p = 0.6966
+          distinct label assignments available = 10  (floor on any achievable p)
+   [loose] exception=['HT117', 'HT94'] ordinary=['HT122', 'HT85', 'HT87']
+          observed cross-class shared types = 5  ['DI-KI-SE', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'PA-TA-NE']
+          null mean 7.58  95% [3, 11]   p = 0.7961
+          distinct label assignments available = 10  (floor on any achievable p)
+
+==============================================================================
+P3  PRIOR-ART ABLATION — Davis & Valerio 2020's 19 recurring designations
+==============================================================================
+  The 19-designation recurring set is a PUBLISHED property of the HT corpus
+  (Davis & Valerio 2020), quoted verbatim in the claimant's own section 1.
+  Any cohesion it supplies is prior art, not a Scribe-9 finding.
+
+  Scribe-9 shared types                 : 9  ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE', 'QA-*310-I']
+  ... of which Davis-Valerio circuit words: 5  ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'KU-PA₃-NU', 'QA-*310-I']
+  ... remainder                           : ['DI-KI-SE', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE']
+
+  AFTER removing the 19 published designations:
+    observed cohesion = 4  ['DI-KI-SE', 'MA-KA-RI-TE', 'MI-TU', 'PA-TA-NE']
+    label permuted over all HT tablets : null mean 0.38 95% [0, 2]  p = 0.0067
+    length-matched (n=5000)            : null mean 1.23 95% [0, 4]  p = 0.0392
+
+  DV19 members attested on Scribe-9 tablets : ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'KU-PA₃-NU', 'KU-ZU-NI', 'MA-DI', 'ME-ZA', 'PA-DE', 'PA₃-NI', 'QA-*310-I', 'RE-DI-SE', 'TE-KE', 'TE-KI', 'TE-TU', 'U-*325-ZA', 'U-DE-ZA', 'WA-DU-NI-MI']
+  DV19 members attested elsewhere at HT     : ['A-RU', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'KU-PA₃-NU', 'KU-ZU-NI', 'MA-DI', 'ME-ZA', 'PA-DE', 'PA₃-NI', 'PA₃-NI-NA', 'QA-*310-I', 'RA-TI-SE', 'TE-KI', 'TE-TU', 'U-*325-ZA', 'WA-DU-NI-MI']
+
+==============================================================================
+P4  INFORMATION CEILING — are the needed distinctions resolvable at all?
+==============================================================================
+
+  (a) HT tablet sign-group tokens        : 846
+      one-syllabogram tokens            : 265 = 31.3%
+      most frequent                     : [('NI', 41), ('TE', 20), ('DI', 15), ('KA', 14), ('KU', 11), ('KI', 11), ('RE', 9), ('SI', 9), ('PA', 7), ('E', 7)]
+      Board rule (2026-09-25, PRACTICES): in an administrative corpus the
+      shortest units are mostly not words, and where the corpus is
+      undeciphered there is no principled way to separate abbreviation from
+      word, so the corpus is DISQUALIFIED for the question, not cleaned.
+
+      single-sign tokens standing as 'entries' in the dossier's own lists:
+        HT85b   3/12 sign-groups are single signs: ['PA', 'KA', 'DI']
+        HT122a  3/17 sign-groups are single signs: ['PA', 'DI', 'DU']
+        HT122b  1/7 sign-groups are single signs: ['DI']
+        HT94a   4/7 sign-groups are single signs: ['TA', 'NI', 'NI', 'NI']
+        HT94b   1/9 sign-groups are single signs: ['RA']
+        HT117a  0/20 sign-groups are single signs: []
+        HT117b  0/2 sign-groups are single signs: []
+        HT87    0/8 sign-groups are single signs: []
+        HT119   1/6 sign-groups are single signs: ['TI']
+
+  (b) HT85's '66 = 11 x 6' depends on the entry count of HT85b:
+      witness A (GORILA/Douros) sign-groups       : 12 ['KI-KI-RA-JA', 'KI-RE-TA₂', 'QE-KA', 'PA', 'TE-TU', 'KA', 'DI', 'ME-ZA', 'RE-DI-SE', 'WA-DU-NI-MI', 'MA-DI', 'QA-*310-I']
+      ... minus the KI-KI-RA-JA heading           : 11
+      ... multi-sign only, minus heading          : 8 ['KI-RE-TA₂', 'QE-KA', 'TE-TU', 'ME-ZA', 'RE-DI-SE', 'WA-DU-NI-MI', 'MA-DI', 'QA-*310-I']
+      witness B (SigLA) sequences                 : 9 ['ki-ki-ra-ja', 'ki-re-ta2', 'qe-ka', 'te-tu-[?]', 'me-za', 're-di-se', 'wa-du-ni-mi', 'ma-di', 'qa-A310-i']
+      ... minus the heading                       : 8
+      66/11 = 6 exactly; 66/8 = 8.25; 66/7 = 9.43.  The 'standardized
+      six-person gang' exists only on the 11-entry reading, which requires
+      counting PA, KA and DI as personnel entries.
+
+  (c) two editions of the same eleven dossier faces:
+      HT 117a   A=20 types  B=20 types  shared=18  onlyA=['kupa3nu', 'tejare']  onlyB=['kua56nu', 'tea56re']
+      HT 117b   A= 2 types  B= 3 types  shared= 2  onlyA=[]  onlyB=['qiftune']
+      HT 119    A= 6 types  B= 7 types  shared= 4  onlyA=['kupa3natu', 'ti']  onlyB=['a306tu', 'a327ju', 'kua56natu']
+      HT 122a   A=16 types  B=18 types  shared=14  onlyA=['kupa3nu', 'patane']  onlyB=['a306tu', 'a324dira', 'kua56nu', 'parine']
+      HT 122b   A= 7 types  B= 8 types  shared= 6  onlyA=['di']  onlyB=['', 'a306kita2']
+      HT 85a    A= 9 types  B= 9 types  shared= 7  onlyA=['kuzuni', 'pa3ni']  onlyB=['a56ni', 'kua79ni']
+      HT 85b    A=12 types  B= 9 types  shared= 9  onlyA=['di', 'ka', 'pa']  onlyB=[]
+      HT 87     A= 8 types  B= 8 types  shared= 6  onlyA=['ara', 'atu']  onlyB=['araatu', 'qiftune']
+      HT 88     A=12 types  B=11 types  shared= 9  onlyA=['kupa3nu', 'kupa3pa3', 'ni']  onlyB=['kua56a56', 'kua56nu']
+      HT 94a    A= 5 types  B= 4 types  shared= 3  onlyA=['ni', 'ta']  onlyB=['a318a306']
+      HT 94b    A= 9 types  B= 9 types  shared= 7  onlyA=['demete', 'ra']  onlyB=['qiftu', 'rademete']
+      aggregate: 85 shared of 106 (A) / 106 (B) types => Jaccard 0.669
+      Each only-A / only-B item is a sign-group the reading would have to
+      place, and the two editions do not agree that it exists.
+
+  (d) the digital edition already carries the glosses under test:
+      HT117a  translatedWords contains: ['"owed"', '"owed"?', '"total"']
+      HT88    translatedWords contains: ['"assessment"?', '"owed"', '"total"']
+      HT94b   translatedWords contains: ['"owed"', '"total"']
+      HT15    translatedWords contains: ['"owed"']
+      HT34    translatedWords contains: ['"owed"']
+      HT85a   translatedWords contains: ['"assessment"?', '"total"']
+      'KI-RO -> owed' and 'U-MI-NA-SI -> owed?' are fields of the same file
+      the claimant's held-out predictions were checked against.  A prediction
+      scored against a labelled edition is not a held-out test.
+
+  (e) A-DU: the claim's own two frontier documents assign opposite nodes.
+      A-DU attestations in the corpus: 10
+        HT133     Haghia Triada  Tablet     followed by ['𐄁', 'TE', 'GRA+DA']
+        HT85a     Haghia Triada  Tablet     followed by ['𐄁', '*307+*387', '𐄁']
+        HT86a     Haghia Triada  Tablet     followed by ['𐄁', '\n', 'DA-ME']
+        HT88      Haghia Triada  Tablet     followed by ['VIR+KA', '20', '\n']
+        HT92      Haghia Triada  Tablet     followed by ['𐄁', 'GRA', '680']
+        HT95b     Haghia Triada  Tablet     followed by ['𐄁', '\n', 'SA-RU']
+        HT99a     Haghia Triada  Tablet     followed by ['𐄁', '\n', 'SA-RA₂']
+        KH11      Khania         Tablet     followed by ['𐄁', 'ZA', 'CYP']
+        KH23      Khania         Tablet     followed by ['\n', 'CYP', '\n']
+        TY3a      Tylissos       Tablet     followed by ['𐄁', '\U0001076b', 'OLE+KI']
+      obligation-circuit note (2026-09-07): A-DU = RENDERED / PAID /
+        FULFILLED, the positive complement of KI-RO, with DA-DU-MA-TA
+        occupying the upstream ASSESSED node.
+      scribe-9 dossier (2026-09-08) and HANDOVER: A-DU = ASSESSED /
+        ACTIVATED OBLIGATION / ON-BOOK LIABILITY, i.e. the upstream node.
+      Those are the two different arrows of the same state machine. The
+      architecture diagram is not identified by the evidence offered for it.
+
+==============================================================================
+P5  COVERAGE, SCORED THE WAY MOST FAVOURABLE TO THE CLAIM
+==============================================================================
+  denominator = HT tablets only (not the whole corpus): 137
+  HT tablets the claim names anywhere                 : 26 = 19.0%
+  HT tablets in the dossier proper                    : 10 = 7.3%
+  HT-tablet sign-group tokens: all 846; on named tablets 279 (33.0%); on Scribe 9 114 (13.5%)
+
+  On every denominator, nothing in the claim assigns a phonetic value, a
+  morpheme, a word class or a language to any of these sign-groups. The
+  pre-registered criterion asks for a LINGUISTIC decipherment accounting for
+  a substantial portion of the corpus; the claim's own HANDOVER forbids the
+  phrase 'Linear A deciphered' and labels itself not a phonetic decipherment
+  and not a language-family solve.
+
+==============================================================================
+P6  DO THE DOSSIER'S CONTROL TOTALS CLOSE? (independent re-derivation)
+==============================================================================
+  HT85a    KU-RO        7 preceding integers sum     66   stated     66   closes
+  HT88     KU-RO        9 preceding integers sum     39   stated      6   OFF by +33
+  HT94a    KU-RO        5 preceding integers sum    111   stated    110   OFF by +1
+  HT94b    KU-RO        5 preceding integers sum      5   stated      5   closes
+  HT117a   KU-RO       10 preceding integers sum     10   stated     10   closes
+  HT119    KU-RO        9 preceding integers sum    159   stated    160   OFF by -1
+  HT122a   KU-RO       16 preceding integers sum     22   stated     31   OFF by -9
+  HT122b   KU-RO        5 preceding integers sum     15   stated     65   OFF by -50   [fraction-bearing block]
+  HT122b   PO-TO-KU-RO  1 preceding integers sum     65   stated     97   OFF by -32
+
+  blocks closing exactly: 3; blocks off: 6
+  HT122 stated hierarchy 31 + KU-DA 1 + 65 = PO-TO-KU-RO 97 is arithmetic over
+  STATED totals only; none of HT122's three stated totals is the sum of the
+  entries it stands over.
+  Agrees with dbourdeau/cyphersolver, which checked 35 KU-RO/PO-TO-KU-RO with
+  exact fractions over five windows and found 10 balance, naming HT94a 1,
+  HT119 1 and the HT122 grand total among the failures.

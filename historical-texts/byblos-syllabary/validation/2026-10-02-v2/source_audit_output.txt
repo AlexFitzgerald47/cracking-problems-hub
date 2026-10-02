@@ -1,0 +1,166 @@
+
+==============================================================================
+0. SOURCE INTEGRITY: upstream re-fetch vs the vendored copy the claim used
+==============================================================================
+  upstream sha256      : 649b6b3abd1227e4d5b557016fc4c31db8110692958915e1cca3df121d499c0a
+  upstream git-blob sha1: 3c3224f32596b493fd5bb634fff3b8000e591b14
+  2026-09-25 vendored  : 649b6b3abd1227e4d5b557016fc4c31db8110692958915e1cca3df121d499c0a
+  BYTE-IDENTICAL       : True
+  NOTE: github.com / api.github.com / web.archive.org are blocked by this
+        session egress policy, so the upstream COMMIT HISTORY could not be
+        retrieved. Byte-identity therefore pins 2026-09-25 == 2026-10-02 but
+        does NOT independently pin either to the 2026-09-09 claim session.
+
+==============================================================================
+1. CORPUS SHAPE: does the source really hold "18 BYBL and 14 BYBL?"
+==============================================================================
+  fragment ENTRIES in source   : 43
+  entries by `group` field     : {'BYBL': 29, 'BYBL?': 14}
+  distinct OBJECTS group=BYBL   : 23
+  distinct OBJECTS group=BYBL?  : 13
+  PROBLEM.md / KERNEL section 1 assert  : 18 BYBL + 14 BYBL?
+  Maeder BAF 2019 abstract asserts      : 15 inscriptions + 28 unassigned fragments
+  -> three mutually inconsistent corpus counts for the same corpus.
+
+==============================================================================
+2. THE SYLLABARIES: is the E416/E4AF merge->split story as described?
+==============================================================================
+  syllabaries found: search/Initial Syllabary, syl1/Syl1, syl2/Syl2, syl3/Syl3, syl4/Syl4, syl5/Syl4, syl6/Syl6, syl7/Syl7, syl8/Syl8, syl9/Syl9
+
+  inv      E416 grp  E4AF grp  merged? / the group(s)
+  search   25        25        MERGED  E416+E495+E4AE+E4AF
+  syl1     25        25        MERGED  E416+E495+E4AE+E4AF+E4FD
+  syl2     22        22        MERGED  E416+E495+E4AE+E4AF+E4FD
+  syl3     17        17        MERGED  E416+E495+E4AE+E4AF+E4FD
+  syl4     17        17        MERGED  E416+E495+E4AE+E4AF+E4FD
+  syl5     16        16        MERGED  E416+E495+E4AE+E4AF+E4FD
+  syl6     15        14        SPLIT   E416:E416+E495   E4AF:E450+E455+E47B+E4C9+E4AE+E4AF+E4FD
+  syl7     13        12        SPLIT   E416:E416+E495+E423+E44A+E4AD   E4AF:E450+E455+E47B+E4C9+E4AE+E4AF+E4FD
+  syl8     13        12        SPLIT   E416:E416+E495+E423+E44A+E4AD   E4AF:E450+E455+E47B+E4C9+E4AE+E4AF+E4FD
+  syl9     36        None      SPLIT   E416:E416+E495   E4AF:absent
+
+==============================================================================
+3. syllableMap: the "stale ATON" claim
+==============================================================================
+me <E49A>
+pa <E44D>
+ATON <E416>
+AMUN <E42A><E483>
+i <E42A>
+o <E45A>
+ḥ <E419>
+m <E41F>
+b <E444>
+ś <E411>
+h <E410>
+aleph <E447>
+
+  GEAS 2021 public news page (fetched 2026-10-02) states: <E4AF> ATON,
+  <E42A><E483> AMUN, and "<E44D>; <E49B> pa".
+  -> KERNEL section 4 claim "syllableMap still says ATON <E416>" : CONFIRMED from upstream.
+  -> but note syllableMap ALSO omits <E49B> from pa, i.e. it is a lossy
+     transcription of the same 2021 statement in more than one place.
+
+==============================================================================
+4. THE CYLINDER ROWS: source vs the INDEPENDENT published witness
+==============================================================================
+  OCBI ra               : E4AC E4AD E41F E44D E42A E483
+  OCBI rb (Var. 1)      : E4FF E49A E4AE E4AF
+  OCBI rb (Var. 2)      : E4FF E49A E4AE E4AF
+  OCBI rb (Var. 3)      : E49A E416 E491 E4AF
+  OCBI rc (Var. 1)      : E4B0 E42A E4AE E417 E4AE?
+  OCBI rc (Var. 2)      : E4B0 E4B1 E4B2 E4FD
+  OCBI rc (Var. 3)      : E4B0 E443 E429 E4AF
+  OCBI rd               : E45C E4B3 E429
+
+  Schmutz & Maeder 2024 sections 4 + 5 give (PUA recovered from the PDF):
+    BYBL ra : E4AC E4AD E41F E44D E42A E483  = anch-es-en-pa-a-mun
+    BYBL rb : E49A E416 E491 E4AF            = me - Ayin - ke(t) - ATON
+    BYBL rc : E4B0 E443 E429 E4AF            = me - ri - t   - ATON
+    ra          in published PDF: True  | OCBI row equal: True
+    rb Var. 3   in published PDF: True  | OCBI row equal: True
+    rc Var. 3   in published PDF: True  | OCBI row equal: True
+
+  => the three transcriptions AND the choice of Var. 3 for both daughters are
+     PUBLISHED, not Hub-selected. The 2026-09-25 "1 of 9 variant combinations,
+     budget never charged" objection is therefore softer than it looked:
+     the selection is attributable to Maeder. But the corollary is worse for
+     novelty -- see section 5.
+
+==============================================================================
+5. PRIOR-ART BOUNDARY on the Hub's *headline* new result
+==============================================================================
+  KERNEL section 4 / Verdict: "The new Hub contribution in this pass is ...
+  a non-circular reason to split the old <E416>/<E4AF> variant group."
+
+  Schmutz & Maeder 2024 section 4, which the KERNEL cites and quotes for the
+  exclusions, prints the Meketaton name as
+
+      <E49A> <E416> <E491> <E4AF>   =   me - Ayin - ke(t) - ATON
+
+  i.e. it assigns <E416> the value Ayin and <E4AF> the value ATON *in the same
+  four-sign name*. Two distinct sound values for the two surface forms IS the
+  split. The split is published prior art in the one paper the claim leans on.
+
+  Independently, OCBI's own Syl6-Syl8 (GEAS's later working inventories) already
+  split them -- see section 2. So both the external reason and the inventory
+  state are pre-existing; what remains Hub-original is the *inference step*
+  joining them, plus the syllableMap inconsistency in section 3.
+
+==============================================================================
+6. CRITERION-4 BRIDGE: the published segmentation vs ME_ANCHOR_TRANSFER
+==============================================================================
+  ME_ANCHOR_TRANSFER.md section 4 argues: "the penultimate cylinder sign
+  <E491> is constrained to a T-bearing phonetic function", then uses the OCBI
+  <E491>~<E412> variant group to read BYBL k V4 as ME - ? - T(?).
+
+  The published segmentation assigns <E491> = ke(t) -- a K sign whose t is
+  parenthesised, i.e. NOT separately written -- and puts the free T sign at
+  <E429> in Meritaton (me-ri-t-ATON). Under the source the Hub depends on, the
+  BYBL k bridge would read ME - ? - KE(T), not ME - ? - T.
+
+  E412 / E491 grouping per inventory (merge the bridge needs):
+    search   E412->16    E491->16    MERGED
+    syl1     E412->16    E491->16    MERGED
+    syl2     E412->14    E491->14    MERGED
+    syl3     E412->10    E491->10    MERGED
+    syl4     E412->10    E491->10    MERGED
+    syl5     E412->9     E491->9     MERGED
+    syl6     E412->8     E491->8     MERGED
+    syl7     E412->8     E491->8     MERGED
+    syl8     E412->8     E491->8     MERGED
+    syl9     E412->67    E491->62    SPLIT/absent
+
+  and the T sign the publication actually uses, E429, groups with:
+    search   grp 14   E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl1     grp 14   E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl2     grp 12   E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl3     grp 9    E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl4     grp 9    E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl5     grp 8    E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl6     grp 7    E429+E484+E421+E4B3+E4B7+E43F+E478+E4BC+E4D9
+    syl7     grp 7    E429+E484+E421+E4B3+E4B7+E43F+E478
+    syl8     grp 7    E429+E484+E421+E4B3+E4B7+E43F+E478
+    syl9     grp 41   E429
+
+==============================================================================
+7. "cylinder-only" claims, re-derived from upstream
+==============================================================================
+  E4AF  total   4  off-cylinder   0  CYLINDER-ONLY
+  E416  total  18  off-cylinder  17  objects: d,g,h,k,l,n
+  E49A  total   6  off-cylinder   3  objects: i,k,m
+  E4B0  total   4  off-cylinder   1  objects: f (face b = recto)
+  E44D  total  12  off-cylinder  11  objects: a,b,d,f (face b = recto),i,p,v
+  E49B  total   1  off-cylinder   1  objects: n
+  E491  total   5  off-cylinder   4  objects: j,l,o (verso) Var. 1,o (verso) Var. 2
+  E412  total  13  off-cylinder  13  objects: c,d,i,k,l,n
+  E429  total  27  off-cylinder  25  objects: a' (Var. 2),b,c,d,e,f (face a = verso),f (face b = recto),g
+  E443  total   7  off-cylinder   6  objects: a,d,e
+  E483  total   3  off-cylinder   2  objects: c,o (verso) Var. 1
+  E42A  total  25  off-cylinder  23  objects: a,c,d,g,i,l,s
+
+  -> KERNEL section 6 "<E4AF> is cylinder-only": CONFIRMED.
+  -> but GEAS 2021 publishes the pa value for TWO forms, "<E44D>; <E49B> pa".
+     <E49B> has a single attestation in the whole corpus (object n) and the
+     KERNEL/ME_ANCHOR files never mention it, so the Hub's frozen PA constraint
+     is narrower than the published one it cites.

@@ -1,0 +1,436 @@
+### WITNESS A census (mwenge/lineara.xyz, GORILA-derived)
+records (faces/objects) : 1721
+supports: {'Nodule': 890, 'Tablet': 435, 'Roundel': 151, 'Clay vessel': 77, 'Stone vessel': 60, 'Metal object': 23, 'Stone object': 19, 'Lames (short thin tablet)': 18, 'Sealing': 12, 'Inked inscription': 9, 'Architecture': 6, '3-sided bar': 5, '4-sided bar': 5, 'Graffito': 3, 'ivory object': 3, 'clay vessel': 2, 'Label': 1, 'Loom weight': 1, 'Triton': 1}
+top sites: {'Haghia Triada': 1110, 'Khania': 226, 'Phaistos': 66, 'Knossos': 59, 'Zakros': 53, 'Palaikastro': 25, 'Malia': 22, 'Thera': 18}
+sign-group TOKENS corpus-wide : 2560
+sign-group TYPES  corpus-wide : 1070
+distinct documents (faces merged): 1600
+Haghia Triada TABLET faces: 205  documents: 137
+HT tablet sign-group tokens: 890  (34.8% of corpus tokens)
+
+### SCRIBE 9 (corpus metadata, not the claimant's csv)
+faces: ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+documents: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94'] (n=10)
+findspots: {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+sign-group tokens 123 = 4.80% of corpus tokens; types 98 = 9.16% of corpus types
+documents 10/1600 = 0.62% of documents
+
+faces with ANY scribe attribution: 592 of 1721
+distinct attributed hands: 102
+
+### CLAIM FOOTPRINT (every document named anywhere in the 4 analysis notes)
+documents named: 29 ; found in witness A: 29
+their sign-group tokens 339 = 13.24% of corpus tokens
+their sign-group types  221 = 20.65% of corpus types
+documents 29/1600 = 1.81%
+
+### LEXICAL FOOTPRINT: sign-group types given a functional value by the claim: 13 of 1070 types (1.21%)
+   their token count 81 = 3.16% of all sign-group tokens
+     *21F-TU-NE        3 tokens
+     A-DU             10 tokens
+     A-KA-RU           3 tokens
+     DA-DU-MA-TA       1 tokens
+     KA-RU             2 tokens
+     KI-KI-RA-JA       1 tokens
+     KI-RO            16 tokens
+     KU-DA             1 tokens
+     KU-RO            37 tokens
+     MA-KA-RI-TE       2 tokens
+     PO-TO-KU-RO       2 tokens
+     SA-TA             1 tokens
+     U-MI-NA-SI        2 tokens
+
+### WITNESS A census (mwenge/lineara.xyz, GORILA-derived)
+records (faces/objects) : 1721
+supports: {'Nodule': 890, 'Tablet': 435, 'Roundel': 151, 'Clay vessel': 77, 'Stone vessel': 60, 'Metal object': 23, 'Stone object': 19, 'Lames (short thin tablet)': 18, 'Sealing': 12, 'Inked inscription': 9, 'Architecture': 6, '3-sided bar': 5, '4-sided bar': 5, 'Graffito': 3, 'ivory object': 3, 'clay vessel': 2, 'Label': 1, 'Loom weight': 1, 'Triton': 1}
+top sites: {'Haghia Triada': 1110, 'Khania': 226, 'Phaistos': 66, 'Knossos': 59, 'Zakros': 53, 'Palaikastro': 25, 'Malia': 22, 'Thera': 18}
+sign-group TOKENS corpus-wide : 2560
+sign-group TYPES  corpus-wide : 1070
+distinct documents (faces merged): 1600
+Haghia Triada TABLET faces: 205  documents: 137
+HT tablet sign-group tokens: 890  (34.8% of corpus tokens)
+
+### SCRIBE 9 (corpus metadata, not the claimant's csv)
+faces: ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+documents: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94'] (n=10)
+findspots: {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+sign-group tokens 123 = 4.80% of corpus tokens; types 98 = 9.16% of corpus types
+documents 10/1600 = 0.62% of documents
+
+faces with ANY scribe attribution: 592 of 1721
+distinct attributed hands: 102
+
+### CLAIM FOOTPRINT (every document named anywhere in the 4 analysis notes)
+documents named: 29 ; found in witness A: 29
+their sign-group tokens 339 = 13.24% of corpus tokens
+their sign-group types  221 = 20.65% of corpus types
+documents 29/1600 = 1.81%
+
+### LEXICAL FOOTPRINT: sign-group types given a functional value by the claim: 13 of 1070 types (1.21%)
+   their token count 81 = 3.16% of all sign-group tokens
+     *21F-TU-NE        3 tokens
+     A-DU             10 tokens
+     A-KA-RU           3 tokens
+     DA-DU-MA-TA       1 tokens
+     KA-RU             2 tokens
+     KI-KI-RA-JA       1 tokens
+     KI-RO            16 tokens
+     KU-DA             1 tokens
+     KU-RO            37 tokens
+     MA-KA-RI-TE       2 tokens
+     PO-TO-KU-RO       2 tokens
+     SA-TA             1 tokens
+     U-MI-NA-SI        2 tokens
+### all numeral-bearing KU-RO/PO-TO-KU-RO totals in the corpus: 31
+  exact under at least one frozen segmentation : 9  (29.0%)
+  on faces with NO numeric damage (5 totals): exact 2 (40.0%)
+  on damaged faces (26 totals)              : exact 7 (26.9%)
+
+--- NON-EXACT totals on UNDAMAGED faces (the hard counterexamples) ---
+  HT104      KU-RO       stated      95  SEG-MAX      94 (n=3)  SEG-SCOPE      94 (n=3, heading:TA-PA)  [HT Scribe 5]
+  HT119      KU-RO       stated     160  SEG-MAX     159 (n=9)  SEG-SCOPE     159 (n=9, start)  [HT Scribe 9]
+  HT9a       KU-RO       stated      31  SEG-MAX      29 (n=7)  SEG-SCOPE      29 (n=7, heading:PA-DE)  [-]
+
+--- every total on a tablet the claim names ---
+  HT117a      KU-RO       stated     10  SEG-MAX     10  SEG-SCOPE     10 (heading:U-MI-NA-SI)  EXACT     numeric-damage=False  [HT Scribe 9]
+  HT119       KU-RO       stated    160  SEG-MAX    159  SEG-SCOPE    159 (start)  NOT-EXACT numeric-damage=False  [HT Scribe 9]
+  HT122a      KU-RO       stated     31  SEG-MAX     22  SEG-SCOPE     16 (heading:PA)  NOT-EXACT numeric-damage=True  [HT Scribe 9]
+  HT122b      KU-RO       stated     65  SEG-MAX     15  SEG-SCOPE     15 (heading:JE-DI)  NOT-EXACT numeric-damage=True  [HT Scribe 9]
+  HT122b      PO-TO-KU-RO stated     97  SEG-MAX     65  SEG-SCOPE     65 (prev-total)  NOT-EXACT numeric-damage=True  [HT Scribe 9]
+  HT123+124a  KU-RO       stated     25  SEG-MAX     93  SEG-SCOPE     93 (prev-total)  NOT-EXACT numeric-damage=True  [HT Scribe 6]
+  HT123+124b  KU-RO       stated     20  SEG-MAX     27  SEG-SCOPE     10 (heading:*188-DU)  NOT-EXACT numeric-damage=True  [HT Scribe 6]
+  HT85a       KU-RO       stated     66  SEG-MAX     66  SEG-SCOPE     66 (heading:A-DU)  EXACT     numeric-damage=True  [HT Scribe 9]
+  HT88        KU-RO       stated      6  SEG-MAX     39  SEG-SCOPE      6 (heading:KI-RO)  EXACT     numeric-damage=False  [HT Scribe 7]
+  HT94a       KU-RO       stated    110  SEG-MAX    111  SEG-SCOPE    111 (start)  NOT-EXACT numeric-damage=True  [HT Scribe 9]
+  HT94b       KU-RO       stated      5  SEG-MAX      5  SEG-SCOPE      5 (heading:KI-RO)  EXACT     numeric-damage=True  [HT Scribe 9]
+
+### WITNESS A census (mwenge/lineara.xyz, GORILA-derived)
+records (faces/objects) : 1721
+supports: {'Nodule': 890, 'Tablet': 435, 'Roundel': 151, 'Clay vessel': 77, 'Stone vessel': 60, 'Metal object': 23, 'Stone object': 19, 'Lames (short thin tablet)': 18, 'Sealing': 12, 'Inked inscription': 9, 'Architecture': 6, '3-sided bar': 5, '4-sided bar': 5, 'Graffito': 3, 'ivory object': 3, 'clay vessel': 2, 'Label': 1, 'Loom weight': 1, 'Triton': 1}
+top sites: {'Haghia Triada': 1110, 'Khania': 226, 'Phaistos': 66, 'Knossos': 59, 'Zakros': 53, 'Palaikastro': 25, 'Malia': 22, 'Thera': 18}
+sign-group TOKENS corpus-wide : 2560
+sign-group TYPES  corpus-wide : 1070
+distinct documents (faces merged): 1600
+Haghia Triada TABLET faces: 205  documents: 137
+HT tablet sign-group tokens: 890  (34.8% of corpus tokens)
+
+### SCRIBE 9 (corpus metadata, not the claimant's csv)
+faces: ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+documents: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94'] (n=10)
+findspots: {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+sign-group tokens 123 = 4.80% of corpus tokens; types 98 = 9.16% of corpus types
+documents 10/1600 = 0.62% of documents
+
+faces with ANY scribe attribution: 592 of 1721
+distinct attributed hands: 102
+
+### CLAIM FOOTPRINT (every document named anywhere in the 4 analysis notes)
+documents named: 29 ; found in witness A: 29
+their sign-group tokens 339 = 13.24% of corpus tokens
+their sign-group types  221 = 20.65% of corpus types
+documents 29/1600 = 1.81%
+
+### LEXICAL FOOTPRINT: sign-group types given a functional value by the claim: 13 of 1070 types (1.21%)
+   their token count 81 = 3.16% of all sign-group tokens
+     *21F-TU-NE        3 tokens
+     A-DU             10 tokens
+     A-KA-RU           3 tokens
+     DA-DU-MA-TA       1 tokens
+     KA-RU             2 tokens
+     KI-KI-RA-JA       1 tokens
+     KI-RO            16 tokens
+     KU-DA             1 tokens
+     KU-RO            37 tokens
+     MA-KA-RI-TE       2 tokens
+     PO-TO-KU-RO       2 tokens
+     SA-TA             1 tokens
+     U-MI-NA-SI        2 tokens
+### T1  KU-RO summation: permutation null (does a block match ITS OWN total?)
+  observed exact matches 9/31;  null mean 0.52, max 6;  p = 0.00001
+  -> KU-RO really is a summation marker; it is just rarely TESTABLE (physical loss).
+
+### T2  KI-RO two-construction grammar, scored CORPUS-WIDE (claim: 9/9)
+  KI-RO attestations in corpus: 16
+    next token = numeral  : 6
+    next token = divider  : 6
+    next token = other    : 4
+      HT1         numeral
+      HT117a      divider
+      HT123+124a  numeral
+      HT123+124a  other:.3
+      HT123+124a  other:³⁄₄
+      HT123+124a  other:³⁄₄
+      HT123+124a  numeral
+      HT123+124b  numeral
+      HT15        numeral
+      HT30        divider
+      HT34        numeral
+      HT37        divider
+      HT55a       divider
+      HT88        divider
+      HT93b       other:None
+      HT94b       divider
+
+### T2b background rate: how many OTHER sign-groups show the same 'both constructions' profile?  (is the grammar specific to KI-RO?)
+  HT sign-group types with >=4 attestations: 49; of those, 19 (39%) show BOTH numeral-next and divider-next
+  i.e. the 'two-construction grammar' is the MAJORITY pattern, not a KI-RO property.
+  both-pattern types: ['E', 'I', 'KA', 'KI-RO', 'KU', 'KU-NI-SU', 'NE', 'NI', 'PA', 'PA₃', 'RE', 'SA-RA₂', 'SA-RO', 'SI', 'TA', 'TA-NA-TI', 'TE', 'TU', 'ZU']
+
+### T3  'KA-RU 82 = selected breakdown' (HT97a) -- how much information is that?
+  stated KA-RU/VIR+KA value 82; following entry values [33, 25, 6, 4, 4, 5, 15, 3, 5, 2, 3, 5] (sum 110, 12 items)
+  distinct subset sums reachable: 109 of 111 integers in [0,110] = 98%
+  DISTINCT subsets of the entries summing to exactly 82: 35
+  -> a 'selected breakdown' that sums to the header is almost guaranteed; this anchor carries ~0 bits.
+
+### T4  HT2 'A-KA-RU 20 = 17 + 3' -- does the pattern repeat on the same tablet?
+  HT2: A-KA-RU 𐄁 OLE+U 20 | OLE+A 17 | OLE+E 3 | KI-RE-TA-NA OLE+U 54 | OLE+A 47 | 1
+  first group : A-KA-RU OLE+U 20 ; OLE+A 17 ; OLE+E 3     -> 17+3 = 20  fits
+  second group: KI-RE-TA-NA OLE+U 54 ; OLE+A 47 ; [?] 1   -> 47+1 = 48 != 54  FAILS
+  numeric damage on HT2: True
+  -> the one tablet that states the alleged 'forward aggregate' twice contradicts it once.
+
+### T5  HT85 '66 = 11 gangs of 6' -- base rate of that coincidence
+  face-pairs where a stated total on one face divides exactly by the entry count on the other, giving an integer >=2: 5/18 (28%)
+     ('HT11', 'b', 180, 5, 36)
+     ('HT117', 'a', 10, 2, 5)
+     ('HT123+124', 'b', 20, 10, 2)
+     ('HT131', 'b', 452, 2, 226)
+     ('HT85', 'a', 66, 11, 6)
+  HT85a entries 12,12,6,24,5,3,4 -- 5, 3 and 4 are NOT multiples of 6, so the 66
+  does not decompose into six-person contributions at source; only the total does.
+
+### T6  HT119 '*327 34 : VIR 68 = exactly 1:2'
+  nine entry values: [34, 68, 13, 10, 7, 7, 10, 2, 8]
+  exact 2:1 pairs anywhere in the nine: [(34, 68)]
+  P(some exact 2:1 pair among 9 random integers 1-70) = 0.389
+  -> the 1:2 'fixed manpower ratio' is at chance.
+
+### T7  the DI-KI-SE 'status toggle' control
+  HT117b   [HT Scribe 9] : *21F-TU-NE 𐄁 | KU-RE-JU 1 | DI-KI-SE 1
+  HT87     [HT Scribe 9] : *21F-TU-NE 𐄁 MA-KA-RI-TE 𐄁 | PI-TA-KE-SI 1 | JA-RE-MI 1 | DI-KI-SE 1 | QE-SU-PU 1 | KU-RU-KU 1 | A-RA 𐄁 A-TU 1
+  NB: HT117 puts DI-KI-SE on face b, under *21F-TU-NE, NOT under the face-a
+      'MA-KA-RI-TE . KI-RO .' heading.  Whether KI-RO scopes across the face
+      break onto HT117b is an assumption, not an observation.
+
+### WITNESS A census (mwenge/lineara.xyz, GORILA-derived)
+records (faces/objects) : 1721
+supports: {'Nodule': 890, 'Tablet': 435, 'Roundel': 151, 'Clay vessel': 77, 'Stone vessel': 60, 'Metal object': 23, 'Stone object': 19, 'Lames (short thin tablet)': 18, 'Sealing': 12, 'Inked inscription': 9, 'Architecture': 6, '3-sided bar': 5, '4-sided bar': 5, 'Graffito': 3, 'ivory object': 3, 'clay vessel': 2, 'Label': 1, 'Loom weight': 1, 'Triton': 1}
+top sites: {'Haghia Triada': 1110, 'Khania': 226, 'Phaistos': 66, 'Knossos': 59, 'Zakros': 53, 'Palaikastro': 25, 'Malia': 22, 'Thera': 18}
+sign-group TOKENS corpus-wide : 2560
+sign-group TYPES  corpus-wide : 1070
+distinct documents (faces merged): 1600
+Haghia Triada TABLET faces: 205  documents: 137
+HT tablet sign-group tokens: 890  (34.8% of corpus tokens)
+
+### SCRIBE 9 (corpus metadata, not the claimant's csv)
+faces: ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+documents: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94'] (n=10)
+findspots: {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+sign-group tokens 123 = 4.80% of corpus tokens; types 98 = 9.16% of corpus types
+documents 10/1600 = 0.62% of documents
+
+faces with ANY scribe attribution: 592 of 1721
+distinct attributed hands: 102
+
+### CLAIM FOOTPRINT (every document named anywhere in the 4 analysis notes)
+documents named: 29 ; found in witness A: 29
+their sign-group tokens 339 = 13.24% of corpus tokens
+their sign-group types  221 = 20.65% of corpus types
+documents 29/1600 = 1.81%
+
+### LEXICAL FOOTPRINT: sign-group types given a functional value by the claim: 13 of 1070 types (1.21%)
+   their token count 81 = 3.16% of all sign-group tokens
+     *21F-TU-NE        3 tokens
+     A-DU             10 tokens
+     A-KA-RU           3 tokens
+     DA-DU-MA-TA       1 tokens
+     KA-RU             2 tokens
+     KI-KI-RA-JA       1 tokens
+     KI-RO            16 tokens
+     KU-DA             1 tokens
+     KU-RO            37 tokens
+     MA-KA-RI-TE       2 tokens
+     PO-TO-KU-RO       2 tokens
+     SA-TA             1 tokens
+     U-MI-NA-SI        2 tokens
+### P1  Scribe-9 dossier cohesion vs. random 10-tablet slices of the SAME archive
+  pool: 130 HT tablets; Scribe-9 set = ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94']
+  (a) all sign-groups
+    observed shared types = 15  ['*21F-TU-NE', '*306-TU', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+    unmatched null : mean  4.77  95% [1,10]  p = 0.0015
+    SIZE-MATCHED null (+-10% of 117 types, n=1369): mean 10.43 95% [5,17]  p = 0.1168
+  (b) drop the universal administrative operators
+    observed shared types = 13  ['*21F-TU-NE', '*306-TU', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KU-PA₃-NU', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+    unmatched null : mean  3.31  95% [0,8]  p = 0.0013
+    SIZE-MATCHED null (+-10% of 105 types, n=2006): mean  7.76 95% [2,15]  p = 0.0912
+  (c) drop operators AND the Davis-Valerio 19-node circuit words
+    observed shared types = 7  ['*21F-TU-NE', 'DI', 'DI-KI-SE', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE']
+    unmatched null : mean  2.99  95% [0,7]  p = 0.0295
+    SIZE-MATCHED null (+-10% of 80 types, n=5000): mean  4.25 95% [1,8]  p = 0.1130
+
+### P2  how much of the 'dossier' is circuit vocabulary that spans the whole archive?
+  shared types: ['*21F-TU-NE', '*306-TU', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'DI', 'DI-KI-SE', 'KI-RO', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE', 'QA-*310-I']
+  of which admin operators: ['KI-RO', 'KU-RO']
+  of which Davis-Valerio circuit nodes: ['*306-TU', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'KU-PA₃-NU', 'QA-*310-I']
+  residue genuinely specific to the dossier: ['*21F-TU-NE', 'DI', 'DI-KI-SE', 'MA-KA-RI-TE', 'MI-TU', 'PA', 'PA-TA-NE']
+    *21F-TU-NE     on  3 HT tablets (2 of them Scribe 9): ['HT117', 'HT7', 'HT87']
+    *306-TU        on  3 HT tablets (2 of them Scribe 9): ['HT119', 'HT122', 'HT9']
+    DA-RE          on  4 HT tablets (2 of them Scribe 9): ['HT10', 'HT122', 'HT7', 'HT85']
+    DA-RI-DA       on  4 HT tablets (2 of them Scribe 9): ['HT10', 'HT122', 'HT85', 'HT93']
+    DA-SI-*118     on  4 HT tablets (2 of them Scribe 9): ['HT122', 'HT13', 'HT85', 'HT99']
+    DI             on 11 HT tablets (3 of them Scribe 9): ['HT111', 'HT122', 'HT128', 'HT20', 'HT3', 'HT32', 'HT62+73', 'HT66', 'HT69', 'HT85', 'HT97']
+    DI-KI-SE       on  2 HT tablets (2 of them Scribe 9): ['HT117', 'HT87']
+    KI-RO          on 11 HT tablets (2 of them Scribe 9): ['HT1', 'HT117', 'HT123+124', 'HT15', 'HT30', 'HT34', 'HT37', 'HT55', 'HT88', 'HT93', 'HT94']
+    KU-PA₃-NU      on  6 HT tablets (2 of them Scribe 9): ['HT1', 'HT117', 'HT122', 'HT3', 'HT49', 'HT88']
+    KU-RO          on 27 HT tablets (5 of them Scribe 9): ['HT100', 'HT102', 'HT104', 'HT109', 'HT11', 'HT110', 'HT116', 'HT117', 'HT118', 'HT119', 'HT122', 'HT123+124', 'HT127', 'HT13', 'HT130', 'HT25', 'HT27', 'HT39', 'HT40', 'HT46', 'HT67', 'HT74', 'HT85', 'HT88', 'HT89', 'HT9', 'HT94']
+    MA-KA-RI-TE    on  2 HT tablets (2 of them Scribe 9): ['HT117', 'HT87']
+    MI-TU          on  2 HT tablets (2 of them Scribe 9): ['HT117', 'HT135']
+    PA             on  6 HT tablets (2 of them Scribe 9): ['HT10', 'HT122', 'HT25', 'HT45', 'HT8', 'HT85']
+    PA-TA-NE       on  2 HT tablets (2 of them Scribe 9): ['HT122', 'HT94']
+    QA-*310-I      on  3 HT tablets (2 of them Scribe 9): ['HT122', 'HT8', 'HT85']
+
+### P3  permute the 'exception' vs 'ordinary' label INSIDE Scribe 9
+  observed 6 shared ['*21F-TU-NE', 'DI-KI-SE', 'KU-PA₃-NU', 'KU-RO', 'MA-KA-RI-TE', 'PA-TA-NE']; null mean 8.25; p = 0.8003
+
+### WITNESS A census (mwenge/lineara.xyz, GORILA-derived)
+records (faces/objects) : 1721
+supports: {'Nodule': 890, 'Tablet': 435, 'Roundel': 151, 'Clay vessel': 77, 'Stone vessel': 60, 'Metal object': 23, 'Stone object': 19, 'Lames (short thin tablet)': 18, 'Sealing': 12, 'Inked inscription': 9, 'Architecture': 6, '3-sided bar': 5, '4-sided bar': 5, 'Graffito': 3, 'ivory object': 3, 'clay vessel': 2, 'Label': 1, 'Loom weight': 1, 'Triton': 1}
+top sites: {'Haghia Triada': 1110, 'Khania': 226, 'Phaistos': 66, 'Knossos': 59, 'Zakros': 53, 'Palaikastro': 25, 'Malia': 22, 'Thera': 18}
+sign-group TOKENS corpus-wide : 2560
+sign-group TYPES  corpus-wide : 1070
+distinct documents (faces merged): 1600
+Haghia Triada TABLET faces: 205  documents: 137
+HT tablet sign-group tokens: 890  (34.8% of corpus tokens)
+
+### SCRIBE 9 (corpus metadata, not the claimant's csv)
+faces: ['HT112a', 'HT112b', 'HT117a', 'HT117b', 'HT119', 'HT122a', 'HT122b', 'HT128a', 'HT128b', 'HT132', 'HT135a', 'HT135b', 'HT85a', 'HT85b', 'HT87', 'HT94a', 'HT94b']
+documents: ['HT112', 'HT117', 'HT119', 'HT122', 'HT128', 'HT132', 'HT135', 'HT85', 'HT87', 'HT94'] (n=10)
+findspots: {'Casa Room 7': 7, 'Casa Room 9': 3, 'Casa del Lebete': 7}
+sign-group tokens 123 = 4.80% of corpus tokens; types 98 = 9.16% of corpus types
+documents 10/1600 = 0.62% of documents
+
+faces with ANY scribe attribution: 592 of 1721
+distinct attributed hands: 102
+
+### CLAIM FOOTPRINT (every document named anywhere in the 4 analysis notes)
+documents named: 29 ; found in witness A: 29
+their sign-group tokens 339 = 13.24% of corpus tokens
+their sign-group types  221 = 20.65% of corpus types
+documents 29/1600 = 1.81%
+
+### LEXICAL FOOTPRINT: sign-group types given a functional value by the claim: 13 of 1070 types (1.21%)
+   their token count 81 = 3.16% of all sign-group tokens
+     *21F-TU-NE        3 tokens
+     A-DU             10 tokens
+     A-KA-RU           3 tokens
+     DA-DU-MA-TA       1 tokens
+     KA-RU             2 tokens
+     KI-KI-RA-JA       1 tokens
+     KI-RO            16 tokens
+     KU-DA             1 tokens
+     KU-RO            37 tokens
+     MA-KA-RI-TE       2 tokens
+     PO-TO-KU-RO       2 tokens
+     SA-TA             1 tokens
+     U-MI-NA-SI        2 tokens
+
+### A-DU  — 10 attestation(s)
+  HT133       [HT Scribe 22 ] next='𐄁'
+      A-DU 𐄁 TE GRA+DA 55
+  HT85a       [HT Scribe 9  ] next='𐄁'
+      A-DU 𐄁 *307+*387 𐄁 VIR+[?] 𐄁 | DA-RI-DA 12 | PA₃-NI 12 | U-*325-ZA 6 | DA-SI-*118 24 | KU-ZU-NI 5 | TE-KE 3 | DA-RE 4 | KU-RO 66
+  HT86a       [HT Scribe 6  ] next='𐄁'
+      A-KA-RU 𐄁 | KU-NI-SU GRA+K+L 20 | SA-RU 20 | DI-DE-RU 20 | QA-RA₂-WA 10 | — | A-DU 𐄁 | DA-ME GRA+B 20 | MI-NU-TE 20
+  HT88        [HT Scribe 7  ] next='VIR+KA'
+      A-DU VIR+KA 20 | RE-ZA 6 | NI 𐄁 KI-KI-NA 7 | KI-RO 𐄁 | KU-PA₃-PA₃ 1 | KA-JU 1 | KU-PA₃-NU 1 | PA-JA-RE 1 | SA-MA-RO 1 | DA-TA-RE 1 | KU-RO 6
+  HT92        [HT Scribe 2  ] next='𐄁'
+      TE 𐄁 | A-DU 𐄁 GRA 680 | *304 12
+  HT95b       [-            ] next='𐄁'
+      A-DU 𐄁 | SA-RU 10 | 𐝫 𐄁 𐝫 | DA-ME 10 | MI-NU-TE 10 | KU-NI-SU 10 | DI-DE-RU 10 | QE-RA₂-U 10
+  HT99a       [HT Scribe 2  ] next='𐄁'
+      A-DU 𐄁 | SA-RA₂ CYP 4 | NI 4 | VIN 1 ≈ ¹⁄₆ | GRA+QE | 𐝫
+  KH11        [KH Scribe 2  ] next='𐄁'
+      A-DU 𐄁 ZA CYP ¹⁄₁₆ | SU 3 | CYP+E 𐝇𐝉 | VIN ≈ ¹⁄₆ | *306 4 | CYP ¹⁄₃ | *348-CYP 𐝇𐝉 | A-TO-*349-TO-I CYP+E 3 | NI 1 | VIN 3 | A-TA-*350 *301 1 | *306 1 | SI-CYP 𐝇𐝉
+  KH23        [KH Scribe 2  ] next='CYP'
+      A-DU | CYP | 𐝫
+  TY3a        [-            ] next='𐄁'
+      ZA-*321 OLE+KI 15 ¹⁄₄ | OLE+U 22 | NE-KI 5 | OLE+QIf 3 ¹⁄₂ | OLE+MI | OLE+U 7 ¹⁄₂ | — | A-DU 𐄁 𐝫 OLE+KI 51 | OLE+KI+U 2 ¹⁄₅ | OLE+KI+ME 1 | OLE+QIf 4 ¹⁄₂ | OLIV 4 | — | A-DA OLE+U 21 | OLE+MI 2 | KO-A-DU-WA OLE 7 ¹⁄₅ | — | A-KU-TU-*361 | KI 5 | OLE+TU 1 | —
+
+### A-KA-RU  — 3 attestation(s)
+  HT2         [-            ] next='𐄁'
+      A-KA-RU 𐄁 OLE+U 20 | OLE+A 17 | OLE+E 3 | KI-RE-TA-NA OLE+U 54 | OLE+A 47 | 1
+  HT86a       [HT Scribe 6  ] next='𐄁'
+      A-KA-RU 𐄁 | KU-NI-SU GRA+K+L 20 | SA-RU 20 | DI-DE-RU 20 | QA-RA₂-WA 10 | — | A-DU 𐄁 | DA-ME GRA+B 20 | MI-NU-TE 20
+  HT86b       [HT Scribe 6  ] next='𐄁'
+      A-KA-RU 𐄁 | KU-NI-SU GRA+K+L 20 | SA-RU 20 | DI-DE
+
+### KA-RU  — 2 attestation(s)
+  HT75        [-            ] next='—'
+      KA-RU | — | 𐝫
+  HT97a       [HT Scribe 7  ] next='𐄁'
+      KA-RU 𐄁 *307+*387 𐄁 VIR+KA 82 | *327 33 | KA-NU-TI 25 | PA-I-TO 6 | DI 4 | NA-TI 4 | MA-DI 5 | JU 15 | KI 3 | ZU 5 | TA-TI 2 | DE 𐄁 | 
+ 3 A 5 𐝫
+
+### DA-DU-MA-TA  — 1 attestation(s)
+  HT95a       [-            ] next='𐄁'
+      DA-DU-MA-TA 𐄁 GRA | DA-ME 10 | MI-NU-TE 10 | SA-RU 20 | KU-NI-SU 10 | DI-DE-RU 10 | QE-RA₂-U 7
+
+### KI-KI-RA-JA  — 1 attestation(s)
+  HT85b       [HT Scribe 9  ] next='𐄁'
+      KI-KI-RA-JA 𐄁 | KI-RE-TA₂ 1 | QE-KA 1 | PA 1 | TE-TU 1 | KA 1 | DI 1 | ME-ZA 1 | RE-DI-SE 1 | WA-DU-NI-MI 1 | MA-DI 1 | QA-*310-I 1
+
+### MA-KA-RI-TE  — 2 attestation(s)
+  HT117a      [HT Scribe 9  ] next='𐄁'
+      MA-KA-RI-TE 𐄁 KI-RO 𐄁 U-MI-NA-SI 𐄁 | U-SU 1 | MI-TU 1 | KU-RA-MU 1 | MA-RU 1 | KU-PA₃-NU 1 | TU-JU-MA 1 | U-DI-MI 1 | MI-RU-TA-RA-RE 1 | TE-JA-RE 1 | NA-DA-RE 1 | KU-RO 10 | — | SA-TA 𐄁 | KU-KU-DA-RA 1 | KO-SA-I-TI 1 | DA-MI-NU 1 | DA-NE-KU-TI 1 | KI-DA-RO 1
+  HT87        [HT Scribe 9  ] next='𐄁'
+      *21F-TU-NE 𐄁 MA-KA-RI-TE 𐄁 | PI-TA-KE-SI 1 | JA-RE-MI 1 | DI-KI-SE 1 | QE-SU-PU 1 | KU-RU-KU 1 | A-RA 𐄁 A-TU 1
+
+### U-MI-NA-SI  — 2 attestation(s)
+  HT117a      [HT Scribe 9  ] next='𐄁'
+      MA-KA-RI-TE 𐄁 KI-RO 𐄁 U-MI-NA-SI 𐄁 | U-SU 1 | MI-TU 1 | KU-RA-MU 1 | MA-RU 1 | KU-PA₃-NU 1 | TU-JU-MA 1 | U-DI-MI 1 | MI-RU-TA-RA-RE 1 | TE-JA-RE 1 | NA-DA-RE 1 | KU-RO 10 | — | SA-TA 𐄁 | KU-KU-DA-RA 1 | KO-SA-I-TI 1 | DA-MI-NU 1 | DA-NE-KU-TI 1 | KI-DA-RO 1
+  HT28b       [HT Scribe 13 ] next='𐄁'
+      A-SI-JA-KA 𐄁 U-MI-NA-SI 𐄁 | SA-RA₂ GRA 20 | OLE+DI 5 | NI 2 | VIN 4 | PU-RA₂ NI 6 | JA-*21F VIN 6 | WI-DI-NA OLE+DI 3 | VIN 3 | ¹⁄₄
+
+### SA-TA  — 1 attestation(s)
+  HT117a      [HT Scribe 9  ] next='𐄁'
+      MA-KA-RI-TE 𐄁 KI-RO 𐄁 U-MI-NA-SI 𐄁 | U-SU 1 | MI-TU 1 | KU-RA-MU 1 | MA-RU 1 | KU-PA₃-NU 1 | TU-JU-MA 1 | U-DI-MI 1 | MI-RU-TA-RA-RE 1 | TE-JA-RE 1 | NA-DA-RE 1 | KU-RO 10 | — | SA-TA 𐄁 | KU-KU-DA-RA 1 | KO-SA-I-TI 1 | DA-MI-NU 1 | DA-NE-KU-TI 1 | KI-DA-RO 1
+
+### *21F-TU-NE  — 3 attestation(s)
+  HT117b      [HT Scribe 9  ] next='𐄁'
+      *21F-TU-NE 𐄁 | KU-RE-JU 1 | DI-KI-SE 1
+  HT7b        [HT Scribe 11 ] next='1'
+      *21F-TU-NE 1 | DA-RU-*329 2
+  HT87        [HT Scribe 9  ] next='𐄁'
+      *21F-TU-NE 𐄁 MA-KA-RI-TE 𐄁 | PI-TA-KE-SI 1 | JA-RE-MI 1 | DI-KI-SE 1 | QE-SU-PU 1 | KU-RU-KU 1 | A-RA 𐄁 A-TU 1
+
+### KU-DA  — 1 attestation(s)
+  HT122a      [HT Scribe 9  ] next='1'
+      RA-RI 𐄁 U-DE-ZA 2 | 2 | DA-SI-*118 2 | PA 𐄁 | DI 1 | TE-KI 2 | QA-*310-I 3 | JA-MI-DA-RE 1 | SI-DA-RE 1 | *324-DI-RA 1 | PA-DE 1 | KU-PA₃-NU 1 | PA-TA-NE 1 | *306-TU 1 | DU 1 | KU-PA₃-NU 1 | DA-RI-DA 1 | KU-RO 31 | KU-DA 1
+
+### PO-TO-KU-RO  — 2 attestation(s)
+  HT122b      [HT Scribe 9  ] next='97'
+      JE-DI 𐄁 *346 𐄁 VIR+[?] | *306-KI-TA₂ 7 | A-RA-JU-U-DE-ZA 2 | QA-QA-RU 2 | DI 2 | DA-RE 2 | KU-RO 65 | PO-TO-KU-RO 97
+  HT131b      [-            ] next='452'
+      𐝫 | NI 30 | OLIV 2 | VIN+SA | — | PO-TO-KU-RO 452 ¹⁄₂
+
+
+### HT95 polarity test: DA-DU-MA-TA (a, 'assessed') vs A-DU (b, 'rendered')
+  HT95a (DA-DU-MA-TA GRA): {'DA-ME': 10, 'MI-NU-TE': 10, 'SA-RU': 20, 'KU-NI-SU': 10, 'DI-DE-RU': 10, 'QE-RA₂-U': 7}
+  HT95b (A-DU):            {'SA-RU': 10, 'DA-ME': 10, 'MI-NU-TE': 10, 'KU-NI-SU': 10, 'DI-DE-RU': 10, 'QE-RA₂-U': 10}
+    DA-ME      a= 10  b= 10   =
+    DI-DE-RU   a= 10  b= 10   =
+    KU-NI-SU   a= 10  b= 10   =
+    MI-NU-TE   a= 10  b= 10   =
+    QE-RA₂-U   a=  7  b= 10   rendered>ASSESSED  <-- contradicts polarity
+    SA-RU      a= 20  b= 10   rendered<assessed OK
+  -> on the only tablet that puts the two headings on opposite faces, the values are
+     mostly EQUAL and one entry runs the wrong way; the assessed/rendered polarity is
+     not recoverable from the numbers.
+
+### HT86: A-KA-RU as 'forward-declared aggregate'?
+  HT86a: A-KA-RU 𐄁 | KU-NI-SU GRA+K+L 20 | SA-RU 20 | DI-DE-RU 20 | QA-RA₂-WA 10 | — | A-DU 𐄁 | DA-ME GRA+B 20 | MI-NU-TE 20
+  HT86b: A-KA-RU 𐄁 | KU-NI-SU GRA+K+L 20 | SA-RU 20 | DI-DE
+  HT2: A-KA-RU 𐄁 OLE+U 20 | OLE+A 17 | OLE+E 3 | KI-RE-TA-NA OLE+U 54 | OLE+A 47 | 1
+  A-KA-RU is followed by a NUMERAL in 1 of its 3 attestations (HT2 only, and there
+  the numeral belongs to the ideogram OLE+U).  In HT86a/b it heads a list with no
+  aggregate at all, and HT86a then uses A-DU the same way after a ruling.

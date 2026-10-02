@@ -1,0 +1,83 @@
+
+==============================================================================
+H. WHAT THE GEAS FONT CALLS THE SIGNS IN THE ME CLUSTER
+==============================================================================
+  E49A   m II 3   das Z gerundet
+  E402   b I 7   kurzer Worttrenner oben
+  E48F   i VII 6   zwei Pfeile rechtsweisend
+  E412   d I 3    liegendes Kreuz
+  E404   b II 3   kurzer Worttrenner Mitte
+  E4B0   Rb II 1   Die Zwei gespiegelt
+  E44D   d XXVIII 2  Andreaskreuz
+  E4AF   Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+  E4AE   Rb I 2   Sonnenaufgang
+  E416   d I 7    offener Ring
+  E491   j II 2   Bett
+
+ALL signs whose GEAS glyph-name contains 'Worttrenner' (word divider):
+   E402   b I 7   kurzer Worttrenner oben
+   E404   b II 3   kurzer Worttrenner Mitte
+
+Byblos.elm sets  seperatorChars = ""  (i.e. the app declares NO separator),
+which is presumably why the Hub pass never met the name.
+
+==============================================================================
+I. DOES E402 BEHAVE LIKE A DIVIDER, DISTRIBUTIONALLY? (name-free test)
+==============================================================================
+all sign tokens 1377 ; at a line edge 253 -> P(edge)=0.1837
+
+signs with n>=6 tokens and ZERO line-edge occurrences (a divider can never start or end a line):
+   E421   n=26  edges=0  P(0 edges | ordinary sign)=0.0051   d II 9   stehendes Kreuz
+   E447   n=19  edges=0  P(0 edges | ordinary sign)=0.0211   d XVI 10 Schilf
+   E402   n=13  edges=0  P(0 edges | ordinary sign)=0.0714   b I 7   kurzer Worttrenner oben
+   E444   n=10  edges=0  P(0 edges | ordinary sign)=0.1313   d XV 10 Kranich ohne Flügel
+   E4DD   n=9   edges=0  P(0 edges | ordinary sign)=0.1609   A V 10   Mensch aufrecht
+   E42D   n=8   edges=0  P(0 edges | ordinary sign)=0.1971   d IV 3   Haken aufrecht
+   E473   n=6   edges=0  P(0 edges | ordinary sign)=0.2958   c X 11   Ypsilon gerade
+   E498   n=6   edges=0  P(0 edges | ordinary sign)=0.2958   l I 1   Strich
+   E4FB   n=6   edges=0  P(0 edges | ordinary sign)=0.2958   F IV 7   Plus
+
+=> E402 is one of very few mid-frequency signs that NEVER occupies a line edge,
+   which is what a word divider does and what an ordinary syllabogram does not.
+
+==============================================================================
+J. RE-READING THE THREE 'HELD-OUT' LOCI WITH E402 AS A DIVIDER
+==============================================================================
+  BYBL i  line 9  : E45A? E413 E442 | E49A | E48F E40D? E439? E412? E411
+  BYBL k  line 4  : E45A E497 E439 E49A | E412 E45A
+  BYBL m  line 2  : [frac] [x] E410 E49A | E48F E46B [frac]
+
+  BYBL i IX : ... E442 | E49A | E48F E40D? ...  -> E49A is a ONE-SIGN word
+                                                  flanked by dividers
+  BYBL k IV : E45A E497 E439 E49A | E412 E45A   -> E49A word-final; E412 is in
+                                                  the NEXT word
+  BYBL m II : [frac][x] E410 E49A | E48F E46B   -> E49A word-final
+
+CONSEQUENCES FOR ME_ANCHOR_TRANSFER:
+  * the claimed three-sign lexical unit E49A-E402-{E48F,E412} does not exist;
+    it straddles a word boundary.
+  * the 'invariant first internal transition E49A -> E402' IS the word boundary,
+    so it carries no lexical information at all.
+  * the stated asymmetry ('low variation inside, high variation outside') is
+    reversed: the only invariant element is the boundary marker, and the
+    genuinely lexical neighbours (E48F / E412 / E442 / E439 / E410) all vary.
+  * the conditional 'ME - ? - T(?)' skeleton for BYBL k is void: under the
+    divider reading E412 is not the third sign of a word beginning with ME.
+  * what survives, and is still interesting, is a much narrower fact:
+    all three clear off-cylinder E49A tokens sit immediately before a word
+    divider, and in BYBL i E49A is a complete one-sign word.
+
+==============================================================================
+K. IS 'ME ALWAYS PRECEDES A DIVIDER' STILL A REAL SIGNAL?
+==============================================================================
+adjacent sign-sign pairs 1129 ; P(right member is a divider)=0.0124
+3 of 3 under that rate, naive: 1.91e-06
+objects that use a divider at all: ['b', 'i', 'j', 'k', 'm', 'q']
+restricted to divider-using objects: 166 pairs, P(divider follows)=0.0843, 3of3=0.0006
+signs with >=3 tokens in divider-using objects that are ALWAYS divider-followed: [('E49A', 3, 'm II 3   das Z gerundet')]
+
+=> even after the divider reinterpretation, 'E49A is always immediately
+   followed by a word divider' remains a genuine and unusual positional fact
+   (family-wise it is the only such sign).  But it is a BOUNDARY fact about a
+   sign that may simply be word-final-only; it is not evidence for the value
+   'me', and it is not the lexical unit the artifact claims.

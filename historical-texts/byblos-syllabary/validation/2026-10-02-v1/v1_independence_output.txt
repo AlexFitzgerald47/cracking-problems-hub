@@ -1,0 +1,42 @@
+
+==============================================================================
+F. SHARED n-GRAMS BETWEEN EVERY PAIR OF OBJECTS
+==============================================================================
+  c    ~ d    : 6 shared >=3-grams   ['E415 E444 E439', 'E411 E447 E43E', 'E452 E41C E43E', 'E41C E43E E453', 'E452 E41C E43E E453', 'E447 E415 E42A']
+  c    ~ e    : 3 shared >=3-grams   ['E453 E453 E453', 'E453 E453 E453 E453', 'E453 E453 E453 E453 E453']
+  i    ~ m    : 2 shared >=3-grams   ['E498 E46B E45A', 'E49A E402 E48F']
+  a    ~ d    : 1 shared >=3-grams   ['E439 E435 E438']
+  c    ~ k    : 1 shared >=3-grams   ['E431 E412 E45A']
+  p    ~ u    : 1 shared >=3-grams   ['E4E4 E451 E4FB']
+
+=> BYBL i and BYBL m share TWO distinct trigraphs (E498 E46B E45A and
+   E49A E402 E48F) out of only 11 cross-object trigraphs in the whole
+   de-duplicated corpus.  BYBL m is 3 short lines (12 certain signs in total).
+   Two independent objects do not normally share two trigraphs; i and m are
+   therefore better modelled as textually RELATED witnesses (shared formula,
+   shared scribe or duplicate text) than as independent draws.  The
+   ME_ANCHOR_TRANSFER 'crosses medium / object / publication cohort'
+   independence argument does not survive that.
+
+BYBL m in full:
+   FRACT E421 E45A E498 E46B E45A FRACT
+   FRACT WILD E410 E49A E402 E48F E46B FRACT
+   FRACT E4A0 E45A FRACT
+BYBL i line 3 (the other shared trigraph):
+   E436 E413 E408 E407? E498 E46B? E45A E42A
+
+==============================================================================
+G. CRITERION-4 LEDGER: WHAT IS ACTUALLY PREDICTED AND TESTED OFF-CYLINDER
+==============================================================================
+  E49A (me)                off-cylinder tokens: 3   of which not guess-marked: 3   objects: ['i', 'k', 'm']
+  E4B0 (me, mirrored)      off-cylinder tokens: 0   of which not guess-marked: 0   objects: []
+  E44D (pa)                off-cylinder tokens: 10  of which not guess-marked: 9   objects: ['a', 'b', 'd', 'i', 'p', 'v']
+  E4AF (ATON cand.)        off-cylinder tokens: 0   of which not guess-marked: 0   objects: []
+  E42A+E483 (AMUN cand.)   off-cylinder tokens in de-dup corpus: 0
+
+=> Only ONE of the four anchors (E49A) has >=3 clean off-cylinder tokens.
+   E4AF and the E42A+E483 digraph have ZERO off-cylinder tokens, so by
+   construction they cannot generate any held-out prediction on the Dunand
+   core.  E4B0 has one off-cylinder token and it is guess-marked with an
+   unreadable follower.  E44D (pa) has off-cylinder tokens but no artifact in
+   the folder tests it off-cylinder at all.

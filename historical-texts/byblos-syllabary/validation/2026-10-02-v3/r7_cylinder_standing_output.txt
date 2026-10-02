@@ -1,0 +1,144 @@
+==============================================================================
+Q1.  HOW MUCH OF EACH WITNESS'S SIGN SET IS ATTESTED ELSEWHERE?
+==============================================================================
+  share  |types|shared|tokens| witness
+  0.300  |  10 |   3  |   10 | y
+  0.538  |  13 |   7  |   19 | w
+  0.600  |   5 |   3  |    5 | b'b
+  0.619  |  21 |  13  |   34 | r (the Garbini cylinder seal)
+  0.667  |   3 |   2  |    3 | x
+  0.667  |   6 |   4  |    7 | z
+  0.710  |  31 |  22  |   44 | a'
+  0.750  |   4 |   3  |    4 | s
+  0.760  |  25 |  19  |   43 | b
+  0.778  |   9 |   7  |   16 | q
+  0.790  |  62 |  49  |  212 | c
+  0.800  |   5 |   4  |    5 | c'
+  0.800  |  80 |  64  |  443 | d
+  0.810  |  21 |  17  |   40 | f
+  0.833  |  12 |  10  |   17 | e
+  0.833  |  42 |  35  |   88 | i
+  0.842  |  19 |  16  |   29 | k
+  0.889  |   9 |   8  |   12 | m
+  0.919  |  37 |  34  |   57 | l
+  0.941  |  17 |  16  |   18 | n
+  0.941  |  17 |  16  |   26 | p
+  0.941  |  34 |  32  |  114 | a
+  1.000  |   2 |   2  |    2 | b'c
+  1.000  |   3 |   3  |    3 | v
+  1.000  |   4 |   4  |    4 | b'a
+  1.000  |   4 |   4  |    4 | d'
+  1.000  |   4 |   4  |    4 | h
+  1.000  |   4 |   4  |    5 | t
+  1.000  |   9 |   9  |   10 | u
+  1.000  |  11 |  11  |   14 | j
+  1.000  |  23 |  23  |   38 | g
+  1.000  |  31 |  31  |   47 | o
+
+  THE SEAL: 21 distinct forms, 13 of them attested on any other witness
+  forms UNIQUE to the seal in the whole OCBI corpus:
+     E4AC   Ra I 1   zwei Pfeile nach rechts unten
+     E4AD   Ra I 2   Auge klein
+     E4AE   Rb I 2   Sonnenaufgang
+     E4AF   Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+     E4B1   Rb II 2   Fernseher
+     E4B2   Rb II 3   Galgen mit doppeltem Dach
+     E4FD   Rc I 3   flaches Boot
+     E4FF   Rb I 1   Götterzeichen auf Siegel
+  forms shared with the rest of the corpus:
+     E416   n=17  elsewhere  d I 7    offener Ring
+     E417   n=8   elsewhere  d I 8    Galgen
+     E41F   n=32  elsewhere  d II 5   hängender Links-Haken mit Decke
+     E429   n=25  elsewhere  d III 10  Antenne
+     E42A   n=23  elsewhere  d III 11  Joch
+     E443   n=6   elsewhere  d XV 1  Türe mit Angeln
+     E44D   n=11  elsewhere  d XXVIII 2  Andreaskreuz
+     E45C   n=5   elsewhere  c I 2   Schilf/Gutzeichen
+     E483   n=2   elsewhere  f II 4   Kamm mit 3 Zähnen
+     E491   n=4   elsewhere  j II 2   Bett
+     E49A   n=3   elsewhere  m II 3   das Z gerundet
+     E4B0   n=1   elsewhere  Rb II 1   Die Zwei gespiegelt
+     E4B3   n=3   elsewhere  Rc I 2   Antenne / Djed-Pfeiler
+
+==============================================================================
+Q2.  SIZE-MATCHED NULL: is the seal unusual, or just small?
+==============================================================================
+  Draw 34 sign tokens at random from the non-seal corpus (preserving its
+  token frequencies) and ask what fraction of the DISTINCT forms drawn
+  are attested outside the drawing.  Since every drawn form is by
+  construction attested elsewhere this would be 1.0, so instead the null
+  is built per-witness: for each real non-seal witness, compute its own
+  share and compare like-for-like on size.
+  non-seal witnesses, share of own sign types attested elsewhere:
+    n_types  share
+       2     1.000
+       3     0.667
+       3     1.000
+       4     0.750
+       4     1.000
+       4     1.000
+       4     1.000
+       4     1.000
+       5     0.600
+       5     0.800
+       6     0.667
+       9     0.778
+       9     0.889
+       9     1.000
+      10     0.300
+      11     1.000
+      12     0.833
+      13     0.538
+      17     0.941
+      17     0.941
+      19     0.842
+      21     0.810
+      23     1.000
+      25     0.760
+      31     0.710
+      31     1.000
+      34     0.941
+      37     0.919
+      42     0.833
+      62     0.790
+      80     0.800
+
+  witnesses with <=25 distinct forms (seal has 21): n=24, median share 0.865,
+  min 0.300, max 1.000
+  SEAL share = 0.619 -> 3 of 24 size-matched witnesses score lower.
+
+==============================================================================
+Q3.  WHICH SIGNS CARRY THE ALIGNMENT?
+==============================================================================
+  E49A   ME (rb)                  off-seal tokens=3   on witnesses i, k, m
+  E4B0   ME' (rc)                 off-seal tokens=1   on witnesses f
+  E44D   PA (ra)                  off-seal tokens=11  on witnesses a, b, d, f, i, p, v
+  E4AF   ATON terminal            off-seal tokens=0   on witnesses -- NONE --
+  E42A   AMUN 1st                 off-seal tokens=23  on witnesses a, c, d, g, i, l, s
+  E483   AMUN 2nd                 off-seal tokens=2   on witnesses c, o
+  E416   the split's other member off-seal tokens=17  on witnesses d, g, h, k, l, n
+  E491   the 'T-bearing' sign     off-seal tokens=4   on witnesses j, l, o
+
+  Of the eight forms that the whole partial bigraph is built on, the
+  following are attested ONLY on the seal: E4AF
+
+==============================================================================
+Q4.  EXTERNAL RECORD ON THE OBJECT (for the verdict file)
+==============================================================================
+  Garbini, G.; Luiselli, M.M. & Devoto, G. (2004), 'Sigillo di eta amarniana
+    da Biblo con iscrizione', Rendiconti dell'Accademia Nazionale dei Lincei
+    9/15, 377-390 -- the seal's only primary publication.  Neither
+    PARTIAL_BIGRAPH_KERNEL.md nor PROBLEM.md cites it; both cite only
+    Maeder and Schmutz & Maeder, who cite Garbini et al. 2004 for the object.
+  Colless (2019, cryptcracker.blogspot.com, 'WEST SEMITIC CYLINDER STAMPS')
+    records the provenance as 'apparently emanating from somewhere in
+    Phoenicia, possibly Byblos (Gubla)' -- i.e. no excavation context at all,
+    and the attribution to Byblos is itself an inference.
+  GEAS's own 2021 anchor page calls it 'the historisizing Garbini (2004)
+    seal'.  Neither the word 'historicizing' nor Garbini's publication
+    appears in the Hub files.
+  Colless (2019) disputes, from the image, exactly the two observations the
+    kernel's constraint (3) rests on: "I would have to say that these '2'
+    letters are not the same" and "the signs at the bottom of the cartouches
+    are similar but not the same".  OCBI itself encodes that disagreement as
+    its rc Var. 2, whose terminal is E4FD and not E4AF.

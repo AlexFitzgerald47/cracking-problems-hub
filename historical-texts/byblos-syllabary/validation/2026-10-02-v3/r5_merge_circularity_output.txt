@@ -1,0 +1,136 @@
+==============================================================================
+N1.  VARIANT DEPENDENCE OF THE SPLIT
+==============================================================================
+  The merged group that the kernel wants split.  In the default/search
+  inventory and in syl1-syl5, the group containing E4AF is:
+    search  group = E416 E495 E4AE E4AF
+    syl1    group = E416 E495 E4AE E4AF E4FD
+    syl2    group = E416 E495 E4AE E4AF E4FD
+    syl3    group = E416 E495 E4AE E4AF E4FD
+    syl4    group = E416 E495 E4AE E4AF E4FD
+    syl5    group = E416 E495 E4AE E4AF E4FD
+    syl6    group = E450 E455 E47B E4C9 E4AE E4AF E4FD
+    syl7    group = E450 E455 E47B E4C9 E4AE E4AF E4FD
+    syl8    group = E450 E455 E47B E4C9 E4AE E4AF E4FD
+
+  Now apply the kernel's own inference -- 'two members of one merged
+  group inside one four-sign name is an unnecessary polyfunctionality,
+  therefore split them' -- to each OCBI reading of rb and rc:
+    rb (Var. 1)    class 25 holds E4AE+E4AF
+    rb (Var. 2)    class 25 holds E4AE+E4AF
+    rb (Var. 3)    class 25 holds E416+E4AF
+    rc (Var. 1)    no two distinct forms of one class
+    rc (Var. 2)    class 28 holds E4B1+E4B2
+    rc (Var. 3)    no two distinct forms of one class
+
+  -> rb Var. 1 and Var. 2 (E4FF E49A E4AE E4AF) put E4AE and E4AF -- two
+     forms OCBI names with the SAME motif ('Sonnenaufgang' / 'Sonnenaufgang / Rechts-Schlaufe')
+     inside the same four-sign name.  The kernel's inference, applied to
+     those readings, would demand E4AE != E4AF, a DIFFERENT split, and
+     one that cuts across OCBI's own motif naming.
+  -> rc Var. 2 (E4B0 E4B1 E4B2 E4FD) does not end in E4AF at all; its
+     terminal E4FD is another member of the same merged group, so under
+     that reading the two sisters do NOT share 'the exact same terminal
+     sign' and constraint (3) of kernel section 2 is false.
+  The conclusion is therefore not identified by the evidence: which
+  grapheme pair gets split is decided by which of the nine OCBI readings
+  is adopted, and the kernel adopts Var.3/Var.3 without argument.
+
+==============================================================================
+N2.  IS REPETITION INSIDE A FOUR-SIGN WINDOW ACTUALLY 'UNNECESSARY'?
+==============================================================================
+  off-cylinder 4-sign windows: 741
+    search  windows with >=2 tokens of ONE grapheme class:  182 (24.6%)   with an identical form repeated:   84 (11.3%)
+    syl1    windows with >=2 tokens of ONE grapheme class:  182 (24.6%)   with an identical form repeated:   84 (11.3%)
+    syl2    windows with >=2 tokens of ONE grapheme class:  196 (26.5%)   with an identical form repeated:   84 (11.3%)
+    syl3    windows with >=2 tokens of ONE grapheme class:  208 (28.1%)   with an identical form repeated:   84 (11.3%)
+    syl4    windows with >=2 tokens of ONE grapheme class:  214 (28.9%)   with an identical form repeated:   84 (11.3%)
+    syl5    windows with >=2 tokens of ONE grapheme class:  201 (27.1%)   with an identical form repeated:   84 (11.3%)
+    syl6    windows with >=2 tokens of ONE grapheme class:  214 (28.9%)   with an identical form repeated:   84 (11.3%)
+    syl7    windows with >=2 tokens of ONE grapheme class:  248 (33.5%)   with an identical form repeated:   84 (11.3%)
+    syl8    windows with >=2 tokens of ONE grapheme class:  247 (33.3%)   with an identical form repeated:   84 (11.3%)
+    syl9    windows with >=2 tokens of ONE grapheme class:   96 (13.0%)   with an identical form repeated:   84 (11.3%)
+
+  -> Under the inventories the kernel calls 'merged' (search, syl1-syl5)
+     a large fraction of all four-sign stretches in the real corpus
+     already contain two tokens of one grapheme class.  The configuration
+     the kernel treats as an anomaly requiring a split is the ordinary
+     case.  The premise of the inference is not supported.
+  -> Note also that mixed logographic + phonetic use of ONE sign inside
+     one name is standard in the Egyptian system the script is said to
+     imitate, so 'polyfunctionality' is not a cost that excludes.
+
+==============================================================================
+N3.  THE KERNEL'S OWN ANCHORS BREAK THE SAME RULE
+==============================================================================
+  OCBI syllableMap (the only machine-readable sound map in the source):
+     me     E49A   das Z gerundet
+     pa     E44D   d XXVIII 2  Andreaskreuz
+     ATON   E416    offener Ring
+     AMUN   E42A E483   d III 11  Joch / Kamm mit 3 Zähnen
+     i      E42A   d III 11  Joch
+     o      E45A   d XXXIX 8  Torbogen mit Querstrich
+     ḥ      E419   Ochs
+     m      E41F   hängender Links-Haken mit Decke
+     b      E444   d XV 10 Kranich ohne Flügel
+     ś      E411   Torbogen
+     h      E410   eckige Spirale
+     aleph  E447   d XVI 10 Schilf
+
+  E42A is mapped to the single value 'i' AND is the first half of the
+  two-sign logogram 'AMUN'.  Off-cylinder it is the #14 most frequent
+  form in the corpus (23 tokens of 1302).
+  So the kernel accepts, inside the six-sign name ra, exactly the
+  polyfunctionality it refuses to accept inside the four-sign name rb.
+  E483 off-cylinder tokens: 2
+
+  The kernel further declares the source's 'ATON E416' mapping 'stale
+  residue'.  Two things to note:
+    * E416 is named ' offener Ring' -- an open ring, i.e. a plausible
+      sun-disc; E4AF is named 'Sonnenaufgang / Rechts-Schlaufe'.
+      Colless (2019) independently identifies the sun sign on this seal
+      as 'a circle with a dot in it' in the SECOND position of the long
+      column, i.e. E4AD (Auge klein), not as either.
+    * if ATON = E416, then rb Var.3 reads me-ATON-?-? and the kernel's
+      alignment fails.  The kernel resolves a conflict between its
+      alignment and the only machine-readable sound map in its primary
+      source by declaring the source stale.  That is an assertion, not
+      an external adjudication.  (The GEAS 2021 news page does give
+      'E4AF ATON', so GEAS is internally inconsistent with its own tool;
+      the kernel's report of the GEAS page is accurate.)
+
+==============================================================================
+N4.  AFTER THE SPLIT, DOES THE ATON CLASS LEAVE THE CYLINDER?
+==============================================================================
+    E4AF   on-cylinder  4  off-cylinder   0   Rb I 3   Sonnenaufgang / Rechts-Schlaufe
+    E4AE   on-cylinder  4  off-cylinder   0   Rb I 2   Sonnenaufgang
+    E4FD   on-cylinder  1  off-cylinder   0   Rc I 3   flaches Boot
+    E416   on-cylinder  1  off-cylinder  17   d I 7    offener Ring
+    E495   on-cylinder  0  off-cylinder   3   k III 2   offener Ring eingedreht
+    E49A   on-cylinder  3  off-cylinder   3   m II 3   das Z gerundet
+    E4B0   on-cylinder  3  off-cylinder   1   Rb II 1   Die Zwei gespiegelt
+    E44D   on-cylinder  1  off-cylinder  11   d XXVIII 2  Andreaskreuz
+    E42A   on-cylinder  2  off-cylinder  23   d III 11  Joch
+    E483   on-cylinder  1  off-cylinder   2   f II 4   Kamm mit 3 Zähnen
+
+    search  ATON class = E416 E495 E4AE E4AF          off-cylinder tokens of the class: 20
+    syl1    ATON class = E416 E495 E4AE E4AF E4FD     off-cylinder tokens of the class: 20
+    syl2    ATON class = E416 E495 E4AE E4AF E4FD     off-cylinder tokens of the class: 20
+    syl3    ATON class = E416 E495 E4AE E4AF E4FD     off-cylinder tokens of the class: 20
+    syl4    ATON class = E416 E495 E4AE E4AF E4FD     off-cylinder tokens of the class: 20
+    syl5    ATON class = E416 E495 E4AE E4AF E4FD     off-cylinder tokens of the class: 20
+    syl6    ATON class = E450 E455 E47B E4C9 E4AE E4AF E4FD off-cylinder tokens of the class: 3
+    syl7    ATON class = E450 E455 E47B E4C9 E4AE E4AF E4FD off-cylinder tokens of the class: 3
+    syl8    ATON class = E450 E455 E47B E4C9 E4AE E4AF E4FD off-cylinder tokens of the class: 3
+    syl9    E4AF absent from this inventory
+
+  -> E4AF itself is cylinder-only (as the kernel says), and so are E4AE
+     and E4FD: all three members of the 'Sonnenaufgang/Boot' end of the
+     merged group occur ONLY on the seal.  The 20 off-cylinder tokens the
+     merged class had were almost all E416 (17) plus E495 (3).
+  -> So the split's whole effect is to strip the one well-attested form
+     (E416) out of the ATON class, leaving an ATON class with 3
+     off-cylinder tokens under syl6-syl8.  That is a real change to the
+     inventory, but it makes the ATON anchor LESS testable off the
+     cylinder, not more: it generates no cross-text prediction at all,
+     and it is unfalsifiable from the Dunand core by construction.
