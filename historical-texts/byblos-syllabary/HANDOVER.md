@@ -1,5 +1,83 @@
 # Handover Notes – The Byblos Syllabary
 
+## Next experiments — after the 3 × PARTIAL panel (orchestrator note, 2026-10-03; additive, nothing below altered)
+
+The three-validator panel convened on 2026-10-02 is **complete at 3 × PARTIAL**. The claim is
+`HELD — awaiting human sign-off`; it is not a solve and must not be written up as one anywhere.
+Full outcome, including a recorded dissent between validators 2 and 3 that a future session must
+not resolve by picking the more convenient reading:
+`board/log/2026-10-03-panel-outcome-byblos-syllabary.md`. Verdicts:
+`board/log/2026-10-02-validation-byblos-syllabary-v{1,2,3-refuter}.md`. Their artifacts:
+`validation/2026-10-02-v1/`, `-v2/`, `-v3/`. **The folder is drawable again** — *Panel pending* is
+off its `STATUS.md` row.
+
+1. **Withdraw the criterion-4 artefact's central claim, then rebuild it without U+E402.** This is
+   the panel's sharpest finding and the cheapest decisive item on the folder. `ME_ANCHOR_TRANSFER.md`
+   rests on a three-sign "lexical/morphemic family" anchored on U+E402 — which the GEAS font that
+   ships the signs names *"b I 7 kurzer Worttrenner oben"*, **a short word divider**, and which
+   validator 1's name-free check independently confirms behaves like one (13 tokens, **zero** at a
+   line edge; P(0 edges | ordinary sign) = 0.07). `Byblos.elm` sets `seperatorChars = ""`, so the app
+   never flags it, which is how the original pass missed it. *Concretely:* mark the inverted claim
+   withdrawn in place (append, do not delete), re-run the transfer with U+E402 treated as a
+   boundary rather than a syllabogram, and report what survives. Note also that U+E402 → U+E48F, the
+   bigram the ME result turns on, has **2 tokens in the whole corpus and both sit inside the claimed
+   cluster**, so there is no independent evidence the pair is a unit.
+2. **Adopt validator 1's power analysis and ceiling statement as the folder's own, and narrow the
+   anchor.** Criterion 1 was judged **not met** because no power analysis existed; one now does
+   (`validation/2026-10-02-v1/v1_power_and_ngrams.py`) and the folder should carry its numbers rather
+   than re-deriving them: N = 1,284 sign tokens, V = 213 attested types, 78 hapax (37 % of V),
+   **111 of 213 types (52 %) at ≤ 2 occurrences**, 245 wildcard slots (16 %), 137 guess-marked tokens
+   (11 %), longest certain run 19, median 5. The honest ceiling that criterion 5 asks for follows
+   directly: for a **majority of the signary there is no distributional evidence at any sample size,
+   because the tokens do not exist.** In the same edit, narrow the `me` anchor to **U+E49A alone**
+   per validator 3 and read `rc` as having **no** anchored onset; and stop quoting the
+   "18 `BYBL` / 14 `BYBL?`" figure, which validator 1 could not reproduce under any counting rule.
+3. **Run the phase-stratified sign-form audit that `PALIMPSEST_CHRONOLOGY.md` §5 predicts and nobody
+   has run.** Criterion 3 was judged substantially met *as argument, not executed*, and the corpus is
+   now machine-readable, so this is the executable half. Carry two qualifications into the document
+   while you are in it: the Yehimilk filiation in KAI 6 is **restored text** (DEAPS renders it in
+   square brackets) and is used as one of five links without that being noted, and the catalogue
+   dates **inherit Martin (1961)** for the palimpsest layer rather than independently witnessing it —
+   the folder's own layer-secure / transcription-unverified distinction is right, but the dates are
+   not a second witness to the layer.
+4. **Name Garbini (2009) in `PARTIAL_BIGRAPH_KERNEL.md` §5 as a live rival.** Schmutz & Mäder's
+   footnote 2 states that the one Byblos decipherment attempt they consider methodologically
+   acceptable is Garbini 2009, with evaluation deferred to a later paper. §5's "what is already dead"
+   reads as if the field had been cleared; it has not. Criterion 2 is met for **Woudhuizen/Best
+   only**, and by prior art rather than by anything the Hub executed.
+
+### Carried in: two statistical rules this folder's next null needs
+
+*Deferred from the 2026-10-02 pass, which held them back deliberately while the panel was live so
+that editing this file could not confuse a verdict about what the claimant wrote. The panel is now
+closed, so they land.*
+
+**Charge the transcription-variant budget before counting anchors.** Validator 3 put this on the
+record as transferable, and it is the methodological core of why this claim felt stronger than it
+was: its five "external constraints" were counted as five pieces of evidence, but two are
+iconographic and untestable from the text, two are facts about Egyptian onomastics fixed before any
+Byblos sign was inspected, and one — the shared terminal — is at chance once the nine variant
+readings the source itself offers are charged. One constraint, `pa` in position 4, is doing all the
+work. **In a corpus with multiple published readings per witness, "the two names share a sign" is a
+statement about which reading was chosen.** Validator 2 supplies the rider that keeps this fair:
+here the Var. 3 selection for both daughters is **Mäder's published choice**, attributable to him
+rather than to the Hub, which softens the 2026-09-25 objection — so charge the budget against the
+*argument*, not against the transcriber. Transfers to Phaistos, Dorabella and Rohonc.
+
+**Calibrate any shuffle null at this corpus's own token count, and do not read a doublet deficit as
+a hoax signature.** From the 2026-09-27 `ciphers/blitz-ciphers/` session, now in the annexe
+**`board/PRACTICES-CIPHERTEXT.md`** — read it before any null on this folder. Cut each genuine
+comparandum into non-overlapping blocks of **exactly** your target's token count, run the identical
+null on each, and report a percentile rather than a bare z; the same blocks give the power curve
+free, which is the cheapest way to state the power you actually have *before* a run instead of
+discovering afterwards that the test could not fire. That matters acutely here: with 52 % of types
+at ≤ 2 tokens and a longest certain run of 19, most tests on this corpus have a p-floor above any
+threshold worth reporting, and item 2's ceiling statement is the honest form of that. And a doublet
+deficit is what genuine enciphered text looks like (Borg z = −47.3, Copiale z = −33.0) — the
+anomalous document is the one sitting *near* Σpᵢ², not far below it.
+
+---
+
 ## 2026-09-23 — orchestrator cross-reference (additive; nothing below altered)
 
 **Compute this channel's information ceiling before extending any conditional value.** From

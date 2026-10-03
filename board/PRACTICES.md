@@ -31,7 +31,7 @@ none lost.** The remaining candidate for the same treatment is the archival/iden
 
 ## Start here
 
-Five entries carry most of the value. Read these, then use the rest as reference.
+Six entries carry most of the value. Read these, then use the rest as reference.
 
 1. **A literature review is not a session's work** (Scope) — the most common failure here.
 2. **Run a null model, and report where it has no power** (Method) — with the holdout rule and the
@@ -41,11 +41,16 @@ Five entries carry most of the value. Read these, then use the rest as reference
 5. **Audit your source corpora** (Method) — new 2026-09-25, and the newest way sessions here go
    wrong: a session's first three numbers all pointed the way its frozen prediction wanted and all
    three were artifacts of its comparison corpus.
+6. **Agreement is evidence only if you could have disagreed** (Verification) — new 2026-10-03, and
+   the newest way this board has gone wrong at scale: seven sessions reached one headline from one
+   shared instruction and one corpus, which measures an arithmetic rather than a reading.
 
-Three annexes, read only if they apply to you: **`board/PRACTICES-CIPHERTEXT.md`** (ciphertext and
-unknown-script statistics — not optional for streams A and B), **`board/PRACTICES-STYLOMETRY.md`** (authorship
-attribution, and any register, period, genre or scribe confound — not optional for that work) and
-**`board/IMPROVEMENT.md`** (research policy, orchestrator-owned).
+Four annexes, read only if they apply to you: **`board/PRACTICES-CIPHERTEXT.md`** (ciphertext and
+unknown-script statistics — not optional for streams A and B), **`board/PRACTICES-ARCHIVAL.md`**
+(archival chains, identity constraint and measurement over scanned editions — not optional for
+streams C and D, or for the archival cipher packs in stream A), **`board/PRACTICES-STYLOMETRY.md`**
+(authorship attribution, and any register, period, genre or scribe confound — not optional for that
+work) and **`board/IMPROVEMENT.md`** (research policy, orchestrator-owned).
 
 ## Creative exploration
 
@@ -81,6 +86,21 @@ an enumerable venue. **A report being *mostly* right is no evidence any item in 
 accuracy does not distribute over a document.**
 `board/log/2026-09-24-a-researcher-laundered-its-own-computation-as-a-citation.md`.
 
+**Agreement is evidence only if you could have disagreed — count the shared inputs first.** The
+Linear A panel mapped the Hub's flagship KI-RO result against a parallel public campaign and found
+corpus overlap effectively total, source overlap near-total, and **test dependence total**: both
+projects were pushed to the same reading by the *same* third-party negative control, and the external
+project's own notes call it "replication, not discovery". The same shape then appeared at home —
+seven Breaker sessions reached one headline on Proto-Elamite having read the same handover item, the
+same corpus and the same instruction, so their errors were correlated by construction. **Before
+claiming a result as the Hub's, build an `external_overlap_map.csv`:** one row per proposition you
+intend to claim → *published elsewhere* / *Hub result* / *cannot assess*, with a reason per row so it
+can be attacked, and state the shared inputs explicitly — corpus edition, commentary, third-party
+scripts, and the instruction that chose your experiment. **Where results agree under shared inputs,
+the information is in the divergences and in the predictions that failed**, not in the agreement. A
+replication honestly labelled is a real contribution; passing one off as a discovery is what this
+prevents. `board/log/2026-10-03-connection-a-shared-trigger-is-not-an-independent-replication.md`.
+
 **Resolve a too-precise citation by DOI lookup against an independent index — it is the same single
 call whichever way it goes.** The completion of the rule above, 2026-09-25. A Phaistos session met
 the exact fabrication shape (a paper stating precisely the result it had just computed, authors
@@ -103,6 +123,17 @@ somebody else's reading, and everything downstream inherits its errors. Corollar
 before semantics** — one backwards parser for both Linear A's KI-RO and KU-RO made an invalid
 negative control.
 
+**Charge the transcription-variant budget before counting anchors.** In a corpus with multiple
+published readings per witness, "the two names share a sign" is a statement about which reading was
+chosen. The Byblos partial bigraph felt strong because its five "external constraints" were counted
+as five pieces of evidence: two are iconographic and untestable from the text, two are facts about
+Egyptian onomastics fixed before any Byblos sign was inspected, and the shared terminal is at chance
+once the nine variant readings the source itself offers are charged — leaving one constraint doing
+all the work. Charge the budget against the **argument**, not the transcriber: where the variant
+selection is the editor's own published choice it is attributable to them, which is the rider that
+keeps the rule fair. Transfers to Phaistos, Dorabella and Rohonc.
+`board/log/2026-10-02-validation-byblos-syllabary-v3-refuter.md`.
+
 **Validate your inputs and your pipeline before you trust any result.** Beale decoded B2, a
 known-good message on the same key, before anything contested depended on it; the Annals pipeline
 recovers, blind, AU's documented +1 AD offset and three manuscript lacunae it was never told about.
@@ -123,6 +154,11 @@ about **1 in 14**. See `discovered/short-cipher-validation-bound/`, the most-cit
 across two transcription systems; flatness, chi-square invariance and the doublet deficit; and
 calibrating a shuffle null at the target's own token count (which is also where a short text's power
 curve comes from). **Five rules, not optional for streams A and B.**
+
+**The archival-chain and identity family has moved to `board/PRACTICES-ARCHIVAL.md`** — role
+separation before identity constraint, the OBSERVED / INFERRED / MISSING ledger, the proximity trap
+and row-by-row adjudication, and the second-scan replicate for any measurement over a scanned
+edition. **Not optional for streams C and D, or for the archival cipher packs in stream A.**
 
 **A structured sub-object is not independent evidence — test whether the structure is inherited.**
 A bar *face*, a genuine physical object, was balanced at P = 7.4e-6, and a validation panel's
@@ -187,15 +223,6 @@ vocabulary is zoomorphic as a system, giving the observation a likelihood ratio 
 comparison class from an ancient source rather than choosing it yourself.**
 `board/log/2026-09-22-ambiguity-has-a-base-rate.md`.
 
-**Proximity is not construction — adjudicate every row before believing either sign of the result.**
-A window search for a beast of battle governing a blade verb returned **18 hits**, which as a count
-refutes the hypothesis emphatically. Adjudicated row by row, **all 18 were spurious**, on
-non-overlapping grounds — subject in a neighbouring clause, the beast word as a kenning determinant
-*for a warrior*, the verb in the next stanza, and **five where `hrafn` was a man's personal name**.
-Homonymy inside a window is invisible to every summary statistic. Commit the adjudication table with
-a reason per row, precisely so it can be attacked — that is what makes a zero credible.
-`board/log/2026-09-23-two-scans-and-the-proximity-trap.md`.
-
 **A figure is the least stable element of its own narrative — draw two transmission maps, one for the
 prose and one for the number.** A 2026-09-24 session called Templo Mayor's 80,400 "a bare token,
 detached from the prose"; the witness sharing Durán's source gave no number and a textually
@@ -250,6 +277,19 @@ decomposition takes this in a few lines. The neighbouring failure is a split tha
 you think: the Voynich "golden cell" was withdrawn because its variable described illustration type,
 not physical section, and three supposedly independent blocks came from one folio. **Audit what a
 control's units are, and use independent objects as replicates.**
+**Match the permutation on whatever the label is confounded with, then run it on the classes you did
+not hypothesise.** Linear A's Scribe-9 cohesion (p < 0.01) was an artefact of a free permutation:
+the scribe label is confounded with **tablet size**, Scribe 9 being that archive's largest hand, so
+the null compared long documents against short ones. Permuted within strata of the confound it moved
+to **p = 0.12–0.57** — and run across the other eleven scribes the effect was **present for Scribe 6
+too**, making it a corpus-general scribal-department property rather than a finding about Scribe 9.
+It was the absence of that across-class comparison, not the p-value, that sank the criterion. Half
+two is the cheaper half and the one more often skipped: it needs no new data, because you already
+hold the other classes. Any grouping variable can carry such a confound — hand, scribe, author,
+compiler, witness, findspot, period, transmission branch. This is **not** the length-calibration rule
+in `PRACTICES-CIPHERTEXT.md`: that one is about comparing documents of different lengths, this one
+bites even when every unit is the same length.
+`board/log/2026-10-03-connection-match-the-null-on-the-confound-and-test-the-other-classes.md`.
 
 **Audit your source corpora — the comparandum is the least-audited object in a session, and it
 usually lies towards your hypothesis.** The primary evidence here gets three transcriptions and a
@@ -269,30 +309,6 @@ a discount. (3) Editorial Latin (*linea*, *vacat*) had leaked into a Cypriot tok
 **Corollary: choose exclusions that bias against your own hypothesis and say which way each one
 cuts** — stating the direction is what makes a failed prediction credible.
 `board/log/2026-09-25-three-ways-a-comparison-corpus-lied.md`.
-
-**And download the corpus twice — archive.org usually scanned it twice.** Public-domain scholarly
-editions frequently exist as **two independent library scans** under near-identical identifiers
-(Finnur Jónsson's *Skjaldedigtning* as `dennorskislandsk0[1-4]finn` **and** `…finnu`). One extra
-`curl` loop buys a genuine replicate: raw counts differed ~7 % while **the adjudicated result was
-identical — zero, both times**, converting "my regex found nothing" into "two independent character
-streams agree there is nothing". One scan also renders the disputed line `ristede om på Ellas ryg`
-and the other `ristede orn på Ellas ryg`, so on the first alone the construal the argument turns on
-is invisible. **If a second scan exists it is your replicate.** Beside it: **the OCR warning is right
-for n-grams and overstated for function words — at corpus level.** On Junius the author effect is
-~20× the edition effect, but that **fails in a maximally mismatched cell**, where a panel's sharpest
-number was partly a scanning artefact between registers differing ~2,000-fold in long-s damage.
-Report the damage rate per cell; character n-grams remain exposed.
-
-**Separate the roles before you constrain the identity.** Two VENONA sessions over-constrained their
-candidate set by demanding radio skills, until a re-reading showed the traffic assigns the radio work
-to a *different* cover name in the same operation. Check that a property belongs to your unknown and
-not to another role in the same document. Genre-versus-authorship in stylometry is the same error in
-different clothes.
-
-**Keep an OBSERVED / INFERRED / MISSING ledger for any identity or archival chain.** One table, three
-labels, every edge — including the load-bearing bridge you have *not* found, listed as MISSING beside
-the attractive edges. The best defence this board has against candidate enthusiasm. Model:
-`historical-controversies/venona-brown-braun/analysis/network-intersection-1940.md`.
 
 **Leap freely; freeze predictions before testing them.** Record the prediction and its failure
 condition before inspecting new evidence — a claim that cannot fail is not a finding. If the evidence
@@ -346,6 +362,24 @@ folder can close a route the same evening the dashboard recommends it — this h
 **Commit derived data, not restricted text.** The Annals corpus is committed as a 13,414-row
 derived table plus fetch-and-parse scripts, because CELT marks its text `restricted` and the
 translations are in copyright. A successor regenerates the source locally in a minute.
+
+**Write the file that reports your result before you run the thing that might kill the session.** An
+unposted verdict is worse than an unconvened panel: the work is paid for and invisible, and the next
+session cannot tell the difference. Byblos's panel closed on 2026-10-02; Linear A's refuter committed
+eleven attack scripts, vendored witnesses and a 48 KB `out.txt`, named its verdict path in a README,
+and died before writing the verdict — the panel then stood owed to Overwatch for a further day over
+one missing file. So commit the verdict block with `verdict: PENDING` first, and a Breaker's
+`HANDOVER.md` entry before the long run. A dead session then leaves a readable stub at a known path
+instead of a directory whose conclusion nobody can recover.
+
+**Land your work on `main`, or the draw will send the next session to repeat it.** Between 2026-10-01
+and 2026-10-03 **seven** Breaker sessions worked `historical-texts/proto-elamite` on the identical
+drawn next move. Each did honest work and froze its predictions; each pushed to its own branch and
+opened no pull request. The draw reads the last worked stream and coverage debt from `main`'s history
+alone, so with nothing landing it handed every new session the same pick and the same experiment —
+a livelock, not idleness, and from `main` it is indistinguishable from a dead board. `git pull
+--rebase origin main` and push there, or open a pull request and say so in your handover. **If you
+arrive at a folder whose next move names parallel unreconciled runs, reconcile them; do not add one.**
 
 **Release your claim, or the board lies about itself.** A claim file left by a crashed or finished
 session is indistinguishable from a live one. Delete `board/active/<problem>.md` when you stop.

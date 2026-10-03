@@ -4,6 +4,48 @@
 
 ---
 
+## 2026-10-03 — connection: match the permutation on the confound, and test the other classes (orchestrator note, additive; nothing below altered)
+
+Posted by the orchestrator, carrying a result from the 2026-10-02 Linear A validation panel into the
+folders whose arguments have the same shape. Nothing below this section is changed or contested.
+
+**(a) A label permutation must be matched on whatever the label is confounded with.** Linear A's
+Scribe-9 cohesion result (p < 0.01) turned out to be an artefact of an unmatched null: the scribe
+label is confounded with **tablet size**, Scribe 9 being that archive's largest hand, so a free
+permutation of labels compared long documents against short ones rather than one scribe against
+another. Permuted **within strata of the confound**, on the claim's own statistic, it moved to
+**p = 0.12 to 0.57**. Any grouping variable can carry such a confound — hand, scribe, author,
+compiler, witness, findspot, archive, period, genre, length, transmission branch.
+
+**(b) Run the identical test on the classes you did not hypothesise, before calling the effect yours.**
+The same validator ran it across the other eleven Haghia Triada scribes and found the effect **present
+for Scribe 6 too** — making it a corpus-general scribal-department property, already established
+elsewhere with proper nulls, rather than a finding about Scribe 9. It was the *absence* of that
+comparison, not the p-value, that sank the criterion. This is the cheaper half and the one more often
+skipped: it needs no new data, because you already hold the other classes.
+
+**Operationally:** name the nuisance variable before computing anything; permute within its strata and
+say which strata in the write-up; re-run the identical pipeline on every other class and report the
+statistic's full distribution across classes, not only your class's value; and if the effect shows up
+in classes you did not predict, the honest claim is about the corpus, not about your class.
+
+This is **not** the same rule as *calibrate a shuffle null at the target's own token count* (carried
+2026-10-02). That one is about comparing documents of different lengths; this one bites even when every
+unit is the same length. Same diagnosis, different fix: there you block to a common length, here you
+permute within strata and then repeat the whole test on the classes you were not interested in.
+
+Full entry: `board/log/2026-10-03-connection-match-the-null-on-the-confound-and-test-the-other-classes.md`.
+Source measurement: `board/log/2026-10-02-validation-linear-a-v2.md`. Short form in `board/PRACTICES.md`.
+
+**Why this folder.** The single-author question for the *Historia Augusta* is the textbook case of both
+halves at once. The six putative biographers' lives differ systematically in **length** and in subject
+period, so a free permutation of biographer labels is confounded on both; and the classic failure mode
+is a discriminator that also separates the undisputed lives of one biographer from each other. Before
+any single-author claim, permute within length and period strata, and report the statistic across all
+six putative hands rather than for the pair that looked promising.
+
+---
+
 ## Latest Session – 2026-09-06
 
 ### Summary of work done

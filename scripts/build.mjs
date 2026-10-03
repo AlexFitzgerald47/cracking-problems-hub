@@ -88,6 +88,7 @@ const HELD_PARTIAL = new Set([
   'mesha-stele-line31',
   'venona-brown-braun',
   'chinese-gold-bar-cipher',
+  'byblos-syllabary',
 ]);
 
 // Externally solved / withdrawn (not a live target any more).
