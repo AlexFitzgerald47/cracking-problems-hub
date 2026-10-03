@@ -1,0 +1,402 @@
+
+##############################################################################
+### attack_r1_integration.py
+##############################################################################
+==============================================================================
+ATTACK R1 — is the dossier an INTEGRATED system, as a graph?
+==============================================================================
+  witness: data/LinearAInscriptions.js (2026-09-25 snapshot, vendored)
+
+  HT85    faces=HT85a,HT85b     multi-sign designations=15  all sign-groups=21
+  HT87    faces=HT87            multi-sign designations= 7  all sign-groups= 8
+  HT94    faces=HT94a,HT94b     multi-sign designations= 6  all sign-groups=14
+  HT112   faces=HT112a          multi-sign designations= 1  all sign-groups= 1
+  HT117   faces=HT117a,HT117b   multi-sign designations=17  all sign-groups=22
+  HT119   faces=HT119           multi-sign designations= 4  all sign-groups= 6
+  HT122   faces=HT122a,HT122b   multi-sign designations=15  all sign-groups=21
+  HT128   faces=HT128a,HT128b   multi-sign designations= 5  all sign-groups= 7
+  HT132   faces=HT132           multi-sign designations= 2  all sign-groups= 3
+  HT135   faces=HT135a,HT135b   multi-sign designations= 5  all sign-groups= 6
+
+-- R1a  dossier link graph, edge = >=1 shared MULTI-SIGN designation
+     HT85--HT122: ['DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'QA-*310-I']
+     HT87--HT117: ['DI-KI-SE']
+     HT94--HT122: ['PA-TA-NE']
+     HT117--HT122: ['KU-PA₃-NU']
+     HT117--HT135: ['MI-TU']
+     edges=5 of 45 possible; isolated tablets=['HT112', 'HT119', 'HT128', 'HT132']
+     connected components: 5 -> [['HT117', 'HT122', 'HT135', 'HT85', 'HT87', 'HT94'], ['HT112'], ['HT119'], ['HT128'], ['HT132']]
+     largest component covers 6/10 tablets
+
+-- R1a' same graph when single syllabograms ARE allowed as designations
+     edges=7; the extra edges are carried by:
+       DI           supplies 2 of the extra edges   (single sign: True)
+
+-- R1a'' null for the edge count (size-matched, +/-10% of 109 type-slots, n=20000)
+     observed edges among the dossier = 5
+     null mean 2.84  95% [0, 7]  p = 0.1824
+
+-- R1b  ROSTER CHECKING: are the KI-RO 'exceptions' in the master register?
+     HT94b KI-RO block names (5): ['TU-MA', 'PA-TA-NE', 'DE-DI', 'KE-KI-RU', 'SA-RU']
+     HT117a KI-RO block names (10): ['U-SU', 'MI-TU', 'KU-RA-MU', 'MA-RU', 'KU-PA₃-NU', 'TU-JU-MA', 'U-DI-MI', 'MI-RU-TA-RA-RE', 'TE-JA-RE', 'NA-DA-RE']
+     HT122 'master personnel liability/control register' names (15): ['A-RA-JU-U-DE-ZA', 'DA-RE', 'DA-RI-DA', 'DA-SI-*118', 'JA-MI-DA-RE', 'JE-DI', 'KU-PA₃-NU', 'PA-DE', 'PA-TA-NE', 'QA-*310-I', 'QA-QA-RU', 'RA-RI', 'SI-DA-RE', 'TE-KI', 'U-DE-ZA']
+
+     exception names also in the master register: 2/15 -> ['KU-PA₃-NU', 'PA-TA-NE']
+     register names that ever appear in a dossier KI-RO block: 2/15
+     null: 15 names drawn at random from the 365 HT multi-sign
+     designations; overlap with HT122's 15 names:
+       null mean 0.62  p(>= observed 2) = 0.1219
+     how common are the two overlapping names corpus-wide:
+       KU-PA₃-NU    on 6 of 133 HT tablets -> ['HT1', 'HT117', 'HT122', 'HT3', 'HT49', 'HT88']
+       PA-TA-NE     on 2 of 133 HT tablets -> ['HT122', 'HT94']
+
+-- R1c  'CENSUS-LINKED PROVISIONING': what attaches HT128 to the labour tablets?
+     HT128 sign-groups: ['DI', 'MA-RI', 'MI-TA', 'PA-RA', 'RU', 'TU-RU-NU-SE-ME', 'WA-TU-MA-RE']
+     shared with the six labour tablets: ['DI']
+     of those, MULTI-SIGN: []
+     HT128 raw:  *326 𐄁 PA-RA TU-RU-NU-SE-ME GRA 10 WA-TU-MA-RE GRA+KU 12 MI-TA GRA+PA ¹⁄₂ GRA+KU 6 DI GRA+KU 4 MA-RI 𐝫
+                 GRA+KU 6 VIR+[?]-*329 GRA+KU 1 RU 𐄁 𐝫 GRA+KU 6 𐝫
+     HT112: shared with labour tablets []  (multi-sign [])
+     HT132: shared with labour tablets []  (multi-sign [])
+     HT135: shared with labour tablets ['MI-TU']  (multi-sign ['MI-TU'])
+
+
+##############################################################################
+### attack_r2_template.py
+##############################################################################
+==============================================================================
+ATTACK R2 — is the eight-node architecture a discovery or a template?
+==============================================================================
+
+-- the Scribe-9 dossier, scored by the frozen detectors
+   node 1  accountable unit header            YES
+   node 2  personnel assessment               YES
+   node 3  standardized group ratio           YES
+   node 4  assignment (>=2 headers)           YES
+   node 5  roster checking (recurring name)   YES
+   node 6  KI-RO exception                    YES
+   node 7  census-linked staple               YES
+   node 8  KU-RO control total                YES
+   dossier score = 8/8   (PO-TO-KU-RO present: True)
+
+-- every HT scribe with >=3 attributed tablets, same detectors
+   HT Scribe 9     n=10  score 8/8   missing: -
+   HT Scribe 6     n= 3  score 7/8   missing: ['personnel assessment']
+   HT Scribe 5     n= 5  score 7/8   missing: ['standardized group ratio']
+   HT Scribe 7     n= 3  score 6/8   missing: ['standardized group ratio', 'roster checking (recurring name)']
+   HT Scribe 2     n= 8  score 6/8   missing: ['standardized group ratio', 'KI-RO exception']
+   HT Scribe 8     n= 6  score 5/8   missing: ['standardized group ratio', 'roster checking (recurring name)', 'KI-RO exception']
+   HT Scribe 11    n= 3  score 5/8   missing: ['standardized group ratio', 'roster checking (recurring name)', 'KI-RO exception']
+   HT Scribe 3     n= 3  score 4/8   missing: ['standardized group ratio', 'assignment (>=2 headers)', 'roster checking (recurring name)', 'KI-RO exception']
+   HT Scribe 23    n= 3  score 4/8   missing: ['personnel assessment', 'standardized group ratio', 'roster checking (recurring name)', 'KI-RO exception']
+   HT Scribe 1     n= 4  score 4/8   missing: ['personnel assessment', 'standardized group ratio', 'roster checking (recurring name)', 'KU-RO control total']
+   HT Scribe 21    n= 3  score 3/8   missing: ['standardized group ratio', 'assignment (>=2 headers)', 'roster checking (recurring name)', 'census-linked staple', 'KU-RO control total']
+   HT Scribe 14    n= 5  score 3/8   missing: ['personnel assessment', 'standardized group ratio', 'roster checking (recurring name)', 'KI-RO exception', 'KU-RO control total']
+
+-- random 10-tablet HT subsets (the null the claim never ran)
+   size-matched draws (+/-10% of 109 type-slots): n=2000
+     score 4/8 :     1  (  0.1%)
+     score 5/8 :     6  (  0.3%)
+     score 6/8 :    52  (  2.6%)
+     score 7/8 :   468  ( 23.4%)
+     score 8/8 :  1473  ( 73.7%)
+   P(a size-matched random 10-tablet subset scores >= the dossier's 8/8) = 0.7365
+   per-node hit rate in random subsets:
+     node 1  accountable unit header            100.0%
+     node 2  personnel assessment               100.0%
+     node 3  standardized group ratio            88.0%
+     node 4  assignment (>=2 headers)           100.0%
+     node 5  roster checking (recurring name)    92.8%
+     node 6  KI-RO exception                     89.7%
+     node 7  census-linked staple               100.0%
+     node 8  KU-RO control total                 99.8%
+
+-- unmatched random 10-tablet subsets (no size matching)
+     score 3/8 :    15  (  0.8%)
+     score 4/8 :   120  (  6.0%)
+     score 5/8 :   450  ( 22.5%)
+     score 6/8 :   625  ( 31.2%)
+     score 7/8 :   507  ( 25.4%)
+     score 8/8 :   283  ( 14.2%)
+   P(>= dossier score) = 0.1415
+
+
+##############################################################################
+### attack_r3_six.py
+##############################################################################
+==============================================================================
+ATTACK R3 — the two 'fixed ratios' as corpus-wide predictions
+==============================================================================
+  witness: data/LinearAInscriptions.js (2026-09-25 snapshot, vendored)
+
+-- R3a  divisibility of HT amounts by m  (all n=517, personnel-face n=104, stated totals n=35)
+     m      all   personnel    totals
+     2    49.7%       52.9%     62.9%
+     3    19.3%       22.1%     28.6%
+     4    20.3%       25.0%     42.9%
+     5    28.6%       27.9%     54.3%
+     6     9.5%       10.6%     20.0%   <== the claimed group size
+     7     5.2%        8.7%      2.9%
+     8     5.8%        4.8%      8.6%
+     9     1.7%        1.0%      2.9%
+    10    18.4%       10.6%     40.0%
+    11     1.7%        1.9%      5.7%
+    12     2.9%        7.7%     11.4%
+   6 sits BELOW the 1/6 = 16.7% uniform baseline and below its own
+   neighbours 4 and 5 in every pool. No six-footprint exists.
+
+-- R3b  HT85a's 'first four entries are multiples of 6': selection-corrected
+   P(4 leading multiples of 6 in 7 corpus-like amounts>1) = 0.00022
+   -- but m=6 is not given in advance: it is chosen because 66/6 = 11
+      matches face b's entry count. The honest statistic is 'a leading
+      run of >=4 amounts sharing SOME modulus in 2..12'. Measured
+      directly on the archive rather than simulated:
+   HT faces with >=4 entry amounts >1                       : 43
+   ... with a leading run >=4 sharing a modulus in 2..12    : 14 = 33%
+       HT10a        m=2  [4, 16, 4, 14, 8]
+       HT11b        m=2  [40, 30, 50, 30, 30]
+       HT122b       m=2  [2, 2, 2, 2]
+       HT146        m=2  [30, 30, 30, 30]
+       HT28b        m=2  [20, 2, 6, 6]
+       HT29         m=2  [2, 2, 2, 2, 2]
+       HT39         m=2  [10, 8, 10, 2]
+       HT47a        m=5  [20, 20, 10, 5]
+       HT6b         m=3  [3, 3, 66, 3]
+       HT85a        m=2  [12, 12, 6, 24]   <== HT85a
+       HT86a        m=2  [20, 20, 20, 10, 20, 20]
+       HT9a         m=2  [4, 2, 2, 4]
+       HT95a        m=2  [10, 10, 20, 10, 10]
+       HT95b        m=2  [10, 10, 10, 10, 10, 10]
+   HT85a is one of 14 such faces, and the SMALLEST modulus that
+   witnesses its run is 2, not 6. Selection-corrected, the
+   'multiples of six' prefix carries no information: 33% of
+   comparable HT faces open with a modular run.
+
+-- R3c  *327 : VIR = 1 : 2, the 'fixed manpower ratio'
+   records containing any *327 sign: ['HT119', 'HT97a']
+   records carrying BOTH a *327 sign and a VIR/MUL ideogram: 2
+     HT119    scribe=HT Scribe 9    *327=34  VIR=68  VIR/*327 = 2.0000
+     HT97a    scribe=HT Scribe 7    *327=33  VIR=82  VIR/*327 = 2.4848
+
+   HT119 (Scribe 9) : *327 34, VIR 68   -> 2.0000
+   HT97a (Scribe 7) : *327 33, VIR 82   -> 2.4848
+   => the ONLY other co-attestation of the two signs in the whole
+      corpus does NOT show the ratio. Under a fixed 1:2 manpower
+      ratio HT97a should read 33 : 66; it reads 33 : 82. The 'fixed
+      manpower ratio' is falsified by its own second data point, and
+      HT119 is therefore one coincidence, not a standard.
+
+-- R3d  whose form is 'X . *307+*387 . VIR'?
+   HT127b     scribe=-               findspot=Casa del Lebete | 𐝫 𐝫 NE 13 KU-RO *307 156 KU 72 VIR+*313c 24 KI+MU 15 *301 11 KI+MU 14 KU-RO 292
+   HT27a      scribe=HT Scribe 11    findspot=Villa Magazine | TI-NI-TA 𐄁 *307 𐄁 VIR+[?] 90 50 *86 51 RE 20 I-MI-SA-RA 43 QE 21 KI-DA KI-*310 𐄁 KU-*305
+   HT32       scribe=HT Scribe 1     findspot=Villa Magazine | *307 SA-RA₂ 𐄁 *308 ¹⁄₂ OLE+NE 𐝆𐝇 QA2+[?]+PU 1 ¹⁄₁₆ QA2+[?]+RE 1 MI+JA+RU 1 SU-RE 𐄁 108 D
+   HT36       scribe=-               findspot=Villa Magazine | JE-DI *307+*387-GRA+QE 64 ¹⁄₂ DU-ZU-WA 7 ¹⁄₂ 𐝫 6
+   HT5        scribe=HT Scribe 1     findspot=Portico 11 and Room 13 | 𐝫 *307 MA-SI 30 WI-DU 10 𐝫 𐝫
+   HT85a      scribe=HT Scribe 9     findspot=Casa Room 7    | A-DU 𐄁 *307+*387 𐄁 VIR+[?] 𐄁 DA-RI-DA 12 PA₃-NI 12 U-*325-ZA 6 DA-SI-*118 24 KU-ZU-NI 5 
+   HT89       scribe=HT Scribe 2     findspot=Casa Room 7    | A-SA-RA₂ 𐄁 *307 𐄁 *305 23 JU+*317+QE 22 MA-I-MI 24 VIR+*313a 13 TA-RA 5 KU-RO 87 CYP 2 ³
+   HT97a      scribe=HT Scribe 7     findspot=Casa Room 7    | KA-RU 𐄁 *307+*387 𐄁 VIR+KA 82 *327 33 KA-NU-TI 25 PA-I-TO 6 DI 4 NA-TI 4 MA-DI 5 JU 15 K
+   KH42       scribe=-               findspot=-              | 𐝫 *307+*301[ 𐝫
+   PEZg5      scribe=-               findspot=-              | OLE *307 1 ¹⁄₂
+   => the personnel-assessment header formula the dossier reads as
+      Scribe 9's administrative signature (HT85a: A-DU . *307+*387 .
+      VIR .) is shared with HT Scribes 1, 2, 7 and 11 and with Khania.
+      HT97a is the same formula under KA-RU instead of A-DU, written
+      by Scribe 7, found in the SAME deposit (Casa Room 7). The form
+      is the archive's, not the dossier's.
+
+
+##############################################################################
+### attack_r4_cells.py
+##############################################################################
+==============================================================================
+ATTACK R4a — cell-level audit of analysis/scribe9_dossier.csv
+==============================================================================
+   HT85    anchor A-DU                   -> ok
+   HT85    anchor KU-RO 66               -> ok
+   HT87    anchor QI-TU-NE               -> ABSENT from both snapshots   <<<<
+   HT87    anchor MA-KA-RI-TE            -> ok
+   HT87    anchor DI-KI-SE               -> ok
+   HT94    anchor KI-RO                  -> ok
+   HT94    anchor KU-RO 5                -> ok
+   HT94    anchor PA-TA-NE               -> ok
+   HT112   anchor OVISf                  -> ABSENT from both snapshots   <<<<
+   HT117   anchor MA-KA-RI-TE            -> ok
+   HT117   anchor KI-RO                  -> ok
+   HT117   anchor U-MI-NA-SI             -> ok
+   HT117   anchor SA-TA                  -> ok
+   HT117   anchor QI-TU-NE               -> ABSENT from both snapshots   <<<<
+   HT117   anchor KU-RO 10               -> ok
+   HT119   anchor *327 34                -> ok
+   HT119   anchor VIR 68                 -> ok (ideogram cited bare; witness has a qualified form)
+   HT119   anchor KU-RO 160              -> ok
+   HT122   anchor KU-RO 31               -> ok
+   HT122   anchor KU-DA 1                -> ok
+   HT122   anchor KU-RO 65               -> ok
+   HT122   anchor PO-TO-KU-RO 97         -> ok
+   HT122   anchor KU-PA3-NU              -> ok
+   HT122   anchor PA-TA-NE               -> ok
+   HT128   anchor GRA variants           -> ok (ideogram cited bare; witness has a qualified form)
+   HT132   anchor QA-RE-TO               -> ok
+   HT132   anchor OVISf 27               -> ABSENT from both snapshots   <<<<
+
+    21  ok
+     4  ABSENT from both snapshots
+     2  ok (ideogram cited bare; witness has a qualified form)
+   failing cells: 4/27 = 15% of the table's factual anchors
+
+-- what the failing cells actually are
+   HT112 'OVISf':   witness has *21F TU-PA 𐝫 𐝫 CYP 6 𐝫 𐝫 𐝫
+   HT132 'OVISf 27':witness has A-SE 𐄁 *904 5 QA-RE-TO 𐄁 *22F 27 PA₃ 𐄁 *305 1 𐝫 𐝫
+   ovicaprid-family signs attested anywhere in witness A: {'*21F': 4, '*21F-*118': 3, '*21F-JA-DU': 1, '*21F-RI-TU-QA': 1, '*21F-TU': 1, '*21F-TU-NE': 3, '*21M': 8, '*22F': 14, '*22M': 3}
+   There is NO 'OVIS' sign in the witness at all. Both cells assert a
+   sheep reading of the undeciphered *21F/*22F series -- which is
+   exactly the identification this folder's own PROGRESS.md item 5
+   flags as subject to a systematic AB21/AB22 inversion across 14
+   documents in a widely used digital corpus, to be plate-checked
+   before the Hub relies on livestock distributions. The dossier
+   relies on it, twice, without the check.
+
+   'QI-TU-NE' (HT87, HT117): witness A reads *21F-TU-NE; witness B
+   reads qif-tu-ne. The 'accountable unit QI-TU-NE' is named from a
+   phonetic value for *21F that the corpus does not supply -- the same
+   sign series as the two OVISf cells above.
+   *21F-family sign-groups in witness A: ['*21F', '*21F-*118', '*21F-JA-DU', '*21F-RI-TU-QA', '*21F-TU', '*21F-TU-NE']
+
+-- metadata cells (scribe, findspot) checked against the witness
+   HT85    csv scribe=9   findspot=Casa Room 7      witness scribe=['HT Scribe 9'] findspot=['Casa Room 7']  ok
+   HT87    csv scribe=9   findspot=Casa Room 7      witness scribe=['HT Scribe 9'] findspot=['Casa Room 7']  ok
+   HT94    csv scribe=9   findspot=Casa Room 7      witness scribe=['HT Scribe 9'] findspot=['Casa Room 7']  ok
+   HT112   csv scribe=9   findspot=Casa Room 7      witness scribe=['HT Scribe 9'] findspot=['Casa Room 7']  ok
+   HT117   csv scribe=9   findspot=Casa Room 9      witness scribe=['HT Scribe 9'] findspot=['Casa Room 9']  ok
+   HT119   csv scribe=9   findspot=Casa Room 9      witness scribe=['HT Scribe 9'] findspot=['Casa Room 9']  ok
+   HT122   csv scribe=9   findspot=Casa del Lebete  witness scribe=['HT Scribe 9'] findspot=['Casa del Lebete']  ok
+   HT128   csv scribe=9   findspot=Casa del Lebete  witness scribe=['HT Scribe 9'] findspot=['Casa del Lebete']  ok
+   HT132   csv scribe=9   findspot=Casa del Lebete  witness scribe=['HT Scribe 9'] findspot=['Casa del Lebete']  ok
+   HT135   csv scribe=9   findspot=Casa del Lebete  witness scribe=['HT Scribe 9'] findspot=['Casa del Lebete']  ok
+   metadata mismatches: 0/10  -- the scribe and findspot columns
+   reproduce exactly. The dossier's FRAME is sound; its CONTENT cells
+   are where the failures are.
+
+==============================================================================
+ATTACK R4b — cohesion null drawn from ATTRIBUTED tablets only
+==============================================================================
+   HT tablets total 133; carrying an 'HT Scribe n' attribution 75
+   unattributed 58 -- these are systematically the
+   short/broken ones: mean sign-group type-slots 5.4 vs 6.6 for attributed
+
+   [ALL sign-group types] observed Scribe-9 cohesion = 13
+     pool = all 133 HT tablets   n=20000  null mean  9.86  95% [5, 16]  p = 0.1909
+     pool = attributed only      n=20000  null mean 10.08  95% [5, 16]  p = 0.2259
+
+   [STRICT multi-sign, operators dropped] observed Scribe-9 cohesion = 8
+     pool = all 133 HT tablets   n=20000  null mean  3.22  95% [0, 9]  p = 0.0553
+     pool = attributed only      n=20000  null mean  4.05  95% [0, 9]  p = 0.0842
+
+   => restricting the null to the pool the claim is actually about
+      -- tablets with a hand -- moves the p-value in the UNFAVOURABLE
+      direction. The Scribe-9 cohesion is not distinguishable from a
+      size-matched draw of attributed HT tablets.
+
+
+##############################################################################
+### attack_r5_priorart.py
+##############################################################################
+==============================================================================
+ATTACK R5 — is the 'new result' already in the commentary that ships
+            beside the claimant's own data file?
+==============================================================================
+  source: github.com/mwenge/lineara.xyz commentary/HT*.html
+  (the same repository as LinearAInscriptions.js; the claimant cites
+   commentary/HT34, HT85, HT88, HT94, HT95, HT117, HT123+124, HT15,
+   HT30, HT37, HT93 and ARKH4 by URL in analysis/)
+  vendored copies and hashes:
+    younger_HT85.html  sha256 bf296b080b9ca1dccc52c504c0772aba...
+    younger_HT87.html  sha256 019db44863fd6f6532827f46fb8c49e4...
+    younger_HT94.html  sha256 12b4ed2bb46aefdc9bbe2382e40b6406...
+    younger_HT112.html  sha256 91079ee69a251889f0345369fd3d99db...
+    younger_HT117.html  sha256 5a0a8c5134806c5793279e2374807419...
+    younger_HT119.html  sha256 2723f7c9bc41e155b9f3b7c5933b4da4...
+    younger_HT122.html  sha256 18a820ee46aa7476baa6732c415f6b41...
+    younger_HT128.html  sha256 ad9ffc15b633765a62d063115d390ef5...
+    younger_HT132.html  sha256 4c53ce8661432d3ebbea2960787982d2...
+    younger_HT135.html  sha256 8a547879d7b2db2ac12270ae4b397508...
+    younger_HT88.html  sha256 3cb5aaf22ff31da48fe99db4d4def6b6...
+    younger_HT34.html  sha256 a2844143c65f4e0267209dd871a7cfb6...
+    younger_HT97.html  sha256 ff71a7b052f92f26845baf6199c23429...
+
+  [ALREADY PUBLISHED] HT85: '66 personnel = 11 standardized groups of 6' (scribe9_dossier.csv column `new_inference`)
+      ...analysis of this tablet, see §11 on the homepage, Logograms, s.v. 100/VIR : that side a lists regions contributing personnel totalling 66 workers in 11 sets of 6 each; and that side b lists 11 people and/or their functionaries responsible for these 11 sets of workers. Analysis of HT 85 (thanks to Brent Davis for relat...
+      ...alysis of this tablet, see §11 on the homepage, Logograms, s.v. 100/VIR : that side a lists regions contributing personnel totalling 66 workers in 11 sets of 6 each; and that side b lists 11 people and/or their functionaries responsible for these 11 sets of workers. Analysis of HT 85 (thanks to Brent Davis for relating...
+      ...or 11 sets of 6 VIR each. The 11 sets are specified on side b, being listed against one NAME (and one or two logograms associated with a name. These groups of 6 personnel are obviously conventional and may reflect small, easily supervised sets of workers. The names on side a recur frequently in the HT corpus, notably...
+
+  [ALREADY PUBLISHED] HT85: 'reverse encodes receiving/responsibility slots' (scribe9_dossier.csv `new_inference`)
+      ...e §11 on the homepage, Logograms, s.v. 100/VIR : that side a lists regions contributing personnel totalling 66 workers in 11 sets of 6 each; and that side b lists 11 people and/or their functionaries responsible for these 11 sets of workers. Analysis of HT 85 (thanks to Brent Davis for relating side b to side a): On HT...
+      ...hat side a lists regions contributing personnel totalling 66 workers in 11 sets of 6 each; and that side b lists 11 people and/or their functionaries responsible for these 11 sets of workers. Analysis of HT 85 (thanks to Brent Davis for relating side b to side a): On HT 85a, the numbers total (KU-RO) 66 , or 11 sets of...
+
+  [ALREADY PUBLISHED] HT85: side-a entries are accountable SOURCE UNITS (places)
+      ...]); HT 122 (DA-RI-DA, DA-RE, PA 3 -NI; cf. PA 3 -NI-NA on HT 6 and HT 93), and HT 13 (DA-SI-*118, KU-ZU-NI). This frequency probably implies that the names on HT 85a are toponymns. In contrast, the names on side b recur less frequently: WA-DU-NI-MI on HT 6, RE-DI-SE perhaps as RA-TI-SE on HT 6, KR-RE-TA 2 on HT 129, an...
+      ...n HT 8 and HT 122, and MA-DI on HT 3, HT 97, HT 118, and PH(?) 31a. These names may thus be personal names, that is, the names of individuals. If the names on side a are those of places, from which personnel are assessed (A-DU) in sets of 6 workers, then DA-RI-DA and PA 3 -NI, contribute two sets each, U-*325-ZA one se...
+
+  [ALREADY PUBLISHED] HT85: A-DU = assessment of personnel
+      ...118, and PH(?) 31a. These names may thus be personal names, that is, the names of individuals. If the names on side a are those of places, from which personnel are assessed (A-DU) in sets of 6 workers, then DA-RI-DA and PA 3 -NI, contribute two sets each, U-*325-ZA one set, DA-SI-*118 four sets, and the last three pres...
+
+  [ALREADY PUBLISHED] HT85b: PA / KA / DI absorbed into the neighbouring entries (the move the dossier's rendering table makes)
+      ...each also a separate unit, PA with QE-KA and KA and DI with TE-TU. b.3: RE-DI-SE was originally written on line 3, then erased and moved to line 4d; KA & DI are therefore probably logograms functioning either as transaction signs (Schoep 2002, p. 78) or as abbreviations of types of persons associated with QE-KA and TE...
+      ...line 3, then erased and moved to line 4d; KA & DI are therefore probably logograms functioning either as transaction signs (Schoep 2002, p. 78) or as abbreviations of types of persons associated with QE-KA and TE-TU[ ], according to the Continuity Principle . QE-KA appears only on HT 85b and TE-TU's two other occurrenc...
+
+  [ALREADY PUBLISHED] HT117: a RULING closes the first block; the tablet has THREE sections, not one KI-RO roster
+      ...• b.1 KU-RE-JU 1 b.2 DI-KI-SE 1 b.3-9 vacant The document probably lists people by name. a.6: KU-RO totals the 10 (personnel?) in lines a.1-5 a.6/7: the rule there apparently introduces a second section on side a, headed by SA-TA (cf. HT 42.1) Side b therefore presents a third section headed by QI f -TU-NE, a heading...
+      ...10 (personnel?) in lines a.1-5 a.6/7: the rule there apparently introduces a second section on side a, headed by SA-TA (cf. HT 42.1) Side b therefore presents a third section headed by QI f -TU-NE, a heading on HT 7b.1 and HT 87.1. MA-KA-RI-TE, QI f -TU-NE and DI-KI-SE appear in HT 87, and in both HT 87 & HT 117, QI f...
+
+  [ALREADY PUBLISHED] HT117 + HT87: the DI-KI-SE / QIf-TU-NE pairing — the dossier's 'strongest query-grammar result'
+      ...herefore presents a third section headed by QI f -TU-NE, a heading on HT 7b.1 and HT 87.1. MA-KA-RI-TE, QI f -TU-NE and DI-KI-SE appear in HT 87, and in both HT 87 & HT 117, QI f -TU-NE (as heading or part of the heading) and DI-KI-SE (as name in a list) appear in the same paragraph. SA-TA, QI f -TU-NE, and MA-KA-RI-TE...
+      ...I f -TU-NE and DI-KI-SE appear in HT 87, and in both HT 87 & HT 117, QI f -TU-NE (as heading or part of the heading) and DI-KI-SE (as name in a list) appear in the same paragraph. SA-TA, QI f -TU-NE, and MA-KA-RI-TE may be regions or people supplying personnel. Commentary © John Younger...
+
+  [ALREADY PUBLISHED] HT117: SA-TA / QIf-TU-NE / MA-KA-RI-TE = accountable or supplying units (the dossier's U-MI-NA-SI / SA-TA / QI-TU-NE result)
+      ...7, QI f -TU-NE (as heading or part of the heading) and DI-KI-SE (as name in a list) appear in the same paragraph. SA-TA, QI f -TU-NE, and MA-KA-RI-TE may be regions or people supplying personnel. Commentary © John Younger...
+
+  [ALREADY PUBLISHED] HT117: KU-RO 10 totals the preceding ten personnel
+      ...NU 1 a.8-9 DA-NE-KU-TI 1 a.9 KI-DA-RO 1 b.1 QI f -TU-NE • b.1 KU-RE-JU 1 b.2 DI-KI-SE 1 b.3-9 vacant The document probably lists people by name. a.6: KU-RO totals the 10 (personnel?) in lines a.1-5 a.6/7: the rule there apparently introduces a second section on side a, headed by SA-TA (cf. HT 42.1) Side b therefore pre...
+
+  [ALREADY PUBLISHED] HT119: '*327 34 : VIR 68, an exact 1:2 fixed manpower ratio'
+      ...10 .4 *306-TU 2 .4 *327-JU 8 .5 KU-RO 160 The numbers here are interesting (even if they do not quite total KU-RO's 160 ): each unit of *327 could be distributed per pair VIR. The number 10 recurs: KO-JA 10, JA-*345 10, *306-TU 2 + *327-JU 8 = 10. The second list, following TI 7, consists of names that rely on rare sig...
+
+  [ALREADY PUBLISHED] HT119: the entries do NOT reach the stated KU-RO 160 (the failure scribe9_dossier.csv lists as a strong anchor)
+      ...DA topped with *47 .5: *327 also appears in the heading to this tablet, and on HT 97a.1; 327 may be AES (B *140; Palaima 1988: 326). .5: the numbers total 159, not KU-RO's 160 Commentary © John Younger...
+
+  [ALREADY PUBLISHED] HT122: 'KU-RO 31 + KU-DA 1 + KU-RO 65 = PO-TO-KU-RO 97', the hierarchical control-total flagship
+      ...a.8 KU-RO 31 a.8 KU-DA 1 b.1 JE-DI • *346 • VIR[ b.2 ]*306-KI-TA 2 7 [ b.3 ]A-RA-JU-U-DE- ZA 2 b.3-4 QA-QA-RU 2 b.4 DI 2 b.4 DA-RE 2 b.5 KU-RO 65 b.6 PO-TO-KU-RO 9 7 b.7 vacat the document probably lists places by name and their contributions of groups of personnel a.2-3: after PA (which ends line 2), on line 3, there...
+      ...its occurrence in a.1 (second half of the heading), b.3 should probably be read as ]A-RA-JU< • >U-DE-ZA; cf. A-RA-JU (HT 109.4). b.6: PO-TO-KU-RO 97 = KU-RO b.5 65 + a.8 31 + 1 Commentary © John Younger...
+
+  [ALREADY PUBLISHED] HT122: 'master personnel liability/control register' over contributing units
+      ...b.2 ]*306-KI-TA 2 7 [ b.3 ]A-RA-JU-U-DE- ZA 2 b.3-4 QA-QA-RU 2 b.4 DI 2 b.4 DA-RE 2 b.5 KU-RO 65 b.6 PO-TO-KU-RO 9 7 b.7 vacat the document probably lists places by name and their contributions of groups of personnel a.2-3: after PA (which ends line 2), on line 3, there are the remains of two signs, room for a numeral...
+
+  [ALREADY PUBLISHED] HT94b: KI-RO opens a list of personnel deficits closed by KU-RO 5
+      ...TA 4 a.3 KU-RO 110 a.3 SA-RA 2 *303 5 a.3 FIC 3 H a.4 ] 2 a.4 *318-*306 11 a.4 *303 D D a.4 FIC D D a.5 ] 1 4 J a.5 FIC D a.6 ] vacat a.7 ] vacat b.1 KI-RO • b.1 TU-MA 1 b.1 PA-TA-NE 1 b.2 DE-DI 1 b.2 KE-KI-RU 1 b.2 SA-RU 1 b.3 KU-RO 5 vacat b.4 *86 • b.4 RA-[•]- DE -ME-TE 1 b.5 QI f -TU-[•] 1 b.6 vacat a.3: the number...
+      ...2 a.4 *318-*306 11 a.4 *303 D D a.4 FIC D D a.5 [NAME LOGOGRAM (*303?) ] 1 4 J a.5 FIC D Side b comprises two more separate lists, apparently one of deficits (b.1: KI-RO) of personnel listed by a name (place?) and another (also of personnel?) headed by *86. Here, most of the document concerns personnel, but SA-RA2 is...
+
+  [ALREADY PUBLISHED] HT88: KI-RO forward list closed by KU-RO 6
+      ...combined, people+food) HT Scribe 7 side.line statement logogram number fraction .1 A-DU VIR+KA {*568} 20 .1-2 RE-ZA 6 .2 FIC • KI-KI-NA 7 .3 vacat .4 KI-RO • .4 KU-PA 3 -PA 3 1 .4 KA-JU 1 .5 KU-PA 3 -NU 1 .5 PA-JA-RE 1 .5-6 SA-MA-RO 1 .6 DA-TA-RE 1 .6 KU-RO 6 If this document concerns rations of figs per VIR+KA (7 FIC...
+      ...20 .1-2 RE-ZA 6 .2 FIC • KI-KI-NA 7 .3 vacat .4 KI-RO • .4 KU-PA 3 -PA 3 1 .4 KA-JU 1 .5 KU-PA 3 -NU 1 .5 PA-JA-RE 1 .5-6 SA-MA-RO 1 .6 DA-TA-RE 1 .6 KU-RO 6 If this document concerns rations of figs per VIR+KA (7 FIC : 26 VIR+KA), it would be more than 1/4 unit figs per person (cf. HT 89, where the ration FIC to presu...
+
+  [ALREADY PUBLISHED] HT34: 'KI-RO 30' as 100 - 70, the dossier's cleanest residual
+      ...3 records an amount ( 70 ) to be omitted from *521 {SA+VINa} 100 , as if delivered (PA 3 seems to act this way on HT 9, too), then 30 is the result, apparently a deficit (KI-RO); (see HT 8, Davis's interpretations & notes). .7: E+KA probably refers to .3: E+[•] 2 H K, 2 H having been delivered, leaving the deficit K;...
+
+------------------------------------------------------------------------------
+  frontier results found verbatim in the bundled commentary: 16/16
+
+  CONSEQUENCE.  The dossier's headline items -- the eleven six-person gangs,
+  the responsibility slots on HT85b, the toponym/source-unit reading of the
+  HT85a entries, A-DU as assessment, the HT87<->HT117 DI-KI-SE pairing, the
+  supplying-unit reading of SA-TA / QIf-TU-NE / MA-KA-RI-TE, the HT122
+  hierarchical identity 97 = 65 + 31 + 1, and the HT119 1:2 manpower ratio --
+  are not inferences the Hub drew from the corpus.  They are sentences in the
+  commentary file that sits next to the corpus file the Hub parsed, by an
+  author the Hub cites by URL elsewhere in the same analysis directory.
+
+  The Hub's own note 2026-09-07-ht85-order-preserving-dispatch-reconstruction.md
+  says this for HT85 ("Younger had already seen eleven six-person groups and
+  multiple groups assigned to QE-KA / TE-TU").  HANDOVER.md's frontier
+  statement and scribe9_dossier.csv's `new_inference` column do not carry that
+  attribution forward, and the frontier is what is under validation.
+  

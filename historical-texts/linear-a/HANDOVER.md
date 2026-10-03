@@ -3,6 +3,102 @@
 **Current frontier:** 2026-09-08, GPT-5.6 Sol  
 **Status:** functional/historical solve candidate; not a phonetic decipherment or language-family solve.
 
+## Next experiments — after the panel returned 1 × PARTIAL and 2 × FAIL (orchestrator note, 2026-10-03; additive, nothing below altered)
+
+**Read this before you read the frontier statement at the top of this file.** The
+three-validator panel convened 2026-10-02 is **complete, and the claim did not pass**: validator 1
+PARTIAL, validator 2 FAIL, validator 3 (refuter) FAIL. The claim is `HELD — awaiting human
+sign-off` and **no part of the functional reconstruction may be repeated as settled**, here or
+anywhere public. Full outcome, including the recorded dissents:
+`board/log/2026-10-03-panel-outcome-linear-a.md`. Verdicts:
+`board/log/2026-10-02-validation-linear-a-v{1,2,3-refuter}.md`. Artifacts:
+`validation/2026-10-02-v1/`, `-v2/`, `-v3/`. **The folder is drawable again** — *panel pending* is
+off its `STATUS.md` row. **Do not spend a session re-polishing the Scribe-9 dossier.**
+
+1. **Restate the folder's standing result in the only form the panel would accept, and do it
+   before anything else.** Validator 2 named the restatement and validator 3 endorsed the
+   direction: *the Hub independently replicated a received structural reading, and correctly
+   diagnosed a parser-direction error in an external negative control.* That is defensible, it is
+   a real contribution, and it is what this folder has. Edit the frontier statement at the top of
+   this file and the `Status:` line to say so, additively — the 2026-09-08 framing ("integrated
+   labour-liability administration") is the framing the panel rejected, and leaving it as the first
+   thing a session reads is how the claim gets inherited as settled. *Concretely:* append the
+   restatement, mark the superseded framing as superseded with a pointer to the panel outcome, and
+   leave every analysis file in place.
+2. **Fix the data-integrity defect, which is the cheapest item and blocks the rest.** Four of 27
+   cells in `analysis/scribe9_dossier.csv` are absent from both witness snapshots, and its two
+   `OVISf` cells assert a sign that **does not exist in witness A**. That is the AB21/AB22
+   identification this folder's own `PROGRESS.md` item 5 already says must be plate-checked first,
+   so the defect is one the folder predicted and then built on. Re-derive every cell of that CSV
+   from a named witness, cite the witness per cell, and drop or flag what cannot be sourced.
+3. **Adopt the two nulls the panel had to run for you, and re-run anything that depended on the
+   old ones.** (a) The **architecture-level** null: 73.7 % of size-matched random ten-tablet HT
+   subsets score 8/8 on the claim's own eight-node architecture, so any future structural claim
+   must be tested at the level of the whole architecture and not node by node. (b) The
+   **length-matched label permutation**: the Scribe-9 cohesion p < 0.01 becomes p = 0.12–0.57 when
+   permuted within strata of tablet size, and the effect is present for **Scribe 6** too. Both are
+   now general rules in `board/PRACTICES.md`; the code is in `validation/2026-10-02-v2/` and
+   `-v3/` and should be reused rather than rewritten.
+4. **Build the external overlap map before claiming anything here as the Hub's again.** This is
+   the finding that sank the claim twice by two different routes, and the second route is the one
+   nobody saw coming: **Younger's GORILA-based `commentary/HT*.html` files ship in the same
+   repository as the `LinearAInscriptions.js` this folder uses, and the claimant's `analysis/`
+   already cites twelve of them.** 16 of 16 of the frontier's checked results are verbatim in
+   those files — including the dossier's own stated main new result. *Concretely:* retrieve the
+   full `commentary/` set with hashes and dates (the refuter's `priorart_r/` has 13 of them), and
+   build `external_overlap_map.csv`: one row per proposition this folder intends to claim →
+   *published elsewhere* / *Hub result* / *cannot assess*, with a reason per row so it can be
+   attacked. **Read the commentary file for a tablet before you analyse it**, not after.
+5. **Keep the negatives and the unbroken number, and do not quietly drop them.** Validator 2
+   records the folder's negative results as its most valuable output. The refuter reports its own
+   failed refutations: the dossier is **not** cherry-picked (exactly the ten HT tablets witness A
+   attributes to Scribe 9), scribe and findspot metadata are **10/10 correct**, **KU-RO survives
+   everything**, `KI-RO 30` on HT34 is the claimant's reading and is **right** (the witness's 37
+   was the defect), HT88's "+33" is a sectioning artefact rather than a claimant error, and
+   HT85a's six-run at **simulated p = 0.0004 could not be broken**. The refuter also read the
+   GORILA facsimile of HT 117a (vol. I p. 196) itself and confirms the full-width ruling, so the
+   KI-RO-scope result and the DI-KI-SE toggle **remain mutually exclusive** — that constraint is
+   live and it is the folder's. One honest caveat to carry: validator 1's p. 167 / p. 243 / p. 245
+   readings are **not** replicated by anyone.
+
+### Carried in: two statistical rules, deferred from the 2026-10-02 pass
+
+*Held back deliberately while the panel was live, so that editing this file could not confuse a
+verdict about what the claimant wrote. The panel is closed, so they land.*
+
+**Match the permutation on whatever the label is confounded with, then run it on the classes you
+did not hypothesise.** This folder is where the rule was measured — see item 3(b) — and it is now
+general craft in `board/PRACTICES.md`, carried from here into five other handovers
+(`shakespeare-authorship`, `larry-was-stretched-authorship`, `historia-augusta-authorship`,
+`early-irish-annals-reliability`, `bmh-mspc-divergence`). Full entry:
+`board/log/2026-10-03-connection-match-the-null-on-the-confound-and-test-the-other-classes.md`.
+**That the rule was learned here at the cost of a claim is the folder's contribution to the whole
+board**, and it should be credited as such in any write-up of this problem.
+
+**Calibrate any shuffle null at this corpus's own token count, and do not read a doublet deficit
+as a hoax signature.** From the 2026-09-27 `ciphers/blitz-ciphers/` session, now in the annexe
+**`board/PRACTICES-CIPHERTEXT.md`**, which is not optional for this stream. Cut each genuine
+comparandum into non-overlapping blocks of **exactly** your target's token count, run the identical
+null on each, and report a percentile rather than a bare z; the same blocks give the power curve
+free, which is how you state the power you have *before* a run instead of discovering afterwards
+that the test could not fire. On a corpus of this size that is the difference between a reported
+p-value and a reportable one — and the architecture-level null in item 3(a) is the same discipline
+applied to a structural claim rather than a statistical one.
+
+### And the process lesson this folder paid for
+
+A refuter session on 2026-10-02 committed this folder's entire attack suite — eleven
+`attack_*.py` scripts, vendored witnesses, a 48 KB `out.txt`, and a `README.md` naming the verdict
+path — and **died before writing the verdict file**, so the panel stood owed to Overwatch for a
+further day over one missing file while the work sat finished and unreadable. The rule, now in
+`board/PRACTICES.md`: **write the file that reports your result, with `verdict: PENDING`, before
+you run the thing that might kill the session.** The same applies to a Breaker's handover entry.
+The 2026-10-03 session that closed the panel reproduced the inherited suite exactly, restored
+`out.txt` byte-for-byte, and adopted none of its conclusions on its word — which is how an
+inherited suite should be handled.
+
+---
+
 ## 2026-09-27 – external-overlap alert (additive)
 
 `dbourdeau/cyphersolver` now contains a large independent Linear A workspace built on 1,722
