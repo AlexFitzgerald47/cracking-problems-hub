@@ -116,3 +116,34 @@ M297–N39B at 3; M263–N30C, M288–N39B, M376–N08A at 2) and 10 are singlet
 **Interpretation rule, fixed here.** Only pairs reaching the fold-replication
 level that Null B puts beyond its 95th percentile may be called blind-warranted.
 Singletons are reported as a count, never as named findings.
+
+---
+
+## Part 5 — independent CDLI corpus; directions frozen before the fetch was parsed
+
+CDLI came back up this session: `cdli.earth` homepage HTTP 200, and the export
+route returned **508,015 bytes / 1,597 inscriptions**, byte-count-identical to
+what `u82zig` reported on 2026-10-01 (sha256 of this session's export recorded in
+RESULTS.md). The 130 tablets in `live − pinned` were in no part of the 2026-09-04
+screen or holdout.
+
+`u82zig` established that the published **eight** have essentially no power on
+these 130 tablets. The tier-A2 pairs are 3–20× denser, so the question is open
+for them, and it is the one the folder's reopening condition names.
+
+Directions are the training-set directions and are not negotiable after the fact:
+
+- **P5.1** M288–N24 (enriched), M288–N39B (enriched) and M376–N08A (enriched) —
+  the three pairs the cross-fit warranted — all point in the **predicted
+  direction** (corrected OR > 1) on the 130 new tablets.
+- **P5.2** At most **one** of the seven pairs tested in Part 5 has face-blocked
+  power at 0.05 on the new tablets (floor ≤ 0.05). The new material is small;
+  this is a direction test, not a significance test, and I am predicting that in
+  advance so a null result cannot be re-described afterwards as a refutation.
+- **P5.3** M288–N39B has the most M-bearing lines of the three on the new
+  tablets, because it is the densest pair in the table corpus-wide.
+
+**Interpretation rule, fixed here.** A direction agreeing on 130 tablets with no
+power is weak corroboration and will be reported as such. A direction
+**opposing** with power would fire the reopening condition. A direction opposing
+*without* power is recorded and does not fire it.
