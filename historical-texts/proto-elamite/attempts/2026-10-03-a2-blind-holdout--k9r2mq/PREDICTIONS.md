@@ -185,3 +185,42 @@ with its floor. Then pool the blind buckets 1–4 and run it there.
   "cross-fitting finds composition artefacts reliably": if M263–N01 fails here
   while M288–N24 survives, the two tests are measuring different things and the
   tier-C demotions stand even for pairs that cross-validate perfectly.
+
+---
+
+## Part 7 — a rival explanation found in the literature; frozen before testing
+
+Handover item 3 (the novelty gap) turns out to have a **negative answer for the
+two signs that carry this folder's headline results**. Born, Monroe, Kelley and
+Sarkar, "Disambiguating Numeral Sequences to Decipher Ancient Accounting
+Corpora", CAWL 2023, pp. 71–81, §5, write (verbatim, `pdftotext -layout`):
+
+> "We observe that certain features accompany significantly higher or lower
+> counts than others. Entries ending in M288 have the largest capacity
+> magnitudes on average, while those ending in M263 are among the smallest.
+> Both signs have been speculated to represent containers; from our results one
+> might further speculate that M263 is a container of smaller dimension, or one
+> that was never dealt with in bulk quantities."
+
+Open access since 2023; never cited in this folder. If M288 entries carry the
+largest magnitudes, then M288 must co-occur with high-order numeral signs, and
+if M263 entries carry the smallest, M263 must co-occur with the unit sign N01.
+**That is the folder's M288 family (N45, N39B, N24, N14) and its M263–N01
+result, as a corollary of one magnitude fact rather than as five constraints.**
+
+- **P7.1** With my own pipeline, reading numeral multipliers out of the ATF, the
+  mean per-line numeral multiplier sum on M288-bearing lines is the **largest**
+  or among the largest of the M families clearing the 20-line bar, and M263 is
+  **among the smallest**. (A reproduction of Born et al. §5. If this fails I have
+  a bug or have misread them, not a discovery.)
+- **P7.2** Stratifying the holdout test by that magnitude proxy, **M288–N39B
+  survives** (p ≤ 0.05 with floor ≤ 0.05) — i.e. the association is not wholly
+  reducible to "M288 lines are bigger".
+- **P7.3** **M263–N01 does not survive** magnitude stratification with power,
+  matching its tier-C demotion and matching Born et al.'s reading directly.
+
+**Interpretation rule, fixed here.** If P7.2 fails, the M288 family is a
+corollary of published prior art and this folder's contribution on it is the
+held-out warrant and the controls, **not** the association; the write-up must say
+so. If P7.2 holds, the folder has a residual beyond the magnitude fact, and that
+residual is the contribution.
