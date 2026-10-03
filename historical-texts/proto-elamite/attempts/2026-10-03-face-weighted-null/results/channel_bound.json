@@ -1,0 +1,146 @@
+{
+  "M297-N39B/holdout": {
+    "observed_overlap": 32,
+    "overlap_in_tablets_with_any_freedom": 26,
+    "overlap_in_tablets_where_face_can_act": 14,
+    "overlap_beyond_reach_of_any_face_confound": 18,
+    "tablets_with_freedom": 51,
+    "tablets_where_face_can_act": 21,
+    "face_exposed_fraction": 0.4375
+  },
+  "M297-N39B/corpus": {
+    "observed_overlap": 135,
+    "overlap_in_tablets_with_any_freedom": 102,
+    "overlap_in_tablets_where_face_can_act": 63,
+    "overlap_beyond_reach_of_any_face_confound": 72,
+    "tablets_with_freedom": 222,
+    "tablets_where_face_can_act": 108,
+    "face_exposed_fraction": 0.4666666666666667
+  },
+  "M297-N24/holdout": {
+    "observed_overlap": 13,
+    "overlap_in_tablets_with_any_freedom": 11,
+    "overlap_in_tablets_where_face_can_act": 4,
+    "overlap_beyond_reach_of_any_face_confound": 9,
+    "tablets_with_freedom": 34,
+    "tablets_where_face_can_act": 14,
+    "face_exposed_fraction": 0.3076923076923077
+  },
+  "M297-N24/corpus": {
+    "observed_overlap": 44,
+    "overlap_in_tablets_with_any_freedom": 37,
+    "overlap_in_tablets_where_face_can_act": 25,
+    "overlap_beyond_reach_of_any_face_confound": 19,
+    "tablets_with_freedom": 134,
+    "tablets_where_face_can_act": 68,
+    "face_exposed_fraction": 0.5681818181818182
+  },
+  "M297-N01/holdout": {
+    "observed_overlap": 20,
+    "overlap_in_tablets_with_any_freedom": 9,
+    "overlap_in_tablets_where_face_can_act": 4,
+    "overlap_beyond_reach_of_any_face_confound": 16,
+    "tablets_with_freedom": 86,
+    "tablets_where_face_can_act": 38,
+    "face_exposed_fraction": 0.2
+  },
+  "M297-N01/corpus": {
+    "observed_overlap": 117,
+    "overlap_in_tablets_with_any_freedom": 56,
+    "overlap_in_tablets_where_face_can_act": 38,
+    "overlap_beyond_reach_of_any_face_confound": 79,
+    "tablets_with_freedom": 372,
+    "tablets_where_face_can_act": 186,
+    "face_exposed_fraction": 0.3247863247863248
+  },
+  "M263-N30C/holdout": {
+    "observed_overlap": 0,
+    "overlap_in_tablets_with_any_freedom": 0,
+    "overlap_in_tablets_where_face_can_act": 0,
+    "overlap_beyond_reach_of_any_face_confound": 0,
+    "tablets_with_freedom": 19,
+    "tablets_where_face_can_act": 12,
+    "face_exposed_fraction": NaN
+  },
+  "M263-N30C/corpus": {
+    "observed_overlap": 0,
+    "overlap_in_tablets_with_any_freedom": 0,
+    "overlap_in_tablets_where_face_can_act": 0,
+    "overlap_beyond_reach_of_any_face_confound": 0,
+    "tablets_with_freedom": 114,
+    "tablets_where_face_can_act": 66,
+    "face_exposed_fraction": NaN
+  },
+  "M263-N01/holdout": {
+    "observed_overlap": 38,
+    "overlap_in_tablets_with_any_freedom": 31,
+    "overlap_in_tablets_where_face_can_act": 16,
+    "overlap_beyond_reach_of_any_face_confound": 22,
+    "tablets_with_freedom": 86,
+    "tablets_where_face_can_act": 38,
+    "face_exposed_fraction": 0.42105263157894735
+  },
+  "M263-N01/corpus": {
+    "observed_overlap": 176,
+    "overlap_in_tablets_with_any_freedom": 126,
+    "overlap_in_tablets_where_face_can_act": 86,
+    "overlap_beyond_reach_of_any_face_confound": 90,
+    "tablets_with_freedom": 372,
+    "tablets_where_face_can_act": 186,
+    "face_exposed_fraction": 0.48863636363636365
+  },
+  "M243-N39B/holdout": {
+    "observed_overlap": 8,
+    "overlap_in_tablets_with_any_freedom": 8,
+    "overlap_in_tablets_where_face_can_act": 7,
+    "overlap_beyond_reach_of_any_face_confound": 1,
+    "tablets_with_freedom": 51,
+    "tablets_where_face_can_act": 21,
+    "face_exposed_fraction": 0.875
+  },
+  "M243-N39B/corpus": {
+    "observed_overlap": 22,
+    "overlap_in_tablets_with_any_freedom": 21,
+    "overlap_in_tablets_where_face_can_act": 15,
+    "overlap_beyond_reach_of_any_face_confound": 7,
+    "tablets_with_freedom": 222,
+    "tablets_where_face_can_act": 108,
+    "face_exposed_fraction": 0.6818181818181818
+  },
+  "M106-N24/holdout": {
+    "observed_overlap": 3,
+    "overlap_in_tablets_with_any_freedom": 3,
+    "overlap_in_tablets_where_face_can_act": 3,
+    "overlap_beyond_reach_of_any_face_confound": 0,
+    "tablets_with_freedom": 34,
+    "tablets_where_face_can_act": 14,
+    "face_exposed_fraction": 1.0
+  },
+  "M106-N24/corpus": {
+    "observed_overlap": 14,
+    "overlap_in_tablets_with_any_freedom": 14,
+    "overlap_in_tablets_where_face_can_act": 12,
+    "overlap_beyond_reach_of_any_face_confound": 2,
+    "tablets_with_freedom": 134,
+    "tablets_where_face_can_act": 68,
+    "face_exposed_fraction": 0.8571428571428571
+  },
+  "M288-N45/holdout": {
+    "observed_overlap": 15,
+    "overlap_in_tablets_with_any_freedom": 11,
+    "overlap_in_tablets_where_face_can_act": 8,
+    "overlap_beyond_reach_of_any_face_confound": 7,
+    "tablets_with_freedom": 13,
+    "tablets_where_face_can_act": 5,
+    "face_exposed_fraction": 0.5333333333333333
+  },
+  "M288-N45/corpus": {
+    "observed_overlap": 56,
+    "overlap_in_tablets_with_any_freedom": 43,
+    "overlap_in_tablets_where_face_can_act": 32,
+    "overlap_beyond_reach_of_any_face_confound": 24,
+    "tablets_with_freedom": 51,
+    "tablets_where_face_can_act": 29,
+    "face_exposed_fraction": 0.5714285714285714
+  }
+}

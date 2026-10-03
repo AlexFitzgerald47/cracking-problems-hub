@@ -1,0 +1,56 @@
+{
+  "pair": "M288-N45",
+  "split_rule": "tablets ranked by total block degrees of freedom, marginals only, until validation holds >= 10 informative blocks",
+  "validation_tablets": [
+    "P008020",
+    "P008047",
+    "P008057",
+    "P008096",
+    "P008122",
+    "P008152",
+    "P008711",
+    "P008908",
+    "P272825"
+  ],
+  "validation_lines": 69,
+  "train_lines": 4800,
+  "informative_blocks_corpus": 16,
+  "dof_histogram": {
+    "1": 13,
+    "2": 2,
+    "4": 1
+  },
+  "validation_test": {
+    "p": 0.0031604365079365483,
+    "p_floor": 2.380952380952399e-07,
+    "observed_overlap": 13,
+    "informative_blocks": 10,
+    "blocks": 11,
+    "max_possible_overlap": 16
+  },
+  "training_screen": {
+    "selected_count": 60,
+    "pair_selected": true
+  },
+  "training_screen_pair_row": {
+    "m": "M288",
+    "n": "N45",
+    "or": 11.981917434322757,
+    "p": 4.0401383027686044e-23,
+    "cells": [
+      43,
+      488,
+      31,
+      4238
+    ],
+    "q": 1.431218993755778e-20
+  },
+  "full_corpus_face_blocked_ceiling": {
+    "p": 9.694630456349345e-05,
+    "p_floor": 4.4642857142857545e-09,
+    "observed_overlap": 56,
+    "informative_blocks": 16,
+    "blocks": 1426,
+    "max_possible_overlap": 59
+  }
+}
