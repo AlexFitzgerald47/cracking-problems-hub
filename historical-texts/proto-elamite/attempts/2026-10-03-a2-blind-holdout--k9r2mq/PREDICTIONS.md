@@ -78,3 +78,41 @@ fold's own correction base. A Part 1 result may not promote anything, whatever i
 shows. If Part 2 confirms nothing beyond the published eight, the conclusion is
 that the published eight is **not** demonstrably a power-limited sample on this
 corpus, and the A2 tier stays unwarranted.
+
+---
+
+## Part 4 — second null, added mid-session; prediction frozen before it was run
+
+**Why.** Null A (Part 3) permutes the whole corpus, so under it the *training
+screen itself* finds almost nothing and the union count is near zero. That
+answers "could this pipeline manufacture 16 cross-fold pairs from a corpus with
+no M–numeral association at all?" — a real question, but a weak null. It does
+not answer the question my headline actually rests on: **given that the screen
+is real and real structure exists, how often does a candidate confirm in 2 or
+more of 4 blind folds by chance?** A pair confirmed in 1 of 4 folds is the
+suspect class and Null A cannot price it.
+
+**Null B.** Keep the real training screen in every fold — the real candidate
+set, the real directions, the real per-fold correction base — and permute whole
+N-sign sets within tablet **in the test bucket only**. The search is then held
+at its true size and the null measures the false-confirmation rate of the test
+arm at the real multiplicity.
+
+Observed, from `results/crossfit.json` (already seen): 16 pairs confirmed in ≥1
+of folds 2–5, of which **6** reach ≥2 folds (M263–N01 at 4; M288–N24 and
+M297–N39B at 3; M263–N30C, M288–N39B, M376–N08A at 2) and 10 are singletons.
+
+- **P4.1** Null B's mean number of pairs confirmed in ≥1 of folds 2–5 lies
+  between 1 and 12 — i.e. materially above Null A's ~0, because BH at 0.05 over
+  ~48 candidates in each of 4 folds will pass some.
+- **P4.2** Under Null B, P(any pair reaches ≥2 of the 4 blind folds) < 0.20.
+- **P4.3** Under Null B, P(any pair reaches ≥3 of the 4 blind folds) < 0.05.
+- **P4.4** The observed count of pairs reaching ≥2 of 4 blind folds (6) exceeds
+  Null B's 95th percentile for that same quantity.
+- **P4.5** Null B's mean number of **singletons** (pairs confirmed in exactly 1
+  of 4 blind folds) is ≥ 1 — i.e. the 10 observed singletons are substantially
+  contaminated and must not be reported as findings.
+
+**Interpretation rule, fixed here.** Only pairs reaching the fold-replication
+level that Null B puts beyond its 95th percentile may be called blind-warranted.
+Singletons are reported as a count, never as named findings.
