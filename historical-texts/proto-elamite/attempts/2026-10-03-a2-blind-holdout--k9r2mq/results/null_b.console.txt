@@ -1,0 +1,30 @@
+real per-fold candidate base: {0: 54, 1: 47, 2: 41, 3: 53, 4: 51}
+GATE: Null B's real-data path reproduces crossfit.json on all 5 folds
+observed: union=16 ge2=6 singletons=10
+  50/500  mean union=0.02 mean ge2=0.000 P(max>=2)=0.000
+  100/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+  150/500  mean union=0.05 mean ge2=0.000 P(max>=2)=0.000
+  200/500  mean union=0.04 mean ge2=0.000 P(max>=2)=0.000
+  250/500  mean union=0.04 mean ge2=0.000 P(max>=2)=0.000
+  300/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+  350/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+  400/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+  450/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+  500/500  mean union=0.03 mean ge2=0.000 P(max>=2)=0.000
+
+=== Null B, 500 replicates ===
+union(>=1 of 4 blind folds): mean=0.03 p95=0 max=3   OBSERVED=16
+pairs in >=2 folds:          mean=0.000 p95=0 max=0   OBSERVED=6
+pairs in >=3 folds:          mean=0.000 p95=0
+singletons:                  mean=0.03   OBSERVED=10
+P(any pair >=2 folds)=0.0000  P(>=3)=0.0000  P(>=4)=0.0000
+
+P4.1 null mean union in [1,12]: 0.03 FAILED
+P4.2 P(any >=2 folds) < 0.20: 0.0000 HELD
+P4.3 P(any >=3 folds) < 0.05: 0.0000 HELD
+P4.4 observed ge2 (6) > null p95 (0): HELD  exact p=0.001996
+P4.5 null mean singletons >= 1: 0.03 FAILED
+
+wrote results/null_b.json
+
+[exited with code 0]

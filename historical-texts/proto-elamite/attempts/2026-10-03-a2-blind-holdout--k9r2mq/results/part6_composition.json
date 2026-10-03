@@ -1,0 +1,276 @@
+{
+ "pooled": [
+  {
+   "pair": "M288-N24",
+   "note": "warranted 3/4 folds",
+   "blind_folds": 3,
+   "pooled_cells": [
+    74,
+    365,
+    137,
+    3243
+   ],
+   "pooled_crude_or": 4.808173112796916,
+   "pooled_conum_p": 1.211587716898881e-08,
+   "pooled_conum_floor": 1.5259766973754978e-80,
+   "pooled_conum_mh_or": 3.608576147877423,
+   "pooled_conum_strata": 20,
+   "pooled_face_p": 6.451773002260588e-19,
+   "pooled_face_floor": 1.1599302667896449e-36,
+   "pooled_verdict": "SURVIVES"
+  },
+  {
+   "pair": "M288-N39B",
+   "note": "warranted 2/4 folds",
+   "blind_folds": 2,
+   "pooled_cells": [
+    138,
+    301,
+    355,
+    3025
+   ],
+   "pooled_crude_or": 3.9094891226007795,
+   "pooled_conum_p": 1.4357396045891598e-14,
+   "pooled_conum_floor": 5.208738899484002e-157,
+   "pooled_conum_mh_or": 3.6182246334990897,
+   "pooled_conum_strata": 21,
+   "pooled_face_p": 8.951718740089555e-31,
+   "pooled_face_floor": 1.2175519882864984e-55,
+   "pooled_verdict": "SURVIVES"
+  },
+  {
+   "pair": "M376-N08A",
+   "note": "warranted 2/4 folds",
+   "blind_folds": 2,
+   "pooled_cells": [
+    39,
+    86,
+    11,
+    3683
+   ],
+   "pooled_crude_or": 146.26614727318423,
+   "pooled_conum_p": 2.2069566352871968e-19,
+   "pooled_conum_floor": 1.896431703531538e-31,
+   "pooled_conum_mh_or": 104.91883797544175,
+   "pooled_conum_strata": 2,
+   "pooled_face_p": 1.6221100436208452e-13,
+   "pooled_face_floor": 9.357877276789603e-18,
+   "pooled_verdict": "SURVIVES"
+  },
+  {
+   "pair": "M263-N01",
+   "note": "tier C, yet 4/4 folds",
+   "blind_folds": 4,
+   "pooled_cells": [
+    138,
+    7,
+    2696,
+    978
+   ],
+   "pooled_crude_or": 6.7011434575684525,
+   "pooled_conum_p": 0.34314386492057714,
+   "pooled_conum_floor": 2.955013304663846e-06,
+   "pooled_conum_mh_or": 1.3894712170793044,
+   "pooled_conum_strata": 4,
+   "pooled_face_p": 6.311092849080146e-21,
+   "pooled_face_floor": 6.00418165460733e-25,
+   "pooled_verdict": "REFUSED (has power)"
+  },
+  {
+   "pair": "M297-N39B",
+   "note": "tier A1, 3/4 folds",
+   "blind_folds": 3,
+   "pooled_cells": [
+    103,
+    94,
+    390,
+    3232
+   ],
+   "pooled_crude_or": 9.066215474666178,
+   "pooled_conum_p": 4.921062981427038e-10,
+   "pooled_conum_floor": 1.9453052520251554e-150,
+   "pooled_conum_mh_or": 3.363813325311542,
+   "pooled_conum_strata": 21,
+   "pooled_face_p": 1.933909309754027e-10,
+   "pooled_face_floor": 4.6531633785853315e-33,
+   "pooled_verdict": "SURVIVES"
+  },
+  {
+   "pair": "M288-N45",
+   "note": "tier A1 flagship, 1/4 folds",
+   "blind_folds": 1,
+   "pooled_cells": [
+    41,
+    398,
+    27,
+    3353
+   ],
+   "pooled_crude_or": 12.699463898711075,
+   "pooled_conum_p": 6.170354055320616e-09,
+   "pooled_conum_floor": 2.53585039248726e-36,
+   "pooled_conum_mh_or": 5.825943617125397,
+   "pooled_conum_strata": 12,
+   "pooled_face_p": 5.637400793650889e-05,
+   "pooled_face_floor": 3.720238095238138e-08,
+   "pooled_verdict": "SURVIVES"
+  }
+ ],
+ "per_bucket": {
+  "M288-N24": {
+   "1": {
+    "p": 3.6314805758993968e-06,
+    "floor": 1.9631006988431334e-29,
+    "strata": 8,
+    "verdict": "surv"
+   },
+   "2": {
+    "p": 0.23787919237796643,
+    "floor": 3.780299358431472e-20,
+    "strata": 7,
+    "verdict": "REFUSED"
+   },
+   "3": {
+    "p": 0.004119377583958596,
+    "floor": 2.387572709712238e-08,
+    "strata": 4,
+    "verdict": "surv"
+   },
+   "4": {
+    "p": 0.27386947305271997,
+    "floor": 8.739731105383609e-16,
+    "strata": 10,
+    "verdict": "REFUSED"
+   }
+  },
+  "M288-N39B": {
+   "1": {
+    "p": 1.5563961676486453e-05,
+    "floor": 5.839314658540332e-50,
+    "strata": 9,
+    "verdict": "surv"
+   },
+   "2": {
+    "p": 2.2561853276552442e-13,
+    "floor": 5.667890739253771e-37,
+    "strata": 7,
+    "verdict": "surv"
+   },
+   "3": {
+    "p": 0.0009741443405665359,
+    "floor": 3.91879415405161e-25,
+    "strata": 8,
+    "verdict": "surv"
+   },
+   "4": {
+    "p": 0.3050765460823567,
+    "floor": 1.9393166216670574e-49,
+    "strata": 11,
+    "verdict": "REFUSED"
+   }
+  },
+  "M376-N08A": {
+   "1": {
+    "p": 0.002824434556917005,
+    "floor": 2.5491286614766453e-05,
+    "strata": 2,
+    "verdict": "surv"
+   },
+   "2": {
+    "p": 0.06278892855050833,
+    "floor": 0.0008777576218620387,
+    "strata": 2,
+    "verdict": "REFUSED"
+   },
+   "3": {
+    "p": 0.00030132851139364245,
+    "floor": 2.136172631459992e-08,
+    "strata": 1,
+    "verdict": "surv"
+   },
+   "4": {
+    "p": 4.779202025361673e-12,
+    "floor": 1.534870180766481e-14,
+    "strata": 2,
+    "verdict": "surv"
+   }
+  },
+  "M263-N01": {
+   "1": {
+    "p": 0.30725622371227673,
+    "floor": 0.007824250933272384,
+    "strata": 3,
+    "verdict": "REFUSED"
+   },
+   "2": {
+    "p": 0.9999999999999751,
+    "floor": 0.5671641791044904,
+    "strata": 1,
+    "verdict": "nopow"
+   },
+   "3": {
+    "p": 0.23135660626632276,
+    "floor": 0.04107545209887875,
+    "strata": 2,
+    "verdict": "REFUSED"
+   },
+   "4": {
+    "p": 0.8846537311142453,
+    "floor": 0.027955166991496437,
+    "strata": 2,
+    "verdict": "REFUSED"
+   }
+  },
+  "M297-N39B": {
+   "1": {
+    "p": 8.51817810139736e-06,
+    "floor": 3.3303409848008843e-37,
+    "strata": 7,
+    "verdict": "surv"
+   },
+   "2": {
+    "p": 0.09443872227787935,
+    "floor": 2.7563717246859115e-53,
+    "strata": 7,
+    "verdict": "REFUSED"
+   },
+   "3": {
+    "p": 0.18987477217958781,
+    "floor": 1.3725622782046823e-24,
+    "strata": 8,
+    "verdict": "REFUSED"
+   },
+   "4": {
+    "p": 1.325303061129484e-06,
+    "floor": 8.240727412855541e-32,
+    "strata": 9,
+    "verdict": "surv"
+   }
+  },
+  "M288-N45": {
+   "1": {
+    "p": 0.17320773744771956,
+    "floor": 2.883573885502678e-09,
+    "strata": 8,
+    "verdict": "REFUSED"
+   },
+   "2": {
+    "p": 0.01587367705319963,
+    "floor": 4.59422995346057e-07,
+    "strata": 3,
+    "verdict": "surv"
+   },
+   "3": {
+    "p": 0.0002534605887359617,
+    "floor": 1.047392430227344e-09,
+    "strata": 5,
+    "verdict": "surv"
+   },
+   "4": {
+    "p": 0.0016790157304484071,
+    "floor": 6.828938697852848e-08,
+    "strata": 6,
+    "verdict": "surv"
+   }
+  }
+ }
+}

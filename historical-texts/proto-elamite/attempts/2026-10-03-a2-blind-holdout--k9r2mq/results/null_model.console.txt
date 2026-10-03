@@ -1,0 +1,27 @@
+observed: fold1=8  union(folds 2-5)=16
+  100/500 replicates; running mean union = 0.01
+  200/500 replicates; running mean union = 0.01
+  300/500 replicates; running mean union = 0.01
+  400/500 replicates; running mean union = 0.01
+  500/500 replicates; running mean union = 0.01
+
+=== null distribution, 500 replicates ===
+union(folds 2-5):  mean=0.01 median=0 p95=0 p99=1 max=1   OBSERVED=16
+fold-1 count:      mean=0.00 median=0 p95=0   OBSERVED=8
+pairs per blind fold: mean=0.00
+
+most-replicated pair within a replicate: mean=0.01 p95=0
+  P(some pair reaches >=2 of 4 blind folds under the null) = 0.000
+  P(some pair reaches >=3 of 4 blind folds under the null) = 0.000
+
+P3.1 null median union <= 1: 0 HELD
+P3.2 observed union > null p95: 16 vs 0 HELD  (exact p = 0.001996)
+P3.3 null fold-1 median == 0: 0 HELD
+
+wrote results/null_model.json
+
+real	7m3.822s
+user	7m0.016s
+sys	0m0.147s
+
+[exited with code 0]
