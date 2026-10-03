@@ -147,3 +147,41 @@ Directions are the training-set directions and are not negotiable after the fact
 power is weak corroboration and will be reported as such. A direction
 **opposing** with power would fire the reopening condition. A direction opposing
 *without* power is recorded and does not fire it.
+
+---
+
+## Part 6 — composition control inside the blind folds; frozen before running
+
+Null B's result (committed in `results/null_b.json`) says the 16 cross-fold pairs
+are not noise: no replicate of 500 produced *any* pair in ≥2 of 4 blind folds.
+But Null B permutes whole numeral *sets*, so it preserves each line's numeral
+composition and therefore **cannot** rule out the confound this folder has twice
+caught: that "M is enriched with numeral n" conveys nothing beyond "M occurs on
+lines whose numeral expression is of a certain shape". That is what demoted eight
+pairs to tier C and refuted M297–N24.
+
+So the blind warrant has to clear the composition control *in the blind buckets*,
+not on the full corpus where `c7h0lh` ran it (the full corpus includes the
+training data that selected these pairs).
+
+**Test.** For each of the three pairs the cross-fit warranted, in each blind test
+bucket where it confirmed, run the co-numeral-stratified exact test (strata = the
+exact set of other numeral signs on the line) on that bucket alone, and report p
+with its floor. Then pool the blind buckets 1–4 and run it there.
+
+- **P6.1** M288–N24 and M288–N39B both survive the pooled blind-bucket
+  composition control at p ≤ 0.05 with floor ≤ 0.05.
+- **P6.2** M376–N08A does **not** get a usable pooled verdict: its evidence is
+  concentrated in few strata, so the floor will sit above 0.05 or very near it.
+  (Its bucket-0 co-numeral floor was 4.1e-4 on 1 informative stratum — fragile.)
+- **P6.3** At least one of the three fails the control in at least one individual
+  blind bucket, because single buckets are ~900 lines and the control is
+  data-hungry. A per-bucket failure with floor > 0.05 is a power failure, not a
+  refusal, and will be reported as such.
+- **P6.4** M263–N01, which the folder demoted to tier C on exactly this control
+  and which nonetheless confirmed in 4 of 4 blind folds, **fails** the pooled
+  blind-bucket composition control with power (floor ≤ 0.05). This is the
+  prediction that distinguishes "cross-fitting finds real associations" from
+  "cross-fitting finds composition artefacts reliably": if M263–N01 fails here
+  while M288–N24 survives, the two tests are measuring different things and the
+  tier-C demotions stand even for pairs that cross-validate perfectly.
