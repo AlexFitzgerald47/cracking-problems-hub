@@ -1,0 +1,169 @@
+{
+  "draws": 4000,
+  "pairs": {
+    "M288-N45": {
+      "strata_invariant": true,
+      "null_median_p": 0.5176038623064447,
+      "rates": {
+        "0.01": 0.0085,
+        "0.05": 0.03675,
+        "0.1": 0.07125,
+        "0.25": 0.18975
+      },
+      "calibrated_at_05": true
+    },
+    "M297-N39B": {
+      "strata_invariant": true,
+      "null_median_p": 0.5637200720297986,
+      "rates": {
+        "0.01": 0.00625,
+        "0.05": 0.0255,
+        "0.1": 0.07825,
+        "0.25": 0.188
+      },
+      "calibrated_at_05": true
+    },
+    "M297-N24": {
+      "strata_invariant": true,
+      "null_median_p": 0.5677568051998653,
+      "rates": {
+        "0.01": 0.008,
+        "0.05": 0.03475,
+        "0.1": 0.089,
+        "0.25": 0.23875
+      },
+      "calibrated_at_05": true
+    },
+    "M106-N24": {
+      "strata_invariant": true,
+      "null_median_p": 0.6164939647533577,
+      "rates": {
+        "0.01": 0.00475,
+        "0.05": 0.045,
+        "0.1": 0.045,
+        "0.25": 0.22225
+      },
+      "calibrated_at_05": true
+    }
+  },
+  "m297_n24_audit": [
+    {
+      "signature": [
+        "N39B"
+      ],
+      "lines": 274,
+      "m_lines": 64,
+      "t_lines": 57,
+      "both": 6,
+      "rate_given_m": 0.09375,
+      "rate_given_rest": 0.24285714285714285
+    },
+    {
+      "signature": [
+        "N01"
+      ],
+      "lines": 2664,
+      "m_lines": 53,
+      "t_lines": 8,
+      "both": 0,
+      "rate_given_m": 0.0,
+      "rate_given_rest": 0.003063960168517809
+    },
+    {
+      "signature": [
+        "N01",
+        "N39B"
+      ],
+      "lines": 144,
+      "m_lines": 22,
+      "t_lines": 48,
+      "both": 3,
+      "rate_given_m": 0.13636363636363635,
+      "rate_given_rest": 0.36885245901639346
+    },
+    {
+      "signature": [
+        "N30C"
+      ],
+      "lines": 146,
+      "m_lines": 14,
+      "t_lines": 17,
+      "both": 2,
+      "rate_given_m": 0.14285714285714285,
+      "rate_given_rest": 0.11363636363636363
+    },
+    {
+      "signature": [
+        "N14"
+      ],
+      "lines": 424,
+      "m_lines": 11,
+      "t_lines": 3,
+      "both": 0,
+      "rate_given_m": 0.0,
+      "rate_given_rest": 0.007263922518159807
+    },
+    {
+      "signature": [
+        "N01",
+        "N14"
+      ],
+      "lines": 472,
+      "m_lines": 8,
+      "t_lines": 1,
+      "both": 0,
+      "rate_given_m": 0.0,
+      "rate_given_rest": 0.0021551724137931034
+    },
+    {
+      "signature": [
+        "N01",
+        "N30C",
+        "N39B"
+      ],
+      "lines": 20,
+      "m_lines": 8,
+      "t_lines": 9,
+      "both": 5,
+      "rate_given_m": 0.625,
+      "rate_given_rest": 0.3333333333333333
+    },
+    {
+      "signature": [
+        "N01",
+        "N14",
+        "N39B"
+      ],
+      "lines": 43,
+      "m_lines": 7,
+      "t_lines": 7,
+      "both": 0,
+      "rate_given_m": 0.0,
+      "rate_given_rest": 0.19444444444444445
+    },
+    {
+      "signature": [
+        "N30C",
+        "N39B"
+      ],
+      "lines": 39,
+      "m_lines": 6,
+      "t_lines": 15,
+      "both": 4,
+      "rate_given_m": 0.6666666666666666,
+      "rate_given_rest": 0.3333333333333333
+    },
+    {
+      "signature": [
+        "N30D",
+        "N39B"
+      ],
+      "lines": 7,
+      "m_lines": 4,
+      "t_lines": 4,
+      "both": 2,
+      "rate_given_m": 0.5,
+      "rate_given_rest": 0.6666666666666666
+    }
+  ]
+}

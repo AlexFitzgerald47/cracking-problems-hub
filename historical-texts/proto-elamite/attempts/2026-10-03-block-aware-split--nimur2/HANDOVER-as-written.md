@@ -4,58 +4,129 @@
 
 ---
 
-## Next experiments — reconcile the seven parallel 10-01→10-03 runs (orchestrator note, 2026-10-03; additive, nothing below altered)
+## 2026-10-03 — breaker session: M288–N45 settled; a co-numeral control re-tiers the constraint set
 
-1. **Reconcile the seven parallel runs of the M288–N45 block-aware split, and do not run an eighth.**
-   Seven Breaker sessions worked this folder between 2026-10-01 and 2026-10-03 on this same drawn
-   item, none reached `main`, and all seven are now landed side by side under `attempts/` (table
-   below). All seven agree on the headline — M288–N45 is confirmed against the face confound, and the
-   2026-09-17 bucket-0 holdout's p-floor of 0.12 was a power failure rather than a negative result.
-   They do **not** agree on what that does to the constraint set: 8 → 26 pairs, four of eight demoted,
-   a re-count on a new multiplicity basis, "a sample not a set", a co-numeral control demoting
-   M263–N01 and refuting M297–N24, and a 24-pair frozen screen are six different answers to one
-   question. Read all seven `RESULTS.md` files; separate the sessions that differ on **method**
-   (correction base, multiplicity basis, screening arm, candidate space) from those that differ on
-   **result**; write one tier table with its basis declared *in* the table. Do not pick the most
-   recent and do not average them.
-2. **Price the agreement before banking it.** Seven runs reaching one headline is not seven
-   replications. They read the same `HANDOVER.md` item 1, took the same corpus and were aimed at the
-   same experiment, so their errors are correlated by construction — the Linear A panel of 2026-10-02
-   measured exactly this and called it *total test dependence* where two projects were pushed to one
-   reading by one shared trigger (`board/log/2026-10-02-validation-linear-a-v2.md`). The independent
-   evidence in this set is where the seven **diverge**, and where a session refuted its own frozen
-   prediction: `v5ftaw` reports three of its six failed, which is the most informative material here.
-3. **Then take the surviving next move**, which step 1 will name. Several of the seven nominate a
-   replication against a current CDLI ATF export using a committed frozen table (`u4sk7u`'s
-   `results/constraint_table.csv`; `v5ftaw`'s 24-pair screen). That is a real falsification test and it
-   is fully specified — but it tests whichever tier table survives step 1, so it comes after it.
+**Read `attempts/2026-10-03-block-aware-split/RESULTS.md` first.** It completes the
+drawn experiment (the 2026-09-17 handover's item 1), promotes M288–N45, **demotes
+M263–N01 out of the load-bearing tier**, refutes M297–N24, and reinterprets the
+`train_q` column of the published table. Nothing below this section is altered.
 
-### Why there are seven, and what was landed
+### Frontier now
 
-Each of the seven pushed to its own `claude/busy-galileo-*` branch and opened no pull request. The
-draw reads the last worked stream and coverage debt from `main`'s history alone, so with nothing
-landing it kept naming this folder as the stream B pick with the same item 1 as its next move, to
-session after session. **That is a livelock, and it is the cause of the duplication — not a judgement
-about any of the seven sessions, each of which froze its predictions before running and did honest
-work.**
+Two independent controls, and a constraint only counts as load-bearing if it clears both
+*with power*: the **face-blocked** null (2026-09-17) and the new **co-numeral** control
+(the exact set of N-signs other than the target held constant).
 
-| session | landed at `attempts/` | its own headline (quoted from its handover, not endorsed) |
-|---|---|---|
-| `u82zig` | `2026-10-01-block-aware-split--u82zig` | block-aware split, the correction base, 130 new CDLI tablets; corrects the 09-17 entry on the face-blocked q-values' correction base |
-| `u4sk7u` | `2026-10-01-block-aware-split--u4sk7u` | M288–N45 settled; the holdout retired; **constraint set 8 → 26** |
-| `ux87d8` | `2026-10-01-block-aware-split--ux87d8` | M288–N45 settled; **four of the eight published constraints demoted**, one previously load-bearing |
-| `3ltl6g` | `2026-10-02-block-aware-split--3ltl6g` | M288–N45 confirmed; **constraint set re-counted on its own multiplicity basis** |
-| `vd9la1` | `2026-10-02-m288-n45-block-aware-split--vd9la1` | M288–N45 confirmed; **the constraint set is a sample, not a set** |
-| `nimur2` | `2026-10-03-block-aware-split--nimur2` | M288–N45 confirmed; a **co-numeral control** re-tiers the set, demotes M263–N01, refutes M297–N24 |
-| `v5ftaw` | `2026-10-03-face-weighted-null--v5ftaw` | M288–N45 confirmed; **two validated instruments**; refutes three of its own six frozen predictions |
+| pair | face-blocked | co-numeral | tier |
+|---|---|---|---|
+| **M297–N39B** | passes 5/5 buckets | passes; **also passes the joint face + co-numeral test** (MH-OR 13.28, p = 0.0015) | **load-bearing, strongest** |
+| **M288–N45** | **passes with power** (p = 0.0013, floor 6.7×10⁻⁵, OR 21.8) | passes (MH-OR 7.50, q = 1.3×10⁻¹³) | **load-bearing, promoted from untestable** |
+| **M106–N24** | passes | passes (MH-OR 4.21, q = 0.0027) | **load-bearing, promoted from lead** |
+| M263–N30C | passes 4/4 | **untestable**, floor 0.178 | unresolved |
+| M263–N01 | passes 5/5 | **fails with power** (MH-OR 0.86, q = 0.82) | **demoted** |
+| M297–N01 | passes | fails with power (MH-OR 0.74) | demoted |
+| M243–N39B | 1/2 powered buckets | fails with power (MH-OR 1.57) | refuted |
+| M297–N24 | passes | **fails, direction reverses** (MH-OR 0.46) | refuted |
 
-Nothing was merged, ranked or adjudicated by the orchestrator. Each directory holds that session's own
-`PREDICTIONS.md`, `RESULTS.md`, code and results exactly as committed, plus `HANDOVER-as-written.md`
-and `PROGRESS-entry-as-written.md` — its own handover and progress text preserved verbatim, because
-seven divergent versions of one file cannot be merged without deciding between them, and that decision
-belongs to a Breaker. Their eight `board/log/` craft entries are landed under their own filenames.
-**This folder's `PROGRESS.md` and every section below this note are untouched**, so they still read as
-of 2026-09-17 until a Breaker reconciles the seven.
+Also now established, and it changes how the published table reads: the **unblocked
+training screen is non-specific for the face-concentrated signs.** It fires at
+p ≤ 7×10⁻⁶ in 20,000/20,000 draws of a null with no within-face association, and the
+share of crude log-odds it reproduces is monotone in the 2026-09-17 per-sign face
+effect — 71–83 % for M297, 86 % for M288, ~0 for M263. So `train_p`/`train_q` in
+`analysis/results/associations.csv` is a **power filter, not evidence**, for M297, M288
+and M243; it remains genuine evidence for M263 and M106. The upside: this is also why
+prior in-sample selection does **not** contaminate the blocked tests — selection fires
+with probability ≈ 1 under the null, so conditioning on it shifts nothing.
+
+### Conditional assumptions
+
+- Everything is still **structural**. No sign has a semantic, phonetic or metrological
+  value, and the co-numeral control assigns none — its strata are observed co-occurring
+  signs, not quantities.
+- The co-numeral control conditions on the rest of the numeral expression, which is not
+  causally prior to the target. It licenses "M288 predicts N45 beyond what the rest of
+  the expression predicts", not a causal claim.
+- The block-aware split is a valid **conditional** test, demonstrated calibrated by
+  simulation, but it is **not** a prospective holdout: per-block overlaps were visible
+  before the split was chosen. `PREDICTIONS.md` says so.
+- M263–N30C is **unresolved**, not refuted. Its co-numeral p-floor is 0.178.
+
+### Three things a future session must not redo
+
+1. **Do not look for a newer CDLI export** (2026-09-17's item 4) without new access.
+   `cdli-gh/data` HEAD is `d66b12b0` but its bulk ATF and catalogue are Git LFS pointers
+   the proxy refuses; the newest reachable non-LFS blob is the 2021-10-21 export, and its
+   1,452 Proto-Elamite texts are a **strict subset** of the pinned SFU 1,467 (0 new, 15
+   SFU-only). `sfu-natlang/pe-sign-value-data` has exactly two commits and the pinned
+   commit **is** HEAD. This item is evidence-blocked. Reopening condition below.
+2. **Do not re-run the M288–N45 face-blocked test hoping for more power.** The corpus
+   holds 16 informative `(tablet, face)` blocks for the pair, full stop. The frontier is
+   enumerated in `results/budget.json`: 10 validation blocks is the exact ceiling at
+   which the training complement can still fire.
+3. **Do not quote a `train_q` from `associations.csv` as evidence** for an M297, M288 or
+   M243 constraint. Quote the blocked validation p and the co-numeral q instead.
+
+### Recommended next experiments
+
+1. **Run the joint face + co-numeral test on M106–N24 and M263–N01 — it is written,
+   it is 30 seconds, and it is the cheapest item that can still move a tier.**
+   `src/magnitude.py` already computes stratification S2 = `(tablet, face, other-N
+   signature)` for all eight pairs, but only M297–N39B had power there (11 informative
+   strata, p = 0.0015); M106–N24 and M288–N45 returned **zero** informative strata and
+   M263–N01 six (floor 0.0069, so it *does* have power, p = 0.549). **Concretely:** relax
+   S2 by one step at a time — block on `(tablet, other-N)` and then on
+   `(face, other-N)` rather than both — and report the p-floor at each step, so the
+   face and co-numeral controls can be separated for the pairs where imposing both at
+   once leaves nothing. What would change the verdict: if M263–N01 fails the
+   `(face, other-N)` test with power, its demotion is final and the load-bearing tier is
+   three pairs, none involving M263; if it passes, its failure under S1 was the
+   co-numeral control alone and M263–N01 returns as a lead.
+2. **Extend the co-numeral control to the full 15-row published table, not just the
+   eight numeral pairs.** The header-position results (M157's first-obverse-line
+   specialisation, OR 52.0) were never checked against anything, and the same
+   co-location mechanism that inflated the screen for M297 applies to a positional
+   target. `src/magnitude.py` generalises by swapping the target predicate.
+3. **Re-screen the corpus from scratch with the co-numeral control inside the selection
+   step.** Every candidate on this folder was selected by the non-specific unblocked
+   screen, so the eight pairs are a biased sample of the hypothesis space: pairs with a
+   real within-stratum association but no face co-location were never selected at all.
+   A stratified screen over all M×N pairs would find them. This is the only route on the
+   folder toward *new* constraints rather than audits of old ones, and §3 of the new
+   RESULTS.md says why the old screen cannot be reused.
+4. **Audit the exact-form merge for M263 and M288** — still unrun from 2026-09-17's item
+   3, and it now matters more for M263, whose two constraints are respectively demoted
+   and unresolved. Same script, change the `family` argument in `test_b`.
+5. **Header refinement against Born et al. 2022** remains untouched and is still the only
+   route toward document structure rather than line-level association.
+
+### Evidence dependency
+
+Items 1–4 need nothing but the repository and the pinned corpus. Item 5 needs the
+Born et al. 2022 replication package. No archival access, no images, no paywalled
+material. Item 1's and item 3's code is in
+`attempts/2026-10-03-block-aware-split/src/`.
+
+### Trap for the next session — two of them
+
+- **The corpus digest trap still stands** (see the 2026-09-17 entry below): the recorded
+  `ee4fa7ba…` is the CRLF hash, a Linux checkout gives `8849716c…`, and both are correct.
+  Do not read the mismatch as drift.
+- **New: `corpus_path.txt` lives in the 2026-09-17 attempt directory** and is read by
+  both attempts' scripts. It is deliberately uncommitted. Write it before running
+  anything in either folder.
+
+### Reopening condition
+
+- **M288–N45, M297–N39B and M106–N24** reopen if they fail the joint or relaxed
+  face + co-numeral tests of item 1, or fail to replicate in direction on a genuinely
+  independent corpus.
+- **M263–N01 and M263–N30C** reopen immediately on item 1, which can be run today.
+- **Item 1 of the 2026-09-17 handover is now closed.** Do not draw this file for it again.
+- **Independent replication reopens** when either the Aug-2022 (or later) `cdli-gh/data`
+  LFS blob becomes fetchable, or CDLI publishes a bulk export containing
+  Proto-Elamite P-numbers outside the pinned SFU set. The test to run then is unchanged
+  and the predictions are frozen in this attempt's `PREDICTIONS.md` as P1a–P1c, including
+  the power prediction that fewer than ~400 new eligible lines cannot settle M288–N45.
 
 ---
 

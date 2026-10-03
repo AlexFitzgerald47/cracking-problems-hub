@@ -1,0 +1,1182 @@
+{
+  "face_level_blocked_on_tablet": {
+    "M297-N39B": {
+      "p": 0.0001385807991027847,
+      "p_floor": 5.960464477539126e-08,
+      "blocks": 1124,
+      "informative_blocks": 24,
+      "observed": 121,
+      "max_possible": 124,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        121,
+        65,
+        256,
+        984
+      ],
+      "pooled_face_or": 7.119726797910808
+    },
+    "M297-N24": {
+      "p": 0.006362915039062549,
+      "p_floor": 7.629394531250058e-06,
+      "blocks": 1124,
+      "informative_blocks": 17,
+      "observed": 53,
+      "max_possible": 56,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        53,
+        133,
+        137,
+        1103
+      ],
+      "pooled_face_or": 3.216193394620361
+    },
+    "M297-N01": {
+      "p": 0.16615295410156378,
+      "p_floor": 7.629394531250058e-06,
+      "blocks": 1124,
+      "informative_blocks": 17,
+      "observed": 138,
+      "max_possible": 149,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        138,
+        48,
+        1000,
+        240
+      ],
+      "pooled_face_or": 0.6864454370752768
+    },
+    "M263-N30C": {
+      "p": 0.03271484375000016,
+      "p_floor": 0.0004882812500000024,
+      "blocks": 1124,
+      "informative_blocks": 11,
+      "observed": 27,
+      "max_possible": 36,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        27,
+        82,
+        145,
+        1172
+      ],
+      "pooled_face_or": 2.686139747995418
+    },
+    "M263-N01": {
+      "p": 0.00646972656250004,
+      "p_floor": 6.103515625000038e-05,
+      "blocks": 1124,
+      "informative_blocks": 14,
+      "observed": 100,
+      "max_possible": 102,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        100,
+        9,
+        1038,
+        279
+      ],
+      "pooled_face_or": 2.8471986417657047
+    },
+    "M243-N39B": {
+      "p": 0.035156250000000125,
+      "p_floor": 0.003906250000000014,
+      "blocks": 1124,
+      "informative_blocks": 8,
+      "observed": 20,
+      "max_possible": 21,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        20,
+        17,
+        357,
+        1032
+      ],
+      "pooled_face_or": 3.3832167832167834
+    },
+    "M106-N24": {
+      "p": 0.5000000000000002,
+      "p_floor": 0.5000000000000002,
+      "blocks": 1124,
+      "informative_blocks": 1,
+      "observed": 12,
+      "max_possible": 12,
+      "has_power_at_05": false,
+      "pooled_face_cells": [
+        12,
+        19,
+        178,
+        1217
+      ],
+      "pooled_face_or": 4.372261725202901
+    },
+    "M288-N45": {
+      "p": 0.10937500000000029,
+      "p_floor": 0.01562500000000004,
+      "blocks": 1124,
+      "informative_blocks": 6,
+      "observed": 52,
+      "max_possible": 53,
+      "has_power_at_05": true,
+      "pooled_face_cells": [
+        52,
+        298,
+        26,
+        1050
+      ],
+      "pooled_face_or": 6.972124774817484
+    }
+  },
+  "occupancy": {
+    "M001": {
+      "faces": 78,
+      "mean_occupancy": 0.35866134027039887,
+      "saturated_faces": 10,
+      "saturated_fraction": 0.1282051282051282,
+      "lines": 108
+    },
+    "M002": {
+      "faces": 29,
+      "mean_occupancy": 0.314128259615075,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.034482758620689655,
+      "lines": 43
+    },
+    "M003": {
+      "faces": 41,
+      "mean_occupancy": 0.2659319133127454,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.04878048780487805,
+      "lines": 67
+    },
+    "M004": {
+      "faces": 53,
+      "mean_occupancy": 0.2977048978401558,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.07547169811320754,
+      "lines": 64
+    },
+    "M005": {
+      "faces": 29,
+      "mean_occupancy": 0.33677270248056357,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.1724137931034483,
+      "lines": 34
+    },
+    "M006": {
+      "faces": 32,
+      "mean_occupancy": 0.31874913220093687,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.125,
+      "lines": 50
+    },
+    "M009": {
+      "faces": 105,
+      "mean_occupancy": 0.3675691218645542,
+      "saturated_faces": 16,
+      "saturated_fraction": 0.1523809523809524,
+      "lines": 150
+    },
+    "M010": {
+      "faces": 39,
+      "mean_occupancy": 0.5032449968684787,
+      "saturated_faces": 10,
+      "saturated_fraction": 0.2564102564102564,
+      "lines": 53
+    },
+    "M024": {
+      "faces": 19,
+      "mean_occupancy": 0.27503759398496236,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.05263157894736842,
+      "lines": 21
+    },
+    "M026": {
+      "faces": 10,
+      "mean_occupancy": 0.13803123128934908,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 11
+    },
+    "M029": {
+      "faces": 23,
+      "mean_occupancy": 0.3008718317812011,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.13043478260869565,
+      "lines": 27
+    },
+    "M032": {
+      "faces": 61,
+      "mean_occupancy": 0.3736975562600337,
+      "saturated_faces": 12,
+      "saturated_fraction": 0.19672131147540983,
+      "lines": 78
+    },
+    "M033": {
+      "faces": 15,
+      "mean_occupancy": 0.21572101972101973,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 21
+    },
+    "M036": {
+      "faces": 125,
+      "mean_occupancy": 0.5402023125137678,
+      "saturated_faces": 31,
+      "saturated_fraction": 0.248,
+      "lines": 221
+    },
+    "M038": {
+      "faces": 56,
+      "mean_occupancy": 0.4538645963080067,
+      "saturated_faces": 14,
+      "saturated_fraction": 0.25,
+      "lines": 69
+    },
+    "M039": {
+      "faces": 14,
+      "mean_occupancy": 0.32803803339517623,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.07142857142857142,
+      "lines": 20
+    },
+    "M041": {
+      "faces": 20,
+      "mean_occupancy": 0.32732892078207637,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.05,
+      "lines": 23
+    },
+    "M046": {
+      "faces": 18,
+      "mean_occupancy": 0.22564985823017958,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.05555555555555555,
+      "lines": 36
+    },
+    "M048": {
+      "faces": 36,
+      "mean_occupancy": 0.2109693660790152,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 44
+    },
+    "M050": {
+      "faces": 12,
+      "mean_occupancy": 0.3464856050382366,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.08333333333333333,
+      "lines": 16
+    },
+    "M051": {
+      "faces": 21,
+      "mean_occupancy": 0.26578131824028894,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.047619047619047616,
+      "lines": 27
+    },
+    "M054": {
+      "faces": 125,
+      "mean_occupancy": 0.3471613677378891,
+      "saturated_faces": 11,
+      "saturated_fraction": 0.088,
+      "lines": 207
+    },
+    "M056": {
+      "faces": 54,
+      "mean_occupancy": 0.6485970819304152,
+      "saturated_faces": 22,
+      "saturated_fraction": 0.4074074074074074,
+      "lines": 58
+    },
+    "M057": {
+      "faces": 83,
+      "mean_occupancy": 0.4073187107841516,
+      "saturated_faces": 17,
+      "saturated_fraction": 0.20481927710843373,
+      "lines": 96
+    },
+    "M059": {
+      "faces": 55,
+      "mean_occupancy": 0.379935448003413,
+      "saturated_faces": 12,
+      "saturated_fraction": 0.21818181818181817,
+      "lines": 63
+    },
+    "M066": {
+      "faces": 92,
+      "mean_occupancy": 0.41153835215189327,
+      "saturated_faces": 16,
+      "saturated_fraction": 0.17391304347826086,
+      "lines": 128
+    },
+    "M072": {
+      "faces": 46,
+      "mean_occupancy": 0.37695375299487405,
+      "saturated_faces": 7,
+      "saturated_fraction": 0.15217391304347827,
+      "lines": 103
+    },
+    "M075": {
+      "faces": 21,
+      "mean_occupancy": 0.426746393820012,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.23809523809523808,
+      "lines": 37
+    },
+    "M080": {
+      "faces": 11,
+      "mean_occupancy": 0.31277056277056275,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.09090909090909091,
+      "lines": 12
+    },
+    "M081": {
+      "faces": 27,
+      "mean_occupancy": 0.30558464169575283,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.07407407407407407,
+      "lines": 35
+    },
+    "M096": {
+      "faces": 81,
+      "mean_occupancy": 0.3629879282510861,
+      "saturated_faces": 9,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 118
+    },
+    "M097": {
+      "faces": 26,
+      "mean_occupancy": 0.25169247419247415,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.07692307692307693,
+      "lines": 27
+    },
+    "M099": {
+      "faces": 20,
+      "mean_occupancy": 0.259075783766795,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.05,
+      "lines": 21
+    },
+    "M101": {
+      "faces": 24,
+      "mean_occupancy": 0.38487432624756573,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.20833333333333334,
+      "lines": 27
+    },
+    "M102": {
+      "faces": 21,
+      "mean_occupancy": 0.25064707214633497,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.047619047619047616,
+      "lines": 51
+    },
+    "M105": {
+      "faces": 13,
+      "mean_occupancy": 0.2979637853419002,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 23
+    },
+    "M106": {
+      "faces": 31,
+      "mean_occupancy": 0.2909710328889111,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.06451612903225806,
+      "lines": 59
+    },
+    "M110": {
+      "faces": 11,
+      "mean_occupancy": 0.40092795424120725,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.18181818181818182,
+      "lines": 12
+    },
+    "M111": {
+      "faces": 36,
+      "mean_occupancy": 0.29942748676841835,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 38
+    },
+    "M112": {
+      "faces": 18,
+      "mean_occupancy": 0.3064703033012892,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 20
+    },
+    "M122": {
+      "faces": 23,
+      "mean_occupancy": 0.48729813664596267,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.2608695652173913,
+      "lines": 24
+    },
+    "M123": {
+      "faces": 10,
+      "mean_occupancy": 0.20828341948020396,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.1,
+      "lines": 11
+    },
+    "M124": {
+      "faces": 94,
+      "mean_occupancy": 0.357762127485427,
+      "saturated_faces": 9,
+      "saturated_fraction": 0.09574468085106383,
+      "lines": 182
+    },
+    "M125": {
+      "faces": 12,
+      "mean_occupancy": 0.4414514866979656,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.25,
+      "lines": 14
+    },
+    "M128": {
+      "faces": 20,
+      "mean_occupancy": 0.25722918380147297,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.1,
+      "lines": 21
+    },
+    "M131": {
+      "faces": 34,
+      "mean_occupancy": 0.31368141732474786,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.11764705882352941,
+      "lines": 38
+    },
+    "M136": {
+      "faces": 64,
+      "mean_occupancy": 0.29564797559595235,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.078125,
+      "lines": 81
+    },
+    "M139": {
+      "faces": 15,
+      "mean_occupancy": 0.40516735987324215,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.2,
+      "lines": 15
+    },
+    "M145": {
+      "faces": 28,
+      "mean_occupancy": 0.3266020882037025,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.10714285714285714,
+      "lines": 38
+    },
+    "M146": {
+      "faces": 22,
+      "mean_occupancy": 0.3240592740592741,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.13636363636363635,
+      "lines": 25
+    },
+    "M147": {
+      "faces": 12,
+      "mean_occupancy": 0.42680502205150095,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.16666666666666666,
+      "lines": 13
+    },
+    "M149": {
+      "faces": 32,
+      "mean_occupancy": 0.3888007085107988,
+      "saturated_faces": 8,
+      "saturated_fraction": 0.25,
+      "lines": 44
+    },
+    "M152": {
+      "faces": 10,
+      "mean_occupancy": 0.37670995670995666,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.1,
+      "lines": 10
+    },
+    "M153": {
+      "faces": 40,
+      "mean_occupancy": 0.3934103357518851,
+      "saturated_faces": 7,
+      "saturated_fraction": 0.175,
+      "lines": 54
+    },
+    "M157": {
+      "faces": 52,
+      "mean_occupancy": 0.3630211390571629,
+      "saturated_faces": 8,
+      "saturated_fraction": 0.15384615384615385,
+      "lines": 55
+    },
+    "M158": {
+      "faces": 11,
+      "mean_occupancy": 0.2793766841010336,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.09090909090909091,
+      "lines": 11
+    },
+    "M175": {
+      "faces": 48,
+      "mean_occupancy": 0.2554172971025732,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.0625,
+      "lines": 64
+    },
+    "M193": {
+      "faces": 12,
+      "mean_occupancy": 0.16783448092103767,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 13
+    },
+    "M195": {
+      "faces": 34,
+      "mean_occupancy": 0.484873949579832,
+      "saturated_faces": 9,
+      "saturated_fraction": 0.2647058823529412,
+      "lines": 38
+    },
+    "M203": {
+      "faces": 31,
+      "mean_occupancy": 0.3232975512536282,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.0967741935483871,
+      "lines": 42
+    },
+    "M205": {
+      "faces": 11,
+      "mean_occupancy": 0.3346715861356336,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.18181818181818182,
+      "lines": 15
+    },
+    "M206": {
+      "faces": 30,
+      "mean_occupancy": 0.3885169228141861,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.16666666666666666,
+      "lines": 61
+    },
+    "M207": {
+      "faces": 18,
+      "mean_occupancy": 0.29335737684404894,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.16666666666666666,
+      "lines": 23
+    },
+    "M210": {
+      "faces": 29,
+      "mean_occupancy": 0.3691518438135344,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.20689655172413793,
+      "lines": 32
+    },
+    "M217": {
+      "faces": 21,
+      "mean_occupancy": 0.3424221809936096,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.19047619047619047,
+      "lines": 36
+    },
+    "M218": {
+      "faces": 178,
+      "mean_occupancy": 0.4450056676996358,
+      "saturated_faces": 35,
+      "saturated_fraction": 0.19662921348314608,
+      "lines": 259
+    },
+    "M219": {
+      "faces": 48,
+      "mean_occupancy": 0.39786914975920995,
+      "saturated_faces": 8,
+      "saturated_fraction": 0.16666666666666666,
+      "lines": 52
+    },
+    "M220": {
+      "faces": 11,
+      "mean_occupancy": 0.3845182595182596,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.18181818181818182,
+      "lines": 11
+    },
+    "M223": {
+      "faces": 23,
+      "mean_occupancy": 0.3114570799667709,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.08695652173913043,
+      "lines": 26
+    },
+    "M228": {
+      "faces": 17,
+      "mean_occupancy": 0.3412969525159462,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.17647058823529413,
+      "lines": 18
+    },
+    "M230": {
+      "faces": 12,
+      "mean_occupancy": 0.2722330284830285,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 13
+    },
+    "M240": {
+      "faces": 23,
+      "mean_occupancy": 0.2940858074038852,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.13043478260869565,
+      "lines": 27
+    },
+    "M242": {
+      "faces": 22,
+      "mean_occupancy": 0.2152111545621951,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.045454545454545456,
+      "lines": 24
+    },
+    "M243": {
+      "faces": 37,
+      "mean_occupancy": 0.5728325925694346,
+      "saturated_faces": 13,
+      "saturated_fraction": 0.35135135135135137,
+      "lines": 46
+    },
+    "M246": {
+      "faces": 22,
+      "mean_occupancy": 0.44011544011544007,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.13636363636363635,
+      "lines": 23
+    },
+    "M247": {
+      "faces": 13,
+      "mean_occupancy": 0.5275641025641026,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.3076923076923077,
+      "lines": 14
+    },
+    "M248": {
+      "faces": 14,
+      "mean_occupancy": 0.19991496598639452,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 14
+    },
+    "M250": {
+      "faces": 10,
+      "mean_occupancy": 0.4284523809523809,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.3,
+      "lines": 10
+    },
+    "M251": {
+      "faces": 14,
+      "mean_occupancy": 0.3146020817965741,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.14285714285714285,
+      "lines": 15
+    },
+    "M254": {
+      "faces": 17,
+      "mean_occupancy": 0.3386529157117393,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.17647058823529413,
+      "lines": 17
+    },
+    "M259": {
+      "faces": 34,
+      "mean_occupancy": 0.28709760140100693,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.058823529411764705,
+      "lines": 36
+    },
+    "M260": {
+      "faces": 50,
+      "mean_occupancy": 0.443885621967206,
+      "saturated_faces": 13,
+      "saturated_fraction": 0.26,
+      "lines": 73
+    },
+    "M261": {
+      "faces": 10,
+      "mean_occupancy": 0.348058608058608,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.1,
+      "lines": 17
+    },
+    "M262": {
+      "faces": 32,
+      "mean_occupancy": 0.41041100277734316,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.15625,
+      "lines": 36
+    },
+    "M263": {
+      "faces": 109,
+      "mean_occupancy": 0.40806413010351106,
+      "saturated_faces": 15,
+      "saturated_fraction": 0.13761467889908258,
+      "lines": 191
+    },
+    "M264": {
+      "faces": 30,
+      "mean_occupancy": 0.3878848003848003,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.16666666666666666,
+      "lines": 43
+    },
+    "M265": {
+      "faces": 26,
+      "mean_occupancy": 0.3994824619824619,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.23076923076923078,
+      "lines": 28
+    },
+    "M266": {
+      "faces": 20,
+      "mean_occupancy": 0.2939197681760893,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.05,
+      "lines": 25
+    },
+    "M269": {
+      "faces": 31,
+      "mean_occupancy": 0.3787077051411578,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.16129032258064516,
+      "lines": 59
+    },
+    "M278": {
+      "faces": 15,
+      "mean_occupancy": 0.32952380952380955,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.06666666666666667,
+      "lines": 20
+    },
+    "M281": {
+      "faces": 10,
+      "mean_occupancy": 0.347531746031746,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.1,
+      "lines": 11
+    },
+    "M286": {
+      "faces": 18,
+      "mean_occupancy": 0.3174630629782594,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 18
+    },
+    "M288": {
+      "faces": 350,
+      "mean_occupancy": 0.7005215903183759,
+      "saturated_faces": 179,
+      "saturated_fraction": 0.5114285714285715,
+      "lines": 557
+    },
+    "M291": {
+      "faces": 12,
+      "mean_occupancy": 0.37479797979797974,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.08333333333333333,
+      "lines": 14
+    },
+    "M292": {
+      "faces": 25,
+      "mean_occupancy": 0.40469885669885663,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.24,
+      "lines": 27
+    },
+    "M293": {
+      "faces": 11,
+      "mean_occupancy": 0.5175324675324676,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.36363636363636365,
+      "lines": 11
+    },
+    "M295": {
+      "faces": 30,
+      "mean_occupancy": 0.3608109313350278,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.13333333333333333,
+      "lines": 30
+    },
+    "M296": {
+      "faces": 30,
+      "mean_occupancy": 0.2454179539420503,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.03333333333333333,
+      "lines": 32
+    },
+    "M297": {
+      "faces": 186,
+      "mean_occupancy": 0.6143668638014904,
+      "saturated_faces": 75,
+      "saturated_fraction": 0.4032258064516129,
+      "lines": 252
+    },
+    "M301": {
+      "faces": 14,
+      "mean_occupancy": 0.4218312811686306,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.21428571428571427,
+      "lines": 16
+    },
+    "M302": {
+      "faces": 15,
+      "mean_occupancy": 0.46847998052817325,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.26666666666666666,
+      "lines": 15
+    },
+    "M304": {
+      "faces": 38,
+      "mean_occupancy": 0.3751108540582225,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.10526315789473684,
+      "lines": 40
+    },
+    "M305": {
+      "faces": 70,
+      "mean_occupancy": 0.32273821832272537,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.05714285714285714,
+      "lines": 85
+    },
+    "M309": {
+      "faces": 15,
+      "mean_occupancy": 0.2972443392824562,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 40
+    },
+    "M314": {
+      "faces": 12,
+      "mean_occupancy": 0.2982733437663015,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.08333333333333333,
+      "lines": 14
+    },
+    "M317": {
+      "faces": 24,
+      "mean_occupancy": 0.3489468710053514,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.125,
+      "lines": 40
+    },
+    "M318": {
+      "faces": 27,
+      "mean_occupancy": 0.2664454043595021,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.07407407407407407,
+      "lines": 27
+    },
+    "M320": {
+      "faces": 45,
+      "mean_occupancy": 0.35360026973752456,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.13333333333333333,
+      "lines": 48
+    },
+    "M321": {
+      "faces": 14,
+      "mean_occupancy": 0.41930093715808,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.14285714285714285,
+      "lines": 20
+    },
+    "M323": {
+      "faces": 10,
+      "mean_occupancy": 0.15416056166056163,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 12
+    },
+    "M325": {
+      "faces": 22,
+      "mean_occupancy": 0.40115969533383106,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.2727272727272727,
+      "lines": 27
+    },
+    "M327": {
+      "faces": 26,
+      "mean_occupancy": 0.4115981390422153,
+      "saturated_faces": 6,
+      "saturated_fraction": 0.23076923076923078,
+      "lines": 31
+    },
+    "M329": {
+      "faces": 16,
+      "mean_occupancy": 0.20850616453402598,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.0625,
+      "lines": 17
+    },
+    "M332": {
+      "faces": 16,
+      "mean_occupancy": 0.31356510325260323,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.1875,
+      "lines": 16
+    },
+    "M338": {
+      "faces": 17,
+      "mean_occupancy": 0.2088195138195138,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 18
+    },
+    "M340": {
+      "faces": 21,
+      "mean_occupancy": 0.3262826308500353,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.047619047619047616,
+      "lines": 22
+    },
+    "M341": {
+      "faces": 15,
+      "mean_occupancy": 0.36584211823648444,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.2,
+      "lines": 17
+    },
+    "M342": {
+      "faces": 15,
+      "mean_occupancy": 0.4966666666666667,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.26666666666666666,
+      "lines": 15
+    },
+    "M346": {
+      "faces": 116,
+      "mean_occupancy": 0.5662551803121134,
+      "saturated_faces": 31,
+      "saturated_fraction": 0.2672413793103448,
+      "lines": 223
+    },
+    "M347": {
+      "faces": 43,
+      "mean_occupancy": 0.3433211547333149,
+      "saturated_faces": 7,
+      "saturated_fraction": 0.16279069767441862,
+      "lines": 43
+    },
+    "M348": {
+      "faces": 23,
+      "mean_occupancy": 0.37216382651165253,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.08695652173913043,
+      "lines": 24
+    },
+    "M351": {
+      "faces": 27,
+      "mean_occupancy": 0.3086288062530375,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 34
+    },
+    "M352": {
+      "faces": 44,
+      "mean_occupancy": 0.27696445787354873,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.11363636363636363,
+      "lines": 49
+    },
+    "M354": {
+      "faces": 50,
+      "mean_occupancy": 0.5153626145096732,
+      "saturated_faces": 10,
+      "saturated_fraction": 0.2,
+      "lines": 101
+    },
+    "M362": {
+      "faces": 22,
+      "mean_occupancy": 0.3793242365856735,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.13636363636363635,
+      "lines": 76
+    },
+    "M365": {
+      "faces": 38,
+      "mean_occupancy": 0.3059883027358935,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.10526315789473684,
+      "lines": 53
+    },
+    "M367": {
+      "faces": 66,
+      "mean_occupancy": 0.44514219062867144,
+      "saturated_faces": 13,
+      "saturated_fraction": 0.19696969696969696,
+      "lines": 121
+    },
+    "M370": {
+      "faces": 42,
+      "mean_occupancy": 0.35022297956620757,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.07142857142857142,
+      "lines": 149
+    },
+    "M371": {
+      "faces": 107,
+      "mean_occupancy": 0.412830557543991,
+      "saturated_faces": 21,
+      "saturated_fraction": 0.19626168224299065,
+      "lines": 149
+    },
+    "M372": {
+      "faces": 19,
+      "mean_occupancy": 0.26776231309472304,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.10526315789473684,
+      "lines": 20
+    },
+    "M373": {
+      "faces": 20,
+      "mean_occupancy": 0.19734134046594415,
+      "saturated_faces": 0,
+      "saturated_fraction": 0.0,
+      "lines": 59
+    },
+    "M374": {
+      "faces": 22,
+      "mean_occupancy": 0.4128215723670268,
+      "saturated_faces": 5,
+      "saturated_fraction": 0.22727272727272727,
+      "lines": 22
+    },
+    "M376": {
+      "faces": 75,
+      "mean_occupancy": 0.536217397925187,
+      "saturated_faces": 20,
+      "saturated_fraction": 0.26666666666666666,
+      "lines": 146
+    },
+    "M377": {
+      "faces": 52,
+      "mean_occupancy": 0.34925465573616876,
+      "saturated_faces": 7,
+      "saturated_fraction": 0.1346153846153846,
+      "lines": 57
+    },
+    "M379": {
+      "faces": 19,
+      "mean_occupancy": 0.37516631873263967,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.15789473684210525,
+      "lines": 21
+    },
+    "M380": {
+      "faces": 25,
+      "mean_occupancy": 0.33121756021756027,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.12,
+      "lines": 25
+    },
+    "M381": {
+      "faces": 14,
+      "mean_occupancy": 0.2527463409606267,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.07142857142857142,
+      "lines": 15
+    },
+    "M382": {
+      "faces": 11,
+      "mean_occupancy": 0.3181635266142308,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.09090909090909091,
+      "lines": 11
+    },
+    "M383": {
+      "faces": 26,
+      "mean_occupancy": 0.25712132948545224,
+      "saturated_faces": 3,
+      "saturated_fraction": 0.11538461538461539,
+      "lines": 27
+    },
+    "M384": {
+      "faces": 28,
+      "mean_occupancy": 0.3790387437820692,
+      "saturated_faces": 7,
+      "saturated_fraction": 0.25,
+      "lines": 32
+    },
+    "M386": {
+      "faces": 36,
+      "mean_occupancy": 0.30027892753769936,
+      "saturated_faces": 4,
+      "saturated_fraction": 0.1111111111111111,
+      "lines": 38
+    },
+    "M387": {
+      "faces": 194,
+      "mean_occupancy": 0.42954910155546433,
+      "saturated_faces": 31,
+      "saturated_fraction": 0.15979381443298968,
+      "lines": 309
+    },
+    "M388": {
+      "faces": 181,
+      "mean_occupancy": 0.481684514612639,
+      "saturated_faces": 45,
+      "saturated_fraction": 0.24861878453038674,
+      "lines": 294
+    },
+    "M390": {
+      "faces": 12,
+      "mean_occupancy": 0.2991184941787352,
+      "saturated_faces": 1,
+      "saturated_fraction": 0.08333333333333333,
+      "lines": 13
+    },
+    "M391": {
+      "faces": 17,
+      "mean_occupancy": 0.42822341057635177,
+      "saturated_faces": 2,
+      "saturated_fraction": 0.11764705882352941,
+      "lines": 25
+    }
+  },
+  "m288_saturation_rank": 1,
+  "signs_ranked_by_saturation": [
+    "M288",
+    "M056",
+    "M297",
+    "M293",
+    "M243",
+    "M247",
+    "M250",
+    "M325",
+    "M346",
+    "M302"
+  ],
+  "m288_form_audit": {
+    "form_counts": {
+      "M288": 538,
+      "M288~I": 6,
+      "M288~D": 4,
+      "M288~F": 3,
+      "M288~A": 2,
+      "M288~G": 2,
+      "M288~E": 2,
+      "M288~C": 1,
+      "M288~B": 1
+    },
+    "tested_forms": {
+      "M288": {
+        "lines": 538,
+        "with_N45": 56,
+        "rate": 0.10408921933085502
+      }
+    }
+  }
+}

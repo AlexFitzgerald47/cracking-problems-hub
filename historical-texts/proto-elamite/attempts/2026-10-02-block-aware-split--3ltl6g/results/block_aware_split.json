@@ -1,0 +1,3406 @@
+{
+  "schema_version": 1,
+  "corpus": {
+    "file_count": 1467,
+    "sha256": "8849716c6afbf963e5ee02535da013c87c931c61e88e2c05ced9cd58bf2b2dcf",
+    "eligible_line_count": 4869
+  },
+  "pair": "M288-N45",
+  "published_holdout": {
+    "p": 0.4699999999999988,
+    "p_floor": 0.1199999999999997,
+    "observed_overlap": 15,
+    "max_possible_overlap": 16,
+    "min_possible_overlap": 12,
+    "informative_blocks": 4,
+    "blocks": 290,
+    "has_power_at_05": false
+  },
+  "full_corpus": {
+    "p": 9.694630456349345e-05,
+    "p_floor": 4.4642857142857545e-09,
+    "observed_overlap": 56,
+    "max_possible_overlap": 59,
+    "min_possible_overlap": 38,
+    "informative_blocks": 16,
+    "blocks": 1426,
+    "has_power_at_05": true
+  },
+  "informative_blocks_corpus_wide": {
+    "P008020|obverse": {
+      "total": 10,
+      "m_lines": 5,
+      "target_lines": 4,
+      "lo": 0,
+      "hi": 4,
+      "p_max": 0.02380952380952388
+    },
+    "P008020|reverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P008047|obverse": {
+      "total": 5,
+      "m_lines": 4,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.7999999999999979
+    },
+    "P008057|obverse": {
+      "total": 4,
+      "m_lines": 2,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000004
+    },
+    "P008096|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P008122|obverse": {
+      "total": 5,
+      "m_lines": 3,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5999999999999995
+    },
+    "P008152|obverse": {
+      "total": 6,
+      "m_lines": 3,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.49999999999999994
+    },
+    "P008711|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P008844|obverse": {
+      "total": 5,
+      "m_lines": 3,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5999999999999995
+    },
+    "P008908|obverse": {
+      "total": 6,
+      "m_lines": 3,
+      "target_lines": 2,
+      "lo": 0,
+      "hi": 2,
+      "p_max": 0.1999999999999997
+    },
+    "P008984|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P009018|reverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P009198|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P009251|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P009335|obverse": {
+      "total": 2,
+      "m_lines": 1,
+      "target_lines": 1,
+      "lo": 0,
+      "hi": 1,
+      "p_max": 0.5000000000000002
+    },
+    "P272825|obverse": {
+      "total": 25,
+      "m_lines": 2,
+      "target_lines": 2,
+      "lo": 0,
+      "hi": 2,
+      "p_max": 0.0033333333333333574
+    }
+  },
+  "arms": {
+    "A": {
+      "assigned_carriers": [
+        "P008020",
+        "P008057",
+        "P008122",
+        "P008711",
+        "P008908",
+        "P009018",
+        "P009251",
+        "P272825"
+      ],
+      "validation_tablets": 233,
+      "validation_lines": 1105,
+      "training_lines": 3764,
+      "validation_informative_blocks": 9,
+      "validation_p_floor_from_marginals": 2.976190476190508e-07,
+      "candidates_rescreened": 50,
+      "pair_screened_in": true,
+      "pair_training_screen": {
+        "cells": [
+          32,
+          395,
+          24,
+          3313
+        ],
+        "odds_ratio": 11.113676823447458,
+        "p": 6.326450973428084e-17,
+        "q": 1.0881495674296304e-14
+      },
+      "pair_validation": {
+        "m_sign": "M288",
+        "target": "N45",
+        "direction": "enriched",
+        "train_cells": [
+          32,
+          395,
+          24,
+          3313
+        ],
+        "train_odds_ratio": 11.113676823447458,
+        "train_q": 1.0881495674296304e-14,
+        "validation_cells": [
+          24,
+          106,
+          11,
+          964
+        ],
+        "validation_odds_ratio": 19.293937538273116,
+        "p": 0.0038526785714286327,
+        "p_floor": 2.976190476190508e-07,
+        "observed_overlap": 24,
+        "max_possible_overlap": 27,
+        "min_possible_overlap": 13,
+        "informative_blocks": 9,
+        "blocks": 296,
+        "has_power_at_05": true,
+        "q": 0.04815848214285791,
+        "confirmed": true
+      },
+      "all_validation_rows": [
+        {
+          "m_sign": "M263",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            138,
+            7,
+            2652,
+            967
+          ],
+          "train_odds_ratio": 6.735721017907634,
+          "train_q": 1.5638434177350372e-09,
+          "validation_cells": [
+            38,
+            8,
+            757,
+            302
+          ],
+          "validation_odds_ratio": 1.8087749951465735,
+          "p": 0.0002864567636070316,
+          "p_floor": 7.702891227842786e-07,
+          "observed_overlap": 38,
+          "max_possible_overlap": 40,
+          "min_possible_overlap": 20,
+          "informative_blocks": 12,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.01432283818035158,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M243",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            14,
+            17,
+            458,
+            3275
+          ],
+          "train_odds_ratio": 5.919270914472659,
+          "train_q": 0.00020753656605245935,
+          "validation_cells": [
+            8,
+            7,
+            141,
+            949
+          ],
+          "validation_odds_ratio": 7.604946996466431,
+          "p": 0.0030637254901960554,
+          "p_floor": 4.837461300309583e-05,
+          "observed_overlap": 8,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 2,
+          "informative_blocks": 4,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.04815848214285791,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M297",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            101,
+            93,
+            371,
+            3199
+          ],
+          "train_odds_ratio": 9.349270553688257,
+          "train_q": 9.430080841937343e-41,
+          "validation_cells": [
+            34,
+            24,
+            115,
+            932
+          ],
+          "validation_odds_ratio": 11.368937185263716,
+          "p": 0.002127683043284515,
+          "p_floor": 2.456089057396269e-10,
+          "observed_overlap": 34,
+          "max_possible_overlap": 40,
+          "min_possible_overlap": 18,
+          "informative_blocks": 18,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.04815848214285791,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M288",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            32,
+            395,
+            24,
+            3313
+          ],
+          "train_odds_ratio": 11.113676823447458,
+          "train_q": 1.0881495674296304e-14,
+          "validation_cells": [
+            24,
+            106,
+            11,
+            964
+          ],
+          "validation_odds_ratio": 19.293937538273116,
+          "p": 0.0038526785714286327,
+          "p_floor": 2.976190476190508e-07,
+          "observed_overlap": 24,
+          "max_possible_overlap": 27,
+          "min_possible_overlap": 13,
+          "informative_blocks": 9,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.04815848214285791,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M106",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            11,
+            33,
+            185,
+            3535
+          ],
+          "train_odds_ratio": 6.542744498531601,
+          "train_q": 0.00028696156730440356,
+          "validation_cells": [
+            3,
+            12,
+            76,
+            1014
+          ],
+          "validation_odds_ratio": 3.713202614379085,
+          "p": 0.011684518013631568,
+          "p_floor": 0.00035407630344339274,
+          "observed_overlap": 3,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.10930964999443869,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            133,
+            294,
+            339,
+            2998
+          ],
+          "train_odds_ratio": 4.003688136203495,
+          "train_q": 2.321134147788309e-25,
+          "validation_cells": [
+            33,
+            97,
+            116,
+            859
+          ],
+          "validation_odds_ratio": 2.5348960052822713,
+          "p": 0.013117157999332642,
+          "p_floor": 3.490231818405239e-13,
+          "observed_overlap": 33,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 16,
+          "informative_blocks": 19,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.10930964999443869,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N30C",
+          "direction": "depleted",
+          "train_cells": [
+            0,
+            145,
+            215,
+            3404
+          ],
+          "train_odds_ratio": 0.05428915412889389,
+          "train_q": 0.0065179978780898085,
+          "validation_cells": [
+            0,
+            46,
+            79,
+            980
+          ],
+          "validation_odds_ratio": 0.13261648745519714,
+          "p": 0.01900431225121644,
+          "p_floor": 0.01900431225121644,
+          "observed_overlap": 0,
+          "max_possible_overlap": 8,
+          "min_possible_overlap": 0,
+          "informative_blocks": 5,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.13574508750868886,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M002",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            5,
+            29,
+            2785,
+            945
+          ],
+          "train_odds_ratio": 0.06328474637118979,
+          "train_q": 4.0603074942498506e-11,
+          "validation_cells": [
+            3,
+            6,
+            792,
+            304
+          ],
+          "validation_odds_ratio": 0.206891531181752,
+          "p": 0.02396069538926692,
+          "p_floor": 0.001310153691106076,
+          "observed_overlap": 3,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 2,
+          "informative_blocks": 5,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.14790998321983503,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            94,
+            100,
+            2696,
+            874
+          ],
+          "train_odds_ratio": 0.3049475411741589,
+          "train_q": 7.399355392313327e-13,
+          "validation_cells": [
+            23,
+            35,
+            772,
+            275
+          ],
+          "validation_odds_ratio": 0.23608186334837503,
+          "p": 0.026623796979570305,
+          "p_floor": 7.697145194119337e-11,
+          "observed_overlap": 23,
+          "max_possible_overlap": 36,
+          "min_possible_overlap": 15,
+          "informative_blocks": 17,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.14790998321983503,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M056",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            36,
+            51,
+            3672
+          ],
+          "train_odds_ratio": 10.745444872988429,
+          "train_q": 0.006013009342991634,
+          "validation_cells": [
+            6,
+            11,
+            29,
+            1059
+          ],
+          "validation_odds_ratio": 20.299926308032425,
+          "p": 0.032142857142857216,
+          "p_floor": 0.0011904761904761936,
+          "observed_overlap": 6,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 1,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.1607142857142861,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            30,
+            164,
+            166,
+            3404
+          ],
+          "train_odds_ratio": 3.7911680677638127,
+          "train_q": 1.745680580765152e-06,
+          "validation_cells": [
+            14,
+            44,
+            65,
+            982
+          ],
+          "validation_odds_ratio": 4.887640449438202,
+          "p": 0.05309781364468943,
+          "p_floor": 4.687500000000056e-05,
+          "observed_overlap": 14,
+          "max_possible_overlap": 17,
+          "min_possible_overlap": 7,
+          "informative_blocks": 8,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.24135369838495196,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            11,
+            134,
+            876,
+            2743
+          ],
+          "train_odds_ratio": 0.26762618304892094,
+          "train_q": 1.6717501645061183e-05,
+          "validation_cells": [
+            3,
+            43,
+            268,
+            791
+          ],
+          "validation_odds_ratio": 0.23718401506881567,
+          "p": 0.07402597402597416,
+          "p_floor": 0.007958523689749013,
+          "observed_overlap": 3,
+          "max_possible_overlap": 11,
+          "min_possible_overlap": 2,
+          "informative_blocks": 6,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.308441558441559,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            73,
+            354,
+            123,
+            3214
+          ],
+          "train_odds_ratio": 5.396566984348144,
+          "train_q": 2.842560679222639e-20,
+          "validation_cells": [
+            14,
+            116,
+            65,
+            910
+          ],
+          "validation_odds_ratio": 1.730137928775022,
+          "p": 0.09432485664919955,
+          "p_floor": 1.943779904306237e-06,
+          "observed_overlap": 14,
+          "max_possible_overlap": 19,
+          "min_possible_overlap": 5,
+          "informative_blocks": 12,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.36278791018922907,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            30,
+            397,
+            60,
+            3277
+          ],
+          "train_odds_ratio": 4.156712926867301,
+          "train_q": 9.202965881636853e-07,
+          "validation_cells": [
+            11,
+            119,
+            29,
+            946
+          ],
+          "validation_odds_ratio": 3.087653357917878,
+          "p": 0.13750000000000048,
+          "p_floor": 0.01875000000000004,
+          "observed_overlap": 11,
+          "max_possible_overlap": 12,
+          "min_possible_overlap": 7,
+          "informative_blocks": 5,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.49107142857143027,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M002",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            16,
+            197,
+            3533
+          ],
+          "train_odds_ratio": 20.05976217874952,
+          "train_q": 2.633137048019412e-12,
+          "validation_cells": [
+            4,
+            5,
+            75,
+            1021
+          ],
+          "validation_odds_ratio": 11.069837447320891,
+          "p": 0.15000000000000036,
+          "p_floor": 0.001587301587301589,
+          "observed_overlap": 4,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 1,
+          "informative_blocks": 4,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.5000000000000012,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M388",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            8,
+            224,
+            464,
+            3068
+          ],
+          "train_odds_ratio": 0.2501168725621582,
+          "train_q": 5.940225825122937e-05,
+          "validation_cells": [
+            7,
+            55,
+            142,
+            901
+          ],
+          "validation_odds_ratio": 0.8549075391180654,
+          "p": 0.16573518690993372,
+          "p_floor": 1.6621711708304096e-05,
+          "observed_overlap": 7,
+          "max_possible_overlap": 18,
+          "min_possible_overlap": 2,
+          "informative_blocks": 13,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.5179224590935428,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M054",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            5,
+            164,
+            467,
+            3128
+          ],
+          "train_odds_ratio": 0.22374396567137494,
+          "train_q": 0.00039269725371217547,
+          "validation_cells": [
+            4,
+            34,
+            145,
+            922
+          ],
+          "validation_odds_ratio": 0.8269834155087404,
+          "p": 0.2055407407407399,
+          "p_floor": 0.0007999999999999969,
+          "observed_overlap": 4,
+          "max_possible_overlap": 10,
+          "min_possible_overlap": 1,
+          "informative_blocks": 9,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.6045315904139409,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M075",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            13,
+            20,
+            2777,
+            954
+          ],
+          "train_odds_ratio": 0.2263089723606507,
+          "train_q": 0.0006493573448155649,
+          "validation_cells": [
+            2,
+            2,
+            793,
+            308
+          ],
+          "validation_odds_ratio": 0.38878386893509764,
+          "p": 0.24000000000000232,
+          "p_floor": 0.025000000000000258,
+          "observed_overlap": 2,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 1,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.6666666666666731,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M010",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            16,
+            21,
+            2774,
+            953
+          ],
+          "train_odds_ratio": 0.26374331012920826,
+          "train_q": 0.0016911829293230045,
+          "validation_cells": [
+            7,
+            9,
+            788,
+            301
+          ],
+          "validation_odds_ratio": 0.30187230918132363,
+          "p": 0.2933479532163755,
+          "p_floor": 0.012280701754386013,
+          "observed_overlap": 7,
+          "max_possible_overlap": 12,
+          "min_possible_overlap": 5,
+          "informative_blocks": 7,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.7426720042809845,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            2,
+            143,
+            470,
+            3149
+          ],
+          "train_odds_ratio": 0.11661920930732003,
+          "train_q": 4.21572444145245e-05,
+          "validation_cells": [
+            5,
+            41,
+            144,
+            915
+          ],
+          "validation_odds_ratio": 0.8396631508733897,
+          "p": 0.29706880171239375,
+          "p_floor": 0.0032410953221093195,
+          "observed_overlap": 5,
+          "max_possible_overlap": 17,
+          "min_possible_overlap": 2,
+          "informative_blocks": 9,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.7426720042809845,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M010",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            11,
+            26,
+            204,
+            3523
+          ],
+          "train_odds_ratio": 7.477095539050606,
+          "train_q": 0.00012092692400095474,
+          "validation_cells": [
+            6,
+            10,
+            73,
+            1016
+          ],
+          "validation_odds_ratio": 8.561386459345643,
+          "p": 0.3206804891015395,
+          "p_floor": 0.04763423710792095,
+          "observed_overlap": 6,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 3,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 0.7635249740512845,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M003",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            59,
+            4,
+            2731,
+            970
+          ],
+          "train_odds_ratio": 4.697846116297517,
+          "train_q": 0.0024062506144902902,
+          "validation_cells": [
+            4,
+            0,
+            791,
+            310
+          ],
+          "validation_odds_ratio": 3.5306380290587493,
+          "p": 0.666666666666666,
+          "p_floor": 0.666666666666666,
+          "observed_overlap": 4,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 3,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            71,
+            92,
+            2719,
+            882
+          ],
+          "train_odds_ratio": 0.250836053924857,
+          "train_q": 6.3696337920678965e-15,
+          "validation_cells": [
+            29,
+            29,
+            766,
+            281
+          ],
+          "validation_odds_ratio": 0.36725375081539463,
+          "p": 0.4702194367248623,
+          "p_floor": 1.765955418069674e-10,
+          "observed_overlap": 29,
+          "max_possible_overlap": 42,
+          "min_possible_overlap": 17,
+          "informative_blocks": 14,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M046",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            33,
+            0,
+            2757,
+            974
+          ],
+          "train_odds_ratio": 23.677787851314598,
+          "train_q": 0.0016911829293230045,
+          "validation_cells": [
+            3,
+            0,
+            792,
+            310
+          ],
+          "validation_odds_ratio": 2.7425867507886434,
+          "p": 0.8333333333333343,
+          "p_floor": 0.8333333333333343,
+          "observed_overlap": 3,
+          "max_possible_overlap": 3,
+          "min_possible_overlap": 2,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M072",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            91,
+            8,
+            2699,
+            966
+          ],
+          "train_odds_ratio": 3.854079731540699,
+          "train_q": 0.0003263251935971198,
+          "validation_cells": [
+            2,
+            2,
+            793,
+            308
+          ],
+          "validation_odds_ratio": 0.38878386893509764,
+          "p": 0.9999999999999947,
+          "p_floor": 0.07142857142857116,
+          "observed_overlap": 2,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 2,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            131,
+            9,
+            2659,
+            965
+          ],
+          "train_odds_ratio": 5.025212495423556,
+          "train_q": 1.6467251239918128e-07,
+          "validation_cells": [
+            7,
+            2,
+            788,
+            308
+          ],
+          "validation_odds_ratio": 1.1737476220672163,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 7,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 7,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M373",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            56,
+            1,
+            2734,
+            973
+          ],
+          "train_odds_ratio": 13.409581276284513,
+          "train_q": 3.674896909756389e-05,
+          "validation_cells": [
+            2,
+            0,
+            793,
+            310
+          ],
+          "validation_odds_ratio": 1.9565217391304348,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 2,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M376",
+          "target": "N08A",
+          "direction": "enriched",
+          "train_cells": [
+            38,
+            81,
+            11,
+            3634
+          ],
+          "train_odds_ratio": 149.29661242998134,
+          "train_q": 3.676218349211676e-47,
+          "validation_cells": [
+            1,
+            26,
+            6,
+            1072
+          ],
+          "validation_odds_ratio": 9.339622641509434,
+          "p": 0.49999999999999994,
+          "p_floor": 0.49999999999999994,
+          "observed_overlap": 1,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M003",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            4,
+            59,
+            883,
+            2818
+          ],
+          "train_odds_ratio": 0.24127206060692527,
+          "train_q": 0.008521267397555973,
+          "validation_cells": [
+            0,
+            4,
+            271,
+            830
+          ],
+          "validation_odds_ratio": 0.33988131778187025,
+          "p": 0.606060606060605,
+          "p_floor": 0.606060606060605,
+          "observed_overlap": 0,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N14",
+          "direction": "enriched",
+          "train_cells": [
+            17,
+            13,
+            870,
+            2864
+          ],
+          "train_odds_ratio": 4.265641287467824,
+          "train_q": 0.0020000240318885434,
+          "validation_cells": [
+            2,
+            6,
+            269,
+            828
+          ],
+          "validation_odds_ratio": 1.1823890395318968,
+          "p": 0.8125000000000027,
+          "p_floor": 0.3125000000000011,
+          "observed_overlap": 2,
+          "max_possible_overlap": 3,
+          "min_possible_overlap": 1,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M354",
+          "target": "N14",
+          "direction": "enriched",
+          "train_cells": [
+            41,
+            41,
+            846,
+            2836
+          ],
+          "train_odds_ratio": 3.3508564678086237,
+          "train_q": 9.03321416053729e-06,
+          "validation_cells": [
+            6,
+            13,
+            265,
+            821
+          ],
+          "validation_odds_ratio": 1.4897816837553184,
+          "p": 0.81111111111111,
+          "p_floor": 0.002308802308802303,
+          "observed_overlap": 6,
+          "max_possible_overlap": 10,
+          "min_possible_overlap": 4,
+          "informative_blocks": 4,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            2,
+            138,
+            885,
+            2739
+          ],
+          "train_odds_ratio": 0.05584354430689386,
+          "train_q": 4.725432106729424e-12,
+          "validation_cells": [
+            0,
+            9,
+            271,
+            825
+          ],
+          "validation_odds_ratio": 0.16002713967238538,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M373",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            3,
+            54,
+            884,
+            2823
+          ],
+          "train_odds_ratio": 0.20500360437919107,
+          "train_q": 0.007535574450501624,
+          "validation_cells": [
+            0,
+            2,
+            271,
+            832
+          ],
+          "validation_odds_ratio": 0.6132596685082873,
+          "p": 0.7777777777777781,
+          "p_floor": 0.7777777777777781,
+          "observed_overlap": 0,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M367",
+          "target": "N23",
+          "direction": "enriched",
+          "train_cells": [
+            6,
+            76,
+            37,
+            3645
+          ],
+          "train_odds_ratio": 8.25995642701525,
+          "train_q": 0.0057599671566274276,
+          "validation_cells": [
+            6,
+            33,
+            6,
+            1060
+          ],
+          "validation_odds_ratio": 31.65671641791045,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 6,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 6,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            31,
+            132,
+            184,
+            3417
+          ],
+          "train_odds_ratio": 4.403589507593189,
+          "train_q": 6.785455393730965e-08,
+          "validation_cells": [
+            13,
+            45,
+            66,
+            981
+          ],
+          "validation_odds_ratio": 4.3791621911922665,
+          "p": 0.7463833254930811,
+          "p_floor": 5.964038974994662e-07,
+          "observed_overlap": 13,
+          "max_possible_overlap": 22,
+          "min_possible_overlap": 7,
+          "informative_blocks": 7,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M054",
+          "target": "N30C",
+          "direction": "depleted",
+          "train_cells": [
+            0,
+            169,
+            215,
+            3380
+          ],
+          "train_odds_ratio": 0.04627367239526655,
+          "train_q": 0.0014808794533169454,
+          "validation_cells": [
+            3,
+            35,
+            76,
+            991
+          ],
+          "validation_odds_ratio": 1.2778238055785696,
+          "p": 0.825230769230766,
+          "p_floor": 0.10338461538461509,
+          "observed_overlap": 3,
+          "max_possible_overlap": 5,
+          "min_possible_overlap": 1,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            40,
+            154,
+            175,
+            3395
+          ],
+          "train_odds_ratio": 5.071695294996266,
+          "train_q": 1.5058901664088943e-11,
+          "validation_cells": [
+            10,
+            48,
+            69,
+            978
+          ],
+          "validation_odds_ratio": 3.0480605206556404,
+          "p": 0.9095299145299225,
+          "p_floor": 0.00016788766788766954,
+          "observed_overlap": 10,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 8,
+          "informative_blocks": 4,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N30C@b",
+          "direction": "enriched",
+          "train_cells": [
+            14,
+            149,
+            11,
+            3590
+          ],
+          "train_odds_ratio": 30.281954340555476,
+          "train_q": 1.4281140407675771e-11,
+          "validation_cells": [
+            2,
+            56,
+            5,
+            1042
+          ],
+          "validation_odds_ratio": 8.386967015285599,
+          "p": 0.7887719298245661,
+          "p_floor": 0.0016928285626346617,
+          "observed_overlap": 2,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 0,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M387",
+          "target": "N30C@b",
+          "direction": "enriched",
+          "train_cells": [
+            8,
+            229,
+            17,
+            3510
+          ],
+          "train_odds_ratio": 7.42962962962963,
+          "train_q": 0.0020000240318885434,
+          "validation_cells": [
+            1,
+            71,
+            6,
+            1027
+          ],
+          "validation_odds_ratio": 3.3162990855298546,
+          "p": 0.6546629732225282,
+          "p_floor": 0.0001187178472497026,
+          "observed_overlap": 1,
+          "max_possible_overlap": 5,
+          "min_possible_overlap": 0,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N30D",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            176,
+            67,
+            3503
+          ],
+          "train_odds_ratio": 5.440331549679992,
+          "train_q": 8.05674163608937e-06,
+          "validation_cells": [
+            3,
+            55,
+            16,
+            1031
+          ],
+          "validation_odds_ratio": 3.9423969423969423,
+          "p": 0.8422905219780324,
+          "p_floor": 2.8617216117216354e-06,
+          "observed_overlap": 3,
+          "max_possible_overlap": 10,
+          "min_possible_overlap": 1,
+          "informative_blocks": 6,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M056",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            8,
+            33,
+            82,
+            3641
+          ],
+          "train_odds_ratio": 11.199547715965627,
+          "train_q": 0.00012233877845017034,
+          "validation_cells": [
+            1,
+            16,
+            39,
+            1049
+          ],
+          "validation_odds_ratio": 2.41542002301496,
+          "p": 0.5000000000000002,
+          "p_floor": 0.5000000000000002,
+          "observed_overlap": 1,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            6,
+            24,
+            84,
+            3650
+          ],
+          "train_odds_ratio": 11.461538461538462,
+          "train_q": 0.0014808794533169454,
+          "validation_cells": [
+            1,
+            7,
+            39,
+            1058
+          ],
+          "validation_odds_ratio": 5.359493670886076,
+          "p": 0.5625000000000008,
+          "p_floor": 0.06250000000000012,
+          "observed_overlap": 1,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M075",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            15,
+            454,
+            3277
+          ],
+          "train_odds_ratio": 8.60694133929522,
+          "train_q": 4.216049284717802e-07,
+          "validation_cells": [
+            0,
+            4,
+            149,
+            952
+          ],
+          "validation_odds_ratio": 0.7079152731326644,
+          "p": 1.0,
+          "p_floor": 0.010000000000000085,
+          "observed_overlap": 0,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M346",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            3,
+            165,
+            469,
+            3127
+          ],
+          "train_odds_ratio": 0.14087429900678552,
+          "train_q": 2.1362155202084684e-05,
+          "validation_cells": [
+            3,
+            52,
+            146,
+            904
+          ],
+          "validation_odds_ratio": 0.4116040955631399,
+          "p": 0.9146666666666661,
+          "p_floor": 0.05999999999999992,
+          "observed_overlap": 3,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 1,
+          "informative_blocks": 3,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            4,
+            136,
+            468,
+            3156
+          ],
+          "train_odds_ratio": 0.22211406523039393,
+          "train_q": 0.0016911829293230045,
+          "validation_cells": [
+            0,
+            9,
+            149,
+            947
+          ],
+          "validation_odds_ratio": 0.3335680337968667,
+          "p": 0.8181818181818142,
+          "p_floor": 0.8181818181818142,
+          "observed_overlap": 0,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M376",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            1,
+            118,
+            471,
+            3174
+          ],
+          "train_odds_ratio": 0.08522490838557258,
+          "train_q": 0.0001136968290968752,
+          "validation_cells": [
+            0,
+            27,
+            149,
+            929
+          ],
+          "validation_odds_ratio": 0.11304347826086956,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            6,
+            24,
+            50,
+            3684
+          ],
+          "train_odds_ratio": 19.356839765609212,
+          "train_q": 0.00012092692400095474,
+          "validation_cells": [
+            2,
+            6,
+            33,
+            1064
+          ],
+          "validation_odds_ratio": 12.22158438576349,
+          "p": 0.5000000000000002,
+          "p_floor": 0.5000000000000002,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 1,
+          "informative_blocks": 1,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M327",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            16,
+            18,
+            3725
+          ],
+          "train_odds_ratio": 67.12612612612612,
+          "train_q": 5.026384947171837e-06,
+          "validation_cells": [
+            0,
+            10,
+            3,
+            1092
+          ],
+          "validation_odds_ratio": 14.863945578231293,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M351",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            21,
+            18,
+            3720
+          ],
+          "train_odds_ratio": 51.446260213702075,
+          "train_q": 1.3935243834510576e-05,
+          "validation_cells": [
+            0,
+            8,
+            3,
+            1094
+          ],
+          "validation_odds_ratio": 18.394957983193276,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M354",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            10,
+            72,
+            13,
+            3669
+          ],
+          "train_odds_ratio": 39.36628352490421,
+          "train_q": 9.233545229972002e-10,
+          "validation_cells": [
+            2,
+            17,
+            1,
+            1085
+          ],
+          "validation_odds_ratio": 103.38095238095238,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 2,
+          "informative_blocks": 0,
+          "blocks": 296,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        }
+      ]
+    },
+    "B": {
+      "assigned_carriers": [
+        "P008047",
+        "P008096",
+        "P008152",
+        "P008844",
+        "P008984",
+        "P009198",
+        "P009335"
+      ],
+      "validation_tablets": 232,
+      "validation_lines": 1063,
+      "training_lines": 3806,
+      "validation_informative_blocks": 7,
+      "validation_p_floor_from_marginals": 0.014999999999999975,
+      "candidates_rescreened": 53,
+      "pair_screened_in": true,
+      "pair_training_screen": {
+        "cells": [
+          37,
+          395,
+          28,
+          3346
+        ],
+        "odds_ratio": 11.133475281123163,
+        "p": 2.534447933648979e-19,
+        "q": 5.352754035866644e-17
+      },
+      "pair_validation": {
+        "m_sign": "M288",
+        "target": "N45",
+        "direction": "enriched",
+        "train_cells": [
+          37,
+          395,
+          28,
+          3346
+        ],
+        "train_odds_ratio": 11.133475281123163,
+        "train_q": 5.352754035866644e-17,
+        "validation_cells": [
+          19,
+          106,
+          7,
+          931
+        ],
+        "validation_odds_ratio": 22.740845070422534,
+        "p": 0.014999999999999975,
+        "p_floor": 0.014999999999999975,
+        "observed_overlap": 19,
+        "max_possible_overlap": 19,
+        "min_possible_overlap": 12,
+        "informative_blocks": 7,
+        "blocks": 295,
+        "has_power_at_05": true,
+        "q": 0.13249999999999978,
+        "confirmed": false
+      },
+      "all_validation_rows": [
+        {
+          "m_sign": "M263",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            138,
+            7,
+            2684,
+            977
+          ],
+          "train_odds_ratio": 6.724219283541317,
+          "train_q": 1.6135323920363042e-09,
+          "validation_cells": [
+            38,
+            8,
+            725,
+            292
+          ],
+          "validation_odds_ratio": 1.8261239712976851,
+          "p": 0.0002864567636070316,
+          "p_floor": 7.702891227842786e-07,
+          "observed_overlap": 38,
+          "max_possible_overlap": 40,
+          "min_possible_overlap": 20,
+          "informative_blocks": 12,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.015182208471172675,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M297",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            103,
+            94,
+            388,
+            3221
+          ],
+          "train_odds_ratio": 9.08187779616351,
+          "train_q": 1.4148193404922774e-40,
+          "validation_cells": [
+            32,
+            23,
+            98,
+            910
+          ],
+          "validation_odds_ratio": 12.783777945782482,
+          "p": 0.0014514192788974945,
+          "p_floor": 1.2280445286981264e-09,
+          "observed_overlap": 32,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 18,
+          "informative_blocks": 16,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.03846261089078361,
+          "confirmed": true
+        },
+        {
+          "m_sign": "M243",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            14,
+            17,
+            477,
+            3298
+          ],
+          "train_odds_ratio": 5.723649962602842,
+          "train_q": 0.00029822392981815365,
+          "validation_cells": [
+            8,
+            7,
+            122,
+            926
+          ],
+          "validation_odds_ratio": 8.571700680272109,
+          "p": 0.0030637254901960554,
+          "p_floor": 4.837461300309583e-05,
+          "observed_overlap": 8,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 2,
+          "informative_blocks": 4,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.054125816993463645,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            97,
+            100,
+            2725,
+            884
+          ],
+          "train_odds_ratio": 0.31484021828118625,
+          "train_q": 2.6583934988925933e-12,
+          "validation_cells": [
+            20,
+            35,
+            743,
+            265
+          ],
+          "validation_odds_ratio": 0.20620968582172253,
+          "p": 0.008390263361218767,
+          "p_floor": 8.246941279413535e-10,
+          "observed_overlap": 20,
+          "max_possible_overlap": 33,
+          "min_possible_overlap": 14,
+          "informative_blocks": 16,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.11117098953614866,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M106",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            11,
+            30,
+            196,
+            3569
+          ],
+          "train_odds_ratio": 6.849247069619989,
+          "train_q": 0.00022568151930059326,
+          "validation_cells": [
+            3,
+            15,
+            65,
+            980
+          ],
+          "validation_odds_ratio": 3.380201920709185,
+          "p": 0.011684518013631568,
+          "p_floor": 0.00035407630344339274,
+          "observed_overlap": 3,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.12385589094449463,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            37,
+            395,
+            28,
+            3346
+          ],
+          "train_odds_ratio": 11.133475281123163,
+          "train_q": 5.352754035866644e-17,
+          "validation_cells": [
+            19,
+            106,
+            7,
+            931
+          ],
+          "validation_odds_ratio": 22.740845070422534,
+          "p": 0.014999999999999975,
+          "p_floor": 0.014999999999999975,
+          "observed_overlap": 19,
+          "max_possible_overlap": 19,
+          "min_possible_overlap": 12,
+          "informative_blocks": 7,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.13249999999999978,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N30C",
+          "direction": "depleted",
+          "train_cells": [
+            0,
+            145,
+            225,
+            3436
+          ],
+          "train_odds_ratio": 0.05236930532379363,
+          "train_q": 0.004440793480532185,
+          "validation_cells": [
+            0,
+            46,
+            69,
+            948
+          ],
+          "validation_odds_ratio": 0.14674711843428484,
+          "p": 0.01900431225121644,
+          "p_floor": 0.01900431225121644,
+          "observed_overlap": 0,
+          "max_possible_overlap": 8,
+          "min_possible_overlap": 0,
+          "informative_blocks": 5,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.14388979275921018,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M002",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            5,
+            29,
+            2817,
+            955
+          ],
+          "train_odds_ratio": 0.0632277081798084,
+          "train_q": 4.066832656183876e-11,
+          "validation_cells": [
+            3,
+            6,
+            760,
+            294
+          ],
+          "validation_odds_ratio": 0.2085166641379659,
+          "p": 0.02396069538926692,
+          "p_floor": 0.001310153691106076,
+          "observed_overlap": 3,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 2,
+          "informative_blocks": 5,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.15873960695389336,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            31,
+            166,
+            176,
+            3433
+          ],
+          "train_odds_ratio": 3.6803460684480513,
+          "train_q": 2.0544535252777517e-06,
+          "validation_cells": [
+            13,
+            42,
+            55,
+            953
+          ],
+          "validation_odds_ratio": 5.457233704292528,
+          "p": 0.02807348901098907,
+          "p_floor": 0.00015453296703296697,
+          "observed_overlap": 13,
+          "max_possible_overlap": 15,
+          "min_possible_overlap": 7,
+          "informative_blocks": 7,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.16532165750915787,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            137,
+            295,
+            354,
+            3020
+          ],
+          "train_odds_ratio": 3.964677019419167,
+          "train_q": 1.011927583277598e-25,
+          "validation_cells": [
+            29,
+            96,
+            101,
+            837
+          ],
+          "validation_odds_ratio": 2.5223972025830164,
+          "p": 0.035213064924617676,
+          "p_floor": 1.7451159092026075e-12,
+          "observed_overlap": 29,
+          "max_possible_overlap": 39,
+          "min_possible_overlap": 15,
+          "informative_blocks": 17,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.18662924410047368,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N24",
+          "direction": "enriched",
+          "train_cells": [
+            72,
+            360,
+            135,
+            3239
+          ],
+          "train_odds_ratio": 4.808077137636841,
+          "train_q": 6.90613130383441e-18,
+          "validation_cells": [
+            15,
+            110,
+            53,
+            885
+          ],
+          "validation_odds_ratio": 2.321689854949888,
+          "p": 0.04626467447026645,
+          "p_floor": 3.204032809295954e-07,
+          "observed_overlap": 15,
+          "max_possible_overlap": 20,
+          "min_possible_overlap": 5,
+          "informative_blocks": 12,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.22291161335673834,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M054",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            6,
+            165,
+            485,
+            3150
+          ],
+          "train_odds_ratio": 0.2548623059666896,
+          "train_q": 0.0008990607953066821,
+          "validation_cells": [
+            3,
+            33,
+            127,
+            900
+          ],
+          "validation_odds_ratio": 0.7378987415861867,
+          "p": 0.06348148148148104,
+          "p_floor": 0.0008888888888888832,
+          "observed_overlap": 3,
+          "max_possible_overlap": 11,
+          "min_possible_overlap": 1,
+          "informative_blocks": 10,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.2798416623200755,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M388",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            11,
+            225,
+            480,
+            3090
+          ],
+          "train_odds_ratio": 0.32800967211261367,
+          "train_q": 0.000596179468266024,
+          "validation_cells": [
+            4,
+            54,
+            126,
+            879
+          ],
+          "validation_odds_ratio": 0.574065344308663,
+          "p": 0.06864040773888644,
+          "p_floor": 0.0013906392401458214,
+          "observed_overlap": 4,
+          "max_possible_overlap": 15,
+          "min_possible_overlap": 2,
+          "informative_blocks": 13,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.2798416623200755,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            11,
+            134,
+            896,
+            2765
+          ],
+          "train_odds_ratio": 0.2637539211763218,
+          "train_q": 1.188030861670385e-05,
+          "validation_cells": [
+            3,
+            43,
+            248,
+            769
+          ],
+          "validation_odds_ratio": 0.2491500728508985,
+          "p": 0.07402597402597416,
+          "p_floor": 0.007958523689749013,
+          "observed_overlap": 3,
+          "max_possible_overlap": 11,
+          "min_possible_overlap": 2,
+          "informative_blocks": 6,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.280241187384045,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M010",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            17,
+            21,
+            2805,
+            963
+          ],
+          "train_odds_ratio": 0.2795381165733422,
+          "train_q": 0.0024162720791122212,
+          "validation_cells": [
+            6,
+            9,
+            757,
+            291
+          ],
+          "validation_odds_ratio": 0.26329685600138963,
+          "p": 0.13523391812865562,
+          "p_floor": 0.020467836257310034,
+          "observed_overlap": 6,
+          "max_possible_overlap": 11,
+          "min_possible_overlap": 5,
+          "informative_blocks": 6,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.4521562499999999,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M288",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            29,
+            403,
+            61,
+            3313
+          ],
+          "train_odds_ratio": 3.939039501919183,
+          "train_q": 3.567450181347245e-06,
+          "validation_cells": [
+            12,
+            113,
+            28,
+            910
+          ],
+          "validation_odds_ratio": 3.518432645490378,
+          "p": 0.13649999999999998,
+          "p_floor": 0.017999999999999974,
+          "observed_overlap": 12,
+          "max_possible_overlap": 13,
+          "min_possible_overlap": 7,
+          "informative_blocks": 5,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.4521562499999999,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M002",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            16,
+            207,
+            3565
+          ],
+          "train_odds_ratio": 19.26593647316539,
+          "train_q": 4.4465029739523715e-12,
+          "validation_cells": [
+            4,
+            5,
+            65,
+            989
+          ],
+          "validation_odds_ratio": 12.360166551006246,
+          "p": 0.15000000000000036,
+          "p_floor": 0.001587301587301589,
+          "observed_overlap": 4,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 1,
+          "informative_blocks": 4,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.4676470588235305,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M054",
+          "target": "N23",
+          "direction": "enriched",
+          "train_cells": [
+            8,
+            163,
+            35,
+            3600
+          ],
+          "train_odds_ratio": 5.272731188353362,
+          "train_q": 0.009672933845809016,
+          "validation_cells": [
+            2,
+            34,
+            10,
+            1017
+          ],
+          "validation_odds_ratio": 7.022084195997239,
+          "p": 0.19999999999999973,
+          "p_floor": 0.19999999999999973,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 0.5888888888888881,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M075",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            13,
+            20,
+            2809,
+            964
+          ],
+          "train_odds_ratio": 0.22607529332100582,
+          "train_q": 0.0006730524470886998,
+          "validation_cells": [
+            2,
+            2,
+            761,
+            298
+          ],
+          "validation_odds_ratio": 0.39198949441891007,
+          "p": 0.24000000000000232,
+          "p_floor": 0.025000000000000258,
+          "observed_overlap": 2,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 1,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.6625000000000006,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            24,
+            60,
+            3717
+          ],
+          "train_odds_ratio": 13.794063079777365,
+          "train_q": 0.00236741068534273,
+          "validation_cells": [
+            3,
+            6,
+            23,
+            1031
+          ],
+          "validation_odds_ratio": 23.635024549918167,
+          "p": 0.2500000000000002,
+          "p_floor": 0.2500000000000002,
+          "observed_overlap": 3,
+          "max_possible_overlap": 3,
+          "min_possible_overlap": 1,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 0.6625000000000006,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M263",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            2,
+            143,
+            489,
+            3172
+          ],
+          "train_odds_ratio": 0.11291120499122692,
+          "train_q": 2.9593330501159995e-05,
+          "validation_cells": [
+            5,
+            41,
+            125,
+            892
+          ],
+          "validation_odds_ratio": 0.9424950799212788,
+          "p": 0.29706880171239375,
+          "p_floor": 0.0032410953221093195,
+          "observed_overlap": 5,
+          "max_possible_overlap": 17,
+          "min_possible_overlap": 2,
+          "informative_blocks": 9,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.7497450709884224,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M010",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            11,
+            27,
+            214,
+            3554
+          ],
+          "train_odds_ratio": 6.92973087518542,
+          "train_q": 0.00022568151930059326,
+          "validation_cells": [
+            6,
+            9,
+            63,
+            985
+          ],
+          "validation_odds_ratio": 10.618731869042685,
+          "p": 0.3206804891015395,
+          "p_floor": 0.04763423710792095,
+          "observed_overlap": 6,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 3,
+          "informative_blocks": 3,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 0.7725484510173452,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M003",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            59,
+            4,
+            2763,
+            980
+          ],
+          "train_odds_ratio": 4.691293247291076,
+          "train_q": 0.0024162720791122212,
+          "validation_cells": [
+            4,
+            0,
+            759,
+            300
+          ],
+          "validation_odds_ratio": 3.560895325872284,
+          "p": 0.666666666666666,
+          "p_floor": 0.666666666666666,
+          "observed_overlap": 4,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 3,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N01",
+          "direction": "depleted",
+          "train_cells": [
+            71,
+            92,
+            2751,
+            892
+          ],
+          "train_odds_ratio": 0.2507281040808208,
+          "train_q": 5.329576765607372e-15,
+          "validation_cells": [
+            29,
+            29,
+            734,
+            271
+          ],
+          "validation_odds_ratio": 0.36963921034717495,
+          "p": 0.4702194367248623,
+          "p_floor": 1.765955418069674e-10,
+          "observed_overlap": 29,
+          "max_possible_overlap": 42,
+          "min_possible_overlap": 17,
+          "informative_blocks": 14,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M046",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            33,
+            0,
+            2789,
+            984
+          ],
+          "train_odds_ratio": 23.646352392901953,
+          "train_q": 0.0017615199008329556,
+          "validation_cells": [
+            3,
+            0,
+            760,
+            300
+          ],
+          "validation_odds_ratio": 2.7659434582511504,
+          "p": 0.8333333333333343,
+          "p_floor": 0.8333333333333343,
+          "observed_overlap": 3,
+          "max_possible_overlap": 3,
+          "min_possible_overlap": 2,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M072",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            91,
+            8,
+            2731,
+            976
+          ],
+          "train_odds_ratio": 3.8483380172497337,
+          "train_q": 0.0003337894630168734,
+          "validation_cells": [
+            2,
+            2,
+            761,
+            298
+          ],
+          "validation_odds_ratio": 0.39198949441891007,
+          "p": 0.9999999999999947,
+          "p_floor": 0.07142857142857116,
+          "observed_overlap": 2,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 2,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M217",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            35,
+            1,
+            2787,
+            983
+          ],
+          "train_odds_ratio": 8.35019431988042,
+          "train_q": 0.007826344547039224,
+          "validation_cells": [
+            0,
+            0,
+            763,
+            300
+          ],
+          "validation_odds_ratio": 0.3935821872953504,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            131,
+            9,
+            2691,
+            975
+          ],
+          "train_odds_ratio": 5.016895294152156,
+          "train_q": 1.699599224364208e-07,
+          "validation_cells": [
+            7,
+            2,
+            756,
+            298
+          ],
+          "validation_odds_ratio": 1.1837409120951752,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 7,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 7,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M373",
+          "target": "N01",
+          "direction": "enriched",
+          "train_cells": [
+            56,
+            1,
+            2766,
+            983
+          ],
+          "train_odds_ratio": 13.390625941321767,
+          "train_q": 3.412224928628104e-05,
+          "validation_cells": [
+            2,
+            0,
+            761,
+            300
+          ],
+          "validation_odds_ratio": 1.9730794484569927,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 2,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M376",
+          "target": "N08A",
+          "direction": "enriched",
+          "train_cells": [
+            39,
+            86,
+            11,
+            3670
+          ],
+          "train_odds_ratio": 145.74993717014326,
+          "train_q": 6.688963733441818e-48,
+          "validation_cells": [
+            0,
+            21,
+            6,
+            1036
+          ],
+          "validation_odds_ratio": 3.708407871198569,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M003",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            4,
+            59,
+            903,
+            2840
+          ],
+          "train_odds_ratio": 0.23777280696451242,
+          "train_q": 0.008763807793260841,
+          "validation_cells": [
+            0,
+            4,
+            251,
+            808
+          ],
+          "validation_odds_ratio": 0.35719019218025183,
+          "p": 0.606060606060605,
+          "p_floor": 0.606060606060605,
+          "observed_overlap": 0,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M056",
+          "target": "N14",
+          "direction": "enriched",
+          "train_cells": [
+            25,
+            21,
+            882,
+            2878
+          ],
+          "train_odds_ratio": 3.868594769088873,
+          "train_q": 0.00031423255474463506,
+          "validation_cells": [
+            5,
+            7,
+            246,
+            805
+          ],
+          "validation_odds_ratio": 2.3963488843813385,
+          "p": 1.0,
+          "p_floor": 0.5000000000000002,
+          "observed_overlap": 5,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 5,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N14",
+          "direction": "enriched",
+          "train_cells": [
+            16,
+            13,
+            891,
+            2886
+          ],
+          "train_odds_ratio": 3.957312893375709,
+          "train_q": 0.00521774290859331,
+          "validation_cells": [
+            3,
+            6,
+            248,
+            806
+          ],
+          "validation_odds_ratio": 1.7475622968580715,
+          "p": 0.8125000000000027,
+          "p_floor": 0.3125000000000011,
+          "observed_overlap": 3,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 2,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M354",
+          "target": "N14",
+          "direction": "enriched",
+          "train_cells": [
+            41,
+            41,
+            866,
+            2858
+          ],
+          "train_odds_ratio": 3.2989036353144834,
+          "train_q": 1.081654790375454e-05,
+          "validation_cells": [
+            6,
+            13,
+            245,
+            799
+          ],
+          "validation_odds_ratio": 1.5680018103643358,
+          "p": 0.81111111111111,
+          "p_floor": 0.002308802308802303,
+          "observed_overlap": 6,
+          "max_possible_overlap": 10,
+          "min_possible_overlap": 4,
+          "informative_blocks": 4,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            2,
+            138,
+            905,
+            2761
+          ],
+          "train_odds_ratio": 0.05504866968206727,
+          "train_q": 3.0673459193914286e-12,
+          "validation_cells": [
+            0,
+            9,
+            251,
+            803
+          ],
+          "validation_odds_ratio": 0.16814900073244743,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M373",
+          "target": "N14",
+          "direction": "depleted",
+          "train_cells": [
+            3,
+            54,
+            904,
+            2845
+          ],
+          "train_odds_ratio": 0.20203265020463432,
+          "train_q": 0.00521774290859331,
+          "validation_cells": [
+            0,
+            2,
+            251,
+            810
+          ],
+          "validation_odds_ratio": 0.6445328031809145,
+          "p": 0.7777777777777781,
+          "p_floor": 0.7777777777777781,
+          "observed_overlap": 0,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M367",
+          "target": "N23",
+          "direction": "enriched",
+          "train_cells": [
+            6,
+            76,
+            37,
+            3687
+          ],
+          "train_odds_ratio": 8.35511982570806,
+          "train_q": 0.005245178208540875,
+          "validation_cells": [
+            6,
+            33,
+            6,
+            1018
+          ],
+          "validation_odds_ratio": 30.402985074626866,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 6,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 6,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            31,
+            132,
+            194,
+            3449
+          ],
+          "train_odds_ratio": 4.216297230440898,
+          "train_q": 1.684722360828405e-07,
+          "validation_cells": [
+            13,
+            45,
+            56,
+            949
+          ],
+          "validation_odds_ratio": 4.9861908003500925,
+          "p": 0.7463833254930811,
+          "p_floor": 5.964038974994662e-07,
+          "observed_overlap": 13,
+          "max_possible_overlap": 22,
+          "min_possible_overlap": 7,
+          "informative_blocks": 7,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N30C",
+          "direction": "enriched",
+          "train_cells": [
+            41,
+            156,
+            184,
+            3425
+          ],
+          "train_odds_ratio": 4.923357316640259,
+          "train_q": 1.8152902171249187e-11,
+          "validation_cells": [
+            9,
+            46,
+            60,
+            948
+          ],
+          "validation_odds_ratio": 3.20296809739625,
+          "p": 0.9633699633699597,
+          "p_floor": 0.0009157509157509139,
+          "observed_overlap": 9,
+          "max_possible_overlap": 14,
+          "min_possible_overlap": 8,
+          "informative_blocks": 3,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M036",
+          "target": "N30C@b",
+          "direction": "enriched",
+          "train_cells": [
+            14,
+            149,
+            11,
+            3632
+          ],
+          "train_odds_ratio": 30.636178566235277,
+          "train_q": 1.2566125991771992e-11,
+          "validation_cells": [
+            2,
+            56,
+            5,
+            1000
+          ],
+          "validation_odds_ratio": 8.049074818986323,
+          "p": 0.7887719298245661,
+          "p_floor": 0.0016928285626346617,
+          "observed_overlap": 2,
+          "max_possible_overlap": 6,
+          "min_possible_overlap": 0,
+          "informative_blocks": 3,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M387",
+          "target": "N30C@b",
+          "direction": "enriched",
+          "train_cells": [
+            8,
+            235,
+            17,
+            3546
+          ],
+          "train_odds_ratio": 7.314589020321504,
+          "train_q": 0.002309532953740165,
+          "validation_cells": [
+            1,
+            65,
+            6,
+            991
+          ],
+          "validation_odds_ratio": 3.4932472108044625,
+          "p": 0.6546629732225282,
+          "p_floor": 0.0001187178472497026,
+          "observed_overlap": 1,
+          "max_possible_overlap": 5,
+          "min_possible_overlap": 0,
+          "informative_blocks": 3,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M297",
+          "target": "N30D",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            179,
+            72,
+            3537
+          ],
+          "train_odds_ratio": 5.0288156757275955,
+          "train_q": 1.8683092121763604e-05,
+          "validation_cells": [
+            3,
+            52,
+            11,
+            997
+          ],
+          "validation_odds_ratio": 5.782608695652174,
+          "p": 0.6316964285714319,
+          "p_floor": 0.00017170329670329677,
+          "observed_overlap": 3,
+          "max_possible_overlap": 7,
+          "min_possible_overlap": 1,
+          "informative_blocks": 4,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M056",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            9,
+            37,
+            81,
+            3679
+          ],
+          "train_odds_ratio": 11.437300613496932,
+          "train_q": 3.12963778549246e-05,
+          "validation_cells": [
+            0,
+            12,
+            40,
+            1011
+          ],
+          "validation_odds_ratio": 0.9990123456790123,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M195",
+          "target": "N34",
+          "direction": "enriched",
+          "train_cells": [
+            6,
+            23,
+            84,
+            3693
+          ],
+          "train_odds_ratio": 12.090016366612112,
+          "train_q": 0.0011969743693688358,
+          "validation_cells": [
+            1,
+            8,
+            39,
+            1015
+          ],
+          "validation_odds_ratio": 4.536857781087118,
+          "p": 0.5625000000000008,
+          "p_floor": 0.06250000000000012,
+          "observed_overlap": 1,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M075",
+          "target": "N39B",
+          "direction": "enriched",
+          "train_cells": [
+            18,
+            15,
+            473,
+            3300
+          ],
+          "train_odds_ratio": 8.319549000238444,
+          "train_q": 6.863089944830642e-07,
+          "validation_cells": [
+            0,
+            4,
+            130,
+            929
+          ],
+          "validation_odds_ratio": 0.7914005959982972,
+          "p": 1.0,
+          "p_floor": 0.010000000000000085,
+          "observed_overlap": 0,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": true,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M346",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            4,
+            165,
+            487,
+            3150
+          ],
+          "train_odds_ratio": 0.1757192656286312,
+          "train_q": 5.536016768562316e-05,
+          "validation_cells": [
+            2,
+            52,
+            128,
+            881
+          ],
+          "validation_odds_ratio": 0.32666296090420605,
+          "p": 0.8666666666666647,
+          "p_floor": 0.16666666666666638,
+          "observed_overlap": 2,
+          "max_possible_overlap": 3,
+          "min_possible_overlap": 1,
+          "informative_blocks": 2,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M370",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            4,
+            136,
+            487,
+            3179
+          ],
+          "train_odds_ratio": 0.21501267962806425,
+          "train_q": 0.0012771206039398888,
+          "validation_cells": [
+            0,
+            9,
+            130,
+            924
+          ],
+          "validation_odds_ratio": 0.372857430933656,
+          "p": 0.8181818181818142,
+          "p_floor": 0.8181818181818142,
+          "observed_overlap": 0,
+          "max_possible_overlap": 1,
+          "min_possible_overlap": 0,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M373",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            0,
+            57,
+            491,
+            3258
+          ],
+          "train_odds_ratio": 0.057649608562961654,
+          "train_q": 0.009672933845809016,
+          "validation_cells": [
+            0,
+            2,
+            130,
+            931
+          ],
+          "validation_odds_ratio": 1.4275862068965517,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M376",
+          "target": "N39B",
+          "direction": "depleted",
+          "train_cells": [
+            1,
+            124,
+            490,
+            3191
+          ],
+          "train_odds_ratio": 0.07839308303550593,
+          "train_q": 3.282568066357287e-05,
+          "validation_cells": [
+            0,
+            21,
+            130,
+            912
+          ],
+          "validation_odds_ratio": 0.16261249220351065,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M056",
+          "target": "N45",
+          "direction": "enriched",
+          "train_cells": [
+            9,
+            37,
+            56,
+            3704
+          ],
+          "train_odds_ratio": 16.61014749262537,
+          "train_q": 2.4771382991238558e-06,
+          "validation_cells": [
+            2,
+            10,
+            24,
+            1027
+          ],
+          "validation_odds_ratio": 9.98542274052478,
+          "p": 0.5000000000000002,
+          "p_floor": 0.5000000000000002,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 1,
+          "informative_blocks": 1,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M327",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            16,
+            17,
+            3768
+          ],
+          "train_odds_ratio": 71.78095238095239,
+          "train_q": 3.650145127095122e-06,
+          "validation_cells": [
+            0,
+            10,
+            4,
+            1049
+          ],
+          "validation_odds_ratio": 11.105820105820106,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M351",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            5,
+            22,
+            17,
+            3762
+          ],
+          "train_odds_ratio": 52.55555555555556,
+          "train_q": 1.2460440899273153e-05,
+          "validation_cells": [
+            0,
+            7,
+            4,
+            1052
+          ],
+          "validation_odds_ratio": 15.592592592592593,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 0,
+          "max_possible_overlap": 0,
+          "min_possible_overlap": 0,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        },
+        {
+          "m_sign": "M354",
+          "target": "N51",
+          "direction": "enriched",
+          "train_cells": [
+            10,
+            72,
+            12,
+            3712
+          ],
+          "train_odds_ratio": 43.01379310344828,
+          "train_q": 4.875184714694252e-10,
+          "validation_cells": [
+            2,
+            17,
+            2,
+            1042
+          ],
+          "validation_odds_ratio": 59.57142857142857,
+          "p": 1.0,
+          "p_floor": 1.0,
+          "observed_overlap": 2,
+          "max_possible_overlap": 2,
+          "min_possible_overlap": 2,
+          "informative_blocks": 0,
+          "blocks": 295,
+          "has_power_at_05": false,
+          "q": 1.0,
+          "confirmed": false
+        }
+      ]
+    }
+  },
+  "enumeration": {
+    "carrier_tablets": [
+      "P008020",
+      "P008047",
+      "P008057",
+      "P008096",
+      "P008122",
+      "P008152",
+      "P008711",
+      "P008844",
+      "P008908",
+      "P008984",
+      "P009018",
+      "P009198",
+      "P009251",
+      "P009335",
+      "P272825"
+    ],
+    "total_assignments": 32767,
+    "powered_at_05": 31726,
+    "fired_among_powered": 25205,
+    "fraction_fired": 0.7944588035050116,
+    "powered_p_quantiles": {
+      "0.0": 2.2321428571428615e-06,
+      "0.05": 8.92857142857145e-05,
+      "0.25": 0.0009226190476190518,
+      "0.5": 0.0064250000000000695,
+      "0.75": 0.036250000000000025,
+      "0.95": 0.18500000000000222,
+      "1.0": 1.0
+    }
+  }
+}

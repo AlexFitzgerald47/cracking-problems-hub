@@ -1,0 +1,66 @@
+{
+  "pair": "M288-N45",
+  "scope": "holdout",
+  "scope_lines": 1050,
+  "w_hat": 1.827444656208767,
+  "replicates": 400,
+  "seed": 20261003,
+  "cells": [
+    {
+      "planted_w": 1.0,
+      "test": "w=1 (published 2026-09-04 test)",
+      "reject_05": 0.0025,
+      "reject_01": 0.0025,
+      "median_p": 0.5766849816849815
+    },
+    {
+      "planted_w": 1.0,
+      "test": "w=w_hat (weighted)",
+      "reject_05": 0.0025,
+      "reject_01": 0.0,
+      "median_p": 0.6322551937198633
+    },
+    {
+      "planted_w": 1.827444656208767,
+      "test": "w=1 (published 2026-09-04 test)",
+      "reject_05": 0.0025,
+      "reject_01": 0.0025,
+      "median_p": 0.5766849816849815
+    },
+    {
+      "planted_w": 1.827444656208767,
+      "test": "w=w_hat (weighted)",
+      "reject_05": 0.0025,
+      "reject_01": 0.0,
+      "median_p": 0.6322551937198633
+    },
+    {
+      "planted_w": 3.654889312417534,
+      "test": "w=1 (published 2026-09-04 test)",
+      "reject_05": 0.04,
+      "reject_01": 0.04,
+      "median_p": 0.5766849816849815
+    },
+    {
+      "planted_w": 3.654889312417534,
+      "test": "w=w_hat (weighted)",
+      "reject_05": 0.04,
+      "reject_01": 0.0025,
+      "median_p": 0.6322551937198633
+    },
+    {
+      "planted_w": 7.309778624835068,
+      "test": "w=1 (published 2026-09-04 test)",
+      "reject_05": 0.04,
+      "reject_01": 0.04,
+      "median_p": 0.24455128205128174
+    },
+    {
+      "planted_w": 7.309778624835068,
+      "test": "w=w_hat (weighted)",
+      "reject_05": 0.04,
+      "reject_01": 0.005,
+      "median_p": 0.30260472000046834
+    }
+  ]
+}

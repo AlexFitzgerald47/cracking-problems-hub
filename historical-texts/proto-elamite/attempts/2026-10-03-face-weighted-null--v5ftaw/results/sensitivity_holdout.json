@@ -1,0 +1,1173 @@
+{
+  "scope": "holdout",
+  "scope_lines": 1050,
+  "grid": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    16.0,
+    64.0,
+    256.0,
+    1024.0
+  ],
+  "pairs": {
+    "M297-N39B": {
+      "direction": "enriched",
+      "w_hat": 1.4340311438013313,
+      "at_w_hat": {
+        "p": 8.726884620071639e-06,
+        "p_floor": 1.3318515681576825e-12,
+        "observed_overlap": 32,
+        "null_mean": 22.28367069382704,
+        "null_sd": 2.1330737992290625,
+        "blocks": 229,
+        "max_possible_overlap": 37,
+        "min_possible_overlap": 13,
+        "w": 1.4340311438013313
+      },
+      "curve": {
+        "1": {
+          "p": 4.385332409747101e-06,
+          "p_floor": 4.0203838737140946e-13,
+          "observed_overlap": 32,
+          "null_mean": 22.053571428571434,
+          "null_sd": 2.1089955495981076,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 9.505571053891685e-06,
+          "p_floor": 1.5351827000565466e-12,
+          "observed_overlap": 32,
+          "null_mean": 22.31543299837418,
+          "null_sd": 2.135752199686926,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 1.5
+        },
+        "2": {
+          "p": 1.6322210998571656e-05,
+          "p_floor": 3.6557869567616655e-12,
+          "observed_overlap": 32,
+          "null_mean": 22.53310300810302,
+          "null_sd": 2.150901552401864,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 2.0
+        },
+        "3": {
+          "p": 3.391268631350164e-05,
+          "p_floor": 1.0930945804895384e-11,
+          "observed_overlap": 32,
+          "null_mean": 22.876023976023983,
+          "null_sd": 2.165706398352569,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 3.0
+        },
+        "4": {
+          "p": 5.508876977588491e-05,
+          "p_floor": 2.16128793567865e-11,
+          "observed_overlap": 32,
+          "null_mean": 23.13764960529667,
+          "null_sd": 2.1708300218435563,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.00010240380691780122,
+          "p_floor": 4.922518709455267e-11,
+          "observed_overlap": 32,
+          "null_mean": 23.51829112954782,
+          "null_sd": 2.169126452841371,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.0001507866490919938,
+          "p_floor": 8.017800881609708e-11,
+          "observed_overlap": 32,
+          "null_mean": 23.7867338286069,
+          "null_sd": 2.160920590286169,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.0003148499170239462,
+          "p_floor": 1.9248374848637298e-10,
+          "observed_overlap": 32,
+          "null_mean": 24.37872711024885,
+          "null_sd": 2.1188243000086784,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.0006715889598444479,
+          "p_floor": 4.421328309086174e-10,
+          "observed_overlap": 32,
+          "null_mean": 25.13168334458767,
+          "null_sd": 2.0053321616578685,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.0008489708935161914,
+          "p_floor": 5.638950556983151e-10,
+          "observed_overlap": 32,
+          "null_mean": 25.402390970731965,
+          "null_sd": 1.9437565907808547,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.0009036461867201876,
+          "p_floor": 6.009641113247949e-10,
+          "observed_overlap": 32,
+          "null_mean": 25.477997677530094,
+          "null_sd": 1.9242161940074107,
+          "blocks": 229,
+          "max_possible_overlap": 37,
+          "min_possible_overlap": 13,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 4.385332409747101e-06,
+        "p_at_hi": 0.0009180963739721668
+      }
+    },
+    "M297-N24": {
+      "direction": "enriched",
+      "w_hat": 1.8496543707262065,
+      "at_w_hat": {
+        "p": 0.000940323425231526,
+        "p_floor": 1.0782439142148443e-07,
+        "observed_overlap": 13,
+        "null_mean": 7.464691012246982,
+        "null_sd": 1.5973772287828634,
+        "blocks": 229,
+        "max_possible_overlap": 16,
+        "min_possible_overlap": 3,
+        "w": 1.8496543707262065
+      },
+      "curve": {
+        "1": {
+          "p": 0.0003040266211652928,
+          "p_floor": 2.0121480082417556e-08,
+          "observed_overlap": 13,
+          "null_mean": 7.036904761904761,
+          "null_sd": 1.5525288770282595,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0006464298245007585,
+          "p_floor": 6.299928445257155e-08,
+          "observed_overlap": 13,
+          "null_mean": 7.309239877769289,
+          "null_sd": 1.5836071394137257,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.0010776288776644897,
+          "p_floor": 1.3044884839756612e-07,
+          "observed_overlap": 13,
+          "null_mean": 7.52493894993895,
+          "null_sd": 1.6019789009433383,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.0021053303361179623,
+          "p_floor": 3.1931556963444647e-07,
+          "observed_overlap": 13,
+          "null_mean": 7.853571428571429,
+          "null_sd": 1.6198553993840494,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.0032357803181666815,
+          "p_floor": 5.449096358187258e-07,
+          "observed_overlap": 13,
+          "null_mean": 8.097510822510825,
+          "null_sd": 1.6248812771077568,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.005499097624939821,
+          "p_floor": 9.958466773145284e-07,
+          "observed_overlap": 13,
+          "null_mean": 8.442614738202973,
+          "null_sd": 1.6186601702109147,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.0075631853256122195,
+          "p_floor": 1.3709487393697887e-06,
+          "observed_overlap": 13,
+          "null_mean": 8.678425229741022,
+          "null_sd": 1.6043172856581018,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.013437101748427214,
+          "p_floor": 2.085464111484344e-06,
+          "observed_overlap": 13,
+          "null_mean": 9.17308928402279,
+          "null_sd": 1.5426198804397024,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.022943547567431333,
+          "p_floor": 1.5514608069234745e-06,
+          "observed_overlap": 13,
+          "null_mean": 9.745513518516832,
+          "null_sd": 1.402360988787535,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.026664587725335365,
+          "p_floor": 5.378383609367125e-07,
+          "observed_overlap": 13,
+          "null_mean": 9.934809141791717,
+          "null_sd": 1.3340829340236993,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.027712762143428247,
+          "p_floor": 1.465704122213256e-07,
+          "observed_overlap": 13,
+          "null_mean": 9.986091902340013,
+          "null_sd": 1.3132058854600683,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 3,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.0003040266211652928,
+        "p_at_hi": 0.027982766936171133
+      }
+    },
+    "M297-N01": {
+      "direction": "depleted",
+      "w_hat": 1.2552778404243845,
+      "at_w_hat": {
+        "p": 0.00021696644206163155,
+        "p_floor": 8.006715781061998e-15,
+        "observed_overlap": 20,
+        "null_mean": 28.079979452372093,
+        "null_sd": 2.1339225129187316,
+        "blocks": 229,
+        "max_possible_overlap": 38,
+        "min_possible_overlap": 12,
+        "w": 1.2552778404243845
+      },
+      "curve": {
+        "1": {
+          "p": 0.0002969672966309685,
+          "p_floor": 1.6874321814276192e-14,
+          "observed_overlap": 20,
+          "null_mean": 27.925396825396838,
+          "null_sd": 2.145062410850395,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0001687654227064455,
+          "p_floor": 4.235107887552847e-15,
+          "observed_overlap": 20,
+          "null_mean": 28.191573135737908,
+          "null_sd": 2.12288793905494,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.00011175497174192875,
+          "p_floor": 1.3826071383817983e-15,
+          "observed_overlap": 20,
+          "null_mean": 28.35329537612147,
+          "null_sd": 2.1015985715250523,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 2.0
+        },
+        "3": {
+          "p": 6.233305607612225e-05,
+          "p_floor": 2.4086993636572843e-16,
+          "observed_overlap": 20,
+          "null_mean": 28.54163695781343,
+          "null_sd": 2.0670285100054255,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 3.0
+        },
+        "4": {
+          "p": 4.1477318773721323e-05,
+          "p_floor": 6.285123464321567e-17,
+          "observed_overlap": 20,
+          "null_mean": 28.64804582390791,
+          "null_sd": 2.0415610722485527,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 4.0
+        },
+        "6": {
+          "p": 2.3909172575022446e-05,
+          "p_floor": 8.387417169860411e-18,
+          "observed_overlap": 20,
+          "null_mean": 28.763552882826747,
+          "null_sd": 2.0075053551465656,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 6.0
+        },
+        "8": {
+          "p": 1.6567888384538835e-05,
+          "p_floor": 1.872379353205696e-18,
+          "observed_overlap": 20,
+          "null_mean": 28.824622059481516,
+          "null_sd": 1.9860231454088364,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 8.0
+        },
+        "16": {
+          "p": 7.642574048842809e-06,
+          "p_floor": 4.225951997650728e-20,
+          "observed_overlap": 20,
+          "null_mean": 28.919359994679137,
+          "null_sd": 1.9460464300733833,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 16.0
+        },
+        "64": {
+          "p": 2.811127106365758e-06,
+          "p_floor": 1.3985767610700002e-23,
+          "observed_overlap": 20,
+          "null_mean": 28.990928529377342,
+          "null_sd": 1.9077524354872661,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 64.0
+        },
+        "256": {
+          "p": 1.8812563557917146e-06,
+          "p_floor": 3.7020638294696684e-27,
+          "observed_overlap": 20,
+          "null_mean": 29.008467309804647,
+          "null_sd": 1.896720270650781,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 1.6672623429224588e-06,
+          "p_floor": 9.225979757603923e-31,
+          "observed_overlap": 20,
+          "null_mean": 29.01280752041689,
+          "null_sd": 1.8938559293979471,
+          "blocks": 229,
+          "max_possible_overlap": 38,
+          "min_possible_overlap": 12,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.0002969672966309685,
+        "p_at_hi": 1.6149378847298118e-06
+      }
+    },
+    "M263-N30C": {
+      "direction": "depleted",
+      "w_hat": 1.979839058579216,
+      "at_w_hat": {
+        "p": 0.0029764833254828623,
+        "p_floor": 0.0029764833254828623,
+        "observed_overlap": 0,
+        "null_mean": 4.005687782067931,
+        "null_sd": 1.3913337756846076,
+        "blocks": 229,
+        "max_possible_overlap": 9,
+        "min_possible_overlap": 0,
+        "w": 1.979839058579216
+      },
+      "curve": {
+        "1": {
+          "p": 0.0012307554600787672,
+          "p_floor": 0.0012307554600787672,
+          "observed_overlap": 0,
+          "null_mean": 4.28095238095238,
+          "null_sd": 1.3665837041353017,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0021266798093156195,
+          "p_floor": 0.0021266798093156195,
+          "observed_overlap": 0,
+          "null_mean": 4.1199324260966685,
+          "null_sd": 1.38239214488035,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.003011367316487861,
+          "p_floor": 0.003011367316487861,
+          "observed_overlap": 0,
+          "null_mean": 4.001484480431847,
+          "null_sd": 1.3916228160882604,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.004625642728777055,
+          "p_floor": 0.004625642728777055,
+          "observed_overlap": 0,
+          "null_mean": 3.833242124298085,
+          "null_sd": 1.4004766739506063,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.005999560077201535,
+          "p_floor": 0.005999560077201535,
+          "observed_overlap": 0,
+          "null_mean": 3.716306760166409,
+          "null_sd": 1.4029393786071072,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.008138982820932698,
+          "p_floor": 0.008138982820932698,
+          "observed_overlap": 0,
+          "null_mean": 3.560613911802912,
+          "null_sd": 1.4002427711013676,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.009697902789330092,
+          "p_floor": 0.009697902789330092,
+          "observed_overlap": 0,
+          "null_mean": 3.4600136752691633,
+          "null_sd": 1.3941474399393132,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.013120962304140421,
+          "p_floor": 0.013120962304140421,
+          "observed_overlap": 0,
+          "null_mean": 3.2623561408890858,
+          "null_sd": 1.3700986951476715,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.017180478675785385,
+          "p_floor": 0.017180478675785385,
+          "observed_overlap": 0,
+          "null_mean": 3.0535016794536367,
+          "null_sd": 1.3236323696064567,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.018519721349324992,
+          "p_floor": 0.018519721349324992,
+          "observed_overlap": 0,
+          "null_mean": 2.9886261261435796,
+          "null_sd": 1.3039966510385586,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.018881240500824955,
+          "p_floor": 0.018881240500824955,
+          "observed_overlap": 0,
+          "null_mean": 2.9713840183738442,
+          "null_sd": 1.2983178948737741,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 0,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.0012307554600787672,
+        "p_at_hi": 0.018973421797419097
+      }
+    },
+    "M263-N01": {
+      "direction": "enriched",
+      "w_hat": 1.1726712921153652,
+      "at_w_hat": {
+        "p": 0.0014879630900746352,
+        "p_floor": 2.7795076027276216e-09,
+        "observed_overlap": 38,
+        "null_mean": 31.256971225681664,
+        "null_sd": 2.155452072350013,
+        "blocks": 229,
+        "max_possible_overlap": 43,
+        "min_possible_overlap": 19,
+        "w": 1.1726712921153652
+      },
+      "curve": {
+        "1": {
+          "p": 0.0017497035543438816,
+          "p_floor": 3.879391911778788e-09,
+          "observed_overlap": 38,
+          "null_mean": 31.348748473748465,
+          "null_sd": 2.1599078036168167,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0011537807344241648,
+          "p_floor": 1.6124715372021254e-09,
+          "observed_overlap": 38,
+          "null_mean": 31.12083724954389,
+          "null_sd": 2.1474507984725304,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.0008540258641649866,
+          "p_floor": 8.170215736998817e-10,
+          "observed_overlap": 38,
+          "null_mean": 30.971716181098326,
+          "null_sd": 2.1367147902411308,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.0005591372912672007,
+          "p_floor": 2.9098562518505374e-10,
+          "observed_overlap": 38,
+          "null_mean": 30.782444692390523,
+          "null_sd": 2.1199498618240225,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.0004166523317266851,
+          "p_floor": 1.3348848417176713e-10,
+          "observed_overlap": 38,
+          "null_mean": 30.664591614569314,
+          "null_sd": 2.107627165667166,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.0002807210967705838,
+          "p_floor": 4.217292871652284e-11,
+          "observed_overlap": 38,
+          "null_mean": 30.523043292093753,
+          "null_sd": 2.090800653849348,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.00021656750398621106,
+          "p_floor": 1.8076736916723014e-11,
+          "observed_overlap": 38,
+          "null_mean": 30.439977858446152,
+          "null_sd": 2.079853387168213,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.00012763028026238597,
+          "p_floor": 2.2112040075903543e-12,
+          "observed_overlap": 38,
+          "null_mean": 30.293560021785865,
+          "null_sd": 2.0585456282977765,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 16.0
+        },
+        "64": {
+          "p": 6.932937122409374e-05,
+          "p_floor": 3.1361206273482105e-14,
+          "observed_overlap": 38,
+          "null_mean": 30.159503839350315,
+          "null_sd": 2.036703604263997,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 64.0
+        },
+        "256": {
+          "p": 5.630229161030753e-05,
+          "p_floor": 4.677520510726766e-16,
+          "observed_overlap": 38,
+          "null_mean": 30.121565353474733,
+          "null_sd": 2.030104484336699,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 5.3160745892437834e-05,
+          "p_floor": 7.208518422560042e-18,
+          "observed_overlap": 38,
+          "null_mean": 30.111750222953766,
+          "null_sd": 2.028366644904417,
+          "blocks": 229,
+          "max_possible_overlap": 43,
+          "min_possible_overlap": 19,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.0017497035543438816,
+        "p_at_hi": 5.238290447129724e-05
+      }
+    },
+    "M243-N39B": {
+      "direction": "enriched",
+      "w_hat": 1.6637782591790258,
+      "at_w_hat": {
+        "p": 0.002785378821025231,
+        "p_floor": 7.220397876505949e-05,
+        "observed_overlap": 8,
+        "null_mean": 4.262969505987155,
+        "null_sd": 1.219659986797255,
+        "blocks": 229,
+        "max_possible_overlap": 9,
+        "min_possible_overlap": 1,
+        "w": 1.6637782591790258
+      },
+      "curve": {
+        "1": {
+          "p": 0.0024672793093845746,
+          "p_floor": 6.683375104427728e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.185714285714286,
+          "null_sd": 1.2202468060083982,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0027391986291335512,
+          "p_floor": 7.186217459800569e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.247223828802777,
+          "null_sd": 1.2207948524060512,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.002840412823572411,
+          "p_floor": 7.180606617647054e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.290570175438597,
+          "null_sd": 1.2162094656652094,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.002836606118339862,
+          "p_floor": 6.668254346272913e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.347748742485585,
+          "null_sd": 1.2021133969630875,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.002738659533300761,
+          "p_floor": 6.025371965091499e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.383392304290137,
+          "null_sd": 1.18735076095328,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.002504129982585134,
+          "p_floor": 4.914255998452006e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.4244736842105254,
+          "null_sd": 1.162184567358268,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.0022997790393301173,
+          "p_floor": 4.0988423341364474e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.446776907303223,
+          "null_sd": 1.1430759309706136,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.0018053663058392971,
+          "p_floor": 2.4132462728953935e-05,
+          "observed_overlap": 8,
+          "null_mean": 4.4805066862961604,
+          "null_sd": 1.1003121131998166,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.0011856743968820438,
+          "p_floor": 6.799272317057992e-06,
+          "observed_overlap": 8,
+          "null_mean": 4.501818790793055,
+          "null_sd": 1.0491146235371083,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.000978237015722329,
+          "p_floor": 1.7478984219958667e-06,
+          "observed_overlap": 8,
+          "null_mean": 4.505563706657533,
+          "null_sd": 1.0321239171646892,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.0009221103771496866,
+          "p_floor": 4.399338179326032e-07,
+          "observed_overlap": 8,
+          "null_mean": 4.506337503333282,
+          "null_sd": 1.0275244868927094,
+          "blocks": 229,
+          "max_possible_overlap": 9,
+          "min_possible_overlap": 1,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.0024672793093845746,
+        "p_at_hi": 0.0009077916842582794
+      }
+    },
+    "M106-N24": {
+      "direction": "enriched",
+      "w_hat": 2.1492128196418006,
+      "at_w_hat": {
+        "p": 0.005981068156529274,
+        "p_floor": 0.00014910304517990543,
+        "observed_overlap": 3,
+        "null_mean": 0.5194761592679678,
+        "null_sd": 0.657930257924832,
+        "blocks": 229,
+        "max_possible_overlap": 4,
+        "min_possible_overlap": 0,
+        "w": 2.1492128196418006
+      },
+      "curve": {
+        "1": {
+          "p": 0.005059860725189468,
+          "p_floor": 0.00012006449178416026,
+          "observed_overlap": 3,
+          "null_mean": 0.4878048780487835,
+          "null_sd": 0.6422249644920772,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.0054942485909381346,
+          "p_floor": 0.00013408392842499014,
+          "observed_overlap": 3,
+          "null_mean": 0.5021890065943906,
+          "null_sd": 0.6497366968010015,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.005876165690201208,
+          "p_floor": 0.00014593619808406843,
+          "observed_overlap": 3,
+          "null_mean": 0.5156313055978455,
+          "null_sd": 0.6561856037591267,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.006510020299782662,
+          "p_floor": 0.0001643812741027329,
+          "observed_overlap": 3,
+          "null_mean": 0.5400890268106723,
+          "null_sd": 0.6665378663077354,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.007005855107120854,
+          "p_floor": 0.00017739258245587624,
+          "observed_overlap": 3,
+          "null_mean": 0.5618368656343323,
+          "null_sd": 0.6742786152847305,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.007702088233632993,
+          "p_floor": 0.00019232324959131603,
+          "observed_overlap": 3,
+          "null_mean": 0.5990411312270338,
+          "null_sd": 0.6843947160377023,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.008131639816218436,
+          "p_floor": 0.00019789718125472593,
+          "observed_overlap": 3,
+          "null_mean": 0.6299409507545961,
+          "null_sd": 0.6898385033585849,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.008611575865805143,
+          "p_floor": 0.00018402408086544279,
+          "observed_overlap": 3,
+          "null_mean": 0.7166047932639614,
+          "null_sd": 0.6907825986472975,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.006356122321290351,
+          "p_floor": 7.311203031350976e-05,
+          "observed_overlap": 3,
+          "null_mean": 0.9018655168384697,
+          "null_sd": 0.615396443782461,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.0027261323848420246,
+          "p_floor": 1.085089211979125e-05,
+          "observed_overlap": 3,
+          "null_mean": 1.0333843347837672,
+          "null_sd": 0.47497369966695535,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.0008267236352414463,
+          "p_floor": 9.090350250537209e-07,
+          "observed_overlap": 3,
+          "null_mean": 1.0903481128452273,
+          "null_sd": 0.3737292393282031,
+          "blocks": 229,
+          "max_possible_overlap": 4,
+          "min_possible_overlap": 0,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": null,
+        "note": "still clears alpha at w=4096",
+        "p_at_1": 0.005059860725189468,
+        "p_at_hi": 0.00021832498877582006
+      }
+    },
+    "M288-N45": {
+      "direction": "enriched",
+      "w_hat": 1.827444656208767,
+      "at_w_hat": {
+        "p": 0.013186624247403607,
+        "p_floor": 0.0007906478449687347,
+        "observed_overlap": 15,
+        "null_mean": 11.915959443357504,
+        "null_sd": 1.1745354206040415,
+        "blocks": 229,
+        "max_possible_overlap": 16,
+        "min_possible_overlap": 9,
+        "w": 1.827444656208767
+      },
+      "curve": {
+        "1": {
+          "p": 0.007115384615384583,
+          "p_floor": 0.0003296703296703273,
+          "observed_overlap": 15,
+          "null_mean": 11.741575091575092,
+          "null_sd": 1.133244107741672,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 1.0
+        },
+        "1.5": {
+          "p": 0.010860736747529156,
+          "p_floor": 0.0006037735849056562,
+          "observed_overlap": 15,
+          "null_mean": 11.851123090745729,
+          "null_sd": 1.1622974646574418,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 1.5
+        },
+        "2": {
+          "p": 0.014370370370370313,
+          "p_floor": 0.0008888888888888828,
+          "observed_overlap": 15,
+          "null_mean": 11.948148148148146,
+          "null_sd": 1.1794915321223896,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 2.0
+        },
+        "3": {
+          "p": 0.020738095238095153,
+          "p_floor": 0.0014285714285714192,
+          "observed_overlap": 15,
+          "null_mean": 12.111904761904762,
+          "null_sd": 1.1953685187805514,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 3.0
+        },
+        "4": {
+          "p": 0.02648275862068954,
+          "p_floor": 0.0018916256157635349,
+          "observed_overlap": 15,
+          "null_mean": 12.244991789819373,
+          "null_sd": 1.1991151807400993,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 4.0
+        },
+        "6": {
+          "p": 0.03688172043010736,
+          "p_floor": 0.0025806451612903074,
+          "observed_overlap": 15,
+          "null_mean": 12.449731182795693,
+          "null_sd": 1.1929226478973152,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 6.0
+        },
+        "8": {
+          "p": 0.04636914600550945,
+          "p_floor": 0.0030224321133411887,
+          "observed_overlap": 15,
+          "null_mean": 12.601731601731597,
+          "null_sd": 1.1808674799050718,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 8.0
+        },
+        "16": {
+          "p": 0.07799898860232592,
+          "p_floor": 0.0035850157544637497,
+          "observed_overlap": 15,
+          "null_mean": 12.963957936230075,
+          "null_sd": 1.1313983415115232,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 16.0
+        },
+        "64": {
+          "p": 0.1611020688183187,
+          "p_floor": 0.0023550945113916728,
+          "observed_overlap": 15,
+          "null_mean": 13.526234143742107,
+          "null_sd": 0.9887886435423285,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 64.0
+        },
+        "256": {
+          "p": 0.21449914960482128,
+          "p_floor": 0.0008248667486395336,
+          "observed_overlap": 15,
+          "null_mean": 13.787541660242626,
+          "null_sd": 0.8734054806342043,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 256.0
+        },
+        "1024": {
+          "p": 0.23313049762128427,
+          "p_floor": 0.00022679213972923122,
+          "observed_overlap": 15,
+          "null_mean": 13.87030264317757,
+          "null_sd": 0.8253014748014409,
+          "blocks": 229,
+          "max_possible_overlap": 16,
+          "min_possible_overlap": 9,
+          "w": 1024.0
+        }
+      },
+      "critical_weight": {
+        "critical_w": 8.807891415016604,
+        "p_at_1": 0.007115384615384583,
+        "bracket": [
+          8.807891415016604,
+          8.807891415016606
+        ]
+      }
+    }
+  }
+}

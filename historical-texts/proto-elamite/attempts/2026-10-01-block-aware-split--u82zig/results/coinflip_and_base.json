@@ -1,0 +1,4690 @@
+{
+  "coinflip": {
+    "M297-N39B": {
+      "pair": "M297-N39B",
+      "observed_overlap": 135,
+      "forced_overlap": 73,
+      "freedom": 84,
+      "freedom_used": 62,
+      "informative_blocks": 64,
+      "coin_blocks": 10,
+      "coin_heads": 6,
+      "coin_binomial_p": 0.376953125,
+      "coin_detail": [
+        {
+          "tablet": "P008156",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008716",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008899",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008987",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P009207",
+          "face": "obverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P009278",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009316",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P272825",
+          "face": "reverse",
+          "overlap": 0
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008002",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 3,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008003",
+          "face": "obverse",
+          "total": 11,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008014",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008026",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008105",
+          "face": "obverse",
+          "total": 74,
+          "s": 3,
+          "t": 11,
+          "lo": 0,
+          "hi": 3,
+          "observed": 0
+        },
+        {
+          "tablet": "P008105",
+          "face": "reverse",
+          "total": 20,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008141",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 3,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008148",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008156",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008156",
+          "face": "reverse",
+          "total": 4,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008157",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008172",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 5,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008182",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008259",
+          "face": "reverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008274",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008292",
+          "face": "obverse",
+          "total": 18,
+          "s": 2,
+          "t": 3,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008307",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008308",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008345",
+          "face": "obverse",
+          "total": 4,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008376",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008431",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008469",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 3,
+          "lo": 1,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008490",
+          "face": "obverse",
+          "total": 83,
+          "s": 1,
+          "t": 17,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008613",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008616",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008676",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008694",
+          "face": "obverse",
+          "total": 13,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008709",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008712",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008716",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008899",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008987",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008991",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 3,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008992",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008997",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008998",
+          "face": "obverse",
+          "total": 5,
+          "s": 4,
+          "t": 2,
+          "lo": 1,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008999",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009001",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009041",
+          "face": "obverse",
+          "total": 10,
+          "s": 4,
+          "t": 4,
+          "lo": 0,
+          "hi": 4,
+          "observed": 4
+        },
+        {
+          "tablet": "P009059",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009083",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 2,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P009128",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009161",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009164",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009183",
+          "face": "obverse",
+          "total": 13,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009185",
+          "face": "obverse",
+          "total": 30,
+          "s": 2,
+          "t": 6,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009192",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009200",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009203",
+          "face": "reverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009204",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009204",
+          "face": "reverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009207",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009256",
+          "face": "reverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009278",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009279",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 2,
+          "lo": 1,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P009316",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009347",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 3,
+          "lo": 0,
+          "hi": 3,
+          "observed": 1
+        },
+        {
+          "tablet": "P009432",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P009536",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P272825",
+          "face": "obverse",
+          "total": 25,
+          "s": 2,
+          "t": 16,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P272825",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P272827",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        }
+      ]
+    },
+    "M297-N24": {
+      "pair": "M297-N24",
+      "observed_overlap": 44,
+      "forced_overlap": 20,
+      "freedom": 46,
+      "freedom_used": 24,
+      "informative_blocks": 34,
+      "coin_blocks": 4,
+      "coin_heads": 3,
+      "coin_binomial_p": 0.3125,
+      "coin_detail": [
+        {
+          "tablet": "P008179",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009316",
+          "face": "obverse",
+          "overlap": 1
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008105",
+          "face": "obverse",
+          "total": 74,
+          "s": 3,
+          "t": 5,
+          "lo": 0,
+          "hi": 3,
+          "observed": 0
+        },
+        {
+          "tablet": "P008105",
+          "face": "reverse",
+          "total": 20,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008148",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008179",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008307",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008308",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008345",
+          "face": "obverse",
+          "total": 4,
+          "s": 3,
+          "t": 2,
+          "lo": 1,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008350",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008444",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008469",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008490",
+          "face": "obverse",
+          "total": 83,
+          "s": 1,
+          "t": 14,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008709",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008991",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008997",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008998",
+          "face": "obverse",
+          "total": 5,
+          "s": 4,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009000",
+          "face": "obverse",
+          "total": 17,
+          "s": 7,
+          "t": 7,
+          "lo": 0,
+          "hi": 7,
+          "observed": 6
+        },
+        {
+          "tablet": "P009001",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009012",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009028",
+          "face": "obverse",
+          "total": 7,
+          "s": 5,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009059",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009128",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009161",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009183",
+          "face": "obverse",
+          "total": 13,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009185",
+          "face": "obverse",
+          "total": 30,
+          "s": 2,
+          "t": 5,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009203",
+          "face": "reverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009204",
+          "face": "reverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009316",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009347",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009536",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009538",
+          "face": "obverse",
+          "total": 14,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P272825",
+          "face": "obverse",
+          "total": 25,
+          "s": 2,
+          "t": 14,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P272827",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        }
+      ]
+    },
+    "M297-N01": {
+      "pair": "M297-N01",
+      "observed_overlap": 117,
+      "forced_overlap": 91,
+      "freedom": 80,
+      "freedom_used": 26,
+      "informative_blocks": 61,
+      "coin_blocks": 8,
+      "coin_heads": 3,
+      "coin_binomial_p": 0.85546875,
+      "coin_detail": [
+        {
+          "tablet": "P008179",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008224",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008716",
+          "face": "obverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008899",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009207",
+          "face": "obverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P009278",
+          "face": "reverse",
+          "overlap": 1
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008002",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 4,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P008003",
+          "face": "obverse",
+          "total": 11,
+          "s": 1,
+          "t": 10,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008014",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008026",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008105",
+          "face": "obverse",
+          "total": 74,
+          "s": 3,
+          "t": 68,
+          "lo": 0,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008105",
+          "face": "reverse",
+          "total": 20,
+          "s": 1,
+          "t": 17,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008141",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 3,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008148",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 7,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008156",
+          "face": "reverse",
+          "total": 4,
+          "s": 2,
+          "t": 3,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008157",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008172",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 4,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P008179",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008182",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 3,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P008189",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008216",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008224",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008259",
+          "face": "reverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008274",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008292",
+          "face": "obverse",
+          "total": 18,
+          "s": 2,
+          "t": 16,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008345",
+          "face": "obverse",
+          "total": 4,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008350",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008376",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008490",
+          "face": "obverse",
+          "total": 83,
+          "s": 1,
+          "t": 72,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008613",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008616",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008694",
+          "face": "obverse",
+          "total": 13,
+          "s": 2,
+          "t": 10,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P008709",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 5,
+          "lo": 2,
+          "hi": 3,
+          "observed": 2
+        },
+        {
+          "tablet": "P008712",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008716",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008752",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008899",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008985",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008991",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 4,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P008992",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008998",
+          "face": "obverse",
+          "total": 5,
+          "s": 4,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008999",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009000",
+          "face": "obverse",
+          "total": 17,
+          "s": 7,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009012",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009028",
+          "face": "obverse",
+          "total": 7,
+          "s": 5,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009041",
+          "face": "obverse",
+          "total": 10,
+          "s": 4,
+          "t": 6,
+          "lo": 0,
+          "hi": 4,
+          "observed": 0
+        },
+        {
+          "tablet": "P009083",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 2,
+          "lo": 1,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P009128",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009185",
+          "face": "obverse",
+          "total": 30,
+          "s": 2,
+          "t": 28,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P009192",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009196",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009200",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009204",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 6,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P009207",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009256",
+          "face": "reverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009258",
+          "face": "obverse",
+          "total": 11,
+          "s": 7,
+          "t": 8,
+          "lo": 4,
+          "hi": 7,
+          "observed": 5
+        },
+        {
+          "tablet": "P009278",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009279",
+          "face": "obverse",
+          "total": 3,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009347",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P009378",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009432",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 3,
+          "lo": 1,
+          "hi": 2,
+          "observed": 1
+        },
+        {
+          "tablet": "P009536",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009538",
+          "face": "obverse",
+          "total": 14,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P272825",
+          "face": "obverse",
+          "total": 25,
+          "s": 2,
+          "t": 17,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        }
+      ]
+    },
+    "M263-N30C": {
+      "pair": "M263-N30C",
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "freedom": 41,
+      "freedom_used": 0,
+      "informative_blocks": 27,
+      "coin_blocks": 2,
+      "coin_heads": 0,
+      "coin_binomial_p": 1.0,
+      "coin_detail": [
+        {
+          "tablet": "P008417",
+          "face": "obverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "overlap": 0
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008002",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008139",
+          "face": "obverse",
+          "total": 7,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008178",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008182",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008234",
+          "face": "obverse",
+          "total": 19,
+          "s": 3,
+          "t": 8,
+          "lo": 0,
+          "hi": 3,
+          "observed": 0
+        },
+        {
+          "tablet": "P008239",
+          "face": "obverse",
+          "total": 13,
+          "s": 5,
+          "t": 3,
+          "lo": 0,
+          "hi": 3,
+          "observed": 0
+        },
+        {
+          "tablet": "P008246",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008279",
+          "face": "obverse",
+          "total": 39,
+          "s": 9,
+          "t": 13,
+          "lo": 0,
+          "hi": 9,
+          "observed": 0
+        },
+        {
+          "tablet": "P008293",
+          "face": "obverse",
+          "total": 11,
+          "s": 5,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008313",
+          "face": "obverse",
+          "total": 9,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P008331",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008348",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008350",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008387",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008417",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008441",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008697",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008987",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009000",
+          "face": "obverse",
+          "total": 17,
+          "s": 1,
+          "t": 7,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009012",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009028",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 5,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        },
+        {
+          "tablet": "P009129",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009204",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009204",
+          "face": "reverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009256",
+          "face": "reverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        }
+      ]
+    },
+    "M263-N01": {
+      "pair": "M263-N01",
+      "observed_overlap": 176,
+      "forced_overlap": 96,
+      "freedom": 84,
+      "freedom_used": 80,
+      "informative_blocks": 55,
+      "coin_blocks": 7,
+      "coin_heads": 6,
+      "coin_binomial_p": 0.0625,
+      "coin_detail": [
+        {
+          "tablet": "P008394",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008533",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008648",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008666",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008817",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009002",
+          "face": "obverse",
+          "overlap": 0
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008002",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008003",
+          "face": "obverse",
+          "total": 11,
+          "s": 1,
+          "t": 10,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008105",
+          "face": "reverse",
+          "total": 20,
+          "s": 1,
+          "t": 17,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008108",
+          "face": "reverse",
+          "total": 6,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008139",
+          "face": "obverse",
+          "total": 7,
+          "s": 3,
+          "t": 6,
+          "lo": 2,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008157",
+          "face": "obverse",
+          "total": 6,
+          "s": 2,
+          "t": 3,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008178",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008182",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008207",
+          "face": "obverse",
+          "total": 5,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008233",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 7,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008234",
+          "face": "obverse",
+          "total": 19,
+          "s": 3,
+          "t": 5,
+          "lo": 0,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008239",
+          "face": "obverse",
+          "total": 13,
+          "s": 5,
+          "t": 7,
+          "lo": 0,
+          "hi": 5,
+          "observed": 5
+        },
+        {
+          "tablet": "P008246",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008271",
+          "face": "obverse",
+          "total": 25,
+          "s": 4,
+          "t": 19,
+          "lo": 0,
+          "hi": 4,
+          "observed": 3
+        },
+        {
+          "tablet": "P008278",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008279",
+          "face": "obverse",
+          "total": 39,
+          "s": 9,
+          "t": 14,
+          "lo": 0,
+          "hi": 9,
+          "observed": 9
+        },
+        {
+          "tablet": "P008292",
+          "face": "obverse",
+          "total": 18,
+          "s": 8,
+          "t": 16,
+          "lo": 6,
+          "hi": 8,
+          "observed": 8
+        },
+        {
+          "tablet": "P008293",
+          "face": "obverse",
+          "total": 11,
+          "s": 5,
+          "t": 10,
+          "lo": 4,
+          "hi": 5,
+          "observed": 5
+        },
+        {
+          "tablet": "P008297",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008313",
+          "face": "obverse",
+          "total": 9,
+          "s": 3,
+          "t": 5,
+          "lo": 0,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008331",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008345",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008350",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008387",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008394",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008431",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008431",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008438",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008441",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008490",
+          "face": "obverse",
+          "total": 83,
+          "s": 3,
+          "t": 72,
+          "lo": 0,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008533",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008551",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008635",
+          "face": "obverse",
+          "total": 6,
+          "s": 2,
+          "t": 4,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008648",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008666",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008690",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008691",
+          "face": "obverse",
+          "total": 8,
+          "s": 1,
+          "t": 7,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008697",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008817",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008914",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009000",
+          "face": "obverse",
+          "total": 17,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009002",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009012",
+          "face": "obverse",
+          "total": 5,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009014",
+          "face": "obverse",
+          "total": 9,
+          "s": 8,
+          "t": 8,
+          "lo": 7,
+          "hi": 8,
+          "observed": 8
+        },
+        {
+          "tablet": "P009028",
+          "face": "obverse",
+          "total": 7,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P009037",
+          "face": "obverse",
+          "total": 17,
+          "s": 1,
+          "t": 10,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009041",
+          "face": "obverse",
+          "total": 10,
+          "s": 6,
+          "t": 6,
+          "lo": 2,
+          "hi": 6,
+          "observed": 6
+        },
+        {
+          "tablet": "P009129",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009185",
+          "face": "obverse",
+          "total": 30,
+          "s": 1,
+          "t": 28,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009192",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009204",
+          "face": "obverse",
+          "total": 7,
+          "s": 1,
+          "t": 6,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009240",
+          "face": "obverse",
+          "total": 7,
+          "s": 3,
+          "t": 6,
+          "lo": 2,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P009256",
+          "face": "reverse",
+          "total": 5,
+          "s": 1,
+          "t": 2,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009257",
+          "face": "obverse",
+          "total": 6,
+          "s": 1,
+          "t": 4,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009343",
+          "face": "reverse",
+          "total": 11,
+          "s": 1,
+          "t": 9,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        }
+      ]
+    },
+    "M243-N39B": {
+      "pair": "M243-N39B",
+      "observed_overlap": 22,
+      "forced_overlap": 8,
+      "freedom": 17,
+      "freedom_used": 14,
+      "informative_blocks": 12,
+      "coin_blocks": 5,
+      "coin_heads": 4,
+      "coin_binomial_p": 0.1875,
+      "coin_detail": [
+        {
+          "tablet": "P008245",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008245",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "overlap": 0
+        },
+        {
+          "tablet": "P008987",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "overlap": 1
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008177",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008234",
+          "face": "obverse",
+          "total": 19,
+          "s": 4,
+          "t": 4,
+          "lo": 0,
+          "hi": 4,
+          "observed": 4
+        },
+        {
+          "tablet": "P008239",
+          "face": "obverse",
+          "total": 13,
+          "s": 4,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008245",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008245",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008290",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008354",
+          "face": "obverse",
+          "total": 4,
+          "s": 1,
+          "t": 3,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008403",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008676",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008987",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009205",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009432",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        }
+      ]
+    },
+    "M106-N24": {
+      "pair": "M106-N24",
+      "observed_overlap": 14,
+      "forced_overlap": 0,
+      "freedom": 19,
+      "freedom_used": 14,
+      "informative_blocks": 12,
+      "coin_blocks": 1,
+      "coin_heads": 1,
+      "coin_binomial_p": 0.5,
+      "coin_detail": [
+        {
+          "tablet": "P008140",
+          "face": "obverse",
+          "overlap": 1
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008105",
+          "face": "obverse",
+          "total": 74,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008140",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008283",
+          "face": "obverse",
+          "total": 79,
+          "s": 9,
+          "t": 3,
+          "lo": 0,
+          "hi": 3,
+          "observed": 2
+        },
+        {
+          "tablet": "P008283",
+          "face": "reverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008295",
+          "face": "obverse",
+          "total": 89,
+          "s": 11,
+          "t": 4,
+          "lo": 0,
+          "hi": 4,
+          "observed": 4
+        },
+        {
+          "tablet": "P008380",
+          "face": "obverse",
+          "total": 3,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008490",
+          "face": "obverse",
+          "total": 83,
+          "s": 1,
+          "t": 14,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008674",
+          "face": "obverse",
+          "total": 10,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008788",
+          "face": "obverse",
+          "total": 26,
+          "s": 4,
+          "t": 3,
+          "lo": 0,
+          "hi": 3,
+          "observed": 3
+        },
+        {
+          "tablet": "P008939",
+          "face": "obverse",
+          "total": 8,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008991",
+          "face": "obverse",
+          "total": 9,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P009185",
+          "face": "obverse",
+          "total": 30,
+          "s": 1,
+          "t": 5,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        }
+      ]
+    },
+    "M288-N45": {
+      "pair": "M288-N45",
+      "observed_overlap": 56,
+      "forced_overlap": 38,
+      "freedom": 21,
+      "freedom_used": 18,
+      "informative_blocks": 16,
+      "coin_blocks": 8,
+      "coin_heads": 8,
+      "coin_binomial_p": 0.00390625,
+      "coin_detail": [
+        {
+          "tablet": "P008020",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008096",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008711",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P008984",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009018",
+          "face": "reverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009198",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009251",
+          "face": "obverse",
+          "overlap": 1
+        },
+        {
+          "tablet": "P009335",
+          "face": "obverse",
+          "overlap": 1
+        }
+      ],
+      "informative_detail": [
+        {
+          "tablet": "P008020",
+          "face": "obverse",
+          "total": 10,
+          "s": 5,
+          "t": 4,
+          "lo": 0,
+          "hi": 4,
+          "observed": 4
+        },
+        {
+          "tablet": "P008020",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008047",
+          "face": "obverse",
+          "total": 5,
+          "s": 4,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008057",
+          "face": "obverse",
+          "total": 4,
+          "s": 2,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008096",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008122",
+          "face": "obverse",
+          "total": 5,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 0
+        },
+        {
+          "tablet": "P008152",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008711",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008844",
+          "face": "obverse",
+          "total": 5,
+          "s": 3,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P008908",
+          "face": "obverse",
+          "total": 6,
+          "s": 3,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 2
+        },
+        {
+          "tablet": "P008984",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009018",
+          "face": "reverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009198",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009251",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P009335",
+          "face": "obverse",
+          "total": 2,
+          "s": 1,
+          "t": 1,
+          "lo": 0,
+          "hi": 1,
+          "observed": 1
+        },
+        {
+          "tablet": "P272825",
+          "face": "obverse",
+          "total": 25,
+          "s": 2,
+          "t": 2,
+          "lo": 0,
+          "hi": 2,
+          "observed": 0
+        }
+      ]
+    }
+  },
+  "correction_base": {
+    "M297-N39B": {
+      "p": 0.0014514192788974945,
+      "p_floor": 1.2280445286981264e-09,
+      "q_over_8": 0.005805677115589978,
+      "q_over_54": 0.03918832053023235,
+      "confirmed_at_54": true,
+      "informative_blocks": 16
+    },
+    "M297-N24": {
+      "p": 0.02807348901098907,
+      "p_floor": 0.00015453296703296697,
+      "q_over_8": 0.03208398744113037,
+      "q_over_54": 0.15159684065934098,
+      "confirmed_at_54": false,
+      "informative_blocks": 7
+    },
+    "M297-N01": {
+      "p": 0.008390263361218767,
+      "p_floor": 8.246941279413535e-10,
+      "q_over_8": 0.016780526722437534,
+      "q_over_54": 0.11326855537645335,
+      "confirmed_at_54": false,
+      "informative_blocks": 16
+    },
+    "M263-N30C": {
+      "p": 0.01900431225121644,
+      "p_floor": 0.01900431225121644,
+      "q_over_8": 0.02533908300162192,
+      "q_over_54": 0.15159684065934098,
+      "confirmed_at_54": false,
+      "informative_blocks": 5
+    },
+    "M263-N01": {
+      "p": 0.0002864567636070316,
+      "p_floor": 7.702891227842786e-07,
+      "q_over_8": 0.0022916541088562527,
+      "q_over_54": 0.015468665234779706,
+      "confirmed_at_54": true,
+      "informative_blocks": 12
+    },
+    "M243-N39B": {
+      "p": 0.0030637254901960554,
+      "p_floor": 4.837461300309583e-05,
+      "q_over_8": 0.008169934640522814,
+      "q_over_54": 0.055147058823528994,
+      "confirmed_at_54": false,
+      "informative_blocks": 4
+    },
+    "M106-N24": {
+      "p": 0.011684518013631568,
+      "p_floor": 0.00035407630344339274,
+      "q_over_8": 0.01869522882181051,
+      "q_over_54": 0.12619279454722093,
+      "confirmed_at_54": false,
+      "informative_blocks": 2
+    },
+    "M288-N45": {
+      "p": 0.4699999999999988,
+      "p_floor": 0.1199999999999997,
+      "q_over_8": 0.4699999999999988,
+      "q_over_54": 1.0,
+      "confirmed_at_54": false,
+      "informative_blocks": 4
+    }
+  },
+  "published_split_candidates": 54,
+  "confirmed_face_blocked_base54": [
+    "M263-N01",
+    "M297-N39B"
+  ],
+  "all_rows_published_split": [
+    {
+      "m_sign": "M263",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 6.7011434575684525,
+      "train_q": 1.626913050162891e-09,
+      "validation_cells": [
+        38,
+        8,
+        713,
+        291
+      ],
+      "validation_odds_ratio": 1.8504884785028237,
+      "p": 0.0002864567636070316,
+      "p_floor": 7.702891227842786e-07,
+      "observed_overlap": 38,
+      "forced_overlap": 20,
+      "max_possible_overlap": 40,
+      "freedom": 20,
+      "freedom_used": 18,
+      "informative_blocks": 12,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.015468665234779706,
+      "same_direction": true,
+      "confirmed": true
+    },
+    {
+      "m_sign": "M297",
+      "n_sign": "N39B",
+      "direction": "enriched",
+      "train_odds_ratio": 9.066215474666178,
+      "train_q": 1.5568981230974397e-40,
+      "validation_cells": [
+        32,
+        23,
+        96,
+        899
+      ],
+      "validation_odds_ratio": 12.89108146841583,
+      "p": 0.0014514192788974945,
+      "p_floor": 1.2280445286981264e-09,
+      "observed_overlap": 32,
+      "forced_overlap": 18,
+      "max_possible_overlap": 37,
+      "freedom": 19,
+      "freedom_used": 14,
+      "informative_blocks": 16,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.03918832053023235,
+      "same_direction": true,
+      "confirmed": true
+    },
+    {
+      "m_sign": "M243",
+      "n_sign": "N39B",
+      "direction": "enriched",
+      "train_odds_ratio": 5.718784448085803,
+      "train_q": 0.0003006691955620313,
+      "validation_cells": [
+        8,
+        7,
+        120,
+        915
+      ],
+      "validation_odds_ratio": 8.610511756569847,
+      "p": 0.0030637254901960554,
+      "p_floor": 4.837461300309583e-05,
+      "observed_overlap": 8,
+      "forced_overlap": 2,
+      "max_possible_overlap": 9,
+      "freedom": 7,
+      "freedom_used": 6,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.055147058823528994,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M297",
+      "n_sign": "N01",
+      "direction": "depleted",
+      "train_odds_ratio": 0.3138144891978464,
+      "train_q": 2.4668593329701912e-12,
+      "validation_cells": [
+        20,
+        35,
+        731,
+        264
+      ],
+      "validation_odds_ratio": 0.20880305757992934,
+      "p": 0.008390263361218767,
+      "p_floor": 8.246941279413535e-10,
+      "observed_overlap": 20,
+      "forced_overlap": 14,
+      "max_possible_overlap": 33,
+      "freedom": 19,
+      "freedom_used": 6,
+      "informative_blocks": 16,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.11326855537645335,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M106",
+      "n_sign": "N24",
+      "direction": "enriched",
+      "train_odds_ratio": 6.7295286374228365,
+      "train_q": 0.0002630367998821251,
+      "validation_cells": [
+        3,
+        15,
+        61,
+        971
+      ],
+      "validation_odds_ratio": 3.5670076055599265,
+      "p": 0.011684518013631568,
+      "p_floor": 0.00035407630344339274,
+      "observed_overlap": 3,
+      "forced_overlap": 0,
+      "max_possible_overlap": 4,
+      "freedom": 4,
+      "freedom_used": 3,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.12619279454722093,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M002",
+      "n_sign": "N01",
+      "direction": "depleted",
+      "train_odds_ratio": 0.06302544918698579,
+      "train_q": 3.515956350615033e-11,
+      "validation_cells": [
+        3,
+        6,
+        748,
+        293
+      ],
+      "validation_odds_ratio": 0.21114022917630132,
+      "p": 0.02396069538926692,
+      "p_floor": 0.001310153691106076,
+      "observed_overlap": 3,
+      "forced_overlap": 2,
+      "max_possible_overlap": 9,
+      "freedom": 7,
+      "freedom_used": 1,
+      "informative_blocks": 5,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.15159684065934098,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M288",
+      "n_sign": "N24",
+      "direction": "enriched",
+      "train_odds_ratio": 4.808173112796916,
+      "train_q": 1.9244339876987626e-18,
+      "validation_cells": [
+        13,
+        105,
+        51,
+        881
+      ],
+      "validation_odds_ratio": 2.190263654350527,
+      "p": 0.026905473912052755,
+      "p_floor": 1.281613123718382e-05,
+      "observed_overlap": 13,
+      "forced_overlap": 5,
+      "max_possible_overlap": 16,
+      "freedom": 11,
+      "freedom_used": 8,
+      "informative_blocks": 10,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.15159684065934098,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M297",
+      "n_sign": "N24",
+      "direction": "enriched",
+      "train_odds_ratio": 3.608220408774425,
+      "train_q": 2.860716584615391e-06,
+      "validation_cells": [
+        13,
+        42,
+        51,
+        944
+      ],
+      "validation_odds_ratio": 5.825585379782981,
+      "p": 0.02807348901098907,
+      "p_floor": 0.00015453296703296697,
+      "observed_overlap": 13,
+      "forced_overlap": 7,
+      "max_possible_overlap": 15,
+      "freedom": 8,
+      "freedom_used": 6,
+      "informative_blocks": 7,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.15159684065934098,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M263",
+      "n_sign": "N30C",
+      "direction": "depleted",
+      "train_odds_ratio": 0.05232015657358731,
+      "train_q": 0.004364338855142118,
+      "validation_cells": [
+        0,
+        46,
+        68,
+        936
+      ],
+      "validation_odds_ratio": 0.14700572953457341,
+      "p": 0.01900431225121644,
+      "p_floor": 0.01900431225121644,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 8,
+      "freedom": 8,
+      "freedom_used": 0,
+      "informative_blocks": 5,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.15159684065934098,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M288",
+      "n_sign": "N39B",
+      "direction": "enriched",
+      "train_odds_ratio": 3.9094891226007795,
+      "train_q": 2.1531972233054695e-25,
+      "validation_cells": [
+        28,
+        90,
+        100,
+        832
+      ],
+      "validation_odds_ratio": 2.6086418735054013,
+      "p": 0.027955621100402884,
+      "p_floor": 6.980463636810428e-12,
+      "observed_overlap": 28,
+      "forced_overlap": 15,
+      "max_possible_overlap": 37,
+      "freedom": 22,
+      "freedom_used": 13,
+      "informative_blocks": 15,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.15159684065934098,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M263",
+      "n_sign": "N14",
+      "direction": "depleted",
+      "train_odds_ratio": 0.2626636048152077,
+      "train_q": 1.1653634575954524e-05,
+      "validation_cells": [
+        3,
+        43,
+        242,
+        762
+      ],
+      "validation_odds_ratio": 0.2529920606706956,
+      "p": 0.07402597402597416,
+      "p_floor": 0.007958523689749013,
+      "observed_overlap": 3,
+      "forced_overlap": 2,
+      "max_possible_overlap": 11,
+      "freedom": 9,
+      "freedom_used": 1,
+      "informative_blocks": 6,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.3553764671800239,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M388",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.3262601653913461,
+      "train_q": 0.0006025917858332984,
+      "validation_cells": [
+        4,
+        53,
+        124,
+        869
+      ],
+      "validation_odds_ratio": 0.5874338475396915,
+      "p": 0.07897254826222753,
+      "p_floor": 0.001668767088174983,
+      "observed_overlap": 4,
+      "forced_overlap": 2,
+      "max_possible_overlap": 14,
+      "freedom": 12,
+      "freedom_used": 2,
+      "informative_blocks": 12,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.3553764671800239,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M054",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.25150248756218907,
+      "train_q": 0.0006313343625635318,
+      "validation_cells": [
+        3,
+        31,
+        125,
+        891
+      ],
+      "validation_odds_ratio": 0.7892872952633909,
+      "p": 0.12574074074074013,
+      "p_floor": 0.0022222222222222127,
+      "observed_overlap": 3,
+      "forced_overlap": 1,
+      "max_possible_overlap": 9,
+      "freedom": 8,
+      "freedom_used": 2,
+      "informative_blocks": 8,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.5223076923076898,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M002",
+      "n_sign": "N30C",
+      "direction": "enriched",
+      "train_odds_ratio": 19.2380640941792,
+      "train_q": 4.5375570124894625e-12,
+      "validation_cells": [
+        4,
+        5,
+        64,
+        977
+      ],
+      "validation_odds_ratio": 12.399577167019027,
+      "p": 0.15000000000000036,
+      "p_floor": 0.001587301587301589,
+      "observed_overlap": 4,
+      "forced_overlap": 1,
+      "max_possible_overlap": 6,
+      "freedom": 5,
+      "freedom_used": 3,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.57857142857143,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M075",
+      "n_sign": "N01",
+      "direction": "depleted",
+      "train_odds_ratio": 0.22534718170148207,
+      "train_q": 0.0006313343625635318,
+      "validation_cells": [
+        2,
+        2,
+        749,
+        297
+      ],
+      "validation_odds_ratio": 0.39693128752501666,
+      "p": 0.24000000000000232,
+      "p_floor": 0.025000000000000258,
+      "observed_overlap": 2,
+      "forced_overlap": 1,
+      "max_possible_overlap": 4,
+      "freedom": 3,
+      "freedom_used": 1,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.8437500000000008,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M195",
+      "n_sign": "N45",
+      "direction": "enriched",
+      "train_odds_ratio": 13.177727784026997,
+      "train_q": 0.002894173756126996,
+      "validation_cells": [
+        3,
+        6,
+        20,
+        1021
+      ],
+      "validation_odds_ratio": 26.831144465290805,
+      "p": 0.2500000000000002,
+      "p_floor": 0.2500000000000002,
+      "observed_overlap": 3,
+      "forced_overlap": 1,
+      "max_possible_overlap": 3,
+      "freedom": 2,
+      "freedom_used": 2,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 0.8437500000000008,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M010",
+      "n_sign": "N01",
+      "direction": "depleted",
+      "train_odds_ratio": 0.27571749373693843,
+      "train_q": 0.0031907948194666498,
+      "validation_cells": [
+        7,
+        10,
+        744,
+        289
+      ],
+      "validation_odds_ratio": 0.2777511273145927,
+      "p": 0.2933479532163755,
+      "p_floor": 0.012280701754386013,
+      "observed_overlap": 7,
+      "forced_overlap": 5,
+      "max_possible_overlap": 12,
+      "freedom": 7,
+      "freedom_used": 2,
+      "informative_blocks": 7,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.8912064051371813,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M263",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.11284165304957802,
+      "train_q": 2.9746290535999487e-05,
+      "validation_cells": [
+        5,
+        41,
+        123,
+        881
+      ],
+      "validation_odds_ratio": 0.9459538559094678,
+      "p": 0.29706880171239375,
+      "p_floor": 0.0032410953221093195,
+      "observed_overlap": 5,
+      "forced_overlap": 2,
+      "max_possible_overlap": 17,
+      "freedom": 15,
+      "freedom_used": 3,
+      "informative_blocks": 9,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.8912064051371813,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M010",
+      "n_sign": "N30C",
+      "direction": "enriched",
+      "train_odds_ratio": 7.467858605159001,
+      "train_q": 0.00013004035133092355,
+      "validation_cells": [
+        6,
+        11,
+        62,
+        971
+      ],
+      "validation_odds_ratio": 8.785739130434782,
+      "p": 0.3206804891015395,
+      "p_floor": 0.04763423710792095,
+      "observed_overlap": 6,
+      "forced_overlap": 3,
+      "max_possible_overlap": 7,
+      "freedom": 4,
+      "freedom_used": 3,
+      "informative_blocks": 3,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 0.9114077058675334,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M003",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 4.675774134790529,
+      "train_q": 0.002574673099191678,
+      "validation_cells": [
+        4,
+        0,
+        747,
+        299
+      ],
+      "validation_odds_ratio": 3.606020066889632,
+      "p": 0.666666666666666,
+      "p_floor": 0.666666666666666,
+      "observed_overlap": 4,
+      "forced_overlap": 3,
+      "max_possible_overlap": 4,
+      "freedom": 1,
+      "freedom_used": 1,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M036",
+      "n_sign": "N01",
+      "direction": "depleted",
+      "train_odds_ratio": 0.24991907050890225,
+      "train_q": 4.889094669917217e-15,
+      "validation_cells": [
+        29,
+        29,
+        722,
+        270
+      ],
+      "validation_odds_ratio": 0.3743944636678201,
+      "p": 0.4702194367248623,
+      "p_floor": 1.765955418069674e-10,
+      "observed_overlap": 29,
+      "forced_overlap": 17,
+      "max_possible_overlap": 42,
+      "freedom": 25,
+      "freedom_used": 12,
+      "informative_blocks": 14,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M046",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 23.56898090308763,
+      "train_q": 0.0017337402127035626,
+      "validation_cells": [
+        3,
+        0,
+        748,
+        299
+      ],
+      "validation_odds_ratio": 2.800935203740815,
+      "p": 0.8333333333333343,
+      "p_floor": 0.8333333333333343,
+      "observed_overlap": 3,
+      "forced_overlap": 2,
+      "max_possible_overlap": 3,
+      "freedom": 1,
+      "freedom_used": 1,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M072",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 3.835429196282121,
+      "train_q": 0.00033198838906747753,
+      "validation_cells": [
+        2,
+        2,
+        749,
+        297
+      ],
+      "validation_odds_ratio": 0.39693128752501666,
+      "p": 0.9999999999999947,
+      "p_floor": 0.07142857142857116,
+      "observed_overlap": 2,
+      "forced_overlap": 2,
+      "max_possible_overlap": 4,
+      "freedom": 2,
+      "freedom_used": 0,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": false,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M217",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 8.322855271774722,
+      "train_q": 0.007739219857162473,
+      "validation_cells": [
+        0,
+        0,
+        751,
+        299
+      ],
+      "validation_odds_ratio": 0.3985362608117099,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": false,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M370",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 4.999746916764818,
+      "train_q": 1.6252541102607103e-07,
+      "validation_cells": [
+        7,
+        2,
+        744,
+        297
+      ],
+      "validation_odds_ratio": 1.198791134989926,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 7,
+      "forced_overlap": 7,
+      "max_possible_overlap": 7,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M373",
+      "n_sign": "N01",
+      "direction": "enriched",
+      "train_odds_ratio": 13.346349949013257,
+      "train_q": 5.728927270731036e-05,
+      "validation_cells": [
+        2,
+        0,
+        749,
+        299
+      ],
+      "validation_odds_ratio": 1.9979986657771849,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 2,
+      "forced_overlap": 2,
+      "max_possible_overlap": 2,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M376",
+      "n_sign": "N08A",
+      "direction": "enriched",
+      "train_odds_ratio": 146.26614727318423,
+      "train_q": 5.857198023875689e-48,
+      "validation_cells": [
+        0,
+        21,
+        6,
+        1023
+      ],
+      "validation_odds_ratio": 3.6618962432915922,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M003",
+      "n_sign": "N14",
+      "direction": "depleted",
+      "train_odds_ratio": 0.23678630330636927,
+      "train_q": 0.008518009677314224,
+      "validation_cells": [
+        0,
+        4,
+        245,
+        801
+      ],
+      "validation_odds_ratio": 0.3627517537904503,
+      "p": 0.606060606060605,
+      "p_floor": 0.606060606060605,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 2,
+      "freedom": 2,
+      "freedom_used": 0,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M056",
+      "n_sign": "N14",
+      "direction": "enriched",
+      "train_odds_ratio": 3.8518145293216945,
+      "train_q": 0.0003232073111077608,
+      "validation_cells": [
+        5,
+        7,
+        240,
+        798
+      ],
+      "validation_odds_ratio": 2.4347886347886347,
+      "p": 1.0,
+      "p_floor": 0.5000000000000002,
+      "observed_overlap": 5,
+      "forced_overlap": 5,
+      "max_possible_overlap": 6,
+      "freedom": 1,
+      "freedom_used": 0,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M195",
+      "n_sign": "N14",
+      "direction": "enriched",
+      "train_odds_ratio": 3.940389972144847,
+      "train_q": 0.005328809477917181,
+      "validation_cells": [
+        3,
+        6,
+        242,
+        799
+      ],
+      "validation_odds_ratio": 1.7752577319587628,
+      "p": 0.8125000000000027,
+      "p_floor": 0.3125000000000011,
+      "observed_overlap": 3,
+      "forced_overlap": 2,
+      "max_possible_overlap": 4,
+      "freedom": 2,
+      "freedom_used": 1,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M354",
+      "n_sign": "N14",
+      "direction": "enriched",
+      "train_odds_ratio": 3.284240687679083,
+      "train_q": 1.1449653495359463e-05,
+      "validation_cells": [
+        6,
+        13,
+        239,
+        792
+      ],
+      "validation_odds_ratio": 1.5932111652362175,
+      "p": 0.81111111111111,
+      "p_floor": 0.002308802308802303,
+      "observed_overlap": 6,
+      "forced_overlap": 4,
+      "max_possible_overlap": 10,
+      "freedom": 6,
+      "freedom_used": 2,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M370",
+      "n_sign": "N14",
+      "direction": "depleted",
+      "train_odds_ratio": 0.0548249305405657,
+      "train_q": 3.1130688758517924e-12,
+      "validation_cells": [
+        0,
+        9,
+        245,
+        796
+      ],
+      "validation_odds_ratio": 0.17075785185979206,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M373",
+      "n_sign": "N14",
+      "direction": "depleted",
+      "train_odds_ratio": 0.20119502843986317,
+      "train_q": 0.005103339944343127,
+      "validation_cells": [
+        0,
+        2,
+        245,
+        803
+      ],
+      "validation_odds_ratio": 0.6545824847250509,
+      "p": 0.7777777777777781,
+      "p_floor": 0.7777777777777781,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 1,
+      "freedom": 1,
+      "freedom_used": 0,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M054",
+      "n_sign": "N23",
+      "direction": "enriched",
+      "train_odds_ratio": 6.352519793892171,
+      "train_q": 0.0007309144049798081,
+      "validation_cells": [
+        0,
+        34,
+        9,
+        1007
+      ],
+      "validation_odds_ratio": 1.5369946605644547,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M367",
+      "n_sign": "N23",
+      "direction": "enriched",
+      "train_odds_ratio": 7.757201646090535,
+      "train_q": 0.007379950094248409,
+      "validation_cells": [
+        6,
+        33,
+        3,
+        1008
+      ],
+      "validation_odds_ratio": 55.908315565031984,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 6,
+      "forced_overlap": 6,
+      "max_possible_overlap": 6,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M036",
+      "n_sign": "N30C",
+      "direction": "enriched",
+      "train_odds_ratio": 4.209322974472808,
+      "train_q": 1.6252541102607103e-07,
+      "validation_cells": [
+        13,
+        45,
+        55,
+        937
+      ],
+      "validation_odds_ratio": 5.011880011880012,
+      "p": 0.7463833254930811,
+      "p_floor": 5.964038974994662e-07,
+      "observed_overlap": 13,
+      "forced_overlap": 7,
+      "max_possible_overlap": 22,
+      "freedom": 15,
+      "freedom_used": 6,
+      "informative_blocks": 7,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M054",
+      "n_sign": "N30C",
+      "direction": "depleted",
+      "train_odds_ratio": 0.13193868697580258,
+      "train_q": 0.007754062630683759,
+      "validation_cells": [
+        2,
+        32,
+        66,
+        950
+      ],
+      "validation_odds_ratio": 1.0994794679005204,
+      "p": 0.6615384615384559,
+      "p_floor": 0.18461538461538313,
+      "observed_overlap": 2,
+      "forced_overlap": 1,
+      "max_possible_overlap": 4,
+      "freedom": 3,
+      "freedom_used": 1,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": false,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M297",
+      "n_sign": "N30C",
+      "direction": "enriched",
+      "train_odds_ratio": 4.91397053124704,
+      "train_q": 1.739782186982404e-11,
+      "validation_cells": [
+        9,
+        46,
+        59,
+        936
+      ],
+      "validation_odds_ratio": 3.215595915785669,
+      "p": 0.9633699633699597,
+      "p_floor": 0.0009157509157509139,
+      "observed_overlap": 9,
+      "forced_overlap": 8,
+      "max_possible_overlap": 14,
+      "freedom": 6,
+      "freedom_used": 1,
+      "informative_blocks": 3,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M036",
+      "n_sign": "N30C@b",
+      "direction": "enriched",
+      "train_odds_ratio": 30.745819397993312,
+      "train_q": 1.0905932750708458e-11,
+      "validation_cells": [
+        2,
+        56,
+        5,
+        987
+      ],
+      "validation_odds_ratio": 7.944489139179405,
+      "p": 0.7887719298245661,
+      "p_floor": 0.0016928285626346617,
+      "observed_overlap": 2,
+      "forced_overlap": 0,
+      "max_possible_overlap": 6,
+      "freedom": 6,
+      "freedom_used": 2,
+      "informative_blocks": 3,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M387",
+      "n_sign": "N30C@b",
+      "direction": "enriched",
+      "train_odds_ratio": 7.34140127388535,
+      "train_q": 0.002303870666715477,
+      "validation_cells": [
+        1,
+        65,
+        6,
+        978
+      ],
+      "validation_odds_ratio": 3.4474456840869054,
+      "p": 0.6546629732225282,
+      "p_floor": 0.0001187178472497026,
+      "observed_overlap": 1,
+      "forced_overlap": 0,
+      "max_possible_overlap": 5,
+      "freedom": 5,
+      "freedom_used": 1,
+      "informative_blocks": 3,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M297",
+      "n_sign": "N30D",
+      "direction": "enriched",
+      "train_odds_ratio": 4.977223201258219,
+      "train_q": 2.116111872388679e-05,
+      "validation_cells": [
+        3,
+        52,
+        10,
+        985
+      ],
+      "validation_odds_ratio": 6.257142857142857,
+      "p": 0.6316964285714319,
+      "p_floor": 0.00017170329670329677,
+      "observed_overlap": 3,
+      "forced_overlap": 1,
+      "max_possible_overlap": 7,
+      "freedom": 6,
+      "freedom_used": 2,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M056",
+      "n_sign": "N34",
+      "direction": "enriched",
+      "train_odds_ratio": 10.928888888888888,
+      "train_q": 4.2697705892175205e-05,
+      "validation_cells": [
+        0,
+        12,
+        36,
+        1002
+      ],
+      "validation_odds_ratio": 1.0986301369863014,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M195",
+      "n_sign": "N34",
+      "direction": "enriched",
+      "train_odds_ratio": 11.57170332972713,
+      "train_q": 0.0013673598628318967,
+      "validation_cells": [
+        1,
+        8,
+        35,
+        1006
+      ],
+      "validation_odds_ratio": 5.003314001657001,
+      "p": 0.5625000000000008,
+      "p_floor": 0.06250000000000012,
+      "observed_overlap": 1,
+      "forced_overlap": 0,
+      "max_possible_overlap": 2,
+      "freedom": 2,
+      "freedom_used": 1,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M288",
+      "n_sign": "N34",
+      "direction": "enriched",
+      "train_odds_ratio": 4.448174481744817,
+      "train_q": 6.436260321722474e-08,
+      "validation_cells": [
+        8,
+        110,
+        28,
+        904
+      ],
+      "validation_odds_ratio": 2.4412955465587043,
+      "p": 0.5500000000000002,
+      "p_floor": 0.11999999999999976,
+      "observed_overlap": 8,
+      "forced_overlap": 6,
+      "max_possible_overlap": 9,
+      "freedom": 3,
+      "freedom_used": 2,
+      "informative_blocks": 3,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M075",
+      "n_sign": "N39B",
+      "direction": "enriched",
+      "train_odds_ratio": 8.31216715850887,
+      "train_q": 6.576242912329133e-07,
+      "validation_cells": [
+        0,
+        4,
+        128,
+        918
+      ],
+      "validation_odds_ratio": 0.7942066580198875,
+      "p": 1.0,
+      "p_floor": 0.010000000000000085,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 2,
+      "freedom": 2,
+      "freedom_used": 0,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": true,
+      "q": 1.0,
+      "same_direction": false,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M346",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.17561233023400782,
+      "train_q": 5.728927270731036e-05,
+      "validation_cells": [
+        2,
+        52,
+        126,
+        870
+      ],
+      "validation_odds_ratio": 0.3276868059476755,
+      "p": 0.8666666666666647,
+      "p_floor": 0.16666666666666638,
+      "observed_overlap": 2,
+      "forced_overlap": 1,
+      "max_possible_overlap": 3,
+      "freedom": 2,
+      "freedom_used": 1,
+      "informative_blocks": 2,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M370",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.2148750126278216,
+      "train_q": 0.0012789333865346425,
+      "validation_cells": [
+        0,
+        9,
+        128,
+        913
+      ],
+      "validation_odds_ratio": 0.37415523243907434,
+      "p": 0.8181818181818142,
+      "p_floor": 0.8181818181818142,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 1,
+      "freedom": 1,
+      "freedom_used": 0,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M373",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.057609796925245586,
+      "train_q": 0.009502633532032033,
+      "validation_cells": [
+        0,
+        2,
+        128,
+        920
+      ],
+      "validation_odds_ratio": 1.4326848249027238,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": false,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M376",
+      "n_sign": "N39B",
+      "direction": "depleted",
+      "train_odds_ratio": 0.07834383218151796,
+      "train_q": 3.411536043065421e-05,
+      "validation_cells": [
+        0,
+        21,
+        128,
+        901
+      ],
+      "validation_odds_ratio": 0.1631526558682472,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M056",
+      "n_sign": "N45",
+      "direction": "enriched",
+      "train_odds_ratio": 15.815238095238096,
+      "train_q": 3.4403218373723957e-06,
+      "validation_cells": [
+        2,
+        10,
+        21,
+        1017
+      ],
+      "validation_odds_ratio": 11.267995570321151,
+      "p": 0.5000000000000002,
+      "p_floor": 0.5000000000000002,
+      "observed_overlap": 2,
+      "forced_overlap": 1,
+      "max_possible_overlap": 2,
+      "freedom": 1,
+      "freedom_used": 1,
+      "informative_blocks": 1,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M288",
+      "n_sign": "N45",
+      "direction": "enriched",
+      "train_odds_ratio": 12.699463898711075,
+      "train_q": 5.201749849484224e-20,
+      "validation_cells": [
+        15,
+        103,
+        8,
+        924
+      ],
+      "validation_odds_ratio": 16.288434214265415,
+      "p": 0.4699999999999988,
+      "p_floor": 0.1199999999999997,
+      "observed_overlap": 15,
+      "forced_overlap": 12,
+      "max_possible_overlap": 16,
+      "freedom": 4,
+      "freedom_used": 3,
+      "informative_blocks": 4,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M327",
+      "n_sign": "N51",
+      "direction": "enriched",
+      "train_odds_ratio": 68.11711711711712,
+      "train_q": 4.570059488490841e-06,
+      "validation_cells": [
+        0,
+        10,
+        3,
+        1037
+      ],
+      "validation_odds_ratio": 14.115646258503402,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M351",
+      "n_sign": "N51",
+      "direction": "enriched",
+      "train_odds_ratio": 49.87327327327327,
+      "train_q": 1.5581417265684243e-05,
+      "validation_cells": [
+        0,
+        7,
+        3,
+        1040
+      ],
+      "validation_odds_ratio": 19.81904761904762,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 0,
+      "forced_overlap": 0,
+      "max_possible_overlap": 0,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    },
+    {
+      "m_sign": "M354",
+      "n_sign": "N51",
+      "direction": "enriched",
+      "train_odds_ratio": 39.95632183908046,
+      "train_q": 8.198330660137293e-10,
+      "validation_cells": [
+        2,
+        17,
+        1,
+        1030
+      ],
+      "validation_odds_ratio": 98.14285714285714,
+      "p": 1.0,
+      "p_floor": 1.0,
+      "observed_overlap": 2,
+      "forced_overlap": 2,
+      "max_possible_overlap": 2,
+      "freedom": 0,
+      "freedom_used": 0,
+      "informative_blocks": 0,
+      "blocks": 290,
+      "has_power_at_05": false,
+      "q": 1.0,
+      "same_direction": true,
+      "confirmed": false
+    }
+  ]
+}

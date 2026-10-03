@@ -1,0 +1,102 @@
+{
+  "pair": "M288-N45",
+  "direction": "enriched",
+  "want_val_blocks": 10,
+  "eligible_lines": 4869,
+  "blocks_total": 1426,
+  "blocks_informative": 16,
+  "informative_tablets": {
+    "P008020": 2,
+    "P008047": 1,
+    "P008057": 1,
+    "P008096": 1,
+    "P008122": 1,
+    "P008152": 1,
+    "P008711": 1,
+    "P008844": 1,
+    "P008908": 1,
+    "P008984": 1,
+    "P009018": 1,
+    "P009198": 1,
+    "P009251": 1,
+    "P009335": 1,
+    "P272825": 1
+  },
+  "canonical_split": {
+    "val_tablets": [
+      "P008020",
+      "P008057",
+      "P008122",
+      "P008711",
+      "P008844",
+      "P008984",
+      "P009018",
+      "P009198",
+      "P009251"
+    ],
+    "val_informative_blocks": 10,
+    "train_lines": 4819,
+    "val_lines": 50,
+    "train_tablets": 1115,
+    "screen_candidates": 1417,
+    "screen_selected_total": 61,
+    "pair_selected_on_train": true,
+    "train_row": {
+      "m": "M288",
+      "n": "N45",
+      "cells": [
+        44,
+        491,
+        34,
+        4250
+      ],
+      "or": 11.154687661255842,
+      "p": 7.655063128115103e-23,
+      "q": 2.711806113134775e-20
+    },
+    "validation": {
+      "n_val_informative": 10,
+      "p": 0.0012946428571428642,
+      "p_floor": 6.696428571428604e-05,
+      "observed_overlap": 12,
+      "max_overlap": 13,
+      "has_power_at_05": true
+    },
+    "val_cells": [
+      12,
+      10,
+      1,
+      27
+    ],
+    "val_odds_ratio": 21.825396825396826
+  },
+  "n_admissible_splits": 7947,
+  "admissible_summary": {
+    "n": 7947,
+    "p_min": 2.2321428571428615e-06,
+    "p_median": 0.0008891369047619079,
+    "p_max": 0.05717375000000057,
+    "p_5pct": 2.97619047619048e-05,
+    "p_95pct": 0.02686125000000025,
+    "frac_p_le_05": 0.9848999622499056,
+    "frac_p_le_01": 0.8852397130992827,
+    "max_p_floor": 0.002249999999999998,
+    "all_have_power": true
+  },
+  "rescreen_sample": {
+    "n_sampled": 250,
+    "n_reselected": 250,
+    "train_q_min": 1.5610866018825198e-23,
+    "train_q_max": 1.6027637261999915e-17
+  },
+  "label_permutation": {
+    "n_draws": 20000,
+    "n_val_tablets": 9,
+    "observed_p": 0.0012946428571428642,
+    "percentile_of_observed": 0.3939,
+    "median": 0.002468194444444482,
+    "p10": 8.928571428571457e-05,
+    "p90": 0.04619666666666708,
+    "p3a_pass": true
+  }
+}

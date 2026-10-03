@@ -1,0 +1,45 @@
+{
+  "pair": "M288-N45",
+  "direction": "enriched",
+  "reps": 20000,
+  "real": {
+    "p": 9.694630456349345e-05,
+    "p_floor": 4.4642857142857545e-09,
+    "informative_blocks": 16,
+    "obs": 19,
+    "mx": 22,
+    "val_blocks": 21
+  },
+  "null_A_within_block": {
+    "n_valid_reps": 20000,
+    "size_at_0.05_all_reps": 0.0171,
+    "size_at_0.05_among_powered": 0.0171,
+    "frac_reps_with_power": 1.0,
+    "p_quantiles": {
+      "0.05": 0.052849286334326104,
+      "0.25": 0.26047887909226525,
+      "0.5": 0.6246659341517935,
+      "0.75": 0.7874372290426683,
+      "0.95": 0.9616004884672735
+    },
+    "mean_informative_blocks": 16,
+    "frac_reps_p_le_real": 0.0001,
+    "procedure_hits_at_0.05": 0.0171
+  },
+  "null_B_within_face_strata": {
+    "n_valid_reps": 20000,
+    "size_at_0.05_all_reps": 0.03115,
+    "size_at_0.05_among_powered": 0.03115,
+    "frac_reps_with_power": 1.0,
+    "p_quantiles": {
+      "0.05": 0.07916893303324678,
+      "0.25": 0.3363047519794012,
+      "0.5": 0.6102758069567629,
+      "0.75": 0.8391416498030516,
+      "0.95": 0.9771149116218161
+    },
+    "mean_informative_blocks": 16.6916,
+    "frac_reps_p_le_real": 5e-05,
+    "procedure_hits_at_0.05": 0.03115
+  }
+}

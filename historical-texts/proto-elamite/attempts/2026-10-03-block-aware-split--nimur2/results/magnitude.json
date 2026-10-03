@@ -1,0 +1,276 @@
+{
+  "pairs": {
+    "M297-N39B": {
+      "direction": "enriched",
+      "crude_odds_ratio": 9.793238722092235,
+      "crude_cells": [
+        135,
+        117,
+        486,
+        4131
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 147,
+        "n_informative": 22,
+        "mean_stratum_size": 33.12244897959184,
+        "p": 5.21546037928088e-13,
+        "p_floor": 9.449211177185754e-184,
+        "observed_overlap": 65,
+        "extreme_overlap": 162,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 3.5432503977128387
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2312,
+        "n_informative": 11,
+        "mean_stratum_size": 2.105968858131488,
+        "p": 0.001459138896595747,
+        "p_floor": 7.439115894997688e-11,
+        "observed_overlap": 8,
+        "extreme_overlap": 13,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 13.281846561559536
+      }
+    },
+    "M297-N24": {
+      "direction": "enriched",
+      "crude_odds_ratio": 4.044092587700898,
+      "crude_cells": [
+        44,
+        208,
+        231,
+        4386
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 151,
+        "n_informative": 22,
+        "mean_stratum_size": 32.24503311258278,
+        "p": 0.9995838428220876,
+        "p_floor": 2.986055699267975e-125,
+        "observed_overlap": 27,
+        "extreme_overlap": 150,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 0.4638990533094508
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2332,
+        "n_informative": 4,
+        "mean_stratum_size": 2.0879073756432245,
+        "p": 0.9111111111111077,
+        "p_floor": 0.02222222222222216,
+        "observed_overlap": 1,
+        "extreme_overlap": 4,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 0.32258064516129037
+      }
+    },
+    "M297-N01": {
+      "direction": "depleted",
+      "crude_odds_ratio": 0.28738615914341353,
+      "crude_cells": [
+        117,
+        135,
+        3468,
+        1149
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 135,
+        "n_informative": 22,
+        "mean_stratum_size": 36.06666666666667,
+        "p": 0.06822070174713585,
+        "p_floor": 3.4979141481842715e-41,
+        "observed_overlap": 54,
+        "extreme_overlap": 2,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 0.7410863024894616
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2255,
+        "n_informative": 4,
+        "mean_stratum_size": 2.15920177383592,
+        "p": 0.8416666666666669,
+        "p_floor": 0.02500000000000002,
+        "observed_overlap": 3,
+        "extreme_overlap": 0,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 1.6666666666666665
+      }
+    },
+    "M263-N30C": {
+      "direction": "depleted",
+      "crude_odds_ratio": 0.03887192081103964,
+      "crude_cells": [
+        0,
+        191,
+        294,
+        4384
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 152,
+        "n_informative": 4,
+        "mean_stratum_size": 32.0328947368421,
+        "p": 0.17776049856895734,
+        "p_floor": 0.17776049856895734,
+        "observed_overlap": 0,
+        "extreme_overlap": 0,
+        "has_power_at_05": false,
+        "mh_odds_ratio": 0.0
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2346,
+        "n_informative": 2,
+        "mean_stratum_size": 2.075447570332481,
+        "p": 0.4166666666666675,
+        "p_floor": 0.4166666666666675,
+        "observed_overlap": 0,
+        "extreme_overlap": 0,
+        "has_power_at_05": false,
+        "mh_odds_ratio": 0.0
+      }
+    },
+    "M263-N01": {
+      "direction": "enriched",
+      "crude_odds_ratio": 4.239894223445875,
+      "crude_cells": [
+        176,
+        15,
+        3409,
+        1269
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 135,
+        "n_informative": 4,
+        "mean_stratum_size": 36.06666666666667,
+        "p": 0.7197511840010674,
+        "p_floor": 5.622364870738553e-10,
+        "observed_overlap": 9,
+        "extreme_overlap": 23,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 0.8560624837195596
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2255,
+        "n_informative": 6,
+        "mean_stratum_size": 2.15920177383592,
+        "p": 0.5486111111111114,
+        "p_floor": 0.006944444444444451,
+        "observed_overlap": 3,
+        "extreme_overlap": 6,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 1.25
+      }
+    },
+    "M243-N39B": {
+      "direction": "enriched",
+      "crude_odds_ratio": 6.471464315501013,
+      "crude_cells": [
+        22,
+        24,
+        599,
+        4224
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 147,
+        "n_informative": 9,
+        "mean_stratum_size": 33.12244897959184,
+        "p": 0.2851847151487419,
+        "p_floor": 6.219901856766207e-29,
+        "observed_overlap": 7,
+        "extreme_overlap": 27,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 1.5698055437801086
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2312,
+        "n_informative": 2,
+        "mean_stratum_size": 2.105968858131488,
+        "p": 0.7777777777777763,
+        "p_floor": 0.22222222222222182,
+        "observed_overlap": 1,
+        "extreme_overlap": 2,
+        "has_power_at_05": false,
+        "mh_odds_ratio": 1.0
+      }
+    },
+    "M106-N24": {
+      "direction": "enriched",
+      "crude_odds_ratio": 5.544323745088564,
+      "crude_cells": [
+        14,
+        45,
+        261,
+        4549
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 151,
+        "n_informative": 8,
+        "mean_stratum_size": 32.24503311258278,
+        "p": 0.0010113508315385317,
+        "p_floor": 1.8003777131416382e-39,
+        "observed_overlap": 12,
+        "extreme_overlap": 33,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 4.210565365238274
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2332,
+        "n_informative": 0,
+        "mean_stratum_size": 2.0879073756432245,
+        "p": 1.0,
+        "p_floor": 1.0,
+        "observed_overlap": 0,
+        "extreme_overlap": 0,
+        "has_power_at_05": false,
+        "mh_odds_ratio": null
+      }
+    },
+    "M288-N45": {
+      "direction": "enriched",
+      "crude_odds_ratio": 13.574979287489644,
+      "crude_cells": [
+        56,
+        501,
+        35,
+        4277
+      ],
+      "S1": {
+        "stratification": "other_N_signature",
+        "n_strata": 165,
+        "n_informative": 12,
+        "mean_stratum_size": 29.509090909090908,
+        "p": 1.576720384150061e-14,
+        "p_floor": 1.1717717649603384e-49,
+        "observed_overlap": 45,
+        "extreme_overlap": 69,
+        "has_power_at_05": true,
+        "mh_odds_ratio": 7.500986349778624
+      },
+      "S2": {
+        "stratification": "tablet_face_other_N_signature",
+        "n_strata": 2359,
+        "n_informative": 0,
+        "mean_stratum_size": 2.0640101738024588,
+        "p": 1.0,
+        "p_floor": 1.0,
+        "observed_overlap": 0,
+        "extreme_overlap": 0,
+        "has_power_at_05": false,
+        "mh_odds_ratio": null
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "observed_canonical_p": 0.0012946428571428642,
+  "draws": 20000,
+  "select_p_threshold": 6.993006993006993e-06,
+  "select_or_threshold": 3.0,
+  "null_1_within_face": {
+    "label": "NULL 1 - permute N45 within (tablet, face)  [P2a]",
+    "draws": 20000,
+    "median_unconditional": 0.5479166666666693,
+    "unconditional": {
+      "0.001": 0.0001,
+      "0.01": 0.00105,
+      "0.05": 0.0475,
+      "0.1": 0.0475,
+      "0.25": 0.14715,
+      "0.5": 0.3242
+    },
+    "conditional": {
+      "0.001": 0.0001,
+      "0.01": 0.00105,
+      "0.05": 0.0475,
+      "0.1": 0.0475,
+      "0.25": 0.14715,
+      "0.5": 0.3242
+    },
+    "selection_rate": 1.0,
+    "n_selected": 20000,
+    "distinct_splits": 1
+  },
+  "null_2_within_tablet": {
+    "label": "NULL 2 - permute N45 within tablet, N45 free to cross faces  [P2b]",
+    "draws": 20000,
+    "median_unconditional": 0.7599107142857179,
+    "unconditional": {
+      "0.001": 0.0,
+      "0.01": 0.0001,
+      "0.05": 0.00865,
+      "0.1": 0.00865,
+      "0.25": 0.045,
+      "0.5": 0.1415
+    },
+    "conditional": {
+      "0.001": 0.0,
+      "0.01": 0.0001,
+      "0.05": 0.00865,
+      "0.1": 0.00865,
+      "0.25": 0.045,
+      "0.5": 0.1415
+    },
+    "selection_rate": 1.0,
+    "n_selected": 20000,
+    "distinct_splits": 1
+  }
+}

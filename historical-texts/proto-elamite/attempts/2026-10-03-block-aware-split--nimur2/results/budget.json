@@ -1,0 +1,591 @@
+{
+  "pair": "M288-N45",
+  "eligible_lines": 4869,
+  "blocks_total": 1426,
+  "blocks_informative": 16,
+  "decomposition": {
+    "total==2 (coin-flip faces)": {
+      "n_blocks": 8,
+      "p": 0.003906250000000014,
+      "p_floor": 0.003906250000000014,
+      "observed": 8,
+      "max": 8
+    },
+    "total>=3": {
+      "n_blocks": 8,
+      "p": 0.01191323809523822,
+      "p_floor": 1.1428571428571491e-06,
+      "observed": 10,
+      "max": 13
+    },
+    "total>=4": {
+      "n_blocks": 8,
+      "p": 0.01191323809523822,
+      "p_floor": 1.1428571428571491e-06,
+      "observed": 10,
+      "max": 13
+    },
+    "total>=5": {
+      "n_blocks": 7,
+      "p": 0.021267936507936715,
+      "p_floor": 2.285714285714296e-06,
+      "observed": 9,
+      "max": 12
+    }
+  },
+  "coin_flip_blocks": [
+    {
+      "tablet": "P008020",
+      "face": "reverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "1",
+          "text": "A. nu<M391<M391 , 5(N01) ",
+          "m_signs": [
+            "M391"
+          ],
+          "n_signs": [
+            "N01"
+          ],
+          "has_m": false,
+          "has_n": false
+        },
+        {
+          "label": "1",
+          "text": "B. M056~E pu2<M288<M288 , 2(N34) 1(N45) 9(N14) 5(N01) 3(N39B) ",
+          "m_signs": [
+            "M056",
+            "M288"
+          ],
+          "n_signs": [
+            "N01",
+            "N14",
+            "N34",
+            "N39B",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        }
+      ]
+    },
+    {
+      "tablet": "P008096",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "1'",
+          "text": "a<M218<M218 , 1(N14) 2(N01) ",
+          "m_signs": [
+            "M218"
+          ],
+          "n_signs": [
+            "N01",
+            "N14"
+          ],
+          "has_m": false,
+          "has_n": false
+        },
+        {
+          "label": "3'",
+          "text": "M195~D M296 pu2<M288<M288 , 1(N45) 1(N14) ",
+          "m_signs": [
+            "M195",
+            "M288",
+            "M296"
+          ],
+          "n_signs": [
+            "N14",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        }
+      ]
+    },
+    {
+      "tablet": "P008711",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "2",
+          "text": "M139 she<M032<M032 M348 pu2<M288<M288 , 1(N45) 1(N14) 1(N39B) ",
+          "m_signs": [
+            "M032",
+            "M139",
+            "M288",
+            "M348"
+          ],
+          "n_signs": [
+            "N14",
+            "N39B",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        },
+        {
+          "label": "3",
+          "text": "M010~2 , 1(N01) 2(N39B) 1(N24) ",
+          "m_signs": [
+            "M010"
+          ],
+          "n_signs": [
+            "N01",
+            "N24",
+            "N39B"
+          ],
+          "has_m": false,
+          "has_n": false
+        }
+      ]
+    },
+    {
+      "tablet": "P008984",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "2",
+          "text": "M284~E li<M319<M319 pu2<M288<M288 , 1(N45) 7(N14) ",
+          "m_signs": [
+            "M284",
+            "M288",
+            "M319"
+          ],
+          "n_signs": [
+            "N14",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        },
+        {
+          "label": "3",
+          "text": "M010~2 , 6(N14) 4(N01) ",
+          "m_signs": [
+            "M010"
+          ],
+          "n_signs": [
+            "N01",
+            "N14"
+          ],
+          "has_m": false,
+          "has_n": false
+        }
+      ]
+    },
+    {
+      "tablet": "P009018",
+      "face": "reverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "1",
+          "text": "pu2<M288<M288 , 2(N45) ",
+          "m_signs": [
+            "M288"
+          ],
+          "n_signs": [
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        },
+        {
+          "label": "2",
+          "text": "M376 , 3(N14) ",
+          "m_signs": [
+            "M376"
+          ],
+          "n_signs": [
+            "N14"
+          ],
+          "has_m": false,
+          "has_n": false
+        }
+      ]
+    },
+    {
+      "tablet": "P009198",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "2'",
+          "text": "pu2<M288<M288 , 1(N45) 4(N14) 5(N01) ",
+          "m_signs": [
+            "M288"
+          ],
+          "n_signs": [
+            "N01",
+            "N14",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        },
+        {
+          "label": "5'",
+          "text": "M005~A M305+X , 8(N14) ",
+          "m_signs": [
+            "M005",
+            "M305"
+          ],
+          "n_signs": [
+            "N14"
+          ],
+          "has_m": false,
+          "has_n": false
+        }
+      ]
+    },
+    {
+      "tablet": "P009251",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "3",
+          "text": "pu2<M288<M288 , 2(N34) 1(N45) 1(N14) 2(N01) ",
+          "m_signs": [
+            "M288"
+          ],
+          "n_signs": [
+            "N01",
+            "N14",
+            "N34",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        },
+        {
+          "label": "16'",
+          "text": "M295 a<M218<M218 a<M218<M218 , 2(N14) 2(N01) ",
+          "m_signs": [
+            "M218",
+            "M295"
+          ],
+          "n_signs": [
+            "N01",
+            "N14"
+          ],
+          "has_m": false,
+          "has_n": false
+        }
+      ]
+    },
+    {
+      "tablet": "P009335",
+      "face": "obverse",
+      "obs": 1,
+      "lines": [
+        {
+          "label": "2",
+          "text": "nu<M391<M391 , 2(N01) ",
+          "m_signs": [
+            "M391"
+          ],
+          "n_signs": [
+            "N01"
+          ],
+          "has_m": false,
+          "has_n": false
+        },
+        {
+          "label": "3",
+          "text": "pu2<M288<M288 , 1(N45) 3(N14) ",
+          "m_signs": [
+            "M288"
+          ],
+          "n_signs": [
+            "N14",
+            "N45"
+          ],
+          "has_m": true,
+          "has_n": true
+        }
+      ]
+    }
+  ],
+  "split_frontier": [
+    {
+      "n_val_blocks": 0,
+      "val_floor": 1.0,
+      "train_floor": 4.4642857142857545e-09,
+      "n_val_tablets": 0,
+      "val_tablets": [],
+      "n_train_informative_blocks": 16
+    },
+    {
+      "n_val_blocks": 1,
+      "val_floor": 0.0033333333333333574,
+      "train_floor": 1.3392857142857166e-06,
+      "n_val_tablets": 1,
+      "val_tablets": [
+        "P272825"
+      ],
+      "n_train_informative_blocks": 15
+    },
+    {
+      "n_val_blocks": 2,
+      "val_floor": 0.0006666666666666705,
+      "train_floor": 6.696428571428594e-06,
+      "n_val_tablets": 2,
+      "val_tablets": [
+        "P008908",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 14
+    },
+    {
+      "n_val_blocks": 3,
+      "val_floor": 3.96825396825401e-05,
+      "train_floor": 0.00011249999999999982,
+      "n_val_tablets": 2,
+      "val_tablets": [
+        "P008020",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 13
+    },
+    {
+      "n_val_blocks": 4,
+      "val_floor": 7.936507936508009e-06,
+      "train_floor": 0.0005624999999999996,
+      "n_val_tablets": 3,
+      "val_tablets": [
+        "P008020",
+        "P008908",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 12
+    },
+    {
+      "n_val_blocks": 5,
+      "val_floor": 3.9682539682540045e-06,
+      "train_floor": 0.0011249999999999995,
+      "n_val_tablets": 4,
+      "val_tablets": [
+        "P008020",
+        "P008152",
+        "P008908",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 11
+    },
+    {
+      "n_val_blocks": 6,
+      "val_floor": 1.984126984127003e-06,
+      "train_floor": 0.0022499999999999977,
+      "n_val_tablets": 5,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008908",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 10
+    },
+    {
+      "n_val_blocks": 7,
+      "val_floor": 9.920634920635018e-07,
+      "train_floor": 0.004499999999999994,
+      "n_val_tablets": 6,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 9
+    },
+    {
+      "n_val_blocks": 8,
+      "val_floor": 4.960317460317511e-07,
+      "train_floor": 0.008999999999999984,
+      "n_val_tablets": 7,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 8
+    },
+    {
+      "n_val_blocks": 9,
+      "val_floor": 2.4801587301587565e-07,
+      "train_floor": 0.01799999999999996,
+      "n_val_tablets": 8,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 7
+    },
+    {
+      "n_val_blocks": 10,
+      "val_floor": 1.2400793650793788e-07,
+      "train_floor": 0.03599999999999991,
+      "n_val_tablets": 9,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 6
+    },
+    {
+      "n_val_blocks": 11,
+      "val_floor": 6.200396825396895e-08,
+      "train_floor": 0.07199999999999979,
+      "n_val_tablets": 10,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 5
+    },
+    {
+      "n_val_blocks": 12,
+      "val_floor": 3.100198412698449e-08,
+      "train_floor": 0.14399999999999952,
+      "n_val_tablets": 11,
+      "val_tablets": [
+        "P008020",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P009335",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 4
+    },
+    {
+      "n_val_blocks": 13,
+      "val_floor": 1.5500992063492258e-08,
+      "train_floor": 0.2879999999999988,
+      "n_val_tablets": 12,
+      "val_tablets": [
+        "P008020",
+        "P008057",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P009335",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 3
+    },
+    {
+      "n_val_blocks": 14,
+      "val_floor": 9.300595238095352e-09,
+      "train_floor": 0.4799999999999984,
+      "n_val_tablets": 13,
+      "val_tablets": [
+        "P008020",
+        "P008057",
+        "P008096",
+        "P008152",
+        "P008711",
+        "P008844",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P009335",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 2
+    },
+    {
+      "n_val_blocks": 15,
+      "val_floor": 5.5803571428572084e-09,
+      "train_floor": 0.7999999999999979,
+      "n_val_tablets": 14,
+      "val_tablets": [
+        "P008020",
+        "P008057",
+        "P008096",
+        "P008122",
+        "P008152",
+        "P008711",
+        "P008844",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P009335",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 1
+    },
+    {
+      "n_val_blocks": 16,
+      "val_floor": 4.4642857142857545e-09,
+      "train_floor": 1.0,
+      "n_val_tablets": 15,
+      "val_tablets": [
+        "P008020",
+        "P008047",
+        "P008057",
+        "P008096",
+        "P008122",
+        "P008152",
+        "P008711",
+        "P008844",
+        "P008908",
+        "P008984",
+        "P009018",
+        "P009198",
+        "P009251",
+        "P009335",
+        "P272825"
+      ],
+      "n_train_informative_blocks": 0
+    }
+  ]
+}

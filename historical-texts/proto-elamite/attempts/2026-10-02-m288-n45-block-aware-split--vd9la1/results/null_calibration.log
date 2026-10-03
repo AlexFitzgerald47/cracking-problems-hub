@@ -1,0 +1,20 @@
+REAL M288-N45: p = 9.6946e-05  floor = 4.464e-09  obs 19/22  informative blocks 16
+
+null_A_within_block
+  valid reps                     20000
+  mean informative blocks        16.0  (real 16)
+  reps with power at 0.05        1.000
+  SIZE at 0.05 (all reps)        0.0171
+  SIZE at 0.05 (powered reps)    0.0171
+  p median / quartiles           0.625  [0.260, 0.787]
+  frac reps with p <= real p     0.00010
+
+null_B_within_face_strata
+  valid reps                     20000
+  mean informative blocks        16.7  (real 16)
+  reps with power at 0.05        1.000
+  SIZE at 0.05 (all reps)        0.0312
+  SIZE at 0.05 (powered reps)    0.0312
+  p median / quartiles           0.610  [0.336, 0.839]
+  frac reps with p <= real p     0.00005
+

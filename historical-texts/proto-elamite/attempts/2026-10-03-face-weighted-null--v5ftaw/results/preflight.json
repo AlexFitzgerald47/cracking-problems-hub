@@ -1,0 +1,242 @@
+{
+  "M297-N39B": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 1.4340311438013313,
+      "reverse_target": 82,
+      "reverse_other": 514,
+      "obverse_target": 404,
+      "obverse_other": 3617,
+      "reverse_rate": 0.13758389261744966,
+      "obverse_rate": 0.10047251927381248
+    },
+    "floor_w1": {
+      "p_floor": 4.0203838737140946e-13,
+      "blocks": 229,
+      "max_possible_overlap": 37,
+      "min_possible_overlap": 13
+    },
+    "floor_what": {
+      "p_floor": 1.3318515681576825e-12,
+      "blocks": 229,
+      "max_possible_overlap": 37,
+      "min_possible_overlap": 13
+    },
+    "floor_4what": {
+      "p_floor": 4.5286624377563045e-11,
+      "blocks": 229,
+      "max_possible_overlap": 37,
+      "min_possible_overlap": 13
+    }
+  },
+  "M297-N24": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 1.8496543707262065,
+      "reverse_target": 48,
+      "reverse_other": 548,
+      "obverse_target": 183,
+      "obverse_other": 3838,
+      "reverse_rate": 0.08053691275167785,
+      "obverse_rate": 0.0455110668987814
+    },
+    "floor_w1": {
+      "p_floor": 2.0121480082417556e-08,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 3
+    },
+    "floor_what": {
+      "p_floor": 1.0782439142148443e-07,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 3
+    },
+    "floor_4what": {
+      "p_floor": 1.2680508816415643e-06,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 3
+    }
+  },
+  "M297-N01": {
+    "direction": "depleted",
+    "face_weight": {
+      "w": 1.2552778404243845,
+      "reverse_target": 469,
+      "reverse_other": 127,
+      "obverse_target": 2999,
+      "obverse_other": 1022,
+      "reverse_rate": 0.7869127516778524,
+      "obverse_rate": 0.745834369559811
+    },
+    "floor_w1": {
+      "p_floor": 1.6874321814276192e-14,
+      "blocks": 229,
+      "max_possible_overlap": 38,
+      "min_possible_overlap": 12
+    },
+    "floor_what": {
+      "p_floor": 8.006715781061998e-15,
+      "blocks": 229,
+      "max_possible_overlap": 38,
+      "min_possible_overlap": 12
+    },
+    "floor_4what": {
+      "p_floor": 2.063833206945978e-17,
+      "blocks": 229,
+      "max_possible_overlap": 38,
+      "min_possible_overlap": 12
+    }
+  },
+  "M263-N30C": {
+    "direction": "depleted",
+    "face_weight": {
+      "w": 1.979839058579216,
+      "reverse_target": 67,
+      "reverse_other": 571,
+      "obverse_target": 227,
+      "obverse_other": 3813,
+      "reverse_rate": 0.10501567398119123,
+      "obverse_rate": 0.05618811881188119
+    },
+    "floor_w1": {
+      "p_floor": 0.0012307554600787672,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 0
+    },
+    "floor_what": {
+      "p_floor": 0.0029764833254828623,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 0
+    },
+    "floor_4what": {
+      "p_floor": 0.009643479711640366,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 0
+    }
+  },
+  "M263-N01": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 1.1726712921153652,
+      "reverse_target": 482,
+      "reverse_other": 156,
+      "obverse_target": 2927,
+      "obverse_other": 1113,
+      "reverse_rate": 0.7554858934169278,
+      "obverse_rate": 0.7245049504950495
+    },
+    "floor_w1": {
+      "p_floor": 3.879391911778788e-09,
+      "blocks": 229,
+      "max_possible_overlap": 43,
+      "min_possible_overlap": 19
+    },
+    "floor_what": {
+      "p_floor": 2.7795076027276216e-09,
+      "blocks": 229,
+      "max_possible_overlap": 43,
+      "min_possible_overlap": 19
+    },
+    "floor_4what": {
+      "p_floor": 8.546772543026133e-11,
+      "blocks": 229,
+      "max_possible_overlap": 43,
+      "min_possible_overlap": 19
+    }
+  },
+  "M243-N39B": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 1.6637782591790258,
+      "reverse_target": 115,
+      "reverse_other": 529,
+      "obverse_target": 484,
+      "obverse_other": 3695,
+      "reverse_rate": 0.17857142857142858,
+      "obverse_rate": 0.11581718114381431
+    },
+    "floor_w1": {
+      "p_floor": 6.683375104427728e-05,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 1
+    },
+    "floor_what": {
+      "p_floor": 7.220397876505949e-05,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 1
+    },
+    "floor_4what": {
+      "p_floor": 4.618010907724456e-05,
+      "blocks": 229,
+      "max_possible_overlap": 9,
+      "min_possible_overlap": 1
+    }
+  },
+  "M106-N24": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 2.1492128196418006,
+      "reverse_target": 63,
+      "reverse_other": 589,
+      "obverse_target": 198,
+      "obverse_other": 3960,
+      "reverse_rate": 0.09662576687116564,
+      "obverse_rate": 0.047619047619047616
+    },
+    "floor_w1": {
+      "p_floor": 0.00012006449178416026,
+      "blocks": 229,
+      "max_possible_overlap": 4,
+      "min_possible_overlap": 0
+    },
+    "floor_what": {
+      "p_floor": 0.00014910304517990543,
+      "blocks": 229,
+      "max_possible_overlap": 4,
+      "min_possible_overlap": 0
+    },
+    "floor_4what": {
+      "p_floor": 0.00019838047701887775,
+      "blocks": 229,
+      "max_possible_overlap": 4,
+      "min_possible_overlap": 0
+    }
+  },
+  "M288-N45": {
+    "direction": "enriched",
+    "face_weight": {
+      "w": 1.827444656208767,
+      "reverse_target": 7,
+      "reverse_other": 538,
+      "obverse_target": 28,
+      "obverse_other": 3739,
+      "reverse_rate": 0.012844036697247707,
+      "obverse_rate": 0.007432970533581099
+    },
+    "floor_w1": {
+      "p_floor": 0.0003296703296703273,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 9
+    },
+    "floor_what": {
+      "p_floor": 0.0007906478449687347,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 9
+    },
+    "floor_4what": {
+      "p_floor": 0.002892447842773638,
+      "blocks": 229,
+      "max_possible_overlap": 16,
+      "min_possible_overlap": 9
+    }
+  }
+}

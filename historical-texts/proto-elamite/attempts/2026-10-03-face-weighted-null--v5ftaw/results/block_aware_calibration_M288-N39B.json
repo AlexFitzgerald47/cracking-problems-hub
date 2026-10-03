@@ -1,0 +1,24 @@
+{
+  "pair": "M288-N39B",
+  "planted_w": 1.8798163766993983,
+  "replicates": 300,
+  "skipped_replicates": 0,
+  "rows": [
+    {
+      "test": "block-aware split, face-blocked (handover item 1)",
+      "n": 300,
+      "reject_05": 0.03,
+      "reject_01": 0.0033333333333333335,
+      "median_p": 0.5782410807545241,
+      "p05_quantile": 0.07339126778560917
+    },
+    {
+      "test": "weighted null on bucket-0 holdout (this session)",
+      "n": 300,
+      "reject_05": 0.0033333333333333335,
+      "reject_01": 0.0,
+      "median_p": 0.5887201720677329,
+      "p05_quantile": 0.13238159002368002
+    }
+  ]
+}

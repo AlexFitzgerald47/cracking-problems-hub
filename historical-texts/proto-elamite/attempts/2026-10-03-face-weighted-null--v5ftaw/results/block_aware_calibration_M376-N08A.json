@@ -1,0 +1,24 @@
+{
+  "pair": "M376-N08A",
+  "planted_w": 2.1317098716941607,
+  "replicates": 300,
+  "skipped_replicates": 0,
+  "rows": [
+    {
+      "test": "block-aware split, face-blocked (handover item 1)",
+      "n": 300,
+      "reject_05": 0.02666666666666667,
+      "reject_01": 0.01,
+      "median_p": 0.6216560402922182,
+      "p05_quantile": 0.08820742201099864
+    },
+    {
+      "test": "weighted null on bucket-0 holdout (this session)",
+      "n": 300,
+      "reject_05": 0.0,
+      "reject_01": 0.0,
+      "median_p": 1.0,
+      "p05_quantile": 1.0
+    }
+  ]
+}
