@@ -1,0 +1,62 @@
+{
+  "n08_tally": {
+    "N08": 12,
+    "N08A": 56,
+    "N08B": 12
+  },
+  "m376_lines": 146,
+  "variants": {
+    "N08A as parsed": {
+      "cells": [
+        39,
+        107,
+        17,
+        4706
+      ],
+      "crude_or": 98.82086378737542,
+      "fisher_p": 1.1674376374542049e-48,
+      "face_blocked_p": 1.6221100436208452e-13,
+      "floor": 9.357877276789603e-18,
+      "informative_blocks": 16
+    },
+    "N08 alone": {
+      "cells": [
+        5,
+        141,
+        7,
+        4716
+      ],
+      "crude_or": 24.443580683156654,
+      "fisher_p": 1.5132383303903906e-05,
+      "face_blocked_p": 0.008741258741258782,
+      "floor": 0.008741258741258782,
+      "informative_blocks": 2
+    },
+    "N08+N08A merged": {
+      "cells": [
+        44,
+        102,
+        24,
+        4699
+      ],
+      "crude_or": 83.27635639621703,
+      "fisher_p": 7.644598305273496e-53,
+      "face_blocked_p": 1.616142488198947e-15,
+      "floor": 8.179962654536404e-20,
+      "informative_blocks": 18
+    },
+    "N08+N08A+N08B merged": {
+      "cells": [
+        51,
+        95,
+        29,
+        4694
+      ],
+      "crude_or": 85.81657644866448,
+      "fisher_p": 3.815417488628666e-61,
+      "face_blocked_p": 2.7870268869929895e-16,
+      "floor": 1.3633271090894002e-20,
+      "informative_blocks": 20
+    }
+  }
+}

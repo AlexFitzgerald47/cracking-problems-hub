@@ -1,0 +1,79 @@
+{
+  "m288_n45_diagnostics": {
+    "informative_blocks": 16,
+    "distinct_tablets": 15,
+    "co_occurrence_lines": 56,
+    "co_occurrences_in_forced_blocks": 38
+  },
+  "donor_split": {
+    "validation_tablets": 15,
+    "validation_lines": 98,
+    "informative_blocks": 16,
+    "observed": 19,
+    "max": 22,
+    "p": 9.694630456349345e-05,
+    "floor": 4.4642857142857545e-09,
+    "complement_screen_cells": [
+      37,
+      483,
+      31,
+      4220
+    ],
+    "complement_screen_or": 10.391736839513468,
+    "complement_screen_fisher_p": 6.366542068393401e-19
+  },
+  "correction_base": {
+    "pairs_tested": 1056,
+    "selected": 54,
+    "rows": [
+      {
+        "pair": "M297-N39B",
+        "face_p": 0.0014514192788974945,
+        "q_over_8": 0.005805677115589978,
+        "q_over_screen": 0.03918832053023235
+      },
+      {
+        "pair": "M297-N24",
+        "face_p": 0.02807348901098907,
+        "q_over_8": 0.03208398744113037,
+        "q_over_screen": 0.15159684065934098
+      },
+      {
+        "pair": "M297-N01",
+        "face_p": 0.008390263361218767,
+        "q_over_8": 0.016780526722437534,
+        "q_over_screen": 0.11326855537645335
+      },
+      {
+        "pair": "M263-N30C",
+        "face_p": 0.01900431225121644,
+        "q_over_8": 0.02533908300162192,
+        "q_over_screen": 0.15159684065934098
+      },
+      {
+        "pair": "M263-N01",
+        "face_p": 0.0002864567636070316,
+        "q_over_8": 0.0022916541088562527,
+        "q_over_screen": 0.015468665234779706
+      },
+      {
+        "pair": "M243-N39B",
+        "face_p": 0.0030637254901960554,
+        "q_over_8": 0.008169934640522814,
+        "q_over_screen": 0.055147058823528994
+      },
+      {
+        "pair": "M106-N24",
+        "face_p": 0.011684518013631568,
+        "q_over_8": 0.01869522882181051,
+        "q_over_screen": 0.12619279454722093
+      },
+      {
+        "pair": "M288-N45",
+        "face_p": 0.4699999999999988,
+        "q_over_8": 0.4699999999999988,
+        "q_over_screen": 1.0
+      }
+    ]
+  }
+}

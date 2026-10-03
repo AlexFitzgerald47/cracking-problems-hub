@@ -1,0 +1,42 @@
+{
+  "M297-N39B": {
+    "alpha_05": 0.03025,
+    "alpha_01": 0.01,
+    "replicates": 4000
+  },
+  "M297-N24": {
+    "alpha_05": 0.0435,
+    "alpha_01": 0.008,
+    "replicates": 4000
+  },
+  "M297-N01": {
+    "alpha_05": 0.049,
+    "alpha_01": 0.00925,
+    "replicates": 4000
+  },
+  "M263-N30C": {
+    "alpha_05": 0.0,
+    "alpha_01": 0.0,
+    "replicates": 4000
+  },
+  "M263-N01": {
+    "alpha_05": 0.0205,
+    "alpha_01": 0.00525,
+    "replicates": 4000
+  },
+  "M243-N39B": {
+    "alpha_05": 0.0425,
+    "alpha_01": 0.00175,
+    "replicates": 4000
+  },
+  "M106-N24": {
+    "alpha_05": 0.0385,
+    "alpha_01": 0.00375,
+    "replicates": 4000
+  },
+  "M288-N45": {
+    "alpha_05": 0.0385,
+    "alpha_01": 0.01225,
+    "replicates": 4000
+  }
+}
