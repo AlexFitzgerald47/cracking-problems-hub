@@ -31,6 +31,25 @@
   ciphertext-statistics family split out of `PRACTICES.md` into its own annexe. Five rules, and it
   is not optional for this stream.
 
+- **Build the external overlap map before claiming any result as the Hub's.** New 2026-10-03, and it
+  is the generalised form of the solution-status audit above: agreement with another project is
+  evidence only if you could have disagreed. The Linear A panel found corpus overlap effectively
+  total, source overlap near-total and **test dependence total** with a parallel public campaign on
+  the same corpus, via one shared third-party script. One row per proposition you intend to claim →
+  published elsewhere / Hub result / cannot assess, with a reason per row, plus the shared inputs
+  named (corpus edition, commentary, third-party code, and the instruction that chose your
+  experiment). Acute for the folders with large public communities — Voynich, Beale, Kryptos — and
+  for the archival packs, where this board has already lost one problem to an external solve.
+  `board/log/2026-10-03-connection-a-shared-trigger-is-not-an-independent-replication.md`.
+- **Charge the transcription-variant budget before counting anchors.** From the Byblos refuter: where
+  a witness has multiple published readings, "the two strings share a sign" is a statement about
+  which reading you chose. Charge it against the argument, not the transcriber — a variant selection
+  that is the editor's own published choice is attributable to them.
+- **`board/PRACTICES-ARCHIVAL.md` is not optional for the archival packs in this stream** — Crelly
+  1648, Ormond–Anglesey 1663, CD 286, VORFYDCGT. Role separation before identity constraint, the
+  OBSERVED / INFERRED / MISSING ledger, and the second-scan replicate for any measurement over a
+  scanned edition.
+
 ## Live threads
 - The **IRA `VORFYDCGT`** and **CD 286** folders are one lane: same office, period, cipher
   family and archival bottleneck (Kennedy Group 2).

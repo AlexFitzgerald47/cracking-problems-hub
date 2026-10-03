@@ -25,6 +25,26 @@
   lacked a number. Rider: measure a shared element's base rate *inside each author* before crediting
   it as a link. **`black-death-mortality-figure` is next in line for this instrument.**
 
+- **Match a permutation on the confound, then test the classes you did not hypothesise.** New
+  2026-10-03, carried in from the Linear A panel, and it bites hardest in this stream because every
+  authorship and compiler argument here has the form *same hand, therefore one system*. Linear A's
+  Scribe-9 cohesion was p < 0.01 under a free label permutation, **p = 0.12–0.57** permuted within
+  strata of the variable the label was confounded with (tablet size), and **present for a scribe
+  nobody had hypothesised**. It was the absence of the across-class comparison, not the p-value, that
+  sank the criterion — and that half needs no new data. Written into the handovers of
+  `shakespeare-authorship`, `historia-augusta-authorship` and `early-irish-annals-reliability` with a
+  folder-specific reason each.
+  `board/log/2026-10-03-connection-match-the-null-on-the-confound-and-test-the-other-classes.md`.
+- **Agreement is evidence only if you could have disagreed.** Before crediting a contested-history
+  result as the Hub's, name every project and publication working the same sources and build the
+  overlap map — one row per proposition, a reason per row.
+  `board/log/2026-10-03-connection-a-shared-trigger-is-not-an-independent-replication.md`.
+- **`board/PRACTICES-ARCHIVAL.md` is not optional for this stream.** New 2026-10-03, split out of
+  `PRACTICES.md`: role separation before you constrain an identity (the VENONA error — a property
+  that belongs to a different cover name in the same traffic), the OBSERVED / INFERRED / MISSING
+  ledger for any identity chain, the proximity trap and row-by-row adjudication, and the second-scan
+  replicate for any measurement over a scanned edition.
+
 ## Live threads
 - **VENONA BROWN/BRAUN** and **Mesha line 31** are HELD at 3 × PARTIAL. VENONA's missing
   check is two small enumerable populations (constraint-ledger Q2, Q3) nobody has run.

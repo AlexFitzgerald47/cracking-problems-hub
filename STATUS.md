@@ -1,6 +1,6 @@
 # Cracking Problems Hub – Status Dashboard
 
-**Last updated:** 2026-10-02, **orchestrator overwatch pass** (the board has not been worked since 2026-09-27; both outstanding validation panels convened; two folders added that were missing from this dashboard; `PRACTICES.md` curated and split). Full report: `board/log/2026-10-02-orchestrator-pass.md`. Previous: 2026-09-27, **external-claim triage** (Beale B3 and Rohonc dispositions corrected; recent Dorabella/Voynich solve claims screened but not adopted) — `board/log/2026-09-27-external-claim-triage.md`.
+**Last updated:** 2026-10-03, **orchestrator overwatch pass** (the board is livelocked, not idle: seven Breaker sessions duplicated one experiment on unmerged branches, all now landed; Byblos panel closed at 3 × PARTIAL; two connections carried; `PRACTICES.md` split again). Full report: `board/log/2026-10-03-orchestrator-pass.md`. Previous: 2026-10-02, **orchestrator overwatch pass** (the board has not been worked since 2026-09-27; both outstanding validation panels convened; two folders added that were missing from this dashboard; `PRACTICES.md` curated and split). Full report: `board/log/2026-10-02-orchestrator-pass.md`. Previous: 2026-09-27, **external-claim triage** (Beale B3 and Rohonc dispositions corrected; recent Dorabella/Voynich solve claims screened but not adopted) — `board/log/2026-09-27-external-claim-triage.md`.
 
 ## Operating design — 2026-09-13
 
@@ -29,32 +29,73 @@ old word. Log: `board/log/2026-09-27-the-draw.md`.
 
 ## Board state
 
-**2026-10-02: the board is idle, and that is the only finding that matters this pass.** The last
-Breaker session closed `ciphers/debosnys-ciphers` at **2026-09-27 20:30 UTC**. Nothing has been worked
-since. At the routine's six-hour cadence that is about **eighteen consecutive missed firings**, and the
-only commits to `main` in those four and a half days are the owner's site and visual work (#21–#28).
-Every problem folder is idle 7–9 days.
+**2026-10-03: the board is NOT idle — it is livelocked, and the 2026-10-02 finding on this line was
+wrong.** That pass recorded "the board is idle … it is simply not being drawn from", and read eighteen
+missed firings off `main`. **The Breaker routine is firing normally.** Eight sessions fired between
+2026-10-01 and 2026-10-03; seven did real work. Every one of them pushed to its own
+`claude/busy-galileo-*` branch and **opened no pull request**, so nothing reached `main` and from
+`main` a working routine is indistinguishable from a dead one. The earlier diagnosis was made from
+`main`'s history alone; the branch list is where the routine is visible.
 
-**Nothing is blocking it.** `board/active/` holds only its `.gitkeep`, so no claim is stale and none
-needed clearing — the fifth consecutive pass with clean claim hygiene. GitHub has **no open pull
-request**, so the Codex queue is clear and nothing is waiting on review. The draw runs, names a pick
-(`historical-texts/proto-elamite`, stream B, with a written next move) and marks no file `PICK-UP`.
-The two `NO NEXT MOVE` defects it did mark were filing, not emptiness, and are fixed. **So the board
-is not blocked, under-specified or jammed; it is simply not being drawn from.** No promotion,
-re-ranking or priority overlay changes that, which is why it is recorded here and at the top of
-`board/TOP_INTEREST.md` as a human decision about the Breaker routine rather than as a routing problem.
+**All seven worked the same problem, on the same experiment.** `historical-texts/proto-elamite`, the
+M288–N45 block-aware split — because the draw reads the last worked stream and coverage debt from
+`main` alone, so with nothing landing it handed session after session the identical stream B pick with
+the identical item 1 as its next move. The rotation never advanced either: each session read "last was
+stream A (Debosnys, 09-27)" and took stream B. **That is the livelock, and it is a property of the
+publication path, not of the sessions** — each froze its predictions before running and did honest
+work, and one (`v5ftaw`) reports three of its own six frozen predictions failed.
 
-**Validation was the standing constraint and it has been discharged.** Linear A and Byblos had been
-panel-pending since **2026-09-17**. A 2026-09-25 pass convened both and committed in-progress
-refutation artifacts into each folder (`validation/2026-09-25/` — a working two-witness Linear A
-reproduction harness, and four OCBI parsing/refutation scripts for Byblos) **but never posted a
-verdict**, so the panels stayed owed to Overwatch for a further week while looking, from the outside,
-like work in progress. Both panels were **convened on 2026-10-02** — three validators each, the third
-assigned to refute, judged against the criteria already written in each `PROBLEM.md` and reproducing
-from the raw corpora rather than reviewing the writeups. Verdicts land in `board/log/` as
-`2026-10-02-validation-<slug>-v{1,2,3-refuter}.md`. **Until an orchestrator records the outcome both
-files remain panel-pending and no Breaker should re-polish either.** Whatever comes back, neither
-becomes "solved" here: the standing rule is `HELD — awaiting human sign-off`.
+**All seven are now landed on `main`** (commit `fee05e6`), each in its own namespaced
+`attempts/<date>-<name>--<session>/` directory with its `PREDICTIONS.md`, `RESULTS.md`, code, results,
+`HANDOVER-as-written.md` and `PROGRESS-entry-as-written.md` preserved verbatim, plus their eight
+`board/log/` craft entries under their own filenames. **Nothing was merged, ranked or adjudicated by
+Overwatch.** The seven agree that M288–N45 is confirmed against the face confound and that the
+2026-09-17 bucket-0 holdout's p-floor of 0.12 was a power failure rather than a negative result; they
+give **six different answers** on the downstream constraint-set re-tiering (8 → 26 pairs; four of
+eight demoted; a re-count on a new multiplicity basis; "a sample, not a set"; a co-numeral control
+demoting M263–N01 and refuting M297–N24; a 24-pair frozen screen). Choosing between those is a
+Breaker's call. The folder's next move is now **reconcile the seven, and do not run an eighth** — with
+step 2 pricing the seven-way agreement for test dependence, because they shared a corpus, a handover
+item and an instruction, and their errors are correlated by construction.
+
+**This is the one thing on this dashboard that needs a human.** The Breaker routine pushes to a
+branch and nothing merges it. Either it should `git pull --rebase origin main` and push to `main` as
+the Orchestrator routine does, or it should open a pull request — and until one of those is true,
+every firing re-runs the previous firing's work. Recorded at the top of `board/TOP_INTEREST.md` too.
+**The corrected count of genuinely lost cycles is seven duplicated sessions, not eighteen missing
+ones.**
+
+**What was and was not blocking, checked again this pass.** `board/active/` holds only its `.gitkeep`
+— sixth consecutive clean claim pass, and no stale claim to clear (the one session that crashed
+straight after claiming, `4ptru6`, left its claim on its own branch where it is harmless). GitHub has
+**no open pull request**, so the Codex queue is clear. The draw runs, names a pick with a written next
+move, and marks **no** file `PICK-UP` and **no** file `NO NEXT MOVE`.
+
+**Validation: Byblos is closed, Linear A is closing.** Both had been panel-pending since
+**2026-09-17**; both panels were convened on 2026-10-02, three validators each with the third assigned
+to refute, judged against the criteria already written in each `PROBLEM.md` and reproducing from the
+raw corpora rather than reviewing the writeups.
+
+**Byblos syllabary — panel complete at 3 × PARTIAL, `HELD — awaiting human sign-off`, drawable
+again.** Outcome in `board/log/2026-10-03-panel-outcome-byblos-syllabary.md`; verdicts in
+`board/log/2026-10-02-validation-byblos-syllabary-v{1,2,3-refuter}.md`. Source integrity and the
+transcriptions verified clean against an independent published witness. Criteria 1 and 4 **not met** —
+criterion 4's only artefact **inverts**, being anchored on U+E402, which the GEAS font that ships the
+signs names a word divider and which behaves like one (13 tokens, zero at a line edge). Criterion 2 is
+met by prior art for Woudhuizen/Best only, with **Garbini (2009)** a live rival the folder does not
+name; criterion 3 is met as argument but unexecuted. **Validators 2 and 3 dissent** on whether the
+E416/E4AF split is published prior art or adjudicated in neither direction — both agree it is not a
+Hub novelty, and a future session must not resolve it by picking the convenient reading. Not a solve
+and published nowhere as one.
+
+**And the 2026-10-02 pass's own lesson repeated itself inside the panel it convened.** That pass named
+*an unposted verdict is worse than an unconvened panel* — the work is paid for and invisible. Linear
+A's refuter then committed a complete attack suite (eleven `attack_*.py` scripts, vendored witnesses,
+a 48 KB `out.txt`, and a `README.md` naming the verdict path) and **died before writing the verdict
+file**, leaving the panel owed to Overwatch over one missing file. A validator was convened on
+2026-10-03 to close it, told to run and go beyond the crashed session's suite rather than adopt it.
+The rule now in `PRACTICES.md`: **write the file that reports your result, with
+`verdict: PENDING`, before you run the thing that might kill the session.**
 
 **Two folders existed on disk and not on this dashboard, and that is a dashboard bug of the exact kind
 the draw was built to prevent.** `historical-controversies/venona-baron/` and
@@ -73,11 +114,20 @@ draw ranked it 5th in stream B as `unworked`, because `stageOf` can only read `b
 it in stream B. The underlying gap is in `scripts/derive.mjs`, which is the owner's file, so it is on
 the human-decision list rather than patched here.
 
-**Held claims will start tripping the pick-up rule from 2026-10-08.** The four HELD 3 × PARTIAL files
-(Ennis, Mesha line 31, VENONA BROWN/BRAUN, Chinese gold bars) are idle 7–8 days. If nothing runs, they
-cross the 14-day pick-up threshold between **2026-10-08 and 2026-10-09** and will jump to the front of
-their streams — which is the mechanism working as designed, but it is also the point at which an idle
-board starts re-presenting its oldest unfinished business instead of its most tractable work.
+**Held claims trip the pick-up rule from 2026-10-08, and one more file is now held.** The four HELD
+3 × PARTIAL files (Ennis, Mesha line 31, VENONA BROWN/BRAUN, Chinese gold bars) are idle 8–9 days and
+cross the 14-day threshold between **2026-10-08 and 2026-10-09**, at which point they jump to the
+front of their streams — the mechanism working as designed. **Byblos syllabary joins them as held at
+3 × PARTIAL from 2026-10-03**, but its validation artifacts landed 2026-10-02, so it ranks as
+just-worked and will not trip pick-up until late October. Nothing is currently marked `PICK-UP`.
+**What is waiting on what:** all four of the older held claims are waiting on a *physical or archival*
+check rather than another pass of reasoning — Ennis on the December 2023 photogrammetry/RTI, Mesha on
+a blind stroke comparison against genuine stone and squeeze, VENONA on constraint-ledger Q2 and Q3
+(two small enumerable populations the cables name and nobody has run), and the gold bars on the
+simplified-character check against the IACR photographs plus the cursive script on six of the fifteen
+faces that nobody here or elsewhere has looked at. None of the four is blocked on Overwatch, and none
+needs a new panel; each needs one session willing to do the unglamorous evidence step. With the
+livelock fixed these are the four files most worth a firing after the Proto-Elamite reconciliation.
 
 **What the board produced this pass was method, not evidence.** Two cross-silo carries were posted:
 the Blitz length-matched-null and doublet rules, written into **seven** `HANDOVER.md` files and a new
@@ -196,7 +246,7 @@ resolves the CD 286 / CD 280 discrepancy and orders Kennedy Group 2 unblocks bot
 ### Historical Texts
 | Problem | Folder | Status | Notes |
 |---------|--------|--------|-------|
-| Proto-Elamite | `historical-texts/proto-elamite/` | Open — **constraint set re-tiered and audited 2026-09-17**; unclaimed | The 2026-09-04 pipeline reproduces exactly. Seven of the eight numeral constraints survive a null blocking on `(tablet, face)`, not just tablet. Three are load-bearing (M297–N39B, M263–N01, M263–N30C: pass in every powered holdout bucket); the rest are power-limited leads. **M288–N45 is untestable, not refuted** — its face-blocked test has a p-value floor of 0.12 and cannot fire. The M297 family merge was audited and upheld (M297 vs M297~B homogeneous, p = 0.0757/0.6941/0.1377). Face gap is 0.41× the sign signal corpus-wide, but M297 is the most face-skewed sign in the corpus. Recommended experiments 1 and 4 are now closed out — read `HANDOVER.md` before redoing either. See `attempts/2026-09-17-exact-form-and-face/RESULTS.md` |
+| Proto-Elamite | `historical-texts/proto-elamite/` | **Open — seven parallel Breaker sessions 2026-10-01→10-03, all landed 2026-10-03, awaiting reconciliation**; unclaimed | **Read the orchestrator note at the top of `HANDOVER.md` before anything else, and do not run an eighth block-aware split.** Seven sessions worked this folder on the same drawn next move while none of their work reached `main`; all seven are landed under namespaced `attempts/<date>-<name>--<session>/` directories with their predictions, results, code and own handover text preserved verbatim. **They agree M288–N45 is confirmed against the face confound** and that the 2026-09-17 bucket-0 holdout's p-floor of 0.12 was a power failure rather than a negative result — so this row's previous "M288–N45 is untestable, not refuted" is superseded by seven runs, none of them yet reconciled. **They give six different answers on the downstream constraint-set re-tiering** (8 → 26 pairs; four of eight demoted; a re-count on a new multiplicity basis; "a sample, not a set"; a co-numeral control demoting M263–N01 and refuting M297–N24; a 24-pair frozen screen), and Overwatch has not chosen between them. The next session reconciles method against result, writes one tier table with its basis declared *in* the table, and prices the seven-way agreement for test dependence before banking it — they shared a corpus, a handover item and an instruction. The richest material in the set is where they diverge and where `v5ftaw` refuted three of its own six frozen predictions. Earlier state, still valid as the baseline the seven departed from: the 2026-09-04 pipeline reproduces exactly; the M297 family merge was audited and upheld; face gap is 0.41× the sign signal corpus-wide |
 | Rohonc Codex | `historical-texts/rohonc-codex/` | Open — **published partial codebook reading; never replicated by the Hub** | Király and Tokai's 2018 *Cryptologia* paper argues that Rohonc is a code system rather than a substitution alphabet and presents interlinear readings; later work develops its theological/content interpretation. The publication itself left morphology, syntax, language and broader coverage for future work, and external acceptance is mixed. Do **not** start from a blank transcription or call it solved. First reproduce the published segmentation/codebook on held-out pages and test illustration alignment against negative controls. See `HANDOVER.md` |
 | Phaistos Disc | `historical-texts/phaistos-disc/` | **Worked 2026-09-25 — corpus and null machinery committed, one new structural result, one frozen prediction refuted**; unclaimed | **Do not rebuild the corpus or the nulls.** Three separately published transcriptions agree exactly; pipeline reproduces 14/15 published descriptive facts blind (the 15th is a source error: hapax 43 is in B6, not B4). New: the **18 oblique-stroke groups are formulaic as a class** — duplicate excess 5 vs null 0.65, length-stratified label permutation **p = 4.5e-5**, clearing a pre-registered 25-way budget; 0 of 7 repeated types straddle the boundary; section-**initial** control p = 0.58, so the effect is specifically terminal. Reproduced (not discovered): side A's 15-sign repeat (Ipsen 1929), `02-12-31-26` x3 (Timm 2004), sign 02 group-initial 19/19 (**Giorgi & Baldacci, *Cryptography* 10(4):60, 2026-08-19** — five weeks earlier; found by DOI enumeration after a researcher's report agreed too precisely). F1 negative transfer: the gold-bar too-flat test does not apply (chi2 = 194.25 vs null mean 44.0; IC 1.626). **Refuted and not to be reused:** "the groups are too long to be words" — Linear B's 1-syllabogram rate is 0.31 % and P(zero in 61) = 0.83. Next: settle **Duhoux 1977b**, on which H1's novelty (not its statistics) depends, and run H1 under the reverse reading direction — it is direction-sensitive and may be evidence about reading direction itself. See `HANDOVER.md`. |
 | Linear A | `historical-texts/linear-a/` | Open — functional reconstruction candidate | Scribe-9 labor-liability dossier; KI-RO scalar/block grammar and HT87/HT117 roster relationship. Literal meanings and integrated administrative interpretation remain hypotheses. A-DU polarity is unresolved in the latest handover; do not inherit the older “fulfilled” gloss as settled. Not a language decipherment. |

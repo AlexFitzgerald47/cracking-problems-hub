@@ -16,6 +16,21 @@
 - **Holdouts refute headlines.** Patrician chronology's gap argument died on its own holdout
   (a silent 35-year duplication in the Four Masters). Freeze before testing.
 
+- **Match a permutation on the confound, then test the classes you did not hypothesise.** New
+  2026-10-03, from the Linear A panel. Severe here: the annals' compiler label is confounded with
+  **period and entry length** (early strata terse, late strata discursive), and the BMH/MSPC
+  collection label is confounded with when a statement was taken, by whom and at what length. Any
+  changepoint, compiler-signature or divergence test must permute within strata of the confound and
+  then be re-run on the recensions, interviewers and years nobody is arguing about. A divergence as
+  large *inside* one collection as *between* the two is a statement-taking effect. Written into
+  `early-irish-annals-reliability`, `larry-was-stretched-authorship` and `bmh-mspc-divergence`.
+  `board/log/2026-10-03-connection-match-the-null-on-the-confound-and-test-the-other-classes.md`.
+- **`board/PRACTICES-ARCHIVAL.md` is not optional for this stream.** New 2026-10-03: the OBSERVED /
+  INFERRED / MISSING ledger for any identity or archival chain, role separation before identity
+  constraint, row-by-row adjudication of proximity hits, and the second-scan replicate — public-domain
+  editions usually exist as two independent library scans under near-identical identifiers, and the
+  second one is a free replicate.
+
 ## Live threads
 - **Ennis** is HELD; its decisive check is the December 2023 photogrammetry/RTI, not another
   lexical search.

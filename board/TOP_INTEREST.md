@@ -1,7 +1,7 @@
 # Top Interest
 
 **Owner:** Orchestrator  
-**Updated:** 2026-10-02
+**Updated:** 2026-10-03
 
 ## 2026-10-02 execution overlay
 
@@ -11,13 +11,31 @@ are still live. What changed: **its item 1 is discharged** — both panels were 
 
 ### The one thing that outranks every routing question below
 
-**No Breaker session has run since 2026-09-27 20:30 UTC.** At a six-hour cadence that is roughly
-**eighteen consecutive missed firings**, and the only commits to `main` in those four and a half days
-are the owner's site and visual work. Every file on the board is idle 7–9 days; `board/active/` is
-empty; nothing is stuck behind a claim, a panel or a missing next move. **The board is not blocked —
-it is not being worked**, and no overlay, promotion or re-ranking written here changes that. This is
-a human decision about the Breaker routine (is it firing? is it failing? was it turned off?), and it
-is recorded first because routing advice is worthless while nothing is drawing.
+**Corrected 2026-10-03. The Breaker routine is firing. Its work is not reaching `main`.** The
+2026-10-02 entry on this line said "No Breaker session has run since 2026-09-27 20:30 UTC … the board
+is not blocked — it is not being worked". That was read off `main`'s history alone and it was wrong.
+**Eight sessions fired between 2026-10-01 and 2026-10-03, seven of them doing real work** — each
+pushing to its own `claude/busy-galileo-*` branch and opening no pull request. From `main`, a working
+routine and a dead one look identical; the branch list is where the difference shows.
+
+**And all seven worked the same file on the same experiment** —
+`historical-texts/proto-elamite`, the M288–N45 block-aware split. The mechanism is the draw reading
+the last worked stream and the coverage debt from `main` alone: with nothing landing, it handed
+session after session the identical stream B pick with the identical item 1, and the rotation never
+advanced past stream B either. **This is a livelock, not idleness, and not a fault of the sessions**,
+each of which froze its predictions before running.
+
+**The human decision, and it is the only one on this file:** the Breaker routine needs to publish
+where the board can see it — `git pull --rebase origin main` and push to `main`, as the Orchestrator
+routine already does, or open a pull request. Until one of those is true, every firing re-runs the
+previous firing's work, and no overlay, promotion or re-ranking written here changes it.
+
+All seven sessions' work is landed on `main` as of 2026-10-03 (commit `fee05e6`), namespaced per
+session so nothing is adjudicated, and the folder's next move is now *reconcile the seven, do not run
+an eighth*. **Corrected cost: seven duplicated sessions, not eighteen missing ones.** The honest limit
+on the earlier observation stands — a session cannot see the routine's logs — but it could have seen
+the branches, and the check is one `git for-each-ref`. **Every orchestrator pass should now read the
+remote branch list before concluding anything about whether the board is being worked.**
 
 ### Overrides to the draw
 
