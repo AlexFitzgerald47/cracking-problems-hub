@@ -1,0 +1,15 @@
+pair,direction,tier_2026_10_03_recon,tier_this_session,blind_folds_of_4,pre_specified_blind_test_q_base54,composition_control_blind_buckets,magnitude_control_blind_buckets,cdli_130_direction,basis
+M288-N45,enriched,A1,A1,1,0.04803 CONFIRMED,SURVIVES p=6.2e-09 MH=5.83,SURVIVES MH=10.38,agrees (no power),published eight; flagship; only 1 of 4 blind folds; no face power on bucket 0
+M297-N39B,enriched,A1,A1,3,0.0002368 CONFIRMED,SURVIVES p=4.9e-10 MH=3.36,SURVIVES MH=9.92,agrees (no power),published eight; strongest overall; survives every control run on it
+M106-N24,enriched,A1,A1-watch,0,0.03903 CONFIRMED,not run this session,not run this session,agrees (no power),"published eight, but 0 of 4 blind folds; also 3ltl6g flags its M106 merge as unsafe"
+M288-N24,enriched,A2,A1-new,3,0.2021 FAILED,SURVIVES p=1.2e-08 MH=3.61,SURVIVES MH=3.79,agrees (no power),"BLIND-WARRANTED this session: 3 of 4 cross-fit folds, survives both controls"
+M288-N39B,enriched,A2,A1-new-flagged,2,0.0954 FAILED,SURVIVES p=1.4e-14 MH=3.62,SURVIVES MH=3.20,OPPOSITE (no power),"BLIND-WARRANTED but direction reverses on the 130 new CDLI tablets, underpowered"
+M376-N08A,enriched,A2,A2-fragile,2,1.0 FAILED,SURVIVES p=2.2e-19 but only 2 strata,SURVIVES MH=140.23,agrees (no power),"blind-warranted, but 2 informative strata and 0 informative face blocks on bucket 0"
+M288-N14,enriched,A2,not-a-candidate,2,n/a,not run this session,SURVIVES MH=1.77,not tested,"SCREENED OUT by the unchanged 2026-09-04 rule: train OR 2.27 < 3.0. Cannot be promoted under that rule."
+M362-N14,enriched,A2,not-a-candidate,0,n/a,not run this session,not run this session,not tested,"SCREENED OUT by the unchanged 2026-09-04 rule: train q 0.0226 > 0.01. Cannot be promoted under that rule."
+M370-N39B,depleted,A2,C,0,1.0 FAILED,not run this session,not run this session,not tested,"in the 54, failed the blind test, no power either way on bucket 0"
+M263-N30C,depleted,B,B,2,0.01662 CONFIRMED,not run this session,not run this session,not tested,"total absence; p equals its own floor under every scheme; never fails with power"
+M263-N01,enriched,C,C-confirmed,4,0.0189 CONFIRMED,REFUSED WITH POWER p=0.343 MH=1.39 vs crude 6.70,SURVIVES MH=8.90,agrees (no power),"THE KEY CASE: best-replicating pair in the cross-fit (4 of 4) yet refused by the composition control. Tier C stands. The two controls disagree, locating the confound in numeral composition, not magnitude."
+M297-N01,depleted,C,C,1,0.005472 CONFIRMED,not run this session,not run this session,not tested,demoted by the 10-03 composition control; 1 of 4 blind folds
+M243-N39B,enriched,C,C,1,0.02221 CONFIRMED,not run this session,not run this session,not tested,"demoted 10-03; 3ltl6g: 46 occurrences over 15 graphical forms, merge unauditable on this corpus"
+M297-N24,enriched,D,D,1,0.005472 CONFIRMED,not run this session,not run this session,not tested,"refuted 10-03 by Simpson reversal; replicated in only 1 of 4 blind folds, refuting this session's P2.6"

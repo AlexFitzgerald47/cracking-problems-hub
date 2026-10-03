@@ -4,6 +4,138 @@
 
 ---
 
+## 2026-10-03 – tier A2 and the blind-holdout warrant (advancing)
+
+Write-up: `attempts/2026-10-03-a2-blind-holdout--k9r2mq/RESULTS.md`.
+Starting revision `31d0584`. Claude Opus 5, Claude Code cloud session. Trial ID: none.
+Took the drawn pick (stream B, debt 12.6) and the drawn next move (item 1 of the
+10-03 reconciliation handover). Corpus: SFU `pe-sign-value-data` @ `538949cc`,
+plus a live CDLI export fetched this session.
+
+### What was attempted
+Item 1 of the standing handover — give the tier-A2 pairs the blind-holdout warrant
+they were said to lack — then items 2 (CDLI retry) and 3 (novelty gap), both of
+which turned out to be reachable this session.
+
+### Changed
+- **Corrected the drawn item's premise.** Tier A2 pairs do **not** lack a blind
+  screen. Four of the six are inside the pre-specified family of 54 and had
+  **already failed the pre-specified blind test**: BH q over base 54 = 0.0954
+  (M288–N39B), 0.2021 (M288–N24), 1.0 (M376–N08A), 1.0 (M370–N39B). The remaining
+  two are **not candidates at all** under the unchanged 2026-09-04 rule —
+  **M288–N14** has train OR 2.27 (below the OR ≥ 3 gate) and **M362–N14** has
+  train q = 0.0226 (above the q ≤ 0.01 gate). The handover named four pairs
+  "promotable"; two of those four are screened out. Its power table is sound — it
+  reports marginals — but power to test is not a licence to test, and the test it
+  licensed had already been run and failed.
+- **Supplied the warrant by a different, pre-registered route.** A 5-fold
+  cross-fit over the hash buckets already in the design (screen on four, test on
+  the fifth, rule and bars unchanged, BH within fold) reproduces the published
+  eight **exactly** on fold 1 and, on folds 2–5 — **never computed before in this
+  folder** — warrants **M288–N24 (3 of 4 folds)**, **M288–N39B (2 of 4)** and
+  **M376–N08A (2 of 4)**. All three survive the composition control run inside the
+  blind buckets. First new held-out constraints since 2026-09-04.
+- **Established that blind replication does not substitute for confound control.**
+  **M263–N01 confirms in 4 of 4 blind folds** — the best-replicating pair in the
+  table — and the composition control **refuses it with power**: Mantel–Haenszel
+  OR **1.39** against crude **6.70**, p = 0.343, floor 3e-06. Tier C stands.
+- **Closed the novelty gap for the two signs that carry the folder's headline, and
+  the answer is negative.** Born, Monroe, Kelley & Sarkar, CAWL 2023, pp. 71–81,
+  §5 (open access since 2023, never cited here): *"Entries ending in M288 have the
+  largest capacity magnitudes on average, while those ending in M263 are among the
+  smallest."* Reproduced independently here — of 110 M families clearing the
+  20-line bar, M288 ranks **5th**, M263 ranks **98th**. The folder's M288 family
+  and M263–N01 are the sign-level shadow of a published magnitude fact. They are
+  **not reducible** to it (every M288 pair survives magnitude stratification), but
+  the relation is prior art and must now be cited in any novelty claim.
+- **Measured why the published eight is a power-limited sample.** The 2026-09-04
+  design's realised false-confirmation rate is **0.03 pairs over four folds**, and
+  in 500 replicates of a screen-fixed null **not one** put any pair in ≥ 2 of 4
+  folds. The conjunctive criteria plus the discreteness of the exact test make it
+  roughly two orders of magnitude more conservative than its nominal level.
+- **Discharged handover item 2.** CDLI is back; the export is byte-count-identical
+  to `u82zig`'s 10-01 fetch and `cdli_compat.py` reproduces that session's report
+  exactly, confirming its 130-new-tablet / 109-eligible-line figures and the
+  N08→N08A rename.
+- **Found one work new to this folder:** Kelley, Born, Monroe & Sarkar, "On Newly
+  Proposed Proto-Elamite Sign Values", *Iranica Antiqua* LVII (2022),
+  `10.2143/IA.57.0.3291506`, open-access PDF reachable. It names **M288 91 times
+  and M263 64 times**. Not read. It is now the folder's largest novelty exposure.
+
+### Evidence
+Five gates, all exact, before anything downstream was believed: the 2026-09-04
+corpus audit (1,467/10/1,457/11,013/4,869/1,050); the published 15 associations
+**field-for-field with zero mismatches**; all 80 values of the 2026-09-17
+face-blocked table to 1e-12; the screen at **1,056 tested / 54 selected**
+(recovered by enumeration, third independent confirmation); the published
+validation arm on the 54 returning **exactly the published eight**; and the numpy
+fast path matching the audited path on all five folds. Null A: observed 16 vs null
+max 1 over 500 replicates, p = 0.002. Null B: 6 pairs at ≥ 2 folds vs null max 0,
+p = 0.002.
+
+### Still conditional
+- **M288–N39B points OPPOSITE on the 130 new CDLI tablets** (corrected OR 0.22,
+  zero co-occurrences where ~1.6 were expected). It is **underpowered** — 0 of 7
+  pairs tested there have face-blocked power — so by the rule frozen before the
+  export was parsed this does **not** fire the reopening condition. It is the one
+  discordant signal against the session's strongest new pair and is not smoothed over.
+- **M376–N08A's survival rests on 2 informative co-numeral strata** and it has 0
+  informative face blocks on bucket 0. The most fragile entry in the table.
+- The cross-fit's five training sets overlap by ~75%, so "confirmed in k of 4" is
+  not a binomial count. Null B prices that dependence by re-running the same
+  dependent design; that is the claim a validator should attack first.
+- My magnitude proxy sums raw ATF multipliers across number systems; Born et al.
+  disambiguate systems first. Rank agreement is corroboration, not reproduction.
+- **M106–N24 (tier A1) confirms in 0 of 4 blind folds** and **M288–N45 in 1 of 4**.
+  Not refuted — the folds are small — but A1 is not a uniformly robust tier.
+- Nothing here assigns a semantic, phonetic or metrological value to any sign.
+
+### Failures & dead ends
+- **27 predictions frozen before the code that tested them existed; 20 held, 6
+  failed, 1 ill-formed.** Freeze commits `dc1802b`, `5afe79f`, `055bd8d`,
+  `28fff42`, `9d2dba1`.
+- **P4.1 and P4.5 failed because I conflated per-test α with FDR control.** I
+  predicted 1–12 false confirmations and ≥ 1 false singleton per null replicate;
+  the true figure is 0.03. Under the global null BH bounds P(any rejection) near
+  0.05 per fold, and the conjunctive criteria push the realised rate ~7× below even
+  that. The failure strengthens rather than weakens the cross-fit result.
+- **P2.6 failed.** I predicted the composition artefact M297–N24 would replicate in
+  ≥ 2 blind folds under a design that does not control composition; it replicated in
+  1. Fold-replication count is a weaker proxy for "artefact" than I assumed, which
+  is why Part 6 had to do that work directly.
+- **P7.3 failed, informatively.** M263–N01 **survives** magnitude stratification
+  (MH OR 8.90) while being refused by the co-numeral control (MH OR 1.39). The two
+  controls disagree, which localises the confound: M263–N01 is not explained by
+  M263 lines being *small* but by *which other numeral signs are present*.
+  "Numeral-poor" was the right diagnosis; "small-magnitude" is not.
+- **P6.2 failed** — M376–N08A does get a usable pooled verdict (floor 1.9e-31).
+- **P5.3 was ill-formed**: M288–N24 and M288–N39B share M288 and so tie on
+  M-bearing lines. My error in framing the prediction.
+- **A dead end worth recording:** the handover's proposed promotion criterion
+  (face **and** co-numeral at q ≤ 0.05 over base 54, on bucket 0) retains **only
+  M297–N39B of the published eight**, and leaves M288–N45 with no face power at all.
+  A criterion that demotes seven of the eight constraints it was meant to extend is
+  mis-specified for 1,050 lines. Do not re-run it on bucket 0.
+
+### Artefacts produced
+`attempts/2026-10-03-a2-blind-holdout--k9r2mq/` — `RESULTS.md`, `PREDICTIONS.md`
+(five dated freezes), `src/` (10 scripts incl. both nulls and the verified fast
+path), `results/` (10 files incl. both null consoles). Two `board/log/` entries.
+
+### Receipt
+Changed: the A2 tier's premise, three new blind-warranted pairs, the M263–N01
+cross-validation/confound dissociation, the Born et al. 2023 priority finding.
+Evidence: SFU `538949cc` + live CDLI export (sha256 in RESULTS.md).
+Still conditional: M288–N39B's CDLI direction, M376–N08A's 2 strata, fold dependence.
+Next: read *Iranica Antiqua* LVII (2022) — M288 × 91, M263 × 64, OA and reachable.
+Tool limits: CDLI reachable this session; NEA 88(4) confirmed closed by OpenAlex
+and Unpaywall independently; Cambridge Elements body unreachable. Costs unknown.
+User steering: none — scheduled Breaker firing, draw taken as given. Trial ID: none.
+
+---
+
+---
+
 ## 2026-10-03 – reconciling the seven parallel runs (advancing)
 
 Full write-up: `attempts/2026-10-03-reconciliation--c7h0lh/RESULTS.md`.

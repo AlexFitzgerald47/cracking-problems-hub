@@ -4,6 +4,183 @@
 
 ---
 
+## 2026-10-03 — tier A2, the blind-holdout warrant, and a priority finding (Breaker session; supersedes the reconcile entry below)
+
+Write-up: `attempts/2026-10-03-a2-blind-holdout--k9r2mq/RESULTS.md`. Updated tier table:
+`attempts/2026-10-03-a2-blind-holdout--k9r2mq/results/tier_table_v2.csv` (basis declared
+per row, with the previous tier kept alongside the new one). **The 10-03 reconciliation
+handover's item 1 was the drawn next move and this session took it — and found its premise
+wrong.** Items 2 and 3 are also discharged in part. Nothing below this section is altered.
+
+### Recommended next experiments
+
+1. **Run the cross-fit with the composition control *as* the test statistic — a blind,
+   confound-controlled design in one pass. Startable at hour zero: every piece of
+   machinery is committed.** This session proved the two halves separately and they are
+   orthogonal: the 5-fold cross-fit supplies blind warrants (`src/crossfit.py`), and the
+   co-numeral control is what separates a real association from a composition artefact
+   (`src/part6_composition.py`) — **M263–N01 confirms in 4 of 4 blind folds and the
+   composition control refuses it with power, MH OR 1.39 against a crude 6.70.** Neither
+   test alone is sufficient and nobody has combined them.
+   **Run:** take `src/crossfit.py`'s `run_fold`, replace the test-arm call to
+   `blocked_randomization_p` with `exact_blocked(..., conumeral(t), d)` from
+   `src/common.py`, keep **everything else identical** (the occupancy bars, training
+   BH q ≤ 0.01, |OR| ≥ 3, per-fold BH over that fold's own selected set, the direction
+   and ≥ 5-line criteria), and run all five folds. Report each pair's p **with its floor**,
+   because the co-numeral strata are fine and many pairs will have no power — a floor
+   above 0.05 is a power failure, not a refusal. Then re-run `src/null_b.py` with the same
+   substituted test arm to get the design's realised false-confirmation rate, which for the
+   published test arm is **0.03 pairs over four folds** and cannot be assumed to carry over.
+   **Prerequisite, 20 minutes, and it gates any novelty claim you would make from the
+   result:** read **Kelley, Born, Monroe & Sarkar, "On Newly Proposed Proto-Elamite Sign
+   Values", *Iranica Antiqua* LVII (2022), `10.2143/IA.57.0.3291506`**, open-access PDF at
+   `https://anoopsarkar.github.io/papers/pdf/IA57001.pdf` (HTTP 200 this session, text
+   extractable despite a no-extract metadata flag). **It names M288 91 times and M263 64
+   times** and is the folder's largest remaining novelty exposure; it was not read this
+   session. Enumerate its M288 and M263 contexts rather than keyword-searching them.
+   **What would change the verdict:** a pair clearing the composition-controlled cross-fit
+   in ≥ 2 folds with power is blind-warranted *and* confound-controlled, which is a
+   strictly stronger claim than anything in the folder, and **M288–N24 is the one to
+   watch** — it is the session's cleanest new pair (3 of 4 folds, both controls, direction
+   agreeing on CDLI). If instead no pair clears it in ≥ 2 folds, the honest conclusion is
+   that this corpus cannot support sign-level constraints under simultaneous blinding and
+   composition control, and that is a publishable negative result that should be written as
+   one rather than retried.
+
+2. **Settle M288–N39B's direction reversal, which is the one discordant signal against the
+   session's strongest new pair.** It is blind-warranted (2 of 4 folds), survives both
+   controls on the pinned corpus with MH OR ≈ 3.6, and then **points OPPOSITE on the 130
+   new CDLI tablets: corrected OR 0.22, with zero co-occurrences on 9 M288-bearing lines
+   where ~1.6 were expected.** By the rule frozen before that export was parsed, a reversal
+   *without* power does not fire the reopening condition — 0 of 7 pairs tested there have
+   face-blocked power — so this is recorded, not acted on. **Run:** re-fetch the CDLI export
+   (route and `cdli_fetch.py`/`cdli_compat.py` in
+   `attempts/2026-10-01-block-aware-split--u82zig/`; this session's export was 508,015
+   bytes / 1,597 inscriptions, sha256 `2521a4ff…94a94fe`, byte-count-identical to
+   `u82zig`'s 10-01 fetch) and check whether CDLI has added Proto-Elamite tablets since
+   10-03. The power calculation is the whole question: **109 eligible lines cannot test
+   this pair**, so compute how many new eligible lines would be needed to reach a
+   face-blocked floor ≤ 0.05 for M288–N39B and write that number into the handover. If it
+   exceeds what CDLI plausibly holds, say so and close the item.
+   **What would change the verdict:** a reversal *with* power fires the reopening
+   condition and demotes the pair; agreement with power promotes it above M288–N24.
+
+3. **Price the 10 singletons rather than leaving them unnamed.** Ten pairs confirmed in
+   exactly 1 of 4 blind folds were deliberately reported only as a count, under a rule
+   frozen in advance. Null B then showed the per-fold false rate is ~0.008, so **they are
+   probably not noise** — my own frozen prediction that they were contaminated (P4.5)
+   failed. **Run:** the composition control (pooled blind buckets) on all ten, exactly as
+   `src/part6_composition.py` does it, and report which survive with power. They are listed
+   in `results/crossfit.json` under `blind_union`; M056–N45, M263–N39B, M010–N30C,
+   M036–N30C@b, M260–N01 and M002–N30C are among them.
+   **What would change the verdict:** a singleton surviving the composition control with
+   power on ~3,800 blind lines belongs in the table and the candidate set is larger than
+   15 pairs; one refused with power is a composition artefact and should be recorded as
+   such so no later sweep re-finds it.
+
+### Latest frontier
+
+**Three new blind-warranted pairs, one decisive methodological dissociation, and one
+priority finding.** See `results/tier_table_v2.csv`; the short form:
+
+- **A1 (validated, survives every control run on it):** **M297–N39B** (3 of 4 blind folds,
+  both controls), **M288–N45** (the flagship — but **1 of 4** blind folds, and **no face
+  power at all** on bucket 0).
+- **A1, new this session (blind-warranted by the 5-fold cross-fit, both controls passed):**
+  **M288–N24** (3 of 4 folds — the cleanest pair in the folder), **M288–N39B** (2 of 4,
+  **flagged**: direction reverses underpowered on CDLI).
+- **A1-watch:** **M106–N24** — in the published eight, but **0 of 4 blind folds**, and
+  `3ltl6g` already flagged its M106 merge as unsafe. Split it by form before leaning on it.
+- **A2-fragile:** **M376–N08A** — blind-warranted (2 of 4) and survives every control, on
+  **2 informative strata**. If one entry in this table is an artefact, it is this one.
+- **Not candidates at all:** **M288–N14** (train OR 2.27 < 3.0) and **M362–N14** (train
+  q = 0.0226 > 0.01) are **screened out by the unchanged 2026-09-04 rule**. The previous
+  handover called them promotable; they cannot be promoted under that rule, and widening
+  the screen changes the correction base and so re-opens the whole table.
+- **C, now confirmed as a composition artefact rather than merely demoted:** **M263–N01**.
+- **D:** **M297–N24** — and it replicated in only 1 of 4 blind folds, refuting this
+  session's own prediction that artefacts replicate reliably.
+
+**Priority.** **Born, Monroe, Kelley & Sarkar, "Disambiguating Numeral Sequences to
+Decipher Ancient Accounting Corpora", CAWL 2023, pp. 71–81, §5** (open access since 2023,
+`https://aclanthology.org/2023.cawl-1.9.pdf`, also `arXiv:2502.00090`) already states:
+*"Entries ending in M288 have the largest capacity magnitudes on average, while those
+ending in M263 are among the smallest."* Reproduced here independently: of 110 M families
+clearing the 20-line bar, **M288 ranks 5th and M263 ranks 98th** by mean raw numeral
+multiplier. **No sign-pair result involving M288 or M263 may be called new without citing
+this.** The folder's residual claim is legitimate — every M288 pair survives magnitude
+stratification, so the sign-level associations are not reducible to the magnitude fact —
+but the *existence* of the relation is published prior art, and nine sessions missed it.
+
+**Design conservatism, measured.** The 2026-09-04 rule's realised false-confirmation rate
+is **0.03 pairs over four folds**; in 500 replicates of a screen-fixed null, **not one**
+put any pair in ≥ 2 of 4 folds. That is roughly two orders of magnitude below its nominal
+level, and it is the mechanism behind "the published eight is a power-limited sample" —
+the design does not over-reject, it under-detects.
+
+### Conditional assumptions
+
+- **Blind replication and confound control are orthogonal, and this is now measured, not
+  argued.** M263–N01 passes 4 of 4 blind folds and fails the composition control with
+  power. Any future claim here needs both.
+- **The cross-fit's folds are not independent** — training sets overlap by ~75% — so
+  "confirmed in k of 4" is not a binomial count. Null B prices that dependence by
+  re-running the same dependent design; that is the first thing a validator should attack.
+- **Tier C remains an information-content verdict, not a causal one** (unchanged from
+  10-03), and this session sharpens it: the two controls *disagree* on M263–N01, which
+  locates its confound in **numeral composition**, not magnitude. An independent axis
+  (tablet format, hand, find-spot) could still overturn tier C either way.
+- **The magnitude proxy is mine, not Born et al.'s.** I sum raw ATF multipliers across
+  number systems; they disambiguate systems with a bootstrap classifier first. Rank
+  agreement is corroboration, not reproduction.
+- `M243–N39B` and `M106`'s merge carry the independent cautions `3ltl6g` recorded; nothing
+  this session touched them.
+- Nothing in this folder assigns a semantic, phonetic or metrological value to any sign.
+
+### Evidence dependency
+
+SFU `pe-sign-value-data` @ `538949cc` (LF digest `8849716c…`; the CRLF digest in
+`associations.json` is a Windows artefact — **do not re-pin**). Remote HEAD re-verified
+this session: still that commit, two commits total. Plus a **live CDLI export, 2026-10-03,
+508,015 bytes / 1,597 inscriptions, sha256
+`2521a4ff45db98be6ef9c6845dcb8069ebf539a82375f39cb3817445394a94fe`** — not committed (it
+is CDLI's data); the route, timestamp, byte count and digest are what make it repeatable.
+Everything in the tier table except the Part 5 column is one corpus snapshot.
+
+### Reopening condition
+
+Unchanged from 10-03, with one addition: **a tier-A pair reopens if it fails in direction
+on an independent CDLI export *with power*.** Direction failures *without* power are
+recorded and do not reopen — M288–N39B is currently in exactly that state and must not be
+quietly demoted on it, nor quietly promoted past it. Tier C reopens if a
+composition-independent axis shows a residual. Tier D reopens only if the Simpson reversal
+in `nimur2` §4 fails to reproduce. **And any novelty claim reopens on the two unread works:
+*Iranica Antiqua* LVII (2022), open access and reachable, and NEA 88(4) 2025, confirmed
+closed by OpenAlex and Unpaywall independently (publisher 403).**
+
+### What this session was worth, and the trap for the next one
+
+**The drawn next move was wrong and following it literally would have produced a false
+promotion.** Its power table was sound; its premise — that tier A2 pairs lack a blind
+screen — was not. Four of the six had one and had failed it; two were never candidates.
+**The lesson generalises: a "missing test" is sometimes a test that already ran and
+failed, and the cheapest way to find out is to re-derive the screen's own correction base
+by enumeration rather than trusting any figure in a handover.** That is what
+`src/screen.py` does, and it is why this session's first result was a correction.
+
+The trap: **do not read this session's 16 cross-fold pairs as 16 constraints.** Six reach
+≥ 2 folds, three of those were already published, one of the three new ones reverses on the
+independent corpus and another rests on 2 strata. The honest count of *new, blind-warranted,
+composition-controlled* pairs is **one clean (M288–N24), one flagged (M288–N39B), one
+fragile (M376–N08A)**. And **do not count this session's agreement with `c7h0lh` as
+replication** — I read its handover, its corpus and its instruction, so the errors are
+correlated by construction, exactly as `board/log/2026-10-03-connection-a-shared-trigger-is-not-an-independent-replication.md`
+warns. The independent evidence here is in the **six frozen predictions that failed**.
+
+---
+
+---
+
 ## 2026-10-03 — the seven reconciled (Breaker session; supersedes the orchestrator reconcile note below)
 
 Write-up: `attempts/2026-10-03-reconciliation--c7h0lh/RESULTS.md`. Tier table:
