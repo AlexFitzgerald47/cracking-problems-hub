@@ -1,0 +1,68 @@
+[
+  {
+    "pair": "M288-N39B",
+    "direction": "enriched",
+    "train_or": 3.9094891226007795,
+    "train_fisher_p": 6.11703756620872e-28,
+    "val_face_informative_blocks": 15,
+    "val_face_floor": 6.980463636810428e-12,
+    "val_conumeral_informative_strata": 8,
+    "val_conumeral_floor": 4.3564588428949723e-32,
+    "promotable_on_plain_holdout": true
+  },
+  {
+    "pair": "M376-N08A",
+    "direction": "enriched",
+    "train_or": 146.26614727318423,
+    "train_fisher_p": 5.546589037761069e-51,
+    "val_face_informative_blocks": 0,
+    "val_face_floor": 1.0,
+    "val_conumeral_informative_strata": 1,
+    "val_conumeral_floor": 0.00041277088089056104,
+    "promotable_on_plain_holdout": false
+  },
+  {
+    "pair": "M288-N14",
+    "direction": "enriched",
+    "train_or": 2.2697628049583356,
+    "train_fisher_p": 8.243900249904289e-14,
+    "val_face_informative_blocks": 12,
+    "val_face_floor": 9.496676163342868e-07,
+    "val_conumeral_informative_strata": 10,
+    "val_conumeral_floor": 7.237113644522991e-54,
+    "promotable_on_plain_holdout": true
+  },
+  {
+    "pair": "M288-N24",
+    "direction": "enriched",
+    "train_or": 4.808173112796916,
+    "train_fisher_p": 9.111903350846414e-21,
+    "val_face_informative_blocks": 10,
+    "val_face_floor": 1.281613123718382e-05,
+    "val_conumeral_informative_strata": 7,
+    "val_conumeral_floor": 2.7423943126378977e-18,
+    "promotable_on_plain_holdout": true
+  },
+  {
+    "pair": "M362-N14",
+    "direction": "enriched",
+    "train_or": 2.7947456679709335,
+    "train_fisher_p": 0.0014948333875770736,
+    "val_face_informative_blocks": 5,
+    "val_face_floor": 2.5809081578963597e-12,
+    "val_conumeral_informative_strata": 1,
+    "val_conumeral_floor": 4.490963363474096e-26,
+    "promotable_on_plain_holdout": true
+  },
+  {
+    "pair": "M370-N39B",
+    "direction": "depleted",
+    "train_or": 0.2148750126278216,
+    "train_fisher_p": 5.0866668782627826e-05,
+    "val_face_informative_blocks": 1,
+    "val_face_floor": 0.8181818181818142,
+    "val_conumeral_informative_strata": 2,
+    "val_conumeral_floor": 0.7360265907181675,
+    "promotable_on_plain_holdout": false
+  }
+]

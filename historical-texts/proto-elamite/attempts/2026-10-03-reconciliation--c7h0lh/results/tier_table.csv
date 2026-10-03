@@ -1,0 +1,20 @@
+pair,direction,warrant,crude_or,face_blocked_p_fullcorpus,face_blocked_floor,conumeral_mh_or,conumeral_p,conumeral_floor,conumeral_q,conumeral_basis,richness_blocked_p_ux87d8,richness_blocked_floor_ux87d8,verdict
+M288-N39B,enriched,"corrected search, 4/4 sweeps",3.6,1.68e-29,8.5e-67,3.95,1.03e-18,7.6e-189,6.56e-18,BH over the 11 new-core,,,SURVIVES
+M376-N08A,enriched,"corrected search, 4/4 sweeps",98.82,1.62e-13,9.4e-18,78.34,1.19e-18,5.3e-35,6.56e-18,BH over the 11 new-core,,,SURVIVES
+M288-N45,enriched,screened+validated (2026-09-04 design),13.57,9.69e-05,4.5e-09,7.5,1.58e-14,1.2e-49,1.26e-13,BH over the 8 published,0.011,0.0004,SURVIVES
+M297-N39B,enriched,screened+validated (2026-09-04 design),9.79,9.49e-13,5.7e-42,3.54,5.22e-13,9.4e-184,2.09e-12,BH over the 8 published,0,7e-18,SURVIVES
+M288-N14,enriched,"corrected search, 2/4 sweeps",2.68,5.19e-06,6.2e-35,2.39,1.72e-11,3.5e-272,6.32e-11,BH over the 11 new-core,,,SURVIVES
+M288-N24,enriched,"corrected search, 4/4 sweeps",4.07,1.06e-19,1.5e-41,3.14,1.13e-08,1.1e-100,3.11e-08,BH over the 11 new-core,,,SURVIVES
+M362-N14,enriched,"corrected search, 2/4 sweeps",2.51,1.09e-06,1.1e-23,2.69,0.000702,1.1e-53,0.00154,BH over the 11 new-core,,,SURVIVES
+M106-N24,enriched,screened+validated (2026-09-04 design),5.54,6.66e-08,3.9e-16,4.21,0.00101,1.8e-39,0.0027,BH over the 8 published,0,2.7e-13,SURVIVES
+M370-N39B,depleted,"corrected search, 3/4 sweeps",0.21,2.38e-06,5.2e-10,0.08,0.00957,0.0011,0.0175,BH over the 11 new-core,,,SURVIVES
+M263-N30C,depleted,screened+validated (2026-09-04 design),0.04,3.52e-10,3.5e-10,0.0,0.178,0.18,0.284,BH over the 8 published,0.0017,0.0017,UNTESTABLE (no power)
+M354-N14,enriched,"corrected search, 2/4 sweeps",2.87,3.13e-07,2.4e-17,1.69,0.0644,1.8e-56,0.101,BH over the 11 new-core,,,FAILS (with power)
+M297-N01,depleted,screened+validated (2026-09-04 design),0.29,1.32e-07,4.7e-39,0.74,0.0682,3.5e-41,0.136,BH over the 8 published,0.5602,2e-05,FAILS (with power)
+M106-N30C,enriched,"corrected search, 2/4 sweeps",3.37,6.49e-09,6e-11,1.87,0.137,2.6e-42,0.188,BH over the 11 new-core,,,FAILS (with power)
+M243-N39B,enriched,screened+validated (2026-09-04 design),6.47,0.000175,6.5e-09,1.57,0.285,6.2e-29,0.38,BH over the 8 published,0.5648,0.037,FAILS (with power)
+M106-N39B,enriched,"corrected search, 2/4 sweeps",2.41,5.43e-06,5.4e-15,1.19,0.438,2.8e-54,0.535,BH over the 11 new-core,,,FAILS (with power)
+M106-N01,depleted,"corrected search, 3/4 sweeps",0.45,2.36e-11,5.9e-25,0.93,0.521,9.4e-08,0.573,BH over the 11 new-core,,,FAILS (with power)
+M002-N30C,enriched,"corrected search, 2/4 sweeps",17.49,4.13e-05,2.2e-14,0.89,0.695,1.8e-25,0.695,BH over the 11 new-core,,,FAILS (with power)
+M263-N01,enriched,screened+validated (2026-09-04 design),4.24,1.49e-23,4.6e-31,0.86,0.72,5.6e-10,0.823,BH over the 8 published,0.4696,0.00087,FAILS (with power)
+M297-N24,enriched,screened+validated (2026-09-04 design),4.04,0.0107,2e-26,0.46,1,3e-125,1,BH over the 8 published,0.2959,1.4e-14,FAILS (with power)

@@ -4,6 +4,98 @@
 
 ---
 
+## 2026-10-03 – reconciling the seven parallel runs (advancing)
+
+Full write-up: `attempts/2026-10-03-reconciliation--c7h0lh/RESULTS.md`.
+Drawn pick, stream B; named next move *"reconcile the seven parallel runs of the M288–N45
+block-aware split, and do not run an eighth."* **No eighth split was run.**
+
+### What was attempted
+Read all seven 10-01→10-03 `RESULTS.md` files; separated method differences from result
+differences; re-derived the load-bearing quantities with independently written block
+machinery; ran the one test none of the seven ran; produced one tier table with its basis
+declared in the table.
+
+### Changed
+- **The seven do not hold six answers.** They hold one answer, two independent corrections
+  to the folder's own method, and one candidate-space expansion. The orchestrator note's
+  list of "six different answers" counted as disagreement the set's single most valuable
+  agreement (below).
+- **One tier table now exists** (`results/tier_table.csv`, RESULTS §5), five tiers, with
+  the warrant — screened-and-validated vs corrected-search — kept as a separate column
+  because the two must not be conflated.
+- **Four published constraints are demoted and one is refuted.** M263–N01 (which
+  2026-09-17 called load-bearing), M297–N01 and M243–N39B fail a composition control with
+  power; **M297–N24 is refuted** — its Mantel–Haenszel OR reverses, 4.04 → 0.46.
+- **M288–N45 is confirmed** and is now tier A1 alongside M297–N39B and M106–N24 (the
+  latter promoted from "lead"). The full-information figure to carry is **p = 9.70e-5 at a
+  floor of 4.46e-9**, re-derived here.
+- **Six new pairs enter at tier A2** (corrected search, not held out): M288–N39B,
+  M376–N08A, M288–N14, M288–N24, M362–N14, M370–N39B.
+- **M263–N30C is not demoted.** It is a total absence whose p equals its own floor under
+  every scheme; the verdict tracks only how much power the stratification leaves.
+
+### Evidence
+- **Gate, before anything else:** this session's own block code reproduces the 2026-09-04
+  corpus audit exactly and **all 80 values** of the 2026-09-17 face-blocked table
+  (8 pairs × 2 schemes × 5 quantities) to 1e-12. Eighth independent reproduction.
+- **The set's one independent convergence.** `ux87d8` and `nimur2` each *invented* a
+  composition control that no handover item asked for, by different routes (count-capped
+  blocking vs exact-set strata + Mantel–Haenszel), and **agree on 7 of 8 verdicts**. A
+  third implementation here reproduces `nimur2`'s table cell-for-cell. Calibrated first:
+  type-I error 0.0000–0.0490 at nominal 0.05, 4,000 replicates per pair.
+- **Correction base verified a third time.** The published screen re-run here returns
+  **1,056 tested / 54 selected**, set-identical to the published design; BH over 54 gives
+  the q-values `u82zig` and `3ltl6g` independently reported, to four decimals. **With the
+  rider neither stated:** that column is computed on the power-starved bucket-0 holdout,
+  so it points the opposite way to `vd9la1`'s finding that all eight clear once the split
+  gives them power. Neither alone settles the tiering; the composition control does.
+- **The one new test**, predictions frozen in `b440586` before the run: the composition
+  control applied to the 11 pairs found by ≥2 of the four sweeps. **6 survive, 5 are
+  demoted, every failure a refusal rather than an absence of power** (largest floor
+  9.4e-8). All five prospective predictions held (P1, P2, P3, P5, P6).
+- **M376–N08A is not a serialisation artefact.** The pinned corpus carries N08 (12 lines),
+  N08A (56) and N08B (12) after the audited normaliser, and M376 touches all three. The
+  pair holds under every merge policy, OR 24–99, p 1.6e-13 to 2.8e-16. If CDLI has
+  consolidated N08 into N08A the pair gets *stronger*.
+- **Priority citations re-verified by DOI** against Crossref rather than taken from
+  `u4sk7u`'s report: Monroe/Kelley/Born/Sarkar, *NEA* 88(4):314–323, Dec 2025
+  (10.1086/738240), four authors as recorded; Kelley, *Proto-Elamite*, Cambridge Elements,
+  2026-07-18 (10.1017/9781009614559). Both confirmed exactly, **both unread**.
+
+### What failed / negative results
+- **The CDLI conflict is resolved on diagnosis, not on outcome.** `u82zig`'s live route is
+  the right one and `nimur2`'s "blocked" verdict was wrong in its reasoning — it tried only
+  the stale LFS github mirror. But the live route returned **HTTP 500 on four attempts
+  across this session, and so does the `cdli.earth` homepage**: CDLI is down site-wide
+  today. The replication is **pending, not impossible**. SFU `HEAD` is still the pin
+  (two commits total, re-verified), so SFU offers nothing newer.
+- **A tempting pattern, killed by its own null.** Survival under the composition control
+  tracks the number of sweeps that found a pair: 3/3 at four sweeps, 1/2 at three, 2/6 at
+  two. An exact permutation test over all C(11,6) = 462 subsets gives **p = 0.078 —
+  suggestive, not significant** on n = 11. Recorded as a hypothesis, not a finding.
+- **Five of five prospective predictions held, and that is the weaker scorecard.** The
+  mechanism was already established on the published eight, so these predicted from a known
+  model. `v5ftaw`'s three-of-six failures remain the most informative material in the set.
+
+### Still conditional
+- The composition control cannot separate a confound from a mediator. Tier C is an
+  **information-content** verdict — "M263 is enriched with N01" conveys nothing beyond
+  "M263 occurs on numeral-poor lines" — not a causal one.
+- Tier A2 has no blind screen; the split rule that gives those pairs power eats their
+  screening set.
+- Novelty against specialist sign-by-sign scholarship: **unestablished**, as in all eight
+  prior write-ups.
+
+### Receipt
+Starting revision `b392637`. Model/platform: Claude Opus 5, Claude Code cloud session.
+Tool limits: CDLI down site-wide (HTTP 500) all session; no `gh` CLI; GitHub scoped to this
+repo. Material user steering: none — scheduled firing of the standing Breaker prompt.
+Trial ID: none. Cost: unknown. Artefacts: `attempts/2026-10-03-reconciliation--c7h0lh/`
+(9 scripts, 8 result files, `results/tier_table.csv`, `results/external_overlap_map.csv`).
+
+---
+
 ## 2026-09-17 – face confound, exact-form audit, per-sign self-match (advancing)
 
 **Session:** Claude Opus 5 cracker, scheduled. Mode: advancing.

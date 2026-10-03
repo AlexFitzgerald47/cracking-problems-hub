@@ -1,0 +1,222 @@
+[
+  {
+    "pair": "M288-N39B",
+    "direction": "enriched",
+    "sweeps": 4,
+    "cells": [
+      166,
+      391,
+      455,
+      3857
+    ],
+    "crude_or": 3.6016377102337964,
+    "face_blocked_p": 1.6831582031582363e-29,
+    "face_blocked_floor": 8.499077380160148e-67,
+    "conumeral_p": 1.0296713875009573e-18,
+    "conumeral_floor": 7.610637458487922e-189,
+    "conumeral_mh_or": 3.9474072213278304,
+    "conumeral_informative_strata": 22,
+    "conumeral_q": 6.562688439917921e-18,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M288-N24",
+    "direction": "enriched",
+    "sweeps": 4,
+    "cells": [
+      87,
+      470,
+      188,
+      4124
+    ],
+    "crude_or": 4.069193842545743,
+    "face_blocked_p": 1.0582759969871002e-19,
+    "face_blocked_floor": 1.4865818525157733e-41,
+    "conumeral_p": 1.1310370915511106e-08,
+    "conumeral_floor": 1.0618843321720753e-100,
+    "conumeral_mh_or": 3.1371733887630957,
+    "conumeral_informative_strata": 20,
+    "conumeral_q": 3.1103520017655546e-08,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M376-N08A",
+    "direction": "enriched",
+    "sweeps": 4,
+    "cells": [
+      39,
+      107,
+      17,
+      4706
+    ],
+    "crude_or": 98.82086378737542,
+    "face_blocked_p": 1.6221100436208452e-13,
+    "face_blocked_floor": 9.357877276789603e-18,
+    "conumeral_p": 1.1932160799850766e-18,
+    "conumeral_floor": 5.331550433399217e-35,
+    "conumeral_mh_or": 78.3363986104454,
+    "conumeral_informative_strata": 2,
+    "conumeral_q": 6.562688439917921e-18,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M106-N01",
+    "direction": "depleted",
+    "sweeps": 3,
+    "cells": [
+      33,
+      26,
+      3552,
+      1258
+    ],
+    "crude_or": 0.4478350351200988,
+    "face_blocked_p": 2.358868562883144e-11,
+    "face_blocked_floor": 5.890679861865673e-25,
+    "conumeral_p": 0.5212907877496608,
+    "conumeral_floor": 9.403226561598973e-08,
+    "conumeral_mh_or": 0.9300875901097402,
+    "conumeral_informative_strata": 12,
+    "conumeral_q": 0.5734198665246268,
+    "verdict": "FAILS (with power)"
+  },
+  {
+    "pair": "M370-N39B",
+    "direction": "depleted",
+    "sweeps": 3,
+    "cells": [
+      4,
+      145,
+      617,
+      4103
+    ],
+    "crude_or": 0.20552610709962854,
+    "face_blocked_p": 2.3810227794364696e-06,
+    "face_blocked_floor": 5.151688074156947e-10,
+    "conumeral_p": 0.009565538021442669,
+    "conumeral_floor": 0.0011157870929036074,
+    "conumeral_mh_or": 0.07763311064098148,
+    "conumeral_informative_strata": 5,
+    "conumeral_q": 0.017536819705978226,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M106-N30C",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      10,
+      49,
+      284,
+      4526
+    ],
+    "crude_or": 3.3749267721148213,
+    "face_blocked_p": 6.491625492010096e-09,
+    "face_blocked_floor": 5.971271806054068e-11,
+    "conumeral_p": 0.13658507421026128,
+    "conumeral_floor": 2.5791387974619603e-42,
+    "conumeral_mh_or": 1.8719959219343283,
+    "conumeral_informative_strata": 8,
+    "conumeral_q": 0.18780447703910927,
+    "verdict": "FAILS (with power)"
+  },
+  {
+    "pair": "M288-N14",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      235,
+      322,
+      923,
+      3389
+    ],
+    "crude_or": 2.6801551227005453,
+    "face_blocked_p": 5.191983186729604e-06,
+    "face_blocked_floor": 6.237233666473956e-35,
+    "conumeral_p": 1.724139329214282e-11,
+    "conumeral_floor": 3.546325009292227e-272,
+    "conumeral_mh_or": 2.3937937406599215,
+    "conumeral_informative_strata": 21,
+    "conumeral_q": 6.321844207119034e-11,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M106-N39B",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      15,
+      44,
+      606,
+      4204
+    ],
+    "crude_or": 2.414655835193642,
+    "face_blocked_p": 5.427021857389952e-06,
+    "face_blocked_floor": 5.363888530697362e-15,
+    "conumeral_p": 0.43765619493944835,
+    "conumeral_floor": 2.830839646657727e-54,
+    "conumeral_mh_or": 1.1916993882153124,
+    "conumeral_informative_strata": 8,
+    "conumeral_q": 0.5349131271482146,
+    "verdict": "FAILS (with power)"
+  },
+  {
+    "pair": "M362-N14",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      33,
+      43,
+      1125,
+      3668
+    ],
+    "crude_or": 2.5101436398637644,
+    "face_blocked_p": 1.0894417565824185e-06,
+    "face_blocked_floor": 1.0701874690849841e-23,
+    "conumeral_p": 0.0007016437781186101,
+    "conumeral_floor": 1.0630628339807322e-53,
+    "conumeral_mh_or": 2.6911573447383286,
+    "conumeral_informative_strata": 3,
+    "conumeral_q": 0.0015436163118609423,
+    "verdict": "SURVIVES"
+  },
+  {
+    "pair": "M354-N14",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      47,
+      54,
+      1111,
+      3657
+    ],
+    "crude_or": 2.8679526385948404,
+    "face_blocked_p": 3.134133213649115e-07,
+    "face_blocked_floor": 2.43309518466824e-17,
+    "conumeral_p": 0.06440483841254109,
+    "conumeral_floor": 1.8363048225868536e-56,
+    "conumeral_mh_or": 1.6919277781601267,
+    "conumeral_informative_strata": 10,
+    "conumeral_q": 0.10120760321970743,
+    "verdict": "FAILS (with power)"
+  },
+  {
+    "pair": "M002-N30C",
+    "direction": "enriched",
+    "sweeps": 2,
+    "cells": [
+      22,
+      21,
+      272,
+      4554
+    ],
+    "crude_or": 17.49114572221037,
+    "face_blocked_p": 4.1322199479568506e-05,
+    "face_blocked_floor": 2.216248542920997e-14,
+    "conumeral_p": 0.6948329190782135,
+    "conumeral_floor": 1.793396719226275e-25,
+    "conumeral_mh_or": 0.8864836640448375,
+    "conumeral_informative_strata": 9,
+    "conumeral_q": 0.6948329190782135,
+    "verdict": "FAILS (with power)"
+  }
+]

@@ -4,6 +4,139 @@
 
 ---
 
+## 2026-10-03 — the seven reconciled (Breaker session; supersedes the orchestrator reconcile note below)
+
+Write-up: `attempts/2026-10-03-reconciliation--c7h0lh/RESULTS.md`. Tier table:
+`results/tier_table.csv`. **The orchestrator note below is discharged** — its item 1 was
+the drawn next move and this session took it. No eighth split was run. Nothing below this
+section is altered.
+
+### Recommended next experiments
+
+1. **Give four of the six tier-A2 pairs the blind-holdout warrant they lack — the power is
+   already measured and committed, so this is startable at hour zero.** A2 pairs are
+   *corrected search results*: no blind screen exists for them, which is the one thing
+   separating them from A1. `ux87d8` §6 established that the donor split and the plain
+   80/20 hash holdout are **complementary** — the donor split suits sparse pairs and eats
+   the screening set of dense ones, which is what blocked a blind screen for these. A2
+   pairs are dense, so the published hash holdout should keep informative blocks on *both*
+   sides. **It does, and `results/a2_holdout_power.json` says for which:**
+
+   | pair | train OR | val. face infB / floor | val. co-numeral infS / floor | |
+   |---|---:|---|---|---|
+   | M288–N39B | 3.91 | 15 / 7.0e-12 | 8 / 4.4e-32 | **promotable** |
+   | M288–N14 | 2.27 | 12 / 9.5e-07 | 10 / 7.2e-54 | **promotable** |
+   | M288–N24 | 4.81 | 10 / 1.3e-05 | 7 / 2.7e-18 | **promotable** |
+   | M362–N14 | 2.79 | 5 / 2.6e-12 | 1 / 4.5e-26 | **promotable** |
+   | M376–N08A | 146.27 | **0 / 1.00** | 1 / 4.1e-04 | no face power on this holdout |
+   | M370–N39B | 0.21 | 1 / 0.82 | 2 / 0.74 | no power either way |
+
+   **Run:** re-screen on the published training set under the unchanged 2026-09-04 rule,
+   then test on bucket 0 under face blocking **and** under the co-numeral control
+   (`src/conumeral.py`'s strata), **BH-corrected over the real candidate family of 54**,
+   not over the handful you are testing — the correction-base error of 2026-09-17 is the
+   one mistake this folder has now made once and caught twice.
+   **What would change the verdict:** a pair clearing both tests at q ≤ 0.05 over base 54
+   moves from A2 to A1 and becomes the folder's first *new* held-out constraint since
+   2026-09-04. A pair failing *with power* (floors above are all ≤ 1.3e-5, so failures
+   will be refusals) drops to tier C and the "the published eight is a power-limited
+   sample" conclusion weakens from six surviving pairs to however many are left.
+   **M376–N08A is the next M288–N45-shaped problem** — its evidence is concentrated in
+   forced blocks, zero informative face blocks reach bucket 0, and per `ux87d8` §6 its
+   donor split does not screen blind (complement OR 15.91). Do not force it; record it.
+
+2. **Retry the CDLI export and run the tier table against it.** The route is
+   `https://cdli.earth/search?period=Proto-Elamite&format=atf&aspect=inscriptions&limit=3000`
+   — `u82zig` got 1,597 inscriptions / 508,015 bytes / 130 new tablets from it on
+   2026-10-01, and **its fetch and compatibility scripts are committed**
+   (`attempts/2026-10-01-block-aware-split--u82zig/{cdli_fetch,cdli_compat,cdli_replicate}.py`).
+   This session got **HTTP 500 on four attempts, including on the `cdli.earth` homepage**,
+   so CDLI was down site-wide on 10-03; `nimur2`'s "blocked" verdict is wrong in its
+   reasoning (it tried only the stale `cdli-gh/data` LFS mirror) but right that nothing was
+   reachable. Check the homepage first: if it 200s, the export is back.
+   **Test the A2 pairs, not just the published eight** — `u82zig` showed the published
+   eight have *zero* power on 130 new tablets (109 eligible lines), but the A2 pairs are
+   3–20× denser and are the untested half of the table. Freeze the direction predictions
+   off `results/tier_table.csv` before fetching. **Mind the N08→N08A rename** (`u82zig` §6):
+   `results/n08_audit.json` shows M376–N08A holds under every merge policy, so merge rather
+   than drop, and say which policy you used.
+
+3. **Discharge the novelty gap — it is now the folder's largest, and the two items are
+   identified.** Nine sessions have recorded "novelty against specialist sign-by-sign
+   literature is unestablished" and none has closed it. The DOIs are verified (Crossref,
+   this session): **Monroe, M. Willis; Kelley, Kathryn; Born, Logan; Sarkar, Anoop,
+   "Recent Progress in Deciphering Proto-Elamite", *Near Eastern Archaeology* 88(4):314–323,
+   December 2025, `10.1086/738240`** (closed access, no OA copy in OpenAlex) and
+   **Kelley, Kathryn, *Proto-Elamite*, Cambridge Elements, 2026-07-18,
+   `10.1017/9781009614559`**. The table now names **15 pairs**, not 8, so the exposure is
+   larger than it was. Until one of these is read, no pairing may be called new.
+
+### Latest frontier
+
+**One tier table, five tiers, basis declared in the table** (`results/tier_table.csv`):
+
+- **A1 — validated, survives every control run on it:** **M288–N45** (confirmed; the
+  figure to carry is **p = 9.70e-5 at floor 4.46e-9**, the full-information donor-split
+  value three sessions converge on and this one re-derived), **M297–N39B**, **M106–N24**
+  (promoted from "lead").
+- **A2 — corrected search, survives the composition control, not held out:** M288–N39B,
+  M376–N08A, M288–N14, M288–N24, M362–N14, M370–N39B.
+- **B — total absence; p equals its own floor under every scheme:** M263–N30C. Confirmed
+  face-blocked (p = floor = 3.52e-10), not testable against composition at the finest
+  grain (p = floor = 0.178). **Never fails with power. Not demoted.**
+- **C — demoted, no residual beyond the line's numeral composition:** **M263–N01**
+  *(2026-09-17 called this load-bearing)*, **M297–N01**, **M243–N39B**, M354–N14,
+  M106–N30C, M106–N39B, M106–N01, M002–N30C.
+- **D — refuted:** **M297–N24**; Mantel–Haenszel OR reverses 4.04 → 0.46 by a Simpson
+  reversal through numeral-expression composition.
+
+### Conditional assumptions
+
+- **Tier C is an information-content verdict, not a causal one.** A composition control
+  cannot separate a confound from a mediator. The defensible claim is `ux87d8`'s: *"M263 is
+  enriched with N01" conveys nothing beyond "M263 occurs on numeral-poor lines."* An
+  independent axis (tablet format, scribal hand, find-spot) could overturn tier C either way.
+- **Tier A2 has no blind screen.** That is what next experiment 1 is for.
+- **M243–N39B carries a second, independent reason to distrust it** (`3ltl6g` §4): 46
+  occurrences over **15 graphical forms**, only one clearing the 15-line bar, so its family
+  merge is doing the work and cannot be audited on this corpus at all.
+- **M106's merge is the one that looks unsafe** (`3ltl6g` §4) — M106 vs M106~A differ on
+  N24 at p = 0.0284 uncorrected (q ≥ 0.40 after BH over 16). M106–N24 is in **A1**, so split
+  it by form before leaning on it. M288's and M263's merges are safe and need no re-running.
+- Nothing in this folder assigns a semantic, phonetic or metrological value to any sign.
+
+### What the seven were worth, and the trap for the next session
+
+Seven sessions reaching one headline is **not** seven replications: they read one handover
+item, one corpus and one instruction, so their errors are correlated by construction. The
+reproductions and the 16-informative-blocks arithmetic are *one* fact confirmed eight times.
+**The genuinely independent evidence is in three places and nowhere else:** (i) `ux87d8` and
+`nimur2` each *inventing* the composition control unprompted and agreeing on 7 of 8 verdicts;
+(ii) `u82zig` and `3ltl6g` each finding the correction-base error unprompted; (iii) `v5ftaw`
+refuting three of its own six frozen predictions. `results/external_overlap_map.csv` prices
+all nine propositions row by row. **Do not count the agreement again.**
+
+One pattern deliberately not banked: survival under the composition control tracks how many
+sweeps found a pair (3/3 at four, 1/2 at three, 2/6 at two), **exact permutation p = 0.078 on
+n = 11 — suggestive, not significant.** It is a hypothesis for a larger candidate set. Do not
+cite it as a finding.
+
+### Evidence dependency
+
+SFU `pe-sign-value-data` @ `538949cc` (LF digest `8849716c…8bf2b2dcf`; the CRLF digest in
+`associations.json` is a Windows artefact, **not drift — do not re-pin**). Remote `HEAD` is
+still that commit — two commits total, re-verified this session. Everything in the tier table
+is one corpus snapshot.
+
+### Reopening condition
+
+Any tier-A pair reopens if it fails **in direction** on an independent CDLI export, or if the
+SFU value-annotation layer is revised for its signs. Tier C reopens if a composition-independent
+axis (tablet format, hand, find-spot) shows a residual. Tier D (M297–N24) reopens only if the
+Simpson reversal in `nimur2` §4 fails to reproduce.
+
+---
+
 ## Next experiments — reconcile the seven parallel 10-01→10-03 runs (orchestrator note, 2026-10-03; additive, nothing below altered)
 
 1. **Reconcile the seven parallel runs of the M288–N45 block-aware split, and do not run an eighth.**
